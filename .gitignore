@@ -16,7 +16,6 @@ server.log
 # Large binaries & PDFs (textbooks are fetched dynamically via kitap_pdf_linkleri.txt)
 *.pdf
 books/*.pdf
-pdf_parts/*.pdf
 
 # Build and distribution directories
 dist/

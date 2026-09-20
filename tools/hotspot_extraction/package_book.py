@@ -179,7 +179,6 @@ def find_source_pdf(book_id, explicit=None):
         os.path.join(BASE_DIR, "books", f"{book_id}.pdf"),
         os.path.join(BASE_DIR, "books", "full_pdf.pdf") if book_id == "0e966773-5012-4f57-8be5-d892e8c75f22" else None,
         os.path.join(BASE_DIR, "books", "matematik.pdf") if book_id == "51cdbbce-66f4-4baa-95d7-634bf11b7e44" else None,
-        os.path.join(BASE_DIR, "pdf_parts", "full_pdf.pdf") if book_id == "0e966773-5012-4f57-8be5-d892e8c75f22" else None,
     ]
     for c in candidates:
         if c and os.path.isfile(c):

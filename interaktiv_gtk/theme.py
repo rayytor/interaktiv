@@ -10,8 +10,7 @@ Canvas filters:
   - sepia:    sepia(0.2) contrast(0.95)
   - inverted: invert(0.9) hue-rotate(180deg) brightness(1.05) contrast(0.95)
 
-As documented in milestones.md:
-  The canvas filters are NOT baked into the pixmap: that would be a CPU pass
+The canvas filters are NOT baked into the pixmap: that would be a CPU pass
   per page and would invalidate the whole texture cache on every theme switch.
   Each CSS filter primitive is a 4x4 colour matrix plus offset; we multiply the
   chain once at startup (pure Python, no numpy) into one (Graphene.Matrix, Graphene.Vec4)

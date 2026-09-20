@@ -41,7 +41,6 @@ class BooksManager:
         self.books_file = os.path.join(self.base_dir, "kitap_pdf_linkleri.txt")
         self.books_dir = os.path.join(self.base_dir, "books")
         self.thumbs_dir = os.path.join(self.base_dir, "thumbnails")
-        self.pdf_parts_dir = os.path.join(self.base_dir, "pdf_parts")
         self.meta_dir = os.path.join(self.base_dir, "activities_meta")
 
         # --- Edition / packaged-library detection -----------------------------
@@ -330,13 +329,6 @@ class BooksManager:
             legacy_path = self.legacy_local_map[book_id]
             if os.path.isfile(legacy_path):
                 return legacy_path
-        # Fallback to pdf_parts if present
-        fallback_pdf_parts = {
-            "0e966773-5012-4f57-8be5-d892e8c75f22": os.path.join(self.pdf_parts_dir, "full_pdf.pdf"),
-            "51cdbbce-66f4-4baa-95d7-634bf11b7e44": os.path.join(self.pdf_parts_dir, "matematik.pdf"),
-        }
-        if book_id in fallback_pdf_parts and os.path.isfile(fallback_pdf_parts[book_id]):
-            return fallback_pdf_parts[book_id]
         return None
 
     def is_installed(self, book_id):
