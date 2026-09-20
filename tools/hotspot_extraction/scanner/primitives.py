@@ -112,55 +112,56 @@ def extract_page_primitives(
 
     # 1. Image extraction (header metadata only, zero pixel decoding)
     images: List[ImageRect] = []
-    for info in page.get_image_info(xrefs=xrefs):
+    raw_images = page.get_image_info(xrefs=xrefs)
+    for info in raw_images:
         bbox = info.get("bbox")
         if not bbox:
+            continue
+        w = int(info.get("width", 0))
+        h = int(info.get("height", 0))
+        if (bbox[2] - bbox[0] < 5.0 and bbox[3] - bbox[1] < 5.0) or (w < 5 and h < 5):
             continue
         pdf_bbox = to_pdf_coords(bbox, page_height)
         images.append(
             ImageRect(
                 bbox=pdf_bbox,
-                width=int(info.get("width", 0)),
-                height=int(info.get("height", 0)),
+                width=w,
+                height=h,
             )
         )
+    if len(raw_images) > 100:
+        del raw_images
+        pymupdf.TOOLS.store_shrink(100)
+        try:
+            ctypes.CDLL("libc.so.6").malloc_trim(0)
+        except Exception:
+            pass
 
-    # 2. Vector drawing extraction
+    # 2. Vector drawing extraction via get_cdrawings callback
+    # Crucially: avoids allocating millions of Python Point/Rect objects for complex artwork/meshes.
+    # Panels and table/solution rules never exceed 100 segments.
     drawings: List[VectorDrawing] = []
-    for d in page.get_drawings():
+
+    def _collect_drawing(d: dict) -> None:
+        items = d.get("items", [])
+        if len(items) > 100:
+            return
         d_rect = d.get("rect")
         if not d_rect:
-            continue
+            return
+        dw = d_rect[2] - d_rect[0]
+        dh = d_rect[3] - d_rect[1]
+        # Only retain drawings that could potentially be panels or solution rules
+        if not ((dw >= 20.0 and dh >= 12.0) or (dh <= 3.0 and dw >= 20.0) or (dw <= 3.0 and dh >= 20.0)):
+            return
         pdf_rect = to_pdf_coords(tuple(d_rect), page_height)
         fill = tuple(d["fill"]) if d.get("fill") is not None else None
-        stroke = tuple(d["stroke"]) if d.get("stroke") is not None else None
+        stroke = tuple(d["color"]) if d.get("color") is not None else (
+            tuple(d["stroke"]) if d.get("stroke") is not None else None
+        )
         raw_width = d.get("width")
         width = float(raw_width) if raw_width is not None else 0.0
-
-        # Determine if drawing is a rectangle
-        items = d.get("items", [])
-        is_rect = False
-        lines: List[Tuple[float, float, float, float]] = []
-
-        if len(items) == 1 and items[0][0] == "re":
-            is_rect = True
-        elif items:
-            for item in items:
-                cmd = item[0]
-                if cmd == "l":
-                    p1, p2 = item[1], item[2]
-                    lines.append(_to_pdf_line((p1.x, p1.y, p2.x, p2.y), page_height))
-                elif cmd == "re":
-                    is_rect = (len(items) == 1)
-                    r = item[1]
-                    # Add perimeter segments
-                    p_lines = [
-                        (r.x0, r.y0, r.x1, r.y0),
-                        (r.x1, r.y0, r.x1, r.y1),
-                        (r.x1, r.y1, r.x0, r.y1),
-                        (r.x0, r.y1, r.x0, r.y0),
-                    ]
-                    lines.extend(_to_pdf_line(l, page_height) for l in p_lines)
+        is_rect = (len(items) == 1 and items[0][0] == "re")
 
         drawings.append(
             VectorDrawing(
@@ -169,9 +170,11 @@ def extract_page_primitives(
                 stroke=stroke,
                 width=width,
                 is_rect=is_rect,
-                lines=lines,
+                lines=[],
             )
         )
+
+    page.get_cdrawings(callback=_collect_drawing)
 
     # 3. Text span extraction
     # Using 'dict' with ligatures and whitespace flags extracts blocks -> lines -> spans
@@ -199,6 +202,8 @@ def extract_page_primitives(
                         color=int(span.get("color", 0)),
                     )
                 )
+
+    doc._forget_page(page)
 
     return PagePrimitives(
         page_num=page_num,

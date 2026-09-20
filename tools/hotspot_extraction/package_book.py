@@ -16,12 +16,12 @@ own directory, which is why a library can be copied to a stick and opened.
         book.json       catalogue metadata + activity pointers
         thumbnail.jpg
 
-The bake is *not* reimplemented here. `converter/bake_activities.mjs` runs the
-reader's own `js/activities.js` headlessly over the whole book; this script
-arranges the files it produces into a bundle and records what was built.
+The bake is *not* reimplemented here. `tools/hotspot_extraction/scan.py` runs the
+PyMuPDF scanner over the whole book; this script arranges the files it produces
+into a bundle and records what was built.
 
 Usage:
-  python3 converter/package_book.py <book-id | path/to/<book-id>.pdf> [options]
+  python3 tools/hotspot_extraction/package_book.py <book-id | path/to/<book-id>.pdf> [options]
 
 Options:
   --out DIR           library directory to write into (default: ./library)
@@ -43,12 +43,13 @@ import tempfile
 import time
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+HERE = os.path.dirname(os.path.abspath(__file__))
 
 # The shape of a baked regions file this packager understands. Kept in step by
-# hand with BAKE_VERSION in `tools/hotspot_extraction/bake_activities.mjs` and
-# `js/viewer.js` -- a bundle carrying a different number is refused rather than
+# hand with BAKE_VERSION in `tools/hotspot_extraction/scan.py` and
+# `js/viewer.js` -- a bundle carrying an incompatible number is refused rather than
 # shipped and silently ignored by the reader.
-BAKE_VERSION = 1
+BAKE_VERSION = 2
 
 
 def log(msg, quiet=False):
@@ -207,23 +208,39 @@ def stage_pdf(source, dest_dir, book_id, quiet=False):
     return target
 
 
-def run_bake(pdf, force=False, quiet=False):
-    """Run the reader's own detector over the whole book, once."""
-    script = os.path.join(os.path.dirname(os.path.abspath(__file__)), "bake_activities.mjs")
-    args = ["node", script, pdf]
+def run_bake(book_id, pdf_path=None, out_path=None, force=False, quiet=False):
+    """Run the PyMuPDF hotspot scanner over the whole book, once."""
+    script = os.path.join(HERE, "scan.py")
+    cmd = [
+        sys.executable,
+        script,
+        "--only", book_id,
+    ]
+    if pdf_path:
+        cmd.extend(["--pdf", pdf_path])
+    if out_path:
+        cmd.extend(["--out", out_path])
     if force:
-        args.append("--force")
-    log(f"  baking regions: {' '.join(args[1:])}", quiet)
-    run = subprocess.run(args, cwd=BASE_DIR, capture_output=True, text=True)
+        cmd.append("--force")
+    if quiet:
+        cmd.append("--quiet")
+
+    log(f"  baking regions: {' '.join(cmd[1:])}", quiet)
+    run = subprocess.run(cmd, cwd=BASE_DIR, capture_output=True, text=True)
     if run.returncode != 0:
         detail = (run.stderr or run.stdout or "").strip().splitlines()
-        raise RuntimeError(f"bake failed for {os.path.basename(pdf)}: {detail[-1] if detail else 'unknown error'}")
+        raise RuntimeError(f"bake failed for {book_id}: {detail[-1] if detail else 'unknown error'}")
     for line in (run.stdout or "").strip().splitlines():
         log(f"  {line}", quiet)
     return True
 
 
-def load_regions(book_id):
+def load_regions(book_id, bundle_dir=None):
+    if bundle_dir:
+        bundle_regions = os.path.join(bundle_dir, "regions.json")
+        if os.path.isfile(bundle_regions):
+            with open(bundle_regions, "r", encoding="utf-8") as f:
+                return json.load(f), bundle_regions
     path = os.path.join(BASE_DIR, "activities", "books", book_id, "regions.json")
     if not os.path.isfile(path):
         return None, path
@@ -326,24 +343,17 @@ def package_book(book_id, out_dir=None, force=False, with_activities=False,
     except OSError:
         pass
 
-    regions, regions_path = load_regions(book_id)
+    target_regions = os.path.join(bundle_dir, "regions.json")
+    regions, regions_path = load_regions(book_id, bundle_dir=bundle_dir)
     if regions is None or force:
-        # The baker needs the file to *be* named after the book id, and the
-        # bundle's copy is `book.pdf`, so it is staged again for the run and
-        # then thrown away.
-        bake_tmp = os.path.join(bundle_dir, ".bake")
-        bake_pdf = stage_pdf(final_pdf, bake_tmp, book_id, quiet=quiet)
-        try:
-            run_bake(bake_pdf, force=force, quiet=quiet)
-        finally:
-            shutil.rmtree(bake_tmp, ignore_errors=True)
-        regions, regions_path = load_regions(book_id)
+        run_bake(book_id, pdf_path=final_pdf, out_path=target_regions, force=force, quiet=quiet)
+        regions, regions_path = load_regions(book_id, bundle_dir=bundle_dir)
 
     if regions is None:
         raise RuntimeError(f"{book_id}: no bake produced; cannot package")
 
     version = regions.get("version")
-    if version != BAKE_VERSION:
+    if version not in (1, BAKE_VERSION):
         raise RuntimeError(
             f"{book_id}: bake version {version} is not the {BAKE_VERSION} this "
             f"packager writes; re-bake with --force"
@@ -386,7 +396,14 @@ def package_book(book_id, out_dir=None, force=False, with_activities=False,
     with open(os.path.join(bundle_dir, "book.json"), "w", encoding="utf-8") as f:
         json.dump(book_meta, f, ensure_ascii=False)
 
-    shutil.copy2(regions_path, os.path.join(bundle_dir, "regions.json"))
+    if os.path.abspath(regions_path) != os.path.abspath(target_regions):
+        shutil.copy2(regions_path, target_regions)
+
+    # Also keep activities/books/<book_id>/regions.json cache in sync
+    cache_path = os.path.join(BASE_DIR, "activities", "books", book_id, "regions.json")
+    if not os.path.isfile(cache_path) or force:
+        os.makedirs(os.path.dirname(cache_path), exist_ok=True)
+        shutil.copy2(target_regions, cache_path)
 
     has_thumb = False
     if thumbnail:

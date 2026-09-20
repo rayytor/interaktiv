@@ -12,6 +12,7 @@ import gzip
 import os
 import re
 import socketserver
+import subprocess
 import sys
 import threading
 import time
@@ -55,6 +56,47 @@ class RangeHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
         self.send_header("Access-Control-Allow-Headers", "Range, Content-Type")
         self.send_header("Access-Control-Expose-Headers", "Content-Range, Content-Length, Accept-Ranges")
         super().end_headers()
+
+    def _trigger_jit_bake(self, book_id):
+        """Trigger a non-blocking background bake using scan.py for an unbaked local book."""
+        if not hasattr(self.server, "active_bakes"):
+            self.server.active_bakes = set()
+            self.server.active_bakes_lock = threading.Lock()
+
+        with self.server.active_bakes_lock:
+            if book_id in self.server.active_bakes:
+                return
+            local_pdf = self.server.books_manager.get_local_path(book_id)
+            if not local_pdf or not os.path.isfile(local_pdf):
+                return
+            scan_script = os.path.join(self.server.books_manager.base_dir, "tools", "hotspot_extraction", "scan.py")
+            if not os.path.isfile(scan_script):
+                return
+            self.server.active_bakes.add(book_id)
+
+        def _run():
+            try:
+                cmd = [
+                    sys.executable,
+                    scan_script,
+                    "--only", book_id,
+                    "--pdf", local_pdf,
+                    "--quiet",
+                ]
+                subprocess.run(
+                    cmd,
+                    cwd=self.server.books_manager.base_dir,
+                    stdout=subprocess.DEVNULL,
+                    stderr=subprocess.DEVNULL,
+                )
+            except Exception:
+                pass
+            finally:
+                with self.server.active_bakes_lock:
+                    self.server.active_bakes.discard(book_id)
+
+        t = threading.Thread(target=_run, daemon=True)
+        t.start()
 
     def do_GET(self):
         parsed = urllib.parse.urlparse(self.path)
@@ -267,6 +309,9 @@ class RangeHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
             # manager's question, not this handler's.
             regions_path = self.server.books_manager.get_regions_path(book_id)
             if not os.path.isfile(regions_path):
+                # If the PDF is installed locally, trigger a fast JIT background bake
+                # so subsequent requests or reloads will have baked regions ready.
+                self._trigger_jit_bake(book_id)
                 # Not an error, but the meaning differs by edition: in the full
                 # edition a book with no bake is served live by the detector in
                 # the browser; in the school edition every packaged book has one

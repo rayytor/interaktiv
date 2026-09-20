@@ -3,11 +3,11 @@
 Batch package textbooks into a self-contained school library.
 
 Iterates over installed textbooks (or a specified subset) and builds their
-library bundles using `converter/package_book.py`, updating `library/manifest.json`.
+library bundles using `tools/hotspot_extraction/package_book.py`, updating `library/manifest.json`.
 
 Usage:
-  python3 converter/build_library.py --all [options]
-  python3 converter/build_library.py --only <id1,id2,...> [options]
+  python3 tools/hotspot_extraction/build_library.py --all [options]
+  python3 tools/hotspot_extraction/build_library.py --only <id1,id2,...> [options]
 
 Options:
   --out DIR           Library directory to write into (default: ./library)

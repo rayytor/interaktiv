@@ -9,11 +9,11 @@ import { DashboardApp } from "./dashboard.js";
 // out to have no bake.
 
 /**
- * The bake format this reader understands. `tools/bake_activities.mjs` writes
+ * The bake format this reader understands. `tools/hotspot_extraction/scan.py` writes
  * the same number; a bake from an older detector is ignored rather than trusted,
  * and the book falls back to live detection.
  */
-const BAKE_VERSION = 1;
+const BAKE_VERSION = 2;
 
 window.addEventListener("error", (e) => {
   console.error("Interaktiv PDF Error:", e.message, e.filename, e.lineno, e.error);
@@ -1170,7 +1170,7 @@ class PDFViewerApp {
       const res = await fetch(`/api/activities/regions?book_id=${encodeURIComponent(bookId)}`);
       if (!res.ok) return;  // 404 is the ordinary "not baked" answer
       const baked = await res.json();
-      if (!baked || baked.version !== BAKE_VERSION || !baked.pages) return;
+      if (!baked || (baked.version !== 1 && baked.version !== BAKE_VERSION) || !baked.pages) return;
       if (this.pdfDoc && baked.pageCount !== this.pdfDoc.numPages) {
         // A different edition under the same catalogue id: the page ordinals
         // would not line up, so the rects would land on the wrong sheets.

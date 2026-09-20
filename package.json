@@ -9,7 +9,7 @@
     "detect": "node tools/hotspot_extraction/tests/detect.mjs",
     "scorecard": "node tools/hotspot_extraction/tests/scorecard.mjs",
     "sync": "python3 tools/content_extraction/extract_activities.py --sync-catalogue",
-    "bake": "node tools/hotspot_extraction/bake_activities.mjs",
+    "bake": "python3 tools/hotspot_extraction/scan.py",
     "fetch-bake": "python3 tools/hotspot_extraction/fetch_and_bake.py",
     "package": "python3 tools/hotspot_extraction/package_book.py",
     "build-library": "python3 tools/hotspot_extraction/build_library.py"
