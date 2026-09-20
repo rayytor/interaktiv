@@ -2,7 +2,7 @@
   "version": 2,
   "bookId": "93bf209f-253c-4f5e-a54b-461731048d12",
   "fingerprint": "63472168-0af213cb9e709efbaaaf4626bd6da84c",
-  "builtAt": "2026-09-20T09:56:07.536Z",
+  "builtAt": "2026-09-20T17:47:46.561Z",
   "pageCount": 213,
   "calibration": {
     "enabled": true,
@@ -341,6 +341,27 @@
             ]
           ],
           "headline": "Bu görselden yola çıkarak felsefeyi nasıl tanımlarsınız ?"
+        },
+        {
+          "id": "p16-oge-062c4038-a8ae-f111-b31a-005056a7d529",
+          "label": null,
+          "column": 1,
+          "rect": [
+            276.378,
+            637.4776,
+            512.756,
+            732.4776
+          ],
+          "parts": [
+            [
+              276.378,
+              637.4776,
+              512.756,
+              732.4776
+            ]
+          ],
+          "headline": "Bilgi Köprüsü",
+          "anchored": true
         }
       ]
     },
@@ -349,7 +370,7 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          47.4708,
+          36.5197,
           528.756
         ]
       ],
@@ -373,6 +394,27 @@
             ]
           ],
           "headline": "Öğretmeninizin rehberliğinde 4-6 kişilik gruplara ayrılınız. Günlük yaşamda “felse­"
+        },
+        {
+          "id": "p17-oge-62032e24-a9ae-f111-b31a-005056a7d529",
+          "label": null,
+          "column": 0,
+          "rect": [
+            28.5197,
+            635.8406,
+            536.756,
+            730.8406
+          ],
+          "parts": [
+            [
+              28.5197,
+              635.8406,
+              536.756,
+              730.8406
+            ]
+          ],
+          "headline": "1.1.",
+          "anchored": true
         }
       ]
     },
@@ -391,16 +433,16 @@
           "label": "2. Adım",
           "column": 0,
           "rect": [
-            60.3858,
-            570.4143,
-            511.9548,
+            48.863,
+            48.9,
+            518.406,
             613.4633
           ],
           "parts": [
             [
-              60.3858,
-              570.4143,
-              511.9548,
+              48.863,
+              48.9,
+              518.406,
               613.4633
             ]
           ],
@@ -423,41 +465,21 @@
           "label": "3. Adım",
           "column": 0,
           "rect": [
-            45.4708,
-            578.7888,
-            478.9677,
+            35.02,
+            249.251,
+            504.063,
             732.9908
           ],
           "parts": [
             [
-              45.4708,
-              578.7888,
-              478.9677,
+              35.02,
+              249.251,
+              504.063,
               732.9908
             ]
           ],
-          "headline": "Aşağıdaki bilgi görselini inceleyerek soruları cevaplayınız."
-        },
-        {
-          "id": "p19-oge-1514e4de-a9ae-f111-b31a-005056a7d529",
-          "label": null,
-          "column": 0,
-          "rect": [
-            54.3796,
-            376.108,
-            483.1963,
-            575.7888
-          ],
-          "parts": [
-            [
-              54.3796,
-              376.108,
-              483.1963,
-              575.7888
-            ]
-          ],
-          "headline": "Felsefe, var olmaları bakımından var­ Farabi: lıkların bilinmesidir.",
-          "anchored": true
+          "headline": "Aşağıdaki bilgi görselini inceleyerek soruları cevaplayınız.",
+          "ogeId": "1514e4de-a9ae-f111-b31a-005056a7d529"
         },
         {
           "id": "p19-1",
@@ -608,17 +630,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            40.7796,
-            363.3,
-            504.1476,
-            715.169
+            7.478,
+            36.0,
+            523.518,
+            736.212
           ],
           "parts": [
             [
-              40.7796,
-              363.3,
-              504.1476,
-              715.169
+              7.478,
+              36.0,
+              523.518,
+              736.212
             ]
           ],
           "headline": "Çıkarımlarım",
@@ -642,14 +664,14 @@
           "column": 0,
           "rect": [
             55.4842,
-            681.6541,
+            678.0,
             518.8522,
             714.1854
           ],
           "parts": [
             [
               55.4842,
-              681.6541,
+              678.0,
               518.8522,
               714.1854
             ]
@@ -662,16 +684,16 @@
           "column": 0,
           "rect": [
             55.4842,
-            610.2765,
+            607.7,
             518.8522,
-            678.6541
+            675.0
           ],
           "parts": [
             [
               55.4842,
-              610.2765,
+              607.7,
               518.8522,
-              678.6541
+              675.0
             ]
           ],
           "headline": "Verilen örnek durumlarda felsefi düşüncenin hangi özellikleri öne çıkmaktadır ? Açıklayınız."
@@ -682,16 +704,16 @@
           "column": 0,
           "rect": [
             55.4842,
-            469.8537,
+            467.2,
             518.8522,
-            607.2765
+            604.7
           ],
           "parts": [
             [
               55.4842,
-              469.8537,
+              467.2,
               518.8522,
-              607.2765
+              604.7
             ]
           ],
           "headline": "Bu örneklerde felsefi düşünme, insanların karar alma ve eyleme geçme biçimlerinde ne tür değişiklikler meydana getirmiştir"
@@ -702,16 +724,16 @@
           "column": 0,
           "rect": [
             55.4842,
-            370.934,
+            368.8,
             518.8522,
-            466.8537
+            464.2
           ],
           "parts": [
             [
               55.4842,
-              370.934,
+              368.8,
               518.8522,
-              466.8537
+              464.2
             ]
           ],
           "headline": "Mert ve Şule'nin eylemleri, felsefi düşüncenin yalnızca teorik düzeyde kalmadığını ve gün­ lük yaşamı etkileyen pratik sonuçlarının olduğunu kanıtlar mı"
@@ -724,14 +746,14 @@
             55.4842,
             110.3,
             518.8522,
-            367.934
+            365.8
           ],
           "parts": [
             [
               55.4842,
               110.3,
               518.8522,
-              367.934
+              365.8
             ]
           ],
           "headline": "Örnek durumlar üzerinden felsefi düşüncenin teorik ve pratik sonuçlarını analiz"
@@ -743,7 +765,7 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          57.3071,
+          41.9883,
           528.756
         ]
       ],
@@ -753,38 +775,40 @@
           "label": "1. Adım",
           "column": 0,
           "rect": [
-            55.3071,
-            192.4719,
-            117.5951,
-            221.8809
+            40.6024,
+            143.4,
+            503.9704,
+            230.2
           ],
           "parts": [
             [
-              55.3071,
-              192.4719,
-              117.5951,
-              221.8809
+              40.6024,
+              143.4,
+              503.9704,
+              230.2
             ]
-          ]
+          ],
+          "headline": "Kültürel, ekonomik, siyasal ve bilimsel koşulların felsefenin ortaya çıkışı"
         },
         {
           "id": "p27-2. Adım",
           "label": "2. Adım",
           "column": 0,
           "rect": [
-            55.8694,
-            121.3192,
-            118.7294,
-            150.7282
+            40.6024,
+            67.6,
+            503.9704,
+            140.4
           ],
           "parts": [
             [
-              55.8694,
-              121.3192,
-              118.7294,
-              150.7282
+              40.6024,
+              67.6,
+              503.9704,
+              140.4
             ]
-          ]
+          ],
+          "headline": "Felsefenin doğuşu ve gelişiminin tek bir nedene bağlanıp bağlanamayacağını"
         }
       ]
     },
@@ -806,14 +830,14 @@
             66.6276,
             68.2,
             513.8193,
-            263.5556
+            272.9
           ],
           "parts": [
             [
               66.6276,
               68.2,
               513.8193,
-              263.5556
+              272.9
             ]
           ],
           "headline": "Farklı coğrafyalarda yaşayan düşünürlerin benzer felsefi sorular sorması, felsefenin doğası hakkında size neler düşündürür"
@@ -825,7 +849,7 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          51.5816,
+          50.9429,
           528.756
         ]
       ],
@@ -836,16 +860,16 @@
           "column": 0,
           "rect": [
             40.6024,
-            483.906,
+            480.7,
             503.9704,
-            699.9239
+            708.1
           ],
           "parts": [
             [
               40.6024,
-              483.906,
+              480.7,
               503.9704,
-              699.9239
+              708.1
             ]
           ],
           "headline": "Coğrafi ve kültürel ortamların farklı olması felsefi düşünceyi nasıl etkiler ? Görüşlerinizi ge­ rekçelendirerek açıklayınız."
@@ -856,16 +880,16 @@
           "column": 0,
           "rect": [
             40.6024,
-            292.5,
+            67.6,
             503.9704,
-            480.906
+            477.7
           ],
           "parts": [
             [
               40.6024,
-              292.5,
+              67.6,
               503.9704,
-              480.906
+              477.7
             ]
           ],
           "headline": "Farklı felsefe geleneklerinin bulunması, felsefi düşüncenin gelişimine nasıl katkı sağlar ?"
@@ -877,7 +901,7 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          61.5149,
+          50.1929,
           528.756
         ]
       ],
@@ -887,36 +911,37 @@
           "label": "1. Adım",
           "column": 0,
           "rect": [
-            59.5149,
-            521.1152,
-            121.8029,
-            550.5242
+            68.069,
+            500.4808,
+            509.736,
+            553.3912
           ],
           "parts": [
             [
-              59.5149,
-              521.1152,
-              121.8029,
-              550.5242
+              68.069,
+              500.4808044433594,
+              509.736,
+              553.3912
             ]
-          ]
+          ],
+          "headline": "Tablodaki soruları inceleyiniz. Felsefi soru olanların karşısına “ ✓ ”, felsefi soru ol­"
         },
         {
           "id": "p30-b",
           "label": "b",
           "column": 0,
           "rect": [
-            60.1,
-            313.8,
+            90.7,
+            312.3,
             517.7,
-            422.3
+            414.3
           ],
           "parts": [
             [
-              60.1,
-              313.8,
+              90.7,
+              312.3,
               517.7,
-              422.3
+              414.3
             ]
           ],
           "headline": "Pencere kapalı mı ?"
@@ -926,17 +951,17 @@
           "label": "ç",
           "column": 0,
           "rect": [
-            60.1,
-            262.8,
+            509.9864,
+            261.3,
             517.7,
-            310.8
+            312.3
           ],
           "parts": [
             [
-              60.1,
-              262.8,
+              509.98638916015625,
+              261.3,
               517.7,
-              310.8
+              312.3
             ]
           ],
           "headline": "Okullar ne zaman açılacak ?"
@@ -946,17 +971,17 @@
           "label": "d",
           "column": 0,
           "rect": [
-            60.1,
+            90.7,
             49.2,
-            517.7,
-            259.8
+            268.6,
+            263.8
           ],
           "parts": [
             [
-              60.1,
+              90.7,
               49.2,
-              517.7,
-              259.8
+              268.6,
+              263.8
             ]
           ],
           "headline": "Güzelliğin evrensel bir ölçütü var mıdır ?"
@@ -969,6 +994,18 @@
       "columns": [
         [
           47.5039,
+          194.1764
+        ],
+        [
+          198.1764,
+          270.9579
+        ],
+        [
+          274.9579,
+          346.5712
+        ],
+        [
+          350.5712,
           528.756
         ]
       ],
@@ -978,41 +1015,21 @@
           "label": "2. Adım",
           "column": 0,
           "rect": [
-            45.5039,
-            679.085,
-            490.7008,
+            34.277,
+            56.693,
+            504.063,
             732.9908
           ],
           "parts": [
             [
-              45.5039,
-              679.085,
-              490.7008,
+              34.277,
+              56.693,
+              504.063,
               732.9908
             ]
           ],
-          "headline": "Aşağıdaki bilgi görselini inceleyerek ilk değerlendirmelerinizi gözden geçiriniz."
-        },
-        {
-          "id": "p31-oge-3555f7e7-abae-f111-b31a-005056a7d529",
-          "label": null,
-          "column": 0,
-          "rect": [
-            34.277,
-            53.676,
-            504.063,
-            636.0912
-          ],
-          "parts": [
-            [
-              34.277,
-              53.676,
-              504.063,
-              636.0912
-            ]
-          ],
-          "headline": "Aynı felsefe sorusu, farklı filozoflar tarafından farklı ve tutarlı biçimlerde cevapla­ nabilir. Her yeni cevap, yeni sorulara zemin hazırlar.",
-          "anchored": true
+          "headline": "Aşağıdaki bilgi görselini inceleyerek ilk değerlendirmelerinizi gözden geçiriniz.",
+          "ogeId": "3555f7e7-abae-f111-b31a-005056a7d529"
         }
       ]
     },
@@ -1021,7 +1038,7 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          62.0149,
+          50.6929,
           528.756
         ]
       ],
@@ -1117,7 +1134,7 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          47.6331,
+          36.5197,
           528.756
         ]
       ],
@@ -1128,15 +1145,15 @@
           "column": 0,
           "rect": [
             45.6331,
-            222.5091,
-            502.3058,
+            56.693,
+            504.563,
             301.797
           ],
           "parts": [
             [
               45.6331,
-              222.5091,
-              502.3058,
+              56.693,
+              504.563,
               301.797
             ]
           ],
@@ -1149,7 +1166,7 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          62.0149,
+          60.6211,
           528.756
         ]
       ],
@@ -1159,16 +1176,16 @@
           "label": "2. Adım",
           "column": 0,
           "rect": [
-            60.0149,
-            663.5418,
-            508.403,
+            48.476,
+            75.4,
+            518.454,
             732.9908
           ],
           "parts": [
             [
-              60.0149,
-              663.5418,
-              508.403,
+              48.476,
+              75.4,
+              518.454,
               732.9908
             ]
           ],
@@ -1191,16 +1208,16 @@
           "label": "3. Adım",
           "column": 0,
           "rect": [
-            45.8417,
-            199.8,
-            504.04,
+            34.5201,
+            49.5427,
+            504.3131,
             732.9908
           ],
           "parts": [
             [
-              45.8417,
-              199.8,
-              504.04,
+              34.5201,
+              49.5427,
+              504.3131,
               732.9908
             ]
           ],
@@ -1213,7 +1230,7 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          62.8445,
+          50.6929,
           528.756
         ]
       ],
@@ -1289,6 +1306,27 @@
             ]
           ],
           "headline": "Aşağıdaki işlem basamaklarını takip ediniz."
+        },
+        {
+          "id": "p39-oge-e9088da6-adae-f111-b31a-005056a7d529",
+          "label": null,
+          "column": 0,
+          "rect": [
+            48.248,
+            521.755,
+            504.508,
+            731.218
+          ],
+          "parts": [
+            [
+              48.248,
+              521.755,
+              504.508,
+              731.218
+            ]
+          ],
+          "headline": "birlikte düşünür; neden–sonuç ilişkileri kurar, farklı görüşleri karşılaştırır ve kendi düşüncele­",
+          "anchored": true
         }
       ]
     },
@@ -1401,18 +1439,85 @@
           "rect": [
             48.3404,
             252.307,
-            518.2,
+            518.4866,
             706.2028
           ],
           "parts": [
             [
               48.3404,
               252.307,
-              518.2,
+              518.4866,
               706.2028
             ]
           ],
-          "headline": "Tablodaki ifadeler doğru ise (D) yanlış ise (Y) kutucuğunu işaretleyiniz. Yanlış olduğuna karar verdiğiniz ifadenin karşısına doğrusunu yazınız."
+          "headline": "Tablodaki ifadeler doğru ise (D) yanlış ise (Y) kutucuğunu işaretleyiniz. Yanlış olduğuna karar verdiğiniz ifadenin karşısına doğrusunu yazınız.",
+          "items": [
+            {
+              "id": "p42-5-a",
+              "label": "a",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                66.6,
+                602.3,
+                514.2,
+                647.1
+              ],
+              "text": "Felsefe; varlık, bilgi, değer gibi temel D (   ) a konuları sorgulayan bir disiplindir. Y (   )"
+            },
+            {
+              "id": "p42-5-b",
+              "label": "b",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                66.6,
+                565.4,
+                514.2,
+                610.3
+              ],
+              "text": "D (   ) Tüm filozoflar, hikmet sahibi kişilerdir. b Y (   )"
+            },
+            {
+              "id": "p42-5-c",
+              "label": "c",
+              "number": 3,
+              "partIndex": 0,
+              "rect": [
+                66.6,
+                513.4517,
+                514.2,
+                573.4
+              ],
+              "text": "Felsefenin kökenleri, İlk Çağ medeniyetle­ D (   ) c rine dayanır. Y (   ) Felsefi düşünce hem Doğu hem de Batı"
+            },
+            {
+              "id": "p42-5-ç",
+              "label": "ç",
+              "number": 3,
+              "partIndex": 0,
+              "rect": [
+                66.6,
+                485.8,
+                514.2,
+                536.6
+              ],
+              "text": "D (   ) medeniyetlerinde paralel olarak ç Y (   ) gelişmiştir."
+            },
+            {
+              "id": "p42-5-d",
+              "label": "d",
+              "number": 4,
+              "partIndex": 0,
+              "rect": [
+                55.9268,
+                255.9349,
+                514.2,
+                493.8
+              ],
+              "text": "Teorik bir uğraş olan felsefe, günlük ya­ D (   ) d şamla bağlantısı olmayan bir etkinliktir. Y (   ) 6-11. soruları aşağıdaki metinden yararlanarak cevaplayınız. 10. sınıf öğrencileri Murat, Ebru ve "
+            }
+          ]
         },
         {
           "id": "p42-6",
@@ -1492,39 +1597,20 @@
           "column": 0,
           "rect": [
             34.1799,
-            702.5846,
-            46.4849,
-            731.8346
-          ],
-          "parts": [
-            [
-              34.1799,
-              702.5846,
-              46.4849,
-              731.8346
-            ]
-          ]
-        },
-        {
-          "id": "p43-oge-1723f2da-b0ae-f111-b31a-005056a7d529",
-          "label": null,
-          "column": 0,
-          "rect": [
-            49.4849,
             662.4,
             502.4695,
             731.8346
           ],
           "parts": [
             [
-              49.4849,
+              34.1799,
               662.4,
               502.4695,
               731.8346
             ]
           ],
           "headline": "Melek’in sözünü ettiği “ filozofların karşılaştıkları her şeyi ilk kez görüyorlarmış gibi bir tutum takınmaları",
-          "anchored": true
+          "ogeId": "1723f2da-b0ae-f111-b31a-005056a7d529"
         },
         {
           "id": "p43-10",
@@ -1552,40 +1638,20 @@
           "column": 0,
           "rect": [
             34.1798,
-            441.7198,
+            372.0109,
             318.4445,
             528.9103
           ],
           "parts": [
             [
               34.1798,
-              441.7198,
+              372.0109,
               318.4445,
               528.9103
             ]
           ],
-          "headline": "Bu metne göre aşağıdaki yargılardan hangisine ulaşılamaz?"
-        },
-        {
-          "id": "p43-oge-0821b9f5-afae-f111-b31a-005056a7d529",
-          "label": null,
-          "column": 0,
-          "rect": [
-            37.3544,
-            372.0109,
-            217.3151,
-            438.7198
-          ],
-          "parts": [
-            [
-              37.3544,
-              372.0109,
-              217.3151,
-              438.7198
-            ]
-          ],
-          "headline": "E) Felsefe, sürekli bir bilgi arayışıdır.",
-          "anchored": true
+          "headline": "Bu metne göre aşağıdaki yargılardan hangisine ulaşılamaz?",
+          "ogeId": "0821b9f5-afae-f111-b31a-005056a7d529"
         },
         {
           "id": "p43-12",
@@ -1593,19 +1659,86 @@
           "column": 0,
           "rect": [
             34.4381,
-            49.1,
-            504.3,
+            49.0518,
+            504.5634,
             369.0109
           ],
           "parts": [
             [
               34.4381,
-              49.1,
-              504.3,
+              49.0518,
+              504.5634,
               369.0109
             ]
           ],
-          "headline": "Tablodaki sorulardan felsefi soru niteliğinde olanları belirleyerek ilgili alana ( ✓ ) işareti koyunuz."
+          "headline": "Tablodaki sorulardan felsefi soru niteliğinde olanları belirleyerek ilgili alana ( ✓ ) işareti koyunuz.",
+          "items": [
+            {
+              "id": "p43-12-a",
+              "label": "a",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                53.8,
+                245.8,
+                500.3,
+                302.0
+              ],
+              "text": "a ? Gerçeklik nedir"
+            },
+            {
+              "id": "p43-12-b",
+              "label": "b",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                53.8,
+                197.6,
+                500.3,
+                253.8
+              ],
+              "text": "b ? Hayatın anlamı nedir"
+            },
+            {
+              "id": "p43-12-c",
+              "label": "c",
+              "number": 3,
+              "partIndex": 0,
+              "rect": [
+                53.8,
+                149.4,
+                500.3,
+                205.6
+              ],
+              "text": "c ? Elektrik nasıl üretilir"
+            },
+            {
+              "id": "p43-12-ç",
+              "label": "ç",
+              "number": 3,
+              "partIndex": 0,
+              "rect": [
+                53.8,
+                101.2,
+                500.3,
+                157.4
+              ],
+              "text": "ç ? Güzelliğin nesnel ölçütleri var mıdır"
+            },
+            {
+              "id": "p43-12-d",
+              "label": "d",
+              "number": 4,
+              "partIndex": 0,
+              "rect": [
+                53.8,
+                53.1,
+                500.3,
+                109.2
+              ],
+              "text": "d ? İnsan vücudunda kaç kemik vardır"
+            }
+          ]
         }
       ]
     },
@@ -1736,19 +1869,20 @@
           "label": null,
           "column": 0,
           "rect": [
-            34.0208,
-            646.5148,
-            90.4308,
-            747.528
+            0.0,
+            385.87,
+            504.063,
+            744.6018
           ],
           "parts": [
             [
-              34.0208,
-              646.5148,
-              90.4308,
-              747.528
+              0.0,
+              385.87,
+              504.063,
+              744.6018
             ]
           ],
+          "headline": "Ünite",
           "anchored": true
         }
       ]
@@ -1810,7 +1944,7 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          51.1535,
+          50.6929,
           528.756
         ]
       ],
@@ -1893,14 +2027,14 @@
           "column": 0,
           "rect": [
             59.0571,
-            668.0,
+            666.5,
             504.1,
             714.077
           ],
           "parts": [
             [
               59.0571,
-              668.0,
+              666.5,
               504.1,
               714.077
             ]
@@ -1913,16 +2047,16 @@
           "column": 0,
           "rect": [
             70.0709,
-            652.2464,
+            652.4,
             504.1,
-            665.0
+            666.5
           ],
           "parts": [
             [
               70.0709,
-              652.2464,
+              652.4,
               504.1,
-              665.0
+              666.5
             ]
           ],
           "headline": "Dil olmasaydı insanlar karmaşık düşünceler üretebilir miydi ? Açıklayınız."
@@ -1933,16 +2067,16 @@
           "column": 0,
           "rect": [
             70.0709,
-            638.1964,
+            638.3,
             504.1,
-            649.2464
+            652.4
           ],
           "parts": [
             [
               70.0709,
-              638.1964,
+              638.3,
               504.1,
-              649.2464
+              652.4
             ]
           ],
           "headline": "Kelime dağarcığının zengin olması, herhangi bir konuda düşünmeyi nasıl etkiler ?"
@@ -1953,16 +2087,16 @@
           "column": 0,
           "rect": [
             59.3,
-            597.7,
+            596.2,
             504.1,
-            635.1964
+            638.3
           ],
           "parts": [
             [
               59.3,
-              597.7,
+              596.2,
               504.1,
-              635.1964
+              638.3
             ]
           ],
           "headline": "Düşünme mi dili yoksa dil mi düşünmeyi geliştirir ? Açıklayınız."
@@ -1975,14 +2109,14 @@
             59.0571,
             68.2,
             504.1,
-            594.7
+            596.2
           ],
           "parts": [
             [
               59.0571,
               68.2,
               504.1,
-              594.7
+              596.2
             ]
           ],
           "headline": "Aşağıdaki yargılara benzer yargılar oluşturunuz. Bu yargılara katılıp katılmadı­"
@@ -1994,7 +2128,7 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          75.7028,
+          70.9979,
           528.756
         ]
       ],
@@ -2004,16 +2138,16 @@
           "label": "3. Adım",
           "column": 0,
           "rect": [
-            69.2,
-            447.1,
-            517.3,
+            54.7756,
+            67.6,
+            518.1436,
             712.4561
           ],
           "parts": [
             [
-              69.2,
-              447.1,
-              517.3,
+              54.7756,
+              67.6,
+              518.1436,
               712.4561
             ]
           ],
@@ -2026,7 +2160,7 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          36.6733,
+          36.4095,
           528.756
         ]
       ],
@@ -2098,7 +2232,7 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          44.9997,
+          36.4993,
           528.756
         ]
       ],
@@ -2108,14 +2242,14 @@
           "label": "1",
           "column": 0,
           "rect": [
-            42.9997,
+            48.7857,
             492.0926,
             388.7892,
             511.7971
           ],
           "parts": [
             [
-              42.9997,
+              48.7857,
               492.0926,
               388.7892,
               511.7971
@@ -2128,14 +2262,14 @@
           "label": "2",
           "column": 0,
           "rect": [
-            42.9997,
+            48.3457,
             479.0926,
             252.8072,
             489.0926
           ],
           "parts": [
             [
-              42.9997,
+              48.3457,
               479.0926,
               252.8072,
               489.0926
@@ -2148,14 +2282,14 @@
           "label": "3",
           "column": 0,
           "rect": [
-            42.9997,
+            48.4557,
             466.0926,
             241.4552,
             476.0926
           ],
           "parts": [
             [
-              42.9997,
+              48.4557,
               466.0926,
               241.4552,
               476.0926
@@ -2168,14 +2302,14 @@
           "label": "4",
           "column": 0,
           "rect": [
-            42.9997,
+            48.3457,
             453.0926,
             316.5192,
             463.0926
           ],
           "parts": [
             [
-              42.9997,
+              48.3457,
               453.0926,
               316.5192,
               463.0926
@@ -2188,14 +2322,14 @@
           "label": "5",
           "column": 0,
           "rect": [
-            42.9997,
+            48.3457,
             440.0926,
             190.9322,
             450.0926
           ],
           "parts": [
             [
-              42.9997,
+              48.3457,
               440.0926,
               190.9322,
               450.0926
@@ -2208,14 +2342,14 @@
           "label": "6",
           "column": 0,
           "rect": [
-            42.9997,
+            48.1257,
             427.7801,
             276.4451,
             437.0926
           ],
           "parts": [
             [
-              42.9997,
+              48.1257,
               427.7801,
               276.4451,
               437.0926
@@ -2228,14 +2362,14 @@
           "label": "7",
           "column": 0,
           "rect": [
-            42.9997,
+            49.9957,
             414.0926,
             294.9651,
             424.7801
           ],
           "parts": [
             [
-              42.9997,
+              49.9957,
               414.0926,
               294.9651,
               424.7801
@@ -2248,14 +2382,14 @@
           "label": "8",
           "column": 0,
           "rect": [
-            42.9997,
+            48.0157,
             401.0926,
             253.6871,
             411.0926
           ],
           "parts": [
             [
-              42.9997,
+              48.0157,
               401.0926,
               253.6871,
               411.0926
@@ -2268,14 +2402,14 @@
           "label": "9",
           "column": 0,
           "rect": [
-            42.9997,
+            49.0057,
             388.0926,
             273.9602,
             398.0926
           ],
           "parts": [
             [
-              42.9997,
+              49.0057,
               388.0926,
               273.9602,
               398.0926
@@ -2308,14 +2442,14 @@
           "label": "11",
           "column": 0,
           "rect": [
-            42.9997,
+            44.4627,
             362.7801,
             420.4273,
             372.7801
           ],
           "parts": [
             [
-              42.9997,
+              44.4627,
               362.7801,
               420.4273,
               372.7801
@@ -2370,14 +2504,14 @@
           "rect": [
             45.3287,
             176.5,
-            503.8,
+            504.0331,
             319.112
           ],
           "parts": [
             [
               45.3287,
               176.5,
-              503.8,
+              504.0331,
               319.112
             ]
           ],
@@ -2461,14 +2595,14 @@
           "column": 0,
           "rect": [
             59.7242,
-            521.3,
+            429.3,
             518.146,
             631.9062
           ],
           "parts": [
             [
               59.7242,
-              521.3,
+              429.3,
               518.146,
               631.9062
             ]
@@ -2483,14 +2617,14 @@
             59.417,
             74.7887,
             518.558,
-            439.5261
+            392.3536
           ],
           "parts": [
             [
               59.417,
               74.7887,
               518.558,
-              439.5261
+              392.3536
             ]
           ],
           "headline": "Önerme ve doğruluk kavramlarına ilişkin aşağıdaki açıklamayla ” 1 ve 2. Adım ” daki"
@@ -2850,7 +2984,7 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          51.1556,
+          50.0122,
           528.756
         ]
       ],
@@ -2922,7 +3056,7 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          36.699,
+          36.5197,
           528.756
         ]
       ],
@@ -3034,7 +3168,7 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          61.8968,
+          50.6929,
           528.756
         ]
       ],
@@ -3064,16 +3198,16 @@
           "label": "2. Adım",
           "column": 0,
           "rect": [
-            60.0149,
-            176.9727,
-            516.3122,
+            39.9854,
+            57.685,
+            529.2074,
             314.666
           ],
           "parts": [
             [
-              60.0149,
-              176.9727,
-              516.3122,
+              39.9854,
+              57.685,
+              529.2074,
               314.666
             ]
           ],
@@ -3096,16 +3230,16 @@
           "label": "3. Adım",
           "column": 0,
           "rect": [
-            45.8417,
-            352.83,
-            498.7466,
+            39.8512,
+            48.7,
+            509.0232,
             440.178
           ],
           "parts": [
             [
-              45.8417,
-              352.83,
-              498.7466,
+              39.8512,
+              48.7,
+              509.0232,
               440.178
             ]
           ],
@@ -3118,7 +3252,7 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          61.6106,
+          50.6502,
           528.756
         ]
       ],
@@ -3170,7 +3304,7 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          47.9042,
+          36.1097,
           528.756
         ]
       ],
@@ -3212,16 +3346,16 @@
           "label": "2. Adım",
           "column": 0,
           "rect": [
-            55.8,
-            442.8,
-            518.196,
+            48.5535,
+            48.6929,
+            519.1182,
             638.0302
           ],
           "parts": [
             [
-              55.8,
-              442.8,
-              518.196,
+              48.5535,
+              48.6929,
+              519.1182,
               638.0302
             ]
           ],
@@ -3245,16 +3379,16 @@
           "column": 0,
           "rect": [
             55.4842,
-            582.9821,
+            579.8,
             518.8522,
-            685.7468
+            694.7
           ],
           "parts": [
             [
               55.4842,
-              582.9821,
+              579.8,
               518.8522,
-              685.7468
+              694.7
             ]
           ],
           "headline": "Nihilizm ile diğer düşünce akımları arasındaki farkı açıklayınız."
@@ -3265,16 +3399,16 @@
           "column": 0,
           "rect": [
             55.4842,
-            484.1738,
+            481.4,
             518.8522,
-            579.9821
+            576.8
           ],
           "parts": [
             [
               55.4842,
-              484.1738,
+              481.4,
               518.8522,
-              579.9821
+              576.8
             ]
           ],
           "headline": "Diğer düşünce akımlarının realizmin bir yansıması olduğu söylenebilir mi ? Gerekçelendire­ rek açıklayınız."
@@ -3285,16 +3419,16 @@
           "column": 0,
           "rect": [
             55.4842,
-            386.0781,
+            383.0,
             518.8522,
-            481.1738
+            478.4
           ],
           "parts": [
             [
               55.4842,
-              386.0781,
+              383.0,
               518.8522,
-              481.1738
+              478.4
             ]
           ],
           "headline": "İdealizm ile materyalizm arasındaki farkı açıklayınız."
@@ -3305,16 +3439,16 @@
           "column": 0,
           "rect": [
             55.4842,
-            138.6,
+            68.3,
             518.8522,
-            383.0781
+            380.0
           ],
           "parts": [
             [
               55.4842,
-              138.6,
+              68.3,
               518.8522,
-              383.0781
+              380.0
             ]
           ],
           "headline": "Sizce bu düşünce akımlarından hangileri arasında ortak noktalar bulunmaktadır ? Gerekçelendirerek açıklayınız."
@@ -3786,7 +3920,7 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          57.1733,
+          50.8757,
           528.756
         ]
       ],
@@ -3836,14 +3970,14 @@
           "label": "c",
           "column": 0,
           "rect": [
-            55.1733,
+            57.1863,
             306.2351,
             294.7501,
             316.4351
           ],
           "parts": [
             [
-              55.1733,
+              57.1863,
               306.2351,
               294.7501,
               316.4351
@@ -3856,14 +3990,14 @@
           "label": "ç",
           "column": 0,
           "rect": [
-            55.1733,
+            57.1863,
             293.0351,
             214.3621,
             303.2351
           ],
           "parts": [
             [
-              55.1733,
+              57.1863,
               293.0351,
               214.3621,
               303.2351
@@ -3916,14 +4050,14 @@
           "label": "f",
           "column": 0,
           "rect": [
-            55.1733,
+            57.6263,
             253.4351,
             465.8991,
             263.6351
           ],
           "parts": [
             [
-              55.1733,
+              57.6263,
               253.4351,
               465.8991,
               263.6351
@@ -3996,14 +4130,14 @@
           "label": "ı",
           "column": 0,
           "rect": [
-            55.1733,
+            58.0663,
             200.6351,
             423.6702,
             210.8351
           ],
           "parts": [
             [
-              55.1733,
+              58.0663,
               200.6351,
               423.6702,
               210.8351
@@ -4016,14 +4150,14 @@
           "label": "i",
           "column": 0,
           "rect": [
-            55.1733,
+            58.0663,
             187.4351,
             372.8611,
             197.6351
           ],
           "parts": [
             [
-              55.1733,
+              58.0663,
               187.4351,
               372.8611,
               197.6351
@@ -4036,14 +4170,14 @@
           "label": "j",
           "column": 0,
           "rect": [
-            55.1733,
+            58.0663,
             174.2351,
             499.1731,
             184.4351
           ],
           "parts": [
             [
-              55.1733,
+              58.0663,
               174.2351,
               499.1731,
               184.4351
@@ -4057,14 +4191,14 @@
           "column": 0,
           "rect": [
             55.1733,
-            161.0351,
+            151.4306,
             172.2431,
             171.2351
           ],
           "parts": [
             [
               55.1733,
-              161.0351,
+              151.4306,
               172.2431,
               171.2351
             ]
@@ -4076,17 +4210,17 @@
           "label": "l",
           "column": 0,
           "rect": [
-            48.9,
-            49.2,
-            517.2,
-            158.0351
+            48.6654,
+            49.1929,
+            517.4609,
+            129.1989
           ],
           "parts": [
             [
-              48.9,
-              49.2,
-              517.2,
-              158.0351
+              48.6654,
+              49.1929,
+              517.4609,
+              129.1989
             ]
           ],
           "headline": "Yarın yağmur yağacak gibi hissediyorum."
@@ -4098,7 +4232,7 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          36.4506,
+          36.448,
           528.756
         ]
       ],
@@ -4130,7 +4264,7 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          50.7288,
+          50.4208,
           528.756
         ]
       ],
@@ -4160,16 +4294,16 @@
           "label": "3",
           "column": 0,
           "rect": [
-            48.7288,
-            433.1,
-            518.0392,
+            48.6933,
+            49.1929,
+            518.5218,
             505.1962
           ],
           "parts": [
             [
-              48.7288,
-              433.1,
-              518.0392,
+              48.6933,
+              49.1929,
+              518.5218,
               505.1962
             ]
           ],
@@ -4254,7 +4388,7 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          61.2908,
+          50.7251,
           528.756
         ]
       ],
@@ -4642,7 +4776,7 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          36.5197,
+          36.0197,
           528.756
         ]
       ],
@@ -4846,7 +4980,7 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          48.1698,
+          36.4769,
           528.756
         ]
       ],
@@ -4878,7 +5012,7 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          62.4698,
+          50.6929,
           528.756
         ]
       ],
@@ -4941,14 +5075,14 @@
           "column": 0,
           "rect": [
             46.2126,
-            394.0,
+            317.1,
             506.5806,
             632.9319
           ],
           "parts": [
             [
               46.2126,
-              394.0,
+              317.1,
               506.5806,
               632.9319
             ]
@@ -4961,14 +5095,14 @@
           "column": 0,
           "rect": [
             46.2126,
-            252.0439,
+            66.368,
             504.0631,
             312.8035
           ],
           "parts": [
             [
               46.2126,
-              252.0439,
+              66.368,
               504.0631,
               312.8035
             ]
@@ -4993,16 +5127,16 @@
           "column": 0,
           "rect": [
             43.4232,
-            202.6182,
+            200.4,
             506.7912,
-            236.7664
+            245.1
           ],
           "parts": [
             [
               43.4232,
-              202.6182,
+              200.4,
               506.7912,
-              236.7664
+              245.1
             ]
           ],
           "headline": "Tasavvuf anlayışında ahlakın özü nedir ?"
@@ -5013,16 +5147,16 @@
           "column": 0,
           "rect": [
             43.4232,
-            159.7919,
+            156.8087,
             506.7912,
-            199.6182
+            197.4
           ],
           "parts": [
             [
               43.4232,
-              159.7919,
+              156.8087,
               506.7912,
-              199.6182
+              197.4
             ]
           ],
           "headline": "Türk mutasavvuflarının görüşlerinden yararlanarak farklı kültürlerde ahlaki olarak kabul edilen davranışlara örnekler veriniz."
@@ -5035,14 +5169,14 @@
             43.4232,
             68.4,
             506.7912,
-            156.7919
+            153.8087
           ],
           "parts": [
             [
               43.4232,
               68.4,
               506.7912,
-              156.7919
+              153.8087
             ]
           ],
           "headline": "Türk mutasavvuflarının benimsediği değerler tüm insanlık için geçerli olabilir mi ? Farklı toplumlardan bir örnek vererek açıklayınız."
@@ -5054,7 +5188,7 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          50.0559,
+          49.9379,
           528.756
         ]
       ],
@@ -5065,14 +5199,14 @@
           "column": 0,
           "rect": [
             48.056,
-            404.6072,
+            406.9,
             517.4676,
             468.7033
           ],
           "parts": [
             [
               48.056,
-              404.6072,
+              406.9,
               517.4676,
               468.7033
             ]
@@ -5087,14 +5221,14 @@
             48.0559,
             53.3,
             518.282,
-            401.6072
+            405.4
           ],
           "parts": [
             [
               48.0559,
               53.3,
               518.282,
-              401.6072
+              405.4
             ]
           ],
           "headline": "Şiirde insanın üzerindeki sorumluluk nasıl ifade edilmektedir ?"
@@ -5106,7 +5240,7 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          63.1523,
+          51.4594,
           528.756
         ]
       ],
@@ -5116,15 +5250,15 @@
           "label": "1. Adım",
           "column": 0,
           "rect": [
-            61.1523,
-            418.3,
+            61.152,
+            48.9,
             521.5964,
             662.889
           ],
           "parts": [
             [
-              61.1523,
-              418.3,
+              61.152,
+              48.9,
               521.5964,
               662.889
             ]
@@ -5210,7 +5344,7 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          62.3858,
+          49.5411,
           528.756
         ]
       ],
@@ -5280,14 +5414,14 @@
           "label": "3. Adım",
           "column": 0,
           "rect": [
-            48.437,
+            47.5411,
             56.692,
             520.7859,
             546.2184
           ],
           "parts": [
             [
-              48.437,
+              47.5411,
               56.692,
               520.7859,
               546.2184
@@ -5598,14 +5732,14 @@
           "rect": [
             49.3878,
             283.3424,
-            514.2369,
+            319.0623,
             430.6056
           ],
           "parts": [
             [
               49.3878,
               283.3424,
-              514.2369,
+              319.0623,
               430.6056
             ]
           ],
@@ -5618,14 +5752,14 @@
           "rect": [
             49.3879,
             65.1722,
-            516.4779,
+            336.6397,
             277.1022
           ],
           "parts": [
             [
               49.3879,
               65.1722,
-              516.4779,
+              336.6397,
               277.1022
             ]
           ],
@@ -5649,18 +5783,19 @@
           "column": 0,
           "rect": [
             34.5197,
-            192.4427,
-            62.8287,
-            215.0818
+            193.1027,
+            422.5797,
+            216.5118
           ],
           "parts": [
             [
               34.5197,
-              192.4427,
-              62.8287,
-              215.0818
+              193.1027,
+              422.5797,
+              216.5118
             ]
-          ]
+          ],
+          "headline": "Verilen sanat eserlerinin kültürel nitelik taşıdığı söylenebilir mi ? Açıklayınız."
         },
         {
           "id": "p135-2",
@@ -5668,18 +5803,19 @@
           "column": 0,
           "rect": [
             34.5197,
-            166.8035,
-            63.4007,
-            189.4427
+            166.6935,
+            458.9552,
+            190.1027
           ],
           "parts": [
             [
               34.5197,
-              166.8035,
-              63.4007,
-              189.4427
+              166.6935,
+              458.9552,
+              190.1027
             ]
-          ]
+          ],
+          "headline": "Bu sanat eserlerinin estetik değeri ile sanatsal değeri arasında nasıl bir fark vardır ?"
         }
       ]
     },
@@ -5688,7 +5824,7 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          47.3782,
+          36.7791,
           528.756
         ]
       ],
@@ -5699,17 +5835,59 @@
           "column": 0,
           "rect": [
             45.3782,
-            653.8144,
-            107.6662,
+            48.2,
+            503.1062,
             683.2234
           ],
           "parts": [
             [
               45.3782,
-              653.8144,
-              107.6662,
+              48.2,
+              503.1062,
               683.2234
             ]
+          ],
+          "headline": "Aşağıdaki kolajı inceleyerek soruları tartışınız ve estetik ile sanat felsefesine ilişkin",
+          "items": [
+            {
+              "id": "p137-1. Adım-1",
+              "label": "1",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                109.6819,
+                563.733,
+                496.7012,
+                647.4944
+              ],
+              "text": "1 4 8 9 16 10 11"
+            },
+            {
+              "id": "p137-1. Adım-2",
+              "label": "2",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                102.058,
+                463.9731,
+                497.6556,
+                564.0064
+              ],
+              "text": "2 5 6 17 12 13"
+            },
+            {
+              "id": "p137-1. Adım-3",
+              "label": "3",
+              "number": 3,
+              "partIndex": 0,
+              "rect": [
+                49.3782,
+                52.2,
+                501.6927,
+                466.0421
+              ],
+              "text": "3 7 14 15 Çiçekli bitkiler arasında iki kuşu tasvir eden tabak, Metropolitan Sanat Müzesi, New York Johann Joachim Winc­ 1- 2- kelmann (Yohen Yohakim Vinkhelman) Sami Okyay’ın gelincik ebrusu, M. Uğur"
+            }
           ]
         }
       ]
@@ -5771,7 +5949,7 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          62.4712,
+          50.2468,
           528.756
         ]
       ],
@@ -5803,7 +5981,7 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          48.2126,
+          37.3503,
           528.756
         ]
       ],
@@ -5906,14 +6084,14 @@
           "column": 0,
           "rect": [
             53.2284,
-            639.4,
+            637.9,
             503.8,
             714.4921
           ],
           "parts": [
             [
               53.2284,
-              639.4,
+              637.9,
               503.8,
               714.4921
             ]
@@ -5926,16 +6104,16 @@
           "column": 0,
           "rect": [
             53.2284,
-            555.1,
+            553.6,
             503.8,
-            636.4
+            637.9
           ],
           "parts": [
             [
               53.2284,
-              555.1,
+              553.6,
               503.8,
-              636.4
+              637.9
             ]
           ],
           "headline": "Arkadaşlarınızın tamamının sizinle aynı resimleri güzel bulması mümkün müdür ? Gerekçelendirerek açıklayınız."
@@ -5945,17 +6123,17 @@
           "label": "2. Adım",
           "column": 0,
           "rect": [
-            53.2284,
-            302.1,
+            276.4,
+            298.1,
             503.8,
-            552.1
+            553.6
           ],
           "parts": [
             [
-              53.2284,
-              302.1,
+              276.4,
+              298.1,
               503.8,
-              552.1
+              553.6
             ]
           ],
           "headline": "Öğretmeninizin rehberliğinde 4-6 kişilik gruplara ayrılınız. Güzelliğin öznel mi nesnel"
@@ -5965,17 +6143,17 @@
           "label": "3. Adım",
           "column": 0,
           "rect": [
-            53.2284,
+            276.4,
             67.7,
             503.8,
-            299.1
+            295.1
           ],
           "parts": [
             [
-              53.2284,
+              276.4,
               67.7,
               503.8,
-              299.1
+              295.1
             ]
           ],
           "headline": "Güzellik algısının evrensel olup olamayacağı hakkındaki görüşlerinizi örneklerle açık­"
@@ -5987,7 +6165,7 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          50.6929,
+          49.9474,
           528.756
         ]
       ],
@@ -6143,14 +6321,14 @@
           "rect": [
             34.631,
             262.0,
-            503.9,
+            504.1176,
             470.9055
           ],
           "parts": [
             [
               34.631,
               262.0,
-              503.9,
+              504.1176,
               470.9055
             ]
           ],
@@ -6335,7 +6513,7 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          51.136,
+          50.886,
           528.756
         ]
       ],
@@ -6479,7 +6657,7 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          62.6707,
+          50.486,
           528.756
         ]
       ],
@@ -6511,7 +6689,7 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          48.2126,
+          47.7374,
           528.756
         ]
       ],
@@ -6543,7 +6721,7 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          62.3858,
+          61.202,
           528.756
         ]
       ],
@@ -6775,7 +6953,7 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          55.5133,
+          36.5197,
           528.756
         ]
       ],
@@ -6785,17 +6963,17 @@
           "label": "1. Adım",
           "column": 0,
           "rect": [
-            41.7,
-            52.1,
-            495.1178,
-            236.8
+            15.468,
+            44.679,
+            515.508,
+            304.599
           ],
           "parts": [
             [
-              41.7,
-              52.1,
-              495.1178,
-              236.8
+              15.468,
+              44.679,
+              515.508,
+              304.599
             ]
           ],
           "headline": "Durum kartlarından yararlanarak soruları cevaplayınız."
@@ -6818,16 +6996,16 @@
           "column": 0,
           "rect": [
             55.4705,
-            370.5353,
+            368.4,
             518.8385,
-            404.8751
+            413.0
           ],
           "parts": [
             [
               55.4705,
-              370.5353,
+              368.4,
               518.8385,
-              404.8751
+              413.0
             ]
           ],
           "headline": "Aşağıdaki ifadeleri tamamlayarak sınıf arkadaşlarınızla paylaşınız."
@@ -6838,16 +7016,16 @@
           "column": 0,
           "rect": [
             55.4705,
-            300.3853,
+            298.1,
             518.8385,
-            367.5353
+            365.4
           ],
           "parts": [
             [
               55.4705,
-              300.3853,
+              298.1,
               518.8385,
-              367.5353
+              365.4
             ]
           ],
           "headline": "İnsanlar, bir arada yaşarken bir üst otoriteye ihtiyaç duyarlar çünkü..."
@@ -6858,16 +7036,16 @@
           "column": 0,
           "rect": [
             55.4705,
-            230.2352,
+            227.8,
             518.8385,
-            297.3853
+            295.1
           ],
           "parts": [
             [
               55.4705,
-              230.2352,
+              227.8,
               518.8385,
-              297.3853
+              295.1
             ]
           ],
           "headline": "Devletin temel varlık nedeni sadece yasaklar koymak değil aynı zamanda..."
@@ -6878,16 +7056,16 @@
           "column": 0,
           "rect": [
             55.4705,
-            146.0852,
+            143.5,
             518.8385,
-            227.2352
+            224.8
           ],
           "parts": [
             [
               55.4705,
-              146.0852,
+              143.5,
               518.8385,
-              227.2352
+              224.8
             ]
           ],
           "headline": "Bir iktidarın aldığı kararların toplum tarafından kabul görmesi (meşruiyet) için zorunlu­ dur çünkü..."
@@ -6900,14 +7078,14 @@
             55.4705,
             67.7,
             518.8385,
-            143.0852
+            140.5
           ],
           "parts": [
             [
               55.4705,
               67.7,
               518.8385,
-              143.0852
+              140.5
             ]
           ],
           "headline": "Eğer bir toplumda devlet mekanizması tamamen ortadan kalksaydı..."
@@ -6919,7 +7097,11 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          67.3465,
+          43.8659,
+          265.1495
+        ],
+        [
+          269.1495,
           528.756
         ]
       ],
@@ -6930,14 +7112,14 @@
           "column": 0,
           "rect": [
             40.4153,
-            643.4,
+            227.3,
             505.0329,
             711.0223
           ],
           "parts": [
             [
               40.4153,
-              643.4,
+              227.3,
               505.0329,
               711.0223
             ]
@@ -6951,7 +7133,7 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          68.0197,
+          67.6988,
           528.756
         ]
       ],
@@ -6983,7 +7165,7 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          61.8858,
+          50.6929,
           528.756
         ]
       ],
@@ -7107,7 +7289,7 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          62.3858,
+          50.6929,
           528.756
         ]
       ],
@@ -7139,7 +7321,7 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          48.2126,
+          36.3684,
           528.756
         ]
       ],
@@ -7498,18 +7680,19 @@
           "column": 0,
           "rect": [
             34.5197,
-            111.3351,
-            62.8287,
-            133.9742
+            111.9951,
+            316.3835,
+            135.4042
           ],
           "parts": [
             [
               34.5197,
-              111.3351,
-              62.8287,
-              133.9742
+              111.9951,
+              316.3835,
+              135.4042
             ]
-          ]
+          ],
+          "headline": "Görseller, size dinle ilgili hangi kavramları çağrıştırdı ?"
         },
         {
           "id": "p171-2",
@@ -7517,18 +7700,19 @@
           "column": 0,
           "rect": [
             34.5197,
-            92.4658,
-            63.4007,
-            108.3351
+            93.1258,
+            363.584,
+            108.9951
           ],
           "parts": [
             [
               34.5197,
-              92.4658,
-              63.4007,
-              108.3351
+              93.1258,
+              363.584,
+              108.9951
             ]
-          ]
+          ],
+          "headline": "Verilen görseller, size dinin konusu hakkında neler düşündürdü ?"
         },
         {
           "id": "p171-3",
@@ -7536,18 +7720,19 @@
           "column": 0,
           "rect": [
             34.5197,
-            73.5965,
-            63.4007,
-            89.4658
+            74.2565,
+            372.7908,
+            90.1258
           ],
           "parts": [
             [
               34.5197,
-              73.5965,
-              63.4007,
-              89.4658
+              74.2565,
+              372.7908,
+              90.1258
             ]
-          ]
+          ],
+          "headline": "Görsellerde yer alan dinlerde benzer olan unsurlar neler olabilir ?"
         },
         {
           "id": "p171-4",
@@ -7555,18 +7740,19 @@
           "column": 0,
           "rect": [
             34.5197,
-            47.9573,
-            63.4007,
-            70.5965
+            47.8474,
+            276.762,
+            71.2565
           ],
           "parts": [
             [
               34.5197,
-              47.9573,
-              63.4007,
-              70.5965
+              47.8474,
+              276.762,
+              71.2565
             ]
-          ]
+          ],
+          "headline": "Felsefe ve din arasında nasıl bir ilişki olabilir ?"
         }
       ]
     },
@@ -7575,7 +7761,7 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          61.1857,
+          50.7349,
           528.756
         ]
       ],
@@ -7644,46 +7830,10 @@
         ],
         [
           158.5663,
-          177.5844
+          216.7807
         ],
         [
-          181.5844,
-          199.9206
-        ],
-        [
-          203.9206,
-          222.9387
-        ],
-        [
-          226.9387,
-          245.2749
-        ],
-        [
-          249.2749,
-          267.9521
-        ],
-        [
-          271.9521,
-          290.9702
-        ],
-        [
-          294.9702,
-          313.3064
-        ],
-        [
-          317.3064,
-          336.5556
-        ],
-        [
-          340.5556,
-          359.0017
-        ],
-        [
-          363.0017,
-          381.9209
-        ],
-        [
-          385.9209,
+          220.7807,
           528.756
         ]
       ],
@@ -7693,14 +7843,14 @@
           "label": "1",
           "column": 0,
           "rect": [
-            48.6929,
+            55.2489,
             659.9818,
             378.054,
             682.6759
           ],
           "parts": [
             [
-              48.6929,
+              55.2489,
               659.9818,
               378.054,
               682.6759
@@ -7713,14 +7863,14 @@
           "label": "2",
           "column": 0,
           "rect": [
-            48.6929,
+            54.8089,
             627.9125,
             492.8746,
             656.9818
           ],
           "parts": [
             [
-              48.6929,
+              54.8089,
               627.9125,
               492.8746,
               656.9818
@@ -7733,34 +7883,34 @@
           "label": "3",
           "column": 0,
           "rect": [
-            48.6929,
+            54.9189,
             609.0433,
             307.698,
             624.9125
           ],
           "parts": [
             [
-              48.6929,
+              54.9189,
               609.0433,
               307.698,
               624.9125
             ]
           ],
-          "headline": "3. İnsanların dinî yükümlülüklerini yerine getirmesi."
+          "headline": "İnsanların dinî yükümlülüklerini yerine getirmesi."
         },
         {
           "id": "p174-4",
           "label": "4",
           "column": 0,
           "rect": [
-            48.6929,
+            54.8089,
             590.174,
             365.6019,
             606.0433
           ],
           "parts": [
             [
-              48.6929,
+              54.8089,
               590.174,
               365.6019,
               606.0433
@@ -7773,14 +7923,14 @@
           "label": "5",
           "column": 0,
           "rect": [
-            48.6929,
+            54.6989,
             571.3047,
             425.871,
             587.174
           ],
           "parts": [
             [
-              48.6929,
+              54.6989,
               571.3047,
               425.871,
               587.174
@@ -7793,998 +7943,100 @@
           "label": "6",
           "column": 0,
           "rect": [
-            48.6929,
+            54.9189,
             552.4353,
             258.1419,
             568.3047
           ],
           "parts": [
             [
-              48.6929,
+              54.9189,
               552.4353,
               258.1419,
               568.3047
             ]
           ],
-          "headline": "6. Dinî konuları ele alan felsefe disiplini."
+          "headline": "Dinî konuları ele alan felsefe disiplini."
         },
         {
           "id": "p174-7",
           "label": "7",
           "column": 0,
           "rect": [
-            48.6929,
+            56.4589,
             533.566,
             395.3647,
             549.4353
           ],
           "parts": [
             [
-              48.6929,
+              56.4589,
               533.566,
               395.3647,
               549.4353
             ]
           ],
-          "headline": "7. Dinî konuları belli bir dinin bilgileri ışığında değerlendiren disiplin."
+          "headline": "Dinî konuları belli bir dinin bilgileri ışığında değerlendiren disiplin."
         },
         {
           "id": "p174-8",
           "label": "8",
           "column": 0,
           "rect": [
-            48.6929,
-            507.8719,
-            108.7734,
+            54.6989,
+            501.4968,
+            516.2821,
             530.566
           ],
           "parts": [
             [
-              48.6929,
-              507.8719,
-              108.7734,
+              54.6989,
+              501.4968,
+              516.2821,
               530.566
             ]
           ],
-          "headline": "Tanrı ’"
+          "headline": "Tanrı ’ ya, doğaüstü güçlere, çeşitli kutsal varlıklara inanmayı ve bunlara ibadet etmeyi sistem­ leştiren toplumsal bir kurum."
         },
         {
           "id": "p174-9",
           "label": "9",
           "column": 0,
           "rect": [
+            55.4689,
+            469.4275,
+            505.973,
+            498.4968
+          ],
+          "parts": [
+            [
+              55.4689,
+              469.4275,
+              505.973,
+              498.4968
+            ]
+          ],
+          "headline": "Peygamberlerin kendilerine inanmayan insanlara peygamberliklerini ispat etmek amacıyla Allah'ın iznine bağlı olarak gösterdikleri olağanüstü olaylar, durumlar."
+        },
+        {
+          "id": "p174-10",
+          "label": "10",
+          "column": 0,
+          "rect": [
             48.6929,
-            475.9126,
-            83.7999,
-            505.3216
+            57.8604,
+            496.9803,
+            466.4275
           ],
           "parts": [
             [
               48.6929,
-              475.9126,
-              83.7999,
-              505.3216
+              57.8604,
+              496.9803,
+              466.4275
             ]
           ],
-          "headline": "9."
-        },
-        {
-          "id": "p174-L",
-          "label": "L",
-          "column": 1,
-          "rect": [
-            149.9,
-            365.2,
-            171.975,
-            417.1
-          ],
-          "parts": [
-            [
-              149.9,
-              365.2,
-              171.975,
-              417.1
-            ]
-          ],
-          "headline": "L N"
-        },
-        {
-          "id": "p174-M",
-          "label": "M",
-          "column": 1,
-          "rect": [
-            149.9,
-            163.2276,
-            174.9437,
-            357.45
-          ],
-          "parts": [
-            [
-              149.9,
-              163.2276,
-              174.9437,
-              357.45
-            ]
-          ],
-          "headline": "M H"
-        },
-        {
-          "id": "p174-N",
-          "label": "N",
-          "column": 1,
-          "rect": [
-            149.9,
-            128.9,
-            178.1495,
-            160.2276
-          ],
-          "parts": [
-            [
-              149.9,
-              128.9,
-              167.7523,
-              158.1
-            ],
-            [
-              170.7523,
-              133.1002,
-              178.1495,
-              160.2276
-            ]
-          ],
-          "headline": "N"
-        },
-        {
-          "id": "p174-O",
-          "label": "O",
-          "column": 2,
-          "rect": [
-            182.1,
-            387.9,
-            194.675,
-            439.7
-          ],
-          "parts": [
-            [
-              182.1,
-              387.9,
-              194.675,
-              439.7
-            ]
-          ],
-          "headline": "O Z"
-        },
-        {
-          "id": "p174-U",
-          "label": "U",
-          "column": 2,
-          "rect": [
-            183.2875,
-            303.0045,
-            197.6438,
-            364.575
-          ],
-          "parts": [
-            [
-              183.2875,
-              303.0045,
-              197.6438,
-              364.575
-            ]
-          ],
-          "headline": "U İ"
-        },
-        {
-          "id": "p174-V",
-          "label": "V",
-          "column": 2,
-          "rect": [
-            180.6294,
-            269.1631,
-            190.6895,
-            296.309
-          ],
-          "parts": [
-            [
-              180.6294,
-              269.1631,
-              190.6895,
-              296.309
-            ]
-          ],
-          "headline": "V C"
-        },
-        {
-          "id": "p174-A",
-          "label": "A",
-          "column": 3,
-          "rect": [
-            204.8,
-            410.6,
-            233.9,
-            439.7
-          ],
-          "parts": [
-            [
-              204.8,
-              410.6,
-              233.9,
-              439.7
-            ]
-          ],
-          "headline": "A"
-        },
-        {
-          "id": "p174-N",
-          "label": "N",
-          "column": 3,
-          "rect": [
-            200.05,
-            390.275,
-            233.9,
-            407.6
-          ],
-          "parts": [
-            [
-              200.05,
-              390.275,
-              233.9,
-              407.6
-            ]
-          ],
-          "headline": "N"
-        },
-        {
-          "id": "p174-O",
-          "label": "O",
-          "column": 3,
-          "rect": [
-            210.1438,
-            295.3523,
-            217.7109,
-            372.3625
-          ],
-          "parts": [
-            [
-              210.1438,
-              295.3523,
-              217.7109,
-              372.3625
-            ]
-          ],
-          "headline": "O C"
-        },
-        {
-          "id": "p174-R",
-          "label": "R",
-          "column": 3,
-          "rect": [
-            202.7219,
-            206.5,
-            216.4389,
-            288.5261
-          ],
-          "parts": [
-            [
-              202.7219,
-              206.5,
-              216.4389,
-              288.5261
-            ]
-          ],
-          "headline": "R J"
-        },
-        {
-          "id": "p174-T",
-          "label": "T",
-          "column": 3,
-          "rect": [
-            199.0109,
-            128.9,
-            219.1986,
-            203.5
-          ],
-          "parts": [
-            [
-              199.0109,
-              128.9,
-              219.1986,
-              203.5
-            ]
-          ],
-          "headline": "T G"
-        },
-        {
-          "id": "p174-Ü",
-          "label": "Ü",
-          "column": 4,
-          "rect": [
-            220.7109,
-            342.5,
-            240.5889,
-            387.275
-          ],
-          "parts": [
-            [
-              220.7109,
-              342.5,
-              240.5889,
-              387.275
-            ]
-          ],
-          "headline": "Ü İ"
-        },
-        {
-          "id": "p174-A",
-          "label": "A",
-          "column": 4,
-          "rect": [
-            217.9,
-            299.1131,
-            250.0889,
-            339.5
-          ],
-          "parts": [
-            [
-              217.9,
-              299.1131,
-              250.0889,
-              339.5
-            ]
-          ],
-          "headline": "A P"
-        },
-        {
-          "id": "p174-D",
-          "label": "D",
-          "column": 4,
-          "rect": [
-            224.0555,
-            274.5,
-            253.3444,
-            296.1131
-          ],
-          "parts": [
-            [
-              224.0555,
-              274.5,
-              253.3444,
-              296.1131
-            ]
-          ],
-          "headline": "D"
-        },
-        {
-          "id": "p174-İ",
-          "label": "İ",
-          "column": 4,
-          "rect": [
-            220.9777,
-            251.8,
-            254.9722,
-            271.5
-          ],
-          "parts": [
-            [
-              220.9777,
-              251.8,
-              254.9722,
-              271.5
-            ]
-          ],
-          "headline": "İ"
-        },
-        {
-          "id": "p174-N",
-          "label": "N",
-          "column": 4,
-          "rect": [
-            226.4972,
-            166.9138,
-            256.6,
-            248.8
-          ],
-          "parts": [
-            [
-              226.4972,
-              166.9138,
-              256.6,
-              248.8
-            ]
-          ],
-          "headline": "N V"
-        },
-        {
-          "id": "p174-P",
-          "label": "P",
-          "column": 4,
-          "rect": [
-            226.6437,
-            128.9,
-            247.1,
-            160.2276
-          ],
-          "parts": [
-            [
-              238.7837,
-              128.9,
-              247.1,
-              158.1
-            ],
-            [
-              226.6437,
-              133.1002,
-              235.7837,
-              160.2276
-            ]
-          ],
-          "headline": "P"
-        },
-        {
-          "id": "p174-A",
-          "label": "A",
-          "column": 5,
-          "rect": [
-            240.6,
-            410.6,
-            263.7308,
-            439.7
-          ],
-          "parts": [
-            [
-              240.6,
-              410.6,
-              263.7308,
-              439.7
-            ]
-          ],
-          "headline": "A"
-        },
-        {
-          "id": "p174-İ",
-          "label": "İ",
-          "column": 5,
-          "rect": [
-            243.5889,
-            387.9,
-            268.4808,
-            407.6
-          ],
-          "parts": [
-            [
-              243.5889,
-              387.9,
-              268.4808,
-              407.6
-            ]
-          ],
-          "headline": "İ"
-        },
-        {
-          "id": "p174-M",
-          "label": "M",
-          "column": 5,
-          "rect": [
-            258.7861,
-            342.5,
-            272.3731,
-            384.9
-          ],
-          "parts": [
-            [
-              258.7861,
-              342.5,
-              272.3731,
-              384.9
-            ]
-          ],
-          "headline": "M Z"
-        },
-        {
-          "id": "p174-N",
-          "label": "N",
-          "column": 5,
-          "rect": [
-            258.3792,
-            206.5,
-            264.6707,
-            339.5
-          ],
-          "parts": [
-            [
-              258.3792,
-              206.5,
-              264.6707,
-              339.5
-            ]
-          ],
-          "headline": "N Y"
-        },
-        {
-          "id": "p174-O",
-          "label": "O",
-          "column": 5,
-          "rect": [
-            258.1757,
-            183.8,
-            271.9853,
-            203.5
-          ],
-          "parts": [
-            [
-              258.1757,
-              183.8,
-              271.9853,
-              203.5
-            ]
-          ],
-          "headline": "O"
-        },
-        {
-          "id": "p174-Ş",
-          "label": "Ş",
-          "column": 5,
-          "rect": [
-            258.074,
-            159.2569,
-            275.6427,
-            180.8
-          ],
-          "parts": [
-            [
-              258.074,
-              159.2569,
-              275.6427,
-              180.8
-            ]
-          ],
-          "headline": "Ş"
-        },
-        {
-          "id": "p174-U",
-          "label": "U",
-          "column": 5,
-          "rect": [
-            250.1,
-            128.9,
-            277.4713,
-            156.2569
-          ],
-          "parts": [
-            [
-              250.1,
-              128.9,
-              277.4713,
-              156.2569
-            ]
-          ],
-          "headline": "U"
-        },
-        {
-          "id": "p174-B",
-          "label": "B",
-          "column": 6,
-          "rect": [
-            281.0272,
-            201.1317,
-            289.8135,
-            439.7
-          ],
-          "parts": [
-            [
-              281.0272,
-              201.1317,
-              289.8135,
-              439.7
-            ]
-          ],
-          "headline": "B L"
-        },
-        {
-          "id": "p174-G",
-          "label": "G",
-          "column": 7,
-          "rect": [
-            303.4864,
-            387.9,
-            312.5932,
-            417.1
-          ],
-          "parts": [
-            [
-              303.4864,
-              387.9,
-              312.5932,
-              417.1
-            ]
-          ],
-          "headline": "G"
-        },
-        {
-          "id": "p174-İ",
-          "label": "İ",
-          "column": 7,
-          "rect": [
-            302.7296,
-            369.95,
-            318.6466,
-            384.9
-          ],
-          "parts": [
-            [
-              302.7296,
-              369.95,
-              318.6466,
-              384.9
-            ]
-          ],
-          "headline": "İ"
-        },
-        {
-          "id": "p174-N",
-          "label": "N",
-          "column": 7,
-          "rect": [
-            302.3512,
-            342.5,
-            313.6867,
-            362.2
-          ],
-          "parts": [
-            [
-              302.3512,
-              342.5,
-              313.6867,
-              362.2
-            ]
-          ],
-          "headline": "N"
-        },
-        {
-          "id": "p174-A",
-          "label": "A",
-          "column": 7,
-          "rect": [
-            302.162,
-            324.55,
-            318.4367,
-            339.5
-          ],
-          "parts": [
-            [
-              302.162,
-              324.55,
-              318.4367,
-              339.5
-            ]
-          ],
-          "headline": "A"
-        },
-        {
-          "id": "p174-N",
-          "label": "N",
-          "column": 7,
-          "rect": [
-            302.0674,
-            274.5,
-            313.6342,
-            316.8
-          ],
-          "parts": [
-            [
-              302.0674,
-              274.5,
-              313.6342,
-              316.8
-            ]
-          ],
-          "headline": "N Ç"
-        },
-        {
-          "id": "p174-T",
-          "label": "T",
-          "column": 7,
-          "rect": [
-            302.0201,
-            229.1,
-            319.1671,
-            271.5
-          ],
-          "parts": [
-            [
-              302.0201,
-              229.1,
-              319.1671,
-              271.5
-            ]
-          ],
-          "headline": "T Ş"
-        },
-        {
-          "id": "p174-A",
-          "label": "A",
-          "column": 7,
-          "rect": [
-            301.9965,
-            183.8,
-            313.8168,
-            226.1
-          ],
-          "parts": [
-            [
-              301.9965,
-              183.8,
-              313.8168,
-              226.1
-            ]
-          ],
-          "headline": "A O"
-        },
-        {
-          "id": "p174-B",
-          "label": "B",
-          "column": 7,
-          "rect": [
-            301.9847,
-            128.9,
-            317.1298,
-            180.8
-          ],
-          "parts": [
-            [
-              301.9847,
-              128.9,
-              317.1298,
-              180.8
-            ]
-          ],
-          "headline": "B L"
-        },
-        {
-          "id": "p174-J",
-          "label": "J",
-          "column": 8,
-          "rect": [
-            320.1298,
-            178.4545,
-            327.0942,
-            207.7095
-          ],
-          "parts": [
-            [
-              320.1298,
-              178.4545,
-              327.0942,
-              207.7095
-            ]
-          ],
-          "headline": "J J"
-        },
-        {
-          "id": "p174-K",
-          "label": "K",
-          "column": 9,
-          "rect": [
-            348.7929,
-            387.9,
-            357.8965,
-            439.7
-          ],
-          "parts": [
-            [
-              348.7929,
-              387.9,
-              357.8965,
-              439.7
-            ]
-          ],
-          "headline": "K Ğ"
-        },
-        {
-          "id": "p174-R",
-          "label": "R",
-          "column": 9,
-          "rect": [
-            348.0394,
-            365.2,
-            363.9482,
-            384.9
-          ],
-          "parts": [
-            [
-              348.0394,
-              365.2,
-              363.9482,
-              384.9
-            ]
-          ],
-          "headline": "R"
-        },
-        {
-          "id": "p174-V",
-          "label": "V",
-          "column": 9,
-          "rect": [
-            347.6626,
-            342.5,
-            366.9741,
-            362.2
-          ],
-          "parts": [
-            [
-              347.6626,
-              342.5,
-              366.9741,
-              362.2
-            ]
-          ],
-          "headline": "V"
-        },
-        {
-          "id": "p174-A",
-          "label": "A",
-          "column": 9,
-          "rect": [
-            347.4742,
-            319.8,
-            368.4871,
-            339.5
-          ],
-          "parts": [
-            [
-              347.4742,
-              319.8,
-              368.4871,
-              339.5
-            ]
-          ],
-          "headline": "A"
-        },
-        {
-          "id": "p174-H",
-          "label": "H",
-          "column": 9,
-          "rect": [
-            347.38,
-            301.95,
-            370.0,
-            316.8
-          ],
-          "parts": [
-            [
-              347.38,
-              301.95,
-              370.0,
-              316.8
-            ]
-          ],
-          "headline": "H"
-        },
-        {
-          "id": "p174-İ",
-          "label": "İ",
-          "column": 9,
-          "rect": [
-            347.3329,
-            183.8,
-            353.375,
-            294.2
-          ],
-          "parts": [
-            [
-              347.3329,
-              183.8,
-              353.375,
-              294.2
-            ]
-          ],
-          "headline": "İ Y"
-        },
-        {
-          "id": "p174-K",
-          "label": "K",
-          "column": 9,
-          "rect": [
-            347.3094,
-            128.9,
-            360.5,
-            180.8
-          ],
-          "parts": [
-            [
-              347.3094,
-              128.9,
-              360.5,
-              180.8
-            ]
-          ],
-          "headline": "K S"
-        },
-        {
-          "id": "p174-O",
-          "label": "O",
-          "column": 10,
-          "rect": [
-            363.5,
-            274.5,
-            380.5935,
-            298.95
-          ],
-          "parts": [
-            [
-              363.5,
-              274.5,
-              380.5935,
-              298.95
-            ]
-          ],
-          "headline": "O"
-        },
-        {
-          "id": "p174-Ö",
-          "label": "Ö",
-          "column": 10,
-          "rect": [
-            358.75,
-            229.1,
-            386.6468,
-            271.5
-          ],
-          "parts": [
-            [
-              358.75,
-              229.1,
-              386.6468,
-              271.5
-            ]
-          ],
-          "headline": "Ö H"
-        },
-        {
-          "id": "p174-T",
-          "label": "T",
-          "column": 10,
-          "rect": [
-            356.375,
-            206.5,
-            389.6734,
-            226.1
-          ],
-          "parts": [
-            [
-              356.375,
-              206.5,
-              389.6734,
-              226.1
-            ]
-          ],
-          "headline": "T"
-        },
-        {
-          "id": "p174-V",
-          "label": "V",
-          "column": 10,
-          "rect": [
-            363.5,
-            128.9,
-            469.0,
-            439.7
-          ],
-          "parts": [
-            [
-              363.5,
-              128.9,
-              391.1867,
-              203.5
-            ],
-            [
-              394.9433,
-              128.9,
-              469.0,
-              439.7
-            ]
-          ],
-          "headline": "E S"
+          "headline": "Güçlü bir dinî saygı uyandıran veya uyandırması gereken, mukaddes."
         }
       ]
     },
@@ -8793,7 +8045,7 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          54.528,
+          55.9454,
           528.756
         ]
       ],
@@ -8804,36 +8056,77 @@
           "column": 0,
           "rect": [
             53.9454,
-            457.1,
+            455.6,
             506.6242,
             713.6698
           ],
           "parts": [
             [
               53.9454,
-              457.1,
+              455.6,
               506.6242,
               713.6698
             ]
           ],
-          "headline": "Aşağıdaki yapılandırılmış gridde numaralandırılmış kutucuklarda din felsefesi ile"
+          "headline": "Aşağıdaki yapılandırılmış gridde numaralandırılmış kutucuklarda din felsefesi ile",
+          "items": [
+            {
+              "id": "p177-1. Adım-3",
+              "label": "3",
+              "number": 3,
+              "partIndex": 0,
+              "rect": [
+                58.2,
+                586.1992,
+                499.9,
+                630.7582
+              ],
+              "text": "1 2 3 Teizm Deizm Panteizm"
+            },
+            {
+              "id": "p177-1. Adım-6",
+              "label": "6",
+              "number": 6,
+              "partIndex": 0,
+              "rect": [
+                58.2,
+                521.9,
+                499.9,
+                586.1
+              ],
+              "text": "4 5 6 j Ateizm Tanrı Teleolo ik Argüman"
+            },
+            {
+              "id": "p177-1. Adım-9",
+              "label": "9",
+              "number": 9,
+              "partIndex": 0,
+              "rect": [
+                58.2,
+                455.6,
+                499.9,
+                533.955
+              ],
+              "text": "7 8 9 j j Kozmolo ik Argüman Ontolo ik Argüman Kötülük Argümanı"
+            }
+          ]
         },
         {
           "id": "p177-a",
           "label": "a",
           "column": 0,
           "rect": [
-            52.5281,
-            429.0,
+            54.2,
+            427.5,
             503.9,
-            454.1
+            455.6
           ],
           "parts": [
             [
-              52.5281,
-              429.0,
+              54.2,
+              427.5,
               503.9,
-              454.1
+              455.6
             ]
           ],
           "headline": "Tanrı’nın evrene müdahale etmediğini iddia eder."
@@ -8843,17 +8136,17 @@
           "label": "b",
           "column": 0,
           "rect": [
-            52.5281,
-            400.9,
+            54.2,
+            399.4,
             503.9,
-            426.0
+            427.5
           ],
           "parts": [
             [
-              52.5281,
-              400.9,
+              54.2,
+              399.4,
               503.9,
-              426.0
+              427.5
             ]
           ],
           "headline": "Tanrı’nın var olmadığını ispatlamaya yönelik ortaya atılan kanıttır. ( ......................... )"
@@ -8863,17 +8156,17 @@
           "label": "c",
           "column": 0,
           "rect": [
-            52.528,
-            372.8,
+            54.2,
+            371.3,
             503.9,
-            397.9
+            399.4
           ],
           "parts": [
             [
-              52.528,
-              372.8,
+              54.2,
+              371.3,
               503.9,
-              397.9
+              399.4
             ]
           ],
           "headline": "Tanrı’nın var olduğunu ispatlamaya yönelik öne sürülen kanıttır. ( ......................... )"
@@ -8883,17 +8176,17 @@
           "label": "ç",
           "column": 0,
           "rect": [
-            52.528,
-            344.7,
+            54.2,
+            343.2,
             505.89,
-            369.8
+            371.3
           ],
           "parts": [
             [
-              52.528,
-              344.7,
+              54.2,
+              343.2,
               505.89,
-              369.8
+              371.3
             ]
           ],
           "headline": "Tanrı’nın evreni yarattıktan sonra evrene sürekli müdahale ettiğini öne sürer. ( ............. )"
@@ -8903,17 +8196,17 @@
           "label": "d",
           "column": 0,
           "rect": [
-            52.528,
-            316.6,
+            54.2,
+            315.1,
             505.4733,
-            341.7
+            343.2
           ],
           "parts": [
             [
-              52.528,
-              316.6,
+              54.2,
+              315.1,
               505.4733,
-              341.7
+              343.2
             ]
           ],
           "headline": "Evrenin düzenli ve amaçlı yapısının bir tasarımcıyı işaret ettiğini öne sürer. ( ................ )"
@@ -8923,17 +8216,17 @@
           "label": "e",
           "column": 0,
           "rect": [
-            52.528,
-            288.5,
+            54.2,
+            287.0,
             503.9,
-            313.6
+            315.1
           ],
           "parts": [
             [
-              52.528,
-              288.5,
+              54.2,
+              287.0,
               503.9,
-              313.6
+              315.1
             ]
           ],
           "headline": "Tanrı’nın varlığını kabul eder. ( ......................... )"
@@ -8943,17 +8236,17 @@
           "label": "f",
           "column": 0,
           "rect": [
-            52.528,
-            260.4,
+            54.2,
+            258.9,
             503.9,
-            285.5
+            287.0
           ],
           "parts": [
             [
-              52.528,
-              260.4,
+              54.2,
+              258.9,
               503.9,
-              285.5
+              287.0
             ]
           ],
           "headline": "Tanrı’nın varlığının mantıksal olarak zorunlu olduğunu ileri sürer. ( ......................... )"
@@ -8963,17 +8256,17 @@
           "label": "g",
           "column": 0,
           "rect": [
-            52.528,
-            232.3,
+            54.2,
+            230.8,
             506.3194,
-            257.4
+            258.9
           ],
           "parts": [
             [
-              52.528,
-              232.3,
+              54.2,
+              230.8,
               506.3194,
-              257.4
+              258.9
             ]
           ],
           "headline": "Dünyadaki kötülüklerin varlığının Tanrı’nın varlığı ile çeliştiğini savunur. ( .................... )"
@@ -8983,17 +8276,17 @@
           "label": "ğ",
           "column": 0,
           "rect": [
-            52.528,
-            204.2,
+            54.2,
+            202.7,
             503.9,
-            229.3
+            230.8
           ],
           "parts": [
             [
-              52.528,
-              204.2,
+              54.2,
+              202.7,
               503.9,
-              229.3
+              230.8
             ]
           ],
           "headline": "Evrenin varlığı için bir ilk nedenin gerekli olduğunu iddia eder. ( ......................... )"
@@ -9003,17 +8296,17 @@
           "label": "h",
           "column": 0,
           "rect": [
-            52.528,
-            176.0,
+            54.2,
+            174.5,
             503.9,
-            201.2
+            202.7
           ],
           "parts": [
             [
-              52.528,
-              176.0,
+              54.2,
+              174.5,
               503.9,
-              201.2
+              202.7
             ]
           ],
           "headline": "Tanrı’nın varlığını reddeder. ( ......................... )"
@@ -9023,17 +8316,17 @@
           "label": "ı",
           "column": 0,
           "rect": [
-            52.528,
+            54.2,
             68.2,
             503.9,
-            173.0
+            174.5
           ],
           "parts": [
             [
-              52.528,
+              54.2,
               68.2,
               503.9,
-              173.0
+              174.5
             ]
           ],
           "headline": "Tanrı’nın evrenin kendisi olduğunu savunur. ( ......................... )"
@@ -9088,15 +8381,15 @@
           "column": 0,
           "rect": [
             48.9613,
-            314.1498,
-            517.0,
+            314.1322,
+            517.2365,
             433.8248
           ],
           "parts": [
             [
               48.9613,
-              314.1498,
-              517.0,
+              314.1322,
+              517.2365,
               433.8248
             ]
           ],
@@ -9110,14 +8403,14 @@
             47.7126,
             242.3,
             515.9121,
-            311.1498
+            311.1322
           ],
           "parts": [
             [
               47.7126,
               242.3,
               515.9121,
-              311.1498
+              311.1322
             ]
           ],
           "headline": "Merve’nin ruhun ölümsüzlüğünün bilimsel olarak kanıtlanamayacağını savunması, Tanrı’nın varlığına ilişkin hangi yaklaşımlarla çelişir? Açıklayınız."
@@ -9465,7 +8758,7 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          61.5161,
+          50.6929,
           528.756
         ]
       ],
@@ -9475,14 +8768,14 @@
           "label": "1. Adım",
           "column": 0,
           "rect": [
-            48.693,
+            48.6723,
             56.566,
             519.3105,
             668.3796
           ],
           "parts": [
             [
-              48.693,
+              48.6723,
               56.566,
               519.3105,
               668.3796
@@ -9497,7 +8790,7 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          47.391,
+          36.3874,
           528.756
         ]
       ],
@@ -9507,15 +8800,15 @@
           "label": "2. Adım",
           "column": 0,
           "rect": [
-            45.391,
-            651.1862,
+            42.2,
+            490.1216,
             502.9523,
             732.4256
           ],
           "parts": [
             [
-              45.391,
-              651.1862,
+              42.2,
+              490.1216,
               502.9523,
               732.4256
             ]
@@ -9528,16 +8821,16 @@
           "column": 0,
           "rect": [
             42.2,
-            288.0,
+            288.25,
             462.7777,
-            421.0
+            413.0
           ],
           "parts": [
             [
               42.2,
-              288.0,
+              288.25,
               462.7777,
-              421.0
+              413.0
             ]
           ],
           "headline": "“Bilimler, hangi yöntemleri kullanır ? ” sorusuna ilişkin cevaplarınızı yazınız."
@@ -9547,17 +8840,17 @@
           "label": "2. Adım",
           "column": 0,
           "rect": [
-            42.2,
+            177.1,
             67.7,
             418.2752,
-            285.0
+            287.25
           ],
           "parts": [
             [
-              42.2,
+              177.1,
               67.7,
               418.2752,
-              285.0
+              287.25
             ]
           ],
           "headline": "Bilimsel yöntemin aşamaları ile ilgili akış diyagramı oluşturunuz."
@@ -9569,7 +8862,7 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          73.4734,
+          61.4262,
           528.756
         ]
       ],
@@ -9580,14 +8873,14 @@
           "column": 0,
           "rect": [
             54.7756,
-            657.9,
+            67.6,
             518.1436,
             714.1269
           ],
           "parts": [
             [
               54.7756,
-              657.9,
+              67.6,
               518.1436,
               714.1269
             ]
@@ -9837,93 +9130,74 @@
       "pageHeight": 779.528,
       "columns": [
         [
-          178.2831,
-          210.5168
+          37.6252,
+          108.8495
         ],
         [
-          214.5168,
-          276.4062
+          112.8495,
+          163.8318
         ],
         [
-          280.4062,
-          352.1928
+          167.8318,
+          230.6788
         ],
         [
-          356.1928,
+          234.6788,
+          295.447
+        ],
+        [
+          299.447,
+          359.9783
+        ],
+        [
+          363.9783,
+          416.0116
+        ],
+        [
+          420.0116,
           528.756
         ]
       ],
       "activities": [
         {
-          "id": "p213-a",
-          "label": "a",
-          "column": 0,
-          "rect": [
-            173.9769,
-            70.9529,
-            283.055,
-            208.4242
-          ],
-          "parts": [
-            [
-              173.9769,
-              70.9529,
-              217.4395,
-              187.1165
-            ],
-            [
-              220.4395,
-              153.2811,
-              283.055,
-              208.4242
-            ],
-            [
-              176.2831,
-              190.1165,
-              205.1151,
-              199.1518
-            ]
-          ],
-          "headline": "! Atina ARN"
-        },
-        {
-          "id": "p213-a",
-          "label": "a",
+          "id": "p213-6",
+          "label": "6",
           "column": 2,
           "rect": [
-            281.6642,
-            598.1652,
-            307.0209,
-            617.8626
+            159.6426,
+            78.5136,
+            241.3488,
+            348.5077
           ],
           "parts": [
             [
-              281.6642,
-              598.1652,
-              307.0209,
-              617.8626
+              159.6426,
+              78.5136,
+              241.3488,
+              348.5077
             ]
-          ]
+          ],
+          "headline": "A 6"
         },
         {
-          "id": "p213-g",
-          "label": "g",
+          "id": "p213-8",
+          "label": "8",
           "column": 3,
           "rect": [
-            354.1928,
-            248.4561,
-            410.7485,
-            310.3234
+            288.6844,
+            188.3344,
+            343.8208,
+            355.0216
           ],
           "parts": [
             [
-              354.1928,
-              248.4561,
-              410.7485,
-              310.3234
+              288.6844,
+              188.3344,
+              343.8208,
+              355.0216
             ]
           ],
-          "headline": "! Kuveyt"
+          "headline": "Sarıkamış G."
         }
       ]
     }

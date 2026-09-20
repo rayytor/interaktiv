@@ -22,8 +22,17 @@ export const here = path.dirname(fileURLToPath(import.meta.url));
 // `tools/hotspot_extraction/tests/` is three levels below the app's own files.
 export const root = path.join(here, "..", "..", "..");
 
-export const pdfjsLib = await import(path.join(root, "js/pdf.mjs"));
-export const { ActivityDetector } = await import(path.join(root, "js/activities.js"));
+let pdfjsLib = null;
+try {
+  pdfjsLib = await import(path.join(root, "js/pdf.mjs"));
+} catch (_) {}
+
+let ActivityDetector = null;
+try {
+  ({ ActivityDetector } = await import(path.join(root, "js/activities.js")));
+} catch (_) {}
+
+export { pdfjsLib, ActivityDetector };
 export const { linkInteractiveOges, ogeLabel, unplacedAnchors } = await import(
   path.join(root, "js/interactive-links.js")
 );

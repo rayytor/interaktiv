@@ -58,21 +58,28 @@ ACTIVE_FILL = _rgba("rgba(59,130,246,0.25)")
 ACTIVE_BORDER = _rgba("#3b82f6")
 ACTIVE_GLOW = _rgba("rgba(59,130,246,0.25)")
 
+INTERACTIVE_QUIET_FILL = _rgba("rgba(245,158,11,0.08)")
+INTERACTIVE_QUIET_BORDER = _rgba("rgba(245,158,11,0.45)")
+INTERACTIVE_FILL = _rgba("rgba(245,158,11,0.15)")
+INTERACTIVE_BORDER = _rgba("#f59e0b")
+INTERACTIVE_GLOW = _rgba("rgba(245,158,11,0.35)")
+INTERACTIVE_CHIP_BG = _rgba("#f59e0b")
+
 CHIP_BG = _rgba("#3b82f6")
 CHIP_FG = _rgba("#ffffff")
 COUNT_BG = _rgba("rgba(24,26,31,0.88)")
 COUNT_FG = _rgba("#e6e8ec")
-PIN_BG = _rgba("#e08807")
+PIN_BG = _rgba("#f59e0b")
 PIN_FG = _rgba("#ffffff")
 
 HOTSPOT_RADIUS = 6
-CHIP_HEIGHT = 20
-CHIP_PAD = 6
-PIN_SIZE = 26
+CHIP_HEIGHT = 24
+CHIP_PAD = 8
+PIN_SIZE = 36
 
-CHIP_FONT = "Bold 9"
-COUNT_FONT = "8"
-PIN_FONT = "Bold 11"
+CHIP_FONT = "Bold 12"
+COUNT_FONT = "Bold 10"
+PIN_FONT = "Bold 16"
 
 SEARCH_MATCH_FILL = _rgba("rgba(255, 235, 59, 0.40)")
 SEARCH_MATCH_BORDER = _rgba("rgba(245, 124, 0, 0.50)")
@@ -418,26 +425,31 @@ class PageView(Gtk.Widget):
             if is_active:
                 active.append((spot, rect))
             elif self._reveal:
-                self._draw_spot(snapshot, rect, QUIET_FILL, QUIET_BORDER, 1.0)
+                fill = INTERACTIVE_QUIET_FILL if spot.interactive else QUIET_FILL
+                border = INTERACTIVE_QUIET_BORDER if spot.interactive else QUIET_BORDER
+                self._draw_spot(snapshot, rect, fill, border, 1.0)
 
         # The active piece is drawn last and with its chip, so a hotspot that
         # overlaps a neighbour is never covered by the thing it is on top of.
         for spot, rect in active:
-            self._draw_spot(snapshot, rect, ACTIVE_FILL, ACTIVE_BORDER, 2.0, glow=True)
+            fill = INTERACTIVE_FILL if spot.interactive else ACTIVE_FILL
+            border = INTERACTIVE_BORDER if spot.interactive else ACTIVE_BORDER
+            glow = INTERACTIVE_GLOW if spot.interactive else ACTIVE_GLOW
+            self._draw_spot(snapshot, rect, fill, border, 2.0, glow=glow)
             self._draw_chip(snapshot, rect, spot)
 
         for pin in overlay.pins:
             self._draw_pin(snapshot, transform, pin)
 
-    def _draw_spot(self, snapshot, rect, fill, border, width, glow=False) -> None:
+    def _draw_spot(self, snapshot, rect, fill, border, width, glow: Gdk.RGBA | None = None) -> None:
         x, y, w, h = rect
         if w <= 0 or h <= 0:
             return
         graphene_rect = Graphene.Rect().init(x, y, w, h)
         rounded = Gsk.RoundedRect()
         rounded.init_from_rect(graphene_rect, HOTSPOT_RADIUS)
-        if glow:
-            snapshot.append_outset_shadow(rounded, ACTIVE_GLOW, 0, 0, 3, 3)
+        if glow is not None:
+            snapshot.append_outset_shadow(rounded, glow, 0, 0, 4, 3)
         snapshot.push_rounded_clip(rounded)
         snapshot.append_color(fill, graphene_rect)
         snapshot.pop()
@@ -446,9 +458,10 @@ class PageView(Gtk.Widget):
     def _draw_chip(self, snapshot, rect, spot: Spot) -> None:
         x, y, _w, h = rect
         text = f"⚡ {spot.label}".strip() if spot.interactive else spot.label
+        chip_bg = INTERACTIVE_CHIP_BG if spot.interactive else CHIP_BG
         if text:
             self._draw_badge(
-                snapshot, x - 8, y - CHIP_HEIGHT + 9, text, CHIP_FONT, CHIP_BG, CHIP_FG
+                snapshot, x - 8, y - CHIP_HEIGHT + 9, text, CHIP_FONT, chip_bg, CHIP_FG
             )
         if spot.item_count:
             label = f"{spot.item_count} soru"
@@ -474,6 +487,7 @@ class PageView(Gtk.Widget):
         rect = Graphene.Rect().init(x, y, width, height)
         rounded = Gsk.RoundedRect()
         rounded.init_from_rect(rect, height / 2)
+        snapshot.append_outset_shadow(rounded, SHADOW, 0, 2, 6, 0)
         snapshot.push_rounded_clip(rounded)
         snapshot.append_color(background, rect)
         snapshot.pop()
@@ -489,12 +503,13 @@ class PageView(Gtk.Widget):
         )
         rounded = Gsk.RoundedRect()
         rounded.init_from_rect(rect, PIN_SIZE / 2)
-        snapshot.append_outset_shadow(rounded, SHADOW, 0, 3, 5, 0)
+        snapshot.append_outset_shadow(rounded, SHADOW, 0, 3, 6, 0)
         snapshot.push_rounded_clip(rounded)
         snapshot.append_color(PIN_BG, rect)
         snapshot.pop()
+        snapshot.append_border(rounded, [2] * 4, [PIN_FG] * 4)
         if pin is self._hover_pin:
-            snapshot.append_border(rounded, [2] * 4, [CHIP_FG] * 4)
+            snapshot.append_outset_shadow(rounded, INTERACTIVE_GLOW, 0, 0, 6, 2)
         layout = self._layout("⚡", PIN_FONT)
         text_w, text_h = layout.get_pixel_size()
         snapshot.save()
@@ -504,5 +519,5 @@ class PageView(Gtk.Widget):
         if pin is self._hover_pin:
             self._draw_badge(
                 snapshot, cx + PIN_SIZE / 2 + 4, cy - CHIP_HEIGHT / 2,
-                f"⚡ {pin.label}", CHIP_FONT, CHIP_BG, CHIP_FG,
+                f"⚡ {pin.label}", CHIP_FONT, INTERACTIVE_CHIP_BG, CHIP_FG,
             )

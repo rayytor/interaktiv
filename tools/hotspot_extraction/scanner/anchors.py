@@ -22,7 +22,10 @@ from .layout import (
 )
 from .regions import (
     ActivityRegion,
+    PageGeometry,
+    clean_page_activities,
     detect_panels,
+    detect_solution_spaces,
     rect_overlap,
     rect_area,
     clamp,
@@ -43,7 +46,6 @@ if _PROJECT_ROOT not in sys.path:
 from interaktiv_core.linking import (  # noqa: E402
     LABELLED_DRIFT,
     UNLABELLED_DRIFT,
-    WRONG_SIDE_PENALTY,
     link_oges,
     oge_view,
     parse_oge_label,
@@ -128,7 +130,10 @@ def link_page_oges(
 
     pw = page_width if page_width > 0.0 else 595.0
     regions = [
-        region_view(a.id, a.label, a.rect, pw, page_height, getattr(a, "anchored", False))
+        region_view(
+            a.id, a.label, a.rect, pw, page_height,
+            getattr(a, "anchored", False), getattr(a, "oge_id", None),
+        )
         for a in activities
     ]
     views = [
@@ -296,6 +301,62 @@ def _create_anchored_region(
     )
 
 
+# How far outside a band an icon may sit and still belong to it. The icon is
+# hung beside the activity it opens, level with its first line or a little above
+# it, so the slack is asymmetric: generous above the band's top, tight below.
+BAND_REACH_ABOVE = 24.0   # pt
+BAND_REACH_BELOW = 6.0    # pt
+BAND_REACH_ACROSS = 24.0  # pt
+
+
+def _band_owner(
+    ax: float,
+    ay: float,
+    bands_by_id: Dict[str, List[dict]],
+    by_id: Dict[str, ActivityRegion],
+) -> Optional[ActivityRegion]:
+    """
+    The activity whose band an icon at (ax, ay) falls in, or None.
+
+    When bands overlap -- a full-width strip beside a columned one -- the
+    tightest band wins, because the narrower reading is the one that actually
+    contains the point rather than merely spanning it.
+    """
+    best: Optional[ActivityRegion] = None
+    best_area = float("inf")
+    for act_id, bands in bands_by_id.items():
+        act = by_id.get(act_id)
+        if act is None:
+            continue
+        for b in bands:
+            if not (b["bottom"] - BAND_REACH_BELOW <= ay <= b["top"] + BAND_REACH_ABOVE):
+                continue
+            if not (b["x0"] - BAND_REACH_ACROSS <= ax <= b["x1"] + BAND_REACH_ACROSS):
+                continue
+            area = max(1.0, (b["top"] - b["bottom"]) * (b["x1"] - b["x0"]))
+            if area < best_area:
+                best_area = area
+                best = act
+    return best
+
+
+def _page_geometry(primitives: PagePrimitives, layout: PageLayout) -> PageGeometry:
+    """The lines and drawn blocks of a sheet, as `grow_activity_regions` reads them."""
+    content_box = layout.content_box
+    body_spans = [
+        s for s in primitives.spans
+        if s.bbox[1] >= content_box[1] - 2.0 and s.bbox[3] <= content_box[3] + 2.0
+    ]
+    return PageGeometry(
+        lines=_text_lines(body_spans),
+        blocks=(
+            [{"rect": pn, "kind": "panel"} for pn in detect_panels(primitives.drawings, body_spans)] +
+            [dict(b) for b in detect_solution_spaces(primitives.drawings, body_spans)]
+        ),
+        content_box=content_box,
+    )
+
+
 def reconcile_anchors(
     activities: List[ActivityRegion],
     oges: List[PublisherOge],
@@ -307,6 +368,7 @@ def reconcile_anchors(
     layout: Optional[PageLayout] = None,
     markers: Optional[List[Any]] = None,
     confidence: Optional[str] = None,
+    trace: Optional[Any] = None,
 ) -> List[ActivityRegion]:
     """
     Reconcile publisher anchors with detected activities for a page.
@@ -324,6 +386,10 @@ def reconcile_anchors(
         primitives: Optional PagePrimitives for panel snapping and text lines.
         layout: Optional PageLayout for column boundary alignment.
         markers: Optional list of DetectedMarker from layout analysis.
+        trace: How `grow_activity_regions` read the sheet. An icon is bound
+            against the bands rather than against the grown rects, so binding
+            does not depend on how far growth happened to reach; the geometry
+            separates whatever is synthesised afterwards.
         confidence: Optional book calibration confidence ("strong"/"weak"/"none").
             Left None the assignment is ungated, which is how every bake to date
             was produced; passing it can only ever reduce the number of links.
@@ -361,72 +427,77 @@ def reconcile_anchors(
     if not unplaced:
         return list(activities)
 
-    # If primitives and layout are available, regrow with anchor markers for exact separation
+
+    # An icon that points into an activity the sheet already yielded names that
+    # activity; it does not introduce another one.
+    #
+    # This used to be done the other way round: every unplaced entry was wrapped
+    # in a synthetic `DetectedMarker` at the nearest text span and the whole
+    # sheet was grown again over the combined list. Because an activity's band
+    # runs only as far as the next marker, a synthetic marker standing inside a
+    # real activity cut that activity off at its own top -- on sheet 43 of the
+    # philosophy book question 9 came out as a 12 pt sliver beside a rival
+    # region holding its text, and question 11 lost its last option to another.
+    # The icon was never evidence of a second activity there; it was evidence of
+    # which activity the entry meant.
+    #
+    # So an icon landing in an activity's band binds to it: the region records
+    # the entry and keeps its own label, rect and parts. Nothing is unioned and
+    # nothing is merged -- two activities are never grouped, and a bound region
+    # is still one activity. Only an icon in space no activity claimed grows a
+    # region of its own.
     if primitives and layout:
-        from .markers import DetectedMarker, detect_markers
-        from .regions import grow_activity_regions
+        out = list(activities)
+        bands_by_id = getattr(trace, "bands", None) or {}
+        by_id = {a.id: a for a in out}
+        taken = {a.oge_id for a in out if a.oge_id}
+        leftover: List[PublisherOge] = []
 
-        existing_markers = markers
-        if existing_markers is None:
-            existing_markers = detect_markers(primitives, layout=layout)
-
-        anchor_markers = []
         for oge in unplaced:
+            if oge.id in taken:
+                continue
             ax = (oge.posx / 100.0) * pw
             ay = page_height - (oge.posy / 100.0) * page_height
-            col_idx = 0 if oge.posx < 50.0 else 1
 
-            candidate_spans = [
-                s for s in primitives.spans
-                if abs((s.bbox[1] + s.bbox[3]) / 2.0 - ay) < 35.0
-                and (s.bbox[0] < pw / 2.0 if col_idx == 0 else s.bbox[0] >= pw / 2.0)
-            ]
-            candidate_spans.sort(key=lambda s: abs((s.bbox[1] + s.bbox[3]) / 2.0 - ay))
+            owner = _band_owner(ax, ay, bands_by_id, by_id)
+            if owner is None:
+                leftover.append(oge)
+                continue
 
-            best_span = (
-                candidate_spans[0]
-                if candidate_spans
-                else TextSpan(
-                    text=oge.title,
-                    bbox=(ax, ay, ax + 10.0, ay + 10.0),
-                    font="",
-                    size=10.0,
-                    flags=0,
-                    color=0,
+            owner.oge_id = oge.id
+            taken.add(oge.id)
+
+        for oge in leftover:
+            out.append(
+                _create_anchored_region(
+                    oge=oge,
+                    page_num=p_num,
+                    page_width=pw,
+                    page_height=page_height,
+                    primitives=primitives,
+                    layout=layout,
+                    existing_activities=out,
                 )
             )
 
-            anchor_markers.append(
-                DetectedMarker(
-                    label=f"oge-{oge.id}",
-                    normalized_value=999.0,
-                    span=best_span,
-                    column_index=col_idx,
-                    is_step=False,
-                    items=[],
-                )
-            )
+        # A synthesised region is drawn from the icon's position and a column
+        # channel, with no knowledge of what the sheet already gave to the
+        # activities around it, so it has to be pushed off them the same way
+        # growth pushes its own pieces apart. Skipping this left every icon in
+        # unclaimed space sitting on top of its neighbours.
+        if leftover:
+            geom = getattr(trace, "geometry", None)
+            if geom is None:
+                # A sheet whose only activities are the publisher's own icons
+                # never went through growth -- it had no markers, so growth
+                # returned before it read the page at all and left no geometry
+                # behind. The separation still needs to know what is drawn
+                # there, or three answer panels synthesised one under another
+                # come out stacked on top of each other.
+                geom = _page_geometry(primitives, layout)
+            out = clean_page_activities(out, geom=geom)
 
-        combined_markers = list(existing_markers) + anchor_markers
-        by_col: Dict[int, List[Any]] = {c.index: [] for c in layout.columns}
-        for m in combined_markers:
-            col_target = m.column_index if m.column_index in by_col else 0
-            by_col[col_target].append(m)
-
-        for c in layout.columns:
-            by_col[c.index].sort(key=lambda m: -(m.span.bbox[1] + m.span.bbox[3]) / 2.0)
-
-        ordered_markers = []
-        for c in sorted(layout.columns, key=lambda col: col.x0):
-            ordered_markers.extend(by_col[c.index])
-
-        regrown = grow_activity_regions(primitives, layout, ordered_markers)
-        for act in regrown:
-            if "oge-" in act.id:
-                act.label = None
-                act.anchored = True
-
-        return regrown
+        return out
 
     # Fallback when primitives are not available
     reconciled = list(activities)

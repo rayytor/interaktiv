@@ -54,6 +54,19 @@ PROJECT_ROOT = os.path.dirname(
 RSS_CEILING_MB = 1200
 
 
+def _is_stale(request, generation: int) -> bool:
+    """
+    Whether a generation bump has made this request pointless.
+
+    A generation says "what should be on screen has changed", so it only
+    speaks for the lanes that draw the screen. A thumbnail or a background
+    scan is the same work whatever page the teacher has turned to, and
+    nothing ever asks for it a second time -- dropping one on a page turn
+    does not delay it, it loses it. Those lanes therefore outlive the bump.
+    """
+    return request.lane <= LANE_PREFETCH and request.generation < generation
+
+
 class RenderService:
     """
     Owns one renderer process and the single thread that talks to it.
@@ -152,7 +165,7 @@ class RenderService:
             self._generation += 1
             generation = self._generation
             for key in [
-                k for k, r in self._pending.items() if r.generation < generation
+                k for k, r in self._pending.items() if _is_stale(r, generation)
             ]:
                 del self._pending[key]
         return generation
@@ -306,7 +319,7 @@ class RenderService:
                 # A duplicate queue entry for a key already taken (or replaced
                 # and taken) -- there is nothing left to draw.
                 continue
-            if request.generation < generation:
+            if _is_stale(request, generation):
                 continue
 
             if isinstance(request, RenderRequest):

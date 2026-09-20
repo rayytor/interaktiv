@@ -35,7 +35,18 @@ from typing import Any, Dict, Iterable, List, Optional, Sequence, Set, Tuple
 # position to argue with and is held to the tight one.
 LABELLED_DRIFT = 10.0      # % of sheet height
 UNLABELLED_DRIFT = 5.0     # % of sheet height
-WRONG_SIDE_PENALTY = 15.0  # % penalty for an icon in the other margin
+
+# How far, across the sheet, an icon may sit outside the region it opens.
+#
+# The icon is hung beside its activity, which for a column of exercises means
+# the margin next to it, and for a banner activity means a box set into the
+# activity's own line -- a QR code at the far end of a full-width bar is still
+# that bar's icon. Measuring the gap to the region's own edges covers both,
+# where asking only which half of the sheet each one falls in covers neither: it
+# rejects the QR code beside its own activity, and it accepts a margin icon
+# level with a region it has nothing to do with.
+ICON_REACH = 20.0          # % of sheet width
+REACH_WEIGHT = 0.5         # how much of that gap counts against a pair
 
 # Why an entry did not link, when a caller asks. Ordered by how far the entry
 # got, nearest-miss first, so a scorecard can attribute each one to a single
@@ -111,9 +122,11 @@ class RegionView:
     id: str
     label: str          # lower-cased, "" when the region has no letter
     top_pct: float      # top of the label-bearing piece, % of sheet height
-    on_left: bool
-    full_width: bool
+    bottom_pct: float   # foot of it, % of sheet height, counted from the top
+    left_pct: float     # % of sheet width
+    right_pct: float    # % of sheet width
     anchored: bool
+    oge_id: Optional[str] = None   # the entry a publisher icon bound it to
 
 
 @dataclass(frozen=True, slots=True)
@@ -123,7 +136,7 @@ class OgeView:
     id: str
     label: Optional[str]
     top_pct: Optional[float]   # None when the entry carries no position
-    on_left: Optional[bool]
+    left_pct: Optional[float]  # where the icon hangs, % of sheet width
 
 
 def region_view(
@@ -133,21 +146,21 @@ def region_view(
     page_width: float,
     page_height: float,
     anchored: bool = False,
+    oge_id: Optional[str] = None,
 ) -> RegionView:
     """Build a `RegionView` from a rect in PDF user space (y-up)."""
-    x0, _y0, x1, y1 = rect[0], rect[1], rect[2], rect[3]
+    x0, y0, x1, y1 = rect[0], rect[1], rect[2], rect[3]
     return RegionView(
         id=str(region_id),
         label=(label or "").lower().strip(),
         # The top of the label-bearing piece: the icon is set against the start
         # of the activity, not against the middle of everything it covers.
         top_pct=((page_height - y1) / page_height) * 100.0 if page_height else 0.0,
-        # The margin the icon would be hung in is the one the activity's label
-        # stands in, so the label's own edge decides the side, not the region's
-        # middle -- a full-width region is still opened from the left.
-        on_left=x0 < page_width / 2.0,
-        full_width=x0 < page_width * 0.35 and x1 > page_width * 0.65,
+        bottom_pct=((page_height - y0) / page_height) * 100.0 if page_height else 100.0,
+        left_pct=(x0 / page_width) * 100.0 if page_width else 0.0,
+        right_pct=(x1 / page_width) * 100.0 if page_width else 100.0,
         anchored=bool(anchored),
+        oge_id=oge_id or None,
     )
 
 
@@ -163,7 +176,7 @@ def oge_view(
         id=str(oge_id),
         label=parse_oge_label(title, printed_page),
         top_pct=float(posy) if isinstance(posy, (int, float)) else None,
-        on_left=(float(posx) < 50.0) if isinstance(posx, (int, float)) else None,
+        left_pct=float(posx) if isinstance(posx, (int, float)) else None,
     )
 
 
@@ -217,12 +230,12 @@ def link_oges(
         for ri, region in enumerate(regions):
             # With no confidence in the letters this book was calibrated on,
             # only a region grown from an entry's own icon may be linked.
-            if confidence == "none" and not region.anchored:
+            if confidence == "none" and not region.anchored and not region.oge_id:
                 note(oge, "confidence-gated")
                 continue
             # Weak calibration: an entry with no label of its own has nothing
             # but geometry to argue with, so it is held to the anchors.
-            if confidence == "weak" and not oge.label and not region.anchored:
+            if confidence == "weak" and not oge.label and not region.anchored and not region.oge_id:
                 note(oge, "confidence-gated")
                 continue
             # A label on both sides that disagrees is a different activity,
@@ -230,22 +243,38 @@ def link_oges(
             if oge.label and region.label and oge.label != region.label:
                 note(oge, "label-mismatch")
                 continue
-            drift = abs(oge.top_pct - region.top_pct)
-            limit = LABELLED_DRIFT if (oge.label and region.label) else UNLABELLED_DRIFT
-            if drift > limit:
-                note(oge, "drift")
-                continue
-            side_miss = (
-                not region.full_width
-                and oge.on_left is not None
-                and oge.on_left != region.on_left
-            )
-            if side_miss and not (oge.label and region.label):
+            # How far across the sheet the icon sits from the region: nothing
+            # while it is over the region's own width, and the shortfall once it
+            # is past either edge.
+            reach = 0.0
+            if oge.left_pct is not None:
+                if oge.left_pct < region.left_pct:
+                    reach = region.left_pct - oge.left_pct
+                elif oge.left_pct > region.right_pct:
+                    reach = oge.left_pct - region.right_pct
+
+            both_labelled = bool(oge.label and region.label)
+            if reach > ICON_REACH and not both_labelled:
                 note(oge, "wrong-side")
                 continue
+
+            drift = abs(oge.top_pct - region.top_pct)
+            # An icon standing within the region's own box is against the
+            # activity by the plainest evidence there is, wherever down it the
+            # publisher chose to hang it, so it is not also asked to be level
+            # with the first line.
+            inside = (
+                reach == 0.0
+                and region.top_pct <= oge.top_pct <= region.bottom_pct
+            )
+            limit = LABELLED_DRIFT if both_labelled else UNLABELLED_DRIFT
+            if drift > limit and not inside:
+                note(oge, "drift")
+                continue
+
             if explain is not None:
                 explain[oge.id]["candidates"] += 1
-            pairs.append((drift + (WRONG_SIDE_PENALTY if side_miss else 0.0), oi, ri))
+            pairs.append((drift + reach * REACH_WEIGHT, oi, ri))
 
     # One region to one entry: the closest pair is settled first, and neither of
     # its two halves is offered again. Two activities that share a letter are two
@@ -275,7 +304,8 @@ def apply_anchored_ids(
     Claim, for each region grown from an entry's own icon, that entry.
 
     A region synthesised from an anchor carries the entry's id inside its own,
-    so it is matched by construction rather than by the drift join. Claiming it
+    and a region an icon was *bound* to carries it in `oge_id`; either way it is
+    matched by construction rather than by the drift join. Claiming it
     is what stops the same activity being drawn twice -- once as its region and
     again as the corner pin for an entry nothing linked.
 
@@ -290,10 +320,16 @@ def apply_anchored_ids(
     """
     by_id = {o.id: i for i, o in enumerate(oges)}
     for ri, region in enumerate(regions):
-        m = _ANCHORED_ID_RE.search(region.id)
-        if not m:
-            continue
-        oi = by_id.get(m.group(1))
+        # A region bound to an entry states it outright; one grown from an
+        # entry's icon says it through its id. Both are construction claims.
+        if region.oge_id:
+            oge_id = region.oge_id
+        else:
+            m = _ANCHORED_ID_RE.search(region.id)
+            if not m:
+                continue
+            oge_id = m.group(1)
+        oi = by_id.get(oge_id)
         if oi is None:
             continue
         for other_ri, other_oi in list(links.items()):

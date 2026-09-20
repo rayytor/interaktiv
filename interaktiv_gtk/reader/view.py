@@ -204,8 +204,9 @@ class ReaderPage(Adw.NavigationPage):
             sidebar=self.sidebar,
             content=self.stack,
             show_sidebar=bool(self.settings.get("sidebar_open")),
-            sidebar_width_fraction=0.24,
-            max_sidebar_width=360,
+            sidebar_width_fraction=0.16,
+            min_sidebar_width=200,
+            max_sidebar_width=232,
         )
         self.split.bind_property(
             "show-sidebar", self.btn_sidebar, "active",

@@ -32,6 +32,8 @@ from .markers import (
 from .regions import (
     SubItemRect,
     ActivityRegion,
+    GrowthTrace,
+    PageGeometry,
     detect_panels,
     detect_solution_spaces,
     grow_activity_regions,
@@ -86,6 +88,8 @@ __all__ = [
     # Regions
     "SubItemRect",
     "ActivityRegion",
+    "GrowthTrace",
+    "PageGeometry",
     "detect_panels",
     "detect_solution_spaces",
     "grow_activity_regions",

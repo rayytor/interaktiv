@@ -47,6 +47,7 @@ from tools.hotspot_extraction.scanner import (
     detect_panels,
     detect_solution_spaces,
     extract_page_primitives,
+    GrowthTrace,
     grow_activity_regions,
     load_publisher_oges,
     reconcile_anchors,
@@ -234,7 +235,8 @@ def scan_single_book(task: Dict[str, Any]) -> Dict[str, Any]:
             pages_layout[p] = layout
 
             markers = detect_markers(prim, layout=layout)
-            activities = grow_activity_regions(prim, layout, markers)
+            trace = GrowthTrace()
+            activities = grow_activity_regions(prim, layout, markers, trace=trace)
 
             # Publisher anchor reconciliation
             printed_page = folio_map.get(p)
@@ -259,6 +261,7 @@ def scan_single_book(task: Dict[str, Any]) -> Dict[str, Any]:
                         primitives=prim,
                         layout=layout,
                         markers=markers,
+                        trace=trace,
                     )
 
             if activities:

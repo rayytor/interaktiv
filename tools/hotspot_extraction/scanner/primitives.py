@@ -8,7 +8,7 @@ origin at bottom-left) to match regions.json and the frontend reader.
 """
 
 from dataclasses import dataclass
-from typing import List, Optional, Tuple
+from typing import Dict, List, Optional, Tuple
 import pymupdf
 
 
@@ -182,26 +182,79 @@ def extract_page_primitives(
     spans: List[TextSpan] = []
     text_flags = pymupdf.TEXT_PRESERVE_LIGATURES | pymupdf.TEXT_PRESERVE_WHITESPACE
     text_data = page.get_text("dict", flags=text_flags)
-    for block in text_data.get("blocks", []):
+
+    # Check if any span contains a tab character. If so, fetch word-level bboxes
+    # to precisely split tab-separated spans (e.g. "1.\tAşağıdaki sorular...") into
+    # separate spans for the leading marker and following body text.
+    has_tabs = any(
+        "\t" in s.get("text", "")
+        for b in text_data.get("blocks", [])
+        for l in b.get("lines", [])
+        for s in l.get("spans", [])
+    )
+    words_by_line: Dict[Tuple[int, int], List[Tuple]] = {}
+    if has_tabs:
+        for w in page.get_text("words"):
+            words_by_line.setdefault((w[5], w[6]), []).append(w)
+
+    for b_idx, block in enumerate(text_data.get("blocks", [])):
         if "lines" not in block:
             continue
-        for line in block["lines"]:
+        for l_idx, line in enumerate(block["lines"]):
+            l_words = words_by_line.get((b_idx, l_idx), [])
+            w_idx = 0
             for span in line.get("spans", []):
                 raw_text = span.get("text", "")
                 if not raw_text:
                     continue
-                bbox = span.get("bbox")
-                pdf_bbox = to_pdf_coords(bbox, page_height) if bbox else (0.0, 0.0, 0.0, 0.0)
-                spans.append(
-                    TextSpan(
-                        text=raw_text,
-                        bbox=pdf_bbox,
-                        font=str(span.get("font", "")),
-                        size=float(span.get("size", 0.0)),
-                        flags=int(span.get("flags", 0)),
-                        color=int(span.get("color", 0)),
+                bbox = span.get("bbox") or (0.0, 0.0, 0.0, 0.0)
+                font = str(span.get("font", ""))
+                size = float(span.get("size", 0.0))
+                flags = int(span.get("flags", 0))
+                color = int(span.get("color", 0))
+
+                if "\t" in raw_text:
+                    parts = raw_text.split("\t")
+                    for p_i, part in enumerate(parts):
+                        if not part:
+                            continue
+                        part_words = part.strip().split()
+                        num_words = len(part_words)
+                        if num_words > 0 and w_idx < len(l_words):
+                            w_first = l_words[w_idx]
+                            w_last = l_words[min(w_idx + num_words - 1, len(l_words) - 1)]
+                            part_bbox = (w_first[0], bbox[1], w_last[2], bbox[3])
+                            w_idx += num_words
+                        else:
+                            est_w = max(len(part) * size * 0.55, 4.0)
+                            p_x0 = bbox[0] if p_i == 0 else min(bbox[0] + est_w, bbox[2])
+                            part_bbox = (p_x0, bbox[1], min(p_x0 + est_w, bbox[2]), bbox[3])
+
+                        pdf_bbox = to_pdf_coords(part_bbox, page_height)
+                        spans.append(
+                            TextSpan(
+                                text=part,
+                                bbox=pdf_bbox,
+                                font=font,
+                                size=size,
+                                flags=flags,
+                                color=color,
+                            )
+                        )
+                else:
+                    part_words = raw_text.strip().split()
+                    w_idx += len(part_words)
+                    pdf_bbox = to_pdf_coords(bbox, page_height)
+                    spans.append(
+                        TextSpan(
+                            text=raw_text,
+                            bbox=pdf_bbox,
+                            font=font,
+                            size=size,
+                            flags=flags,
+                            color=color,
+                        )
                     )
-                )
 
     doc._forget_page(page)
 

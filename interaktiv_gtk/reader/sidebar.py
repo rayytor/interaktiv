@@ -17,7 +17,18 @@ from gi.repository import Adw, Gio, GLib, GObject, Gtk, Pango
 from ..render.service import LANE_THUMBNAIL
 
 BATCH = 40
+
+# The page area of one thumbnail row, in pixels -- a spread included, so the
+# two sheets of a spread get half of it each. Everything else about the row
+# (its height, the scale it is rendered at, and through those the width the
+# sidebar asks for) is derived from this and the page's own aspect ratio.
 THUMB_WIDTH = 140
+SPREAD_GAP = 4
+# Rendered a little above display size: a thumbnail is read at arm's length on
+# a board, and a soft one is worse than a slightly dearer render.
+THUMB_OVERSAMPLE = 1.5
+# Portrait A4 as the stand-in for a page whose size is not known yet.
+DEFAULT_RATIO = 1.414
 
 
 # ==============================================================================
@@ -238,6 +249,7 @@ class ThumbnailsPanel(Gtk.Box):
 
         self.service = None
         self.page_count = 0
+        self.page_sizes: Tuple[Tuple[float, float], ...] = ()
         self.mode = "book"
         self.rotation = 0
         self._selecting = False
@@ -270,8 +282,10 @@ class ThumbnailsPanel(Gtk.Box):
         self.scroller = scroller
         self.append(scroller)
 
-    def load(self, page_count: int, mode: str, rotation: int, service=None) -> None:
+    def load(self, page_count: int, mode: str, rotation: int, service=None,
+             page_sizes: Sequence[Tuple[float, float]] = ()) -> None:
         self.page_count = page_count
+        self.page_sizes = tuple(tuple(size) for size in page_sizes)
         self.mode = mode
         self.rotation = rotation
         if service is not None:
@@ -282,6 +296,9 @@ class ThumbnailsPanel(Gtk.Box):
         if mode == self.mode:
             return
         self.mode = mode
+        # A spread gives each sheet half the width a single page gets, so the
+        # cached pixels are at the wrong scale for the mode we just entered.
+        self._thumb_cache.clear()
         self._rebuild_items()
 
     def set_rotation(self, rotation: int) -> None:
@@ -310,14 +327,47 @@ class ThumbnailsPanel(Gtk.Box):
             for p in range(1, self.page_count + 1):
                 self.store.append(ThumbnailItem((p,), f"Sayfa {p}"))
 
+    # -- geometry ---------------------------------------------------------
+
+    def _page_ratio(self, page: int) -> float:
+        """Height over width for `page`, as it will be drawn at `rotation`."""
+        if 1 <= page <= len(self.page_sizes):
+            width, height = self.page_sizes[page - 1]
+        else:
+            return DEFAULT_RATIO
+        if width <= 0 or height <= 0:
+            return DEFAULT_RATIO
+        if self.rotation % 180:
+            width, height = height, width
+        return height / width
+
+    def _page_width_pt(self, page: int) -> float:
+        if 1 <= page <= len(self.page_sizes):
+            width, height = self.page_sizes[page - 1]
+            if self.rotation % 180:
+                width = height
+            if width > 0:
+                return width
+        return 0.0
+
+    @staticmethod
+    def _slot_width(page_count: int) -> int:
+        """How wide one sheet of a row is: the whole row, or half of a spread."""
+        if page_count > 1:
+            return max(1, (THUMB_WIDTH - SPREAD_GAP) // 2)
+        return THUMB_WIDTH
+
     # -- factory callbacks ------------------------------------------------
 
     def _on_setup(self, _factory, list_item) -> None:
         box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
         box.add_css_class("thumbnail-item")
 
-        container = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=4)
+        container = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=SPREAD_GAP)
         container.add_css_class("thumb-canvas-container")
+        # Hug the sheets rather than stretching across the row: the sidebar is
+        # only as wide as it needs to be, and the box reads as the paper.
+        container.set_halign(Gtk.Align.CENTER)
 
         pic1 = Gtk.Picture()
         pic1.set_content_fit(Gtk.ContentFit.CONTAIN)
@@ -350,15 +400,20 @@ class ThumbnailsPanel(Gtk.Box):
         list_item.label.set_text(item.label)
 
         pics = [list_item.pic1, list_item.pic2]
+        slot = self._slot_width(len(item.pages))
         for i, page in enumerate(item.pages):
             pic = pics[i]
             pic.set_visible(True)
+            # The row is sized from the paper, not from whatever pixels have
+            # arrived: a page that has not been drawn yet holds its own space,
+            # so the list does not jump as thumbnails land.
+            pic.set_size_request(slot, max(1, round(slot * self._page_ratio(page))))
             self._bound_pictures.setdefault(page, []).append(pic)
             if page in self._thumb_cache:
                 pic.set_paintable(self._thumb_cache[page])
             else:
                 pic.set_paintable(None)
-                self._request_thumbnail(page)
+                self._request_thumbnail(page, slot)
 
         if len(item.pages) < 2:
             list_item.pic2.set_visible(False)
@@ -378,17 +433,26 @@ class ThumbnailsPanel(Gtk.Box):
         list_item.pic1.set_paintable(None)
         list_item.pic2.set_paintable(None)
 
-    def _request_thumbnail(self, page: int) -> None:
+    def _request_thumbnail(self, page: int, slot_width: int) -> None:
         if self.service is None:
             return
-        # Render thumbnail at scale ~0.25
+        width_pt = self._page_width_pt(page)
+        # Drawn to the size it is shown at rather than to a fixed fraction of
+        # the sheet: a textbook page and a worksheet are not the same number of
+        # points across, and a thumbnail lane render is the cheapest one to get
+        # wrong in both directions.
+        scale = 0.25 if width_pt <= 0 else (slot_width * THUMB_OVERSAMPLE) / width_pt
         self.service.submit(
-            page, scale=0.25, rotation=self.rotation,
+            page, scale=max(0.05, min(0.5, scale)), rotation=self.rotation,
             lane=LANE_THUMBNAIL, generation=self.service.generation,
         )
 
     def on_thumbnail_result(self, result) -> None:
         if result.request.lane != LANE_THUMBNAIL:
+            return
+        if result.request.rotation != self.rotation % 360:
+            # Drawn for a rotation the reader has since left; the pages it
+            # belongs to were re-requested when the rotation changed.
             return
         page = result.request.page
         self._thumb_cache[page] = result.texture
@@ -597,6 +661,10 @@ class ReaderSidebar(Gtk.Box):
 
         switcher = Adw.InlineViewSwitcher()
         switcher.set_stack(self.view_stack)
+        # Icons, not labels: three Turkish tab names want three hundred pixels
+        # of header, and the sidebar is a hundred narrower than that. The
+        # switcher keeps each page's title as the button's tooltip.
+        switcher.set_display_mode(Adw.InlineViewSwitcherDisplayMode.ICONS)
         switcher.add_css_class("sidebar-switcher")
 
         head = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
@@ -608,7 +676,10 @@ class ReaderSidebar(Gtk.Box):
         self.append(self.view_stack)
 
     def load_book(self, info, service, rotation: int, view_mode: str) -> None:
-        self.thumbnails.load(info.page_count, view_mode, rotation, service=service)
+        self.thumbnails.load(
+            info.page_count, view_mode, rotation, service=service,
+            page_sizes=info.page_sizes,
+        )
         self.bookmarks.load(info.toc)
 
     def load_activities(self, summaries: Iterator[Tuple[int, int, str, int, bool]]) -> None:

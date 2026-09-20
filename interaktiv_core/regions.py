@@ -67,6 +67,7 @@ class Activity:
     parts: Tuple[Rect, ...]
     headline: str = ""
     anchored: bool = False
+    oge_id: Optional[str] = None
     items: Tuple[Item, ...] = ()
 
     @property
@@ -254,6 +255,7 @@ class RegionsBook:
                     parts=parts,
                     headline=str(a.get("headline") or ""),
                     anchored=bool(a.get("anchored")),
+                    oge_id=(str(a["ogeId"]) if a.get("ogeId") else None),
                     items=items,
                 )
             )

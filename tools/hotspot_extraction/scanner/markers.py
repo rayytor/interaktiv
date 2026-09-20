@@ -25,7 +25,7 @@ MAX_SUBQUESTION_GAP = 4.0  # pt: horizontal alignment tolerance for sub-question
 
 # Regex patterns for activity markers and step markers
 LABEL_RE = re.compile(
-    r"^\(?\s*([a-zA-ZçğıöşüÇĞIİÖŞÜ]|\d{1,2})\s*[.):\]]?\s*\)?$",
+    r"^\(?\s*([a-zçğıöşü]|\d{1,2})\s*[.):\]]?\s*\)?$",
     re.UNICODE,
 )
 STEP_RE = re.compile(
@@ -247,17 +247,18 @@ def find_candidate_markers(
             })
 
     # Filter out smaller candidates in the same typeface when a larger candidate exists
+    # (capped at 25pt so decorative drop caps never suppress body-sized markers)
     font_max_size: Dict[str, float] = {}
     for c in candidates:
         s = c["span"]
-        if c["label"].is_step or _is_bold(s):
+        if c["label"].is_step or s.size > 25.0:
             continue
         font_max_size[s.font] = max(font_max_size.get(s.font, 0.0), s.size)
 
     filtered = []
     for c in candidates:
         s = c["span"]
-        if c["label"].is_step or _is_bold(s):
+        if c["label"].is_step or s.size > 25.0:
             filtered.append(c)
             continue
         if s.size >= font_max_size.get(s.font, 0.0) - 0.75:
@@ -281,15 +282,14 @@ def longest_label_run(ordered: List[dict]) -> List[dict]:
     kinds = list(dict.fromkeys(e["label"].kind for e in ordered))
     if len(kinds) > 1:
         runs = [longest_label_run([e for e in ordered if e["label"].kind == k]) for k in kinds]
-        runs = [r for r in runs if len(r) > 1 or (len(r) == 1 and (r[0]["label"].value == 1.0 or r[0]["label"].is_step))]
+        runs = [r for r in runs if len(r) > 1 or (len(r) == 1 and (r[0]["label"].kind in ("digit", "step") or r[0]["label"].value == 1.0))]
         if runs:
             kept_ids = {id(e) for r in runs for e in r}
             return [e for e in ordered if id(e) in kept_ids]
 
     if n == 1:
-        # Single marker is kept only if it starts a sequence or is a step marker
         single = ordered[0]
-        if single["label"].value == 1.0 or single["label"].is_step:
+        if single["label"].kind in ("digit", "step") or single["label"].value == 1.0:
             return [single]
         return []
 
@@ -312,7 +312,7 @@ def longest_label_run(ordered: List[dict]) -> List[dict]:
                 prev_idx[i] = j
 
     tail = max(range(n), key=lambda i: best[i])
-    if best[tail] < 2.0 and not (ordered[tail]["label"].value == 1.0 or ordered[tail]["label"].is_step):
+    if best[tail] < 2.0 and not (ordered[tail]["label"].kind in ("digit", "step") or ordered[tail]["label"].value == 1.0):
         return []
 
     out = []
@@ -321,6 +321,72 @@ def longest_label_run(ordered: List[dict]) -> List[dict]:
         out.append(ordered[curr])
         curr = prev_idx[curr]
     return list(reversed(out))
+
+
+def _cluster_sub_columns(items: List[dict]) -> List[List[dict]]:
+    sorted_items = sorted(items, key=lambda it: it["span"].bbox[0])
+    clusters: List[List[dict]] = []
+    curr: List[dict] = []
+    anchor: Optional[float] = None
+    for it in sorted_items:
+        x = it["span"].bbox[0]
+        if anchor is None or abs(x - anchor) <= COLUMN_TOLERANCE:
+            if anchor is None:
+                anchor = x
+            curr.append(it)
+        else:
+            clusters.append(curr)
+            curr = [it]
+            anchor = x
+    if curr:
+        clusters.append(curr)
+    return clusters
+
+
+def _counts_from_one(ordered: List[dict]) -> bool:
+    if not ordered:
+        return False
+    for i, it in enumerate(ordered):
+        val = it["label"].value
+        if i == 0:
+            if val != 1.0:
+                return False
+            continue
+        prev_val = ordered[i - 1]["label"].value
+        successors = LABEL_SUCCESSORS.get(prev_val, [prev_val + 1.0])
+        if val not in successors and val != prev_val + 1.0:
+            return False
+    return True
+
+
+def _reads_as_list(items: List[dict]) -> bool:
+    if not items:
+        return False
+    kind = items[0]["label"].kind
+    if any(it["label"].kind != kind for it in items):
+        return False
+
+    # 1. Down columns
+    cols = _cluster_sub_columns(items)
+    cols.sort(key=lambda c: min(it["span"].bbox[0] for it in c))
+    down_columns = [it for c in cols for it in sorted(c, key=lambda it: -it["span"].bbox[1])]
+    if _counts_from_one(down_columns):
+        return True
+
+    # 2. Along rows
+    sorted_by_y = sorted(items, key=lambda it: -it["span"].bbox[1])
+    rows: List[List[dict]] = []
+    for it in sorted_by_y:
+        y = it["span"].bbox[1]
+        if rows and abs(rows[-1][0]["span"].bbox[1] - y) < 4.0:
+            rows[-1].append(it)
+        else:
+            rows.append([it])
+    along_rows = [it for r in rows for it in sorted(r, key=lambda it: it["span"].bbox[0])]
+    if _counts_from_one(along_rows):
+        return True
+
+    return False
 
 
 def detect_subquestions(
@@ -332,75 +398,88 @@ def detect_subquestions(
     bottom_limit: float = 44.0,
 ) -> List[SubQuestion]:
     """
-    Detect consecutive numbered sub-questions ('1', '2', '3'...) within the
-    scope of an activity.
+    Detect consecutive numbered or lettered sub-questions ('1', '2', '3'... or 'a', 'b', 'c'...)
+    within the scope of an activity.
     """
     top = act_span.bbox[1]
     bottom = next_act_span.bbox[3] if next_act_span else bottom_limit
 
-    candidates: List[Tuple[int, TextSpan]] = []
+    # Collect candidates in region bounds
+    candidates: List[dict] = []
     for s in body_spans:
         if s is act_span or (next_act_span and s is next_act_span):
             continue
 
         y_mid = (s.bbox[1] + s.bbox[3]) / 2.0
-        if not (bottom <= y_mid <= top and col_x0 <= s.bbox[0] <= col_x1):
+        if not (bottom <= y_mid <= top and col_x0 - 4.0 <= s.bbox[0] <= col_x1 + 4.0):
             continue
 
-        txt = s.text.strip()
-        m = NUMBER_RE.match(txt)
-        if not m:
+        parsed = parse_label(s.text)
+        if not parsed or parsed.is_step:
             continue
 
-        num = int(m.group(1))
-        if num < 1 or num > 99:
-            continue
-
-        # Verify clear left gutter so we don't pick up mid-line numbers
-        clear_left, hanging = check_hanging_indent(s, body_spans)
+        # Must have clear left gutter
+        clear_left, _ = check_hanging_indent(s, body_spans)
         if clear_left:
-            candidates.append((num, s))
+            candidates.append({
+                "span": s,
+                "label": parsed,
+            })
 
     if not candidates:
         return []
 
-    # Group candidates by horizontal alignment x0
-    by_x: Dict[float, List[Tuple[int, TextSpan]]] = {}
-    for num, s in candidates:
-        matched_group = None
-        for gx in by_x:
-            if abs(s.bbox[0] - gx) <= MAX_SUBQUESTION_GAP:
-                matched_group = gx
-                break
-        if matched_group is None:
-            matched_group = s.bbox[0]
-            by_x[matched_group] = []
-        by_x[matched_group].append((num, s))
+    # Group candidates by kind ("digit" vs "letter")
+    by_kind: Dict[str, List[dict]] = {}
+    for c in candidates:
+        by_kind.setdefault(c["label"].kind, []).append(c)
 
-    best_seq: List[Tuple[int, TextSpan]] = []
-    for gx, group in by_x.items():
-        # Sort top to bottom
-        group.sort(key=lambda it: -it[1].bbox[1])
-        seq: List[Tuple[int, TextSpan]] = []
-        expected = 1
-        for num, s in group:
-            if num == expected:
-                seq.append((num, s))
-                expected += 1
-            elif num == 1 and len(seq) == 0:
-                seq.append((num, s))
-                expected = 2
+    chosen: List[dict] = []
+    for kind, group in by_kind.items():
+        if len(group) < 2:
+            continue
+        # Check if entire group reads as list
+        if _reads_as_list(group):
+            if len(group) > len(chosen):
+                chosen = group
+            continue
+        # Check if individual column within group reads as list
+        cols = _cluster_sub_columns(group)
+        for col in cols:
+            sorted_col = sorted(col, key=lambda it: -it["span"].bbox[1])
+            if len(sorted_col) >= 2 and _counts_from_one(sorted_col):
+                if len(sorted_col) > len(chosen):
+                    chosen = sorted_col
 
-        if len(seq) >= 2 and len(seq) > len(best_seq):
-            best_seq = seq
+    if not chosen:
+        return []
+
+    # Sort chosen subquestions in reading order
+    cols = _cluster_sub_columns(chosen)
+    cols.sort(key=lambda c: min(it["span"].bbox[0] for it in c))
+    ordered: List[dict] = []
+    if _counts_from_one([it for c in cols for it in sorted(c, key=lambda it: -it["span"].bbox[1])]):
+        for c in cols:
+            ordered.extend(sorted(c, key=lambda it: -it["span"].bbox[1]))
+    else:
+        sorted_by_y = sorted(chosen, key=lambda it: -it["span"].bbox[1])
+        rows: List[List[dict]] = []
+        for it in sorted_by_y:
+            y = it["span"].bbox[1]
+            if rows and abs(rows[-1][0]["span"].bbox[1] - y) < 4.0:
+                rows[-1].append(it)
+            else:
+                rows.append([it])
+        for r in rows:
+            ordered.extend(sorted(r, key=lambda it: it["span"].bbox[0]))
 
     return [
         SubQuestion(
-            label=str(num),
-            number=num,
-            span=s,
+            label=it["label"].text.strip(".:) "),
+            number=int(it["label"].value),
+            span=it["span"],
         )
-        for num, s in best_seq
+        for it in ordered
     ]
 
 

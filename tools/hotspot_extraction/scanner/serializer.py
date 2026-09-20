@@ -19,6 +19,7 @@ import pymupdf
 
 from .primitives import extract_page_primitives, TextSpan
 from .layout import detect_folio, PageLayout
+from .markers import parse_label
 from .regions import ActivityRegion, clean_page_activities
 
 BAKE_VERSION = 2
@@ -135,6 +136,46 @@ def compute_book_folio(
     return modal_offset, by_page
 
 
+def _reads_a_run(pages_activities: Dict[int, List[ActivityRegion]]) -> bool:
+    """
+    Whether the detector read a real exercise list anywhere in the book.
+
+    This is what the confidence gate in `interaktiv_core.linking` is asking:
+    can the labels this book produced be argued with, or is positional
+    guesswork all there is? The question used to be answered by "does any
+    activity carry an alphabetic label", which is not the same thing twice
+    over. A book that numbers its exercises `1. 2. 3.` -- most of the Turkish
+    subject books -- can never satisfy it however cleanly it reads, while a
+    book whose only letters are the `A`, `D`, `M`, `T` of map callouts and
+    diagram keys satisfies it on pure noise. The history book did exactly the
+    latter: ninety-odd isolated capitals scattered over its maps carried it to
+    "strong" while its actual numbered questions counted for nothing.
+
+    A run is the honest evidence instead. Two activities in sequence on one
+    sheet -- `a` then `b`, `3.` then `4.` -- is a list the detector read in
+    order, and labels scattered one to a graphic never form one, whatever
+    alphabet they are in.
+    """
+    for acts in pages_activities.values():
+        # Letters and digits are separate sequences: an `a` and a `1.` are both
+        # value 1.0, and reading them as one run would invent a list that the
+        # sheet does not print.
+        by_kind: Dict[str, List[float]] = {}
+        for a in acts:
+            if not a.label or a.anchored:
+                continue
+            parsed = parse_label(a.label)
+            if parsed is None:
+                continue
+            by_kind.setdefault(parsed.kind, []).append(parsed.value)
+        for values in by_kind.values():
+            values.sort()
+            for i in range(len(values) - 1):
+                if 0.0 < values[i + 1] - values[i] <= 1.0:
+                    return True
+    return False
+
+
 def detect_book_calibration(
     doc: Optional[pymupdf.Document] = None,
     pages_activities: Optional[Dict[int, List[ActivityRegion]]] = None,
@@ -150,10 +191,7 @@ def detect_book_calibration(
         for acts in pages_activities.values():
             all_acts.extend(acts)
 
-    lettered_acts = [a for a in all_acts if a.label and not a.anchored]
-    has_letters = any(a.label.isalpha() for a in lettered_acts if a.label)
-
-    if lettered_acts and has_letters:
+    if _reads_a_run(pages_activities or {}):
         confidence = "strong"
         enabled = True
     elif all_acts:
@@ -239,6 +277,12 @@ def serialize_activity(act: ActivityRegion) -> Dict[str, Any]:
 
     if act.anchored:
         out["anchored"] = True
+
+    # The entry this region was bound to, when a publisher icon pointed into it.
+    # A region grown *from* an icon says the same thing through its id; a bound
+    # one keeps its own label, so it has to say it in a field.
+    if act.oge_id:
+        out["ogeId"] = act.oge_id
 
     if act.items:
         out["items"] = [

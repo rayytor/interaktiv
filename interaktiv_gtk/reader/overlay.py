@@ -149,7 +149,8 @@ def build_overlay(
     """
     region_views = [
         linking.region_view(
-            a.id, a.label, a.rect, page.page_width, page.page_height, a.anchored
+            a.id, a.label, a.rect, page.page_width, page.page_height,
+            a.anchored, getattr(a, "oge_id", None),
         )
         for a in page.activities
     ]

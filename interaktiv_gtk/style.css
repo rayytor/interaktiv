@@ -378,15 +378,12 @@
 }
 
 .thumb-canvas-container {
-  min-height: 120px;
+  /* No min-height: the row is sized in sidebar.py from the page's own aspect
+     ratio, and a floor here would letterbox every landscape book. */
   background: alpha(currentColor, 0.06);
   border-radius: 6px;
   padding: 4px;
   box-shadow: 0 1px 3px alpha(black, 0.2);
-}
-
-.thumb-pic {
-  min-height: 112px;
 }
 
 .thumb-number {

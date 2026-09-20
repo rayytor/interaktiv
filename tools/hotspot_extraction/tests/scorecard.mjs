@@ -288,10 +288,18 @@ function tallyPage(t, p, res, diag, pageOges, wasAnchorIds) {
   t.ogesSeen += pageOges.length;
   if (!res.activities.length) t.ogesOnBlankPages += pageOges.length;
 
-  // A region grown from an entry's own icon, keyed by the entry it came from.
+  // A region carrying an entry by construction, keyed by the entry.
+  //
+  // Two shapes mean the same thing. A region *grown* from an entry's own icon
+  // carries the id inside its own. A region the icon merely pointed into is
+  // bound to the entry and keeps its own label, so it names the entry in
+  // `ogeId` instead -- the icon said which activity the entry meant, not that
+  // there was another activity there.
   const anchorRegionFor = new Map();
   for (const a of res.activities) {
-    if (a.id.startsWith(`p${p}-oge-`)) {
+    if (a.ogeId) {
+      anchorRegionFor.set(String(a.ogeId), a.id);
+    } else if (a.id.startsWith(`p${p}-oge-`)) {
       anchorRegionFor.set(a.id.slice(`p${p}-oge-`.length), a.id);
     }
   }

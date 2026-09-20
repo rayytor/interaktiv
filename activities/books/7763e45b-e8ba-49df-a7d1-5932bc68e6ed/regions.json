@@ -2,7 +2,7 @@
   "version": 2,
   "bookId": "7763e45b-e8ba-49df-a7d1-5932bc68e6ed",
   "fingerprint": "181827585-1c8cc2323e6379626fb1c9f86edd6c2c",
-  "builtAt": "2026-09-20T09:56:24.496Z",
+  "builtAt": "2026-09-20T17:47:34.749Z",
   "pageCount": 240,
   "calibration": {
     "enabled": true,
@@ -312,7 +312,7 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          45.4479,
+          45.0237,
           545.764
         ]
       ],
@@ -376,6 +376,27 @@
             ]
           ],
           "headline": "Edebî metinlerde coğrafi kavramların kullanılması, coğrafya öğrenimine nasıl bir katkı sağlar?"
+        },
+        {
+          "id": "p16-oge-a5a67ae4-e1a2-f111-b317-005056a7d529",
+          "label": null,
+          "column": 0,
+          "rect": [
+            37.0237,
+            617.3664,
+            553.764,
+            712.3664
+          ],
+          "parts": [
+            [
+              37.0237,
+              617.3664,
+              553.764,
+              712.3664
+            ]
+          ],
+          "headline": "Aşağıda verilen Abdurrahim Karakoç’un Anadolu Sevgisi şiirini okuyarak soruları cevaplayınız.",
+          "anchored": true
         }
       ]
     },
@@ -384,7 +405,7 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          60.1881,
+          57.7075,
           545.764
         ]
       ],
@@ -447,27 +468,28 @@
               378.3602
             ]
           ],
-          "headline": "Görsellerde verilen mekânsal unsurlardaki değişimden yola çıkarak insan-mekân-zaman ilişkisine yönelik neler söylenebilir?"
+          "headline": "Görsellerde verilen mekânsal unsurlardaki değişimden yola çıkarak insan-mekân-zaman ilişkisine yönelik neler söylenebilir?",
+          "ogeId": "e6aef696-e3a2-f111-b317-005056a7d529"
         },
         {
-          "id": "p17-oge-e6aef696-e3a2-f111-b317-005056a7d529",
+          "id": "p17-oge-1e77b622-e2a2-f111-b317-005056a7d529",
           "label": null,
           "column": 0,
           "rect": [
-            57.1969,
-            58.4944,
-            528.6432,
-            289.6772
+            49.7075,
+            572.6011,
+            553.764,
+            667.6011
           ],
           "parts": [
             [
-              57.1969,
-              58.4944,
-              528.6432,
-              289.6772
+              49.7075,
+              572.6011,
+              553.764,
+              667.6011
             ]
           ],
-          "headline": "ve sonuçlarını farklı boyutlarda (yerel, bölgesel, küresel) değerlendirmeyi gerektiren bir bakış açısıdır. Bu bakış açısı; doğal ve beşerî s",
+          "headline": "Enerji üretimi (Keban Barajı-Elâzığ)",
           "anchored": true
         }
       ]
@@ -496,14 +518,14 @@
           "column": 0,
           "rect": [
             42.7874,
-            628.6427,
+            634.9068,
             451.5376,
             645.6326
           ],
           "parts": [
             [
               42.7874,
-              628.6427,
+              634.9068,
               451.5376,
               645.6326
             ]
@@ -516,25 +538,116 @@
           "column": 0,
           "rect": [
             42.7874,
-            585.2818,
+            603.2314,
             514.4641,
-            615.6386
+            620.181
           ],
           "parts": [
             [
               42.7874,
-              585.2818,
+              603.2314,
               514.4641,
-              601.0922
-            ],
-            [
-              42.7874,
-              604.0922,
-              97.2205,
-              615.6386
+              620.181
             ]
           ],
           "headline": "Marmara Gölü'nde yaşanan kuruma ve etkileriyle ilgili örnek olaya ait verileri inceleyerek verilen soruların cevapları hakkındaki görüşlerinizi grup arkadaşları"
+        },
+        {
+          "id": "p18-28",
+          "label": "28",
+          "column": 1,
+          "rect": [
+            390.2678,
+            472.1897,
+            416.5253,
+            483.0497
+          ],
+          "parts": [
+            [
+              390.2678,
+              472.1897,
+              416.5253,
+              483.0497
+            ]
+          ],
+          "headline": "0 D"
+        },
+        {
+          "id": "p18-38",
+          "label": "38",
+          "column": 2,
+          "rect": [
+            484.6613,
+            379.0726,
+            510.8874,
+            389.9326
+          ],
+          "parts": [
+            [
+              484.6613,
+              379.07259999999997,
+              510.8874,
+              389.9326
+            ]
+          ],
+          "headline": "0 K"
+        },
+        {
+          "id": "p18-oge-bcfa1c98-e2a2-f111-b317-005056a7d529",
+          "label": null,
+          "column": 0,
+          "rect": [
+            27.1498,
+            122.644,
+            530.2698,
+            378.0726
+          ],
+          "parts": [
+            [
+              27.1498,
+              122.644,
+              530.2698,
+              378.07259999999997
+            ]
+          ],
+          "headline": "Etkinlik",
+          "anchored": true
+        }
+      ]
+    },
+    "21": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          65.811,
+          293.6908
+        ],
+        [
+          297.6908,
+          546.8378
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p21-20",
+          "label": "20",
+          "column": 1,
+          "rect": [
+            295.6908,
+            385.1631,
+            506.7473,
+            628.4991
+          ],
+          "parts": [
+            [
+              295.6908,
+              385.1631,
+              506.7473,
+              628.4991
+            ]
+          ],
+          "headline": "Sulama amacıyla alınan su 89,08 28,7 - 27,7 - TOPLAM 7,72"
         }
       ]
     },
@@ -543,7 +656,7 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          44.6937,
+          43.9465,
           545.764
         ]
       ],
@@ -615,7 +728,7 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          48.5788,
+          45.0374,
           545.764
         ]
       ],
@@ -626,14 +739,14 @@
           "column": 0,
           "rect": [
             46.5788,
-            560.2,
+            558.7,
             469.7,
             621.6428
           ],
           "parts": [
             [
               46.5788,
-              560.2,
+              558.7,
               469.7,
               621.6428
             ]
@@ -646,16 +759,16 @@
           "column": 0,
           "rect": [
             46.5788,
-            495.2,
+            493.7,
             469.7,
-            557.2
+            558.7
           ],
           "parts": [
             [
               46.5788,
-              495.2,
+              493.7,
               469.7,
-              557.2
+              558.7
             ]
           ],
           "headline": "Topladığım bilgileri yazacağım makaleye göre düzenledim."
@@ -667,15 +780,15 @@
           "rect": [
             43.2841,
             205.3321,
-            511.8918,
-            492.2
+            377.1,
+            461.1558
           ],
           "parts": [
             [
               43.2841,
               205.3321,
-              511.8918,
-              492.2
+              377.1,
+              461.1558
             ]
           ],
           "headline": "Yazdığım makaleyi sınıf ortamında arkadaşlarımla paylaştım."
@@ -700,14 +813,14 @@
             59.2372,
             288.472,
             525.3094,
-            330.2373
+            326.8157
           ],
           "parts": [
             [
               59.2372,
               288.472,
               525.3094,
-              330.2373
+              326.81565
             ]
           ],
           "headline": "Süveyş Kanalı'nın kıtalara ve denizlere göre konumu nasıldır? Açıklayınız."
@@ -771,6 +884,27 @@
             ]
           ],
           "headline": "Yaşanan olay sonucunda ham petrol ve LNG sevkiyatında aksaklıklar yaşanmasının ekonomik, sos­ yal, politik etkileri neler olabilir?"
+        },
+        {
+          "id": "p25-oge-45ceee20-e3a2-f111-b317-005056a7d529",
+          "label": null,
+          "column": 0,
+          "rect": [
+            52.999,
+            327.8157,
+            530.519,
+            638.834
+          ],
+          "parts": [
+            [
+              52.999,
+              327.81565,
+              530.519,
+              638.834
+            ]
+          ],
+          "headline": "Süveyş Kanalı, Akdeniz ile Kızıldeniz'i birbirine bağlayan su yoludur. Küresel ticaretin yaklaşık %12’sinin",
+          "anchored": true
         }
       ]
     },
@@ -792,14 +926,14 @@
             43.8828,
             278.8658,
             512.5671,
-            353.4594
+            344.1037
           ],
           "parts": [
             [
               43.8828,
               278.8658,
               512.5671,
-              353.4594
+              344.1037
             ]
           ],
           "headline": "Uydu görüntülerindeki değişim dikkate alındığında Aral Gölü'nde nasıl bir çevre sorunu yaşandığı söylene­ bilir?"
@@ -863,6 +997,27 @@
             ]
           ],
           "headline": "Aral Gölü'nde yaşanan değişimin ekonomik, sosyal ve çevresel etkileri neler olabilir?"
+        },
+        {
+          "id": "p26-oge-5ea08455-efa2-f111-b317-005056a7d529",
+          "label": null,
+          "column": 0,
+          "rect": [
+            38.597,
+            345.1037,
+            516.117,
+            723.1416
+          ],
+          "parts": [
+            [
+              38.597,
+              345.1037,
+              516.117,
+              723.1416
+            ]
+          ],
+          "headline": "Aşağıda Aral Gölü'nde yaşanan ve  büyük bir çevre felaketi olarak kayıtlara geçen değişime ait 1989-2018",
+          "anchored": true
         }
       ]
     },
@@ -884,14 +1039,14 @@
             60.5882,
             188.3645,
             529.0505,
-            275.8861
+            274.049
           ],
           "parts": [
             [
               60.5882,
               188.3645,
               529.0505,
-              275.8861
+              274.049
             ]
           ],
           "headline": "Petrol kuyusu felaketi, yaşandığı yerdeki beşerî ortamda ne tür etkiler ortaya çıkarmıştır? Açıklayınız."
@@ -902,19 +1057,40 @@
           "column": 0,
           "rect": [
             57.1968,
-            128.4,
+            113.1,
             505.8426,
             185.3645
           ],
           "parts": [
             [
               57.1968,
-              128.4,
+              113.1,
               505.8426,
               185.3645
             ]
           ],
           "headline": "Yaşanan bu felaketin, kazadan etkilenen bölgedeki uzun vadeli ekonomik etkileri neler olabilir?"
+        },
+        {
+          "id": "p27-oge-bb1caf92-0da5-f111-b317-005056a7d529",
+          "label": null,
+          "column": 0,
+          "rect": [
+            55.347,
+            275.049,
+            532.867,
+            719.8111
+          ],
+          "parts": [
+            [
+              55.347,
+              275.049,
+              532.867,
+              719.8111
+            ]
+          ],
+          "headline": "20 Nisan 2010 tarihinde Meksika Körfezi’nde bulunan Deepwater Horizon (Dipvotır Horizın) Dalgıç Son­",
+          "anchored": true
         }
       ]
     },
@@ -923,7 +1099,7 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          60.9774,
+          57.7075,
           545.764
         ]
       ],
@@ -995,7 +1171,7 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          44.7773,
+          44.1493,
           545.764
         ]
       ],
@@ -1187,7 +1363,7 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          60.0843,
+          58.7034,
           545.764
         ]
       ],
@@ -1279,11 +1455,11 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          46.5017,
-          105.0592
+          45.1207,
+          104.446
         ],
         [
-          109.0592,
+          108.446,
           545.764
         ]
       ],
@@ -1395,7 +1571,7 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          49.7211,
+          46.1797,
           545.764
         ]
       ],
@@ -1530,14 +1706,14 @@
           "column": 0,
           "rect": [
             57.489,
-            278.5523,
+            275.716,
             529.8004,
             544.3886
           ],
           "parts": [
             [
               57.489,
-              278.5523,
+              275.716,
               529.8004,
               544.3886
             ]
@@ -1552,14 +1728,14 @@
             57.5079,
             214.2403,
             527.6574,
-            274.216
+            275.716
           ],
           "parts": [
             [
               57.5079,
               214.2403,
               527.6574,
-              274.216
+              275.716
             ]
           ],
           "headline": "Haritalarda kullanılan mekânsal verilerdeki farklılığın nedenleri neler olabilir? Açıklayınız."
@@ -1642,14 +1818,14 @@
           "column": 0,
           "rect": [
             43.5256,
-            124.6201,
+            123.4,
             514.4608,
             287.0616
           ],
           "parts": [
             [
               43.5256,
-              124.6201,
+              123.4,
               514.4608,
               287.0616
             ]
@@ -1678,12 +1854,44 @@
         }
       ]
     },
+    "45": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.1969,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p45-12",
+          "label": "12",
+          "column": 0,
+          "rect": [
+            57.1969,
+            128.0,
+            527.1871,
+            719.1287
+          ],
+          "parts": [
+            [
+              57.1969,
+              128.0,
+              527.1871,
+              719.1287
+            ]
+          ],
+          "headline": "Banaz Çayı Yukarı Havzası’nın topoğrafya haritası oluşturulurken • Haritanın amacı nedir?"
+        }
+      ]
+    },
     "48": {
       "pageWidth": 569.764,
       "pageHeight": 796.535,
       "columns": [
         [
-          45.6369,
+          44.2914,
           545.764
         ]
       ],
@@ -1755,7 +1963,7 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          59.3574,
+          57.2548,
           545.764
         ]
       ],
@@ -1802,170 +2010,12 @@
         }
       ]
     },
-    "50": {
-      "pageWidth": 569.764,
-      "pageHeight": 796.535,
-      "columns": [
-        [
-          50.126,
-          545.764
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p50-A",
-          "label": "A",
-          "column": 0,
-          "rect": [
-            43.525,
-            41.245,
-            518.743,
-            294.805
-          ],
-          "parts": [
-            [
-              43.525,
-              41.245,
-              518.743,
-              294.805
-            ]
-          ],
-          "headline": "Levhaların ayrılma süreci, önce bir yer kabuğu levhasının mantodaki kon­ veksiyonel akıntıların etkisi sonucunda kırılmasıyla başlar Kırılan parçaların ters yön"
-        }
-      ]
-    },
-    "51": {
-      "pageWidth": 569.764,
-      "pageHeight": 796.535,
-      "columns": [
-        [
-          44.1732,
-          115.5856
-        ],
-        [
-          119.5856,
-          419.8832
-        ],
-        [
-          423.8832,
-          545.764
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p51-B",
-          "label": "B",
-          "column": 0,
-          "rect": [
-            1.213,
-            643.6642,
-            516.111,
-            735.937
-          ],
-          "parts": [
-            [
-              1.213,
-              643.6642,
-              516.111,
-              735.937
-            ]
-          ],
-          "headline": "Levhaların ayrılma­ ya başladığı alanda çökmeler yaşanır ve rift hattı çukur alanlar oluşur."
-        },
-        {
-          "id": "p51-C",
-          "label": "C",
-          "column": 2,
-          "rect": [
-            0.504,
-            364.535,
-            569.26,
-            544.924
-          ],
-          "parts": [
-            [
-              0.504,
-              364.535,
-              569.26,
-              544.924
-            ]
-          ],
-          "headline": "Süreç devam et­ tikçe vadi geniş­ lemeyi sürdürür ve Kızıldeniz'e benzer dar bir deniz oluşumuna yol açar. Bu olaya deniz tabanı ya­ yılması (Görsel 3.3)."
-        }
-      ]
-    },
-    "53": {
-      "pageWidth": 569.764,
-      "pageHeight": 796.535,
-      "columns": [
-        [
-          59.1969,
-          401.9823
-        ],
-        [
-          405.9823,
-          545.764
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p53-A",
-          "label": "A",
-          "column": 0,
-          "rect": [
-            61.7323,
-            691.2421,
-            535.7819,
-            734.9236
-          ],
-          "parts": [
-            [
-              61.7323,
-              691.2421,
-              282.3928,
-              734.9236
-            ],
-            [
-              450.6457,
-              696.5246,
-              535.7819,
-              726.2586
-            ]
-          ],
-          "headline": "Levhaların yaklaşma süreci, birbirine yaklaşan"
-        },
-        {
-          "id": "p53-B",
-          "label": "B",
-          "column": 1,
-          "rect": [
-            199.328,
-            278.8868,
-            569.764,
-            527.443
-          ],
-          "parts": [
-            [
-              199.328,
-              278.8868,
-              569.764,
-              527.443
-            ]
-          ],
-          "headline": "Astenosfere dalan okyanusal kabuk ergimeye uğrarken oluşan yeni magma kırık hatları boyunca yer kabuğunun içine doğru sokulur veya yeryüzüne çıkarak volkanizma "
-        }
-      ]
-    },
     "54": {
       "pageWidth": 569.764,
       "pageHeight": 796.535,
       "columns": [
         [
           44.7874,
-          235.8379
-        ],
-        [
-          239.8379,
           545.764
         ]
       ],
@@ -1976,46 +2026,19 @@
           "column": 0,
           "rect": [
             42.7874,
-            449.2558,
+            343.872,
             514.4622,
             641.9133
           ],
           "parts": [
             [
               42.7874,
-              449.2558,
+              343.872,
               514.4622,
               641.9133
             ]
           ],
-          "headline": "Konveksiyonel akıntıları gösteren 1. görsel ile levha sınırlarını ve hareket yönlerini gösteren haritayı inceleyerek aşağıdaki soruları cevaplayınız.",
-          "items": [
-            {
-              "id": "p54-1. Adım-1",
-              "label": "1",
-              "number": 1,
-              "partIndex": 0,
-              "rect": [
-                91.7874,
-                449.2558,
-                489.8543,
-                121.144
-              ],
-              "text": " Mantodaki konveksiyonel akıntılar ile tektonizma arasında nasıl bir ilişki vardır? Açıklayınız. 1."
-            },
-            {
-              "id": "p54-1. Adım-2",
-              "label": "2",
-              "number": 2,
-              "partIndex": 0,
-              "rect": [
-                89.8074,
-                449.2558,
-                108.0474,
-                103.4748
-              ]
-            }
-          ]
+          "headline": "Konveksiyonel akıntıları gösteren 1. görsel ile levha sınırlarını ve hareket yönlerini gösteren haritayı inceleyerek aşağıdaki soruları cevaplayınız."
         }
       ]
     },
@@ -2067,47 +2090,7 @@
               418.4358
             ]
           ],
-          "headline": "Yer kabuğunda meydana gelen tektonik süreçleri ve bu süreçlere bağlı oluşan yeryüzü şekilleri­ ni gösteren görseli inceledikten sonra aşağıdaki soruları cevapla",
-          "items": [
-            {
-              "id": "p55-3. Adım-1",
-              "label": "1",
-              "number": 1,
-              "partIndex": 0,
-              "rect": [
-                105.7106,
-                363.7543,
-                429.3295,
-                145.1605
-              ],
-              "text": " Kıtasal ve okyanusal kabukta hangi tür levha hareketleri yaşanmaktadır? 1."
-            },
-            {
-              "id": "p55-3. Adım-2",
-              "label": "2",
-              "number": 2,
-              "partIndex": 0,
-              "rect": [
-                103.7306,
-                363.7543,
-                505.0386,
-                127.4912
-              ],
-              "text": " Görselde levha hareketlerine bağlı olarak oluşan yer şekillerinden hangileri bulunmaktadır? 2."
-            },
-            {
-              "id": "p55-3. Adım-3",
-              "label": "3",
-              "number": 3,
-              "partIndex": 0,
-              "rect": [
-                103.9306,
-                363.7543,
-                121.9706,
-                109.8219
-              ]
-            }
-          ]
+          "headline": "Yer kabuğunda meydana gelen tektonik süreçleri ve bu süreçlere bağlı oluşan yeryüzü şekilleri­ ni gösteren görseli inceledikten sonra aşağıdaki soruları cevapla"
         }
       ]
     },
@@ -2116,7 +2099,7 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          45.3638,
+          43.9465,
           545.764
         ]
       ],
@@ -2127,14 +2110,14 @@
           "column": 0,
           "rect": [
             43.3638,
-            638.6,
+            572.7228,
             514.5899,
             740.9282
           ],
           "parts": [
             [
               43.3638,
-              638.6,
+              572.7228,
               514.5899,
               740.9282
             ]
@@ -2188,192 +2171,52 @@
       "pageHeight": 796.535,
       "columns": [
         [
+          59.1911,
+          136.771
+        ],
+        [
           140.771,
-          213.9359
+          210.6142
         ],
         [
-          217.9359,
-          322.2042
+          214.6142,
+          276.5602
         ],
         [
-          326.2042,
-          364.348
+          280.5602,
+          333.2905
         ],
         [
-          368.348,
+          337.2905,
           545.764
         ]
       ],
       "activities": [
         {
-          "id": "p61-K",
-          "label": "K",
+          "id": "p61-7",
+          "label": "7",
           "column": 1,
           "rect": [
-            228.8683,
-            614.5622,
-            323.2163,
-            660.8373
-          ],
-          "parts": [
-            [
-              241.347,
-              614.5622,
-              323.2163,
-              660.8373
-            ],
-            [
-              228.8683,
-              630.3882,
-              238.347,
-              660.8373
-            ]
-          ],
-          "headline": "u z e y"
-        },
-        {
-          "id": "p61-o",
-          "label": "o",
-          "column": 2,
-          "rect": [
-            326.2163,
-            555.563,
+            149.056,
+            530.8487,
             517.1568,
-            645.1058
+            648.8263
           ],
           "parts": [
             [
-              326.2163,
-              555.563,
-              517.1568,
-              645.1058
-            ]
-          ],
-          "headline": "l l u D"
-        },
-        {
-          "id": "p61-y",
-          "label": "y",
-          "column": 3,
-          "rect": [
-            366.348,
-            508.9506,
-            502.4214,
-            552.563
-          ],
-          "parts": [
-            [
-              366.348,
-              508.9506,
-              502.4214,
-              552.563
-            ]
-          ],
-          "headline": "r y 11"
-        }
-      ]
-    },
-    "62": {
-      "pageWidth": 569.764,
-      "pageHeight": 796.535,
-      "columns": [
-        [
-          329.8211,
-          342.074
-        ],
-        [
-          346.074,
-          437.8326
-        ],
-        [
-          441.8326,
-          545.764
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p62-A",
-          "label": "A",
-          "column": 0,
-          "rect": [
-            328.1497,
-            374.7397,
-            334.9369,
-            400.344
-          ],
-          "parts": [
-            [
-              328.1497,
-              374.7397,
-              334.9369,
-              400.344
-            ]
-          ]
-        },
-        {
-          "id": "p62-e",
-          "label": "e",
-          "column": 1,
-          "rect": [
-            353.8025,
-            278.0236,
-            419.0448,
-            424.2974
-          ],
-          "parts": [
-            [
-              367.5013,
-              278.0236,
-              419.0448,
-              424.2974
+              149.056,
+              610.8881,
+              187.7915,
+              636.6764
             ],
             [
-              353.8025,
-              396.2913,
-              364.5013,
-              420.951
+              278.5602,
+              530.8487,
+              517.1568,
+              648.8263
             ]
           ],
-          "headline": "e e b"
-        },
-        {
-          "id": "p62-A",
-          "label": "A",
-          "column": 2,
-          "rect": [
-            439.8326,
-            358.2353,
-            450.8531,
-            383.581
-          ],
-          "parts": [
-            [
-              439.8326,
-              358.2353,
-              450.8531,
-              383.581
-            ]
-          ]
-        },
-        {
-          "id": "p62-A",
-          "label": "A",
-          "column": 2,
-          "rect": [
-            453.8531,
-            292.908,
-            517.8595,
-            383.581
-          ],
-          "parts": [
-            [
-              453.8531,
-              292.908,
-              517.8595,
-              383.581
-            ]
-          ],
-          "headline": "A A t"
+          "headline": "8"
         }
       ]
     },
@@ -2382,7 +2225,7 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          59.3469,
+          58.9927,
           545.764
         ]
       ],
@@ -2454,7 +2297,7 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          60.153,
+          59.7014,
           545.764
         ]
       ],
@@ -2526,7 +2369,7 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          61.982,
+          60.1106,
           547.7
         ]
       ],
@@ -2537,14 +2380,14 @@
           "column": 0,
           "rect": [
             61.9821,
-            83.738,
+            91.1839,
             469.64,
             105.6977
           ],
           "parts": [
             [
               61.9821,
-              83.738,
+              91.1839,
               469.64,
               105.6977
             ]
@@ -2557,16 +2400,16 @@
           "column": 0,
           "rect": [
             59.982,
-            58.7784,
-            422.06,
-            80.738
+            58.3907,
+            549.7,
+            88.1839
           ],
           "parts": [
             [
               59.982,
-              58.7784,
-              422.06,
-              80.738
+              58.3907,
+              549.7,
+              88.1839
             ]
           ],
           "headline": "Bu isimlendirdiğiniz dönemde hangi olayların yaşanabileceğini düşünüyorsunuz?"
@@ -2578,7 +2421,7 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          58.7356,
+          58.2841,
           545.764
         ]
       ],
@@ -2630,7 +2473,11 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          45.5228,
+          44.6266,
+          276.8067
+        ],
+        [
+          280.8067,
           545.764
         ]
       ],
@@ -2662,14 +2509,14 @@
           "rect": [
             43.5228,
             60.77,
-            514.9764,
+            434.7503,
             225.9328
           ],
           "parts": [
             [
               43.5228,
               60.77,
-              514.9764,
+              434.7503,
               225.9328
             ]
           ],
@@ -2802,83 +2649,35 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          59.5035,
+          59.0495,
           114.4544
         ],
         [
           118.4544,
-          135.5492
+          169.1034
         ],
         [
-          139.5492,
-          156.0872
+          173.1034,
+          227.6363
         ],
         [
-          160.0872,
-          179.8454
-        ],
-        [
-          183.8454,
-          201.0394
-        ],
-        [
-          205.0394,
-          222.2335
-        ],
-        [
-          226.2335,
-          243.4276
-        ],
-        [
-          247.4276,
-          264.6217
-        ],
-        [
-          268.6217,
+          231.6363,
           285.8157
         ],
         [
           289.8157,
-          307.0099
+          340.0229
         ],
         [
-          311.0099,
-          328.2039
+          344.0229,
+          406.3286
         ],
         [
-          332.2039,
-          354.6166
-        ],
-        [
-          358.6166,
-          396.4229
-        ],
-        [
-          400.4229,
-          420.28
-        ],
-        [
-          424.28,
-          441.5623
-        ],
-        [
-          445.5623,
+          410.3286,
           462.8447
         ],
         [
           466.8447,
-          484.1271
-        ],
-        [
-          488.1271,
-          505.4094
-        ],
-        [
-          509.4094,
-          526.6918
-        ],
-        [
-          530.6918,
           577.1866
         ]
       ],
@@ -2889,73 +2688,89 @@
           "column": 0,
           "rect": [
             57.7581,
-            344.6717,
-            500.1,
-            496.8683
+            318.5,
+            518.9736,
+            384.2688
           ],
           "parts": [
             [
-              208.562,
-              344.6717,
-              217.287,
-              368.6297
-            ],
-            [
-              230.1573,
-              344.6717,
-              238.4751,
-              368.6297
-            ],
-            [
-              251.7527,
-              344.6717,
-              259.7516,
-              368.6297
-            ],
-            [
-              273.3481,
-              344.6717,
-              355.6465,
-              355.1507
-            ],
-            [
-              358.6465,
-              344.6717,
-              396.9373,
-              363.6164
-            ],
-            [
-              398.4229,
-              348.2394,
-              418.8084,
-              367.8493
-            ],
-            [
-              422.28,
-              348.2394,
-              441.8629,
-              369.9657
-            ],
-            [
-              443.5623,
-              348.2394,
-              463.9478,
-              372.0822
-            ],
-            [
-              464.8447,
-              348.2394,
-              484.4276,
-              372.0822
-            ],
-            [
               57.7581,
-              378.9961,
-              500.1,
-              496.8683
+              352.2924,
+              97.4217,
+              382.0264
+            ],
+            [
+              223.6363,
+              359.4164,
+              285.2513,
+              381.2238
+            ],
+            [
+              285.3908,
+              346.6082,
+              348.0229,
+              368.6297
+            ],
+            [
+              100.4217,
+              318.5,
+              518.9736,
+              337.2041
+            ],
+            [
+              402.3286,
+              340.2041,
+              463.3447,
+              372.0822
+            ],
+            [
+              466.3447,
+              359.2289,
+              484.8581,
+              384.2688
             ]
           ],
-          "headline": "Grup olarak yaptığınız çıkarımlardan yararlanarak iklim özellikleri ile kayaçların ayrışma türü ve ay­ O"
+          "headline": "Grup olarak yaptığınız çıkarımlardan yararlanarak iklim özellikleri ile kayaçların ayrışma türü ve ay­ Tablo 1 rışma hızı arasındaki ilişkiyi ortaya koyan bir s"
+        },
+        {
+          "id": "p75-6. Adım",
+          "label": "6. Adım",
+          "column": 0,
+          "rect": [
+            57.7581,
+            287.4538,
+            399.8386,
+            317.1878
+          ],
+          "parts": [
+            [
+              57.7581,
+              287.4538,
+              399.8386,
+              317.1878
+            ]
+          ],
+          "headline": "Tüm grupların oluşturduğu soruların cevaplarını sınıf ortamında tartışınız."
+        },
+        {
+          "id": "p75-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            59.5036,
+            207.8596,
+            306.5733,
+            229.8193
+          ],
+          "parts": [
+            [
+              59.5036,
+              207.8596,
+              306.5733,
+              229.8193
+            ]
+          ],
+          "headline": "İklim özellikleri ayrışma sürecinde nasıl bir rol oynar?"
         },
         {
           "id": "p75-2",
@@ -2963,18 +2778,19 @@
           "column": 0,
           "rect": [
             57.5035,
-            190.1903,
-            90.0573,
+            191.3857,
+            359.7023,
             204.8596
           ],
           "parts": [
             [
               57.5035,
-              190.1903,
-              90.0573,
+              191.3857,
+              359.7023,
               204.8596
             ]
-          ]
+          ],
+          "headline": "Haritada belirlenmiş yerlerde hangi ayrışma türü daha etkili olur?"
         },
         {
           "id": "p75-3",
@@ -2983,366 +2799,18 @@
           "rect": [
             57.7035,
             165.2307,
-            526.9736,
-            287.6739
+            464.6904,
+            188.3857
           ],
           "parts": [
             [
               57.7035,
               165.2307,
-              90.0573,
-              187.1903
-            ],
-            [
-              208.949,
-              167.4579,
-              229.7358,
-              196.8713
-            ],
-            [
-              57.7035,
-              252.6679,
-              526.9736,
-              264.2463
-            ],
-            [
-              460.6992,
-              172.2734,
-              481.4353,
-              201.5447
-            ],
-            [
-              57.7035,
-              267.2463,
-              526.9736,
-              287.6739
+              464.6904,
+              188.3857
             ]
           ],
           "headline": "Ayrışma ürünü olan toprak, dünyada hangi iklim bölgelerinde daha kolay oluşabilmektedir? 1"
-        },
-        {
-          "id": "p75-O",
-          "label": "O",
-          "column": 1,
-          "rect": [
-            116.4544,
-            497.5365,
-            136.2005,
-            521.3466
-          ],
-          "parts": [
-            [
-              127.8275,
-              499.8683,
-              136.2005,
-              521.3466
-            ],
-            [
-              116.4544,
-              497.5365,
-              124.8275,
-              521.3466
-            ]
-          ],
-          "headline": "O"
-        },
-        {
-          "id": "p75-Ş",
-          "label": "Ş",
-          "column": 2,
-          "rect": [
-            137.5492,
-            497.5365,
-            243.8015,
-            521.3466
-          ],
-          "parts": [
-            [
-              148.6117,
-              497.5365,
-              156.6742,
-              521.3466
-            ],
-            [
-              158.0872,
-              497.5365,
-              178.4545,
-              521.3466
-            ],
-            [
-              181.8454,
-              497.5365,
-              201.4134,
-              521.3466
-            ],
-            [
-              203.0394,
-              497.5365,
-              223.4067,
-              521.3466
-            ],
-            [
-              224.2335,
-              497.5365,
-              243.8015,
-              521.3466
-            ],
-            [
-              137.5492,
-              497.5365,
-              145.6117,
-              521.3466
-            ]
-          ],
-          "headline": "M N M H"
-        },
-        {
-          "id": "p75-T",
-          "label": "T",
-          "column": 7,
-          "rect": [
-            245.4276,
-            497.5365,
-            264.3696,
-            521.3466
-          ],
-          "parts": [
-            [
-              256.3986,
-              497.5365,
-              264.3696,
-              521.3466
-            ],
-            [
-              245.4276,
-              497.5365,
-              253.3986,
-              521.3466
-            ]
-          ],
-          "headline": "T"
-        },
-        {
-          "id": "p75-A",
-          "label": "A",
-          "column": 8,
-          "rect": [
-            266.6217,
-            497.5365,
-            285.92,
-            521.3466
-          ],
-          "parts": [
-            [
-              277.7709,
-              497.5365,
-              285.92,
-              521.3466
-            ],
-            [
-              266.6217,
-              497.5365,
-              274.7709,
-              521.3466
-            ]
-          ],
-          "headline": "A"
-        },
-        {
-          "id": "p75-E",
-          "label": "E",
-          "column": 9,
-          "rect": [
-            287.8157,
-            497.5365,
-            328.1301,
-            521.3466
-          ],
-          "parts": [
-            [
-              298.8758,
-              497.5365,
-              306.9359,
-              521.3466
-            ],
-            [
-              309.0099,
-              497.5365,
-              328.1301,
-              521.3466
-            ],
-            [
-              287.8157,
-              497.5365,
-              295.8758,
-              521.3466
-            ]
-          ],
-          "headline": "E"
-        },
-        {
-          "id": "p75-K",
-          "label": "K",
-          "column": 11,
-          "rect": [
-            330.2039,
-            497.5365,
-            399.1368,
-            524.8574
-          ],
-          "parts": [
-            [
-              330.2039,
-              497.5365,
-              349.6804,
-              521.3466
-            ],
-            [
-              351.398,
-              497.5365,
-              399.1368,
-              524.8574
-            ]
-          ],
-          "headline": "A"
-        },
-        {
-          "id": "p75-M",
-          "label": "M",
-          "column": 13,
-          "rect": [
-            402.1368,
-            501.435,
-            425.1996,
-            544.4949
-          ],
-          "parts": [
-            [
-              402.1368,
-              501.435,
-              425.1996,
-              544.4949
-            ]
-          ],
-          "headline": "M 4 50"
-        },
-        {
-          "id": "p75-N",
-          "label": "N",
-          "column": 14,
-          "rect": [
-            428.1996,
-            501.435,
-            488.9808,
-            544.4949
-          ],
-          "parts": [
-            [
-              428.1996,
-              501.435,
-              447.0421,
-              544.4949
-            ],
-            [
-              450.0421,
-              501.435,
-              468.4068,
-              544.4949
-            ],
-            [
-              471.4068,
-              501.435,
-              488.9808,
-              544.4949
-            ]
-          ],
-          "headline": "M H"
-        },
-        {
-          "id": "p75-T",
-          "label": "T",
-          "column": 17,
-          "rect": [
-            491.9808,
-            501.435,
-            509.6406,
-            544.4949
-          ],
-          "parts": [
-            [
-              491.9808,
-              501.435,
-              509.6406,
-              544.4949
-            ]
-          ],
-          "headline": "T 14 55"
-        },
-        {
-          "id": "p75-A",
-          "label": "A",
-          "column": 18,
-          "rect": [
-            512.6406,
-            501.435,
-            530.7862,
-            544.4949
-          ],
-          "parts": [
-            [
-              512.6406,
-              501.435,
-              530.7862,
-              544.4949
-            ]
-          ],
-          "headline": "A 15 61"
-        },
-        {
-          "id": "p75-A",
-          "label": "A",
-          "column": 18,
-          "rect": [
-            486.1271,
-            348.2394,
-            569.1074,
-            372.0822
-          ],
-          "parts": [
-            [
-              486.1271,
-              348.2394,
-              526.7216,
-              372.0822
-            ],
-            [
-              528.6918,
-              348.2394,
-              569.1074,
-              372.0822
-            ]
-          ],
-          "headline": "E E"
-        },
-        {
-          "id": "p75-E",
-          "label": "E",
-          "column": 19,
-          "rect": [
-            533.7862,
-            501.435,
-            569.764,
-            544.4949
-          ],
-          "parts": [
-            [
-              533.7862,
-              501.435,
-              569.764,
-              544.4949
-            ]
-          ],
-          "headline": "E"
         }
       ]
     },
@@ -3351,7 +2819,7 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          45.5385,
+          43.436,
           545.764
         ]
       ],
@@ -3423,7 +2891,11 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          46.1036,
+          43.7731,
+          275.8118
+        ],
+        [
+          279.8118,
           545.764
         ]
       ],
@@ -3519,36 +2991,18 @@
           "rect": [
             54.4731,
             610.866,
-            526.789,
+            177.582,
             682.646
           ],
           "parts": [
             [
               54.4731,
               610.866,
-              173.5283,
-              682.646
-            ],
-            [
-              176.5283,
-              610.866,
-              289.691,
-              682.646
-            ],
-            [
-              292.691,
-              610.866,
-              406.8148,
-              682.646
-            ],
-            [
-              409.8148,
-              610.866,
-              526.789,
+              177.582,
               682.646
             ]
           ],
-          "headline": "............................ b ............................ c ............................ ç ............................"
+          "headline": "............................"
         },
         {
           "id": "p87-d",
@@ -3629,6 +3083,66 @@
         }
       ]
     },
+    "93": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          58.7903,
+          224.4609
+        ],
+        [
+          228.4609,
+          331.6936
+        ],
+        [
+          335.6936,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p93-7",
+          "label": "7",
+          "column": 1,
+          "rect": [
+            226.4609,
+            473.7006,
+            266.5174,
+            498.7233
+          ],
+          "parts": [
+            [
+              226.4609,
+              473.7006,
+              266.5174,
+              498.7233
+            ]
+          ],
+          "headline": "4"
+        },
+        {
+          "id": "p93-13",
+          "label": "13",
+          "column": 2,
+          "rect": [
+            334.883,
+            455.8785,
+            473.3351,
+            515.9421
+          ],
+          "parts": [
+            [
+              334.883,
+              455.8785,
+              473.3351,
+              515.9421
+            ]
+          ],
+          "headline": "9"
+        }
+      ]
+    },
     "94": {
       "pageWidth": 569.764,
       "pageHeight": 796.535,
@@ -3657,7 +3171,34 @@
               645.2667
             ]
           ],
-          "headline": "Aşağıdaki soruları numaralanmış görsellerde verilen yeryüzü şekillerini inceleyerek cevaplayınız."
+          "headline": "Aşağıdaki soruları numaralanmış görsellerde verilen yeryüzü şekillerini inceleyerek cevaplayınız.",
+          "items": [
+            {
+              "id": "p94-1. Adım-1",
+              "label": "1",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                55.3712,
+                583.5794,
+                301.3354,
+                605.4916
+              ],
+              "text": "2 1"
+            },
+            {
+              "id": "p94-1. Adım-2",
+              "label": "2",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                288.3458,
+                583.8626,
+                301.3354,
+                605.4916
+              ]
+            }
+          ]
         },
         {
           "id": "p94-1",
@@ -3677,7 +3218,47 @@
               305.5274
             ]
           ],
-          "headline": "Numaralanmış görsellerdeki yeryüzü şekillerinin neler olduğunu aşağıya yazınız."
+          "headline": "Numaralanmış görsellerdeki yeryüzü şekillerinin neler olduğunu aşağıya yazınız.",
+          "items": [
+            {
+              "id": "p94-1-1",
+              "label": "1",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                123.3239,
+                241.1497,
+                431.1181,
+                265.2
+              ],
+              "text": "2 1"
+            },
+            {
+              "id": "p94-1-2",
+              "label": "2",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                305.393,
+                241.5018,
+                318.3826,
+                263.1308
+              ]
+            },
+            {
+              "id": "p94-1-4",
+              "label": "4",
+              "number": 4,
+              "partIndex": 0,
+              "rect": [
+                163.7159,
+                194.7352,
+                482.2598,
+                218.4
+              ],
+              "text": "3 4"
+            }
+          ]
         },
         {
           "id": "p94-2",
@@ -3726,7 +3307,7 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          59.1969,
+          58.0479,
           548.1365
         ]
       ],
@@ -3769,7 +3350,35 @@
               290.6174
             ]
           ],
-          "headline": "Numaralanmış görsellerdeki yeryüzü şekillerinin neler olduğunu aşağıya yazınız."
+          "headline": "Numaralanmış görsellerdeki yeryüzü şekillerinin neler olduğunu aşağıya yazınız.",
+          "items": [
+            {
+              "id": "p95-1-3",
+              "label": "3",
+              "number": 3,
+              "partIndex": 0,
+              "rect": [
+                67.7585,
+                236.5135,
+                522.6433,
+                260.6
+              ],
+              "text": "1 2 3"
+            },
+            {
+              "id": "p95-1-6",
+              "label": "6",
+              "number": 6,
+              "partIndex": 0,
+              "rect": [
+                66.7568,
+                194.1908,
+                522.6433,
+                218.3
+              ],
+              "text": "4 5 6"
+            }
+          ]
         },
         {
           "id": "p95-2",
@@ -3819,10 +3428,10 @@
       "columns": [
         [
           59.4609,
-          118.1835
+          117.5704
         ],
         [
-          122.1835,
+          121.5704,
           545.764
         ]
       ],
@@ -3945,14 +3554,14 @@
           "column": 0,
           "rect": [
             43.4311,
-            376.3,
+            146.4,
             514.8703,
             642.487
           ],
           "parts": [
             [
               43.4311,
-              376.3,
+              146.4,
               514.8703,
               642.487
             ]
@@ -3976,17 +3585,17 @@
           "label": "2. Adım",
           "column": 0,
           "rect": [
-            57.1969,
-            671.6579,
+            56.703,
+            558.6111,
             528.6363,
-            740.434
+            809.8601
           ],
           "parts": [
             [
-              57.1969,
-              671.6579,
+              56.703,
+              558.6111,
               528.6363,
-              740.434
+              809.8601
             ]
           ],
           "headline": "Yaşadığınız yerdeki yeryüzü şekillerinin beşerî faaliyetlere olan etkilerini GZFT analiz tekniğine göre çözümleyiniz."
@@ -4018,7 +3627,7 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          48.3357,
+          44.7943,
           545.764
         ]
       ],
@@ -4029,14 +3638,14 @@
           "column": 0,
           "rect": [
             46.3357,
-            547.6,
+            547.85,
             469.4,
             616.0468
           ],
           "parts": [
             [
               46.3357,
-              547.6,
+              547.85,
               469.4,
               616.0468
             ]
@@ -4049,16 +3658,16 @@
           "column": 0,
           "rect": [
             46.3357,
-            463.8086,
-            469.4,
-            544.6
+            466.5043,
+            376.9,
+            546.85
           ],
           "parts": [
             [
               46.3357,
-              463.8086,
-              469.4,
-              544.6
+              466.5043,
+              376.9,
+              546.85
             ]
           ],
           "headline": "Topladığım bilgileri düzenledim."
@@ -4069,16 +3678,16 @@
           "column": 0,
           "rect": [
             46.3357,
-            409.1445,
+            419.5,
             469.4,
-            460.8086
+            465.5043
           ],
           "parts": [
             [
               46.3357,
-              409.1445,
+              419.5,
               469.4,
-              460.8086
+              465.5043
             ]
           ],
           "headline": "lerinin ekonomiye, sosyal hayata, kültürel dokuya ve yerleşmeye olan etkilerine yönelik çıkarımlarda bulundum."
@@ -4090,15 +3699,15 @@
           "rect": [
             43.041,
             94.374,
-            511.6487,
-            406.1445
+            376.9,
+            358.9834
           ],
           "parts": [
             [
               43.041,
               94.374,
-              511.6487,
-              406.1445
+              376.9,
+              358.9834
             ]
           ],
           "headline": "sırasında doğal çevrenin korunması için farkındalık oluşturmaya yönelik sloganlar yazarak arkadaşlarımla paylaştım."
@@ -4110,7 +3719,7 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          58.985,
+          58.7034,
           545.764
         ]
       ],
@@ -4157,16 +3766,44 @@
         }
       ]
     },
+    "107": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.4469,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p107-6",
+          "label": "6",
+          "column": 0,
+          "rect": [
+            57.308,
+            164.409,
+            528.408,
+            646.269
+          ],
+          "parts": [
+            [
+              57.308,
+              164.409,
+              528.408,
+              646.269
+            ]
+          ],
+          "headline": "Yaptığımız üç boyutlu modeli grup arkadaşlarımla sınıf ortamında sundum."
+        }
+      ]
+    },
     "108": {
       "pageWidth": 569.764,
       "pageHeight": 796.535,
       "columns": [
         [
           45.1883,
-          405.453
-        ],
-        [
-          409.453,
           545.764
         ]
       ],
@@ -4387,20 +4024,20 @@
           "label": "7",
           "column": 0,
           "rect": [
-            44.3458,
+            62.8662,
             247.3835,
             512.567,
             291.296
           ],
           "parts": [
             [
-              44.3458,
+              62.8662,
               247.3835,
               512.567,
               291.296
             ]
           ],
-          "headline": "Belirlemiş olduğunuz genç oluşumlu dağların konumlarından hareketle aşağıdaki dilsiz harita üzeri­ ne çarpışan levhaların sınırlarını çiziniz."
+          "headline": "7. Belirlemiş olduğunuz genç oluşumlu dağların konumlarından hareketle aşağıdaki dilsiz harita üzeri­ DÜNYA  DİLSİZ  HARİTASI"
         }
       ]
     },
@@ -4419,16 +4056,16 @@
           "label": "8",
           "column": 0,
           "rect": [
-            57.1969,
-            605.8635,
-            526.7402,
+            56.07,
+            322.1385,
+            535.693,
             740.3886
           ],
           "parts": [
             [
-              57.1969,
-              605.8635,
-              526.7402,
+              56.07,
+              322.1385,
+              535.693,
               740.3886
             ]
           ],
@@ -4442,14 +4079,14 @@
             60.3992,
             220.8949,
             526.7402,
-            322.987
+            316.79
           ],
           "parts": [
             [
               60.3992,
               220.8949,
               526.7402,
-              322.987
+              316.79
             ]
           ],
           "headline": "Anadolu Levhası’nda yaşanan tektonik süreçlerde etkili olan levhaları belirleyip ilgili kutucuğu işa­ retleyiniz."
@@ -4759,15 +4396,15 @@
           "label": "22",
           "column": 0,
           "rect": [
-            43.713,
-            113.4,
+            40.478,
+            73.6414,
             512.567,
             298.6601
           ],
           "parts": [
             [
-              43.713,
-              113.4,
+              40.478,
+              73.6414,
               512.567,
               298.6601
             ]
@@ -4905,7 +4542,7 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          59.8101,
+          57.7075,
           545.764
         ]
       ],
@@ -4936,19 +4573,79 @@
           "column": 0,
           "rect": [
             57.8101,
-            338.4669,
-            527.0743,
+            413.7027,
+            398.2452,
             427.5374
           ],
           "parts": [
             [
               57.8101,
-              338.4669,
-              527.0743,
+              413.7027,
+              398.2452,
               427.5374
             ]
           ],
-          "headline": "Yaşadığınız yerleşmenin gelişiminde öne çıkan doğal ve beşerî faktörlerde a."
+          "headline": "Yaşadığınız yerleşmenin gelişiminde öne çıkan doğal ve beşerî faktörlerde"
+        },
+        {
+          "id": "p121-a",
+          "label": "a",
+          "column": 0,
+          "rect": [
+            77.6903,
+            396.8681,
+            314.9793,
+            410.7027
+          ],
+          "parts": [
+            [
+              77.6903,
+              396.8681,
+              314.9793,
+              410.7027
+            ]
+          ],
+          "headline": "geçmişten bugüne ne tür bir değişim yaşanmıştır?"
+        },
+        {
+          "id": "p121-b",
+          "label": "b",
+          "column": 0,
+          "rect": [
+            77.7376,
+            380.0334,
+            509.658,
+            393.8681
+          ],
+          "parts": [
+            [
+              77.7376,
+              380.0334,
+              509.658,
+              393.8681
+            ]
+          ],
+          "headline": "geçmişten bugüne yaşananlar, yerleşme alanında hangi açılardan değişime neden olmuş olabilir?"
+        },
+        {
+          "id": "p121-c",
+          "label": "c",
+          "column": 0,
+          "rect": [
+            77.0394,
+            338.4669,
+            527.0743,
+            377.0334
+          ],
+          "parts": [
+            [
+              77.0394,
+              338.4669,
+              527.0743,
+              377.0334
+            ]
+          ],
+          "headline": "zaman içinde yaşanan değişim, yerleşme alanındaki insanların günlük hayatını nasıl etkilemiş olabilir?"
         }
       ]
     },
@@ -4957,7 +4654,15 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          44.9905,
+          44.1021,
+          96.9669
+        ],
+        [
+          100.9669,
+          276.3289
+        ],
+        [
+          280.3289,
           545.764
         ]
       ],
@@ -5048,14 +4753,14 @@
           "column": 0,
           "rect": [
             43.4304,
-            95.674,
+            98.475,
             425.3531,
             110.4232
           ],
           "parts": [
             [
               43.4304,
-              95.674,
+              98.475,
               425.3531,
               110.4232
             ]
@@ -5068,18 +4773,19 @@
           "column": 0,
           "rect": [
             43.6305,
-            78.0046,
-            69.4205,
-            92.674
+            73.166,
+            535.515,
+            95.475
           ],
           "parts": [
             [
               43.6305,
-              78.0046,
-              69.4205,
-              92.674
+              73.166,
+              535.515,
+              95.475
             ]
-          ]
+          ],
+          "headline": "Yerleşmenin yer seçimi, kuruluşu ve gelişiminde etkili olan coğrafi faktörler neden farklılık gösterir? Etkinlik"
         },
         {
           "id": "p124-4",
@@ -5089,17 +4795,189 @@
             42.9905,
             53.045,
             512.5201,
-            75.0046
+            70.166
           ],
           "parts": [
             [
               42.9905,
               53.045,
               512.5201,
-              75.0046
+              70.166
             ]
           ],
           "headline": "Bir yerleşmenin gelişiminde zaman içinde yaşanan değişimde coğrafi faktörler ne kadar etkili olmaktadır?"
+        },
+        {
+          "id": "p124-1",
+          "label": "1",
+          "column": 1,
+          "rect": [
+            107.837,
+            488.631,
+            512.9303,
+            518.26
+          ],
+          "parts": [
+            [
+              107.837,
+              488.631,
+              512.9303,
+              518.26
+            ]
+          ],
+          "headline": "Yerleşmelerin yer seçimi, kuruluşu ve gelişiminde etkili olan coğrafi faktörlerin sonuçlarını"
+        },
+        {
+          "id": "p124-2",
+          "label": "2",
+          "column": 1,
+          "rect": [
+            106.2587,
+            451.6936,
+            512.9301,
+            487.4254
+          ],
+          "parts": [
+            [
+              106.2587,
+              451.6936,
+              512.9301,
+              487.4254
+            ]
+          ],
+          "headline": "Belirlediğiniz yerleşmenin yer seçimi, kuruluşu ve gelişiminde etkili olan coğrafi faktörlerin etkilerini ortaya koyacağını düşündüğünüz harita, görsel, metin v"
+        },
+        {
+          "id": "p124-3",
+          "label": "3",
+          "column": 1,
+          "rect": [
+            106.2587,
+            434.8589,
+            307.3359,
+            448.6936
+          ],
+          "parts": [
+            [
+              106.2587,
+              434.8589,
+              307.3359,
+              448.6936
+            ]
+          ],
+          "headline": "Bulduğunuz coğrafi temsilleri inceleyiniz."
+        },
+        {
+          "id": "p124-4",
+          "label": "4",
+          "column": 1,
+          "rect": [
+            105.8335,
+            404.0243,
+            512.9283,
+            431.8589
+          ],
+          "parts": [
+            [
+              105.8335,
+              404.0243,
+              512.9283,
+              431.8589
+            ]
+          ],
+          "headline": "Belirlediğiniz yerleşmenin yer seçimi, kuruluşu ve gelişiminde etkili olan coğrafi faktörlere yönelik incelediğiniz coğrafi temsillerden yararlanarak sorular ol"
+        },
+        {
+          "id": "p124-5",
+          "label": "5",
+          "column": 1,
+          "rect": [
+            106.2682,
+            365.2924,
+            511.0905,
+            401.0243
+          ],
+          "parts": [
+            [
+              106.2682,
+              365.2924,
+              511.0905,
+              401.0243
+            ]
+          ],
+          "headline": "Oluşturduğunuz sorular hakkında bilgi toplayınız. Bu süreçte genel ağ, kütüphane vb. kay­ naklardan yararlanabilirsiniz."
+        }
+      ]
+    },
+    "128": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          47.3589,
+          268.4331
+        ],
+        [
+          272.4331,
+          352.1915
+        ],
+        [
+          356.1915,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p128-29",
+          "label": "29",
+          "column": 0,
+          "rect": [
+            92.5591,
+            588.8387,
+            303.2786,
+            611.5587
+          ],
+          "parts": [
+            [
+              92.5591,
+              588.8387,
+              125.4046,
+              611.5587
+            ],
+            [
+              270.4331,
+              588.8387,
+              303.2786,
+              611.5587
+            ]
+          ],
+          "headline": "0 40' K"
+        },
+        {
+          "id": "p128-37",
+          "label": "37",
+          "column": 0,
+          "rect": [
+            216.0466,
+            526.2562,
+            506.6284,
+            606.1698
+          ],
+          "parts": [
+            [
+              216.0466,
+              538.8494,
+              248.1488,
+              561.5694
+            ],
+            [
+              383.2292,
+              526.2562,
+              506.6284,
+              606.1698
+            ]
+          ],
+          "headline": "0 33' K"
         }
       ]
     },
@@ -5108,7 +4986,7 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          62.296,
+          60.7676,
           545.764
         ]
       ],
@@ -5160,7 +5038,7 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          58.9032,
+          47.477,
           545.764
         ]
       ],
@@ -5232,14 +5110,14 @@
           "rect": [
             57.2269,
             94.8,
-            527.9725,
+            529.0584,
             298.1209
           ],
           "parts": [
             [
               57.2269,
               94.8,
-              527.9725,
+              529.0584,
               298.1209
             ]
           ],
@@ -5252,7 +5130,7 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          59.1031,
+          47.9368,
           545.764
         ]
       ],
@@ -5344,7 +5222,7 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          63.5934,
+          59.2106,
           545.764
         ]
       ],
@@ -5355,14 +5233,14 @@
           "column": 0,
           "rect": [
             61.9053,
-            540.2,
+            538.7,
             483.8,
             611.6555
           ],
           "parts": [
             [
               61.9053,
-              540.2,
+              538.7,
               483.8,
               611.6555
             ]
@@ -5375,16 +5253,16 @@
           "column": 0,
           "rect": [
             62.0942,
-            499.3433,
+            507.95,
             483.8,
-            537.2
+            538.7
           ],
           "parts": [
             [
               62.0942,
-              499.3433,
+              507.95,
               483.8,
-              537.2
+              538.7
             ]
           ],
           "headline": "Topladığım bilgileri düzenledim."
@@ -5395,16 +5273,16 @@
           "column": 0,
           "rect": [
             61.5934,
-            396.2,
-            483.8,
-            496.3433
+            386.7,
+            391.3,
+            506.95
           ],
           "parts": [
             [
               61.5934,
-              396.2,
-              483.8,
-              496.3433
+              386.7,
+              391.3,
+              506.95
             ]
           ],
           "headline": "lişiminde etkili olan fonksiyonlar arasında nasıl bir ilişki olduğunu belir­ ledim."
@@ -5416,15 +5294,15 @@
           "rect": [
             57.4573,
             100.0433,
-            526.0651,
-            393.2
+            391.3,
+            362.1811
           ],
           "parts": [
             [
               57.4573,
               100.0433,
-              526.0651,
-              393.2
+              391.3,
+              362.1811
             ]
           ],
           "headline": "Hazırladığım sunuyu sınıf ortamında arkadaşlarımla paylaştım."
@@ -5539,14 +5417,8 @@
             [
               56.252,
               305.5552,
-              78.0361,
-              335.4677
-            ],
-            [
-              81.0361,
-              305.589,
               525.7953,
-              335.3027
+              335.4677
             ]
           ],
           "headline": "Yerleşmelerin haritadaki alanlarına bakıldığında, kara yolunun güzergâhındaki değişim her iki yerleş­"
@@ -5598,23 +5470,24 @@
           "rect": [
             183.3767,
             666.4084,
-            204.4302,
-            689.1284
+            523.3606,
+            696.2067
           ],
           "parts": [
             [
-              195.4034,
+              183.3767,
               666.4084,
-              204.4302,
+              215.8397,
               689.1284
             ],
             [
-              183.3767,
+              478.2071,
               666.4084,
-              192.4034,
-              689.1284
+              523.3606,
+              696.2067
             ]
-          ]
+          ],
+          "headline": "0 03' K"
         },
         {
           "id": "p139-38",
@@ -5633,7 +5506,8 @@
               454.8626,
               603.0896
             ]
-          ]
+          ],
+          "headline": "0 K"
         }
       ]
     },
@@ -5705,15 +5579,15 @@
           "column": 0,
           "rect": [
             57.1969,
-            674.4844,
-            504.5945,
+            440.4175,
+            527.482,
             704.3969
           ],
           "parts": [
             [
               57.1969,
-              674.4844,
-              504.5945,
+              440.4175,
+              527.482,
               704.3969
             ]
           ],
@@ -5725,16 +5599,16 @@
           "column": 0,
           "rect": [
             57.1969,
-            401.4354,
+            416.2276,
             527.4321,
-            441.9
+            434.435
           ],
           "parts": [
             [
               57.1969,
-              401.4354,
+              416.2276,
               527.4321,
-              441.9
+              434.435
             ]
           ],
           "headline": "Petrolün bulunup işletilmeye başlanmasıyla me özelliği kazanmıştır."
@@ -5745,16 +5619,16 @@
           "column": 0,
           "rect": [
             57.1969,
-            364.9335,
+            379.7237,
             527.4321,
-            398.4354
+            405.4
           ],
           "parts": [
             [
               57.1969,
-              364.9335,
+              379.7237,
               527.4321,
-              398.4354
+              405.4
             ]
           ],
           "headline": "Eşsiz koy, körfez ve tesisleri sayesinde leşmelerden biri hâline gelmiştir."
@@ -5765,16 +5639,16 @@
           "column": 0,
           "rect": [
             57.1969,
-            328.4315,
+            343.2198,
             529.324,
-            361.9335
+            368.9
           ],
           "parts": [
             [
               57.1969,
-              328.4315,
+              343.2198,
               529.324,
-              361.9335
+              368.9
             ]
           ],
           "headline": "Yönetim fonksiyonuyla öne çıkan fonksiyonuyla da öne çıkan bir yerleşmedir."
@@ -5785,16 +5659,16 @@
           "column": 0,
           "rect": [
             57.1969,
-            291.9295,
+            306.7158,
             529.3222,
-            325.4315
+            332.4
           ],
           "parts": [
             [
               57.1969,
-              291.9295,
+              306.7158,
               529.3222,
-              325.4315
+              332.4
             ]
           ],
           "headline": "Ekonomik gelişiminde topoğrafik koşullarının olumsuz etkilerini hisseden ihraç ürününün doğal yetişme alanı olması sayesinde tarım fonksiyonu öne çıkan yerleşme"
@@ -5805,16 +5679,16 @@
           "column": 0,
           "rect": [
             57.1969,
-            269.3436,
-            502.3173,
-            288.9295
+            272.9,
+            444.4333,
+            295.9
           ],
           "parts": [
             [
               57.1969,
-              269.3436,
-              502.3173,
-              288.9295
+              272.9,
+              444.4333,
+              295.9
             ]
           ],
           "headline": "Çok sayıda fonksiyona sahip"
@@ -5827,14 +5701,14 @@
             57.1969,
             231.0714,
             529.3211,
-            266.3436
+            271.4
           ],
           "parts": [
             [
               57.1969,
               231.0714,
               529.3211,
-              266.3436
+              271.4
             ]
           ],
           "headline": "Hayvancılık ya da turizm amaçlı kullanılan geçici köy altı yerleşmelerinden olan yaylalar"
@@ -5906,7 +5780,7 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          45.6369,
+          45.0237,
           545.764
         ]
       ],
@@ -5958,7 +5832,7 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          59.8101,
+          57.7075,
           545.764
         ]
       ],
@@ -6041,15 +5915,15 @@
           "column": 0,
           "rect": [
             57.0007,
-            299.9,
-            526.6,
+            299.8963,
+            527.6648,
             644.0736
           ],
           "parts": [
             [
               57.0007,
-              299.9,
-              526.6,
+              299.8963,
+              527.6648,
               644.0736
             ]
           ],
@@ -6147,14 +6021,14 @@
           "column": 0,
           "rect": [
             47.7114,
-            478.174,
+            477.4,
             511.7161,
             520.7866
           ],
           "parts": [
             [
               47.7114,
-              478.174,
+              477.4,
               511.7161,
               520.7866
             ]
@@ -6167,16 +6041,16 @@
           "column": 0,
           "rect": [
             45.7112,
-            438.8047,
+            438.0,
             511.7161,
-            475.174
+            474.4
           ],
           "parts": [
             [
               45.7112,
-              438.8047,
+              438.0,
               511.7161,
-              475.174
+              474.4
             ]
           ],
           "headline": "Üst düzey karar verme ve kontrol etme faaliyetlerini kapsayan ekonomik sektör hangisidir?"
@@ -6187,16 +6061,16 @@
           "column": 0,
           "rect": [
             45.9113,
-            399.4854,
+            398.7,
             511.7161,
-            435.8047
+            435.0
           ],
           "parts": [
             [
               45.9113,
-              399.4854,
+              398.7,
               511.7161,
-              435.8047
+              435.0
             ]
           ],
           "headline": "Bilgi ve enformasyon işleme faaliyetlerini kapsayan ekonomik sektör hangisidir?"
@@ -6207,16 +6081,16 @@
           "column": 0,
           "rect": [
             45.2713,
-            348.1662,
+            347.4,
             511.7161,
-            396.4854
+            395.7
           ],
           "parts": [
             [
               45.2713,
-              348.1662,
+              347.4,
               511.7161,
-              396.4854
+              395.7
             ]
           ],
           "headline": "Birincil ekonomik faaliyetlerle elde edilen ham mad­delerin işlenerek insanların kullanabileceği hâle geti­ rildiği faaliyetleri kapsayan sektör hangisidir?"
@@ -6227,16 +6101,16 @@
           "column": 0,
           "rect": [
             45.9213,
-            296.7968,
+            296.0,
             511.7161,
-            345.1662
+            344.4
           ],
           "parts": [
             [
               45.9213,
-              296.7968,
+              296.0,
               511.7161,
-              345.1662
+              344.4
             ]
           ],
           "headline": "Fiziksel ürünler yerine maddi olmayan mal ve hizmetler sağlayan ekonomik faaliyet kollarını kapsayan sektör hangisidir?"
@@ -6247,16 +6121,16 @@
           "column": 0,
           "rect": [
             45.9313,
-            257.4775,
+            256.7,
             511.7161,
-            293.7968
+            293.0
           ],
           "parts": [
             [
               45.9313,
-              257.4775,
+              256.7,
               511.7161,
-              293.7968
+              293.0
             ]
           ],
           "headline": "Birincil sektörde yer alan ekonomik faaliyetler hangileridir?"
@@ -6267,16 +6141,16 @@
           "column": 0,
           "rect": [
             46.9913,
-            218.1083,
+            217.3,
             511.7161,
-            254.4775
+            253.7
           ],
           "parts": [
             [
               46.9913,
-              218.1083,
+              217.3,
               511.7161,
-              254.4775
+              253.7
             ]
           ],
           "headline": "İkincil sektörde yer alan ekonomik faaliyetler hangileridir?"
@@ -6287,16 +6161,16 @@
           "column": 0,
           "rect": [
             45.8913,
-            178.789,
+            178.0,
             511.7161,
-            215.1083
+            214.3
           ],
           "parts": [
             [
               45.8913,
-              178.789,
+              178.0,
               511.7161,
-              215.1083
+              214.3
             ]
           ],
           "headline": "Üçüncül sektörde yer alan ekonomik faaliyetler hangileridir?"
@@ -6307,16 +6181,16 @@
           "column": 0,
           "rect": [
             45.9912,
-            139.4697,
+            138.7,
             511.7161,
-            175.789
+            175.0
           ],
           "parts": [
             [
               45.9912,
-              139.4697,
+              138.7,
               511.7161,
-              175.789
+              175.0
             ]
           ],
           "headline": "Dördüncül sektörde yer alan ekonomik faaliyetler hangileridir?"
@@ -6329,14 +6203,14 @@
             42.4226,
             93.8,
             511.7161,
-            136.4697
+            135.7
           ],
           "parts": [
             [
               42.4226,
               93.8,
               511.7161,
-              136.4697
+              135.7
             ]
           ],
           "headline": "Beşincil sektörde yer alan ekonomik faaliyetler hangileridir?"
@@ -6441,7 +6315,7 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          59.1969,
+          59.1609,
           547.5891
         ]
       ],
@@ -6493,7 +6367,15 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          123.1284,
+          59.1969,
+          211.7887
+        ],
+        [
+          215.7887,
+          277.3964
+        ],
+        [
+          281.3964,
           545.764
         ]
       ],
@@ -6503,80 +6385,19 @@
           "label": "1",
           "column": 0,
           "rect": [
-            123.1319,
-            156.2026,
-            528.2261,
-            191.9345
+            64.7383,
+            162.3055,
+            123.1648,
+            200.5302
           ],
           "parts": [
             [
-              123.1319,
-              156.2026,
-              528.2261,
-              191.9345
+              64.7383,
+              162.3055,
+              123.1648,
+              200.5302
             ]
-          ],
-          "headline": "Ekonomik sektörlerin Türkiye ekonomisindeki yeri ile ilgili oluşturacağınız tablo, grafik şekil ve/veya diyagramın amacını belirleyiniz."
-        },
-        {
-          "id": "p157-2",
-          "label": "2",
-          "column": 0,
-          "rect": [
-            121.3646,
-            125.368,
-            526.3853,
-            153.2026
-          ],
-          "parts": [
-            [
-              121.3646,
-              125.368,
-              526.3853,
-              153.2026
-            ]
-          ],
-          "headline": "Belirlediğiniz amaca uygun oluşturacağınız tablo, grafik, şekil ve/veya diyagramları hazır­ larken kullanacağınız (cetvel, pergel, boya kalemi vb.) araç gereçle"
-        },
-        {
-          "id": "p157-3",
-          "label": "3",
-          "column": 0,
-          "rect": [
-            121.5536,
-            80.5334,
-            528.2252,
-            122.368
-          ],
-          "parts": [
-            [
-              121.5536,
-              80.5334,
-              528.2252,
-              122.368
-            ]
-          ],
-          "headline": "Tablo, grafik, şekil ve/veya diyagramın hazırlanması sürecinde Türkiye’de ekonomik sek­ törlerin istihdam ve gayrisafi yurt içi hasıladaki yerine ilişkin ihtiya"
-        },
-        {
-          "id": "p157-4",
-          "label": "4",
-          "column": 0,
-          "rect": [
-            121.1284,
-            55.8015,
-            362.2075,
-            77.5334
-          ],
-          "parts": [
-            [
-              121.1284,
-              55.8015,
-              362.2075,
-              77.5334
-            ]
-          ],
-          "headline": "Temin ettiğiniz verileri tasnif ederek sınıflandırınız."
+          ]
         }
       ]
     },
@@ -6596,14 +6417,14 @@
           "column": 0,
           "rect": [
             42.8,
-            246.3412,
+            246.3236,
             514.4641,
             624.5793
           ],
           "parts": [
             [
               42.8,
-              246.3412,
+              246.3236,
               514.4641,
               624.5793
             ]
@@ -6618,14 +6439,14 @@
             43.0237,
             115.5975,
             512.5704,
-            243.3412
+            243.3236
           ],
           "parts": [
             [
               43.0237,
               115.5975,
               512.5704,
-              243.3412
+              243.3236
             ]
           ],
           "headline": "Aşağıdaki soruları oluşturduğunuz tablo, grafik, şekil ve/veya diyagramdan yararlanarak cevaplayınız.",
@@ -6678,7 +6499,7 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          59.3757,
+          59.0856,
           547.819
         ]
       ],
@@ -6750,7 +6571,7 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          63.5934,
+          59.2106,
           545.764
         ]
       ],
@@ -6761,16 +6582,16 @@
           "column": 0,
           "rect": [
             61.5934,
-            480.5,
+            479.0,
             483.8,
-            516.5
+            546.0
           ],
           "parts": [
             [
               61.5934,
-              480.5,
+              479.0,
               483.8,
-              516.5
+              546.0
             ]
           ],
           "headline": "Topladığım bilgileri düzenledim."
@@ -6781,16 +6602,16 @@
           "column": 0,
           "rect": [
             62.1982,
-            417.2,
+            415.7,
             483.8,
-            477.5
+            479.0
           ],
           "parts": [
             [
               62.1982,
-              417.2,
+              415.7,
               483.8,
-              477.5
+              479.0
             ]
           ],
           "headline": "Düzenlediğim bilgileri görselleştirdim."
@@ -6802,15 +6623,15 @@
           "rect": [
             57.4573,
             132.6417,
-            526.0651,
-            414.2
+            391.3,
+            390.5234
           ],
           "parts": [
             [
               57.4573,
               132.6417,
-              526.0651,
-              414.2
+              391.3,
+              390.5234
             ]
           ],
           "headline": "Hazırladığım bilgi görselini sınıf ortamında sundum."
@@ -6823,6 +6644,14 @@
       "columns": [
         [
           45.0237,
+          186.5218
+        ],
+        [
+          190.5218,
+          242.5253
+        ],
+        [
+          246.5253,
           545.764
         ]
       ],
@@ -6832,16 +6661,16 @@
           "label": "1",
           "column": 0,
           "rect": [
-            44.7247,
+            199.2727,
             368.7891,
-            509.0118,
+            479.4467,
             513.6466
           ],
           "parts": [
             [
-              44.7247,
+              199.2727,
               368.7891,
-              509.0118,
+              479.4467,
               513.6466
             ]
           ],
@@ -6855,7 +6684,7 @@
             43.3063,
             315.7341,
             508.6523,
-            345.6466
+            490.0679
           ],
           "parts": [
             [
@@ -6863,6 +6692,12 @@
               315.7341,
               508.6523,
               345.6466
+            ],
+            [
+              182.5218,
+              368.7891,
+              198.2727,
+              490.0679
             ]
           ],
           "headline": "Verilen ülkelerde çalışan nüfusun sektörel dağılımında ne tür farklılıklar bulunmaktadır? Açıklayınız."
@@ -6986,7 +6821,7 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          45.2969,
+          45.2599,
           545.764
         ]
       ],
@@ -7033,12 +6868,48 @@
         }
       ]
     },
+    "165": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.1969,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p165-10",
+          "label": "10",
+          "column": 0,
+          "rect": [
+            57.1969,
+            151.9,
+            528.6347,
+            741.8059
+          ],
+          "parts": [
+            [
+              57.1969,
+              151.9,
+              528.6347,
+              741.8059
+            ]
+          ],
+          "headline": "Yaşadığınız yerde çalışan nüfusun istihdamının daha çok hangi ekonomik faaliyet kollarında olduğu ve bu faaliyet grubunun hangi ekonomik sektörlere ait olduğunu"
+        }
+      ]
+    },
     "166": {
       "pageWidth": 569.764,
       "pageHeight": 796.535,
       "columns": [
         [
           45.0237,
+          244.4177
+        ],
+        [
+          248.4177,
           545.764
         ]
       ],
@@ -7181,16 +7052,16 @@
           "column": 0,
           "rect": [
             57.7249,
-            71.2,
+            52.4,
             528.6339,
-            134.7193
+            138.1533
           ],
           "parts": [
             [
               57.7249,
-              71.2,
+              52.4,
               528.6339,
-              134.7193
+              138.1533
             ]
           ],
           "headline": "Türkiye’de yıllar içerisinde çalışan nüfusun sektörel dağılım yüzdesinde yaşanan değişim, ülkenin ekonomik gelişmişliğini nasıl etkilemiş olabilir? Açıklayınız."
@@ -7202,7 +7073,7 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          45.6369,
+          45.0237,
           545.764
         ]
       ],
@@ -7274,7 +7145,7 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          59.999,
+          57.7075,
           545.764
         ]
       ],
@@ -7285,14 +7156,14 @@
           "column": 0,
           "rect": [
             59.7663,
-            335.3664,
+            334.195,
             474.3839,
             356.6668
           ],
           "parts": [
             [
               59.7663,
-              335.3664,
+              334.195,
               474.3839,
               356.6668
             ]
@@ -7307,14 +7178,14 @@
             57.999,
             282.655,
             535.811,
-            332.3664
+            331.195
           ],
           "parts": [
             [
               57.999,
               282.655,
               535.811,
-              332.3664
+              331.195
             ]
           ],
           "headline": "İki farklı yerde yaşanan bu depremlerin etkilerinin farklılık göstermesinde ül­ kelerin afetle mücadele stratejilerindeki farklılıklar etkili midir? Açıklayınız"
@@ -7337,14 +7208,14 @@
           "column": 0,
           "rect": [
             45.2677,
-            299.5851,
+            301.597,
             277.8622,
             321.4597
           ],
           "parts": [
             [
               45.2677,
-              299.5851,
+              301.597,
               277.8622,
               321.4597
             ]
@@ -7359,14 +7230,14 @@
             43.2877,
             281.9157,
             455.9003,
-            296.5851
+            298.597
           ],
           "parts": [
             [
               43.2877,
               281.9157,
               455.9003,
-              296.5851
+              298.597
             ]
           ],
           "headline": "Erzincan ve çevresinde etkili olan bu depremde yöre insanı hangi duyguları yaşamış olabilir?"
@@ -7418,7 +7289,7 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          45.5575,
+          45.0237,
           545.764
         ]
       ],
@@ -7490,7 +7361,7 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          64.5383,
+          60.1555,
           548.684
         ]
       ],
@@ -7501,16 +7372,16 @@
           "column": 0,
           "rect": [
             63.0391,
-            515.1,
+            515.35,
             484.8,
-            568.1
+            592.6
           ],
           "parts": [
             [
               63.0391,
-              515.1,
+              515.35,
               484.8,
-              568.1
+              592.6
             ]
           ],
           "headline": "çevre üzerindeki yıkıcı etkilerini gösteren resim, fotograf ve gravür top­ ladım. Bu süreçte genel ağ, kütüphane vb. kaynaklardan yararlandım."
@@ -7521,16 +7392,16 @@
           "column": 0,
           "rect": [
             62.5383,
-            423.2362,
-            484.8,
-            512.1
+            405.3724,
+            392.2,
+            514.35
           ],
           "parts": [
             [
               62.5383,
-              423.2362,
-              484.8,
-              512.1
+              405.3724,
+              392.2,
+              514.35
             ]
           ],
           "headline": "Topladığımız bilgileri soruların cevaplarına göre düzenledim."
@@ -7542,15 +7413,15 @@
           "rect": [
             58.4022,
             70.6412,
-            525.272,
-            420.2362
+            392.2,
+            318.5669
           ],
           "parts": [
             [
               58.4022,
               70.6412,
-              525.272,
-              420.2362
+              392.2,
+              318.5669
             ]
           ],
           "headline": "mişlik seviyelerine göre’’ afetlere karşı geliştirdikleri uygulamalar arasında nasıl bir ilişki olduğunu çözümledim."
@@ -7657,14 +7528,14 @@
           "column": 0,
           "rect": [
             57.1969,
-            119.3,
+            119.2852,
             528.6371,
             323.6327
           ],
           "parts": [
             [
               57.1969,
-              119.3,
+              119.2852,
               528.6371,
               323.6327
             ]
@@ -7678,7 +7549,11 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          122.8472,
+          59.1969,
+          118.2339
+        ],
+        [
+          122.2339,
           545.764
         ]
       ],
@@ -7686,7 +7561,7 @@
         {
           "id": "p187-1",
           "label": "1",
-          "column": 0,
+          "column": 1,
           "rect": [
             122.6144,
             112.4467,
@@ -7706,7 +7581,7 @@
         {
           "id": "p187-2",
           "label": "2",
-          "column": 0,
+          "column": 1,
           "rect": [
             120.8472,
             81.6121,
@@ -7726,7 +7601,7 @@
         {
           "id": "p187-3",
           "label": "3",
-          "column": 0,
+          "column": 1,
           "rect": [
             121.0362,
             56.8802,
@@ -7750,7 +7625,7 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          45.2599,
+          45.0237,
           545.764
         ]
       ],
@@ -7849,14 +7724,14 @@
           "column": 0,
           "rect": [
             43.2599,
-            127.2949,
+            124.7374,
             514.7012,
             356.738
           ],
           "parts": [
             [
               43.2599,
-              127.2949,
+              124.7374,
               514.7012,
               356.738
             ]
@@ -8069,11 +7944,15 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          58.7851,
-          117.6051
+          58.1128,
+          117.0391
         ],
         [
-          121.6051,
+          121.0391,
+          213.8174
+        ],
+        [
+          217.8174,
           545.764
         ]
       ],
@@ -8103,16 +7982,16 @@
           "label": "2. Adım",
           "column": 0,
           "rect": [
-            56.7851,
-            415.4751,
-            456.1335,
+            55.067,
+            125.931,
+            536.808,
             437.953
           ],
           "parts": [
             [
-              56.7851,
-              415.4751,
-              456.1335,
+              55.067,
+              125.931,
+              536.808,
               437.953
             ]
           ],
@@ -8205,7 +8084,7 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          63.7512,
+          58.2382,
           545.764
         ]
       ],
@@ -8236,15 +8115,15 @@
           "column": 0,
           "rect": [
             61.5338,
-            515.6,
-            488.1,
+            506.1,
+            401.8,
             606.0397
           ],
           "parts": [
             [
               61.5338,
-              515.6,
-              488.1,
+              506.1,
+              401.8,
               606.0397
             ]
           ],
@@ -8257,15 +8136,15 @@
           "rect": [
             60.2382,
             202.4236,
-            525.2318,
-            512.6
+            401.8,
+            489.9099
           ],
           "parts": [
             [
               60.2382,
               202.4236,
-              525.2318,
-              512.6
+              401.8,
+              489.9099
             ]
           ],
           "headline": "Oluşturduğum karşılaştırma tablosunu arkadaşlarıma sınıf ortamında sundum."
@@ -8472,14 +8351,14 @@
           "column": 0,
           "rect": [
             57.5645,
-            87.2,
+            68.4,
             523.5899,
             136.6878
           ],
           "parts": [
             [
               57.5645,
-              87.2,
+              68.4,
               523.5899,
               136.6878
             ]
@@ -8493,7 +8372,7 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          59.9991,
+          57.7075,
           545.764
         ]
       ],
@@ -8575,17 +8454,17 @@
           "label": "1. Adım",
           "column": 0,
           "rect": [
-            40.5796,
-            98.0454,
-            543.6996,
-            739.5084
+            57.0719,
+            480.2011,
+            528.6391,
+            642.8779
           ],
           "parts": [
             [
-              40.5796,
-              98.0454,
-              543.6996,
-              739.5084
+              57.0719,
+              480.2011,
+              528.6391,
+              642.8779
             ]
           ],
           "headline": "Aşağıdaki bilgileri kullanarak, verilen harita üzerinde Türklerin ilk ana yurdunun sınırlarını çizip göç ettiği bölgeleri oklarla gösteriniz."
@@ -8598,54 +8477,46 @@
       "columns": [
         [
           45.0237,
-          170.2615
+          139.3787
         ],
         [
-          174.2615,
-          185.2463
+          143.3787,
+          204.0069
         ],
         [
-          189.2463,
-          205.9171
+          208.0069,
+          270.521
         ],
         [
-          209.9171,
-          219.789
+          274.521,
+          330.8541
         ],
         [
-          223.789,
-          233.0113
-        ],
-        [
-          237.0113,
-          245.0648
-        ],
-        [
-          249.0648,
-          272.1554
-        ],
-        [
-          276.1554,
-          286.0274
-        ],
-        [
-          290.0274,
-          299.5074
-        ],
-        [
-          303.5074,
-          340.6857
-        ],
-        [
-          344.6857,
-          418.3375
-        ],
-        [
-          422.3375,
+          334.8541,
           588.9692
         ]
       ],
       "activities": [
+        {
+          "id": "p206-2. Adım",
+          "label": "2. Adım",
+          "column": 0,
+          "rect": [
+            43.0237,
+            710.5916,
+            382.6867,
+            740.3256
+          ],
+          "parts": [
+            [
+              43.0237,
+              710.5916,
+              382.6867,
+              740.3256
+            ]
+          ],
+          "headline": "Türk dünyası haritasını inceleyerek aşağıdaki soruları cevaplayınız."
+        },
         {
           "id": "p206-1",
           "label": "1",
@@ -8672,14 +8543,14 @@
           "column": 0,
           "rect": [
             43.8483,
-            353.2725,
+            347.8684,
             469.2599,
             362.5628
           ],
           "parts": [
             [
               43.8483,
-              353.2725,
+              347.8684,
               469.2599,
               362.5628
             ]
@@ -8694,282 +8565,194 @@
             44.4483,
             311.0438,
             508.0577,
-            340.4511
+            344.8684
           ],
           "parts": [
             [
               44.4483,
               311.0438,
               508.0577,
-              326.2124
-            ],
-            [
-              44.4483,
-              329.2124,
-              70.0883,
-              340.4511
+              344.8684
             ]
           ],
           "headline": "Türk kültürünün yayılış alanı dikkate alındığında Türk kültürünün hangi medeniyetlerle etkileşim içinde olduğu söylenebilir?"
         },
         {
-          "id": "p206-e",
-          "label": "e",
+          "id": "p206-c",
+          "label": "c",
           "column": 1,
           "rect": [
-            172.2615,
-            507.9111,
-            180.5002,
-            532.8667
+            138.1219,
+            544.9154,
+            184.7016,
+            576.3909
           ],
           "parts": [
             [
-              172.2615,
-              507.9111,
-              180.5002,
-              532.8667
+              138.1219,
+              544.9154,
+              184.7016,
+              576.3909
             ]
           ],
-          "headline": "e"
+          "headline": "ç"
         },
         {
           "id": "p206-f",
           "label": "f",
-          "column": 2,
+          "column": 1,
           "rect": [
-            189.818,
-            471.4321,
-            284.7242,
-            523.7485
+            163.1394,
+            498.0112,
+            257.5156,
+            575.9862
           ],
           "parts": [
             [
-              189.818,
-              492.7746,
-              208.8781,
-              523.7485
+              163.1394,
+              498.0112,
+              200.5582,
+              529.9286
             ],
             [
-              211.8781,
-              471.4321,
-              249.9347,
-              514.5079
-            ],
-            [
-              267.6297,
-              505.7232,
-              284.7242,
-              521.6735
-            ]
-          ],
-          "headline": "g !"
-        },
-        {
-          "id": "p206-R",
-          "label": "R",
-          "column": 3,
-          "rect": [
-            207.9171,
-            584.3473,
-            217.3575,
-            605.8108
-          ],
-          "parts": [
-            [
-              207.9171,
-              584.3473,
-              217.3575,
-              605.8108
-            ]
-          ],
-          "headline": "R"
-        },
-        {
-          "id": "p206-U",
-          "label": "U",
-          "column": 4,
-          "rect": [
-            220.3575,
-            573.7055,
-            231.8326,
-            607.1997
-          ],
-          "parts": [
-            [
-              220.3575,
-              573.7055,
-              231.8326,
-              607.1997
-            ]
-          ],
-          "headline": "S"
-        },
-        {
-          "id": "p206-A",
-          "label": "A",
-          "column": 5,
-          "rect": [
-            239.2852,
-            570.3159,
-            246.4555,
-            608.5631
-          ],
-          "parts": [
-            [
-              239.2852,
-              570.3159,
-              246.4555,
-              608.5631
-            ]
-          ],
-          "headline": "A Y 6"
-        },
-        {
-          "id": "p206-F",
-          "label": "F",
-          "column": 6,
-          "rect": [
-            247.0648,
-            583.6145,
-            352.5442,
-            612.5396
-          ],
-          "parts": [
-            [
-              259.133,
-              587.7843,
-              280.1279,
-              612.5396
-            ],
-            [
-              247.0648,
-              588.3241,
-              256.133,
-              609.7467
-            ],
-            [
-              334.8056,
-              583.6145,
-              352.5442,
-              608.5701
-            ]
-          ],
-          "headline": "E D E"
-        },
-        {
-          "id": "p206-h",
-          "label": "h",
-          "column": 6,
-          "rect": [
-            254.6718,
-            460.3564,
-            371.9569,
-            508.2451
-          ],
-          "parts": [
-            [
-              266.0824,
-              460.3564,
-              284.1208,
-              502.7232
-            ],
-            [
-              287.1208,
-              470.402,
-              301.4041,
-              490.9615
-            ],
-            [
-              254.6718,
-              479.3808,
-              263.0824,
-              504.3364
-            ],
-            [
-              354.2183,
-              483.2895,
-              371.9569,
-              508.2451
-            ]
-          ],
-          "headline": "h ! M"
-        },
-        {
-          "id": "p206-A",
-          "label": "A",
-          "column": 8,
-          "rect": [
-            288.6977,
-            591.7741,
-            298.0709,
-            613.9285
-          ],
-          "parts": [
-            [
-              288.6977,
-              591.7741,
-              298.0709,
-              613.9285
-            ]
-          ],
-          "headline": "S"
-        },
-        {
-          "id": "p206-Y",
-          "label": "Y",
-          "column": 9,
-          "rect": [
-            313.8717,
-            593.17,
-            320.6138,
-            616.7536
-          ],
-          "parts": [
-            [
-              313.8717,
-              593.17,
-              320.6138,
-              616.7536
-            ]
-          ],
-          "headline": "O N U"
-        },
-        {
-          "id": "p206-1",
-          "label": "1",
-          "column": 11,
-          "rect": [
-            420.3375,
-            595.9764,
-            438.873,
-            606.0338
-          ],
-          "parts": [
-            [
-              420.3375,
-              595.9764,
-              438.873,
-              606.0338
+              200.9096,
+              542.9153,
+              257.5156,
+              575.9862
             ]
           ]
         },
         {
-          "id": "p206-l",
-          "label": "l",
-          "column": 11,
+          "id": "p206-8",
+          "label": "8",
+          "column": 2,
           "rect": [
-            420.3375,
-            455.5758,
-            437.6052,
-            463.238
+            203.5582,
+            517.1577,
+            268.6217,
+            539.9153
           ],
           "parts": [
             [
-              420.3375,
-              455.5758,
-              437.6052,
-              463.238
+              203.5582,
+              517.1577,
+              268.6217,
+              539.9153
             ]
+          ],
+          "headline": "Aral G."
+        },
+        {
+          "id": "p206-h",
+          "label": "h",
+          "column": 2,
+          "rect": [
+            206.0069,
+            444.2026,
+            338.8541,
+            571.8194
+          ],
+          "parts": [
+            [
+              206.0069,
+              479.1095,
+              274.493,
+              504.3364
+            ],
+            [
+              276.8238,
+              444.2026,
+              338.8541,
+              571.8194
+            ]
+          ],
+          "headline": "h İ R A N"
+        },
+        {
+          "id": "p206-k",
+          "label": "k",
+          "column": 4,
+          "rect": [
+            342.6857,
+            513.9314,
+            495.8014,
+            563.4894
+          ],
+          "parts": [
+            [
+              342.6857,
+              513.9314,
+              495.8014,
+              563.4894
+            ]
+          ],
+          "headline": "TÜRK TOPLULUKLARI ! Avrupa'daki Türkler",
+          "items": [
+            {
+              "id": "p206-k-a",
+              "label": "a",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                424.3375,
+                528.4828,
+                489.1393,
+                547.7289
+              ],
+              "text": "TÜRK TOPLULUKLARI Avrupa'daki Türkler"
+            },
+            {
+              "id": "p206-k-b",
+              "label": "b",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                424.3375,
+                523.2713,
+                467.9676,
+                543.0128
+              ],
+              "text": "! a ! Kosova Türkleri b"
+            },
+            {
+              "id": "p206-k-c",
+              "label": "c",
+              "number": 3,
+              "partIndex": 0,
+              "rect": [
+                403.2386,
+                517.9314,
+                474.7303,
+                534.3695
+              ],
+              "text": "! Pekin Yunanistan Türkleri c"
+            },
+            {
+              "id": "p206-k-ç",
+              "label": "ç",
+              "number": 3,
+              "partIndex": 0,
+              "rect": [
+                359.9131,
+                513.9314,
+                474.8511,
+                531.9999
+              ],
+              "text": "j Bulgaristan Türkleri"
+            },
+            {
+              "id": "p206-k-d",
+              "label": "d",
+              "number": 4,
+              "partIndex": 0,
+              "rect": [
+                424.3375,
+                513.9314,
+                471.7825,
+                527.1216
+              ],
+              "text": "ç Romanya Türkleri d Sarı  Deniz"
+            }
           ]
         }
       ]
@@ -8979,7 +8762,7 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          59.4609,
+          58.9621,
           545.764
         ]
       ],
@@ -9102,15 +8885,15 @@
           "column": 0,
           "rect": [
             43.0237,
-            598.2407,
-            495.3589,
+            95.1,
+            497.5317,
             644.0903
           ],
           "parts": [
             [
               43.0237,
-              598.2407,
-              495.3589,
+              95.1,
+              497.5317,
               644.0903
             ]
           ],
@@ -9123,7 +8906,7 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          58.7851,
+          58.1128,
           545.764
         ]
       ],
@@ -9215,7 +8998,7 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          63.4393,
+          58.2382,
           545.764
         ]
       ],
@@ -9246,14 +9029,14 @@
           "column": 0,
           "rect": [
             61.7512,
-            572.2,
+            570.7,
             488.1,
             598.9464
           ],
           "parts": [
             [
               61.7512,
-              572.2,
+              570.7,
               488.1,
               598.9464
             ]
@@ -9266,16 +9049,16 @@
           "column": 0,
           "rect": [
             61.9401,
-            538.1622,
+            545.0,
             488.1,
-            569.2
+            570.7
           ],
           "parts": [
             [
               61.9401,
-              538.1622,
+              545.0,
               488.1,
-              569.2
+              570.7
             ]
           ],
           "headline": "Topladığım bilgi ve görselleri düzenledim."
@@ -9286,16 +9069,16 @@
           "column": 0,
           "rect": [
             61.4393,
-            500.0,
+            498.5,
             488.1,
-            535.1622
+            545.0
           ],
           "parts": [
             [
               61.4393,
-              500.0,
+              498.5,
               488.1,
-              535.1622
+              545.0
             ]
           ],
           "headline": "rel miras ögelerinin tanınması, tanıtılması, korunması ve geliştirilmesine yönelik çıkarımlarda bulundum."
@@ -9306,16 +9089,16 @@
           "column": 0,
           "rect": [
             62.0441,
-            471.1,
+            469.6,
             488.1,
-            497.0
+            498.5
           ],
           "parts": [
             [
               62.0441,
-              471.1,
+              469.6,
               488.1,
-              497.0
+              498.5
             ]
           ],
           "headline": "Yaptığım çıkarımları da içine alan bir afiş hazırladım."
@@ -9327,15 +9110,15 @@
           "rect": [
             60.2382,
             175.147,
-            525.2318,
-            468.1
+            401.8,
+            445.4163
           ],
           "parts": [
             [
               60.2382,
               175.147,
-              525.2318,
-              468.1
+              401.8,
+              445.4163
             ]
           ],
           "headline": "Hazırladığım afişi okulumuzda sergiledim."
@@ -9544,10 +9327,6 @@
       "columns": [
         [
           59.1969,
-          139.7477
-        ],
-        [
-          143.7477,
           545.764
         ]
       ],
@@ -9558,15 +9337,15 @@
           "column": 0,
           "rect": [
             54.634,
-            495.7127,
-            526.7402,
+            250.076,
+            539.003,
             716.6996
           ],
           "parts": [
             [
               54.634,
-              495.7127,
-              526.7402,
+              250.076,
+              539.003,
               716.6996
             ]
           ],
@@ -9598,14 +9377,14 @@
           "column": 0,
           "rect": [
             58.3771,
-            81.6,
+            62.8,
             528.6356,
             159.7502
           ],
           "parts": [
             [
               58.3771,
-              81.6,
+              62.8,
               528.6356,
               159.7502
             ]
@@ -9619,63 +9398,94 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          192.9287,
-          226.6042
+          46.673,
+          120.8912
         ],
         [
-          230.6042,
-          295.1165
+          124.8912,
+          178.0615
         ],
         [
-          299.1165,
+          182.0615,
+          241.638
+        ],
+        [
+          245.638,
+          306.7179
+        ],
+        [
+          310.7179,
+          362.08
+        ],
+        [
+          366.08,
+          427.1656
+        ],
+        [
+          431.1656,
           545.764
         ]
       ],
       "activities": [
         {
-          "id": "p234-a",
-          "label": "a",
-          "column": 0,
+          "id": "p234-6",
+          "label": "6",
+          "column": 2,
           "rect": [
-            188.531,
-            79.4592,
-            301.3131,
-            216.9305
+            173.6702,
+            209.2816,
+            257.947,
+            357.0139
           ],
           "parts": [
             [
-              188.531,
-              79.4592,
-              233.4644,
-              207.6581
-            ],
-            [
-              236.4644,
-              161.7874,
-              301.3131,
-              216.9305
+              173.6702,
+              209.2816,
+              257.947,
+              357.0139
             ]
           ],
-          "headline": "! Atina ARN"
+          "headline": "A 6"
         },
         {
           "id": "p234-a",
           "label": "a",
           "column": 2,
           "rect": [
-            300.5038,
-            606.6714,
-            326.2329,
-            626.3687
+            177.3577,
+            87.0199,
+            246.9066,
+            206.2816
           ],
           "parts": [
             [
-              300.5038,
-              606.6714,
-              326.2329,
-              626.3687
+              177.3577,
+              87.0199,
+              246.9066,
+              206.2816
             ]
-          ]
+          ],
+          "headline": "AVUSTURYA !"
+        },
+        {
+          "id": "p234-8",
+          "label": "8",
+          "column": 4,
+          "rect": [
+            307.8038,
+            196.8406,
+            364.4986,
+            363.5279
+          ],
+          "parts": [
+            [
+              307.8038,
+              196.8406,
+              364.4986,
+              363.5279
+            ]
+          ],
+          "headline": "Sarıkamış G."
         }
       ]
     },
@@ -9684,1460 +9494,380 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          135.8671,
-          144.9661
+          130.2826,
+          187.5638
         ],
         [
-          148.9661,
-          169.1363
+          191.5638,
+          248.291
         ],
         [
-          173.1363,
-          193.6107
+          252.291,
+          309.7609
         ],
         [
-          197.6107,
-          218.5208
+          313.7609,
+          371.0921
         ],
         [
-          222.5208,
-          247.3525
+          375.0921,
+          434.3905
         ],
         [
-          251.3525,
-          275.5933
-        ],
-        [
-          279.5933,
-          301.6187
-        ],
-        [
-          305.6187,
-          326.1245
-        ],
-        [
-          330.1245,
-          350.8496
-        ],
-        [
-          354.8496,
-          363.0265
-        ],
-        [
-          367.0265,
-          375.4553
-        ],
-        [
-          379.4553,
-          391.2876
-        ],
-        [
-          395.2876,
-          407.174
-        ],
-        [
-          411.174,
-          437.9539
-        ],
-        [
-          441.9539,
+          438.3905,
           545.764
         ]
       ],
       "activities": [
         {
-          "id": "p235-G",
-          "label": "G",
-          "column": 0,
-          "rect": [
-            133.8671,
-            608.3855,
-            156.6884,
-            614.4556
-          ],
-          "parts": [
-            [
-              133.8671,
-              608.3855,
-              156.6884,
-              614.4556
-            ]
-          ]
-        },
-        {
-          "id": "p235-n",
-          "label": "n",
-          "column": 0,
-          "rect": [
-            138.1487,
-            139.4664,
-            158.787,
-            158.7133
-          ],
-          "parts": [
-            [
-              138.1487,
-              139.4664,
-              158.787,
-              158.7133
-            ]
-          ]
-        },
-        {
-          "id": "p235-T",
-          "label": "T",
-          "column": 1,
-          "rect": [
-            152.8332,
-            662.4013,
-            175.4095,
-            671.1636
-          ],
-          "parts": [
-            [
-              152.8332,
-              662.4013,
-              175.4095,
-              671.1636
-            ]
-          ]
-        },
-        {
-          "id": "p235-A",
-          "label": "A",
-          "column": 1,
-          "rect": [
-            156.1996,
-            364.7004,
-            177.4994,
-            373.1689
-          ],
-          "parts": [
-            [
-              156.1996,
-              364.7004,
-              177.4994,
-              373.1689
-            ]
-          ]
-        },
-        {
-          "id": "p235-D",
-          "label": "D",
-          "column": 1,
-          "rect": [
-            154.7005,
-            353.4397,
-            176.0376,
-            361.7004
-          ],
-          "parts": [
-            [
-              154.7005,
-              353.4397,
-              176.0376,
-              361.7004
-            ]
-          ]
-        },
-        {
-          "id": "p235-n",
-          "label": "n",
-          "column": 1,
-          "rect": [
-            134.27,
-            105.361,
-            166.0181,
-            128.8765
-          ],
-          "parts": [
-            [
-              134.27,
-              116.4844,
-              166.0181,
-              128.8765
-            ],
-            [
-              145.3798,
-              105.361,
-              166.0181,
-              113.4844
-            ]
-          ]
-        },
-        {
-          "id": "p235-p",
-          "label": "p",
-          "column": 2,
-          "rect": [
-            171.2727,
-            557.5917,
-            197.5043,
-            577.1829
-          ],
-          "parts": [
-            [
-              171.2727,
-              568.8873,
-              197.5043,
-              577.1829
-            ],
-            [
-              171.2727,
-              557.5917,
-              195.0575,
-              565.8873
-            ]
-          ]
-        },
-        {
-          "id": "p235-A",
-          "label": "A",
-          "column": 2,
-          "rect": [
-            177.5357,
-            362.998,
-            198.7493,
-            377.2767
-          ],
-          "parts": [
-            [
-              177.5357,
-              362.998,
-              198.7493,
-              377.2767
-            ]
-          ]
-        },
-        {
-          "id": "p235-D",
-          "label": "D",
-          "column": 2,
-          "rect": [
-            180.9171,
-            341.6641,
-            202.3972,
-            359.998
-          ],
-          "parts": [
-            [
-              180.9171,
-              341.6641,
-              202.3972,
-              348.5296
-            ],
-            [
-              180.9171,
-              351.5296,
-              202.3972,
-              359.998
-            ]
-          ]
-        },
-        {
-          "id": "p235-Ğ",
-          "label": "Ğ",
-          "column": 2,
-          "rect": [
-            182.7843,
-            296.8931,
-            203.271,
-            304.1711
-          ],
-          "parts": [
-            [
-              182.7843,
-              296.8931,
-              203.271,
-              304.1711
-            ]
-          ]
-        },
-        {
-          "id": "p235-A",
-          "label": "A",
-          "column": 2,
-          "rect": [
-            182.9046,
-            283.6411,
-            203.6877,
-            293.8931
-          ],
-          "parts": [
-            [
-              182.9046,
-              283.6411,
-              203.6877,
-              293.8931
-            ]
-          ]
-        },
-        {
           "id": "p235-ı",
           "label": "ı",
-          "column": 2,
+          "column": 0,
           "rect": [
-            171.9439,
-            134.7857,
+            138.1116,
+            132.2451,
             191.651,
-            152.2997
+            158.8483
           ],
           "parts": [
             [
-              171.9439,
-              134.7857,
+              138.1116,
+              132.2451,
               191.651,
-              152.2997
+              158.8483
             ]
-          ]
+          ],
+          "headline": "ı Dereköy (42)"
         },
         {
           "id": "p235-n",
           "label": "n",
+          "column": 0,
+          "rect": [
+            136.5114,
+            113.1339,
+            192.4499,
+            129.2451
+          ],
+          "parts": [
+            [
+              136.5114,
+              113.1339,
+              192.4499,
+              129.2451
+            ]
+          ],
+          "headline": "Havsa"
+        },
+        {
+          "id": "p235-o",
+          "label": "o",
+          "column": 1,
+          "rect": [
+            223.9435,
+            369.742,
+            247.585,
+            395.432
+          ],
+          "parts": [
+            [
+              223.9435,
+              369.742,
+              247.585,
+              395.432
+            ]
+          ],
+          "headline": "z  !"
+        },
+        {
+          "id": "p235-p",
+          "label": "p",
+          "column": 1,
+          "rect": [
+            182.7443,
+            207.2664,
+            303.3952,
+            472.1887
+          ],
+          "parts": [
+            [
+              182.7443,
+              207.2664,
+              249.7658,
+              243.4608
+            ],
+            [
+              250.585,
+              286.7208,
+              303.3952,
+              472.1887
+            ]
+          ],
+          "headline": "I Bozüyük A !"
+        },
+        {
+          "id": "p235-r",
+          "label": "r",
           "column": 2,
           "rect": [
-            178.3938,
-            100.3135,
-            199.0321,
-            119.5603
+            242.5777,
+            246.4608,
+            320.2957,
+            279.4382
           ],
           "parts": [
             [
-              178.3938,
-              111.4369,
-              199.0321,
-              119.5603
-            ],
-            [
-              178.3938,
-              100.3135,
-              199.0321,
-              108.4369
+              242.5777,
+              246.4608,
+              320.2957,
+              279.4382
             ]
-          ]
+          ],
+          "headline": "S a k a ! ULTAN"
         },
         {
-          "id": "p235-p",
-          "label": "p",
+          "id": "p235-a",
+          "label": "a",
           "column": 3,
           "rect": [
-            206.7423,
-            673.2754,
-            232.9739,
-            681.571
+            304.6093,
+            591.32,
+            368.9266,
+            597.4962
           ],
           "parts": [
             [
-              206.7423,
-              673.2754,
-              232.9739,
-              681.571
+              304.6093,
+              591.32,
+              368.9266,
+              597.4962
             ]
-          ]
+          ],
+          "headline": "BATMAN (525) T n Kamışlı"
         },
         {
-          "id": "p235-R",
-          "label": "R",
+          "id": "p235-a",
+          "label": "a",
           "column": 3,
           "rect": [
-            195.7265,
-            614.9304,
-            214.3059,
-            633.1948
+            305.1655,
+            574.5363,
+            425.0674,
+            581.3569
           ],
           "parts": [
             [
-              195.7265,
-              614.9304,
-              214.3059,
-              633.1948
+              305.1655,
+              574.5363,
+              425.0674,
+              581.3569
             ]
-          ]
+          ],
+          "headline": "N Ä ! Ä !"
         },
         {
-          "id": "p235-A",
-          "label": "A",
+          "id": "p235-i",
+          "label": "i",
           "column": 3,
           "rect": [
-            198.3608,
-            578.8159,
-            219.1512,
-            599.2542
+            305.2969,
+            552.7211,
+            418.9935,
+            569.0665
           ],
           "parts": [
             [
-              198.3608,
-              578.8159,
-              219.1512,
-              599.2542
+              305.2969,
+              552.7211,
+              418.9935,
+              569.0665
             ]
-          ]
+          ],
+          "headline": "İ Ä ! p !"
         },
         {
-          "id": "p235-D",
-          "label": "D",
+          "id": "p235-s",
+          "label": "s",
           "column": 3,
           "rect": [
-            198.0575,
-            552.105,
-            217.1215,
-            567.6026
+            316.2484,
+            540.2754,
+            438.8337,
+            547.3214
           ],
           "parts": [
             [
-              198.0575,
-              552.105,
-              217.1215,
-              567.6026
-            ]
-          ]
-        },
-        {
-          "id": "p235-N",
-          "label": "N",
-          "column": 3,
-          "rect": [
-            199.9466,
-            530.083,
-            221.2531,
-            540.7215
-          ],
-          "parts": [
-            [
-              199.9466,
-              530.083,
-              221.2531,
-              540.7215
-            ]
-          ]
-        },
-        {
-          "id": "p235-A",
-          "label": "A",
-          "column": 3,
-          "rect": [
-            201.6913,
-            504.0929,
-            222.6361,
-            522.5755
-          ],
-          "parts": [
-            [
-              201.6913,
-              504.0929,
-              222.6361,
-              522.5755
-            ]
-          ]
-        },
-        {
-          "id": "p235-I",
-          "label": "I",
-          "column": 3,
-          "rect": [
-            203.4314,
-            464.4202,
-            224.4061,
-            472.199
-          ],
-          "parts": [
-            [
-              203.4314,
-              464.4202,
-              224.4061,
-              472.199
-            ]
-          ]
-        },
-        {
-          "id": "p235-D",
-          "label": "D",
-          "column": 3,
-          "rect": [
-            201.826,
-            307.1711,
-            223.0346,
-            324.3979
-          ],
-          "parts": [
-            [
-              201.826,
-              307.1711,
-              223.0346,
-              324.3979
-            ]
-          ]
-        },
-        {
-          "id": "p235-Ğ",
-          "label": "Ğ",
-          "column": 3,
-          "rect": [
-            206.0575,
-            272.8802,
-            227.3886,
-            292.3862
-          ],
-          "parts": [
-            [
-              206.0575,
-              272.8802,
-              227.3886,
-              292.3862
-            ]
-          ]
-        },
-        {
-          "id": "p235-A",
-          "label": "A",
-          "column": 3,
-          "rect": [
-            201.766,
-            227.238,
-            221.4657,
-            234.3803
-          ],
-          "parts": [
-            [
-              201.766,
-              227.238,
-              221.4657,
-              234.3803
-            ]
-          ]
-        },
-        {
-          "id": "p235-L",
-          "label": "L",
-          "column": 3,
-          "rect": [
-            202.2483,
-            204.3147,
-            221.944,
-            210.4818
-          ],
-          "parts": [
-            [
-              202.2483,
-              204.3147,
-              221.944,
-              210.4818
-            ]
-          ]
-        },
-        {
-          "id": "p235-A",
-          "label": "A",
-          "column": 3,
-          "rect": [
-            202.5585,
-            192.767,
-            222.2582,
-            198.8607
-          ],
-          "parts": [
-            [
-              202.5585,
-              192.767,
-              222.2582,
-              198.8607
-            ]
-          ]
-        },
-        {
-          "id": "p235-L",
-          "label": "L",
-          "column": 4,
-          "rect": [
-            336.8345,
-            615.1012,
-            360.85,
-            635.9528
-          ],
-          "parts": [
-            [
-              336.8345,
-              615.1012,
-              360.85,
-              635.9528
+              316.2484,
+              540.2754,
+              438.8337,
+              547.3214
             ]
           ],
-          "headline": "DİCLE N."
-        },
-        {
-          "id": "p235-S",
-          "label": "S",
-          "column": 4,
-          "rect": [
-            227.5889,
-            617.5063,
-            247.1258,
-            625.4087
-          ],
-          "parts": [
-            [
-              227.5889,
-              617.5063,
-              247.1258,
-              625.4087
-            ]
-          ]
-        },
-        {
-          "id": "p235-p",
-          "label": "p",
-          "column": 4,
-          "rect": [
-            220.5208,
-            572.7343,
-            232.5749,
-            592.3256
-          ],
-          "parts": [
-            [
-              220.5208,
-              572.7343,
-              232.5749,
-              592.3256
-            ]
-          ]
-        },
-        {
-          "id": "p235-A",
-          "label": "A",
-          "column": 4,
-          "rect": [
-            235.5749,
-            566.1306,
-            243.7597,
-            583.9317
-          ],
-          "parts": [
-            [
-              235.5749,
-              566.1306,
-              243.7597,
-              583.9317
-            ]
-          ]
-        },
-        {
-          "id": "p235-D",
-          "label": "D",
-          "column": 4,
-          "rect": [
-            225.6263,
-            537.6095,
-            246.7752,
-            556.6966
-          ],
-          "parts": [
-            [
-              225.6263,
-              548.653,
-              246.7752,
-              556.6966
-            ],
-            [
-              225.6263,
-              537.6095,
-              246.7752,
-              545.653
-            ]
-          ]
-        },
-        {
-          "id": "p235-İ",
-          "label": "İ",
-          "column": 4,
-          "rect": [
-            226.3551,
-            417.3221,
-            243.6033,
-            424.5554
-          ],
-          "parts": [
-            [
-              226.3551,
-              417.3221,
-              243.6033,
-              424.5554
-            ]
-          ]
-        },
-        {
-          "id": "p235-V",
-          "label": "V",
-          "column": 4,
-          "rect": [
-            226.4515,
-            402.5497,
-            245.8029,
-            414.3221
-          ],
-          "parts": [
-            [
-              226.4515,
-              402.5497,
-              245.8029,
-              414.3221
-            ]
-          ]
-        },
-        {
-          "id": "p235-z",
-          "label": "z",
-          "column": 4,
-          "rect": [
-            231.798,
-            367.8309,
-            279.1479,
-            389.504
-          ],
-          "parts": [
-            [
-              231.798,
-              382.2229,
-              251.5401,
-              389.504
-            ],
-            [
-              253.5602,
-              367.8309,
-              279.1479,
-              389.1551
-            ],
-            [
-              231.798,
-              371.9419,
-              251.5401,
-              379.2229
-            ]
-          ],
-          "headline": "Karasu D."
-        },
-        {
-          "id": "p235-A",
-          "label": "A",
-          "column": 4,
-          "rect": [
-            229.2355,
-            267.1978,
-            250.7194,
-            279.8484
-          ],
-          "parts": [
-            [
-              229.2355,
-              267.1978,
-              250.7194,
-              279.8484
-            ]
-          ]
-        },
-        {
-          "id": "p235-E",
-          "label": "E",
-          "column": 4,
-          "rect": [
-            227.7578,
-            251.2746,
-            248.7153,
-            259.0287
-          ],
-          "parts": [
-            [
-              227.7578,
-              251.2746,
-              248.7153,
-              259.0287
-            ]
-          ]
-        },
-        {
-          "id": "p235-İ",
-          "label": "İ",
-          "column": 5,
-          "rect": [
-            258.3937,
-            72.5671,
-            277.1698,
-            98.0706
-          ],
-          "parts": [
-            [
-              269.2818,
-              72.5671,
-              277.1698,
-              98.0706
-            ],
-            [
-              258.3937,
-              72.5671,
-              266.2818,
-              98.0706
-            ]
-          ]
-        },
-        {
-          "id": "p235-O",
-          "label": "O",
-          "column": 6,
-          "rect": [
-            285.9785,
-            567.9392,
-            308.4575,
-            576.3779
-          ],
-          "parts": [
-            [
-              285.9785,
-              567.9392,
-              308.4575,
-              576.3779
-            ]
-          ]
-        },
-        {
-          "id": "p235-p",
-          "label": "p",
-          "column": 6,
-          "rect": [
-            281.3648,
-            513.6646,
-            307.5964,
-            533.2559
-          ],
-          "parts": [
-            [
-              281.3648,
-              524.9602,
-              307.5964,
-              533.2559
-            ],
-            [
-              281.3648,
-              513.6646,
-              307.5964,
-              521.9602
-            ]
-          ]
-        },
-        {
-          "id": "p235-A",
-          "label": "A",
-          "column": 6,
-          "rect": [
-            287.6424,
-            421.281,
-            308.9836,
-            442.3598
-          ],
-          "parts": [
-            [
-              287.6424,
-              433.3204,
-              308.9836,
-              442.3598
-            ],
-            [
-              287.6424,
-              421.281,
-              308.9836,
-              430.3204
-            ]
-          ]
-        },
-        {
-          "id": "p235-C",
-          "label": "C",
-          "column": 6,
-          "rect": [
-            277.5933,
-            285.5583,
-            297.3115,
-            305.5127
-          ],
-          "parts": [
-            [
-              277.5933,
-              285.5583,
-              297.3115,
-              305.5127
-            ]
-          ]
-        },
-        {
-          "id": "p235-Ğ",
-          "label": "Ğ",
-          "column": 6,
-          "rect": [
-            289.5781,
-            163.0897,
-            303.3966,
-            171.5275
-          ],
-          "parts": [
-            [
-              289.5781,
-              163.0897,
-              303.3966,
-              171.5275
-            ]
-          ]
-        },
-        {
-          "id": "p235-L",
-          "label": "L",
-          "column": 7,
-          "rect": [
-            314.629,
-            667.0443,
-            335.4402,
-            686.5006
-          ],
-          "parts": [
-            [
-              314.629,
-              678.2724,
-              335.4402,
-              686.5006
-            ],
-            [
-              314.629,
-              667.0443,
-              330.4087,
-              675.2724
-            ]
-          ]
-        },
-        {
-          "id": "p235-N",
-          "label": "N",
-          "column": 7,
-          "rect": [
-            309.723,
-            465.4542,
-            332.7607,
-            487.0546
-          ],
-          "parts": [
-            [
-              309.723,
-              465.4542,
-              332.7607,
-              487.0546
-            ]
-          ]
-        },
-        {
-          "id": "p235-R",
-          "label": "R",
-          "column": 7,
-          "rect": [
-            307.9541,
-            381.6741,
-            326.6415,
-            401.6697
-          ],
-          "parts": [
-            [
-              318.7978,
-              381.6741,
-              326.6415,
-              401.6697
-            ],
-            [
-              307.9541,
-              381.6741,
-              315.7978,
-              401.6697
-            ]
-          ]
+          "headline": "Viranşehir Ceylanpınar o"
         },
         {
           "id": "p235-t",
           "label": "t",
-          "column": 7,
+          "column": 3,
           "rect": [
-            315.4743,
-            337.0628,
-            335.1577,
-            351.1067
+            309.4424,
+            526.3083,
+            437.3172,
+            537.2754
           ],
           "parts": [
             [
-              315.4743,
-              337.0628,
-              335.1577,
-              351.1067
+              309.4424,
+              526.3083,
+              437.3172,
+              537.2754
             ]
-          ]
+          ],
+          "headline": "Ä !"
         },
         {
           "id": "p235-u",
           "label": "u",
-          "column": 7,
+          "column": 3,
           "rect": [
-            315.4031,
-            319.4768,
-            335.124,
-            334.0628
+            337.8547,
+            479.5595,
+            414.8439,
+            523.3083
           ],
           "parts": [
             [
-              315.4031,
-              319.4768,
-              335.124,
-              334.0628
+              337.8547,
+              479.5595,
+              414.8439,
+              523.3083
+            ]
+          ],
+          "headline": "Harran Ovası Ä !"
+        },
+        {
+          "id": "p235-t",
+          "label": "t",
+          "column": 3,
+          "rect": [
+            315.1876,
+            345.4168,
+            335.1577,
+            353.8172
+          ],
+          "parts": [
+            [
+              315.1876,
+              345.4168,
+              335.1577,
+              353.8172
             ]
           ]
         },
         {
-          "id": "p235-M",
-          "label": "M",
-          "column": 7,
+          "id": "p235-k",
+          "label": "k",
+          "column": 3,
           "rect": [
-            324.1999,
-            149.8302,
-            333.4987,
-            169.3755
+            306.3952,
+            308.6355,
+            378.7211,
+            333.7754
           ],
           "parts": [
             [
-              324.1999,
-              149.8302,
-              333.4987,
-              169.3755
-            ]
-          ]
-        },
-        {
-          "id": "p235-N",
-          "label": "N",
-          "column": 7,
-          "rect": [
-            308.6396,
-            146.5074,
-            321.1999,
-            154.5518
-          ],
-          "parts": [
-            [
-              308.6396,
-              146.5074,
-              321.1999,
-              154.5518
-            ]
-          ]
-        },
-        {
-          "id": "p235-O",
-          "label": "O",
-          "column": 8,
-          "rect": [
-            328.1245,
-            597.8636,
-            348.0996,
-            604.7555
-          ],
-          "parts": [
-            [
-              328.1245,
-              597.8636,
-              348.0996,
-              604.7555
-            ]
-          ]
-        },
-        {
-          "id": "p235-N",
-          "label": "N",
-          "column": 8,
-          "rect": [
-            431.9804,
-            563.3246,
-            454.8648,
-            585.8327
-          ],
-          "parts": [
-            [
-              431.9804,
-              563.3246,
-              454.8648,
-              585.8327
+              306.3952,
+              308.6355,
+              378.7211,
+              333.7754
             ]
           ],
-          "headline": "FIRAT N."
-        },
-        {
-          "id": "p235-o",
-          "label": "o",
-          "column": 8,
-          "rect": [
-            334.7677,
-            533.5643,
-            354.4242,
-            551.0041
-          ],
-          "parts": [
-            [
-              334.7677,
-              533.5643,
-              354.4242,
-              551.0041
-            ]
-          ]
-        },
-        {
-          "id": "p235-R",
-          "label": "R",
-          "column": 8,
-          "rect": [
-            332.3027,
-            381.7229,
-            355.071,
-            404.0456
-          ],
-          "parts": [
-            [
-              332.3027,
-              394.3843,
-              355.071,
-              404.0456
-            ],
-            [
-              332.3027,
-              381.7229,
-              355.071,
-              391.3843
-            ]
-          ]
-        },
-        {
-          "id": "p235-T",
-          "label": "T",
-          "column": 8,
-          "rect": [
-            331.2638,
-            228.2266,
-            355.4125,
-            238.1875
-          ],
-          "parts": [
-            [
-              331.2638,
-              228.2266,
-              355.4125,
-              238.1875
-            ]
-          ]
-        },
-        {
-          "id": "p235-a",
-          "label": "a",
-          "column": 10,
-          "rect": [
-            371.075,
-            388.7841,
-            403.8751,
-            412.9525
-          ],
-          "parts": [
-            [
-              382.4345,
-              388.7841,
-              403.8751,
-              404.8585
-            ],
-            [
-              371.075,
-              395.3262,
-              379.4345,
-              412.9525
-            ]
-          ],
-          "headline": "İSKENDERUN KRF."
-        },
-        {
-          "id": "p235-D",
-          "label": "D",
-          "column": 10,
-          "rect": [
-            359.8743,
-            285.4728,
-            379.9742,
-            305.2537
-          ],
-          "parts": [
-            [
-              359.8743,
-              296.8633,
-              379.9742,
-              305.2537
-            ],
-            [
-              359.8743,
-              285.4728,
-              379.9742,
-              293.8633
-            ]
-          ]
-        },
-        {
-          "id": "p235-N",
-          "label": "N",
-          "column": 11,
-          "rect": [
-            384.0827,
-            407.8585,
-            403.0177,
-            416.506
-          ],
-          "parts": [
-            [
-              384.0827,
-              407.8585,
-              403.0177,
-              416.506
-            ]
-          ]
-        },
-        {
-          "id": "p235-o",
-          "label": "o",
-          "column": 11,
-          "rect": [
-            378.941,
-            333.1183,
-            398.8177,
-            348.9776
-          ],
-          "parts": [
-            [
-              378.941,
-              333.1183,
-              398.8177,
-              348.9776
-            ]
-          ]
-        },
-        {
-          "id": "p235-P",
-          "label": "P",
-          "column": 11,
-          "rect": [
-            382.064,
-            314.7073,
-            401.8646,
-            330.1183
-          ],
-          "parts": [
-            [
-              382.064,
-              314.7073,
-              401.8646,
-              330.1183
-            ]
-          ]
-        },
-        {
-          "id": "p235-ş",
-          "label": "ş",
-          "column": 11,
-          "rect": [
-            381.4821,
-            303.9717,
-            401.2514,
-            313.2758
-          ],
-          "parts": [
-            [
-              381.4821,
-              303.9717,
-              401.2514,
-              313.2758
-            ]
-          ]
-        },
-        {
-          "id": "p235-a",
-          "label": "a",
-          "column": 11,
-          "rect": [
-            380.4183,
-            291.2303,
-            400.2716,
-            300.9717
-          ],
-          "parts": [
-            [
-              380.4183,
-              291.2303,
-              400.2716,
-              300.9717
-            ]
-          ]
-        },
-        {
-          "id": "p235-K",
-          "label": "K",
-          "column": 12,
-          "rect": [
-            393.2876,
-            667.5419,
-            446.9582,
-            690.3003
-          ],
-          "parts": [
-            [
-              393.2876,
-              681.2129,
-              419.4727,
-              690.3003
-            ],
-            [
-              428.0279,
-              667.5419,
-              446.9582,
-              687.9313
-            ],
-            [
-              393.2876,
-              669.1256,
-              419.4727,
-              678.2129
-            ]
-          ],
-          "headline": "Baiji"
+          "headline": "Karapınar T u r O D 1566 a y n"
         },
         {
           "id": "p235-n",
           "label": "n",
-          "column": 12,
+          "column": 4,
           "rect": [
-            406.0177,
-            407.9395,
-            421.2627,
-            420.0401
+            366.9014,
+            366.3311,
+            441.9715,
+            387.2801
           ],
           "parts": [
             [
-              406.0177,
-              407.9395,
-              421.2627,
-              420.0401
+              366.9014,
+              366.3311,
+              441.9715,
+              387.2801
             ]
-          ]
+          ],
+          "headline": "p !"
         },
         {
-          "id": "p235-R",
-          "label": "R",
-          "column": 13,
+          "id": "p235-o",
+          "label": "o",
+          "column": 4,
           "rect": [
-            412.3626,
-            481.8664,
-            438.4294,
-            502.1184
+            378.941,
+            310.8136,
+            444.0805,
+            351.2996
           ],
           "parts": [
             [
-              412.3626,
-              493.4924,
-              438.4294,
-              502.1184
-            ],
-            [
-              412.3626,
-              481.8664,
-              438.4294,
-              490.4924
-            ]
-          ]
-        },
-        {
-          "id": "p235-A",
-          "label": "A",
-          "column": 13,
-          "rect": [
-            409.174,
-            423.0401,
-            426.5628,
-            434.6456
-          ],
-          "parts": [
-            [
-              409.174,
-              423.0401,
-              426.5628,
-              434.6456
-            ]
-          ]
-        },
-        {
-          "id": "p235-I",
-          "label": "I",
-          "column": 13,
-          "rect": [
-            416.9342,
-            342.0484,
-            439.9276,
-            367.5175
-          ],
-          "parts": [
-            [
-              416.9342,
-              342.0484,
-              439.9276,
-              356.9375
-            ],
-            [
-              416.9342,
-              359.9375,
-              435.6657,
-              367.5175
+              378.941,
+              310.8136,
+              444.0805,
+              351.2996
             ]
           ],
-          "headline": "I  R"
+          "headline": "N K"
         },
         {
           "id": "p235-p",
           "label": "p",
-          "column": 14,
+          "column": 4,
           "rect": [
-            446.2983,
-            488.427,
-            472.5299,
-            508.0182
+            376.3141,
+            293.9066,
+            459.7844,
+            475.4027
           ],
           "parts": [
             [
-              446.2983,
-              488.427,
-              472.5299,
-              508.0182
+              376.3141,
+              293.9066,
+              402.5457,
+              302.5378
+            ],
+            [
+              440.8541,
+              447.0819,
+              459.7844,
+              475.4027
             ]
           ]
         },
         {
-          "id": "p235-A",
-          "label": "A",
-          "column": 14,
+          "id": "p235-30",
+          "label": "30",
+          "column": 5,
           "rect": [
-            439.9539,
-            310.941,
-            459.9656,
-            319.99
+            447.2957,
+            127.3901,
+            486.6517,
+            153.2068
           ],
           "parts": [
             [
-              439.9539,
-              310.941,
-              459.9656,
-              319.99
+              447.2957,
+              127.3901,
+              486.6517,
+              153.2068
             ]
           ],
-          "headline": "S D"
+          "headline": "28°D"
         }
       ]
     },
@@ -11146,304 +9876,50 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          200.4479,
-          210.9958
+          88.8981,
+          143.3192
         ],
         [
-          214.9958,
-          226.941
+          147.3192,
+          209.3683
         ],
         [
-          230.941,
-          267.1742
+          213.3683,
+          270.8921
         ],
         [
-          271.1742,
-          299.4543
+          274.8921,
+          331.9417
         ],
         [
-          303.4543,
-          319.4561
+          335.9417,
+          393.2549
         ],
         [
-          323.4561,
-          358.1806
-        ],
-        [
-          362.1806,
-          399.0036
-        ],
-        [
-          403.0036,
-          417.0435
-        ],
-        [
-          421.0435,
+          397.2549,
           545.764
         ]
       ],
       "activities": [
         {
-          "id": "p236-I",
-          "label": "I",
-          "column": 0,
-          "rect": [
-            198.4479,
-            506.5373,
-            220.5828,
-            526.5628
-          ],
-          "parts": [
-            [
-              198.4479,
-              506.5373,
-              220.5828,
-              526.5628
-            ]
-          ]
-        },
-        {
-          "id": "p236-A",
-          "label": "A",
-          "column": 1,
-          "rect": [
-            255.2811,
-            481.4905,
-            344.5685,
-            507.6114
-          ],
-          "parts": [
-            [
-              255.2811,
-              488.217,
-              274.8697,
-              505.8703
-            ],
-            [
-              302.2166,
-              484.012,
-              325.2595,
-              507.6114
-            ],
-            [
-              328.2595,
-              481.4905,
-              344.5685,
-              499.875
-            ]
-          ],
-          "headline": "¡ ¡ ¡"
-        },
-        {
-          "id": "p236-Ğ",
-          "label": "Ğ",
-          "column": 1,
-          "rect": [
-            217.3015,
-            471.038,
-            240.1611,
-            483.4182
-          ],
-          "parts": [
-            [
-              217.3015,
-              471.038,
-              240.1611,
-              483.4182
-            ]
-          ]
-        },
-        {
-          "id": "p236-A",
-          "label": "A",
-          "column": 2,
-          "rect": [
-            221.1704,
-            431.7154,
-            390.7598,
-            470.0207
-          ],
-          "parts": [
-            [
-              221.1704,
-              431.8705,
-              255.336,
-              449.763
-            ],
-            [
-              312.753,
-              451.6783,
-              338.7417,
-              470.0207
-            ],
-            [
-              370.035,
-              431.7154,
-              390.7598,
-              451.1485
-            ]
-          ],
-          "headline": "¡ ¡ ¡"
-        },
-        {
-          "id": "p236-K",
-          "label": "K",
-          "column": 2,
-          "rect": [
-            228.941,
-            421.5373,
-            251.4554,
-            428.8705
-          ],
-          "parts": [
-            [
-              228.941,
-              421.5373,
-              251.4554,
-              428.8705
-            ]
-          ]
-        },
-        {
-          "id": "p236-A",
-          "label": "A",
-          "column": 2,
-          "rect": [
-            230.3923,
-            396.3643,
-            304.9954,
-            418.5373
-          ],
-          "parts": [
-            [
-              230.3923,
-              396.3643,
-              304.9954,
-              418.5373
-            ]
-          ],
-          "headline": "¡ ¡ ¡"
-        },
-        {
-          "id": "p236-A",
-          "label": "A",
-          "column": 2,
-          "rect": [
-            230.646,
-            367.2177,
-            252.8293,
-            386.2423
-          ],
-          "parts": [
-            [
-              230.646,
-              367.2177,
-              252.8293,
-              386.2423
-            ]
-          ]
-        },
-        {
-          "id": "p236-Ğ",
-          "label": "Ğ",
+          "id": "p236-20",
+          "label": "20",
           "column": 5,
           "rect": [
-            333.0088,
-            318.6301,
-            354.8044,
-            332.5157
+            390.8907,
+            667.5547,
+            468.3474,
+            702.3468
           ],
           "parts": [
             [
-              333.0088,
-              318.6301,
-              354.8044,
-              332.5157
-            ]
-          ]
-        },
-        {
-          "id": "p236-I",
-          "label": "I",
-          "column": 5,
-          "rect": [
-            325.4118,
-            279.2057,
-            346.9119,
-            289.4858
-          ],
-          "parts": [
-            [
-              325.4118,
-              279.2057,
-              346.9119,
-              289.4858
-            ]
-          ]
-        },
-        {
-          "id": "p236-L",
-          "label": "L",
-          "column": 5,
-          "rect": [
-            323.4472,
-            147.8211,
-            445.7465,
-            281.8724
-          ],
-          "parts": [
-            [
-              323.4472,
-              263.0026,
-              345.1168,
-              276.2057
-            ],
-            [
-              352.2744,
-              147.8211,
-              399.201,
-              269.6993
-            ],
-            [
-              402.201,
-              186.8488,
-              415.357,
-              261.5359
-            ],
-            [
-              418.357,
-              195.533,
-              445.7465,
-              281.8724
+              390.8907,
+              667.5547,
+              468.3474,
+              702.3468
             ]
           ],
-          "headline": "¡ ¡ ¡"
-        },
-        {
-          "id": "p236-p",
-          "label": "p",
-          "column": 7,
-          "rect": [
-            401.0036,
-            595.9728,
-            444.7513,
-            620.6176
-          ],
-          "parts": [
-            [
-              401.0036,
-              597.8707,
-              425.8523,
-              618.539
-            ],
-            [
-              428.8523,
-              595.9728,
-              444.7513,
-              620.6176
-            ]
-          ],
-          "headline": "¡ ¡"
+          "headline": "km"
         }
       ]
     },
@@ -11452,524 +9928,129 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          127.8614,
-          137.0056
+          114.3786,
+          174.0521
         ],
         [
-          141.0056,
-          160.7595
+          178.0521,
+          236.34
         ],
         [
-          164.7595,
-          178.8776
+          240.34,
+          298.2045
         ],
         [
-          182.8776,
-          204.8273
+          302.2045,
+          367.7561
         ],
         [
-          208.8273,
-          224.2364
+          371.7561,
+          430.5652
         ],
         [
-          228.2364,
-          237.5613
-        ],
-        [
-          241.5613,
-          263.0109
-        ],
-        [
-          267.0109,
-          275.483
-        ],
-        [
-          279.483,
-          293.7548
-        ],
-        [
-          297.7548,
-          307.2158
-        ],
-        [
-          311.2158,
-          420.3322
-        ],
-        [
-          424.3322,
+          434.5652,
           545.764
         ]
       ],
       "activities": [
         {
-          "id": "p237-R",
-          "label": "R",
+          "id": "p237-s",
+          "label": "s",
           "column": 0,
           "rect": [
-            125.8614,
-            273.0164,
-            145.173,
-            290.7682
+            141.81,
+            483.2433,
+            161.3764,
+            490.4172
           ],
           "parts": [
             [
-              125.8614,
-              273.0164,
-              145.173,
-              290.7682
+              141.81,
+              483.2433,
+              161.3764,
+              490.4172
             ]
           ]
         },
         {
-          "id": "p237-A",
-          "label": "A",
+          "id": "p237-t",
+          "label": "t",
           "column": 0,
           "rect": [
-            125.8614,
-            208.1854,
-            145.173,
-            225.8038
+            120.9897,
+            473.4572,
+            164.6112,
+            480.2433
           ],
           "parts": [
             [
-              125.8614,
-              208.1854,
-              145.173,
-              225.8038
+              120.9897,
+              473.4572,
+              164.6112,
+              480.2433
             ]
-          ]
+          ],
+          "headline": "i z n i e n"
         },
         {
-          "id": "p237-E",
-          "label": "E",
+          "id": "p237-a",
+          "label": "a",
           "column": 0,
           "rect": [
-            125.8614,
-            185.5423,
-            145.173,
-            203.1607
+            141.81,
+            460.5334,
+            164.6112,
+            470.4572
           ],
           "parts": [
             [
-              125.8614,
-              185.5423,
-              145.173,
-              203.1607
+              141.81,
+              460.5334,
+              164.6112,
+              470.4572
             ]
-          ]
+          ],
+          "headline": "e"
         },
         {
-          "id": "p237-K",
-          "label": "K",
+          "id": "p237-e",
+          "label": "e",
           "column": 0,
           "rect": [
-            125.8614,
-            139.448,
-            145.173,
-            157.0664
+            137.6316,
+            378.6599,
+            157.198,
+            414.3238
           ],
           "parts": [
             [
-              125.8614,
-              149.7572,
-              145.173,
-              157.0664
-            ],
-            [
-              125.8614,
-              139.448,
-              145.173,
-              146.7572
+              137.6316,
+              378.6599,
+              157.198,
+              414.3238
             ]
-          ]
+          ],
+          "headline": "e  n"
         },
         {
-          "id": "p237-U",
-          "label": "U",
-          "column": 2,
+          "id": "p237-k",
+          "label": "k",
+          "column": 1,
           "rect": [
-            162.7595,
-            514.6157,
-            184.3569,
-            522.5269
+            170.965,
+            386.5965,
+            245.7106,
+            445.1237
           ],
           "parts": [
             [
-              162.7595,
-              514.6157,
-              184.3569,
-              522.5269
-            ]
-          ]
-        },
-        {
-          "id": "p237-A",
-          "label": "A",
-          "column": 3,
-          "rect": [
-            189.2329,
-            520.4771,
-            209.0932,
-            533.3422
-          ],
-          "parts": [
-            [
-              189.2329,
-              520.4771,
-              209.0932,
-              533.3422
-            ]
-          ]
-        },
-        {
-          "id": "p237-A",
-          "label": "A",
-          "column": 4,
-          "rect": [
-            216.8014,
-            486.212,
-            236.2756,
-            497.1136
-          ],
-          "parts": [
-            [
-              216.8014,
-              486.212,
-              236.2756,
-              497.1136
-            ]
-          ]
-        },
-        {
-          "id": "p237-E",
-          "label": "E",
-          "column": 4,
-          "rect": [
-            206.8273,
-            469.3261,
-            226.3015,
-            476.4014
-          ],
-          "parts": [
-            [
-              206.8273,
-              469.3261,
-              226.3015,
-              476.4014
-            ]
-          ]
-        },
-        {
-          "id": "p237-V",
-          "label": "V",
-          "column": 6,
-          "rect": [
-            239.5613,
-            575.5478,
-            263.6251,
-            597.7528
-          ],
-          "parts": [
-            [
-              249.9514,
-              575.5478,
-              263.6251,
-              597.7528
-            ],
-            [
-              239.5613,
-              575.609,
-              246.9514,
-              594.6782
+              170.965,
+              386.5965,
+              245.7106,
+              445.1237
             ]
           ],
-          "headline": "İ E T"
-        },
-        {
-          "id": "p237-A",
-          "label": "A",
-          "column": 6,
-          "rect": [
-            234.8336,
-            439.0886,
-            254.5132,
-            456.8868
-          ],
-          "parts": [
-            [
-              234.8336,
-              439.0886,
-              254.5132,
-              456.8868
-            ]
-          ]
-        },
-        {
-          "id": "p237-H",
-          "label": "H",
-          "column": 6,
-          "rect": [
-            234.8336,
-            407.4384,
-            254.5132,
-            423.3417
-          ],
-          "parts": [
-            [
-              234.8336,
-              407.4384,
-              254.5132,
-              423.3417
-            ]
-          ]
-        },
-        {
-          "id": "p237-A",
-          "label": "A",
-          "column": 6,
-          "rect": [
-            234.8336,
-            393.3721,
-            254.5132,
-            400.7712
-          ],
-          "parts": [
-            [
-              234.8336,
-              393.3721,
-              254.5132,
-              400.7712
-            ]
-          ]
-        },
-        {
-          "id": "p237-İ",
-          "label": "İ",
-          "column": 7,
-          "rect": [
-            268.9054,
-            637.4553,
-            296.8793,
-            682.9952
-          ],
-          "parts": [
-            [
-              268.9054,
-              637.4553,
-              296.8793,
-              682.9952
-            ]
-          ],
-          "headline": "N"
-        },
-        {
-          "id": "p237-M",
-          "label": "M",
-          "column": 7,
-          "rect": [
-            268.0185,
-            568.0678,
-            287.3399,
-            576.4745
-          ],
-          "parts": [
-            [
-              268.0185,
-              568.0678,
-              287.3399,
-              576.4745
-            ]
-          ]
-        },
-        {
-          "id": "p237-N",
-          "label": "N",
-          "column": 8,
-          "rect": [
-            272.794,
-            685.9952,
-            293.1016,
-            696.925
-          ],
-          "parts": [
-            [
-              272.794,
-              685.9952,
-              293.1016,
-              696.925
-            ]
-          ]
-        },
-        {
-          "id": "p237-Z",
-          "label": "Z",
-          "column": 8,
-          "rect": [
-            287.0406,
-            616.4083,
-            306.6011,
-            634.1062
-          ],
-          "parts": [
-            [
-              287.0406,
-              616.4083,
-              306.6011,
-              634.1062
-            ]
-          ]
-        },
-        {
-          "id": "p237-A",
-          "label": "A",
-          "column": 8,
-          "rect": [
-            271.4745,
-            591.1722,
-            290.6058,
-            608.305
-          ],
-          "parts": [
-            [
-              271.4745,
-              602.1813,
-              290.6058,
-              608.305
-            ],
-            [
-              271.4745,
-              591.1722,
-              290.6058,
-              599.1813
-            ]
-          ]
-        },
-        {
-          "id": "p237-K",
-          "label": "K",
-          "column": 8,
-          "rect": [
-            277.483,
-            155.9941,
-            300.7941,
-            166.9173
-          ],
-          "parts": [
-            [
-              277.483,
-              155.9941,
-              300.7941,
-              166.9173
-            ]
-          ]
-        },
-        {
-          "id": "p237-O",
-          "label": "O",
-          "column": 8,
-          "rect": [
-            277.483,
-            136.5022,
-            318.2713,
-            152.9941
-          ],
-          "parts": [
-            [
-              277.483,
-              140.4172,
-              297.312,
-              151.1582
-            ],
-            [
-              300.312,
-              136.5022,
-              318.2713,
-              152.9941
-            ]
-          ],
-          "headline": "TUAM"
-        },
-        {
-          "id": "p237-T",
-          "label": "T",
-          "column": 9,
-          "rect": [
-            296.6452,
-            547.6111,
-            320.6697,
-            566.9691
-          ],
-          "parts": [
-            [
-              296.6452,
-              558.7901,
-              320.6697,
-              566.9691
-            ],
-            [
-              296.6452,
-              547.6111,
-              320.6697,
-              555.7901
-            ]
-          ]
-        },
-        {
-          "id": "p237-Y",
-          "label": "Y",
-          "column": 10,
-          "rect": [
-            309.3511,
-            499.8347,
-            328.1597,
-            507.0885
-          ],
-          "parts": [
-            [
-              309.3511,
-              499.8347,
-              328.1597,
-              507.0885
-            ]
-          ]
-        },
-        {
-          "id": "p237-A",
-          "label": "A",
-          "column": 11,
-          "rect": [
-            423.9505,
-            230.233,
-            444.1511,
-            247.9289
-          ],
-          "parts": [
-            [
-              423.9505,
-              230.233,
-              444.1511,
-              247.9289
-            ]
-          ]
-        },
-        {
-          "id": "p237-I",
-          "label": "I",
-          "column": 11,
-          "rect": [
-            423.9505,
-            209.4734,
-            444.1511,
-            226.1802
-          ],
-          "parts": [
-            [
-              423.9505,
-              209.4734,
-              444.1511,
-              226.1802
-            ]
-          ]
+          "headline": "! ( k"
         }
       ]
     },
@@ -11978,813 +10059,240 @@
       "pageHeight": 796.535,
       "columns": [
         [
-          127.1753,
-          136.3801
+          113.635,
+          173.0028
         ],
         [
-          140.3801,
-          160.2423
+          177.0028,
+          234.5431
         ],
         [
-          164.2423,
-          175.0056
+          238.5431,
+          295.3603
         ],
         [
-          179.0056,
-          204.5109
-        ],
-        [
-          208.5109,
-          224.0085
-        ],
-        [
-          228.0085,
-          237.3941
-        ],
-        [
-          241.3941,
-          262.9597
-        ],
-        [
-          266.9597,
-          293.8437
-        ],
-        [
-          297.8437,
-          320.2053
-        ],
-        [
-          324.2053,
-          418.6049
-        ],
-        [
-          422.6049,
+          299.3603,
           545.764
         ]
       ],
       "activities": [
         {
-          "id": "p238-D",
-          "label": "D",
+          "id": "p238-s",
+          "label": "s",
           "column": 0,
           "rect": [
-            125.1753,
-            251.6102,
-            144.5021,
-            267.5198
+            141.0618,
+            485.1419,
+            160.6445,
+            492.3189
           ],
           "parts": [
             [
-              125.1753,
-              251.6102,
-              144.5021,
-              267.5198
+              141.0618,
+              485.1419,
+              160.6445,
+              492.3189
             ]
           ]
         },
         {
-          "id": "p238-H",
-          "label": "H",
+          "id": "p238-t",
+          "label": "t",
           "column": 0,
           "rect": [
-            125.1753,
-            232.7006,
-            144.5021,
-            248.6102
+            120.2821,
+            475.3111,
+            163.8941,
+            482.1419
           ],
           "parts": [
             [
-              125.1753,
-              232.7006,
-              144.5021,
-              248.6102
+              120.2821,
+              475.3111,
+              163.8941,
+              482.1419
             ]
-          ]
+          ],
+          "headline": "i z n i e n"
         },
         {
-          "id": "p238-A",
-          "label": "A",
+          "id": "p238-a",
+          "label": "a",
           "column": 0,
           "rect": [
-            125.1753,
-            208.736,
-            144.5021,
-            226.3618
+            141.0618,
+            462.3717,
+            163.8941,
+            472.3111
           ],
           "parts": [
             [
-              125.1753,
-              208.736,
-              144.5021,
-              226.3618
+              141.0618,
+              462.3717,
+              163.8941,
+              472.3111
             ]
-          ]
+          ],
+          "headline": "e"
         },
         {
-          "id": "p238-E",
-          "label": "E",
+          "id": "p238-e",
+          "label": "e",
           "column": 0,
           "rect": [
-            125.1753,
-            185.9902,
-            144.5021,
-            203.616
+            136.9998,
+            403.2836,
+            165.8552,
+            417.6016
           ],
           "parts": [
             [
-              125.1753,
-              185.9902,
-              144.5021,
-              203.616
+              136.9998,
+              403.2836,
+              165.8552,
+              417.6016
             ]
-          ]
+          ],
+          "headline": "N A"
         },
         {
-          "id": "p238-K",
-          "label": "K",
+          "id": "p238-a",
+          "label": "a",
           "column": 0,
           "rect": [
-            125.1753,
-            139.687,
-            144.5021,
-            157.3127
+            136.9998,
+            373.6093,
+            175.8807,
+            391.588
           ],
           "parts": [
             [
-              125.1753,
-              149.9998,
-              144.5021,
-              157.3127
-            ],
-            [
-              125.1753,
-              139.687,
-              144.5021,
-              146.9998
+              136.9998,
+              373.6093,
+              175.8807,
+              391.588
             ]
-          ]
+          ],
+          "headline": "R O ö r"
         },
         {
-          "id": "p238-N",
-          "label": "N",
+          "id": "p238-b",
+          "label": "b",
           "column": 1,
           "rect": [
-            138.3801,
-            85.4819,
-            218.2036,
-            334.1479
+            172.0283,
+            542.7312,
+            240.0639,
+            584.8779
           ],
           "parts": [
             [
-              138.3801,
-              313.215,
-              159.4726,
-              331.2104
-            ],
-            [
-              153.8752,
-              85.4819,
-              176.173,
-              252.0512
-            ],
-            [
-              181.1373,
-              224.3542,
-              218.2036,
-              334.1479
+              172.0283,
+              542.7312,
+              240.0639,
+              584.8779
             ]
           ],
-          "headline": "G - KA N Y O N U YA N U S K O İK T N AT LA"
+          "headline": "N ŞAN o Ğ R A A ALT M"
         },
         {
-          "id": "p238-R",
-          "label": "R",
+          "id": "p238-i",
+          "label": "i",
+          "column": 1,
+          "rect": [
+            190.1212,
+            447.2689,
+            231.7844,
+            455.6197
+          ],
+          "parts": [
+            [
+              190.1212,
+              447.2689,
+              231.7844,
+              455.6197
+            ]
+          ],
+          "headline": "L i Ğ"
+        },
+        {
+          "id": "p238-n",
+          "label": "n",
+          "column": 1,
+          "rect": [
+            168.8552,
+            401.5738,
+            238.6415,
+            444.2689
+          ],
+          "parts": [
+            [
+              168.8552,
+              401.5738,
+              238.6415,
+              444.2689
+            ]
+          ]
+        },
+        {
+          "id": "p238-s",
+          "label": "s",
+          "column": 1,
+          "rect": [
+            175.5956,
+            138.5732,
+            225.3895,
+            144.7692
+          ],
+          "parts": [
+            [
+              175.5956,
+              138.5732,
+              225.3895,
+              144.7692
+            ]
+          ],
+          "headline": "Ğ"
+        },
+        {
+          "id": "p238-l",
+          "label": "l",
+          "column": 1,
+          "rect": [
+            166.4782,
+            110.1937,
+            242.9032,
+            126.0732
+          ],
+          "parts": [
+            [
+              166.4782,
+              110.1937,
+              242.9032,
+              126.0732
+            ]
+          ],
+          "headline": "l"
+        },
+        {
+          "id": "p238-ö",
+          "label": "ö",
           "column": 2,
           "rect": [
-            219.8221,
-            532.8978,
-            265.0007,
-            556.8113
+            241.6415,
+            377.8805,
+            293.618,
+            452.105
           ],
           "parts": [
             [
-              219.8221,
-              541.3479,
-              239.5401,
-              556.8113
-            ],
-            [
-              243.0799,
-              532.8978,
-              265.0007,
-              556.2731
+              241.6415,
+              377.8805,
+              293.618,
+              452.105
             ]
           ],
-          "headline": "M İ R"
-        },
-        {
-          "id": "p238-U",
-          "label": "U",
-          "column": 2,
-          "rect": [
-            162.2423,
-            516.5434,
-            183.8652,
-            524.461
-          ],
-          "parts": [
-            [
-              162.2423,
-              516.5434,
-              183.8652,
-              524.461
-            ]
-          ]
-        },
-        {
-          "id": "p238-A",
-          "label": "A",
-          "column": 3,
-          "rect": [
-            188.8363,
-            525.4525,
-            208.7142,
-            535.304
-          ],
-          "parts": [
-            [
-              188.8363,
-              525.4525,
-              208.7142,
-              535.304
-            ]
-          ]
-        },
-        {
-          "id": "p238-A",
-          "label": "A",
-          "column": 3,
-          "rect": [
-            179.173,
-            202.0294,
-            198.4439,
-            215.2657
-          ],
-          "parts": [
-            [
-              179.173,
-              202.0294,
-              198.4439,
-              215.2657
-            ]
-          ]
-        },
-        {
-          "id": "p238-N",
-          "label": "N",
-          "column": 3,
-          "rect": [
-            177.2088,
-            188.2199,
-            203.6484,
-            199.0294
-          ],
-          "parts": [
-            [
-              177.2088,
-              188.2199,
-              203.6484,
-              199.0294
-            ]
-          ],
-          "headline": "K"
-        },
-        {
-          "id": "p238-A",
-          "label": "A",
-          "column": 3,
-          "rect": [
-            177.2088,
-            169.5647,
-            198.4439,
-            185.2199
-          ],
-          "parts": [
-            [
-              177.2088,
-              169.5647,
-              198.4439,
-              185.2199
-            ]
-          ],
-          "headline": "L"
-        },
-        {
-          "id": "p238-L",
-          "label": "L",
-          "column": 3,
-          "rect": [
-            177.0056,
-            98.9936,
-            202.967,
-            111.9319
-          ],
-          "parts": [
-            [
-              177.0056,
-              98.9936,
-              202.967,
-              111.9319
-            ]
-          ],
-          "headline": "R"
-        },
-        {
-          "id": "p238-E",
-          "label": "E",
-          "column": 3,
-          "rect": [
-            180.3076,
-            80.7475,
-            199.9347,
-            86.862
-          ],
-          "parts": [
-            [
-              180.3076,
-              80.7475,
-              199.9347,
-              86.862
-            ]
-          ]
-        },
-        {
-          "id": "p238-İ",
-          "label": "İ",
-          "column": 4,
-          "rect": [
-            213.75,
-            559.8113,
-            238.1553,
-            610.2705
-          ],
-          "parts": [
-            [
-              213.75,
-              603.394,
-              230.7464,
-              610.2705
-            ],
-            [
-              219.7991,
-              559.8113,
-              238.1553,
-              575.8038
-            ],
-            [
-              213.75,
-              593.5176,
-              233.6278,
-              600.394
-            ]
-          ]
-        },
-        {
-          "id": "p238-N",
-          "label": "N",
-          "column": 4,
-          "rect": [
-            216.5305,
-            499.7656,
-            245.5436,
-            510.7741
-          ],
-          "parts": [
-            [
-              216.5305,
-              499.7656,
-              245.5436,
-              510.7741
-            ]
-          ],
-          "headline": "R"
-        },
-        {
-          "id": "p238-A",
-          "label": "A",
-          "column": 4,
-          "rect": [
-            216.5305,
-            488.0317,
-            236.0206,
-            496.7656
-          ],
-          "parts": [
-            [
-              216.5305,
-              488.0317,
-              236.0206,
-              496.7656
-            ]
-          ]
-        },
-        {
-          "id": "p238-E",
-          "label": "E",
-          "column": 4,
-          "rect": [
-            206.5109,
-            471.0038,
-            226.001,
-            478.1032
-          ],
-          "parts": [
-            [
-              206.5109,
-              471.0038,
-              226.001,
-              478.1032
-            ]
-          ]
-        },
-        {
-          "id": "p238-F",
-          "label": "F",
-          "column": 6,
-          "rect": [
-            233.7464,
-            597.7519,
-            263.2225,
-            628.7199
-          ],
-          "parts": [
-            [
-              233.7464,
-              597.7519,
-              263.2225,
-              628.7199
-            ]
-          ],
-          "headline": "F"
-        },
-        {
-          "id": "p238-V",
-          "label": "V",
-          "column": 6,
-          "rect": [
-            239.3941,
-            561.6004,
-            264.9544,
-            594.7519
-          ],
-          "parts": [
-            [
-              241.1553,
-              561.6004,
-              264.9544,
-              583.7103
-            ],
-            [
-              239.3941,
-              586.7103,
-              257.1823,
-              594.7519
-            ]
-          ],
-          "headline": "İ E T H N Ç İ"
-        },
-        {
-          "id": "p238-A",
-          "label": "A",
-          "column": 6,
-          "rect": [
-            234.6449,
-            440.6941,
-            254.3413,
-            458.5005
-          ],
-          "parts": [
-            [
-              234.6449,
-              440.6941,
-              254.3413,
-              458.5005
-            ]
-          ]
-        },
-        {
-          "id": "p238-H",
-          "label": "H",
-          "column": 6,
-          "rect": [
-            234.6449,
-            412.474,
-            254.3413,
-            424.8023
-          ],
-          "parts": [
-            [
-              234.6449,
-              412.474,
-              254.3413,
-              424.8023
-            ]
-          ]
-        },
-        {
-          "id": "p238-A",
-          "label": "A",
-          "column": 6,
-          "rect": [
-            270.3557,
-            257.7307,
-            330.3866,
-            407.9326
-          ],
-          "parts": [
-            [
-              270.3557,
-              257.7307,
-              292.4019,
-              394.8377
-            ],
-            [
-              295.4019,
-              318.3133,
-              330.3866,
-              407.9326
-            ]
-          ],
-          "headline": "A Ç A"
-        },
-        {
-          "id": "p238-İ",
-          "label": "İ",
-          "column": 7,
-          "rect": [
-            268.7366,
-            669.0084,
-            396.1122,
-            696.5697
-          ],
-          "parts": [
-            [
-              279.9111,
-              669.0084,
-              299.9914,
-              695.1875
-            ],
-            [
-              327.524,
-              676.5761,
-              396.1122,
-              696.5697
-            ],
-            [
-              268.7366,
-              675.6225,
-              276.9111,
-              695.1875
-            ]
-          ],
-          "headline": "H  ELTİSİ"
-        },
-        {
-          "id": "p238-A",
-          "label": "A",
-          "column": 7,
-          "rect": [
-            271.3173,
-            597.5923,
-            290.4629,
-            610.6084
-          ],
-          "parts": [
-            [
-              271.3173,
-              597.5923,
-              290.4629,
-              610.6084
-            ]
-          ]
-        },
-        {
-          "id": "p238-E",
-          "label": "E",
-          "column": 7,
-          "rect": [
-            276.2579,
-            567.4213,
-            296.0842,
-            575.2483
-          ],
-          "parts": [
-            [
-              276.2579,
-              567.4213,
-              296.0842,
-              575.2483
-            ]
-          ]
-        },
-        {
-          "id": "p238-H",
-          "label": "H",
-          "column": 8,
-          "rect": [
-            296.7382,
-            518.0261,
-            436.0471,
-            538.0123
-          ],
-          "parts": [
-            [
-              296.7382,
-              518.0261,
-              320.7992,
-              538.0123
-            ],
-            [
-              331.9776,
-              518.542,
-              385.627,
-              532.4268
-            ],
-            [
-              417.1734,
-              522.3638,
-              436.0471,
-              533.8794
-            ]
-          ],
-          "headline": "N ERG"
-        },
-        {
-          "id": "p238-İ",
-          "label": "İ",
-          "column": 8,
-          "rect": [
-            295.8437,
-            79.0286,
-            407.2514,
-            123.2225
-          ],
-          "parts": [
-            [
-              306.5367,
-              98.0116,
-              314.2296,
-              117.2969
-            ],
-            [
-              316.3962,
-              79.0286,
-              407.2514,
-              123.2225
-            ],
-            [
-              295.8437,
-              98.0116,
-              303.5367,
-              117.2969
-            ]
-          ],
-          "headline": "Ç A"
-        },
-        {
-          "id": "p238-A",
-          "label": "A",
-          "column": 9,
-          "rect": [
-            322.2053,
-            642.294,
-            342.0831,
-            648.4407
-          ],
-          "parts": [
-            [
-              322.2053,
-              642.294,
-              342.0831,
-              648.4407
-            ]
-          ]
-        },
-        {
-          "id": "p238-U",
-          "label": "U",
-          "column": 9,
-          "rect": [
-            319.5686,
-            558.6632,
-            360.899,
-            621.4745
-          ],
-          "parts": [
-            [
-              319.5686,
-              558.6632,
-              360.899,
-              621.4745
-            ]
-          ],
-          "headline": "GÜ L U"
-        },
-        {
-          "id": "p238-A",
-          "label": "A",
-          "column": 9,
-          "rect": [
-            322.4628,
-            535.4268,
-            363.8954,
-            550.2481
-          ],
-          "parts": [
-            [
-              322.4628,
-              535.4268,
-              363.8954,
-              550.2481
-            ]
-          ],
-          "headline": "T"
-        },
-        {
-          "id": "p238-K",
-          "label": "K",
-          "column": 10,
-          "rect": [
-            423.1343,
-            569.7508,
-            443.3541,
-            585.1583
-          ],
-          "parts": [
-            [
-              423.1343,
-              569.7508,
-              443.3541,
-              585.1583
-            ]
-          ]
-        },
-        {
-          "id": "p238-N",
-          "label": "N",
-          "column": 10,
-          "rect": [
-            423.1343,
-            551.2032,
-            443.3541,
-            566.7508
-          ],
-          "parts": [
-            [
-              423.1343,
-              551.2032,
-              443.3541,
-              566.7508
-            ]
-          ]
-        },
-        {
-          "id": "p238-O",
-          "label": "O",
-          "column": 10,
-          "rect": [
-            423.1343,
-            536.8794,
-            443.3541,
-            549.2886
-          ],
-          "parts": [
-            [
-              423.1343,
-              536.8794,
-              443.3541,
-              549.2886
-            ]
-          ]
-        },
-        {
-          "id": "p238-T",
-          "label": "T",
-          "column": 10,
-          "rect": [
-            423.1343,
-            246.5926,
-            443.3541,
-            264.153
-          ],
-          "parts": [
-            [
-              423.1343,
-              246.5926,
-              443.3541,
-              264.153
-            ]
-          ]
+          "headline": "ORTA AFRİKA CUMHURİYETİ KO NGO Kongo N."
         }
       ]
     }
