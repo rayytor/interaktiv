@@ -1,0 +1,17 @@
+{
+  "name": "interaktiv",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Fast PDF reader for large InDesign textbooks, with automatic activity/question detection.",
+  "type": "module",
+  "scripts": {
+    "test": "node tools/hotspot_extraction/tests/test_activity_overrides.mjs && node tools/hotspot_extraction/tests/test_detection.mjs && node tools/hotspot_extraction/tests/test_interactive_links.mjs",
+    "detect": "node tools/hotspot_extraction/tests/detect.mjs",
+    "scorecard": "node tools/hotspot_extraction/tests/scorecard.mjs",
+    "sync": "python3 tools/content_extraction/extract_activities.py --sync-catalogue",
+    "bake": "node tools/hotspot_extraction/bake_activities.mjs",
+    "fetch-bake": "python3 tools/hotspot_extraction/fetch_and_bake.py",
+    "package": "python3 tools/hotspot_extraction/package_book.py",
+    "build-library": "python3 tools/hotspot_extraction/build_library.py"
+  }
+}

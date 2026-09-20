@@ -1,0 +1,22 @@
+{
+  "id": "f85a9546-a39f-f111-b317-005056a7d529",
+  "sinifid": "4fc2a7ed-7772-4a14-a4c5-08dcb630897d",
+  "dersid": "ad80f2d4-50aa-461c-ae23-08dcb630b03b",
+  "baslik": "Matematik Ders Kitabı 2",
+  "dersbaslik": "Matematik",
+  "klasoradi": "4442fde4-91bb-46e1-a6b6-b949cec10b5b",
+  "pdfsenkron": 1,
+  "kapak": "https://ogmmateryal.eba.gov.tr/panel/upload/kapak/xbjnahhqwgt.png",
+  "kapaksayfano": 1,
+  "aktif": false,
+  "sayfasayisi": 238,
+  "gosterimsayisi": 0,
+  "pdfindirmesayisi": 0,
+  "zipindirmesayisi": 0,
+  "status": 1,
+  "uniteetiketi": 1,
+  "ders": null,
+  "sinif": null,
+  "kitapuniteList": [],
+  "kitapogeList": []
+}

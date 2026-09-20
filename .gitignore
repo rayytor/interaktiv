@@ -1,0 +1,40 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.bak
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Logs
+*.log
+server.log
+
+# Large binaries & PDFs (textbooks are fetched dynamically via kitap_pdf_linkleri.txt)
+*.pdf
+books/*.pdf
+pdf_parts/*.pdf
+
+# Build and distribution directories
+dist/
+
+# JIT-downloaded interactive activity cache (keep pre-baked books in activities/books/)
+activities/*
+!activities/books/
+!activities/.gitkeep
+
+# Temporary test / debug screenshots
+dashboard_*.png
+
+# Node / npm
+node_modules/
+npm-debug.log*
+
+# Operating System & IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

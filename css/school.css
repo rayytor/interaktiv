@@ -1,0 +1,270 @@
+/* ==========================================================================
+   Interaktiv - School / smartboard edition.
+
+   Everything here is scoped to `body.edition-school`, which `viewer.js` sets
+   from `/api/config` when the server reports the packaged edition. The
+   authoring reader is therefore untouched by this file: it can be loaded in
+   both builds and simply do nothing.
+
+   The rule this file follows: a control a teacher touches in front of a class
+   is at least 48 px in its smallest dimension, sits at the edge of the screen
+   rather than in the middle of it, and never needs a double tap.
+   ========================================================================== */
+
+/* Double-tap zoom and text-selection drags are the two things a board does
+   that the reader does not want; both are suppressed on chrome only, so the
+   PDF text layer keeps working for selection and search. */
+.edition-school .toolbar,
+.edition-school .dashboard-header,
+.edition-school .dashboard-filter-bar,
+.edition-school .focus-chrome,
+.edition-school .status-bar,
+.edition-school .sidebar-header,
+.edition-school .activity-chip {
+  touch-action: manipulation;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* --- Toolbar ------------------------------------------------------------ */
+
+.edition-school {
+  --toolbar-height: 64px;
+}
+
+.edition-school .toolbar {
+  gap: 10px;
+  padding: 0 14px;
+}
+
+.edition-school .tool-btn {
+  min-width: 48px;
+  min-height: 48px;
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+
+.edition-school .tool-btn svg {
+  width: 26px;
+  height: 26px;
+}
+
+/* The two controls a lesson is actually driven from: a board-sized target and
+   a visible edge in the toolbar so they are findable by touch alone. */
+.edition-school #btn-prev-page,
+.edition-school #btn-next-page {
+  min-width: 76px;
+  min-height: 54px;
+  background: var(--bg-card);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+.edition-school #btn-prev-page svg,
+.edition-school #btn-next-page svg {
+  width: 34px;
+  height: 34px;
+}
+
+.edition-school #btn-prev-page:active,
+.edition-school #btn-next-page:active {
+  background: var(--accent-color);
+  color: #ffffff;
+  border-color: var(--accent-color);
+}
+
+.edition-school .page-nav-controls {
+  gap: 8px;
+}
+
+.edition-school #page-num-input {
+  min-width: 84px;
+  height: 48px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.edition-school .page-total,
+.edition-school .page-count-separator {
+  font-size: 18px;
+}
+
+.edition-school .mode-btn {
+  min-height: 48px;
+  padding: 8px 14px;
+  font-size: 14px;
+}
+
+.edition-school .tool-select {
+  min-height: 48px;
+  font-size: 15px;
+}
+
+/* --- Focus mode (zoom to one activity) ---------------------------------- */
+
+.edition-school .focus-overlay {
+  padding: 18px;
+}
+
+.edition-school .focus-label {
+  font-size: 22px;
+}
+
+.edition-school .focus-headline {
+  font-size: 16px;
+}
+
+.edition-school .focus-prev-next .tool-btn,
+.edition-school #focus-prev,
+.edition-school #focus-next,
+.edition-school #focus-sub-prev,
+.edition-school #focus-sub-next,
+.edition-school #focus-close {
+  min-width: 64px;
+  min-height: 56px;
+}
+
+.edition-school #focus-prev svg,
+.edition-school #focus-next svg,
+.edition-school #focus-sub-prev svg,
+.edition-school #focus-sub-next svg {
+  width: 28px;
+  height: 28px;
+}
+
+.edition-school .focus-counter {
+  font-size: 18px;
+  min-width: 64px;
+}
+
+/* A hotspot on a board is pointed at with a finger or a stylus: give the chip
+   room to be read from the back of the room. */
+.edition-school .activity-chip {
+  font-size: 15px;
+  padding: 4px 10px;
+  font-weight: 700;
+}
+
+.edition-school .activity-count {
+  font-size: 13px;
+}
+
+.edition-school .standalone-hotspot {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+}
+
+/* --- Interactive activity modal ----------------------------------------- */
+
+.edition-school .activity-modal-box {
+  width: min(96vw, 1600px);
+  height: min(94vh, 1000px);
+}
+
+.edition-school .activity-modal-header {
+  padding: 12px 18px;
+}
+
+.edition-school .activity-modal-header .tool-btn {
+  min-width: 52px;
+  min-height: 52px;
+}
+
+.edition-school .activity-modal-title-group h3 {
+  font-size: 20px;
+}
+
+/* --- Dashboard (library) ------------------------------------------------ */
+
+.edition-school .dashboard-header {
+  padding: 16px 22px;
+}
+
+.edition-school .dashboard-search-input {
+  height: 52px;
+  font-size: 18px;
+}
+
+.edition-school .filter-tab {
+  min-height: 52px;
+  padding: 10px 22px;
+  font-size: 16px;
+}
+
+.edition-school .books-grid {
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.edition-school .book-title {
+  font-size: 19px;
+}
+
+.edition-school .book-meta {
+  font-size: 14px;
+}
+
+.edition-school .btn-card-action {
+  min-height: 52px;
+  font-size: 17px;
+}
+
+.edition-school .btn-card-action svg {
+  width: 20px;
+  height: 20px;
+}
+
+.edition-school .btn-card-icon {
+  min-width: 52px;
+  min-height: 52px;
+  border-radius: 10px;
+}
+
+.edition-school .btn-card-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.edition-school .btn-cancel-download {
+  min-width: 36px;
+  min-height: 36px;
+}
+
+/* --- Sidebar ------------------------------------------------------------ */
+
+.edition-school .sidebar {
+  --sidebar-width: 320px;
+}
+
+.edition-school .tab-btn {
+  min-height: 48px;
+  font-size: 15px;
+}
+
+.edition-school .activity-row,
+.edition-school .outline-row,
+.edition-school .thumb-card {
+  min-height: 48px;
+}
+
+/* --- Offline notice ----------------------------------------------------- */
+
+/* Shown only when an interactive activity could not be reached, so a teacher
+   knows the difference between "this activity has no interactive version" and
+   "the school network is down". */
+.activity-offline-note {
+  display: none;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  font-size: 14px;
+  color: var(--text-secondary);
+  background: var(--bg-card);
+  border-top: 1px solid var(--border-color);
+}
+
+.activity-modal.offline .activity-offline-note {
+  display: flex;
+}

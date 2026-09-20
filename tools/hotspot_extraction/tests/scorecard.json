@@ -1,0 +1,4235 @@
+{
+  "builtAt": "2026-09-20T06:37:03.171Z",
+  "pagesSpec": null,
+  "books": [
+    {
+      "book": "03eb95bb-3a93-4f99-a2df-36d02f9c40d9.pdf",
+      "bookId": "03eb95bb-3a93-4f99-a2df-36d02f9c40d9",
+      "source": "bake",
+      "pages": 289,
+      "calibration": {
+        "enabled": true,
+        "confidence": "strong",
+        "markerSize": 10,
+        "styles": [
+          "sans-serif|1|-0.2|10.0",
+          "sans-serif|1|-0.2|10.2"
+        ],
+        "folioOffset": 1
+      },
+      "yield": {
+        "regions": 292,
+        "parts": 292,
+        "questions": 9,
+        "pagesWithRegions": 93,
+        "blankPageShare": 0.678,
+        "emptyRegionShare": 0.997
+      },
+      "join": {
+        "oges": 25,
+        "ogesOnReadPages": 25,
+        "matched": 13,
+        "anchored": 11,
+        "matchRate": 0.52,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 0,
+        "drift": {
+          "median": 1.52,
+          "p75": 2.95,
+          "p90": 3.44,
+          "p99": 3.76,
+          "max": 3.76
+        }
+      },
+      "buckets": {
+        "ok": 13,
+        "rule-violation": 5,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 7,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 10,
+        "solutionsCut": 38,
+        "tall": 7,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 0,
+        "solutionsCut": 0,
+        "tall": 2,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 281,
+        "markersOutsideRegions": 0,
+        "solutionCoverage": 0.777,
+        "offSheetSolutions": 0
+      }
+    },
+    {
+      "book": "066fadfd-dcbb-409c-a364-6e65bd9755d2.pdf",
+      "bookId": "066fadfd-dcbb-409c-a364-6e65bd9755d2",
+      "source": "bake",
+      "pages": 351,
+      "calibration": {
+        "enabled": true,
+        "confidence": "weak",
+        "markerSize": 9,
+        "styles": [
+          "sans-serif|0.77001953125|-0.22998046875|9.0"
+        ],
+        "folioOffset": 1
+      },
+      "yield": {
+        "regions": 102,
+        "parts": 102,
+        "questions": 0,
+        "pagesWithRegions": 63,
+        "blankPageShare": 0.821,
+        "emptyRegionShare": 1
+      },
+      "join": {
+        "oges": 77,
+        "ogesOnReadPages": 77,
+        "matched": 61,
+        "anchored": 69,
+        "matchRate": 0.792,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 5,
+        "drift": {
+          "median": 2.9,
+          "p75": 3.43,
+          "p90": 4.02,
+          "p99": 4.78,
+          "max": 4.78
+        }
+      },
+      "buckets": {
+        "ok": 61,
+        "rule-violation": 8,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 5,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 3,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 18,
+        "solutionsCut": 123,
+        "tall": 1,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 18,
+        "solutionsCut": 26,
+        "tall": 1,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 33,
+        "markersOutsideRegions": 0,
+        "solutionCoverage": 0.626,
+        "offSheetSolutions": 0
+      }
+    },
+    {
+      "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a.pdf",
+      "bookId": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+      "source": "bake",
+      "pages": 193,
+      "calibration": {
+        "enabled": true,
+        "confidence": "strong",
+        "markerSize": 10,
+        "styles": [
+          "serif|0.89111328125|-0.21630859375|10.0",
+          "serif|0.97998046875|-0.240234375|10.0",
+          "serif|0.97998046875|-0.240234375|9.0",
+          "serif|0.989|-0.36|9.0"
+        ],
+        "folioOffset": 1
+      },
+      "yield": {
+        "regions": 379,
+        "parts": 379,
+        "questions": 0,
+        "pagesWithRegions": 99,
+        "blankPageShare": 0.487,
+        "emptyRegionShare": 1
+      },
+      "join": {
+        "oges": 21,
+        "ogesOnReadPages": 21,
+        "matched": 19,
+        "anchored": 20,
+        "matchRate": 0.905,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 0,
+        "drift": {
+          "median": 3.4,
+          "p75": 3.92,
+          "p90": 4.17,
+          "p99": 4.86,
+          "max": 4.86
+        }
+      },
+      "buckets": {
+        "ok": 19,
+        "rule-violation": 1,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 1,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 0,
+        "solutionsCut": 9,
+        "tall": 0,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 0,
+        "solutionsCut": 1,
+        "tall": 0,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 359,
+        "markersOutsideRegions": 0,
+        "solutionCoverage": 0.699,
+        "offSheetSolutions": 0
+      }
+    },
+    {
+      "book": "0a3fbb41-8855-460f-af3d-41489a269851.pdf",
+      "bookId": "0a3fbb41-8855-460f-af3d-41489a269851",
+      "source": "bake",
+      "pages": 162,
+      "calibration": {
+        "enabled": true,
+        "confidence": "strong",
+        "markerSize": 12,
+        "styles": [
+          "sans-serif|1.06884765625|-0.29296875|12.0"
+        ],
+        "folioOffset": 1
+      },
+      "yield": {
+        "regions": 466,
+        "parts": 472,
+        "questions": 572,
+        "pagesWithRegions": 98,
+        "blankPageShare": 0.395,
+        "emptyRegionShare": 0.727
+      },
+      "join": {
+        "oges": 76,
+        "ogesOnReadPages": 76,
+        "matched": 66,
+        "anchored": 3,
+        "matchRate": 0.868,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 0,
+        "drift": {
+          "median": 2.84,
+          "p75": 4.12,
+          "p90": 4.72,
+          "p99": 9.33,
+          "max": 9.33
+        }
+      },
+      "buckets": {
+        "ok": 66,
+        "rule-violation": 10,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 0,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 36,
+        "solutionsCut": 61,
+        "tall": 10,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 0,
+        "solutionsCut": 0,
+        "tall": 0,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 463,
+        "markersOutsideRegions": 0,
+        "solutionCoverage": 0.939,
+        "offSheetSolutions": 0
+      }
+    },
+    {
+      "book": "0e966773-5012-4f57-8be5-d892e8c75f22.pdf",
+      "bookId": "0e966773-5012-4f57-8be5-d892e8c75f22",
+      "source": "bake",
+      "pages": 165,
+      "calibration": {
+        "enabled": true,
+        "confidence": "strong",
+        "markerSize": 11,
+        "styles": [
+          "sans-serif|1.035|-0.262|11.0",
+          "sans-serif|0.936|-0.288|9.0",
+          "sans-serif|1.035|-0.262|9.0"
+        ],
+        "folioOffset": 1
+      },
+      "yield": {
+        "regions": 524,
+        "parts": 532,
+        "questions": 835,
+        "pagesWithRegions": 107,
+        "blankPageShare": 0.352,
+        "emptyRegionShare": 0.691
+      },
+      "join": {
+        "oges": 165,
+        "ogesOnReadPages": 165,
+        "matched": 146,
+        "anchored": 8,
+        "matchRate": 0.885,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 0,
+        "drift": {
+          "median": 1.35,
+          "p75": 1.76,
+          "p90": 2.3,
+          "p99": 4.02,
+          "max": 4.18
+        }
+      },
+      "buckets": {
+        "ok": 146,
+        "rule-violation": 17,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 2,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 52,
+        "solutionsCut": 141,
+        "tall": 20,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 2,
+        "solutionsCut": 0,
+        "tall": 0,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 517,
+        "markersOutsideRegions": 0,
+        "solutionCoverage": 0.952,
+        "offSheetSolutions": 0
+      }
+    },
+    {
+      "book": "105fbc20-3600-4c24-bf29-c6e437213553.pdf",
+      "bookId": "105fbc20-3600-4c24-bf29-c6e437213553",
+      "source": "bake",
+      "pages": 143,
+      "calibration": {
+        "enabled": true,
+        "confidence": "strong",
+        "markerSize": 10.5,
+        "styles": [
+          "sans-serif|1|-0.2|10.5",
+          "sans-serif|1|-0.2|10.0",
+          "sans-serif|1|-0.2|10.9"
+        ],
+        "folioOffset": 0
+      },
+      "yield": {
+        "regions": 181,
+        "parts": 194,
+        "questions": 0,
+        "pagesWithRegions": 55,
+        "blankPageShare": 0.615,
+        "emptyRegionShare": 1
+      },
+      "join": {
+        "oges": 6,
+        "ogesOnReadPages": 6,
+        "matched": 3,
+        "anchored": 4,
+        "matchRate": 0.5,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 0,
+        "drift": {
+          "median": 2.89,
+          "p75": 3.06,
+          "p90": 3.06,
+          "p99": 3.06,
+          "max": 3.06
+        }
+      },
+      "buckets": {
+        "ok": 3,
+        "rule-violation": 1,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 2,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 10,
+        "solutionsCut": 47,
+        "tall": 2,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 0,
+        "solutionsCut": 0,
+        "tall": 1,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 231,
+        "markersOutsideRegions": 38,
+        "solutionCoverage": 0.591,
+        "offSheetSolutions": 1
+      }
+    },
+    {
+      "book": "11941059-5fe2-451d-a33c-4fa44d846a59.pdf",
+      "bookId": "11941059-5fe2-451d-a33c-4fa44d846a59",
+      "source": "bake",
+      "pages": 109,
+      "calibration": {
+        "enabled": true,
+        "confidence": "strong",
+        "markerSize": 10,
+        "styles": [
+          "sans-serif|0.77001953125|-0.22998046875|10.0",
+          "sans-serif|0.77001953125|-0.22998046875|9.5",
+          "monospace|1.00341796875|-0.27001953125|10.0",
+          "sans-serif|0.9462890625|-0.2109375|10.0"
+        ],
+        "folioOffset": 1
+      },
+      "yield": {
+        "regions": 673,
+        "parts": 720,
+        "questions": 155,
+        "pagesWithRegions": 84,
+        "blankPageShare": 0.229,
+        "emptyRegionShare": 0.936
+      },
+      "join": {
+        "oges": 33,
+        "ogesOnReadPages": 33,
+        "matched": 28,
+        "anchored": 5,
+        "matchRate": 0.848,
+        "unresolvedPage": 0,
+        "folioCollisions": 1,
+        "onPagesWithNoRegion": 0,
+        "drift": {
+          "median": 1.03,
+          "p75": 1.89,
+          "p90": 2.47,
+          "p99": 3.83,
+          "max": 3.83
+        }
+      },
+      "buckets": {
+        "ok": 28,
+        "rule-violation": 1,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 4,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 27,
+        "solutionsCut": 63,
+        "tall": 2,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 0,
+        "solutionsCut": 0,
+        "tall": 0,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 741,
+        "markersOutsideRegions": 56,
+        "solutionCoverage": 0.872,
+        "offSheetSolutions": 0
+      }
+    },
+    {
+      "book": "1903e365-310a-46d9-933d-ec0a5af22549.pdf",
+      "bookId": "1903e365-310a-46d9-933d-ec0a5af22549",
+      "source": "bake",
+      "pages": 282,
+      "calibration": {
+        "enabled": true,
+        "confidence": "strong",
+        "markerSize": 10,
+        "styles": [
+          "sans-serif|1|-0.2|10.0"
+        ],
+        "folioOffset": 0
+      },
+      "yield": {
+        "regions": 499,
+        "parts": 501,
+        "questions": 95,
+        "pagesWithRegions": 152,
+        "blankPageShare": 0.461,
+        "emptyRegionShare": 0.97
+      },
+      "join": {
+        "oges": 9,
+        "ogesOnReadPages": 9,
+        "matched": 2,
+        "anchored": 2,
+        "matchRate": 0.222,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 0,
+        "drift": {
+          "median": 2.51,
+          "p75": 4.6,
+          "p90": 4.6,
+          "p99": 4.6,
+          "max": 4.6
+        }
+      },
+      "buckets": {
+        "ok": 2,
+        "rule-violation": 1,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 6,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 21,
+        "solutionsCut": 219,
+        "tall": 9,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 0,
+        "solutionsCut": 0,
+        "tall": 0,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 500,
+        "markersOutsideRegions": 3,
+        "solutionCoverage": 0.772,
+        "offSheetSolutions": 0
+      }
+    },
+    {
+      "book": "1a87adf5-d23f-4cae-8caf-877ad91f37dd.pdf",
+      "bookId": "1a87adf5-d23f-4cae-8caf-877ad91f37dd",
+      "source": "bake",
+      "pages": 215,
+      "calibration": {
+        "enabled": true,
+        "confidence": "strong",
+        "markerSize": 10,
+        "styles": [
+          "sans-serif|1|-0.2|10.0"
+        ],
+        "folioOffset": 1
+      },
+      "yield": {
+        "regions": 390,
+        "parts": 391,
+        "questions": 19,
+        "pagesWithRegions": 116,
+        "blankPageShare": 0.46,
+        "emptyRegionShare": 0.992
+      },
+      "join": {
+        "oges": 23,
+        "ogesOnReadPages": 23,
+        "matched": 13,
+        "anchored": 14,
+        "matchRate": 0.565,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 1,
+        "drift": {
+          "median": 3.25,
+          "p75": 3.93,
+          "p90": 4.01,
+          "p99": 4.63,
+          "max": 4.63
+        }
+      },
+      "buckets": {
+        "ok": 13,
+        "rule-violation": 4,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 1,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 5,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 4,
+        "solutionsCut": 68,
+        "tall": 9,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 2,
+        "solutionsCut": 1,
+        "tall": 1,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 385,
+        "markersOutsideRegions": 4,
+        "solutionCoverage": 0.696,
+        "offSheetSolutions": 0
+      }
+    },
+    {
+      "book": "1cc573f6-324a-470d-8452-bbf6d3fd0a23.pdf",
+      "bookId": "1cc573f6-324a-470d-8452-bbf6d3fd0a23",
+      "source": "bake",
+      "pages": 289,
+      "calibration": {
+        "enabled": true,
+        "confidence": "strong",
+        "markerSize": 10,
+        "styles": [
+          "serif|0.89111328125|-0.21630859375|10.0",
+          "sans-serif|0.77001953125|-0.22998046875|10.0"
+        ],
+        "folioOffset": 1
+      },
+      "yield": {
+        "regions": 404,
+        "parts": 404,
+        "questions": 100,
+        "pagesWithRegions": 154,
+        "blankPageShare": 0.467,
+        "emptyRegionShare": 0.933
+      },
+      "join": {
+        "oges": 32,
+        "ogesOnReadPages": 32,
+        "matched": 27,
+        "anchored": 26,
+        "matchRate": 0.844,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 0,
+        "drift": {
+          "median": 2.53,
+          "p75": 3.36,
+          "p90": 3.93,
+          "p99": 4.25,
+          "max": 4.25
+        }
+      },
+      "buckets": {
+        "ok": 27,
+        "rule-violation": 3,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 2,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 6,
+        "solutionsCut": 197,
+        "tall": 7,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 1,
+        "solutionsCut": 0,
+        "tall": 2,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 382,
+        "markersOutsideRegions": 2,
+        "solutionCoverage": 0.806,
+        "offSheetSolutions": 0
+      }
+    },
+    {
+      "book": "2e1f772b-373f-4f21-bba4-0eba30097961.pdf",
+      "bookId": "2e1f772b-373f-4f21-bba4-0eba30097961",
+      "source": "bake",
+      "pages": 266,
+      "calibration": {
+        "enabled": true,
+        "confidence": "strong",
+        "markerSize": 9,
+        "styles": [
+          "sans-serif|0.975|-0.217|9.0"
+        ],
+        "folioOffset": 1
+      },
+      "yield": {
+        "regions": 510,
+        "parts": 510,
+        "questions": 4,
+        "pagesWithRegions": 100,
+        "blankPageShare": 0.624,
+        "emptyRegionShare": 0.996
+      },
+      "join": {
+        "oges": 16,
+        "ogesOnReadPages": 16,
+        "matched": 14,
+        "anchored": 15,
+        "matchRate": 0.875,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 0,
+        "drift": {
+          "median": 1.86,
+          "p75": 2.01,
+          "p90": 2.06,
+          "p99": 2.08,
+          "max": 2.08
+        }
+      },
+      "buckets": {
+        "ok": 14,
+        "rule-violation": 1,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 1,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 10,
+        "solutionsCut": 92,
+        "tall": 3,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 0,
+        "solutionsCut": 0,
+        "tall": 1,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 495,
+        "markersOutsideRegions": 0,
+        "solutionCoverage": 0.493,
+        "offSheetSolutions": 80
+      }
+    },
+    {
+      "book": "30011853-8449-4803-b971-a2bb0aa0bef3.pdf",
+      "bookId": "30011853-8449-4803-b971-a2bb0aa0bef3",
+      "source": "bake",
+      "pages": 378,
+      "calibration": {
+        "enabled": true,
+        "confidence": "strong",
+        "markerSize": 10,
+        "styles": [
+          "sans-serif|0.975|-0.217|10.0",
+          "sans-serif|1.077|-0.481|8.0"
+        ],
+        "folioOffset": 1
+      },
+      "yield": {
+        "regions": 1170,
+        "parts": 1241,
+        "questions": 74,
+        "pagesWithRegions": 308,
+        "blankPageShare": 0.185,
+        "emptyRegionShare": 0.976
+      },
+      "join": {
+        "oges": 20,
+        "ogesOnReadPages": 20,
+        "matched": 12,
+        "anchored": 7,
+        "matchRate": 0.6,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 0,
+        "drift": {
+          "median": 3.22,
+          "p75": 3.74,
+          "p90": 3.86,
+          "p99": 4.72,
+          "max": 4.72
+        }
+      },
+      "buckets": {
+        "ok": 12,
+        "rule-violation": 2,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 6,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 26,
+        "solutionsCut": 124,
+        "tall": 29,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 0,
+        "solutionsCut": 0,
+        "tall": 2,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 1232,
+        "markersOutsideRegions": 45,
+        "solutionCoverage": 0.616,
+        "offSheetSolutions": 0
+      }
+    },
+    {
+      "book": "31feabc5-87ea-4864-af1f-d82f82606154.pdf",
+      "bookId": "31feabc5-87ea-4864-af1f-d82f82606154",
+      "source": "bake",
+      "pages": 244,
+      "calibration": {
+        "enabled": true,
+        "confidence": "strong",
+        "markerSize": 10,
+        "styles": [
+          "serif|0.89111328125|-0.21630859375|10.0",
+          "sans-serif|0.77001953125|-0.22998046875|10.0"
+        ],
+        "folioOffset": 0
+      },
+      "yield": {
+        "regions": 366,
+        "parts": 366,
+        "questions": 16,
+        "pagesWithRegions": 100,
+        "blankPageShare": 0.59,
+        "emptyRegionShare": 0.992
+      },
+      "join": {
+        "oges": 20,
+        "ogesOnReadPages": 20,
+        "matched": 14,
+        "anchored": 10,
+        "matchRate": 0.7,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 2,
+        "drift": {
+          "median": 2.16,
+          "p75": 2.6,
+          "p90": 3.7,
+          "p99": 3.95,
+          "max": 3.95
+        }
+      },
+      "buckets": {
+        "ok": 14,
+        "rule-violation": 2,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 2,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 2,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 7,
+        "solutionsCut": 11,
+        "tall": 1,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 1,
+        "solutionsCut": 0,
+        "tall": 1,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 357,
+        "markersOutsideRegions": 1,
+        "solutionCoverage": 0.426,
+        "offSheetSolutions": 0
+      }
+    },
+    {
+      "book": "32a2d6a9-c238-4d6c-80f1-d70b0e0dd1a7.pdf",
+      "bookId": "32a2d6a9-c238-4d6c-80f1-d70b0e0dd1a7",
+      "source": "bake",
+      "pages": 145,
+      "calibration": {
+        "enabled": true,
+        "confidence": "strong",
+        "markerSize": 10,
+        "styles": [
+          "sans-serif|0.952|-0.25|10.0",
+          "sans-serif|0.989|-0.25|10.0",
+          "sans-serif|0.989|-0.25|9.7"
+        ],
+        "folioOffset": 1
+      },
+      "yield": {
+        "regions": 200,
+        "parts": 201,
+        "questions": 2,
+        "pagesWithRegions": 58,
+        "blankPageShare": 0.6,
+        "emptyRegionShare": 0.995
+      },
+      "join": {
+        "oges": 8,
+        "ogesOnReadPages": 8,
+        "matched": 4,
+        "anchored": 4,
+        "matchRate": 0.5,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 0,
+        "drift": {
+          "median": 2.52,
+          "p75": 2.73,
+          "p90": 2.73,
+          "p99": 2.73,
+          "max": 2.73
+        }
+      },
+      "buckets": {
+        "ok": 4,
+        "rule-violation": 0,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 4,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 15,
+        "solutionsCut": 171,
+        "tall": 1,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 0,
+        "solutionsCut": 0,
+        "tall": 0,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 196,
+        "markersOutsideRegions": 0,
+        "solutionCoverage": 0.716,
+        "offSheetSolutions": 0
+      }
+    },
+    {
+      "book": "3a4479c7-dcb7-4da6-b3e5-5f05dd98d155.pdf",
+      "bookId": "3a4479c7-dcb7-4da6-b3e5-5f05dd98d155",
+      "source": "bake",
+      "pages": 188,
+      "calibration": {
+        "enabled": true,
+        "confidence": "strong",
+        "markerSize": 10,
+        "styles": [
+          "sans-serif|0.984|-0.273|10.0"
+        ],
+        "folioOffset": 1
+      },
+      "yield": {
+        "regions": 508,
+        "parts": 513,
+        "questions": 19,
+        "pagesWithRegions": 83,
+        "blankPageShare": 0.559,
+        "emptyRegionShare": 0.994
+      },
+      "join": {
+        "oges": 0,
+        "ogesOnReadPages": 0,
+        "matched": 0,
+        "anchored": 0,
+        "matchRate": null,
+        "unresolvedPage": 0,
+        "folioCollisions": 3,
+        "onPagesWithNoRegion": 0,
+        "drift": null
+      },
+      "buckets": {
+        "ok": 0,
+        "rule-violation": 0,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 0,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 15,
+        "solutionsCut": 187,
+        "tall": 2,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 0,
+        "solutionsCut": 0,
+        "tall": 0,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 516,
+        "markersOutsideRegions": 2,
+        "solutionCoverage": 0.81,
+        "offSheetSolutions": 0
+      }
+    },
+    {
+      "book": "3d372038-0d49-4a7d-bb62-446818ff6d36.pdf",
+      "bookId": "3d372038-0d49-4a7d-bb62-446818ff6d36",
+      "source": "bake",
+      "pages": 53,
+      "calibration": {
+        "enabled": true,
+        "confidence": "strong",
+        "markerSize": 10,
+        "styles": [
+          "sans-serif|0.77001953125|-0.22998046875|10.0"
+        ],
+        "folioOffset": 1
+      },
+      "yield": {
+        "regions": 484,
+        "parts": 499,
+        "questions": 114,
+        "pagesWithRegions": 40,
+        "blankPageShare": 0.245,
+        "emptyRegionShare": 0.942
+      },
+      "join": {
+        "oges": 22,
+        "ogesOnReadPages": 22,
+        "matched": 5,
+        "anchored": 3,
+        "matchRate": 0.227,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 0,
+        "drift": {
+          "median": 2.13,
+          "p75": 2.8,
+          "p90": 9.33,
+          "p99": 9.33,
+          "max": 9.33
+        }
+      },
+      "buckets": {
+        "ok": 5,
+        "rule-violation": 1,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 16,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 6,
+        "solutionsCut": 13,
+        "tall": 0,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 0,
+        "solutionsCut": 1,
+        "tall": 0,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 502,
+        "markersOutsideRegions": 16,
+        "solutionCoverage": 0.76,
+        "offSheetSolutions": 0
+      }
+    },
+    {
+      "book": "3e42e66e-8ac4-4c89-a633-607d56030add.pdf",
+      "bookId": "3e42e66e-8ac4-4c89-a633-607d56030add",
+      "source": "bake",
+      "pages": 334,
+      "calibration": {
+        "enabled": true,
+        "confidence": "weak",
+        "markerSize": 10,
+        "styles": [
+          "sans-serif|0.989|-0.25|10.0",
+          "sans-serif|0.952|-0.25|10.0",
+          "sans-serif|0.952|-0.25|9.5",
+          "sans-serif|0.77001953125|-0.22998046875|9.0"
+        ],
+        "folioOffset": 1
+      },
+      "yield": {
+        "regions": 317,
+        "parts": 320,
+        "questions": 60,
+        "pagesWithRegions": 110,
+        "blankPageShare": 0.671,
+        "emptyRegionShare": 0.937
+      },
+      "join": {
+        "oges": 39,
+        "ogesOnReadPages": 39,
+        "matched": 22,
+        "anchored": 36,
+        "matchRate": 0.564,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 0,
+        "drift": {
+          "median": 3.71,
+          "p75": 4.18,
+          "p90": 4.45,
+          "p99": 4.78,
+          "max": 4.78
+        }
+      },
+      "buckets": {
+        "ok": 22,
+        "rule-violation": 14,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 3,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 7,
+        "solutionsCut": 141,
+        "tall": 13,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 6,
+        "solutionsCut": 0,
+        "tall": 8,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 296,
+        "markersOutsideRegions": 7,
+        "solutionCoverage": 0.56,
+        "offSheetSolutions": 0
+      }
+    },
+    {
+      "book": "4442fde4-91bb-46e1-a6b6-b949cec10b5b.pdf",
+      "bookId": "4442fde4-91bb-46e1-a6b6-b949cec10b5b",
+      "source": "bake",
+      "pages": 238,
+      "calibration": {
+        "enabled": true,
+        "confidence": "strong",
+        "markerSize": 10,
+        "styles": [
+          "sans-serif|0.77001953125|-0.22998046875|10.0",
+          "serif|0.89111328125|-0.21630859375|10.0",
+          "serif|0.97998046875|-0.240234375|10.0"
+        ],
+        "folioOffset": 1
+      },
+      "yield": {
+        "regions": 623,
+        "parts": 628,
+        "questions": 207,
+        "pagesWithRegions": 185,
+        "blankPageShare": 0.223,
+        "emptyRegionShare": 0.912
+      },
+      "join": {
+        "oges": 0,
+        "ogesOnReadPages": 0,
+        "matched": 0,
+        "anchored": 0,
+        "matchRate": null,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 0,
+        "drift": null
+      },
+      "buckets": {
+        "ok": 0,
+        "rule-violation": 0,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 0,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 12,
+        "solutionsCut": 85,
+        "tall": 17,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 0,
+        "solutionsCut": 0,
+        "tall": 0,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 640,
+        "markersOutsideRegions": 11,
+        "solutionCoverage": 0.491,
+        "offSheetSolutions": 0
+      }
+    },
+    {
+      "book": "4b11794b-bb3f-4a10-a3d8-2f8109e228ea.pdf",
+      "bookId": "4b11794b-bb3f-4a10-a3d8-2f8109e228ea",
+      "source": "bake",
+      "pages": 236,
+      "calibration": {
+        "enabled": true,
+        "confidence": "weak",
+        "markerSize": 10,
+        "styles": [
+          "sans-serif|0.975|-0.217|10.0",
+          "sans-serif|0.975|-0.217|9.0",
+          "sans-serif|0.952|-0.213|8.0",
+          "sans-serif|0.975|-0.217|8.0"
+        ],
+        "folioOffset": 0
+      },
+      "yield": {
+        "regions": 424,
+        "parts": 428,
+        "questions": 53,
+        "pagesWithRegions": 121,
+        "blankPageShare": 0.487,
+        "emptyRegionShare": 0.974
+      },
+      "join": {
+        "oges": 19,
+        "ogesOnReadPages": 19,
+        "matched": 6,
+        "anchored": 8,
+        "matchRate": 0.316,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 0,
+        "drift": {
+          "median": 3.73,
+          "p75": 4.31,
+          "p90": 4.32,
+          "p99": 4.32,
+          "max": 4.32
+        }
+      },
+      "buckets": {
+        "ok": 6,
+        "rule-violation": 2,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 11,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 15,
+        "solutionsCut": 103,
+        "tall": 3,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 0,
+        "solutionsCut": 0,
+        "tall": 2,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 430,
+        "markersOutsideRegions": 5,
+        "solutionCoverage": 0.292,
+        "offSheetSolutions": 0
+      }
+    },
+    {
+      "book": "51b11768-89e7-4de6-8a92-68a86511f194.pdf",
+      "bookId": "51b11768-89e7-4de6-8a92-68a86511f194",
+      "source": "bake",
+      "pages": 150,
+      "calibration": {
+        "enabled": true,
+        "confidence": "strong",
+        "markerSize": 10,
+        "styles": [
+          "sans-serif|0.77001953125|-0.22998046875|10.0",
+          "sans-serif|0.77001953125|-0.22998046875|9.9",
+          "sans-serif|0.77001953125|-0.22998046875|9.0"
+        ],
+        "folioOffset": 1
+      },
+      "yield": {
+        "regions": 277,
+        "parts": 289,
+        "questions": 0,
+        "pagesWithRegions": 98,
+        "blankPageShare": 0.347,
+        "emptyRegionShare": 1
+      },
+      "join": {
+        "oges": 27,
+        "ogesOnReadPages": 27,
+        "matched": 18,
+        "anchored": 16,
+        "matchRate": 0.667,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 0,
+        "drift": {
+          "median": 2.49,
+          "p75": 3.19,
+          "p90": 4.18,
+          "p99": 4.4,
+          "max": 4.4
+        }
+      },
+      "buckets": {
+        "ok": 18,
+        "rule-violation": 1,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 8,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 11,
+        "solutionsCut": 32,
+        "tall": 4,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 0,
+        "solutionsCut": 0,
+        "tall": 0,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 274,
+        "markersOutsideRegions": 9,
+        "solutionCoverage": 0.644,
+        "offSheetSolutions": 0
+      }
+    },
+    {
+      "book": "51cdbbce-66f4-4baa-95d7-634bf11b7e44.pdf",
+      "bookId": "51cdbbce-66f4-4baa-95d7-634bf11b7e44",
+      "source": "bake",
+      "pages": 417,
+      "calibration": {
+        "enabled": true,
+        "confidence": "strong",
+        "markerSize": 10,
+        "styles": [
+          "sans-serif|0.897|-0.25|10.0",
+          "sans-serif|0.889|-0.25|10.0"
+        ],
+        "folioOffset": 1
+      },
+      "yield": {
+        "regions": 1101,
+        "parts": 1103,
+        "questions": 476,
+        "pagesWithRegions": 349,
+        "blankPageShare": 0.163,
+        "emptyRegionShare": 0.866
+      },
+      "join": {
+        "oges": 38,
+        "ogesOnReadPages": 38,
+        "matched": 22,
+        "anchored": 13,
+        "matchRate": 0.579,
+        "unresolvedPage": 0,
+        "folioCollisions": 1,
+        "onPagesWithNoRegion": 0,
+        "drift": {
+          "median": 2.24,
+          "p75": 2.98,
+          "p90": 4.11,
+          "p99": 4.99,
+          "max": 4.99
+        }
+      },
+      "buckets": {
+        "ok": 22,
+        "rule-violation": 4,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 12,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 19,
+        "solutionsCut": 274,
+        "tall": 33,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 0,
+        "solutionsCut": 3,
+        "tall": 1,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 1104,
+        "markersOutsideRegions": 11,
+        "solutionCoverage": 0.758,
+        "offSheetSolutions": 19
+      }
+    },
+    {
+      "book": "5277a483-4b56-4a7d-89af-aecccf5733af.pdf",
+      "bookId": "5277a483-4b56-4a7d-89af-aecccf5733af",
+      "source": "bake",
+      "pages": 147,
+      "calibration": {
+        "enabled": true,
+        "confidence": "strong",
+        "markerSize": 11,
+        "styles": [
+          "serif|1.018|-0.276|11.0"
+        ],
+        "folioOffset": 0
+      },
+      "yield": {
+        "regions": 162,
+        "parts": 162,
+        "questions": 0,
+        "pagesWithRegions": 65,
+        "blankPageShare": 0.558,
+        "emptyRegionShare": 1
+      },
+      "join": {
+        "oges": 12,
+        "ogesOnReadPages": 12,
+        "matched": 6,
+        "anchored": 5,
+        "matchRate": 0.5,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 0,
+        "drift": {
+          "median": 3.91,
+          "p75": 4.3,
+          "p90": 4.58,
+          "p99": 4.58,
+          "max": 4.58
+        }
+      },
+      "buckets": {
+        "ok": 6,
+        "rule-violation": 2,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 4,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 9,
+        "solutionsCut": 11,
+        "tall": 2,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 0,
+        "solutionsCut": 0,
+        "tall": 2,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 157,
+        "markersOutsideRegions": 0,
+        "solutionCoverage": 0.286,
+        "offSheetSolutions": 0
+      }
+    },
+    {
+      "book": "550e601a-7ae8-40c0-ba41-435fa30c16e8.pdf",
+      "bookId": "550e601a-7ae8-40c0-ba41-435fa30c16e8",
+      "source": "bake",
+      "pages": 73,
+      "calibration": {
+        "enabled": true,
+        "confidence": "strong",
+        "markerSize": 10,
+        "styles": [
+          "sans-serif|1.035|-0.262|10.0"
+        ],
+        "folioOffset": 1
+      },
+      "yield": {
+        "regions": 516,
+        "parts": 548,
+        "questions": 95,
+        "pagesWithRegions": 58,
+        "blankPageShare": 0.205,
+        "emptyRegionShare": 0.963
+      },
+      "join": {
+        "oges": 49,
+        "ogesOnReadPages": 49,
+        "matched": 38,
+        "anchored": 4,
+        "matchRate": 0.776,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 0,
+        "drift": {
+          "median": 1.38,
+          "p75": 1.72,
+          "p90": 1.9,
+          "p99": 2.1,
+          "max": 2.1
+        }
+      },
+      "buckets": {
+        "ok": 38,
+        "rule-violation": 6,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 5,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 47,
+        "solutionsCut": 160,
+        "tall": 13,
+        "slivers": 7,
+        "overlaps": 7
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 0,
+        "solutionsCut": 0,
+        "tall": 0,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 733,
+        "markersOutsideRegions": 44,
+        "solutionCoverage": 0.694,
+        "offSheetSolutions": 108
+      }
+    },
+    {
+      "book": "59158d87-4575-40a2-a003-a023e01266d7.pdf",
+      "bookId": "59158d87-4575-40a2-a003-a023e01266d7",
+      "source": "bake",
+      "pages": 215,
+      "calibration": {
+        "enabled": true,
+        "confidence": "strong",
+        "markerSize": 10,
+        "styles": [
+          "sans-serif|0.9052734375|-0.2119140625|10.0",
+          "sans-serif|1.006|-0.325|10.0"
+        ],
+        "folioOffset": 1
+      },
+      "yield": {
+        "regions": 696,
+        "parts": 719,
+        "questions": 122,
+        "pagesWithRegions": 184,
+        "blankPageShare": 0.144,
+        "emptyRegionShare": 0.948
+      },
+      "join": {
+        "oges": 0,
+        "ogesOnReadPages": 0,
+        "matched": 0,
+        "anchored": 0,
+        "matchRate": null,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 0,
+        "drift": null
+      },
+      "buckets": {
+        "ok": 0,
+        "rule-violation": 0,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 0,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 21,
+        "solutionsCut": 65,
+        "tall": 6,
+        "slivers": 0,
+        "overlaps": 3
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 0,
+        "solutionsCut": 0,
+        "tall": 0,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 825,
+        "markersOutsideRegions": 78,
+        "solutionCoverage": 0.445,
+        "offSheetSolutions": 0
+      }
+    },
+    {
+      "book": "5e3a8aab-7e4e-4a79-a958-21fe89310b1e.pdf",
+      "bookId": "5e3a8aab-7e4e-4a79-a958-21fe89310b1e",
+      "source": "bake",
+      "pages": 178,
+      "calibration": {
+        "enabled": true,
+        "confidence": "weak",
+        "markerSize": 10,
+        "styles": [
+          "sans-serif|1|-0.2|10.0"
+        ],
+        "folioOffset": 1
+      },
+      "yield": {
+        "regions": 30,
+        "parts": 31,
+        "questions": 0,
+        "pagesWithRegions": 20,
+        "blankPageShare": 0.888,
+        "emptyRegionShare": 1
+      },
+      "join": {
+        "oges": 12,
+        "ogesOnReadPages": 12,
+        "matched": 8,
+        "anchored": 12,
+        "matchRate": 0.667,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 0,
+        "drift": {
+          "median": 1.71,
+          "p75": 2.59,
+          "p90": 4.74,
+          "p99": 4.74,
+          "max": 4.74
+        }
+      },
+      "buckets": {
+        "ok": 8,
+        "rule-violation": 4,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 0,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 1,
+        "solutionsCut": 28,
+        "tall": 3,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 1,
+        "solutionsCut": 0,
+        "tall": 3,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 25,
+        "markersOutsideRegions": 3,
+        "solutionCoverage": 0.458,
+        "offSheetSolutions": 0
+      }
+    },
+    {
+      "book": "632eb930-e830-473f-9ea8-07d177bd2c07.pdf",
+      "bookId": "632eb930-e830-473f-9ea8-07d177bd2c07",
+      "source": "bake",
+      "pages": 264,
+      "calibration": {
+        "enabled": true,
+        "confidence": "strong",
+        "markerSize": 10,
+        "styles": [
+          "sans-serif|0.77001953125|-0.22998046875|10.0",
+          "sans-serif|1|-0.2|10.0"
+        ],
+        "folioOffset": 1
+      },
+      "yield": {
+        "regions": 269,
+        "parts": 269,
+        "questions": 0,
+        "pagesWithRegions": 106,
+        "blankPageShare": 0.598,
+        "emptyRegionShare": 1
+      },
+      "join": {
+        "oges": 77,
+        "ogesOnReadPages": 77,
+        "matched": 64,
+        "anchored": 47,
+        "matchRate": 0.831,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 2,
+        "drift": {
+          "median": 1.35,
+          "p75": 1.94,
+          "p90": 3.89,
+          "p99": 4.42,
+          "max": 4.42
+        }
+      },
+      "buckets": {
+        "ok": 64,
+        "rule-violation": 6,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 2,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 5,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 6,
+        "solutionsCut": 91,
+        "tall": 3,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 4,
+        "solutionsCut": 1,
+        "tall": 1,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 223,
+        "markersOutsideRegions": 0,
+        "solutionCoverage": 0.702,
+        "offSheetSolutions": 0
+      }
+    },
+    {
+      "book": "641b8d6a-b07b-4edf-b67e-2f2600425f43.pdf",
+      "bookId": "641b8d6a-b07b-4edf-b67e-2f2600425f43",
+      "source": "bake",
+      "pages": 188,
+      "calibration": {
+        "enabled": true,
+        "confidence": "strong",
+        "markerSize": 10,
+        "styles": [
+          "sans-serif|0.96|-0.27|10.0",
+          "sans-serif|0.926|-0.25|11.0",
+          "sans-serif|0.9|-0.25|11.0",
+          "sans-serif|0.9|-0.25|10.0"
+        ],
+        "folioOffset": 1
+      },
+      "yield": {
+        "regions": 437,
+        "parts": 443,
+        "questions": 5,
+        "pagesWithRegions": 95,
+        "blankPageShare": 0.495,
+        "emptyRegionShare": 0.998
+      },
+      "join": {
+        "oges": 84,
+        "ogesOnReadPages": 84,
+        "matched": 66,
+        "anchored": 25,
+        "matchRate": 0.786,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 0,
+        "drift": {
+          "median": 2.2,
+          "p75": 2.97,
+          "p90": 3.64,
+          "p99": 4.83,
+          "max": 4.83
+        }
+      },
+      "buckets": {
+        "ok": 66,
+        "rule-violation": 5,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 13,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 21,
+        "solutionsCut": 0,
+        "tall": 2,
+        "slivers": 0,
+        "overlaps": 1
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 2,
+        "solutionsCut": 0,
+        "tall": 1,
+        "slivers": 0,
+        "overlaps": 1
+      },
+      "stats": {
+        "markers": 435,
+        "markersOutsideRegions": 13,
+        "solutionCoverage": 0.252,
+        "offSheetSolutions": 0
+      }
+    },
+    {
+      "book": "66098271-92a3-48d4-9320-2033cbd3c94e.pdf",
+      "bookId": "66098271-92a3-48d4-9320-2033cbd3c94e",
+      "source": "bake",
+      "pages": 321,
+      "calibration": {
+        "enabled": true,
+        "confidence": "strong",
+        "markerSize": 10,
+        "styles": [
+          "sans-serif|0.77001953125|-0.22998046875|10.0",
+          "sans-serif|0.77001953125|-0.22998046875|9.9",
+          "serif|1.024|-0.36|10.0"
+        ],
+        "folioOffset": 1
+      },
+      "yield": {
+        "regions": 723,
+        "parts": 739,
+        "questions": 150,
+        "pagesWithRegions": 212,
+        "blankPageShare": 0.34,
+        "emptyRegionShare": 0.941
+      },
+      "join": {
+        "oges": 28,
+        "ogesOnReadPages": 28,
+        "matched": 5,
+        "anchored": 2,
+        "matchRate": 0.179,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 0,
+        "drift": {
+          "median": 1.98,
+          "p75": 2.1,
+          "p90": 2.6,
+          "p99": 2.6,
+          "max": 2.6
+        }
+      },
+      "buckets": {
+        "ok": 5,
+        "rule-violation": 4,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 19,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 8,
+        "solutionsCut": 293,
+        "tall": 16,
+        "slivers": 0,
+        "overlaps": 1
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 0,
+        "solutionsCut": 4,
+        "tall": 0,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 745,
+        "markersOutsideRegions": 19,
+        "solutionCoverage": 0.589,
+        "offSheetSolutions": 1
+      }
+    },
+    {
+      "book": "6ae92909-eb0a-4d73-8fc6-958edd84f7a0.pdf",
+      "bookId": "6ae92909-eb0a-4d73-8fc6-958edd84f7a0",
+      "source": "bake",
+      "pages": 417,
+      "calibration": {
+        "enabled": true,
+        "confidence": "strong",
+        "markerSize": 11,
+        "styles": [
+          "sans-serif|0.75|-0.25|11.0",
+          "sans-serif|0.75|-0.25|11.7",
+          "serif|0.89111328125|-0.21630859375|10.0"
+        ],
+        "folioOffset": 1
+      },
+      "yield": {
+        "regions": 1127,
+        "parts": 1137,
+        "questions": 147,
+        "pagesWithRegions": 332,
+        "blankPageShare": 0.204,
+        "emptyRegionShare": 0.96
+      },
+      "join": {
+        "oges": 27,
+        "ogesOnReadPages": 27,
+        "matched": 13,
+        "anchored": 12,
+        "matchRate": 0.481,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 0,
+        "drift": {
+          "median": 1.87,
+          "p75": 1.98,
+          "p90": 2.75,
+          "p99": 3.17,
+          "max": 3.17
+        }
+      },
+      "buckets": {
+        "ok": 13,
+        "rule-violation": 0,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 14,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 20,
+        "solutionsCut": 168,
+        "tall": 27,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 0,
+        "solutionsCut": 0,
+        "tall": 0,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 1169,
+        "markersOutsideRegions": 34,
+        "solutionCoverage": 0.396,
+        "offSheetSolutions": 0
+      }
+    },
+    {
+      "book": "6e4f65dc-0054-4c19-b1c3-90acf2f68f46.pdf",
+      "bookId": "6e4f65dc-0054-4c19-b1c3-90acf2f68f46",
+      "source": "bake",
+      "pages": 241,
+      "calibration": {
+        "enabled": false,
+        "confidence": "none",
+        "markerSize": null,
+        "styles": [],
+        "folioOffset": null
+      },
+      "yield": {
+        "regions": 0,
+        "parts": 0,
+        "questions": 0,
+        "pagesWithRegions": 0,
+        "blankPageShare": 1,
+        "emptyRegionShare": 0
+      },
+      "join": {
+        "oges": 78,
+        "ogesOnReadPages": 0,
+        "matched": 0,
+        "anchored": 0,
+        "matchRate": 0,
+        "unresolvedPage": 78,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 0,
+        "drift": null
+      },
+      "buckets": {
+        "ok": 0,
+        "rule-violation": 0,
+        "unresolved-page": 78,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 0,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 0,
+        "solutionsCut": 0,
+        "tall": 0,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 0,
+        "solutionsCut": 0,
+        "tall": 0,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 0,
+        "markersOutsideRegions": 0,
+        "solutionCoverage": null,
+        "offSheetSolutions": 0
+      }
+    },
+    {
+      "book": "753fcdb0-64fa-4c5e-b677-1e3e612b31b5.pdf",
+      "bookId": "753fcdb0-64fa-4c5e-b677-1e3e612b31b5",
+      "source": "bake",
+      "pages": 407,
+      "calibration": {
+        "enabled": true,
+        "confidence": "strong",
+        "markerSize": 10,
+        "styles": [
+          "sans-serif|0.75|-0.25|10.0",
+          "sans-serif|1.026|-0.312|10.0"
+        ],
+        "folioOffset": 1
+      },
+      "yield": {
+        "regions": 1424,
+        "parts": 1497,
+        "questions": 77,
+        "pagesWithRegions": 366,
+        "blankPageShare": 0.101,
+        "emptyRegionShare": 0.977
+      },
+      "join": {
+        "oges": 96,
+        "ogesOnReadPages": 96,
+        "matched": 71,
+        "anchored": 32,
+        "matchRate": 0.74,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 0,
+        "drift": {
+          "median": 1.72,
+          "p75": 2.82,
+          "p90": 3.71,
+          "p99": 4.92,
+          "max": 4.92
+        }
+      },
+      "buckets": {
+        "ok": 71,
+        "rule-violation": 8,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 17,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 57,
+        "solutionsCut": 207,
+        "tall": 5,
+        "slivers": 0,
+        "overlaps": 1
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 3,
+        "solutionsCut": 0,
+        "tall": 0,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 1709,
+        "markersOutsideRegions": 183,
+        "solutionCoverage": 0.461,
+        "offSheetSolutions": 2
+      }
+    },
+    {
+      "book": "7763e45b-e8ba-49df-a7d1-5932bc68e6ed.pdf",
+      "bookId": "7763e45b-e8ba-49df-a7d1-5932bc68e6ed",
+      "source": "bake",
+      "pages": 240,
+      "calibration": {
+        "enabled": true,
+        "confidence": "strong",
+        "markerSize": 10.5,
+        "styles": [
+          "sans-serif|1|-0.2|10.5",
+          "sans-serif|1|-0.2|10.0"
+        ],
+        "folioOffset": 0
+      },
+      "yield": {
+        "regions": 329,
+        "parts": 333,
+        "questions": 45,
+        "pagesWithRegions": 105,
+        "blankPageShare": 0.563,
+        "emptyRegionShare": 0.964
+      },
+      "join": {
+        "oges": 7,
+        "ogesOnReadPages": 7,
+        "matched": 1,
+        "anchored": 1,
+        "matchRate": 0.143,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 0,
+        "drift": {
+          "median": 2.03,
+          "p75": 2.03,
+          "p90": 2.03,
+          "p99": 2.03,
+          "max": 2.03
+        }
+      },
+      "buckets": {
+        "ok": 1,
+        "rule-violation": 0,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 6,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 4,
+        "solutionsCut": 95,
+        "tall": 3,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 0,
+        "solutionsCut": 0,
+        "tall": 0,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 335,
+        "markersOutsideRegions": 4,
+        "solutionCoverage": 0.884,
+        "offSheetSolutions": 4
+      }
+    },
+    {
+      "book": "79cbecfa-b783-4472-9ba2-3933ffeb9b72.pdf",
+      "bookId": "79cbecfa-b783-4472-9ba2-3933ffeb9b72",
+      "source": "bake",
+      "pages": 213,
+      "calibration": {
+        "enabled": true,
+        "confidence": "strong",
+        "markerSize": 10,
+        "styles": [
+          "sans-serif|0.889|-0.25|10.0",
+          "sans-serif|0.952|-0.25|10.0",
+          "sans-serif|0.884|-0.25|9.0"
+        ],
+        "folioOffset": 1
+      },
+      "yield": {
+        "regions": 436,
+        "parts": 444,
+        "questions": 34,
+        "pagesWithRegions": 90,
+        "blankPageShare": 0.577,
+        "emptyRegionShare": 0.977
+      },
+      "join": {
+        "oges": 8,
+        "ogesOnReadPages": 8,
+        "matched": 4,
+        "anchored": 6,
+        "matchRate": 0.5,
+        "unresolvedPage": 0,
+        "folioCollisions": 1,
+        "onPagesWithNoRegion": 0,
+        "drift": {
+          "median": 1.99,
+          "p75": 3.31,
+          "p90": 3.31,
+          "p99": 3.31,
+          "max": 3.31
+        }
+      },
+      "buckets": {
+        "ok": 4,
+        "rule-violation": 2,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 2,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 8,
+        "solutionsCut": 388,
+        "tall": 2,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 2,
+        "solutionsCut": 1,
+        "tall": 0,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 445,
+        "markersOutsideRegions": 10,
+        "solutionCoverage": 0.665,
+        "offSheetSolutions": 0
+      }
+    },
+    {
+      "book": "7a92f6d0-de06-4704-8e78-032183ae7b82.pdf",
+      "bookId": "7a92f6d0-de06-4704-8e78-032183ae7b82",
+      "source": "bake",
+      "pages": 318,
+      "calibration": {
+        "enabled": true,
+        "confidence": "strong",
+        "markerSize": 10,
+        "styles": [
+          "sans-serif|0.77001953125|-0.22998046875|10.0",
+          "serif|0.97998046875|-0.240234375|10.0",
+          "sans-serif|1|-0.2|10.0"
+        ],
+        "folioOffset": 1
+      },
+      "yield": {
+        "regions": 759,
+        "parts": 774,
+        "questions": 57,
+        "pagesWithRegions": 195,
+        "blankPageShare": 0.387,
+        "emptyRegionShare": 0.971
+      },
+      "join": {
+        "oges": 41,
+        "ogesOnReadPages": 41,
+        "matched": 31,
+        "anchored": 15,
+        "matchRate": 0.756,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 0,
+        "drift": {
+          "median": 1.46,
+          "p75": 2.46,
+          "p90": 2.94,
+          "p99": 4.89,
+          "max": 4.89
+        }
+      },
+      "buckets": {
+        "ok": 31,
+        "rule-violation": 4,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 6,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 14,
+        "solutionsCut": 153,
+        "tall": 9,
+        "slivers": 0,
+        "overlaps": 2
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 2,
+        "solutionsCut": 1,
+        "tall": 0,
+        "slivers": 0,
+        "overlaps": 1
+      },
+      "stats": {
+        "markers": 754,
+        "markersOutsideRegions": 8,
+        "solutionCoverage": 0.746,
+        "offSheetSolutions": 0
+      }
+    },
+    {
+      "book": "7b668c2c-17c8-4c87-8c12-6845c53f5bfe.pdf",
+      "bookId": "7b668c2c-17c8-4c87-8c12-6845c53f5bfe",
+      "source": "bake",
+      "pages": 313,
+      "calibration": {
+        "enabled": true,
+        "confidence": "weak",
+        "markerSize": 10,
+        "styles": [
+          "sans-serif|0.972|-0.25|10.0",
+          "sans-serif|0.958|-0.25|10.0",
+          "sans-serif|0.952|-0.25|10.0"
+        ],
+        "folioOffset": 1
+      },
+      "yield": {
+        "regions": 263,
+        "parts": 264,
+        "questions": 10,
+        "pagesWithRegions": 136,
+        "blankPageShare": 0.565,
+        "emptyRegionShare": 0.989
+      },
+      "join": {
+        "oges": 31,
+        "ogesOnReadPages": 31,
+        "matched": 19,
+        "anchored": 23,
+        "matchRate": 0.613,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 0,
+        "drift": {
+          "median": 3.01,
+          "p75": 3.59,
+          "p90": 4.25,
+          "p99": 4.84,
+          "max": 4.84
+        }
+      },
+      "buckets": {
+        "ok": 19,
+        "rule-violation": 4,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 8,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 7,
+        "solutionsCut": 204,
+        "tall": 18,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 1,
+        "solutionsCut": 0,
+        "tall": 3,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 247,
+        "markersOutsideRegions": 4,
+        "solutionCoverage": 0.712,
+        "offSheetSolutions": 0
+      }
+    },
+    {
+      "book": "7fad03e9-392b-45a1-ba90-503059d9e41e.pdf",
+      "bookId": "7fad03e9-392b-45a1-ba90-503059d9e41e",
+      "source": "bake",
+      "pages": 329,
+      "calibration": {
+        "enabled": true,
+        "confidence": "strong",
+        "markerSize": 11,
+        "styles": [
+          "sans-serif|0.75|-0.25|11.0"
+        ],
+        "folioOffset": 113
+      },
+      "yield": {
+        "regions": 323,
+        "parts": 356,
+        "questions": 8,
+        "pagesWithRegions": 95,
+        "blankPageShare": 0.711,
+        "emptyRegionShare": 0.988
+      },
+      "join": {
+        "oges": 3,
+        "ogesOnReadPages": 3,
+        "matched": 2,
+        "anchored": 3,
+        "matchRate": 0.667,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 0,
+        "drift": {
+          "median": 3.93,
+          "p75": 3.93,
+          "p90": 3.93,
+          "p99": 3.93,
+          "max": 3.93
+        }
+      },
+      "buckets": {
+        "ok": 2,
+        "rule-violation": 1,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 0,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 22,
+        "solutionsCut": 162,
+        "tall": 0,
+        "slivers": 0,
+        "overlaps": 5
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 2,
+        "solutionsCut": 0,
+        "tall": 0,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 372,
+        "markersOutsideRegions": 18,
+        "solutionCoverage": 0.286,
+        "offSheetSolutions": 0
+      }
+    },
+    {
+      "book": "8452deee-9016-45a1-93d5-0a4c9ae57ed5.pdf",
+      "bookId": "8452deee-9016-45a1-93d5-0a4c9ae57ed5",
+      "source": "bake",
+      "pages": 182,
+      "calibration": {
+        "enabled": true,
+        "confidence": "strong",
+        "markerSize": 10,
+        "styles": [
+          "sans-serif|1|-0.2|10.0"
+        ],
+        "folioOffset": 1
+      },
+      "yield": {
+        "regions": 297,
+        "parts": 297,
+        "questions": 4,
+        "pagesWithRegions": 74,
+        "blankPageShare": 0.593,
+        "emptyRegionShare": 0.997
+      },
+      "join": {
+        "oges": 11,
+        "ogesOnReadPages": 11,
+        "matched": 7,
+        "anchored": 6,
+        "matchRate": 0.636,
+        "unresolvedPage": 0,
+        "folioCollisions": 1,
+        "onPagesWithNoRegion": 1,
+        "drift": {
+          "median": 2.14,
+          "p75": 4.33,
+          "p90": 4.66,
+          "p99": 4.66,
+          "max": 4.66
+        }
+      },
+      "buckets": {
+        "ok": 7,
+        "rule-violation": 1,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 1,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 2,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 2,
+        "solutionsCut": 3,
+        "tall": 1,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 1,
+        "solutionsCut": 0,
+        "tall": 0,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 291,
+        "markersOutsideRegions": 0,
+        "solutionCoverage": 0.745,
+        "offSheetSolutions": 0
+      }
+    },
+    {
+      "book": "8a737a50-cd4e-49f7-90e2-4031f4fde8d0.pdf",
+      "bookId": "8a737a50-cd4e-49f7-90e2-4031f4fde8d0",
+      "source": "bake",
+      "pages": 205,
+      "calibration": {
+        "enabled": true,
+        "confidence": "strong",
+        "markerSize": 10,
+        "styles": [
+          "serif|0.89111328125|-0.21630859375|10.0",
+          "sans-serif|0.77001953125|-0.22998046875|10.0",
+          "sans-serif|0.77001953125|-0.22998046875|9.5",
+          "serif|0.97998046875|-0.240234375|10.0"
+        ],
+        "folioOffset": 1
+      },
+      "yield": {
+        "regions": 573,
+        "parts": 582,
+        "questions": 162,
+        "pagesWithRegions": 171,
+        "blankPageShare": 0.166,
+        "emptyRegionShare": 0.906
+      },
+      "join": {
+        "oges": 30,
+        "ogesOnReadPages": 30,
+        "matched": 20,
+        "anchored": 10,
+        "matchRate": 0.667,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 0,
+        "drift": {
+          "median": 2.87,
+          "p75": 3.61,
+          "p90": 3.82,
+          "p99": 4.95,
+          "max": 4.95
+        }
+      },
+      "buckets": {
+        "ok": 20,
+        "rule-violation": 4,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 6,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 5,
+        "solutionsCut": 86,
+        "tall": 14,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 0,
+        "solutionsCut": 16,
+        "tall": 0,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 587,
+        "markersOutsideRegions": 13,
+        "solutionCoverage": 0.598,
+        "offSheetSolutions": 1
+      }
+    },
+    {
+      "book": "93bf209f-253c-4f5e-a54b-461731048d12.pdf",
+      "bookId": "93bf209f-253c-4f5e-a54b-461731048d12",
+      "source": "bake",
+      "pages": 213,
+      "calibration": {
+        "enabled": true,
+        "confidence": "strong",
+        "markerSize": 11,
+        "styles": [
+          "sans-serif|0.959|-0.26|11.0",
+          "sans-serif|0.935|-0.27|11.0",
+          "sans-serif|1|-0.2|10.0"
+        ],
+        "folioOffset": 1
+      },
+      "yield": {
+        "regions": 348,
+        "parts": 348,
+        "questions": 5,
+        "pagesWithRegions": 110,
+        "blankPageShare": 0.484,
+        "emptyRegionShare": 0.997
+      },
+      "join": {
+        "oges": 15,
+        "ogesOnReadPages": 15,
+        "matched": 9,
+        "anchored": 5,
+        "matchRate": 0.6,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 0,
+        "drift": {
+          "median": 1.31,
+          "p75": 3.99,
+          "p90": 4.06,
+          "p99": 4.93,
+          "max": 4.93
+        }
+      },
+      "buckets": {
+        "ok": 9,
+        "rule-violation": 2,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 4,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 5,
+        "solutionsCut": 87,
+        "tall": 6,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 4,
+        "solutionsCut": 0,
+        "tall": 1,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 350,
+        "markersOutsideRegions": 6,
+        "solutionCoverage": 0.65,
+        "offSheetSolutions": 0
+      }
+    },
+    {
+      "book": "95f41768-114e-4b88-9a4e-b23ef25c6052.pdf",
+      "bookId": "95f41768-114e-4b88-9a4e-b23ef25c6052",
+      "source": "bake",
+      "pages": 240,
+      "calibration": {
+        "enabled": true,
+        "confidence": "strong",
+        "markerSize": 10,
+        "styles": [
+          "sans-serif|0.77001953125|-0.22998046875|10.0",
+          "sans-serif|0.75|-0.25|11.0",
+          "sans-serif|0.77|-0.23|9.0"
+        ],
+        "folioOffset": 1
+      },
+      "yield": {
+        "regions": 455,
+        "parts": 457,
+        "questions": 26,
+        "pagesWithRegions": 109,
+        "blankPageShare": 0.546,
+        "emptyRegionShare": 0.985
+      },
+      "join": {
+        "oges": 8,
+        "ogesOnReadPages": 8,
+        "matched": 3,
+        "anchored": 4,
+        "matchRate": 0.375,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 0,
+        "drift": {
+          "median": 4.36,
+          "p75": 4.61,
+          "p90": 4.61,
+          "p99": 4.61,
+          "max": 4.61
+        }
+      },
+      "buckets": {
+        "ok": 3,
+        "rule-violation": 2,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 3,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 12,
+        "solutionsCut": 35,
+        "tall": 5,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 0,
+        "solutionsCut": 0,
+        "tall": 2,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 454,
+        "markersOutsideRegions": 2,
+        "solutionCoverage": 0.819,
+        "offSheetSolutions": 0
+      }
+    },
+    {
+      "book": "9a93766b-332d-4830-ba0e-f904bca01c41.pdf",
+      "bookId": "9a93766b-332d-4830-ba0e-f904bca01c41",
+      "source": "bake",
+      "pages": 207,
+      "calibration": {
+        "enabled": true,
+        "confidence": "weak",
+        "markerSize": 10,
+        "styles": [
+          "sans-serif|0.952|-0.25|10.0",
+          "serif|1.002|-0.7|11.0"
+        ],
+        "folioOffset": 83
+      },
+      "yield": {
+        "regions": 273,
+        "parts": 273,
+        "questions": 0,
+        "pagesWithRegions": 65,
+        "blankPageShare": 0.686,
+        "emptyRegionShare": 1
+      },
+      "join": {
+        "oges": 52,
+        "ogesOnReadPages": 52,
+        "matched": 42,
+        "anchored": 48,
+        "matchRate": 0.808,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 0,
+        "drift": {
+          "median": 2.66,
+          "p75": 3.17,
+          "p90": 3.97,
+          "p99": 4.99,
+          "max": 4.99
+        }
+      },
+      "buckets": {
+        "ok": 42,
+        "rule-violation": 6,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 4,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 1,
+        "solutionsCut": 0,
+        "tall": 6,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 1,
+        "solutionsCut": 0,
+        "tall": 6,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 225,
+        "markersOutsideRegions": 0,
+        "solutionCoverage": 0,
+        "offSheetSolutions": 45
+      }
+    },
+    {
+      "book": "a0e5ed1a-c37b-45f1-9821-f98350b18911.pdf",
+      "bookId": "a0e5ed1a-c37b-45f1-9821-f98350b18911",
+      "source": "bake",
+      "pages": 402,
+      "calibration": {
+        "enabled": true,
+        "confidence": "strong",
+        "markerSize": 10,
+        "styles": [
+          "sans-serif|0.77001953125|-0.22998046875|10.0"
+        ],
+        "folioOffset": 1
+      },
+      "yield": {
+        "regions": 931,
+        "parts": 963,
+        "questions": 22,
+        "pagesWithRegions": 270,
+        "blankPageShare": 0.328,
+        "emptyRegionShare": 0.991
+      },
+      "join": {
+        "oges": 47,
+        "ogesOnReadPages": 47,
+        "matched": 32,
+        "anchored": 22,
+        "matchRate": 0.681,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 0,
+        "drift": {
+          "median": 2.37,
+          "p75": 3.19,
+          "p90": 4.11,
+          "p99": 4.6,
+          "max": 4.6
+        }
+      },
+      "buckets": {
+        "ok": 32,
+        "rule-violation": 5,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 10,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 40,
+        "solutionsCut": 5813,
+        "tall": 3,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 0,
+        "solutionsCut": 7,
+        "tall": 0,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 958,
+        "markersOutsideRegions": 22,
+        "solutionCoverage": 0.621,
+        "offSheetSolutions": 0
+      }
+    },
+    {
+      "book": "a7a7886a-4e91-4e34-8ba5-7c0e7582842d.pdf",
+      "bookId": "a7a7886a-4e91-4e34-8ba5-7c0e7582842d",
+      "source": "bake",
+      "pages": 131,
+      "calibration": {
+        "enabled": false,
+        "confidence": "none",
+        "markerSize": null,
+        "styles": [],
+        "folioOffset": null
+      },
+      "yield": {
+        "regions": 0,
+        "parts": 0,
+        "questions": 0,
+        "pagesWithRegions": 0,
+        "blankPageShare": 1,
+        "emptyRegionShare": 0
+      },
+      "join": {
+        "oges": 4,
+        "ogesOnReadPages": 0,
+        "matched": 0,
+        "anchored": 0,
+        "matchRate": 0,
+        "unresolvedPage": 4,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 0,
+        "drift": null
+      },
+      "buckets": {
+        "ok": 0,
+        "rule-violation": 0,
+        "unresolved-page": 4,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 0,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 0,
+        "solutionsCut": 0,
+        "tall": 0,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 0,
+        "solutionsCut": 0,
+        "tall": 0,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 0,
+        "markersOutsideRegions": 0,
+        "solutionCoverage": null,
+        "offSheetSolutions": 0
+      }
+    },
+    {
+      "book": "ad3f3275-777a-4e34-b3e0-59c50605bdc6.pdf",
+      "bookId": "ad3f3275-777a-4e34-b3e0-59c50605bdc6",
+      "source": "bake",
+      "pages": 72,
+      "calibration": {
+        "enabled": false,
+        "confidence": "none",
+        "markerSize": null,
+        "styles": [],
+        "folioOffset": null
+      },
+      "yield": {
+        "regions": 0,
+        "parts": 0,
+        "questions": 0,
+        "pagesWithRegions": 0,
+        "blankPageShare": 1,
+        "emptyRegionShare": 0
+      },
+      "join": {
+        "oges": 5,
+        "ogesOnReadPages": 0,
+        "matched": 0,
+        "anchored": 0,
+        "matchRate": 0,
+        "unresolvedPage": 5,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 0,
+        "drift": null
+      },
+      "buckets": {
+        "ok": 0,
+        "rule-violation": 0,
+        "unresolved-page": 5,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 0,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 0,
+        "solutionsCut": 0,
+        "tall": 0,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 0,
+        "solutionsCut": 0,
+        "tall": 0,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 0,
+        "markersOutsideRegions": 0,
+        "solutionCoverage": null,
+        "offSheetSolutions": 0
+      }
+    },
+    {
+      "book": "afec0d89-bd70-4495-bad3-e95831c33721.pdf",
+      "bookId": "afec0d89-bd70-4495-bad3-e95831c33721",
+      "source": "bake",
+      "pages": 196,
+      "calibration": {
+        "enabled": true,
+        "confidence": "strong",
+        "markerSize": 10,
+        "styles": [
+          "sans-serif|0.927734375|-0.244140625|10.0",
+          "sans-serif|1.069|-0.293|10.0",
+          "serif|1.069|-0.293|9.5",
+          "sans-serif|1.06884765625|-0.29296875|9.0"
+        ],
+        "folioOffset": 2
+      },
+      "yield": {
+        "regions": 524,
+        "parts": 526,
+        "questions": 48,
+        "pagesWithRegions": 148,
+        "blankPageShare": 0.245,
+        "emptyRegionShare": 0.977
+      },
+      "join": {
+        "oges": 14,
+        "ogesOnReadPages": 14,
+        "matched": 5,
+        "anchored": 5,
+        "matchRate": 0.357,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 0,
+        "drift": {
+          "median": 1.95,
+          "p75": 3,
+          "p90": 4.64,
+          "p99": 4.64,
+          "max": 4.64
+        }
+      },
+      "buckets": {
+        "ok": 5,
+        "rule-violation": 4,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 5,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 5,
+        "solutionsCut": 343,
+        "tall": 12,
+        "slivers": 0,
+        "overlaps": 1
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 0,
+        "solutionsCut": 10,
+        "tall": 1,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 520,
+        "markersOutsideRegions": 1,
+        "solutionCoverage": 0.337,
+        "offSheetSolutions": 1
+      }
+    },
+    {
+      "book": "b0410882-883b-4df3-86a4-d857b0bf27b7.pdf",
+      "bookId": "b0410882-883b-4df3-86a4-d857b0bf27b7",
+      "source": "bake",
+      "pages": 155,
+      "calibration": {
+        "enabled": true,
+        "confidence": "weak",
+        "markerSize": 10,
+        "styles": [
+          "sans-serif|1|-0.2|10.0"
+        ],
+        "folioOffset": 1
+      },
+      "yield": {
+        "regions": 181,
+        "parts": 181,
+        "questions": 21,
+        "pagesWithRegions": 95,
+        "blankPageShare": 0.387,
+        "emptyRegionShare": 0.967
+      },
+      "join": {
+        "oges": 40,
+        "ogesOnReadPages": 40,
+        "matched": 21,
+        "anchored": 35,
+        "matchRate": 0.525,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 0,
+        "drift": {
+          "median": 2.9,
+          "p75": 3.73,
+          "p90": 3.91,
+          "p99": 4.92,
+          "max": 4.92
+        }
+      },
+      "buckets": {
+        "ok": 21,
+        "rule-violation": 14,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 5,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 3,
+        "solutionsCut": 145,
+        "tall": 24,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 0,
+        "solutionsCut": 2,
+        "tall": 13,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 147,
+        "markersOutsideRegions": 26,
+        "solutionCoverage": 0.627,
+        "offSheetSolutions": 3
+      }
+    },
+    {
+      "book": "c0a3dd07-26ea-4d8c-82d3-8ae35c16cf9c.pdf",
+      "bookId": "c0a3dd07-26ea-4d8c-82d3-8ae35c16cf9c",
+      "source": "bake",
+      "pages": 212,
+      "calibration": {
+        "enabled": true,
+        "confidence": "weak",
+        "markerSize": 10,
+        "styles": [
+          "monospace|0|0|10.0"
+        ],
+        "folioOffset": 1
+      },
+      "yield": {
+        "regions": 81,
+        "parts": 82,
+        "questions": 0,
+        "pagesWithRegions": 36,
+        "blankPageShare": 0.83,
+        "emptyRegionShare": 1
+      },
+      "join": {
+        "oges": 35,
+        "ogesOnReadPages": 35,
+        "matched": 26,
+        "anchored": 31,
+        "matchRate": 0.743,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 1,
+        "drift": {
+          "median": 1.79,
+          "p75": 3.21,
+          "p90": 3.86,
+          "p99": 4.16,
+          "max": 4.16
+        }
+      },
+      "buckets": {
+        "ok": 26,
+        "rule-violation": 5,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 1,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 3,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 0,
+        "solutionsCut": 0,
+        "tall": 8,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 0,
+        "solutionsCut": 0,
+        "tall": 5,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 57,
+        "markersOutsideRegions": 1,
+        "solutionCoverage": null,
+        "offSheetSolutions": 0
+      }
+    },
+    {
+      "book": "c6469eed-d5c9-4d94-b410-3db57f36dd13.pdf",
+      "bookId": "c6469eed-d5c9-4d94-b410-3db57f36dd13",
+      "source": "bake",
+      "pages": 185,
+      "calibration": {
+        "enabled": true,
+        "confidence": "strong",
+        "markerSize": 9,
+        "styles": [
+          "serif|0.97998046875|-0.240234375|9.0",
+          "serif|0.89111328125|-0.21630859375|10.0",
+          "sans-serif|0.989|-0.25|10.0",
+          "sans-serif|0.952|-0.25|9.0"
+        ],
+        "folioOffset": 1
+      },
+      "yield": {
+        "regions": 394,
+        "parts": 400,
+        "questions": 18,
+        "pagesWithRegions": 83,
+        "blankPageShare": 0.551,
+        "emptyRegionShare": 0.995
+      },
+      "join": {
+        "oges": 11,
+        "ogesOnReadPages": 11,
+        "matched": 7,
+        "anchored": 7,
+        "matchRate": 0.636,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 0,
+        "drift": {
+          "median": 3.09,
+          "p75": 4.3,
+          "p90": 4.48,
+          "p99": 4.48,
+          "max": 4.48
+        }
+      },
+      "buckets": {
+        "ok": 7,
+        "rule-violation": 2,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 2,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 7,
+        "solutionsCut": 16,
+        "tall": 3,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 1,
+        "solutionsCut": 13,
+        "tall": 1,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 406,
+        "markersOutsideRegions": 4,
+        "solutionCoverage": 0.644,
+        "offSheetSolutions": 0
+      }
+    },
+    {
+      "book": "c9f63718-e30b-4a3c-ad5b-63f83f2506e9.pdf",
+      "bookId": "c9f63718-e30b-4a3c-ad5b-63f83f2506e9",
+      "source": "bake",
+      "pages": 71,
+      "calibration": {
+        "enabled": true,
+        "confidence": "strong",
+        "markerSize": 10,
+        "styles": [
+          "sans-serif|1.06884765625|-0.29296875|10.0"
+        ],
+        "folioOffset": 1
+      },
+      "yield": {
+        "regions": 474,
+        "parts": 502,
+        "questions": 92,
+        "pagesWithRegions": 41,
+        "blankPageShare": 0.423,
+        "emptyRegionShare": 0.958
+      },
+      "join": {
+        "oges": 27,
+        "ogesOnReadPages": 27,
+        "matched": 25,
+        "anchored": 0,
+        "matchRate": 0.926,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 0,
+        "drift": {
+          "median": 2.02,
+          "p75": 4.76,
+          "p90": 5.71,
+          "p99": 6.29,
+          "max": 6.29
+        }
+      },
+      "buckets": {
+        "ok": 25,
+        "rule-violation": 2,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 0,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 12,
+        "solutionsCut": 58,
+        "tall": 11,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 0,
+        "solutionsCut": 0,
+        "tall": 0,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 496,
+        "markersOutsideRegions": 13,
+        "solutionCoverage": 0.822,
+        "offSheetSolutions": 122
+      }
+    },
+    {
+      "book": "cb558332-7dbe-4915-a806-5723f5af0bd1.pdf",
+      "bookId": "cb558332-7dbe-4915-a806-5723f5af0bd1",
+      "source": "bake",
+      "pages": 273,
+      "calibration": {
+        "enabled": true,
+        "confidence": "strong",
+        "markerSize": 10,
+        "styles": [
+          "serif|1.024|-0.36|10.0",
+          "sans-serif|0.9052734375|-0.2119140625|10.0",
+          "sans-serif|0.9052734375|-0.2119140625|9.9"
+        ],
+        "folioOffset": 1
+      },
+      "yield": {
+        "regions": 649,
+        "parts": 651,
+        "questions": 142,
+        "pagesWithRegions": 201,
+        "blankPageShare": 0.264,
+        "emptyRegionShare": 0.929
+      },
+      "join": {
+        "oges": 29,
+        "ogesOnReadPages": 29,
+        "matched": 25,
+        "anchored": 9,
+        "matchRate": 0.862,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 0,
+        "drift": {
+          "median": 1.87,
+          "p75": 2.08,
+          "p90": 4.28,
+          "p99": 4.44,
+          "max": 4.44
+        }
+      },
+      "buckets": {
+        "ok": 25,
+        "rule-violation": 3,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 1,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 2,
+        "solutionsCut": 398,
+        "tall": 16,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 0,
+        "solutionsCut": 10,
+        "tall": 0,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 662,
+        "markersOutsideRegions": 14,
+        "solutionCoverage": 0.681,
+        "offSheetSolutions": 0
+      }
+    },
+    {
+      "book": "d13a75d3-33be-4102-8570-b14b1b6382b2.pdf",
+      "bookId": "d13a75d3-33be-4102-8570-b14b1b6382b2",
+      "source": "bake",
+      "pages": 319,
+      "calibration": {
+        "enabled": true,
+        "confidence": "weak",
+        "markerSize": 10,
+        "styles": [
+          "sans-serif|1|-0.2|10.0",
+          "sans-serif|0.77001953125|-0.22998046875|10.0"
+        ],
+        "folioOffset": 1
+      },
+      "yield": {
+        "regions": 236,
+        "parts": 236,
+        "questions": 9,
+        "pagesWithRegions": 107,
+        "blankPageShare": 0.665,
+        "emptyRegionShare": 0.996
+      },
+      "join": {
+        "oges": 86,
+        "ogesOnReadPages": 86,
+        "matched": 60,
+        "anchored": 64,
+        "matchRate": 0.698,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 3,
+        "drift": {
+          "median": 1.55,
+          "p75": 2.68,
+          "p90": 3.95,
+          "p99": 4.65,
+          "max": 4.65
+        }
+      },
+      "buckets": {
+        "ok": 60,
+        "rule-violation": 4,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 3,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 19,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 0,
+        "solutionsCut": 344,
+        "tall": 4,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 0,
+        "solutionsCut": 1,
+        "tall": 3,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 172,
+        "markersOutsideRegions": 0,
+        "solutionCoverage": 0.771,
+        "offSheetSolutions": 0
+      }
+    },
+    {
+      "book": "d6dd5587-41d4-4168-99d5-2f31038164c6.pdf",
+      "bookId": "d6dd5587-41d4-4168-99d5-2f31038164c6",
+      "source": "bake",
+      "pages": 269,
+      "calibration": {
+        "enabled": true,
+        "confidence": "strong",
+        "markerSize": 9,
+        "styles": [
+          "sans-serif|1.076|-0.266|9.0",
+          "sans-serif|1.076|-0.266|8.0"
+        ],
+        "folioOffset": 1
+      },
+      "yield": {
+        "regions": 768,
+        "parts": 770,
+        "questions": 38,
+        "pagesWithRegions": 174,
+        "blankPageShare": 0.353,
+        "emptyRegionShare": 0.978
+      },
+      "join": {
+        "oges": 31,
+        "ogesOnReadPages": 31,
+        "matched": 15,
+        "anchored": 10,
+        "matchRate": 0.484,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 0,
+        "drift": {
+          "median": 1.57,
+          "p75": 2.72,
+          "p90": 4.43,
+          "p99": 4.49,
+          "max": 4.49
+        }
+      },
+      "buckets": {
+        "ok": 15,
+        "rule-violation": 1,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 15,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 10,
+        "solutionsCut": 0,
+        "tall": 1,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 0,
+        "solutionsCut": 0,
+        "tall": 0,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 765,
+        "markersOutsideRegions": 6,
+        "solutionCoverage": 0.906,
+        "offSheetSolutions": 0
+      }
+    },
+    {
+      "book": "df1e313c-69bb-4229-95f7-59262de6375b.pdf",
+      "bookId": "df1e313c-69bb-4229-95f7-59262de6375b",
+      "source": "bake",
+      "pages": 319,
+      "calibration": {
+        "enabled": true,
+        "confidence": "weak",
+        "markerSize": 11,
+        "styles": [
+          "sans-serif|1|-0.366|11.0",
+          "sans-serif|1|-0.366|10.0",
+          "serif|0.89599609375|-0.2470703125|10.0"
+        ],
+        "folioOffset": 1
+      },
+      "yield": {
+        "regions": 627,
+        "parts": 634,
+        "questions": 60,
+        "pagesWithRegions": 182,
+        "blankPageShare": 0.429,
+        "emptyRegionShare": 0.959
+      },
+      "join": {
+        "oges": 29,
+        "ogesOnReadPages": 29,
+        "matched": 13,
+        "anchored": 18,
+        "matchRate": 0.448,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 1,
+        "drift": {
+          "median": 3.71,
+          "p75": 4.23,
+          "p90": 4.41,
+          "p99": 4.99,
+          "max": 4.99
+        }
+      },
+      "buckets": {
+        "ok": 13,
+        "rule-violation": 5,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 1,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 10,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 11,
+        "solutionsCut": 565,
+        "tall": 12,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 5,
+        "solutionsCut": 0,
+        "tall": 4,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 618,
+        "markersOutsideRegions": 6,
+        "solutionCoverage": 0.716,
+        "offSheetSolutions": 0
+      }
+    },
+    {
+      "book": "e2a410e4-1c51-4ee9-9507-4f18222bb2cb.pdf",
+      "bookId": "e2a410e4-1c51-4ee9-9507-4f18222bb2cb",
+      "source": "bake",
+      "pages": 314,
+      "calibration": {
+        "enabled": true,
+        "confidence": "strong",
+        "markerSize": 10,
+        "styles": [
+          "sans-serif|1|-0.2|10.0",
+          "sans-serif|1.00537109375|-0.2099609375|10.0",
+          "serif|1.024|-0.36|13.0"
+        ],
+        "folioOffset": 1
+      },
+      "yield": {
+        "regions": 329,
+        "parts": 332,
+        "questions": 5,
+        "pagesWithRegions": 138,
+        "blankPageShare": 0.561,
+        "emptyRegionShare": 0.997
+      },
+      "join": {
+        "oges": 75,
+        "ogesOnReadPages": 75,
+        "matched": 39,
+        "anchored": 42,
+        "matchRate": 0.52,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 1,
+        "drift": {
+          "median": 3.1,
+          "p75": 3.83,
+          "p90": 4.29,
+          "p99": 4.73,
+          "max": 4.73
+        }
+      },
+      "buckets": {
+        "ok": 39,
+        "rule-violation": 12,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 1,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 23,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 14,
+        "solutionsCut": 131,
+        "tall": 6,
+        "slivers": 0,
+        "overlaps": 1
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 5,
+        "solutionsCut": 17,
+        "tall": 3,
+        "slivers": 0,
+        "overlaps": 1
+      },
+      "stats": {
+        "markers": 289,
+        "markersOutsideRegions": 2,
+        "solutionCoverage": 0.628,
+        "offSheetSolutions": 0
+      }
+    },
+    {
+      "book": "e79d1d59-43ba-47b0-9e26-b1c2d16c7a67.pdf",
+      "bookId": "e79d1d59-43ba-47b0-9e26-b1c2d16c7a67",
+      "source": "bake",
+      "pages": 288,
+      "calibration": {
+        "enabled": true,
+        "confidence": "strong",
+        "markerSize": 10,
+        "styles": [
+          "sans-serif|0.77001953125|-0.22998046875|10.0",
+          "serif|0.89111328125|-0.21630859375|10.0",
+          "serif|0.97998046875|-0.240234375|10.0",
+          "serif|0.97998046875|-0.240234375|9.0"
+        ],
+        "folioOffset": 1
+      },
+      "yield": {
+        "regions": 400,
+        "parts": 401,
+        "questions": 31,
+        "pagesWithRegions": 128,
+        "blankPageShare": 0.556,
+        "emptyRegionShare": 0.99
+      },
+      "join": {
+        "oges": 27,
+        "ogesOnReadPages": 27,
+        "matched": 12,
+        "anchored": 12,
+        "matchRate": 0.444,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 0,
+        "drift": {
+          "median": 2.33,
+          "p75": 3.48,
+          "p90": 4.04,
+          "p99": 4.16,
+          "max": 4.16
+        }
+      },
+      "buckets": {
+        "ok": 12,
+        "rule-violation": 4,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 11,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 2,
+        "solutionsCut": 84,
+        "tall": 6,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 0,
+        "solutionsCut": 4,
+        "tall": 1,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 397,
+        "markersOutsideRegions": 5,
+        "solutionCoverage": 0.652,
+        "offSheetSolutions": 3
+      }
+    },
+    {
+      "book": "e87588af-580f-46c6-8b00-d2944adfcee2.pdf",
+      "bookId": "e87588af-580f-46c6-8b00-d2944adfcee2",
+      "source": "bake",
+      "pages": 287,
+      "calibration": {
+        "enabled": true,
+        "confidence": "weak",
+        "markerSize": 12,
+        "styles": [
+          "sans-serif|0.75|-0.25|12.0",
+          "sans-serif|0.7939453125|-0.2060546875|11.0",
+          "sans-serif|0.75|-0.25|10.0"
+        ],
+        "folioOffset": 1
+      },
+      "yield": {
+        "regions": 382,
+        "parts": 383,
+        "questions": 2,
+        "pagesWithRegions": 118,
+        "blankPageShare": 0.589,
+        "emptyRegionShare": 0.997
+      },
+      "join": {
+        "oges": 33,
+        "ogesOnReadPages": 33,
+        "matched": 19,
+        "anchored": 22,
+        "matchRate": 0.576,
+        "unresolvedPage": 0,
+        "folioCollisions": 0,
+        "onPagesWithNoRegion": 0,
+        "drift": {
+          "median": 1.2,
+          "p75": 1.65,
+          "p90": 4.31,
+          "p99": 4.96,
+          "max": 4.96
+        }
+      },
+      "buckets": {
+        "ok": 19,
+        "rule-violation": 3,
+        "unresolved-page": 0,
+        "page-not-read": 0,
+        "page-blank": 0,
+        "anchor-excluded": 0,
+        "anchor-nogrow": 11,
+        "contested": 0,
+        "wrong-side": 0,
+        "drift": 0,
+        "label-mismatch": 0,
+        "confidence-gated": 0,
+        "no-position": 0
+      },
+      "violations": {
+        "panelsCut": 11,
+        "solutionsCut": 0,
+        "tall": 4,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "violationsFromAnchors": {
+        "panelsCut": 1,
+        "solutionsCut": 0,
+        "tall": 2,
+        "slivers": 0,
+        "overlaps": 0
+      },
+      "stats": {
+        "markers": 360,
+        "markersOutsideRegions": 0,
+        "solutionCoverage": 0.28,
+        "offSheetSolutions": 0
+      }
+    }
+  ]
+}
