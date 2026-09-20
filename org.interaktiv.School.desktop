@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Interaktiv
+GenericName=Interactive Textbook Reader
+Comment=Etkileşimli Ders Kitabı Okuyucu (School Edition)
+Exec=python3 -m interaktiv_gtk --edition school %U
+Icon=org.interaktiv.School
+Terminal=false
+Type=Application
+Categories=Education;Viewer;Office;
+MimeType=application/pdf;
+StartupWMClass=org.interaktiv.School
+Keywords=pdf;reader;school;textbook;interactive;

@@ -11,6 +11,7 @@ from dataclasses import dataclass
 import json
 import os
 import re
+import sys
 from typing import Any, Dict, List, Optional, Set, Tuple
 
 from .primitives import PagePrimitives, TextSpan
@@ -28,10 +29,27 @@ from .regions import (
     PAD,
 )
 
-# Anchor matching thresholds (consistent with interactive-links.js)
-LABELLED_DRIFT = 10.0    # % of page height tolerance for label-matched entries
-UNLABELLED_DRIFT = 5.0   # % of page height tolerance for unlabelled anchors
-WRONG_SIDE_PENALTY = 15.0  # % penalty when icon sits in the opposite margin
+# The label/drift/side rule that decides which manifest entry belongs to which
+# region lives in `interaktiv_core.linking`, because the native reader needs the
+# pairing itself and the baker only ever needs what was left over. Both used to
+# carry their own copy of it. The names below are re-exported so that callers of
+# this module -- `scan.py`, `scanner/__init__.py`, the tests -- are unaffected.
+_PROJECT_ROOT = os.path.dirname(
+    os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+)
+if _PROJECT_ROOT not in sys.path:
+    sys.path.insert(0, _PROJECT_ROOT)
+
+from interaktiv_core.linking import (  # noqa: E402
+    LABELLED_DRIFT,
+    UNLABELLED_DRIFT,
+    WRONG_SIDE_PENALTY,
+    link_oges,
+    oge_view,
+    parse_oge_label,
+    region_view,
+)
+
 ANCHOR_ABOVE = 24.0      # pt: maximum distance an anchor icon can sit above its line
 
 
@@ -44,52 +62,6 @@ class PublisherOge:
     posx: float           # Publisher anchor x (percentage: 0..100)
     posy: float           # Publisher anchor y (percentage: 0..100)
     data: str             # Activity URL or identifier
-
-
-def parse_oge_label(title: str, printed_page: Optional[int] = None) -> Optional[str]:
-    """
-    Extract canonical activity label from publisher title string.
-
-    Strips printed page prefixes (e.g. '42/a' -> 'a'), editorial revision
-    suffixes ('-ed', '.ed', 'ed2'), and 'soru' expressions.
-
-    Returns:
-        Clean label ('a', 'b', '1', etc.) or None if unlabelled/descriptive.
-    """
-    if not title:
-        return None
-    s = str(title).lower().strip()
-
-    # Strip printed page prefix (e.g. '42/a', '42-a', '42.a')
-    if printed_page is not None and printed_page > 0:
-        s = re.sub(rf"^0*{printed_page}\s*[-/\\.:]?\s*", "", s).strip()
-        # In Turkish books, titles sometimes carry 0-indexed page numbers
-        s = re.sub(rf"^0*{printed_page - 1}\s*[-/\\.:_]?\s*", "", s).strip()
-
-    s = re.sub(r"^\s*\d{1,4}\s*[-/:]\s*", "", s).strip()
-
-    # Strip editorial revision marks (e.g. '.ed', '-ed', 'ed2', 'ed')
-    prev = None
-    while prev != s:
-        prev = s
-        s = re.sub(r"[\s._\-]*\bed\s*\d*$", "", s).strip()
-        s = re.sub(r"[\s._\-]+$", "", s).strip()
-
-    # Match 'soru' patterns (e.g. '5. Soru' -> '5')
-    soru = re.match(r"^(\d{1,2})\s*\.?\s*soru", s, re.IGNORECASE)
-    if soru:
-        return soru.group(1)
-
-    # Single letter or digit
-    if re.fullmatch(r"[a-zçğıöşü]", s) or re.fullmatch(r"\d{1,2}", s):
-        return s
-
-    # Page number typed into label without separator (e.g. '247n' for n on p24)
-    tail = re.match(r"^\d{1,4}\s*[/\-.:]?\s*([a-zçğıöşü])$", s)
-    if tail:
-        return tail.group(1)
-
-    return None
 
 
 def load_publisher_oges(meta_path: str) -> List[PublisherOge]:
@@ -132,74 +104,70 @@ def load_publisher_oges(meta_path: str) -> List[PublisherOge]:
     return valid_oges
 
 
+def link_page_oges(
+    activities: List[ActivityRegion],
+    oges: List[PublisherOge],
+    page_height: float,
+    printed_page: int,
+    page_width: float = 0.0,
+    confidence: Optional[str] = None,
+) -> Dict[int, PublisherOge]:
+    """
+    Assign this sheet's publisher entries to its detected regions.
+
+    Returns `{activity_index: PublisherOge}`. The key is the activity's position
+    in `activities`, not its id, because a sheet that runs two columns prints
+    the same letter twice and `p36-d` routinely names two different activities.
+    The rule itself is `interaktiv_core.linking.link_oges`; this only narrows
+    the manifest to the sheet and reshapes both sides into the views it argues
+    with.
+    """
+    page_oges = [o for o in oges if o.sayfano == printed_page]
+    if not page_oges or not activities:
+        return {}
+
+    pw = page_width if page_width > 0.0 else 595.0
+    regions = [
+        region_view(a.id, a.label, a.rect, pw, page_height, getattr(a, "anchored", False))
+        for a in activities
+    ]
+    views = [
+        oge_view(o.id, o.title, printed_page, o.posx, o.posy) for o in page_oges
+    ]
+    links = link_oges(regions, views, confidence=confidence)
+    return {ri: page_oges[oi] for ri, oi in links.items()}
+
+
 def find_unplaced_anchors(
     activities: List[ActivityRegion],
     oges: List[PublisherOge],
     page_height: float,
     printed_page: int,
     page_width: float = 0.0,
+    confidence: Optional[str] = None,
 ) -> List[PublisherOge]:
     """
-    Identify publisher metadata entries on a sheet that do not match any
-    detected activity region.
+    The entries on a sheet that the assignment could not place.
 
-    Matches by label agreement, margin side, and vertical drift.
+    These are the activities a book titles descriptively rather than by label --
+    the whole of a Turkish subject book, and a handful in every ELT one. They
+    are grown into real anchored regions around the point the publisher's icon
+    marks, rather than left as a pin in a margin. An entry with no usable
+    position is dropped, because there is nothing to grow a region from.
     """
     page_oges = [o for o in oges if o.sayfano == printed_page]
     if not page_oges:
         return []
 
-    pw = page_width if page_width > 0.0 else 595.0
-    pairs: List[Tuple[float, int, int]] = []
-
-    for oi, oge in enumerate(page_oges):
-        if oge.posx == 0.0 and oge.posy == 0.0:
-            continue
-
-        olabel = parse_oge_label(oge.title, printed_page)
-        top = oge.posy
-        on_left = oge.posx < 50.0
-
-        for ri, act in enumerate(activities):
-            alabel = (act.label or "").lower().strip()
-            atop = ((page_height - act.rect[3]) / page_height) * 100.0
-            full_width = (act.rect[0] < pw * 0.35) and (act.rect[2] > pw * 0.65)
-            act_on_left = act.rect[0] < pw / 2.0
-
-            # Label mismatch rule
-            if olabel and alabel and olabel != alabel:
-                continue
-
-            drift = abs(top - atop)
-            limit = LABELLED_DRIFT if (olabel and alabel) else UNLABELLED_DRIFT
-            if drift > limit:
-                continue
-
-            side_miss = (not full_width) and (on_left != act_on_left)
-            if side_miss and not (olabel and alabel):
-                continue
-
-            cost = drift + (WRONG_SIDE_PENALTY if side_miss else 0.0)
-            pairs.append((cost, oi, ri))
-
-    # Greedy 1-to-1 matching
-    pairs.sort(key=lambda p: p[0])
-    used_oge: Set[int] = set()
-    used_region: Set[int] = set()
-
-    for cost, oi, ri in pairs:
-        if oi in used_oge or ri in used_region:
-            continue
-        used_oge.add(oi)
-        used_region.add(ri)
-
-    # Return unplaced oges that have valid page coordinates
-    unplaced: List[PublisherOge] = []
-    for oi, oge in enumerate(page_oges):
-        if oi not in used_oge and (oge.posx != 0.0 or oge.posy != 0.0):
-            unplaced.append(oge)
-
-    return unplaced
+    linked = link_page_oges(
+        activities, oges, page_height, printed_page, page_width, confidence
+    )
+    claimed = {o.id for o in linked.values()}
+    return [
+        o
+        for o in page_oges
+        if o.id not in claimed and (o.posx != 0.0 or o.posy != 0.0)
+    ]
 
 
 def _create_anchored_region(
@@ -338,6 +306,7 @@ def reconcile_anchors(
     primitives: Optional[PagePrimitives] = None,
     layout: Optional[PageLayout] = None,
     markers: Optional[List[Any]] = None,
+    confidence: Optional[str] = None,
 ) -> List[ActivityRegion]:
     """
     Reconcile publisher anchors with detected activities for a page.
@@ -355,6 +324,9 @@ def reconcile_anchors(
         primitives: Optional PagePrimitives for panel snapping and text lines.
         layout: Optional PageLayout for column boundary alignment.
         markers: Optional list of DetectedMarker from layout analysis.
+        confidence: Optional book calibration confidence ("strong"/"weak"/"none").
+            Left None the assignment is ungated, which is how every bake to date
+            was produced; passing it can only ever reduce the number of links.
 
     Returns:
         Updated List[ActivityRegion] containing both detected lettered activities
@@ -383,6 +355,7 @@ def reconcile_anchors(
         page_height=page_height,
         printed_page=printed_page,
         page_width=pw,
+        confidence=confidence,
     )
 
     if not unplaced:

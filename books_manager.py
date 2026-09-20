@@ -450,6 +450,7 @@ class BooksManager:
                     "progress": info["progress"],
                     "downloaded_bytes": info["downloaded_bytes"],
                     "total_bytes": info["total_bytes"],
+                    "kind": info.get("kind", "install"),
                 }
                 for bid, info in self.downloads.items()
             }
@@ -492,12 +493,13 @@ class BooksManager:
                     "progress": info["progress"],
                     "downloaded_bytes": info["downloaded_bytes"],
                     "total_bytes": info["total_bytes"],
+                    "kind": info.get("kind", "install"),
                 }
                 for bid, info in self.downloads.items()
             }
 
     def start_download(self, book_id):
-        """Start downloading a book in a background thread."""
+        """Start downloading a book into the library, in a background thread."""
         if self.library_mode:
             return False, "This edition reads a packaged library and does not download"
         if book_id not in self.books_by_id:
@@ -505,6 +507,33 @@ class BooksManager:
         if self.is_installed(book_id):
             return True, "Already installed"
 
+        target_file = os.path.join(self.books_dir, f"{book_id}.pdf")
+        return self._begin_download(book_id, target_file, kind="install")
+
+    def download_to(self, book_id, target_path, on_done=None):
+        """
+        Download a book to a path of the caller's choosing instead of into the
+        library.
+
+        The native reader previews a book this way. MuPDF cannot parse a
+        partially-ranged PDF and PyMuPDF cannot open a URL, so the web
+        edition's byte-range streaming proxy has no native equivalent: a
+        preview is the whole file, cached so that installing a book that was
+        previewed is a rename rather than a second download.
+
+        `on_done` is called on the download thread with the finished path, or
+        with None if the download was cancelled or failed.
+        """
+        if self.library_mode:
+            return False, "This edition reads a packaged library and does not download"
+        if book_id not in self.books_by_id:
+            return False, "Book not found"
+        return self._begin_download(
+            book_id, os.path.abspath(target_path), kind="preview", on_done=on_done
+        )
+
+    def _begin_download(self, book_id, target_file, kind="install", on_done=None):
+        """Register one in-flight download for a book and start its thread."""
         with self.downloads_lock:
             if book_id in self.downloads and self.downloads[book_id]["status"] == "downloading":
                 return True, "Download already in progress"
@@ -515,20 +544,29 @@ class BooksManager:
                 "progress": 0,
                 "downloaded_bytes": 0,
                 "total_bytes": 0,
+                # Whether the finished file lands in the library or in a
+                # preview cache. The UI labels the progress differently.
+                "kind": kind,
                 "cancel_event": cancel_event,
             }
 
-        thread = threading.Thread(target=self._download_worker, args=(book_id, cancel_event), daemon=True)
+        thread = threading.Thread(
+            target=self._download_worker,
+            args=(book_id, cancel_event, target_file, on_done),
+            daemon=True,
+        )
         thread.start()
         return True, "Download started"
 
-    def _download_worker(self, book_id, cancel_event):
+    def _download_worker(self, book_id, cancel_event, target_file=None, on_done=None):
         book = self.books_by_id.get(book_id)
         if not book:
             return
 
-        target_file = os.path.join(self.books_dir, f"{book_id}.pdf")
-        part_file = os.path.join(self.books_dir, f"{book_id}.pdf.part")
+        if target_file is None:
+            target_file = os.path.join(self.books_dir, f"{book_id}.pdf")
+        part_file = target_file + ".part"
+        os.makedirs(os.path.dirname(target_file) or ".", exist_ok=True)
 
         try:
             req = urllib.request.Request(
@@ -565,6 +603,8 @@ class BooksManager:
                     os.remove(part_file)
                 with self.downloads_lock:
                     self.downloads.pop(book_id, None)
+                if on_done:
+                    on_done(None)
                 return
 
             os.replace(part_file, target_file)
@@ -586,6 +626,9 @@ class BooksManager:
 
             threading.Thread(target=_clean, daemon=True).start()
 
+            if on_done:
+                on_done(target_file)
+
         except Exception as e:
             if os.path.isfile(part_file):
                 try:
@@ -596,6 +639,8 @@ class BooksManager:
                 if book_id in self.downloads:
                     self.downloads[book_id]["status"] = "error"
                     self.downloads[book_id]["error"] = str(e)
+            if on_done:
+                on_done(None)
 
     def cancel_download(self, book_id):
         with self.downloads_lock:

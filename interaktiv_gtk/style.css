@@ -1,0 +1,520 @@
+/* ==========================================================================
+   Interaktiv - School Edition, native chrome.
+
+   The metrics here are the ones `css/school.css` establishes for the web
+   build, and they follow the same rule: a control a teacher touches in front
+   of a class is at least 48 px in its smallest dimension, sits at the edge of
+   the screen rather than in the middle of it, and never needs a double tap.
+
+   Colours are libadwaita's own named colours, so the four reader themes (M8)
+   can redefine them in one place instead of restyling every widget.
+   ========================================================================== */
+
+/* --- Library chrome ----------------------------------------------------- */
+
+.dashboard-search-input {
+  min-height: 52px;
+  font-size: 18px;
+}
+
+.dashboard-filter-bar {
+  margin: 6px 12px;
+}
+
+.dashboard-filter-bar > toggle,
+.dashboard-filter-bar button {
+  min-height: 52px;
+  padding-left: 22px;
+  padding-right: 22px;
+  font-size: 16px;
+}
+
+.catalog {
+  margin: 22px 18px 32px 18px;
+}
+
+.dashboard-section-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.dashboard-section-count {
+  font-size: 14px;
+  color: alpha(currentColor, 0.55);
+}
+
+/* --- Book cards --------------------------------------------------------- */
+
+.books-grid {
+  background: none;
+}
+
+.books-grid > child {
+  padding: 9px;
+}
+
+.book-card {
+  background: @card_bg_color;
+  border-radius: 14px;
+  padding: 12px;
+  box-shadow: 0 1px 3px alpha(black, 0.12);
+}
+
+.book-cover {
+  background: alpha(currentColor, 0.06);
+  border-radius: 10px;
+}
+
+.book-cover-placeholder {
+  color: alpha(currentColor, 0.45);
+  padding: 12px;
+}
+
+.book-cover-placeholder-title {
+  font-size: 13px;
+}
+
+.book-info {
+  margin-top: 10px;
+}
+
+.book-title {
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.book-meta {
+  font-size: 14px;
+  color: alpha(currentColor, 0.65);
+}
+
+.book-confidence {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 6px;
+  background: alpha(currentColor, 0.1);
+}
+
+.book-confidence.conf-strong {
+  color: @success_color;
+  background: alpha(@success_color, 0.15);
+}
+
+.book-confidence.conf-weak {
+  color: @warning_color;
+  background: alpha(@warning_color, 0.15);
+}
+
+.book-confidence.conf-none {
+  color: alpha(currentColor, 0.6);
+}
+
+/* --- Card actions ------------------------------------------------------- */
+
+.book-actions {
+  margin-top: 4px;
+}
+
+.btn-card-action {
+  min-height: 52px;
+  font-size: 17px;
+}
+
+.btn-card-icon {
+  min-width: 52px;
+  min-height: 52px;
+  border-radius: 10px;
+}
+
+.btn-cancel-download {
+  min-width: 36px;
+  min-height: 36px;
+}
+
+.download-progress-box {
+  margin-top: 6px;
+}
+
+/* A progress bar that is read from the back of a classroom. */
+.download-progress-box progressbar trough,
+.download-progress-box progressbar progress {
+  min-height: 12px;
+  border-radius: 6px;
+}
+
+.download-progress-box progressbar {
+  margin-bottom: 2px;
+}
+
+.download-progress-meta {
+  font-size: 13px;
+  color: alpha(currentColor, 0.7);
+}
+
+/* ==========================================================================
+   Reader
+
+   Ported from `.edition-school .toolbar` and friends in `css/school.css`. The
+   rule is the same one the web edition follows: a control a teacher touches in
+   front of a class is at least 48 px in its smallest dimension, and the two
+   controls a lesson is actually driven from -- the page turns -- are bigger
+   than that and sit where a hand finds them without looking.
+   ========================================================================== */
+
+.reader-toolbar {
+  padding: 8px 14px;
+  min-height: 64px;
+  background: @headerbar_bg_color;
+  border-bottom: 1px solid @headerbar_border_color;
+}
+
+.reader-toolbar .tool-btn {
+  min-width: 48px;
+  min-height: 48px;
+  border-radius: 10px;
+}
+
+/* The page turns. 76 x 54 in the web build, and the same here: they are aimed
+   at with a finger from two metres away, mid-sentence. */
+.reader-toolbar button.page-turn {
+  min-width: 76px;
+  min-height: 54px;
+  border-radius: 10px;
+}
+
+.reader-toolbar button.page-turn:active {
+  background: @accent_bg_color;
+  color: @accent_fg_color;
+}
+
+.reader-toolbar .page-entry {
+  min-width: 84px;
+  min-height: 48px;
+  font-size: 20px;
+}
+
+.reader-toolbar .page-entry text {
+  min-height: 44px;
+}
+
+.reader-toolbar .page-total {
+  font-size: 18px;
+  opacity: 0.75;
+  margin-right: 4px;
+}
+
+.reader-toolbar dropdown > button {
+  min-height: 48px;
+  font-size: 15px;
+}
+
+.reader-toolbar separator {
+  margin: 6px 4px;
+}
+
+/* The desk the book lies on. Deliberately darker than the page so that the
+   sheet reads as a sheet from the back of the room. */
+.reader-canvas {
+  background: shade(@window_bg_color, 0.82);
+}
+
+.reader-status {
+  min-height: 34px;
+}
+
+.reader-status .status-item {
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.reader-status .status-sep {
+  font-size: 13px;
+  opacity: 0.35;
+}
+
+/* ------------------------------- Activities ------------------------------ */
+/* The list beside the page. Board metrics again: a row is a touch target, not
+   a line of text, so it is tall enough to hit without aiming. */
+
+.activities-sidebar {
+  background: @sidebar_bg_color;
+}
+
+.sidebar-head {
+  padding: 14px 16px 10px 16px;
+}
+
+.sidebar-heading {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.sidebar-subheading {
+  font-size: 12px;
+  opacity: 0.65;
+}
+
+.activities-list > row {
+  padding: 0;
+}
+
+.activity-row {
+  padding: 10px 14px;
+  min-height: 44px;
+}
+
+.activity-row-page {
+  font-size: 13px;
+  font-weight: 700;
+  opacity: 0.55;
+}
+
+.activity-row-name {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.activity-row-detail {
+  font-size: 11px;
+  opacity: 0.6;
+}
+
+.activity-row-bolt {
+  font-size: 13px;
+}
+
+.reader-status .status-activity {
+  font-weight: 600;
+}
+
+/* ------------------------------- Focus mode ------------------------------ */
+/* Smartboard metrics: touch targets >= 48px, high-contrast labels, board-sized
+   controls that can be tapped reliably with a finger. */
+
+.focus-overlay {
+  background: shade(@window_bg_color, 0.82);
+}
+
+.focus-bar {
+  padding: 8px 14px;
+  min-height: 64px;
+  background: @headerbar_bg_color;
+  border-bottom: 1px solid @headerbar_border_color;
+}
+
+.focus-titles {
+  min-width: 0;
+}
+
+.focus-label {
+  font-size: 16px;
+  font-weight: 700;
+  color: @window_fg_color;
+}
+
+.focus-headline {
+  font-size: 14px;
+  opacity: 0.75;
+}
+
+
+.focus-controls .tool-btn {
+  min-width: 48px;
+  min-height: 48px;
+  border-radius: 10px;
+}
+
+.focus-sub-label,
+.focus-counter {
+  font-size: 14px;
+  font-weight: 600;
+  min-width: 64px;
+  opacity: 0.85;
+}
+
+.focus-stage {
+  background: shade(@window_bg_color, 0.82);
+  padding: 24px;
+}
+
+/* ------------------------------- Sidebar tabs ---------------------------- */
+
+.reader-sidebar {
+  background: @sidebar_bg_color;
+}
+
+.sidebar-header-box {
+  padding: 10px 12px 6px 12px;
+}
+
+.sidebar-switcher {
+  min-height: 40px;
+}
+
+/* ------------------------------- Thumbnails ------------------------------ */
+
+.thumbnails-panel {
+  padding: 8px;
+}
+
+.thumbnails-grid {
+  background: none;
+}
+
+.thumbnails-grid > child {
+  padding: 6px;
+}
+
+.thumbnail-item {
+  padding: 6px;
+  border-radius: 8px;
+  background: alpha(currentColor, 0.04);
+  transition: all 0.15s ease;
+}
+
+.thumbnail-item:hover {
+  background: alpha(currentColor, 0.08);
+}
+
+.thumb-canvas-container {
+  min-height: 120px;
+  background: alpha(currentColor, 0.06);
+  border-radius: 6px;
+  padding: 4px;
+  box-shadow: 0 1px 3px alpha(black, 0.2);
+}
+
+.thumb-pic {
+  min-height: 112px;
+}
+
+.thumb-number {
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+/* ------------------------------- Bookmarks ------------------------------- */
+
+.bookmarks-panel {
+  background: @sidebar_bg_color;
+}
+
+.bookmarks-list {
+  padding: 4px 0;
+}
+
+.bookmark-row {
+  padding: 8px 12px;
+  min-height: 38px;
+}
+
+.bookmark-title {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.bookmark-page {
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0.55;
+}
+
+/* ------------------------------- Scroll mode ----------------------------- */
+
+.scroll-mode-view {
+  background: shade(@window_bg_color, 0.82);
+}
+
+.scroll-pages-list {
+  padding: 20px 0 40px 0;
+}
+
+/* ------------------------------- Search bar ------------------------------ */
+
+.reader-search-box {
+  padding: 6px 12px;
+}
+
+.search-match-count {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0 8px;
+  color: alpha(currentColor, 0.7);
+}
+
+/* ==========================================================================
+   Themes (M8)
+   
+   Named colours are dynamically redefined via libadwaita's @define-color,
+   and the rules below provide explicit theme overrides for the reader's
+   desk canvas, chrome, sidebar, and focus mode overlay.
+   ========================================================================== */
+
+/* --- Sepia Theme -------------------------------------------------------- */
+.theme-sepia {
+  background-color: #f4ecd8;
+  color: #3b2c1a;
+}
+
+.theme-sepia headerbar,
+.theme-sepia .reader-toolbar,
+.theme-sepia .focus-bar {
+  background-color: #eadecc;
+  color: #3b2c1a;
+  border-color: #d6c6aa;
+}
+
+.theme-sepia .book-card {
+  background-color: #dfd1b8;
+  color: #3b2c1a;
+}
+
+.theme-sepia .reader-canvas,
+.theme-sepia .focus-overlay,
+.theme-sepia .focus-stage,
+.theme-sepia .scroll-mode-view {
+  background: #e6dec8;
+}
+
+.theme-sepia .activities-sidebar,
+.theme-sepia .reader-sidebar,
+.theme-sepia .bookmarks-panel {
+  background-color: #efe3ce;
+  color: #3b2c1a;
+}
+
+/* --- Inverted Theme ----------------------------------------------------- */
+.theme-inverted {
+  background-color: #0a0c10;
+  color: #e6edf3;
+}
+
+.theme-inverted headerbar,
+.theme-inverted .reader-toolbar,
+.theme-inverted .focus-bar {
+  background-color: #12151c;
+  color: #e6edf3;
+  border-color: #262c3a;
+}
+
+.theme-inverted .book-card {
+  background-color: #181d26;
+  color: #e6edf3;
+}
+
+.theme-inverted .reader-canvas,
+.theme-inverted .focus-overlay,
+.theme-inverted .focus-stage,
+.theme-inverted .scroll-mode-view {
+  background: #06070a;
+}
+
+.theme-inverted .activities-sidebar,
+.theme-inverted .reader-sidebar,
+.theme-inverted .bookmarks-panel {
+  background-color: #0f1217;
+  color: #e6edf3;
+}
+

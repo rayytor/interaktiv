@@ -42,6 +42,7 @@ from .anchors import (
     PublisherOge,
     load_publisher_oges,
     parse_oge_label,
+    link_page_oges,
     find_unplaced_anchors,
     reconcile_anchors,
 )
@@ -94,6 +95,7 @@ __all__ = [
     "PublisherOge",
     "load_publisher_oges",
     "parse_oge_label",
+    "link_page_oges",
     "find_unplaced_anchors",
     "reconcile_anchors",
     # Serializer

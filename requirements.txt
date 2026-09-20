@@ -1,2 +1,14 @@
+# Python package dependencies
 pymupdf>=1.23.0
 psutil>=5.9.0
+
+# System package dependencies for Interaktiv GTK School Edition (GTK4 + libadwaita + WebKitGTK):
+#
+# Debian / Ubuntu / Pardus:
+#   apt install python3-gi gir1.2-gtk-4.0 gir1.2-adw-1 gir1.2-webkit-6.0
+#
+# Fedora:
+#   dnf install python3-gobject gtk4 libadwaita webkitgtk6.0
+#
+# Arch Linux:
+#   pacman -S python-gobject gtk4 libadwaita webkit2gtk-6.0

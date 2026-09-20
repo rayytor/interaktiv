@@ -87,7 +87,18 @@ def check_page_regions(doc, page_num: int, label: str):
     return activities, panels
 
 
-def test_book_0e966773(pdf_path: str):
+PDF_0E966773 = str(PROJECT_ROOT / "books" / "0e966773-5012-4f57-8be5-d892e8c75f22.pdf")
+PDF_51CDBBCE = str(PROJECT_ROOT / "books" / "51cdbbce-66f4-4baa-95d7-634bf11b7e44.pdf")
+
+
+def test_book_0e966773(pdf_path: str = PDF_0E966773):
+    if not Path(pdf_path).exists():
+        try:
+            import pytest
+            pytest.skip(f"{pdf_path} not found")
+        except ImportError:
+            print(f"Skipping: {pdf_path} not found")
+            return
     print("\n" + "=" * 60)
     print(f"Testing 0e966773: {pdf_path}")
     print("=" * 60)
@@ -127,7 +138,14 @@ def test_book_0e966773(pdf_path: str):
     print("✓ Page 164 handled gracefully (0 activities, no errors).")
 
 
-def test_book_51cdbbce(pdf_path: str):
+def test_book_51cdbbce(pdf_path: str = PDF_51CDBBCE):
+    if not Path(pdf_path).exists():
+        try:
+            import pytest
+            pytest.skip(f"{pdf_path} not found")
+        except ImportError:
+            print(f"Skipping: {pdf_path} not found")
+            return
     print("\n" + "=" * 60)
     print(f"Testing 51cdbbce (Matematik): {pdf_path}")
     print("=" * 60)
