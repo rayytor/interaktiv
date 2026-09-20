@@ -23,7 +23,6 @@ if ROOT not in sys.path:
     sys.path.insert(0, ROOT)
 
 from books_manager import BooksManager
-from server import ThreadedTCPServer, RangeHTTPRequestHandler
 
 
 class TestSchoolEdition(unittest.TestCase):
@@ -55,55 +54,7 @@ class TestSchoolEdition(unittest.TestCase):
         self.assertIsNotNone(thumb_path)
         self.assertTrue(os.path.isfile(thumb_path))
 
-    def test_school_edition_server_config(self):
-        """Server in school edition reports correct edition and allows installation/preview."""
-        port = 8135
-        server = ThreadedTCPServer(
-            ("127.0.0.1", port),
-            RangeHTTPRequestHandler,
-            directory=ROOT,
-            edition="school",
-        )
-        t = threading.Thread(target=server.serve_forever, daemon=True)
-        t.start()
-        time.sleep(0.3)
-
-        base_url = f"http://127.0.0.1:{port}"
-        try:
-            # Check /api/config
-            req = urllib.request.Request(f"{base_url}/api/config")
-            with urllib.request.urlopen(req, timeout=5) as resp:
-                data = json.loads(resp.read().decode("utf-8"))
-                self.assertEqual(data.get("edition"), "school")
-                self.assertFalse(data.get("library_mode"))
-                features = data.get("features", {})
-                self.assertTrue(features.get("install"))
-                self.assertTrue(features.get("uninstall"))
-                self.assertFalse(features.get("catalogue_sync"))
-                self.assertFalse(features.get("bulk_extract"))
-                self.assertTrue(features.get("activities"))
-                self.assertFalse(features.get("jit_activities"))
-
-            # Check /api/books returns all 56 books
-            req = urllib.request.Request(f"{base_url}/api/books")
-            with urllib.request.urlopen(req, timeout=5) as resp:
-                data = json.loads(resp.read().decode("utf-8"))
-                books = data.get("books", [])
-                self.assertEqual(len(books), 56)
-                self.assertTrue(all(b.get("url") for b in books))
-                self.assertTrue(all(b.get("hasThumbnail") for b in books))
-
-            # Check thumbnail endpoint
-            test_id = books[0]["id"]
-            req = urllib.request.Request(f"{base_url}/api/thumbnail?id={test_id}")
-            with urllib.request.urlopen(req, timeout=5) as resp:
-                self.assertEqual(resp.status, 200)
-                self.assertTrue(len(resp.read()) > 0)
-
-        finally:
-            server.shutdown()
-            server.server_close()
-
 
 if __name__ == "__main__":
     unittest.main()
+

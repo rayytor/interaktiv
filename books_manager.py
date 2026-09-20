@@ -2,20 +2,9 @@
 """
 BooksManager: Manages the textbook catalog from kitap_pdf_linkleri.txt,
 handles local installations, background downloads, thumbnail management,
-and RFC 7233 byte-range streaming proxy for remote previews.
+and interactive activity caches for the Interaktiv School Edition.
+Supports both standard catalogue mode and packaged library mode.
 Zero external dependencies (Python standard library only).
-
-Two editions are served from this one class:
-
-  * "full"   -- the authoring/reader app. The catalogue comes from the
-               publisher's link file, books are downloaded on demand, and a
-               book may be previewed straight off the CDN.
-  * "school" -- a packaged library. The catalogue comes from
-               `library/manifest.json`, which was written once by
-               `converter/build_library.py`; every book is already on disk, no
-               downloader or network catalogue lookup is ever used, and the
-               JIT cache for interactive activities lives outside the bundle
-               so a read-only (USB / network share) library still works.
 """
 
 import concurrent.futures
@@ -67,30 +56,23 @@ class BooksManager:
             self.library_dir = None
             self.manifest_path = None
 
-        # Packaged library mode is active ONLY when an explicit library_dir is provided
-        # or a non-empty manifest exists in library/, and edition != "full".
+        # Packaged library mode is active when an explicit library_dir is provided
+        # or a non-empty manifest exists in library/.
         manifest_data = self.read_library_manifest() if (self.manifest_path and os.path.isfile(self.manifest_path)) else {}
         has_packaged_books = bool(manifest_data.get("books"))
         self.library_mode = bool(
             self.manifest_path
             and os.path.isfile(self.manifest_path)
             and has_packaged_books
-            and edition != "full"
         )
-        self.edition = edition or ("school" if self.library_mode else "full")
+        self.edition = "school"
 
-        # Where JIT-fetched interactive activities are cached. In the full
-        # edition this is the in-tree `activities/` (which also carries the
-        # bakes); in the school edition or library mode it is a writable cache
+        # Where JIT-fetched interactive activities are cached: writable cache
         # outside the bundle.
-        if self.edition == "school" or self.library_mode:
-            self.activities_dir = os.path.abspath(
-                activities_cache_dir or default_activities_cache_dir()
-            )
-            self.activities_source_dir = self.activities_dir
-        else:
-            self.activities_dir = os.path.join(self.base_dir, "activities")
-            self.activities_source_dir = self.activities_dir
+        self.activities_dir = os.path.abspath(
+            activities_cache_dir or default_activities_cache_dir()
+        )
+        self.activities_source_dir = self.activities_dir
 
         if not self.library_mode:
             os.makedirs(self.books_dir, exist_ok=True)
@@ -122,7 +104,7 @@ class BooksManager:
         `extract_activities.sync_catalogue()`. It carries the real grade and
         subject for each book, which the link file does not.
 
-        Only the full edition has one: a packaged library carries the same
+        In standard catalogue mode this is loaded; a packaged library carries the same
         fields inside each bundle's own manifest entry.
         """
         if self.library_mode:
@@ -234,8 +216,7 @@ class BooksManager:
 
         Every entry is by definition installed, so the fields the dashboard
         reads (`isInstalled`, `fileSize`, `hasThumbnail`) are answered from the
-        bundle rather than probed per request. `url` stays for shape
-        compatibility with the full edition but is never fetched.
+        bundle rather than probed per request. `url` is None in library mode.
         """
         manifest = self.read_library_manifest()
         for idx, entry in enumerate(manifest.get("books") or [], 1):
@@ -252,7 +233,7 @@ class BooksManager:
                 "interactiveCount": entry.get("interactiveCount"),
                 "url": None,
                 "index": idx,
-                # Packaged extras, not part of the full edition's shape.
+                # Packaged extras in bundle manifest.
                 "bundle": entry.get("bundle") or book_id,
                 "fingerprint": entry.get("fingerprint"),
                 "builtAt": entry.get("builtAt"),
@@ -264,51 +245,44 @@ class BooksManager:
 
     def _register_bundled_activities(self, book_id):
         """
-        Note the activities that were shipped inside a book's bundle, if any.
-
-        The default bundle carries none -- interactive material is JIT-loaded --
-        but a packager may have copied some in, and those must be found before
-        the cache is consulted or they would be silently ignored.
+        Record any interactive activities a book bundle carries with it.
         """
-        meta_path = self.get_book_meta_path(book_id)
-        if not os.path.isfile(meta_path):
+        bundle = self.get_bundle_dir(book_id)
+        if not bundle:
+            return
+        act_dir = os.path.join(bundle, "activities")
+        if not os.path.isdir(act_dir):
             return
         try:
-            with open(meta_path, "r", encoding="utf-8") as f:
-                data = json.load(f)
-        except (OSError, ValueError):
-            return
-        for guid in data.get("activities") or []:
-            if not guid:
-                continue
-            path = os.path.join(os.path.dirname(meta_path), "activities", str(guid))
-            if os.path.isfile(os.path.join(path, "index.html")):
-                self._bundled_activities[str(guid)] = path
+            for name in os.listdir(act_dir):
+                sub = os.path.join(act_dir, name)
+                if os.path.isdir(sub) and os.path.isfile(os.path.join(sub, "index.html")):
+                    self._bundled_activities[name] = sub
+        except OSError:
+            pass
 
-    def activity_dir(self, guid):
+    def get_activity_dir(self, guid):
         """
-        Where one interactive activity's files are.
+        Directory holding one unbundled activity, or None when it is missing.
 
-        The JIT cache comes first -- a fetch of a newer revision should win --
-        then a bundle that shipped the activity with the book. When neither has
-        it, the cache path is returned so a caller can tell \"not here yet\" from
-        \"not anywhere\" by looking at the directory.
+        Order:
+          1. Bundled activity inside a packaged book bundle (library mode).
+          2. Cached in $XDG_CACHE_HOME/interaktiv/activities (JIT-fetched).
+          3. In-tree activities/ directory fallback.
         """
-        if not guid:
-            return None
-        cached = os.path.join(self.activities_dir, guid)
+        bundled = self._bundled_activities.get(str(guid))
+        if bundled and os.path.isfile(os.path.join(bundled, "index.html")):
+            return bundled
+        cached = os.path.join(self.activities_dir, str(guid))
         if os.path.isfile(os.path.join(cached, "index.html")):
             return cached
-        bundled = self._bundled_activities.get(guid)
-        if bundled:
-            return bundled
         in_tree = os.path.join(self.base_dir, "activities", str(guid))
         if os.path.isfile(os.path.join(in_tree, "index.html")):
             return in_tree
         return cached
 
     def get_bundle_dir(self, book_id):
-        """Directory holding one packaged book, or None in the full edition."""
+        """Directory holding one packaged book, or None when not in library mode."""
         if not self.library_mode or not self.library_dir:
             return None
         book = self.books_by_id.get(book_id) or {}
@@ -327,7 +301,7 @@ class BooksManager:
         """
         Where a book's baked activity regions live.
 
-        The full edition bakes into `activities/books/<id>/regions.json`; a
+        In standard mode this lives in `activities/books/<id>/regions.json`; a
         packaged library carries the same file inside the bundle, so the reader
         never has to detect anything at load time.
         """

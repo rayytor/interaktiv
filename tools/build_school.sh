@@ -1,39 +1,56 @@
 #!/usr/bin/env bash
 #
-# Build the standalone, lightweight Interaktiv School Edition.
+# Build the standalone, lightweight Interaktiv School Edition (GTK4 / libadwaita).
 # Assembles dist/interaktiv-school/ containing only the files necessary
-# for school/smartboard use: reader webapp + packaged library + JIT activity loader.
-# Excludes authoring/converter tools, test suites, and unbaked books.
+# for school/smartboard use: native GTK reader + core runtime + packaged library.
 #
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 DIST_DIR="${ROOT_DIR}/dist/interaktiv-school"
 
-echo "Building Interaktiv School Edition..."
+echo "Building Interaktiv School Edition (GTK4)..."
 echo "Destination: ${DIST_DIR}"
 
 rm -rf "${DIST_DIR}"
 mkdir -p "${DIST_DIR}"
 
-# 1. Core Python runtime
-cp "${ROOT_DIR}/main.py" "${DIST_DIR}/"
-cp "${ROOT_DIR}/server.py" "${DIST_DIR}/"
+# 1. Core Python runtime & GTK package
+echo "Copying Python runtime and GTK application..."
 cp "${ROOT_DIR}/books_manager.py" "${DIST_DIR}/"
+cp -r "${ROOT_DIR}/interaktiv_core" "${DIST_DIR}/"
+cp -r "${ROOT_DIR}/interaktiv_gtk" "${DIST_DIR}/"
 
-# 2. Frontend assets
-cp "${ROOT_DIR}/index.html" "${DIST_DIR}/"
-cp -r "${ROOT_DIR}/css" "${DIST_DIR}/"
-cp -r "${ROOT_DIR}/js" "${DIST_DIR}/"
+# Clean any pycache in dist
+find "${DIST_DIR}" -type d -name "__pycache__" -exec rm -rf {} + 2>/dev/null || true
 
-# 3. Branding & icons
-for f in icon.png icon.svg favicon.ico; do
+# 2. Desktop entry & branding
+echo "Installing desktop launcher and icons..."
+if [ -f "${ROOT_DIR}/org.interaktiv.School.desktop" ]; then
+    cp "${ROOT_DIR}/org.interaktiv.School.desktop" "${DIST_DIR}/"
+fi
+for f in icon.png icon.svg; do
     if [ -f "${ROOT_DIR}/${f}" ]; then
         cp "${ROOT_DIR}/${f}" "${DIST_DIR}/"
     fi
 done
 
-# 4. Catalog, thumbnails & metadata (no PDFs bundled by default)
+# Standard XDG desktop structure for easy system integration
+mkdir -p "${DIST_DIR}/share/applications"
+mkdir -p "${DIST_DIR}/share/icons/hicolor/scalable/apps"
+mkdir -p "${DIST_DIR}/share/icons/hicolor/256x256/apps"
+
+if [ -f "${ROOT_DIR}/org.interaktiv.School.desktop" ]; then
+    cp "${ROOT_DIR}/org.interaktiv.School.desktop" "${DIST_DIR}/share/applications/"
+fi
+if [ -f "${ROOT_DIR}/icon.svg" ]; then
+    cp "${ROOT_DIR}/icon.svg" "${DIST_DIR}/share/icons/hicolor/scalable/apps/org.interaktiv.School.svg"
+fi
+if [ -f "${ROOT_DIR}/icon.png" ]; then
+    cp "${ROOT_DIR}/icon.png" "${DIST_DIR}/share/icons/hicolor/256x256/apps/org.interaktiv.School.png"
+fi
+
+# 3. Catalog, thumbnails & metadata
 echo "Copying catalog, thumbnails and metadata..."
 cp "${ROOT_DIR}/kitap_pdf_linkleri.txt" "${DIST_DIR}/"
 cp -r "${ROOT_DIR}/thumbnails" "${DIST_DIR}/"
@@ -44,26 +61,42 @@ if [ -d "${ROOT_DIR}/activities/books" ]; then
     cp -r "${ROOT_DIR}/activities/books" "${DIST_DIR}/activities/"
 fi
 
-# 5. Local books storage (empty, user-installed PDFs go here)
+# 4. Local books storage (empty, user-installed PDFs go here)
 mkdir -p "${DIST_DIR}/books"
 
-# 6. Optional pre-packaged library bundles (if present)
+# 5. Optional pre-packaged library bundles (if present)
 if [ -d "${ROOT_DIR}/library" ]; then
     echo "Copying library bundles..."
     cp -r "${ROOT_DIR}/library" "${DIST_DIR}/"
 fi
 
-# 7. School launcher script
-# Modifies launch.sh to run with --edition school
-sed 's|\("${PYTHON_EXEC}" main.py --no-browser --port "${PORT}" --auto-shutdown\) "$@"|\1 --edition school "$@"|g' \
-    "${ROOT_DIR}/launch.sh" > "${DIST_DIR}/launch.sh"
+# 6. Standalone GTK launcher script
+cat << 'LAUNCH_EOF' > "${DIST_DIR}/launch.sh"
+#!/usr/bin/env bash
+#
+# Interaktiv GTK School Edition Launcher
+#
+set -euo pipefail
+
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cd "$DIR"
+
+if ! command -v python3 >/dev/null 2>&1; then
+    echo "Error: Python 3 not found on PATH." >&2
+    exit 1
+fi
+
+exec python3 -m interaktiv_gtk "$@"
+LAUNCH_EOF
 chmod +x "${DIST_DIR}/launch.sh"
 
-# 8. School README
-cat << 'EOF' > "${DIST_DIR}/README.md"
-# Interaktiv - Okul / Akıllı Tahta Sürümü (School Edition)
+# 7. School GTK README
+cat << 'README_EOF' > "${DIST_DIR}/README.md"
+# Interaktiv - Okul / Akıllı Tahta Sürümü (GTK4 / libadwaita)
 
-Bu sürüm, akıllı tahtalarda ve okul bilgisayarlarında hızlı, çevrimdışı ve dokunmatik çalışacak şekilde optimize edilmiştir.
+Bu sürüm, akıllı tahtalarda ve okul bilgisayarlarında ultra-hızlı, yerel (native),
+çevrimdışı ve dokunmatik çalışacak şekilde GTK4 ve libadwaita ile geliştirilmiştir.
+Web tarayıcısı veya yerel HTTP sunucusu gerektirmez.
 
 ## Başlatma
 
@@ -72,16 +105,23 @@ Terminalde:
 ./launch.sh
 ```
 
-Veya doğrudan Python ile:
+Veya doğrudan Python modülü ile:
 ```bash
-python3 main.py --edition school
+python3 -m interaktiv_gtk
+```
+
+Masaüstü uygulaması olarak kurmak için:
+```bash
+cp org.interaktiv.School.desktop ~/.local/share/applications/
+cp icon.svg ~/.local/share/icons/hicolor/scalable/apps/org.interaktiv.School.svg
 ```
 
 ## Özellikler
-- **Tüm Kitap Kataloğu ve Kapaklar**: Tüm ders kitaplarının linkleri, kapak görselleri ve bilgileri hazır gelir.
-- **Önizleme ve İndirme**: Kitaplar doğrudan internet üzerinden önizlenebilir; istenen kitaplar tek tıkla çevrimdışı kullanım için cihaza indirilebilir.
-- **Akıllı Tahta Dostu**: Geniş dokunma alanları, tam ekran ve odak modu desteği.
-- **JIT Etkileşimli Etkinlikler**: Etkinlikler tıklandığında anında (JIT) yüklenir ve yerel olarak önbelleğe alınır.
-EOF
+- **Yerel GTK4 / Libadwaita Arayüzü**: Tarayıcı yükü olmadan anında açılış ve düşük bellek tüketimi.
+- **Dört Farklı Tema**: Koyu (dark), açık (light), sepia ve karşıt (inverted) renk filtreleri.
+- **Akıllı Tahta Optimizasyonu**: Geniş dokunmatik hedefler (>= 48px), kolay sayfa çevirme butonları ve klavye kısayolları.
+- **Etkileşimli Etkinlikler ve Odak Modu**: PDF üzerindeki etkinlik alanlarını vurgulama ve tek tıkla soruya odaklanma.
+- **Çevrimdışı Kullanım**: İndirilen kitaplar ve önbelleğe alınan etkinlikler internet bağlantısı olmadan çalışır.
+README_EOF
 
 echo "Build complete: ${DIST_DIR}"

@@ -21,7 +21,7 @@ def main(argv=None) -> int:
     )
     parser.add_argument(
         "--edition",
-        choices=["full", "school"],
+        choices=["school"],
         default="school",
         help="Which catalogue to read. Default: school.",
     )

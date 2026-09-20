@@ -25,7 +25,6 @@ if ROOT not in sys.path if "sys" in locals() else True:
     sys.path.insert(0, ROOT)
 
 from books_manager import BooksManager
-from server import ThreadedTCPServer, RangeHTTPRequestHandler
 
 
 class TestLibraryMode(unittest.TestCase):
@@ -125,54 +124,6 @@ class TestLibraryMode(unittest.TestCase):
         ok, msg = manager.uninstall_book(self.book_id)
         self.assertFalse(ok)
         self.assertIn("cannot be uninstalled", msg.lower())
-
-    def test_server_library_mode_endpoints(self):
-        port = 8123
-        server = ThreadedTCPServer(
-            ("127.0.0.1", port),
-            RangeHTTPRequestHandler,
-            directory=self.temp_dir,
-            library_dir=self.library_dir,
-            edition="school",
-        )
-        t = threading.Thread(target=server.serve_forever, daemon=True)
-        t.start()
-        time.sleep(0.3)
-
-        base_url = f"http://127.0.0.1:{port}"
-        try:
-            # Check /api/config
-            req = urllib.request.Request(f"{base_url}/api/config")
-            with urllib.request.urlopen(req, timeout=5) as resp:
-                data = json.loads(resp.read().decode("utf-8"))
-                self.assertEqual(data.get("edition"), "school")
-                self.assertTrue(data.get("library_mode"))
-                features = data.get("features", {})
-                self.assertFalse(features.get("book_downloads"))
-                self.assertFalse(features.get("book_uninstalls"))
-                self.assertFalse(features.get("catalogue_sync"))
-
-            # Check /api/books returns library catalog
-            req = urllib.request.Request(f"{base_url}/api/books")
-            with urllib.request.urlopen(req, timeout=5) as resp:
-                data = json.loads(resp.read().decode("utf-8"))
-                self.assertEqual(len(data.get("books", [])), 1)
-                self.assertEqual(data["books"][0]["id"], self.book_id)
-
-            # Check gated POST endpoints return 403
-            for endpoint in ["/api/books/install", "/api/books/uninstall"]:
-                req = urllib.request.Request(
-                    f"{base_url}{endpoint}",
-                    data=json.dumps({"id": self.book_id}).encode("utf-8"),
-                    headers={"Content-Type": "application/json"}
-                )
-                with self.assertRaises(urllib.error.HTTPError) as ctx:
-                    urllib.request.urlopen(req, timeout=5)
-                self.assertEqual(ctx.exception.code, 403)
-
-        finally:
-            server.shutdown()
-            server.server_close()
 
 
 if __name__ == "__main__":
