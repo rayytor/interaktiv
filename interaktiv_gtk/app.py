@@ -17,6 +17,10 @@ from .state import Settings
 from .window import MainWindow
 
 APP_ID = "org.interaktiv.School"
+
+# Finger-sized rather than mouse-sized. See `_tune_for_touch`.
+TOUCH_DRAG_THRESHOLD = 16
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(HERE)
 
@@ -41,6 +45,7 @@ class InteraktivApp(Adw.Application):
     def do_startup(self) -> None:
         Adw.Application.do_startup(self)
         icons.register()
+        self._tune_for_touch()
         self._load_css()
         self._install_actions()
 
@@ -54,6 +59,26 @@ class InteraktivApp(Adw.Application):
         Adw.Application.do_shutdown(self)
 
     # -- chrome -----------------------------------------------------------
+
+    def _tune_for_touch(self) -> None:
+        """
+        Settle the one GTK setting that is sized for a mouse.
+
+        `gtk-dnd-drag-threshold` is how far a press has to travel before GTK
+        calls it a drag, and 8 px is a mouse's answer. A fingertip on a board
+        wobbles further than that just being held still, which starts a scroll
+        under a teacher who meant to tap -- and it is also all the travel the
+        page swipe gets to read a direction from, because `GtkScrolledWindow`
+        claims the sequence on the first motion past this number. Widening it
+        fixes both: fewer taps become scrolls, and the swipe gets a sample
+        long enough to tell sideways from downwards.
+        """
+        display = Gdk.Display.get_default()
+        if display is None:
+            return
+        settings = Gtk.Settings.get_for_display(display)
+        if settings is not None:
+            settings.set_property("gtk-dnd-drag-threshold", TOUCH_DRAG_THRESHOLD)
 
     def _load_css(self) -> None:
         display = Gdk.Display.get_default()

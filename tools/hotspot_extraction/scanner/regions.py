@@ -12,9 +12,13 @@ Grows detected activity markers into complete, non-overlapping clickable hotspot
 
 from dataclasses import dataclass, field
 import re
-from typing import Dict, List, Optional, Set, Tuple
+from typing import Dict, List, Optional, Sequence, Set, Tuple
 
+from .figures import Figure, detect_figures
 from .primitives import PagePrimitives, TextSpan, VectorDrawing
+# `GrowthTrace` lives in `trace.py` so that markers, prompts and anchors can
+# record into the same object without importing this module back.
+from .trace import GrowthTrace
 from .layout import (
     COLUMN_CHANNEL,
     COLUMN_CLEAR,
@@ -41,6 +45,7 @@ RULE_CLUSTER = 6.0        # pt: cluster distance for rules
 RULE_ROW = 30.0           # pt: max row height for a rule grid
 MIN_CELL = 8.0            # pt: min cell dimension
 HOTSPOT_GAP = 3.0         # pt: minimum separation between hotspots
+HAIRLINE = 0.25           # pt: an overlap this shallow is a rounded seam, not a dispute
 PAD = 8.0                 # pt: standard breathing room padding around text
 MIN_HOTSPOT = 6.0         # pt: minimum width/height for a hotspot rect
 FLOW_LEADING = 1.8        # multiple of leading that still reads as next line
@@ -57,6 +62,13 @@ WHOLE_TOL = 0.05          # tolerance for whole panel/block cut check
 TALL_REGION = 0.7         # fraction of the sheet past which a hotspot is no longer one
 RETREAT_SHARE = 0.75      # share of a block past which a hotspot keeps it rather than retreating
 RETREAT_COST = 0.5        # share of its own area a hotspot may give up to clear a block
+GRAPHIC_REACH = 0.55      # share of a graphic that must lie in a band for the band to own it
+GRAPHIC_DROP = 72.0       # pt: clear gap below the text past which a graphic is not its illustration
+GRAPHIC_SHARE = 0.5       # share of the band past which a drawn shape is furniture, not the diagram
+GRAPHIC_LINK = 24.0       # pt: gap to the next drawn shape that still reads as the same diagram
+GRAPHIC_PASSES = 8        # how many rings out from the text a diagram may be followed
+GRAPHIC_LABEL = 12.0      # pt: how far outside a diagram its own small-print labels may sit
+GRAPHIC_HELD = 0.7        # share of a shape that must lie in a block for the block to own it
 
 
 @dataclass
@@ -158,17 +170,24 @@ def contains_point(
 def cuts(
     rect: Tuple[float, float, float, float],
     block: Tuple[float, float, float, float],
-    whole_tol: float = WHOLE_TOL
+    whole_tol: Optional[float] = None
 ) -> bool:
     """
     Check if rect cuts block instead of taking it whole or leaving it alone.
     Returns True if overlap share is between whole_tol and 1 - whole_tol.
+
+    `whole_tol` defaults to the module's `WHOLE_TOL` *at call time*, not at
+    definition time: a profile rebinds the global, and a default argument
+    evaluated once at import would have pinned every internal caller to the
+    value the module was loaded with. The scorer passes its own frozen
+    tolerance explicitly, so the ruler and the detector stay independent.
     """
     block_area = rect_area(block)
     if block_area <= 0.0:
         return False
+    tol = WHOLE_TOL if whole_tol is None else whole_tol
     share = rect_overlap(rect, block) / block_area
-    return share > whole_tol and share < 1.0 - whole_tol
+    return share > tol and share < 1.0 - tol
 
 
 def is_prose(span: TextSpan) -> bool:
@@ -229,13 +248,31 @@ def group_lines(spans: List[TextSpan]) -> List[TextLine]:
 def detect_panels(
     drawings: List[VectorDrawing],
     body_spans: List[TextSpan],
+    page_h: Optional[float] = None,
+    markers: Optional[Sequence[Any]] = None,
 ) -> List[Tuple[float, float, float, float]]:
     """
     Detect drawn vector background panels (dialogue bubbles, tinted boxes).
 
     Identifies shapes with width >= PANEL_MIN_W (60 pt) and height >= PANEL_MIN_H (30 pt)
     that contain at least PANEL_LINES (2) lines of prose, filtering out nested panels.
+    Multi-question container backgrounds or panels taller than TALL_REGION * page_h
+    are filtered out as page furniture.
     """
+    inferred_h = (
+        page_h
+        or (max((d.rect[3] for d in drawings), default=0.0) if drawings else 0.0)
+        or (max((s.bbox[3] for s in body_spans), default=0.0) if body_spans else 842.0)
+    )
+    max_panel_h = (TALL_REGION - 0.005) * inferred_h
+
+    marker_boxes: List[Tuple[float, float, float, float]] = []
+    if markers:
+        for m in markers:
+            mb = getattr(m, "span", m)
+            bbox = getattr(mb, "bbox", mb)
+            marker_boxes.append(bbox)
+
     prose_spans = [s for s in body_spans if is_prose(s)]
     candidates: List[Tuple[float, float, float, float]] = []
 
@@ -243,7 +280,10 @@ def detect_panels(
         r = d.rect
         w = r[2] - r[0]
         h = r[3] - r[1]
-        if w < PANEL_MIN_W or h < PANEL_MIN_H:
+        if w < PANEL_MIN_W or h < PANEL_MIN_H or h > max_panel_h:
+            continue
+
+        if marker_boxes and sum(1 for mb in marker_boxes if encloses(r, mb, tol=-2.0)) > 1:
             continue
 
         # Count distinct prose text rows enclosed in this drawing
@@ -271,6 +311,7 @@ def detect_panels(
 def detect_solution_spaces(
     drawings: List[VectorDrawing],
     body_spans: List[TextSpan],
+    page_h: Optional[float] = None,
 ) -> List[dict]:
     """
     Detect solution spaces (ruled answer lines, empty table cells, answer boxes).
@@ -295,14 +336,14 @@ def detect_solution_spaces(
         r = d.rect
         w = r[2] - r[0]
         h = r[3] - r[1]
-        if h <= RULE_THICK and w >= RULE_MIN:
+        if h <= RULE_THICK * 1.5 and w >= RULE_MIN:
             horizontal.append(r)
-        elif w <= RULE_THICK and h >= RULE_MIN:
+        elif w <= RULE_THICK * 1.5 and h >= RULE_MIN:
             vertical.append(r)
         if w >= RULE_MIN and h >= MIN_CELL:
             panels.append(r)
 
-    if not horizontal:
+    if not horizontal and not vertical:
         return []
 
     prose_spans = [s for s in body_spans if is_prose(s)]
@@ -322,10 +363,10 @@ def detect_solution_spaces(
     parent = list(range(n_rules))
 
     def find(i: int) -> int:
-        if parent[i] == i:
-            return i
-        parent[i] = find(parent[i])
-        return parent[i]
+        while parent[i] != i:
+            parent[i] = parent[parent[i]]
+            i = parent[i]
+        return i
 
     def union(i: int, j: int):
         root_i = find(i)
@@ -334,10 +375,28 @@ def detect_solution_spaces(
             parent[root_i] = root_j
 
     def near(a: Tuple[float, float, float, float], b: Tuple[float, float, float, float]) -> bool:
-        return (
-            min(a[2], b[2]) + RULE_CLUSTER >= max(a[0], b[0]) and
-            min(a[3], b[3]) + RULE_ROW >= max(a[1], b[1])
-        )
+        is_vert_a = (a[2] - a[0] <= RULE_THICK * 1.5)
+        is_vert_b = (b[2] - b[0] <= RULE_THICK * 1.5)
+        if is_vert_a and is_vert_b:
+            vert_overlap = min(a[3], b[3]) - max(a[1], b[1])
+            min_h = min(a[3] - a[1], b[3] - b[1])
+            return vert_overlap >= 0.5 * min_h and abs(a[0] - b[0]) <= 350.0
+
+        if min(a[2], b[2]) + RULE_CLUSTER < max(a[0], b[0]):
+            return False
+        if min(a[3], b[3]) + RULE_ROW < max(a[1], b[1]):
+            return False
+        # Do not link rules across text: if a prose span sits in the vertical gap between them,
+        # they belong to different exercises/tables rather than one empty answer grid.
+        gap_bot = min(a[3], b[3])
+        gap_top = max(a[1], b[1])
+        if gap_top - gap_bot > 6.0:
+            for s in prose_spans:
+                s_y = (s.bbox[1] + s.bbox[3]) / 2.0
+                if gap_bot <= s_y <= gap_top:
+                    if min(a[2], b[2], s.bbox[2]) > max(a[0], b[0], s.bbox[0]):
+                        return False
+        return True
 
     for i in range(n_rules):
         for j in range(i + 1, n_rules):
@@ -353,25 +412,47 @@ def detect_solution_spaces(
 
     blocks: List[dict] = []
     for cluster in clusters.values():
-        rows = [r for r in cluster if r[3] - r[1] <= RULE_THICK]
-        if len(rows) < 2:
+        rows = [r for r in cluster if r[3] - r[1] <= RULE_THICK * 1.5]
+        cols_rules = [r for r in cluster if r[2] - r[0] <= RULE_THICK * 1.5]
+        if len(rows) < 2 and len(cols_rules) < 2:
             continue
 
         box = cluster[0]
         for r in cluster[1:]:
             box = rect_union(box, r)
 
-        ys = sorted(set(round((r[1] + r[3]) / 2.0, 1) for r in rows), reverse=True)
-        cols = sorted(set(round((r[0] + r[2]) / 2.0, 1) for r in cluster if r[2] - r[0] <= RULE_THICK))
-
-        if len(cols) >= 2:
-            xs = cols
+        if len(rows) >= 2:
+            ys = sorted(set(round((r[1] + r[3]) / 2.0, 1) for r in rows), reverse=True)
+            cols = sorted(set(round((r[0] + r[2]) / 2.0, 1) for r in cols_rules))
+            if len(cols) >= 2:
+                xs = cols
+            else:
+                xs = [box[0], box[2]]
+                gaps = [ys[k] - ys[k + 1] for k in range(len(ys) - 1)]
+                gaps.sort()
+                pitch = gaps[len(gaps) // 2] if gaps else RULE_ROW / 2.0
+                ys.insert(0, ys[0] + pitch)
         else:
-            xs = [box[0], box[2]]
-            gaps = [ys[k] - ys[k + 1] for k in range(len(ys) - 1)]
-            gaps.sort()
-            pitch = gaps[len(gaps) // 2] if gaps else RULE_ROW / 2.0
-            ys.insert(0, ys[0] + pitch)
+            # Vertical-only rules: columns defined without explicit horizontal rows
+            cols = sorted(set(round((r[0] + r[2]) / 2.0, 1) for r in cols_rules))
+            if len(cols) < 2:
+                continue
+            xs = cols
+            y_top = max(r[3] for r in cols_rules)
+            y_bot = min(r[1] for r in cols_rules)
+            if y_top - y_bot < MIN_CELL:
+                continue
+            ys = [y_top, y_bot]
+
+        # Guard against dense decorative mesh / graph paper grids (e.g. a0e5ed1a)
+        # where thousands of tiny rules generate tens of thousands of tiny cells.
+        num_cells = (len(ys) - 1) * (len(xs) - 1)
+        if num_cells > 200:
+            avg_w = (box[2] - box[0]) / max(1, len(xs) - 1)
+            avg_h = (box[3] - box[1]) / max(1, len(ys) - 1)
+            if avg_w * avg_h < 200.0 or len(ys) > 40:
+                blocks.append({"rect": box, "kind": "grid"})
+                continue
 
         cells = []
         for i in range(len(ys) - 1):
@@ -409,7 +490,13 @@ def detect_solution_spaces(
         if card:
             blocks.append({"rect": card, "kind": "panel"})
 
-    return blocks
+    inferred_h = (
+        page_h
+        or (max((d.rect[3] for d in drawings), default=0.0) if drawings else 0.0)
+        or (max((s.bbox[3] for s in body_spans), default=0.0) if body_spans else 842.0)
+    )
+    max_sol_h = (TALL_REGION - 0.005) * inferred_h
+    return [b for b in blocks if (b["rect"][3] - b["rect"][1]) <= max_sol_h]
 
 
 # Strip & cell segmentation for multi-column and full-width layouts
@@ -758,22 +845,6 @@ class PageGeometry:
     content_box: Tuple[float, float, float, float]
 
 
-@dataclass
-class GrowthTrace:
-    """
-    How `grow_activity_regions` read one sheet, for callers that ask afterwards.
-
-    A band is the vertical scope an activity was read in, and it is a stabler
-    thing to ask "does this point belong to that activity" of than the grown
-    rect: the rect stops where the text and the drawn matter stop, while the
-    band runs to the next marker. Anchor reconciliation binds against the bands
-    for exactly that reason, and separates what it synthesises against the same
-    geometry growth used, so both passes cut the sheet the same way.
-    """
-    bands: Dict[str, List[dict]] = field(default_factory=dict)
-    geometry: Optional[PageGeometry] = None
-
-
 def legal_planes(
     geom: Optional[PageGeometry],
     x0: float,
@@ -1091,7 +1162,8 @@ def solution_for(
             gap_bottom = gap_top = None
 
         if gap_top is not None:
-            if adjacent is not None and gap_top - gap_bottom > adjacent:
+            max_gap = adjacent if adjacent is not None else GRAPHIC_DROP
+            if gap_top - gap_bottom > max_gap:
                 continue
 
             # Anything else's prose standing in that gap is a wall: the space
@@ -1108,6 +1180,185 @@ def solution_for(
         grown = rect_union(grown, b_rect)
 
     return grown
+
+
+# Graphic absorption
+
+def graphics_for(
+    marker: DetectedMarker,
+    band_top: float,
+    band_bottom: float,
+    band_x0: float,
+    band_x1: float,
+    content: Optional[Tuple[float, float, float, float]],
+    figures: List[Figure],
+    drawings: List[VectorDrawing],
+    all_markers: List[DetectedMarker],
+    text_lines: Sequence[dict] = (),
+    band_font_size: float = 10.0,
+    blocks: Sequence[Tuple[float, float, float, float]] = (),
+) -> Optional[Tuple[float, float, float, float]]:
+    """
+    The drawn matter this activity's band contains, as one rectangle.
+
+    `flow_content` reads type, and a textbook question is very often half
+    picture: an instruction of two lines over a diagram that fills the rest of
+    the band. Growing on the text alone stopped the hotspot at the end of the
+    instruction, and the panel and solution rules only reached the picture when
+    the page happened to have drawn a frame or a full set of answer rules
+    around it. Most pages have not, which is why a region so often covered the
+    question and none of what the question was about. Worse, the type inside a
+    diagram is small, and `is_aside` -- rightly, for captions -- drops small
+    type from the flow, so the parts of a chart furthest from the instruction
+    were the first to be lost. That is the "only half of it" case exactly.
+
+    Two kinds of matter are gathered. A figure is a whole picture, already
+    assembled out of its tiles, and is taken when the band holds it. Vector art
+    is gathered differently, by contiguity: a drawn diagram is not one shape but
+    dozens -- boxes, arrows, rules -- and no single one of them is the picture.
+    Starting from what the activity already holds and reaching out to the drawn
+    shapes next to it, over and over until nothing further is in reach, follows
+    the diagram to its own edge and stops at the white space around it.
+
+    Everything is bounded by the band, which is the scope the page itself gives
+    this activity -- it runs from this marker to the next -- and any shape
+    carrying another activity's label is refused outright.
+
+    `blocks` are the drawn panels and answer grids the page was found to have.
+    They are not gathered here: a frame is `panel_for`'s to snap to and a ruled
+    answer grid is `solution_for`'s, and both of those take a block whole or
+    leave it. This pass reaches by contiguity, and a ruled grid is contiguous
+    with itself, so without knowing about them it walks a few rules into an
+    answer block and stops where the reaching stops -- which is a region ending
+    inside a block, the one thing the closure rule exists to prevent. Shapes
+    and labels that belong to a block this activity does not already hold are
+    therefore left where they are.
+    """
+    band = (band_x0, band_bottom, band_x1, band_top)
+    band_area = rect_area(band)
+    if band_area <= 0.0:
+        return None
+
+    # Blocks this activity has not already taken whole. A block bigger than the
+    # band is the sheet's own ground rather than a frame round this question --
+    # `panel_for` declines those too -- and nothing that reaches over one can
+    # be said to have cut it.
+    def _loose(held: Optional[Tuple[float, float, float, float]]) -> List[Tuple[float, float, float, float]]:
+        out = []
+        for b in blocks:
+            area = rect_area(b)
+            if area <= 0.0 or area > band_area:
+                continue
+            if held is not None and rect_overlap(b, held) >= (1.0 - WHOLE_TOL) * area:
+                continue
+            out.append(b)
+        return out
+
+    def _furniture(r, loose) -> bool:
+        """Is this shape a part of a block rather than a picture of its own?"""
+        area = rect_area(r)
+        return area > 0.0 and any(
+            rect_overlap(r, b) >= GRAPHIC_HELD * area for b in loose
+        )
+
+    loose = _loose(content)
+
+    taken: Optional[Tuple[float, float, float, float]] = None
+    for fig in figures:
+        r = fig.rect
+        area = rect_area(r)
+        if area <= 0.0 or rect_overlap(r, band) < GRAPHIC_REACH * area:
+            continue
+        if holds_other_marker(r, marker, all_markers):
+            continue
+        # A picture set below a clear gap is the next block's, even when the
+        # band has not ended: the page separates them with white space exactly
+        # so a reader does not join them.
+        if content and content[1] - r[3] > GRAPHIC_DROP:
+            continue
+        if _furniture(r, loose):
+            continue
+        taken = rect_union(taken, r)
+
+    reach = rect_union(content, taken)
+    if reach is None:
+        return taken
+
+    # The drawn shapes this band could offer. A shape larger than the band is
+    # the page's furniture, not this activity's diagram, and one too small to
+    # see is a hairline.
+    art: List[Tuple[float, float, float, float]] = []
+    for d in drawings:
+        r = d.rect
+        area = rect_area(r)
+        if area <= 0.0 or area > GRAPHIC_SHARE * band_area:
+            continue
+        if max(r[2] - r[0], r[3] - r[1]) < MIN_HOTSPOT:
+            continue
+        if rect_overlap(r, band) < GRAPHIC_REACH * area:
+            continue
+        if holds_other_marker(r, marker, all_markers):
+            continue
+        if spans_other_activity(r, marker, all_markers):
+            continue
+        if _furniture(r, loose):
+            continue
+        art.append(r)
+
+    # Follow the diagram outwards, one ring of shapes at a time.
+    remaining = art
+    for _ in range(GRAPHIC_PASSES):
+        near, far = [], []
+        for r in remaining:
+            gap_x = max(reach[0] - r[2], r[0] - reach[2])
+            gap_y = max(reach[1] - r[3], r[1] - reach[3])
+            (near if gap_x <= GRAPHIC_LINK and gap_y <= GRAPHIC_LINK else far).append(r)
+        if not near:
+            break
+        for r in near:
+            reach = rect_union(reach, r)
+            taken = rect_union(taken, r)
+        remaining = far
+
+    if taken is None:
+        return None
+
+    # A diagram's own labels -- the axis words under a scale, the "%100" at the
+    # end of an arrow -- are set smaller than the body, which is exactly what
+    # `is_aside` drops from the flow so that captions and credits stay out of
+    # an activity. Small type standing on or against the drawn matter is not a
+    # caption, though: it is the diagram saying what its parts are, and leaving
+    # it out clips the picture at its own labels.
+    loose = _loose(rect_union(content, taken))
+    for line in text_lines:
+        box = (line["x0"], line["y0"], line["x1"], line["y1"])
+        if rect_overlap(box, band) <= 0.0:
+            continue
+        if _furniture(box, loose):
+            continue
+        adjacent = (
+            box[0] <= taken[2] + GRAPHIC_LABEL and box[2] >= taken[0] - GRAPHIC_LABEL and
+            box[1] <= taken[3] + GRAPHIC_LABEL and box[3] >= taken[1] - GRAPHIC_LABEL
+        )
+        if not adjacent:
+            continue
+        inside = rect_overlap(box, taken) >= 0.5 * rect_area(box)
+        # Judged against the same size `flow_content` judged it against, so the
+        # two rules agree on what small print is: whatever the flow set aside
+        # here is what this pass is for.
+        prose = [sp for sp in line["spans"] if is_prose(sp)]
+        small = bool(prose) and all(
+            sp.size * HEADING_RATIO < band_font_size for sp in prose
+        )
+        if inside or small:
+            taken = rect_union(taken, box)
+
+    return (
+        max(taken[0], band_x0),
+        max(taken[1], band_bottom),
+        min(taken[2], band_x1),
+        min(taken[3], band_top),
+    )
 
 
 # Flow growth & headline extraction
@@ -1444,25 +1695,42 @@ def close_blocks(
             marker = owners.get(part.owner_id)
             for block in geom.blocks:
                 b = block["rect"]
+                if b[0] < -2 or b[1] < -2 or b[2] > geom.content_box[2] + 50 or b[3] > geom.content_box[3] + 50:
+                    continue
                 r = (part.rect[0], part.rect[1], part.rect[2], part.rect[3])
                 if not cuts(r, b):
                     continue
 
                 grown = rect_union(r, b)
+                # Check for conflicts with other claimed blocks to prevent oscillation
+                conflicts = False
+                for other_blk in geom.blocks:
+                    other_b = other_blk["rect"]
+                    if other_b is b or id(other_b) == id(b):
+                        continue
+                    if cuts(grown, other_b):
+                        other_claimant = claimant.get(id(other_b))
+                        if other_claimant is not None and other_claimant != id(part):
+                            conflicts = True
+                            break
+
                 takeable = (
                     claimant.get(id(b)) == id(part)
                     and not holds_other_marker(b, marker, markers)
                     and not spans_other_activity(b, marker, markers)
+                    and not spans_other_activity(grown, marker, markers)
+                    and not holds_other_marker(grown, marker, markers)
+                    and not conflicts
                     # A tinted ground the question merely stands on is not the
                     # question's: `panel_for` refuses to snap out to those, and
                     # swallowing one here would undo that.
-                    and rect_area(b) <= 2.0 * rect_area(r)
+                    and (rect_area(b) <= 2.0 * rect_area(r) if block.get("kind") == "panel" else True)
                     # Taking is cumulative -- a part that swallows one block is
                     # large enough to swallow the next -- so it needs a ceiling
                     # or a single question walks down the sheet. Past most of
                     # the page a hotspot has stopped pointing at anything, and
                     # the cut it leaves behind is the smaller fault.
-                    and (grown[3] - grown[1]) <= TALL_REGION * sheet_height
+                    and (grown[3] - grown[1]) <= (TALL_REGION - 0.005) * sheet_height
                 )
 
                 if takeable:
@@ -1498,13 +1766,13 @@ def close_blocks(
                         legal_planes(geom, r[0], r[2], r[3], b[3]), b[3]
                     )
                     y = seam if seam is not None else b[3]
-                    retreats.append((r[3] - y, 1, y))
+                    retreats.append((y - r[1], 1, y))
                 if r[1] < b[1] < r[3]:
                     seam = nearest_plane(
                         legal_planes(geom, r[0], r[2], b[1], r[1]), b[1]
                     )
                     y = seam if seam is not None else b[1]
-                    retreats.append((y - r[1], 3, y))
+                    retreats.append((r[3] - y, 3, y))
                 if r[0] < b[2] < r[2]:
                     retreats.append((b[2] - r[0], 0, b[2]))
                 if r[0] < b[0] < r[2]:
@@ -1767,6 +2035,8 @@ def grow_activity_regions(
         List of ActivityRegion instances with resolved bounding boxes, sub-items, and headlines.
     """
     if not markers:
+        if trace is not None:
+            trace.drop("growth", "no-marker", text="")
         return []
 
     page_num = primitives.page_num
@@ -1781,12 +2051,33 @@ def grow_activity_regions(
     ]
 
     # 2. Detect vector panels and solution spaces
-    panels = detect_panels(primitives.drawings, body_spans)
-    solution_blocks = detect_solution_spaces(primitives.drawings, body_spans)
+    panels = detect_panels(primitives.drawings, body_spans, page_h=page_h, markers=markers)
+    solution_blocks = detect_solution_spaces(primitives.drawings, body_spans, page_h=page_h)
 
     # 3. Segment page into horizontal strips and cells
     blocks = [{"x0": s.bbox[0], "x1": s.bbox[2], "y0": s.bbox[1], "y1": s.bbox[3]} for s in body_spans]
     lines = _text_lines(body_spans)
+    # Kept before the image rects join `lines` below: captions and diagram
+    # labels are text, and both readers of this list want only text.
+    text_lines = list(lines)
+
+    # What the page means as single pictures. A figure is a block like a panel
+    # or a ruled answer grid: `close_blocks` will make every hotspot take one
+    # whole or stay clear of it, which is what stops an edge falling across a
+    # diagram. Without this the picture primitives were only ever segmentation
+    # hints, and nothing held the tiles of one figure together. Read before the
+    # image rects join `lines` below, because captions are text.
+    figures = detect_figures(
+        primitives.images, primitives.drawings, text_lines, content_box,
+        marker_rects=[m.span.bbox for m in markers],
+        gutters=[
+            (a.x1 + b.x0) / 2.0
+            for a, b in zip(sorted(layout.columns, key=lambda c: c.x0),
+                            sorted(layout.columns, key=lambda c: c.x0)[1:])
+            if b.x0 > a.x1
+        ],
+    )
+
     for im in primitives.images:
         if im.bbox[1] >= content_box[1] - 2.0 and im.bbox[3] <= content_box[3] + 2.0:
             ib = {"x0": im.bbox[0], "x1": im.bbox[2], "y0": im.bbox[1], "y1": im.bbox[3]}
@@ -1796,7 +2087,8 @@ def grow_activity_regions(
         lines=lines,
         blocks=(
             [{"rect": pn, "kind": "panel"} for pn in panels] +
-            [dict(b) for b in solution_blocks]
+            [dict(b) for b in solution_blocks] +
+            [{"rect": f.rect, "kind": "figure"} for f in figures]
         ),
         content_box=content_box,
     )
@@ -1899,6 +2191,11 @@ def grow_activity_regions(
         m_id = id(m)
         bands = act_bands[m_id]
         if not bands:
+            # The marker stands in a cell growth read as dead, or in none at
+            # all. It is a marker with no scope, so it can never hold content.
+            if trace is not None:
+                trace.drop("growth", "no-band", rect=m.span.bbox, text=m.span.text,
+                           label=m.label, column=m.column_index)
             continue
 
         own_band = bands[0]
@@ -1920,6 +2217,11 @@ def grow_activity_regions(
             # snapping below with a rectangle from the wrong column, and panels
             # and ruled lines then grew it across the page.
             if not band["own"] and not flow_rect:
+                if trace is not None:
+                    trace.drop("growth", "continuation-no-flow",
+                               rect=(band["x0"], band["bottom"], band["x1"], band["top"]),
+                               text=m.span.text, label=m.label, column=band["column"],
+                               band_items=len(band["items"]))
                 continue
 
             act_spans[m_id].extend(flow_items)
@@ -1960,6 +2262,27 @@ def grow_activity_regions(
             bare = rect_union(bare, solution)
             content = rect_union(content, solution)
 
+            # Snap to the pictures the band holds
+            graphic = graphics_for(
+                marker=m,
+                band_top=band["top"],
+                band_bottom=band["bottom"],
+                band_x0=band["x0"],
+                band_x1=band["x1"],
+                content=content,
+                figures=figures,
+                drawings=primitives.drawings,
+                all_markers=markers,
+                text_lines=text_lines,
+                band_font_size=max(
+                    local_font_size(band["items"], layout.body_font_size),
+                    m.span.size,
+                ),
+                blocks=[p for p in panels] + [b["rect"] for b in solution_blocks],
+            )
+            bare = rect_union(bare, graphic)
+            content = rect_union(content, graphic)
+
             # Padding & boundary limits
             top_limit = max(band["top"], panel[3]) if (band["own"] and panel) else band["top"]
             rect = [
@@ -1976,6 +2299,11 @@ def grow_activity_regions(
                 rect[1] = max(rect[1], bare[1] - PAD if bare[1] < panel[1] else panel[1])
                 rect[3] = max(rect[3], bare[3] + PAD if bare[3] > panel[3] else panel[3])
 
+            # Hotspot height must not exceed TALL_REGION * page_h
+            max_act_h = (TALL_REGION - 0.005) * page_h
+            if rect[3] - rect[1] > max_act_h:
+                rect[1] = max(rect[1], rect[3] - max_act_h)
+
             # What an activity picks up in a later column stays in that column.
             # The activity's own band may spread -- a full-width strip absorbs
             # the gutter and the cell widens with it -- but a continuation has
@@ -1985,6 +2313,10 @@ def grow_activity_regions(
                 rect[2] = min(rect[2], band["x1"] + PAD)
 
             if rect[2] - rect[0] < MIN_HOTSPOT or rect[3] - rect[1] < MIN_HOTSPOT:
+                if trace is not None:
+                    trace.drop("growth", "sliver", rect=rect, text=m.span.text,
+                               label=m.label, w=rect[2] - rect[0], h=rect[3] - rect[1],
+                               min_hotspot=MIN_HOTSPOT, own=band["own"])
                 continue
 
             part_records.append(
@@ -2024,18 +2356,25 @@ def grow_activity_regions(
     activities: List[ActivityRegion] = []
     for m in markers:
         m_id = str(id(m))
-        if m_id not in regions_by_owner:
+        if m_id not in regions_by_owner or not regions_by_owner[m_id]:
+            # Every part this marker grew was refused before separation, or was
+            # pushed below a hotspot's minimum by it. Either way the marker is
+            # real and the page shows nothing for it, which is the refusal most
+            # worth reading.
+            if trace is not None:
+                trace.drop("growth", "no-part", rect=m.span.bbox, text=m.span.text,
+                           label=m.label, column=m.column_index)
             continue
         parts = regions_by_owner[m_id]
-        if not parts:
-            continue
 
         primary_rect = parts[0]
         headline = build_headline(m, act_spans.get(id(m), []))
         sub_items = build_sub_items(m, primary_rect, page_num, body_spans, solution_blocks, parts=parts)
 
         clean_label = m.label.strip(".:) ")
-        act_id = f"p{page_num}-{clean_label}"
+        # A question the page did not enumerate keeps no label -- see
+        # `DetectedMarker.slug` -- but still needs a name of its own here.
+        act_id = f"p{page_num}-{m.slug or clean_label}"
 
         if trace is not None:
             trace.bands[act_id] = list(act_bands.get(id(m), []))
@@ -2043,7 +2382,7 @@ def grow_activity_regions(
         activities.append(
             ActivityRegion(
                 id=act_id,
-                label=clean_label,
+                label=clean_label or None,
                 column=m.column_index,
                 rect=primary_rect,
                 parts=parts,
@@ -2053,7 +2392,7 @@ def grow_activity_regions(
             )
         )
 
-    return clean_page_activities(activities, geom=geom)
+    return clean_page_activities(activities, geom=geom, trace=trace)
 
 
 def _evict(
@@ -2100,22 +2439,173 @@ def _evict(
     return False
 
 
+def snap_edges(
+    activities: List[ActivityRegion],
+    geom: PageGeometry,
+    page_w: float = 595.0,
+    page_h: float = 842.0,
+    passes: int = 3,
+) -> List[ActivityRegion]:
+    """
+    Final edge-snapping pass across all activities and drawn blocks.
+
+    Ensures no hotspot edge comes to rest inside a drawn block (panel, solution
+    grid/cell, or figure). For every block a region cuts, decides whether to
+    expand and take the block whole, or retreat off it to the block boundary.
+    """
+    if not activities or not geom or not geom.blocks:
+        return activities
+
+    if geom.content_box:
+        page_w = max(page_w, geom.content_box[2] + 40.0)
+        page_h = max(page_h, geom.content_box[3] + 40.0)
+
+    # Filter out invalid or off-sheet blocks
+    valid_blocks = [
+        blk for blk in geom.blocks
+        if not (
+            blk["rect"][0] < -2 or blk["rect"][1] < -2
+            or blk["rect"][2] > page_w + 2 or blk["rect"][3] > page_h + 2
+        )
+        and rect_area(blk["rect"]) > 0.0
+    ]
+    if not valid_blocks:
+        return activities
+
+    for _ in range(passes):
+        moved = False
+        all_parts: List[Tuple[int, int, List[float]]] = []
+        for a_idx, act in enumerate(activities):
+            for p_idx, p in enumerate(act.parts):
+                all_parts.append((a_idx, p_idx, list(p)))
+
+        for a_idx, p_idx, p in all_parts:
+            r = tuple(p)
+            for blk in valid_blocks:
+                b = blk["rect"]
+                if not cuts(r, b):
+                    continue
+
+                share = rect_overlap(r, b) / rect_area(b)
+                grown = rect_union(r, b)
+
+                # 1. Decide if expand is possible and safe
+                can_expand = (
+                    share >= 0.35
+                    and (grown[3] - grown[1]) <= (TALL_REGION - 0.005) * page_h
+                    and (rect_area(b) <= 2.5 * rect_area(r) if blk.get("kind") == "panel" else True)
+                )
+                if can_expand:
+                    # Expansion MUST NOT overlap another activity's parts
+                    for o_a_idx, o_p_idx, o_p in all_parts:
+                        if o_a_idx == a_idx:
+                            continue
+                        if rect_overlap(grown, tuple(o_p)) > 1.0:
+                            can_expand = False
+                            break
+
+                if can_expand:
+                    p[:] = list(grown)
+                    r = tuple(p)
+                    moved = True
+                    continue
+
+                # 2. Otherwise, attempt retreat off the block
+                retreats = []
+                if r[1] < b[3] < r[3]:
+                    seam = nearest_plane(legal_planes(geom, r[0], r[2], r[3], b[3]), b[3])
+                    y = seam if seam is not None else b[3]
+                    retreats.append((y - r[1], 1, y))
+                if r[1] < b[1] < r[3]:
+                    seam = nearest_plane(legal_planes(geom, r[0], r[2], b[1], r[1]), b[1])
+                    y = seam if seam is not None else b[1]
+                    retreats.append((r[3] - y, 3, y))
+                if r[0] < b[2] < r[2]:
+                    retreats.append((b[2] - r[0], 0, b[2]))
+                if r[0] < b[0] < r[2]:
+                    retreats.append((r[2] - b[0], 2, b[0]))
+
+                retreats.sort(key=lambda t: t[0])
+                retreated = False
+                for _, edge, value in retreats:
+                    trial = list(p)
+                    if edge in (0, 1):
+                        trial[edge] = max(trial[edge], value)
+                    else:
+                        trial[edge] = min(trial[edge], value)
+                    if (trial[2] - trial[0] >= MIN_HOTSPOT
+                            and trial[3] - trial[1] >= MIN_HOTSPOT
+                            and rect_area(tuple(trial)) >= RETREAT_COST * rect_area(r)):
+                        p[:] = trial
+                        r = tuple(p)
+                        moved = True
+                        retreated = True
+                        break
+
+                # 3. Fallback: if retreat was impossible, try expand with lower share (>= 0.35)
+                # if safe and does not create any overlap
+                if not retreated and share >= 0.35:
+                    can_expand_fallback = (
+                        (grown[3] - grown[1]) <= (TALL_REGION - 0.005) * page_h
+                        and (rect_area(b) <= 2.5 * rect_area(r) if blk.get("kind") == "panel" else True)
+                    )
+                    if can_expand_fallback:
+                        for o_a_idx, o_p_idx, o_p in all_parts:
+                            if o_a_idx == a_idx:
+                                continue
+                            if rect_overlap(grown, tuple(o_p)) > 1.0:
+                                can_expand_fallback = False
+                                break
+                    if can_expand_fallback:
+                        p[:] = list(grown)
+                        r = tuple(p)
+                        moved = True
+
+        # Write updated parts back to activities
+        max_h = (TALL_REGION - 0.005) * page_h
+        for a_idx, p_idx, p in all_parts:
+            if p[3] - p[1] > max_h:
+                p[1] = p[3] - max_h
+            activities[a_idx].parts[p_idx] = (
+                round(p[0], 4), round(p[1], 4), round(p[2], 4), round(p[3], 4)
+            )
+        for act in activities:
+            if act.parts:
+                act.rect = (
+                    round(min(p[0] for p in act.parts), 4),
+                    round(min(p[1] for p in act.parts), 4),
+                    round(max(p[2] for p in act.parts), 4),
+                    round(max(p[3] for p in act.parts), 4),
+                )
+                if act.rect[3] - act.rect[1] > max_h:
+                    act.rect = (
+                        act.rect[0],
+                        round(act.rect[3] - max_h, 4),
+                        act.rect[2],
+                        act.rect[3],
+                    )
+
+        if not moved:
+            break
+
+    return activities
+
+
 def clean_page_activities(
     activities: List[ActivityRegion],
     geom: Optional[PageGeometry] = None,
+    trace: Optional["GrowthTrace"] = None,
 ) -> List[ActivityRegion]:
     """
-    Final validation and enforcement pass for page activity regions.
+    Final validation, de-overlapping, and edge-snapping pass for page activities.
+
     Guarantees:
     - Zero slivers (all parts >= 6.0 pt width and height).
-    - Zero overlapping hotspots (all pairs overlapArea <= 1.0 pt^2).
+    - Zero overlapping hotspots (all pairs overlapArea <= 1.0 pt^2), whether
+      geometry is provided or separated at midpoints.
     - Activity primary rect is the exact bounding box of its parts.
-
-    `geom` is what the page draws. Without it the de-overlap can only choose a
-    blind midpoint, so it does not cut at all: it removes slivers and recomputes
-    each activity's bounding box and leaves overlapping parts alone. The
-    serializer calls it that way, having no primitives to hand; growth and
-    anchor reconciliation pass the geometry and get the real separation.
+    - When `geom` is provided, hotspot edges are snapped to drawn block boundaries
+      (panels, solution spaces, figures) to eliminate cuts.
     """
     if not activities:
         return []
@@ -2137,6 +2627,9 @@ def clean_page_activities(
                 round(max(p[3] for p in valid_parts), 4),
             )
             cleaned_acts.append(act)
+        elif trace is not None:
+            trace.drop("clean", "sliver-in", rect=act.rect, text=act.headline or "",
+                       label=act.label, parts=len(raw_parts))
 
     # 2. De-overlap pass across all parts on the page
     for _ in range(10):
@@ -2157,9 +2650,29 @@ def clean_page_activities(
                 ox = max(0.0, min(pi[2], pj[2]) - max(pi[0], pj[0]))
                 oy = max(0.0, min(pi[3], pj[3]) - max(pi[1], pj[1]))
                 if ox * oy > 1.0:
-                    if geom is None:
-                        # Nothing to cut against; see the docstring.
+                    # Two edges that were meant to meet can end a hundredth of
+                    # a point inside one another -- a seam arrived at twice,
+                    # from two directions, each time rounded. Across the width
+                    # of a column that hairline is several square points, and
+                    # it is counted as one region stealing another's clicks.
+                    # Nothing here is in dispute, so it is closed rather than
+                    # cut: the shallow edge is pulled back until the two merely
+                    # touch. This needs no geometry and runs without it.
+                    if oy <= HAIRLINE and oy <= ox:
+                        if (pi[1] + pi[3]) >= (pj[1] + pj[3]):
+                            pi[1] = pj[3]
+                        else:
+                            pj[1] = pi[3]
+                        moved = True
                         continue
+                    if ox <= HAIRLINE:
+                        if (pi[0] + pi[2]) >= (pj[0] + pj[2]):
+                            pi[0] = pj[2]
+                        else:
+                            pj[0] = pi[2]
+                        moved = True
+                        continue
+
                     if oy <= ox:
                         # Vertical separation
                         if (pi[1] + pi[3]) >= (pj[1] + pj[3]):
@@ -2169,31 +2682,21 @@ def clean_page_activities(
                             upper, lower = pj, pi
                             u_ref, l_ref = (a_idx_j, p_idx_j), (a_idx_i, p_idx_i)
                         mid = (max(upper[1], lower[1]) + min(upper[3], lower[3])) / 2.0
-                        seam = nearest_plane(
-                            legal_planes(
-                                geom,
-                                max(pi[0], pj[0]), min(pi[2], pj[2]),
-                                min(upper[3], lower[3]), max(upper[1], lower[1]),
-                            ),
-                            mid,
-                        )
-                        # No seam means the contested span is solid -- one
-                        # block, or one line of type, from end to end. Cutting
-                        # it anywhere slices that object in half, and this pass
-                        # runs after the closure that decided who owns it, so
-                        # the overlap is the lesser fault. It is counted either
-                        # way; a sliced panel is not.
-                        if seam is None:
-                            # One object fills the span. Whichever rectangle
-                            # holds less of it steps off; when even that is
-                            # impossible the midpoint stands, because an
-                            # overlap steals another activity's clicks and is
-                            # the worse of the two faults.
-                            if _evict(geom, pi, pj):
-                                moved = True
-                                continue
-                        else:
-                            mid = seam
+                        if geom is not None:
+                            seam = nearest_plane(
+                                legal_planes(
+                                    geom,
+                                    max(pi[0], pj[0]), min(pi[2], pj[2]),
+                                    min(upper[3], lower[3]), max(upper[1], lower[1]),
+                                ),
+                                mid,
+                            )
+                            if seam is None:
+                                if _evict(geom, pi, pj):
+                                    moved = True
+                                    continue
+                            else:
+                                mid = seam
                         upper[1] = mid + 0.5
                         lower[3] = mid - 0.5
                         moved = True
@@ -2210,25 +2713,21 @@ def clean_page_activities(
                             right, left = pj, pi
                             r_ref, l_ref = (a_idx_j, p_idx_j), (a_idx_i, p_idx_i)
                         mid = (max(right[0], left[0]) + min(right[2], left[2])) / 2.0
-                        seam = nearest_plane(
-                            legal_planes_x(
-                                geom,
-                                max(pi[1], pj[1]), min(pi[3], pj[3]),
-                                max(right[0], left[0]), min(right[2], left[2]),
-                            ),
-                            mid,
-                        )
-                        if seam is None:
-                            # One object fills the span. Whichever rectangle
-                            # holds less of it steps off; when even that is
-                            # impossible the midpoint stands, because an
-                            # overlap steals another activity's clicks and is
-                            # the worse of the two faults.
-                            if _evict(geom, pi, pj):
-                                moved = True
-                                continue
-                        else:
-                            mid = seam
+                        if geom is not None:
+                            seam = nearest_plane(
+                                legal_planes_x(
+                                    geom,
+                                    max(pi[1], pj[1]), min(pi[3], pj[3]),
+                                    max(right[0], left[0]), min(right[2], left[2]),
+                                ),
+                                mid,
+                            )
+                            if seam is None:
+                                if _evict(geom, pi, pj):
+                                    moved = True
+                                    continue
+                            else:
+                                mid = seam
                         right[0] = mid + 0.5
                         left[2] = mid - 0.5
                         moved = True
@@ -2237,13 +2736,7 @@ def clean_page_activities(
                         if left[2] - left[0] < MIN_HOTSPOT:
                             to_remove.add(l_ref)
 
-        # The parts this pass actually moved. Both branches below have to read
-        # from here rather than from `a.parts`: the separation above writes to
-        # copies, so re-reading the originals throws the pass away. The removal
-        # branch used to do exactly that, which is why three answer panels
-        # stacked on one sheet never came apart however many passes ran -- each
-        # pass cut them, dropped a sliver, and then restored the coordinates it
-        # had just cut.
+        # The parts this pass actually moved.
         moved_parts: Dict[Tuple[int, int], Tuple[float, float, float, float]] = {
             (a_idx, p_idx): tuple(rect) for a_idx, p_idx, rect in all_parts
         }
@@ -2267,13 +2760,6 @@ def clean_page_activities(
                     new_acts.append(a)
             cleaned_acts = new_acts
         else:
-            # Update parts coordinates from in-place modifications.
-            #
-            # `all_parts` holds copies, so the separation above writes to those
-            # and never to `a.parts`. Re-reading `a.parts` here threw the whole
-            # pass away -- only the sliver removal ever took effect, and `moved`
-            # stayed true for every one of the ten passes because nothing it
-            # moved was ever saved.
             for a_idx, a in enumerate(cleaned_acts):
                 a_parts = [
                     moved_parts.get((a_idx, p_idx), tuple(p))
@@ -2290,4 +2776,48 @@ def clean_page_activities(
         if not moved:
             break
 
-    return cleaned_acts
+    # 3. Final edge-snapping against page geometry when available
+    page_w = 595.0
+    page_h = 842.0
+    if geom is not None and geom.content_box:
+        page_w = max(page_w, geom.content_box[2] + 40.0)
+        page_h = max(page_h, geom.content_box[3] + 40.0)
+
+    if geom is not None:
+        cleaned_acts = snap_edges(cleaned_acts, geom, page_w, page_h)
+
+    max_h = (TALL_REGION - 0.005) * page_h
+    final_acts = []
+    for act in cleaned_acts:
+        valid_parts = []
+        for p in act.parts:
+            if p[2] - p[0] >= MIN_HOTSPOT and p[3] - p[1] >= MIN_HOTSPOT:
+                if p[3] - p[1] > max_h:
+                    p = (p[0], round(p[3] - max_h, 4), p[2], p[3])
+                valid_parts.append(p)
+        if valid_parts:
+            act.parts = valid_parts
+            act.rect = (
+                round(min(p[0] for p in valid_parts), 4),
+                round(min(p[1] for p in valid_parts), 4),
+                round(max(p[2] for p in valid_parts), 4),
+                round(max(p[3] for p in valid_parts), 4),
+            )
+            if act.rect[3] - act.rect[1] > max_h:
+                act.rect = (
+                    act.rect[0],
+                    round(act.rect[3] - max_h, 4),
+                    act.rect[2],
+                    act.rect[3],
+                )
+            final_acts.append(act)
+        elif trace is not None:
+            # Separation, eviction or edge-snapping took the last part below a
+            # hotspot's minimum. The activity was found and then lost, which is
+            # a different fault from never having found it.
+            trace.drop("clean", "sliver-out", rect=act.rect, text=act.headline or "",
+                       label=act.label, parts=len(act.parts))
+
+    if trace is not None:
+        trace.count("clean.kept", len(final_acts))
+    return final_acts

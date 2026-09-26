@@ -1,12 +1,13 @@
 """
-Regions & Diagnostics Serialization for Frontend Reader & Server.
+Regions & Diagnostics Serialization for the GTK reader and the scorer.
 
-Generates exact regions.json (BAKE_VERSION = 2) and diagnostics.json.gz
-(DIAGNOSTICS_VERSION = 1) schemas drop-in compatible with js/viewer.js,
-server.py, and tools/hotspot_extraction/tests/scorecard.mjs.
+Generates the regions.json (BAKE_VERSION = 2) and diagnostics.json.gz
+(DIAGNOSTICS_VERSION = 1) that `interaktiv_core.regions` loads for the GTK
+reader and that the scorer replays.
 """
 
 from collections import Counter
+import ctypes
 from datetime import datetime, timezone
 import gzip
 import hashlib
@@ -20,6 +21,7 @@ import pymupdf
 from .primitives import extract_page_primitives, TextSpan
 from .layout import detect_folio, PageLayout
 from .markers import parse_label
+from .profile import active_profile, profile_hash
 from .regions import ActivityRegion, clean_page_activities
 
 BAKE_VERSION = 2
@@ -31,7 +33,8 @@ def compute_fingerprint(pdf_path: str) -> str:
     Compute `<file_size>-<sha256 of head, middle, tail>` fingerprint.
 
     Reads 256 KB slices from head (byte 0), middle (half-size), and tail.
-    Identical to fingerprint() in bake_activities.mjs.
+    The `<size>-<sha256 of head, middle and tail>` form the catalogue driver
+    checks a remote file's length against without downloading it.
     """
     size = os.path.getsize(pdf_path)
     span = 256 * 1024
@@ -327,6 +330,15 @@ def serialize_book_regions(
         if not acts:
             continue
 
+        # Enforce zero-overlap invariant before serializing
+        for i in range(len(acts)):
+            for j in range(i + 1, len(acts)):
+                for pi in (acts[i].parts or [acts[i].rect]):
+                    for pj in (acts[j].parts or [acts[j].rect]):
+                        ox = max(0.0, min(pi[2], pj[2]) - max(pi[0], pj[0]))
+                        oy = max(0.0, min(pi[3], pj[3]) - max(pi[1], pj[1]))
+                        assert ox * oy <= 1.0, f"Page {p}: overlapping hotspots {acts[i].id} and {acts[j].id} ({ox * oy:.2f} pt^2)"
+
         # Determine dimensions
         pw, ph = 595.0, 842.0
         if page_dimensions and p in page_dimensions:
@@ -366,6 +378,10 @@ def serialize_book_regions(
         "version": BAKE_VERSION,
         "bookId": book_id,
         "fingerprint": fingerprint,
+        # Which setting of the detector drew these regions. The fingerprint says
+        # the PDF has not changed; this says the detector has not either, so a
+        # retrained profile makes every bake stale exactly as a replaced PDF does.
+        "profile": profile_hash(active_profile()),
         "builtAt": now_iso,
         "pageCount": page_count,
         "calibration": calibration_info,

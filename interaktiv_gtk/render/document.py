@@ -104,9 +104,28 @@ class DocumentHandle:
     # -- text -------------------------------------------------------------
 
     def search(self, page: int, needle: str):
-        """Rects in PDF user space."""
-        rects = self.doc[page - 1].search_for(needle)
-        return [(r.x0, r.y0, r.x1, r.y1) for r in rects]
+        """
+        Rects in PDF user space -- origin bottom-left, y up.
+
+        `search_for` answers in MuPDF page space: origin top-left, y down, and
+        offset by the page rect when the crop box does not start at zero.
+        Everything downstream is in user space, so the flip happens here rather
+        than being left for each caller to remember -- handing page-space rects
+        to `PageTransform.rect_to_widget` puts every highlight at the mirror
+        image of the line it belongs to.
+        """
+        doc_page = self.doc[page - 1]
+        rect = doc_page.rect
+        left, top = float(rect.x0), float(rect.y0)
+        height = float(rect.height)
+        out = []
+        for r in doc_page.search_for(needle):
+            x0 = float(r.x0) - left
+            x1 = float(r.x1) - left
+            v0 = float(r.y0) - top
+            v1 = float(r.y1) - top
+            out.append((x0, height - v1, x1, height - v0))
+        return out
 
     def get_text(self, page: int) -> str:
         try:

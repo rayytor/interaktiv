@@ -46,9 +46,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fil
 HERE = os.path.dirname(os.path.abspath(__file__))
 
 # The shape of a baked regions file this packager understands. Kept in step by
-# hand with BAKE_VERSION in `tools/hotspot_extraction/scan.py` and
-# `js/viewer.js` -- a bundle carrying an incompatible number is refused rather than
-# shipped and silently ignored by the reader.
+# hand with BAKE_VERSION in `scanner/serializer.py` and `interaktiv_core/regions.py`
+# -- a bundle carrying an incompatible number is refused rather than shipped and
+# silently ignored by the reader.
 BAKE_VERSION = 2
 
 

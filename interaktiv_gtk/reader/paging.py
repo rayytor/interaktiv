@@ -25,6 +25,12 @@ MARGIN = 24
 MIN_SCALE = 0.2
 MIN_VIEWPORT = 320.0
 
+# What a zoom may be asked for, by any route: the dropdown, `+`/`-`, a pinch,
+# or ctrl+wheel. The web reader's own clamp (`viewer.js:700`).
+ZOOM_MIN = 0.3
+ZOOM_MAX = 3.0
+ZOOM_STEP = 0.2
+
 
 def pages_for(page: int, total: int, mode: str) -> List[int]:
     """
@@ -121,3 +127,36 @@ def fit_scale(spread_w: float, spread_h: float, avail_w: float, avail_h: float,
     if zoom_mode == "fit-width":
         return max(MIN_SCALE, avail_w / spread_w)
     return max(MIN_SCALE, min(avail_w / spread_w, avail_h / spread_h))
+
+
+def pinch_zoom(base: float, scale: float,
+               lo: float = ZOOM_MIN, hi: float = ZOOM_MAX) -> float:
+    """
+    Where a pinch that has grown by `scale` should leave the zoom.
+
+    `Gtk.GestureZoom` reports the distance between the fingers relative to
+    where they started, not to the previous report, so this multiplies the
+    zoom the gesture *began* at. Multiplying the live zoom instead would
+    square the pinch: a gesture held at 1.5x would run away to the ceiling
+    without the fingers moving.
+    """
+    if scale <= 0:
+        return base
+    return min(hi, max(lo, base * scale))
+
+
+def wheel_zoom(current: float, delta_y: float, step: float = 0.2,
+               lo: float = ZOOM_MIN, hi: float = ZOOM_MAX) -> float:
+    """
+    Where ctrl+wheel should leave the zoom, for one scroll report.
+
+    A mouse notch reports 1.0 and a touchpad's kinetic scroll reports a
+    fraction of one, so the step is scaled by the report and both gestures
+    move the page at the rate the hand expects. Scrolling down -- the
+    direction that moves a page away -- zooms out.
+    """
+    if delta_y == 0:
+        return current
+    factor = step * min(1.0, abs(delta_y))
+    scaled = current * (1 - factor if delta_y > 0 else 1 + factor)
+    return min(hi, max(lo, scaled))

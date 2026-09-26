@@ -166,15 +166,17 @@ class TestSearchController(unittest.TestCase):
         })
         self.assertEqual(self.controller.total_matches, 3)
 
-        # Verify global match order: page 1 first, then page 5 sorted by y
+        # Verify global match order: page 1 first, then page 5 in reading
+        # order. Rects are PDF user space (y grows upward), so the larger y
+        # is nearer the top of the page.
         m0 = self.controller._matches[0]
         m1 = self.controller._matches[1]
         m2 = self.controller._matches[2]
         self.assertEqual((m0.page, m0.match_index, m0.global_index), (1, 0, 0))
         self.assertEqual((m1.page, m1.match_index, m1.global_index), (5, 0, 1))
-        self.assertEqual(m1.rect[1], 20.0)  # Top match on page 5
+        self.assertEqual(m1.rect[1], 60.0)  # Top match on page 5
         self.assertEqual((m2.page, m2.match_index, m2.global_index), (5, 1, 2))
-        self.assertEqual(m2.rect[1], 60.0)  # Lower match on page 5
+        self.assertEqual(m2.rect[1], 20.0)  # Lower match on page 5
 
     def test_search_navigation_and_cycling(self):
         self.controller._matches = [

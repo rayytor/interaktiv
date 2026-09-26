@@ -444,5 +444,33 @@ class TestSettings(unittest.TestCase):
             self.assertEqual(json.load(f)["from_a_newer_build"], 7)
 
 
+class TestBookCard(unittest.TestCase):
+    """Book card and cover thumbnail sizing rules in the dashboard."""
+
+    def test_picture_content_fit_is_contain(self):
+        from gi.repository import Gtk
+        from interaktiv_gtk.library.card import BookCard
+        from interaktiv_gtk.library.covers import CoverLoader
+
+        card = BookCard(CoverLoader(FakeManager([])))
+        self.assertEqual(card.picture.get_content_fit(), Gtk.ContentFit.CONTAIN)
+
+    def test_aspect_cover_measures_height_for_width(self):
+        from gi.repository import Gtk
+        from interaktiv_gtk.library.card import AspectCover, COVER_ASPECT_RATIO
+
+        cover = AspectCover(COVER_ASPECT_RATIO)
+        self.assertEqual(
+            cover.get_request_mode(),
+            Gtk.SizeRequestMode.HEIGHT_FOR_WIDTH,
+        )
+        _, nat_h_232, _, _ = cover.measure(Gtk.Orientation.VERTICAL, 232)
+        self.assertEqual(nat_h_232, int(round(232 * COVER_ASPECT_RATIO)))
+
+        _, nat_h_300, _, _ = cover.measure(Gtk.Orientation.VERTICAL, 300)
+        self.assertEqual(nat_h_300, int(round(300 * COVER_ASPECT_RATIO)))
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
+

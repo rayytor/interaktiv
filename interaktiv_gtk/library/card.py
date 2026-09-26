@@ -6,8 +6,9 @@ controls appear when: a download in flight replaces the buttons entirely with
 its own progress and a cancel, so the install and preview paths can never both
 be running for one book and nothing has to arbitrate between them.
 
-Cards are recycled by `Gtk.GridView`, so the widget tree is built once in
-`__init__` and `bind()` only moves values into it.
+One card is built per book and lives as long as the catalogue draw that made
+it, so the widget tree is built once in `__init__` and `bind()` only moves
+values into it.
 """
 
 from typing import Optional
@@ -15,19 +16,68 @@ from typing import Optional
 from gi.repository import GObject, Gtk
 
 from .. import icons
+from ..touch import bind_touch_tooltip
 from .model import BookItem
 
-# `.book-cover` is `aspect-ratio: 1 / 1.414` in the web dashboard -- a portrait
-# A4 page -- and the image covers it. GTK's AspectFrame cannot be given a child
-# with its own minimum size without tripping an assertion, so the height is
-# fixed instead: 320 px is A4 at the 238 px a card's cover gets inside a 280 px
-# grid column. The picture still covers, so a cover is cropped at the sides
-# rather than through its title.
-COVER_HEIGHT = 320
+# Standard portrait A4 page aspect ratio (1 : sqrt(2) ≈ 1 : 1.414).
+COVER_ASPECT_RATIO = 1.414
 
-# What `Gtk.GridView` divides the available width by to pick a column count,
-# standing in for `.books-grid`'s `minmax(260px, 1fr)`.
-CARD_WIDTH = 260
+# What `Gtk.FlowBox` divides the available width by to pick a column count,
+# standing in for `.books-grid`'s `minmax(232px, 1fr)`.
+CARD_WIDTH = 232
+
+# At the minimum card width, an A4 page is 328 px tall.
+COVER_HEIGHT = int(round(CARD_WIDTH * COVER_ASPECT_RATIO))
+
+
+class AspectCover(Gtk.Widget):
+    """
+    Maintains the cover aspect ratio (A4 portrait) height-for-width.
+
+    GTK's AspectFrame cannot be given a child with its own minimum size without
+    tripping an assertion failure, so this widget directly implements
+    height-for-width size negotiation without relying on GtkAspectFrame.
+    """
+
+    __gtype_name__ = "InteraktivAspectCover"
+
+    def __init__(self, ratio: float = COVER_ASPECT_RATIO):
+        super().__init__()
+        self.ratio = ratio
+        self._child: Optional[Gtk.Widget] = None
+        self.set_overflow(Gtk.Overflow.HIDDEN)
+
+    def set_child(self, child: Optional[Gtk.Widget]) -> None:
+        if self._child is not None:
+            self._child.unparent()
+        self._child = child
+        if child is not None:
+            child.set_parent(self)
+
+    def get_child(self) -> Optional[Gtk.Widget]:
+        return self._child
+
+    def do_get_request_mode(self) -> Gtk.SizeRequestMode:
+        return Gtk.SizeRequestMode.HEIGHT_FOR_WIDTH
+
+    def do_measure(self, orientation: Gtk.Orientation, for_size: int):
+        if orientation == Gtk.Orientation.HORIZONTAL:
+            return 0, CARD_WIDTH, -1, -1
+        else:
+            if for_size != -1:
+                h = int(round(for_size * self.ratio))
+                return h, h, -1, -1
+            return COVER_HEIGHT, COVER_HEIGHT, -1, -1
+
+    def do_size_allocate(self, width: int, height: int, baseline: int) -> None:
+        if self._child is not None:
+            self._child.allocate(width, height, baseline, None)
+
+    def do_dispose(self) -> None:
+        if self._child is not None:
+            self._child.unparent()
+            self._child = None
+        Gtk.Widget.do_dispose(self)
 
 
 class BookCard(Gtk.Box):
@@ -45,7 +95,13 @@ class BookCard(Gtk.Box):
 
     def __init__(self, covers, library_mode: bool = False):
         super().__init__(orientation=Gtk.Orientation.VERTICAL, spacing=0)
+        # `.card` is libadwaita's own surface: it carries the elevation, the
+        # corner radius and the border that the light, dark and high-contrast
+        # styles each want, so none of the three is hand-drawn here. The card
+        # clips, which is what lets the cover run to its top corners.
+        self.add_css_class("card")
         self.add_css_class("book-card")
+        self.set_overflow(Gtk.Overflow.HIDDEN)
         self.set_size_request(CARD_WIDTH, -1)
         self.covers = covers
         self.library_mode = library_mode
@@ -59,6 +115,8 @@ class BookCard(Gtk.Box):
     # -- construction -----------------------------------------------------
 
     def _build_cover(self) -> None:
+        self.cover_frame = AspectCover(COVER_ASPECT_RATIO)
+
         self.cover = Gtk.Overlay()
         self.cover.add_css_class("book-cover")
         self.cover.set_overflow(Gtk.Overflow.HIDDEN)
@@ -73,16 +131,17 @@ class BookCard(Gtk.Box):
         image.set_pixel_size(40)
         placeholder.append(image)
         self.placeholder_title = Gtk.Label(wrap=True, justify=Gtk.Justification.CENTER, max_width_chars=18)
+        self.placeholder_title.add_css_class("caption")
         self.placeholder_title.add_css_class("book-cover-placeholder-title")
         placeholder.append(self.placeholder_title)
         self.cover.set_child(placeholder)
 
-        self.picture = Gtk.Picture(content_fit=Gtk.ContentFit.COVER)
+        self.picture = Gtk.Picture(content_fit=Gtk.ContentFit.CONTAIN)
         self.picture.set_visible(False)
         self.cover.add_overlay(self.picture)
 
-        self.cover.set_size_request(-1, COVER_HEIGHT)
-        self.append(self.cover)
+        self.cover_frame.set_child(self.cover)
+        self.append(self.cover_frame)
 
         click = Gtk.GestureClick()
         click.connect("released", self._on_cover_clicked)
@@ -105,6 +164,7 @@ class BookCard(Gtk.Box):
             xalign=0.0, wrap=True, lines=2, max_width_chars=24,
             ellipsize=3,  # Pango.EllipsizeMode.END
         )
+        self.title_label.add_css_class("heading")
         self.title_label.add_css_class("book-title")
         self.title_label.set_cursor_from_name("pointer")
         title_click = Gtk.GestureClick()
@@ -115,8 +175,11 @@ class BookCard(Gtk.Box):
         meta = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=8)
         meta.add_css_class("book-meta")
         self.meta_label = Gtk.Label(xalign=0.0, hexpand=True, ellipsize=3)
+        self.meta_label.add_css_class("caption")
+        self.meta_label.add_css_class("dim-label")
         meta.append(self.meta_label)
         self.confidence_label = Gtk.Label()
+        self.confidence_label.add_css_class("caption")
         self.confidence_label.add_css_class("book-confidence")
         self.confidence_label.set_visible(False)
         meta.append(self.confidence_label)
@@ -132,15 +195,25 @@ class BookCard(Gtk.Box):
         self.append(info)
 
     def _build_actions(self) -> Gtk.Widget:
-        box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=8)
+        """
+        One labelled button and one icon button per card.
+
+        The suggested and destructive styles are deliberately absent. The HIG
+        allows a view a single button in either style, and a catalogue of
+        fifty-six books would otherwise show fifty-six accent-filled "Aç"
+        buttons and fifty-six red bins -- a wall of colour in which nothing is
+        emphasised because everything is. The card's own emphasis is the cover;
+        the warning about removing a book belongs to the dialog that asks.
+        """
+        box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=6)
         box.add_css_class("book-actions")
 
-        self.btn_open = self._action_button(icons.OPEN, "Aç", "open-book")
-        self.btn_open.add_css_class("suggested-action")
+        self.btn_open = self._action_button("Aç", "open-book")
+        self.btn_open.set_tooltip_text("Kitabı aç")
         self.btn_open.set_hexpand(True)
         box.append(self.btn_open)
 
-        self.btn_preview = self._action_button(icons.PREVIEW, "Önizle", "preview-book")
+        self.btn_preview = self._action_button("Önizle", "preview-book")
         self.btn_preview.set_hexpand(True)
         self.btn_preview.set_tooltip_text("Kitabı indirip açar")
         box.append(self.btn_preview)
@@ -149,7 +222,6 @@ class BookCard(Gtk.Box):
         box.append(self.btn_install)
 
         self.btn_uninstall = self._icon_button(icons.UNINSTALL, "Kitabı Kaldır", "uninstall-book")
-        self.btn_uninstall.add_css_class("destructive-action")
         box.append(self.btn_uninstall)
         return box
 
@@ -161,7 +233,8 @@ class BookCard(Gtk.Box):
 
         row = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=8)
         self.progress_label = Gtk.Label(xalign=0.0, hexpand=True, ellipsize=3)
-        self.progress_label.add_css_class("download-progress-meta")
+        self.progress_label.add_css_class("caption")
+        self.progress_label.add_css_class("dim-label")
         row.append(self.progress_label)
         self.btn_cancel = self._icon_button(icons.CANCEL, "İptal", "cancel-download")
         self.btn_cancel.add_css_class("btn-cancel-download")
@@ -169,18 +242,20 @@ class BookCard(Gtk.Box):
         box.append(row)
         return box
 
-    def _action_button(self, icon_name: str, label: str, signal: str) -> Gtk.Button:
-        content = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=8, halign=Gtk.Align.CENTER)
-        content.append(Gtk.Image.new_from_icon_name(icon_name))
-        content.append(Gtk.Label(label=label))
-        button = Gtk.Button(child=content)
+    def _action_button(self, label: str, signal: str) -> Gtk.Button:
+        """A label, no icon: outside a header bar the HIG asks for one or the
+        other, and the word is what is read from the back of a classroom."""
+        button = Gtk.Button(label=label)
         button.add_css_class("btn-card-action")
         button.connect("clicked", self._emit_for_item, signal)
         return button
 
     def _icon_button(self, icon_name: str, tooltip: str, signal: str) -> Gtk.Button:
         button = Gtk.Button(icon_name=icon_name, tooltip_text=tooltip)
+        button.add_css_class("flat")
         button.add_css_class("btn-card-icon")
+        # A finger never sees a tooltip; a long press is how it asks.
+        bind_touch_tooltip(button)
         button.connect("clicked", self._emit_for_item, signal)
         return button
 

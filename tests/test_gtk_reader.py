@@ -163,6 +163,59 @@ class TestScale(unittest.TestCase):
         self.assertEqual(paging.spread_size([(570, 797)], rotation=90), (797, 570))
 
 
+class TestPinchZoom(unittest.TestCase):
+    """
+    The arithmetic behind the touch gestures.
+
+    `Gtk.GestureZoom` reports the pinch relative to where the fingers started,
+    which is the one thing easy to get wrong here: applying each report to the
+    live zoom instead of to the zoom the gesture began at compounds it, and a
+    pinch held still would then drift to the ceiling on its own.
+    """
+
+    def test_a_pinch_scales_the_zoom_it_started_from(self):
+        self.assertAlmostEqual(paging.pinch_zoom(1.0, 1.5), 1.5)
+        self.assertAlmostEqual(paging.pinch_zoom(0.8, 1.5), 1.2)
+
+    def test_a_held_pinch_does_not_compound(self):
+        # Three reports of the same 1.5x are one 1.5x, not 3.4x.
+        base = 1.0
+        for _ in range(3):
+            zoom = paging.pinch_zoom(base, 1.5)
+        self.assertAlmostEqual(zoom, 1.5)
+
+    def test_a_pinch_is_clamped_to_the_same_range_as_the_dropdown(self):
+        self.assertAlmostEqual(paging.pinch_zoom(2.0, 8.0), paging.ZOOM_MAX)
+        self.assertAlmostEqual(paging.pinch_zoom(0.5, 0.01), paging.ZOOM_MIN)
+
+    def test_a_pinch_with_no_distance_is_ignored(self):
+        self.assertAlmostEqual(paging.pinch_zoom(1.25, 0.0), 1.25)
+
+
+class TestWheelZoom(unittest.TestCase):
+    def test_scrolling_down_zooms_out_and_up_zooms_in(self):
+        self.assertLess(paging.wheel_zoom(1.0, 1.0), 1.0)
+        self.assertGreater(paging.wheel_zoom(1.0, -1.0), 1.0)
+
+    def test_a_touchpad_fraction_moves_less_than_a_wheel_notch(self):
+        notch = paging.wheel_zoom(1.0, -1.0) - 1.0
+        nudge = paging.wheel_zoom(1.0, -0.25) - 1.0
+        self.assertAlmostEqual(nudge, notch / 4)
+
+    def test_a_report_larger_than_a_notch_is_still_one_notch(self):
+        self.assertAlmostEqual(paging.wheel_zoom(1.0, -4.0),
+                               paging.wheel_zoom(1.0, -1.0))
+
+    def test_the_clamp_holds(self):
+        self.assertAlmostEqual(paging.wheel_zoom(paging.ZOOM_MAX, -1.0),
+                               paging.ZOOM_MAX)
+        self.assertAlmostEqual(paging.wheel_zoom(paging.ZOOM_MIN, 1.0),
+                               paging.ZOOM_MIN)
+
+    def test_a_scroll_with_no_delta_leaves_the_zoom_alone(self):
+        self.assertAlmostEqual(paging.wheel_zoom(1.4, 0.0), 1.4)
+
+
 class TestTextureCache(unittest.TestCase):
     def test_lru_evicts_the_least_recently_used(self):
         cache = TextureCache(budget=250)

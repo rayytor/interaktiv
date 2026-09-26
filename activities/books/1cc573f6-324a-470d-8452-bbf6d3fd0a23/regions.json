@@ -2,7 +2,7 @@
   "version": 2,
   "bookId": "1cc573f6-324a-470d-8452-bbf6d3fd0a23",
   "fingerprint": "443616913-ac6148e23d1bb1013d3a4c00f4e28211",
-  "builtAt": "2026-09-20T17:46:34.739Z",
+  "builtAt": "2026-09-22T04:40:00.480Z",
   "pageCount": 289,
   "calibration": {
     "enabled": true,
@@ -369,14 +369,23 @@
     "32": [
       "e55741c3-67a2-f111-b317-005056a7d529"
     ],
+    "33": [
+      "e3bcf9f9-67a2-f111-b317-005056a7d529"
+    ],
     "45": [
       "2eb37a1f-7da2-f111-b317-005056a7d529"
     ],
     "52": [
       "0c7dd784-7da2-f111-b317-005056a7d529"
     ],
+    "53": [
+      "d66513d7-7da2-f111-b317-005056a7d529"
+    ],
     "60": [
       "1deef917-7ea2-f111-b317-005056a7d529"
+    ],
+    "61": [
+      "e298b77a-7ea2-f111-b317-005056a7d529"
     ],
     "64": [
       "7e9db80a-faa6-f111-b317-005056a7d529"
@@ -384,8 +393,14 @@
     "65": [
       "d5744994-75ac-f111-b317-005056a7d529"
     ],
+    "67": [
+      "0163e870-faa6-f111-b317-005056a7d529"
+    ],
     "72": [
       "4e2f51cc-faa6-f111-b317-005056a7d529"
+    ],
+    "76": [
+      "adadf118-fba6-f111-b317-005056a7d529"
     ],
     "79": [
       "b48e564c-fba6-f111-b317-005056a7d529"
@@ -411,9 +426,96 @@
     ],
     "93": [
       "cc464bb4-d7a9-f111-b317-005056a7d529"
+    ],
+    "102": [
+      "76782bc9-8fa9-f111-b317-005056a7d529"
     ]
   },
   "pages": {
+    "3": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          44.634,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p3-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            43.0291,
+            62.3603,
+            515.6269,
+            348.6953
+          ],
+          "parts": [
+            [
+              43.0291,
+              62.3603,
+              515.6269,
+              348.6953
+            ]
+          ],
+          "headline": "Ölçme ve Değerlendirme Uzmanı Cuma GÜÇ"
+        }
+      ]
+    },
+    "11": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          56.3623,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p11-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            42.725,
+            443.356,
+            475.716,
+            535.244
+          ],
+          "parts": [
+            [
+              42.725,
+              443.356,
+              475.716,
+              535.244
+            ]
+          ],
+          "headline": "Hazır mısınız? Aşağıda “Etkileşim” teması ile ilgili  temel kavramlar verilmiştir. Verilen bilgiler doğrultusunda hatırlama kabul edilen kon"
+        },
+        {
+          "id": "p11-q2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            298.0736,
+            310.4929,
+            354.6824,
+            334.1259
+          ],
+          "parts": [
+            [
+              298.0736,
+              310.4929,
+              354.6824,
+              334.1259
+            ]
+          ],
+          "headline": "Konuya Başlarken"
+        }
+      ]
+    },
     "12": {
       "pageWidth": 569.764,
       "pageHeight": 796.535,
@@ -449,15 +551,15 @@
           "label": "2",
           "column": 0,
           "rect": [
-            81.7661,
-            638.5899,
+            80.2753,
+            539.0673,
             263.8725,
             651.6682
           ],
           "parts": [
             [
-              81.7661,
-              638.5899,
+              80.2753,
+              539.0673,
               263.8725,
               651.6682
             ]
@@ -481,15 +583,15 @@
           "label": "1",
           "column": 0,
           "rect": [
-            263.646,
-            693.5454,
+            73.0041,
+            696.3532,
             457.2126,
             723.8104
           ],
           "parts": [
             [
-              263.646,
-              693.5454,
+              73.0041,
+              696.3532,
               457.2126,
               723.8104
             ]
@@ -501,16 +603,16 @@
           "column": 0,
           "rect": [
             65.2896,
-            611.438,
-            286.8545,
-            646.12
+            590.3582,
+            286.854,
+            693.3532
           ],
           "parts": [
             [
               65.2896,
-              611.438,
-              286.8545,
-              646.12
+              590.3582,
+              286.854,
+              693.3532
             ]
           ],
           "headline": "Aşağıda verilen kavramlara ilişkin ders öncesi ve sonrasındaki düşüncelerinizi yazınız."
@@ -523,14 +625,14 @@
             73.0041,
             574.1249,
             255.1413,
-            593.0
+            587.3582
           ],
           "parts": [
             [
               73.0041,
               574.1249,
               255.1413,
-              593.0
+              587.3582
             ]
           ],
           "headline": "Bir öğrenci mol kavramını anlamak için bitki tohumlarını kullanarak bir çalışma yapmıştır. İlk olarak birer"
@@ -580,17 +682,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            116.787,
-            64.941,
-            504.716,
-            506.8184
+            67.6881,
+            54.4207,
+            504.181,
+            382.1007
           ],
           "parts": [
             [
-              116.787,
-              64.941,
-              504.716,
-              506.8184
+              67.6881,
+              54.4207,
+              504.181,
+              382.1007
             ]
           ],
           "headline": "Bir Türk lirasının çapı 26,11 mm’dir. 1 mol 1 TL madenî parayı uç uca eklerseniz Güneş’e kaç kere gidip gelebilirsiniz?"
@@ -616,14 +718,14 @@
           "label": "1",
           "column": 0,
           "rect": [
-            277.82,
+            124.0466,
             684.4573,
             446.8878,
             703.0894
           ],
           "parts": [
             [
-              277.82,
+              124.0466,
               684.4573,
               446.8878,
               703.0894
@@ -636,14 +738,14 @@
           "label": "2",
           "column": 0,
           "rect": [
-            277.82,
+            124.0466,
             673.6413,
             472.4117,
             681.4573
           ],
           "parts": [
             [
-              277.82,
+              124.0466,
               673.6413,
               472.4117,
               681.4573
@@ -657,14 +759,14 @@
           "column": 0,
           "rect": [
             124.0466,
-            652.8263,
+            661.8797,
             397.8738,
             670.6413
           ],
           "parts": [
             [
               124.0466,
-              652.8263,
+              661.8797,
               397.8738,
               670.6413
             ]
@@ -679,14 +781,14 @@
             76.1103,
             440.6472,
             270.4018,
-            646.12
+            658.8797
           ],
           "parts": [
             [
               76.1103,
               440.6472,
               270.4018,
-              646.12
+              658.8797
             ]
           ],
           "headline": "Gerekli güvenlik önlemlerini alarak aşağıdaki deney raporuna uygun şekilde deneyinizi gerçekleştiriniz."
@@ -712,17 +814,17 @@
           "label": "1",
           "column": 1,
           "rect": [
-            417.3,
-            97.0645,
+            311.5481,
+            92.8739,
             484.6137,
-            158.1233
+            250.6907
           ],
           "parts": [
             [
-              417.3,
-              97.0645,
+              311.5481,
+              92.8739,
               484.6137,
-              158.1233
+              250.6907
             ]
           ],
           "headline": "2 3 Madde Madde"
@@ -748,17 +850,17 @@
           "label": "2",
           "column": 1,
           "rect": [
-            308.474,
+            319.635,
             64.6603,
-            518.354,
-            263.622
+            506.8918,
+            238.3542
           ],
           "parts": [
             [
-              308.474,
+              319.635,
               64.6603,
-              518.354,
-              263.622
+              506.8918,
+              238.3542
             ]
           ],
           "headline": "Metinde okuduğu kimyasal değişimleri gözlemlemek isteyen bir öğrenci aşağıdaki düzenekleri kuruyor."
@@ -785,16 +887,16 @@
           "column": 0,
           "rect": [
             57.4,
-            113.9821,
-            214.6781,
-            658.7
+            106.8,
+            296.9,
+            620.9
           ],
           "parts": [
             [
               57.4,
-              113.9821,
-              214.6781,
-              658.7
+              106.8,
+              296.9,
+              620.9
             ]
           ],
           "headline": "gram"
@@ -804,15 +906,15 @@
           "label": "n",
           "column": 1,
           "rect": [
-            337.3,
-            235.4,
+            296.9,
+            263.7,
             420.6705,
             450.3
           ],
           "parts": [
             [
-              337.3,
-              235.4,
+              296.9,
+              263.7,
               420.6705,
               450.3
             ]
@@ -824,20 +926,116 @@
           "label": "t",
           "column": 1,
           "rect": [
-            337.3,
+            296.9,
             113.9697,
             475.6876,
-            232.4
+            204.1
           ],
           "parts": [
             [
-              337.3,
+              296.9,
               113.9697,
               475.6876,
-              232.4
+              204.1
             ]
           ],
           "headline": "celcius sıcaklığı"
+        }
+      ]
+    },
+    "20": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          64.8661,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p20-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            62.8661,
+            627.4712,
+            247.1845,
+            701.9532
+          ],
+          "parts": [
+            [
+              62.8661,
+              627.4712,
+              247.1845,
+              701.9532
+            ]
+          ],
+          "headline": "Temanın dijital Tema sunusuna nüshasına"
+        }
+      ]
+    },
+    "21": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.0237,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p21-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            171.6493,
+            187.7472,
+            403.6115,
+            741.339
+          ],
+          "parts": [
+            [
+              171.6493,
+              187.7472,
+              403.6115,
+              741.339
+            ]
+          ],
+          "headline": "Hazır mısınız?"
+        }
+      ]
+    },
+    "22": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.1969,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p22-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            56.697,
+            346.4128,
+            476.8094,
+            747.4166
+          ],
+          "parts": [
+            [
+              56.697,
+              346.4128,
+              476.8094,
+              747.4166
+            ]
+          ],
+          "headline": "Konuya Başlarken"
         }
       ]
     },
@@ -876,16 +1074,16 @@
           "label": "2",
           "column": 0,
           "rect": [
-            53.063,
-            57.4,
-            512.567,
+            52.4089,
+            404.8525,
+            494.7312,
             545.9405
           ],
           "parts": [
             [
-              53.063,
-              57.4,
-              512.567,
+              52.4089,
+              404.8525,
+              494.7312,
               545.9405
             ]
           ],
@@ -909,14 +1107,14 @@
           "column": 0,
           "rect": [
             71.3701,
-            63.4,
+            374.263,
             526.9069,
             742.6552
           ],
           "parts": [
             [
               71.3701,
-              63.4,
+              374.263,
               526.9069,
               742.6552
             ]
@@ -930,24 +1128,11 @@
               "partIndex": 0,
               "rect": [
                 103.7136,
-                168.5,
-                522.2406,
+                374.263,
+                511.3326,
                 406.4544
               ],
-              "text": "1.  Deneyler esnasında elde ettiğiniz verilere göre aşağıdaki tabloyu ilgili yerlere“ ” işareti koyarak ✓ tamamlayınız. Deney Gözlem 1. Deney 2. Deney 3. Deney Sonucu ....................... ........."
-            },
-            {
-              "id": "p24-3-2",
-              "label": "2",
-              "number": 2,
-              "partIndex": 0,
-              "rect": [
-                103.7136,
-                67.4,
-                519.1558,
-                167.9544
-              ],
-              "text": "2.  Yaptığınız deneylerde kimyasal değişimin gözlemlenebilir özelliklerini gördünüz. Aşağıda verilen soruları grup arkadaşlarınızla tartışınız. Tartışma sonucunda ulaştığınız ortak fikirleri yazınız. "
+              "text": "1.  Deneyler esnasında elde ettiğiniz verilere göre aşağıdaki tabloyu ilgili yerlere“ ” işareti koyarak ✓ tamamlayınız."
             }
           ]
         }
@@ -1029,16 +1214,16 @@
           "column": 0,
           "rect": [
             51.1934,
-            619.3577,
+            677.0295,
             553.764,
-            714.3577
+            731.1252
           ],
           "parts": [
             [
               51.1934,
-              619.3577,
+              677.0295,
               553.764,
-              714.3577
+              731.1252
             ]
           ],
           "headline": "çıkarak gözlemlediğiniz değişimleri alt mikro seviyede, taneciklerin yeniden düzenlenmesi",
@@ -1064,14 +1249,14 @@
             421.057,
             538.336,
             511.959,
-            644.2479
+            630.425
           ],
           "parts": [
             [
               421.057,
               538.336,
               511.959,
-              644.2479
+              630.425
             ]
           ],
           "headline": "Kimyasal",
@@ -1083,16 +1268,16 @@
           "column": 1,
           "rect": [
             284.882,
-            266.0148,
+            307.3174,
             529.764,
-            361.0148
+            337.7444
           ],
           "parts": [
             [
               284.882,
-              266.0148,
+              307.3174,
               529.764,
-              361.0148
+              337.7444
             ]
           ],
           "headline": "Ürünler (tepkime sonucu oluşanlar)",
@@ -1116,16 +1301,16 @@
           "column": 0,
           "rect": [
             63.3662,
-            638.2126,
+            551.535,
             509.5614,
-            716.4581
+            745.3795
           ],
           "parts": [
             [
               63.3662,
-              638.2126,
+              551.535,
               509.5614,
-              716.4581
+              745.3795
             ]
           ],
           "headline": "Özdeş iki kaba eşit miktarda su ilave ediliyor. Daha sonra kaplardan birine sirke asidi, diğerine ise yemek sodası ekleniyor ve sıvılar özdeş ısıtıcılarda kayna"
@@ -1136,14 +1321,14 @@
           "column": 0,
           "rect": [
             91.7144,
-            468.8,
+            463.3,
             503.8129,
             504.9541
           ],
           "parts": [
             [
               91.7144,
-              468.8,
+              463.3,
               503.8129,
               504.9541
             ]
@@ -1156,16 +1341,16 @@
           "column": 0,
           "rect": [
             63.3734,
-            280.7,
+            275.2,
             510.3812,
-            465.8
+            441.1451
           ],
           "parts": [
             [
               63.3734,
-              280.7,
+              275.2,
               510.3812,
-              465.8
+              441.1451
             ]
           ],
           "headline": "Kaplarda meydana gelen değişimi taneciklerin düzenlenmesi temelinde açıklayınız .",
@@ -1176,20 +1361,52 @@
           "label": "3",
           "column": 0,
           "rect": [
-            63.3734,
-            58.4,
+            51.5237,
+            66.3936,
             509.4848,
-            277.7
+            211.6258
           ],
           "parts": [
             [
-              63.3734,
-              58.4,
+              51.5237,
+              66.3936,
               509.4848,
-              277.7
+              211.6258
             ]
           ],
           "headline": "Sıvı hidrazin (N H ), roketlerde yakıt olarak kullanılan bir bileşiktir. Bir katalizör yardımıyla hızlı bir şekilde tepkimeye giren hidrazin, parçalanarak azot "
+        }
+      ]
+    },
+    "28": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.1969,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p28-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            57.697,
+            647.1639,
+            326.1161,
+            739.6949
+          ],
+          "parts": [
+            [
+              57.697,
+              647.1639,
+              326.1161,
+              739.6949
+            ]
+          ],
+          "headline": "Konuya Başlarken"
         }
       ]
     },
@@ -1209,14 +1426,14 @@
           "column": 0,
           "rect": [
             57.1937,
-            264.9051,
+            283.9,
             511.5711,
             630.4421
           ],
           "parts": [
             [
               57.1937,
-              264.9051,
+              283.9,
               511.5711,
               630.4421
             ]
@@ -1229,16 +1446,16 @@
           "column": 0,
           "rect": [
             57.2001,
-            208.7243,
+            81.535,
             509.8802,
-            261.9051
+            266.4102
           ],
           "parts": [
             [
               57.2001,
-              208.7243,
+              81.535,
               509.8802,
-              261.9051
+              266.4102
             ]
           ],
           "headline": "Çizmiş olduğunuz modeli arkadaşlarınıza anlatınız ve arkadaşlarınızın modellerini inceleyiniz. Modeller arasındaki benzerlik ve farklılıkları aşağıdaki T tablos"
@@ -1261,15 +1478,15 @@
           "column": 0,
           "rect": [
             71.3701,
-            67.3,
-            523.1553,
+            434.5775,
+            522.3193,
             742.6552
           ],
           "parts": [
             [
               71.3701,
-              67.3,
-              523.1553,
+              434.5775,
+              522.3193,
               742.6552
             ]
           ],
@@ -1293,14 +1510,14 @@
           "column": 0,
           "rect": [
             57.1969,
-            445.7464,
+            406.535,
             511.527,
             742.6552
           ],
           "parts": [
             [
               57.1969,
-              445.7464,
+              406.535,
               511.527,
               742.6552
             ]
@@ -1364,17 +1581,17 @@
           "label": null,
           "column": 1,
           "rect": [
-            284.882,
-            395.5314,
+            69.7462,
+            361.5405,
             529.764,
-            490.5314
+            492.1759
           ],
           "parts": [
             [
-              284.882,
-              395.5314,
+              69.7462,
+              361.5405,
               529.764,
-              490.5314
+              492.1759
             ]
           ],
           "headline": "2 5",
@@ -1398,19 +1615,20 @@
           "column": 0,
           "rect": [
             62.9951,
-            299.2,
+            478.2,
             503.4417,
-            715.4154
+            745.6676
           ],
           "parts": [
             [
               62.9951,
-              299.2,
+              478.2,
               503.4417,
-              715.4154
+              745.6676
             ]
           ],
-          "headline": "Aşağıda bazı tepkimeler alt mikro seviyede modellenmiştir. Bu modellerin Fe (k) + S 2H (g) + O"
+          "headline": "Aşağıda bazı tepkimeler alt mikro seviyede modellenmiştir. Bu modellerin Fe (k) + S 2H (g) + O",
+          "ogeId": "e3bcf9f9-67a2-f111-b317-005056a7d529"
         },
         {
           "id": "p33-2",
@@ -1418,19 +1636,106 @@
           "column": 0,
           "rect": [
             62.9912,
-            183.3192,
+            74.3575,
             509.1499,
             294.4155
           ],
           "parts": [
             [
               62.9912,
-              183.3192,
+              74.3575,
               509.1499,
               294.4155
             ]
           ],
           "headline": "Alüminyum (Al) metali havadaki oksijen gazı (O ) ile tepkimeye girdiğinde alüminyum metalinin yüzeyi sert alüminyum oksit (Al korunmuş olur. Bu sayede gazlı içe"
+        }
+      ]
+    },
+    "34": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          62.2815,
+          176.5315
+        ],
+        [
+          180.5315,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p34-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            141.6815,
+            338.3397,
+            418.9013,
+            370.7397
+          ],
+          "parts": [
+            [
+              141.6815,
+              338.3397,
+              418.9013,
+              370.7397
+            ]
+          ]
+        },
+        {
+          "id": "p34-q2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            146.8,
+            677.4997,
+            526.49,
+            756.2
+          ],
+          "parts": [
+            [
+              146.8,
+              677.4997,
+              526.49,
+              756.2
+            ]
+          ],
+          "headline": "PERFORMANS GÖREVİ"
+        }
+      ]
+    },
+    "35": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          50.193,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p35-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            42.524,
+            701.2,
+            203.772,
+            738.268
+          ],
+          "parts": [
+            [
+              42.524,
+              701.2,
+              203.772,
+              738.268
+            ]
+          ],
+          "headline": "Konuya Başlarken"
         }
       ]
     },
@@ -1482,14 +1787,14 @@
           "column": 0,
           "rect": [
             57.1969,
-            459.4451,
+            352.2989,
             513.987,
             742.6552
           ],
           "parts": [
             [
               57.1969,
-              459.4451,
+              352.2989,
               513.987,
               742.6552
             ]
@@ -1549,14 +1854,14 @@
           "column": 0,
           "rect": [
             71.3701,
-            361.9,
+            326.6733,
             523.6553,
             635.8032
           ],
           "parts": [
             [
               71.3701,
-              361.9,
+              326.6733,
               523.6553,
               635.8032
             ]
@@ -1601,14 +1906,14 @@
           "column": 0,
           "rect": [
             57.1969,
-            156.1462,
+            46.7208,
             513.9929,
             480.8229
           ],
           "parts": [
             [
               57.1969,
-              156.1462,
+              46.7208,
               513.9929,
               480.8229
             ]
@@ -1693,19 +1998,38 @@
           "column": 0,
           "rect": [
             71.3665,
-            296.6794,
-            511.2466,
+            310.9552,
+            94.8665,
             335.7926
           ],
           "parts": [
             [
               71.3665,
-              296.6794,
-              511.2466,
+              310.9552,
+              94.8665,
               335.7926
             ]
+          ]
+        },
+        {
+          "id": "p40-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            99.7165,
+            483.0575,
+            523.1526,
+            742.6552
           ],
-          "headline": "Asit-baz tepkimesinde oluşan tuz, çözelti içinde katı olarak gözlemlenmekte midir? Nedenini tartışınız."
+          "parts": [
+            [
+              99.7165,
+              483.0575,
+              523.1526,
+              742.6552
+            ]
+          ],
+          "headline": "Asit-baz tepkimesinin oluşum sürecini gösteren videoya ulaşmak için karekodu kullanınız. Deney sonucunda yapmış olduğunuz açıklamalarla etkileşimli içerikte yer"
         }
       ]
     },
@@ -1788,16 +2112,16 @@
           "column": 0,
           "rect": [
             62.9933,
-            163.764,
+            148.1,
             503.442,
-            177.7601
+            169.9281
           ],
           "parts": [
             [
               62.9933,
-              163.76405,
+              148.1,
               503.442,
-              177.76012500000002
+              169.9281
             ]
           ],
           "headline": "Sodyum sülfür (Na S) ve bakır(II) nitrat [Cu(NO"
@@ -1810,14 +2134,14 @@
             62.9934,
             89.4,
             495.442,
-            114.5
+            131.1
           ],
           "parts": [
             [
               62.9934,
               89.4,
               495.442,
-              114.5
+              131.1
             ]
           ],
           "headline": "Suda az çözünen bakır(II) hidroksit [Cu(OH) (CaCO"
@@ -1828,16 +2152,16 @@
           "column": 1,
           "rect": [
             80.253,
-            117.5,
+            132.6,
             509.1058,
-            162.764
+            148.1
           ],
           "parts": [
             [
               80.253,
-              117.5,
+              132.6,
               509.1058,
-              162.76405
+              148.1
             ]
           ],
           "headline": "2"
@@ -1848,16 +2172,16 @@
           "column": 0,
           "rect": [
             43.153,
-            178.7601,
+            170.9281,
             512.196,
-            391.674
+            411.1793
           ],
           "parts": [
             [
               43.153,
-              178.76012500000002,
+              170.9281,
               512.196,
-              391.674
+              411.1793
             ]
           ],
           "headline": "Suda çok çözünen bileşiklerdeki iyonlar",
@@ -1881,16 +2205,16 @@
           "column": 0,
           "rect": [
             76.8272,
-            335.0,
+            335.5639,
             523.5606,
-            417.6388
+            412.8894
           ],
           "parts": [
             [
               76.8272,
-              335.0,
+              335.5639,
               523.5606,
-              417.6388
+              412.8894
             ]
           ],
           "headline": "Baryum sülfatın (BaSO ) su ile hazırlanan süspansiyonu, sindirim kanalını radyolojik olarak görüntülemek amacıyla kullanılır. Bu bileşik vücuda verilen X ışınla"
@@ -1901,19 +2225,38 @@
           "column": 0,
           "rect": [
             76.829,
-            52.4,
-            526.4,
-            332.0
+            308.2007,
+            100.335,
+            332.5639
           ],
           "parts": [
             [
               76.829,
-              52.4,
-              526.4,
-              332.0
+              308.2007,
+              100.335,
+              332.5639
+            ]
+          ]
+        },
+        {
+          "id": "p46-a",
+          "label": "a",
+          "column": 0,
+          "rect": [
+            105.1772,
+            415.8894,
+            524.3595,
+            576.8128
+          ],
+          "parts": [
+            [
+              105.1772,
+              415.8894,
+              524.3595,
+              576.8128
             ]
           ],
-          "headline": "Aşağıdaki tabloda günlük hayatta karşılaşılan bazı tepkime türlerine örnekler verilmiştir. Bu tepkimelerin türünü ve genel gösterimini tablodaki ilgili yerlere "
+          "headline": "Yakıt pilinde gerçekleşen tepkimenin türünü yazınız."
         }
       ]
     },
@@ -2013,6 +2356,38 @@
         }
       ]
     },
+    "48": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.1969,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p48-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            57.697,
+            503.535,
+            481.8058,
+            756.535
+          ],
+          "parts": [
+            [
+              57.697,
+              503.535,
+              481.8058,
+              756.535
+            ]
+          ],
+          "headline": "Konuya Başlarken"
+        }
+      ]
+    },
     "49": {
       "pageWidth": 569.764,
       "pageHeight": 796.535,
@@ -2029,14 +2404,14 @@
           "column": 0,
           "rect": [
             57.1937,
-            577.179,
+            137.8801,
             509.4137,
             618.009
           ],
           "parts": [
             [
               57.1937,
-              577.179,
+              137.8801,
               509.4137,
               618.009
             ]
@@ -2051,14 +2426,14 @@
             57.1936,
             97.179,
             510.2858,
-            138.009
+            134.8801
           ],
           "parts": [
             [
               57.1936,
               97.179,
               510.2858,
-              138.009
+              134.8801
             ]
           ],
           "headline": "Tuz, şeker, saman, kum gibi tane ile sayılamayacak çokluklar hangi ölçü birimleri ile ifade edilir? Tartışı- nız."
@@ -2193,14 +2568,14 @@
           "column": 0,
           "rect": [
             57.1969,
-            675.4092,
+            511.8854,
             514.5071,
             742.6552
           ],
           "parts": [
             [
               57.1969,
-              675.4092,
+              511.8854,
               514.5071,
               742.6552
             ]
@@ -2252,15 +2627,15 @@
           "label": "3",
           "column": 0,
           "rect": [
-            43.0237,
-            177.1,
+            57.1869,
+            346.4669,
             513.2209,
             405.7976
           ],
           "parts": [
             [
-              43.0237,
-              177.1,
+              57.1869,
+              346.4669,
               513.2209,
               405.7976
             ]
@@ -2288,21 +2663,41 @@
       ],
       "activities": [
         {
+          "id": "p52-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            63.1139,
+            439.6201,
+            402.52,
+            716.502
+          ],
+          "parts": [
+            [
+              63.1139,
+              439.6201,
+              402.52,
+              716.502
+            ]
+          ],
+          "headline": "Bir mol kâğıt para yaklaşık 6 milyar insan tarafından saniyede bir banknot olmak üzere sayılsaydı bu işlem yaklaşık 3,2"
+        },
+        {
           "id": "p52-oge-0c7dd784-7da2-f111-b317-005056a7d529",
           "label": null,
           "column": 1,
           "rect": [
             150.4073,
-            317.5506,
+            305.9819,
             240.0179,
-            412.5506
+            417.783
           ],
           "parts": [
             [
               150.4073,
-              317.5506,
+              305.9819,
               240.0179,
-              412.5506
+              417.783
             ]
           ],
           "headline": "Mol kavramı ve atom ile ilişkilendirilebilecek bazı tanımlar aşağıda",
@@ -2346,14 +2741,14 @@
           "column": 0,
           "rect": [
             43.0237,
-            430.311,
+            377.2344,
             509.4828,
             645.121
           ],
           "parts": [
             [
               43.0237,
-              430.311,
+              377.2344,
               509.4828,
               645.121
             ]
@@ -2366,19 +2761,20 @@
           "column": 0,
           "rect": [
             62.8662,
-            159.2677,
+            153.0,
             506.1862,
-            391.2344
+            323.8615
           ],
           "parts": [
             [
               62.8662,
-              159.2677,
+              153.0,
               506.1862,
-              391.2344
+              323.8615
             ]
           ],
           "headline": "Bir öğrenci mol kavramını anlamak için bitki tohumlarını kullanarak bir çalışma yapmıştır. İlk olarak birer tane kabak ve fasulye tohumunu hassas bir şekilde ta",
+          "ogeId": "d66513d7-7da2-f111-b317-005056a7d529",
           "items": [
             {
               "id": "p53-1-a",
@@ -2389,7 +2785,7 @@
                 95.2162,
                 246.7,
                 499.3129,
-                326.9075
+                323.8615
               ],
               "text": "a)  Kütle ile tanecik sayısı arasındaki farkı anlamak için mol kavramını nasıl kullanırsınız?"
             },
@@ -2400,7 +2796,7 @@
               "partIndex": 0,
               "rect": [
                 95.2162,
-                159.2677,
+                157.0,
                 499.3129,
                 248.2205
               ],
@@ -2416,17 +2812,49 @@
             43.0237,
             64.7,
             512.0667,
-            156.2677
+            117.8
           ],
           "parts": [
             [
               43.0237,
               64.7,
               512.0667,
-              156.2677
+              117.8
             ]
           ],
           "headline": "Bir Türk lirasının çapı 26,11 mm’dir. 1 mol 1 TL madenî parayı uç uca eklerseniz Güneş’e kaç kere gidip gelebilirsiniz?"
+        }
+      ]
+    },
+    "54": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          65.3661,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p54-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            57.697,
+            551.1342,
+            395.7814,
+            756.535
+          ],
+          "parts": [
+            [
+              57.697,
+              551.1342,
+              395.7814,
+              756.535
+            ]
+          ],
+          "headline": "Konuya Başlarken"
         }
       ]
     },
@@ -2446,15 +2874,15 @@
           "column": 0,
           "rect": [
             57.1937,
-            159.7,
-            509.4821,
+            217.3732,
+            513.0637,
             389.2621
           ],
           "parts": [
             [
               57.1937,
-              159.7,
-              509.4821,
+              217.3732,
+              513.0637,
               389.2621
             ]
           ],
@@ -2482,15 +2910,15 @@
           "column": 0,
           "rect": [
             71.3701,
-            531.6226,
-            523.6553,
+            582.7949,
+            519.0001,
             742.6552
           ],
           "parts": [
             [
               71.3701,
-              531.6226,
-              523.6553,
+              582.7949,
+              519.0001,
               742.6552
             ]
           ],
@@ -2504,14 +2932,14 @@
             71.3801,
             469.1176,
             523.6553,
-            528.6226
+            533.1452
           ],
           "parts": [
             [
               71.3801,
               469.1176,
               523.6553,
-              528.6226
+              533.1452
             ]
           ],
           "headline": "54 g gümüşün mol sayısı ile atom sayısı arasında nasıl bir dönüşüm vardır? Metalin mol sayısı ile içerdi- ği atom sayısı arasındaki ilişkiyi belirten bir hipote"
@@ -2614,19 +3042,71 @@
           "column": 0,
           "rect": [
             43.0237,
-            57.5,
-            511.3517,
+            409.4945,
+            509.4487,
             511.7876
           ],
           "parts": [
             [
               43.0237,
-              57.5,
-              511.3517,
+              409.4945,
+              509.4487,
               511.7876
             ]
           ],
           "headline": "Porselen üretiminde kullanılan bir mineral olan ortoklazın (KAlSi O ) 278 g’lık bir örneğindeki silisyum mol sayısının nasıl hesaplanacağını gösteren bir akış ş"
+        }
+      ]
+    },
+    "59": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          49.2721,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p59-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            72.4961,
+            227.4392,
+            515.3654,
+            355.972
+          ],
+          "parts": [
+            [
+              72.4961,
+              227.4392,
+              515.3654,
+              355.972
+            ]
+          ],
+          "headline": "Yukarıdaki bilgiden yola çıkarak Mol Günü etkinlikleri kapsamında mol kavramı ile ilgili öğrenme sürecindeki düşüncelerinizi aşağıdaki alana"
+        },
+        {
+          "id": "p59-q2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            58.014,
+            137.581,
+            148.916,
+            224.4392
+          ],
+          "parts": [
+            [
+              58.014,
+              137.581,
+              148.916,
+              224.4392
+            ]
+          ],
+          "headline": "Mol kavramı ile ilgili etkileşimli soru"
         }
       ]
     },
@@ -2650,14 +3130,14 @@
           "column": 0,
           "rect": [
             76.7801,
-            445.4062,
+            394.8,
             522.94,
             489.5124
           ],
           "parts": [
             [
               76.7801,
-              445.4062,
+              394.8,
               522.94,
               489.5124
             ]
@@ -2670,16 +3150,16 @@
           "column": 0,
           "rect": [
             76.776,
-            271.45,
+            147.1,
             522.8322,
-            397.3
+            356.2735
           ],
           "parts": [
             [
               76.776,
-              271.45,
+              147.1,
               522.8322,
-              397.3
+              356.2735
             ]
           ],
           "headline": "Belli miktarlarda alınan hematit, manyetit ve siderit minerallerine ayrı ayrı indirgeme işlemi uygulanıyor.",
@@ -2704,7 +3184,7 @@
               "partIndex": 0,
               "rect": [
                 109.126,
-                144.6,
+                147.1,
                 518.8322,
                 203.3224
               ],
@@ -2720,14 +3200,14 @@
             76.7815,
             67.4,
             522.4415,
-            104.0
+            145.6
           ],
           "parts": [
             [
               76.7815,
               67.4,
               522.4415,
-              104.0
+              145.6
             ]
           ],
           "headline": "Avogadro sayısı, bir elementin bir molündeki atom sayısı ya da bir bileşiğin bir molündeki molekül sayısı"
@@ -2737,17 +3217,17 @@
           "label": null,
           "column": 1,
           "rect": [
-            56.935,
-            105.0,
-            525.978,
-            270.45
+            181.7733,
+            557.0781,
+            553.764,
+            643.6409
           ],
           "parts": [
             [
-              56.935,
-              105.0,
-              525.978,
-              270.45
+              181.7733,
+              557.0781,
+              553.764,
+              643.6409
             ]
           ],
           "headline": "3",
@@ -2770,20 +3250,73 @@
           "label": "4",
           "column": 0,
           "rect": [
-            62.6575,
-            108.7,
-            506.8978,
+            50.815,
+            116.6614,
+            504.567,
+            611.803
+          ],
+          "parts": [
+            [
+              50.815,
+              116.6614,
+              504.567,
+              611.803
+            ]
+          ],
+          "headline": "Mol-kütle, mol-tanecik ve kütle-tanecik-mol ilişkilerine ait geçiş aşağıdaki gibidir:"
+        },
+        {
+          "id": "p61-oge-e298b77a-7ea2-f111-b317-005056a7d529",
+          "label": null,
+          "column": 0,
+          "rect": [
+            56.6575,
+            611.803,
+            553.764,
             737.0173
           ],
           "parts": [
             [
-              62.6575,
-              108.7,
-              506.8978,
+              56.6575,
+              611.803,
+              553.764,
               737.0173
             ]
           ],
-          "headline": "Mol-kütle, mol-tanecik ve kütle-tanecik-mol ilişkilerine ait geçiş aşağıdaki gibidir:"
+          "headline": "4. Mol-kütle, mol-tanecik ve kütle-tanecik-mol ilişkilerine ait geçiş aşağıdaki gibidir:",
+          "anchored": true
+        }
+      ]
+    },
+    "62": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.1969,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p62-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            57.197,
+            313.1074,
+            492.3758,
+            756.535
+          ],
+          "parts": [
+            [
+              57.197,
+              313.1074,
+              492.3758,
+              756.535
+            ]
+          ],
+          "headline": "Konuya Başlarken"
         }
       ]
     },
@@ -2959,16 +3492,16 @@
           "column": 0,
           "rect": [
             50.9882,
-            291.265,
+            276.3514,
             134.3744,
-            386.265
+            360.3814
           ],
           "parts": [
             [
               50.9882,
-              291.265,
+              276.3514,
               134.3744,
-              386.265
+              360.3814
             ]
           ],
           "headline": "Kimyasal bir tepkime, tepken ve ürünlerin hangi oranlarda birleştiğini gösteren",
@@ -3015,15 +3548,15 @@
           "label": "1",
           "column": 1,
           "rect": [
-            225.7,
-            552.889,
+            229.5312,
+            500.7602,
             512.5,
             615.1009
           ],
           "parts": [
             [
-              225.7,
-              552.889,
+              229.5312,
+              500.7602,
               512.5,
               615.1009
             ]
@@ -3036,14 +3569,14 @@
           "column": 1,
           "rect": [
             231.3799,
-            465.2415,
+            433.6086,
             498.3511,
             495.8744
           ],
           "parts": [
             [
               231.3799,
-              465.2415,
+              433.6086,
               498.3511,
               495.8744
             ]
@@ -3055,17 +3588,17 @@
           "label": "1",
           "column": 1,
           "rect": [
-            225.7,
-            366.145,
+            227.6156,
+            297.2941,
             512.5,
-            398.7613
+            430.6086
           ],
           "parts": [
             [
-              225.7,
-              366.145,
+              227.6156,
+              297.2941,
               512.5,
-              398.7613
+              430.6086
             ]
           ],
           "headline": "C H + O → 4 CO + 5 H O"
@@ -3078,14 +3611,14 @@
             231.1277,
             231.8024,
             502.5645,
-            296.0674
+            294.2941
           ],
           "parts": [
             [
               231.1277,
               231.8024,
               502.5645,
-              296.0674
+              294.2941
             ]
           ],
           "headline": "C H + O → 4 CO + 5 H O tepkimesinde ürünlerde"
@@ -3095,14 +3628,14 @@
           "label": "1",
           "column": 1,
           "rect": [
-            231.1277,
+            233.2357,
             175.7985,
             489.9776,
             228.8024
           ],
           "parts": [
             [
-              231.1277,
+              233.2357,
               175.7985,
               489.9776,
               228.8024
@@ -3115,14 +3648,14 @@
           "label": "2",
           "column": 1,
           "rect": [
-            231.1256,
+            233.2375,
             58.2064,
             503.5349,
             172.7985
           ],
           "parts": [
             [
-              231.1256,
+              233.2375,
               58.2064,
               503.5349,
               172.7985
@@ -3131,25 +3664,65 @@
           "headline": "C H + 13 O → 8 CO + 10 H O şeklinde denkleştirilmiş"
         },
         {
-          "id": "p65-oge-d5744994-75ac-f111-b317-005056a7d529",
+          "id": "p65-q1",
           "label": null,
           "column": 0,
           "rect": [
-            159.682,
-            399.7613,
-            512.754,
-            464.2415
+            165.1012,
+            312.0207,
+            224.6156,
+            589.9119
           ],
           "parts": [
             [
-              159.682,
-              399.7613,
-              512.754,
-              464.2415
+              165.1012,
+              312.0207,
+              224.6156,
+              589.9119
             ]
           ],
-          "headline": "3. Basamak",
-          "anchored": true
+          "headline": "Sıra Sizde",
+          "ogeId": "d5744994-75ac-f111-b317-005056a7d529"
+        },
+        {
+          "id": "p65-q2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            168.5537,
+            178.0207,
+            230.2357,
+            210.4207
+          ],
+          "parts": [
+            [
+              168.5537,
+              178.0207,
+              230.2357,
+              210.4207
+            ]
+          ],
+          "headline": "Uygulama"
+        },
+        {
+          "id": "p65-q3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            168.5495,
+            60.0338,
+            230.2375,
+            92.4338
+          ],
+          "parts": [
+            [
+              168.5495,
+              60.0338,
+              230.2375,
+              92.4338
+            ]
+          ],
+          "headline": "Sıra Sizde"
         }
       ]
     },
@@ -3221,19 +3794,20 @@
           "column": 0,
           "rect": [
             43.024,
-            70.271,
+            436.691,
             512.567,
             739.338
           ],
           "parts": [
             [
               43.024,
-              70.271,
+              436.691,
               512.567,
               739.338
             ]
           ],
-          "headline": "Canlılar, yaşamlarını devam ettirmek ve çoğalmak için enerjiye ihtiyaç duyarlar. Bu nedenle aldıkları besinleri solunum ile parçalayarak enerjiye dönüştürürler."
+          "headline": "Canlılar, yaşamlarını devam ettirmek ve çoğalmak için enerjiye ihtiyaç duyarlar. Bu nedenle aldıkları besinleri solunum ile parçalayarak enerjiye dönüştürürler.",
+          "ogeId": "0163e870-faa6-f111-b317-005056a7d529"
         }
       ]
     },
@@ -3273,14 +3847,14 @@
           "column": 0,
           "rect": [
             76.829,
-            309.9,
+            304.4,
             523.5654,
             462.9572
           ],
           "parts": [
             [
               76.829,
-              309.9,
+              304.4,
               523.5654,
               462.9572
             ]
@@ -3295,31 +3869,18 @@
             56.9882,
             62.4,
             526.7402,
-            306.9
+            211.4
           ],
           "parts": [
             [
               56.9882,
               62.4,
               526.7402,
-              306.9
+              211.4
             ]
           ],
           "headline": "Potasyum klorat (KClO ), güçlü bir oksitleyicidir. Bu nedenle havai fişekler ve kibritlerde yanmayı kolaylaştırır. Kibrit pürüzlü bir yüzeyle temas ettiğinde ya",
           "items": [
-            {
-              "id": "p68-4-a",
-              "label": "a",
-              "number": 1,
-              "partIndex": 0,
-              "rect": [
-                109.1791,
-                160.9,
-                519.5765,
-                252.0921
-              ],
-              "text": "a)  Yukarıdaki bilgilerden yararlanarak kibritin yanması esnasında oluşan kimyasal tepkimenin denklemini yazınız."
-            },
             {
               "id": "p68-4-b",
               "label": "b",
@@ -3334,6 +3895,58 @@
               "text": "b)  Yazdığınız tepkime denkleminin kütlenin korunumu kanununa uygunluğunu sorgulayınız. Kütlenin korunumu kanununa uymadığını tespit ettiğiniz yerlerde uygun katsayılar kullanarak tepkime denklemini d"
             }
           ]
+        }
+      ]
+    },
+    "69": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          50.9016,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p69-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            43.232,
+            480.2152,
+            476.2941,
+            741.7859
+          ],
+          "parts": [
+            [
+              43.232,
+              480.2152,
+              476.2941,
+              741.7859
+            ]
+          ],
+          "headline": "Konuya Başlarken"
+        },
+        {
+          "id": "p69-q2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            159.2441,
+            66.1896,
+            515.5258,
+            124.2195
+          ],
+          "parts": [
+            [
+              159.2441,
+              66.1896,
+              515.5258,
+              124.2195
+            ]
+          ],
+          "headline": "Kimya dâhil olmak üzere birçok alanda kimyasal tepkimelerin denklemle ifade edilmesine ihtiyaç duyulur. Peki, denklemler denkleştirildikten"
         }
       ]
     },
@@ -3358,14 +3971,14 @@
           "rect": [
             71.3669,
             398.5923,
-            97.1651,
+            101.5369,
             427.9223
           ],
           "parts": [
             [
               71.3669,
               398.5923,
-              97.1651,
+              101.5369,
               427.9223
             ]
           ]
@@ -3377,14 +3990,14 @@
           "rect": [
             71.3669,
             311.5666,
-            109.0722,
+            120.9794,
             396.4223
           ],
           "parts": [
             [
               71.3669,
               311.5666,
-              109.07225,
+              120.9794,
               396.4223
             ]
           ],
@@ -3404,11 +4017,11 @@
             [
               71.3619,
               149.5251,
-              114.144875,
+              119.2175,
               269.8766
             ],
             [
-              115.144875,
+              122.1398,
               145.3,
               523.6558,
               427.8923
@@ -3494,15 +4107,15 @@
           "column": 0,
           "rect": [
             43.0237,
-            138.0,
-            509.4821,
+            103.6536,
+            515.0432,
             455.4444
           ],
           "parts": [
             [
               43.0237,
-              138.0,
-              509.4821,
+              103.6536,
+              515.0432,
               455.4444
             ]
           ],
@@ -3559,14 +4172,14 @@
           "column": 0,
           "rect": [
             57.197,
-            365.732,
+            359.9403,
             526.74,
             687.449
           ],
           "parts": [
             [
               57.197,
-              365.732,
+              359.9403,
               526.74,
               687.449
             ]
@@ -3607,16 +4220,16 @@
           "column": 0,
           "rect": [
             57.197,
-            79.844,
+            71.37,
             526.74,
-            359.559
+            356.9403
           ],
           "parts": [
             [
               57.197,
-              79.844,
+              71.37,
               526.74,
-              359.559
+              356.9403
             ]
           ],
           "headline": "Doğal gaz içindeki hidrojen sülfür (H S) gazının uzaklaştırılması aşağıdaki tepkimede verildiği gibidir:",
@@ -3667,14 +4280,14 @@
           "column": 0,
           "rect": [
             43.024,
-            541.395,
+            535.7438,
             512.567,
             739.338
           ],
           "parts": [
             [
               43.024,
-              541.395,
+              535.7438,
               512.567,
               739.338
             ]
@@ -3687,16 +4300,16 @@
           "column": 0,
           "rect": [
             43.024,
-            95.371,
+            86.4487,
             512.567,
-            535.094
+            532.7438
           ],
           "parts": [
             [
               43.024,
-              95.371,
+              86.4487,
               512.567,
-              535.094
+              532.7438
             ]
           ],
           "headline": "Gümüşten yapılan eşyalar zamanla kararır. Bu, gümüşün görüntüsünü bozduğu için istenmeyen bir durumdur. Gümüş ortamda bulunan sülfür iyonlarıyla tepkimeye girer",
@@ -3760,16 +4373,16 @@
           "column": 0,
           "rect": [
             77.0394,
-            399.0826,
+            451.7,
             521.0674,
-            716.8834
+            655.9895
           ],
           "parts": [
             [
               77.0394,
-              399.0826,
+              451.7,
               521.0674,
-              716.8834
+              655.9895
             ]
           ],
           "headline": "Ostwald (Osvalt) süreciyle nitrik asit üretimi için aşağıdaki adımların gerçekleştirilmesi gerekir:",
@@ -3799,19 +4412,6 @@
                 511.3233
               ],
               "text": "23  . b)  3,01 10 tane NO gazı elde edildikten sonra kaç mol HNO elde edilebilir?  3"
-            },
-            {
-              "id": "p76-1-c",
-              "label": "c",
-              "number": 3,
-              "partIndex": 0,
-              "rect": [
-                109.387,
-                399.0826,
-                513.9861,
-                457.1733
-              ],
-              "text": "c)  İşlem süresince toplam 60 mol hava kullanıldığına göre kaç gram HNO elde edilmiştir?  3 (Havanın yaklaşık %20’si oksijendir. H: 1 g/mol, N: 14 g/mol, O: 16 g/mol)"
             }
           ]
         },
@@ -3823,14 +4423,14 @@
             57.1969,
             63.4,
             526.7399,
-            396.0826
+            416.5
           ],
           "parts": [
             [
               57.1969,
               63.4,
               526.7399,
-              396.0826
+              416.5
             ]
           ],
           "headline": "Hidrazin (N H ) ve diazot tetroksit (N O ) karışımı roketlerde yakıt olarak kullanılır. Kapalı kapta N H ve N O tepkimesinin zamanla mol sayısı değişimi aşağıda",
@@ -3875,6 +4475,27 @@
               "text": "c)  Tepkime denklemini kullanarak b şıkkındaki sınırlayıcı bileşeni belirleyiniz."
             }
           ]
+        },
+        {
+          "id": "p76-oge-adadf118-fba6-f111-b317-005056a7d529",
+          "label": null,
+          "column": 0,
+          "rect": [
+            71.0394,
+            656.9895,
+            553.764,
+            690.9194
+          ],
+          "parts": [
+            [
+              71.0394,
+              656.9895,
+              553.764,
+              690.9194
+            ]
+          ],
+          "headline": "1. Ostwald (Osvalt) süreciyle nitrik asit üretimi için aşağıdaki adımların gerçekleştirilmesi gerekir:",
+          "anchored": true
         }
       ]
     },
@@ -3914,14 +4535,14 @@
           "column": 0,
           "rect": [
             62.7609,
-            339.1,
+            333.6,
             509.5248,
             589.656
           ],
           "parts": [
             [
               62.7609,
-              339.1,
+              333.6,
               509.5248,
               589.656
             ]
@@ -3948,7 +4569,7 @@
               "partIndex": 0,
               "rect": [
                 95.1063,
-                339.1,
+                337.6,
                 499.9176,
                 433.2948
               ],
@@ -3964,14 +4585,14 @@
             42.9193,
             87.2,
             512.6713,
-            336.1
+            316.8755
           ],
           "parts": [
             [
               42.9193,
               87.2,
               512.6713,
-              336.1
+              316.8755
             ]
           ],
           "headline": "Yüksek saflıktaki silisyum eldesi için 25 °C sıcaklıkta",
@@ -4003,6 +4624,38 @@
               "text": "b)  0,3 mol CO gazı elde etmek için kaç tane C atomu harcanmalıdır? ‌"
             }
           ]
+        }
+      ]
+    },
+    "78": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          65.3661,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p78-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            57.3661,
+            223.2924,
+            497.8863,
+            752.0471
+          ],
+          "parts": [
+            [
+              57.3661,
+              223.2924,
+              497.8863,
+              752.0471
+            ]
+          ],
+          "headline": "Konuya Başlarken"
         }
       ]
     },
@@ -4259,16 +4912,16 @@
           "column": 1,
           "rect": [
             284.882,
-            632.5802,
+            699.5463,
             529.764,
-            727.5802
+            735.7363
           ],
           "parts": [
             [
               284.882,
-              632.5802,
+              699.5463,
               529.764,
-              727.5802
+              735.7363
             ]
           ],
           "headline": "Gazların Özellikleri",
@@ -4292,16 +4945,16 @@
           "column": 0,
           "rect": [
             62.8699,
-            291.4125,
+            308.8,
             509.4217,
-            329.9563
+            369.5
           ],
           "parts": [
             [
               62.8699,
-              291.4125,
+              308.8,
               509.4217,
-              329.95625
+              369.5
             ]
           ],
           "headline": "Oda şartlarında eşit mol sayısına sahip CO , He ve H gazları ile üç ayrı balon doldurulmuştur. Balonların hacimlerine ilişkin düşüncelerinizi yazınız."
@@ -4311,65 +4964,76 @@
           "label": "3",
           "column": 0,
           "rect": [
-            43.0237,
-            53.0,
-            512.5667,
+            62.8644,
+            264.098,
+            81.7472,
             288.4125
           ],
           "parts": [
             [
-              43.0237,
-              53.0,
-              512.5667,
+              62.8644,
+              264.098,
+              81.7472,
               288.4125
             ]
-          ],
-          "headline": "Hava ile dolu bir şırınganın ucu Şekil 1’de gösterildiği gibi kapatılmıştır ve piston ileri doğru itilerek Şekil 2’deki hâle getirilmiştir.",
-          "items": [
-            {
-              "id": "p83-3-a",
-              "label": "a",
-              "number": 1,
-              "partIndex": 0,
-              "rect": [
-                95.2144,
-                118.8,
-                502.9899,
-                266.027
-              ],
-              "text": "a)  Bu itme sonucu havayı oluşturan taneciklerin dağılımını Şekil 2 üzerinde çizerek açıklayınız. Şekil 1 Şekil 2"
-            },
-            {
-              "id": "p83-3-b",
-              "label": "b",
-              "number": 2,
-              "partIndex": 0,
-              "rect": [
-                47.0237,
-                57.0,
-                508.5667,
-                120.3421
-              ],
-              "text": "b)  Piston sonuna kadar ittirilebilir mi? Neden?"
-            }
           ]
+        },
+        {
+          "id": "p83-a",
+          "label": "a",
+          "column": 0,
+          "rect": [
+            91.2144,
+            483.4,
+            509.5055,
+            567.078
+          ],
+          "parts": [
+            [
+              91.2144,
+              483.4,
+              509.5055,
+              567.078
+            ]
+          ],
+          "headline": "Gazların basınç, hacim, yoğunluk değişkenlerinden hangisi veya hangileri değişir? Nedenini açıklayınız."
+        },
+        {
+          "id": "p83-b",
+          "label": "b",
+          "column": 0,
+          "rect": [
+            84.7472,
+            138.3,
+            506.9899,
+            308.8
+          ],
+          "parts": [
+            [
+              84.7472,
+              138.3,
+              506.9899,
+              308.8
+            ]
+          ],
+          "headline": "Boş bölmeye hangi gaz ya da gazlar gider? Çizerek açıklayınız."
         },
         {
           "id": "p83-oge-62abdbab-fba6-f111-b317-005056a7d529",
           "label": null,
           "column": 0,
           "rect": [
-            43.024,
-            330.9563,
-            512.567,
-            739.338
+            83.6593,
+            606.7029,
+            351.1153,
+            720.0199
           ],
           "parts": [
             [
-              43.024,
-              330.95625,
-              512.567,
-              739.338
+              83.6593,
+              606.7029,
+              351.1153,
+              720.0199
             ]
           ],
           "headline": "Boş",
@@ -4393,20 +5057,99 @@
           "column": 0,
           "rect": [
             51.1969,
-            570.7691,
-            553.764,
-            665.7691
+            400.2463,
+            337.6048,
+            687.7281
           ],
           "parts": [
             [
               51.1969,
-              570.7691,
-              553.764,
-              665.7691
+              400.2463,
+              337.6048,
+              687.7281
             ]
           ],
           "headline": "Kutucuklarda verilen özellikler maddenin hangi hâline ait ise o yönde ilerleyerek çıkışa ulaşınız (Sıvı-",
           "anchored": true
+        }
+      ]
+    },
+    "85": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          65.0718,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p85-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            48.9016,
+            557.7187,
+            494.5435,
+            741.7859
+          ],
+          "parts": [
+            [
+              48.9016,
+              557.7187,
+              494.5435,
+              741.7859
+            ]
+          ],
+          "headline": "Konuya Başlarken",
+          "items": [
+            {
+              "id": "p85--3",
+              "label": "3",
+              "number": 3,
+              "partIndex": 0,
+              "rect": [
+                72.5355,
+                561.7187,
+                461.0581,
+                690.5218
+              ],
+              "text": "1 2 3 Hava yastığının açılması Yumurtanın şişeye sığması Düdüklü tencere"
+            }
+          ]
+        }
+      ]
+    },
+    "86": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.1969,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p86-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            57.1969,
+            180.6891,
+            529.7277,
+            734.2809
+          ],
+          "parts": [
+            [
+              57.1969,
+              180.6891,
+              529.7277,
+              734.2809
+            ]
+          ],
+          "headline": "Etkinlik"
         }
       ]
     },
@@ -4557,15 +5300,15 @@
           "label": "8",
           "column": 0,
           "rect": [
-            516.0,
-            526.4,
+            71.3701,
+            534.4,
             526.7117,
             742.6552
           ],
           "parts": [
             [
-              516.0,
-              526.4,
+              71.3701,
+              534.4,
               526.7117,
               742.6552
             ]
@@ -4577,17 +5320,17 @@
           "label": "9",
           "column": 0,
           "rect": [
-            499.6,
-            479.85,
-            513.0,
-            543.9
+            71.3701,
+            493.6,
+            518.5,
+            534.4
           ],
           "parts": [
             [
-              499.6,
-              479.85,
-              513.0,
-              543.9
+              71.3701,
+              493.6,
+              518.5,
+              534.4
             ]
           ],
           "headline": "Elde ettiğiniz grafiklerden yararlanarak değişkenler arasında matematiksel bir model oluşturunuz."
@@ -4600,14 +5343,14 @@
             499.6,
             272.0102,
             518.534,
-            478.85
+            493.6
           ],
           "parts": [
             [
               499.6,
               272.0102,
               518.534,
-              478.85
+              493.6
             ]
           ],
           "headline": "Elde ettiğiniz matematiksel modeli ve grafiği aşağıda verilen gaz yasaları ile karşılaştırınız."
@@ -4682,16 +5425,16 @@
           "column": 1,
           "rect": [
             284.882,
-            609.0824,
+            608.9514,
             529.764,
-            704.0824
+            704.1733
           ],
           "parts": [
             [
               284.882,
-              609.0824,
+              608.9514,
               529.764,
-              704.0824
+              704.1733
             ]
           ],
           "headline": "Basınç-Hacim İlişkisi (Boyle Yasası)",
@@ -4703,16 +5446,16 @@
           "column": 1,
           "rect": [
             284.882,
-            199.7431,
+            214.8908,
             529.764,
-            294.7431
+            297.1127
           ],
           "parts": [
             [
               284.882,
-              199.7431,
+              214.8908,
               529.764,
-              294.7431
+              297.1127
             ]
           ],
           "headline": "Sıcaklık-Hacim İlişkisi (Charles Yasası)",
@@ -4736,16 +5479,16 @@
           "column": 0,
           "rect": [
             152.5522,
-            402.9392,
+            380.9666,
             553.764,
-            497.9392
+            497.6885
           ],
           "parts": [
             [
               152.5522,
-              402.9392,
+              380.9666,
               553.764,
-              497.9392
+              497.6885
             ]
           ],
           "headline": "Basınç-Sıcaklık İlişkisi (Gay Lussac Yasası)",
@@ -4764,21 +5507,41 @@
       ],
       "activities": [
         {
+          "id": "p92-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            130.297,
+            65.395,
+            395.53,
+            146.484
+          ],
+          "parts": [
+            [
+              130.297,
+              65.395,
+              395.53,
+              146.484
+            ]
+          ],
+          "headline": "Gaz yasaları Gazlarla ilgili ile ilgili"
+        },
+        {
           "id": "p92-oge-5470ed84-8ca9-f111-b317-005056a7d529",
           "label": null,
           "column": 1,
           "rect": [
             284.882,
-            647.3161,
+            636.0246,
             529.764,
-            742.3161
+            744.2466
           ],
           "parts": [
             [
               284.882,
-              647.3161,
+              636.0246,
               529.764,
-              742.3161
+              744.2466
             ]
           ],
           "headline": "Hacim-Madde Miktarı İlişkisi (Avogadro Yasası)",
@@ -4797,20 +5560,68 @@
       ],
       "activities": [
         {
+          "id": "p93-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            55.9527,
+            84.6726,
+            504.8509,
+            485.1394
+          ],
+          "parts": [
+            [
+              55.9527,
+              84.6726,
+              504.8509,
+              485.1394
+            ]
+          ],
+          "headline": "Değişkenleri belirleyiniz, ilişkileri gözden geçiriniz.",
+          "items": [
+            {
+              "id": "p93--1",
+              "label": "1",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                85.6251,
+                129.9,
+                450.7461,
+                300.7671
+              ],
+              "text": "n n T T 2 1 2 1 Basınç (atm) Hacim (L) 3V 3P 2V 2P P V"
+            },
+            {
+              "id": "p93--2",
+              "label": "2",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                97.5305,
+                85.6175,
+                478.8112,
+                139.4176
+              ],
+              "text": "273 546 819 1 2 3 0 0 Madde Sıcaklık P ve T sabit ise miktarı (K) n ve V sabit ise (mol)"
+            }
+          ]
+        },
+        {
           "id": "p93-oge-cc464bb4-d7a9-f111-b317-005056a7d529",
           "label": null,
           "column": 0,
           "rect": [
             46.4151,
-            397.3528,
-            287.8361,
+            485.1394,
+            454.0391,
             721.4498
           ],
           "parts": [
             [
               46.4151,
-              397.3528,
-              287.8361,
+              485.1394,
+              454.0391,
               721.4498
             ]
           ],
@@ -4835,16 +5646,16 @@
           "column": 0,
           "rect": [
             77.0376,
-            597.6,
+            592.1,
             523.7219,
-            717.775
+            746.6964
           ],
           "parts": [
             [
               77.0376,
-              597.6,
+              592.1,
               523.7219,
-              717.775
+              746.6964
             ]
           ],
           "headline": "Eski tip akkor ampullerde ısıtıldığında ışık üreten filaman adında tungstenden yapılmış ince bir tel bulunur."
@@ -4855,16 +5666,16 @@
           "column": 0,
           "rect": [
             77.0376,
-            83.9,
+            242.288,
             523.5964,
-            594.6
+            557.7181
           ],
           "parts": [
             [
               77.0376,
-              83.9,
+              242.288,
               523.5964,
-              594.6
+              557.7181
             ]
           ],
           "headline": "Şekildeki sistemde bir miktar H gazı bulunmaktadır. Deniz seviyesinde bulunan bu sistem 27 C sıcaklığındadır."
@@ -4887,15 +5698,15 @@
           "column": 0,
           "rect": [
             62.8644,
-            318.6298,
-            495.8131,
+            317.1298,
+            509.5605,
             737.0173
           ],
           "parts": [
             [
               62.8644,
-              318.6298,
-              495.8131,
+              317.1298,
+              509.5605,
               737.0173
             ]
           ],
@@ -4909,10 +5720,10 @@
               "rect": [
                 95.2144,
                 356.3,
-                495.8131,
+                505.4262,
                 416.4993
               ],
-              "text": "a)  o C sıcaklığına göre kıyaslayınız. "
+              "text": "a)  Düzeltme katsayısının 1’den büyük olduğu bir faturada, doğal gaz sayacının bulunduğu ortamı 15 o C sıcaklığına göre kıyaslayınız. "
             },
             {
               "id": "p95-4-b",
@@ -4922,7 +5733,7 @@
               "rect": [
                 95.2075,
                 324.0609,
-                495.8131,
+                501.6079,
                 357.8189
               ],
               "text": "b)  İzmir’de ocak ve temmuz aylarında aynı doğal gaz sayacından eşit hacimde doğal gaz ölçülmüştür. Hangi ayda ölçülen değerin gerçek değere yakın olmasını beklersiniz? Açıklayınız ."
@@ -4969,8 +5780,8 @@
               "partIndex": 0,
               "rect": [
                 95.2165,
-                168.0459,
-                441.5193,
+                157.1,
+                461.2,
                 204.8328
               ],
               "text": "x (g) b)  Piston sabitken gaz miktarını yarıya indirmek (sıcaklık ve hacim sabit)"
@@ -5002,6 +5813,90 @@
               "text": "ç)  Hacim üç katına çıkana kadar pistonu yukarı çekmek (sıcaklık ve madde miktarı sabit) ‌"
             }
           ]
+        }
+      ]
+    },
+    "96": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          62.2815,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p96-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            57.4,
+            706.1475,
+            526.49,
+            756.2
+          ],
+          "parts": [
+            [
+              57.4,
+              706.1475,
+              526.49,
+              756.2
+            ]
+          ],
+          "headline": "PERFORMANS GÖREVİ"
+        }
+      ]
+    },
+    "97": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          50.9843,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p97-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            43.315,
+            498.9657,
+            478.2682,
+            741.1246
+          ],
+          "parts": [
+            [
+              43.315,
+              498.9657,
+              478.2682,
+              741.1246
+            ]
+          ],
+          "headline": "Konuya Başlarken"
+        },
+        {
+          "id": "p97-q2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            80.1654,
+            129.5522,
+            301.2553,
+            161.9522
+          ],
+          "parts": [
+            [
+              80.1654,
+              129.5522,
+              301.2553,
+              161.9522
+            ]
+          ],
+          "headline": "Düşüncelerinizi arkadaşlarınızla paylaşınız."
         }
       ]
     },
@@ -5114,15 +6009,15 @@
           "column": 0,
           "rect": [
             57.1969,
-            612.8252,
-            497.347,
+            605.1226,
+            509.4821,
             742.7152
           ],
           "parts": [
             [
               57.1969,
-              612.8252,
-              497.347,
+              605.1226,
+              509.4821,
               742.7152
             ]
           ],
@@ -5136,14 +6031,14 @@
             45.5169,
             380.9602,
             509.4826,
-            606.6452
+            602.1226
           ],
           "parts": [
             [
               45.5169,
               380.9602,
               509.4826,
-              606.6452
+              602.1226
             ]
           ],
           "headline": "Aşağıdaki 1. deney verilerinden yola çıkarak soruları cevaplayınız.",
@@ -5218,6 +6113,38 @@
         }
       ]
     },
+    "100": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.4546,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p100-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            185.001,
+            65.197,
+            275.903,
+            168.286
+          ],
+          "parts": [
+            [
+              185.001,
+              65.197,
+              275.903,
+              168.286
+            ]
+          ],
+          "headline": "İdeal gaz denklemi ile ilgili"
+        }
+      ]
+    },
     "101": {
       "pageWidth": 569.764,
       "pageHeight": 796.535,
@@ -5237,15 +6164,15 @@
           "label": "1",
           "column": 1,
           "rect": [
-            184.756,
-            630.4994,
+            191.5,
+            514.3419,
             510.261,
             688.8994
           ],
           "parts": [
             [
-              184.756,
-              630.4994,
+              191.5,
+              514.3419,
               510.261,
               688.8994
             ]
@@ -5257,17 +6184,17 @@
           "label": "2",
           "column": 1,
           "rect": [
-            50.433,
-            353.374,
+            184.756,
+            364.0,
             505.7816,
-            513.8222
+            511.3419
           ],
           "parts": [
             [
-              50.433,
-              353.374,
+              184.756,
+              364.0,
               505.7816,
-              513.8222
+              511.3419
             ]
           ],
           "headline": "Şekilde ideal pistonlu kapta bulunan bir miktar X gazına ait başlangıç durumu verilmiştir. X gazına sıcaklığı 273 °C’a yükseltme ve mol sayısını yarıya düşürme "
@@ -5280,14 +6207,14 @@
             42.433,
             210.9698,
             513.158,
-            353.374
+            361.374
           ],
           "parts": [
             [
               42.433,
               210.9698,
               513.158,
-              353.374
+              361.374
             ]
           ],
           "headline": "Şekildeki He gazı ile doldurulan elastik balon ve N gazı bulunan sisteme aynı sıcaklıkta bir miktar ideal N Buna göre elastik balondaki ideal He gazının aşağıda"
@@ -5311,6 +6238,46 @@
             ]
           ],
           "headline": "Şekilde aynı sıcaklıkta içerisinde farklı ideal gazların bulunduğu üç kap verilmiştir."
+        },
+        {
+          "id": "p101-q2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            45.2843,
+            533.535,
+            188.5,
+            639.1482
+          ],
+          "parts": [
+            [
+              45.2843,
+              533.535,
+              188.5,
+              639.1482
+            ]
+          ],
+          "headline": "İdeal piston"
+        },
+        {
+          "id": "p101-q3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            46.0,
+            404.535,
+            146.5388,
+            469.535
+          ],
+          "parts": [
+            [
+              46.0,
+              404.535,
+              146.5388,
+              469.535
+            ]
+          ],
+          "headline": "X(g)"
         }
       ]
     },
@@ -5330,19 +6297,20 @@
           "column": 0,
           "rect": [
             77.5118,
-            330.6,
+            325.1,
             522.74,
-            716.1813
+            745.1027
           ],
           "parts": [
             [
               77.5118,
-              330.6,
+              325.1,
               522.74,
-              716.1813
+              745.1027
             ]
           ],
           "headline": "Gazların farklı durumlardaki davranışını inceleyen bir öğrenci aşağıdaki deney verilerini elde etmiştir.",
+          "ogeId": "76782bc9-8fa9-f111-b317-005056a7d529",
           "items": [
             {
               "id": "p102-1-a",
@@ -5377,7 +6345,7 @@
               "partIndex": 0,
               "rect": [
                 109.8618,
-                330.6,
+                329.1,
                 513.9865,
                 420.3113
               ],
@@ -5393,31 +6361,18 @@
             57.6693,
             73.7,
             526.7403,
-            327.6
+            287.1
           ],
           "parts": [
             [
               57.6693,
               73.7,
               526.7403,
-              327.6
+              287.1
             ]
           ],
           "headline": "1 atm basınçta 25 C sıcaklıkta elastik bir balon içinde 1 mol helyum (He) gazı vardır.",
           "items": [
-            {
-              "id": "p102-2-a",
-              "label": "a",
-              "number": 1,
-              "partIndex": 0,
-              "rect": [
-                109.8626,
-                252.1,
-                513.9865,
-                316.7915
-              ],
-              "text": "a)  Balonun hacmini artırmak için hangi işlemler yapılabilir?"
-            },
             {
               "id": "p102-2-b",
               "label": "b",
@@ -5445,6 +6400,38 @@
               "text": "c)  Balondaki helyum gazının madde miktarı değişmeden yoğunluğunu artırmak için neler yapılabilir? ‌"
             }
           ]
+        }
+      ]
+    },
+    "103": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          51.193,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p103-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            43.524,
+            501.8259,
+            463.1395,
+            741.1246
+          ],
+          "parts": [
+            [
+              43.524,
+              501.8259,
+              463.1395,
+              741.1246
+            ]
+          ],
+          "headline": "Konuya Başlarken"
         }
       ]
     },
@@ -5568,14 +6555,14 @@
           "column": 0,
           "rect": [
             71.3669,
-            668.3226,
+            472.9127,
             518.9169,
             722.6552
           ],
           "parts": [
             [
               71.3669,
-              668.3226,
+              472.9127,
               518.9169,
               722.6552
             ]
@@ -5590,14 +6577,14 @@
             71.3669,
             362.5258,
             523.4053,
-            472.6552
+            469.9127
           ],
           "parts": [
             [
               71.3669,
               362.5258,
               523.4053,
-              472.6552
+              469.9127
             ]
           ],
           "headline": "Tasarladığınız deney sonuçlarına göre gazların yayılma hızını etkileyen faktörleri belirleyiniz ve bu fak- törlerin birbiriyle ilişkisini açıklayınız."
@@ -5619,17 +6606,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            77.3795,
-            260.8,
-            517.9864,
-            466.357
+            65.537,
+            370.535,
+            330.6636,
+            495.2784
           ],
           "parts": [
             [
-              77.3795,
-              260.8,
-              517.9864,
-              466.357
+              65.537,
+              370.535,
+              330.6636,
+              495.2784
             ]
           ],
           "headline": "Aşağıda farklı gazlarla doldurulmuş iki balon verilmiştir."
@@ -5674,14 +6661,14 @@
             62.8699,
             541.3924,
             509.4212,
-            645.0
+            628.75
           ],
           "parts": [
             [
               62.8699,
               541.3924,
               509.4212,
-              645.0
+              628.75
             ]
           ],
           "headline": "Bir gezegenin atmosferinde kükürt hekzaflorür (SF ) gazı bulunduğunu düşününüz. Bu gezegende bir konser düzenlenirse sesler Dünya’ya göre nasıl duyulur? Açıklay"
@@ -5692,14 +6679,14 @@
           "column": 0,
           "rect": [
             62.8645,
-            358.1,
+            360.6,
             509.5127,
             538.3924
           ],
           "parts": [
             [
               62.8645,
-              358.1,
+              360.6,
               509.5127,
               538.3924
             ]
@@ -5711,48 +6698,39 @@
           "label": "5",
           "column": 0,
           "rect": [
-            43.0237,
-            90.3,
-            512.5667,
-            355.1
+            62.8644,
+            331.3728,
+            86.3704,
+            359.1
           ],
           "parts": [
             [
-              43.0237,
-              90.3,
-              512.5667,
-              355.1
+              62.8644,
+              331.3728,
+              86.3704,
+              359.1
+            ]
+          ]
+        },
+        {
+          "id": "p109-b",
+          "label": "b",
+          "column": 0,
+          "rect": [
+            80.1241,
+            629.5,
+            509.2927,
+            737.3503
+          ],
+          "parts": [
+            [
+              80.1241,
+              629.5,
+              509.2927,
+              737.3503
             ]
           ],
-          "headline": "Aşağıdaki şekilde verilen cam borunun uçlarında SO ve CH gazları bulunmaktadır. Musluklar aynı anda açılarak gazların cam boruda karşılaşması sağlanıyor.",
-          "items": [
-            {
-              "id": "p109-5-a",
-              "label": "a",
-              "number": 1,
-              "partIndex": 0,
-              "rect": [
-                95.2162,
-                177.8,
-                499.8129,
-                242.4617
-              ],
-              "text": "a)  Gazlar cam boru üzerinde yaklaşık olarak nerede karşılaşır? (CH : 16 g/mol, SO : 64 g/mol) 4 2"
-            },
-            {
-              "id": "p109-5-b",
-              "label": "b",
-              "number": 2,
-              "partIndex": 0,
-              "rect": [
-                47.0237,
-                92.0969,
-                508.5667,
-                179.2805
-              ],
-              "text": "b)  Gazların cam borunun tam orta noktasında karşılaşması için neler yapılabilir? Gerekçelendirerek açıklayınız. ‌"
-            }
-          ]
+          "headline": "Bu deneyde gazların difüzyon hızlarının farklı olmasının nedenlerini açıklayınız."
         }
       ]
     },
@@ -5812,14 +6790,14 @@
           "column": 0,
           "rect": [
             62.8661,
-            559.7279,
+            569.7634,
             400.967,
             591.5944
           ],
           "parts": [
             [
               62.8661,
-              559.7279,
+              569.7634,
               400.967,
               591.5944
             ]
@@ -5834,14 +6812,14 @@
             57.1969,
             58.7941,
             526.5469,
-            517.0408
+            566.7634
           ],
           "parts": [
             [
               57.1969,
               58.7941,
               526.5469,
-              517.0408
+              566.7634
             ]
           ],
           "headline": "Gerekli güvenlik önlemlerini alarak aşağıdaki deney raporuna uygun şekilde"
@@ -5877,6 +6855,38 @@
             ]
           ],
           "headline": "."
+        }
+      ]
+    },
+    "112": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          90.628,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p112-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            82.959,
+            686.611,
+            217.514,
+            723.8633
+          ],
+          "parts": [
+            [
+              82.959,
+              686.611,
+              217.514,
+              723.8633
+            ]
+          ],
+          "headline": "NELER ÖĞRENDİNİZ? NELER ÖĞRENDİNİZ?"
         }
       ]
     },
@@ -5916,15 +6926,15 @@
           "column": 0,
           "rect": [
             43.0237,
-            70.2589,
-            512.5667,
+            190.2323,
+            492.8435,
             392.0137
           ],
           "parts": [
             [
               43.0237,
-              70.2589,
-              512.5667,
+              190.2323,
+              492.8435,
               392.0137
             ]
           ],
@@ -6000,14 +7010,14 @@
           "column": 0,
           "rect": [
             43.0237,
-            527.1,
+            519.1,
             511.7367,
             743.4286
           ],
           "parts": [
             [
               43.0237,
-              527.1,
+              519.1,
               511.7367,
               743.4286
             ]
@@ -6060,7 +7070,7 @@
               "partIndex": 0,
               "rect": [
                 64.0,
-                527.1,
+                523.1,
                 507.5,
                 560.2
               ],
@@ -6073,17 +7083,17 @@
           "label": "6",
           "column": 0,
           "rect": [
-            68.3,
+            43.0237,
             235.6,
-            504.3,
-            525.6
+            512.3,
+            503.6235
           ],
           "parts": [
             [
-              68.3,
+              43.0237,
               235.6,
-              504.3,
-              525.6
+              512.3,
+              503.6235
             ]
           ],
           "headline": "Magnezyum metalinin CO bileşiği ile tepkimesine ait tepkime denklemi şu şekildedir:"
@@ -6146,14 +7156,14 @@
           "column": 0,
           "rect": [
             57.1969,
-            58.9,
+            58.9469,
             526.7406,
             481.1557
           ],
           "parts": [
             [
               57.1969,
-              58.9,
+              58.9469,
               526.7406,
               481.1557
             ]
@@ -6270,14 +7280,14 @@
           "column": 0,
           "rect": [
             57.1969,
-            67.7,
+            67.7173,
             525.3868,
             415.4143
           ],
           "parts": [
             [
               57.1969,
-              67.7,
+              67.7173,
               525.3868,
               415.4143
             ]
@@ -6393,16 +7403,16 @@
           "label": "19",
           "column": 0,
           "rect": [
-            57.1969,
-            137.3,
-            495.1055,
+            56.697,
+            368.588,
+            526.24,
             570.5539
           ],
           "parts": [
             [
-              57.1969,
-              137.3,
-              495.1055,
+              56.697,
+              368.588,
+              526.24,
               570.5539
             ]
           ],
@@ -6416,14 +7426,14 @@
             56.6969,
             57.6,
             523.1554,
-            112.1
+            336.246
           ],
           "parts": [
             [
               56.6969,
               57.6,
               523.1554,
-              112.1
+              336.246
             ]
           ],
           "headline": "Su moleküllerinin kütlesi ile mol sayısı arasındaki ilişki nedir? Açıklayınız."
@@ -6879,15 +7889,15 @@
           "column": 0,
           "rect": [
             43.0237,
-            455.9105,
-            505.6137,
+            242.535,
+            511.6137,
             488.3105
           ],
           "parts": [
             [
               43.0237,
-              455.9105,
-              505.6137,
+              242.535,
+              511.6137,
               488.3105
             ]
           ],
@@ -6943,14 +7953,14 @@
           "column": 0,
           "rect": [
             43.0237,
-            92.391,
+            237.816,
             512.567,
             743.4286
           ],
           "parts": [
             [
               43.0237,
-              92.391,
+              237.816,
               512.567,
               743.4286
             ]
@@ -7088,14 +8098,14 @@
           "rect": [
             43.0179,
             53.6016,
-            509.4822,
+            512.567,
             445.8813
           ],
           "parts": [
             [
               43.0179,
               53.6016,
-              509.4822,
+              512.567,
               445.8813
             ]
           ],
@@ -7265,14 +8275,14 @@
           "column": 0,
           "rect": [
             43.0237,
-            711.0286,
+            626.6168,
             449.5637,
             743.4286
           ],
           "parts": [
             [
               43.0237,
-              711.0286,
+              626.6168,
               449.5637,
               743.4286
             ]
@@ -7285,14 +8295,14 @@
           "column": 0,
           "rect": [
             43.0237,
-            70.9,
+            70.9114,
             511.8584,
             506.9128
           ],
           "parts": [
             [
               43.0237,
-              70.9,
+              70.9114,
               511.8584,
               506.9128
             ]
@@ -7369,15 +8379,15 @@
           "column": 0,
           "rect": [
             43.0216,
-            324.2221,
-            511.2136,
+            253.5054,
+            512.567,
             743.4286
           ],
           "parts": [
             [
               43.0216,
-              324.2221,
-              511.2136,
+              253.5054,
+              512.567,
               743.4286
             ]
           ],
@@ -7391,14 +8401,14 @@
             43.0237,
             198.2476,
             419.5136,
-            253.4758
+            250.5054
           ],
           "parts": [
             [
               43.0237,
               198.2476,
               419.5136,
-              253.4758
+              250.5054
             ]
           ],
           "headline": "Verilen bilgilerden hareketle aşağıdaki çıkarımlardan hangisi yapılamaz?"
@@ -7547,15 +8557,15 @@
           "column": 0,
           "rect": [
             43.0237,
-            130.8642,
-            493.0075,
+            648.1622,
+            455.6437,
             743.4286
           ],
           "parts": [
             [
               43.0237,
-              130.8642,
-              493.0075,
+              648.1622,
+              455.6437,
               743.4286
             ]
           ],
@@ -7742,14 +8752,14 @@
           "column": 0,
           "rect": [
             57.1969,
-            165.766,
+            189.8368,
             529.4074,
             743.4286
           ],
           "parts": [
             [
               57.1969,
-              165.766,
+              189.8368,
               529.4074,
               743.4286
             ]
@@ -7764,14 +8774,14 @@
             57.1969,
             137.2294,
             524.7769,
-            162.766
+            169.6294
           ],
           "parts": [
             [
               57.1969,
               137.2294,
               524.7769,
-              162.766
+              169.6294
             ]
           ],
           "headline": "Buna göre öğrencinin araştırmalarında aşağıdaki sorulardan hangisini sorması beklenmez?"
@@ -7794,14 +8804,14 @@
           "column": 0,
           "rect": [
             43.0237,
-            67.8,
+            189.8368,
             512.567,
             743.4286
           ],
           "parts": [
             [
               43.0237,
-              67.8,
+              189.8368,
               512.567,
               743.4286
             ]
@@ -7826,15 +8836,15 @@
           "column": 0,
           "rect": [
             57.1969,
-            58.6,
-            526.4897,
+            390.5178,
+            505.2583,
             743.4286
           ],
           "parts": [
             [
               57.1969,
-              58.6,
-              526.4897,
+              390.5178,
+              505.2583,
               743.4286
             ]
           ],
@@ -7859,12 +8869,12 @@
               "number": 4,
               "partIndex": 0,
               "rect": [
-                78.2047,
-                58.6,
-                522.4897,
+                78.5,
+                394.5,
+                501.0,
                 540.4027
               ],
-              "text": "3 4 3P 2P P 273 K 819 K 546 K Bir miktar gazın hacmi değiştirilmeden sıcaklığı Sabit sıcaklıkta elastik balona bir miktar gaz ilave artırılıyor. ediliyor. Bir önceki soruda oluşturduğunuz her bir hipo"
+              "text": "3 4 3P 2P P 273 K 819 K 546 K Bir miktar gazın hacmi değiştirilmeden sıcaklığı Sabit sıcaklıkta elastik balona bir miktar gaz ilave artırılıyor. ediliyor."
             }
           ]
         }
@@ -7886,14 +8896,14 @@
           "column": 0,
           "rect": [
             43.0237,
-            92.391,
+            237.816,
             512.567,
             743.4286
           ],
           "parts": [
             [
               43.0237,
-              92.391,
+              237.816,
               512.567,
               743.4286
             ]
@@ -7933,24 +8943,11 @@
               "partIndex": 0,
               "rect": [
                 51.6547,
-                211.4204,
+                246.8605,
                 235.0227,
                 322.4937
               ],
-              "text": "c) 0 n (mol) P ve T sabit V (L)"
-            },
-            {
-              "id": "p141-68-ç",
-              "label": "ç",
-              "number": 3,
-              "partIndex": 0,
-              "rect": [
-                51.6547,
-                99.2716,
-                234.3153,
-                177.0718
-              ],
-              "text": "ç) 0 P (atm) n ve T sabit"
+              "text": "c) 0 n (mol) P ve T sabit"
             }
           ]
         }
@@ -7972,15 +8969,15 @@
           "column": 0,
           "rect": [
             57.1969,
-            641.1,
-            523.6554,
+            604.761,
+            526.74,
             743.4286
           ],
           "parts": [
             [
               57.1969,
-              641.1,
-              523.6554,
+              604.761,
+              526.74,
               743.4286
             ]
           ],
@@ -8136,15 +9133,15 @@
           "column": 0,
           "rect": [
             57.1969,
-            187.9,
-            526.4897,
+            340.6754,
+            482.803,
             492.7224
           ],
           "parts": [
             [
               57.1969,
-              187.9,
-              526.4897,
+              340.6754,
+              482.803,
               492.7224
             ]
           ],
@@ -8158,17 +9155,113 @@
             57.1969,
             65.905,
             504.13,
-            177.3026
+            179.0532
           ],
           "parts": [
             [
               57.1969,
               65.905,
               504.13,
-              177.3026
+              179.0532
             ]
           ],
           "headline": "Aşağıda verilenlerden hangisi difüzyon örneği değildir?"
+        }
+      ]
+    },
+    "146": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          64.8661,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p146-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            62.8661,
+            627.4712,
+            247.1845,
+            701.9532
+          ],
+          "parts": [
+            [
+              62.8661,
+              627.4712,
+              247.1845,
+              701.9532
+            ]
+          ],
+          "headline": "Temanın dijital Tema sunusuna nüshasına"
+        }
+      ]
+    },
+    "147": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.0237,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p147-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            170.6174,
+            187.6115,
+            392.4457,
+            741.2033
+          ],
+          "parts": [
+            [
+              170.6174,
+              187.6115,
+              392.4457,
+              741.2033
+            ]
+          ],
+          "headline": "Hazır mısınız?"
+        }
+      ]
+    },
+    "148": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.1969,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p148-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            56.697,
+            492.506,
+            507.381,
+            747.4166
+          ],
+          "parts": [
+            [
+              56.697,
+              492.506,
+              507.381,
+              747.4166
+            ]
+          ],
+          "headline": "Konuya Başlarken"
         }
       ]
     },
@@ -8208,15 +9301,15 @@
           "column": 0,
           "rect": [
             57.1837,
-            286.2019,
-            509.4821,
+            305.2,
+            503.0975,
             446.2069
           ],
           "parts": [
             [
               57.1837,
-              286.2019,
-              509.4821,
+              305.2,
+              503.0975,
               446.2069
             ]
           ],
@@ -8228,16 +9321,16 @@
           "column": 0,
           "rect": [
             57.1837,
-            232.3701,
+            52.9953,
             496.4038,
-            283.2019
+            287.7038
           ],
           "parts": [
             [
               57.1837,
-              232.3701,
+              52.9953,
               496.4038,
-              283.2019
+              287.7038
             ]
           ],
           "headline": "Arkadaşlarınızın çizimleri ile kendi çiziminizi karşılaştırınız. Bu çizimlerdeki benzerlik ve farklılıkları aşağıdaki T tablosuna yazınız."
@@ -8280,14 +9373,14 @@
           "column": 0,
           "rect": [
             71.3601,
-            539.0393,
+            341.2892,
             524.7001,
             658.4902
           ],
           "parts": [
             [
               71.3601,
-              539.0393,
+              341.2892,
               524.7001,
               658.4902
             ]
@@ -8443,17 +9536,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            77.5394,
-            426.2673,
-            523.4174,
-            721.0431
+            71.5376,
+            416.9221,
+            525.8517,
+            749.6315
           ],
           "parts": [
             [
-              77.5394,
-              426.2673,
-              523.4174,
-              721.0431
+              71.5376,
+              416.9221,
+              525.8517,
+              749.6315
             ]
           ],
           "headline": "Bir maddenin başka bir madde içerisinde çözünme sürecine ilişkin aşağıda verilen kavram haritasında boş bırakılan yerleri tamamlayınız"
@@ -8463,17 +9556,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            57.6969,
-            74.0,
-            526.7399,
-            420.8754
+            77.5376,
+            209.9952,
+            524.1073,
+            413.9221
           ],
           "parts": [
             [
-              57.6969,
-              74.0,
-              526.7399,
-              420.8754
+              77.5376,
+              209.9952,
+              524.1073,
+              413.9221
             ]
           ],
           "headline": "Ülkemizde ekonomik değeri yüksek bir tarım ürünü olan çayın en önemli bileşeni kafeindir. Kafein, kullanım alanı çok geniş olduğundan ticari açıdan önem taşımak",
@@ -8490,21 +9583,72 @@
                 356.5427
               ],
               "text": "a)  Kafein molekülünü göstermek istediğiniz temsilî bir çizim yapınız. Ardından bu molekülün suda çözünme aşamalarını verilen kutucuklara çizerek gösteriniz."
-            },
-            {
-              "id": "p152-2-b",
-              "label": "b",
-              "number": 2,
-              "partIndex": 0,
-              "rect": [
-                61.6969,
-                75.8448,
-                522.7399,
-                210.7067
-              ],
-              "text": "b)  Bir maddenin başka bir madde içinde çözünebilmesi için nasıl bir süreç gerçekleşmelidir? Kısaca özetleyiniz. ‌"
             }
           ]
+        }
+      ]
+    },
+    "153": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          50.943,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p153-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            43.274,
+            420.031,
+            348.382,
+            742.2583
+          ],
+          "parts": [
+            [
+              43.274,
+              420.031,
+              348.382,
+              742.2583
+            ]
+          ],
+          "headline": "Konuya Başlarken"
+        }
+      ]
+    },
+    "154": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.1969,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p154-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            57.1969,
+            72.4222,
+            518.7401,
+            611.066
+          ],
+          "parts": [
+            [
+              57.1969,
+              72.4222,
+              518.7401,
+              611.066
+            ]
+          ],
+          "headline": "Etkinlik"
         }
       ]
     },
@@ -8936,16 +10080,16 @@
           "column": 0,
           "rect": [
             63.3662,
-            643.1,
+            637.6,
             509.4013,
-            716.4581
+            745.3795
           ],
           "parts": [
             [
               63.3662,
-              643.1,
+              637.6,
               509.4013,
-              716.4581
+              745.3795
             ]
           ],
           "headline": "Etanol (C₂H₅OH) suyla her oranda karışarak suda çözünebilir. Aynı zamanda yağları da çözebilir. Bu nedenle endüstride geniş bir kullanım alanı vardır."
@@ -8958,14 +10102,14 @@
             63.3644,
             546.0453,
             377.0342,
-            640.1
+            622.804
           ],
           "parts": [
             [
               63.3644,
               546.0453,
               377.0342,
-              640.1
+              622.804
             ]
           ],
           "headline": "Toluen (C H ) endüstride yaygın olarak kullanılan apolar bir çözücüdür."
@@ -8976,16 +10120,16 @@
           "column": 0,
           "rect": [
             345.3,
-            444.15,
+            442.4158,
             509.3991,
-            452.05
+            449.1
           ],
           "parts": [
             [
               345.3,
-              444.15,
+              442.4158,
               509.3991,
-              452.05
+              449.1
             ]
           ],
           "headline": "Aşağıdaki numaralandırılmış kutucuklarda bileşikler verilmiştir. Kutucuk numaralarını kullanarak soruları cevaplayınız (Aynı kutucuk numarasını birden fazla cev"
@@ -8996,14 +10140,14 @@
           "column": 1,
           "rect": [
             311.6,
-            513.5,
+            515.0295,
             376.5923,
             521.5
           ],
           "parts": [
             [
               311.6,
-              513.5,
+              515.0295,
               376.5923,
               521.5
             ]
@@ -9016,14 +10160,14 @@
           "column": 1,
           "rect": [
             311.6,
-            481.8,
+            469.9,
             377.8422,
             490.7
           ],
           "parts": [
             [
               311.6,
-              481.8,
+              469.9,
               377.8422,
               490.7
             ]
@@ -9055,17 +10199,17 @@
           "label": "12",
           "column": 1,
           "rect": [
-            311.6,
+            345.3,
             420.3,
             399.0075,
-            428.3
+            426.7815
           ],
           "parts": [
             [
-              311.6,
+              345.3,
               420.3,
               399.0075,
-              428.3
+              426.7815
             ]
           ],
           "headline": "CH COOH"
@@ -9076,14 +10220,14 @@
           "column": 2,
           "rect": [
             410.2,
-            490.7,
+            488.2,
             470.5577,
             521.5
           ],
           "parts": [
             [
               410.2,
-              490.7,
+              488.2,
               470.5577,
               521.5
             ]
@@ -9095,17 +10239,17 @@
           "label": "14",
           "column": 2,
           "rect": [
-            410.2,
+            443.8,
             469.9,
             491.7598,
-            490.7
+            485.2
           ],
           "parts": [
             [
-              410.2,
+              443.8,
               469.9,
               491.7598,
-              490.7
+              485.2
             ]
           ],
           "headline": "C H O"
@@ -9116,14 +10260,14 @@
           "column": 2,
           "rect": [
             410.2,
-            455.05,
+            449.1,
             477.0616,
             469.9
           ],
           "parts": [
             [
               410.2,
-              455.05,
+              449.1,
               477.0616,
               469.9
             ]
@@ -9138,14 +10282,14 @@
             443.8,
             420.3,
             479.6475,
-            441.15
+            439.4158
           ],
           "parts": [
             [
               443.8,
               420.3,
               479.6475,
-              441.15
+              439.4158
             ]
           ],
           "headline": "NaOH"
@@ -9167,48 +10311,39 @@
           "label": "5",
           "column": 0,
           "rect": [
-            56.988,
-            74.03,
-            526.7402,
-            739.1479
+            76.8362,
+            573.5503,
+            83.3362,
+            603.9773
           ],
           "parts": [
             [
-              56.988,
-              74.03,
+              76.8362,
+              573.5503,
+              83.3362,
+              603.9773
+            ]
+          ]
+        },
+        {
+          "id": "p160-a",
+          "label": "a",
+          "column": 0,
+          "rect": [
+            86.3362,
+            183.5675,
+            526.7402,
+            737.1593
+          ],
+          "parts": [
+            [
+              86.3362,
+              183.5675,
               526.7402,
-              739.1479
+              737.1593
             ]
           ],
-          "headline": "Kromatografi, karışımdaki maddeleri ayırmak için kullanılan bir yöntemdir. Kâğıt kromatografisinde sabit faz olarak filtre kâğıdı, hareketli faz olarak ise gene",
-          "items": [
-            {
-              "id": "p160-5-a",
-              "label": "a",
-              "number": 1,
-              "partIndex": 0,
-              "rect": [
-                109.1789,
-                193.4,
-                519.6957,
-                253.6334
-              ],
-              "text": "a)  Laboratuvar deneyinde bakır(II) sülfatın suda daha hızlı ilerlemesinin nedeni nedir? Açıklayınız."
-            },
-            {
-              "id": "p160-5-b",
-              "label": "b",
-              "number": 2,
-              "partIndex": 0,
-              "rect": [
-                60.9882,
-                74.03,
-                522.7402,
-                194.9587
-              ],
-              "text": "b)  Kâğıt kromatografisinde çözücü olarak genellikle tek başına su tercih edilmez. Bunun nedenini tartışınız. ‌ Maddelerin birbiri içerisindeki çözünebilirliğine ilişkin eşleştirme oyunu verilmiştir. "
-            }
-          ]
+          "headline": "Sabun moleküllerinin yağ ile nasıl etkileşime girdiğini ve lekeyi nasıl çıkardığını çözünme ilişkisi temelinde açıklayınız."
         }
       ]
     },
@@ -9331,15 +10466,15 @@
           "column": 0,
           "rect": [
             57.1969,
-            623.6294,
-            512.3,
+            604.6176,
+            509.4821,
             664.1226
           ],
           "parts": [
             [
               57.1969,
-              623.6294,
-              512.3,
+              604.6176,
+              509.4821,
               664.1226
             ]
           ],
@@ -9352,15 +10487,15 @@
           "rect": [
             57.1969,
             437.3176,
-            504.5666,
-            623.6294
+            512.5666,
+            601.6176
           ],
           "parts": [
             [
               57.1969,
               437.3176,
-              504.5666,
-              623.6294
+              512.5666,
+              601.6176
             ]
           ],
           "headline": "Verilen örnekleri belirlediğiniz ölçütlere göre sınıflandırarak aşağıdaki tabloyu tamamlayınız."
@@ -9614,17 +10749,17 @@
           "label": "6",
           "column": 2,
           "rect": [
-            264.4978,
-            277.4766,
-            434.8769,
-            413.7486
+            197.5401,
+            310.0002,
+            452.1228,
+            433.0268
           ],
           "parts": [
             [
-              264.4978,
-              277.4766,
-              434.8769,
-              413.7486
+              197.5401,
+              310.0002,
+              452.1228,
+              433.0268
             ]
           ],
           "headline": "ayrışarak çözünür."
@@ -9634,26 +10769,98 @@
           "label": "7",
           "column": 2,
           "rect": [
-            51.0237,
-            177.8,
+            313.4352,
+            84.728,
             511.8429,
             631.7942
           ],
           "parts": [
             [
-              51.0237,
-              177.8,
-              504.5667,
-              274.4766
+              313.4352,
+              84.728,
+              456.267,
+              302.9341
             ],
             [
-              504.5669860839844,
-              191.9,
+              459.267,
+              186.878,
               511.8429,
               631.7942
             ]
           ],
           "headline": "Y 2 5"
+        },
+        {
+          "id": "p167-q1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            170.4764,
+            104.0636,
+            261.5094,
+            134.6346
+          ],
+          "parts": [
+            [
+              170.4764,
+              104.0636,
+              261.5094,
+              134.6346
+            ]
+          ],
+          "headline": "Çözünme olayının"
+        }
+      ]
+    },
+    "168": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.6969,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p168-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            57.197,
+            591.6193,
+            477.2452,
+            756.535
+          ],
+          "parts": [
+            [
+              57.197,
+              591.6193,
+              477.2452,
+              756.535
+            ]
+          ],
+          "headline": "Konuya Başlarken"
+        },
+        {
+          "id": "p168-q2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            94.0473,
+            304.2807,
+            477.1471,
+            359.6807
+          ],
+          "parts": [
+            [
+              94.0473,
+              304.2807,
+              477.1471,
+              359.6807
+            ]
+          ],
+          "headline": "Buzdolabında uzun süre saklandıklarında bu yiyecekler kristallenme eğilimi gösterir. Şekerli yiyeceklerin kristallenme durumunu tersine çevi"
         }
       ]
     },
@@ -9689,22 +10896,22 @@
           "column": 0,
           "rect": [
             46.2311,
-            384.469,
-            274.1476,
-            614.0
+            495.2,
+            271.8,
+            593.1
           ],
           "parts": [
             [
               46.2311,
-              384.469,
-              244.32549999999998,
-              614.0
+              495.2,
+              181.2,
+              593.1
             ],
             [
-              245.32549999999998,
-              446.9,
-              274.1476,
-              614.0
+              189.5,
+              495.2,
+              271.8,
+              593.1
             ]
           ],
           "headline": "C sıcaklıkta 100 g suyun içine 70 g KBr ilave ediliyor.",
@@ -9717,10 +10924,10 @@
               "rect": [
                 50.2311,
                 526.8532,
-                271.751,
-                597.1
+                181.2,
+                593.1
               ],
-              "text": "20 C sıcaklıkta 100 g 4,7 g KBr kabın 1. suyun içine 70 g KBr işlem dibine çöküyor. ilave ediliyor. o"
+              "text": "20 C sıcaklıkta 100 g 1. suyun içine 70 g KBr işlem ilave ediliyor. o"
             },
             {
               "id": "p169-20-2",
@@ -9728,12 +10935,12 @@
               "number": 2,
               "partIndex": 0,
               "rect": [
-                47.4,
-                384.469,
-                271.751,
+                50.2334,
+                495.2,
+                181.2,
                 548.2
               ],
-              "text": "20 C sıcaklıkta 200 g 9,4 g KBr kabın 2. suyun içine 140 g KBr işlem dibine çöküyor. ilave ediliyor. Çözünürlük (100 g suda) 65,3 Grafik KBr tuzu o (20 C sıcaklıkta)"
+              "text": "20 C sıcaklıkta 200 g 2. suyun içine 140 g KBr işlem ilave ediliyor."
             }
           ]
         },
@@ -9742,17 +10949,17 @@
           "label": "60",
           "column": 0,
           "rect": [
-            105.5,
-            292.3,
-            152.3,
-            369.8
+            46.2311,
+            300.3,
+            189.2,
+            348.7
           ],
           "parts": [
             [
-              105.5,
-              292.3,
-              152.3,
-              369.8
+              46.2311,
+              300.3,
+              189.2,
+              348.7
             ]
           ],
           "headline": "C sıcaklıkta 100 g suyun içine 90 g KBr ilave ediliyor."
@@ -9762,17 +10969,17 @@
           "label": "80",
           "column": 0,
           "rect": [
-            189.5,
-            61.6,
-            279.8,
-            308.322
+            43.399,
+            69.643,
+            283.8,
+            300.3
           ],
           "parts": [
             [
-              189.5,
-              61.6,
-              279.8,
-              308.322
+              43.399,
+              69.643,
+              283.8,
+              300.3
             ]
           ],
           "headline": "C sıcaklıkta 100 g suyun içine 90 g KBr ilave ediliyor."
@@ -9815,14 +11022,14 @@
           "column": 0,
           "rect": [
             71.3701,
-            115.9,
+            253.0616,
             526.9359,
             633.1175
           ],
           "parts": [
             [
               71.3701,
-              115.9,
+              253.0616,
               526.9359,
               633.1175
             ]
@@ -9841,32 +11048,6 @@
                 370.9051
               ],
               "text": "1. Deneyde elde ettiğiniz verilere göre aşağıdaki tabloyu tamamlayınız. Katı madde Eklenen katı Çözünen katı Çökelme durumu miktarı (g) (g/100 g su ) (çözünen adı)"
-            },
-            {
-              "id": "p170-2-2",
-              "label": "2",
-              "number": 2,
-              "partIndex": 0,
-              "rect": [
-                103.7101,
-                198.4,
-                519.6558,
-                247.4051
-              ],
-              "text": "2.  Deney sonuçlarını kullanarak çözünürlüğe ilişkin bir tanım yapınız."
-            },
-            {
-              "id": "p170-2-3",
-              "label": "3",
-              "number": 3,
-              "partIndex": 0,
-              "rect": [
-                103.7101,
-                119.9,
-                519.6558,
-                196.3951
-              ],
-              "text": "3. Güvenilir kaynaklardan maddelerin çözünürlüğünü ve çözünürlük tanımını araştırınız. Yaptığınız çözünürlük tanımının bilimsel tanımdan farkını açıklayınız."
             }
           ]
         }
@@ -9908,14 +11089,14 @@
           "column": 0,
           "rect": [
             62.5784,
-            197.7208,
+            201.3,
             509.1949,
             308.2361
           ],
           "parts": [
             [
               62.5784,
-              197.7208,
+              201.3,
               509.1949,
               308.2361
             ]
@@ -9928,16 +11109,16 @@
           "column": 0,
           "rect": [
             42.7358,
-            60.4,
+            86.8,
             509.1949,
-            194.7208
+            199.1415
           ],
           "parts": [
             [
               42.7358,
-              60.4,
+              86.8,
               509.1949,
-              194.7208
+              199.1415
             ]
           ],
           "headline": "Yaptığınız çözünürlük deneyini ve bu süreci değerlendirdiğiniz bir metin yazınız."
@@ -9964,16 +11145,16 @@
           "column": 0,
           "rect": [
             77.0027,
-            626.6,
+            621.1,
             523.6882,
-            718.2496
+            747.171
           ],
           "parts": [
             [
               77.0027,
-              626.6,
+              621.1,
               523.6882,
-              718.2496
+              747.171
             ]
           ],
           "headline": "Çözünürlük ve çözünme süreci doğada, yaşamda, bilimde ve teknolojide büyük önem taşımaktadır."
@@ -9986,14 +11167,14 @@
             77.0009,
             429.181,
             523.5034,
-            623.6
+            605.6045
           ],
           "parts": [
             [
               77.0009,
               429.181,
               523.5034,
-              623.6
+              605.6045
             ]
           ],
           "headline": "Tablodaki bileşiklerin 1 kg suda çözünmesiyle yapay deniz suyu elde edilmektedir."
@@ -10048,6 +11229,38 @@
         }
       ]
     },
+    "173": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          93.6817,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p173-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            48.443,
+            190.084,
+            462.663,
+            743.6758
+          ],
+          "parts": [
+            [
+              48.443,
+              190.084,
+              462.663,
+              743.6758
+            ]
+          ],
+          "headline": "Konuya Başlarken"
+        }
+      ]
+    },
     "174": {
       "pageWidth": 569.764,
       "pageHeight": 796.535,
@@ -10064,14 +11277,14 @@
           "column": 0,
           "rect": [
             67.1181,
-            57.5718,
+            76.8503,
             523.4332,
             630.4421
           ],
           "parts": [
             [
               67.1181,
-              57.5718,
+              76.8503,
               523.4332,
               630.4421
             ]
@@ -10104,15 +11317,15 @@
           "column": 0,
           "rect": [
             43.19,
-            293.2,
-            511.5,
+            301.1962,
+            509.0369,
             742.6518
           ],
           "parts": [
             [
               43.19,
-              293.2,
-              511.5,
+              301.1962,
+              509.0369,
               742.6518
             ]
           ],
@@ -10124,14 +11337,14 @@
           "column": 0,
           "rect": [
             57.1969,
-            69.7,
+            170.7,
             509.4821,
             281.7418
           ],
           "parts": [
             [
               57.1969,
-              69.7,
+              170.7,
               509.4821,
               281.7418
             ]
@@ -10256,14 +11469,14 @@
           "column": 0,
           "rect": [
             71.3501,
-            120.6,
+            95.2,
             528.5529,
             276.5826
           ],
           "parts": [
             [
               71.3501,
-              120.6,
+              95.2,
               528.5529,
               276.5826
             ]
@@ -10328,14 +11541,14 @@
           "column": 0,
           "rect": [
             62.8661,
-            570.7259,
+            580.7614,
             400.967,
             602.5924
           ],
           "parts": [
             [
               62.8661,
-              570.7259,
+              580.7614,
               400.967,
               602.5924
             ]
@@ -10348,16 +11561,16 @@
           "column": 0,
           "rect": [
             57.1969,
-            57.3,
+            57.3218,
             526.5469,
-            528.0408
+            577.7614
           ],
           "parts": [
             [
               57.1969,
-              57.3,
+              57.3218,
               526.5469,
-              528.0408
+              577.7614
             ]
           ],
           "headline": "Gerekli güvenlik önlemlerini alarak aşağıdaki deney raporuna uygun şekilde"
@@ -10380,16 +11593,16 @@
           "column": 0,
           "rect": [
             62.8662,
-            353.7,
+            348.2,
             509.6076,
-            716.8834
+            745.8048
           ],
           "parts": [
             [
               62.8662,
-              353.7,
+              348.2,
               509.6076,
-              716.8834
+              745.8048
             ]
           ],
           "headline": "Denizlerdeki balık popülasyonu ve türleri çeşitli faktörlere bağlıdır. Bu faktörlerden biri de deniz suyunda çözünmüş oksijen miktarıdır. Balıklar, solunum esna",
@@ -10414,7 +11627,7 @@
               "partIndex": 0,
               "rect": [
                 95.2144,
-                353.7,
+                352.2,
                 499.8129,
                 423.0394
               ],
@@ -10430,14 +11643,14 @@
             62.8734,
             75.8,
             509.4378,
-            350.7
+            320.3918
           ],
           "parts": [
             [
               62.8734,
               75.8,
               509.4378,
-              350.7
+              320.3918
             ]
           ],
           "headline": "Sıcaklık katıların çözünürlüğü için oldukça önemli bir değişkendir. Bu nedenle safsızlık içeren katılar çözünürlük farkından yararlanılarak saflaştırılabilir."
@@ -10459,48 +11672,71 @@
           "label": "3",
           "column": 0,
           "rect": [
-            57.1969,
-            150.9,
-            526.7399,
-            432.0
+            77.0538,
+            387.2253,
+            83.5538,
+            417.6523
           ],
           "parts": [
             [
-              57.1969,
-              150.9,
+              77.0538,
+              387.2253,
+              83.5538,
+              417.6523
+            ]
+          ]
+        },
+        {
+          "id": "p180-b",
+          "label": "b",
+          "column": 0,
+          "rect": [
+            86.5538,
+            183.7585,
+            526.7399,
+            737.3503
+          ],
+          "parts": [
+            [
+              86.5538,
+              183.7585,
               526.7399,
-              432.0
+              737.3503
             ]
           ],
-          "headline": "Kan gazı testi, kandaki CO ve O seviyesiyle ilgili bilgi verir. Bu sayede kanın pH değeri ölçülür. Kanın pH değeri 7,4 civarında sabittir. Ancak KOAH, akciğer k",
-          "items": [
-            {
-              "id": "p180-3-a",
-              "label": "a",
-              "number": 1,
-              "partIndex": 0,
-              "rect": [
-                109.3876,
-                253.9,
-                513.9861,
-                345.1491
-              ],
-              "text": "a)  Yukarıdaki metinde geçen solunuma yardımcı cihazların çalışma prensibini gazların çözünürlüğü ile ilişkilendirerek açıklayınız."
-            },
-            {
-              "id": "p180-3-b",
-              "label": "b",
-              "number": 2,
-              "partIndex": 0,
-              "rect": [
-                61.1969,
-                152.774,
-                522.7399,
-                255.4642
-              ],
-              "text": "b)  Gazların çözünürlüğünün basınç ve sıcaklıkla değişim göstermesinin avantajları neler olabilir? Örnekler üzerinden açıklayınız. ‌"
-            }
-          ]
+          "headline": "Aşağıdaki grafikte verilen A, B, C, D katılarının sıcaklık-çözünürlük ilişkisini inceleyiniz ve hangi katıları içeren karışımların saflaştırılabileceğini gerekç"
+        }
+      ]
+    },
+    "181": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          50.1929,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p181-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            42.524,
+            342.3239,
+            492.1097,
+            741.5498
+          ],
+          "parts": [
+            [
+              42.524,
+              342.3239,
+              492.1097,
+              741.5498
+            ]
+          ],
+          "headline": "Konuya Başlarken"
         }
       ]
     },
@@ -10628,14 +11864,14 @@
           "column": 0,
           "rect": [
             71.3701,
-            509.1726,
+            509.1912,
             526.7402,
             687.1226
           ],
           "parts": [
             [
               71.3701,
-              509.1726,
+              509.1912,
               526.7402,
               687.1226
             ]
@@ -10650,14 +11886,14 @@
             71.3701,
             190.1,
             526.7401,
-            506.1726
+            506.1912
           ],
           "parts": [
             [
               71.3701,
               190.1,
               526.7401,
-              506.1726
+              506.1912
             ]
           ],
           "headline": "Aşağıdaki tabloda verilen çözelti türleri ile ölçütlerinize göre sınıflandırdığınız çözelti türlerini karşılaştı- rınız. Farklılık varsa nedenlerini açıklayınız"
@@ -10719,74 +11955,56 @@
           "label": "3",
           "column": 0,
           "rect": [
-            43.0237,
-            333.3,
-            509.4826,
+            57.1969,
+            612.5163,
+            495.1869,
             742.6552
           ],
           "parts": [
             [
-              43.0237,
-              333.3,
-              509.4826,
+              57.1969,
+              612.5163,
+              495.1869,
               742.6552
             ]
           ],
-          "headline": "Glikozun 25 °C sıcaklıkta çözünürlüğü 91 g/100 g su, 50 °C sıcaklıkta çözünürlüğü ise 244 g/100 g sudur.",
-          "items": [
-            {
-              "id": "p185-3-a",
-              "label": "a",
-              "number": 1,
-              "partIndex": 0,
-              "rect": [
-                89.5369,
-                531.6,
-                505.4826,
-                580.6552
-              ],
-              "text": "a)  İlk durumdaki çözelti ile son durumdaki çözeltiyi nasıl sınıflandırırsınız? Açıklayınız."
-            },
-            {
-              "id": "p185-3-b",
-              "label": "b",
-              "number": 2,
-              "partIndex": 0,
-              "rect": [
-                89.5369,
-                480.6,
-                505.4826,
-                529.6452
-              ],
-              "text": "b) 25 °C sıcaklıktaki çözelti 50 °C sıcaklığa kadar ısıtıldığında ne tür bir çözelti oluşur? Açıklayınız."
-            },
-            {
-              "id": "p185-3-c",
-              "label": "c",
-              "number": 3,
-              "partIndex": 0,
-              "rect": [
-                89.5269,
-                418.1,
-                505.4826,
-                478.6352
-              ],
-              "text": "50 °C sıcaklıkta doymuş bir çözelti hazırlamak için 100 g suya eklenmesi gereken glikoz miktarı c)  kaç gramdır?"
-            },
-            {
-              "id": "p185-3-ç",
-              "label": "ç",
-              "number": 3,
-              "partIndex": 0,
-              "rect": [
-                47.0237,
-                333.9983,
-                505.4826,
-                416.1252
-              ],
-              "text": "ç)  50 °C sıcaklıkta hazırlanan glikoz çözeltisinin 25 °C sıcaklığa kadar soğutulması durumunda ne tür bir çözelti oluşur? Açıklayınız. "
-            }
-          ]
+          "headline": "Glikozun 25 °C sıcaklıkta çözünürlüğü 91 g/100 g su, 50 °C sıcaklıkta çözünürlüğü ise 244 g/100 g sudur."
+        }
+      ]
+    },
+    "187": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          68.8347,
+          328.7368
+        ],
+        [
+          332.7368,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p187-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            61.165,
+            66.0,
+            504.5666,
+            378.2264
+          ],
+          "parts": [
+            [
+              61.165,
+              66.0,
+              504.5666,
+              378.2264
+            ]
+          ],
+          "headline": "ile ilgili bilgi kartları içeriğine"
         }
       ]
     },
@@ -10925,15 +12143,15 @@
           "label": "7",
           "column": 0,
           "rect": [
-            66.0,
-            127.9,
+            65.7332,
+            135.943,
             526.0,
             579.4098
           ],
           "parts": [
             [
-              66.0,
-              127.9,
+              65.7332,
+              135.943,
               526.0,
               579.4098
             ]
@@ -10958,16 +12176,16 @@
           "column": 0,
           "rect": [
             113.6359,
-            227.8,
+            226.3,
             509.4417,
-            547.9849
+            476.5
           ],
           "parts": [
             [
               113.6359,
-              227.8,
+              226.3,
               509.4417,
-              547.9849
+              476.5
             ]
           ],
           "headline": "Aşağıda NaCI, KCI, NH , KCIO bileşiklerinin çözünürlük grafiği verilmiştir."
@@ -10977,17 +12195,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            330.0,
-            60.1891,
+            62.8636,
+            67.345,
             507.087,
-            226.3
+            226.2712
           ],
           "parts": [
             [
-              330.0,
-              60.1891,
+              62.8636,
+              67.345,
               507.087,
-              226.3
+              226.2712
             ]
           ],
           "headline": "Aşağıda bazı maddelerin 1 atm basınçta farklı sıcaklıklarda 100 g sudaki çözünürlükleri g cinsinden verilmiştir."
@@ -11009,15 +12227,15 @@
           "label": "5",
           "column": 0,
           "rect": [
-            105.5,
-            264.5,
+            464.4,
+            266.0,
             526.0,
             425.9
           ],
           "parts": [
             [
-              105.5,
-              264.5,
+              464.4,
+              266.0,
               526.0,
               425.9
             ]
@@ -11029,17 +12247,17 @@
           "label": "6",
           "column": 0,
           "rect": [
-            105.5,
-            185.45,
+            464.4,
+            185.2,
             526.0,
-            264.5
+            263.0
           ],
           "parts": [
             [
-              105.5,
-              185.45,
+              464.4,
+              185.2,
               526.0,
-              264.5
+              263.0
             ]
           ],
           "headline": "içerisine 65,3 g KBr eklenerek çözelti hazırlanıyor."
@@ -11052,17 +12270,49 @@
             464.4,
             69.6,
             526.0,
-            184.45
+            182.2
           ],
           "parts": [
             [
               464.4,
               69.6,
               526.0,
-              184.45
+              182.2
             ]
           ],
           "headline": "içerisine 70 g KBr eklenerek çözelti hazırlanıyor."
+        }
+      ]
+    },
+    "191": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          50.693,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p191-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            43.024,
+            189.3753,
+            474.7345,
+            742.9671
+          ],
+          "parts": [
+            [
+              43.024,
+              189.3753,
+              474.7345,
+              742.9671
+            ]
+          ],
+          "headline": "Konuya Başlarken"
         }
       ]
     },
@@ -11214,15 +12464,15 @@
           "column": 0,
           "rect": [
             57.1969,
-            61.1,
-            509.4821,
+            92.939,
+            505.1641,
             256.6126
           ],
           "parts": [
             [
               57.1969,
-              61.1,
-              509.4821,
+              92.939,
+              505.1641,
               256.6126
             ]
           ],
@@ -11246,15 +12496,15 @@
           "column": 0,
           "rect": [
             70.767,
-            462.3,
-            523.0523,
+            528.535,
+            497.6071,
             739.2922
           ],
           "parts": [
             [
               70.767,
-              462.3,
-              523.0523,
+              528.535,
+              497.6071,
               739.2922
             ]
           ],
@@ -11337,20 +12587,39 @@
           "label": "4",
           "column": 0,
           "rect": [
-            77.0347,
-            70.2343,
-            205.5173,
+            77.0394,
+            98.3237,
+            83.5394,
             128.9867
           ],
           "parts": [
             [
-              77.0347,
-              70.2343,
-              205.5173,
+              77.0394,
+              98.3237,
+              83.5394,
               128.9867
             ]
+          ]
+        },
+        {
+          "id": "p196-q2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            86.5394,
+            70.2343,
+            526.949,
+            518.4424
           ],
-          "headline": "• 250 = M • (250 + 150)"
+          "parts": [
+            [
+              86.5394,
+              70.2343,
+              526.949,
+              518.4424
+            ]
+          ],
+          "headline": "çözeltisinde kaç gram CaCl katısı çözünmüştür?"
         }
       ]
     },
@@ -11372,14 +12641,14 @@
             62.8662,
             601.2,
             509.5877,
-            716.8834
+            745.8048
           ],
           "parts": [
             [
               62.8662,
               601.2,
               509.5877,
-              716.8834
+              745.8048
             ]
           ],
           "headline": "Bazı temizlik firmaları, plastik atık miktarını azaltmak için büyük şişelemeler yerine daha küçük şişelerde konsantre ürünler üretmektedir. Bir temizlik firması"
@@ -11390,14 +12659,14 @@
           "column": 0,
           "rect": [
             62.8644,
-            279.91,
+            351.2183,
             509.5981,
             598.2
           ],
           "parts": [
             [
               62.8644,
-              279.91,
+              351.2183,
               509.5981,
               598.2
             ]
@@ -11412,14 +12681,14 @@
             62.862,
             74.7,
             503.8129,
-            276.91
+            297.3
           ],
           "parts": [
             [
               62.862,
               74.7,
               503.8129,
-              276.91
+              297.3
             ]
           ],
           "headline": "Aşağıda üç farklı kapta hazırlanmış NaCl çözeltileri bulunmaktadır."
@@ -11442,16 +12711,16 @@
           "column": 0,
           "rect": [
             77.2949,
-            379.4,
+            380.006,
             523.3715,
-            639.8
+            569.0799
           ],
           "parts": [
             [
               77.2949,
-              379.4,
+              380.006,
               523.3715,
-              639.8
+              569.0799
             ]
           ],
           "headline": "İçeceklerdeki şeker miktarı, tüketicilerin tat tercihlerini doğrudan etkileyen önemli bir faktördür. Firmaların her üründe aynı lezzeti sunabilmesi için içecekl",
@@ -11465,7 +12734,7 @@
                 109.6376,
                 522.9,
                 513.7361,
-                572.1259
+                569.0799
               ],
               "text": "a)  1 L limonatadaki şekerin molar derişimini hesaplayınız . (C₁₂H₂₂O₁₁: 342 g/mol)"
             },
@@ -11489,7 +12758,7 @@
               "partIndex": 0,
               "rect": [
                 109.6376,
-                379.4,
+                380.006,
                 518.3141,
                 476.4469
               ],
@@ -11502,48 +12771,71 @@
           "label": "5",
           "column": 0,
           "rect": [
-            57.4469,
-            72.1,
-            526.4899,
-            376.4
+            77.2966,
+            352.6849,
+            100.8026,
+            377.006
           ],
           "parts": [
             [
-              57.4469,
-              72.1,
-              526.4899,
-              376.4
+              77.2966,
+              352.6849,
+              100.8026,
+              377.006
+            ]
+          ]
+        },
+        {
+          "id": "p198-b",
+          "label": "b",
+          "column": 0,
+          "rect": [
+            105.6359,
+            616.3,
+            517.7361,
+            732.1462
+          ],
+          "parts": [
+            [
+              105.6359,
+              616.3,
+              517.7361,
+              732.1462
             ]
           ],
-          "headline": "10 M hazırlanan sodyum klorür (NaCl) çözeltisinden 1 mL alınıp bunun üzerine 9 mL su ilave ediliyor. Daha sonra oluşan yeni çözeltiden de 1 mL alınıp üzerine 9 ",
-          "items": [
-            {
-              "id": "p198-5-1",
-              "label": "1",
-              "number": 1,
-              "partIndex": 0,
-              "rect": [
-                117.2341,
-                163.1268,
-                365.3181,
-                313.574
-              ],
-              "text": "1 mL çözelti 1 mL çözelti 1 mL çözelti 1 mL çözelti 9 9 mL su 9 mL su mL su 9 mL su 10 M x y z t"
-            },
-            {
-              "id": "p198-5-2",
-              "label": "2",
-              "number": 2,
-              "partIndex": 0,
-              "rect": [
-                61.4469,
-                73.9087,
-                522.4899,
-                134.2542
-              ],
-              "text": "(V = V + V olarak alınız.) toplam 1 2 ‌"
-            }
-          ]
+          "headline": "Kaplarda bulunan çözeltileri seyreltikten derişiğe doğru sıralayınız."
+        }
+      ]
+    },
+    "199": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          50.193,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p199-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            42.524,
+            367.8972,
+            487.6573,
+            742.9671
+          ],
+          "parts": [
+            [
+              42.524,
+              367.8972,
+              487.6573,
+              742.9671
+            ]
+          ],
+          "headline": "Konuya Başlarken"
         }
       ]
     },
@@ -11955,6 +13247,38 @@
         }
       ]
     },
+    "205": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          48.1083,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p205-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            43.274,
+            706.1475,
+            512.317,
+            756.2
+          ],
+          "parts": [
+            [
+              43.274,
+              706.1475,
+              512.317,
+              756.2
+            ]
+          ],
+          "headline": "PERFORMANS GÖREVİ"
+        }
+      ]
+    },
     "206": {
       "pageWidth": 569.764,
       "pageHeight": 796.535,
@@ -11971,16 +13295,16 @@
           "column": 0,
           "rect": [
             77.0394,
-            476.4,
+            470.9,
             522.7175,
-            723.3
+            748.2139
           ],
           "parts": [
             [
               77.0394,
-              476.4,
+              470.9,
               522.7175,
-              723.3
+              748.2139
             ]
           ],
           "headline": "Aşağıdaki tabloda verilen her iki madde de donma noktasını düşürmek için kullanılmaktadır.",
@@ -12005,7 +13329,7 @@
               "partIndex": 0,
               "rect": [
                 109.3894,
-                476.4,
+                474.9,
                 518.7175,
                 550.6106
               ],
@@ -12019,16 +13343,16 @@
           "column": 0,
           "rect": [
             77.0484,
-            225.9,
+            220.4,
             523.5698,
-            473.4
+            425.9866
           ],
           "parts": [
             [
               77.0484,
-              225.9,
+              220.4,
               523.5698,
-              473.4
+              425.9866
             ]
           ],
           "headline": "X ile Y uçucu olmayan ve suda çözünebilen katılardır. Aşağıda verilen grafik, 1 atm dış basınçta maddelerin 1 molleri 100 g suda çözündüğünde oluşan çözeltileri"
@@ -12041,17 +13365,49 @@
             57.1969,
             110.4,
             526.7399,
-            222.9
+            171.4
           ],
           "parts": [
             [
               57.1969,
               110.4,
               526.7399,
-              222.9
+              171.4
             ]
           ],
           "headline": "Eşit kütlede su içeren dört ayrı beherglasa NH Cl, Al (SO ) ve KBr maddelerinden birer mol ayrı ayrı eklenerek çözünmeleri sağlanıyor."
+        }
+      ]
+    },
+    "207": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          52.9001,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p207-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            47.781,
+            170.2715,
+            504.9771,
+            723.8633
+          ],
+          "parts": [
+            [
+              47.781,
+              170.2715,
+              504.9771,
+              723.8633
+            ]
+          ],
+          "headline": "NELER ÖĞRENDİNİZ? NELER ÖĞRENDİNİZ?"
         }
       ]
     },
@@ -12071,14 +13427,14 @@
           "column": 0,
           "rect": [
             57.1969,
-            380.9938,
+            377.1751,
             516.8417,
             585.4279
           ],
           "parts": [
             [
               57.1969,
-              380.9938,
+              377.1751,
               516.8417,
               585.4279
             ]
@@ -12093,14 +13449,14 @@
             57.1969,
             152.8149,
             508.6867,
-            377.9938
+            374.1751
           ],
           "parts": [
             [
               57.1969,
               152.8149,
               508.6867,
-              377.9938
+              374.1751
             ]
           ],
           "headline": "A vitamininin yağda çözünme süreciyle bazı maddelerin suda çözünme sürecini karşılaştırmak isteyen bir öğrenci aşağıdaki görsellere ulaşmıştır."
@@ -12176,14 +13532,14 @@
           "rect": [
             57.1969,
             303.4258,
-            526.194,
+            526.74,
             743.4286
           ],
           "parts": [
             [
               57.1969,
               303.4258,
-              526.194,
+              526.74,
               743.4286
             ]
           ],
@@ -12405,15 +13761,15 @@
           "column": 0,
           "rect": [
             43.0237,
-            102.8008,
-            515.5789,
+            78.535,
+            521.5789,
             525.4758
           ],
           "parts": [
             [
               43.0237,
-              102.8008,
-              515.5789,
+              78.535,
+              521.5789,
               525.4758
             ]
           ],
@@ -12437,14 +13793,14 @@
           "column": 0,
           "rect": [
             43.0237,
-            613.7505,
+            618.1,
             509.4822,
             743.4286
           ],
           "parts": [
             [
               43.0237,
-              613.7505,
+              618.1,
               509.4822,
               743.4286
             ]
@@ -12457,16 +13813,16 @@
           "column": 0,
           "rect": [
             43.0237,
-            484.6867,
+            489.0,
             509.4822,
-            610.7505
+            614.401
           ],
           "parts": [
             [
               43.0237,
-              484.6867,
+              489.0,
               509.4822,
-              610.7505
+              614.401
             ]
           ],
           "headline": "Deneyden yola çıkarak bağımsız değişkenlerin bağımlı değişken üzerindeki etkisini açıklayınız."
@@ -12477,16 +13833,16 @@
           "column": 0,
           "rect": [
             43.0237,
-            355.6729,
+            360.0,
             509.4822,
-            481.6867
+            485.3734
           ],
           "parts": [
             [
               43.0237,
-              355.6729,
+              360.0,
               509.4822,
-              481.6867
+              485.3734
             ]
           ],
           "headline": "Son durumda 1 numaralı beherin dibinde bulunan katının tamamen çözünmesi için neler yapılabilir?"
@@ -12499,14 +13855,14 @@
             43.0237,
             323.9459,
             404.4235,
-            352.6729
+            356.3459
           ],
           "parts": [
             [
               43.0237,
               323.9459,
               404.4235,
-              352.6729
+              356.3459
             ]
           ],
           "headline": "Aşağıdaki ifadelerden hangisi çözünürlüğe ilişkin en doğru tanımdır?"
@@ -12601,15 +13957,15 @@
           "column": 0,
           "rect": [
             59.0443,
-            53.0,
-            512.3166,
+            424.535,
+            500.3942,
             665.7196
           ],
           "parts": [
             [
               59.0443,
-              53.0,
-              512.3166,
+              424.535,
+              500.3942,
               665.7196
             ]
           ],
@@ -12929,16 +14285,16 @@
           "label": "23",
           "column": 0,
           "rect": [
-            57.1947,
-            57.1,
-            526.7926,
+            56.9681,
+            399.535,
+            527.0,
             743.4286
           ],
           "parts": [
             [
-              57.1947,
-              57.1,
-              526.7926,
+              56.9681,
+              399.535,
+              527.0,
               743.4286
             ]
           ],
@@ -13334,14 +14690,14 @@
           "column": 0,
           "rect": [
             57.1969,
-            533.1,
+            538.6,
             529.6646,
             743.4286
           ],
           "parts": [
             [
               57.1969,
-              533.1,
+              538.6,
               529.6646,
               743.4286
             ]
@@ -13368,7 +14724,7 @@
               "partIndex": 0,
               "rect": [
                 78.2047,
-                537.1,
+                538.6,
                 519.656,
                 587.4186
               ],
@@ -13382,16 +14738,16 @@
           "column": 0,
           "rect": [
             57.1969,
-            141.98,
+            512.5758,
             381.4168,
-            517.8408
+            535.6
           ],
           "parts": [
             [
               57.1969,
-              141.98,
+              512.5758,
               381.4168,
-              517.8408
+              535.6
             ]
           ],
           "headline": "Molar derişime ilişkin aşağıdaki ifadelerden hangisi yanlıştır?"
@@ -13703,11 +15059,11 @@
             [
               43.0237,
               117.2215,
-              98.51724999999999,
+              89.6139,
               295.0821
             ],
             [
-              99.51724999999999,
+              90.6139,
               140.5561,
               512.5674,
               516.2368
@@ -13753,14 +15109,14 @@
           "column": 0,
           "rect": [
             57.1969,
-            115.1,
+            123.1,
             523.6554,
             248.4896
           ],
           "parts": [
             [
               57.1969,
-              115.1,
+              123.1,
               523.6554,
               248.4896
             ]
@@ -13845,14 +15201,14 @@
           "column": 0,
           "rect": [
             43.0237,
-            236.9112,
+            272.5,
             509.4822,
             384.8459
           ],
           "parts": [
             [
               43.0237,
-              236.9112,
+              272.5,
               509.4822,
               384.8459
             ]
@@ -13865,16 +15221,16 @@
           "column": 0,
           "rect": [
             43.0237,
-            73.0,
+            112.0,
             509.4822,
-            233.9112
+            237.3223
           ],
           "parts": [
             [
               43.0237,
-              73.0,
+              112.0,
               509.4822,
-              233.9112
+              237.3223
             ]
           ],
           "headline": "Öğrencinin hazırlamış olduğu LiCl ve Al(NO ) çözeltileri ile suyun kaynama ve donma noktalarını büyükten küçüğe doğru sıralayınız."
@@ -13953,6 +15309,102 @@
         }
       ]
     },
+    "232": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          64.8661,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p232-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            62.8661,
+            627.4712,
+            247.1845,
+            701.9532
+          ],
+          "parts": [
+            [
+              62.8661,
+              627.4712,
+              247.1845,
+              701.9532
+            ]
+          ],
+          "headline": "Temanın dijital Tema sunusuna nüshasına"
+        }
+      ]
+    },
+    "233": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.0237,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p233-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            171.7506,
+            187.6115,
+            403.6425,
+            741.2033
+          ],
+          "parts": [
+            [
+              171.7506,
+              187.6115,
+              403.6425,
+              741.2033
+            ]
+          ],
+          "headline": "Hazır mısınız?"
+        }
+      ]
+    },
+    "234": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          64.3661,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p234-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            55.001,
+            180.851,
+            493.641,
+            675.0616
+          ],
+          "parts": [
+            [
+              55.001,
+              180.851,
+              493.641,
+              675.0616
+            ]
+          ],
+          "headline": "Konuya Başlarken"
+        }
+      ]
+    },
     "235": {
       "pageWidth": 569.764,
       "pageHeight": 796.535,
@@ -13989,14 +15441,14 @@
           "column": 0,
           "rect": [
             57.2044,
-            61.6,
+            48.0763,
             512.85,
             290.1116
           ],
           "parts": [
             [
               57.2044,
-              61.6,
+              48.0763,
               512.85,
               290.1116
             ]
@@ -14023,14 +15475,14 @@
             71.3633,
             266.1026,
             523.1553,
-            334.1252
+            330.2927
           ],
           "parts": [
             [
               71.3633,
               266.1026,
               523.1553,
-              334.1252
+              330.2927
             ]
           ],
           "headline": "Bilimsel çalışmalarda yapılan deneylerde mikro ölçek kullanmanın avantaj ve dezavantajlarını yazınız."
@@ -14081,19 +15533,78 @@
           "column": 0,
           "rect": [
             71.3633,
-            65.5,
-            523.1558,
+            109.2452,
+            94.8633,
             134.0876
           ],
           "parts": [
             [
               71.3633,
-              65.5,
-              523.1558,
+              109.2452,
+              94.8633,
               134.0876
             ]
+          ]
+        },
+        {
+          "id": "p236-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            99.7133,
+            658.6226,
+            524.7255,
+            722.6552
           ],
-          "headline": "Bu deneyde çevre kirliliğini artıracak ya da azaltacak ne tür işlemler yaptınız? Bu işlemlerden hareketle aşağıda verilen soruları yanıtlayınız."
+          "parts": [
+            [
+              99.7133,
+              658.6226,
+              524.7255,
+              722.6552
+            ]
+          ],
+          "headline": "Makro ve mikro ölçekli deneylerin sonuçlarını incelediğinizde herhangi bir farklılık gözlemlediniz mi? Gözlemlediğiniz farklılıklar var ise yazınız."
+        },
+        {
+          "id": "p236-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            99.7133,
+            573.1176,
+            524.8435,
+            655.6226
+          ],
+          "parts": [
+            [
+              99.7133,
+              573.1176,
+              524.8435,
+              655.6226
+            ]
+          ],
+          "headline": "Çökelme tepkimeleri için gerçekleştirdiğiniz makro ve mikro ölçekli deneylerin ekosisteme etkile- rini belirlemeye yönelik ölçütler oluşturunuz. Ölçütlerinizi b"
+        },
+        {
+          "id": "p236-3",
+          "label": "3",
+          "column": 0,
+          "rect": [
+            85.7933,
+            333.2927,
+            526.7398,
+            570.1176
+          ],
+          "parts": [
+            [
+              85.7933,
+              333.2927,
+              526.7398,
+              570.1176
+            ]
+          ],
+          "headline": "Belirlediğiniz ölçütlerden yola çıkarak gerekli ölçümleri yapınız. Aşağıda verilmiş olan tabloyu tamamlayınız."
         }
       ]
     },
@@ -14153,14 +15664,14 @@
           "column": 0,
           "rect": [
             85.5434,
-            54.5163,
+            95.0434,
             515.5023,
             644.1176
           ],
           "parts": [
             [
               85.5434,
-              54.5163,
+              95.0434,
               515.5023,
               644.1176
             ]
@@ -14353,16 +15864,16 @@
           "column": 0,
           "rect": [
             62.8662,
-            674.6608,
+            441.1671,
             509.0092,
-            729.9225
+            756.535
           ],
           "parts": [
             [
               62.8662,
-              674.6608,
+              441.1671,
               509.0092,
-              729.9225
+              756.535
             ]
           ],
           "headline": "Aşağıda su ve karbon ayak izleri verilmiştir.",
@@ -14400,16 +15911,16 @@
           "column": 0,
           "rect": [
             77.0448,
-            497.8,
+            500.3,
             517.9862,
-            634.0
+            617.0
           ],
           "parts": [
             [
               77.0448,
-              497.8,
+              500.3,
               517.9862,
-              634.0
+              617.0
             ]
           ],
           "headline": "Aşağıdaki metinden yararlanarak insanın çevre üzerine olumsuz etkilerine yönelik çözüm önerilerinizi ilgili alana yazınız."
@@ -14420,16 +15931,16 @@
           "column": 0,
           "rect": [
             77.0538,
-            245.6,
+            246.3927,
             520.4368,
-            494.8
+            498.8
           ],
           "parts": [
             [
               77.0538,
-              245.6,
+              246.3927,
               520.4368,
-              494.8
+              498.8
             ]
           ],
           "headline": "Aşağıdaki metinden yararlanarak soruları cevaplayınız. Müsilaj, deniz suyunda dönem dönem oluşan ağımsı jelatin yapıdaki organik maddeye verilen addır.",
@@ -14454,7 +15965,7 @@
               "partIndex": 0,
               "rect": [
                 109.4128,
-                245.6,
+                246.3927,
                 513.9861,
                 293.3583
               ],
@@ -14467,48 +15978,39 @@
           "label": "4",
           "column": 0,
           "rect": [
-            57.1969,
-            66.6,
-            526.7399,
-            242.6
+            77.0718,
+            218.9254,
+            100.5778,
+            243.3927
           ],
           "parts": [
             [
-              57.1969,
-              66.6,
-              526.7399,
-              242.6
+              77.0718,
+              218.9254,
+              100.5778,
+              243.3927
+            ]
+          ]
+        },
+        {
+          "id": "p242-c",
+          "label": "c",
+          "column": 0,
+          "rect": [
+            105.3858,
+            618.5,
+            523.569,
+            737.3503
+          ],
+          "parts": [
+            [
+              105.3858,
+              618.5,
+              523.569,
+              737.3503
             ]
           ],
-          "headline": "Aşağıdaki metinden yararlanarak soruları cevaplayınız. Enerjiye olan ihtiyaç teknolojik gelişmeler, hızlı nüfus artışı ve sanayileşmeye bağlı olarak her geçen g",
-          "items": [
-            {
-              "id": "p242-4-a",
-              "label": "a",
-              "number": 1,
-              "partIndex": 0,
-              "rect": [
-                103.7518,
-                123.0974,
-                513.9861,
-                176.8624
-              ],
-              "text": "Fosil yakıtların kullanımı sonucu açığa çıkan hava kirleticiler nelerdir?  a)  "
-            },
-            {
-              "id": "p242-4-b",
-              "label": "b",
-              "number": 2,
-              "partIndex": 0,
-              "rect": [
-                61.1969,
-                68.4355,
-                522.7399,
-                129.1893
-              ],
-              "text": "b)  Küresel ısınmayı en aza indirebilmek için çözüm önerileriniz nelerdir? ‌"
-            }
-          ]
+          "headline": "Oluşturduğunuz kelime bulutları ile anlamlı birer cümle yazarak arkadaşlarınızın cümleleri ile karşılaştırınız."
         }
       ]
     },
@@ -14605,6 +16107,74 @@
             ]
           ],
           "headline": "Gerekli güvenlik önlemlerini alarak aşağıdaki deney raporuna uygun şekilde deneyinizi gerçekleştiriniz."
+        }
+      ]
+    },
+    "244": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.1969,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p244-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            51.1969,
+            190.084,
+            477.3239,
+            756.535
+          ],
+          "parts": [
+            [
+              51.1969,
+              190.084,
+              477.3239,
+              756.535
+            ]
+          ],
+          "headline": "Konuya Başlarken"
+        }
+      ]
+    },
+    "245": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.0237,
+          266.1478
+        ],
+        [
+          270.1478,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p245-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            51.0237,
+            64.8632,
+            512.5674,
+            519.6207
+          ],
+          "parts": [
+            [
+              51.0237,
+              64.8632,
+              512.5674,
+              519.6207
+            ]
+          ],
+          "headline": "Etkinlik"
         }
       ]
     },
@@ -14760,6 +16330,134 @@
         }
       ]
     },
+    "247": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          161.2341,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p247-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            42.795,
+            189.1234,
+            515.3429,
+            742.7152
+          ],
+          "parts": [
+            [
+              42.795,
+              189.1234,
+              515.3429,
+              742.7152
+            ]
+          ],
+          "headline": "Aşağıda atmosferin doğasındaki değişimler ile ilgili balık kılçığı diyagramı verilmiştir. Her bir değişimin"
+        }
+      ]
+    },
+    "249": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          64.8662,
+          194.0934
+        ],
+        [
+          198.0934,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p249-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            62.8662,
+            230.0193,
+            502.2155,
+            352.3087
+          ],
+          "parts": [
+            [
+              62.8662,
+              230.0193,
+              502.2155,
+              352.3087
+            ]
+          ],
+          "headline": "Aşağıdaki metni okuyarak soruları cevaplayınız. Kloroflorokarbonlar (CFC); klor, karbon, flor atomları içeren ve yanıcı olmayan bileşiklerdir. Atmosferde yüksek"
+        },
+        {
+          "id": "p249-a",
+          "label": "a",
+          "column": 0,
+          "rect": [
+            91.2162,
+            169.9,
+            509.4091,
+            227.0193
+          ],
+          "parts": [
+            [
+              91.2162,
+              169.9,
+              509.4091,
+              227.0193
+            ]
+          ],
+          "headline": "Az miktardaki CFC türlerinin ozon tabakası üzerinde neden bu kadar büyük bir etkiye sahip olduğuyla ilgili görüşlerinizi yazınız."
+        },
+        {
+          "id": "p249-b",
+          "label": "b",
+          "column": 0,
+          "rect": [
+            91.2162,
+            122.2,
+            503.8129,
+            168.4
+          ],
+          "parts": [
+            [
+              91.2162,
+              122.2,
+              503.8129,
+              168.4
+            ]
+          ],
+          "headline": "Ozon tabakasına zarar veren kirleticilere ve kirleticilerin kaynaklarına örnekler veriniz."
+        },
+        {
+          "id": "p249-c",
+          "label": "c",
+          "column": 0,
+          "rect": [
+            91.2162,
+            66.5,
+            503.8129,
+            120.7
+          ],
+          "parts": [
+            [
+              91.2162,
+              66.5,
+              503.8129,
+              120.7
+            ]
+          ],
+          "headline": "Bireylerin hava kalitesini iyileştirmeye yardımcı olabilecek üç farklı yöntem yazınız."
+        }
+      ]
+    },
     "250": {
       "pageWidth": 569.764,
       "pageHeight": 796.535,
@@ -14776,14 +16474,14 @@
           "column": 0,
           "rect": [
             77.0394,
-            606.7,
+            601.2,
             519.8595,
             737.3503
           ],
           "parts": [
             [
               77.0394,
-              606.7,
+              601.2,
               519.8595,
               737.3503
             ]
@@ -14810,7 +16508,7 @@
               "partIndex": 0,
               "rect": [
                 109.3842,
-                606.7,
+                605.2,
                 513.9861,
                 638.8483
               ],
@@ -14824,33 +16522,20 @@
           "column": 0,
           "rect": [
             77.0432,
-            394.8,
+            389.3,
             523.6095,
-            603.7
+            519.1
           ],
           "parts": [
             [
               77.0432,
-              394.8,
+              389.3,
               523.6095,
-              603.7
+              519.1
             ]
           ],
           "headline": "Karbon döngüsü, karbonun atmosferden Dünya’ya ve sonra tekrar atmosfere sürekli hareket ettiği süreçtir.",
           "items": [
-            {
-              "id": "p250-3-a",
-              "label": "a",
-              "number": 1,
-              "partIndex": 0,
-              "rect": [
-                109.3876,
-                499.6,
-                513.9861,
-                548.8323
-              ],
-              "text": "a)  Atmosferdeki karbon dioksit artışının küresel ısınma üzerindeki etkisini yazınız."
-            },
             {
               "id": "p250-3-b",
               "label": "b",
@@ -14871,7 +16556,7 @@
               "partIndex": 0,
               "rect": [
                 109.3876,
-                394.8,
+                393.3,
                 519.3601,
                 453.4863
               ],
@@ -14884,20 +16569,148 @@
           "label": "4",
           "column": 0,
           "rect": [
-            77.034,
-            88.3,
+            65.1969,
+            96.2835,
             523.3921,
-            391.8
+            361.5687
           ],
           "parts": [
             [
-              77.034,
-              88.3,
+              65.1969,
+              96.2835,
               523.3921,
-              391.8
+              361.5687
             ]
           ],
           "headline": "Aşağıdaki tablonun ilgili yerlerine yakın çevrenizde gözlemlediğiniz ekosisteme zarar veren durumların bir listesini ve çözüm önerilerinizi yazınız."
+        }
+      ]
+    },
+    "251": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          48.1078,
+          162.3578
+        ],
+        [
+          166.3578,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p251-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            127.5083,
+            348.4223,
+            512.0044,
+            486.7424
+          ],
+          "parts": [
+            [
+              127.5083,
+              348.4223,
+              512.0044,
+              486.7424
+            ]
+          ],
+          "headline": "Görev iniz öncesinde aşağıdaki hususlara dikkat ediniz."
+        },
+        {
+          "id": "p251-q2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            46.1083,
+            256.5473,
+            458.7776,
+            345.4223
+          ],
+          "parts": [
+            [
+              46.1083,
+              256.5473,
+              458.7776,
+              345.4223
+            ]
+          ],
+          "headline": "Göreviniz esnasında aşağıdaki hususlara dikkat ediniz . Dikkat Edilecek Hususlar"
+        },
+        {
+          "id": "p251-q3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            46.1078,
+            87.3073,
+            512.0077,
+            253.5473
+          ],
+          "parts": [
+            [
+              46.1078,
+              87.3073,
+              512.0077,
+              253.5473
+            ]
+          ],
+          "headline": "Görevinizin bitiminde aşağıdaki hususlara dikkat ediniz ."
+        },
+        {
+          "id": "p251-q4",
+          "label": null,
+          "column": 1,
+          "rect": [
+            132.7,
+            704.6356,
+            504.3,
+            756.2
+          ],
+          "parts": [
+            [
+              132.7,
+              704.6356,
+              504.3,
+              756.2
+            ]
+          ],
+          "headline": "PERFORMANS GÖREVİ"
+        }
+      ]
+    },
+    "252": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          106.8678,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p252-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            81.5414,
+            686.611,
+            210.427,
+            723.8633
+          ],
+          "parts": [
+            [
+              81.5414,
+              686.611,
+              210.427,
+              723.8633
+            ]
+          ],
+          "headline": "NELER ÖĞRENDİNİZ? NELER ÖĞRENDİNİZ?"
         }
       ]
     },
@@ -15257,14 +17070,14 @@
           "column": 0,
           "rect": [
             57.1969,
-            74.7,
+            129.3,
             523.6554,
             244.7965
           ],
           "parts": [
             [
               57.1969,
-              74.7,
+              129.3,
               523.6554,
               244.7965
             ]
@@ -15325,6 +17138,568 @@
         }
       ]
     },
+    "262": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.1961,
+          217.2195
+        ],
+        [
+          221.2195,
+          325.6265
+        ],
+        [
+          329.6265,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p262-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            425.6,
+            53.0082,
+            528.705,
+            606.6
+          ],
+          "parts": [
+            [
+              425.6,
+              53.0082,
+              528.705,
+              606.6
+            ]
+          ],
+          "headline": "Aşağıda verilen ifadeler (ölçütler) çalışmanızla ilgili kendiniz hakkında belirlemeler yapmanız için hazırlanmıştır. Her ölçüt için hangi ba"
+        }
+      ]
+    },
+    "263": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.2702,
+          207.4044
+        ],
+        [
+          211.4044,
+          311.4534
+        ],
+        [
+          315.4534,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p263-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            46.1084,
+            230.8137,
+            209.9603,
+            300.7232
+          ],
+          "parts": [
+            [
+              46.1084,
+              230.8137,
+              209.9603,
+              300.7232
+            ]
+          ],
+          "headline": "Etkinlik Etkinlikteki basamaklarını"
+        },
+        {
+          "id": "p263-q2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            43.2702,
+            52.8718,
+            218.9603,
+            227.8137
+          ],
+          "parts": [
+            [
+              43.2702,
+              52.8718,
+              218.9603,
+              227.8137
+            ]
+          ],
+          "headline": "Etkinlik ile Etkinlik ile ilgili ilgili verileri"
+        }
+      ]
+    },
+    "265": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.0202,
+          117.9172
+        ],
+        [
+          121.9172,
+          224.9452
+        ],
+        [
+          228.9452,
+          331.9732
+        ],
+        [
+          335.9732,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p265-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            339.1,
+            68.6082,
+            446.2,
+            622.2
+          ],
+          "parts": [
+            [
+              339.1,
+              68.6082,
+              446.2,
+              622.2
+            ]
+          ],
+          "headline": "Aşağıda verilen ifadeler (ölçütler) çalışmanızla ilgili kendiniz hakkında belirlemeler yapmanız için hazırlanmıştır. Her ölçüt için hangi ba"
+        }
+      ]
+    },
+    "266": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          61.7788,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p266-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            64.947,
+            279.2,
+            526.0,
+            564.7
+          ],
+          "parts": [
+            [
+              64.947,
+              279.2,
+              526.0,
+              564.7
+            ]
+          ],
+          "headline": "Bu form, grup olarak yaptığınız etkinliği değerlendirmek üzere hazırlanmıştır. Aşağıdaki ifadeleri okuyunuz. Bu ifadelere göre önce gruptaki",
+          "items": [
+            {
+              "id": "p266--4",
+              "label": "4",
+              "number": 4,
+              "partIndex": 0,
+              "rect": [
+                64.947,
+                279.2,
+                522.0,
+                550.4332
+              ],
+              "text": "1. 2. 3. 4. ve sonrasında öğrencinin öğrencinin öğrencinin öğrencinin Kendim öğrencinin adı adı adı adı durum ve davranışları Konu ile ilgili temel kavramları bilmektedir. Etkinliğin basamaklarını doğ"
+            }
+          ]
+        },
+        {
+          "id": "p266-q2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            62.642,
+            57.4,
+            526.0,
+            136.7
+          ],
+          "parts": [
+            [
+              62.642,
+              57.4,
+              526.0,
+              136.7
+            ]
+          ],
+          "headline": "Etkinlik sürecinde arkadaşlarına saygılı"
+        }
+      ]
+    },
+    "267": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.0202,
+          224.9452
+        ],
+        [
+          228.9452,
+          331.9732
+        ],
+        [
+          335.9732,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p267-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            339.1,
+            68.6082,
+            514.5318,
+            614.2
+          ],
+          "parts": [
+            [
+              339.1,
+              68.6082,
+              514.5318,
+              614.2
+            ]
+          ],
+          "headline": "Aşağıda verilen ifadeler (ölçütler) çalışmanızla ilgili kendiniz hakkında belirlemeler yapmanız için hazırlanmıştır. Her ölçüt için hangi ba"
+        }
+      ]
+    },
+    "269": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.0203,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p269-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            43.0203,
+            138.6082,
+            503.8666,
+            704.7884
+          ],
+          "parts": [
+            [
+              43.0203,
+              138.6082,
+              503.8666,
+              704.7884
+            ]
+          ],
+          "headline": "Adı ve Soyadı:"
+        }
+      ]
+    },
+    "270": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          78.0472,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p270-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            76.0472,
+            504.82,
+            519.862,
+            742.6866
+          ],
+          "parts": [
+            [
+              76.0472,
+              504.82,
+              519.862,
+              742.6866
+            ]
+          ],
+          "headline": "Aşağıdaki maddeleri yaptığınız çalışmayı dikkate alarak cevaplayınız. Bu projeden neler öğrendim? ●"
+        }
+      ]
+    },
+    "273": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.0229,
+          117.9172
+        ],
+        [
+          121.9172,
+          224.9452
+        ],
+        [
+          228.9452,
+          331.9732
+        ],
+        [
+          335.9732,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p273-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            43.3,
+            151.62,
+            504.5673,
+            704.7258
+          ],
+          "parts": [
+            [
+              43.3,
+              151.62,
+              504.5673,
+              704.7258
+            ]
+          ],
+          "headline": "Öğrenci Adı ve Soyadı: Sınıfı ve Numarası:"
+        }
+      ]
+    },
+    "274": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.4433,
+          221.5775
+        ],
+        [
+          225.5775,
+          325.6265
+        ],
+        [
+          329.6265,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p274-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            57.4433,
+            52.8093,
+            222.6215,
+            237.1812
+          ],
+          "parts": [
+            [
+              57.4433,
+              52.8093,
+              222.6215,
+              237.1812
+            ]
+          ],
+          "headline": "Etkinlik sürecinde Etkili, etkili, sorgulayıcı"
+        }
+      ]
+    },
+    "275": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.0229,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p275-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            43.3,
+            261.85,
+            512.3,
+            614.2
+          ],
+          "parts": [
+            [
+              43.3,
+              261.85,
+              512.3,
+              614.2
+            ]
+          ],
+          "headline": "Aşağıda verilen ifadeler (ölçütler) çalışmanızla ilgili kendiniz hakkında belirlemeler yapmanız için hazırlanmıştır. Her ölçüt için hangi ba"
+        },
+        {
+          "id": "p275-q2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            43.0229,
+            52.8093,
+            446.2,
+            260.85
+          ],
+          "parts": [
+            [
+              43.0229,
+              52.8093,
+              446.2,
+              260.85
+            ]
+          ],
+          "headline": "Etkinlik sürecinde etkili, sorgulayıcı ve etkili, sorgulayıcı ve"
+        }
+      ]
+    },
+    "277": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.0202,
+          122.0932
+        ],
+        [
+          126.0932,
+          229.1212
+        ],
+        [
+          233.1212,
+          336.1492
+        ],
+        [
+          340.1492,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p277-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            43.3,
+            156.5501,
+            129.3,
+            704.7
+          ],
+          "parts": [
+            [
+              43.3,
+              156.5501,
+              129.3,
+              704.7
+            ]
+          ],
+          "headline": "Öğrenci Adı ve Soyadı: Sınıfı ve Numarası:"
+        }
+      ]
+    },
+    "279": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          48.1056,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p279-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            51.274,
+            280.4,
+            512.317,
+            571.8
+          ],
+          "parts": [
+            [
+              51.274,
+              280.4,
+              512.317,
+              571.8
+            ]
+          ],
+          "headline": "Bu form, grup olarak yaptığınız etkinliği değerlendirmek üzere hazırlanmıştır. Aşağıdaki ifadeleri okuyunuz. Bu ifadelere göre önce gruptaki",
+          "items": [
+            {
+              "id": "p279--4",
+              "label": "4",
+              "number": 4,
+              "partIndex": 0,
+              "rect": [
+                51.274,
+                280.4,
+                508.3,
+                550.5793
+              ],
+              "text": "1. 2. 3. 4. ve sonrasında öğrencinin öğrencinin öğrencinin öğrencinin Kendim öğrencinin adı adı adı adı durum ve davranışları Konu ile ilgili temel kavramları bilir. Etkinliğin basamaklarını doğru bir"
+            }
+          ]
+        },
+        {
+          "id": "p279-q2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            48.9688,
+            59.5,
+            512.3,
+            138.5
+          ],
+          "parts": [
+            [
+              48.9688,
+              59.5,
+              512.3,
+              138.5
+            ]
+          ],
+          "headline": "Etkinlik sürecinde arkadaşlarına saygılı"
+        }
+      ]
+    },
     "288": {
       "pageWidth": 569.764,
       "pageHeight": 796.535,
@@ -15364,16 +17739,16 @@
           "label": "6",
           "column": 2,
           "rect": [
-            184.4358,
-            87.3066,
-            267.2243,
+            79.4575,
+            87.9054,
+            178.5592,
             357.0576
           ],
           "parts": [
             [
-              184.4358,
-              87.3066,
-              267.2243,
+              79.4575,
+              87.9054,
+              178.5592,
               357.0576
             ]
           ],
@@ -15384,16 +17759,16 @@
           "label": "8",
           "column": 4,
           "rect": [
-            315.6216,
-            197.0214,
-            371.414,
+            69.9575,
+            87.9054,
+            76.4575,
             363.5657
           ],
           "parts": [
             [
-              315.6216,
-              197.0214,
-              371.414,
+              69.9575,
+              87.9054,
+              76.4575,
               363.5657
             ]
           ],

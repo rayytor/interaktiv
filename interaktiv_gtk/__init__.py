@@ -19,3 +19,7 @@ import gi
 # must settle the GTK and libadwaita versions before `gi.repository` is touched.
 gi.require_version("Gtk", "4.0")
 gi.require_version("Adw", "1")
+# Gdk is normally settled as a side effect of loading Gtk, but a module that
+# names it first -- `touch`, reaching for `Gdk.InputSource` -- gets there
+# before Gtk has been imported and is warned at for guessing.
+gi.require_version("Gdk", "4.0")
