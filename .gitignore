@@ -37,3 +37,14 @@ npm-debug.log*
 Thumbs.db
 .idea/
 .vscode/
+
+# Derived parse cache for detector fitting (rebuilt by tools/hotspot_extraction/train/cache.py)
+.cache/
+
+# Trace sidecars: a diagnostic the reader never loads, written only by scan.py --trace
+activities/books/*/trace.json.gz
+
+# Kitap Sunumlari: teacher slide decks fetched by tools/kitap_sunumlari/fetch_ispring.py
+# (hundreds of MB of slide images). Only the root index is tracked.
+kitap_sunumlari/*
+!kitap_sunumlari/index.json

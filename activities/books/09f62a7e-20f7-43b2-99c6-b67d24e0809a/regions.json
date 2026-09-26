@@ -2,7 +2,7 @@
   "version": 2,
   "bookId": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
   "fingerprint": "113356203-9ed589ca04e84f5d4fc2e2899f5df978",
-  "builtAt": "2026-09-20T17:45:44.480Z",
+  "builtAt": "2026-09-22T04:43:22.143Z",
   "pageCount": 193,
   "calibration": {
     "enabled": true,
@@ -299,9 +299,6 @@
     "40": [
       "7ab8983f-edb0-f111-b31a-005056a7d529"
     ],
-    "41": [
-      "3d3fa081-edb0-f111-b31a-005056a7d529"
-    ],
     "46": [
       "474e281d-eeb0-f111-b31a-005056a7d529"
     ],
@@ -316,6 +313,38 @@
     ]
   },
   "pages": {
+    "3": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          36.5233,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p3-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            40.0453,
+            66.2587,
+            502.5881,
+            333.1674
+          ],
+          "parts": [
+            [
+              40.0453,
+              66.2587,
+              502.5881,
+              333.1674
+            ]
+          ],
+          "headline": "Ölçme ve Değerlendirme Uzmanı Hüseyin BÜYÜKBİÇER"
+        }
+      ]
+    },
     "17": {
       "pageWidth": 552.756,
       "pageHeight": 779.528,
@@ -351,15 +380,15 @@
           "label": "2",
           "column": 0,
           "rect": [
-            45.6507,
-            298.6074,
+            33.3252,
+            100.7088,
             506.0376,
             359.0938
           ],
           "parts": [
             [
-              45.6507,
-              298.6074,
+              33.3252,
+              100.7088,
               506.0376,
               359.0938
             ]
@@ -371,20 +400,20 @@
           "label": null,
           "column": 0,
           "rect": [
-            27.1735,
-            445.246,
-            536.756,
-            540.246
+            33.7743,
+            404.7809,
+            272.6237,
+            569.9688
           ],
           "parts": [
             [
-              27.1735,
-              445.246,
-              536.756,
-              540.246
+              33.7743,
+              404.7809,
+              272.6237,
+              569.9688
             ]
           ],
-          "headline": "ları besinlerden elde ettikleri enerjiyle vücut",
+          "headline": "infogrofik",
           "anchored": true
         }
       ]
@@ -545,14 +574,14 @@
           "column": 0,
           "rect": [
             48.6969,
-            155.7342,
+            61.4552,
             518.012,
             221.8842
           ],
           "parts": [
             [
               48.6969,
-              155.7342,
+              61.4552,
               518.012,
               221.8842
             ]
@@ -577,16 +606,16 @@
           "column": 0,
           "rect": [
             28.6683,
-            44.0,
+            49.3632,
             536.756,
-            91.6276
+            89.1322
           ],
           "parts": [
             [
               28.6683,
-              44.0,
+              49.3632,
               536.756,
-              91.6276
+              89.1322
             ]
           ],
           "headline": "adenin, bir riboz şekeri ve üç tane fosfat grubundan oluşur.",
@@ -610,16 +639,16 @@
           "column": 0,
           "rect": [
             42.6929,
-            616.155,
+            616.0207,
             536.756,
-            710.4169
+            734.5547
           ],
           "parts": [
             [
               42.6929,
-              616.1549500000001,
+              616.0207,
               536.756,
-              710.4169
+              734.5547
             ]
           ],
           "headline": "olarak RNA molekülündeki adenin nükleotidine benzer. ATP’nin RNA’da bulu-",
@@ -633,14 +662,14 @@
             48.61,
             380.207,
             401.933,
-            615.155
+            615.893
           ],
           "parts": [
             [
               48.61,
               380.207,
               401.933,
-              615.1549500000001
+              615.893
             ]
           ],
           "headline": "P",
@@ -652,20 +681,84 @@
           "column": 0,
           "rect": [
             42.6929,
-            170.3844,
+            167.953,
             536.756,
-            265.3844
+            277.983
           ],
           "parts": [
             [
               42.6929,
-              170.3844,
+              167.953,
               536.756,
-              265.3844
+              277.983
             ]
           ],
           "headline": "enerji, çeşitli metabolik faaliyetlerde kullanılır. Gerçekleşmesi için enerjiye",
           "anchored": true
+        }
+      ]
+    },
+    "21": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          42.7205,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p21-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            35.051,
+            52.7167,
+            503.531,
+            418.2803
+          ],
+          "parts": [
+            [
+              35.051,
+              52.7167,
+              503.531,
+              418.2803
+            ]
+          ],
+          "headline": "Aşağıda verilen bilgi özetini okuyarak öğrendiklerinizi kontrol ediniz. •"
+        }
+      ]
+    },
+    "22": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          50.499,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p22-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            49.5473,
+            184.9065,
+            524.7603,
+            662.4789
+          ],
+          "parts": [
+            [
+              49.5473,
+              184.9065,
+              524.7603,
+              662.4789
+            ]
+          ],
+          "headline": "Konuya Başlarken"
         }
       ]
     },
@@ -685,14 +778,14 @@
           "column": 0,
           "rect": [
             43.0197,
-            508.941,
+            456.2791,
             457.0398,
             572.3051
           ],
           "parts": [
             [
               43.0197,
-              508.941,
+              456.2791,
               457.0398,
               572.3051
             ]
@@ -707,14 +800,14 @@
             43.0197,
             433.0452,
             308.5078,
-            456.1952
+            453.2791
           ],
           "parts": [
             [
               43.0197,
               433.0452,
               308.5078,
-              456.1952
+              453.2791
             ]
           ],
           "headline": "Öğretmeniniz rehberliğinde 4-6 kişilik gruplar oluşturunuz."
@@ -865,15 +958,15 @@
           "column": 0,
           "rect": [
             34.5297,
-            120.8751,
-            461.8658,
+            56.4933,
+            473.9567,
             164.0251
           ],
           "parts": [
             [
               34.5297,
-              120.8751,
-              461.8658,
+              56.4933,
+              473.9567,
               164.0251
             ]
           ],
@@ -896,17 +989,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            42.6929,
-            413.5192,
-            536.756,
-            508.5192
+            47.6669,
+            339.2442,
+            467.9049,
+            605.9253
           ],
           "parts": [
             [
-              42.6929,
-              413.5192,
-              536.756,
-              508.5192
+              47.6669,
+              339.2442,
+              467.9049,
+              605.9253
             ]
           ],
           "headline": "Görsel 1.5",
@@ -971,16 +1064,16 @@
           "column": 0,
           "rect": [
             144.8228,
-            142.945,
+            132.6428,
             536.756,
-            237.945
+            251.1767
           ],
           "parts": [
             [
               144.8228,
-              142.945,
+              132.6428,
               536.756,
-              237.945
+              251.1767
             ]
           ],
           "headline": "kullanılmadığı tepkimeler Calvin döngüsü olarak da adlandırılır. Bu evre",
@@ -1037,16 +1130,16 @@
           "column": 0,
           "rect": [
             28.2077,
-            343.1278,
+            426.3081,
             536.756,
-            438.1278
+            458.3381
           ],
           "parts": [
             [
               28.2077,
-              343.1278,
+              426.3081,
               536.756,
-              438.1278
+              458.3381
             ]
           ],
           "headline": "Daha sonra fotosentez sabit bir hızla gerçekleşmeye devam eder.",
@@ -1070,16 +1163,16 @@
           "column": 1,
           "rect": [
             276.378,
-            594.4476,
+            570.3922,
             512.756,
-            689.4476
+            611.3155
           ],
           "parts": [
             [
               276.378,
-              594.4476,
+              570.3922,
               512.756,
-              689.4476
+              611.3155
             ]
           ],
           "headline": "Görsel 1.11",
@@ -1093,14 +1186,14 @@
             49.301,
             44.508,
             402.624,
-            227.275
+            233.5839
           ],
           "parts": [
             [
               49.301,
               44.508,
               402.624,
-              227.275
+              233.5839
             ]
           ],
           "headline": "CO yoğunluğu",
@@ -1145,16 +1238,16 @@
           "column": 0,
           "rect": [
             43.5857,
-            132.9671,
+            127.0,
             536.756,
-            227.9671
+            245.53
           ],
           "parts": [
             [
               43.5857,
-              132.9671,
+              127.0,
               536.756,
-              227.9671
+              245.53
             ]
           ],
           "headline": "Fe, Mg, Ca, Na, P, N, S, K gibi mineraller bitki gelişiminde ve fotosentezde",
@@ -1362,6 +1455,105 @@
         }
       ]
     },
+    "33": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          34.9009,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p33-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            34.3943,
+            313.5926,
+            509.6073,
+            669.3527
+          ],
+          "parts": [
+            [
+              34.3943,
+              313.5926,
+              509.6073,
+              669.3527
+            ]
+          ],
+          "headline": "Konuya Başlarken",
+          "items": [
+            {
+              "id": "p33--1",
+              "label": "1",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                39.6,
+                422.6,
+                499.9,
+                456.1
+              ],
+              "text": "1."
+            },
+            {
+              "id": "p33--2",
+              "label": "2",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                39.6,
+                397.1,
+                499.9,
+                430.6
+              ],
+              "text": "2."
+            },
+            {
+              "id": "p33--3",
+              "label": "3",
+              "number": 3,
+              "partIndex": 0,
+              "rect": [
+                39.6,
+                371.6,
+                499.9,
+                405.1
+              ],
+              "text": "3."
+            },
+            {
+              "id": "p33--4",
+              "label": "4",
+              "number": 4,
+              "partIndex": 0,
+              "rect": [
+                39.6,
+                346.1,
+                499.9,
+                379.6
+              ],
+              "text": "4."
+            },
+            {
+              "id": "p33--5",
+              "label": "5",
+              "number": 5,
+              "partIndex": 0,
+              "rect": [
+                39.6,
+                320.5,
+                499.9,
+                354.1
+              ],
+              "text": "5."
+            }
+          ]
+        }
+      ]
+    },
     "34": {
       "pageWidth": 552.756,
       "pageHeight": 779.528,
@@ -1378,14 +1570,14 @@
           "column": 0,
           "rect": [
             57.1929,
-            465.9798,
+            486.5518,
             509.736,
             530.078
           ],
           "parts": [
             [
               57.1929,
-              465.9798,
+              486.5518,
               509.736,
               530.078
             ]
@@ -1400,14 +1592,14 @@
             48.6929,
             47.1309,
             518.2359,
-            462.9798
+            428.2142
           ],
           "parts": [
             [
               48.6929,
               47.1309,
               518.2359,
-              462.9798
+              428.2142
             ]
           ],
           "headline": "Bilim tarihinde fotosentez ile ilgili yapılan önemli bilimsel çalışmalara ilişkin aşa- ğıdaki tabloyu inceleyiniz veya karekod ile verilen videoyu izleyiniz."
@@ -1429,17 +1621,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            43.7323,
+            42.7,
             311.1212,
             297.6223,
-            333.5662
+            346.3
           ],
           "parts": [
             [
-              43.7323,
+              42.7,
               311.1212,
               297.6223,
-              333.5662
+              346.3
             ]
           ],
           "headline": "Öğretmeniniz rehberliğinde 4-6 kişilik gruplar oluşturunuz."
@@ -1530,19 +1722,59 @@
           "column": 0,
           "rect": [
             34.5223,
-            132.4962,
+            58.0294,
             481.7224,
             187.0562
           ],
           "parts": [
             [
               34.5223,
-              132.4962,
+              58.0294,
               481.7224,
               187.0562
             ]
           ],
           "headline": "Deney sonuçlarının analizini yaparak ulaştığınız sonuçları fotosentez olayı ile ilişkilendiriniz ve elde ettiğiniz verileri açıklamak için bir deney raporu hazı"
+        }
+      ]
+    },
+    "37": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          104.6167,
+          164.3374
+        ],
+        [
+          168.3374,
+          381.8559
+        ],
+        [
+          385.8559,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p37-q1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            144.0,
+            148.8277,
+            349.0,
+            685.658
+          ],
+          "parts": [
+            [
+              144.0,
+              148.8277,
+              349.0,
+              685.658
+            ]
+          ],
+          "headline": "Aşağıda verilen fotosentez ile ilgili kavram haritasını inceleyerek öğrendiğiniz bilgileri kontrol ediniz."
         }
       ]
     },
@@ -1714,14 +1946,14 @@
           "column": 0,
           "rect": [
             34.5197,
-            120.524,
+            59.4728,
             481.1429,
             163.674
           ],
           "parts": [
             [
               34.5197,
-              120.524,
+              59.4728,
               481.1429,
               163.674
             ]
@@ -1741,21 +1973,61 @@
       ],
       "activities": [
         {
+          "id": "p40-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            38.941,
+            223.605,
+            514.5896,
+            340.1797
+          ],
+          "parts": [
+            [
+              38.941,
+              223.605,
+              514.5896,
+              340.1797
+            ]
+          ],
+          "headline": "Kemosentez hakkında öğrendiğiniz veya önemli bulduğunuz üç bilgiyi yazınız."
+        },
+        {
+          "id": "p40-q2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            38.941,
+            43.9187,
+            518.282,
+            220.605
+          ],
+          "parts": [
+            [
+              38.941,
+              43.9187,
+              518.282,
+              220.605
+            ]
+          ],
+          "headline": "Kemosentez hakkında merak ettiğiniz veya daha fazla bilgi almak istediğiniz konuyla ilgili"
+        },
+        {
           "id": "p40-oge-7ab8983f-edb0-f111-b31a-005056a7d529",
           "label": null,
           "column": 1,
           "rect": [
             276.378,
-            503.9444,
+            475.2215,
             512.756,
-            598.9444
+            585.7466
           ],
           "parts": [
             [
               276.378,
-              503.9444,
+              475.2215,
               512.756,
-              598.9444
+              585.7466
             ]
           ],
           "headline": "2",
@@ -1774,25 +2046,24 @@
       ],
       "activities": [
         {
-          "id": "p41-oge-3d3fa081-edb0-f111-b31a-005056a7d529",
+          "id": "p41-q1",
           "label": null,
           "column": 0,
           "rect": [
-            28.7697,
-            558.8232,
-            536.756,
-            653.8232
+            33.7439,
+            581.4263,
+            508.9569,
+            659.5115
           ],
           "parts": [
             [
-              28.7697,
-              558.8232,
-              536.756,
-              653.8232
+              33.7439,
+              581.4263,
+              508.9569,
+              659.5115
             ]
           ],
-          "headline": "Konuya Başlarken",
-          "anchored": true
+          "headline": "Konuya Başlarken"
         }
       ]
     },
@@ -1864,16 +2135,16 @@
           "column": 0,
           "rect": [
             33.6024,
-            145.4675,
+            51.669,
             505.8554,
-            413.0977
+            366.1971
           ],
           "parts": [
             [
               33.6024,
-              145.4675,
+              51.669,
               505.8554,
-              413.0977
+              366.1971
             ]
           ],
           "headline": "Bazı omurgalı canlıların ağız, diş yapısı ile sindirim sistemi yapılarına ait aşağıdaki görselleri inceleyiniz (Karekodu okutarak görselleri daha ayrıntılı göre"
@@ -2068,14 +2339,14 @@
           "column": 0,
           "rect": [
             34.519,
-            384.4588,
+            320.1691,
             498.6191,
             670.9364
           ],
           "parts": [
             [
               34.519,
-              384.4588,
+              320.1691,
               498.6191,
               670.9364
             ]
@@ -2108,16 +2379,16 @@
           "column": 1,
           "rect": [
             204.2973,
-            336.7357,
+            353.0562,
             328.8414,
-            431.7357
+            450.0862
           ],
           "parts": [
             [
               204.2973,
-              336.7357,
+              353.0562,
               328.8414,
-              431.7357
+              450.0862
             ]
           ],
           "headline": "ve asit salgılanarak besinlerin kimyasal sindirimi başlatılır. Midenin devamı olan",
@@ -2172,7 +2443,7 @@
           "label": "2",
           "column": 2,
           "rect": [
-            254.9974,
+            254.0,
             222.1013,
             464.1873,
             396.5006
@@ -2181,12 +2452,12 @@
             [
               254.9974,
               222.1013,
-              312.8423,
-              251.0613
+              309.4558,
+              250.27474999999998
             ],
             [
-              341.1414,
-              267.5859,
+              254.0,
+              251.27474999999998,
               464.1873,
               396.5006
             ]
@@ -2201,14 +2472,14 @@
             336.6614,
             222.1013,
             462.8824,
-            251.0613
+            248.9882
           ],
           "parts": [
             [
               336.6614,
               222.1013,
               462.8824,
-              251.0613
+              248.9882
             ]
           ],
           "headline": "Şirden"
@@ -2226,21 +2497,41 @@
       ],
       "activities": [
         {
+          "id": "p48-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            48.9429,
+            42.6795,
+            517.778,
+            402.0698
+          ],
+          "parts": [
+            [
+              48.9429,
+              42.6795,
+              517.778,
+              402.0698
+            ]
+          ],
+          "headline": "Aşağıdaki tabloda yer alan canlıların sindirim çeşitleri ve yapılarını inceleyerek öğrendiğiniz bilgileri kontrol ediniz."
+        },
+        {
           "id": "p48-oge-d366004d-eeb0-f111-b31a-005056a7d529",
           "label": null,
           "column": 0,
           "rect": [
             42.7352,
-            409.8554,
+            402.0698,
             536.756,
-            504.8554
+            514.2
           ],
           "parts": [
             [
               42.7352,
-              409.8554,
+              402.0698,
               536.756,
-              504.8554
+              514.2
             ]
           ],
           "headline": "bağırsak",
@@ -2528,16 +2819,16 @@
           "column": 1,
           "rect": [
             276.378,
-            621.887,
+            676.5247,
             512.756,
-            716.887
+            734.5547
           ],
           "parts": [
             [
               276.378,
-              621.887,
+              676.5247,
               512.756,
-              716.887
+              734.5547
             ]
           ],
           "headline": "Besinlerin kimyasal sindirimi ağız, mide ve ağırlıklı olarak ince bağırsakta ger-",
@@ -2561,16 +2852,16 @@
           "column": 0,
           "rect": [
             26.7532,
-            422.6397,
+            319.2107,
             536.756,
-            517.6397
+            430.8516
           ],
           "parts": [
             [
               26.7532,
-              422.6397,
+              319.2107,
               536.756,
-              517.6397
+              430.8516
             ]
           ],
           "headline": "Görsel 1.22",
@@ -2808,14 +3099,14 @@
             46.359,
             259.4694,
             342.2139,
-            340.7146
+            279.2
           ],
           "parts": [
             [
               46.359,
               259.4694,
               342.2139,
-              340.7146
+              279.2
             ]
           ],
           "headline": "Oksijen hücreler için neden önemlidir?"
@@ -2846,14 +3137,14 @@
           "column": 0,
           "rect": [
             46.359,
-            222.9989,
+            215.7589,
             252.1091,
             241.4989
           ],
           "parts": [
             [
               46.359,
-              222.9989,
+              215.7589,
               252.1091,
               241.4989
             ]
@@ -2868,14 +3159,14 @@
             46.359,
             150.9567,
             507.3332,
-            219.9989
+            201.9473
           ],
           "parts": [
             [
               46.359,
               150.9567,
               507.3332,
-              219.9989
+              201.9473
             ]
           ],
           "headline": "Hücresel solunum neden önemlidir?"
@@ -2918,14 +3209,14 @@
           "column": 0,
           "rect": [
             57.1929,
-            518.5829,
+            519.5829,
             330.4589,
             535.5829
           ],
           "parts": [
             [
               57.1929,
-              518.5829,
+              519.5829,
               330.4589,
               535.5829
             ]
@@ -2939,15 +3230,15 @@
           "rect": [
             57.1929,
             487.0829,
-            407.279,
-            515.5829
+            434.115,
+            516.5829
           ],
           "parts": [
             [
               57.1929,
               487.0829,
-              407.279,
-              515.5829
+              434.115,
+              516.5829
             ]
           ],
           "headline": "Grup içinde görev dağılımı yaparak hücresel solunum reaksiyonlarının işleyişini açıklamak amacıyla bir model öneriniz."
@@ -3098,19 +3389,51 @@
           "column": 0,
           "rect": [
             48.6928,
-            129.0729,
+            57.3742,
             495.5159,
             183.7229
           ],
           "parts": [
             [
               48.6928,
-              129.0729,
+              57.3742,
               495.5159,
               183.7229
             ]
           ],
           "headline": "Hücresel solunum reaksiyonlarının işleyişine ilişkin oluşturduğunuz modellerden bilimsel olarak kabul gören modele en yakın olanını poster veya üç boyutlu model"
+        }
+      ]
+    },
+    "63": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          41.4803,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p63-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            34.874,
+            165.528,
+            378.0,
+            671.149
+          ],
+          "parts": [
+            [
+              34.874,
+              165.528,
+              378.0,
+              671.149
+            ]
+          ],
+          "headline": "Hücresel solunum reaksiyonları şematik olarak aşağıdaki bilgi görselinde özetlenmiştir. Bilgi görselini incele- yerek öğrendiklerinizi kontr"
         }
       ]
     },
@@ -3242,14 +3565,14 @@
           "column": 0,
           "rect": [
             39.6752,
-            155.9384,
+            155.9547,
             498.6304,
             440.3668
           ],
           "parts": [
             [
               39.6752,
-              155.9384,
+              155.9547,
               498.6304,
               440.3668
             ]
@@ -3264,17 +3587,237 @@
             34.5297,
             52.5768,
             501.7999,
-            152.9384
+            152.9547
           ],
           "parts": [
             [
               34.5297,
               52.5768,
               501.7999,
-              152.9384
+              152.9547
             ]
           ],
           "headline": "Farklı besin gruplarından enerji elde edilme süreçlerini karşılaştırabilmek için uygun web araçlarıyla yaratıcılığınızı kullanarak bir sunum hazırlayınız ve haz"
+        }
+      ]
+    },
+    "66": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          50.9429,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p66-a",
+          "label": "a",
+          "column": 0,
+          "rect": [
+            48.9429,
+            615.1087,
+            436.2089,
+            638.2587
+          ],
+          "parts": [
+            [
+              48.9429,
+              615.1087,
+              436.2089,
+              638.2587
+            ]
+          ],
+          "headline": "a) Hangileri hücresel solunum tepkimelerine aynı basamaktan katılabilir? (..........................)"
+        },
+        {
+          "id": "p66-b",
+          "label": "b",
+          "column": 0,
+          "rect": [
+            48.9429,
+            595.1087,
+            452.379,
+            612.1087
+          ],
+          "parts": [
+            [
+              48.9429,
+              595.1087,
+              452.379,
+              612.1087
+            ]
+          ],
+          "headline": "b) Hangisi/hangileri hücresel solunum tepkimelerine glikoliz evresinden girer?(..........................)"
+        },
+        {
+          "id": "p66-c",
+          "label": "c",
+          "column": 0,
+          "rect": [
+            48.9429,
+            575.1087,
+            463.6139,
+            592.1087
+          ],
+          "parts": [
+            [
+              48.9429,
+              575.1087,
+              463.6139,
+              592.1087
+            ]
+          ],
+          "headline": "c) Hangisi/hangileri Krebs döngüsünden hücresel solunum tepkimelerine katılır? (..........................)"
+        },
+        {
+          "id": "p66-ç",
+          "label": "ç",
+          "column": 0,
+          "rect": [
+            48.9429,
+            555.1087,
+            393.7069,
+            572.1087
+          ],
+          "parts": [
+            [
+              48.9429,
+              555.1087,
+              393.7069,
+              572.1087
+            ]
+          ],
+          "headline": "ç) Hangileri hücresel solunum tepkimelerine piruvattan katılır? (..........................)"
+        },
+        {
+          "id": "p66-d",
+          "label": "d",
+          "column": 0,
+          "rect": [
+            48.9429,
+            535.1087,
+            478.7189,
+            552.1087
+          ],
+          "parts": [
+            [
+              48.9429,
+              535.1087,
+              478.7189,
+              552.1087
+            ]
+          ],
+          "headline": "d) Hangileri hücresel solunum tepkimelerine glikolizin ara basamaklarından katılır? (..........................)"
+        },
+        {
+          "id": "p66-e",
+          "label": "e",
+          "column": 0,
+          "rect": [
+            48.9429,
+            440.3048,
+            496.8617,
+            532.1087
+          ],
+          "parts": [
+            [
+              48.9429,
+              440.3048,
+              496.8617,
+              532.1087
+            ]
+          ],
+          "headline": "e) Hangileri glikozun hücresel solunumda yıkıldığı basamaklardır? (..........................)"
+        }
+      ]
+    },
+    "67": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          37.3379,
+          275.7511
+        ],
+        [
+          279.7511,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p67-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            34.52,
+            44.4413,
+            503.355,
+            483.8315
+          ],
+          "parts": [
+            [
+              34.52,
+              44.4413,
+              503.355,
+              483.8315
+            ]
+          ],
+          "headline": "Aşağıda birbiri ile bağlantılı, doğru/yanlış ifadeler içeren tanılayıcı dallanmış ağaç verilmiştir. Soldaki ilk ifadeden başlayarak, söz kon"
+        }
+      ]
+    },
+    "68": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          50.1875,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p68-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            49.6098,
+            582.3553,
+            524.8228,
+            694.9445
+          ],
+          "parts": [
+            [
+              49.6098,
+              582.3553,
+              524.8228,
+              694.9445
+            ]
+          ],
+          "headline": "Konuya Başlarken"
+        },
+        {
+          "id": "p68-q2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            55.2796,
+            275.1271,
+            501.9671,
+            365.7921
+          ],
+          "parts": [
+            [
+              55.2796,
+              275.1271,
+              501.9671,
+              365.7921
+            ]
+          ],
+          "headline": "Siz de günlük yaşamdan fermantasyon örnekleri vererek fermantasyonu açıklayınız. Verdiğiniz fermantasyon örneklerinin hangi amaçlarla (besin"
         }
       ]
     },
@@ -3454,15 +3997,15 @@
           "column": 0,
           "rect": [
             34.5237,
-            174.0805,
-            316.4737,
+            70.0109,
+            473.1284,
             217.2305
           ],
           "parts": [
             [
               34.5237,
-              174.0805,
-              316.4737,
+              70.0109,
+              473.1284,
               217.2305
             ]
           ],
@@ -3485,20 +4028,72 @@
           "label": "2",
           "column": 0,
           "rect": [
-            48.693,
+            43.7053,
             56.6934,
             514.5336,
             390.11
           ],
           "parts": [
             [
-              48.693,
+              43.7053,
               56.6934,
               514.5336,
               390.11
             ]
           ],
           "headline": "Etil alkol + 2 CO + 4 ATP"
+        }
+      ]
+    },
+    "71": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          36.2077,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p71-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            35.124,
+            193.5,
+            503.959,
+            277.9595
+          ],
+          "parts": [
+            [
+              35.124,
+              193.5,
+              503.959,
+              277.9595
+            ]
+          ],
+          "headline": "Aşağıdaki tabloda fermantasyon ile ilgili sorular verilmiştir. Soruların cevaplarını etil alkol ve laktik asit ferman- tasyonuna ait boş kut"
+        },
+        {
+          "id": "p71-q2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            35.124,
+            44.27,
+            503.959,
+            181.609
+          ],
+          "parts": [
+            [
+              35.124,
+              44.27,
+              503.959,
+              181.609
+            ]
+          ],
+          "headline": "Etil Alkol Fermantasyonu Laktik Asit Fermantasyonu"
         }
       ]
     },
@@ -3571,6 +4166,38 @@
             ]
           ],
           "headline": "Astronotların yolculuk boyunca uyutulmasının avantajları neler olabilir?"
+        }
+      ]
+    },
+    "73": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          40.492,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p73-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            34.0,
+            49.8364,
+            506.8351,
+            410.0441
+          ],
+          "parts": [
+            [
+              34.0,
+              49.8364,
+              506.8351,
+              410.0441
+            ]
+          ],
+          "headline": "Aşağıda bazı gıdaların ambalajları üzerinde bulunan enerji ve besin ögelerine ait içerikler yer almaktadır. Verilen örnekleri ve satın aldığ"
         }
       ]
     },
@@ -4091,14 +4718,14 @@
           "rect": [
             34.5197,
             413.3304,
-            499.9397,
+            503.813,
             645.8004
           ],
           "parts": [
             [
               34.5197,
               413.3304,
-              499.9397,
+              503.813,
               645.8004
             ]
           ],
@@ -4499,14 +5126,14 @@
           "rect": [
             48.9429,
             73.4511,
-            517.24,
+            517.361,
             329.0561
           ],
           "parts": [
             [
               48.9429,
               73.4511,
-              517.24,
+              517.361,
               329.0561
             ]
           ],
@@ -5042,14 +5669,14 @@
           "column": 0,
           "rect": [
             34.7726,
-            193.9,
+            514.6179,
             490.1452,
             543.9479
           ],
           "parts": [
             [
               34.7726,
-              193.9,
+              514.6179,
               490.1452,
               543.9479
             ]
@@ -5277,15 +5904,15 @@
           "label": "3",
           "column": 0,
           "rect": [
-            45.8615,
-            222.5247,
+            33.9921,
+            94.1369,
             504.0629,
             296.5357
           ],
           "parts": [
             [
-              45.8615,
-              222.5247,
+              33.9921,
+              94.1369,
               504.0629,
               296.5357
             ]
@@ -5370,14 +5997,14 @@
           "column": 0,
           "rect": [
             57.1969,
-            251.1861,
+            191.9395,
             223.5069,
             300.1944
           ],
           "parts": [
             [
               57.1969,
-              251.1861,
+              191.9395,
               223.5069,
               300.1944
             ]
@@ -5446,6 +6073,70 @@
         }
       ]
     },
+    "105": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          36.9164,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p105-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            35.228,
+            58.251,
+            504.063,
+            371.436
+          ],
+          "parts": [
+            [
+              35.228,
+              58.251,
+              504.063,
+              371.436
+            ]
+          ],
+          "headline": "Kontrol Noktası Aşağıda verilen teraryum örneğini inceleyiniz. Bu teraryumda herhangi bir canlı bileşenin ortadan kaldırılması"
+        }
+      ]
+    },
+    "106": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          56.2997,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p106-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            48.63,
+            470.4512,
+            523.843,
+            643.5443
+          ],
+          "parts": [
+            [
+              48.63,
+              470.4512,
+              523.843,
+              643.5443
+            ]
+          ],
+          "headline": "Konuya Başlarken"
+        }
+      ]
+    },
     "107": {
       "pageWidth": 552.756,
       "pageHeight": 779.528,
@@ -5501,15 +6192,15 @@
           "label": "3",
           "column": 0,
           "rect": [
-            35.6664,
-            600.4328,
+            32.9744,
+            389.4494,
             506.6991,
             682.4716
           ],
           "parts": [
             [
-              35.6664,
-              600.4328,
+              32.9744,
+              389.4494,
               506.6991,
               682.4716
             ]
@@ -5778,19 +6469,87 @@
           "column": 0,
           "rect": [
             48.6922,
-            633.3113,
+            547.4389,
             509.7529,
             693.6363
           ],
           "parts": [
             [
               48.6922,
-              633.3113,
+              547.4389,
               509.7529,
               693.6363
             ]
           ],
           "headline": "Popülasyon, komünite ve ekosistemlerde görülen etkileşim ve değişimi tanımladığınız; topladığınız bilgileri kaydettiğiniz ve bilgilerin doğruluğunu değerlendire"
+        }
+      ]
+    },
+    "112": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          50.6929,
+          298.0314
+        ],
+        [
+          302.0314,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p112-2",
+          "label": "2",
+          "column": 1,
+          "rect": [
+            402.5236,
+            225.488,
+            511.6466,
+            411.638
+          ],
+          "parts": [
+            [
+              402.5236,
+              225.488,
+              511.6466,
+              411.638
+            ]
+          ],
+          "headline": "2. Hızlı nüfus artışı yaşayan bir bölgede kaynaklar nasıl etkilenir?"
+        }
+      ]
+    },
+    "113": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          35.5345,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p113-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            33.9871,
+            468.6461,
+            507.026,
+            734.7147
+          ],
+          "parts": [
+            [
+              33.9871,
+              468.6461,
+              507.026,
+              734.7147
+            ]
+          ],
+          "headline": "(Görsel 2.13) ."
         }
       ]
     },
@@ -5883,6 +6642,38 @@
             ]
           ],
           "headline": "Bir arkadaşınız “Kuşların gölde daha sık görülmesi, balıkların azaldığını gösterir.” demektedir. Bu yorumu bilimsel açıdan değerlendiriniz. Görüşünüzü gerekçesi"
+        }
+      ]
+    },
+    "123": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          36.5197,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p123-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            34.5193,
+            543.7587,
+            509.7323,
+            698.9603
+          ],
+          "parts": [
+            [
+              34.5193,
+              543.7587,
+              509.7323,
+              698.9603
+            ]
+          ],
+          "headline": "Konuya Başlarken"
         }
       ]
     },
@@ -6006,14 +6797,14 @@
           "column": 0,
           "rect": [
             57.1929,
-            71.3855,
+            56.4869,
             501.548,
             215.1955
           ],
           "parts": [
             [
               57.1929,
-              71.3855,
+              56.4869,
               501.548,
               215.1955
             ]
@@ -6040,14 +6831,14 @@
             43.0237,
             496.0782,
             496.1133,
-            556.263
+            550.4206
           ],
           "parts": [
             [
               43.0237,
               496.0782,
               496.1133,
-              556.263
+              550.4206
             ]
           ],
           "headline": "Besin zincirini oluştururken nelere dikkat ettiniz? Grubunuzla oluşturduğunuz besin zincirini kısaca açıklayınız."
@@ -6238,19 +7029,58 @@
           "column": 0,
           "rect": [
             40.189,
-            52.5378,
-            483.3148,
+            99.9041,
+            68.689,
             123.0541
           ],
           "parts": [
             [
               40.189,
-              52.5378,
-              483.3148,
+              99.9041,
+              68.689,
               123.0541
             ]
+          ]
+        },
+        {
+          "id": "p125-a",
+          "label": "a",
+          "column": 0,
+          "rect": [
+            54.3622,
+            663.8537,
+            489.3293,
+            734.1213
           ],
-          "headline": "Biyolojik birikim ile ilgili aşağıda verilen örnek olayları inceleyiniz. Verilen soruları cevaplayınız."
+          "parts": [
+            [
+              54.3622,
+              663.8537,
+              489.3293,
+              734.1213
+            ]
+          ],
+          "headline": "Besin zincirinde her türün bulunduğu trofik basamak (beslenme basamağı) tüm ekosistemlerde aynı mıdır? Açıklayınız."
+        },
+        {
+          "id": "p125-b",
+          "label": "b",
+          "column": 0,
+          "rect": [
+            54.3622,
+            553.4206,
+            489.3293,
+            660.8537
+          ],
+          "parts": [
+            [
+              54.3622,
+              553.4206,
+              489.3293,
+              660.8537
+            ]
+          ],
+          "headline": "Kurguladığınız besin zincirindeki tüketicilerin beslenme çeşitleri nelerdir?"
         }
       ]
     },
@@ -6323,6 +7153,434 @@
             ]
           ],
           "headline": "Yaptığınız çıkarımlar çerçevesinde kendi beslenme alışkanlıklarınız hakkında düşünerek aşağıdaki soruları cevaplayınız."
+        }
+      ]
+    },
+    "127": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          37.0222,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p127-ç",
+          "label": "ç",
+          "column": 0,
+          "rect": [
+            35.0222,
+            627.1,
+            521.3,
+            682.6113
+          ],
+          "parts": [
+            [
+              35.0222,
+              627.1,
+              521.3,
+              682.6113
+            ]
+          ],
+          "headline": "ç) Cevabınız “evet” ise bu sorunlara çözüm önerileri üretmeye çalışınız. Değerlendirme"
+        },
+        {
+          "id": "p127-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            35.9649,
+            316.9767,
+            531.4918,
+            612.9
+          ],
+          "parts": [
+            [
+              35.9649,
+              316.9767,
+              531.4918,
+              612.9
+            ]
+          ],
+          "headline": "1. Aşağıda verilen görselleri inceleyiniz. Görsellerin yanında boş bırakılan yerleri canlıların besin zincirinde- ki rollerine uygun olarak"
+        },
+        {
+          "id": "p127-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            266.1578,
+            251.1009,
+            521.3,
+            316.9767
+          ],
+          "parts": [
+            [
+              266.1578,
+              251.1009,
+              521.3,
+              316.9767
+            ]
+          ],
+          "headline": "2. Aşağıda verilen görseli inceleyerek soruları cevaplayınız."
+        },
+        {
+          "id": "p127-b",
+          "label": "b",
+          "column": 0,
+          "rect": [
+            266.1578,
+            225.2273,
+            510.4085,
+            248.1009
+          ],
+          "parts": [
+            [
+              266.1578,
+              225.2273,
+              510.4085,
+              248.1009
+            ]
+          ],
+          "headline": "b) Besin zincirinin ilk halkasını hangi canlılar oluşturur? Baykuş --------------------------------------------------------"
+        },
+        {
+          "id": "p127-c",
+          "label": "c",
+          "column": 0,
+          "rect": [
+            290.6752,
+            168.997,
+            499.5624,
+            215.4911
+          ],
+          "parts": [
+            [
+              290.6752,
+              168.997,
+              499.5624,
+              215.4911
+            ]
+          ],
+          "headline": "c) Hangi canlılar birincil tüketicilerle beslenir? -------------------------------------------------------- --------------------------------"
+        },
+        {
+          "id": "p127-ç",
+          "label": "ç",
+          "column": 0,
+          "rect": [
+            226.5563,
+            113.7179,
+            499.5624,
+            154.9136
+          ],
+          "parts": [
+            [
+              226.5563,
+              113.7179,
+              499.5624,
+              154.9136
+            ]
+          ],
+          "headline": "ç) Hangi canlılar birden fazla canlıya besin olabilir? Kurbağa Tavşan"
+        },
+        {
+          "id": "p127-d",
+          "label": "d",
+          "column": 0,
+          "rect": [
+            107.3786,
+            57.3224,
+            499.5624,
+            86.0532
+          ],
+          "parts": [
+            [
+              107.3786,
+              57.3224,
+              499.5624,
+              86.0532
+            ]
+          ],
+          "headline": "d) Şahin kaçıncı trofik basamakta bulunur? Çekirge --------------------------------------------------------"
+        }
+      ]
+    },
+    "128": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          50.6929,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p128-a",
+          "label": "a",
+          "column": 0,
+          "rect": [
+            244.4,
+            649.5186,
+            504.2803,
+            701.7
+          ],
+          "parts": [
+            [
+              244.4,
+              649.5186,
+              504.2803,
+              701.7
+            ]
+          ],
+          "headline": "a) Enerji piramidinde trofik düzeyler arasında enerjinin azalmasının sebebi nedir? ---------------------------------------------------------"
+        },
+        {
+          "id": "p128-b",
+          "label": "b",
+          "column": 0,
+          "rect": [
+            239.2254,
+            594.8912,
+            509.6827,
+            646.5186
+          ],
+          "parts": [
+            [
+              239.2254,
+              594.8912,
+              509.6827,
+              646.5186
+            ]
+          ],
+          "headline": "b) Her canlıda değişime uğrayan enerjinin tek yönlü akmasının sebebi nedir? ----------------------------------------------------------------"
+        },
+        {
+          "id": "p128-c",
+          "label": "c",
+          "column": 0,
+          "rect": [
+            239.2254,
+            551.0046,
+            504.2803,
+            591.8912
+          ],
+          "parts": [
+            [
+              239.2254,
+              551.0046,
+              504.2803,
+              591.8912
+            ]
+          ],
+          "headline": "c) Hangi canlılar birincil tüketicilerle beslenir? -------------------------------------------------------------------------"
+        },
+        {
+          "id": "p128-ç",
+          "label": "ç",
+          "column": 0,
+          "rect": [
+            244.4,
+            507.0588,
+            504.2803,
+            548.0046
+          ],
+          "parts": [
+            [
+              244.4,
+              507.0588,
+              504.2803,
+              548.0046
+            ]
+          ],
+          "headline": "ç) Ekosistemdeki enerji akışı neden önemlidir? -------------------------------------------------------------------------"
+        },
+        {
+          "id": "p128-d",
+          "label": "d",
+          "column": 0,
+          "rect": [
+            244.4,
+            428.2,
+            518.8,
+            504.0588
+          ],
+          "parts": [
+            [
+              244.4,
+              428.2,
+              518.8,
+              504.0588
+            ]
+          ],
+          "headline": "d) Biyolojik birikimin hangi canlılarda en fazla olması beklenir? -------------------------------------------------------------------------"
+        }
+      ]
+    },
+    "131": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          35.499,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p131-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            41.1135,
+            299.1781,
+            501.1006,
+            381.4297
+          ],
+          "parts": [
+            [
+              41.1135,
+              299.1781,
+              501.1006,
+              381.4297
+            ]
+          ],
+          "headline": "Aşağıda bazı canlıların oluşturduğu besin ağı verilmiştir. Canlılar arasındaki oklar bu ağdaki beslenme ilişkilerini göstermektedir. Besin a"
+        },
+        {
+          "id": "p131-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            276.0315,
+            265.5036,
+            501.0985,
+            296.1781
+          ],
+          "parts": [
+            [
+              276.0315,
+              265.5036,
+              501.0985,
+              296.1781
+            ]
+          ],
+          "headline": "Bu besin ağının birinci basamağı hangi canlılardan oluşur?"
+        },
+        {
+          "id": "p131-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            276.0334,
+            200.9953,
+            498.6202,
+            262.5036
+          ],
+          "parts": [
+            [
+              276.0334,
+              200.9953,
+              498.6202,
+              262.5036
+            ]
+          ],
+          "headline": "Hangi canlılar güneş ışığını kimyasal bağ enerji- sine dönüştürür?"
+        },
+        {
+          "id": "p131-5",
+          "label": "5",
+          "column": 0,
+          "rect": [
+            276.0334,
+            171.1628,
+            501.0692,
+            197.9953
+          ],
+          "parts": [
+            [
+              276.0334,
+              171.1628,
+              501.0692,
+              197.9953
+            ]
+          ],
+          "headline": "Hangi canlılar birden fazla besin zincirinde yer alır?"
+        },
+        {
+          "id": "p131-6",
+          "label": "6",
+          "column": 0,
+          "rect": [
+            278.7339,
+            105.2462,
+            501.1997,
+            168.1628
+          ],
+          "parts": [
+            [
+              278.7339,
+              105.2462,
+              501.1997,
+              168.1628
+            ]
+          ],
+          "headline": "Besin zincirinde üreticiden son tüketiciye doğru gidildikçe enerji aktarımı ve birey sayısında nasıl bir değişiklik gözlenir?"
+        },
+        {
+          "id": "p131-8",
+          "label": "8",
+          "column": 0,
+          "rect": [
+            41.1135,
+            42.2362,
+            501.1865,
+            102.2462
+          ],
+          "parts": [
+            [
+              41.1135,
+              42.2362,
+              501.1865,
+              102.2462
+            ]
+          ],
+          "headline": "Hangi canlılarda biyolojik birikiminin en fazla olması beklenir?"
+        }
+      ]
+    },
+    "132": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          48.9789,
+          546.4545
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p132-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            48.6925,
+            637.1214,
+            523.9055,
+            674.8504
+          ],
+          "parts": [
+            [
+              48.6925,
+              637.1214,
+              523.9055,
+              674.8504
+            ]
+          ],
+          "headline": "Konuya Başlarken"
         }
       ]
     },
@@ -6523,19 +7781,51 @@
           "column": 0,
           "rect": [
             48.6911,
-            135.2066,
-            346.7311,
+            56.4331,
+            496.5911,
             175.5266
           ],
           "parts": [
             [
               48.6911,
-              135.2066,
-              346.7311,
+              56.4331,
+              496.5911,
               175.5266
             ]
           ],
           "headline": "Bilimsel hata veya eksiklik tespit ettiyseniz modelinizi yenileyiniz."
+        }
+      ]
+    },
+    "138": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          54.5543,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p138-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            49.3175,
+            267.8613,
+            516.4026,
+            739.528
+          ],
+          "parts": [
+            [
+              49.3175,
+              267.8613,
+              516.4026,
+              739.528
+            ]
+          ],
+          "headline": "Aşağıda verilen madde döngüleri ile ilgili bilgi özetini inceleyerek öğrendiğiniz bilgileri kontrol ediniz."
         }
       ]
     },
@@ -6839,15 +8129,15 @@
           "column": 0,
           "rect": [
             34.5237,
-            431.9111,
-            284.5637,
+            324.2554,
+            470.3982,
             472.2311
           ],
           "parts": [
             [
               34.5237,
-              431.9111,
-              284.5637,
+              324.2554,
+              470.3982,
               472.2311
             ]
           ],
@@ -6907,6 +8197,58 @@
         }
       ]
     },
+    "143": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          36.2077,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p143-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            34.5193,
+            377.0083,
+            509.7323,
+            663.7634
+          ],
+          "parts": [
+            [
+              34.5193,
+              377.0083,
+              509.7323,
+              663.7634
+            ]
+          ],
+          "headline": "Konuya Başlarken"
+        },
+        {
+          "id": "p143-q2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            151.6851,
+            46.0601,
+            507.7209,
+            91.0901
+          ],
+          "parts": [
+            [
+              151.6851,
+              46.0601,
+              507.7209,
+              91.0901
+            ]
+          ],
+          "headline": "Yaşadığınız çevrede sürdürülebilirliği kısıtlayan/engelleyen durumları kendi çevrenizden örnekler vererek açıklayınız."
+        }
+      ]
+    },
     "144": {
       "pageWidth": 552.756,
       "pageHeight": 779.528,
@@ -6943,14 +8285,14 @@
           "column": 0,
           "rect": [
             57.9477,
-            414.5105,
+            363.0998,
             463.9757,
             471.1524
           ],
           "parts": [
             [
               57.9477,
-              414.5105,
+              363.0998,
               463.9757,
               471.1524
             ]
@@ -7115,19 +8457,170 @@
           "column": 0,
           "rect": [
             34.0237,
-            413.1592,
-            223.2237,
+            344.6294,
+            469.8982,
             461.9792
           ],
           "parts": [
             [
               34.0237,
-              413.1592,
-              223.2237,
+              344.6294,
+              469.8982,
               461.9792
             ]
           ],
           "headline": "Hazırladığınız raporu sınıfta sununuz."
+        }
+      ]
+    },
+    "153": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          42.8977,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p153-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            35.228,
+            54.7177,
+            504.0634,
+            394.0923
+          ],
+          "parts": [
+            [
+              35.228,
+              54.7177,
+              504.0634,
+              394.0923
+            ]
+          ],
+          "headline": "Aşağıda verilen ekolojik sürdürülebilirliği kısıtlayan/engelleyen durumları inceleyiniz. Her bir durumu, ilgili olduğu başlıkla eşleştirerek",
+          "items": [
+            {
+              "id": "p153--a",
+              "label": "a",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                46.3,
+                252.8,
+                494.0,
+                289.9
+              ],
+              "text": "a) Ormanların yerleşim alanlarına dönüştürülmesi"
+            },
+            {
+              "id": "p153--b",
+              "label": "b",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                46.3,
+                223.7,
+                494.0,
+                260.8
+              ],
+              "text": "b) Endüstriyel atıkların suya karış- ması"
+            },
+            {
+              "id": "p153--c",
+              "label": "c",
+              "number": 3,
+              "partIndex": 0,
+              "rect": [
+                46.3,
+                203.9,
+                494.0,
+                231.7
+              ],
+              "text": "c) İstilacı türlerin yayılması"
+            },
+            {
+              "id": "p153--ç",
+              "label": "ç",
+              "number": 3,
+              "partIndex": 0,
+              "rect": [
+                46.3,
+                184.0,
+                494.0,
+                211.9
+              ],
+              "text": "ç) Aşırı avlanma"
+            },
+            {
+              "id": "p153--d",
+              "label": "d",
+              "number": 4,
+              "partIndex": 0,
+              "rect": [
+                46.3,
+                164.2,
+                494.0,
+                192.0
+              ],
+              "text": "d) Baraj yapımı ile habitat bölünmesi"
+            },
+            {
+              "id": "p153--e",
+              "label": "e",
+              "number": 5,
+              "partIndex": 0,
+              "rect": [
+                46.3,
+                135.1,
+                494.0,
+                172.2
+              ],
+              "text": "e) Fosil yakıt kullanımı sonucu hava kirliliği"
+            },
+            {
+              "id": "p153--f",
+              "label": "f",
+              "number": 6,
+              "partIndex": 0,
+              "rect": [
+                46.3,
+                115.3,
+                494.0,
+                143.1
+              ],
+              "text": "f) Sulak alanların kurutulması"
+            },
+            {
+              "id": "p153--g",
+              "label": "g",
+              "number": 7,
+              "partIndex": 0,
+              "rect": [
+                46.3,
+                95.4,
+                494.0,
+                123.3
+              ],
+              "text": "g) Radyoaktif atıkların yayılması"
+            },
+            {
+              "id": "p153--ğ",
+              "label": "ğ",
+              "number": 7,
+              "partIndex": 0,
+              "rect": [
+                44.8977,
+                58.7177,
+                494.0,
+                103.4
+              ],
+              "text": "ğ) Türlerin yok olması "
+            }
+          ]
         }
       ]
     },
@@ -7351,14 +8844,14 @@
           "column": 0,
           "rect": [
             57.1968,
-            397.181,
+            341.838,
             232.7568,
             451.1209
           ],
           "parts": [
             [
               57.1968,
-              397.181,
+              341.838,
               232.7568,
               451.1209
             ]
@@ -7451,14 +8944,14 @@
           "column": 0,
           "rect": [
             48.6968,
-            167.6109,
+            68.6177,
             499.8939,
             206.5159
           ],
           "parts": [
             [
               48.6968,
-              167.6109,
+              68.6177,
               499.8939,
               206.5159
             ]
@@ -7556,6 +9049,38 @@
             ]
           ],
           "headline": "Ekolojik ayak izinin azaltılmasında bireysel davranış değişiklikleri yeterli midir? Görüşünüzü bilimsel gerek- çelerle açıklayınız."
+        }
+      ]
+    },
+    "159": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          36.731,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p159-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            34.5193,
+            307.9558,
+            509.7323,
+            657.3855
+          ],
+          "parts": [
+            [
+              34.5193,
+              307.9558,
+              509.7323,
+              657.3855
+            ]
+          ],
+          "headline": "Konuya Başlarken"
         }
       ]
     },
@@ -7779,19 +9304,55 @@
           "column": 0,
           "rect": [
             48.7068,
-            561.6513,
+            476.6528,
             508.5768,
             621.9713
           ],
           "parts": [
             [
               48.7068,
-              561.6513,
+              476.6528,
               508.5768,
               621.9713
             ]
           ],
           "headline": "Raporunuzda ele aldığınız önlemlerin yeterli olup olmadığını, ülke varlıklarına sahip çıkmanın gerekliliği bağlamında sınıf arkadaşlarınızla tartışınız."
+        }
+      ]
+    },
+    "166": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          56.1631,
+          273.4499
+        ],
+        [
+          277.4499,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p166-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            54.3622,
+            151.0114,
+            210.8333,
+            634.7148
+          ],
+          "parts": [
+            [
+              54.3622,
+              151.0114,
+              210.8333,
+              634.7148
+            ]
+          ],
+          "headline": "Aşağıda birbiri ile bağlantılı, doğru/yanlış ifadeler içeren tanılayıcı dallanmış ağaç verilmiştir. Soldaki ilk ifadeden başlayarak, söz kon"
         }
       ]
     },
@@ -8015,14 +9576,14 @@
           "column": 0,
           "rect": [
             43.0237,
-            163.4431,
+            104.051,
             304.4337,
             215.5702
           ],
           "parts": [
             [
               43.0237,
-              163.4431,
+              104.051,
               304.4337,
               215.5702
             ]
@@ -8127,19 +9688,71 @@
           "column": 0,
           "rect": [
             48.6922,
-            506.9623,
-            418.0222,
+            432.7319,
+            480.2186,
             547.5899
           ],
           "parts": [
             [
               48.6922,
-              506.9623,
-              418.0222,
+              432.7319,
+              480.2186,
               547.5899
             ]
           ],
           "headline": "Okulunuz bünyesinde grup çalışmasıyla atık yönetimi konulu bir proje hazırlayınız."
+        }
+      ]
+    },
+    "173": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          36.6129,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p173-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            40.189,
+            95.4713,
+            500.2784,
+            329.2298
+          ],
+          "parts": [
+            [
+              40.189,
+              95.4713,
+              500.2784,
+              329.2298
+            ]
+          ],
+          "headline": "T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığına ait 2021 yılı atık istatistikleri bülteninde atık işleme yönte- mine göre atık mikta"
+        },
+        {
+          "id": "p173-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            40.189,
+            46.223,
+            497.7038,
+            92.4713
+          ],
+          "parts": [
+            [
+              40.189,
+              46.223,
+              497.7038,
+              92.4713
+            ]
+          ],
+          "headline": "2020 ve 2021 yıllarında bertaraf edilmek üzere atık işleme tesislerine gönderilen atık miktarının diğer yıllara göre daha fazla olmasının sebebi ne olabilir?"
         }
       ]
     },
@@ -9030,14 +10643,14 @@
           "label": "38",
           "column": 0,
           "rect": [
-            35.0096,
+            34.77,
             216.8804,
             504.7786,
             485.6104
           ],
           "parts": [
             [
-              35.0096,
+              34.77,
               216.8804,
               504.7786,
               485.6104
@@ -9231,6 +10844,38 @@
         }
       ]
     },
+    "190": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          50.9764,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p190-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            48.9764,
+            80.4673,
+            506.7636,
+            404.5394
+          ],
+          "parts": [
+            [
+              48.9764,
+              80.4673,
+              506.7636,
+              404.5394
+            ]
+          ],
+          "headline": "Afyon, A., Kaya, M. A., Yağız, D. (2011). Genel Biyoloji (4. Baskı). Ankara: Nobel Yayıncılık. Akman, Y., Güney, K. (2011). Bitki Biyolojisi"
+        }
+      ]
+    },
     "193": {
       "pageWidth": 552.756,
       "pageHeight": 779.528,
@@ -9290,15 +10935,15 @@
           "label": "a",
           "column": 2,
           "rect": [
-            159.2922,
-            70.9833,
+            156.0281,
+            63.3947,
             229.0294,
             193.0434
           ],
           "parts": [
             [
-              159.2922,
-              70.9833,
+              156.0281,
+              63.3947,
               229.0294,
               193.0434
             ]
@@ -9310,16 +10955,16 @@
           "label": "8",
           "column": 4,
           "rect": [
-            290.1626,
-            183.5303,
-            346.9823,
+            283.2164,
+            63.3947,
+            359.769,
             353.9598
           ],
           "parts": [
             [
-              290.1626,
-              183.5303,
-              346.9823,
+              283.2164,
+              63.3947,
+              359.769,
               353.9598
             ]
           ],

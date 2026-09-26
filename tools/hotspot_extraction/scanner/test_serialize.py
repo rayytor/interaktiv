@@ -7,7 +7,7 @@ Evaluates:
 - Reference output: activities/books/0e966773-5012-4f57-8be5-d892e8c75f22/regions.json
 
 Verifies:
-1. Byte fingerprint matches bake_activities.mjs output identically.
+1. Byte fingerprint is the documented <size>-<hash> form and is stable.
 2. Modal folio offset and page numbers match reference.
 3. Anchor reconciliation correctly snaps unplaced interactive oges.
 4. Output regions.json strictly adheres to BAKE_VERSION = 2 schema.
@@ -90,7 +90,7 @@ def run_test():
     print(f"  Computed:  {computed_fp}")
     print(f"  Reference: {ref_fp}")
     assert computed_fp == ref_fp, f"Fingerprint mismatch! {computed_fp} != {ref_fp}"
-    print("  ✓ Fingerprint matches bake_activities.mjs identically!")
+    print("  ✓ Fingerprint is stable and in the documented form!")
 
     # 2. Verify Folio Mapping
     print(f"\n[2/6] Testing Folio Mapping...")
@@ -280,7 +280,7 @@ def run_test():
         assert anchored_p34[0]["id"] == "p34-oge-20e3aa32-f4a6-f111-b317-005056a7d529"
         print(f"  ✓ Anchor on page 34 matched: {anchored_p34[0]['id']}, rect={anchored_p34[0]['rect']}")
 
-        # Verify that all activities match the schema expected by js/viewer.js
+        # Verify that all activities match the schema `interaktiv_core.regions` loads
         for p_str, p_info in reloaded_regions["pages"].items():
             assert "pageWidth" in p_info
             assert "pageHeight" in p_info

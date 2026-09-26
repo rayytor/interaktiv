@@ -20,6 +20,18 @@ from .layout import (
     detect_body_font_size,
     detect_columns,
 )
+from .figures import (
+    Figure,
+    detect_figures,
+)
+from .prompts import (
+    Paragraph,
+    detect_activity_markers,
+    detect_prompts,
+    group_paragraphs,
+    reads_as_question,
+    reads_as_rubric,
+)
 from .markers import (
     SubQuestion,
     DetectedMarker,
@@ -28,6 +40,16 @@ from .markers import (
     detect_subquestions,
     LABEL_VALUES,
     LABEL_SUCCESSORS,
+)
+from .profile import (
+    Profile,
+    RULER,
+    SPEC,
+    active_profile,
+    apply_profile,
+    load_profile,
+    profile_hash,
+    save_profile,
 )
 from .regions import (
     SubItemRect,
@@ -38,7 +60,19 @@ from .regions import (
     detect_solution_spaces,
     grow_activity_regions,
     separate_rects,
+    snap_edges,
+    clean_page_activities,
     cuts,
+)
+from .trace import (
+    TRACE_VERSION,
+    Drop,
+    attribute_empty_page,
+    GrowthTrace,
+    serialize_page_trace,
+    serialize_trace,
+    save_trace_gz,
+    load_trace_gz,
 )
 from .anchors import (
     PublisherOge,
@@ -85,6 +119,25 @@ __all__ = [
     "detect_subquestions",
     "LABEL_VALUES",
     "LABEL_SUCCESSORS",
+    # Figures
+    "Figure",
+    "detect_figures",
+    # Prompts
+    "Paragraph",
+    "detect_activity_markers",
+    "detect_prompts",
+    "group_paragraphs",
+    "reads_as_question",
+    "reads_as_rubric",
+    # Profile
+    "Profile",
+    "RULER",
+    "SPEC",
+    "active_profile",
+    "apply_profile",
+    "load_profile",
+    "profile_hash",
+    "save_profile",
     # Regions
     "SubItemRect",
     "ActivityRegion",
@@ -94,7 +147,17 @@ __all__ = [
     "detect_solution_spaces",
     "grow_activity_regions",
     "separate_rects",
+    "snap_edges",
+    "clean_page_activities",
     "cuts",
+    # Trace
+    "TRACE_VERSION",
+    "Drop",
+    "attribute_empty_page",
+    "serialize_page_trace",
+    "serialize_trace",
+    "save_trace_gz",
+    "load_trace_gz",
     # Anchors
     "PublisherOge",
     "load_publisher_oges",

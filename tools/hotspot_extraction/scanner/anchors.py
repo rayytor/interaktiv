@@ -20,13 +20,13 @@ from .layout import (
     Column,
     _text_lines,
 )
+from .figures import detect_figures
 from .regions import (
     ActivityRegion,
     PageGeometry,
     clean_page_activities,
     detect_panels,
     detect_solution_spaces,
-    rect_overlap,
     rect_area,
     clamp,
     PAD,
@@ -211,6 +211,16 @@ def _create_anchored_region(
         ]
         panels = detect_panels(primitives.drawings, body_spans)
         lines = _text_lines(body_spans)
+        figures = detect_figures(primitives.images, primitives.drawings, lines, content_box)
+
+        # Check if anchor point is near or inside a detected figure
+        snapped_fig = None
+        for f in figures:
+            fp = f.rect
+            if (fp[0] - 30.0 <= ax <= fp[2] + 30.0) and (fp[1] - 15.0 <= ay <= fp[3] + 15.0):
+                snapped_fig = fp
+                headline = f.caption or oge.title
+                break
 
         # Find line nearest to anchor (at or below ay)
         best_line = None
@@ -242,7 +252,7 @@ def _create_anchored_region(
                 snapped_panel = p
                 break
 
-        if best_line:
+        if not headline and best_line:
             # Build headline from line items
             txts = [s.text.strip() for s in best_line["spans"] if s.text.strip()]
             if txts:
@@ -258,6 +268,14 @@ def _create_anchored_region(
                 clamp(p_x1 + PAD, 0.0, pw),
                 clamp(top_bound + PAD, 0.0, top_limit + PAD),
             )
+        elif snapped_fig:
+            p_x0, p_y0, p_x1, p_y1 = snapped_fig
+            rect = (
+                clamp(p_x0 - PAD, 0.0, pw),
+                clamp(p_y0 - PAD, bottom_limit - PAD, ph),
+                clamp(p_x1 + PAD, 0.0, pw),
+                clamp(p_y1 + PAD, 0.0, top_limit + PAD),
+            )
         else:
             col_target = next((c for c in layout.columns if c.index == col_idx), None)
             if col_target:
@@ -267,8 +285,28 @@ def _create_anchored_region(
                 x0 = 40.0 if col_idx == 0 else pw / 2.0
                 x1 = pw / 2.0 if col_idx == 0 else pw - 40.0
 
-            y_top = min(top_limit, ay + 15.0)
-            y_bot = max(bottom_limit, ay - 80.0)
+            if best_line:
+                y_top = min(top_limit, best_line["y1"] + PAD)
+                col_lines = [
+                    l for l in lines
+                    if l["x0"] < x1 and l["x1"] > x0
+                    and l["y1"] <= best_line["y1"] + 2.0
+                    and l["y0"] >= bottom_limit
+                ]
+                col_lines.sort(key=lambda l: -l["y1"])
+                y_bot = max(bottom_limit, best_line["y0"] - PAD)
+                curr_y = best_line["y0"]
+                for l in col_lines:
+                    if l is best_line:
+                        continue
+                    gap = curr_y - l["y1"]
+                    if gap > 24.0 or (y_top - (l["y0"] - PAD)) > 120.0:
+                        break
+                    y_bot = max(bottom_limit, l["y0"] - PAD)
+                    curr_y = l["y0"]
+            else:
+                y_top = min(top_limit, ay + 15.0)
+                y_bot = max(bottom_limit, ay - 80.0)
             rect = (x0, y_bot, x1, y_top)
     else:
         # Fallback geometric bounds
@@ -340,18 +378,34 @@ def _band_owner(
     return best
 
 
-def _page_geometry(primitives: PagePrimitives, layout: PageLayout) -> PageGeometry:
+def _page_geometry(
+    primitives: PagePrimitives,
+    layout: PageLayout,
+    markers: Optional[List[Any]] = None,
+) -> PageGeometry:
     """The lines and drawn blocks of a sheet, as `grow_activity_regions` reads them."""
     content_box = layout.content_box
     body_spans = [
         s for s in primitives.spans
         if s.bbox[1] >= content_box[1] - 2.0 and s.bbox[3] <= content_box[3] + 2.0
     ]
+    lines = _text_lines(body_spans)
+    columns = sorted(layout.columns, key=lambda c: c.x0)
+    figures = detect_figures(
+        primitives.images, primitives.drawings, lines, content_box,
+        marker_rects=[m.span.bbox for m in (markers or [])],
+        gutters=[
+            (a.x1 + b.x0) / 2.0
+            for a, b in zip(columns, columns[1:])
+            if b.x0 > a.x1
+        ],
+    )
     return PageGeometry(
-        lines=_text_lines(body_spans),
+        lines=lines,
         blocks=(
             [{"rect": pn, "kind": "panel"} for pn in detect_panels(primitives.drawings, body_spans)] +
-            [dict(b) for b in detect_solution_spaces(primitives.drawings, body_spans)]
+            [dict(b) for b in detect_solution_spaces(primitives.drawings, body_spans)] +
+            [{"rect": f.rect, "kind": "figure"} for f in figures]
         ),
         content_box=content_box,
     )
@@ -461,11 +515,20 @@ def reconcile_anchors(
 
             owner = _band_owner(ax, ay, bands_by_id, by_id)
             if owner is None:
+                # The icon points into space no activity claimed, so a region
+                # has to be synthesised from it. That is the `anchor-nogrow`
+                # bucket's raw material: the publisher says there is an activity
+                # here and growth found nothing to bind it to.
+                if trace is not None:
+                    trace.drop("anchor", "unbound", rect=(ax - 6, ay - 6, ax + 6, ay + 6),
+                               text=oge.title, oge=oge.id, printed_page=printed_page)
                 leftover.append(oge)
                 continue
 
             owner.oge_id = oge.id
             taken.add(oge.id)
+            if trace is not None:
+                trace.count("anchor.bound")
 
         for oge in leftover:
             out.append(
@@ -494,8 +557,10 @@ def reconcile_anchors(
                 # behind. The separation still needs to know what is drawn
                 # there, or three answer panels synthesised one under another
                 # come out stacked on top of each other.
-                geom = _page_geometry(primitives, layout)
-            out = clean_page_activities(out, geom=geom)
+                geom = _page_geometry(primitives, layout, markers)
+            if trace is not None:
+                trace.count("anchor.synthesised", len(leftover))
+            out = clean_page_activities(out, geom=geom, trace=trace)
 
         return out
 
@@ -513,4 +578,6 @@ def reconcile_anchors(
         )
         reconciled.append(anchored_act)
 
-    return reconciled
+    if trace is not None:
+        trace.count("anchor.synthesised", len(unplaced))
+    return clean_page_activities(reconciled, geom=None, trace=trace)

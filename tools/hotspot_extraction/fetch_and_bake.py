@@ -10,20 +10,21 @@ catalogue. This widens the measurement: it walks the link file, fetches each
 book, bakes it, and can throw the PDF away again, so the whole catalogue costs a
 few MB of regions and sidecars instead of roughly 10 GB of PDFs.
 
-It is a driver and nothing more. Detection lives in `js/activities.js`, baking in
-`bake_activities.mjs`; what is decided here is only which book is next, whether
-it needs fetching, and what to do when a bake dies.
+It is a driver and nothing more. Detection and baking both live in
+`scan.py` and the `scanner/` package; what is decided here is only which book
+is next, whether it needs fetching, and what to do when a bake dies.
 
 Three properties matter, and each of them is a standing rule rather than a
 preference:
 
   * **One short-lived child per book.** A sweep that keeps every book in one
     process ends up holding all of them resident, which once took the machine
-    into swap. Node is spawned per book and exits before the next one starts.
-  * **A book too heavy for one pass is split, not skipped.** `bake_activities.mjs
-    --chunked` settles the folio in a light text-only child and then reads the
-    regions a page range at a time. It is tried automatically when a single-pass
-    bake dies, which is how `1cc573f6` -- 2.8 GB on one sheet -- gets baked.
+    into swap. `scan.py` is spawned per book and exits before the next starts.
+  * **A book too heavy for one pass is retried alone, not skipped.** The old
+    Node baker needed a `--chunked` mode that read a page range at a time,
+    because pdf.js held a whole book's structure at once. PyMuPDF releases each
+    page and trims the allocator between them, so the retry here is simply a
+    single-worker run; there is no page-range path to fall back to.
   * **Resumable, and cheap to resume.** A book whose bake is current is skipped
     without downloading it: the bake records the size of the bytes it was made
     from, and the CDN will say the size of the bytes it is offering, so the two
@@ -53,7 +54,7 @@ sys.path.insert(0, ROOT)
 
 from books_manager import BooksManager  # noqa: E402  (after sys.path)
 
-BAKER = os.path.join(HERE, "bake_activities.mjs")
+SCANNER = os.path.join(HERE, "scan.py")
 USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) Interaktiv/1.0"
 CHUNK = 1024 * 1024
 
@@ -93,7 +94,8 @@ def baked_size(book_id):
     """
     The size of the PDF a bake was made from, read off its fingerprint.
 
-    `fingerprint()` in the baker is `<size>-<hash of head, middle and tail>`, and
+    `compute_fingerprint()` in the serializer is `<size>-<hash of head, middle
+    and tail>`, and
     the size is the half that can be checked against a remote file without
     downloading it. It is not proof the bytes are the same -- two revisions of
     one book could be the same length -- but a publisher's re-export changes the
@@ -109,37 +111,48 @@ def baked_size(book_id):
         return None
 
 
-def bake(pdf_path, force=False, chunk_pages=None, timeout=None):
+def bake(pdf_path, force=False, chunk_pages=None, timeout=None, trace=False):
     """
-    Bake one book in a child of its own, splitting it into page ranges if it
-    cannot be read in one pass.
+    Bake one book in a child of its own.
 
-    A single-pass bake that dies is not a failed book. It is almost always a
-    book carrying one sheet whose images cost more than the rest put together,
-    and a chunked bake pays for that sheet in a process that then exits. The two
-    produce byte-identical output, so which one ran is a memory decision and
-    changes nothing downstream.
+    The child is `scan.py`, which is where detection lives; this only decides
+    that it runs alone and gets to exit. No heap cap is passed, and that is
+    deliberate: a cap is a licence to use that much, and the one place a large
+    one was ever set is the place that took a machine down. PyMuPDF frees each
+    page and trims the allocator between them, and `scan.py` samples its own
+    workers' memory and reports the peak, so the budget is observed rather than
+    reserved.
+
+    `chunk_pages` is accepted and ignored -- it named a page-range mode the Node
+    baker needed and PyMuPDF does not. It stays in the signature so callers
+    passing it are not broken.
     """
-    # The heap cap is a fuse, not a budget, and it is set here rather than left
-    # to the default because the default is a share of the machine's RAM: the
-    # same command would run at 2 GB on this desktop and at 8 GB on a larger
-    # one, which is exactly the licence that took a machine down once. The
-    # watchdog inside the child is the earlier fuse, on resident memory.
-    base = ["node", "--max-old-space-size=1536", BAKER, pdf_path]
+    book_id = os.path.splitext(os.path.basename(os.path.realpath(pdf_path)))[0]
+    base = [
+        sys.executable, SCANNER,
+        "--only", book_id,
+        "--pdf", pdf_path,
+        "--workers", "1",
+    ]
     if force:
         base.append("--force")
+    if trace:
+        # The trace sidecar is what turns the sheets this book yields nothing on
+        # into a work queue, so a book fetched for the training corpus is worth
+        # tracing as it is baked rather than baked twice.
+        base.append("--trace")
 
     first = subprocess.run(base, cwd=ROOT, timeout=timeout)
     if first.returncode == 0:
         return "baked"
 
-    print(f"    single-pass bake failed (exit {first.returncode}); retrying in page ranges",
+    # A bake that died once is retried with the page cache shrunk as far as it
+    # goes and nothing else running beside it. If it dies again the book is
+    # reported as failed rather than silently left with a stale bake.
+    print(f"    bake failed (exit {first.returncode}); retrying once on its own",
           flush=True)
-    args = base + ["--chunked", "--force"]
-    if chunk_pages:
-        args += ["--chunk-pages", str(chunk_pages)]
-    second = subprocess.run(args, cwd=ROOT, timeout=timeout)
-    return "baked-chunked" if second.returncode == 0 else None
+    second = subprocess.run(base + ["--force", "--quiet"], cwd=ROOT, timeout=timeout)
+    return "baked-retry" if second.returncode == 0 else None
 
 
 # ----------------------------------------------------------- the download
@@ -290,7 +303,7 @@ def run(args):
         t0 = time.time()
         try:
             how = bake(local, force=args.force, chunk_pages=args.chunk_pages,
-                       timeout=args.bake_timeout)
+                       timeout=args.bake_timeout, trace=args.trace)
         except subprocess.TimeoutExpired:
             how = None
             print(f"    bake timed out after {args.bake_timeout}s", flush=True)
@@ -321,7 +334,7 @@ def run(args):
     if failed:
         print(f"\n{failed} book(s) did not bake")
     else:
-        print("\nnext: node tools/hotspot_extraction/tests/scorecard.mjs --from-bake")
+        print("\nnext: python3 tools/hotspot_extraction/compare_scorecard.py --skip-scan")
     return 1 if failed else 0
 
 
@@ -336,6 +349,8 @@ def main():
                     help="delete each PDF this run downloaded once it has baked")
     ap.add_argument("--chunk-pages", type=int,
                     help="sheets per child when a book has to be baked in ranges")
+    ap.add_argument("--trace", action="store_true",
+                    help="write each book's trace.json.gz as it bakes (see scan.py --trace)")
     ap.add_argument("--dry-run", action="store_true",
                     help="say what would be fetched and baked, do nothing")
     ap.add_argument("--timeout", type=int, default=60, help="download socket timeout, seconds")

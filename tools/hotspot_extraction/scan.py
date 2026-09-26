@@ -43,7 +43,7 @@ from tools.hotspot_extraction.scanner import (
     compute_fingerprint,
     detect_book_calibration,
     detect_layout,
-    detect_markers,
+    detect_activity_markers,
     detect_panels,
     detect_solution_spaces,
     extract_page_primitives,
@@ -56,6 +56,20 @@ from tools.hotspot_extraction.scanner import (
     save_regions_json,
     serialize_book_regions,
     serialize_diagnostics,
+)
+from tools.hotspot_extraction.scanner.pipeline import detect_page
+from tools.hotspot_extraction.scanner.trace import (
+    save_trace_gz,
+    serialize_page_trace,
+    serialize_trace,
+)
+from tools.hotspot_extraction.scanner.profile import (
+    DEFAULT_PROFILE_PATH,
+    apply_profile,
+    changed_from_default,
+    from_dict,
+    load_profile,
+    profile_hash,
 )
 
 
@@ -157,7 +171,17 @@ def scan_single_book(task: Dict[str, Any]) -> Dict[str, Any]:
     meta_dir = task["meta_dir"]
     force = task.get("force", False)
     quiet = task.get("quiet", False)
+    want_trace = task.get("trace", False)
     title = task.get("title", book_id)
+
+    # The profile travels as a plain dict rather than as a `Profile`, because
+    # the task crosses a process boundary and a dict is the one form that
+    # cannot depend on this module's import order in the child. Applying it
+    # here, in the worker, is what makes each book's bake reproducible from the
+    # task alone.
+    profile = from_dict(task.get("profile") or {})
+    apply_profile(profile)
+    want_profile_hash = profile_hash(profile)
 
     t0 = time.time()
     try:
@@ -174,19 +198,24 @@ def scan_single_book(task: Dict[str, Any]) -> Dict[str, Any]:
     if out_dir.lower().endswith(".json"):
         regions_file = out_dir
         diag_file = os.path.splitext(out_dir)[0] + ".diagnostics.json.gz"
+        trace_file = os.path.splitext(out_dir)[0] + ".trace.json.gz"
         os.makedirs(os.path.dirname(os.path.abspath(regions_file)), exist_ok=True)
     else:
         book_out_dir = os.path.join(out_dir, book_id)
         regions_file = os.path.join(book_out_dir, "regions.json")
         diag_file = os.path.join(book_out_dir, "diagnostics.json.gz")
+        trace_file = os.path.join(book_out_dir, "trace.json.gz")
         os.makedirs(book_out_dir, exist_ok=True)
 
-    # Incremental skipping check
-    if not force and os.path.isfile(regions_file) and os.path.isfile(diag_file):
+    # Incremental skipping check. A bake is current only if the PDF *and* the
+    # detector are unchanged: a retrained profile draws different regions from
+    # the same bytes, so its hash is half of what "current" means.
+    if (not force and os.path.isfile(regions_file) and os.path.isfile(diag_file)
+            and (not want_trace or os.path.isfile(trace_file))):
         try:
             with open(regions_file, "r", encoding="utf-8") as f:
                 existing = json.load(f)
-            if existing.get("fingerprint") == fp:
+            if existing.get("fingerprint") == fp and existing.get("profile") == want_profile_hash:
                 return {
                     "status": "skipped",
                     "book_id": book_id,
@@ -223,6 +252,7 @@ def scan_single_book(task: Dict[str, Any]) -> Dict[str, Any]:
         diagnostics_by_page: Dict[int, Dict[str, Any]] = {}
         anchors_by_page: Dict[int, List[str]] = {}
         sample_spans: List[Any] = []
+        page_traces: List[Dict[str, Any]] = []
 
         total_regions = 0
         total_anchored = 0
@@ -231,38 +261,33 @@ def scan_single_book(task: Dict[str, Any]) -> Dict[str, Any]:
         for p in range(1, page_count + 1):
             prim = extract_page_primitives(doc, p)
             pages_dimensions[p] = (prim.width, prim.height)
-            layout = detect_layout(prim)
-            pages_layout[p] = layout
 
-            markers = detect_markers(prim, layout=layout)
-            trace = GrowthTrace()
-            activities = grow_activity_regions(prim, layout, markers, trace=trace)
-
-            # Publisher anchor reconciliation
             printed_page = folio_map.get(p)
             page_oges = [o for o in oges if o.sayfano == printed_page] if printed_page is not None else []
-            if page_oges:
-                unplaced = find_unplaced_anchors(
-                    activities=activities,
-                    oges=page_oges,
-                    page_height=prim.height,
+
+            trace = GrowthTrace(record=want_trace)
+            result = detect_page(
+                prim,
+                page_num=p,
+                printed_page=printed_page,
+                page_oges=page_oges,
+                trace=trace,
+            )
+            layout = result.layout
+            markers = result.markers
+            activities = result.activities
+            pages_layout[p] = layout
+            if result.anchor_ids:
+                anchors_by_page[p] = result.anchor_ids
+
+            if want_trace:
+                page_traces.append(serialize_page_trace(
+                    page_num=p,
+                    trace=trace,
+                    region_ids=[a.id for a in activities],
                     printed_page=printed_page,
-                    page_width=prim.width,
-                )
-                if unplaced:
-                    anchors_by_page[p] = [o.id for o in unplaced]
-                    activities = reconcile_anchors(
-                        activities=activities,
-                        oges=page_oges,
-                        page_height=prim.height,
-                        printed_page=printed_page,
-                        page_width=prim.width,
-                        page_num=p,
-                        primitives=prim,
-                        layout=layout,
-                        markers=markers,
-                        trace=trace,
-                    )
+                    anchors=anchors_by_page.get(p, ()),
+                ))
 
             if activities:
                 pages_activities[p] = activities
@@ -270,23 +295,10 @@ def scan_single_book(task: Dict[str, Any]) -> Dict[str, Any]:
                 total_anchored += sum(1 for a in activities if a.anchored)
                 total_questions += sum(len(a.items) for a in activities if a.items)
 
-            # Diagnostics sidecar
-            body_spans = [
-                s for s in prim.spans
-                if s.bbox[1] >= layout.content_box[1] - 2.0 and s.bbox[3] <= layout.content_box[3] + 2.0
-            ]
-            panels = detect_panels(prim.drawings, body_spans)
-            solutions = detect_solution_spaces(prim.drawings, body_spans)
-
-            diagnostics_by_page[p] = {
-                "pageWidth": prim.width,
-                "pageHeight": prim.height,
-                "contentTop": layout.content_box[3],
-                "contentBottom": layout.content_box[1],
-                "panels": [list(pnl) for pnl in panels],
-                "solutions": [list(sol["rect"] if isinstance(sol, dict) else sol) for sol in solutions],
-                "markers": [list(m.span.bbox) for m in markers],
-            }
+            # Diagnostics sidecar. The drawn geometry came back with the
+            # regions rather than being rebuilt here, so the blocks a bake is
+            # judged against are the ones its regions were grown among.
+            diagnostics_by_page[p] = result.diagnostics(prim.width, prim.height, as_lists=True)
 
             if p <= 40:
                 for s in prim.spans:
@@ -294,7 +306,8 @@ def scan_single_book(task: Dict[str, Any]) -> Dict[str, Any]:
                     if re.fullmatch(r"[a-z]", t_str) or re.fullmatch(r"\d{1,2}", t_str):
                         sample_spans.append(s)
 
-            del prim, layout, markers, activities, body_spans, panels, solutions
+            del prim, layout, markers, activities, result
+            del trace
             _trim_memory()
 
         # Calibration
@@ -327,6 +340,14 @@ def scan_single_book(task: Dict[str, Any]) -> Dict[str, Any]:
 
         save_regions_json(regions_file, regions_json_data)
         save_diagnostics_gz(diag_file, diag_json_data)
+
+        if want_trace:
+            save_trace_gz(trace_file, serialize_trace(
+                book_id=book_id,
+                pdf_path=pdf_path,
+                fingerprint=fp,
+                pages=page_traces,
+            ))
 
     except Exception as e:
         doc.close()
@@ -482,8 +503,35 @@ def main() -> int:
         action="store_true",
         help="Suppress per-page progress output",
     )
+    parser.add_argument(
+        "--trace",
+        action="store_true",
+        help="Also write trace.json.gz: what each sheet refused, and under which rule",
+    )
+    parser.add_argument(
+        "--profile",
+        type=str,
+        default=DEFAULT_PROFILE_PATH,
+        help=(
+            "Detector profile JSON (default: scanner/profile.json, or the "
+            "built-in defaults when that file does not exist)"
+        ),
+    )
 
     args = parser.parse_args()
+
+    # Loaded once, in the parent, so an unreadable or out-of-range profile is a
+    # message before any work starts rather than twenty-seven identical worker
+    # crashes.
+    try:
+        active_profile_obj = load_profile(args.profile)
+    except (ValueError, KeyError, json.JSONDecodeError) as exc:
+        print(f"Profile {args.profile}: {exc}", file=sys.stderr)
+        return 2
+    profile_dict = active_profile_obj.to_dict()
+    active_hash = profile_hash(active_profile_obj)
+    moved = changed_from_default(active_profile_obj)
+    profile_note = " (defaults)" if not moved else f" ({len(moved)} knob(s) moved)"
 
     books_dir = os.path.join(PROJECT_ROOT, "books")
     meta_dir = os.path.join(PROJECT_ROOT, "activities_meta")
@@ -569,6 +617,8 @@ def main() -> int:
             "meta_dir": meta_dir,
             "force": args.force,
             "quiet": args.quiet,
+            "trace": args.trace,
+            "profile": profile_dict,
         }
         for b in books
     ]
@@ -580,7 +630,10 @@ def main() -> int:
     wall_start = time.time()
     results: List[Dict[str, Any]] = []
 
-    print(f"\nLaunching {len(tasks)} book(s) across {args.workers} worker process(es)...\n")
+    print(
+        f"\nLaunching {len(tasks)} book(s) across {args.workers} worker process(es) "
+        f"| profile {active_hash}{profile_note}\n"
+    )
 
     with ProcessPoolExecutor(max_workers=args.workers, max_tasks_per_child=1) as executor:
         future_map = {executor.submit(scan_single_book, t): t for t in tasks}

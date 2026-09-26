@@ -17,6 +17,7 @@ from .layout import (
     detect_layout,
 )
 from .primitives import PagePrimitives, TextSpan
+from .trace import GrowthTrace
 
 # Gutter & indent constants
 GUTTER_RATIO = 0.5       # a label needs this much of its own size clear on its left
@@ -52,6 +53,16 @@ class DetectedMarker:
     column_index: int
     is_step: bool                # True for "1. Adım"
     items: List[SubQuestion] = field(default_factory=list)
+    # Raised by `prompts.py` from the grammar of an instruction rather than
+    # from a printed label. Growth reads it exactly like any other marker.
+    is_prompt: bool = False
+    # What to call the region when `label` is empty. A question the page never
+    # enumerated has no letter to be known by, and its region still needs an
+    # id that is unique on the sheet; this supplies that half without inventing
+    # a label, which would be worse than none -- the publisher's manifest is
+    # joined by label, and a made-up one matches nothing while blocking the
+    # position-only match that an unlabelled region is entitled to.
+    slug: Optional[str] = None
 
 
 @dataclass
@@ -216,19 +227,30 @@ def _is_bold(span: TextSpan) -> bool:
 def find_candidate_markers(
     body_spans: List[TextSpan],
     body_font_size: float,
+    trace: Optional[GrowthTrace] = None,
 ) -> List[dict]:
     """
     Identify potential activity markers by regex match, gutter clearance,
     hanging indent, and typographic features.
+
+    Each of the three gates below refuses a span that *did* parse as a label,
+    which is why they are traced and the parse failure is not: a page of prose
+    fails the parse on every span and means nothing by it, while a span that
+    reads as "3." and is then refused is a question the page may well be asking.
     """
     candidates = []
     for span in body_spans:
         parsed = parse_label(span.text)
         if not parsed:
             continue
+        if trace is not None:
+            trace.count("marker.parsed")
 
         clear_left, hanging = check_hanging_indent(span, body_spans)
         if not hanging:
+            if trace is not None:
+                trace.drop("marker", "no-hanging-indent", rect=span.bbox,
+                           text=span.text, clear_left=clear_left)
             continue
 
         # Typographic hierarchy check:
@@ -245,6 +267,9 @@ def find_candidate_markers(
                 "x": span.bbox[0],
                 "y": (span.bbox[1] + span.bbox[3]) / 2.0,
             })
+        elif trace is not None:
+            trace.drop("marker", "typography", rect=span.bbox, text=span.text,
+                       size=span.size, body_font_size=body_font_size, font=span.font)
 
     # Filter out smaller candidates in the same typeface when a larger candidate exists
     # (capped at 25pt so decorative drop caps never suppress body-sized markers)
@@ -263,6 +288,9 @@ def find_candidate_markers(
             continue
         if s.size >= font_max_size.get(s.font, 0.0) - 0.75:
             filtered.append(c)
+        elif trace is not None:
+            trace.drop("marker", "smaller-in-font", rect=s.bbox, text=s.text,
+                       size=s.size, font_max=font_max_size.get(s.font, 0.0), font=s.font)
 
     return filtered
 
@@ -486,6 +514,7 @@ def detect_subquestions(
 def detect_markers(
     primitives: PagePrimitives,
     layout: Optional[PageLayout] = None,
+    trace: Optional[GrowthTrace] = None,
 ) -> List[DetectedMarker]:
     """
     Detect all activity markers on a page and their nested sub-questions.
@@ -513,8 +542,10 @@ def detect_markers(
     else:
         body_size = layout.body_font_size
 
-    candidates = find_candidate_markers(body_spans, body_size)
+    candidates = find_candidate_markers(body_spans, body_size, trace=trace)
     candidate_spans = [c["span"] for c in candidates]
+    if trace is not None:
+        trace.count("marker.candidates", len(candidates))
 
     # 2. Resolve layout with candidate markers
     if layout is None:
@@ -548,6 +579,14 @@ def detect_markers(
         if clearance >= COLUMN_CLEAR:
             leaders.append(cl)
             col_left = left
+        elif trace is not None:
+            # The cluster sits indented behind matter already claimed by a
+            # column to its left, so it reads as a nested list rather than as a
+            # column of its own. Whole clusters die here at once.
+            for c in cl:
+                trace.drop("marker", "not-column-leader", rect=c["span"].bbox,
+                           text=c["span"].text, clearance=clearance,
+                           required=COLUMN_CLEAR, cluster=len(cl))
 
     leader_span_ids = {id(c["span"]) for cl in leaders for c in cl}
     top_level_candidates = [c for c in candidates if id(c["span"]) in leader_span_ids]
@@ -580,7 +619,20 @@ def detect_markers(
     # 6. Validate sequence monotonicity (DP state machine)
     kept_entries = longest_label_run(ordered_candidates)
     if not kept_entries:
+        if trace is not None:
+            trace.drop("marker", "no-run", candidates=len(ordered_candidates))
         return []
+    if trace is not None:
+        kept_ids = {id(e["span"]) for e in kept_entries}
+        for c in ordered_candidates:
+            if id(c["span"]) not in kept_ids:
+                # The monotonic-run state machine read this label as breaking the
+                # sequence -- a page number, a figure caption, a stray "1)" in
+                # prose. It is the gate most likely to be wrong on a page that
+                # really does restart its numbering.
+                trace.drop("marker", "out-of-run", rect=c["span"].bbox,
+                           text=c["span"].text, column=c.get("column_index"))
+        trace.count("marker.kept", len(kept_entries))
 
     # 7. Build DetectedMarker objects and extract nested sub-questions
     markers_by_col: Dict[int, List[dict]] = {c.index: [] for c in layout.columns}

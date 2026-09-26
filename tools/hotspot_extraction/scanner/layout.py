@@ -269,8 +269,16 @@ def _side_by_side_share(
     return paired / height if height > 0 else 0.0
 
 
-def _cluster_by_x(items: List[dict], key="x0", tol: float = COLUMN_TOLERANCE) -> List[List[dict]]:
-    """Cluster items by a horizontal coordinate within tolerance."""
+def _cluster_by_x(items: List[dict], key="x0", tol: Optional[float] = None) -> List[List[dict]]:
+    """
+    Cluster items by a horizontal coordinate within tolerance.
+
+    `tol` resolves to `COLUMN_TOLERANCE` at call time. As a default argument it
+    would have been frozen at import, so a profile that widened the column
+    tolerance would have left this one clustering pass on the old value.
+    """
+    if tol is None:
+        tol = COLUMN_TOLERANCE
     sorted_items = sorted(items, key=lambda it: it[key])
     clusters: List[List[dict]] = []
     current: List[dict] = []

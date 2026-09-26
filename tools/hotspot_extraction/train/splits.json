@@ -1,0 +1,322 @@
+{
+  "version": 1,
+  "heldOutEvery": 3,
+  "books": {
+    "09f62a7e-20f7-43b2-99c6-b67d24e0809a": {
+      "title": "Biyoloji Ders Kitabı",
+      "template": "subject",
+      "band": "clean",
+      "cutRate": 0.0045,
+      "matchRate": 1.0,
+      "pages": 193,
+      "regions": 440
+    },
+    "0a3fbb41-8855-460f-af3d-41489a269851": {
+      "title": "WAYMARK (9) SB - Ders Kitabı",
+      "template": "elt",
+      "band": "low",
+      "cutRate": 0.0683,
+      "matchRate": 0.895,
+      "pages": 162,
+      "regions": 717
+    },
+    "0e966773-5012-4f57-8be5-d892e8c75f22": {
+      "title": "STEPWISE (10) SB - Ders Kitabı",
+      "template": "elt",
+      "band": "high",
+      "cutRate": 0.1113,
+      "matchRate": 0.976,
+      "pages": 165,
+      "regions": 530
+    },
+    "11941059-5fe2-451d-a33c-4fa44d846a59": {
+      "title": "11 İNGİLİZCE DERS KİTABI (2017-2023)",
+      "template": "elt",
+      "band": "low",
+      "cutRate": 0.0272,
+      "matchRate": 0.97,
+      "pages": 109,
+      "regions": 367
+    },
+    "1903e365-310a-46d9-933d-ec0a5af22549": {
+      "title": "Coğrafya Ders Kitabı",
+      "template": "subject",
+      "band": "high",
+      "cutRate": 0.1048,
+      "matchRate": 1.0,
+      "pages": 282,
+      "regions": 563
+    },
+    "1cc573f6-324a-470d-8452-bbf6d3fd0a23": {
+      "title": "Kimya Ders Kitabı",
+      "template": "subject",
+      "band": "low",
+      "cutRate": 0.0643,
+      "matchRate": 0.875,
+      "pages": 289,
+      "regions": 607
+    },
+    "3a4479c7-dcb7-4da6-b3e5-5f05dd98d155": {
+      "title": "Fen Lisesi Biyoloji",
+      "template": "subject",
+      "band": "high",
+      "cutRate": 0.0771,
+      "matchRate": null,
+      "pages": 188,
+      "regions": 571
+    },
+    "3d372038-0d49-4a7d-bb62-446818ff6d36": {
+      "title": "11 İNGİLİZCE ÇALIŞMA KİTABI (2017-2023)",
+      "template": "elt",
+      "band": "clean",
+      "cutRate": 0.0108,
+      "matchRate": 0.955,
+      "pages": 53,
+      "regions": 370
+    },
+    "4442fde4-91bb-46e1-a6b6-b949cec10b5b": {
+      "title": "Matematik Ders Kitabı 2",
+      "template": "subject",
+      "band": "high",
+      "cutRate": 0.0811,
+      "matchRate": null,
+      "pages": 238,
+      "regions": 789
+    },
+    "51cdbbce-66f4-4baa-95d7-634bf11b7e44": {
+      "title": "Matematik Ders Kitabı",
+      "template": "subject",
+      "band": "low",
+      "cutRate": 0.0697,
+      "matchRate": 0.868,
+      "pages": 417,
+      "regions": 1291
+    },
+    "550e601a-7ae8-40c0-ba41-435fa30c16e8": {
+      "title": "STEPWISE (10) WB - Çalışma Kitabı",
+      "template": "elt",
+      "band": "low",
+      "cutRate": 0.0345,
+      "matchRate": 0.898,
+      "pages": 73,
+      "regions": 174
+    },
+    "66098271-92a3-48d4-9320-2033cbd3c94e": {
+      "title": "Fizik Ders Kitabı",
+      "template": "subject",
+      "band": "high",
+      "cutRate": 0.1201,
+      "matchRate": 0.857,
+      "pages": 321,
+      "regions": 899
+    },
+    "6e4f65dc-0054-4c19-b1c3-90acf2f68f46": {
+      "title": "Kimya Fen Lisesi Ders Kitabı",
+      "template": "subject",
+      "band": "clean",
+      "cutRate": 0.0,
+      "matchRate": 1.0,
+      "pages": 241,
+      "regions": 78
+    },
+    "753fcdb0-64fa-4c5e-b677-1e3e612b31b5": {
+      "title": "Fen Lisesi Matematik Ders Kitabı",
+      "template": "subject",
+      "band": "low",
+      "cutRate": 0.0509,
+      "matchRate": 0.802,
+      "pages": 407,
+      "regions": 1907
+    },
+    "7763e45b-e8ba-49df-a7d1-5932bc68e6ed": {
+      "title": "Coğrafya Ders Kitabı",
+      "template": "subject",
+      "band": "low",
+      "cutRate": 0.0534,
+      "matchRate": 1.0,
+      "pages": 240,
+      "regions": 431
+    },
+    "79cbecfa-b783-4472-9ba2-3933ffeb9b72": {
+      "title": "Biyoloji Ders Kitabı",
+      "template": "subject",
+      "band": "high",
+      "cutRate": 0.2351,
+      "matchRate": 0.875,
+      "pages": 213,
+      "regions": 485
+    },
+    "7fad03e9-392b-45a1-ba90-503059d9e41e": {
+      "title": "Fen Lisesi Fizik Ders Kitabı",
+      "template": "subject",
+      "band": "low",
+      "cutRate": 0.0586,
+      "matchRate": 1.0,
+      "pages": 329,
+      "regions": 614
+    },
+    "93bf209f-253c-4f5e-a54b-461731048d12": {
+      "title": "10. Sınıf Felsefe Ders Kitabı",
+      "template": "subject",
+      "band": "low",
+      "cutRate": 0.0393,
+      "matchRate": 1.0,
+      "pages": 213,
+      "regions": 433
+    },
+    "a0e5ed1a-c37b-45f1-9821-f98350b18911": {
+      "title": "Matematik Ders Kitabı",
+      "template": "subject",
+      "band": "high",
+      "cutRate": 0.0756,
+      "matchRate": 0.851,
+      "pages": 402,
+      "regions": 2011
+    },
+    "a7a7886a-4e91-4e34-8ba5-7c0e7582842d": {
+      "title": "İngilizce Ders Kitabı",
+      "template": "elt",
+      "band": "clean",
+      "cutRate": 0.0,
+      "matchRate": 1.0,
+      "pages": 131,
+      "regions": 4
+    },
+    "ad3f3275-777a-4e34-b3e0-59c50605bdc6": {
+      "title": "İngilizce Çalışma Kitabı",
+      "template": "elt",
+      "band": "clean",
+      "cutRate": 0.0,
+      "matchRate": 1.0,
+      "pages": 72,
+      "regions": 5
+    },
+    "afec0d89-bd70-4495-bad3-e95831c33721": {
+      "title": "Psikoloji Ders Kitabı (TYMM)",
+      "template": "subject",
+      "band": "high",
+      "cutRate": 0.1132,
+      "matchRate": 0.929,
+      "pages": 196,
+      "regions": 636
+    },
+    "c9f63718-e30b-4a3c-ad5b-63f83f2506e9": {
+      "title": "WAYMARK (9) WB - Çalışma Kitabı",
+      "template": "elt",
+      "band": "high",
+      "cutRate": 0.1508,
+      "matchRate": 0.963,
+      "pages": 71,
+      "regions": 179
+    },
+    "cb558332-7dbe-4915-a806-5723f5af0bd1": {
+      "title": "Fizik Ders Kitabı",
+      "template": "subject",
+      "band": "high",
+      "cutRate": 0.0946,
+      "matchRate": 0.897,
+      "pages": 273,
+      "regions": 687
+    },
+    "d13a75d3-33be-4102-8570-b14b1b6382b2": {
+      "title": "Tarih Ders Kitabı",
+      "template": "subject",
+      "band": "high",
+      "cutRate": 0.1,
+      "matchRate": 0.953,
+      "pages": 319,
+      "regions": 480
+    },
+    "d6dd5587-41d4-4168-99d5-2f31038164c6": {
+      "title": "Türk Dili ve Edebiyatı Ders Kitabı",
+      "template": "subject",
+      "band": "clean",
+      "cutRate": 0.0024,
+      "matchRate": 1.0,
+      "pages": 269,
+      "regions": 839
+    },
+    "df1e313c-69bb-4229-95f7-59262de6375b": {
+      "title": "Türk Dili ve Edebiyatı Ders Kitabı",
+      "template": "subject",
+      "band": "high",
+      "cutRate": 0.1015,
+      "matchRate": 0.931,
+      "pages": 319,
+      "regions": 857
+    }
+  },
+  "train": [
+    "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+    "0a3fbb41-8855-460f-af3d-41489a269851",
+    "0e966773-5012-4f57-8be5-d892e8c75f22",
+    "1903e365-310a-46d9-933d-ec0a5af22549",
+    "1cc573f6-324a-470d-8452-bbf6d3fd0a23",
+    "3d372038-0d49-4a7d-bb62-446818ff6d36",
+    "4442fde4-91bb-46e1-a6b6-b949cec10b5b",
+    "550e601a-7ae8-40c0-ba41-435fa30c16e8",
+    "66098271-92a3-48d4-9320-2033cbd3c94e",
+    "753fcdb0-64fa-4c5e-b677-1e3e612b31b5",
+    "7763e45b-e8ba-49df-a7d1-5932bc68e6ed",
+    "93bf209f-253c-4f5e-a54b-461731048d12",
+    "a0e5ed1a-c37b-45f1-9821-f98350b18911",
+    "ad3f3275-777a-4e34-b3e0-59c50605bdc6",
+    "afec0d89-bd70-4495-bad3-e95831c33721",
+    "d13a75d3-33be-4102-8570-b14b1b6382b2",
+    "d6dd5587-41d4-4168-99d5-2f31038164c6",
+    "df1e313c-69bb-4229-95f7-59262de6375b"
+  ],
+  "heldOut": [
+    "11941059-5fe2-451d-a33c-4fa44d846a59",
+    "3a4479c7-dcb7-4da6-b3e5-5f05dd98d155",
+    "51cdbbce-66f4-4baa-95d7-634bf11b7e44",
+    "6e4f65dc-0054-4c19-b1c3-90acf2f68f46",
+    "79cbecfa-b783-4472-9ba2-3933ffeb9b72",
+    "7fad03e9-392b-45a1-ba90-503059d9e41e",
+    "a7a7886a-4e91-4e34-8ba5-7c0e7582842d",
+    "c9f63718-e30b-4a3c-ad5b-63f83f2506e9",
+    "cb558332-7dbe-4915-a806-5723f5af0bd1"
+  ],
+  "strata": {
+    "elt/clean": [
+      "3d372038-0d49-4a7d-bb62-446818ff6d36",
+      "a7a7886a-4e91-4e34-8ba5-7c0e7582842d",
+      "ad3f3275-777a-4e34-b3e0-59c50605bdc6"
+    ],
+    "elt/high": [
+      "0e966773-5012-4f57-8be5-d892e8c75f22",
+      "c9f63718-e30b-4a3c-ad5b-63f83f2506e9"
+    ],
+    "elt/low": [
+      "0a3fbb41-8855-460f-af3d-41489a269851",
+      "11941059-5fe2-451d-a33c-4fa44d846a59",
+      "550e601a-7ae8-40c0-ba41-435fa30c16e8"
+    ],
+    "subject/clean": [
+      "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+      "6e4f65dc-0054-4c19-b1c3-90acf2f68f46",
+      "d6dd5587-41d4-4168-99d5-2f31038164c6"
+    ],
+    "subject/high": [
+      "1903e365-310a-46d9-933d-ec0a5af22549",
+      "3a4479c7-dcb7-4da6-b3e5-5f05dd98d155",
+      "4442fde4-91bb-46e1-a6b6-b949cec10b5b",
+      "66098271-92a3-48d4-9320-2033cbd3c94e",
+      "79cbecfa-b783-4472-9ba2-3933ffeb9b72",
+      "a0e5ed1a-c37b-45f1-9821-f98350b18911",
+      "afec0d89-bd70-4495-bad3-e95831c33721",
+      "cb558332-7dbe-4915-a806-5723f5af0bd1",
+      "d13a75d3-33be-4102-8570-b14b1b6382b2",
+      "df1e313c-69bb-4229-95f7-59262de6375b"
+    ],
+    "subject/low": [
+      "1cc573f6-324a-470d-8452-bbf6d3fd0a23",
+      "51cdbbce-66f4-4baa-95d7-634bf11b7e44",
+      "753fcdb0-64fa-4c5e-b677-1e3e612b31b5",
+      "7763e45b-e8ba-49df-a7d1-5932bc68e6ed",
+      "7fad03e9-392b-45a1-ba90-503059d9e41e",
+      "93bf209f-253c-4f5e-a54b-461731048d12"
+    ]
+  },
+  "scorer": "python-1"
+}
