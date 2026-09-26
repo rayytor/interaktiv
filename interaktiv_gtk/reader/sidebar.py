@@ -68,15 +68,18 @@ class ActivitiesSidebar(Gtk.Box):
         self._selecting = False
 
         self.heading = Gtk.Label(label="Etkinlikler", xalign=0.0)
-        self.heading.add_css_class("sidebar-heading")
+        self.heading.add_css_class("heading")
         self.subheading = Gtk.Label(label="", xalign=0.0)
-        self.subheading.add_css_class("sidebar-subheading")
+        self.subheading.add_css_class("caption")
+        self.subheading.add_css_class("dim-label")
         head = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=2)
         head.add_css_class("sidebar-head")
         head.append(self.heading)
         head.append(self.subheading)
         self.append(head)
-        self.append(Gtk.Separator())
+        # No rule of its own: the sidebar's tab switcher already draws one
+        # directly above this heading, and two hairlines twelve pixels apart
+        # in a 232 px panel read as a mistake.
 
         self.store = Gio.ListStore(item_type=ActivityItem)
         self.selection = Gtk.SingleSelection(model=self.store)
@@ -164,20 +167,26 @@ class ActivitiesSidebar(Gtk.Box):
         row = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=10)
         row.add_css_class("activity-row")
 
-        page = Gtk.Label(xalign=1.0)
+        page = Gtk.Label(xalign=1.0, valign=Gtk.Align.CENTER)
+        page.add_css_class("caption")
         page.add_css_class("activity-row-page")
         page.set_width_chars(4)
 
-        text = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=1, hexpand=True)
+        # Centred rather than baseline-aligned: the page number is beside a box
+        # that is one line tall or two, and a shared baseline puts it under the
+        # name in the one-line case.
+        text = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=1,
+                       hexpand=True, valign=Gtk.Align.CENTER)
         name = Gtk.Label(xalign=0.0, ellipsize=Pango.EllipsizeMode.END)
-        name.add_css_class("activity-row-name")
+        name.add_css_class("heading")
         detail = Gtk.Label(xalign=0.0)
-        detail.add_css_class("activity-row-detail")
+        detail.add_css_class("caption")
+        detail.add_css_class("dim-label")
         text.append(name)
         text.append(detail)
 
-        bolt = Gtk.Label(label="⚡")
-        bolt.add_css_class("activity-row-bolt")
+        bolt = Gtk.Label(label="⚡", valign=Gtk.Align.CENTER)
+        bolt.add_css_class("caption")
 
         row.append(page)
         row.append(text)
@@ -192,9 +201,15 @@ class ActivitiesSidebar(Gtk.Box):
         item = list_item.get_item()
         list_item.page_label.set_label(str(item.page))
         list_item.name_label.set_label(item.name or "Etkinlik")
-        list_item.detail_label.set_label(
-            f"{item.items} soru" if item.items else "—"
-        )
+        # An activity with no numbered questions has nothing to say on the
+        # second line, and an em dash standing in for it reads as a stray mark
+        # under every second row. The row is simply one line tall instead,
+        # which also puts the page number level with the name.
+        if item.items:
+            list_item.detail_label.set_label(f"{item.items} soru")
+            list_item.detail_label.set_visible(True)
+        else:
+            list_item.detail_label.set_visible(False)
         list_item.bolt.set_visible(item.interactive)
 
     # -- selection --------------------------------------------------------
@@ -383,6 +398,8 @@ class ThumbnailsPanel(Gtk.Box):
         container.append(pic2)
 
         label = Gtk.Label()
+        label.add_css_class("caption")
+        label.add_css_class("dim-label")
         label.add_css_class("thumb-number")
 
         box.append(container)
@@ -587,9 +604,9 @@ class BookmarksPanel(Gtk.Box):
         row.add_css_class("bookmark-row")
 
         title = Gtk.Label(xalign=0.0, hexpand=True, ellipsize=Pango.EllipsizeMode.END)
-        title.add_css_class("bookmark-title")
 
         page = Gtk.Label(xalign=1.0)
+        page.add_css_class("caption")
         page.add_css_class("bookmark-page")
 
         row.append(title)
@@ -665,7 +682,12 @@ class ReaderSidebar(Gtk.Box):
         # of header, and the sidebar is a hundred narrower than that. The
         # switcher keeps each page's title as the button's tooltip.
         switcher.set_display_mode(Adw.InlineViewSwitcherDisplayMode.ICONS)
+        # Three equal tabs across the sidebar rather than three buttons huddled
+        # at its left edge: the switcher is the sidebar's heading, so it spans it.
+        switcher.set_homogeneous(True)
+        switcher.set_hexpand(True)
         switcher.add_css_class("sidebar-switcher")
+        switcher.add_css_class("round")
 
         head = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
         head.add_css_class("sidebar-header-box")

@@ -1,135 +1,185 @@
 /* ==========================================================================
    Interaktiv - School Edition, native chrome.
 
-   The metrics here are the ones `css/school.css` establishes for the web
-   build, and they follow the same rule: a control a teacher touches in front
-   of a class is at least 48 px in its smallest dimension, sits at the edge of
-   the screen rather than in the middle of it, and never needs a double tap.
+   Two sizes, deliberately different. What a control *is* -- the box GTK
+   allocates and therefore the box a finger can land on -- stays at the board
+   metric `css/school.css` sets: at least 44 px in its smallest dimension,
+   never needing a double tap. What a control *looks like* is smaller, and the
+   gap between the two is padding: `background-clip: content-box` paints the
+   surface inside the padding while the press is still picked across the whole
+   allocation. So the chrome reads as chrome and the targets stay board-sized.
 
-   Colours are libadwaita's own named colours, so the four reader themes (M8)
-   can redefine them in one place instead of restyling every widget.
+   The rule survives contact with a redesign only if it is written down, so:
+   shrink padding to make a control look smaller, never `min-height`.
+
+   Corners follow from that. GTK rounds the *allocation* and then shrinks the
+   radius by the padding on its way in to the content box, so a radius written
+   here always lands smaller than it reads -- `border-radius: 9px` inside 6 px
+   of padding painted a 3 px corner, which is why these buttons looked square.
+   `9999px` is the way out: GTK clamps it to half the shorter side after the
+   shrink, so the painted edge is a true circle or a true pill whatever the
+   padding is, and it stays one if the padding is ever retuned.
+
+   The second rule is the GNOME HIG's: keep custom styling to a minimum and
+   reach for an existing style class before writing a rule. Type sizes are
+   `heading` / `caption` / `title-4` and friends, applied in Python, not
+   `font-size` in pixels here -- a pixel is the wrong unit for text that has to
+   survive the user's own font scale, the large-text accessibility setting and
+   a translation into a longer language. Surfaces are `.card`. Colours are
+   libadwaita's named colours, so the four reader themes can redefine them in
+   one place instead of restyling every widget.
+
+   What is left below is only what no style class says: board-sized hit boxes,
+   the desk the book lies on, and the page-turn strips.
    ========================================================================== */
 
-/* --- Library chrome ----------------------------------------------------- */
+/* --- Library chrome -----------------------------------------------------
+
+   Spacing follows the HIG's 6 px grid: 6, 12, 18, 24. */
+
+.library-filter-bar {
+  padding: 6px 12px;
+}
 
 .dashboard-search-input {
-  min-height: 52px;
-  font-size: 18px;
+  min-height: 44px;
 }
 
-.dashboard-filter-bar {
-  margin: 6px 12px;
-}
+/* The group is pill-shaped -- libadwaita's own `.round`, set in view.py --
+   and the tabs get the width a grade label wants around it.
 
+   `.round` carries a fixed radius, sized for a toggle of libadwaita's own
+   height; a taller one keeps that radius and comes out a squircle. So every
+   group this stylesheet makes board-sized restates the radius as `9999px`,
+   which GTK clamps to half the height whatever the height turns out to be. */
 .dashboard-filter-bar > toggle,
 .dashboard-filter-bar button {
-  min-height: 52px;
-  padding-left: 22px;
-  padding-right: 22px;
-  font-size: 16px;
+  min-height: 44px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.dashboard-filter-bar,
+.dashboard-filter-bar > toggle,
+.dashboard-filter-bar button {
+  border-radius: 9999px;
 }
 
 .catalog {
-  margin: 22px 18px 32px 18px;
+  margin: 18px 24px 36px 24px;
 }
 
-.dashboard-section-title {
-  font-size: 20px;
-  font-weight: 700;
+.dashboard-section-header {
+  /* Optically aligned with the first card below it rather than with the
+     card's shadow: a heading that starts a hair left of its grid reads as
+     a mistake at board distance. */
+  margin-left: 3px;
 }
 
-.dashboard-section-count {
-  font-size: 14px;
-  color: alpha(currentColor, 0.55);
-}
+/* --- Book cards ---------------------------------------------------------
 
-/* --- Book cards --------------------------------------------------------- */
+   The card surface itself is libadwaita's `.card`; everything here is
+   arrangement inside it. */
 
-.books-grid {
+.books-grid,
+.books-grid > flowboxchild {
+  padding: 0;
   background: none;
 }
 
-.books-grid > child {
-  padding: 9px;
-}
-
-.book-card {
-  background: @card_bg_color;
-  border-radius: 14px;
-  padding: 12px;
-  box-shadow: 0 1px 3px alpha(black, 0.12);
-}
-
+/* The cover runs the full width of the card and is clipped by the card's own
+   corners, so it carries no radius, no margin and no border of its own. The
+   tint underneath only shows through a cover that has not loaded yet, or
+   behind the transparent edges of one that is not a perfect A4. */
 .book-cover {
-  background: alpha(currentColor, 0.06);
-  border-radius: 10px;
+  background-color: alpha(currentColor, 0.06);
+  transition: filter 120ms ease-out;
+}
+
+/* A finger gets no hover, so the press is the only moment the card can
+   acknowledge being touched. It dims rather than lifts: the cover is a
+   picture, and a picture that moves under the hand reads as a drag. */
+.book-cover:active {
+  filter: brightness(0.82);
 }
 
 .book-cover-placeholder {
-  color: alpha(currentColor, 0.45);
+  color: alpha(currentColor, 0.5);
   padding: 12px;
 }
 
-.book-cover-placeholder-title {
-  font-size: 13px;
-}
-
 .book-info {
-  margin-top: 10px;
-}
-
-.book-title {
-  font-size: 19px;
-  font-weight: 700;
-}
-
-.book-meta {
-  font-size: 14px;
-  color: alpha(currentColor, 0.65);
+  padding: 12px;
 }
 
 .book-confidence {
-  font-size: 12px;
-  font-weight: 700;
-  padding: 2px 8px;
+  font-weight: bold;
+  padding: 1px 8px;
   border-radius: 6px;
-  background: alpha(currentColor, 0.1);
+  background-color: alpha(currentColor, 0.1);
 }
 
 .book-confidence.conf-strong {
   color: @success_color;
-  background: alpha(@success_color, 0.15);
+  background-color: alpha(@success_color, 0.15);
 }
 
 .book-confidence.conf-weak {
   color: @warning_color;
-  background: alpha(@warning_color, 0.15);
+  background-color: alpha(@warning_color, 0.15);
 }
 
 .book-confidence.conf-none {
   color: alpha(currentColor, 0.6);
 }
 
-/* --- Card actions ------------------------------------------------------- */
+/* --- Card actions -------------------------------------------------------
+
+   The allocation is the board metric; the pill drawn inside it is a
+   normal-sized button, and the slack between them is still clickable.
+
+   Neither of these carries `.suggested-action` or `.destructive-action`. The
+   HIG gives a view one button in either style, and this view is fifty-six
+   cards: accent on every one of them emphasises nothing. */
 
 .book-actions {
-  margin-top: 4px;
+  margin-top: 6px;
 }
 
+/* 46 px of target, a 34 px pill painted inside it. The padding is uniform so
+   that the corner comes out round on both axes -- GTK subtracts the left
+   padding from a corner's horizontal radius and the top padding from its
+   vertical one, and 6/12 would have given an oval. The air the label needs
+   inside the pill is therefore the label's own margin, not the button's
+   padding: padding here is hit box, not spacing. */
 .btn-card-action {
-  min-height: 52px;
-  font-size: 17px;
+  min-height: 46px;
+  padding: 6px;
+  border-radius: 9999px;
+  background-clip: content-box;
+  background-origin: content-box;
 }
 
+.btn-card-action > label {
+  margin: 0 12px;
+}
+
+/* Square allocation, circular button: 46 px of target, 34 px of circle. */
 .btn-card-icon {
-  min-width: 52px;
-  min-height: 52px;
-  border-radius: 10px;
+  min-width: 46px;
+  min-height: 46px;
+  padding: 6px;
+  border-radius: 9999px;
+  background-clip: content-box;
+  background-origin: content-box;
 }
 
+/* Smaller chrome, not a smaller target: a 28 px circle keeps the cancel out
+   of the progress row's way while the finger still gets its 44 px. */
 .btn-cancel-download {
-  min-width: 36px;
-  min-height: 36px;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 8px;
 }
 
 .download-progress-box {
@@ -147,90 +197,162 @@
   margin-bottom: 2px;
 }
 
-.download-progress-meta {
-  font-size: 13px;
-  color: alpha(currentColor, 0.7);
-}
-
 /* ==========================================================================
    Reader
 
-   Ported from `.edition-school .toolbar` and friends in `css/school.css`. The
-   rule is the same one the web edition follows: a control a teacher touches in
-   front of a class is at least 48 px in its smallest dimension, and the two
-   controls a lesson is actually driven from -- the page turns -- are bigger
-   than that and sit where a hand finds them without looking.
+   The control row is the one thing on screen that is not the book, so it is
+   drawn small and allocated large: 32 px of visible button inside a 44 px
+   target. The two controls a lesson is actually driven from are not in it at
+   all -- the page turns are the strips down the sides of the page, below.
    ========================================================================== */
 
 .reader-toolbar {
-  padding: 8px 14px;
-  min-height: 64px;
-  background: @headerbar_bg_color;
+  padding: 3px 12px;
+  min-height: 50px;
+  background-color: @headerbar_bg_color;
   border-bottom: 1px solid @headerbar_border_color;
 }
 
-.reader-toolbar .tool-btn {
-  min-width: 48px;
-  min-height: 48px;
-  border-radius: 10px;
+/* 44 x 44 of allocation, a 32 px circle of button. The padding is the
+   difference and it is live: a press that lands on it is a press on the
+   button. Square, because a round icon button that is wider than it is tall
+   is an oval, and an oval is what the row looked like. */
+.tool-btn {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 6px;
+  border: none;
+  box-shadow: none;
+  border-radius: 9999px;
+  background-color: transparent;
+  background-clip: content-box;
+  background-origin: content-box;
 }
 
-/* The page turns. 76 x 54 in the web build, and the same here: they are aimed
-   at with a finger from two metres away, mid-sentence. */
-.reader-toolbar button.page-turn {
-  min-width: 76px;
-  min-height: 54px;
-  border-radius: 10px;
+.tool-btn:hover {
+  background-color: alpha(currentColor, 0.1);
 }
 
-.reader-toolbar button.page-turn:active {
-  background: @accent_bg_color;
-  color: @accent_fg_color;
+.tool-btn:active {
+  background-color: alpha(currentColor, 0.18);
 }
 
+/* "On", said quietly. The HIG asks header bars not to use the accent for
+   emphasis, and a toggle filled with it reads as a warning light from across
+   a classroom -- which is not what "the sidebar is open" is. The checked
+   state is the same neutral fill a hover gives, held down. */
+.tool-btn:checked {
+  background-color: alpha(currentColor, 0.15);
+}
+
+.tool-btn:checked:hover {
+  background-color: alpha(currentColor, 0.22);
+}
+
+.tool-btn:checked:active {
+  background-color: alpha(currentColor, 0.28);
+}
+
+/* The page number and the page count are one reading, so they sit together
+   with the stepper outside them rather than between them. Tabular figures
+   keep the number from shuffling sideways as the book is paged. */
+/* The stepper is as tall as the icon buttons beside it and carries their
+   corner, so the row reads as one row of controls rather than two heights. */
 .reader-toolbar .page-entry {
-  min-width: 84px;
-  min-height: 48px;
-  font-size: 20px;
+  min-width: 72px;
+  min-height: 44px;
+  border-radius: 9999px;
 }
 
 .reader-toolbar .page-entry text {
-  min-height: 44px;
+  min-height: 34px;
+}
+
+.reader-toolbar .page-entry > button:first-child {
+  border-radius: 9999px 0 0 9999px;
+}
+
+.reader-toolbar .page-entry > button:last-child {
+  border-radius: 0 9999px 9999px 0;
 }
 
 .reader-toolbar .page-total {
-  font-size: 18px;
-  opacity: 0.75;
-  margin-right: 4px;
+  margin-right: 6px;
 }
 
-.reader-toolbar dropdown > button {
-  min-height: 48px;
-  font-size: 15px;
+.reader-toolbar dropdown > button,
+.reader-toolbar toggle {
+  min-height: 44px;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+/* See `.dashboard-filter-bar`: board height, so the pill is restated here. */
+.reader-toolbar dropdown > button,
+.reader-toolbar toggle-group,
+.reader-toolbar toggle-group > toggle {
+  border-radius: 9999px;
 }
 
 .reader-toolbar separator {
-  margin: 6px 4px;
+  margin: 11px 3px;
+}
+
+/* ------------------------------- Page turns ------------------------------ */
+/* Two strips the full height of the reading area, one down each side. They
+   are invisible on purpose: the target is the edge of the board, which a hand
+   finds without the eyes leaving the page, and a chevron faint enough to
+   ignore is enough to say so the first time. A strip that cannot turn -- the
+   left one on page 1 -- is insensitive, and GTK then picks straight through
+   it to the sheet underneath. */
+
+.page-edge {
+  min-width: 96px;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  background: none;
+  color: alpha(currentColor, 0.22);
+  transition: background-image 150ms ease, color 150ms ease;
+}
+
+.page-edge image {
+  -gtk-icon-size: 32px;
+}
+
+.page-edge:hover {
+  color: alpha(currentColor, 0.85);
+}
+
+.page-edge-prev:hover {
+  background-image: linear-gradient(to right, alpha(black, 0.16), alpha(black, 0));
+}
+
+.page-edge-next:hover {
+  background-image: linear-gradient(to left, alpha(black, 0.16), alpha(black, 0));
+}
+
+.page-edge:active {
+  color: @accent_bg_color;
+}
+
+.page-edge:disabled {
+  opacity: 0;
 }
 
 /* The desk the book lies on. Deliberately darker than the page so that the
    sheet reads as a sheet from the back of the room. */
 .reader-canvas {
-  background: shade(@window_bg_color, 0.82);
+  background-color: shade(@window_bg_color, 0.82);
 }
 
 .reader-status {
-  min-height: 34px;
-}
-
-.reader-status .status-item {
-  font-size: 13px;
-  opacity: 0.7;
+  min-height: 26px;
 }
 
 .reader-status .status-sep {
-  font-size: 13px;
-  opacity: 0.35;
+  opacity: 0.4;
 }
 
 /* ------------------------------- Activities ------------------------------ */
@@ -238,21 +360,11 @@
    a line of text, so it is tall enough to hit without aiming. */
 
 .activities-sidebar {
-  background: @sidebar_bg_color;
+  background-color: @sidebar_bg_color;
 }
 
 .sidebar-head {
-  padding: 14px 16px 10px 16px;
-}
-
-.sidebar-heading {
-  font-size: 15px;
-  font-weight: 700;
-}
-
-.sidebar-subheading {
-  font-size: 12px;
-  opacity: 0.65;
+  padding: 15px 12px 9px 12px;
 }
 
 .activities-list > row {
@@ -260,46 +372,27 @@
 }
 
 .activity-row {
-  padding: 10px 14px;
+  padding: 9px 12px;
   min-height: 44px;
 }
 
 .activity-row-page {
-  font-size: 13px;
-  font-weight: 700;
+  font-weight: bold;
   opacity: 0.55;
 }
 
-.activity-row-name {
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.activity-row-detail {
-  font-size: 11px;
-  opacity: 0.6;
-}
-
-.activity-row-bolt {
-  font-size: 13px;
-}
-
-.reader-status .status-activity {
-  font-weight: 600;
-}
-
 /* ------------------------------- Focus mode ------------------------------ */
-/* Smartboard metrics: touch targets >= 48px, high-contrast labels, board-sized
-   controls that can be tapped reliably with a finger. */
+/* The same two sizes as the reader toolbar: 44 px of target, 32 px of button.
+   `.tool-btn` carries both, wherever the button sits. */
 
 .focus-overlay {
-  background: shade(@window_bg_color, 0.82);
+  background-color: shade(@window_bg_color, 0.82);
 }
 
 .focus-bar {
-  padding: 8px 14px;
-  min-height: 64px;
-  background: @headerbar_bg_color;
+  padding: 3px 12px;
+  min-height: 50px;
+  background-color: @headerbar_bg_color;
   border-bottom: 1px solid @headerbar_border_color;
 }
 
@@ -307,55 +400,60 @@
   min-width: 0;
 }
 
-.focus-label {
-  font-size: 16px;
-  font-weight: 700;
-  color: @window_fg_color;
-}
-
-.focus-headline {
-  font-size: 14px;
-  opacity: 0.75;
-}
-
-
-.focus-controls .tool-btn {
-  min-width: 48px;
-  min-height: 48px;
-  border-radius: 10px;
-}
-
 .focus-sub-label,
 .focus-counter {
-  font-size: 14px;
-  font-weight: 600;
   min-width: 64px;
-  opacity: 0.85;
 }
 
 .focus-stage {
-  background: shade(@window_bg_color, 0.82);
-  padding: 24px;
+  background-color: shade(@window_bg_color, 0.82);
+  padding: 18px;
 }
 
 /* ------------------------------- Sidebar tabs ---------------------------- */
 
 .reader-sidebar {
-  background: @sidebar_bg_color;
+  background-color: @sidebar_bg_color;
+}
+
+/* An `AdwStatusPage` is drawn for a window, and `.compact` still leaves it an
+   icon wider than a thumbnail. In a 232 px panel that is the loudest thing on
+   screen and it is saying "there is nothing here", so it is brought down to
+   the panel's own scale and given margins its description was running past. */
+.reader-sidebar statuspage,
+.activities-sidebar statuspage {
+  padding: 12px;
+}
+
+.reader-sidebar statuspage .icon,
+.activities-sidebar statuspage .icon {
+  -gtk-icon-size: 48px;
+  margin-bottom: 6px;
+  opacity: 0.5;
 }
 
 .sidebar-header-box {
-  padding: 10px 12px 6px 12px;
+  padding: 9px 12px 6px 12px;
 }
 
 .sidebar-switcher {
-  min-height: 40px;
+  min-height: 44px;
+}
+
+.sidebar-switcher toggle-group,
+.sidebar-switcher toggle {
+  border-radius: 9999px;
 }
 
 /* ------------------------------- Thumbnails ------------------------------ */
+/* "Minimize visual distractions so that the content itself stands out", says
+   the HIG on grid views, and a page thumbnail is all content. So the tile has
+   no surface of its own: the sheet is the only lit thing in the row, and the
+   current page is marked by an accent ring around that sheet rather than by a
+   block of colour behind it. */
 
 .thumbnails-panel {
-  padding: 8px;
+  padding: 6px;
 }
 
 .thumbnails-grid {
@@ -364,68 +462,78 @@
 
 .thumbnails-grid > child {
   padding: 6px;
+  border-radius: 12px;
+  background: none;
+}
+
+.thumbnails-grid > child:hover {
+  background-color: alpha(currentColor, 0.06);
+}
+
+.thumbnails-grid > child:active {
+  background-color: alpha(currentColor, 0.12);
+}
+
+/* The current page is marked once, on the paper, not twice. A selected row
+   keeps the sidebar's own background: the ring below and the accent number
+   are the whole of the selection. */
+.thumbnails-grid > child:selected {
+  background: none;
+  color: inherit;
+}
+
+.thumbnails-grid > child:selected .thumb-number {
+  color: @accent_color;
+  opacity: 1;
+  font-weight: bold;
 }
 
 .thumbnail-item {
-  padding: 6px;
-  border-radius: 8px;
-  background: alpha(currentColor, 0.04);
-  transition: all 0.15s ease;
+  padding: 0;
 }
 
-.thumbnail-item:hover {
-  background: alpha(currentColor, 0.08);
-}
-
+/* The white of the paper against the sidebar, and nothing else: a box shadow
+   for lift, no fill, no padding of its own. */
 .thumb-canvas-container {
   /* No min-height: the row is sized in sidebar.py from the page's own aspect
      ratio, and a floor here would letterbox every landscape book. */
-  background: alpha(currentColor, 0.06);
-  border-radius: 6px;
-  padding: 4px;
-  box-shadow: 0 1px 3px alpha(black, 0.2);
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px alpha(black, 0.28);
 }
 
-.thumb-number {
-  font-size: 12px;
-  font-weight: 600;
-  opacity: 0.8;
+.thumbnails-grid > child:selected .thumb-canvas-container {
+  box-shadow: 0 0 0 2px @accent_bg_color, 0 1px 4px alpha(black, 0.28);
 }
 
 /* ------------------------------- Bookmarks ------------------------------- */
 
 .bookmarks-panel {
-  background: @sidebar_bg_color;
+  background-color: @sidebar_bg_color;
 }
 
 .bookmarks-list {
-  padding: 4px 0;
+  padding: 3px 0;
 }
 
 .bookmark-row {
-  padding: 8px 12px;
-  min-height: 38px;
-}
-
-.bookmark-title {
-  font-size: 14px;
-  font-weight: 500;
+  padding: 9px 12px;
+  min-height: 40px;
 }
 
 .bookmark-page {
-  font-size: 12px;
-  font-weight: 600;
+  font-weight: bold;
   opacity: 0.55;
 }
 
 /* ------------------------------- Scroll mode ----------------------------- */
 
 .scroll-mode-view {
-  background: shade(@window_bg_color, 0.82);
+  background-color: shade(@window_bg_color, 0.82);
 }
 
 .scroll-pages-list {
-  padding: 20px 0 40px 0;
+  padding: 18px 0 36px 0;
 }
 
 /* ------------------------------- Search bar ------------------------------ */
@@ -435,18 +543,18 @@
 }
 
 .search-match-count {
-  font-size: 14px;
-  font-weight: 600;
-  padding: 0 8px;
+  font-weight: bold;
+  padding: 0 6px;
   color: alpha(currentColor, 0.7);
 }
 
 /* ==========================================================================
-   Themes (M8)
-   
-   Named colours are dynamically redefined via libadwaita's @define-color,
-   and the rules below provide explicit theme overrides for the reader's
-   desk canvas, chrome, sidebar, and focus mode overlay.
+   Themes
+
+   Named colours are redefined at runtime through libadwaita's
+   `@define-color` (see theme.py); the rules below are the few surfaces that
+   are not a named colour -- the desk, the sidebar and the focus overlay --
+   restated per theme.
    ========================================================================== */
 
 /* --- Sepia Theme -------------------------------------------------------- */
@@ -472,7 +580,7 @@
 .theme-sepia .focus-overlay,
 .theme-sepia .focus-stage,
 .theme-sepia .scroll-mode-view {
-  background: #e6dec8;
+  background-color: #e6dec8;
 }
 
 .theme-sepia .activities-sidebar,
@@ -505,7 +613,7 @@
 .theme-inverted .focus-overlay,
 .theme-inverted .focus-stage,
 .theme-inverted .scroll-mode-view {
-  background: #06070a;
+  background-color: #06070a;
 }
 
 .theme-inverted .activities-sidebar,
@@ -515,3 +623,22 @@
   color: #e6edf3;
 }
 
+/* ----------------------------- Touch tooltips ---------------------------- */
+/* GTK will not show a tooltip to a finger at all (`gtktooltip.c` refuses for
+   `GDK_SOURCE_TOUCHSCREEN`), so on a board every icon-only button is a symbol
+   with no name. `touch.bind_touch_tooltip` pops this instead, on a long press.
+   It is styled as the tooltip it stands in for -- dark, tight, quiet -- and
+   not as a menu, because nothing in it can be pressed. */
+
+.touch-tooltip > contents {
+  padding: 6px 12px;
+  border-radius: 8px;
+  background-color: alpha(black, 0.88);
+  color: #ffffff;
+  box-shadow: 0 2px 8px alpha(black, 0.4);
+}
+
+.touch-tooltip > arrow {
+  background-color: alpha(black, 0.88);
+  border: none;
+}

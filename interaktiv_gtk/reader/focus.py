@@ -21,6 +21,7 @@ from interaktiv_core.geometry import PageTransform
 from interaktiv_core.regions import Activity
 
 from .. import icons
+from ..touch import TAP_SLOP, SwipeNavigator, bind_touch_tooltip, is_touch
 from .overlay import activity_label
 from .page_view import PageView
 
@@ -105,10 +106,11 @@ class FocusOverlay(Gtk.Box):
         titles.add_css_class("focus-titles")
 
         self.focus_label = Gtk.Label(label="Etkinlik")
-        self.focus_label.add_css_class("focus-label")
+        self.focus_label.add_css_class("heading")
 
         self.focus_headline = Gtk.Label(label="")
-        self.focus_headline.add_css_class("focus-headline")
+        self.focus_headline.add_css_class("caption")
+        self.focus_headline.add_css_class("dim-label")
         self.focus_headline.set_ellipsize(Pango.EllipsizeMode.END)
         self.focus_headline.set_max_width_chars(50)
         self.focus_headline.set_xalign(0.0)
@@ -126,6 +128,7 @@ class FocusOverlay(Gtk.Box):
             "go-up-symbolic", "Önceki soru (↑)", lambda: self.step_sub_item(-1)
         )
         self.lbl_sub = Gtk.Label(label="Numaralı soru yok")
+        self.lbl_sub.add_css_class("caption-heading")
         self.lbl_sub.add_css_class("focus-sub-label")
 
         self.btn_sub_next = self._button(
@@ -142,6 +145,7 @@ class FocusOverlay(Gtk.Box):
             icons.PREV_PAGE, "Önceki etkinlik (← / P)", lambda: self.step_activity(-1)
         )
         self.lbl_counter = Gtk.Label(label="%100")
+        self.lbl_counter.add_css_class("caption-heading")
         self.lbl_counter.add_css_class("focus-counter")
 
         self.btn_next = self._button(
@@ -177,9 +181,18 @@ class FocusOverlay(Gtk.Box):
         self.scroller.set_child(self.page_view)
 
         # Clicking outside the page on the stage background exits focus
+        self._stage_press = None
+        self._stage_touch = False
         click = Gtk.GestureClick()
+        click.connect("pressed", self._on_stage_pressed)
         click.connect("released", self._on_stage_clicked)
         self.scroller.add_controller(click)
+
+        # A flick sideways steps to the next activity, which is the same thing
+        # the arrows in the bar do and the only one of the two that is within
+        # reach of a teacher standing at the board. The crop fills the stage,
+        # so there is nothing here to pan and nothing to hand the drag back to.
+        SwipeNavigator(self, lambda step: self.step_activity(step))
 
         # Scroll / pinch nudging zoom
         scroll = Gtk.EventControllerScroll.new(
@@ -197,6 +210,7 @@ class FocusOverlay(Gtk.Box):
     def _button(self, icon_name: str, tooltip: str, action) -> Gtk.Button:
         btn = Gtk.Button(icon_name=icon_name, tooltip_text=tooltip)
         btn.add_css_class("tool-btn")
+        bind_touch_tooltip(btn)
         if action is not None:
             btn.connect("clicked", lambda *_: action())
         return btn
@@ -398,9 +412,19 @@ class FocusOverlay(Gtk.Box):
             result.texture, result.request.page, result.request.rotation
         )
 
+    def _on_stage_pressed(self, gesture, _n_press: int, x: float, y: float) -> None:
+        self._stage_press = (x, y)
+        self._stage_touch = is_touch(gesture)
+
     def _on_stage_clicked(self, gesture, n_press: int, x: float, y: float) -> None:
+        press, self._stage_press = self._stage_press, None
         if n_press != 1:
             return
+        # A finger that travelled was swiping to the next activity or steadying
+        # itself on the board; only a tap on the background means "leave".
+        if press is not None and self._stage_touch:
+            if max(abs(x - press[0]), abs(y - press[1])) > TAP_SLOP:
+                return
         # If click is outside the PageView, exit focus
         child = self.scroller.get_child()
         if child is not None:

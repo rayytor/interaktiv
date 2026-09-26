@@ -180,9 +180,12 @@ class SearchController(GObject.Object):
     def _rebuild_global_matches(self) -> None:
         flat = []
         for p in sorted(self._page_matches.keys()):
-            # Sort matches on a page in reading order (top to bottom, left to right)
-            # In PDF coordinates, y0=top (or y1=top). Sorting by (y0, x0)
-            matches = sorted(self._page_matches[p], key=lambda m: (m.rect[1], m.rect[0]))
+            # Reading order: top to bottom, then left to right. The rects are
+            # in PDF user space, where y grows upward, so the top of the page
+            # is the largest y and the sort on it is descending.
+            matches = sorted(
+                self._page_matches[p], key=lambda m: (-m.rect[3], m.rect[0])
+            )
             for local_idx, m in enumerate(matches):
                 flat.append(
                     SearchMatch(

@@ -44,6 +44,8 @@ class SpreadView(Gtk.Widget):
         "page-rendered": (GObject.SignalFlags.RUN_FIRST, None, (int, int)),
         # A hotspot or a publisher pin was pressed on one of the pages.
         "activity-activated": (GObject.SignalFlags.RUN_FIRST, None, (object, int)),
+        # Bare paper was double-tapped -- the touch way of asking to zoom.
+        "zoom-toggled": (GObject.SignalFlags.RUN_FIRST, None, ()),
     }
 
     def __init__(self):
@@ -261,6 +263,7 @@ class SpreadView(Gtk.Widget):
             view = PageView()
             view.set_parent(self)
             view.connect("activity-activated", self._on_activity_activated)
+            view.connect("zoom-toggled", lambda *_: self.emit("zoom-toggled"))
             view.set_reveal(self._reveal)
             self._views.append(view)
         while len(self._views) > len(self._pages):

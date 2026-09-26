@@ -80,6 +80,7 @@ class ScrollModeView(Gtk.Box):
         "scale-changed": (GObject.SignalFlags.RUN_FIRST, None, (float,)),
         "page-rendered": (GObject.SignalFlags.RUN_FIRST, None, (int, int)),
         "activity-activated": (GObject.SignalFlags.RUN_FIRST, None, (object, int)),
+        "zoom-toggled": (GObject.SignalFlags.RUN_FIRST, None, ()),
         "dominant-page-changed": (GObject.SignalFlags.RUN_FIRST, None, (int,)),
     }
 
@@ -240,6 +241,7 @@ class ScrollModeView(Gtk.Box):
     def _on_setup(self, _factory, list_item) -> None:
         view = PageView()
         view.connect("activity-activated", self._on_activity_activated)
+        view.connect("zoom-toggled", lambda *_: self.emit("zoom-toggled"))
         wrapper = PageRowWrapper(view)
         list_item.set_child(wrapper)
         list_item.wrapper = wrapper

@@ -1,24 +1,29 @@
 """
 The catalogue page: search, grade filters, and a grid of books per group.
 
-The web dashboard lays this out as `auto-fill minmax(260px, 1fr)`.
-`Gtk.GridView` takes a column count rather than a column width, but it derives
-that count the same way: available width divided by the natural width of a
-child, clamped to `max-columns`. Giving a card a natural width and leaving the
-cap generous therefore reproduces `auto-fill` exactly -- measured at 1 column
-at 520 px through to 6 at 1600 px -- with no resize handler of our own.
+The web dashboard lays this out as `auto-fill minmax(232px, 1fr)`, and
+`Gtk.FlowBox` is the widget that means the same thing: give a card a natural
+width, let the box fit as many per line as the allocation holds, and the column
+count falls out of the width with no resize handler of our own.
 
-Each group gets a `Gtk.GridView` of its own rather than one big list with
-section headers, because only `Gtk.ListView` can draw section headers and the
-whole catalogue is 56 books: nothing here needs virtualizing, and per-group
-grids are what `renderCatalogSection` already builds.
+It is a `Gtk.FlowBox` and not a `Gtk.GridView` for one reason. `GtkGridView` is
+a scrollable that measures itself as a single column -- ask it how tall it is
+and it answers `rows x height` for one-per-line, whatever width it is given --
+which is right inside a `GtkScrolledWindow` of its own and badly wrong inside a
+`GtkBox`, where that number becomes the scrollable height. Six sections of it
+made the catalogue scroll several screens past its last card. `GtkFlowBox` is
+height-for-width, so the page is exactly as tall as the books on it.
+
+Nothing here needs virtualizing either way: the whole catalogue is 56 books,
+and per-group boxes are what `renderCatalogSection` already builds.
 """
 
 from typing import Dict, List, Optional
 
-from gi.repository import Adw, Gio, GLib, GObject, Gtk
+from gi.repository import Adw, GLib, GObject, Gtk
 
 from .. import icons
+from ..touch import bind_touch_tooltip
 from .card import BookCard
 from .covers import CoverLoader
 from .downloads import DownloadWatcher
@@ -27,6 +32,9 @@ from .model import FILTER_LABELS, FILTERS, BookItem, LibraryModel, Section
 # The cap only has to be higher than any board will ever fit; the column width
 # itself is the card's (`BookCard.CARD_WIDTH`).
 MAX_COLUMNS = 12
+
+# Matches `.books-grid`'s `gap` in the web dashboard.
+CARD_GAP = 16
 
 
 class LibraryPage(Adw.NavigationPage):
@@ -53,11 +61,7 @@ class LibraryPage(Adw.NavigationPage):
 
         self.active_filter = self._restore_filter()
         self.query = ""
-        self._grids: List[Gtk.GridView] = []
-        self._factory = Gtk.SignalListItemFactory()
-        self._factory.connect("setup", self._on_setup)
-        self._factory.connect("bind", self._on_bind)
-        self._factory.connect("unbind", self._on_unbind)
+        self._cards: List[BookCard] = []
 
         self._build()
         self.reload()
@@ -80,28 +84,41 @@ class LibraryPage(Adw.NavigationPage):
         self.set_child(self.toasts)
 
     def _build_header(self) -> Gtk.Widget:
+        """
+        Title, subtitle, and one button.
+
+        The HIG asks a header bar to hold a small number of controls and to
+        keep blank space free for dragging the window; the search entry used
+        to sit here at four hundred pixels wide, hard against the close
+        button. It now lives in the filter row below, where the catalogue's
+        two ways of narrowing itself -- a word and a grade -- are side by side.
+        """
         header = Adw.HeaderBar()
         header.set_title_widget(Adw.WindowTitle(title="Kitaplık", subtitle=""))
         self.header_title = header.get_title_widget()
 
-        self.search_entry = Gtk.SearchEntry(
-            placeholder_text="Kitap veya sınıf ara…",
-            hexpand=True,
-        )
-        self.search_entry.add_css_class("dashboard-search-input")
-        self.search_entry.connect("search-changed", self._on_search_changed)
-        clamp = Adw.Clamp(maximum_size=420, tightening_threshold=420,
-                          child=self.search_entry)
-        header.pack_end(clamp)
-
         refresh = Gtk.Button(icon_name=icons.REFRESH, tooltip_text="Kitaplığı yenile")
+        bind_touch_tooltip(refresh)
         refresh.connect("clicked", lambda _b: self.reload())
         header.pack_start(refresh)
         return header
 
     def _build_filter_bar(self) -> Gtk.Widget:
+        self.search_entry = Gtk.SearchEntry(
+            placeholder_text="Kitap veya sınıf ara…",
+        )
+        self.search_entry.add_css_class("dashboard-search-input")
+        self.search_entry.connect("search-changed", self._on_search_changed)
+        # Wide enough for a book title, narrow enough to leave the grade tabs
+        # the middle of the bar to themselves.
+        self.search_entry.set_size_request(280, -1)
+
         self.toggles = Adw.ToggleGroup()
         self.toggles.add_css_class("dashboard-filter-bar")
+        # libadwaita's own pill shape for a toggle group, rather than a
+        # radius written here: the tabs then round the way every other
+        # control in the window does, including after a theme change.
+        self.toggles.add_css_class("round")
         self.toggles.set_halign(Gtk.Align.CENTER)
         for name in FILTERS:
             toggle = Adw.Toggle(name=name, label=FILTER_LABELS[name])
@@ -110,22 +127,29 @@ class LibraryPage(Adw.NavigationPage):
         self.toggles.connect("notify::active-name", self._on_filter_changed)
 
         # Seven board-sized tabs are wider than a narrow window; let them slide
-        # rather than forcing the window minimum up.
+        # rather than forcing the window minimum up. Both natural sizes have to
+        # be propagated: a centre box gives its centre child the natural width
+        # it asks for, and a scroller that does not propagate one asks for
+        # nothing -- which is exactly the width the tabs then got.
         scroller = Gtk.ScrolledWindow(
             hscrollbar_policy=Gtk.PolicyType.EXTERNAL,
             vscrollbar_policy=Gtk.PolicyType.NEVER,
+            propagate_natural_width=True,
             propagate_natural_height=True,
-            hexpand=True,
         )
         scroller.set_child(self.toggles)
 
-        bar = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL)
+        # A centre box, so the grade tabs stay on the middle of the screen
+        # whatever the search entry beside them is doing.
+        bar = Gtk.CenterBox()
         bar.add_css_class("toolbar")
-        bar.append(scroller)
+        bar.add_css_class("library-filter-bar")
+        bar.set_start_widget(self.search_entry)
+        bar.set_center_widget(scroller)
         return bar
 
     def _build_content(self) -> Gtk.Widget:
-        self.sections_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=26)
+        self.sections_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=24)
         self.sections_box.add_css_class("catalog")
 
         self.empty_page = Adw.StatusPage(
@@ -172,12 +196,18 @@ class LibraryPage(Adw.NavigationPage):
     def render(self) -> None:
         sections = self.model.sections(self.active_filter, self.query)
 
+        # Every card holds a handler on its `BookItem`; a redraw that only
+        # dropped the widgets would leave those behind, and a download tick
+        # would then refresh cards that are no longer on screen.
+        for card in self._cards:
+            card.unbind()
+        self._cards.clear()
+
         child = self.sections_box.get_first_child()
         while child is not None:
             nxt = child.get_next_sibling()
             self.sections_box.remove(child)
             child = nxt
-        self._grids.clear()
 
         if not sections:
             self.empty_page.set_title(
@@ -196,49 +226,48 @@ class LibraryPage(Adw.NavigationPage):
         box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=12)
         box.add_css_class("grade-group")
 
-        header = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=10)
+        # Title and count read as one line -- "Yüklü Kitaplar, 10 kitap" --
+        # so the count sits next to the words it counts rather than a metre
+        # away at the far edge of the grid.
+        header = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=9)
         header.add_css_class("dashboard-section-header")
-        title = Gtk.Label(label=section.title, xalign=0.0, hexpand=True)
-        title.add_css_class("dashboard-section-title")
+        title = Gtk.Label(label=section.title, xalign=0.0)
+        title.add_css_class("title-4")
         header.append(title)
-        count = Gtk.Label(label=section.count_text)
+        count = Gtk.Label(label=section.count_text, xalign=0.0, hexpand=True)
+        count.add_css_class("dim-label")
         count.add_css_class("dashboard-section-count")
         header.append(count)
         box.append(header)
 
-        store = Gio.ListStore(item_type=BookItem)
-        for item in section.items:
-            store.append(item)
-
-        grid = Gtk.GridView(
-            model=Gtk.NoSelection(model=store),
-            factory=self._factory,
-            max_columns=MAX_COLUMNS,
-            min_columns=1,
-            single_click_activate=False,
+        grid = Gtk.FlowBox(
+            orientation=Gtk.Orientation.HORIZONTAL,
+            selection_mode=Gtk.SelectionMode.NONE,
+            homogeneous=True,
+            min_children_per_line=1,
+            max_children_per_line=MAX_COLUMNS,
+            row_spacing=CARD_GAP,
+            column_spacing=CARD_GAP,
+            valign=Gtk.Align.START,
         )
         grid.add_css_class("books-grid")
-        grid.set_vscroll_policy(Gtk.ScrollablePolicy.NATURAL)
-        self._grids.append(grid)
+        for item in section.items:
+            grid.append(self._build_card(item))
         box.append(grid)
         return box
 
-    # -- grid factory -----------------------------------------------------
+    # -- cards ------------------------------------------------------------
 
-    def _on_setup(self, _factory, list_item: Gtk.ListItem) -> None:
+    def _build_card(self, item: BookItem) -> Gtk.Widget:
         card = BookCard(self.covers, library_mode=self.library_mode)
-        card.connect("open-book", lambda _c, item: self.open_book(item))
-        card.connect("preview-book", lambda _c, item: self.preview_book(item))
-        card.connect("install-book", lambda _c, item: self.install_book(item))
-        card.connect("cancel-download", lambda _c, item: self.cancel_download(item))
-        card.connect("uninstall-book", lambda _c, item: self.confirm_uninstall(item))
-        list_item.set_child(card)
-
-    def _on_bind(self, _factory, list_item: Gtk.ListItem) -> None:
-        list_item.get_child().bind(list_item.get_item())
-
-    def _on_unbind(self, _factory, list_item: Gtk.ListItem) -> None:
-        list_item.get_child().unbind()
+        card.connect("open-book", lambda _c, i: self.open_book(i))
+        card.connect("preview-book", lambda _c, i: self.preview_book(i))
+        card.connect("install-book", lambda _c, i: self.install_book(i))
+        card.connect("cancel-download", lambda _c, i: self.cancel_download(i))
+        card.connect("uninstall-book", lambda _c, i: self.confirm_uninstall(i))
+        card.bind(item)
+        self._cards.append(card)
+        return card
 
     # -- filters ----------------------------------------------------------
 
@@ -454,3 +483,6 @@ class LibraryPage(Adw.NavigationPage):
     def shutdown(self) -> None:
         self.watcher.stop()
         self.covers.shutdown()
+        for card in self._cards:
+            card.unbind()
+        self._cards.clear()

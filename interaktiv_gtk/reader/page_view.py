@@ -35,6 +35,7 @@ from gi.repository import Gdk, GObject, Graphene, Gsk, Gtk, Pango
 from interaktiv_core.geometry import PageTransform
 
 from ..theme import get_theme_color_matrix
+from ..touch import TAP_SLOP, is_touch
 from .overlay import Pin, Spot
 
 
@@ -97,6 +98,9 @@ class PageView(Gtk.Widget):
         # A hotspot or a pin was pressed. The payload is the `Spot` or `Pin`
         # itself, so the handler never has to look anything up again.
         "activity-activated": (GObject.SignalFlags.RUN_FIRST, None, (object,)),
+        # Bare paper was double-tapped. There is no payload: what a second tap
+        # means is the reader's business, not the page's.
+        "zoom-toggled": (GObject.SignalFlags.RUN_FIRST, None, ()),
     }
 
     def __init__(self):
@@ -127,7 +131,11 @@ class PageView(Gtk.Widget):
         motion.connect("leave", self._on_leave)
         self.add_controller(motion)
 
+        self._press: Optional[Tuple[float, float]] = None
+        self._press_touch = False
+
         click = Gtk.GestureClick()
+        click.connect("pressed", self._on_pressed)
         click.connect("released", self._on_released)
         self.add_controller(click)
 
@@ -398,9 +406,37 @@ class PageView(Gtk.Widget):
         self.set_cursor(None)
         self.queue_draw()
 
+    def _on_pressed(self, gesture, _n_press, x, y) -> None:
+        self._press = (x, y)
+        self._press_touch = is_touch(gesture)
+
     def _on_released(self, gesture, n_press, x, y) -> None:
+        """
+        A tap opens what is under it; a second tap on bare paper zooms.
+
+        The slop check is the touch half of this. A finger that panned the
+        sheet and happened to lift over a hotspot has not asked for that
+        activity, and the scroller does not always cancel us first -- it only
+        claims a drag once it passes GTK's threshold, and a two-finger pinch
+        leaves this gesture holding the first finger on its own.
+        """
+        press, self._press = self._press, None
+        if press is not None and self._press_touch:
+            if max(abs(x - press[0]), abs(y - press[1])) > TAP_SLOP:
+                return
+
+        if n_press == 2:
+            # Only over bare paper: the first tap of a double tap on a hotspot
+            # has already opened it, and zooming underneath that would be a
+            # second answer to one gesture.
+            spot, pin = self._probe(x, y)
+            if spot is None and pin is None:
+                gesture.set_state(Gtk.EventSequenceState.CLAIMED)
+                self.emit("zoom-toggled")
+            return
         if n_press != 1:
             return
+
         spot, pin = self._probe(x, y)
         target = pin if pin is not None else spot
         if target is None:

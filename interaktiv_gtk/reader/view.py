@@ -12,13 +12,21 @@ The navigation rules are ported rather than reinvented. `next_page` and
 forward from the cover lands on page 2, backward from anywhere in the first
 spread lands on page 1 -- and the zoom steps are the same 0.2 increments
 clamped to 0.3-3.0.
+
+The page turns themselves are not in the toolbar. They are two invisible
+strips down the left and right of the reading area, full height, so that the
+gesture for "next page" is a tap anywhere along the edge of the board rather
+than a jab at a 76 px target someone has to look at first. A chevron sits in
+each strip at a low enough opacity to be found and ignored, and brightens
+under a pointer.
 """
 
-from gi.repository import Adw, GLib, GObject, Gtk
+from gi.repository import Adw, Gdk, GLib, GObject, Gtk
 
 from .. import icons
 from ..render.service import LANE_THUMBNAIL
 from ..theme import THEMES, apply_theme as apply_app_theme
+from ..touch import EdgePan, SwipeNavigator, bind_touch_tooltip
 from . import paging
 from .focus import FocusOverlay
 from .holdrepeat import bind_hold_repeat
@@ -47,9 +55,15 @@ MODE_LABELS = {
     "scroll": "Kaydırma",
 }
 
-ZOOM_MIN = 0.3
-ZOOM_MAX = 3.0
-ZOOM_STEP = 0.2
+# The clamp lives with the rest of the pure paging arithmetic, so that the
+# dropdown, the keyboard, a pinch and ctrl+wheel cannot drift apart.
+ZOOM_MIN = paging.ZOOM_MIN
+ZOOM_MAX = paging.ZOOM_MAX
+ZOOM_STEP = paging.ZOOM_STEP
+
+# Where a double tap on the page lands. Twice the sheet is the step that makes
+# a diagram readable from the back of a classroom without leaving the page.
+TAP_ZOOM = 2.0
 
 # What the reader responds to, in the shape `Gtk.ShortcutTrigger` parses. These
 # are attached to the page and not to the window, so they are inert while the
@@ -101,6 +115,7 @@ class ReaderPage(Adw.NavigationPage):
         self.view_mode = self.settings.get("view_mode") or "book"
         self.zoom_mode = self.settings.get("zoom_mode") or "fit-page"
         self.custom_zoom = 1.0
+        self._pre_tap_zoom = None
         self.rotation = 0
         self.show_activities = bool(self.settings.get("show_activities"))
         self._syncing = False
@@ -162,6 +177,7 @@ class ReaderPage(Adw.NavigationPage):
         self.spread.connect("scale-changed", self._on_scale_changed)
         self.spread.connect("page-rendered", self._on_page_rendered)
         self.spread.connect("activity-activated", self._on_activity_activated)
+        self.spread.connect("zoom-toggled", lambda *_: self.toggle_tap_zoom())
         self.spread.set_reveal(self.show_activities)
 
         self.scroller = Gtk.ScrolledWindow(
@@ -178,6 +194,7 @@ class ReaderPage(Adw.NavigationPage):
         self.scroll_view.connect("scale-changed", self._on_scale_changed)
         self.scroll_view.connect("page-rendered", self._on_page_rendered)
         self.scroll_view.connect("activity-activated", self._on_activity_activated)
+        self.scroll_view.connect("zoom-toggled", lambda *_: self.toggle_tap_zoom())
         self.scroll_view.connect("dominant-page-changed", self._on_dominant_page_changed)
         self.scroll_view.set_reveal(self.show_activities)
 
@@ -193,6 +210,18 @@ class ReaderPage(Adw.NavigationPage):
         self.stack.add_named(self.canvas_stack, "canvas")
         self.stack.set_visible_child_name("loading")
 
+        self._install_zoom_gestures()
+
+        # The page turns lie over the reading area, not beside it, so they
+        # cost the page no width. An edge that cannot turn -- the left one on
+        # page 1 -- is made insensitive, and GTK then picks straight through
+        # it to the sheet underneath instead of swallowing the press.
+        canvas_area = Gtk.Overlay()
+        canvas_area.set_child(self.stack)
+        canvas_area.add_overlay(self._page_edge("prev"))
+        canvas_area.add_overlay(self._page_edge("next"))
+        self._install_swipe(canvas_area)
+
         self.sidebar = ReaderSidebar()
         self.sidebar.connect("page-chosen", lambda _w, p: self.go_to_page(p))
         self.sidebar.connect("activity-chosen", self._on_activity_chosen)
@@ -202,7 +231,7 @@ class ReaderPage(Adw.NavigationPage):
         # it opened would re-render both sheets for the sake of a list.
         self.split = Adw.OverlaySplitView(
             sidebar=self.sidebar,
-            content=self.stack,
+            content=canvas_area,
             show_sidebar=bool(self.settings.get("sidebar_open")),
             sidebar_width_fraction=0.16,
             min_sidebar_width=200,
@@ -246,14 +275,6 @@ class ReaderPage(Adw.NavigationPage):
         # -- centre: paging and view mode
         centre = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=8)
 
-        self.btn_prev = self._icon_button(icons.PREV_PAGE, "Önceki Sayfa (←)", None)
-        self.btn_prev.add_css_class("page-turn")
-        bind_hold_repeat(self.btn_prev, self.prev_page)
-
-        self.btn_next = self._icon_button(icons.NEXT_PAGE, "Sonraki Sayfa (→)", None)
-        self.btn_next.add_css_class("page-turn")
-        bind_hold_repeat(self.btn_next, self.next_page)
-
         self.page_entry = Gtk.SpinButton.new_with_range(1, 1, 1)
         self.page_entry.set_numeric(True)
         self.page_entry.set_width_chars(4)
@@ -261,19 +282,34 @@ class ReaderPage(Adw.NavigationPage):
         # page 7 or page 289 -- it is read at a glance from across the room.
         self.page_entry.set_alignment(0.5)
         self.page_entry.add_css_class("page-entry")
+        # Tabular figures: the number keeps its place as the book is paged,
+        # instead of the toolbar shuffling sideways between 9 and 10.
+        self.page_entry.add_css_class("numeric")
         self.page_entry.set_tooltip_text("Sayfa numarası")
+        # On a board the only keyboard is the one the compositor puts on the
+        # screen, and it opens on whichever layout the field asks for -- so ask
+        # for the number pad rather than making a teacher find the digits on a
+        # full keyboard. The purpose belongs to the `GtkText` inside the spin
+        # button, which is what `get_delegate` hands back; `GtkEditable` itself
+        # carries no such property.
+        entry_text = self.page_entry.get_delegate()
+        if entry_text is not None:
+            entry_text.set_input_purpose(Gtk.InputPurpose.DIGITS)
+        bind_touch_tooltip(self.page_entry)
         self.page_entry.connect("value-changed", self._on_page_entry)
 
         self.page_total = Gtk.Label(label="/ …")
+        self.page_total.add_css_class("numeric")
+        self.page_total.add_css_class("dim-label")
         self.page_total.add_css_class("page-total")
 
-        centre.append(self.btn_prev)
         centre.append(self.page_entry)
         centre.append(self.page_total)
-        centre.append(self.btn_next)
         centre.append(Gtk.Separator(orientation=Gtk.Orientation.VERTICAL))
 
         self.mode_group = Adw.ToggleGroup()
+        # Pill, like the zoom drop-down and the icon buttons either side.
+        self.mode_group.add_css_class("round")
         self.mode_group.add(Adw.Toggle(
             name="book", label=MODE_LABELS["book"], icon_name=icons.MODE_BOOK,
             tooltip="Çift sayfa görünümü (B)",
@@ -329,6 +365,7 @@ class ReaderPage(Adw.NavigationPage):
         self.search_entry.add_controller(key_ctrl)
 
         self.search_count_label = Gtk.Label(label="0 of 0")
+        self.search_count_label.add_css_class("numeric")
         self.search_count_label.add_css_class("search-match-count")
 
         self.btn_search_prev = self._icon_button(
@@ -360,12 +397,14 @@ class ReaderPage(Adw.NavigationPage):
         self.status_render = Gtk.Label(label="Hazır")
         self.status_activity = Gtk.Label(label="")
         for label in (self.status_size, self.status_render, self.status_activity):
-            label.add_css_class("status-item")
-        self.status_activity.add_css_class("status-activity")
+            label.add_css_class("caption")
+            label.add_css_class("dim-label")
+        self.status_activity.add_css_class("caption-heading")
+        self.status_activity.remove_css_class("caption")
         left.append(self.status_size)
-        left.append(Gtk.Label(label="•", css_classes=["status-sep"]))
+        left.append(Gtk.Label(label="•", css_classes=["caption", "status-sep"]))
         left.append(self.status_render)
-        left.append(Gtk.Label(label="•", css_classes=["status-sep"]))
+        left.append(Gtk.Label(label="•", css_classes=["caption", "status-sep"]))
         left.append(self.status_activity)
         bar.pack_start(left)
 
@@ -373,9 +412,10 @@ class ReaderPage(Adw.NavigationPage):
         self.status_zoom = Gtk.Label(label="")
         self.status_mode = Gtk.Label(label=MODE_LABELS[self.view_mode])
         for label in (self.status_zoom, self.status_mode):
-            label.add_css_class("status-item")
+            label.add_css_class("caption")
+            label.add_css_class("dim-label")
         right.append(self.status_zoom)
-        right.append(Gtk.Label(label="•", css_classes=["status-sep"]))
+        right.append(Gtk.Label(label="•", css_classes=["caption", "status-sep"]))
         right.append(self.status_mode)
         bar.pack_end(right)
         return bar
@@ -383,9 +423,163 @@ class ReaderPage(Adw.NavigationPage):
     def _icon_button(self, icon_name, tooltip, action) -> Gtk.Button:
         button = Gtk.Button(icon_name=icon_name, tooltip_text=tooltip)
         button.add_css_class("tool-btn")
+        # GTK will not show a tooltip to a finger at all, and these buttons are
+        # nothing but a symbol. A long press says what one is.
+        bind_touch_tooltip(button)
         if action is not None:
             button.connect("clicked", lambda *_: action())
         return button
+
+    def _page_edge(self, which: str) -> Gtk.Widget:
+        """
+        One of the two page-turn strips down the sides of the reading area.
+
+        It is a button like any other -- hold-repeat, tooltip, sensitivity --
+        drawn to nothing but a faint chevron. `valign=FILL` with no vexpand of
+        its own is what makes it the full height of the overlay; the width is
+        `.page-edge`'s, because a strip a finger can find without aiming is
+        measured in centimetres and not in icon sizes.
+        """
+        forward = which == "next"
+        button = Gtk.Button(
+            icon_name=icons.NEXT_PAGE if forward else icons.PREV_PAGE,
+            tooltip_text="Sonraki Sayfa (→)" if forward else "Önceki Sayfa (←)",
+            halign=Gtk.Align.END if forward else Gtk.Align.START,
+            valign=Gtk.Align.FILL,
+            can_focus=False,
+        )
+        button.add_css_class("page-edge")
+        button.add_css_class("page-edge-next" if forward else "page-edge-prev")
+        bind_hold_repeat(button, self.next_page if forward else self.prev_page)
+        if forward:
+            self.btn_next = button
+        else:
+            self.btn_prev = button
+        return button
+
+    # --------------------------------------------------------- swipe input
+
+    def _install_swipe(self, canvas_area: Gtk.Widget) -> None:
+        """
+        Flick sideways across the sheet to turn the page.
+
+        It is installed on the overlay rather than on the scroller because the
+        scroller is not the only thing listening: `GtkScrolledWindow` claims a
+        touch drag as soon as it passes GTK's drag threshold, and the two
+        page-turn strips lie over the same area. An ancestor's capture phase is
+        the one place that sees the motion before either of them, which is
+        where the choice between "this is a swipe" and "this belongs to
+        whatever scrolls" has to be made.
+
+        Two things hand the drag back. A sheet wide enough to pan is being
+        panned, not swiped -- at any zoom past the frame the sideways drag is
+        the only way to reach the rest of the page. And scroll mode is a
+        continuous column: there is no facing page to flick to, so a sideways
+        drag there means nothing and is left alone.
+        """
+        def can_pan() -> bool:
+            adjustment = self.scroller.get_hadjustment()
+            if adjustment is None:
+                return False
+            return adjustment.get_upper() - adjustment.get_page_size() > 1.0
+
+        SwipeNavigator(
+            canvas_area,
+            self._on_swipe,
+            can_pan=can_pan,
+            enabled=lambda: self.view_mode in ("book", "single"),
+        )
+
+        # The strips cover the sheet, so a drag begun inside one would reach
+        # nothing at all: they are the scroller's siblings, not its children.
+        # This carries that drag across, and only that one -- a press anywhere
+        # on the page itself belongs to the scroller and is left to it.
+        edges = (self.btn_prev, self.btn_next)
+        EdgePan(
+            canvas_area,
+            self.scroller,
+            covers=lambda target: target is not None and any(
+                target is edge or target.is_ancestor(edge) for edge in edges
+            ),
+        )
+
+    def _on_swipe(self, step: int) -> None:
+        if step > 0:
+            self.next_page()
+        else:
+            self.prev_page()
+
+    # ---------------------------------------------------------- zoom input
+
+    def toggle_tap_zoom(self) -> None:
+        """
+        What a double tap on bare paper does.
+
+        A board has no scroll wheel and no keyboard within reach, so the second
+        tap is the whole zoom control for a teacher standing at the screen. It
+        goes out to `TAP_ZOOM` and back to the fit the book was being read at
+        -- remembered rather than assumed, so a class reading at Fit Width
+        returns to Fit Width and not to Fit Page.
+        """
+        if self.zoom_mode == "custom":
+            self.set_zoom(self._pre_tap_zoom or "fit-page")
+            return
+        self._pre_tap_zoom = self.zoom_mode
+        self.set_zoom("custom", TAP_ZOOM)
+
+    def _install_zoom_gestures(self) -> None:
+        """
+        Pinch to zoom, and ctrl+wheel for the people without a touchscreen.
+
+        `Gtk.GestureZoom` reports a scale relative to where the fingers
+        started, so the base zoom is taken once at `begin` and multiplied --
+        reading the live zoom each time would compound the same pinch. Every
+        applied step re-renders the visible sheets, so a change smaller than
+        a percent is dropped rather than queued.
+        """
+        self._pinch_base = 1.0
+        for widget in (self.scroller, self.scroll_view):
+            pinch = Gtk.GestureZoom()
+            pinch.set_propagation_phase(Gtk.PropagationPhase.CAPTURE)
+            pinch.connect("begin", self._on_pinch_begin)
+            pinch.connect("scale-changed", self._on_pinch_scale)
+            widget.add_controller(pinch)
+
+            wheel = Gtk.EventControllerScroll(
+                flags=Gtk.EventControllerScrollFlags.VERTICAL,
+                propagation_phase=Gtk.PropagationPhase.CAPTURE,
+            )
+            wheel.connect("scroll", self._on_scroll_zoom)
+            widget.add_controller(wheel)
+
+    def _effective_zoom(self) -> float:
+        if self.zoom_mode == "custom":
+            return self.custom_zoom
+        view = self.scroll_view if self.view_mode == "scroll" else self.spread
+        return view.zoom or 1.0
+
+    def _on_pinch_begin(self, gesture, _sequence) -> None:
+        # Claim the moment the second finger lands. `GtkGestureZoom` never
+        # claims on its own, and `GtkScrolledWindow` takes any touch drag that
+        # passes GTK's threshold -- so without this the scroller pans the sheet
+        # under the pinch, and the finger that started on a hotspot opens it
+        # when the pinch ends.
+        gesture.set_state(Gtk.EventSequenceState.CLAIMED)
+        self._pinch_base = self._effective_zoom()
+
+    def _on_pinch_scale(self, _gesture, scale: float) -> None:
+        target = paging.pinch_zoom(self._pinch_base, scale)
+        if abs(target - self._effective_zoom()) < 0.01:
+            return
+        self.set_zoom("custom", target)
+
+    def _on_scroll_zoom(self, controller, _dx: float, dy: float) -> bool:
+        if not (controller.get_current_event_state() & Gdk.ModifierType.CONTROL_MASK):
+            return False
+        if dy == 0:
+            return False
+        self.set_zoom("custom", paging.wheel_zoom(self._effective_zoom(), dy))
+        return True
 
     # ------------------------------------------------------------ opening
 

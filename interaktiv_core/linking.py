@@ -2,13 +2,14 @@
 Joining the publisher's interactive activities to the regions on the page.
 
 This is the one implementation of a rule that used to exist twice: once in
-`js/interactive-links.js`, for the web reader, and once, in part, inside
-`tools/hotspot_extraction/scanner/anchors.py`, for the baker. The baker only
-ever asked which manifest entries were *left over* and so kept a private copy of
-the pairing loop; the native reader needs the pairing itself. Rather than write a
-third copy, both now call `link_oges` and read what they need off the same answer.
+`js/interactive-links.js`, for the web reader that has since been removed, and
+once, in part, inside `tools/hotspot_extraction/scanner/anchors.py`, for the
+baker. The baker only ever asked which manifest entries were *left over* and so
+kept a private copy of the pairing loop; the native reader needs the pairing
+itself, and the scorer in `scanner/score.py` needs it a third time. All three
+now call `link_oges` and read what they need off the same answer.
 
-The rule, unchanged from the web reader:
+The rule:
 
 A region is detected from the sheet -- a letter, a column, a rectangle in PDF
 user space. Its interactive version comes from the publisher's manifest, one
@@ -195,9 +196,11 @@ def link_oges(
     pathology. Keying the answer by id lets the second one overwrite the first,
     which frees the first one's entry to be "unplaced" and grown a second time
     as a phantom anchored region sitting on top of the real one. (The web
-    reader's `linkInteractiveOges` returns a Map keyed by activity id and has
-    exactly that flaw; it is why one of the two `d`s on such a page silently
-    loses its interactive marker.) Indices cannot collide, so callers that want
+    now-removed web reader's `linkInteractiveOges` returned a Map keyed by
+    activity id and had exactly that flaw; it is why one of the two `d`s on
+    such a page silently lost its interactive marker, and scoring the
+    catalogue both ways puts the difference at 22 manifest entries.) Indices
+    cannot collide, so callers that want
     ids resolve them themselves and two activities sharing a letter stay two
     activities.
 
