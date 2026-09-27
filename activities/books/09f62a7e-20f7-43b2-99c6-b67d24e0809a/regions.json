@@ -2,8 +2,8 @@
   "version": 2,
   "bookId": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
   "fingerprint": "113356203-9ed589ca04e84f5d4fc2e2899f5df978",
-  "profile": "27b80aacc68e",
-  "builtAt": "2026-09-27T05:39:27.700Z",
+  "profile": "3aae0c22cfb6",
+  "builtAt": "2026-09-27T06:26:53.213Z",
   "pageCount": 193,
   "calibration": {
     "enabled": true,
@@ -1762,17 +1762,17 @@
           "label": null,
           "column": 1,
           "rect": [
-            144.0,
-            148.8277,
-            349.0,
-            685.658
+            40.8977,
+            679.528,
+            504.063,
+            738.5953
           ],
           "parts": [
             [
-              144.0,
-              148.8277,
-              349.0,
-              685.658
+              40.8977,
+              679.528,
+              504.063,
+              738.5953
             ]
           ],
           "headline": "Aşağıda verilen fotosentez ile ilgili kavram haritasını inceleyerek öğrendiğiniz bilgileri kontrol ediniz."
@@ -2444,7 +2444,7 @@
           "label": "2",
           "column": 2,
           "rect": [
-            254.0,
+            254.9974,
             222.1013,
             464.1873,
             396.5006
@@ -2454,11 +2454,11 @@
               254.9974,
               222.1013,
               309.4558,
-              250.27474999999998
+              251.0613
             ],
             [
-              254.0,
-              251.27474999999998,
+              309.0693,
+              250.4882,
               464.1873,
               396.5006
             ]
@@ -3422,16 +3422,16 @@
           "column": 0,
           "rect": [
             34.874,
-            165.528,
-            378.0,
-            671.149
+            620.1583,
+            503.709,
+            738.5108
           ],
           "parts": [
             [
               34.874,
-              165.528,
-              378.0,
-              671.149
+              620.1583,
+              503.709,
+              738.5108
             ]
           ],
           "headline": "Hücresel solunum reaksiyonları şematik olarak aşağıdaki bilgi görselinde özetlenmiştir. Bilgi görselini incele- yerek öğrendiklerinizi kontr"
@@ -9341,16 +9341,16 @@
           "column": 0,
           "rect": [
             54.3622,
-            151.0114,
-            210.8333,
-            634.7148
+            659.4375,
+            515.1263,
+            738.1641
           ],
           "parts": [
             [
               54.3622,
-              151.0114,
-              210.8333,
-              634.7148
+              659.4375,
+              515.1263,
+              738.1641
             ]
           ],
           "headline": "Aşağıda birbiri ile bağlantılı, doğru/yanlış ifadeler içeren tanılayıcı dallanmış ağaç verilmiştir. Soldaki ilk ifadeden başlayarak, söz kon"

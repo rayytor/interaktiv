@@ -408,6 +408,8 @@ def _page_geometry(
             [{"rect": f.rect, "kind": "figure"} for f in figures]
         ),
         content_box=content_box,
+        page_w=primitives.width,
+        page_h=primitives.height,
     )
 
 
@@ -558,6 +560,8 @@ def reconcile_anchors(
                 # there, or three answer panels synthesised one under another
                 # come out stacked on top of each other.
                 geom = _page_geometry(primitives, layout, markers)
+                if trace is not None:
+                    trace.geometry = geom
             if trace is not None:
                 trace.count("anchor.synthesised", len(leftover))
             out = clean_page_activities(out, geom=geom, trace=trace)
@@ -580,4 +584,4 @@ def reconcile_anchors(
 
     if trace is not None:
         trace.count("anchor.synthesised", len(unplaced))
-    return clean_page_activities(reconciled, geom=None, trace=trace)
+    return clean_page_activities(reconciled, geom=getattr(trace, "geometry", None), trace=trace)

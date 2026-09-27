@@ -2,8 +2,8 @@
   "version": 2,
   "bookId": "753fcdb0-64fa-4c5e-b677-1e3e612b31b5",
   "fingerprint": "69741398-a874cfcfa41d8bf6ddcf4df174168256",
-  "profile": "27b80aacc68e",
-  "builtAt": "2026-09-27T05:38:52.150Z",
+  "profile": "3aae0c22cfb6",
+  "builtAt": "2026-09-27T06:26:25.149Z",
   "pageCount": 407,
   "calibration": {
     "enabled": true,
@@ -28474,7 +28474,7 @@
           "column": 0,
           "rect": [
             49.2598,
-            136.2063,
+            157.5427,
             509.378,
             699.3147
           ],
@@ -47447,7 +47447,7 @@
           "column": 0,
           "rect": [
             47.0,
-            129.4443,
+            172.8623,
             508.1322,
             714.6343
           ],

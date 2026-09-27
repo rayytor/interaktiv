@@ -148,7 +148,7 @@ def examples_for_book(task: Dict[str, Any]) -> Dict[str, Any]:
         result = cache_mod.replay_page(sp, reconcile=False)
         if not result.activities:
             continue
-        acts = [serialize_activity(a) for a in clean_page_activities(result.activities)]
+        acts = [serialize_activity(a) for a in clean_page_activities(result.activities, geom=result.geometry)]
         kept = [a for a in acts if not _is_anchored(a, sp.page_num)]
         ds.anchored_dropped += len(acts) - len(kept)
         if not kept:

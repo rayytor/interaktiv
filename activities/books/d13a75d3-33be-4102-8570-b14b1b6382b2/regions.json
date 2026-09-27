@@ -2,8 +2,8 @@
   "version": 2,
   "bookId": "d13a75d3-33be-4102-8570-b14b1b6382b2",
   "fingerprint": "523863142-17575183206bd6ef60e7947cbf31ebfd",
-  "profile": "27b80aacc68e",
-  "builtAt": "2026-09-27T05:35:48.499Z",
+  "profile": "3aae0c22cfb6",
+  "builtAt": "2026-09-27T06:23:00.953Z",
   "pageCount": 319,
   "calibration": {
     "enabled": true,
@@ -389,7 +389,6 @@
       "dad2a238-63a7-f111-b317-005056a7d529"
     ],
     "33": [
-      "f9663d9e-63a7-f111-b317-005056a7d529",
       "1ede26eb-63a7-f111-b317-005056a7d529"
     ],
     "34": [
@@ -431,6 +430,9 @@
     ],
     "67": [
       "e8a6d36b-4aa6-f111-b317-005056a7d529"
+    ],
+    "70": [
+      "5e90dcee-42a6-f111-b317-005056a7d529"
     ],
     "71": [
       "afca5b83-43a6-f111-b317-005056a7d529"
@@ -715,14 +717,14 @@
           "column": 0,
           "rect": [
             48.6929,
-            89.022,
+            258.8045,
             521.176,
             669.4995
           ],
           "parts": [
             [
               48.6929,
-              89.022,
+              258.8045,
               521.176,
               669.4995
             ]
@@ -1244,15 +1246,15 @@
           "label": null,
           "column": 0,
           "rect": [
-            199.37,
-            91.8,
+            34.5197,
+            586.772,
             505.7115,
             644.1879
           ],
           "parts": [
             [
-              199.37,
-              91.8,
+              34.5197,
+              586.772,
               505.7115,
               644.1879
             ]
@@ -1496,16 +1498,16 @@
           "column": 0,
           "rect": [
             34.5197,
-            301.4613,
+            285.4489,
             506.1682,
-            652.2977
+            739.528
           ],
           "parts": [
             [
               34.5197,
-              301.4613,
+              285.4489,
               506.1682,
-              652.2977
+              739.528
             ]
           ],
           "headline": "Verilen yönergeler doğrultusunda aşağıdaki etkinlikleri yapınız. Türkistan’dan Türkiye’ye uzanan süreçte Türk devletlerinin devlet yapıları",
@@ -1581,14 +1583,14 @@
           "column": 0,
           "rect": [
             34.5197,
-            140.3,
+            603.1044,
             506.0697,
             717.7213
           ],
           "parts": [
             [
               34.5197,
-              140.3,
+              603.1044,
               506.0697,
               717.7213
             ]
@@ -2127,14 +2129,14 @@
           "column": 0,
           "rect": [
             32.5704,
-            335.7,
+            258.0,
             504.239,
             650.9269
           ],
           "parts": [
             [
               32.5704,
-              335.7,
+              258.0,
               504.239,
               650.9269
             ]
@@ -3004,16 +3006,16 @@
           "column": 0,
           "rect": [
             28.5197,
-            164.9403,
+            406.5866,
             512.0676,
-            647.1799
+            739.528
           ],
           "parts": [
             [
               28.5197,
-              164.9403,
+              406.5866,
               512.0676,
-              647.1799
+              739.528
             ]
           ],
           "headline": "Uygulayalım"
@@ -3401,19 +3403,20 @@
           "column": 0,
           "rect": [
             48.6929,
-            136.622,
+            500.1739,
             520.242,
-            651.5481
+            739.528
           ],
           "parts": [
             [
               48.6929,
-              136.622,
+              500.1739,
               520.242,
-              651.5481
+              739.528
             ]
           ],
-          "headline": "Verilen yönergeler doğrultusunda aşağıdaki etkinlikleri yapınız. Türk-İslam ve Batı medeniyetlerindeki bilim, kültür, eğitim ve sanat anlayı"
+          "headline": "Verilen yönergeler doğrultusunda aşağıdaki etkinlikleri yapınız. Türk-İslam ve Batı medeniyetlerindeki bilim, kültür, eğitim ve sanat anlayı",
+          "ogeId": "5e90dcee-42a6-f111-b317-005056a7d529"
         }
       ]
     },
@@ -3738,14 +3741,14 @@
           "column": 0,
           "rect": [
             48.484,
-            174.9776,
+            268.8646,
             520.0887,
             716.7496
           ],
           "parts": [
             [
               48.484,
-              174.9776,
+              268.8646,
               520.0887,
               716.7496
             ]
@@ -3790,16 +3793,16 @@
           "column": 0,
           "rect": [
             34.5197,
-            177.5341,
-            285.65,
-            666.5926
+            684.7657,
+            521.53,
+            739.528
           ],
           "parts": [
             [
               34.5197,
-              177.5341,
-              285.65,
-              666.5926
+              684.7657,
+              521.53,
+              739.528
             ]
           ],
           "headline": "Orta Çağ’da Türk-İslam dünyasındaki medreseler ile Batı’daki katedral ve manastır okullarını konu alan bilgi görsellerinden yararlanarak sor"
@@ -3887,14 +3890,14 @@
           "column": 0,
           "rect": [
             33.3803,
-            133.2248,
+            284.8413,
             506.0629,
             712.3924
           ],
           "parts": [
             [
               33.3803,
-              133.2248,
+              284.8413,
               506.0629,
               712.3924
             ]
@@ -3952,14 +3955,14 @@
           "column": 0,
           "rect": [
             34.52,
-            185.828,
+            187.0,
             504.237,
             611.967
           ],
           "parts": [
             [
               34.52,
-              185.828,
+              187.0,
               504.237,
               611.967
             ]
@@ -4330,14 +4333,14 @@
           "column": 0,
           "rect": [
             34.5197,
-            141.1953,
+            677.7047,
             505.7088,
             714.5817
           ],
           "parts": [
             [
               34.5197,
-              141.1953,
+              677.7047,
               505.7088,
               714.5817
             ]
@@ -5245,14 +5248,14 @@
           "column": 0,
           "rect": [
             48.6929,
-            353.1,
+            205.7,
             519.8219,
             716.9243
           ],
           "parts": [
             [
               48.6929,
-              353.1,
+              205.7,
               519.8219,
               716.9243
             ]
@@ -5277,15 +5280,15 @@
           "column": 0,
           "rect": [
             34.518,
-            176.6683,
-            296.2,
+            656.9,
+            506.0019,
             718.4403
           ],
           "parts": [
             [
               34.518,
-              176.6683,
-              296.2,
+              656.9,
+              506.0019,
               718.4403
             ]
           ],
@@ -5813,14 +5816,14 @@
           "column": 0,
           "rect": [
             48.6929,
-            421.3266,
+            305.3863,
             520.2449,
             715.0536
           ],
           "parts": [
             [
               48.6929,
-              421.3266,
+              305.3863,
               520.2449,
               715.0536
             ]
@@ -6565,16 +6568,16 @@
           "column": 0,
           "rect": [
             34.5184,
-            68.0316,
+            542.5201,
             506.0645,
-            598.3905
+            706.535
           ],
           "parts": [
             [
               34.5184,
-              68.0316,
+              542.5201,
               506.0645,
-              598.3905
+              706.535
             ]
           ],
           "headline": "sisteminin temel unsuru ise çifthane uygulamasıydı. Osmanlı toplumu, yönetenler toprak karşılığında devlete “çift resmi” adı verilen"
@@ -6733,47 +6736,19 @@
           "column": 0,
           "rect": [
             28.7559,
-            174.0223,
-            495.5684,
+            679.1654,
+            508.584,
             715.7943
           ],
           "parts": [
             [
               28.7559,
-              174.0223,
-              495.5684,
+              679.1654,
+              508.584,
               715.7943
             ]
           ],
-          "headline": "Osmanlı Devleti’nde devşirme sisteminin ve Yeniçeri Ocağının kuruluş süreci ile ilgili çizgi romandan yararlanarak soruları cevaplayınız. 2",
-          "items": [
-            {
-              "id": "p149--1",
-              "label": "1",
-              "number": 1,
-              "partIndex": 0,
-              "rect": [
-                42.4173,
-                421.8967,
-                275.064,
-                681.5738
-              ],
-              "text": "1 Edirne’nin Fethi’nden sonra çok sayıda savaş esiri ele geçirilmişti. Karamanlı Rüstem Paşa: Sen bu kadar beylik malını neden boşa harcıyorsun? Ziyan olacak ne mal var? Sen söyle? Karamanlı Rüstem Pa"
-            },
-            {
-              "id": "p149--3",
-              "label": "3",
-              "number": 3,
-              "partIndex": 0,
-              "rect": [
-                41.2087,
-                308.3314,
-                275.064,
-                410.5817
-              ],
-              "text": "3 Ankara Savaşı (1402) sonrasında Balkan fetihlerinin durması ve asker sayısının azalması nedeniyle devşirme sistemine geçildi. Çelebi Mehmed Dönemi’nde uygulanmaya başlanan devşirme sistemi, II. Mura"
-            }
-          ]
+          "headline": "Osmanlı Devleti’nde devşirme sisteminin ve Yeniçeri Ocağının kuruluş süreci ile ilgili çizgi romandan yararlanarak soruları cevaplayınız. 2"
         }
       ]
     },
@@ -8337,15 +8312,15 @@
           "column": 0,
           "rect": [
             34.5197,
-            56.457,
-            496.063,
+            512.8,
+            504.1,
             633.5204
           ],
           "parts": [
             [
               34.5197,
-              56.457,
-              496.063,
+              512.8,
+              504.1,
               633.5204
             ]
           ],
@@ -8749,14 +8724,14 @@
           "column": 0,
           "rect": [
             33.4737,
-            61.8709,
+            318.1604,
             506.0725,
             601.8
           ],
           "parts": [
             [
               33.4737,
-              61.8709,
+              318.1604,
               506.0725,
               601.8
             ]
@@ -9705,16 +9680,16 @@
           "column": 0,
           "rect": [
             28.5197,
-            125.1339,
+            159.7251,
             511.9348,
-            701.646
+            666.9059
           ],
           "parts": [
             [
               28.5197,
-              125.1339,
+              159.7251,
               511.9348,
-              701.646
+              666.9059
             ]
           ],
           "headline": "Düşünelim"
@@ -10181,14 +10156,14 @@
           "column": 0,
           "rect": [
             34.378,
-            76.8569,
+            133.2134,
             506.0742,
             618.6289
           ],
           "parts": [
             [
               34.378,
-              76.8569,
+              133.2134,
               506.0742,
               618.6289
             ]
@@ -10329,16 +10304,16 @@
           "column": 0,
           "rect": [
             34.5197,
-            131.0852,
+            629.5251,
             504.063,
-            646.6622
+            739.528
           ],
           "parts": [
             [
               34.5197,
-              131.0852,
+              629.5251,
               504.063,
-              646.6622
+              739.528
             ]
           ],
           "headline": "Verilen yönergeler doğrultusunda aşağıdaki etkinlikleri yapınız. Osmanlı Devleti’nin yönetim ve ordu yapısıyla ilgili kavram haritasını ince"
@@ -12520,17 +12495,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            42.52,
-            289.6051,
+            34.5197,
+            257.7,
             506.0641,
-            633.8731
+            739.528
           ],
           "parts": [
             [
-              42.52,
-              289.6051,
+              34.5197,
+              257.7,
               506.0641,
-              633.8731
+              739.528
             ]
           ],
           "headline": "Araştırma sürecinde edindiğiniz bilgileri ana düşünce, kişi, eser, mekân ve kurum bağlamlarında sınıflan- dırınız. Edindiğiniz bilgileri aşa"
@@ -12573,14 +12548,14 @@
           "column": 0,
           "rect": [
             49.06,
-            56.693,
+            570.5867,
             518.853,
             629.6377
           ],
           "parts": [
             [
               49.06,
-              56.693,
+              570.5867,
               518.853,
               629.6377
             ]

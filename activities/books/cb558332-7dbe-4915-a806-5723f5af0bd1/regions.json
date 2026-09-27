@@ -2,8 +2,8 @@
   "version": 2,
   "bookId": "cb558332-7dbe-4915-a806-5723f5af0bd1",
   "fingerprint": "391850481-3d688ddcfaf262d513725ddcf93c427d",
-  "profile": "27b80aacc68e",
-  "builtAt": "2026-09-27T05:36:14.280Z",
+  "profile": "3aae0c22cfb6",
+  "builtAt": "2026-09-27T06:23:24.972Z",
   "pageCount": 273,
   "calibration": {
     "enabled": true,
@@ -870,15 +870,15 @@
           "label": "3",
           "column": 0,
           "rect": [
-            80.3426,
-            369.5508,
+            60.0315,
+            353.7103,
             520.5084,
             733.8048
           ],
           "parts": [
             [
-              80.3426,
-              369.5508,
+              60.0315,
+              353.7103,
               520.5084,
               733.8048
             ]
@@ -1231,15 +1231,15 @@
           "label": "1",
           "column": 0,
           "rect": [
-            182.7817,
-            375.5,
+            47.0106,
+            592.0,
             520.4814,
             651.207
           ],
           "parts": [
             [
-              182.7817,
-              375.5,
+              47.0106,
+              592.0,
               520.4814,
               651.207
             ]
@@ -2500,14 +2500,14 @@
           "column": 0,
           "rect": [
             48.6929,
-            120.1659,
+            259.9791,
             521.2421,
             661.9379
           ],
           "parts": [
             [
               48.6929,
-              120.1659,
+              259.9791,
               521.2421,
               661.9379
             ]
@@ -2534,11 +2534,11 @@
               "partIndex": 0,
               "rect": [
                 69.7008,
-                120.1659,
+                259.9791,
                 517.1259,
                 293.4261
               ],
-              "text": "b)  a maddesinde verdiğiniz örneklerde adı geçen disiplinlerden ve bu disiplinlerin fizik bilimiyle ilişkisinden yararlanarak fizik biliminin tanımını yazınız. \b���������������������������������������"
+              "text": "b)  a maddesinde verdiğiniz örneklerde adı geçen disiplinlerden ve bu disiplinlerin fizik bilimiyle ilişkisinden yararlanarak fizik biliminin tanımını yazınız."
             }
           ]
         }
@@ -5519,15 +5519,15 @@
           "label": "7",
           "column": 0,
           "rect": [
-            56.6929,
-            60.3245,
+            48.6929,
+            497.1945,
             523.9058,
             617.3648
           ],
           "parts": [
             [
-              56.6929,
-              60.3245,
+              48.6929,
+              497.1945,
               523.9058,
               617.3648
             ]
@@ -7221,14 +7221,14 @@
           "column": 0,
           "rect": [
             45.8583,
-            173.4436,
+            220.2,
             506.3209,
             715.2156
           ],
           "parts": [
             [
               45.8583,
-              173.4436,
+              220.2,
               506.3209,
               715.2156
             ]
@@ -8368,14 +8368,14 @@
           "column": 0,
           "rect": [
             48.6929,
-            122.5154,
+            154.8168,
             521.2379,
             664.2874
           ],
           "parts": [
             [
               48.6929,
-              122.5154,
+              154.8168,
               521.2379,
               664.2874
             ]
@@ -8428,11 +8428,11 @@
               "partIndex": 0,
               "rect": [
                 69.7008,
-                122.5154,
+                154.8168,
                 517.031,
                 186.2638
               ],
-              "text": "ç)  Metinde geçen konum ile yönün fiziksel niceliklerin sınıflandırılmasındaki önemini açıklayınız. \b���������������������������������������������������������������������������������������������������"
+              "text": "ç)  Metinde geçen konum ile yönün fiziksel niceliklerin sınıflandırılmasındaki önemini açıklayınız."
             }
           ]
         }
@@ -8888,14 +8888,14 @@
           "column": 0,
           "rect": [
             58.1929,
-            257.1,
+            257.0917,
             521.1398,
             733.6544
           ],
           "parts": [
             [
               58.1929,
-              257.1,
+              257.0917,
               521.1398,
               733.6544
             ]
@@ -9945,14 +9945,14 @@
           "column": 0,
           "rect": [
             34.5197,
-            190.5,
+            175.2,
             506.7895,
             709.2758
           ],
           "parts": [
             [
               34.5197,
-              190.5,
+              175.2,
               506.7895,
               709.2758
             ]
@@ -10665,16 +10665,16 @@
           "column": 0,
           "rect": [
             34.5197,
-            78.2052,
+            521.5796,
             509.7326,
-            584.2732
+            704.178
           ],
           "parts": [
             [
               34.5197,
-              78.2052,
+              521.5796,
               509.7326,
-              584.2732
+              704.178
             ]
           ],
           "headline": "Metinden yararlanarak barajların alt duvarlarının üst duvarlarına göre daha kalın olmasının sebe­ bini açıklayınız. \b�����������������������"
@@ -11194,15 +11194,15 @@
           "label": "2",
           "column": 0,
           "rect": [
-            147.402,
-            129.8595,
+            33.7591,
+            239.02,
             506.9899,
             664.0461
           ],
           "parts": [
             [
-              147.402,
-              129.8595,
+              33.7591,
+              239.02,
               506.9899,
               664.0461
             ]
@@ -11697,14 +11697,14 @@
           "column": 0,
           "rect": [
             34.5197,
-            170.3784,
+            387.7736,
             506.9749,
             712.1504
           ],
           "parts": [
             [
               34.5197,
-              170.3784,
+              387.7736,
               506.9749,
               712.1504
             ]
@@ -12698,14 +12698,14 @@
           "column": 0,
           "rect": [
             48.6929,
-            81.5288,
+            455.2988,
             520.5243,
             623.3008
           ],
           "parts": [
             [
               48.6929,
-              81.5288,
+              455.2988,
               520.5243,
               623.3008
             ]
@@ -13377,20 +13377,48 @@
           "label": "15",
           "column": 0,
           "rect": [
-            147.6516,
-            192.0329,
+            34.3961,
+            269.606,
             506.9338,
             733.8048
           ],
           "parts": [
             [
-              147.6516,
-              192.0329,
+              34.3961,
+              269.606,
               506.9338,
               733.8048
             ]
           ],
-          "headline": "Akışkanların sürati ile basıncı arasındaki ilişkiyi genelleyen Bernoulli İlkesi’ni yazınız."
+          "headline": "Akışkanların sürati ile basıncı arasındaki ilişkiyi genelleyen Bernoulli İlkesi’ni yazınız.",
+          "items": [
+            {
+              "id": "p189-15-a",
+              "label": "a",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                66.8662,
+                402.6354,
+                502.2382,
+                506.4504
+              ],
+              "text": "a)  Arasına üflendiğinde kâğıtların birbirine yaklaşmasını akışkanların sürati ile basıncı arasındaki ilişkiye dayanarak açıklayınız. \b�����������������������������������������������������������������"
+            },
+            {
+              "id": "p189-15-b",
+              "label": "b",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                38.5197,
+                282.3795,
+                502.2322,
+                403.9465
+              ],
+              "text": "b)  Günlük hayattan akışkanın sürati ile basıncı arasındaki ilişkiyi anlatan üç örnek veriniz. Örneklerinizi aşağıdaki tabloya yazınız. Örnekler 1. \u0007Hareket eden arabanın camı aralandığında içeride bi"
+            }
+          ]
         }
       ]
     },
@@ -13986,14 +14014,14 @@
           "column": 0,
           "rect": [
             34.5197,
-            191.8824,
+            219.6797,
             506.9809,
             733.6544
           ],
           "parts": [
             [
               34.5197,
-              191.8824,
+              219.6797,
               506.9809,
               733.6544
             ]
@@ -14020,11 +14048,11 @@
               "partIndex": 0,
               "rect": [
                 55.5276,
-                191.8824,
-                495.1055,
+                219.6797,
+                490.6135,
                 253.1268
               ],
-              "text": "b)  Aracın suyun içindeki ağırlığının suyun dışındaki ağırlığından daha az olmasının nede­ nini açıklayınız. \b������������������������������������������������������������������������������������������"
+              "text": "b)  Aracın suyun içindeki ağırlığının suyun dışındaki ağırlığından daha az olmasının nede­ nini açıklayınız."
             }
           ]
         }
@@ -15118,14 +15146,14 @@
           "column": 0,
           "rect": [
             34.5197,
-            164.7093,
+            197.8965,
             509.7326,
             706.4812
           ],
           "parts": [
             [
               34.5197,
-              164.7093,
+              197.8965,
               509.7326,
               706.4812
             ]
@@ -18293,14 +18321,14 @@
           "column": 0,
           "rect": [
             34.5197,
-            330.9791,
+            282.5753,
             507.0014,
             733.6544
           ],
           "parts": [
             [
               34.5197,
-              330.9791,
+              282.5753,
               507.0014,
               733.6544
             ]
@@ -18327,8 +18355,8 @@
               "partIndex": 0,
               "rect": [
                 55.5276,
-                330.9791,
-                502.7179,
+                285.2445,
+                502.8375,
                 428.4031
               ],
               "text": "o o b)  Aynı düzenekte 0 C sıcaklıktaki 500 g buzu ve 30 C sıcaklıktaki 800 g tereyağının tamamını eritmek kaç dakika sürer? \b��������������������������������������������������������������������������"
