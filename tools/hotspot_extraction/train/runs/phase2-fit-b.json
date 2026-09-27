@@ -1,0 +1,1908 @@
+{
+  "startedAt": 1790542638.0282073,
+  "elapsed": 3516.6,
+  "evaluations": 48,
+  "baselineLoss": 5.868967895138072,
+  "baselineTotals": {
+    "books": 18,
+    "pages": 4213,
+    "regions": 12685,
+    "cuts": 782,
+    "cutPerRegion": 0.0616,
+    "overlaps": 0,
+    "tall": 0,
+    "slivers": 0,
+    "oges": 732,
+    "matched": 678,
+    "matchRate": 0.9262,
+    "pagesWithRegions": 3281,
+    "coverage": 0.7788,
+    "loss": 5.868968
+  },
+  "bestLoss": 4.972031547574112,
+  "bestTotals": {
+    "books": 18,
+    "pages": 4213,
+    "regions": 12379,
+    "cuts": 663,
+    "cutPerRegion": 0.0536,
+    "overlaps": 1,
+    "tall": 0,
+    "slivers": 0,
+    "oges": 732,
+    "matched": 679,
+    "matchRate": 0.9276,
+    "pagesWithRegions": 3280,
+    "coverage": 0.7785,
+    "loss": 4.972032
+  },
+  "bestProfileHash": "4137ece74df7",
+  "bestChanged": {
+    "FOOTER_BAND": 32.0,
+    "BODY_LINE_CHARS": 51,
+    "FIGURE_AREA": 3350.0,
+    "CAPTION_SIDE": 4.0,
+    "PAD": 0.0,
+    "BRIDGE": 2.0
+  },
+  "screen": [
+    {
+      "knob": "HEADER_BAND",
+      "module": "layout",
+      "span": 0.180776,
+      "bestDelta": -0.03187
+    },
+    {
+      "knob": "FOOTER_BAND",
+      "module": "layout",
+      "span": 0.42178,
+      "bestDelta": -0.169516
+    },
+    {
+      "knob": "COLUMN_TOLERANCE",
+      "module": "layout",
+      "span": 0.076203,
+      "bestDelta": -0.076203
+    },
+    {
+      "knob": "COLUMN_CHANNEL",
+      "module": "layout",
+      "span": 1.096799,
+      "bestDelta": -0.067739
+    },
+    {
+      "knob": "COLUMN_CLEAR",
+      "module": "layout",
+      "span": 0.669592,
+      "bestDelta": -0.669592
+    },
+    {
+      "knob": "COLUMN_PAIRED",
+      "module": "layout",
+      "span": 0.21195,
+      "bestDelta": -0.21195
+    },
+    {
+      "knob": "MIN_COLUMN_LINES",
+      "module": "layout",
+      "span": 0.157997,
+      "bestDelta": 0.157997
+    },
+    {
+      "knob": "COLUMN_MIN_W",
+      "module": "layout",
+      "span": 0.192431,
+      "bestDelta": 0.041219
+    },
+    {
+      "knob": "BODY_LINE_CHARS",
+      "module": "layout",
+      "span": 0.115913,
+      "bestDelta": 0.115913
+    },
+    {
+      "knob": "BODY_LINE_WIDTH",
+      "module": "layout",
+      "span": 0.314124,
+      "bestDelta": 0.188367
+    },
+    {
+      "knob": "GUTTER_RATIO",
+      "module": "markers",
+      "span": 0.034252,
+      "bestDelta": -0.034252
+    },
+    {
+      "knob": "HANGING_INDENT",
+      "module": "markers",
+      "span": 0.055148,
+      "bestDelta": -0.055148
+    },
+    {
+      "knob": "MAX_SUBQUESTION_GAP",
+      "module": "markers",
+      "span": 0.0,
+      "bestDelta": 0.0
+    },
+    {
+      "knob": "PARA_LEADING",
+      "module": "prompts",
+      "span": 0.050031,
+      "bestDelta": 0.003404
+    },
+    {
+      "knob": "PARA_INDENT",
+      "module": "prompts",
+      "span": 0.089925,
+      "bestDelta": 0.061442
+    },
+    {
+      "knob": "SIZE_SHIFT",
+      "module": "prompts",
+      "span": 0.028332,
+      "bestDelta": 0.001451
+    },
+    {
+      "knob": "SHORT_LINE",
+      "module": "prompts",
+      "span": 0.001406,
+      "bestDelta": -0.001406
+    },
+    {
+      "knob": "PROMPT_MIN_CHARS",
+      "module": "prompts",
+      "span": 0.028029,
+      "bestDelta": 0.028029
+    },
+    {
+      "knob": "PROMPT_MAX_LINES",
+      "module": "prompts",
+      "span": 0.01503,
+      "bestDelta": 0.003549
+    },
+    {
+      "knob": "HEADING_RATIO__prompts",
+      "module": "prompts",
+      "span": 0.001011,
+      "bestDelta": -0.001011
+    },
+    {
+      "knob": "RUBRIC_MAX_CHARS",
+      "module": "prompts",
+      "span": 0.064928,
+      "bestDelta": 0.000373
+    },
+    {
+      "knob": "QUESTION_MAX_CHARS",
+      "module": "prompts",
+      "span": 0.025279,
+      "bestDelta": 0.001098
+    },
+    {
+      "knob": "RUBRIC_REACH",
+      "module": "prompts",
+      "span": 0.014856,
+      "bestDelta": -0.014856
+    },
+    {
+      "knob": "SCOPE_MIN",
+      "module": "prompts",
+      "span": 0.069752,
+      "bestDelta": 0.0035
+    },
+    {
+      "knob": "NEAR_MARKER",
+      "module": "prompts",
+      "span": 0.005393,
+      "bestDelta": 0.000315
+    },
+    {
+      "knob": "FIGURE_WELD",
+      "module": "figures",
+      "span": 0.118624,
+      "bestDelta": 0.0
+    },
+    {
+      "knob": "FIGURE_REACH",
+      "module": "figures",
+      "span": 0.126307,
+      "bestDelta": 0.022649
+    },
+    {
+      "knob": "FIGURE_SPAN",
+      "module": "figures",
+      "span": 0.167214,
+      "bestDelta": -0.167214
+    },
+    {
+      "knob": "FIGURE_MIN",
+      "module": "figures",
+      "span": 0.030067,
+      "bestDelta": -0.030067
+    },
+    {
+      "knob": "FIGURE_AREA",
+      "module": "figures",
+      "span": 0.085559,
+      "bestDelta": -0.085559
+    },
+    {
+      "knob": "FIGURE_TILE",
+      "module": "figures",
+      "span": 0.009868,
+      "bestDelta": 0.0
+    },
+    {
+      "knob": "FIGURE_SHARE",
+      "module": "figures",
+      "span": 0.106481,
+      "bestDelta": 0.063897
+    },
+    {
+      "knob": "CAPTION_GAP",
+      "module": "figures",
+      "span": 0.005431,
+      "bestDelta": 0.0
+    },
+    {
+      "knob": "CAPTION_SIDE",
+      "module": "figures",
+      "span": 0.007041,
+      "bestDelta": 0.0
+    },
+    {
+      "knob": "CAPTION_LINES",
+      "module": "figures",
+      "span": 0.0,
+      "bestDelta": 0.0
+    },
+    {
+      "knob": "ART_COVER",
+      "module": "figures",
+      "span": 0.257865,
+      "bestDelta": -0.021499
+    },
+    {
+      "knob": "MARKER_REACH",
+      "module": "figures",
+      "span": 0.025999,
+      "bestDelta": 0.0
+    },
+    {
+      "knob": "PANEL_MIN_W",
+      "module": "regions",
+      "span": 0.516328,
+      "bestDelta": 0.516328
+    },
+    {
+      "knob": "PANEL_MIN_H",
+      "module": "regions",
+      "span": 1.021498,
+      "bestDelta": 0.039684
+    },
+    {
+      "knob": "PANEL_LINES",
+      "module": "regions",
+      "span": 1.397004,
+      "bestDelta": 1.397004
+    },
+    {
+      "knob": "RULE_THICK",
+      "module": "regions",
+      "span": 0.0,
+      "bestDelta": 0.0
+    },
+    {
+      "knob": "RULE_MIN",
+      "module": "regions",
+      "span": 13.278941,
+      "bestDelta": 1.928862
+    },
+    {
+      "knob": "RULE_CLUSTER",
+      "module": "regions",
+      "span": 1.069758,
+      "bestDelta": 1.036353
+    },
+    {
+      "knob": "RULE_ROW",
+      "module": "regions",
+      "span": 3.664125,
+      "bestDelta": 0.41174
+    },
+    {
+      "knob": "MIN_CELL",
+      "module": "regions",
+      "span": 30.633491,
+      "bestDelta": 0.274969
+    },
+    {
+      "knob": "HOTSPOT_GAP",
+      "module": "regions",
+      "span": 0.190085,
+      "bestDelta": -0.190085
+    },
+    {
+      "knob": "HAIRLINE",
+      "module": "regions",
+      "span": 0.002913,
+      "bestDelta": -0.002913
+    },
+    {
+      "knob": "PAD",
+      "module": "regions",
+      "span": 0.386932,
+      "bestDelta": 0.386932
+    },
+    {
+      "knob": "FLOW_LEADING",
+      "module": "regions",
+      "span": 0.101803,
+      "bestDelta": -0.101803
+    },
+    {
+      "knob": "FLOW_BREAK",
+      "module": "regions",
+      "span": 0.40432,
+      "bestDelta": -0.087113
+    },
+    {
+      "knob": "HEADING_RATIO__regions",
+      "module": "regions",
+      "span": 0.272495,
+      "bestDelta": 0.01747
+    },
+    {
+      "knob": "BODY_EVIDENCE",
+      "module": "regions",
+      "span": 0.0,
+      "bestDelta": 0.0
+    },
+    {
+      "knob": "HEADING_MEASURE",
+      "module": "regions",
+      "span": 0.0,
+      "bestDelta": 0.0
+    },
+    {
+      "knob": "MIN_STRIP",
+      "module": "regions",
+      "span": 0.019784,
+      "bestDelta": 0.003076
+    },
+    {
+      "knob": "BRIDGE",
+      "module": "regions",
+      "span": 0.003033,
+      "bestDelta": -0.002763
+    },
+    {
+      "knob": "STACK_GAP",
+      "module": "regions",
+      "span": 0.0,
+      "bestDelta": 0.0
+    },
+    {
+      "knob": "STACK_OVERLAP",
+      "module": "regions",
+      "span": 0.0,
+      "bestDelta": 0.0
+    },
+    {
+      "knob": "COLUMN_EDGE",
+      "module": "regions",
+      "span": 0.135218,
+      "bestDelta": 0.135218
+    },
+    {
+      "knob": "RETREAT_SHARE",
+      "module": "regions",
+      "span": 0.144263,
+      "bestDelta": -0.01945
+    },
+    {
+      "knob": "RETREAT_COST",
+      "module": "regions",
+      "span": 1.610719,
+      "bestDelta": -1.455614
+    },
+    {
+      "knob": "GRAPHIC_REACH",
+      "module": "regions",
+      "span": 0.324406,
+      "bestDelta": -0.006792
+    },
+    {
+      "knob": "GRAPHIC_DROP",
+      "module": "regions",
+      "span": 0.040161,
+      "bestDelta": -0.040161
+    },
+    {
+      "knob": "GRAPHIC_SHARE",
+      "module": "regions",
+      "span": 0.038338,
+      "bestDelta": 0.003098
+    },
+    {
+      "knob": "GRAPHIC_LINK",
+      "module": "regions",
+      "span": 0.027601,
+      "bestDelta": 0.0
+    },
+    {
+      "knob": "GRAPHIC_PASSES",
+      "module": "regions",
+      "span": 0.0,
+      "bestDelta": 0.0
+    },
+    {
+      "knob": "GRAPHIC_LABEL",
+      "module": "regions",
+      "span": 0.002913,
+      "bestDelta": 0.0
+    },
+    {
+      "knob": "GRAPHIC_HELD",
+      "module": "regions",
+      "span": 0.101252,
+      "bestDelta": -0.060638
+    },
+    {
+      "knob": "SNAP_EXPAND_SHARE",
+      "module": "regions",
+      "span": 0.302812,
+      "bestDelta": -0.056967
+    },
+    {
+      "knob": "SNAP_PANEL_RATIO",
+      "module": "regions",
+      "span": 0.002763,
+      "bestDelta": -0.002763
+    },
+    {
+      "knob": "SNAP_PASSES",
+      "module": "regions",
+      "span": 0.0,
+      "bestDelta": 0.0
+    },
+    {
+      "knob": "ANCHOR_ABOVE",
+      "module": "anchors",
+      "span": 0.034804,
+      "bestDelta": -0.034804
+    },
+    {
+      "knob": "BAND_REACH_ABOVE",
+      "module": "anchors",
+      "span": 0.050668,
+      "bestDelta": -8e-06
+    },
+    {
+      "knob": "BAND_REACH_BELOW",
+      "module": "anchors",
+      "span": 0.000315,
+      "bestDelta": 0.000315
+    },
+    {
+      "knob": "BAND_REACH_ACROSS",
+      "module": "anchors",
+      "span": 0.062039,
+      "bestDelta": -0.062039
+    }
+  ],
+  "gates": null,
+  "final": null,
+  "trials": [
+    {
+      "n": 1,
+      "loss": 5.812602,
+      "profile_hash": "9f4c13ba442f",
+      "changed": {
+        "FOOTER_BAND": 0.0
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12656,
+        "cuts": 763,
+        "cutPerRegion": 0.0603,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 674,
+        "matchRate": 0.9208,
+        "pagesWithRegions": 3278,
+        "coverage": 0.7781,
+        "loss": 5.812602
+      },
+      "phase": "descent",
+      "seconds": 74.52,
+      "gates": []
+    },
+    {
+      "n": 2,
+      "loss": 5.659444,
+      "profile_hash": "ee65cf9e29cb",
+      "changed": {
+        "FOOTER_BAND": 16.0
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12667,
+        "cuts": 756,
+        "cutPerRegion": 0.0597,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 675,
+        "matchRate": 0.9221,
+        "pagesWithRegions": 3278,
+        "coverage": 0.7781,
+        "loss": 5.659444
+      },
+      "phase": "descent",
+      "seconds": 72.91,
+      "gates": []
+    },
+    {
+      "n": 3,
+      "loss": 5.635383,
+      "profile_hash": "b7a28e4831c4",
+      "changed": {
+        "FOOTER_BAND": 32.0
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12680,
+        "cuts": 755,
+        "cutPerRegion": 0.0595,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 678,
+        "matchRate": 0.9262,
+        "pagesWithRegions": 3280,
+        "coverage": 0.7785,
+        "loss": 5.635383
+      },
+      "phase": "descent",
+      "seconds": 72.55,
+      "gates": []
+    },
+    {
+      "n": 4,
+      "loss": 5.912332,
+      "profile_hash": "30a64f4db729",
+      "changed": {
+        "FOOTER_BAND": 48.0
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12684,
+        "cuts": 788,
+        "cutPerRegion": 0.0621,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 678,
+        "matchRate": 0.9262,
+        "pagesWithRegions": 3281,
+        "coverage": 0.7788,
+        "loss": 5.912332
+      },
+      "phase": "descent",
+      "seconds": 72.46,
+      "gates": []
+    },
+    {
+      "n": 5,
+      "loss": 6.096693,
+      "profile_hash": "4ded2527803d",
+      "changed": {
+        "FOOTER_BAND": 64.0
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12636,
+        "cuts": 813,
+        "cutPerRegion": 0.0643,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 674,
+        "matchRate": 0.9208,
+        "pagesWithRegions": 3272,
+        "coverage": 0.7766,
+        "loss": 6.096693
+      },
+      "phase": "descent",
+      "seconds": 72.43,
+      "gates": []
+    },
+    {
+      "n": 6,
+      "loss": 6.781124,
+      "profile_hash": "3e8c276b8d3d",
+      "changed": {
+        "FOOTER_BAND": 80.0
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12429,
+        "cuts": 833,
+        "cutPerRegion": 0.067,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 660,
+        "matchRate": 0.9016,
+        "pagesWithRegions": 3261,
+        "coverage": 0.774,
+        "loss": 6.781124
+      },
+      "phase": "descent",
+      "seconds": 72.04,
+      "gates": []
+    },
+    {
+      "n": 7,
+      "loss": 6.798586,
+      "profile_hash": "2b39f01d7a5f",
+      "changed": {
+        "FOOTER_BAND": 96.0
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12173,
+        "cuts": 823,
+        "cutPerRegion": 0.0676,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 661,
+        "matchRate": 0.903,
+        "pagesWithRegions": 3244,
+        "coverage": 0.77,
+        "loss": 6.798586
+      },
+      "phase": "descent",
+      "seconds": 70.24,
+      "gates": []
+    },
+    {
+      "n": 8,
+      "loss": 5.699452,
+      "profile_hash": "094bd91ab63d",
+      "changed": {
+        "FOOTER_BAND": 24.0
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12666,
+        "cuts": 763,
+        "cutPerRegion": 0.0602,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 675,
+        "matchRate": 0.9221,
+        "pagesWithRegions": 3279,
+        "coverage": 0.7783,
+        "loss": 5.699452
+      },
+      "phase": "descent",
+      "seconds": 73.67,
+      "gates": []
+    },
+    {
+      "n": 9,
+      "loss": 5.796672,
+      "profile_hash": "e643656f1c6f",
+      "changed": {
+        "FOOTER_BAND": 40.0
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12683,
+        "cuts": 772,
+        "cutPerRegion": 0.0609,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 679,
+        "matchRate": 0.9276,
+        "pagesWithRegions": 3281,
+        "coverage": 0.7788,
+        "loss": 5.796672
+      },
+      "phase": "descent",
+      "seconds": 72.67,
+      "gates": []
+    },
+    {
+      "n": 10,
+      "loss": 5.634468,
+      "profile_hash": "1b5513a14e88",
+      "changed": {
+        "FOOTER_BAND": 32.0,
+        "CAPTION_SIDE": 4.0
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12681,
+        "cuts": 755,
+        "cutPerRegion": 0.0595,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 678,
+        "matchRate": 0.9262,
+        "pagesWithRegions": 3280,
+        "coverage": 0.7785,
+        "loss": 5.634468
+      },
+      "phase": "descent",
+      "seconds": 72.89,
+      "gates": []
+    },
+    {
+      "n": 11,
+      "loss": 5.634468,
+      "profile_hash": "12efadd848fe",
+      "changed": {
+        "FOOTER_BAND": 32.0,
+        "CAPTION_SIDE": 15.333333
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12681,
+        "cuts": 755,
+        "cutPerRegion": 0.0595,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 678,
+        "matchRate": 0.9262,
+        "pagesWithRegions": 3280,
+        "coverage": 0.7785,
+        "loss": 5.634468
+      },
+      "phase": "descent",
+      "seconds": 72.17,
+      "gates": []
+    },
+    {
+      "n": 12,
+      "loss": 5.635383,
+      "profile_hash": "8748f5b6fd37",
+      "changed": {
+        "FOOTER_BAND": 32.0,
+        "CAPTION_SIDE": 26.666667
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12680,
+        "cuts": 755,
+        "cutPerRegion": 0.0595,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 678,
+        "matchRate": 0.9262,
+        "pagesWithRegions": 3280,
+        "coverage": 0.7785,
+        "loss": 5.635383
+      },
+      "phase": "descent",
+      "seconds": 72.0,
+      "gates": []
+    },
+    {
+      "n": 13,
+      "loss": 5.642433,
+      "profile_hash": "aded9f84d6c0",
+      "changed": {
+        "FOOTER_BAND": 32.0,
+        "CAPTION_SIDE": 38.0
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12680,
+        "cuts": 756,
+        "cutPerRegion": 0.0596,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 678,
+        "matchRate": 0.9262,
+        "pagesWithRegions": 3280,
+        "coverage": 0.7785,
+        "loss": 5.642433
+      },
+      "phase": "descent",
+      "seconds": 72.35,
+      "gates": []
+    },
+    {
+      "n": 14,
+      "loss": 5.642433,
+      "profile_hash": "b46f6ab120dd",
+      "changed": {
+        "FOOTER_BAND": 32.0,
+        "CAPTION_SIDE": 49.333333
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12680,
+        "cuts": 756,
+        "cutPerRegion": 0.0596,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 678,
+        "matchRate": 0.9262,
+        "pagesWithRegions": 3280,
+        "coverage": 0.7785,
+        "loss": 5.642433
+      },
+      "phase": "descent",
+      "seconds": 72.46,
+      "gates": []
+    },
+    {
+      "n": 15,
+      "loss": 5.642433,
+      "profile_hash": "98591b8f3317",
+      "changed": {
+        "FOOTER_BAND": 32.0,
+        "CAPTION_SIDE": 60.666667
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12680,
+        "cuts": 756,
+        "cutPerRegion": 0.0596,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 678,
+        "matchRate": 0.9262,
+        "pagesWithRegions": 3280,
+        "coverage": 0.7785,
+        "loss": 5.642433
+      },
+      "phase": "descent",
+      "seconds": 72.9,
+      "gates": []
+    },
+    {
+      "n": 16,
+      "loss": 5.642433,
+      "profile_hash": "cd93090ffb8a",
+      "changed": {
+        "FOOTER_BAND": 32.0,
+        "CAPTION_SIDE": 72.0
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12680,
+        "cuts": 756,
+        "cutPerRegion": 0.0596,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 678,
+        "matchRate": 0.9262,
+        "pagesWithRegions": 3280,
+        "coverage": 0.7785,
+        "loss": 5.642433
+      },
+      "phase": "descent",
+      "seconds": 72.63,
+      "gates": []
+    },
+    {
+      "n": 17,
+      "loss": 5.634468,
+      "profile_hash": "6732b4f3422d",
+      "changed": {
+        "FOOTER_BAND": 32.0,
+        "CAPTION_SIDE": 9.666667
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12681,
+        "cuts": 755,
+        "cutPerRegion": 0.0595,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 678,
+        "matchRate": 0.9262,
+        "pagesWithRegions": 3280,
+        "coverage": 0.7785,
+        "loss": 5.634468
+      },
+      "phase": "descent",
+      "seconds": 72.55,
+      "gates": []
+    },
+    {
+      "n": 18,
+      "loss": 5.278874,
+      "profile_hash": "dd199186370c",
+      "changed": {
+        "FOOTER_BAND": 32.0,
+        "CAPTION_SIDE": 4.0,
+        "PAD": 0.0
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12467,
+        "cuts": 705,
+        "cutPerRegion": 0.0565,
+        "overlaps": 1,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 678,
+        "matchRate": 0.9262,
+        "pagesWithRegions": 3279,
+        "coverage": 0.7783,
+        "loss": 5.278874
+      },
+      "phase": "descent",
+      "seconds": 70.88,
+      "gates": []
+    },
+    {
+      "n": 19,
+      "loss": 6.016188,
+      "profile_hash": "c2d2cce06669",
+      "changed": {
+        "FOOTER_BAND": 32.0,
+        "CAPTION_SIDE": 4.0,
+        "PAD": 5.333333
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12619,
+        "cuts": 769,
+        "cutPerRegion": 0.0609,
+        "overlaps": 2,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 672,
+        "matchRate": 0.918,
+        "pagesWithRegions": 3280,
+        "coverage": 0.7785,
+        "loss": 6.016188
+      },
+      "phase": "descent",
+      "seconds": 71.96,
+      "gates": []
+    },
+    {
+      "n": 20,
+      "loss": 5.6312,
+      "profile_hash": "c1ddf4a10040",
+      "changed": {
+        "FOOTER_BAND": 32.0,
+        "CAPTION_SIDE": 4.0,
+        "PAD": 10.666667
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12683,
+        "cuts": 748,
+        "cutPerRegion": 0.059,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 675,
+        "matchRate": 0.9221,
+        "pagesWithRegions": 3279,
+        "coverage": 0.7783,
+        "loss": 5.6312
+      },
+      "phase": "descent",
+      "seconds": 72.49,
+      "gates": []
+    },
+    {
+      "n": 21,
+      "loss": 5.644774,
+      "profile_hash": "0a768bfde11c",
+      "changed": {
+        "FOOTER_BAND": 32.0,
+        "CAPTION_SIDE": 4.0,
+        "PAD": 16.0
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12685,
+        "cuts": 770,
+        "cutPerRegion": 0.0607,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 680,
+        "matchRate": 0.929,
+        "pagesWithRegions": 3280,
+        "coverage": 0.7785,
+        "loss": 5.644774
+      },
+      "phase": "descent",
+      "seconds": 72.6,
+      "gates": []
+    },
+    {
+      "n": 22,
+      "loss": 5.977842,
+      "profile_hash": "5fd406c11e00",
+      "changed": {
+        "FOOTER_BAND": 32.0,
+        "CAPTION_SIDE": 4.0,
+        "PAD": 21.333333
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12637,
+        "cuts": 804,
+        "cutPerRegion": 0.0636,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 684,
+        "matchRate": 0.9344,
+        "pagesWithRegions": 3280,
+        "coverage": 0.7785,
+        "loss": 5.977842
+      },
+      "phase": "descent",
+      "seconds": 72.88,
+      "gates": []
+    },
+    {
+      "n": 23,
+      "loss": 5.943518,
+      "profile_hash": "606c8e2bcac2",
+      "changed": {
+        "FOOTER_BAND": 32.0,
+        "CAPTION_SIDE": 4.0,
+        "PAD": 26.666667
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12616,
+        "cuts": 803,
+        "cutPerRegion": 0.0636,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 680,
+        "matchRate": 0.929,
+        "pagesWithRegions": 3280,
+        "coverage": 0.7785,
+        "loss": 5.943518
+      },
+      "phase": "descent",
+      "seconds": 73.55,
+      "gates": []
+    },
+    {
+      "n": 24,
+      "loss": 6.299974,
+      "profile_hash": "c3de4ab3a81e",
+      "changed": {
+        "FOOTER_BAND": 32.0,
+        "CAPTION_SIDE": 4.0,
+        "PAD": 32.0
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12517,
+        "cuts": 799,
+        "cutPerRegion": 0.0638,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 684,
+        "matchRate": 0.9344,
+        "pagesWithRegions": 3280,
+        "coverage": 0.7785,
+        "loss": 6.299974
+      },
+      "phase": "descent",
+      "seconds": 73.59,
+      "gates": []
+    },
+    {
+      "n": 25,
+      "loss": 5.836191,
+      "profile_hash": "76f309bf0ecd",
+      "changed": {
+        "FOOTER_BAND": 32.0,
+        "CAPTION_SIDE": 4.0,
+        "PAD": 2.666667
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12557,
+        "cuts": 750,
+        "cutPerRegion": 0.0597,
+        "overlaps": 2,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 673,
+        "matchRate": 0.9194,
+        "pagesWithRegions": 3280,
+        "coverage": 0.7785,
+        "loss": 5.836191
+      },
+      "phase": "descent",
+      "seconds": 72.79,
+      "gates": []
+    },
+    {
+      "n": 26,
+      "loss": 5.267825,
+      "profile_hash": "abc0376f8f7a",
+      "changed": {
+        "FOOTER_BAND": 32.0,
+        "CAPTION_SIDE": 4.0,
+        "PAD": 0.0,
+        "BRIDGE": 2.0
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12469,
+        "cuts": 699,
+        "cutPerRegion": 0.0561,
+        "overlaps": 1,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 678,
+        "matchRate": 0.9262,
+        "pagesWithRegions": 3279,
+        "coverage": 0.7783,
+        "loss": 5.267825
+      },
+      "phase": "descent",
+      "seconds": 72.54,
+      "gates": []
+    },
+    {
+      "n": 27,
+      "loss": 5.277901,
+      "profile_hash": "df01fd6790cc",
+      "changed": {
+        "FOOTER_BAND": 32.0,
+        "CAPTION_SIDE": 4.0,
+        "PAD": 0.0,
+        "BRIDGE": 9.666667
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12469,
+        "cuts": 705,
+        "cutPerRegion": 0.0565,
+        "overlaps": 1,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 678,
+        "matchRate": 0.9262,
+        "pagesWithRegions": 3279,
+        "coverage": 0.7783,
+        "loss": 5.277901
+      },
+      "phase": "descent",
+      "seconds": 71.65,
+      "gates": []
+    },
+    {
+      "n": 28,
+      "loss": 5.269521,
+      "profile_hash": "e5a19b823897",
+      "changed": {
+        "FOOTER_BAND": 32.0,
+        "CAPTION_SIDE": 4.0,
+        "PAD": 0.0,
+        "BRIDGE": 17.333333
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12467,
+        "cuts": 704,
+        "cutPerRegion": 0.0565,
+        "overlaps": 1,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 678,
+        "matchRate": 0.9262,
+        "pagesWithRegions": 3279,
+        "coverage": 0.7783,
+        "loss": 5.269521
+      },
+      "phase": "descent",
+      "seconds": 71.63,
+      "gates": []
+    },
+    {
+      "n": 29,
+      "loss": 5.29116,
+      "profile_hash": "18ad12ce9573",
+      "changed": {
+        "FOOTER_BAND": 32.0,
+        "CAPTION_SIDE": 4.0,
+        "PAD": 0.0,
+        "BRIDGE": 25.0
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12466,
+        "cuts": 707,
+        "cutPerRegion": 0.0567,
+        "overlaps": 1,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 678,
+        "matchRate": 0.9262,
+        "pagesWithRegions": 3279,
+        "coverage": 0.7783,
+        "loss": 5.29116
+      },
+      "phase": "descent",
+      "seconds": 71.41,
+      "gates": []
+    },
+    {
+      "n": 30,
+      "loss": 5.275139,
+      "profile_hash": "6e333c73f512",
+      "changed": {
+        "FOOTER_BAND": 32.0,
+        "CAPTION_SIDE": 4.0,
+        "PAD": 0.0,
+        "BRIDGE": 32.666667
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12467,
+        "cuts": 706,
+        "cutPerRegion": 0.0566,
+        "overlaps": 1,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 678,
+        "matchRate": 0.9262,
+        "pagesWithRegions": 3279,
+        "coverage": 0.7783,
+        "loss": 5.275139
+      },
+      "phase": "descent",
+      "seconds": 71.64,
+      "gates": []
+    },
+    {
+      "n": 31,
+      "loss": 5.275139,
+      "profile_hash": "3c49d190f4cc",
+      "changed": {
+        "FOOTER_BAND": 32.0,
+        "CAPTION_SIDE": 4.0,
+        "PAD": 0.0,
+        "BRIDGE": 40.333333
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12467,
+        "cuts": 706,
+        "cutPerRegion": 0.0566,
+        "overlaps": 1,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 678,
+        "matchRate": 0.9262,
+        "pagesWithRegions": 3279,
+        "coverage": 0.7783,
+        "loss": 5.275139
+      },
+      "phase": "descent",
+      "seconds": 71.19,
+      "gates": []
+    },
+    {
+      "n": 32,
+      "loss": 5.27168,
+      "profile_hash": "d96c34142f56",
+      "changed": {
+        "FOOTER_BAND": 32.0,
+        "CAPTION_SIDE": 4.0,
+        "PAD": 0.0,
+        "BRIDGE": 48.0
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12466,
+        "cuts": 707,
+        "cutPerRegion": 0.0567,
+        "overlaps": 1,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 678,
+        "matchRate": 0.9262,
+        "pagesWithRegions": 3279,
+        "coverage": 0.7783,
+        "loss": 5.27168
+      },
+      "phase": "descent",
+      "seconds": 71.67,
+      "gates": []
+    },
+    {
+      "n": 33,
+      "loss": 5.277737,
+      "profile_hash": "9a98f9740587",
+      "changed": {
+        "FOOTER_BAND": 32.0,
+        "CAPTION_SIDE": 4.0,
+        "PAD": 0.0,
+        "BRIDGE": 5.833333
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12470,
+        "cuts": 705,
+        "cutPerRegion": 0.0565,
+        "overlaps": 1,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 678,
+        "matchRate": 0.9262,
+        "pagesWithRegions": 3279,
+        "coverage": 0.7783,
+        "loss": 5.277737
+      },
+      "phase": "descent",
+      "seconds": 71.28,
+      "gates": []
+    },
+    {
+      "n": 34,
+      "loss": 5.26685,
+      "profile_hash": "6d52bb1df3a0",
+      "changed": {
+        "FOOTER_BAND": 32.0,
+        "FIGURE_AREA": 100.0,
+        "CAPTION_SIDE": 4.0,
+        "PAD": 0.0,
+        "BRIDGE": 2.0
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12470,
+        "cuts": 699,
+        "cutPerRegion": 0.0561,
+        "overlaps": 1,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 678,
+        "matchRate": 0.9262,
+        "pagesWithRegions": 3279,
+        "coverage": 0.7783,
+        "loss": 5.26685
+      },
+      "phase": "descent",
+      "seconds": 71.16,
+      "gates": []
+    },
+    {
+      "n": 35,
+      "loss": 5.288027,
+      "profile_hash": "a0bef9ce9a01",
+      "changed": {
+        "FOOTER_BAND": 32.0,
+        "FIGURE_AREA": 750.0,
+        "CAPTION_SIDE": 4.0,
+        "PAD": 0.0,
+        "BRIDGE": 2.0
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12469,
+        "cuts": 701,
+        "cutPerRegion": 0.0562,
+        "overlaps": 1,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 678,
+        "matchRate": 0.9262,
+        "pagesWithRegions": 3279,
+        "coverage": 0.7783,
+        "loss": 5.288027
+      },
+      "phase": "descent",
+      "seconds": 71.88,
+      "gates": []
+    },
+    {
+      "n": 36,
+      "loss": 5.260827,
+      "profile_hash": "db3cca03d9b4",
+      "changed": {
+        "FOOTER_BAND": 32.0,
+        "FIGURE_AREA": 1400.0,
+        "CAPTION_SIDE": 4.0,
+        "PAD": 0.0,
+        "BRIDGE": 2.0
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12468,
+        "cuts": 700,
+        "cutPerRegion": 0.0561,
+        "overlaps": 1,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 678,
+        "matchRate": 0.9262,
+        "pagesWithRegions": 3280,
+        "coverage": 0.7785,
+        "loss": 5.260827
+      },
+      "phase": "descent",
+      "seconds": 72.07,
+      "gates": []
+    },
+    {
+      "n": 37,
+      "loss": 5.11206,
+      "profile_hash": "db2306dcd426",
+      "changed": {
+        "FOOTER_BAND": 32.0,
+        "FIGURE_AREA": 2050.0,
+        "CAPTION_SIDE": 4.0,
+        "PAD": 0.0,
+        "BRIDGE": 2.0
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12470,
+        "cuts": 688,
+        "cutPerRegion": 0.0552,
+        "overlaps": 1,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 680,
+        "matchRate": 0.929,
+        "pagesWithRegions": 3280,
+        "coverage": 0.7785,
+        "loss": 5.11206
+      },
+      "phase": "descent",
+      "seconds": 71.77,
+      "gates": []
+    },
+    {
+      "n": 38,
+      "loss": 5.108607,
+      "profile_hash": "d5e8f314b07d",
+      "changed": {
+        "FOOTER_BAND": 32.0,
+        "FIGURE_AREA": 2700.0,
+        "CAPTION_SIDE": 4.0,
+        "PAD": 0.0,
+        "BRIDGE": 2.0
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12472,
+        "cuts": 688,
+        "cutPerRegion": 0.0552,
+        "overlaps": 1,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 679,
+        "matchRate": 0.9276,
+        "pagesWithRegions": 3280,
+        "coverage": 0.7785,
+        "loss": 5.108607
+      },
+      "phase": "descent",
+      "seconds": 71.53,
+      "gates": []
+    },
+    {
+      "n": 39,
+      "loss": 4.985311,
+      "profile_hash": "790f1e355bc8",
+      "changed": {
+        "FOOTER_BAND": 32.0,
+        "FIGURE_AREA": 3350.0,
+        "CAPTION_SIDE": 4.0,
+        "PAD": 0.0,
+        "BRIDGE": 2.0
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12473,
+        "cuts": 674,
+        "cutPerRegion": 0.054,
+        "overlaps": 1,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 679,
+        "matchRate": 0.9276,
+        "pagesWithRegions": 3280,
+        "coverage": 0.7785,
+        "loss": 4.985311
+      },
+      "phase": "descent",
+      "seconds": 71.25,
+      "gates": []
+    },
+    {
+      "n": 40,
+      "loss": 4.985311,
+      "profile_hash": "ebacdf888bb3",
+      "changed": {
+        "FOOTER_BAND": 32.0,
+        "FIGURE_AREA": 4000.0,
+        "CAPTION_SIDE": 4.0,
+        "PAD": 0.0,
+        "BRIDGE": 2.0
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12473,
+        "cuts": 674,
+        "cutPerRegion": 0.054,
+        "overlaps": 1,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 679,
+        "matchRate": 0.9276,
+        "pagesWithRegions": 3280,
+        "coverage": 0.7785,
+        "loss": 4.985311
+      },
+      "phase": "descent",
+      "seconds": 71.2,
+      "gates": []
+    },
+    {
+      "n": 41,
+      "loss": 5.015559,
+      "profile_hash": "0e1dcea08c66",
+      "changed": {
+        "FOOTER_BAND": 32.0,
+        "FIGURE_AREA": 3025.0,
+        "CAPTION_SIDE": 4.0,
+        "PAD": 0.0,
+        "BRIDGE": 2.0
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12473,
+        "cuts": 677,
+        "cutPerRegion": 0.0543,
+        "overlaps": 1,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 679,
+        "matchRate": 0.9276,
+        "pagesWithRegions": 3280,
+        "coverage": 0.7785,
+        "loss": 5.015559
+      },
+      "phase": "descent",
+      "seconds": 71.4,
+      "gates": []
+    },
+    {
+      "n": 42,
+      "loss": 4.985311,
+      "profile_hash": "506978f5875a",
+      "changed": {
+        "FOOTER_BAND": 32.0,
+        "FIGURE_AREA": 3675.0,
+        "CAPTION_SIDE": 4.0,
+        "PAD": 0.0,
+        "BRIDGE": 2.0
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12473,
+        "cuts": 674,
+        "cutPerRegion": 0.054,
+        "overlaps": 1,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 679,
+        "matchRate": 0.9276,
+        "pagesWithRegions": 3280,
+        "coverage": 0.7785,
+        "loss": 4.985311
+      },
+      "phase": "descent",
+      "seconds": 71.22,
+      "gates": []
+    },
+    {
+      "n": 43,
+      "loss": 4.985311,
+      "profile_hash": "fc67b5281580",
+      "changed": {
+        "FOOTER_BAND": 32.0,
+        "BODY_LINE_CHARS": 6,
+        "FIGURE_AREA": 3350.0,
+        "CAPTION_SIDE": 4.0,
+        "PAD": 0.0,
+        "BRIDGE": 2.0
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12473,
+        "cuts": 674,
+        "cutPerRegion": 0.054,
+        "overlaps": 1,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 679,
+        "matchRate": 0.9276,
+        "pagesWithRegions": 3280,
+        "coverage": 0.7785,
+        "loss": 4.985311
+      },
+      "phase": "descent",
+      "seconds": 71.26,
+      "gates": []
+    },
+    {
+      "n": 44,
+      "loss": 4.985311,
+      "profile_hash": "d088bcc98aaf",
+      "changed": {
+        "FOOTER_BAND": 32.0,
+        "BODY_LINE_CHARS": 15,
+        "FIGURE_AREA": 3350.0,
+        "CAPTION_SIDE": 4.0,
+        "PAD": 0.0,
+        "BRIDGE": 2.0
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12473,
+        "cuts": 674,
+        "cutPerRegion": 0.054,
+        "overlaps": 1,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 679,
+        "matchRate": 0.9276,
+        "pagesWithRegions": 3280,
+        "coverage": 0.7785,
+        "loss": 4.985311
+      },
+      "phase": "descent",
+      "seconds": 71.93,
+      "gates": []
+    },
+    {
+      "n": 45,
+      "loss": 4.983113,
+      "profile_hash": "2803edf46e92",
+      "changed": {
+        "FOOTER_BAND": 32.0,
+        "BODY_LINE_CHARS": 24,
+        "FIGURE_AREA": 3350.0,
+        "CAPTION_SIDE": 4.0,
+        "PAD": 0.0,
+        "BRIDGE": 2.0
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12455,
+        "cuts": 672,
+        "cutPerRegion": 0.054,
+        "overlaps": 1,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 679,
+        "matchRate": 0.9276,
+        "pagesWithRegions": 3280,
+        "coverage": 0.7785,
+        "loss": 4.983113
+      },
+      "phase": "descent",
+      "seconds": 74.75,
+      "gates": []
+    },
+    {
+      "n": 46,
+      "loss": 5.008624,
+      "profile_hash": "cb044ff2a0b8",
+      "changed": {
+        "FOOTER_BAND": 32.0,
+        "BODY_LINE_CHARS": 33,
+        "FIGURE_AREA": 3350.0,
+        "CAPTION_SIDE": 4.0,
+        "PAD": 0.0,
+        "BRIDGE": 2.0
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12414,
+        "cuts": 669,
+        "cutPerRegion": 0.0539,
+        "overlaps": 1,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 679,
+        "matchRate": 0.9276,
+        "pagesWithRegions": 3280,
+        "coverage": 0.7785,
+        "loss": 5.008624
+      },
+      "phase": "descent",
+      "seconds": 75.19,
+      "gates": []
+    },
+    {
+      "n": 47,
+      "loss": 4.978056,
+      "profile_hash": "1d24cb36b472",
+      "changed": {
+        "FOOTER_BAND": 32.0,
+        "BODY_LINE_CHARS": 42,
+        "FIGURE_AREA": 3350.0,
+        "CAPTION_SIDE": 4.0,
+        "PAD": 0.0,
+        "BRIDGE": 2.0
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12399,
+        "cuts": 665,
+        "cutPerRegion": 0.0536,
+        "overlaps": 1,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 679,
+        "matchRate": 0.9276,
+        "pagesWithRegions": 3280,
+        "coverage": 0.7785,
+        "loss": 4.978056
+      },
+      "phase": "descent",
+      "seconds": 73.99,
+      "gates": []
+    },
+    {
+      "n": 48,
+      "loss": 4.972032,
+      "profile_hash": "4137ece74df7",
+      "changed": {
+        "FOOTER_BAND": 32.0,
+        "BODY_LINE_CHARS": 51,
+        "FIGURE_AREA": 3350.0,
+        "CAPTION_SIDE": 4.0,
+        "PAD": 0.0,
+        "BRIDGE": 2.0
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12379,
+        "cuts": 663,
+        "cutPerRegion": 0.0536,
+        "overlaps": 1,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 679,
+        "matchRate": 0.9276,
+        "pagesWithRegions": 3280,
+        "coverage": 0.7785,
+        "loss": 4.972032
+      },
+      "phase": "descent",
+      "seconds": 73.2,
+      "gates": []
+    }
+  ]
+}

@@ -1,1 +1,24 @@
 Baseline on 18 training books (4213 pages, 114 chunks, 3 workers)
+  baseline   loss +5.86897 | cuts 782 (0.0616/region) | overlaps 0 | tall 0 | slivers 0 | match 0.9262 | coverage 0.7788 | 12685 regions
+  one evaluation: 45.59s -> about 314 candidates in the budget
+
+Knob ranking from tools/hotspot_extraction/train/runs/phase2-screen.json
+
+  65 of 74 knobs moved the loss; 9 are inert on this corpus
+  strongest: MIN_CELL, RULE_MIN, RULE_ROW, RETREAT_COST, PANEL_LINES, COLUMN_CHANNEL, RULE_CLUSTER, PANEL_MIN_H, COLUMN_CLEAR, PANEL_MIN_W
+
+Coordinate descent over the movers, in a shuffled order (seed 7): FOOTER_BAND, CAPTION_SIDE, PAD, BRIDGE, FIGURE_AREA, BODY_LINE_CHARS, FIGURE_SPAN, BAND_REACH_ABOVE, ...
+  pass 1  FOOTER_BAND 44.0 -> 0.0   loss 5.81260
+  pass 1  FOOTER_BAND 0.0 -> 16.0   loss 5.65944
+  pass 1  FOOTER_BAND 16.0 -> 32.0   loss 5.63538
+  pass 1  CAPTION_SIDE 24.0 -> 4.0   loss 5.63447
+  pass 1  PAD 8.0 -> 0.0   loss 5.27887
+  pass 1  BRIDGE 12.0 -> 2.0   loss 5.26782
+  pass 1  FIGURE_AREA 600.0 -> 100.0   loss 5.26685
+  pass 1  FIGURE_AREA 100.0 -> 1400.0   loss 5.26083
+  pass 1  FIGURE_AREA 1400.0 -> 2050.0   loss 5.11206
+  pass 1  FIGURE_AREA 2050.0 -> 2700.0   loss 5.10861
+  pass 1  FIGURE_AREA 2700.0 -> 3350.0   loss 4.98531
+  pass 1  BODY_LINE_CHARS 20 -> 24   loss 4.98311
+  pass 1  BODY_LINE_CHARS 24 -> 42   loss 4.97806
+  pass 1  BODY_LINE_CHARS 42 -> 51   loss 4.97203
