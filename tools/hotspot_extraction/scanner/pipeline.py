@@ -15,6 +15,19 @@ two sequences drift, the loop optimises a detector that does not ship.
 Nothing here decides anything. Every judgement still lives in `layout`,
 `markers`, `prompts`, `figures`, `regions` and `anchors` -- this is the order
 they run in, and the one place it is written down.
+
+**The blocks a page is scored against are measured under the defaults.** The
+panels and answer spaces in the diagnostics are the scorer's ruler: a region
+that slices one is a cut. They come out of `detect_panels` and
+`detect_solution_spaces`, which read `RULE_MIN`, `PANEL_MIN_H` and the rest --
+knobs a profile moves. Measured under the candidate, a profile that simply
+detected fewer answer spaces would erase answer-space cuts without moving a
+single region, and a fitter would find that before it found anything real. So
+growth runs under whatever profile is active, and the ruler is rebuilt under
+`DEFAULTS` -- layout and markers included, since the panel detector reads the
+markers and the body spans are cut to the layout's content box. When the
+active profile is the defaults the two are the same computation, and the first
+answer is reused.
 """
 
 from dataclasses import dataclass, field
@@ -23,6 +36,7 @@ from typing import Any, Dict, List, Optional, Sequence, Tuple
 from .anchors import PublisherOge, find_unplaced_anchors, reconcile_anchors
 from .layout import PageLayout, detect_layout
 from .primitives import PagePrimitives
+from .profile import DEFAULTS, active_profile, profile_applied
 from .prompts import detect_activity_markers
 from .regions import (
     ActivityRegion,
@@ -31,6 +45,22 @@ from .regions import (
     detect_solution_spaces,
     grow_activity_regions,
 )
+
+Rect = Tuple[float, float, float, float]
+
+
+@dataclass
+class Blocks:
+    """
+    The drawn geometry one sheet's regions are judged against.
+
+    Always measured under `DEFAULTS` (see the module docstring), so two
+    profiles scored on the same sheet are scored against the same blocks.
+    """
+    content_box: Rect
+    markers: List[Rect]
+    panels: List[Rect]
+    solutions: List[Rect]
 
 
 @dataclass
@@ -45,21 +75,29 @@ class PageResult:
     layout: PageLayout
     markers: List[Any]
     activities: List[ActivityRegion]
-    panels: List[Tuple[float, float, float, float]]
-    solutions: List[Tuple[float, float, float, float]]
+    blocks: Blocks
     anchor_ids: List[str] = field(default_factory=list)
+
+    @property
+    def panels(self) -> List[Rect]:
+        return self.blocks.panels
+
+    @property
+    def solutions(self) -> List[Rect]:
+        return self.blocks.solutions
 
     def diagnostics(self, width: float, height: float, *, as_lists: bool = False) -> Dict[str, Any]:
         """The sidecar entry for this sheet, in the shape `serialize_diagnostics` takes."""
         conv = list if as_lists else tuple
+        b = self.blocks
         return {
             "pageWidth": width,
             "pageHeight": height,
-            "contentTop": self.layout.content_box[3],
-            "contentBottom": self.layout.content_box[1],
-            "panels": [conv(r) for r in self.panels],
-            "solutions": [conv(r) for r in self.solutions],
-            "markers": [conv(m.span.bbox) for m in self.markers],
+            "contentTop": b.content_box[3],
+            "contentBottom": b.content_box[1],
+            "panels": [conv(r) for r in b.panels],
+            "solutions": [conv(r) for r in b.solutions],
+            "markers": [conv(r) for r in b.markers],
         }
 
 
@@ -125,19 +163,42 @@ def detect_page(
                 trace=trace,
             )
 
-    body = body_spans_of(prim, layout)
-    panels = detect_panels(prim.drawings, body, page_h=prim.height, markers=markers)
-    raw_solutions = detect_solution_spaces(prim.drawings, body, page_h=prim.height)
-    solutions = [
-        tuple(s["rect"]) if isinstance(s, dict) else tuple(s)
-        for s in raw_solutions
-    ]
-
     return PageResult(
         layout=layout,
         markers=markers,
         activities=activities,
-        panels=[tuple(p) for p in panels],
-        solutions=solutions,
+        blocks=ruler_blocks(prim, layout, markers),
         anchor_ids=anchor_ids,
     )
+
+
+def detect_blocks(prim: PagePrimitives, layout: PageLayout, markers: Sequence[Any]) -> Blocks:
+    """The panels and answer spaces on one sheet, under whatever profile is active."""
+    body = body_spans_of(prim, layout)
+    panels = detect_panels(prim.drawings, body, page_h=prim.height, markers=markers)
+    raw_solutions = detect_solution_spaces(prim.drawings, body, page_h=prim.height)
+    return Blocks(
+        content_box=tuple(layout.content_box),
+        markers=[tuple(m.span.bbox) for m in markers],
+        panels=[tuple(p) for p in panels],
+        solutions=[
+            tuple(s["rect"]) if isinstance(s, dict) else tuple(s)
+            for s in raw_solutions
+        ],
+    )
+
+
+def ruler_blocks(prim: PagePrimitives, layout: PageLayout, markers: Sequence[Any]) -> Blocks:
+    """
+    The blocks this sheet is scored against: `detect_blocks` under `DEFAULTS`.
+
+    `layout` and `markers` are the ones detection just produced; they are
+    reused when the active profile is the defaults and re-derived under the
+    defaults otherwise, because the panel detector reads both.
+    """
+    if active_profile() == DEFAULTS:
+        return detect_blocks(prim, layout, markers)
+    with profile_applied(DEFAULTS):
+        ruler_layout = detect_layout(prim)
+        ruler_markers = detect_activity_markers(prim, layout=ruler_layout, trace=GrowthTrace())
+        return detect_blocks(prim, ruler_layout, ruler_markers)

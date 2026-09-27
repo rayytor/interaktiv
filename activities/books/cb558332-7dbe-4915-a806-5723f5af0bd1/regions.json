@@ -2,7 +2,8 @@
   "version": 2,
   "bookId": "cb558332-7dbe-4915-a806-5723f5af0bd1",
   "fingerprint": "391850481-3d688ddcfaf262d513725ddcf93c427d",
-  "builtAt": "2026-09-22T04:40:04.586Z",
+  "profile": "27b80aacc68e",
+  "builtAt": "2026-09-27T05:36:14.280Z",
   "pageCount": 273,
   "calibration": {
     "enabled": true,

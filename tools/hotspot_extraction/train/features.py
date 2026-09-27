@@ -52,7 +52,9 @@ FEATURE_NAMES: Tuple[str, ...] = (
     "gap_above",            # to the region above, in body-size multiples
     "gap_below",
     "regions_on_page",
-    "is_anchored",
+    # No `is_anchored`: a region grown or bound from a manifest entry is
+    # matched to it by construction, so the flag was the label restated. Such
+    # regions are left out of the dataset altogether (see `learn.py`).
     "column_index",
 )
 
@@ -177,6 +179,5 @@ def features_for(
         _squash(max(0.0, gap_above) / body, 4.0) if body else 0.0,
         _squash(max(0.0, gap_below) / body, 4.0) if body else 0.0,
         _squash(float(len(ctx.region_rects)), 6.0),
-        1.0 if activity.get("anchored") else 0.0,
         _squash(float(activity.get("column") or 0), 2.0),
     ]

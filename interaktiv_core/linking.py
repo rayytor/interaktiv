@@ -181,6 +181,35 @@ def oge_view(
     )
 
 
+def icon_reach(region: RegionView, oge: OgeView) -> float:
+    """
+    How far across the sheet the icon sits from the region, in % of its width:
+    nothing while it is over the region's own width, and the shortfall once it
+    is past either edge.
+    """
+    if oge.left_pct is None:
+        return 0.0
+    if oge.left_pct < region.left_pct:
+        return region.left_pct - oge.left_pct
+    if oge.left_pct > region.right_pct:
+        return oge.left_pct - region.right_pct
+    return 0.0
+
+
+def pair_cost(region: RegionView, oge: OgeView) -> Optional[float]:
+    """
+    The geometric cost `link_oges` settles pairs by, before any gate is applied.
+
+    None when the entry has no position to measure from. Public because the
+    learned ranker is judged against it: the detector's own choice between
+    candidates is the cheapest of these, and a model has to beat that, not a
+    straw man.
+    """
+    if oge.top_pct is None:
+        return None
+    return abs(oge.top_pct - region.top_pct) + icon_reach(region, oge) * REACH_WEIGHT
+
+
 def link_oges(
     regions: Sequence[RegionView],
     oges: Sequence[OgeView],
@@ -246,15 +275,7 @@ def link_oges(
             if oge.label and region.label and oge.label != region.label:
                 note(oge, "label-mismatch")
                 continue
-            # How far across the sheet the icon sits from the region: nothing
-            # while it is over the region's own width, and the shortfall once it
-            # is past either edge.
-            reach = 0.0
-            if oge.left_pct is not None:
-                if oge.left_pct < region.left_pct:
-                    reach = region.left_pct - oge.left_pct
-                elif oge.left_pct > region.right_pct:
-                    reach = oge.left_pct - region.right_pct
+            reach = icon_reach(region, oge)
 
             both_labelled = bool(oge.label and region.label)
             if reach > ICON_REACH and not both_labelled:
@@ -277,7 +298,7 @@ def link_oges(
 
             if explain is not None:
                 explain[oge.id]["candidates"] += 1
-            pairs.append((drift + reach * REACH_WEIGHT, oi, ri))
+            pairs.append((pair_cost(region, oge), oi, ri))
 
     # One region to one entry: the closest pair is settled first, and neither of
     # its two halves is offered again. Two activities that share a letter are two

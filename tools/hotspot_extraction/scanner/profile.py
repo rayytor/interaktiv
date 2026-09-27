@@ -38,12 +38,13 @@ without moving a single edge. `RULER` holds those three at their defaults, for
 `score.py` alone, and `apply_profile` never touches it.
 """
 
+from contextlib import contextmanager
 from dataclasses import dataclass, field, fields, make_dataclass
 import hashlib
 import importlib
 import json
 import os
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Dict, Iterator, List, Optional, Tuple
 
 PROFILE_VERSION = 1
 
@@ -457,6 +458,23 @@ def apply_profile(p: "Profile") -> "Profile":
 
 def active_profile() -> "Profile":
     return _ACTIVE
+
+
+@contextmanager
+def profile_applied(p: "Profile") -> Iterator["Profile"]:
+    """
+    Run a block of code under `p`, then put back whatever was active before.
+
+    The one place anything restores a profile. `pipeline.detect_page` needs it
+    to build the scorer's blocks under the defaults in the middle of a page
+    detected under a candidate, and a restore that could be skipped by an
+    exception would leave the rest of the chunk running the wrong detector.
+    """
+    previous = apply_profile(p)
+    try:
+        yield p
+    finally:
+        apply_profile(previous)
 
 
 def source_values() -> Dict[str, Dict[str, float]]:
