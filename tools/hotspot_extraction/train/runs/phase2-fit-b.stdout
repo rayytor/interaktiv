@@ -22,3 +22,7 @@ Coordinate descent over the movers, in a shuffled order (seed 7): FOOTER_BAND, C
   pass 1  BODY_LINE_CHARS 20 -> 24   loss 4.98311
   pass 1  BODY_LINE_CHARS 24 -> 42   loss 4.97806
   pass 1  BODY_LINE_CHARS 42 -> 51   loss 4.97203
+  pass 1  FIGURE_SPAN 30.0 -> 36.0   loss 4.96539
+  pass 1  FIGURE_SPAN 36.0 -> 51.0   loss 4.90986
+  pass 1  BAND_REACH_ABOVE 24.0 -> 2.0   loss 4.90966
+  pass 1  FIGURE_SHARE 0.6 -> 0.625   loss 4.90701
