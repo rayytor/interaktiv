@@ -26,3 +26,12 @@ Coordinate descent over the movers, in a shuffled order (seed 7): FOOTER_BAND, C
   pass 1  FIGURE_SPAN 36.0 -> 51.0   loss 4.90986
   pass 1  BAND_REACH_ABOVE 24.0 -> 2.0   loss 4.90966
   pass 1  FIGURE_SHARE 0.6 -> 0.625   loss 4.90701
+  pass 1  RETREAT_SHARE 0.75 -> 0.841667   loss 4.74043
+  pass 1  HEADING_RATIO__regions 1.15 -> 1.116667   loss 4.72826
+  pass 1  GRAPHIC_HELD 0.7 -> 0.625   loss 4.71774
+  pass 1  HOTSPOT_GAP 3.0 -> 5.333333   loss 4.69354
+  pass 1  HOTSPOT_GAP 5.333333 -> 8.0   loss 4.64184
+  pass 1  HOTSPOT_GAP 8.0 -> 10.666667   loss 4.60075
+  pass 1  HOTSPOT_GAP 10.666667 -> 12.0   loss 4.58084
+  pass 1  FLOW_BREAK 90.0 -> 20.0   loss 4.10602
+  pass 1  FLOW_BREAK 20.0 -> 38.333333   loss 4.03379
