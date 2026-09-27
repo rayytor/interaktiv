@@ -1,0 +1,12 @@
+Baseline on 18 training books (4213 pages, 114 chunks, 3 workers)
+  baseline   loss +5.86897 | cuts 782 (0.0616/region) | overlaps 0 | tall 0 | slivers 0 | match 0.9262 | coverage 0.7788 | 12685 regions
+  one evaluation: 47.04s -> about 305 candidates in the budget
+
+Knob ranking from tools/hotspot_extraction/train/runs/phase2-screen.json
+
+  65 of 74 knobs moved the loss; 9 are inert on this corpus
+  strongest: MIN_CELL, RULE_MIN, RULE_ROW, RETREAT_COST, PANEL_LINES, COLUMN_CHANNEL, RULE_CLUSTER, PANEL_MIN_H, COLUMN_CLEAR, PANEL_MIN_W
+
+Coordinate descent over the movers:
+  pass 1  RETREAT_COST 0.5 -> 0.05   loss 2.75586
+  pass 1  PANEL_LINES 2 -> 1   loss 2.70973
