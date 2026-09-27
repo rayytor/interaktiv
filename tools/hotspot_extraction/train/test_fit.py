@@ -104,9 +104,21 @@ class TestGates:
         after = obj.BookScore("a", 100, 85, 10, 8, 0, 0, 0, 0, 0, 56)
         assert self._ev(after).gates(self._ev(before)) == []
 
-    def test_gains_never_fail(self):
+    def test_coverage_gains_never_fail(self):
         before = obj.BookScore("a", 100, 50, 0, 0, 0, 0, 0, 0, 0, 40)
-        after = obj.BookScore("a", 100, 90, 0, 0, 0, 0, 0, 0, 0, 70)
+        after = obj.BookScore("a", 100, 58, 0, 0, 0, 0, 0, 0, 0, 70)
+        assert self._ev(after).gates(self._ev(before)) == []
+
+    def test_a_book_whose_regions_multiply_fails(self):
+        """Cuts are per region: more regions dilute the rate without moving an edge."""
+        before = obj.BookScore("a", 100, 174, 0, 0, 0, 0, 0, 0, 0, 40)
+        after = obj.BookScore("a", 100, 418, 0, 0, 0, 0, 0, 0, 0, 41)
+        failures = self._ev(after).gates(self._ev(before))
+        assert [f["gate"] for f in failures] == ["regions-gained"]
+
+    def test_a_small_book_may_gain_a_few_regions(self):
+        before = obj.BookScore("a", 100, 5, 0, 0, 0, 0, 0, 0, 0, 5)
+        after = obj.BookScore("a", 100, 12, 0, 0, 0, 0, 0, 0, 0, 9)
         assert self._ev(after).gates(self._ev(before)) == []
 
     def test_a_book_the_candidate_did_not_score_fails(self):
@@ -181,6 +193,36 @@ class TestChunkPlan:
         ]
         in_pieces = obj.book_score_of(obj.rows_from_chunks(chunk_results)[0])
         assert in_pieces == whole
+
+
+    @pytest.mark.skipif(not cache_mod.cached_books(), reason="no cache built")
+    def test_the_pool_outlives_its_workers(self):
+        """
+        Two evaluations, each needing more chunks than the workers may serve.
+
+        With `max_tasks_per_child`, CPython's executor stops replacing retired
+        workers (gh-115634) and `map` waits forever. Run in a child with a
+        clock, so the old failure is a failed test rather than a hung suite.
+        """
+        import subprocess
+        book = _a_cached_book()
+        code = (
+            "import sys; sys.path.insert(0, %r)\n"
+            "from tools.hotspot_extraction.train import objective as obj\n"
+            "from tools.hotspot_extraction.scanner.profile import DEFAULTS\n"
+            "if __name__ == '__main__':\n"
+            "    with obj.ChunkPool(workers=2, chunk_pages=13, tasks_per_child=2) as pool:\n"
+            "        a = pool.evaluate(DEFAULTS, [%r])\n"
+            "        b = pool.evaluate(DEFAULTS, [%r])\n"
+            "    whole = obj.book_score_of(obj.score_book(%r))\n"
+            "    assert a.books == b.books == [whole], (a.books, b.books, whole)\n"
+            "    print('ok')\n"
+        ) % (PROJECT_ROOT, book, book, book)
+        done = subprocess.run(
+            [sys.executable, "-c", code], capture_output=True, text=True, timeout=180
+        )
+        assert done.returncode == 0, done.stderr[-2000:]
+        assert done.stdout.strip().endswith("ok")
 
 
 # Knobs the block detectors read. Moved far enough that, measured under the
@@ -279,3 +321,110 @@ class TestBudget:
     def test_a_spent_clock_stops_the_run(self):
         b = fit_mod.Budget(seconds=-1)
         assert b.spent()
+
+
+class TestScreenReuse:
+    def _log(self, tmp_path, baseline, spans):
+        import json
+        path = tmp_path / "screen.json"
+        path.write_text(json.dumps({
+            "baselineLoss": baseline,
+            "screen": [{"knob": k, "span": v} for k, v in spans.items()],
+        }))
+        return fit_mod.read_screen(str(path))
+
+    def test_the_ranking_is_the_screens_own(self, tmp_path):
+        spans = {k.key: 0.0 for k in TUNABLE}
+        spans[TUNABLE[3].key] = 0.5
+        spans[TUNABLE[1].key] = 2.0
+        spans[TUNABLE[7].key] = 0.5
+        movers = fit_mod.screened_movers(self._log(tmp_path, 5.0, spans), 5.0)
+        assert [k.key for k in movers] == [TUNABLE[1].key, TUNABLE[3].key, TUNABLE[7].key]
+
+    def test_a_screen_from_another_start_is_refused(self, tmp_path):
+        spans = {k.key: 1.0 for k in TUNABLE}
+        with pytest.raises(SystemExit):
+            fit_mod.screened_movers(self._log(tmp_path, 5.0, spans), 4.0)
+
+    def test_a_screen_that_ran_out_of_time_is_refused(self, tmp_path):
+        spans = {k.key: 1.0 for k in TUNABLE[:-1]}
+        with pytest.raises(SystemExit):
+            fit_mod.screened_movers(self._log(tmp_path, 5.0, spans), 5.0)
+
+
+class TestFinalReport:
+    def _book(self, book_id, matched, oges=10):
+        return obj.BookScore(
+            book_id=book_id, pages=10, regions=10, oges=oges, matched=matched,
+            panels_cut=0, solutions_cut=0, overlaps=0, tall=0, slivers=0,
+            pages_with_regions=8,
+        )
+
+    def test_per_book_match_is_reported(self):
+        before = [self._book("aaaaaaaa", 9), self._book("bbbbbbbb", 0, oges=0)]
+        after = [self._book("aaaaaaaa", 7), self._book("bbbbbbbb", 0, oges=0)]
+        text = fit_mod._compare({}, {}, before, after)
+        assert "0.900 -> 0.700 (-0.200)" in text
+        assert "no manifest" in text
+
+
+class TestScreenResume:
+    class _Pool:
+        def __init__(self):
+            self.calls = 0
+
+        def evaluate(self, profile, books, weights=None):
+            self.calls += 1
+            return obj.Evaluation(profile_hash="x", loss=4.0)
+
+    def test_a_resumed_screen_probes_only_the_rest(self):
+        run = fit_mod.Run()
+        run.baseline_loss = 5.0
+        run.screen = [{"knob": k.key, "span": 0.0} for k in TUNABLE[:-2]]
+        run.screen[0]["span"] = 3.0
+        pool = self._Pool()
+        movers = fit_mod.screen(pool, DEFAULTS, [], run, fit_mod.Budget(), verbose=False)
+        assert 1 <= pool.calls <= 4
+        assert {row["knob"] for row in run.screen} == {k.key for k in TUNABLE}
+        assert movers[0].key == TUNABLE[0].key
+        assert {k.key for k in movers[1:]} <= {k.key for k in TUNABLE[-2:]}
+
+    def test_the_log_is_read_before_the_run_overwrites_it(self, tmp_path):
+        import json
+        path = tmp_path / "screen.json"
+        path.write_text(json.dumps({
+            "baselineLoss": 5.0, "evaluations": 2, "trials": [],
+            "screen": [{"knob": k.key, "span": 0.0} for k in TUNABLE[:-2]],
+        }))
+        body = fit_mod.read_screen(str(path))
+        run = fit_mod.Run(log_path=str(path))
+        run.baseline_loss = 5.0
+        run.save()                      # what `main` does before screening
+        fit_mod.resume_screen(body, 5.0, run)
+        assert len(run.screen) == len(TUNABLE) - 2
+
+
+class TestTheFitKeepsTheGates:
+    def _ev(self, loss, regions):
+        ev = obj.Evaluation(profile_hash="x", loss=loss)
+        ev.books = [obj.BookScore(
+            book_id="aaaaaaaa", pages=10, regions=regions, oges=0, matched=0,
+            panels_cut=0, solutions_cut=0, overlaps=0, tall=0, slivers=0,
+            pages_with_regions=8,
+        )]
+        return ev
+
+    def test_a_better_loss_that_fails_a_gate_is_not_kept(self):
+        run = fit_mod.Run()
+        run.best_loss = 5.0
+        run.gate_against = self._ev(5.0, 100)
+        assert not run.note("descent", DEFAULTS, self._ev(1.0, 70), 0.0)
+        assert run.best_loss == 5.0
+        assert run.trials[-1].gates and run.trials[-1].gates[0]["gate"] == "regions"
+        assert run.note("descent", DEFAULTS, self._ev(4.0, 90), 0.0)
+        assert run.best_loss == 4.0
+
+    def test_an_infeasible_candidate_ranks_below_every_feasible_one(self):
+        run = fit_mod.Run()
+        run.gate_against = self._ev(5.0, 100)
+        assert run.fitness(self._ev(-10.0, 50)) > run.fitness(self._ev(30.0, 100))
