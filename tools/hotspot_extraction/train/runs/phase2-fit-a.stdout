@@ -10,3 +10,9 @@ Knob ranking from tools/hotspot_extraction/train/runs/phase2-screen.json
 Coordinate descent over the movers:
   pass 1  RETREAT_COST 0.5 -> 0.05   loss 2.75586
   pass 1  PANEL_LINES 2 -> 1   loss 2.70973
+  pass 1  PANEL_MIN_H 30.0 -> 25.0   loss 2.60222
+  pass 1  COLUMN_CLEAR 0.5 -> 0.45   loss 2.59599
+  pass 1  COLUMN_CLEAR 0.45 -> 0.575   loss 2.48524
+  pass 1  PANEL_MIN_W 60.0 -> 20.0   loss 2.47722
+  pass 1  PANEL_MIN_W 20.0 -> 46.666667   loss 2.45555
+  pass 1  FOOTER_BAND 44.0 -> 52.0   loss 2.45168

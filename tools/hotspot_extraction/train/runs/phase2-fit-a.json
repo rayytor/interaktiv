@@ -1,7 +1,7 @@
 {
   "startedAt": 1790528220.469671,
-  "elapsed": 2720.3,
-  "evaluations": 36,
+  "elapsed": 6950.4,
+  "evaluations": 93,
   "baselineLoss": 5.868967895138072,
   "baselineTotals": {
     "books": 18,
@@ -19,25 +19,29 @@
     "coverage": 0.7788,
     "loss": 5.868968
   },
-  "bestLoss": 2.709731692472264,
+  "bestLoss": 2.4516795774696942,
   "bestTotals": {
     "books": 18,
     "pages": 4213,
-    "regions": 12542,
-    "cuts": 408,
-    "cutPerRegion": 0.0325,
+    "regions": 12223,
+    "cuts": 362,
+    "cutPerRegion": 0.0296,
     "overlaps": 0,
     "tall": 0,
     "slivers": 0,
     "oges": 732,
-    "matched": 705,
-    "matchRate": 0.9631,
-    "pagesWithRegions": 3269,
-    "coverage": 0.7759,
-    "loss": 2.709732
+    "matched": 709,
+    "matchRate": 0.9686,
+    "pagesWithRegions": 3275,
+    "coverage": 0.7774,
+    "loss": 2.45168
   },
-  "bestProfileHash": "6acb96d56c24",
+  "bestProfileHash": "b932f57bedd3",
   "bestChanged": {
+    "FOOTER_BAND": 52.0,
+    "COLUMN_CLEAR": 0.575,
+    "PANEL_MIN_W": 46.666667,
+    "PANEL_MIN_H": 25.0,
     "PANEL_LINES": 1,
     "RETREAT_COST": 0.05
   },
@@ -1461,6 +1465,1840 @@
       },
       "phase": "descent",
       "seconds": 74.46,
+      "gates": []
+    },
+    {
+      "n": 37,
+      "loss": 3.299431,
+      "profile_hash": "8f9eaefb08c5",
+      "changed": {
+        "PANEL_LINES": 3,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12582,
+        "cuts": 480,
+        "cutPerRegion": 0.0381,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 700,
+        "matchRate": 0.9563,
+        "pagesWithRegions": 3269,
+        "coverage": 0.7759,
+        "loss": 3.299431
+      },
+      "phase": "descent",
+      "seconds": 75.26,
+      "gates": []
+    },
+    {
+      "n": 38,
+      "loss": 3.635356,
+      "profile_hash": "e031b2ecd9a9",
+      "changed": {
+        "PANEL_LINES": 4,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12590,
+        "cuts": 529,
+        "cutPerRegion": 0.042,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 699,
+        "matchRate": 0.9549,
+        "pagesWithRegions": 3269,
+        "coverage": 0.7759,
+        "loss": 3.635356
+      },
+      "phase": "descent",
+      "seconds": 74.33,
+      "gates": []
+    },
+    {
+      "n": 39,
+      "loss": 4.17595,
+      "profile_hash": "2cb99b01417f",
+      "changed": {
+        "PANEL_LINES": 5,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12590,
+        "cuts": 582,
+        "cutPerRegion": 0.0462,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 698,
+        "matchRate": 0.9536,
+        "pagesWithRegions": 3269,
+        "coverage": 0.7759,
+        "loss": 4.17595
+      },
+      "phase": "descent",
+      "seconds": 75.14,
+      "gates": []
+    },
+    {
+      "n": 40,
+      "loss": 4.475763,
+      "profile_hash": "d2598263c406",
+      "changed": {
+        "PANEL_LINES": 6,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12598,
+        "cuts": 619,
+        "cutPerRegion": 0.0491,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 695,
+        "matchRate": 0.9495,
+        "pagesWithRegions": 3269,
+        "coverage": 0.7759,
+        "loss": 4.475763
+      },
+      "phase": "descent",
+      "seconds": 74.21,
+      "gates": []
+    },
+    {
+      "n": 41,
+      "loss": 2.617008,
+      "profile_hash": "6a252de3e420",
+      "changed": {
+        "COLUMN_CHANNEL": 3.0,
+        "PANEL_LINES": 1,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 14443,
+        "cuts": 434,
+        "cutPerRegion": 0.03,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 705,
+        "matchRate": 0.9631,
+        "pagesWithRegions": 3294,
+        "coverage": 0.7819,
+        "loss": 2.617008
+      },
+      "phase": "descent",
+      "seconds": 75.26,
+      "gates": [
+        {
+          "bookId": "0a3fbb41-8855-460f-af3d-41489a269851",
+          "gate": "regions-gained",
+          "before": 717,
+          "after": 1062
+        },
+        {
+          "bookId": "550e601a-7ae8-40c0-ba41-435fa30c16e8",
+          "gate": "regions-gained",
+          "before": 174,
+          "after": 489
+        },
+        {
+          "bookId": "753fcdb0-64fa-4c5e-b677-1e3e612b31b5",
+          "gate": "regions-gained",
+          "before": 1907,
+          "after": 2386
+        },
+        {
+          "bookId": "a0e5ed1a-c37b-45f1-9821-f98350b18911",
+          "gate": "regions-gained",
+          "before": 2011,
+          "after": 2480
+        }
+      ]
+    },
+    {
+      "n": 42,
+      "loss": 2.666961,
+      "profile_hash": "f64b20e5b7ec",
+      "changed": {
+        "COLUMN_CHANNEL": 8.5,
+        "PANEL_LINES": 1,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 13027,
+        "cuts": 408,
+        "cutPerRegion": 0.0313,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 704,
+        "matchRate": 0.9617,
+        "pagesWithRegions": 3281,
+        "coverage": 0.7788,
+        "loss": 2.666961
+      },
+      "phase": "descent",
+      "seconds": 75.21,
+      "gates": [
+        {
+          "bookId": "0a3fbb41-8855-460f-af3d-41489a269851",
+          "gate": "regions-gained",
+          "before": 717,
+          "after": 1064
+        }
+      ]
+    },
+    {
+      "n": 43,
+      "loss": 2.903261,
+      "profile_hash": "f2ee65f870c5",
+      "changed": {
+        "COLUMN_CHANNEL": 14.0,
+        "PANEL_LINES": 1,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12062,
+        "cuts": 403,
+        "cutPerRegion": 0.0334,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 704,
+        "matchRate": 0.9617,
+        "pagesWithRegions": 3264,
+        "coverage": 0.7747,
+        "loss": 2.903261
+      },
+      "phase": "descent",
+      "seconds": 74.29,
+      "gates": [
+        {
+          "bookId": "3d372038-0d49-4a7d-bb62-446818ff6d36",
+          "gate": "regions",
+          "before": 370,
+          "after": 181
+        }
+      ]
+    },
+    {
+      "n": 44,
+      "loss": 2.940331,
+      "profile_hash": "cc3a2755fcb9",
+      "changed": {
+        "COLUMN_CHANNEL": 19.5,
+        "PANEL_LINES": 1,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 11840,
+        "cuts": 390,
+        "cutPerRegion": 0.0329,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 704,
+        "matchRate": 0.9617,
+        "pagesWithRegions": 3273,
+        "coverage": 0.7769,
+        "loss": 2.940331
+      },
+      "phase": "descent",
+      "seconds": 72.92,
+      "gates": [
+        {
+          "bookId": "3d372038-0d49-4a7d-bb62-446818ff6d36",
+          "gate": "regions",
+          "before": 370,
+          "after": 155
+        }
+      ]
+    },
+    {
+      "n": 45,
+      "loss": 2.977459,
+      "profile_hash": "df841613d3ed",
+      "changed": {
+        "COLUMN_CHANNEL": 25.0,
+        "PANEL_LINES": 1,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 11682,
+        "cuts": 389,
+        "cutPerRegion": 0.0333,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 704,
+        "matchRate": 0.9617,
+        "pagesWithRegions": 3267,
+        "coverage": 0.7755,
+        "loss": 2.977459
+      },
+      "phase": "descent",
+      "seconds": 73.36,
+      "gates": [
+        {
+          "bookId": "3d372038-0d49-4a7d-bb62-446818ff6d36",
+          "gate": "regions",
+          "before": 370,
+          "after": 149
+        }
+      ]
+    },
+    {
+      "n": 46,
+      "loss": 2.994418,
+      "profile_hash": "a98ccdd4e400",
+      "changed": {
+        "COLUMN_CHANNEL": 30.5,
+        "PANEL_LINES": 1,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 11556,
+        "cuts": 386,
+        "cutPerRegion": 0.0334,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 704,
+        "matchRate": 0.9617,
+        "pagesWithRegions": 3262,
+        "coverage": 0.7743,
+        "loss": 2.994418
+      },
+      "phase": "descent",
+      "seconds": 73.77,
+      "gates": [
+        {
+          "bookId": "3d372038-0d49-4a7d-bb62-446818ff6d36",
+          "gate": "regions",
+          "before": 370,
+          "after": 150
+        }
+      ]
+    },
+    {
+      "n": 47,
+      "loss": 3.145946,
+      "profile_hash": "bb2c0ac75d3e",
+      "changed": {
+        "COLUMN_CHANNEL": 36.0,
+        "PANEL_LINES": 1,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 11461,
+        "cuts": 393,
+        "cutPerRegion": 0.0343,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 703,
+        "matchRate": 0.9604,
+        "pagesWithRegions": 3263,
+        "coverage": 0.7745,
+        "loss": 3.145946
+      },
+      "phase": "descent",
+      "seconds": 73.31,
+      "gates": [
+        {
+          "bookId": "3d372038-0d49-4a7d-bb62-446818ff6d36",
+          "gate": "regions",
+          "before": 370,
+          "after": 148
+        }
+      ]
+    },
+    {
+      "n": 48,
+      "loss": 2.723782,
+      "profile_hash": "8f0e85fe0c95",
+      "changed": {
+        "COLUMN_CHANNEL": 7.25,
+        "PANEL_LINES": 1,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 13168,
+        "cuts": 411,
+        "cutPerRegion": 0.0312,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 702,
+        "matchRate": 0.959,
+        "pagesWithRegions": 3282,
+        "coverage": 0.779,
+        "loss": 2.723782
+      },
+      "phase": "descent",
+      "seconds": 74.13,
+      "gates": [
+        {
+          "bookId": "0a3fbb41-8855-460f-af3d-41489a269851",
+          "gate": "regions-gained",
+          "before": 717,
+          "after": 1064
+        }
+      ]
+    },
+    {
+      "n": 49,
+      "loss": 2.707098,
+      "profile_hash": "21c48ea096a2",
+      "changed": {
+        "COLUMN_CHANNEL": 12.75,
+        "PANEL_LINES": 1,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12150,
+        "cuts": 402,
+        "cutPerRegion": 0.0331,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 708,
+        "matchRate": 0.9672,
+        "pagesWithRegions": 3266,
+        "coverage": 0.7752,
+        "loss": 2.707098
+      },
+      "phase": "descent",
+      "seconds": 74.71,
+      "gates": [
+        {
+          "bookId": "3d372038-0d49-4a7d-bb62-446818ff6d36",
+          "gate": "regions",
+          "before": 370,
+          "after": 192
+        }
+      ]
+    },
+    {
+      "n": 50,
+      "loss": 3.227388,
+      "profile_hash": "78d35961fe00",
+      "changed": {
+        "PANEL_LINES": 1,
+        "RULE_CLUSTER": 1.0,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12545,
+        "cuts": 477,
+        "cutPerRegion": 0.038,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 700,
+        "matchRate": 0.9563,
+        "pagesWithRegions": 3269,
+        "coverage": 0.7759,
+        "loss": 3.227388
+      },
+      "phase": "descent",
+      "seconds": 74.43,
+      "gates": []
+    },
+    {
+      "n": 51,
+      "loss": 2.709732,
+      "profile_hash": "695bbc5ad3b5",
+      "changed": {
+        "PANEL_LINES": 1,
+        "RULE_CLUSTER": 4.833333,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12542,
+        "cuts": 408,
+        "cutPerRegion": 0.0325,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 705,
+        "matchRate": 0.9631,
+        "pagesWithRegions": 3269,
+        "coverage": 0.7759,
+        "loss": 2.709732
+      },
+      "phase": "descent",
+      "seconds": 73.9,
+      "gates": []
+    },
+    {
+      "n": 52,
+      "loss": 3.581743,
+      "profile_hash": "7391dee9b3db",
+      "changed": {
+        "PANEL_LINES": 1,
+        "RULE_CLUSTER": 8.666667,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12540,
+        "cuts": 474,
+        "cutPerRegion": 0.0378,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 704,
+        "matchRate": 0.9617,
+        "pagesWithRegions": 3269,
+        "coverage": 0.7759,
+        "loss": 3.581743
+      },
+      "phase": "descent",
+      "seconds": 74.49,
+      "gates": []
+    },
+    {
+      "n": 53,
+      "loss": 3.64997,
+      "profile_hash": "8ba07ecb52a4",
+      "changed": {
+        "PANEL_LINES": 1,
+        "RULE_CLUSTER": 12.5,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12540,
+        "cuts": 487,
+        "cutPerRegion": 0.0388,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 704,
+        "matchRate": 0.9617,
+        "pagesWithRegions": 3269,
+        "coverage": 0.7759,
+        "loss": 3.64997
+      },
+      "phase": "descent",
+      "seconds": 73.97,
+      "gates": []
+    },
+    {
+      "n": 54,
+      "loss": 3.684433,
+      "profile_hash": "520c134df49b",
+      "changed": {
+        "PANEL_LINES": 1,
+        "RULE_CLUSTER": 16.333333,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12542,
+        "cuts": 490,
+        "cutPerRegion": 0.0391,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 703,
+        "matchRate": 0.9604,
+        "pagesWithRegions": 3269,
+        "coverage": 0.7759,
+        "loss": 3.684433
+      },
+      "phase": "descent",
+      "seconds": 74.47,
+      "gates": []
+    },
+    {
+      "n": 55,
+      "loss": 3.741348,
+      "profile_hash": "af76268277d1",
+      "changed": {
+        "PANEL_LINES": 1,
+        "RULE_CLUSTER": 20.166667,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12542,
+        "cuts": 493,
+        "cutPerRegion": 0.0393,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 703,
+        "matchRate": 0.9604,
+        "pagesWithRegions": 3269,
+        "coverage": 0.7759,
+        "loss": 3.741348
+      },
+      "phase": "descent",
+      "seconds": 73.9,
+      "gates": []
+    },
+    {
+      "n": 56,
+      "loss": 3.740062,
+      "profile_hash": "c4c177f63f12",
+      "changed": {
+        "PANEL_LINES": 1,
+        "RULE_CLUSTER": 24.0,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12543,
+        "cuts": 493,
+        "cutPerRegion": 0.0393,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 703,
+        "matchRate": 0.9604,
+        "pagesWithRegions": 3269,
+        "coverage": 0.7759,
+        "loss": 3.740062
+      },
+      "phase": "descent",
+      "seconds": 73.79,
+      "gates": []
+    },
+    {
+      "n": 57,
+      "loss": 2.761107,
+      "profile_hash": "664d9a67b5a5",
+      "changed": {
+        "PANEL_LINES": 1,
+        "RULE_CLUSTER": 4.083333,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12542,
+        "cuts": 415,
+        "cutPerRegion": 0.0331,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 705,
+        "matchRate": 0.9631,
+        "pagesWithRegions": 3269,
+        "coverage": 0.7759,
+        "loss": 2.761107
+      },
+      "phase": "descent",
+      "seconds": 73.46,
+      "gates": []
+    },
+    {
+      "n": 58,
+      "loss": 3.576511,
+      "profile_hash": "5ef5c64f28ce",
+      "changed": {
+        "PANEL_LINES": 1,
+        "RULE_CLUSTER": 7.916667,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12541,
+        "cuts": 471,
+        "cutPerRegion": 0.0376,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 704,
+        "matchRate": 0.9617,
+        "pagesWithRegions": 3269,
+        "coverage": 0.7759,
+        "loss": 3.576511
+      },
+      "phase": "descent",
+      "seconds": 73.73,
+      "gates": []
+    },
+    {
+      "n": 59,
+      "loss": 2.744153,
+      "profile_hash": "6a72f049f74b",
+      "changed": {
+        "PANEL_MIN_H": 10.0,
+        "PANEL_LINES": 1,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12516,
+        "cuts": 401,
+        "cutPerRegion": 0.032,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 706,
+        "matchRate": 0.9645,
+        "pagesWithRegions": 3269,
+        "coverage": 0.7759,
+        "loss": 2.744153
+      },
+      "phase": "descent",
+      "seconds": 73.71,
+      "gates": []
+    },
+    {
+      "n": 60,
+      "loss": 2.602223,
+      "profile_hash": "2496cdcd25cc",
+      "changed": {
+        "PANEL_MIN_H": 25.0,
+        "PANEL_LINES": 1,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12523,
+        "cuts": 397,
+        "cutPerRegion": 0.0317,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 707,
+        "matchRate": 0.9658,
+        "pagesWithRegions": 3269,
+        "coverage": 0.7759,
+        "loss": 2.602223
+      },
+      "phase": "descent",
+      "seconds": 73.8,
+      "gates": []
+    },
+    {
+      "n": 61,
+      "loss": 2.873526,
+      "profile_hash": "1396f03e6c26",
+      "changed": {
+        "PANEL_MIN_H": 40.0,
+        "PANEL_LINES": 1,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12548,
+        "cuts": 425,
+        "cutPerRegion": 0.0339,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 704,
+        "matchRate": 0.9617,
+        "pagesWithRegions": 3269,
+        "coverage": 0.7759,
+        "loss": 2.873526
+      },
+      "phase": "descent",
+      "seconds": 74.05,
+      "gates": []
+    },
+    {
+      "n": 62,
+      "loss": 3.205498,
+      "profile_hash": "8b8a1b371f57",
+      "changed": {
+        "PANEL_MIN_H": 55.0,
+        "PANEL_LINES": 1,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12576,
+        "cuts": 470,
+        "cutPerRegion": 0.0374,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 702,
+        "matchRate": 0.959,
+        "pagesWithRegions": 3269,
+        "coverage": 0.7759,
+        "loss": 3.205498
+      },
+      "phase": "descent",
+      "seconds": 73.46,
+      "gates": []
+    },
+    {
+      "n": 63,
+      "loss": 3.621711,
+      "profile_hash": "e706c89e5c58",
+      "changed": {
+        "PANEL_MIN_H": 70.0,
+        "PANEL_LINES": 1,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12580,
+        "cuts": 518,
+        "cutPerRegion": 0.0412,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 698,
+        "matchRate": 0.9536,
+        "pagesWithRegions": 3269,
+        "coverage": 0.7759,
+        "loss": 3.621711
+      },
+      "phase": "descent",
+      "seconds": 73.68,
+      "gates": []
+    },
+    {
+      "n": 64,
+      "loss": 3.859575,
+      "profile_hash": "58b05b18755a",
+      "changed": {
+        "PANEL_MIN_H": 85.0,
+        "PANEL_LINES": 1,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12590,
+        "cuts": 544,
+        "cutPerRegion": 0.0432,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 698,
+        "matchRate": 0.9536,
+        "pagesWithRegions": 3269,
+        "coverage": 0.7759,
+        "loss": 3.859575
+      },
+      "phase": "descent",
+      "seconds": 73.64,
+      "gates": []
+    },
+    {
+      "n": 65,
+      "loss": 4.253379,
+      "profile_hash": "a4cd18fd00fe",
+      "changed": {
+        "PANEL_MIN_H": 100.0,
+        "PANEL_LINES": 1,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12591,
+        "cuts": 586,
+        "cutPerRegion": 0.0465,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 694,
+        "matchRate": 0.9481,
+        "pagesWithRegions": 3269,
+        "coverage": 0.7759,
+        "loss": 4.253379
+      },
+      "phase": "descent",
+      "seconds": 74.12,
+      "gates": []
+    },
+    {
+      "n": 66,
+      "loss": 2.724754,
+      "profile_hash": "415fdb972a24",
+      "changed": {
+        "PANEL_MIN_H": 17.5,
+        "PANEL_LINES": 1,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12517,
+        "cuts": 398,
+        "cutPerRegion": 0.0318,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 706,
+        "matchRate": 0.9645,
+        "pagesWithRegions": 3269,
+        "coverage": 0.7759,
+        "loss": 2.724754
+      },
+      "phase": "descent",
+      "seconds": 74.23,
+      "gates": []
+    },
+    {
+      "n": 67,
+      "loss": 2.75867,
+      "profile_hash": "3fe3b43c7f39",
+      "changed": {
+        "PANEL_MIN_H": 32.5,
+        "PANEL_LINES": 1,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12544,
+        "cuts": 414,
+        "cutPerRegion": 0.033,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 705,
+        "matchRate": 0.9631,
+        "pagesWithRegions": 3269,
+        "coverage": 0.7759,
+        "loss": 2.75867
+      },
+      "phase": "descent",
+      "seconds": 74.62,
+      "gates": []
+    },
+    {
+      "n": 68,
+      "loss": 2.700426,
+      "profile_hash": "6e18b93fdacf",
+      "changed": {
+        "COLUMN_CLEAR": 0.2,
+        "PANEL_MIN_H": 25.0,
+        "PANEL_LINES": 1,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 14689,
+        "cuts": 488,
+        "cutPerRegion": 0.0332,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 698,
+        "matchRate": 0.9536,
+        "pagesWithRegions": 3287,
+        "coverage": 0.7802,
+        "loss": 2.700426
+      },
+      "phase": "descent",
+      "seconds": 72.6,
+      "gates": [
+        {
+          "bookId": "0a3fbb41-8855-460f-af3d-41489a269851",
+          "gate": "regions-gained",
+          "before": 717,
+          "after": 883
+        },
+        {
+          "bookId": "753fcdb0-64fa-4c5e-b677-1e3e612b31b5",
+          "gate": "regions-gained",
+          "before": 1907,
+          "after": 2740
+        },
+        {
+          "bookId": "a0e5ed1a-c37b-45f1-9821-f98350b18911",
+          "gate": "regions-gained",
+          "before": 2011,
+          "after": 2814
+        }
+      ]
+    },
+    {
+      "n": 69,
+      "loss": 2.792424,
+      "profile_hash": "9059546d8122",
+      "changed": {
+        "COLUMN_CLEAR": 0.325,
+        "PANEL_MIN_H": 25.0,
+        "PANEL_LINES": 1,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 13647,
+        "cuts": 446,
+        "cutPerRegion": 0.0327,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 700,
+        "matchRate": 0.9563,
+        "pagesWithRegions": 3281,
+        "coverage": 0.7788,
+        "loss": 2.792424
+      },
+      "phase": "descent",
+      "seconds": 72.31,
+      "gates": [
+        {
+          "bookId": "753fcdb0-64fa-4c5e-b677-1e3e612b31b5",
+          "gate": "regions-gained",
+          "before": 1907,
+          "after": 2309
+        }
+      ]
+    },
+    {
+      "n": 70,
+      "loss": 2.595985,
+      "profile_hash": "1c8df2ce811b",
+      "changed": {
+        "COLUMN_CLEAR": 0.45,
+        "PANEL_MIN_H": 25.0,
+        "PANEL_LINES": 1,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12829,
+        "cuts": 398,
+        "cutPerRegion": 0.031,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 706,
+        "matchRate": 0.9645,
+        "pagesWithRegions": 3272,
+        "coverage": 0.7766,
+        "loss": 2.595985
+      },
+      "phase": "descent",
+      "seconds": 73.69,
+      "gates": []
+    },
+    {
+      "n": 71,
+      "loss": 2.48524,
+      "profile_hash": "4a12c647dbfb",
+      "changed": {
+        "COLUMN_CLEAR": 0.575,
+        "PANEL_MIN_H": 25.0,
+        "PANEL_LINES": 1,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12231,
+        "cuts": 366,
+        "cutPerRegion": 0.0299,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 709,
+        "matchRate": 0.9686,
+        "pagesWithRegions": 3275,
+        "coverage": 0.7774,
+        "loss": 2.48524
+      },
+      "phase": "descent",
+      "seconds": 74.06,
+      "gates": []
+    },
+    {
+      "n": 72,
+      "loss": 2.549952,
+      "profile_hash": "74ecb8961734",
+      "changed": {
+        "COLUMN_CLEAR": 0.7,
+        "PANEL_MIN_H": 25.0,
+        "PANEL_LINES": 1,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 11787,
+        "cuts": 367,
+        "cutPerRegion": 0.0311,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 711,
+        "matchRate": 0.9713,
+        "pagesWithRegions": 3263,
+        "coverage": 0.7745,
+        "loss": 2.549952
+      },
+      "phase": "descent",
+      "seconds": 74.92,
+      "gates": []
+    },
+    {
+      "n": 73,
+      "loss": 2.32356,
+      "profile_hash": "abbcbb617660",
+      "changed": {
+        "COLUMN_CLEAR": 0.825,
+        "PANEL_MIN_H": 25.0,
+        "PANEL_LINES": 1,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 11497,
+        "cuts": 346,
+        "cutPerRegion": 0.0301,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 715,
+        "matchRate": 0.9768,
+        "pagesWithRegions": 3259,
+        "coverage": 0.7736,
+        "loss": 2.32356
+      },
+      "phase": "descent",
+      "seconds": 75.26,
+      "gates": [
+        {
+          "bookId": "3d372038-0d49-4a7d-bb62-446818ff6d36",
+          "gate": "regions",
+          "before": 370,
+          "after": 273
+        }
+      ]
+    },
+    {
+      "n": 74,
+      "loss": 2.716114,
+      "profile_hash": "0353c20a876f",
+      "changed": {
+        "COLUMN_CLEAR": 0.95,
+        "PANEL_MIN_H": 25.0,
+        "PANEL_LINES": 1,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 11259,
+        "cuts": 355,
+        "cutPerRegion": 0.0315,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 712,
+        "matchRate": 0.9727,
+        "pagesWithRegions": 3254,
+        "coverage": 0.7724,
+        "loss": 2.716114
+      },
+      "phase": "descent",
+      "seconds": 77.17,
+      "gates": [
+        {
+          "bookId": "3d372038-0d49-4a7d-bb62-446818ff6d36",
+          "gate": "regions",
+          "before": 370,
+          "after": 273
+        },
+        {
+          "bookId": "550e601a-7ae8-40c0-ba41-435fa30c16e8",
+          "gate": "regions",
+          "before": 174,
+          "after": 137
+        },
+        {
+          "bookId": "a0e5ed1a-c37b-45f1-9821-f98350b18911",
+          "gate": "regions",
+          "before": 2011,
+          "after": 1580
+        }
+      ]
+    },
+    {
+      "n": 75,
+      "loss": 2.510171,
+      "profile_hash": "da8a9201a98e",
+      "changed": {
+        "COLUMN_CLEAR": 0.5125,
+        "PANEL_MIN_H": 25.0,
+        "PANEL_LINES": 1,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12439,
+        "cuts": 373,
+        "cutPerRegion": 0.03,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 708,
+        "matchRate": 0.9672,
+        "pagesWithRegions": 3268,
+        "coverage": 0.7757,
+        "loss": 2.510171
+      },
+      "phase": "descent",
+      "seconds": 73.49,
+      "gates": []
+    },
+    {
+      "n": 76,
+      "loss": 2.592347,
+      "profile_hash": "41ea7fb9f082",
+      "changed": {
+        "COLUMN_CLEAR": 0.6375,
+        "PANEL_MIN_H": 25.0,
+        "PANEL_LINES": 1,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12010,
+        "cuts": 374,
+        "cutPerRegion": 0.0311,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 705,
+        "matchRate": 0.9631,
+        "pagesWithRegions": 3270,
+        "coverage": 0.7762,
+        "loss": 2.592347
+      },
+      "phase": "descent",
+      "seconds": 74.61,
+      "gates": []
+    },
+    {
+      "n": 77,
+      "loss": 2.477222,
+      "profile_hash": "9528f838dfe6",
+      "changed": {
+        "COLUMN_CLEAR": 0.575,
+        "PANEL_MIN_W": 20.0,
+        "PANEL_MIN_H": 25.0,
+        "PANEL_LINES": 1,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12226,
+        "cuts": 364,
+        "cutPerRegion": 0.0298,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 709,
+        "matchRate": 0.9686,
+        "pagesWithRegions": 3275,
+        "coverage": 0.7774,
+        "loss": 2.477222
+      },
+      "phase": "descent",
+      "seconds": 74.56,
+      "gates": []
+    },
+    {
+      "n": 78,
+      "loss": 2.455551,
+      "profile_hash": "7b71628e6cc6",
+      "changed": {
+        "COLUMN_CLEAR": 0.575,
+        "PANEL_MIN_W": 46.666667,
+        "PANEL_MIN_H": 25.0,
+        "PANEL_LINES": 1,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12231,
+        "cuts": 362,
+        "cutPerRegion": 0.0296,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 709,
+        "matchRate": 0.9686,
+        "pagesWithRegions": 3275,
+        "coverage": 0.7774,
+        "loss": 2.455551
+      },
+      "phase": "descent",
+      "seconds": 73.65,
+      "gates": []
+    },
+    {
+      "n": 79,
+      "loss": 2.614708,
+      "profile_hash": "f6fe036575ce",
+      "changed": {
+        "COLUMN_CLEAR": 0.575,
+        "PANEL_MIN_W": 73.333333,
+        "PANEL_MIN_H": 25.0,
+        "PANEL_LINES": 1,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12238,
+        "cuts": 380,
+        "cutPerRegion": 0.0311,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 708,
+        "matchRate": 0.9672,
+        "pagesWithRegions": 3275,
+        "coverage": 0.7774,
+        "loss": 2.614708
+      },
+      "phase": "descent",
+      "seconds": 73.68,
+      "gates": []
+    },
+    {
+      "n": 80,
+      "loss": 2.956405,
+      "profile_hash": "6e9aac8ba195",
+      "changed": {
+        "COLUMN_CLEAR": 0.575,
+        "PANEL_MIN_W": 100.0,
+        "PANEL_MIN_H": 25.0,
+        "PANEL_LINES": 1,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12239,
+        "cuts": 413,
+        "cutPerRegion": 0.0337,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 707,
+        "matchRate": 0.9658,
+        "pagesWithRegions": 3275,
+        "coverage": 0.7774,
+        "loss": 2.956405
+      },
+      "phase": "descent",
+      "seconds": 75.14,
+      "gates": []
+    },
+    {
+      "n": 81,
+      "loss": 3.134507,
+      "profile_hash": "73d009dc9a2d",
+      "changed": {
+        "COLUMN_CLEAR": 0.575,
+        "PANEL_MIN_W": 126.666667,
+        "PANEL_MIN_H": 25.0,
+        "PANEL_LINES": 1,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12252,
+        "cuts": 429,
+        "cutPerRegion": 0.035,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 706,
+        "matchRate": 0.9645,
+        "pagesWithRegions": 3275,
+        "coverage": 0.7774,
+        "loss": 3.134507
+      },
+      "phase": "descent",
+      "seconds": 73.54,
+      "gates": []
+    },
+    {
+      "n": 82,
+      "loss": 3.469796,
+      "profile_hash": "ca473c1e863f",
+      "changed": {
+        "COLUMN_CLEAR": 0.575,
+        "PANEL_MIN_W": 153.333333,
+        "PANEL_MIN_H": 25.0,
+        "PANEL_LINES": 1,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12250,
+        "cuts": 455,
+        "cutPerRegion": 0.0371,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 704,
+        "matchRate": 0.9617,
+        "pagesWithRegions": 3275,
+        "coverage": 0.7774,
+        "loss": 3.469796
+      },
+      "phase": "descent",
+      "seconds": 75.06,
+      "gates": []
+    },
+    {
+      "n": 83,
+      "loss": 3.727419,
+      "profile_hash": "5ca2a8500f16",
+      "changed": {
+        "COLUMN_CLEAR": 0.575,
+        "PANEL_MIN_W": 180.0,
+        "PANEL_MIN_H": 25.0,
+        "PANEL_LINES": 1,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12252,
+        "cuts": 491,
+        "cutPerRegion": 0.0401,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 701,
+        "matchRate": 0.9577,
+        "pagesWithRegions": 3275,
+        "coverage": 0.7774,
+        "loss": 3.727419
+      },
+      "phase": "descent",
+      "seconds": 75.28,
+      "gates": []
+    },
+    {
+      "n": 84,
+      "loss": 2.463342,
+      "profile_hash": "6d29a854f75f",
+      "changed": {
+        "COLUMN_CLEAR": 0.575,
+        "PANEL_MIN_W": 33.333334,
+        "PANEL_MIN_H": 25.0,
+        "PANEL_LINES": 1,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12229,
+        "cuts": 362,
+        "cutPerRegion": 0.0296,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 709,
+        "matchRate": 0.9686,
+        "pagesWithRegions": 3275,
+        "coverage": 0.7774,
+        "loss": 2.463342
+      },
+      "phase": "descent",
+      "seconds": 74.65,
+      "gates": []
+    },
+    {
+      "n": 85,
+      "loss": 2.684597,
+      "profile_hash": "66ce3a30015b",
+      "changed": {
+        "FOOTER_BAND": 0.0,
+        "COLUMN_CLEAR": 0.575,
+        "PANEL_MIN_W": 46.666667,
+        "PANEL_MIN_H": 25.0,
+        "PANEL_LINES": 1,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12213,
+        "cuts": 367,
+        "cutPerRegion": 0.03,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 707,
+        "matchRate": 0.9658,
+        "pagesWithRegions": 3272,
+        "coverage": 0.7766,
+        "loss": 2.684597
+      },
+      "phase": "descent",
+      "seconds": 75.57,
+      "gates": []
+    },
+    {
+      "n": 86,
+      "loss": 2.552869,
+      "profile_hash": "7c26cbeb3a25",
+      "changed": {
+        "FOOTER_BAND": 16.0,
+        "COLUMN_CLEAR": 0.575,
+        "PANEL_MIN_W": 46.666667,
+        "PANEL_MIN_H": 25.0,
+        "PANEL_LINES": 1,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12218,
+        "cuts": 362,
+        "cutPerRegion": 0.0296,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 708,
+        "matchRate": 0.9672,
+        "pagesWithRegions": 3272,
+        "coverage": 0.7766,
+        "loss": 2.552869
+      },
+      "phase": "descent",
+      "seconds": 75.77,
+      "gates": []
+    },
+    {
+      "n": 87,
+      "loss": 2.466404,
+      "profile_hash": "bf7d4490f7f6",
+      "changed": {
+        "FOOTER_BAND": 32.0,
+        "COLUMN_CLEAR": 0.575,
+        "PANEL_MIN_W": 46.666667,
+        "PANEL_MIN_H": 25.0,
+        "PANEL_LINES": 1,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12225,
+        "cuts": 363,
+        "cutPerRegion": 0.0297,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 709,
+        "matchRate": 0.9686,
+        "pagesWithRegions": 3274,
+        "coverage": 0.7771,
+        "loss": 2.466404
+      },
+      "phase": "descent",
+      "seconds": 75.21,
+      "gates": []
+    },
+    {
+      "n": 88,
+      "loss": 2.459292,
+      "profile_hash": "a46caf17e735",
+      "changed": {
+        "FOOTER_BAND": 48.0,
+        "COLUMN_CLEAR": 0.575,
+        "PANEL_MIN_W": 46.666667,
+        "PANEL_MIN_H": 25.0,
+        "PANEL_LINES": 1,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12227,
+        "cuts": 363,
+        "cutPerRegion": 0.0297,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 709,
+        "matchRate": 0.9686,
+        "pagesWithRegions": 3275,
+        "coverage": 0.7774,
+        "loss": 2.459292
+      },
+      "phase": "descent",
+      "seconds": 74.89,
+      "gates": []
+    },
+    {
+      "n": 89,
+      "loss": 2.575006,
+      "profile_hash": "4b05b396bd16",
+      "changed": {
+        "FOOTER_BAND": 64.0,
+        "COLUMN_CLEAR": 0.575,
+        "PANEL_MIN_W": 46.666667,
+        "PANEL_MIN_H": 25.0,
+        "PANEL_LINES": 1,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12170,
+        "cuts": 374,
+        "cutPerRegion": 0.0307,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 704,
+        "matchRate": 0.9617,
+        "pagesWithRegions": 3266,
+        "coverage": 0.7752,
+        "loss": 2.575006
+      },
+      "phase": "descent",
+      "seconds": 74.21,
+      "gates": []
+    },
+    {
+      "n": 90,
+      "loss": 2.937576,
+      "profile_hash": "6264c854919a",
+      "changed": {
+        "FOOTER_BAND": 80.0,
+        "COLUMN_CLEAR": 0.575,
+        "PANEL_MIN_W": 46.666667,
+        "PANEL_MIN_H": 25.0,
+        "PANEL_LINES": 1,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 11978,
+        "cuts": 392,
+        "cutPerRegion": 0.0327,
+        "overlaps": 1,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 695,
+        "matchRate": 0.9495,
+        "pagesWithRegions": 3253,
+        "coverage": 0.7721,
+        "loss": 2.937576
+      },
+      "phase": "descent",
+      "seconds": 73.56,
+      "gates": []
+    },
+    {
+      "n": 91,
+      "loss": 3.251109,
+      "profile_hash": "cc96d2ba5c49",
+      "changed": {
+        "FOOTER_BAND": 96.0,
+        "COLUMN_CLEAR": 0.575,
+        "PANEL_MIN_W": 46.666667,
+        "PANEL_MIN_H": 25.0,
+        "PANEL_LINES": 1,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 11713,
+        "cuts": 393,
+        "cutPerRegion": 0.0336,
+        "overlaps": 1,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 690,
+        "matchRate": 0.9426,
+        "pagesWithRegions": 3236,
+        "coverage": 0.7681,
+        "loss": 3.251109
+      },
+      "phase": "descent",
+      "seconds": 71.37,
+      "gates": []
+    },
+    {
+      "n": 92,
+      "loss": 2.461381,
+      "profile_hash": "dcab89f763d9",
+      "changed": {
+        "FOOTER_BAND": 36.0,
+        "COLUMN_CLEAR": 0.575,
+        "PANEL_MIN_W": 46.666667,
+        "PANEL_MIN_H": 25.0,
+        "PANEL_LINES": 1,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12229,
+        "cuts": 362,
+        "cutPerRegion": 0.0296,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 709,
+        "matchRate": 0.9686,
+        "pagesWithRegions": 3276,
+        "coverage": 0.7776,
+        "loss": 2.461381
+      },
+      "phase": "descent",
+      "seconds": 74.03,
+      "gates": []
+    },
+    {
+      "n": 93,
+      "loss": 2.45168,
+      "profile_hash": "b932f57bedd3",
+      "changed": {
+        "FOOTER_BAND": 52.0,
+        "COLUMN_CLEAR": 0.575,
+        "PANEL_MIN_W": 46.666667,
+        "PANEL_MIN_H": 25.0,
+        "PANEL_LINES": 1,
+        "RETREAT_COST": 0.05
+      },
+      "totals": {
+        "books": 18,
+        "pages": 4213,
+        "regions": 12223,
+        "cuts": 362,
+        "cutPerRegion": 0.0296,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "oges": 732,
+        "matched": 709,
+        "matchRate": 0.9686,
+        "pagesWithRegions": 3275,
+        "coverage": 0.7774,
+        "loss": 2.45168
+      },
+      "phase": "descent",
+      "seconds": 74.47,
       "gates": []
     }
   ]
