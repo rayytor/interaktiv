@@ -315,9 +315,15 @@ def serialize_book_regions(
     page_dimensions: Optional[Dict[int, Tuple[float, float]]] = None,
     anchors_by_page: Optional[Dict[int, List[str]]] = None,
     built_at: Optional[str] = None,
+    pages_geometry: Optional[Dict[int, Any]] = None,
 ) -> Dict[str, Any]:
     """
     Build the complete dictionary representation of regions.json (BAKE_VERSION = 2).
+
+    `pages_geometry` is each sheet's `PageGeometry` (`PageResult.geometry`). The
+    final cleanup separates and snaps against it; a sheet without one is cleaned
+    blind, cutting overlaps at midpoints, which is only right for callers that
+    never had a page to look at.
     """
     fingerprint = compute_fingerprint(pdf_path)
     now_iso = built_at or (datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.%f")[:-3] + "Z")
@@ -326,7 +332,7 @@ def serialize_book_regions(
     for p, raw_acts in sorted(pages_activities.items()):
         if not raw_acts:
             continue
-        acts = clean_page_activities(raw_acts)
+        acts = clean_page_activities(raw_acts, geom=(pages_geometry or {}).get(p))
         if not acts:
             continue
 

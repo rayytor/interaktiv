@@ -249,6 +249,7 @@ def scan_single_book(task: Dict[str, Any]) -> Dict[str, Any]:
         pages_activities: Dict[int, List[ActivityRegion]] = {}
         pages_layout: Dict[int, PageLayout] = {}
         pages_dimensions: Dict[int, Tuple[float, float]] = {}
+        pages_geometry: Dict[int, Any] = {}
         diagnostics_by_page: Dict[int, Dict[str, Any]] = {}
         anchors_by_page: Dict[int, List[str]] = {}
         sample_spans: List[Any] = []
@@ -291,6 +292,7 @@ def scan_single_book(task: Dict[str, Any]) -> Dict[str, Any]:
 
             if activities:
                 pages_activities[p] = activities
+                pages_geometry[p] = result.geometry
                 total_regions += len(activities)
                 total_anchored += sum(1 for a in activities if a.anchored)
                 total_questions += sum(len(a.items) for a in activities if a.items)
@@ -329,6 +331,7 @@ def scan_single_book(task: Dict[str, Any]) -> Dict[str, Any]:
             pages_layout=pages_layout,
             page_dimensions=pages_dimensions,
             anchors_by_page=anchors_by_page,
+            pages_geometry=pages_geometry,
         )
 
         diag_json_data = serialize_diagnostics(

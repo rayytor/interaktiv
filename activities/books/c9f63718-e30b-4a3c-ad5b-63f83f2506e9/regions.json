@@ -2,8 +2,8 @@
   "version": 2,
   "bookId": "c9f63718-e30b-4a3c-ad5b-63f83f2506e9",
   "fingerprint": "50915781-16924e6afbee9d0c622d20b60a1c205b",
-  "profile": "27b80aacc68e",
-  "builtAt": "2026-09-27T05:36:22.761Z",
+  "profile": "3aae0c22cfb6",
+  "builtAt": "2026-09-27T06:23:32.537Z",
   "pageCount": 71,
   "calibration": {
     "enabled": true,
@@ -1019,14 +1019,14 @@
           "column": 1,
           "rect": [
             275.1262,
-            189.3387,
+            620.1605,
             553.764,
             742.9305
           ],
           "parts": [
             [
               275.1262,
-              189.3387,
+              620.1605,
               553.764,
               742.9305
             ]
@@ -3547,152 +3547,33 @@
           "column": 0,
           "rect": [
             51.1969,
-            189.3353,
-            298.5557,
+            709.3515,
+            299.6443,
             742.9271
           ],
           "parts": [
             [
               51.1969,
-              189.3353,
-              298.5557,
+              709.3515,
+              299.6443,
               742.9271
             ]
           ],
-          "headline": "Read the text and complete the",
-          "items": [
-            {
-              "id": "p30-e-1",
-              "label": "1",
-              "number": 1,
-              "partIndex": 0,
-              "rect": [
-                84.8214,
-                454.7936,
-                253.3814,
-                505.9536
-              ],
-              "text": "1 a news agency; there he writes articles and reports on important events. Every morning,"
-            },
-            {
-              "id": "p30-e-2",
-              "label": "2",
-              "number": 2,
-              "partIndex": 0,
-              "rect": [
-                84.8207,
-                412.7936,
-                255.8408,
-                463.9536
-              ],
-              "text": "2 he sits his desk, scans local news on the Internet, checks his emails, and makes phone"
-            },
-            {
-              "id": "p30-e-3",
-              "label": "3",
-              "number": 3,
-              "partIndex": 0,
-              "rect": [
-                84.82,
-                356.7936,
-                251.35,
-                421.9536
-              ],
-              "text": "3 calls. He seldom stays the newsroom; most of the time, he is out on assignments. When he needs to interview someone, he"
-            },
-            {
-              "id": "p30-e-4",
-              "label": "4",
-              "number": 4,
-              "partIndex": 0,
-              "rect": [
-                84.82,
-                342.7936,
-                262.1101,
-                365.9536
-              ],
-              "text": "4 often meets them a café or"
-            },
-            {
-              "id": "p30-e-5",
-              "label": "5",
-              "number": 5,
-              "partIndex": 0,
-              "rect": [
-                84.8201,
-                328.7936,
-                262.3004,
-                351.9536
-              ],
-              "text": "5 visits them their workplaces."
-            },
-            {
-              "id": "p30-e-6",
-              "label": "6",
-              "number": 6,
-              "partIndex": 0,
-              "rect": [
-                84.8199,
-                286.7936,
-                262.3299,
-                337.9536
-              ],
-              "text": "6 He also spends a lot of time  different locations, as he covers live events. Sometimes, he reports"
-            },
-            {
-              "id": "p30-e-7",
-              "label": "7",
-              "number": 7,
-              "partIndex": 0,
-              "rect": [
-                84.8195,
-                244.7936,
-                263.7296,
-                295.9536
-              ],
-              "text": "7 from the street and stands  a busy pavement while he explains the situation. At the end of the"
-            },
-            {
-              "id": "p30-e-8",
-              "label": "8",
-              "number": 8,
-              "partIndex": 0,
-              "rect": [
-                84.8195,
-                202.7936,
-                255.2703,
-                253.9536
-              ],
-              "text": "8 day, he is usually his office to edit his articles before they are published. When he finishes work,"
-            },
-            {
-              "id": "p30-e-9",
-              "label": "9",
-              "number": 9,
-              "partIndex": 0,
-              "rect": [
-                84.8203,
-                189.3353,
-                260.4477,
-                211.9536
-              ],
-              "text": " 9 he enjoys dinner home with"
-            }
-          ]
+          "headline": "Read the text and complete the"
         },
         {
           "id": "p30-f",
           "label": "f",
           "column": 1,
           "rect": [
-            304.9695,
+            302.6443,
             442.9759,
             525.957,
             742.9271
           ],
           "parts": [
             [
-              304.9695,
+              302.6443,
               442.9759,
               525.957,
               742.9271
@@ -3811,14 +3692,14 @@
           "label": "g",
           "column": 1,
           "rect": [
-            301.5557,
+            298.1418,
             152.993,
             526.2493,
             439.9759
           ],
           "parts": [
             [
-              301.5557,
+              298.1418,
               152.993,
               526.2493,
               439.9759
@@ -3915,15 +3796,15 @@
           "column": 0,
           "rect": [
             43.0237,
-            427.447,
-            285.778,
+            721.2377,
+            378.2337,
             742.9272
           ],
           "parts": [
             [
               43.0237,
-              427.447,
-              285.778,
+              721.2377,
+              378.2337,
               742.9272
             ]
           ],
@@ -5003,15 +4884,15 @@
           "label": "m",
           "column": 1,
           "rect": [
-            340.158,
-            418.582,
+            286.6296,
+            473.7237,
             526.7406,
             742.9272
           ],
           "parts": [
             [
-              340.158,
-              418.582,
+              286.6296,
+              473.7237,
               526.7406,
               742.9272
             ]
@@ -5050,12 +4931,12 @@
               "number": 3,
               "partIndex": 0,
               "rect": [
-                286.6296,
-                189.3354,
-                522.7406,
+                316.533,
+                473.7237,
+                519.543,
                 546.8027
               ],
-              "text": "3  I want a wooden with Elif: plants and a table for tea. Perfect! For the kitchen, we need Dan: 4 a big to keep all the food and plates. 5  And maybe a large  Elif: so we can invite our friends over "
+              "text": "3  I want a wooden with Elif: plants and a table for tea. Perfect! For the kitchen, we need Dan: 4 a big to keep all the food and plates."
             }
           ]
         }
@@ -5168,14 +5049,14 @@
           "column": 1,
           "rect": [
             277.59,
-            93.2153,
+            563.0371,
             553.764,
             646.8071
           ],
           "parts": [
             [
               277.59,
-              93.2153,
+              563.0371,
               553.764,
               646.8071
             ]
@@ -5852,14 +5733,14 @@
           "column": 2,
           "rect": [
             297.4431,
-            93.6453,
+            360.931,
             534.548,
             663.4333
           ],
           "parts": [
             [
               297.4431,
-              93.6453,
+              360.931,
               534.548,
               663.4333
             ]
@@ -6313,14 +6194,14 @@
           "column": 1,
           "rect": [
             291.7191,
-            443.594,
+            397.8933,
             535.962,
             742.9272
           ],
           "parts": [
             [
               291.7191,
-              443.594,
+              397.8933,
               535.962,
               742.9272
             ]
@@ -6500,16 +6381,16 @@
           "label": "p",
           "column": 1,
           "rect": [
-            274.497,
-            6.898,
-            572.937,
+            277.0512,
+            36.0,
+            519.3596,
             375.4534
           ],
           "parts": [
             [
-              274.497,
-              6.898,
-              572.937,
+              277.0512,
+              36.0,
+              519.3596,
               375.4534
             ]
           ],
@@ -7737,177 +7618,19 @@
           "column": 0,
           "rect": [
             51.1969,
-            189.3368,
-            294.5386,
+            595.029,
+            296.7803,
             742.9286
           ],
           "parts": [
             [
               51.1969,
-              189.3368,
-              294.5386,
+              595.029,
+              296.7803,
               742.9286
             ]
           ],
-          "headline": "Complete the sentences, using the correct form of or The Simple Future Tense words in parentheses.",
-          "items": [
-            {
-              "id": "p54-f-1",
-              "label": "1",
-              "number": 1,
-              "partIndex": 0,
-              "rect": [
-                71.1562,
-                509.0828,
-                245.3162,
-                545.2428
-              ],
-              "text": "1 (change) (change)  in many incredible ways. For example,"
-            },
-            {
-              "id": "p54-f-2",
-              "label": "2",
-              "number": 2,
-              "partIndex": 0,
-              "rect": [
-                71.1541,
-                483.0828,
-                239.3157,
-                519.2428
-              ],
-              "text": "2 (not (not people now  use) use) telegraphs any more, and"
-            },
-            {
-              "id": "p54-f-3",
-              "label": "3",
-              "number": 3,
-              "partIndex": 0,
-              "rect": [
-                71.1541,
-                457.0828,
-                257.0341,
-                493.2428
-              ],
-              "text": "3 (not (not soon, they  need) need) smartphones as much as they"
-            },
-            {
-              "id": "p54-f-4",
-              "label": "4",
-              "number": 4,
-              "partIndex": 0,
-              "rect": [
-                142.0202,
-                444.0828,
-                254.5462,
-                467.2428
-              ],
-              "text": "4 (do) (do)  today. Instead,"
-            },
-            {
-              "id": "p54-f-5",
-              "label": "5",
-              "number": 5,
-              "partIndex": 0,
-              "rect": [
-                71.1559,
-                392.0828,
-                262.176,
-                454.2428
-              ],
-              "text": "5 (use) (use) they  hologram technology to talk to each other, just like in science fiction films. In addition, advanced translation devices"
-            },
-            {
-              "id": "p54-f-6",
-              "label": "6",
-              "number": 6,
-              "partIndex": 0,
-              "rect": [
-                142.0202,
-                379.0828,
-                253.5962,
-                402.2428
-              ],
-              "text": "6 (remove) (remove)  language"
-            },
-            {
-              "id": "p54-f-7",
-              "label": "7",
-              "number": 7,
-              "partIndex": 0,
-              "rect": [
-                71.1541,
-                340.0828,
-                245.2441,
-                389.2428
-              ],
-              "text": "7 barriers, and it  (be) (be) easier to talk to anyone in the world. However, not everyone"
-            },
-            {
-              "id": "p54-f-8",
-              "label": "8",
-              "number": 8,
-              "partIndex": 0,
-              "rect": [
-                71.1562,
-                314.0828,
-                240.8063,
-                350.2428
-              ],
-              "text": "8 (adopt) (adopt)  these technologies quickly. Since some"
-            },
-            {
-              "id": "p54-f-9",
-              "label": "9",
-              "number": 9,
-              "partIndex": 0,
-              "rect": [
-                71.1562,
-                301.0828,
-                265.2059,
-                324.2428
-              ],
-              "text": "9 (not trust) (not trust) people  new"
-            },
-            {
-              "id": "p54-f-10",
-              "label": "10",
-              "number": 10,
-              "partIndex": 0,
-              "rect": [
-                71.1541,
-                249.0828,
-                264.5241,
-                311.2428
-              ],
-              "text": "10 (not (not inventions, they  stop) stop) using traditional communication methods easily. On the other hand, artificial intelligence assistants"
-            },
-            {
-              "id": "p54-f-11",
-              "label": "11",
-              "number": 11,
-              "partIndex": 0,
-              "rect": [
-                71.1538,
-                210.0828,
-                272.6748,
-                259.2428
-              ],
-              "text": "11 (help) (help)  people manage everyday tasks, like scheduling appointments or setting reminders,"
-            },
-            {
-              "id": "p54-f-12",
-              "label": "12",
-              "number": 12,
-              "partIndex": 0,
-              "rect": [
-                71.1538,
-                189.3368,
-                259.5441,
-                220.2428
-              ],
-              "text": "12 (not (not but they  replace) replace) human conversations—and"
-            }
-          ]
+          "headline": "Complete the sentences, using the correct form of or The Simple Future Tense words in parentheses."
         },
         {
           "id": "p54-g",
@@ -8014,14 +7737,14 @@
           "label": "h",
           "column": 1,
           "rect": [
-            297.5386,
+            295.2969,
             36.0,
             531.1519,
             346.1793
           ],
           "parts": [
             [
-              297.5386,
+              295.2969,
               36.0,
               531.1519,
               346.1793

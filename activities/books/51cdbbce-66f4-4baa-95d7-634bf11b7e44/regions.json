@@ -2,8 +2,8 @@
   "version": 2,
   "bookId": "51cdbbce-66f4-4baa-95d7-634bf11b7e44",
   "fingerprint": "88837533-10aa43baf9dc6de577ced8c1ac8e3253",
-  "profile": "27b80aacc68e",
-  "builtAt": "2026-09-27T05:39:13.671Z",
+  "profile": "3aae0c22cfb6",
+  "builtAt": "2026-09-27T06:26:33.818Z",
   "pageCount": 417,
   "calibration": {
     "enabled": true,
@@ -3350,14 +3350,14 @@
           "column": 0,
           "rect": [
             48.8514,
-            69.5455,
+            217.5757,
             664.6888,
             549.6617
           ],
           "parts": [
             [
               48.8514,
-              69.5455,
+              217.5757,
               664.6888,
               549.6617
             ]
@@ -3403,80 +3403,19 @@
           "column": 0,
           "rect": [
             34.5197,
-            589.4471,
+            593.4471,
             517.495,
             664.3507
           ],
           "parts": [
             [
               34.5197,
-              589.4471,
+              593.4471,
               517.495,
               664.3507
             ]
           ],
           "headline": "Oluşturduğunuz genellemeden hareketle bir üçgenin bir iç açısına ait açıorta­ yın kestiği kenar üzerinde ayırdığı parçaların uzunluklarının oranı ile açıyı oluş"
-        },
-        {
-          "id": "p35-6",
-          "label": "6",
-          "column": 0,
-          "rect": [
-            34.4833,
-            54.1751,
-            661.9664,
-            565.1015
-          ],
-          "parts": [
-            [
-              34.4833,
-              54.1751,
-              661.9664,
-              565.1015
-            ]
-          ],
-          "headline": "Oluşturduğunuz önerme yardımı ile aşağıda verilen problemi çözünüz.",
-          "items": [
-            {
-              "id": "p35-6-a",
-              "label": "a",
-              "number": 1,
-              "partIndex": 0,
-              "rect": [
-                55.8524,
-                403.2217,
-                496.8888,
-                435.2417
-              ],
-              "text": "a) merdivenin duvara değen ucu değiştirilmeden duvarla yaptığı açı ölçüsünün iki katına çıkarılması için merdivenin yere hangi noktada temas etmesi gerektiğini belirleyiniz."
-            },
-            {
-              "id": "p35-6-b",
-              "label": "b",
-              "number": 2,
-              "partIndex": 0,
-              "rect": [
-                55.8524,
-                347.5524,
-                445.7379,
-                367.5724
-              ],
-              "text": "b) bu durumda merdivenin yere değen ucunun kaç birim yer değiştirmesi gerektiğini bulunuz."
-            },
-            {
-              "id": "p35-6-c",
-              "label": "c",
-              "number": 3,
-              "partIndex": 0,
-              "rect": [
-                38.4833,
-                54.1751,
-                502.5263,
-                311.9031
-              ],
-              "text": "c) merdivenin son durumda uzunluğunun kaç birim olacağını bulunuz. 5. Örnek D C 9 4 B B A A Şekil 1 Şekil 2 Bir camcı yerden yükseklikleri |BC| = 4 metre ve |BD| = 9 metre olan bir binadaki iki cama u"
-            }
-          ]
         }
       ]
     },
@@ -4166,14 +4105,14 @@
           "column": 0,
           "rect": [
             34.395,
-            170.6791,
+            225.3051,
             650.5156,
             646.4184
           ],
           "parts": [
             [
               34.395,
-              170.6791,
+              225.3051,
               650.5156,
               646.4184
             ]
@@ -5203,14 +5142,14 @@
           "column": 0,
           "rect": [
             48.9665,
-            183.1851,
+            694.488,
             518.718,
             724.957
           ],
           "parts": [
             [
               48.9665,
-              183.1851,
+              694.488,
               518.718,
               724.957
             ]
@@ -9953,14 +9892,14 @@
           "column": 0,
           "rect": [
             92.3366,
-            174.0073,
+            197.207,
             506.1615,
             715.7793
           ],
           "parts": [
             [
               92.3366,
-              174.0073,
+              197.207,
               506.1615,
               715.7793
             ]
@@ -10005,14 +9944,14 @@
           "column": 0,
           "rect": [
             48.7549,
-            107.594,
+            461.281,
             517.9,
             684.935
           ],
           "parts": [
             [
               48.7549,
-              107.594,
+              461.281,
               517.9,
               684.935
             ]
@@ -10039,7 +9978,7 @@
               "partIndex": 0,
               "rect": [
                 69.7628,
-                154.1,
+                461.5774,
                 513.9,
                 570.4534
               ],
@@ -11278,14 +11217,14 @@
           "column": 0,
           "rect": [
             34.5197,
-            135.835,
+            586.544,
             506.0456,
             701.4846
           ],
           "parts": [
             [
               34.5197,
-              135.835,
+              586.544,
               506.0456,
               701.4846
             ]
@@ -12173,45 +12112,32 @@
           "column": 0,
           "rect": [
             48.6929,
-            151.528,
-            196.6,
-            472.2424
+            426.5,
+            275.6,
+            592.1
           ],
           "parts": [
             [
               48.6929,
-              151.528,
-              196.6,
-              472.2424
+              426.5,
+              275.6,
+              592.1
             ]
           ],
           "headline": "Bir deterjan firması, bulaşık makineleri için özel bir deterjan ve buna ek olarak kullanılması öneri­ len bir bulaşık parlatıcısı üretmektedir. Bu ürünle­ rin s",
           "items": [
             {
-              "id": "p134-1-b",
-              "label": "b",
-              "number": 2,
+              "id": "p134-1-a",
+              "label": "a",
+              "number": 1,
               "partIndex": 0,
               "rect": [
                 69.7008,
-                373.1688,
-                170.6284,
-                416.6388
+                426.5,
+                275.6,
+                487.9774
               ],
-              "text": "b) ma sorusu yazınız."
-            },
-            {
-              "id": "p134-1-c",
-              "label": "c",
-              "number": 3,
-              "partIndex": 0,
-              "rect": [
-                69.7008,
-                313.8302,
-                85.3508,
-                333.3002
-              ],
-              "text": "c)"
+              "text": "a) Tabloda boş bırakılan kısımları uygun şe­ kilde doldurunuz."
             }
           ]
         },
@@ -12220,17 +12146,17 @@
           "label": "2",
           "column": 1,
           "rect": [
-            275.4,
-            56.7,
-            520.3704,
-            481.3
+            278.6,
+            481.3,
+            411.7,
+            685.3
           ],
           "parts": [
             [
-              275.4,
-              56.7,
-              520.3704,
-              481.3
+              278.6,
+              481.3,
+              411.7,
+              685.3
             ]
           ],
           "headline": "PISA (Uluslararası Öğrenci Değerlendirme Prog­ ramı) değerlendirmelerinde öğrencilerin okuma ve matematik testlerindeki başarıları, eğitimdeki beceri dağılımlar"
@@ -12294,14 +12220,14 @@
           "rect": [
             48.6929,
             159.7126,
-            283.4,
+            277.9,
             701.4846
           ],
           "parts": [
             [
               48.6929,
               159.7126,
-              283.4,
+              277.9,
               701.4846
             ]
           ],
@@ -12340,16 +12266,16 @@
           "label": "5",
           "column": 1,
           "rect": [
-            306.895,
-            170.228,
-            444.3,
+            280.9,
+            395.7,
+            520.3613,
             712.0
           ],
           "parts": [
             [
-              306.895,
-              170.228,
-              444.3,
+              280.9,
+              395.7,
+              520.3613,
               712.0
             ]
           ],
@@ -12373,14 +12299,14 @@
           "column": 0,
           "rect": [
             52.0709,
-            141.6,
+            634.3,
             504.41,
             706.0842
           ],
           "parts": [
             [
               52.0709,
-              141.6,
+              634.3,
               504.41,
               706.0842
             ]
@@ -12409,62 +12335,34 @@
           "column": 0,
           "rect": [
             48.6929,
-            171.528,
-            205.5,
+            394.391,
+            279.15,
             713.3
           ],
           "parts": [
             [
               48.6929,
-              171.528,
-              205.5,
+              394.391,
+              279.15,
               713.3
             ]
           ],
-          "headline": "Siber zorbalık; dijital ortamda (genel ağ, sosyal medya, mesajlaşma uygulamaları, oyun platform­ ları vb.) bir kişi veya grup tarafından başka bir ki­ şiye yöne",
-          "items": [
-            {
-              "id": "p138-6-a",
-              "label": "a",
-              "number": 1,
-              "partIndex": 0,
-              "rect": [
-                69.7008,
-                262.3254,
-                186.5284,
-                329.7954
-              ],
-              "text": "a) bileceğini açıklayınız."
-            },
-            {
-              "id": "p138-6-b",
-              "label": "b",
-              "number": 2,
-              "partIndex": 0,
-              "rect": [
-                69.7008,
-                178.9868,
-                175.6384,
-                222.4568
-              ],
-              "text": "b) lıklar varsa yazınız."
-            }
-          ]
+          "headline": "Siber zorbalık; dijital ortamda (genel ağ, sosyal medya, mesajlaşma uygulamaları, oyun platform­ ları vb.) bir kişi veya grup tarafından başka bir ki­ şiye yöne"
         },
         {
           "id": "p138-7",
           "label": "7",
           "column": 1,
           "rect": [
-            327.1,
-            161.0773,
+            282.15,
+            416.7,
             520.3815,
             702.8493
           ],
           "parts": [
             [
-              327.1,
-              161.0773,
+              282.15,
+              416.7,
               520.3815,
               702.8493
             ]
@@ -12501,14 +12399,14 @@
           "column": 0,
           "rect": [
             34.5197,
-            162.0275,
+            601.312,
             506.1664,
             703.7995
           ],
           "parts": [
             [
               34.5197,
-              162.0275,
+              601.312,
               506.1664,
               703.7995
             ]
@@ -15550,14 +15448,14 @@
           "rect": [
             34.6024,
             513.1181,
-            269.2,
+            263.7,
             690.146
           ],
           "parts": [
             [
               34.6024,
               513.1181,
-              269.2,
+              263.7,
               690.146
             ]
           ],
@@ -15616,17 +15514,17 @@
           "label": "3",
           "column": 1,
           "rect": [
-            458.2,
-            57.0,
+            266.7,
+            573.2,
             505.9751,
-            573.227
+            685.3
           ],
           "parts": [
             [
-              458.2,
-              57.0,
+              266.7,
+              573.2,
               505.9751,
-              573.227
+              685.3
             ]
           ],
           "headline": "Bir lisede öğrenciler arasında kitap toplama kam­ panyası düzenlenmiştir. Kampanyaya göre her öğrenci eşit sayıda kitap getirecek ve okul kütüp­ hanesine bağışl"
@@ -17121,14 +17019,14 @@
           "column": 0,
           "rect": [
             48.4836,
-            368.8,
+            368.7822,
             520.354,
             667.8868
           ],
           "parts": [
             [
               48.4836,
-              368.8,
+              368.7822,
               520.354,
               667.8868
             ]
@@ -18046,14 +17944,14 @@
           "column": 0,
           "rect": [
             34.8032,
-            190.1462,
+            660.855,
             504.98,
             731.9182
           ],
           "parts": [
             [
               34.8032,
-              190.1462,
+              660.855,
               504.98,
               731.9182
             ]
@@ -18109,20 +18007,48 @@
           "label": "4",
           "column": 0,
           "rect": [
-            495.7,
-            191.0796,
+            34.5197,
+            239.2,
             537.8928,
-            477.2371
+            732.8516
           ],
           "parts": [
             [
-              495.7,
-              191.0796,
+              34.5197,
+              239.2,
               537.8928,
-              477.2371
+              732.8516
             ]
           ],
-          "headline": "Aşağıda f: R \" R , f(x) = x karesel referans fonksiyonundan türetilmiş bazı karesel fonksiyonlar verilmiştir."
+          "headline": "Aşağıda f: R \" R , f(x) = x karesel referans fonksiyonundan türetilmiş bazı karesel fonksiyonlar verilmiştir.",
+          "items": [
+            {
+              "id": "p205-4-1",
+              "label": "1",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                85.441,
+                451.0599,
+                521.6587,
+                586.716
+              ],
+              "text": "x x -7 -7 -5 -5 -6 -6 -4 -3 -2 -1 0 1 2 -4 -3 -2 -1 0 1 2 7 7 3 4 3 4 5 6 5 6 -1 -1 Grafik -2 -2 h(x) = 3x² -3 -3 -4 -4 -5 -5 Grafik incelendiğinde h fonksiyonunun Grafik incelendiğinde h fonksiyonun "
+            },
+            {
+              "id": "p205-4-2",
+              "label": "2",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                67.2,
+                239.2,
+                499.7,
+                481.7
+              ],
+              "text": "2 2 $ $ 2 2 tanımlıdır.  h(x) = 3 f(x) = 3 x = 3x  $ $ Cebirsel h(x) = 3 f(x) = 3 x = 3x olduğu için olduğu için h fonksiyonun da tanım h fonksiyonun da görüntü kümesi R kümesi olur. [0, ∞) olur. Graf"
+            }
+          ]
         }
       ]
     },
@@ -18661,15 +18587,15 @@
           "label": "1",
           "column": 0,
           "rect": [
-            455.2,
-            49.0,
+            48.6929,
+            492.8,
             520.3508,
             611.7493
           ],
           "parts": [
             [
-              455.2,
-              49.0,
+              48.6929,
+              492.8,
               520.3508,
               611.7493
             ]
@@ -18825,14 +18751,14 @@
           "column": 0,
           "rect": [
             58.1595,
-            78.5472,
+            123.8376,
             520.3013,
             620.3192
           ],
           "parts": [
             [
               58.1595,
-              78.5472,
+              123.8376,
               520.3013,
               620.3192
             ]
@@ -19161,20 +19087,20 @@
           "column": 0,
           "rect": [
             107.2021,
-            457.1231,
+            460.6,
             318.1103,
             604.6627
           ],
           "parts": [
             [
               107.2021,
-              457.1231,
-              294.0586,
-              527.99765
+              460.6,
+              218.3,
+              599.8722
             ],
             [
-              142.5566,
-              528.99765,
+              230.8,
+              460.6,
               318.1103,
               604.6627
             ]
@@ -20833,11 +20759,11 @@
             [
               114.3504,
               500.0843,
-              467.79685,
+              451.2805,
               683.7186
             ],
             [
-              468.79685,
+              452.2805,
               541.2438,
               514.2721,
               687.442
@@ -23253,14 +23179,14 @@
           "rect": [
             48.6929,
             578.126,
-            72.8429,
+            55.1929,
             605.596
           ],
           "parts": [
             [
               48.6929,
               578.126,
-              72.8429,
+              55.1929,
               605.596
             ]
           ]
@@ -23270,17 +23196,17 @@
           "label": "a",
           "column": 0,
           "rect": [
-            84.5394,
-            174.8977,
+            58.1929,
+            556.16,
             520.5666,
-            556.1605
+            732.8547
           ],
           "parts": [
             [
-              84.5394,
-              174.8977,
+              58.1929,
+              556.16,
               520.5666,
-              556.1605
+              732.8547
             ]
           ],
           "headline": "Oluşan yeni fonksiyonun doğrusal fonksiyon olup olmadığını belirleyerek aşağıdaki alana görüşünüzü yazınız."
@@ -23311,22 +23237,16 @@
           "column": 0,
           "rect": [
             34.5197,
-            386.1,
+            232.108,
             496.7692,
             696.4754
           ],
           "parts": [
             [
               34.5197,
-              407.3,
+              232.108,
               496.7692,
               696.4754
-            ],
-            [
-              272.5,
-              386.1,
-              405.6,
-              406.3
             ]
           ],
           "headline": "Aşağıdaki tabloda cebirsel temsili verilen fonksiyonların grafiğini, tersinin cebirsel temsilini ve tersinin gra­"
@@ -23936,14 +23856,14 @@
           "column": 0,
           "rect": [
             34.4321,
-            190.9133,
+            558.7589,
             504.1505,
             732.6852
           ],
           "parts": [
             [
               34.4321,
-              190.9133,
+              558.7589,
               504.1505,
               732.6852
             ]
@@ -24189,15 +24109,15 @@
           "label": "4",
           "column": 0,
           "rect": [
-            452.8,
-            183.8,
+            48.6929,
+            671.5,
             520.5497,
             732.8547
           ],
           "parts": [
             [
-              452.8,
-              183.8,
+              48.6929,
+              671.5,
               520.5497,
               732.8547
             ]
@@ -24242,14 +24162,14 @@
           "column": 0,
           "rect": [
             34.5197,
-            190.3,
+            598.8,
             506.1815,
             732.8547
           ],
           "parts": [
             [
               34.5197,
-              190.3,
+              598.8,
               506.1815,
               732.8547
             ]
@@ -24445,17 +24365,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            426.4,
-            175.8,
+            48.6053,
+            647.9,
             520.481,
-            647.93
+            732.8547
           ],
           "parts": [
             [
-              426.4,
-              175.8,
+              48.6053,
+              647.9,
               520.481,
-              647.93
+              732.8547
             ]
           ],
           "headline": "Cebirsel temsilleri verilen karekök fonksiyonların bağımlı ve bağımsız değişkenlerinin yerleri değiştirilerek farklı tanım ve değer kümesine göre oluşan yeni ka"
@@ -24477,15 +24397,15 @@
           "label": "3",
           "column": 0,
           "rect": [
-            434.0,
-            182.7,
+            34.3445,
+            670.5,
             506.1634,
             732.8547
           ],
           "parts": [
             [
-              434.0,
-              182.7,
+              34.3445,
+              670.5,
               506.1634,
               732.8547
             ]
@@ -24529,15 +24449,15 @@
           "label": "5",
           "column": 0,
           "rect": [
-            445.0,
-            184.6,
+            48.7805,
+            560.4,
             520.4842,
             732.8547
           ],
           "parts": [
             [
-              445.0,
-              184.6,
+              48.7805,
+              560.4,
               520.4842,
               732.8547
             ]
@@ -27086,34 +27006,19 @@
           "column": 1,
           "rect": [
             267.0,
-            171.228,
-            429.2,
+            317.2,
+            506.203,
             713.0
           ],
           "parts": [
             [
               267.0,
-              171.228,
-              429.2,
+              317.2,
+              506.203,
               713.0
             ]
           ],
-          "headline": "Titreşim; araç, gereç ve makinelerin çalışırken oluşturdukları vibrasyon ve salınım hareketleri­ dir. Endüstride kullanılan taş kırma makinesi, pnö­ matik çekiç",
-          "items": [
-            {
-              "id": "p309-7-a",
-              "label": "a",
-              "number": 1,
-              "partIndex": 0,
-              "rect": [
-                288.2992,
-                211.7323,
-                419.1767,
-                243.2023
-              ],
-              "text": "a) teren fonksiyonu yazınız."
-            }
-          ]
+          "headline": "Titreşim; araç, gereç ve makinelerin çalışırken oluşturdukları vibrasyon ve salınım hareketleri­ dir. Endüstride kullanılan taş kırma makinesi, pnö­ matik çekiç"
         }
       ]
     },
@@ -32632,14 +32537,14 @@
           "column": 0,
           "rect": [
             44.002,
-            191.0827,
+            235.207,
             501.838,
             732.8547
           ],
           "parts": [
             [
               44.002,
-              191.0827,
+              235.207,
               501.838,
               732.8547
             ]

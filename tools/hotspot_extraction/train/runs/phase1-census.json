@@ -1,0 +1,312 @@
+{
+ "books": [
+  {
+   "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+   "regions": 440,
+   "cuts": 2,
+   "solutions": 0,
+   "panels": 2,
+   "straddle": 0,
+   "side-only": 1,
+   "bottom-in-block": 1,
+   "top-in-block": 0
+  },
+  {
+   "book": "0a3fbb41-8855-460f-af3d-41489a269851",
+   "regions": 717,
+   "cuts": 47,
+   "solutions": 12,
+   "panels": 35,
+   "straddle": 4,
+   "side-only": 20,
+   "bottom-in-block": 16,
+   "top-in-block": 7
+  },
+  {
+   "book": "0e966773-5012-4f57-8be5-d892e8c75f22",
+   "regions": 529,
+   "cuts": 45,
+   "solutions": 34,
+   "panels": 11,
+   "straddle": 13,
+   "side-only": 20,
+   "bottom-in-block": 9,
+   "top-in-block": 3
+  },
+  {
+   "book": "11941059-5fe2-451d-a33c-4fa44d846a59",
+   "regions": 367,
+   "cuts": 10,
+   "solutions": 6,
+   "panels": 4,
+   "straddle": 6,
+   "side-only": 1,
+   "bottom-in-block": 1,
+   "top-in-block": 2
+  },
+  {
+   "book": "1903e365-310a-46d9-933d-ec0a5af22549",
+   "regions": 563,
+   "cuts": 52,
+   "solutions": 42,
+   "panels": 10,
+   "straddle": 16,
+   "side-only": 9,
+   "bottom-in-block": 4,
+   "top-in-block": 23
+  },
+  {
+   "book": "1cc573f6-324a-470d-8452-bbf6d3fd0a23",
+   "regions": 606,
+   "cuts": 23,
+   "solutions": 16,
+   "panels": 7,
+   "straddle": 3,
+   "side-only": 6,
+   "bottom-in-block": 7,
+   "top-in-block": 7
+  },
+  {
+   "book": "3a4479c7-dcb7-4da6-b3e5-5f05dd98d155",
+   "regions": 571,
+   "cuts": 44,
+   "solutions": 39,
+   "panels": 5,
+   "straddle": 33,
+   "side-only": 2,
+   "bottom-in-block": 3,
+   "top-in-block": 6
+  },
+  {
+   "book": "3d372038-0d49-4a7d-bb62-446818ff6d36",
+   "regions": 370,
+   "cuts": 4,
+   "solutions": 3,
+   "panels": 1,
+   "straddle": 3,
+   "side-only": 1,
+   "bottom-in-block": 0,
+   "top-in-block": 0
+  },
+  {
+   "book": "4442fde4-91bb-46e1-a6b6-b949cec10b5b",
+   "regions": 789,
+   "cuts": 61,
+   "solutions": 54,
+   "panels": 7,
+   "straddle": 19,
+   "side-only": 28,
+   "bottom-in-block": 7,
+   "top-in-block": 7
+  },
+  {
+   "book": "51cdbbce-66f4-4baa-95d7-634bf11b7e44",
+   "regions": 1290,
+   "cuts": 42,
+   "solutions": 29,
+   "panels": 13,
+   "straddle": 2,
+   "side-only": 18,
+   "bottom-in-block": 13,
+   "top-in-block": 9
+  },
+  {
+   "book": "550e601a-7ae8-40c0-ba41-435fa30c16e8",
+   "regions": 174,
+   "cuts": 5,
+   "solutions": 2,
+   "panels": 3,
+   "straddle": 0,
+   "side-only": 1,
+   "bottom-in-block": 4,
+   "top-in-block": 0
+  },
+  {
+   "book": "66098271-92a3-48d4-9320-2033cbd3c94e",
+   "regions": 899,
+   "cuts": 108,
+   "solutions": 97,
+   "panels": 11,
+   "straddle": 55,
+   "side-only": 18,
+   "bottom-in-block": 12,
+   "top-in-block": 23
+  },
+  {
+   "book": "6e4f65dc-0054-4c19-b1c3-90acf2f68f46",
+   "regions": 78,
+   "cuts": 0,
+   "solutions": 0,
+   "panels": 0,
+   "straddle": 0,
+   "side-only": 0,
+   "bottom-in-block": 0,
+   "top-in-block": 0
+  },
+  {
+   "book": "753fcdb0-64fa-4c5e-b677-1e3e612b31b5",
+   "regions": 1907,
+   "cuts": 97,
+   "solutions": 80,
+   "panels": 17,
+   "straddle": 45,
+   "side-only": 4,
+   "bottom-in-block": 28,
+   "top-in-block": 20
+  },
+  {
+   "book": "7763e45b-e8ba-49df-a7d1-5932bc68e6ed",
+   "regions": 431,
+   "cuts": 23,
+   "solutions": 18,
+   "panels": 5,
+   "straddle": 18,
+   "side-only": 3,
+   "bottom-in-block": 2,
+   "top-in-block": 0
+  },
+  {
+   "book": "79cbecfa-b783-4472-9ba2-3933ffeb9b72",
+   "regions": 485,
+   "cuts": 114,
+   "solutions": 111,
+   "panels": 3,
+   "straddle": 76,
+   "side-only": 12,
+   "bottom-in-block": 14,
+   "top-in-block": 12
+  },
+  {
+   "book": "7fad03e9-392b-45a1-ba90-503059d9e41e",
+   "regions": 614,
+   "cuts": 36,
+   "solutions": 23,
+   "panels": 13,
+   "straddle": 5,
+   "side-only": 25,
+   "bottom-in-block": 5,
+   "top-in-block": 1
+  },
+  {
+   "book": "93bf209f-253c-4f5e-a54b-461731048d12",
+   "regions": 433,
+   "cuts": 6,
+   "solutions": 4,
+   "panels": 2,
+   "straddle": 2,
+   "side-only": 1,
+   "bottom-in-block": 2,
+   "top-in-block": 1
+  },
+  {
+   "book": "a0e5ed1a-c37b-45f1-9821-f98350b18911",
+   "regions": 2011,
+   "cuts": 121,
+   "solutions": 100,
+   "panels": 21,
+   "straddle": 34,
+   "side-only": 30,
+   "bottom-in-block": 26,
+   "top-in-block": 31
+  },
+  {
+   "book": "a7a7886a-4e91-4e34-8ba5-7c0e7582842d",
+   "regions": 4,
+   "cuts": 0,
+   "solutions": 0,
+   "panels": 0,
+   "straddle": 0,
+   "side-only": 0,
+   "bottom-in-block": 0,
+   "top-in-block": 0
+  },
+  {
+   "book": "ad3f3275-777a-4e34-b3e0-59c50605bdc6",
+   "regions": 5,
+   "cuts": 0,
+   "solutions": 0,
+   "panels": 0,
+   "straddle": 0,
+   "side-only": 0,
+   "bottom-in-block": 0,
+   "top-in-block": 0
+  },
+  {
+   "book": "afec0d89-bd70-4495-bad3-e95831c33721",
+   "regions": 636,
+   "cuts": 72,
+   "solutions": 71,
+   "panels": 1,
+   "straddle": 47,
+   "side-only": 6,
+   "bottom-in-block": 6,
+   "top-in-block": 13
+  },
+  {
+   "book": "c9f63718-e30b-4a3c-ad5b-63f83f2506e9",
+   "regions": 179,
+   "cuts": 25,
+   "solutions": 24,
+   "panels": 1,
+   "straddle": 1,
+   "side-only": 19,
+   "bottom-in-block": 4,
+   "top-in-block": 1
+  },
+  {
+   "book": "cb558332-7dbe-4915-a806-5723f5af0bd1",
+   "regions": 687,
+   "cuts": 49,
+   "solutions": 48,
+   "panels": 1,
+   "straddle": 37,
+   "side-only": 3,
+   "bottom-in-block": 2,
+   "top-in-block": 7
+  },
+  {
+   "book": "d13a75d3-33be-4102-8570-b14b1b6382b2",
+   "regions": 480,
+   "cuts": 42,
+   "solutions": 41,
+   "panels": 1,
+   "straddle": 39,
+   "side-only": 1,
+   "bottom-in-block": 1,
+   "top-in-block": 1
+  },
+  {
+   "book": "d6dd5587-41d4-4168-99d5-2f31038164c6",
+   "regions": 838,
+   "cuts": 1,
+   "solutions": 0,
+   "panels": 1,
+   "straddle": 0,
+   "side-only": 1,
+   "bottom-in-block": 0,
+   "top-in-block": 0
+  },
+  {
+   "book": "df1e313c-69bb-4229-95f7-59262de6375b",
+   "regions": 857,
+   "cuts": 73,
+   "solutions": 65,
+   "panels": 8,
+   "straddle": 47,
+   "side-only": 10,
+   "bottom-in-block": 7,
+   "top-in-block": 9
+  }
+ ],
+ "total": {
+  "book": "TOTAL",
+  "regions": 16960,
+  "cuts": 1102,
+  "solutions": 919,
+  "panels": 183,
+  "straddle": 505,
+  "side-only": 240,
+  "bottom-in-block": 174,
+  "top-in-block": 183
+ }
+}

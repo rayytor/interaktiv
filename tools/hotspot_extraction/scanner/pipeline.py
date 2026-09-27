@@ -41,6 +41,7 @@ from .prompts import detect_activity_markers
 from .regions import (
     ActivityRegion,
     GrowthTrace,
+    PageGeometry,
     detect_panels,
     detect_solution_spaces,
     grow_activity_regions,
@@ -77,6 +78,11 @@ class PageResult:
     activities: List[ActivityRegion]
     blocks: Blocks
     anchor_ids: List[str] = field(default_factory=list)
+    # The lines and drawn blocks the regions were separated against, or None on
+    # a sheet with no regions. The bake's final cleanup and the replay's both
+    # need it: without it the last de-overlap cuts at midpoints, through lines
+    # and blocks, and undoes the edge-snapping growth just did.
+    geometry: Optional[PageGeometry] = None
 
     @property
     def panels(self) -> List[Rect]:
@@ -169,6 +175,7 @@ def detect_page(
         activities=activities,
         blocks=ruler_blocks(prim, layout, markers),
         anchor_ids=anchor_ids,
+        geometry=trace.geometry,
     )
 
 

@@ -2,8 +2,8 @@
   "version": 2,
   "bookId": "550e601a-7ae8-40c0-ba41-435fa30c16e8",
   "fingerprint": "73438936-7492d307d9ad7a73a56df20fb2665e96",
-  "profile": "27b80aacc68e",
-  "builtAt": "2026-09-27T05:38:33.373Z",
+  "profile": "3aae0c22cfb6",
+  "builtAt": "2026-09-27T06:25:43.719Z",
   "pageCount": 73,
   "calibration": {
     "enabled": true,
@@ -958,14 +958,14 @@
           "column": 0,
           "rect": [
             57.0204,
-            188.7011,
+            197.4968,
             287.0766,
             742.2929
           ],
           "parts": [
             [
               57.0204,
-              188.7011,
+              197.4968,
               287.0766,
               742.2929
             ]
@@ -1202,7 +1202,7 @@
           "column": 3,
           "rect": [
             290.7583,
-            171.4716,
+            203.0698,
             530.3138,
             756.6616
           ],
@@ -1342,15 +1342,15 @@
           "label": "p",
           "column": 1,
           "rect": [
-            268.0847,
-            44.0,
+            275.2868,
+            441.8866,
             569.764,
             611.3845
           ],
           "parts": [
             [
-              268.0847,
-              44.0,
+              275.2868,
+              441.8866,
               569.764,
               611.3845
             ]
@@ -2170,7 +2170,7 @@
           "column": 0,
           "rect": [
             0.504,
-            188.7469,
+            203.7784,
             569.764,
             757.3702
           ],
@@ -2319,15 +2319,15 @@
           "label": "p",
           "column": 1,
           "rect": [
-            270.5286,
-            124.3989,
+            274.9325,
+            569.1981,
             518.5106,
             677.9907
           ],
           "parts": [
             [
-              270.5286,
-              124.3989,
+              274.9325,
+              569.1981,
               518.5106,
               677.9907
             ]
@@ -3755,7 +3755,7 @@
           "column": 0,
           "rect": [
             42.8772,
-            152.7388,
+            184.337,
             510.8837,
             737.9288
           ],
@@ -5978,7 +5978,7 @@
           "column": 0,
           "rect": [
             0.504,
-            188.7469,
+            203.7784,
             569.764,
             757.3702
           ],
@@ -6481,17 +6481,17 @@
           "label": "g",
           "column": 0,
           "rect": [
-            57.0968,
-            56.6923,
+            280.4811,
+            280.7737,
             541.843,
-            610.2841
+            710.5152
           ],
           "parts": [
             [
-              57.0968,
-              56.6923,
+              280.4811,
+              280.7737,
               541.843,
-              610.2841
+              710.5152
             ]
           ],
           "headline": "Read the sentence pairs and label them as Reason or Result. Then connect the two sentences with so.",
@@ -6555,50 +6555,11 @@
               "partIndex": 0,
               "rect": [
                 78.2047,
-                249.3,
-                284.4811,
+                280.7737,
+                236.4727,
                 312.0283
               ],
               "text": "5 There are more landslides. The region has lost its forests."
-            },
-            {
-              "id": "p48-g-6",
-              "label": "6",
-              "number": 6,
-              "partIndex": 0,
-              "rect": [
-                78.2047,
-                175.5558,
-                516.2905,
-                251.5491
-              ],
-              "text": "6 We reuse glass jars and paper. Clean Energy Project Lights Up Village We want to limit waste. A new solar project in the village of Lupur 9 is bringing light to homes used to go dark after sunset. A"
-            },
-            {
-              "id": "p48-g-7",
-              "label": "7",
-              "number": 7,
-              "partIndex": 0,
-              "rect": [
-                78.2047,
-                117.8931,
-                516.886,
-                191.0699
-              ],
-              "text": "7 Global warming is getting worse. 10 installed panels power lights Ice at the poles is disappearing. and phone chargers without smoke or noise. 11 The team leader, Samira, trained in the city returne"
-            },
-            {
-              "id": "p48-g-8",
-              "label": "8",
-              "number": 8,
-              "partIndex": 0,
-              "rect": [
-                78.2047,
-                65.0,
-                491.4773,
-                131.0356
-              ],
-              "text": "12 8 People cut down too many trees. She says children can now Animals lose their habitats. study in the evening are doing better in school."
             }
           ]
         },
@@ -6608,14 +6569,14 @@
           "column": 1,
           "rect": [
             66.5968,
-            638.5341,
+            712.0152,
             289.6217,
             742.1784
           ],
           "parts": [
             [
               66.5968,
-              638.5341,
+              712.0152,
               289.6217,
               742.1784
             ]

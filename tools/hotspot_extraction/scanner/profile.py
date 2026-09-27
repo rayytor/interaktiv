@@ -214,6 +214,9 @@ SPEC: Tuple[Knob, ...] = (
     Knob("GRAPHIC_PASSES", "regions", 8, "int", 1, 20, "rings out from the text a diagram may be followed"),
     Knob("GRAPHIC_LABEL", "regions", 12.0, "float", 2.0, 48.0, "pt outside a diagram its labels may sit"),
     Knob("GRAPHIC_HELD", "regions", 0.7, "float", 0.3, 0.95, "share of a shape a block must hold to own it"),
+    Knob("SNAP_EXPAND_SHARE", "regions", 0.35, "float", 0.1, 0.9, "share of a cut block a hotspot must hold to take it whole"),
+    Knob("SNAP_PANEL_RATIO", "regions", 2.5, "float", 1.0, 8.0, "largest panel a hotspot may take whole, in multiples of its area"),
+    Knob("SNAP_PASSES", "regions", 3, "int", 1, 6, "rounds of edge-snapping"),
 
     # ---- anchors.py: binding a region to the publisher's icon
     Knob("ANCHOR_ABOVE", "anchors", 24.0, "float", 4.0, 72.0, "pt an anchor icon may sit above its line"),

@@ -69,6 +69,9 @@ GRAPHIC_LINK = 24.0       # pt: gap to the next drawn shape that still reads as 
 GRAPHIC_PASSES = 8        # how many rings out from the text a diagram may be followed
 GRAPHIC_LABEL = 12.0      # pt: how far outside a diagram its own small-print labels may sit
 GRAPHIC_HELD = 0.7        # share of a shape that must lie in a block for the block to own it
+SNAP_EXPAND_SHARE = 0.35  # share of a cut block a hotspot must already hold to take it whole
+SNAP_PANEL_RATIO = 2.5    # largest panel, as a multiple of the hotspot's area, it may take whole
+SNAP_PASSES = 3           # rounds of edge-snapping before the page is left as it stands
 
 
 @dataclass
@@ -843,6 +846,27 @@ class PageGeometry:
     lines: List[dict]
     blocks: List[dict]          # [{"rect": (x0, y0, x1, y1), "kind": str}, ...]
     content_box: Tuple[float, float, float, float]
+    # The sheet itself, in pt; 0 when the caller did not know it. The tall rule
+    # is a share of the sheet, so the cleanup that enforces it has to measure
+    # the same sheet the scorer does. Guessing an A4 floor let every region on
+    # a 780 pt sheet grow to 0.75 of it.
+    page_w: float = 0.0
+    page_h: float = 0.0
+
+    def sheet(self) -> Tuple[float, float]:
+        """The sheet's width and height, or the old guess from the content box when unknown."""
+        if self.page_w > 0.0 and self.page_h > 0.0:
+            return self.page_w, self.page_h
+        return _guess_sheet(self)
+
+
+def _guess_sheet(geom: Optional[PageGeometry]) -> Tuple[float, float]:
+    """An A4 floor stretched to the content box -- only for a page whose size nobody passed."""
+    page_w, page_h = 595.0, 842.0
+    if geom is not None and geom.content_box:
+        page_w = max(page_w, geom.content_box[2] + 40.0)
+        page_h = max(page_h, geom.content_box[3] + 40.0)
+    return page_w, page_h
 
 
 def legal_planes(
@@ -941,6 +965,62 @@ def legal_planes_x(
         return True
 
     return sorted({round(x, 4) for x in planes if clear(x)})
+
+
+def tall_floor(
+    geom: Optional[PageGeometry],
+    rect: Sequence[float],
+    max_h: float,
+) -> float:
+    """
+    Where the bottom edge of a region too tall for the sheet comes to rest.
+
+    The height a region may not exceed is a share of the sheet, and it falls
+    wherever it falls -- as often inside an answer grid as between two lines.
+    Raising the bottom edge to exactly that height traded a tall region for a
+    sliced block, which is the same fault under another name. So the edge rises
+    to the lowest height at or above the limit that slices no block the region
+    did not already slice: a block that cannot be taken whole within the height
+    is left out whole, the way `snap_edges` treats any other block.
+
+    The candidates are the limit itself, the seams between lines, and the edges
+    of the drawn blocks. One that also runs clear of every line of type is taken
+    first; tightly set text has no such seam -- its line boxes overlap -- so a
+    block edge a descender crosses is the next best. With no candidate that
+    spares every block, or no geometry to ask, the edge stops at the limit.
+    """
+    limit = rect[3] - max_h
+    if geom is None:
+        return limit
+    x0, x1, top = rect[0], rect[2], rect[3]
+    near = [b["rect"] for b in geom.blocks if b["rect"][0] < x1 and b["rect"][2] > x0]
+    # Sparing a block means none of it or all of it, not the scorer's five per
+    # cent either way: a floor on a grid's inner row line leaves the row behind
+    # inside the region, which the ruler forgives and a reader does not. What
+    # the region's other edges already graze is not the floor's doing.
+    strict = 0.001
+    already = [cuts(tuple(rect), b, whole_tol=strict) for b in near]
+    rows = _lines_within(geom.lines, x0, x1, top, limit)
+
+    def spares_blocks(y: float) -> bool:
+        trial = (x0, y, x1, top)
+        return all(was or not cuts(trial, b, whole_tol=strict) for was, b in zip(already, near))
+
+    # A line box runs past its ink by the font's ascent and descent, so a height
+    # within a point of either edge has not gone through the type.
+    def clear_of_type(y: float) -> bool:
+        return not any(row["y0"] + 1.0 < y < row["y1"] - 1.0 for row in rows)
+
+    candidates = sorted(
+        y for y in {limit, *legal_planes(geom, x0, x1, top, limit),
+                    *(edge for b in near for edge in (b[1], b[3]))}
+        if limit <= y <= top - MIN_HOTSPOT
+    )
+    spared = [y for y in candidates if spares_blocks(y)]
+    for y in spared:
+        if clear_of_type(y):
+            return y
+    return spared[0] if spared else limit
 
 
 def nearest_plane(planes: List[float], target: float) -> Optional[float]:
@@ -2091,6 +2171,8 @@ def grow_activity_regions(
             [{"rect": f.rect, "kind": "figure"} for f in figures]
         ),
         content_box=content_box,
+        page_w=page_w,
+        page_h=page_h,
     )
     if trace is not None:
         trace.geometry = geom
@@ -2302,7 +2384,7 @@ def grow_activity_regions(
             # Hotspot height must not exceed TALL_REGION * page_h
             max_act_h = (TALL_REGION - 0.005) * page_h
             if rect[3] - rect[1] > max_act_h:
-                rect[1] = max(rect[1], rect[3] - max_act_h)
+                rect[1] = max(rect[1], tall_floor(geom, rect, max_act_h))
 
             # What an activity picks up in a later column stays in that column.
             # The activity's own band may spread -- a full-width strip absorbs
@@ -2442,9 +2524,9 @@ def _evict(
 def snap_edges(
     activities: List[ActivityRegion],
     geom: PageGeometry,
-    page_w: float = 595.0,
-    page_h: float = 842.0,
-    passes: int = 3,
+    page_w: Optional[float] = None,
+    page_h: Optional[float] = None,
+    passes: Optional[int] = None,
 ) -> List[ActivityRegion]:
     """
     Final edge-snapping pass across all activities and drawn blocks.
@@ -2455,10 +2537,10 @@ def snap_edges(
     """
     if not activities or not geom or not geom.blocks:
         return activities
-
-    if geom.content_box:
-        page_w = max(page_w, geom.content_box[2] + 40.0)
-        page_h = max(page_h, geom.content_box[3] + 40.0)
+    if passes is None:
+        passes = SNAP_PASSES
+    if page_w is None or page_h is None:
+        page_w, page_h = geom.sheet()
 
     # Filter out invalid or off-sheet blocks
     valid_blocks = [
@@ -2471,6 +2553,23 @@ def snap_edges(
     ]
     if not valid_blocks:
         return activities
+
+    def blocked(grown, a_idx: int, part: List[float]) -> bool:
+        """
+        Whether taking `grown` would put this part on top of another.
+
+        Another activity's part may not be touched at all. A part of the same
+        activity may be taken whole -- it is then inside this one, and is
+        dropped below as redundant -- but not in part, or the two pieces of one
+        region would overlap and the sheet would have a click that lands twice.
+        """
+        for o_a_idx, _, o_p in all_parts:
+            if o_p is part or rect_overlap(grown, tuple(o_p)) <= 1.0:
+                continue
+            if o_a_idx == a_idx and encloses(grown, tuple(o_p), tol=0.5):
+                continue
+            return True
+        return False
 
     for _ in range(passes):
         moved = False
@@ -2491,18 +2590,12 @@ def snap_edges(
 
                 # 1. Decide if expand is possible and safe
                 can_expand = (
-                    share >= 0.35
+                    share >= SNAP_EXPAND_SHARE
                     and (grown[3] - grown[1]) <= (TALL_REGION - 0.005) * page_h
-                    and (rect_area(b) <= 2.5 * rect_area(r) if blk.get("kind") == "panel" else True)
+                    and (rect_area(b) <= SNAP_PANEL_RATIO * rect_area(r) if blk.get("kind") == "panel" else True)
                 )
-                if can_expand:
-                    # Expansion MUST NOT overlap another activity's parts
-                    for o_a_idx, o_p_idx, o_p in all_parts:
-                        if o_a_idx == a_idx:
-                            continue
-                        if rect_overlap(grown, tuple(o_p)) > 1.0:
-                            can_expand = False
-                            break
+                if can_expand and blocked(grown, a_idx, p):
+                    can_expand = False
 
                 if can_expand:
                     p[:] = list(grown)
@@ -2542,20 +2635,15 @@ def snap_edges(
                         retreated = True
                         break
 
-                # 3. Fallback: if retreat was impossible, try expand with lower share (>= 0.35)
+                # 3. Fallback: if retreat was impossible, try expand with lower share (>= SNAP_EXPAND_SHARE)
                 # if safe and does not create any overlap
-                if not retreated and share >= 0.35:
+                if not retreated and share >= SNAP_EXPAND_SHARE:
                     can_expand_fallback = (
                         (grown[3] - grown[1]) <= (TALL_REGION - 0.005) * page_h
-                        and (rect_area(b) <= 2.5 * rect_area(r) if blk.get("kind") == "panel" else True)
+                        and (rect_area(b) <= SNAP_PANEL_RATIO * rect_area(r) if blk.get("kind") == "panel" else True)
                     )
-                    if can_expand_fallback:
-                        for o_a_idx, o_p_idx, o_p in all_parts:
-                            if o_a_idx == a_idx:
-                                continue
-                            if rect_overlap(grown, tuple(o_p)) > 1.0:
-                                can_expand_fallback = False
-                                break
+                    if can_expand_fallback and blocked(grown, a_idx, p):
+                        can_expand_fallback = False
                     if can_expand_fallback:
                         p[:] = list(grown)
                         r = tuple(p)
@@ -2565,11 +2653,32 @@ def snap_edges(
         max_h = (TALL_REGION - 0.005) * page_h
         for a_idx, p_idx, p in all_parts:
             if p[3] - p[1] > max_h:
-                p[1] = p[3] - max_h
+                p[1] = tall_floor(geom, p, max_h)
             activities[a_idx].parts[p_idx] = (
                 round(p[0], 4), round(p[1], 4), round(p[2], 4), round(p[3], 4)
             )
         for act in activities:
+            # A piece another piece of the same region grew over adds nothing.
+            # Its sub-items move to the piece that took it, since the reader
+            # finds a piece's questions by index.
+            kept = [
+                i for i, p in enumerate(act.parts)
+                if not any(
+                    j != i and encloses(q, p, tol=0.5) and (not encloses(p, q, tol=0.5) or j < i)
+                    for j, q in enumerate(act.parts)
+                )
+            ]
+            if kept and len(kept) < len(act.parts):
+                new_index = {
+                    i: next(n for n, k in enumerate(kept) if encloses(act.parts[k], p, tol=0.5))
+                    for i, p in enumerate(act.parts)
+                }
+                for q in act.items or []:
+                    q.part_index = new_index.get(q.part_index, q.part_index)
+                if act.items:
+                    act.items.sort(key=lambda it: (it.part_index, it.number if it.number is not None else 0))
+                act.parts = [act.parts[k] for k in kept]
+                moved = True
             if act.parts:
                 act.rect = (
                     round(min(p[0] for p in act.parts), 4),
@@ -2777,11 +2886,7 @@ def clean_page_activities(
             break
 
     # 3. Final edge-snapping against page geometry when available
-    page_w = 595.0
-    page_h = 842.0
-    if geom is not None and geom.content_box:
-        page_w = max(page_w, geom.content_box[2] + 40.0)
-        page_h = max(page_h, geom.content_box[3] + 40.0)
+    page_w, page_h = geom.sheet() if geom is not None else _guess_sheet(None)
 
     if geom is not None:
         cleaned_acts = snap_edges(cleaned_acts, geom, page_w, page_h)
@@ -2793,7 +2898,7 @@ def clean_page_activities(
         for p in act.parts:
             if p[2] - p[0] >= MIN_HOTSPOT and p[3] - p[1] >= MIN_HOTSPOT:
                 if p[3] - p[1] > max_h:
-                    p = (p[0], round(p[3] - max_h, 4), p[2], p[3])
+                    p = (p[0], round(tall_floor(geom, p, max_h), 4), p[2], p[3])
                 valid_parts.append(p)
         if valid_parts:
             act.parts = valid_parts

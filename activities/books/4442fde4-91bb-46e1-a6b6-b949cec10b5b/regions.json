@@ -2,8 +2,8 @@
   "version": 2,
   "bookId": "4442fde4-91bb-46e1-a6b6-b949cec10b5b",
   "fingerprint": "62218748-92b772ca89334c19a140444380d46ad1",
-  "profile": "27b80aacc68e",
-  "builtAt": "2026-09-27T05:37:39.270Z",
+  "profile": "3aae0c22cfb6",
+  "builtAt": "2026-09-27T06:24:48.289Z",
   "pageCount": 238,
   "calibration": {
     "enabled": true,
@@ -2560,7 +2560,7 @@
           "column": 0,
           "rect": [
             48.6929,
-            148.9613,
+            192.3793,
             520.7668,
             734.1513
           ],
@@ -8159,20 +8159,61 @@
           "label": "3",
           "column": 0,
           "rect": [
-            58.5536,
-            192.7827,
+            34.5197,
+            193.8,
             264.9261,
             734.5547
           ],
           "parts": [
             [
-              58.5536,
-              192.7827,
+              34.5197,
+              193.8,
               264.9261,
               734.5547
             ]
           ],
-          "headline": "Miletli Tales, denizdeki bir geminin sahile mesa­ fesini hesaplamak için sahile dik bir uçurumun ucuna yere paralel bir çubuk yerleştirmiştir."
+          "headline": "Miletli Tales, denizdeki bir geminin sahile mesa­ fesini hesaplamak için sahile dik bir uçurumun ucuna yere paralel bir çubuk yerleştirmiştir.",
+          "items": [
+            {
+              "id": "p89-3-a",
+              "label": "a",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                55.5276,
+                347.7415,
+                264.9261,
+                435.1715
+              ],
+              "text": "a) A, B, C noktaları doğrusaldır. “h” Tales’in yerden göz hizasına kadar yük­ sekliği, “c” çubuğun boyu, “d” Tales’in su yüzeyinden yüksekliği ve uzunluk  birimleri metre olmak üzere x in h, c ve d tü"
+            },
+            {
+              "id": "p89-3-b",
+              "label": "b",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                55.5276,
+                271.8911,
+                264.9261,
+                321.9212
+              ],
+              "text": "= = = 2 m b) c , ve ise gemi­ d 68 m h 1  , 7 m nin karaya uzaklığının kaç metre oldu­ ğunu bulunuz."
+            },
+            {
+              "id": "p89-3-c",
+              "label": "c",
+              "number": 3,
+              "partIndex": 0,
+              "rect": [
+                55.5276,
+                193.8,
+                264.9261,
+                241.6361
+              ],
+              "text": "c) Aşağıdaki ifadelerden doğru olanların karşısına “D”, yanlış olanların karşısına “Y” yazınız."
+            }
+          ]
         },
         {
           "id": "p89-4",
@@ -8459,14 +8500,14 @@
           "column": 1,
           "rect": [
             273.3388,
-            192.7827,
+            204.4012,
             506.9426,
             734.5547
           ],
           "parts": [
             [
               273.3388,
-              192.7827,
+              204.4012,
               506.9426,
               734.5547
             ]
@@ -8506,11 +8547,11 @@
               "partIndex": 0,
               "rect": [
                 287.9685,
-                192.7827,
+                204.4012,
                 502.9426,
                 276.1509
               ],
-              "text": "c) Aşağıdakilerden hangileri yapılırsa A noktasında asılı olan kuş evinin yer­ den yüksekliği ile C noktasında asılı olan kuş evinin yerden yüksekliği ara­ sındaki fark 8 metre olur? Yazınız. I. C nok"
+              "text": "c) Aşağıdakilerden hangileri yapılırsa A noktasında asılı olan kuş evinin yer­ den yüksekliği ile C noktasında asılı olan kuş evinin yerden yüksekliği ara­ sındaki fark 8 metre olur? Yazınız."
             }
           ]
         }
@@ -9982,14 +10023,14 @@
           "column": 0,
           "rect": [
             34.5197,
-            92.1111,
+            586.1575,
             509.054,
             633.883
           ],
           "parts": [
             [
               34.5197,
-              92.1111,
+              586.1575,
               509.054,
               633.883
             ]
@@ -11548,14 +11589,14 @@
           "column": 1,
           "rect": [
             145.402,
-            108.6838,
+            122.6434,
             506.8676,
             624.3148
           ],
           "parts": [
             [
               145.402,
-              108.6838,
+              122.6434,
               506.8676,
               624.3148
             ]
@@ -13202,20 +13243,61 @@
           "label": "1",
           "column": 0,
           "rect": [
-            42.5196,
-            151.0584,
+            34.5197,
+            187.0584,
             504.063,
             705.7
           ],
           "parts": [
             [
-              42.5196,
-              151.0584,
+              34.5197,
+              187.0584,
               504.063,
               705.7
             ]
           ],
-          "headline": "‟Çarpımı sıfır olan iki gerçek sayıdan en az biri sıfırdır.” önermesi veriliyor."
+          "headline": "‟Çarpımı sıfır olan iki gerçek sayıdan en az biri sıfırdır.” önermesi veriliyor.",
+          "items": [
+            {
+              "id": "p141-1-a",
+              "label": "a",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                55.5276,
+                522.7,
+                499.8,
+                671.9
+              ],
+              "text": "a)  Önermenin doğruluğunu ispatlayınız."
+            },
+            {
+              "id": "p141-1-b",
+              "label": "b",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                55.5276,
+                485.3278,
+                499.8,
+                561.3578
+              ],
+              "text": "b)  Yaptığınız cebirsel ispatın her bir adımını sözel olarak ifade ediniz. Önermenin doğ­ ruluğunu ispatlamak için kullandığınız man­ Akış Şeması tık bağlaçları ve niceleyicilere yönelik çıka­ rımları"
+            },
+            {
+              "id": "p141-1-c",
+              "label": "c",
+              "number": 3,
+              "partIndex": 0,
+              "rect": [
+                55.5276,
+                195.4548,
+                499.8,
+                509.5
+              ],
+              "text": "c)  Elde ettiğiniz sözel ifadelerden faydalana­ rak ispatın aşamalarını ifade eden bir algo­ ritmanın işleyişini sözde kod, algoritmik doğal dil ve akış şeması yardımıyla ifade ediniz. Sözde Kod Konu "
+            }
+          ]
         }
       ]
     },
@@ -13239,14 +13321,14 @@
           "column": 0,
           "rect": [
             48.6929,
-            128.7198,
+            129.5223,
             518.6737,
             670.4917
           ],
           "parts": [
             [
               48.6929,
-              128.7198,
+              129.5223,
               217.2,
               670.4917
             ],
@@ -13392,35 +13474,20 @@
           "label": "3",
           "column": 0,
           "rect": [
-            284.3626,
-            310.4,
+            48.6929,
+            718.1182,
             524.8035,
             734.5547
           ],
           "parts": [
             [
-              284.3626,
-              310.4,
+              48.6929,
+              718.1182,
               524.8035,
               734.5547
             ]
           ],
-          "headline": "Bir markette satılan tereyağının 700 gramlık paketinin fiyatı 280 TL’dir.",
-          "items": [
-            {
-              "id": "p144-3-b",
-              "label": "b",
-              "number": 2,
-              "partIndex": 0,
-              "rect": [
-                284.3626,
-                310.4,
-                517.0924,
-                432.0
-              ],
-              "text": "b)   TEREYAĞI 700 gr  280 TL  ...... TL / kg Yukarıda verilen etiket üzerindeki değer­ leri kullanarak algoritmayı test ediniz"
-            }
-          ]
+          "headline": "Bir markette satılan tereyağının 700 gramlık paketinin fiyatı 280 TL’dir."
         }
       ]
     },
@@ -13676,15 +13743,15 @@
           "column": 0,
           "rect": [
             34.5197,
-            192.7827,
-            263.8,
+            610.1926,
+            269.3,
             734.5547
           ],
           "parts": [
             [
               34.5197,
-              192.7827,
-              263.8,
+              610.1926,
+              269.3,
               734.5547
             ]
           ],
@@ -13715,14 +13782,14 @@
           "label": "b",
           "column": 1,
           "rect": [
-            266.8,
+            261.3,
             139.293,
             506.9106,
             374.4
           ],
           "parts": [
             [
-              266.8,
+              261.3,
               139.293,
               506.9106,
               374.4
@@ -13736,7 +13803,7 @@
               "number": 1,
               "partIndex": 0,
               "rect": [
-                266.8,
+                265.3,
                 231.7,
                 498.8,
                 287.9
@@ -13749,7 +13816,7 @@
               "number": 2,
               "partIndex": 0,
               "rect": [
-                266.8,
+                265.3,
                 139.293,
                 498.8,
                 239.7
@@ -13932,14 +13999,14 @@
           "column": 0,
           "rect": [
             48.6929,
-            441.8393,
+            412.0,
             291.7,
             734.5547
           ],
           "parts": [
             [
               48.6929,
-              441.8393,
+              412.0,
               291.7,
               734.5547
             ]
@@ -15687,11 +15754,11 @@
               48.6929,
               83.5659,
               488.4764,
-              265.8188
+              227.2217
             ],
             [
               242.1504,
-              268.8188,
+              230.2217,
               530.9506,
               553.633
             ]
@@ -16308,14 +16375,14 @@
           "column": 0,
           "rect": [
             34.5197,
-            341.1754,
+            341.175,
             506.8497,
             723.5949
           ],
           "parts": [
             [
               34.5197,
-              341.1754,
+              341.175,
               506.8497,
               723.5949
             ]
@@ -16575,23 +16642,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            103.9,
-            106.8449,
-            323.0372,
+            48.6929,
+            602.8543,
+            518.2361,
             692.0349
           ],
           "parts": [
             [
-              103.9,
-              150.2629,
-              228.2,
+              48.6929,
+              602.8543,
+              518.2361,
               692.0349
-            ],
-            [
-              228.2,
-              97.4,
-              323.0372,
-              198.1
             ]
           ],
           "headline": "Bir araştırma grubu, 27 memeli türünün bazı özelliklerini belirleyerek bunları aşağıdaki tabloya işle­ miştir."
@@ -17033,14 +17094,14 @@
           "column": 0,
           "rect": [
             48.6929,
-            95.4,
+            404.6997,
             520.8576,
             653.3105
           ],
           "parts": [
             [
               48.6929,
-              95.4,
+              404.6997,
               520.8576,
               653.3105
             ]
@@ -18200,14 +18261,14 @@
           "column": 0,
           "rect": [
             34.5197,
-            167.9989,
+            184.4812,
             436.1443,
             709.7709
           ],
           "parts": [
             [
               34.5197,
-              167.9989,
+              184.4812,
               436.1443,
               709.7709
             ]
@@ -19857,14 +19918,14 @@
           "column": 0,
           "rect": [
             34.5197,
-            183.6568,
+            219.6568,
             270.6258,
             733.5861
           ],
           "parts": [
             [
               34.5197,
-              183.6568,
+              219.6568,
               270.6258,
               733.5861
             ]
@@ -19948,11 +20009,11 @@
             [
               58.1929,
               479.4,
-              310.0085,
+              314.5,
               673.846
             ],
             [
-              311.0085,
+              356.8357,
               471.4,
               521.0126,
               673.846

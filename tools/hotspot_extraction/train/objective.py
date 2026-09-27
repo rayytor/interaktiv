@@ -379,7 +379,7 @@ def _replay_pages(pages) -> Iterable[Tuple[int, float, float, List[Dict[str, Any
     """
     for sp in pages:
         result = cache_mod.replay_page(sp)
-        acts = clean_page_activities(result.activities) if result.activities else []
+        acts = clean_page_activities(result.activities, geom=result.geometry) if result.activities else []
         yield (
             sp.page_num,
             sp.primitives.width,

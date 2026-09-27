@@ -19,6 +19,7 @@ from tools.hotspot_extraction.scanner.primitives import (
 from tools.hotspot_extraction.scanner.layout import PageLayout, Column
 from tools.hotspot_extraction.scanner.regions import (
     ActivityRegion,
+    SubItemRect,
     PageGeometry,
     snap_edges,
     clean_page_activities,
@@ -26,7 +27,9 @@ from tools.hotspot_extraction.scanner.regions import (
     cuts,
     rect_overlap,
     rect_area,
+    tall_floor,
     MIN_HOTSPOT,
+    TALL_REGION,
 )
 from tools.hotspot_extraction.scanner.anchors import (
     PublisherOge,
@@ -130,6 +133,91 @@ class TestSnapEdges:
         part_a = snapped[0].parts[0]
         part_b = snapped[1].parts[0]
         assert rect_overlap(part_a, part_b) <= 1.0
+
+
+class TestSnapAbsorbsItsOwnPieces:
+    """A piece that grows to take a block whole may take its sibling with it, never half of one."""
+
+    def geom(self, blocks):
+        return PageGeometry(lines=[], blocks=blocks, content_box=(28.0, 40.0, 525.0, 740.0),
+                            page_w=552.8, page_h=779.5)
+
+    def test_a_swallowed_sibling_is_dropped_and_its_items_follow(self):
+        panel = {"rect": (60.0, 232.0, 496.0, 696.0), "kind": "panel"}
+        big, small = (34.0, 420.0, 497.0, 696.0), (272.0, 386.0, 405.0, 420.0)
+        act = ActivityRegion(
+            id="p1-3", label="3", column=0, rect=(34.0, 386.0, 497.0, 696.0), parts=[big, small],
+            items=[SubItemRect(id="p1-3-1", label=None, number=1, part_index=1, rect=small)],
+        )
+        out = snap_edges([act], self.geom([panel]))[0]
+        assert len(out.parts) == 1
+        assert not cuts(out.parts[0], panel["rect"])
+        assert out.items[0].part_index == 0
+
+    def test_a_sibling_only_partly_covered_blocks_the_expansion(self):
+        panel = {"rect": (60.0, 232.0, 496.0, 696.0), "kind": "panel"}
+        big, astride = (34.0, 420.0, 497.0, 696.0), (272.0, 200.0, 405.0, 419.0)
+        act = ActivityRegion(id="p1-3", label="3", column=0, rect=(34.0, 200.0, 497.0, 696.0),
+                             parts=[big, astride])
+        out = snap_edges([act], self.geom([panel]))[0]
+        for i, p in enumerate(out.parts):
+            for q in out.parts[i + 1:]:
+                assert rect_overlap(p, q) <= 1.0
+
+
+class TestTallRegions:
+    """The tall rule is a share of the real sheet, and enforcing it never slices a block."""
+
+    # A 780 pt sheet: shorter than A4, which is where the old A4 floor let
+    # regions run to 0.75 of the sheet.
+    W, H = 552.8, 779.5
+
+    def geom(self, blocks=(), lines=()):
+        return PageGeometry(
+            lines=list(lines),
+            blocks=[dict(b) for b in blocks],
+            content_box=(28.0, 40.0, 525.0, 740.0),
+            page_w=self.W,
+            page_h=self.H,
+        )
+
+    def test_the_cleanup_measures_the_sheet_it_is_given(self):
+        part = (40.0, 140.0, 500.0, 717.0)          # 0.74 of the sheet
+        act = ActivityRegion(id="p1-1", label="1", column=0, rect=part, parts=[part])
+        out = clean_page_activities([act], geom=self.geom())
+        top_to_bottom = out[0].parts[0][3] - out[0].parts[0][1]
+        assert top_to_bottom <= TALL_REGION * self.H
+
+    def test_snapping_does_not_grow_a_region_past_the_sheet(self):
+        grid = {"rect": (42.0, 140.0, 497.0, 603.0), "kind": "grid"}
+        part = (34.0, 176.0, 506.0, 717.0)          # the grid whole would be 0.74
+        act = ActivityRegion(id="p1-1", label="1", column=0, rect=part, parts=[part])
+        out = snap_edges([act], self.geom([grid]))
+        p = out[0].parts[0]
+        assert p[3] - p[1] <= TALL_REGION * self.H
+
+    def test_the_floor_leaves_a_block_out_whole(self):
+        grid = {"rect": (42.0, 140.0, 497.0, 603.0), "kind": "grid"}
+        part = (34.0, 140.0, 506.0, 717.0)
+        max_h = (TALL_REGION - 0.005) * self.H
+        floor = tall_floor(self.geom([grid]), part, max_h)
+        assert floor == pytest.approx(603.0)
+        assert not cuts((part[0], floor, part[2], part[3]), grid["rect"])
+
+    def test_the_floor_falls_between_lines_not_through_one(self):
+        max_h = (TALL_REGION - 0.005) * self.H
+        part = (34.0, 100.0, 506.0, 717.0)
+        limit = part[3] - max_h
+        # A line of type straddling the limit, and clear space above it.
+        line = {"x0": 40.0, "x1": 500.0, "y0": limit - 4.0, "y1": limit + 6.0}
+        above = {"x0": 40.0, "x1": 500.0, "y0": limit + 20.0, "y1": limit + 30.0}
+        floor = tall_floor(self.geom(lines=[line, above]), part, max_h)
+        assert line["y1"] <= floor <= above["y0"]
+
+    def test_with_no_seam_the_floor_is_the_limit(self):
+        max_h = (TALL_REGION - 0.005) * self.H
+        part = (34.0, 100.0, 506.0, 717.0)
+        assert tall_floor(None, part, max_h) == pytest.approx(part[3] - max_h)
 
 
 class TestCleanPageActivitiesZeroOverlaps:
