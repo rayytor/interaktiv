@@ -12,6 +12,25 @@ decides which detected region answers each entry. A region that answered one is
 a positive; a region on a sheet that *has* entries and answered none is a
 negative. Nobody draws a box, which was the condition on doing this at all.
 
+**What is left out, and why.** A region grown from a manifest entry's icon, or
+bound to one, is matched to that entry by construction: its positive label is
+the manifest restated, and a model given it learns to read the flag rather than
+the page (the first verdict put +2.20 on `is_anchored` for exactly that
+reason). So the candidates are what the detector finds *without* the
+publisher's help -- `detect_page(reconcile=False)` -- which is also the set a
+ranker would have to choose among if it were ever used, and any anchored region
+that still reaches the dataset is dropped and counted.
+
+**What the model has to beat.** Not "the topmost region": the detector's own
+choice. For every candidate the dataset carries its `link_oges` geometric cost
+(`pair_cost`: drift plus weighted reach) to the nearest icon on the sheet, and
+the baseline picks the cheapest. The label gate is left out of that baseline on
+purpose -- with it the baseline *is* the join the labels come from and scores
+100% by definition -- so it answers the question a ranker would actually face:
+given where the icons hang, and nothing else, which region is it? It is also
+reported on the *contested* sheets, where the two cheapest candidates are
+within `CONTESTED` of each other and drift alone cannot tell them apart.
+
 The weakness is in the negatives, and it has to be said plainly: a page may
 carry five activities of which the publisher marked one interactive, so four
 perfectly good regions are labelled 0. The label is therefore "is this the kind
@@ -43,7 +62,14 @@ PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(o
 if PROJECT_ROOT not in sys.path:
     sys.path.insert(0, PROJECT_ROOT)
 
-from interaktiv_core.linking import link_oges, oge_view, region_view
+from interaktiv_core.linking import (
+    UNLABELLED_DRIFT,
+    apply_anchored_ids,
+    link_oges,
+    oge_view,
+    pair_cost,
+    region_view,
+)
 from tools.hotspot_extraction.scanner.profile import RULER, apply_profile, from_dict, load_profile
 from tools.hotspot_extraction.scanner.regions import clean_page_activities
 from tools.hotspot_extraction.scanner.score import interactive_oges, _group_by_printed_page
@@ -56,7 +82,12 @@ from tools.hotspot_extraction.train.features import (
     page_context,
 )
 
-MODEL_VERSION = 1
+# 2: `is_anchored` removed, anchored regions out of the dataset.
+MODEL_VERSION = 2
+
+# Two candidates whose geometric costs are this close (in % of the sheet) are
+# ones drift cannot separate: half the window an unlabelled entry is allowed.
+CONTESTED = UNLABELLED_DRIFT / 2
 
 
 # ------------------------------------------------------------- the dataset
@@ -68,6 +99,11 @@ class Dataset:
     y: List[int] = field(default_factory=list)
     book: List[str] = field(default_factory=list)
     page: List[int] = field(default_factory=list)
+    # `pair_cost` to the cheapest icon on the sheet; inf when none is placed.
+    cost: List[float] = field(default_factory=list)
+    # Anchored regions that reached the dataset and were dropped. Should be 0:
+    # the replay runs without the publisher's anchors.
+    anchored_dropped: int = 0
 
     def __len__(self) -> int:
         return len(self.y)
@@ -80,6 +116,8 @@ class Dataset:
         self.y.extend(other.y)
         self.book.extend(other.book)
         self.page.extend(other.page)
+        self.cost.extend(other.cost)
+        self.anchored_dropped += other.anchored_dropped
 
 
 def examples_for_book(task: Dict[str, Any]) -> Dict[str, Any]:
@@ -105,52 +143,59 @@ def examples_for_book(task: Dict[str, Any]) -> Dict[str, Any]:
         page_oges = oges_by_printed.get(printed, []) if printed is not None else []
         if not page_oges:
             continue
-        result = cache_mod.replay_page(sp)
+        # Without the publisher's anchors: the regions the detector finds on
+        # its own, which are the only ones whose label is not a tautology.
+        result = cache_mod.replay_page(sp, reconcile=False)
         if not result.activities:
             continue
         acts = [serialize_activity(a) for a in clean_page_activities(result.activities)]
-        if not acts:
+        kept = [a for a in acts if not _is_anchored(a, sp.page_num)]
+        ds.anchored_dropped += len(acts) - len(kept)
+        if not kept:
             continue
 
         prim = sp.primitives
-        ctx = page_context(prim, result.layout, result.panels, result.solutions, acts)
+        ctx = page_context(prim, result.layout, result.panels, result.solutions, kept)
 
-        matched = _matched_region_ids(acts, page_oges, sp.page_num, prim.width, prim.height)
-        for act in acts:
+        matched, costs = _labels_and_costs(kept, page_oges, prim.width, prim.height)
+        for i, act in enumerate(kept):
             ds.x.append(features_for(act, ctx, whole_tol=RULER.WHOLE_TOL))
-            ds.y.append(1 if act["id"] in matched else 0)
+            ds.y.append(1 if i in matched else 0)
             ds.book.append(book_id)
             ds.page.append(sp.page_num)
+            ds.cost.append(costs[i])
         del result, ctx
     return {
         "book_id": book_id,
-        "x": ds.x, "y": ds.y, "book": ds.book, "page": ds.page,
+        "x": ds.x, "y": ds.y, "book": ds.book, "page": ds.page, "cost": ds.cost,
+        "anchored_dropped": ds.anchored_dropped,
     }
 
 
-def _matched_region_ids(
+def _is_anchored(activity: Dict[str, Any], page_num: int) -> bool:
+    """Grown from an entry's icon, or bound to one: matched by construction."""
+    return bool(
+        activity.get("anchored")
+        or activity.get("ogeId")
+        or activity["id"].startswith(f"p{page_num}-oge-")
+    )
+
+
+def _labels_and_costs(
     activities: Sequence[Dict[str, Any]],
     page_oges: Sequence[Dict[str, Any]],
-    page_num: int,
     page_w: float,
     page_h: float,
-) -> set:
+) -> Tuple[set, List[float]]:
     """
-    Which regions on this sheet answered a publisher entry.
+    Which regions answered a publisher entry, and each one's cost to the icons.
 
-    The same join the scorer uses -- `link_oges` plus the two shapes of anchor
-    binding -- so a positive here means exactly what an `ok` bucket means there.
-    Re-deriving it with a looser rule would train the model on a target the
-    score does not measure.
+    The label is the reader's own join -- `link_oges`, then the construction
+    claims of `apply_anchored_ids` -- so a positive here means what a matched
+    entry means in the reader. The cost is `pair_cost` to the cheapest icon on
+    the sheet that no region claims by construction, with no gate applied:
+    what position alone says, which is the baseline a model must beat.
     """
-    out = set()
-    prefix = f"p{page_num}-oge-"
-    for a in activities:
-        if a.get("ogeId"):
-            out.add(a["id"])
-        elif a["id"].startswith(prefix):
-            out.add(a["id"])
-
     region_views = [
         region_view(
             region_id=a["id"], label=a.get("label"), rect=tuple(a["rect"]),
@@ -164,9 +209,15 @@ def _matched_region_ids(
                  printed_page=o.get("sayfano"), posx=o.get("posx"), posy=o.get("posy"))
         for o in page_oges
     ]
-    for ri in link_oges(region_views, oge_views, confidence=None).keys():
-        out.add(activities[ri]["id"])
-    return out
+    links = apply_anchored_ids(
+        link_oges(region_views, oge_views, confidence=None), region_views, oge_views,
+    )
+    costs: List[float] = []
+    for rv in region_views:
+        c = [pair_cost(rv, ov) for ov in oge_views]
+        c = [v for v in c if v is not None]
+        costs.append(min(c) if c else math.inf)
+    return set(links.keys()), costs
 
 
 def build_dataset(
@@ -187,7 +238,10 @@ def build_dataset(
     ds = Dataset()
     with ProcessPoolExecutor(max_workers=workers, max_tasks_per_child=1) as ex:
         for res in ex.map(examples_for_book, tasks):
-            part = Dataset(x=res["x"], y=res["y"], book=res["book"], page=res["page"])
+            part = Dataset(
+                x=res["x"], y=res["y"], book=res["book"], page=res["page"],
+                cost=res["cost"], anchored_dropped=res["anchored_dropped"],
+            )
             ds.extend(part)
     return ds
 
@@ -302,7 +356,33 @@ def auc(model: LogisticModel, ds: Dataset) -> Optional[float]:
     return (rank_sum - pos * (pos + 1) / 2) / (pos * neg)
 
 
-def top1_accuracy(model: LogisticModel, ds: Dataset) -> Optional[float]:
+def _single_positive_pages(ds: Dataset) -> List[List[int]]:
+    """Example indices per sheet, for sheets with one marked region among several."""
+    pages: Dict[Tuple[str, int], List[int]] = {}
+    for i, (b, p) in enumerate(zip(ds.book, ds.page)):
+        pages.setdefault((b, p), []).append(i)
+    return [
+        rows for rows in pages.values()
+        if len(rows) > 1 and sum(ds.y[i] for i in rows) == 1
+    ]
+
+
+def contested(ds: Dataset, rows: Sequence[int]) -> bool:
+    """Drift cannot separate this sheet: its two cheapest candidates are within `CONTESTED`."""
+    costs = sorted(ds.cost[i] for i in rows)
+    return len(costs) > 1 and costs[1] - costs[0] <= CONTESTED
+
+
+def _top1(ds: Dataset, pick, only_contested: bool = False) -> Optional[float]:
+    usable = _single_positive_pages(ds)
+    if only_contested:
+        usable = [rows for rows in usable if contested(ds, rows)]
+    if not usable:
+        return None
+    return sum(1 for rows in usable if ds.y[pick(rows)] == 1) / len(usable)
+
+
+def top1_accuracy(model: LogisticModel, ds: Dataset, *, only_contested: bool = False) -> Optional[float]:
     """
     On each sheet with exactly one marked entry, does the model rank it first?
 
@@ -312,33 +392,25 @@ def top1_accuracy(model: LogisticModel, ds: Dataset) -> Optional[float]:
     a model can have a respectable AUC over the whole corpus and still lose the
     per-page contest that matters.
     """
-    pages: Dict[Tuple[str, int], List[Tuple[float, int]]] = {}
-    for x, y, b, p in zip(ds.x, ds.y, ds.book, ds.page):
-        pages.setdefault((b, p), []).append((model.score(x), y))
-    usable = [rows for rows in pages.values() if sum(y for _, y in rows) == 1 and len(rows) > 1]
-    if not usable:
-        return None
-    hits = sum(1 for rows in usable if max(rows, key=lambda r: r[0])[1] == 1)
-    return hits / len(usable)
+    return _top1(ds, lambda rows: max(rows, key=lambda i: model.score(ds.x[i])), only_contested)
 
 
-def baseline_top1(ds: Dataset) -> Optional[float]:
+def baseline_top1(ds: Dataset, *, only_contested: bool = False) -> Optional[float]:
     """
-    The rules' own answer to the same question, so the model has something to beat.
+    The detector's own answer to the same question, so the model has something to beat.
 
-    "The topmost region on the sheet" is the closest thing the detector has to a
-    guess when it must choose one, and a learned scorer that cannot beat *that*
-    has no claim on anybody's dependency budget.
+    The candidate with the cheapest `pair_cost` to an icon on the sheet -- the
+    geometry `link_oges` settles pairs by. A learned scorer that cannot beat
+    *that* has no claim on anybody's dependency budget.
     """
-    y_centre = FEATURE_NAMES.index("y_centre")
-    pages: Dict[Tuple[str, int], List[Tuple[float, int]]] = {}
-    for x, y, b, p in zip(ds.x, ds.y, ds.book, ds.page):
-        pages.setdefault((b, p), []).append((x[y_centre], y))
-    usable = [rows for rows in pages.values() if sum(y for _, y in rows) == 1 and len(rows) > 1]
-    if not usable:
-        return None
-    hits = sum(1 for rows in usable if max(rows, key=lambda r: r[0])[1] == 1)
-    return hits / len(usable)
+    return _top1(ds, lambda rows: min(rows, key=lambda i: ds.cost[i]), only_contested)
+
+
+def usable_pages(ds: Dataset, *, only_contested: bool = False) -> int:
+    usable = _single_positive_pages(ds)
+    if only_contested:
+        usable = [rows for rows in usable if contested(ds, rows)]
+    return len(usable)
 
 
 # -------------------------------------------------------------------- CLI
@@ -367,41 +439,51 @@ def main() -> int:
           f"{__import__('tools.hotspot_extraction.scanner.profile', fromlist=['profile_hash']).profile_hash(profile)}")
     train_ds = build_dataset(train_ids, profile=profile, workers=args.workers)
     held_ds = build_dataset(held_ids, profile=profile, workers=args.workers)
-    print(f"  train    {len(train_ds):6d} regions on manifest pages, {train_ds.positives()} marked "
-          f"({train_ds.positives() / max(1, len(train_ds)):.1%})")
-    print(f"  held-out {len(held_ds):6d} regions on manifest pages, {held_ds.positives()} marked "
-          f"({held_ds.positives() / max(1, len(held_ds)):.1%})")
+    for name, d in (("train", train_ds), ("held-out", held_ds)):
+        print(f"  {name:<8} {len(d):6d} regions on manifest pages, {d.positives()} marked "
+              f"({d.positives() / max(1, len(d)):.1%}); {d.anchored_dropped} anchored dropped")
 
     model = train_logistic(train_ds, epochs=args.epochs, l2=args.l2)
+
+    def judged(d: Dataset) -> Dict[str, Any]:
+        return {
+            "examples": len(d), "positives": d.positives(),
+            "anchoredDropped": d.anchored_dropped,
+            "auc": auc(model, d),
+            "pages": usable_pages(d),
+            "top1": top1_accuracy(model, d),
+            "baselineTop1": baseline_top1(d),
+            "contestedPages": usable_pages(d, only_contested=True),
+            "contestedTop1": top1_accuracy(model, d, only_contested=True),
+            "contestedBaselineTop1": baseline_top1(d, only_contested=True),
+        }
 
     verdict = {
         "profileHash": __import__(
             "tools.hotspot_extraction.scanner.profile", fromlist=["profile_hash"]
         ).profile_hash(profile),
-        "train": {
-            "examples": len(train_ds), "positives": train_ds.positives(),
-            "auc": auc(model, train_ds), "top1": top1_accuracy(model, train_ds),
-            "baselineTop1": baseline_top1(train_ds),
-        },
-        "heldOut": {
-            "examples": len(held_ds), "positives": held_ds.positives(),
-            "auc": auc(model, held_ds), "top1": top1_accuracy(model, held_ds),
-            "baselineTop1": baseline_top1(held_ds),
-        },
+        "modelVersion": MODEL_VERSION,
+        "baseline": "link_oges pair_cost (drift + reach) to the cheapest icon on the sheet, no label gate",
+        "contestedWithin": CONTESTED,
+        "train": judged(train_ds),
+        "heldOut": judged(held_ds),
         "model": model.to_dict(),
     }
 
-    print("\n                      AUC     top-1    rules' top-1")
+    fmt = lambda v: "   n/a" if v is None else f"{v:6.3f}"
+    print("\n                      AUC     top-1   drift top-1  pages | contested: top-1  drift  pages")
     for name in ("train", "heldOut"):
         r = verdict[name]
-        fmt = lambda v: "   n/a" if v is None else f"{v:6.3f}"
-        print(f"  {name:<10} {fmt(r['auc'])}  {fmt(r['top1'])}   {fmt(r['baselineTop1'])}")
+        print(f"  {name:<10} {fmt(r['auc'])}  {fmt(r['top1'])}   {fmt(r['baselineTop1'])}   {r['pages']:5d} |"
+              f"            {fmt(r['contestedTop1'])} {fmt(r['contestedBaselineTop1'])}  {r['contestedPages']:5d}")
 
     ho = verdict["heldOut"]
     margin = None
     if ho["top1"] is not None and ho["baselineTop1"] is not None:
         margin = ho["top1"] - ho["baselineTop1"]
         verdict["heldOutMargin"] = margin
+    if ho["contestedTop1"] is not None and ho["contestedBaselineTop1"] is not None:
+        verdict["heldOutContestedMargin"] = ho["contestedTop1"] - ho["contestedBaselineTop1"]
 
     print("\n  strongest weights:")
     ranked = sorted(
@@ -421,6 +503,10 @@ def main() -> int:
         print(f"  VERDICT: the model does not beat the rules on held-out books "
               f"({margin:+.1%}). Keep the fitted rules; a learned scorer is not "
               f"earning its place on this corpus.")
+    cm = verdict.get("heldOutContestedMargin")
+    if cm is not None:
+        print(f"  On the {ho['contestedPages']} held-out sheets drift cannot separate "
+              f"(within {CONTESTED:g}%): model {cm:+.1%} against drift.")
 
     if args.json:
         with open(args.json, "w", encoding="utf-8") as f:

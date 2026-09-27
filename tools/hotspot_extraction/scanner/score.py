@@ -194,6 +194,7 @@ class Tally:
     solutions_cut: int = 0
     solutions_covered: int = 0
     solutions_total: int = 0
+    panels_total: int = 0
     off_sheet_solutions: int = 0
     tall: int = 0
     slivers: int = 0
@@ -244,6 +245,7 @@ def merge_tallies(parts: Sequence[Tally]) -> Tally:
         out.solutions_cut += t.solutions_cut
         out.solutions_covered += t.solutions_covered
         out.solutions_total += t.solutions_total
+        out.panels_total += t.panels_total
         out.off_sheet_solutions += t.off_sheet_solutions
         out.tall += t.tall
         out.slivers += t.slivers
@@ -360,6 +362,7 @@ def tally_page(
         ]
         t.off_sheet_solutions += len(diag["solutions"]) - len(on_sheet)
         t.solutions_total += len(on_sheet)
+        t.panels_total += len(diag["panels"])
         for block in on_sheet:
             if any(rect_overlap(r, block) >= 0.5 * rect_area(block) for r in all_parts):
                 t.solutions_covered += 1
@@ -529,6 +532,12 @@ def finish_row(t: Tally, ctx: Dict[str, Any]) -> Dict[str, Any]:
         "stats": {
             "markers": t.markers,
             "markersOutsideRegions": t.markers - t.markers_in_region,
+            # The size of the ruler: how many drawn blocks the cut counts were
+            # measured against. Built under the defaults whatever profile ran
+            # (see `pipeline.ruler_blocks`), so a change here is a change in
+            # the book, never in the candidate.
+            "panels": t.panels_total,
+            "solutions": t.solutions_total,
             "solutionCoverage": (
                 round(t.solutions_covered / t.solutions_total, 3)
                 if t.solutions_total else None

@@ -72,6 +72,12 @@ class Weights:
 
 DEFAULT_WEIGHTS = Weights()
 
+# How much of a book a candidate may give up before `Evaluation.gates` calls it
+# a failure, whatever the loss says. See `gates` for why the loss cannot be
+# trusted to say it.
+COVERAGE_GATE = 0.05       # share of the book's sheets that carry a region
+REGIONS_GATE = 0.20        # share of the book's regions
+
 
 @dataclass
 class BookScore:
@@ -173,6 +179,42 @@ class Evaluation:
             "coverage": round(sum(b.pages_with_regions for b in self.books) / pages, 4) if pages else 0.0,
             "loss": round(self.loss, 6),
         }
+
+    def gates(self, baseline: "Evaluation") -> List[Dict[str, Any]]:
+        """
+        Books this evaluation gave up too much of, against `baseline`.
+
+        The loss has an exit the weights cannot close. A book with no manifest
+        scores `cut·100 − coverage`, so on its own terms baking nothing is its
+        optimum: every region removed takes its violations with it and costs at
+        most a point of coverage. Averaged over the split, a fit can walk a
+        few such books to empty and report a better number. This is the check
+        that it did not -- per book, because the aggregate is exactly where one
+        book emptying hides.
+
+        A failure is a book that lost more than `COVERAGE_GATE` of its sheets'
+        coverage or more than `REGIONS_GATE` of its regions, or that the
+        baseline scored and this evaluation did not.
+        """
+        mine = {b.book_id: b for b in self.books}
+        out: List[Dict[str, Any]] = []
+        for before in sorted(baseline.books, key=lambda b: b.book_id):
+            after = mine.get(before.book_id)
+            if after is None:
+                out.append({"bookId": before.book_id, "gate": "not-scored"})
+                continue
+            lost_coverage = before.coverage - after.coverage
+            if lost_coverage > COVERAGE_GATE:
+                out.append({
+                    "bookId": before.book_id, "gate": "coverage",
+                    "before": round(before.coverage, 4), "after": round(after.coverage, 4),
+                })
+            if before.regions and (before.regions - after.regions) / before.regions > REGIONS_GATE:
+                out.append({
+                    "bookId": before.book_id, "gate": "regions",
+                    "before": before.regions, "after": after.regions,
+                })
+        return out
 
     def summary(self) -> str:
         t = self.totals()

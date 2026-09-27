@@ -20,7 +20,7 @@ PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(o
 if PROJECT_ROOT not in sys.path:
     sys.path.insert(0, PROJECT_ROOT)
 
-from tools.hotspot_extraction.scanner.profile import DEFAULTS, TUNABLE, BY_KEY
+from tools.hotspot_extraction.scanner.profile import DEFAULTS, TUNABLE, BY_KEY, apply_profile, profile_applied
 from tools.hotspot_extraction.scanner.score import Tally, merge_tallies
 from tools.hotspot_extraction.train import cache as cache_mod
 from tools.hotspot_extraction.train import fit as fit_mod
@@ -29,6 +29,13 @@ from tools.hotspot_extraction.train import objective as obj
 
 def _a_cached_book():
     ids = cache_mod.cached_books()
+    return ids[0] if ids else None
+
+
+def _a_cached_training_book():
+    from tools.hotspot_extraction.train import splits as splits_mod
+    cached = set(cache_mod.cached_books())
+    ids = [b for b in splits_mod.train_ids() if b in cached]
     return ids[0] if ids else None
 
 
@@ -73,6 +80,39 @@ class TestWeights:
         missed = obj.BookScore("a", 10, 10, 10, 0, 0, 0, 0, 0, 0, 10)
         found = obj.BookScore("b", 10, 10, 10, 10, 0, 0, 0, 0, 0, 10)
         assert found.loss() < missed.loss()
+
+
+class TestGates:
+    """
+    A book with no manifest scores `100·cut_rate − coverage`, so emptying it is
+    its optimum. The loss cannot see that; the gates are what does.
+    """
+
+    def _ev(self, *books):
+        return obj.Evaluation(profile_hash="x", loss=0.0, books=list(books))
+
+    def test_a_book_emptied_to_buy_a_better_loss_fails(self):
+        before = obj.BookScore("nomanifest", 100, 80, 0, 0, 2, 0, 0, 0, 0, 60)
+        after = obj.BookScore("nomanifest", 100, 10, 0, 0, 0, 0, 0, 0, 0, 10)
+        assert after.loss() < before.loss()  # the exit the gates close
+        failures = self._ev(after).gates(self._ev(before))
+        assert {f["gate"] for f in failures} == {"coverage", "regions"}
+        assert all(f["bookId"] == "nomanifest" for f in failures)
+
+    def test_small_losses_within_the_allowance_pass(self):
+        before = obj.BookScore("a", 100, 100, 10, 8, 0, 0, 0, 0, 0, 60)
+        after = obj.BookScore("a", 100, 85, 10, 8, 0, 0, 0, 0, 0, 56)
+        assert self._ev(after).gates(self._ev(before)) == []
+
+    def test_gains_never_fail(self):
+        before = obj.BookScore("a", 100, 50, 0, 0, 0, 0, 0, 0, 0, 40)
+        after = obj.BookScore("a", 100, 90, 0, 0, 0, 0, 0, 0, 0, 70)
+        assert self._ev(after).gates(self._ev(before)) == []
+
+    def test_a_book_the_candidate_did_not_score_fails(self):
+        before = obj.BookScore("a", 100, 50, 0, 0, 0, 0, 0, 0, 0, 40)
+        failures = self._ev().gates(self._ev(before))
+        assert failures == [{"bookId": "a", "gate": "not-scored"}]
 
 
 class TestMergeTallies:
@@ -141,6 +181,68 @@ class TestChunkPlan:
         ]
         in_pieces = obj.book_score_of(obj.rows_from_chunks(chunk_results)[0])
         assert in_pieces == whole
+
+
+# Knobs the block detectors read. Moved far enough that, measured under the
+# candidate, a sheet would lose most of its answer spaces and panels.
+_RULER_BENDER = DEFAULTS.replace(RULE_MIN=72.0, PANEL_MIN_H=100.0)
+_RULER_PAGES = (1, 60)
+
+
+class TestTheRulerDoesNotMove:
+    """
+    The blocks a cut is counted against are the scorer's ruler.
+
+    If a candidate profile could shrink them, it would score better by
+    detecting fewer answer spaces rather than by cutting fewer, and a fitting
+    loop would find that long before it found anything real.
+    """
+
+    def _tally(self, profile, book):
+        try:
+            return obj.tally_chunk({
+                "profile": profile.to_dict(),
+                "cache_dir": cache_mod.DEFAULT_CACHE_DIR,
+                "book_id": book,
+                "index": 0,
+                "first_page": _RULER_PAGES[0],
+                "last_page": _RULER_PAGES[1],
+            })["tally"]
+        finally:
+            apply_profile(DEFAULTS)
+
+    @pytest.mark.skipif(not cache_mod.cached_books(), reason="no cache built")
+    def test_block_knobs_cannot_move_the_ruler(self):
+        book = _a_cached_training_book()
+        default = self._tally(DEFAULTS, book)
+        bent = self._tally(_RULER_BENDER, book)
+        assert default.solutions_total > 0 and default.panels_total > 0
+        assert bent.solutions_total == default.solutions_total
+        assert bent.panels_total == default.panels_total
+
+    @pytest.mark.skipif(not cache_mod.cached_books(), reason="no cache built")
+    def test_the_knobs_do_move_the_blocks_growth_sees(self):
+        """
+        Otherwise the test above proves nothing: the bent profile has to change
+        what the block detectors return when they run under it.
+        """
+        from tools.hotspot_extraction.scanner.pipeline import detect_blocks
+
+        book = _a_cached_training_book()
+        shard = cache_mod.load_shard(cache_mod.shard_path(book))
+        first, last = _RULER_PAGES
+        fewer = 0
+        for sp in shard.pages:
+            if not first <= sp.page_num <= last:
+                continue
+            ruler = cache_mod.replay_page(sp).blocks
+            with profile_applied(_RULER_BENDER):
+                result = cache_mod.replay_page(sp)
+                live = detect_blocks(sp.primitives, result.layout, result.markers)
+            assert result.blocks == ruler
+            if len(live.solutions) + len(live.panels) < len(ruler.solutions) + len(ruler.panels):
+                fewer += 1
+        assert fewer > 0
 
 
 class TestEncoding:

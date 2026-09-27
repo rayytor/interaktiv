@@ -121,6 +121,8 @@ class Run:
     best_totals: Optional[Dict[str, Any]] = None
     trials: List[Trial] = field(default_factory=list)
     screen: List[Dict[str, Any]] = field(default_factory=list)
+    # `--final` only: per-split `Evaluation.gates` failures against the defaults.
+    gates: Optional[Dict[str, List[Dict[str, Any]]]] = None
     log_path: Optional[str] = None
 
     def note(self, phase: str, profile: Profile, ev: Evaluation, seconds: float) -> bool:
@@ -156,6 +158,7 @@ class Run:
             "bestProfileHash": profile_hash(self.best) if self.best else None,
             "bestChanged": {k: v[1] for k, v in changed_from_default(self.best).items()} if self.best else {},
             "screen": self.screen,
+            "gates": self.gates,
             "trials": [asdict(t) for t in self.trials[-400:]],
         }
         tmp = self.log_path + ".part"
@@ -447,13 +450,18 @@ def _report(title: str, ev_totals: Dict[str, Any]) -> str:
     )
 
 
-def _compare(before: Dict[str, Any], after: Dict[str, Any]) -> str:
+def _compare(
+    before: Dict[str, Any],
+    after: Dict[str, Any],
+    books_before: Optional[Sequence[Any]] = None,
+    books_after: Optional[Sequence[Any]] = None,
+) -> str:
     def delta(key: str, fmt: str = "d") -> str:
         a, b = before.get(key), after.get(key)
         if a is None or b is None:
             return "n/a"
         return f"{a} -> {b}" + (f" ({b - a:+{fmt}})" if isinstance(a, (int, float)) else "")
-    return (
+    out = (
         f"    cuts      {delta('cuts')}\n"
         f"    overlaps  {delta('overlaps')}\n"
         f"    tall      {delta('tall')}\n"
@@ -462,6 +470,34 @@ def _compare(before: Dict[str, Any], after: Dict[str, Any]) -> str:
         f"    coverage  {before.get('coverage')} -> {after.get('coverage')}\n"
         f"    regions   {delta('regions')}"
     )
+    if books_before is not None and books_after is not None:
+        # Per book, because an aggregate that holds while one book empties is
+        # the failure `Evaluation.gates` exists to catch, and it cannot be seen
+        # in the totals above.
+        after_by_id = {b.book_id: b for b in books_after}
+        out += "\n    per book   coverage            regions"
+        for b in sorted(books_before, key=lambda b: b.book_id):
+            a = after_by_id.get(b.book_id)
+            if a is None:
+                out += f"\n      {b.book_id[:8]}  not scored"
+                continue
+            out += (
+                f"\n      {b.book_id[:8]}  {b.coverage:.3f} -> {a.coverage:.3f} ({a.coverage - b.coverage:+.3f})"
+                f"  {b.regions:5d} -> {a.regions:5d}"
+            )
+    return out
+
+
+def _report_gates(failures: Sequence[Dict[str, Any]]) -> str:
+    if not failures:
+        return "    gates     no book lost more than the coverage or region allowance"
+    lines = [f"    GATES     {len(failures)} failure(s):"]
+    for f in failures:
+        if f["gate"] == "not-scored":
+            lines.append(f"      {f['bookId'][:8]}  scored by the baseline, not by this profile")
+        else:
+            lines.append(f"      {f['bookId'][:8]}  {f['gate']:<9} {f['before']} -> {f['after']}")
+    return "\n".join(lines)
 
 
 def main() -> int:
@@ -558,10 +594,14 @@ def main() -> int:
                 print("\n  against the shipped defaults:")
                 print("  " + _report("train d", d_tr.totals()))
                 print("  " + _report("held d", d_ho.totals()))
+                gates = {"train": tr.gates(d_tr), "heldOut": ho.gates(d_ho)}
                 print("\n  Training split:")
-                print(_compare(d_tr.totals(), tr.totals()))
+                print(_compare(d_tr.totals(), tr.totals(), d_tr.books, tr.books))
+                print(_report_gates(gates["train"]))
                 print("\n  Held-out split:")
-                print(_compare(d_ho.totals(), ho.totals()))
+                print(_compare(d_ho.totals(), ho.totals(), d_ho.books, ho.books))
+                print(_report_gates(gates["heldOut"]))
+                run.gates = gates
             if args.log:
                 run.log_path = args.log
                 run.save()
