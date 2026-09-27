@@ -16,3 +16,18 @@ Coordinate descent over the movers:
   pass 1  PANEL_MIN_W 60.0 -> 20.0   loss 2.47722
   pass 1  PANEL_MIN_W 20.0 -> 46.666667   loss 2.45555
   pass 1  FOOTER_BAND 44.0 -> 52.0   loss 2.45168
+  pass 1  PAD 8.0 -> 10.666667   loss 2.25080
+  pass 1  PAD 10.666667 -> 16.0   loss 1.99211
+  pass 1  PAD 16.0 -> 26.666667   loss 0.86738
+  pass 1  PAD 26.666667 -> 32.0   loss 0.64576
+  pass 1  GRAPHIC_REACH 0.55 -> 0.2   loss 0.61664
+  pass 1  GRAPHIC_REACH 0.2 -> 0.2625   loss 0.61631
+  pass 1  BODY_LINE_WIDTH 60.0 -> 20.0   loss 0.61474
+  pass 1  SNAP_EXPAND_SHARE 0.35 -> 0.5   loss 0.48219
+  pass 1  SNAP_EXPAND_SHARE 0.5 -> 0.633333   loss 0.47768
+  pass 1  SNAP_EXPAND_SHARE 0.633333 -> 0.766667   loss 0.45733
+  pass 1  SNAP_EXPAND_SHARE 0.766667 -> 0.9   loss -0.01598
+  pass 1  HEADING_RATIO__regions 1.15 -> 1.02   loss -0.03620
+  pass 1  HEADING_RATIO__regions 1.02 -> 1.406667   loss -0.03882
+  pass 1  HEADING_RATIO__regions 1.406667 -> 1.503333   loss -0.03893
+  pass 1  HEADING_RATIO__regions 1.503333 -> 1.455   loss -0.04195
