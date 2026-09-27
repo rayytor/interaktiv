@@ -31,3 +31,24 @@ Coordinate descent over the movers:
   pass 1  HEADING_RATIO__regions 1.02 -> 1.406667   loss -0.03882
   pass 1  HEADING_RATIO__regions 1.406667 -> 1.503333   loss -0.03893
   pass 1  HEADING_RATIO__regions 1.503333 -> 1.455   loss -0.04195
+  pass 1  HEADER_BAND 40.0 -> 16.0   loss -0.06949
+  pass 1  HEADER_BAND 16.0 -> 24.0   loss -0.06973
+  pass 1  FIGURE_SPAN 30.0 -> 6.0   loss -0.06981
+  pass 1  FIGURE_SPAN 6.0 -> 51.0   loss -0.09116
+  pass 1  FIGURE_SPAN 51.0 -> 66.0   loss -0.09126
+  after descent: loss -0.09126 (13 knobs moved)
+
+  after CMA-ES: loss -0.09126
+
+193 evaluations in 14406s
+
+Training split, baseline -> fitted:
+    cuts      782 -> 61 (-721)
+    overlaps  0 -> 0 (+0)
+    tall      0 -> 0 (+0)
+    slivers   0 -> 0 (+0)
+    match     0.9262 -> 0.985
+    coverage  0.7788 -> 0.7771
+    regions   12685 -> 11858 (-827)
+
+wrote tools/hotspot_extraction/train/runs/phase2-profile-a.json  (profile e05ef2fe5b02, 13 knobs moved)
