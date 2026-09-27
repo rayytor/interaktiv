@@ -1,14 +1,15 @@
 # Phase 1 handoff: expose the detector to the fitter
 
 Done 2026-09-27 on branch `phase1-expose-detector`, cut from
-`phase0-training-loop` (Phase 0 is not merged into `main`). All five tasks are
+`phase0-training-loop` (Phase 0 was merged into `main` afterwards, PR #2). All five tasks are
 complete and every acceptance item is met on the 27 local books.
 
 ## Commits
 
-- The commit that contains this file, `feat(train): phase 1 …`.
-  `git log -1 --format=%H -- tools/hotspot_extraction/train/runs/phase1-HANDOFF.md`
-  prints its hash.
+- **Phase 1:** `64336d245c0078bdc52272cff73da200715d9c5a`
+  ("feat(train): phase 1 - expose the detector to the fitter"). The hashes
+  were filled in by a later docs commit, because a file cannot hold the hash
+  of its own commit.
 
 ## What changed
 
@@ -252,3 +253,22 @@ trades, stated plainly:
   side and bottom cuts may want the same tolerance there.
 - Phase 2's screen should now see `SNAP_EXPAND_SHARE`, `SNAP_PANEL_RATIO`
   and `SNAP_PASSES` in `SPEC`, which is its precondition check.
+
+## Re-verified before Phase 2 (2026-09-27)
+
+Before merging, a fresh session on `phase1-expose-detector` re-checked the
+acceptance items for Phases 0 and 1:
+- pytest (train, scanner, `tests/`): 391 passed.
+- `cache.py --all`: 27 shards current.
+- `objective.py --verify --workers 2`: 27/27 equal.
+- `census.py`: identical to `runs/phase1-census.json`.
+- `objective.py --baseline`: loss and totals identical to
+  `runs/phase1-baseline.json`.
+- Per-book check against `runs/phase0-baseline.json`, all 27 books:
+  - no rise in cuts;
+  - no match loss over 2 pp and no coverage loss over 5 pp;
+  - tall, overlaps and slivers are 0.
+- All 27 local `regions.json` carry profile `3aae0c22cfb6`.
+
+Phase 2's preconditions hold: `SNAP_EXPAND_SHARE` is in `SPEC`,
+`Evaluation.gates` exists, and verify is 27/27.

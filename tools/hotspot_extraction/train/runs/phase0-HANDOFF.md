@@ -11,9 +11,10 @@ Done 2026-09-27. All five tasks are complete and every acceptance item is met.
   ("untracked") was stale. No separate "chore: commit detector profile and
   training package" commit was needed, because that commit already existed under
   another name.
-- **Fixes:** the commit that contains this file, `feat(train): phase 0 …`.
-  `git log -1 --format=%H -- tools/hotspot_extraction/train/runs/phase0-HANDOFF.md`
-  prints its hash. A file cannot contain the hash of its own commit.
+- **Fixes:** `2f790e95b75e43dfa43fda6c1f4cd0bdeb24323b`
+  ("feat(train): phase 0 - make the training loop trustworthy"), merged into
+  `main` by PR #2 (`bfd4f4d`). The hash was filled in by a later docs commit,
+  because a file cannot hold the hash of its own commit.
 
 ## What changed
 
