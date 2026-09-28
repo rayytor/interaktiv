@@ -12,7 +12,7 @@ Grows detected activity markers into complete, non-overlapping clickable hotspot
 
 from dataclasses import dataclass, field
 import re
-from typing import Dict, List, Optional, Sequence, Set, Tuple
+from typing import Any, Dict, List, Optional, Sequence, Set, Tuple
 
 from .figures import Figure, detect_figures
 from .primitives import PagePrimitives, TextSpan, VectorDrawing
