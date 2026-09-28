@@ -4,8 +4,10 @@
 > (fitted profile). Phases 3–5 are paused, not deleted. The active plan is
 > the teacher/student vision detector in
 > [`tools/hotspot_extraction/vision/PLAN.md`](../vision/PLAN.md). Do not start
-> or resume a phase from this file, and ignore `runs/phase2-RESUME.md`, unless
-> the user asks for it.
+> or resume a phase from this file unless the user asks for it. Phase 2's
+> intermediate fit logs and resume notes were removed on 2026-09-28; the
+> handoffs, `phase2-final.json` and the shipped profile remain, and the rest
+> is in git history before that date.
 
 One phase per fresh session. An agent starting a phase has no memory of any
 other phase, so every brief below is self-contained: read **§0** and **your
