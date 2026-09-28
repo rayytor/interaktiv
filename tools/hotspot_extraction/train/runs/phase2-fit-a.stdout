@@ -1,0 +1,54 @@
+Baseline on 18 training books (4213 pages, 114 chunks, 3 workers)
+  baseline   loss +5.86897 | cuts 782 (0.0616/region) | overlaps 0 | tall 0 | slivers 0 | match 0.9262 | coverage 0.7788 | 12685 regions
+  one evaluation: 47.04s -> about 305 candidates in the budget
+
+Knob ranking from tools/hotspot_extraction/train/runs/phase2-screen.json
+
+  65 of 74 knobs moved the loss; 9 are inert on this corpus
+  strongest: MIN_CELL, RULE_MIN, RULE_ROW, RETREAT_COST, PANEL_LINES, COLUMN_CHANNEL, RULE_CLUSTER, PANEL_MIN_H, COLUMN_CLEAR, PANEL_MIN_W
+
+Coordinate descent over the movers:
+  pass 1  RETREAT_COST 0.5 -> 0.05   loss 2.75586
+  pass 1  PANEL_LINES 2 -> 1   loss 2.70973
+  pass 1  PANEL_MIN_H 30.0 -> 25.0   loss 2.60222
+  pass 1  COLUMN_CLEAR 0.5 -> 0.45   loss 2.59599
+  pass 1  COLUMN_CLEAR 0.45 -> 0.575   loss 2.48524
+  pass 1  PANEL_MIN_W 60.0 -> 20.0   loss 2.47722
+  pass 1  PANEL_MIN_W 20.0 -> 46.666667   loss 2.45555
+  pass 1  FOOTER_BAND 44.0 -> 52.0   loss 2.45168
+  pass 1  PAD 8.0 -> 10.666667   loss 2.25080
+  pass 1  PAD 10.666667 -> 16.0   loss 1.99211
+  pass 1  PAD 16.0 -> 26.666667   loss 0.86738
+  pass 1  PAD 26.666667 -> 32.0   loss 0.64576
+  pass 1  GRAPHIC_REACH 0.55 -> 0.2   loss 0.61664
+  pass 1  GRAPHIC_REACH 0.2 -> 0.2625   loss 0.61631
+  pass 1  BODY_LINE_WIDTH 60.0 -> 20.0   loss 0.61474
+  pass 1  SNAP_EXPAND_SHARE 0.35 -> 0.5   loss 0.48219
+  pass 1  SNAP_EXPAND_SHARE 0.5 -> 0.633333   loss 0.47768
+  pass 1  SNAP_EXPAND_SHARE 0.633333 -> 0.766667   loss 0.45733
+  pass 1  SNAP_EXPAND_SHARE 0.766667 -> 0.9   loss -0.01598
+  pass 1  HEADING_RATIO__regions 1.15 -> 1.02   loss -0.03620
+  pass 1  HEADING_RATIO__regions 1.02 -> 1.406667   loss -0.03882
+  pass 1  HEADING_RATIO__regions 1.406667 -> 1.503333   loss -0.03893
+  pass 1  HEADING_RATIO__regions 1.503333 -> 1.455   loss -0.04195
+  pass 1  HEADER_BAND 40.0 -> 16.0   loss -0.06949
+  pass 1  HEADER_BAND 16.0 -> 24.0   loss -0.06973
+  pass 1  FIGURE_SPAN 30.0 -> 6.0   loss -0.06981
+  pass 1  FIGURE_SPAN 6.0 -> 51.0   loss -0.09116
+  pass 1  FIGURE_SPAN 51.0 -> 66.0   loss -0.09126
+  after descent: loss -0.09126 (13 knobs moved)
+
+  after CMA-ES: loss -0.09126
+
+193 evaluations in 14406s
+
+Training split, baseline -> fitted:
+    cuts      782 -> 61 (-721)
+    overlaps  0 -> 0 (+0)
+    tall      0 -> 0 (+0)
+    slivers   0 -> 0 (+0)
+    match     0.9262 -> 0.985
+    coverage  0.7788 -> 0.7771
+    regions   12685 -> 11858 (-827)
+
+wrote tools/hotspot_extraction/train/runs/phase2-profile-a.json  (profile e05ef2fe5b02, 13 knobs moved)

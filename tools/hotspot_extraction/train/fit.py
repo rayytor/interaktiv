@@ -101,6 +101,16 @@ class Trial:
     totals: Dict[str, Any]
     phase: str
     seconds: float
+    # `Evaluation.gates` failures against the start profile; a trial with any
+    # is infeasible and can never be the best.
+    gates: List[Dict[str, Any]] = field(default_factory=list)
+
+
+# What each gate failure adds to a candidate's loss when the optimizers rank
+# it. Larger than any loss difference a feasible profile can show (the
+# training loss sits within a few units of zero), so an infeasible candidate
+# ranks below every feasible one and below any with fewer failures.
+GATE_PENALTY = 100.0
 
 
 @dataclass
@@ -123,11 +133,34 @@ class Run:
     screen: List[Dict[str, Any]] = field(default_factory=list)
     # `--final` only: per-split `Evaluation.gates` failures against the defaults.
     gates: Optional[Dict[str, List[Dict[str, Any]]]] = None
+    # `--final` only: totals and per-book rows, fitted and defaults, per split.
+    final: Optional[Dict[str, Any]] = None
     log_path: Optional[str] = None
+    # The start profile's evaluation. When set, a candidate failing
+    # `Evaluation.gates` against it cannot be kept, however good its loss.
+    gate_against: Optional[Evaluation] = field(default=None, repr=False)
+
+    def failures(self, ev: Evaluation) -> List[Dict[str, Any]]:
+        return ev.gates(self.gate_against) if self.gate_against is not None else []
+
+    def fitness(self, ev: Evaluation) -> float:
+        """
+        The loss the optimizers rank by: the loss, plus `GATE_PENALTY` per gate.
+
+        Without this the fit walks straight out of the loss's coverage exit.
+        On the training split, the first four-hour run cut 782 cuts to 36 by
+        dropping 21-37 % of the regions of seven books -- a `HOTSPOT_GAP` of 16
+        pt pushes colliding hotspots apart until the smaller falls under the
+        minimum size -- which `--final` would then have failed. The gate is the
+        same per-book check `--final` applies, applied to every candidate, on
+        the training split only.
+        """
+        return ev.loss + GATE_PENALTY * len(self.failures(ev))
 
     def note(self, phase: str, profile: Profile, ev: Evaluation, seconds: float) -> bool:
         self.evaluations += 1
-        improved = ev.loss < self.best_loss - 1e-12
+        fails = self.failures(ev)
+        improved = not fails and ev.loss < self.best_loss - 1e-12
         self.trials.append(Trial(
             n=self.evaluations,
             loss=round(ev.loss, 6),
@@ -136,6 +169,7 @@ class Run:
             totals=ev.totals(),
             phase=phase,
             seconds=round(seconds, 2),
+            gates=fails,
         ))
         if improved:
             self.best_loss = ev.loss
@@ -159,6 +193,7 @@ class Run:
             "bestChanged": {k: v[1] for k, v in changed_from_default(self.best).items()} if self.best else {},
             "screen": self.screen,
             "gates": self.gates,
+            "final": self.final,
             "trials": [asdict(t) for t in self.trials[-400:]],
         }
         tmp = self.log_path + ".part"
@@ -214,9 +249,14 @@ def screen(
     budget on it would be spending it on nothing.
 
     The ranking is the interesting output even when the fit that follows fails.
+
+    Knobs already in `run.screen` -- a resumed screen that an earlier run's
+    clock stopped -- are not probed again; the ranking covers them all.
     """
-    movers: List[Tuple[float, Knob]] = []
+    done = {row["knob"] for row in run.screen}
     for i, knob in enumerate(TUNABLE, 1):
+        if knob.key in done:
+            continue
         if budget.spent():
             break
         deltas = []
@@ -237,14 +277,77 @@ def screen(
             "span": round(span, 6),
             "bestDelta": round(best_delta, 6),
         })
-        if span > 1e-9:
-            movers.append((span, knob))
         if verbose:
             mark = "·" if span <= 1e-9 else ("↓" if best_delta < -1e-9 else "↕")
             print(f"  [{i:2d}/{len(TUNABLE)}] {mark} {knob.key:<26} span {span:+.4f}  best {best_delta:+.4f}")
     run.save()
+    return _ranked(run.screen)
+
+
+def _ranked(rows: Sequence[Dict[str, Any]]) -> List[Knob]:
+    """The knobs a screen found could move the loss, strongest first."""
+    span = {row["knob"]: row["span"] for row in rows}
+    movers = [(span[k.key], k) for k in TUNABLE if span.get(k.key, 0.0) > 1e-9]
     movers.sort(key=lambda sk: -sk[0])
     return [k for _, k in movers]
+
+
+def read_screen(log_path: str) -> Dict[str, Any]:
+    """
+    An earlier screen's log, read before this run writes anything.
+
+    The resumed screen usually logs to the file it resumes, and the run saves
+    its baseline to that path before screening; read afterwards, the log would
+    already be this run's empty one.
+    """
+    with open(log_path, encoding="utf-8") as f:
+        body = json.load(f)
+    body["_path"] = log_path
+    return body
+
+
+def _check_start(body: Dict[str, Any], baseline_loss: float) -> None:
+    if body.get("baselineLoss") is None or abs(body["baselineLoss"] - baseline_loss) > 1e-9:
+        raise SystemExit(
+            f"{body.get('_path')} screened from a baseline of {body.get('baselineLoss')}, "
+            f"not this one ({baseline_loss}); screen again"
+        )
+
+
+def screened_movers(body: Dict[str, Any], baseline_loss: float) -> List[Knob]:
+    """
+    The movers of an earlier `--screen` run, in its order.
+
+    The screen is deterministic -- two fixed probes per knob from a fixed start
+    -- so a second run over the same profile and cache returns the same ranking
+    and spends the first half-hour of a fit reproducing it. Reusing it is only
+    sound if it was that same start, which the baseline loss witnesses, and if
+    it reached every knob, since an unscreened knob would silently drop out of
+    the fit.
+    """
+    _check_start(body, baseline_loss)
+    rows = {row["knob"]: row for row in body.get("screen", [])}
+    missing = [k.key for k in TUNABLE if k.key not in rows]
+    if missing:
+        raise SystemExit(f"{body.get('_path')} did not screen {len(missing)} knob(s), e.g. {missing[:5]}; screen again")
+    return _ranked(list(rows.values()))
+
+
+def resume_screen(body: Dict[str, Any], baseline_loss: float, run: "Run") -> None:
+    """Carry an unfinished screen's rows and trials into `run`, so `screen` probes only the rest."""
+    _check_start(body, baseline_loss)
+    run.screen = list(body.get("screen", []))
+    run.trials = [Trial(**t) for t in body.get("trials", [])]
+    run.evaluations = body.get("evaluations", len(run.trials))
+    if body.get("bestLoss") is not None and body["bestLoss"] < run.best_loss:
+        # The best of the probes, kept for the record; a screen does not ship it.
+        run.best_loss = body["bestLoss"]
+        run.best_totals = body.get("bestTotals")
+        run.best = base_with(body.get("bestChanged") or {})
+
+
+def base_with(changed: Dict[str, Any]) -> Profile:
+    return DEFAULTS.replace(**changed)
 
 
 # ---------------------------------------------------------------- phase 2
@@ -393,9 +496,10 @@ def sep_cmaes(
             ev = pool.evaluate(candidate, books, weights=weights)
             budget.charge()
             run.note("cmaes", candidate, ev, time.time() - t0)
-            population.append((ev.loss, x, z))
-            if ev.loss < best_loss - 1e-12:
-                best_loss, best = ev.loss, candidate
+            fit = run.fitness(ev)
+            population.append((fit, x, z))
+            if fit < best_loss - 1e-12:
+                best_loss, best = fit, candidate
         if len(population) < mu:
             break
 
@@ -475,15 +579,19 @@ def _compare(
         # the failure `Evaluation.gates` exists to catch, and it cannot be seen
         # in the totals above.
         after_by_id = {b.book_id: b for b in books_after}
-        out += "\n    per book   coverage            regions"
+        out += "\n    per book   coverage            match               regions"
         for b in sorted(books_before, key=lambda b: b.book_id):
             a = after_by_id.get(b.book_id)
             if a is None:
                 out += f"\n      {b.book_id[:8]}  not scored"
                 continue
+            match = (
+                f"{b.matched / b.oges:.3f} -> {a.matched / a.oges:.3f} ({a.matched / a.oges - b.matched / b.oges:+.3f})"
+                if b.oges and a.oges else f"{'no manifest':<24}"
+            )
             out += (
                 f"\n      {b.book_id[:8]}  {b.coverage:.3f} -> {a.coverage:.3f} ({a.coverage - b.coverage:+.3f})"
-                f"  {b.regions:5d} -> {a.regions:5d}"
+                f"  {match}  {b.regions:5d} -> {a.regions:5d}"
             )
     return out
 
@@ -515,7 +623,13 @@ def main() -> int:
     ap.add_argument("--out", type=str, default=None, help="Where to write the fitted profile")
     ap.add_argument("--log", type=str, default=None, help="Where to write the run log")
     ap.add_argument("--seed", type=int, default=20260922)
+    ap.add_argument("--shuffle", action="store_true",
+                    help="Visit the knobs in coordinate descent in a --seed shuffled order, not the screen's")
+    ap.add_argument("--screen-from", type=str, default=None,
+                    help="With --fit: take the knob ranking from a finished --screen log of the same start "
+                         "profile instead of screening again. With --screen: resume that log's unfinished screen")
     args = ap.parse_args()
+    prior_screen = read_screen(args.screen_from) if args.screen_from else None
 
     if not (args.screen or args.fit or args.final):
         ap.error("nothing to do: pass --screen, --fit or --final")
@@ -542,21 +656,46 @@ def main() -> int:
             run.best_loss = base_ev.loss
             run.best = base
             run.best_totals = base_ev.totals()
+            # Every candidate is held to the per-book gates `--final` applies,
+            # measured against where this run started.
+            run.gate_against = base_ev
             run.save()
             print("  " + _report("baseline", base_ev.totals()))
             print(f"  one evaluation: {per_eval:.2f}s -> about "
                   f"{int(budget.remaining_seconds() / max(per_eval, 1e-6))} candidates in the budget\n")
 
-            print("Screening every tunable knob:")
-            movers = screen(pool, base, train, run, budget)
+            if args.screen_from and args.screen:
+                resume_screen(prior_screen, base_ev.loss, run)
+                print(f"Resuming the screen in {args.screen_from} "
+                      f"({len(run.screen)} of {len(TUNABLE)} knobs already screened):")
+                movers = screen(pool, base, train, run, budget)
+            elif args.screen_from:
+                movers = screened_movers(prior_screen, base_ev.loss)
+                run.screen = list(prior_screen["screen"])
+                print(f"Knob ranking from {args.screen_from}")
+            else:
+                print("Screening every tunable knob:")
+                movers = screen(pool, base, train, run, budget)
             print(f"\n  {len(movers)} of {len(TUNABLE)} knobs moved the loss; "
                   f"{len(TUNABLE) - len(movers)} are inert on this corpus")
             if movers:
                 print("  strongest: " + ", ".join(k.key for k in movers[:10]))
 
         if args.fit and not budget.spent():
-            print("\nCoordinate descent over the movers:")
-            best = coordinate_descent(pool, run.best or base, train, movers, run, budget)
+            order = list(movers)
+            if args.shuffle:
+                # Coordinate descent is deterministic: the same start, grid and
+                # knob order give the same walk whatever the seed, so two runs
+                # that differ only in `--seed` differ only in CMA-ES. A knob a
+                # greedy walk moved can reflect where the walk had been; a
+                # second run over another order is what tells that apart from a
+                # knob that moves the same way whichever path reaches it.
+                random.Random(args.seed).shuffle(order)
+                print("\nCoordinate descent over the movers, in a shuffled order "
+                      f"(seed {args.seed}): " + ", ".join(k.key for k in order[:8]) + ", ...")
+            else:
+                print("\nCoordinate descent over the movers:")
+            best = coordinate_descent(pool, run.best or base, train, order, run, budget)
             print(f"  after descent: loss {run.best_loss:.5f} "
                   f"({len(changed_from_default(run.best or base))} knobs moved)")
 
@@ -602,6 +741,17 @@ def main() -> int:
                 print(_compare(d_ho.totals(), ho.totals(), d_ho.books, ho.books))
                 print(_report_gates(gates["heldOut"]))
                 run.gates = gates
+
+                def rows(ev: Evaluation) -> List[Dict[str, Any]]:
+                    return [dict(asdict(b), loss=round(b.loss(), 6)) for b in ev.books]
+                run.final = {
+                    "profileHash": profile_hash(target),
+                    "changed": {k: v[1] for k, v in changed_from_default(target).items()},
+                    "train": {"totals": tr.totals(), "books": rows(tr)},
+                    "heldOut": {"totals": ho.totals(), "books": rows(ho)},
+                    "trainDefaults": {"totals": d_tr.totals(), "books": rows(d_tr)},
+                    "heldOutDefaults": {"totals": d_ho.totals(), "books": rows(d_ho)},
+                }
             if args.log:
                 run.log_path = args.log
                 run.save()

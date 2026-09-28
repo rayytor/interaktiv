@@ -1,0 +1,683 @@
+{
+  "kept": {
+    "FIGURE_SPAN": 66.0
+  },
+  "dropped": {
+    "ANCHOR_ABOVE": {
+      "default": 24.0,
+      "a": null,
+      "b": 4.0
+    },
+    "BAND_REACH_ABOVE": {
+      "default": 24.0,
+      "a": null,
+      "b": 2.0
+    },
+    "BODY_LINE_CHARS": {
+      "default": 20,
+      "a": null,
+      "b": 51
+    },
+    "BODY_LINE_WIDTH": {
+      "default": 60.0,
+      "a": 20.0,
+      "b": null
+    },
+    "BRIDGE": {
+      "default": 12.0,
+      "a": null,
+      "b": 2.0
+    },
+    "CAPTION_SIDE": {
+      "default": 24.0,
+      "a": null,
+      "b": 4.0
+    },
+    "COLUMN_CLEAR": {
+      "default": 0.5,
+      "a": 0.575,
+      "b": null
+    },
+    "FIGURE_AREA": {
+      "default": 600.0,
+      "a": null,
+      "b": 3350.0
+    },
+    "FIGURE_SHARE": {
+      "default": 0.6,
+      "a": null,
+      "b": 0.625
+    },
+    "FLOW_BREAK": {
+      "default": 90.0,
+      "a": null,
+      "b": 38.333333
+    },
+    "FOOTER_BAND": {
+      "default": 44.0,
+      "a": 52.0,
+      "b": 32.0
+    },
+    "GRAPHIC_HELD": {
+      "default": 0.7,
+      "a": null,
+      "b": 0.625
+    },
+    "GRAPHIC_REACH": {
+      "default": 0.55,
+      "a": 0.2625,
+      "b": null
+    },
+    "GRAPHIC_SHARE": {
+      "default": 0.5,
+      "a": null,
+      "b": 0.2
+    },
+    "GUTTER_RATIO": {
+      "default": 0.5,
+      "a": null,
+      "b": 0.1
+    },
+    "HEADER_BAND": {
+      "default": 40.0,
+      "a": 24.0,
+      "b": null
+    },
+    "HEADING_RATIO__prompts": {
+      "default": 1.12,
+      "a": null,
+      "b": 1.213333
+    },
+    "HEADING_RATIO__regions": {
+      "default": 1.15,
+      "a": 1.455,
+      "b": 1.116667
+    },
+    "HOTSPOT_GAP": {
+      "default": 3.0,
+      "a": null,
+      "b": 12.0
+    },
+    "PAD": {
+      "default": 8.0,
+      "a": 32.0,
+      "b": 0.0
+    },
+    "PANEL_LINES": {
+      "default": 2,
+      "a": 1,
+      "b": null
+    },
+    "PANEL_MIN_H": {
+      "default": 30.0,
+      "a": 25.0,
+      "b": null
+    },
+    "PANEL_MIN_W": {
+      "default": 60.0,
+      "a": 46.666667,
+      "b": null
+    },
+    "RETREAT_COST": {
+      "default": 0.5,
+      "a": 0.05,
+      "b": null
+    },
+    "RETREAT_SHARE": {
+      "default": 0.75,
+      "a": null,
+      "b": 0.841667
+    },
+    "SNAP_EXPAND_SHARE": {
+      "default": 0.35,
+      "a": 0.9,
+      "b": null
+    }
+  },
+  "profileHash": "c7de24295a4b",
+  "trainDefaults": {
+    "totals": {
+      "books": 18,
+      "pages": 4213,
+      "regions": 12685,
+      "cuts": 782,
+      "cutPerRegion": 0.0616,
+      "overlaps": 0,
+      "tall": 0,
+      "slivers": 0,
+      "oges": 732,
+      "matched": 678,
+      "matchRate": 0.9262,
+      "pagesWithRegions": 3281,
+      "coverage": 0.7788,
+      "loss": 5.868968
+    },
+    "books": [
+      {
+        "book_id": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+        "pages": 193,
+        "regions": 440,
+        "oges": 21,
+        "matched": 21,
+        "panels_cut": 2,
+        "solutions_cut": 0,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "pages_with_regions": 127,
+        "loss": -0.203486
+      },
+      {
+        "book_id": "0a3fbb41-8855-460f-af3d-41489a269851",
+        "pages": 162,
+        "regions": 717,
+        "oges": 76,
+        "matched": 68,
+        "panels_cut": 35,
+        "solutions_cut": 12,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "pages_with_regions": 121,
+        "loss": 7.91344
+      },
+      {
+        "book_id": "0e966773-5012-4f57-8be5-d892e8c75f22",
+        "pages": 165,
+        "regions": 529,
+        "oges": 165,
+        "matched": 161,
+        "panels_cut": 11,
+        "solutions_cut": 34,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "pages_with_regions": 115,
+        "loss": 8.294495
+      },
+      {
+        "book_id": "1903e365-310a-46d9-933d-ec0a5af22549",
+        "pages": 282,
+        "regions": 563,
+        "oges": 9,
+        "matched": 9,
+        "panels_cut": 10,
+        "solutions_cut": 42,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "pages_with_regions": 174,
+        "loss": 8.619213
+      },
+      {
+        "book_id": "1cc573f6-324a-470d-8452-bbf6d3fd0a23",
+        "pages": 289,
+        "regions": 606,
+        "oges": 32,
+        "matched": 28,
+        "panels_cut": 7,
+        "solutions_cut": 16,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "pages_with_regions": 243,
+        "loss": 5.454549
+      },
+      {
+        "book_id": "3d372038-0d49-4a7d-bb62-446818ff6d36",
+        "pages": 53,
+        "regions": 370,
+        "oges": 22,
+        "matched": 21,
+        "panels_cut": 1,
+        "solutions_cut": 3,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "pages_with_regions": 42,
+        "loss": 1.197719
+      },
+      {
+        "book_id": "4442fde4-91bb-46e1-a6b6-b949cec10b5b",
+        "pages": 238,
+        "regions": 789,
+        "oges": 0,
+        "matched": 0,
+        "panels_cut": 7,
+        "solutions_cut": 54,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "pages_with_regions": 212,
+        "loss": 6.840549
+      },
+      {
+        "book_id": "550e601a-7ae8-40c0-ba41-435fa30c16e8",
+        "pages": 73,
+        "regions": 174,
+        "oges": 49,
+        "matched": 44,
+        "panels_cut": 3,
+        "solutions_cut": 2,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "pages_with_regions": 40,
+        "loss": 4.366434
+      },
+      {
+        "book_id": "66098271-92a3-48d4-9320-2033cbd3c94e",
+        "pages": 321,
+        "regions": 899,
+        "oges": 28,
+        "matched": 24,
+        "panels_cut": 11,
+        "solutions_cut": 97,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "pages_with_regions": 257,
+        "loss": 14.069868
+      },
+      {
+        "book_id": "753fcdb0-64fa-4c5e-b677-1e3e612b31b5",
+        "pages": 407,
+        "regions": 1907,
+        "oges": 96,
+        "matched": 77,
+        "panels_cut": 17,
+        "solutions_cut": 80,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "pages_with_regions": 382,
+        "loss": 8.106282
+      },
+      {
+        "book_id": "7763e45b-e8ba-49df-a7d1-5932bc68e6ed",
+        "pages": 240,
+        "regions": 431,
+        "oges": 7,
+        "matched": 7,
+        "panels_cut": 5,
+        "solutions_cut": 18,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "pages_with_regions": 136,
+        "loss": 4.76976
+      },
+      {
+        "book_id": "93bf209f-253c-4f5e-a54b-461731048d12",
+        "pages": 213,
+        "regions": 433,
+        "oges": 15,
+        "matched": 15,
+        "panels_cut": 2,
+        "solutions_cut": 4,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "pages_with_regions": 164,
+        "loss": 0.615728
+      },
+      {
+        "book_id": "a0e5ed1a-c37b-45f1-9821-f98350b18911",
+        "pages": 402,
+        "regions": 2011,
+        "oges": 47,
+        "matched": 40,
+        "panels_cut": 21,
+        "solutions_cut": 100,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "pages_with_regions": 374,
+        "loss": 8.065282
+      },
+      {
+        "book_id": "ad3f3275-777a-4e34-b3e0-59c50605bdc6",
+        "pages": 72,
+        "regions": 5,
+        "oges": 5,
+        "matched": 5,
+        "panels_cut": 0,
+        "solutions_cut": 0,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "pages_with_regions": 4,
+        "loss": -0.055556
+      },
+      {
+        "book_id": "afec0d89-bd70-4495-bad3-e95831c33721",
+        "pages": 196,
+        "regions": 636,
+        "oges": 14,
+        "matched": 13,
+        "panels_cut": 1,
+        "solutions_cut": 71,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "pages_with_regions": 165,
+        "loss": 11.907489
+      },
+      {
+        "book_id": "d13a75d3-33be-4102-8570-b14b1b6382b2",
+        "pages": 319,
+        "regions": 480,
+        "oges": 86,
+        "matched": 86,
+        "panels_cut": 1,
+        "solutions_cut": 41,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "pages_with_regions": 235,
+        "loss": 8.013323
+      },
+      {
+        "book_id": "d6dd5587-41d4-4168-99d5-2f31038164c6",
+        "pages": 269,
+        "regions": 838,
+        "oges": 31,
+        "matched": 31,
+        "panels_cut": 1,
+        "solutions_cut": 0,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "pages_with_regions": 214,
+        "loss": -0.676207
+      },
+      {
+        "book_id": "df1e313c-69bb-4229-95f7-59262de6375b",
+        "pages": 319,
+        "regions": 857,
+        "oges": 29,
+        "matched": 28,
+        "panels_cut": 8,
+        "solutions_cut": 65,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "pages_with_regions": 276,
+        "loss": 8.342538
+      }
+    ]
+  },
+  "trainCombined": {
+    "totals": {
+      "books": 18,
+      "pages": 4213,
+      "regions": 12685,
+      "cuts": 770,
+      "cutPerRegion": 0.0607,
+      "overlaps": 0,
+      "tall": 0,
+      "slivers": 0,
+      "oges": 732,
+      "matched": 680,
+      "matchRate": 0.929,
+      "pagesWithRegions": 3281,
+      "coverage": 0.7788,
+      "loss": 5.701754
+    },
+    "books": [
+      {
+        "book_id": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+        "pages": 193,
+        "regions": 440,
+        "oges": 21,
+        "matched": 21,
+        "panels_cut": 2,
+        "solutions_cut": 0,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "pages_with_regions": 127,
+        "loss": -0.203486
+      },
+      {
+        "book_id": "0a3fbb41-8855-460f-af3d-41489a269851",
+        "pages": 162,
+        "regions": 717,
+        "oges": 76,
+        "matched": 68,
+        "panels_cut": 39,
+        "solutions_cut": 12,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "pages_with_regions": 121,
+        "loss": 8.47132
+      },
+      {
+        "book_id": "0e966773-5012-4f57-8be5-d892e8c75f22",
+        "pages": 165,
+        "regions": 529,
+        "oges": 165,
+        "matched": 162,
+        "panels_cut": 9,
+        "solutions_cut": 34,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "pages_with_regions": 115,
+        "loss": 7.795211
+      },
+      {
+        "book_id": "1903e365-310a-46d9-933d-ec0a5af22549",
+        "pages": 282,
+        "regions": 563,
+        "oges": 9,
+        "matched": 9,
+        "panels_cut": 10,
+        "solutions_cut": 42,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "pages_with_regions": 174,
+        "loss": 8.619213
+      },
+      {
+        "book_id": "1cc573f6-324a-470d-8452-bbf6d3fd0a23",
+        "pages": 289,
+        "regions": 606,
+        "oges": 32,
+        "matched": 28,
+        "panels_cut": 7,
+        "solutions_cut": 16,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "pages_with_regions": 243,
+        "loss": 5.454549
+      },
+      {
+        "book_id": "3d372038-0d49-4a7d-bb62-446818ff6d36",
+        "pages": 53,
+        "regions": 370,
+        "oges": 22,
+        "matched": 21,
+        "panels_cut": 1,
+        "solutions_cut": 3,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "pages_with_regions": 42,
+        "loss": 1.197719
+      },
+      {
+        "book_id": "4442fde4-91bb-46e1-a6b6-b949cec10b5b",
+        "pages": 238,
+        "regions": 789,
+        "oges": 0,
+        "matched": 0,
+        "panels_cut": 7,
+        "solutions_cut": 43,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "pages_with_regions": 212,
+        "loss": 5.446379
+      },
+      {
+        "book_id": "550e601a-7ae8-40c0-ba41-435fa30c16e8",
+        "pages": 73,
+        "regions": 174,
+        "oges": 49,
+        "matched": 45,
+        "panels_cut": 3,
+        "solutions_cut": 0,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "pages_with_regions": 40,
+        "loss": 2.808846
+      },
+      {
+        "book_id": "66098271-92a3-48d4-9320-2033cbd3c94e",
+        "pages": 321,
+        "regions": 899,
+        "oges": 28,
+        "matched": 24,
+        "panels_cut": 11,
+        "solutions_cut": 97,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "pages_with_regions": 257,
+        "loss": 14.069868
+      },
+      {
+        "book_id": "753fcdb0-64fa-4c5e-b677-1e3e612b31b5",
+        "pages": 407,
+        "regions": 1907,
+        "oges": 96,
+        "matched": 77,
+        "panels_cut": 17,
+        "solutions_cut": 80,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "pages_with_regions": 382,
+        "loss": 8.106282
+      },
+      {
+        "book_id": "7763e45b-e8ba-49df-a7d1-5932bc68e6ed",
+        "pages": 240,
+        "regions": 431,
+        "oges": 7,
+        "matched": 7,
+        "panels_cut": 5,
+        "solutions_cut": 18,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "pages_with_regions": 136,
+        "loss": 4.76976
+      },
+      {
+        "book_id": "93bf209f-253c-4f5e-a54b-461731048d12",
+        "pages": 213,
+        "regions": 433,
+        "oges": 15,
+        "matched": 15,
+        "panels_cut": 2,
+        "solutions_cut": 4,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "pages_with_regions": 164,
+        "loss": 0.615728
+      },
+      {
+        "book_id": "a0e5ed1a-c37b-45f1-9821-f98350b18911",
+        "pages": 402,
+        "regions": 2011,
+        "oges": 47,
+        "matched": 40,
+        "panels_cut": 21,
+        "solutions_cut": 100,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "pages_with_regions": 374,
+        "loss": 8.065282
+      },
+      {
+        "book_id": "ad3f3275-777a-4e34-b3e0-59c50605bdc6",
+        "pages": 72,
+        "regions": 5,
+        "oges": 5,
+        "matched": 5,
+        "panels_cut": 0,
+        "solutions_cut": 0,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "pages_with_regions": 4,
+        "loss": -0.055556
+      },
+      {
+        "book_id": "afec0d89-bd70-4495-bad3-e95831c33721",
+        "pages": 196,
+        "regions": 636,
+        "oges": 14,
+        "matched": 13,
+        "panels_cut": 1,
+        "solutions_cut": 71,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "pages_with_regions": 165,
+        "loss": 11.907489
+      },
+      {
+        "book_id": "d13a75d3-33be-4102-8570-b14b1b6382b2",
+        "pages": 319,
+        "regions": 480,
+        "oges": 86,
+        "matched": 86,
+        "panels_cut": 1,
+        "solutions_cut": 41,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "pages_with_regions": 235,
+        "loss": 8.013323
+      },
+      {
+        "book_id": "d6dd5587-41d4-4168-99d5-2f31038164c6",
+        "pages": 269,
+        "regions": 838,
+        "oges": 31,
+        "matched": 31,
+        "panels_cut": 1,
+        "solutions_cut": 0,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "pages_with_regions": 214,
+        "loss": -0.676207
+      },
+      {
+        "book_id": "df1e313c-69bb-4229-95f7-59262de6375b",
+        "pages": 319,
+        "regions": 857,
+        "oges": 29,
+        "matched": 28,
+        "panels_cut": 7,
+        "solutions_cut": 65,
+        "overlaps": 0,
+        "tall": 0,
+        "slivers": 0,
+        "pages_with_regions": 276,
+        "loss": 8.225852
+      }
+    ]
+  },
+  "gates": []
+}

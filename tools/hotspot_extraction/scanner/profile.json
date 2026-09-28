@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "hash": "c7de24295a4b",
+  "knobs": {
+    "FIGURE_SPAN": 66.0
+  },
+  "note": "phase 2 combined: knobs moved the same way in fits A and B (value from A)"
+}

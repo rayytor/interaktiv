@@ -77,6 +77,11 @@ DEFAULT_WEIGHTS = Weights()
 # trusted to say it.
 COVERAGE_GATE = 0.05       # share of the book's sheets that carry a region
 REGIONS_GATE = 0.20        # share of the book's regions
+# And how much a book may gain. The cut rate is per region, so extra regions
+# dilute it as surely as dropped ones remove cuts; the floor keeps a book of
+# five regions from failing on two more.
+REGIONS_GAIN_GATE = 0.20   # share of the book's regions
+REGIONS_GAIN_FLOOR = 10    # regions
 
 
 @dataclass
@@ -195,6 +200,16 @@ class Evaluation:
         A failure is a book that lost more than `COVERAGE_GATE` of its sheets'
         coverage or more than `REGIONS_GATE` of its regions, or that the
         baseline scored and this evaluation did not.
+
+        The exit has a mirror image: the cut rate is cuts per region, so a
+        profile that multiplies a book's regions dilutes it without moving an
+        edge. The first gated fit found it -- a `COLUMN_CHANNEL` narrow enough
+        to read the gap after a sub-item's number as a column gutter turned
+        every numbered sub-item into an activity of its own (`550e601a` 174 ->
+        418 regions), which also breaks the rule that a lettered activity's
+        region holds its sub-items. A book that gains more than
+        `REGIONS_GAIN_GATE` of its regions, and more than `REGIONS_GAIN_FLOOR`,
+        fails too.
         """
         mine = {b.book_id: b for b in self.books}
         out: List[Dict[str, Any]] = []
@@ -212,6 +227,12 @@ class Evaluation:
             if before.regions and (before.regions - after.regions) / before.regions > REGIONS_GATE:
                 out.append({
                     "bookId": before.book_id, "gate": "regions",
+                    "before": before.regions, "after": after.regions,
+                })
+            gained = after.regions - before.regions
+            if gained > REGIONS_GAIN_FLOOR and before.regions and gained / before.regions > REGIONS_GAIN_GATE:
+                out.append({
+                    "bookId": before.book_id, "gate": "regions-gained",
                     "before": before.regions, "after": after.regions,
                 })
         return out
@@ -459,10 +480,17 @@ class ChunkPool:
 
     The fitting loop evaluates thousands of candidates, and standing up a fresh
     `ProcessPoolExecutor` per candidate would spend more time importing pymupdf
-    than detecting. One pool is therefore held across candidates -- but with
-    `max_tasks_per_child` bounded, so a worker is retired after a handful of
-    chunks rather than living for the whole run and accumulating whatever
-    pymupdf does not give back. Each child holds at most one chunk of one book.
+    than detecting. One pool is therefore held across candidates -- but its
+    workers are retired after about `tasks_per_child` chunks each rather than
+    living for the whole run and accumulating whatever pymupdf does not give
+    back. Each child holds at most one chunk of one book.
+
+    The retirement is done here, by replacing the whole executor between
+    evaluations, and not with `max_tasks_per_child`. CPython's executor
+    (gh-115634, still present in 3.14.4) counts every finished task as an idle
+    worker, so when a worker retires it believes an idle one is waiting and
+    spawns no replacement; once every worker has retired, `map` waits forever
+    with no process left to serve it. A fitting run hung on exactly that.
 
     The profile travels in the task, so a long-lived worker is still evaluating
     exactly the candidate the driver sent, with no state carried between them
@@ -477,14 +505,24 @@ class ChunkPool:
         chunk_pages: int = 80,
         tasks_per_child: int = 16,
     ):
-        from concurrent.futures import ProcessPoolExecutor
         self.workers = workers or max(1, min(16, (os.cpu_count() or 4) - 2))
         self.cache_dir = cache_dir
         self.chunk_pages = chunk_pages
-        self._executor = ProcessPoolExecutor(
-            max_workers=self.workers, max_tasks_per_child=tasks_per_child
-        )
+        self.tasks_per_child = tasks_per_child
+        self._executor = None
+        self._dispatched = 0
         self._plans: Dict[Tuple[str, ...], List[Chunk]] = {}
+
+    def _pool(self):
+        """The executor, replaced once its workers have used up their allowance."""
+        from concurrent.futures import ProcessPoolExecutor
+        if self._executor is not None and self._dispatched >= self.workers * self.tasks_per_child:
+            self._executor.shutdown(wait=True)
+            self._executor = None
+        if self._executor is None:
+            self._executor = ProcessPoolExecutor(max_workers=self.workers)
+            self._dispatched = 0
+        return self._executor
 
     def chunks_for(self, book_ids: Sequence[str]) -> List[Chunk]:
         key = tuple(book_ids)
@@ -513,7 +551,8 @@ class ChunkPool:
             }
             for c in self.chunks_for(book_ids)
         ]
-        results = list(self._executor.map(tally_chunk, tasks))
+        results = list(self._pool().map(tally_chunk, tasks))
+        self._dispatched += len(tasks)
         ev = Evaluation(profile_hash=profile_hash(profile), loss=0.0)
         ev.books = [book_score_of(row) for row in rows_from_chunks(results)]
         ev.loss = (
@@ -523,7 +562,9 @@ class ChunkPool:
         return ev
 
     def close(self) -> None:
-        self._executor.shutdown(wait=True)
+        if self._executor is not None:
+            self._executor.shutdown(wait=True)
+            self._executor = None
 
     def __enter__(self) -> "ChunkPool":
         return self
