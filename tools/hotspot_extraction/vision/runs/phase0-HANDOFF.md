@@ -151,5 +151,5 @@ Nothing from the Phase 0 task list. Not done on purpose (out of scope):
 no other pages rendered, nothing trained, `scan.py` untouched, Gemini CLI
 login skipped because `agy` already had the account.
 
-Commit: branch `phase0-vision-env`; the hash is recorded in the follow-up
-commit that adds this line.
+Commit: branch `phase0-vision-env`, phase commit `b6ff488`; this hash was added by the
+follow-up commit that adds this line.
