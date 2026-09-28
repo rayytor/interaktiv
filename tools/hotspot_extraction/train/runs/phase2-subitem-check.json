@@ -1,0 +1,49 @@
+{
+  "550e601a": {
+    "defaults": {
+      "regions": 174,
+      "items": 279,
+      "labelKinds": {
+        "letter": 138,
+        "digit": 32,
+        "none": 4
+      }
+    },
+    "combined": {
+      "regions": 174,
+      "items": 280,
+      "labelKinds": {
+        "letter": 138,
+        "digit": 32,
+        "none": 4
+      }
+    },
+    "pagesDiffering": [
+      "41",
+      "42"
+    ],
+    "pass": true
+  },
+  "0a3fbb41": {
+    "defaults": {
+      "regions": 717,
+      "items": 252,
+      "labelKinds": {
+        "digit": 207,
+        "letter": 488,
+        "none": 22
+      }
+    },
+    "combined": {
+      "regions": 717,
+      "items": 252,
+      "labelKinds": {
+        "digit": 207,
+        "letter": 488,
+        "none": 22
+      }
+    },
+    "pagesDiffering": [],
+    "pass": true
+  }
+}
