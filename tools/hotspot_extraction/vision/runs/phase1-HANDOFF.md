@@ -93,5 +93,6 @@ Phase 0's drawing code and the teacher call apply unchanged to the corpus.
 Nothing from the Phase 1 task list. Not done on purpose: no page was
 labelled, nothing was trained, `scan.py` untouched.
 
-Commits: branch `phase1-render`. The phase commit's hash is recorded in the
-follow-up commit on the same branch (`git log --oneline main..phase1-render`).
+Commits: branch `phase1-render`. `db5cb26` is the phase commit (render.py,
+test_render.py, the run summary, this handoff, the regions.py import fix); the
+follow-up commit records that hash here (`git log --oneline main..phase1-render`).
