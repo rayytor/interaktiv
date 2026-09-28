@@ -48,3 +48,6 @@ activities/books/*/trace.json.gz
 # (hundreds of MB of slide images). Only the root index is tracked.
 kitap_sunumlari/*
 !kitap_sunumlari/index.json
+
+# Claude Code agent worktrees (local scratch checkouts, never committed)
+.claude/worktrees/
