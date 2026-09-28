@@ -1,9 +1,12 @@
-"""Phase 0 proof: draw the teacher's boxes (red) and the old bake's boxes (blue) on page 31."""
+"""Phase 0 proof: draw the teacher's boxes (red) and the old bake's boxes (blue) on page 31.
+
+Usage: phase0_draw.py [runs/phase0-agy-<call>.json]   (default: the gemini-3.6-flash-low call)"""
 import json, re, sys
 from PIL import Image, ImageDraw, ImageFont
 
 ROOT = "../../../"
-reply = json.load(open("runs/phase0-agy-try3.json"))["response"]
+SRC = sys.argv[1] if len(sys.argv) > 1 else "runs/phase0-agy-flash36low.json"
+reply = json.load(open(SRC))["response"]
 m = re.search(r"```json\s*(.*?)```", reply, re.S)
 boxes = json.loads(m.group(1) if m else reply)
 json.dump(boxes, open("runs/phase0-page31.teacher.json", "w"), indent=1)
