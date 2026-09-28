@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "hash": "88eda0fc55ec",
+  "knobs": {
+    "ANCHOR_ABOVE": 4.0,
+    "BAND_REACH_ABOVE": 2.0,
+    "BODY_LINE_CHARS": 51,
+    "BRIDGE": 2.0,
+    "CAPTION_SIDE": 4.0,
+    "FIGURE_AREA": 3350.0,
+    "FIGURE_SHARE": 0.625,
+    "FIGURE_SPAN": 51.0,
+    "FLOW_BREAK": 38.333333,
+    "FOOTER_BAND": 32.0,
+    "GRAPHIC_HELD": 0.625,
+    "GRAPHIC_SHARE": 0.2,
+    "GUTTER_RATIO": 0.1,
+    "HEADING_RATIO__prompts": 1.213333,
+    "HEADING_RATIO__regions": 1.116667,
+    "HOTSPOT_GAP": 12.0,
+    "PAD": 0.0,
+    "RETREAT_SHARE": 0.841667
+  },
+  "note": "fitted 2026-09-28 on 18 training books"
+}

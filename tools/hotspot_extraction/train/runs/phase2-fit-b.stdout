@@ -35,3 +35,23 @@ Coordinate descent over the movers, in a shuffled order (seed 7): FOOTER_BAND, C
   pass 1  HOTSPOT_GAP 10.666667 -> 12.0   loss 4.58084
   pass 1  FLOW_BREAK 90.0 -> 20.0   loss 4.10602
   pass 1  FLOW_BREAK 20.0 -> 38.333333   loss 4.03379
+  pass 1  HEADING_RATIO__prompts 1.12 -> 1.213333   loss 4.03273
+  pass 1  ANCHOR_ABOVE 24.0 -> 4.0   loss 4.01458
+  pass 1  GUTTER_RATIO 0.5 -> 0.1   loss 3.95367
+  pass 1  GRAPHIC_SHARE 0.5 -> 0.2   loss 3.86496
+  after descent: loss 3.86496 (18 knobs moved)
+
+  after CMA-ES: loss 3.86496
+
+200 evaluations in 14470s
+
+Training split, baseline -> fitted:
+    cuts      782 -> 530 (-252)
+    overlaps  0 -> 0 (+0)
+    tall      0 -> 0 (+0)
+    slivers   0 -> 0 (+0)
+    match     0.9262 -> 0.9454
+    coverage  0.7788 -> 0.7819
+    regions   12685 -> 12524 (-161)
+
+wrote tools/hotspot_extraction/train/runs/phase2-profile-b.json  (profile 88eda0fc55ec, 18 knobs moved)
