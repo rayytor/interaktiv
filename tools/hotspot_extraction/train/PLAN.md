@@ -1,5 +1,12 @@
 # Hotspot detector accuracy programme — briefs for AI agents
 
+> **PAUSED (2026-09-28).** This knob-fitting programme ended after Phase 2
+> (fitted profile). Phases 3–5 are paused, not deleted. The active plan is
+> the teacher/student vision detector in
+> [`tools/hotspot_extraction/vision/PLAN.md`](../vision/PLAN.md). Do not start
+> or resume a phase from this file, and ignore `runs/phase2-RESUME.md`, unless
+> the user asks for it.
+
 One phase per fresh session. An agent starting a phase has no memory of any
 other phase, so every brief below is self-contained: read **§0** and **your
 phase only**, plus the handoff file the previous phase left in
