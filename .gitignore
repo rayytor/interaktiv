@@ -50,3 +50,7 @@ kitap_sunumlari/
 
 # Claude Code agent worktrees (local scratch checkouts, never committed)
 .claude/worktrees/
+
+# Vision detector (tools/hotspot_extraction/vision/PLAN.md): training env and rendered pages, never committed
+.venv-vision/
+data/vision/
