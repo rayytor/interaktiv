@@ -95,6 +95,29 @@ def _render() -> str:
     return "no installed book to draw"
 
 
+def _ink() -> str:
+    """Draw every kind of stroke Rayyanpen can hand over, and read the D-Bus contract."""
+    from gi.repository import Gio, Graphene, Gtk
+
+    from interaktiv_core.geometry import PageTransform
+    from interaktiv_core.ink import KINDS, InkStroke
+
+    from . import ink_service
+    from .reader import ink_layer
+
+    strokes = [
+        InkStroke(page=1, kind=kind, rgba="#e53935ff", width=2, points=[10, 10, 60, 40, 90, 20])
+        for kind in KINDS
+    ]
+    node = ink_layer.build_node(strokes, 100)
+    ink_layer.append_page_ink(
+        Gtk.Snapshot(), node, strokes, 100,
+        PageTransform.for_full_page(100, 100, 2.0, 90), Graphene.Rect().init(0, 0, 200, 200),
+    )
+    Gio.DBusNodeInfo.new_for_xml(ink_service.INTROSPECTION)
+    return "drawn as " + ("a cached node" if node is not None else "direct strokes")
+
+
 def _board() -> str:
     from . import board
 
@@ -115,6 +138,7 @@ CHECKS: List[Tuple[str, Callable[[], str], bool]] = [
     ("display", _display, True),
     ("catalogue", _catalogue, True),
     ("render", _render, True),
+    ("ink", _ink, False),
     ("board", _board, False),
 ]
 

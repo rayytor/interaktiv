@@ -5,6 +5,10 @@
 #   packaging/board/build.sh                        # the app, no books
 #   packaging/board/build.sh --books 09f62a7e,cb558332
 #   packaging/board/build.sh --all-installed-books  # every PDF in books/
+#   packaging/board/build.sh --books ... --stick /media/$USER/RAYYANPEN
+#       # and put it on a stick another program already uses (the RAYYANPEN
+#       # stick): its interaktiv/ folder and interaktiv-baslat.sh are replaced,
+#       # nothing else on the stick is touched
 #
 # The libraries are taken from debian:bookworm, the base of ETAP 23.4, so the
 # bundle runs on the oldest board and on everything newer. Needs docker or
@@ -16,12 +20,14 @@ here="$root/packaging/board"
 out="$root/dist/interaktiv-board"
 books=
 engine=
+stick=
 
 while [ $# -gt 0 ]; do
     case "$1" in
         --books) books=$2; shift 2 ;;
         --all-installed-books) books=all; shift ;;
         --engine) engine=$2; shift 2 ;;
+        --stick) stick=$2; shift 2 ;;
         *) echo "unknown option: $1" >&2; exit 2 ;;
     esac
 done
@@ -67,7 +73,8 @@ cp "$here/bundle/interaktiv" "$here/bundle/install.sh" "$here/bundle/kaldir.sh" 
    "$here/bundle/activate.sh" "$out/interaktiv/"
 cp "$root/interaktiv_gtk/icons/hicolor/scalable/apps/org.interaktiv.School.svg" \
    "$out/interaktiv/icon.svg"
-cp "$here/stick/autorun.sh" "$here/stick/OKU-BENI.txt" "$out/"
+cp "$here/stick/autorun.sh" "$here/stick/OKU-BENI.txt" \
+   "$here/stick/interaktiv-baslat.sh" "$out/"
 cp "$work/out/build-report.txt" "$out/interaktiv/"
 
 # 4. Books for a board with no network.
@@ -84,3 +91,12 @@ fi
 echo
 echo "Bundle: $out ($(du -sh "$out" | cut -f1))"
 echo "Copy its contents to the top of a USB stick labelled INTERAKTIV."
+
+if [ -n "$stick" ]; then
+    [ -d "$stick" ] || { echo "no such stick folder: $stick" >&2; exit 1; }
+    rm -rf "${stick:?}/interaktiv"
+    cp -r "$out/interaktiv" "$stick/"
+    cp "$out/interaktiv-baslat.sh" "$stick/"
+    sync
+    echo "Copied to $stick: interaktiv/ and interaktiv-baslat.sh"
+fi
