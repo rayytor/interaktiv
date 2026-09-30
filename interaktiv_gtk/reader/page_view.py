@@ -150,6 +150,7 @@ class PageView(Gtk.Widget):
         self._ink = None
         self._ink_key = None
         self._ink_node = None
+        self._ink_strokes = ()
 
         motion = Gtk.EventControllerMotion()
         motion.connect("motion", self._on_motion)
@@ -261,25 +262,33 @@ class PageView(Gtk.Widget):
         self.queue_draw()
 
     def _ink_for_page(self):
-        """This page's ink as a node in page space, or None if it has none."""
+        """
+        This page's ink as (node, strokes), rebuilt only when the page or its
+        ink changes: a node in page space where PyGObject can keep one, and
+        the strokes, oldest first, to draw directly where it cannot.
+        """
         ink = self._ink
         page_h = self._pdf_size[1]
         if ink is None or page_h <= 0:
-            return None
+            return None, ()
         key = (id(ink), self.page, ink.page_version(self.page), page_h)
         if key != self._ink_key:
             self._ink_key = key
-            self._ink_node = ink_layer.build_node(ink.strokes_on(self.page), page_h)
-        return self._ink_node
+            strokes = sorted(ink.strokes_on(self.page), key=lambda s: s.created_ms)
+            self._ink_strokes = strokes
+            self._ink_node = ink_layer.build_node(strokes, page_h) if strokes else None
+        return self._ink_node, self._ink_strokes
 
     def _snapshot_ink(self, snapshot, bounds) -> None:
-        node = self._ink_for_page()
-        if node is None:
+        node, strokes = self._ink_for_page()
+        if node is None and not strokes:
             return
         transform = self.transform()
         if transform is None:
             return
-        ink_layer.append_page_ink(snapshot, node, transform, bounds)
+        ink_layer.append_page_ink(
+            snapshot, node, strokes, self._pdf_size[1], transform, bounds
+        )
 
     # -- activities -------------------------------------------------------
 

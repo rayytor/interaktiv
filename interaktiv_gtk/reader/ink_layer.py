@@ -167,15 +167,31 @@ def append_stroke(snap: Gtk.Snapshot, stroke: InkStroke, page_h: float) -> None:
         snap.pop()
 
 
+# Whether this PyGObject can hand a render node back to Python. The one on the
+# oldest boards (3.42, Debian 12) cannot translate GskContainerNode, and there
+# the strokes are drawn into the page's own snapshot every time instead.
+NODES_SUPPORTED: Optional[bool] = None
+
+
 def build_node(strokes: Iterable[InkStroke], page_h: float) -> Optional[Gsk.RenderNode]:
-    """All of a page's strokes as one node in page space, oldest underneath."""
+    """
+    All of a page's strokes as one node in page space, oldest underneath.
+    None when there are none -- or when nodes cannot be kept (see above).
+    """
+    global NODES_SUPPORTED
     strokes = sorted(strokes, key=lambda s: s.created_ms)
-    if not strokes:
+    if not strokes or NODES_SUPPORTED is False:
         return None
     snap = Gtk.Snapshot()
     for stroke in strokes:
         append_stroke(snap, stroke, page_h)
-    return snap.to_node()
+    try:
+        node = snap.to_node()
+    except TypeError:
+        NODES_SUPPORTED = False
+        return None
+    NODES_SUPPORTED = True
+    return node
 
 
 def page_to_widget(transform: PageTransform) -> Gsk.Transform:
@@ -192,12 +208,22 @@ def page_to_widget(transform: PageTransform) -> Gsk.Transform:
 
 
 def append_page_ink(
-    snapshot: Gtk.Snapshot, node: Gsk.RenderNode, transform: PageTransform, bounds
+    snapshot: Gtk.Snapshot, node: Optional[Gsk.RenderNode], strokes: Sequence[InkStroke],
+    page_h: float, transform: PageTransform, bounds,
 ) -> None:
-    """Place a page's ink node on the page widget, clipped to the sheet."""
+    """
+    Place a page's ink on the page widget, clipped to the sheet: the cached
+    node where there is one, else the strokes drawn afresh.
+    """
+    if node is None and not strokes:
+        return
     snapshot.push_clip(bounds)
     snapshot.save()
     snapshot.transform(page_to_widget(transform))
-    snapshot.append_node(node)
+    if node is not None:
+        snapshot.append_node(node)
+    else:
+        for stroke in strokes:
+            append_stroke(snapshot, stroke, page_h)
     snapshot.restore()
     snapshot.pop()

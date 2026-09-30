@@ -110,8 +110,18 @@ class TestInkLayer(unittest.TestCase):
                       points=[10, 10, 50, 60, 90, 20])
             for k in ("pen", "marker", "line", "arrow", "rect", "ellipse")
         ]
-        self.assertIsInstance(ink_layer.build_node(strokes, 100), Gsk.RenderNode)
+        node = ink_layer.build_node(strokes, 100)
+        # PyGObject 3.42 (the oldest boards) cannot return a container node;
+        # then the strokes are drawn directly, which must work everywhere.
+        if ink_layer.NODES_SUPPORTED:
+            self.assertIsInstance(node, Gsk.RenderNode)
+        else:
+            self.assertIsNone(node)
         self.assertIsNone(ink_layer.build_node([], 100))
+        snap = Gtk.Snapshot()
+        t = PageTransform.for_full_page(100, 100, 2.0, 90)
+        ink_layer.append_page_ink(snap, None, strokes, 100, t,
+                                  Graphene.Rect().init(0, 0, 200, 200))
 
     def test_page_transform_matches_geometry(self):
         # The GSK transform must put a point where PageTransform does.
