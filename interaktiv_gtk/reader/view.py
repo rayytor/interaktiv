@@ -853,6 +853,9 @@ class ReaderPage(Gtk.Box):
                 self.current_page, self.session.page_count, self.view_mode
             ))
 
+    def visible_pages(self) -> List[int]:
+        return self._visible_pages()
+
     def _visible_pages(self) -> List[int]:
         if self.view_mode == "scroll":
             return [self.current_page]

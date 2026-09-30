@@ -7,7 +7,7 @@ It owns the things that outlive any one window: the catalogue
 
 import os
 
-from gi.repository import Adw, Gdk, Gio, Gtk
+from gi.repository import Adw, Gdk, Gio, GLib, Gtk
 
 from interaktiv_core.catalogue import BooksManager
 
@@ -74,7 +74,12 @@ class InteraktivApp(Adw.Application):
     # -- lifecycle --------------------------------------------------------
 
     def do_startup(self) -> None:
+        # The window's X class is how the desktop matches it to its menu entry
+        # (StartupWMClass) and how Rayyanpen knows a stroke is over the book.
+        # Run as `python3 -m`, GTK would otherwise call it "python3".
+        GLib.set_prgname(APP_ID)
         Adw.Application.do_startup(self)
+        self._set_x11_class()
         self.right_click_guard.clean_stale()
         fonts.register()
         icons.register()
@@ -89,6 +94,19 @@ class InteraktivApp(Adw.Application):
             # only held off while this window is the one being touched.
             self.window.connect("notify::is-active", self._on_window_active)
         self.window.present()
+
+    @staticmethod
+    def _set_x11_class() -> None:
+        display = Gdk.Display.get_default()
+        try:
+            import gi
+
+            gi.require_version("GdkX11", "4.0")
+            from gi.repository import GdkX11
+        except (ImportError, ValueError):
+            return
+        if isinstance(display, GdkX11.X11Display):
+            GdkX11.X11Display.set_program_class(display, APP_ID)
 
     def _on_window_active(self, window, _param) -> None:
         if window.is_active():

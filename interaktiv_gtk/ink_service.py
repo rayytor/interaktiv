@@ -184,7 +184,8 @@ class InkService:
             pts = [to_win(x, y) for x, y in points]
             return (ink.erase(session, radius / self._scale(), pts),)
         if method == "ClearPage":
-            return (ink.clear_page_at(*to_win(args[1], args[2])),)
+            # Rayyanpen's Clear: the drawings on every page on screen.
+            return (ink.clear_pages(reader.visible_pages()) or "",)
         if method == "Gesture":
             _xid, phase, x, y, scale = args
             if phase not in ("begin", "update", "end"):
