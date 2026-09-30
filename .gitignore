@@ -54,3 +54,6 @@ kitap_sunumlari/
 # Vision detector (tools/hotspot_extraction/vision/PLAN.md): training env and rendered pages, never committed
 .venv-vision/
 data/vision/
+
+# Gemini free-tier API keys for the vision teacher (tools/hotspot_extraction/vision/teacher.py --route api); never committed
+api.md

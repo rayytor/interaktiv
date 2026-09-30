@@ -52,7 +52,7 @@ edge goes**. Each does what it is good at.
 | Decision | Chosen |
 | --- | --- |
 | Where the model runs | Only on this PC, at bake time. Smartboards read `regions.json`; they never run a model. So PyTorch and the GPU may be used freely. |
-| Teacher | Google models through the user's Antigravity / Google AI Pro subscription only. **The user will not pay for an API key**, so no design may depend on billed API access. See §0.4 for the zero-cost routes and their daily quotas. |
+| Teacher | Google models through the user's Antigravity / Google AI Pro subscription only. **The user will not pay for an API key**, so no design may depend on billed API access. See §0.4 for the zero-cost routes and their daily quotas. *Superseded 2026-09-30: free-tier Gemini API keys only, see the note in §0.4.* |
 | Model output | **Box only.** One rectangle per activity. Label letters (`a`, `b`, `3`) still come from the existing text rules in `scanner/markers.py`; missing labels stay `null`, which `regions.json` already allows. |
 | Old rule detector | **Model leads, rules snap edges.** `snap_edges`, `legal_planes`, `detect_panels`, `detect_solution_spaces`, `detect_figures`, `clean_page_activities`, `score.py`, `census.py` and `interaktiv_core/linking.py` are kept. `grow_activity_regions`, `train/fit.py`, `train/objective.py` and the profile knobs are retired from the bake path. |
 
@@ -100,6 +100,13 @@ edge goes**. Each does what it is good at.
    before it has saved something reusable.
 
 ### 0.4 Zero cost: how the teacher runs on the existing subscription
+
+> **2026-09-30, the user's decision: the teacher in this repository is the Gemini API with the
+> user's free-tier keys only** (`teacher.py`, keys in the gitignored `api.md`, no billing). The
+> Antigravity CLI / IDE routes and the local Ollama (Qwen3-VL) teacher were moved out of the repo
+> to `~/Projects/interaktiv-local-teacher/`, with their code, labels and results.
+>
+> The routes below are the original 2026-09-28 reasoning, kept for the record.
 
 Checked 2026-09-28 against Google's own docs. The user pays for Google AI
 Pro (which includes Antigravity) and will not pay for an API key. Three
@@ -296,6 +303,13 @@ test passes; the handoff records file count, total size, peak RSS and time.
 ---
 
 ## Phase 2 — the teacher labels a chosen subset
+
+> **2026-09-30, the user's decision: the teacher in this repository is the Gemini API with the
+> user's free-tier keys only** (`teacher.py`, keys in the gitignored `api.md`, no billing). The
+> Antigravity CLI / IDE routes and the local Ollama (Qwen3-VL) teacher were moved out of the repo
+> to `~/Projects/interaktiv-local-teacher/`, with their code, labels and results.
+> `teacher.py` has no `--route` any more; the steps below that name the CLI or `--route ide` describe
+> the original design.
 
 **Goal.** One JSON label file per page for a **stratified subset of ~1,200
 pages**, produced through the subscription at no cost, then an automatic

@@ -2,6 +2,12 @@
 
 Date: 2026-09-28. Plan: `tools/hotspot_extraction/vision/PLAN.md`, Phase 0.
 
+> 2026-09-30: this proof ran through the Antigravity CLI, which is no longer a
+> route in this repository (the teacher is the Gemini API with free-tier keys
+> only). The `phase0-agy-*` envelopes, `phase0_draw.py`, `phase0-page31.png` and
+> `phase0-page31.teacher.json` named below moved to
+> `~/Projects/interaktiv-local-teacher/runs/phase0/`.
+
 ## What was built
 
 | Item | State |
