@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Name=Interaktiv
+GenericName=Textbook Reader
+GenericName[tr]=Ders Kitabı Okuyucu
+Comment=Interactive textbooks for the smart board
+Comment[tr]=Akıllı tahta için etkileşimli ders kitapları
+Exec=interaktiv %U
+Icon=org.interaktiv.School
+Terminal=false
+Categories=Education;
+Keywords=kitap;ders;pdf;tahta;etkinlik;textbook;
+StartupWMClass=org.interaktiv.School

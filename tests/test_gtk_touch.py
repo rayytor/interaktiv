@@ -159,8 +159,8 @@ class TestHoldRepeat(unittest.TestCase):
         loop.run()
 
     def test_a_mouse_press_turns_the_page_at_once(self):
-        # A button going down is already a decision, and the web version
-        # commits there. Nothing more happens on the way back up.
+        # A button going down is already a decision. Nothing more happens on
+        # the way back up.
         gesture, turns = self._bind(touching=False)
         gesture.emit("drag-begin", 10.0, 10.0)
         self.assertEqual(len(turns), 1)

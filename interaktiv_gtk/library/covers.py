@@ -1,11 +1,9 @@
 """
 Book covers, decoded off the main loop.
 
-All 56 covers ship in `thumbnails/` (asserted by `tests/test_school_edition.py`),
-so the web dashboard's fallback -- render page 1 over the byte-range proxy with
-pdf.js -- has nothing to do here and is gone. What is left is reading a small
-JPEG, which is fast but not free: 56 of them on the main loop is a visible stall
-when the library first opens.
+All 56 covers ship in `thumbnails/` (asserted by `tests/test_school_edition.py`).
+Reading a small JPEG is fast but not free: 56 of them on the main loop is a
+visible stall when the library first opens.
 
 The decode runs on a worker thread through GdkPixbuf, which is thread-safe; the
 cheap wrap into a `Gdk.Texture` happens back on the main loop, because a texture

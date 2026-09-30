@@ -1,11 +1,9 @@
 """
 The one window.
 
-A board runs one thing at a time, so the window is a single
-`Adw.NavigationView`: the library is the root page and a book is pushed on top
-of it. Closing the book pops back to exactly the catalogue that was left,
-filter and scroll position intact, which is what the web edition's
-show/hide of `#dashboard-view` was doing by hand.
+A board runs one thing at a time, so the window is a single page stack: the
+library is the root page and a book is pushed on top of it. Closing the book
+pops back to the catalogue as it was left, filter and scroll position intact.
 """
 
 from gi.repository import Adw, Gio
@@ -13,6 +11,7 @@ from gi.repository import Adw, Gio
 from .library import LibraryPage
 from .reader import ReaderPage
 from .theme import apply_theme
+from .widgets import PageStack
 
 
 class MainWindow(Adw.ApplicationWindow):
@@ -29,15 +28,12 @@ class MainWindow(Adw.ApplicationWindow):
         if self.settings.get("window_maximized"):
             self.maximize()
 
-        self.navigation = Adw.NavigationView()
+        self.navigation = PageStack()
         self.library = LibraryPage(app)
         self.library.connect("open-book", self._on_open_book)
-        self.navigation.add(self.library)
-        # A popped reader is done with: its render thread and its textures
-        # are released here rather than left to the garbage collector,
-        # which on a board is the difference between going back to the
-        # library and going back to a library with half a gigabyte of
-        # MuPDF store still resident.
+        self.navigation.set_root_page(self.library)
+        # A popped reader releases its render process and textures now, not
+        # when the garbage collector gets to it: that is half a gigabyte.
         self.navigation.connect("popped", self._on_popped)
         self.set_content(self.navigation)
 
@@ -63,8 +59,8 @@ class MainWindow(Adw.ApplicationWindow):
         app.set_accels_for_action("win.search", ["<Control>f"])
         # Not Escape: a window accelerator is seen before the focused widget,
         # so Escape here would close the book instead of clearing the search
-        # box or dismissing a dialog. The reader binds its own Escape in M4,
-        # where it means "leave focus mode".
+        # box or dismissing a dialog. The reader binds its own Escape, where
+        # it means "leave focus mode".
         app.set_accels_for_action("win.back", ["<Alt>Left"])
 
     def _focus_search(self) -> None:
@@ -82,6 +78,8 @@ class MainWindow(Adw.ApplicationWindow):
     def _on_popped(self, _navigation, page) -> None:
         if isinstance(page, ReaderPage):
             page.shutdown()
+            # The book just closed is now first on the "continue" shelf.
+            self.library.refresh_shelf()
 
     # -- lifecycle --------------------------------------------------------
 

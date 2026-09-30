@@ -17,20 +17,13 @@ server.log
 *.pdf
 books/*.pdf
 
-# Build and distribution directories
+# Build and distribution directories (the board bundle is built under dist/)
 dist/
 
 # JIT-downloaded interactive activity cache (keep pre-baked books in activities/books/)
 activities/*
 !activities/books/
 !activities/.gitkeep
-
-# Temporary test / debug screenshots
-dashboard_*.png
-
-# Node / npm
-node_modules/
-npm-debug.log*
 
 # Operating System & IDE
 .DS_Store

@@ -11,7 +11,7 @@ from typing import Any, Callable, Dict
 
 from gi.repository import GLib
 
-# The cadence `js/dashboard.js:startPollingDownloads` uses.
+# Often enough for a smooth bar, rarely enough to cost nothing.
 INTERVAL_MS = 800
 
 

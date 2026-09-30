@@ -1,22 +1,16 @@
 """
-Theming and colour matrices for Interaktiv School Edition.
+The four reading themes: their colours and what each does to the page.
 
-Four themes, matching the web reader:
-  dark -> light -> sepia -> inverted (viewer.js:239)
+A theme is two things. The chrome takes a palette: a handful of named colours
+that the stylesheet is written in terms of, plus libadwaita's own names mapped
+onto them so that stock widgets follow. The page takes a colour matrix: sepia
+and night tint the rendered sheet itself.
 
-Canvas filters:
-  - dark:     none
-  - light:    none
-  - sepia:    sepia(0.2) contrast(0.95)
-  - inverted: invert(0.9) hue-rotate(180deg) brightness(1.05) contrast(0.95)
-
-The canvas filters are NOT baked into the pixmap: that would be a CPU pass
-  per page and would invalidate the whole texture cache on every theme switch.
-  Each CSS filter primitive is a 4x4 colour matrix plus offset; we multiply the
-  chain once at startup (pure Python, no numpy) into one (Graphene.Matrix, Graphene.Vec4)
-  per theme and wrap only the texture node in push_color_matrix. Hotspots, chips,
-  and highlights stay untinted. A theme switch is then a queue_draw(): no re-render,
-  no cache invalidation.
+The page tint is not baked into the pixels. That would be a CPU pass per page
+and would invalidate the texture cache on every theme switch. Each CSS filter
+primitive is a 4x4 colour matrix plus an offset; the chain is multiplied once
+at import into one matrix per theme, and only the texture node is wrapped in
+it. Hotspots and highlights stay untinted, and a theme switch is a redraw.
 """
 
 import math
@@ -26,48 +20,74 @@ import gi
 gi.require_version("Gtk", "4.0")
 gi.require_version("Adw", "1")
 gi.require_version("Graphene", "1.0")
-from gi.repository import Adw, Gdk, Graphene, Gtk
+from gi.repository import Adw, Gdk, Graphene, Gtk  # noqa: E402
 
 THEMES = ["dark", "light", "sepia", "inverted"]
 
-THEME_CSS: Dict[str, str] = {
-    "sepia": """
-@define-color window_bg_color #f4ecd8;
-@define-color window_fg_color #3b2c1a;
-@define-color view_bg_color #f4ecd8;
-@define-color view_fg_color #3b2c1a;
-@define-color headerbar_bg_color #eadecc;
-@define-color headerbar_fg_color #3b2c1a;
-@define-color headerbar_border_color #d6c6aa;
-@define-color card_bg_color #dfd1b8;
-@define-color card_fg_color #3b2c1a;
-@define-color card_border_color #d6c6aa;
-@define-color sidebar_bg_color #efe3ce;
-@define-color sidebar_fg_color #3b2c1a;
-@define-color sidebar_border_color #d6c6aa;
-@define-color accent_color #935a28;
-@define-color accent_bg_color #935a28;
-@define-color accent_fg_color #ffffff;
-""",
-    "inverted": """
-@define-color window_bg_color #0a0c10;
-@define-color window_fg_color #e6edf3;
-@define-color view_bg_color #0a0c10;
-@define-color view_fg_color #e6edf3;
-@define-color headerbar_bg_color #12151c;
-@define-color headerbar_fg_color #e6edf3;
-@define-color headerbar_border_color #262c3a;
-@define-color card_bg_color #181d26;
-@define-color card_fg_color #e6edf3;
-@define-color card_border_color #262c3a;
-@define-color sidebar_bg_color #0f1217;
-@define-color sidebar_fg_color #e6edf3;
-@define-color sidebar_border_color #262c3a;
-@define-color accent_color #58a6ff;
-@define-color accent_bg_color #58a6ff;
-@define-color accent_fg_color #ffffff;
-""",
+THEME_LABELS = {
+    "dark": "Koyu",
+    "light": "Açık",
+    "sepia": "Sepya",
+    "inverted": "Gece",
 }
+
+# name -> (background, surface, raised, foreground, desk, accent, on accent, activity)
+PALETTES: Dict[str, Tuple[str, ...]] = {
+    "dark": ("#0f141c", "#18202b", "#232d3b", "#eaf0f6", "#0a0e14",
+             "#2cc4d0", "#04262b", "#ffb020"),
+    "light": ("#f5f3ee", "#ffffff", "#ffffff", "#1b2330", "#e3e0d8",
+              "#0a8a96", "#ffffff", "#e8930c"),
+    "sepia": ("#f4ecd8", "#fbf5e6", "#fffaf0", "#3b2c1a", "#e6dcc3",
+              "#935a28", "#ffffff", "#d9820a"),
+    "inverted": ("#07090d", "#11151c", "#1a202a", "#d9e1ea", "#040507",
+                 "#58a6ff", "#04182e", "#ffb020"),
+}
+
+DARK_THEMES = ("dark", "inverted")
+
+
+def palette_css(theme: str) -> str:
+    """
+    The named colours for one theme.
+
+    The `ik_*` names are the app's own and are what `style.css` uses. The rest
+    are libadwaita's, set from them so that its widgets match.
+    """
+    bg, surface, raised, fg, desk, accent, on_accent, activity = PALETTES[theme]
+    return f"""
+@define-color ik_bg {bg};
+@define-color ik_surface {surface};
+@define-color ik_raised {raised};
+@define-color ik_fg {fg};
+@define-color ik_desk {desk};
+@define-color ik_accent {accent};
+@define-color ik_on_accent {on_accent};
+@define-color ik_activity {activity};
+@define-color window_bg_color {bg};
+@define-color window_fg_color {fg};
+@define-color view_bg_color {bg};
+@define-color view_fg_color {fg};
+@define-color headerbar_bg_color {bg};
+@define-color headerbar_fg_color {fg};
+@define-color headerbar_border_color {fg};
+@define-color headerbar_backdrop_color {bg};
+@define-color headerbar_shade_color alpha({fg}, 0.12);
+@define-color card_bg_color {surface};
+@define-color card_fg_color {fg};
+@define-color card_shade_color alpha({fg}, 0.08);
+@define-color popover_bg_color {raised};
+@define-color popover_fg_color {fg};
+@define-color dialog_bg_color {raised};
+@define-color dialog_fg_color {fg};
+@define-color sidebar_bg_color {surface};
+@define-color sidebar_fg_color {fg};
+@define-color accent_color {accent};
+@define-color accent_bg_color {accent};
+@define-color accent_fg_color {on_accent};
+"""
+
+
+THEME_CSS: Dict[str, str] = {theme: palette_css(theme) for theme in THEMES}
 
 _theme_provider: Optional[Gtk.CssProvider] = None
 
@@ -210,20 +230,18 @@ def get_theme_color_matrix(theme: str) -> Tuple[Optional[Graphene.Matrix], Optio
 
 def apply_theme(theme: str, window=None) -> None:
     """
-    Apply theme to the application chrome and window:
-      - Chrome: dark/inverted -> FORCE_DARK, light/sepia -> FORCE_LIGHT
-      - Libadwaita named colours: dynamically loaded via Gtk.CssProvider
-      - Window: toggle .theme-sepia and .theme-inverted CSS classes
+    Apply a theme to the chrome: libadwaita's light or dark scheme, the
+    palette's named colours, and a `theme-<name>` class on the window.
     """
     global _theme_provider
     theme = theme if theme in THEMES else "dark"
 
     style_manager = Adw.StyleManager.get_default()
     if style_manager is not None:
-        if theme in ("dark", "inverted"):
-            style_manager.set_color_scheme(Adw.ColorScheme.FORCE_DARK)
-        else:
-            style_manager.set_color_scheme(Adw.ColorScheme.FORCE_LIGHT)
+        style_manager.set_color_scheme(
+            Adw.ColorScheme.FORCE_DARK if theme in DARK_THEMES
+            else Adw.ColorScheme.FORCE_LIGHT
+        )
 
     display = Gdk.Display.get_default()
     if display is not None:
@@ -232,16 +250,13 @@ def apply_theme(theme: str, window=None) -> None:
             Gtk.StyleContext.add_provider_for_display(
                 display, _theme_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION + 1
             )
-        css_data = THEME_CSS.get(theme, "")
+        css_data = THEME_CSS[theme]
         if hasattr(_theme_provider, "load_from_string"):
-            _theme_provider.load_from_string(css_data)
+            _theme_provider.load_from_string(css_data)  # floor: ok
         else:
             _theme_provider.load_from_data(css_data.encode("utf-8"))
 
     if window is not None:
-        window.remove_css_class("theme-sepia")
-        window.remove_css_class("theme-inverted")
-        if theme == "sepia":
-            window.add_css_class("theme-sepia")
-        elif theme == "inverted":
-            window.add_css_class("theme-inverted")
+        for name in THEMES:
+            window.remove_css_class(f"theme-{name}")
+        window.add_css_class(f"theme-{theme}")

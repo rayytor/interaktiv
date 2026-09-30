@@ -1,11 +1,11 @@
 """
 Everything the Interaktiv readers agree on, with no user interface in it.
 
-The catalogue, the downloads and the on-disk layout live in `books_manager`;
-this package is the layer above that: what a bake means, what the publisher's
-manifest means, how the two are joined, and how a rect on a page becomes a rect
-on a screen. It is imported by the GTK School Edition reader and by the bake
-pipeline, and it deliberately pulls in neither GTK nor the scanner.
+The catalogue and downloads (`catalogue`), what a bake means (`regions`),
+what the publisher's manifest means (`oges`), how the two are joined
+(`linking`), and how a rect on a page becomes a rect on a screen
+(`geometry`). Imported by the reader and by the bake pipeline; it pulls in
+neither GTK nor the scanner.
 """
 
 from .geometry import PageTransform

@@ -59,7 +59,7 @@ class Pin:
     These are the whole-section tasks -- a warm-up, a consolidation, an
     in-theme activity -- which belong to the sheet rather than to any lettered
     question on it. Dropping them would make them unreachable, so they stay as
-    the corner marker the web reader draws.
+    a marker where the publisher put the icon.
     """
 
     oge: Oge
@@ -128,8 +128,7 @@ def activity_label(activity: Activity) -> str:
 
     A lettered region is named by its letter. A region grown from the
     publisher's icon has no letter -- that is why it was anchored in the first
-    place -- so it goes by the headline read off its own first line, exactly as
-    `renderActivityLayer` does.
+    place -- so it goes by the headline read off its own first line.
     """
     return (activity.label or activity.headline or "").strip()
 
@@ -144,8 +143,7 @@ def build_overlay(
     Join one sheet's regions to the manifest entries sitting on it.
 
     `confidence` is the book's calibration confidence, or None to leave the gate
-    off -- which is how the web reader has always run, because `bakedPage()`
-    never copies the value onto the page it builds.
+    off.
     """
     region_views = [
         linking.region_view(

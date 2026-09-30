@@ -1,32 +1,24 @@
 """
-The interactive activity modal dialog.
+A publisher's interactive HTML activity, shown without leaving the lesson.
 
-School Edition displays the publisher's interactive HTML activities in a native
-dialog powered by WebKitGTK 6.0 when available, or provides a seamless fallback
-to an external browser via `Gtk.UriLauncher`.
+Where WebKitGTK 6.0 is installed the activity opens in a window of our own.
+Where it is not -- the boards -- `open_in_browser` hands it to Chrome as an
+app window instead.
 
-Key responsibilities:
-  * **Floating dialog**: `Adw.Dialog` configured with `FLOATING` presentation.
-  * **Local-first then CDN**: If the activity bundle is present on disk
-    (`activities/<guid>/index.html`), load `file://...`. If not, load directly
-    from the publisher's CDN (`https://ogm-large-cdn.eba.gov.tr/...`).
-  * **Background caching**: When opened from CDN, trigger `jobs.fetch_activity`
-    so future opens work offline without network round-trips.
-  * **7-second offline banner**: Display an `Adw.Banner` if loading takes longer
-    than 7 seconds or fails due to network disconnection.
-  * **Controls**: Header bar buttons to open the activity in an external browser
-    or toggle fullscreen.
-  * **Memory hygiene**: Reset WebView to `about:blank` and remove timers on close.
+The activity is loaded from disk if its bundle is there and from the
+publisher's CDN if not; a CDN load also caches the bundle for next time. If a
+CDN load has not finished after `OFFLINE_AFTER_S` the window says the activity
+needs a connection instead of showing a blank page.
 """
 
 from typing import Optional
-import webbrowser
 
 from gi.repository import Adw, GLib, Gtk
 
 from interaktiv_core import jobs
 
-from .. import icons
+from .. import browser, icons
+from ..widgets import Banner
 
 try:
     import gi
@@ -37,8 +29,24 @@ except (ValueError, ImportError):
     HAS_WEBKIT = False
     WebKit = None
 
+OFFLINE_AFTER_S = 7
 
-class ActivityDialog(Adw.Dialog):
+# The window's share of the one it opens over.
+WINDOW_FRACTION = 0.86
+MIN_SIZE = (960, 720)
+
+
+def open_in_browser(manager, guid: str) -> bool:
+    """Open the activity in the desktop's browser, and cache it for next time."""
+    url = jobs.activity_index_url(manager, guid)
+    if not url:
+        return False
+    if not jobs.activity_asset_path(manager, guid, "index.html") and manager is not None:
+        jobs.fetch_activity(manager, guid, only_html=True)
+    return browser.open_as_app(url) or browser.open_uri(url)
+
+
+class ActivityDialog(Adw.Window):
     __gtype_name__ = "InteraktivActivityDialog"
 
     def __init__(
@@ -48,7 +56,7 @@ class ActivityDialog(Adw.Dialog):
         title: str = "",
         installed: bool = False,
     ):
-        super().__init__()
+        super().__init__(modal=True)
         self.manager = manager
         self.guid = guid
         self.title_text = title or "Etkileşimli Etkinlik"
@@ -62,17 +70,26 @@ class ActivityDialog(Adw.Dialog):
         self._is_loaded: bool = False
 
         self.set_title(self.title_text)
-        self.set_content_width(960)
-        self.set_content_height(720)
-        self.set_presentation_mode(Adw.DialogPresentationMode.FLOATING)
+        self.set_default_size(*MIN_SIZE)
 
         self._build_ui()
-        self.connect("closed", self._on_closed)
+        self.connect("close-request", self._on_closed)
 
         self._start_loading()
 
+    def show_for(self, parent: Gtk.Widget) -> None:
+        """Present over `parent`'s window, sized to most of it."""
+        window = parent.get_root() if parent is not None else None
+        if isinstance(window, Gtk.Window):
+            self.set_transient_for(window)
+            self.set_default_size(
+                max(MIN_SIZE[0], int(window.get_width() * WINDOW_FRACTION)),
+                max(MIN_SIZE[1], int(window.get_height() * WINDOW_FRACTION)),
+            )
+        self.present()
+
     def _build_ui(self) -> None:
-        toolbar = Adw.ToolbarView()
+        toolbar = Gtk.Box(orientation=Gtk.Orientation.VERTICAL)
 
         # Header bar
         header = Adw.HeaderBar()
@@ -98,19 +115,20 @@ class ActivityDialog(Adw.Dialog):
         self.btn_fullscreen.connect("clicked", lambda *_: self.toggle_fullscreen())
         header.pack_end(self.btn_fullscreen)
 
-        toolbar.add_top_bar(header)
+        toolbar.append(header)
 
         # Offline banner
-        self.banner = Adw.Banner(
+        self.banner = Banner(
             title="Bu etkinlik internet bağlantısı gerektiriyor.",
             revealed=False,
         )
-        toolbar.add_top_bar(self.banner)
+        toolbar.append(self.banner)
 
         # Content area
         overlay = Gtk.Overlay()
 
-        self.spinner = Adw.Spinner(
+        self.spinner = Gtk.Spinner(
+            spinning=True,
             width_request=48,
             height_request=48,
             hexpand=True,
@@ -139,7 +157,7 @@ class ActivityDialog(Adw.Dialog):
             status = Adw.StatusPage(
                 icon_name="applications-internet-symbolic",
                 title=self.title_text,
-                description="Etkinliği görüntülemek için WebKitGTK 6.0 gereklidir veya harici tarayıcıda açabilirsiniz.",
+                description="Bu etkinlik tarayıcıda açılır.",
                 hexpand=True,
                 vexpand=True,
             )
@@ -153,8 +171,9 @@ class ActivityDialog(Adw.Dialog):
 
             overlay.set_child(status)
 
-        toolbar.set_content(overlay)
-        self.set_child(toolbar)
+        overlay.set_vexpand(True)
+        toolbar.append(overlay)
+        self.set_content(toolbar)
 
     def _start_loading(self) -> None:
         if not self.url:
@@ -167,9 +186,10 @@ class ActivityDialog(Adw.Dialog):
             self.spinner.set_visible(True)
             self.webview.load_uri(self.url)
 
-            # 7-second offline detection timer if loading from remote CDN
             if not self._is_local:
-                self._timer_id = GLib.timeout_add_seconds(7, self._on_offline_timeout)
+                self._timer_id = GLib.timeout_add_seconds(
+                    OFFLINE_AFTER_S, self._on_offline_timeout
+                )
         else:
             self.spinner.set_visible(False)
 
@@ -222,26 +242,18 @@ class ActivityDialog(Adw.Dialog):
         return GLib.SOURCE_REMOVE
 
     def open_in_browser(self) -> None:
-        if not self.url:
-            return
-        root = self.get_root()
-        try:
-            launcher = Gtk.UriLauncher.new(self.url)
-            launcher.launch(root if isinstance(root, Gtk.Window) else None, None, None, None)
-        except Exception:
-            webbrowser.open(self.url)
+        if self.url:
+            browser.open_uri(self.url)
 
     def toggle_fullscreen(self) -> None:
-        root = self.get_root()
-        if root and isinstance(root, Gtk.Window):
-            if root.is_fullscreen():
-                root.unfullscreen()
-                self.btn_fullscreen.set_icon_name(icons.FULLSCREEN)
-            else:
-                root.fullscreen()
-                self.btn_fullscreen.set_icon_name(icons.RESTORE)
+        if self.is_fullscreen():
+            self.unfullscreen()
+            self.btn_fullscreen.set_icon_name(icons.FULLSCREEN)
+        else:
+            self.fullscreen()
+            self.btn_fullscreen.set_icon_name(icons.RESTORE)
 
-    def _on_closed(self, *_args) -> None:
+    def _on_closed(self, *_args) -> bool:
         if self._timer_id is not None:
             GLib.source_remove(self._timer_id)
             self._timer_id = None
@@ -250,3 +262,4 @@ class ActivityDialog(Adw.Dialog):
                 self.webview.load_uri("about:blank")
             except Exception:
                 pass
+        return False

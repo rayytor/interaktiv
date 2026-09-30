@@ -11,9 +11,9 @@ Supports:
 """
 
 from dataclasses import dataclass
-from typing import Callable, Dict, List, Optional, Sequence, Tuple
+from typing import Dict, List, Optional, Sequence, Tuple
 
-from gi.repository import GLib, GObject
+from gi.repository import GObject
 
 from ..render.service import LANE_SCAN, LANE_VISIBLE
 

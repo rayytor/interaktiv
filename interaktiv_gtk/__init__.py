@@ -1,25 +1,24 @@
 """
-The native School Edition front end.
+Interaktiv, the GTK4 / libadwaita textbook reader for classroom smart boards.
 
-School Edition's books are baked: every activity region is precomputed into
-`activities/books/<id>/regions.json`, so nothing here detects anything. What is
-left -- a PDF canvas, a hotspot overlay, a focus zoom, a catalogue and an
-embedded browser for the publisher's HTML activities -- is a GTK4/Libadwaita
-application, which is what a classroom smartboard should be running.
-
-Interaktiv is a native GTK4/Libadwaita application engineered for
-school and smartboard environments.
+Books are baked ahead of time: every activity region is precomputed into
+`activities/books/<id>/regions.json`, so nothing here detects anything. The
+package is the reader itself: a PDF canvas, a hotspot overlay, a focus zoom,
+the book catalogue and a window for the publisher's HTML activities.
 """
 
-__version__ = "0.1.0"
+__version__ = "0.9.0"
 
-import gi
+# The GTK and libadwaita versions are settled here, before any module of the
+# package touches `gi.repository`. A missing toolkit is kept rather than
+# raised so that `__main__` can say so in a window instead of a traceback.
+TOOLKIT_ERROR = None
+try:
+    import gi
 
-# Pinned here rather than in each module: importing any part of this package
-# must settle the GTK and libadwaita versions before `gi.repository` is touched.
-gi.require_version("Gtk", "4.0")
-gi.require_version("Adw", "1")
-# Gdk is normally settled as a side effect of loading Gtk, but a module that
-# names it first -- `touch`, reaching for `Gdk.InputSource` -- gets there
-# before Gtk has been imported and is warned at for guessing.
-gi.require_version("Gdk", "4.0")
+    gi.require_version("Gtk", "4.0")
+    gi.require_version("Adw", "1")
+    # Gdk is normally settled by loading Gtk, but `touch` names it first.
+    gi.require_version("Gdk", "4.0")
+except (ImportError, ValueError) as error:
+    TOOLKIT_ERROR = error

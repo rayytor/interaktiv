@@ -1,36 +1,28 @@
 """
 One page of the book, drawn, with its activities on top of it.
 
-This is a `Gtk.Widget` with a `do_snapshot`, not a `Gtk.DrawingArea`. A
-DrawingArea means Cairo, and Cairo means a CPU `set_source_surface` and paint of
-a five-megabyte surface on every frame -- on the software renderer a cheap board
-falls back to, that is the difference between a page turn and a stutter. A
-snapshot hands GSK the texture and lets it do the scaling.
+This is a `Gtk.Widget` with a `do_snapshot`, not a `Gtk.DrawingArea`: a
+snapshot hands GSK the page's texture and lets it do the scaling, where a
+drawing area would paint a multi-megabyte surface through Cairo every frame.
 
-Three behaviours here are worth naming because they are what makes the page feel
-immediate:
+Three things keep the page feeling immediate:
 
   * While a render is in flight the previous texture keeps being painted,
-    scaled into the new bounds. It is soft for a few tens of milliseconds and
-    then it is sharp. The alternative -- blanking to white and waiting -- reads
-    as a stall even when it is faster.
-  * A stale texture is only reused when it is the same page at the same
-    rotation. Painting page 41's pixels inside page 42's frame would be worse
-    than painting nothing.
-  * The hotspots are drawn into the same snapshot rather than being child
-    widgets. A page carries dozens of pieces; one widget each means real layout
-    work on every turn, and a widget tree can drift out of step with
-    `linking.hit_test` -- which would put the rectangle a teacher sees and the
-    rectangle a teacher can press in two different places.
+    scaled into the new bounds: soft for a moment, then sharp. Blanking to
+    white and waiting reads as a stall even when it is faster.
+  * A stale texture is only reused for the same page at the same rotation.
+  * The hotspots are drawn into the same snapshot instead of being child
+    widgets, and are hit-tested by `linking.hit_test`, so the rectangle a
+    teacher sees and the rectangle a teacher can press cannot drift apart.
 
-The chips and pins are drawn at a fixed pixel size rather than scaled with the
-page, matching the web, where the activity layer sits above the canvas and its
-labels stay legible at any zoom.
+An activity is marked quietly: amber corners and a small badge, so the page
+stays a page. The marks are a fixed size whatever the zoom, and amber because
+the books themselves print their activity boxes in blue.
 """
 
-from typing import Optional, Tuple
+from typing import List, Optional, Sequence, Tuple
 
-from gi.repository import Gdk, GObject, Graphene, Gsk, Gtk, Pango
+from gi.repository import Gdk, GLib, GObject, Graphene, Gsk, Gtk, Pango
 
 from interaktiv_core.geometry import PageTransform
 
@@ -45,48 +37,65 @@ def _rgba(spec: str) -> Gdk.RGBA:
     return colour
 
 
+def _faded(colour: Gdk.RGBA, alpha: float) -> Gdk.RGBA:
+    faded = colour.copy()
+    faded.alpha = alpha
+    return faded
+
+
 # The paper the page is printed on, painted under the texture so that a page
 # which has not arrived yet is a sheet rather than a hole.
 PAPER = _rgba("#ffffff")
 SHADOW = _rgba("rgba(0,0,0,0.35)")
 
-# Ported from `css/viewer.css`. The quiet pair is the web's `?debug=activities`
-# rendering, which is the only state in which it draws every region at once; the
-# loud pair is `.activity-hotspot.hover`.
-QUIET_FILL = _rgba("rgba(59,130,246,0.09)")
-QUIET_BORDER = _rgba("rgba(59,130,246,0.55)")
-ACTIVE_FILL = _rgba("rgba(59,130,246,0.25)")
-ACTIVE_BORDER = _rgba("#3b82f6")
-ACTIVE_GLOW = _rgba("rgba(59,130,246,0.25)")
+# An activity at rest, and one that is selected or under the pointer.
+MARK = _rgba("#f08c00")
+MARK_FILL = _rgba("#ffb020")
+QUIET_FILL_ALPHA = 0.07
+ACTIVE_FILL_ALPHA = 0.20
+ACTIVE_GLOW = _rgba("rgba(240,140,0,0.35)")
 
-INTERACTIVE_QUIET_FILL = _rgba("rgba(245,158,11,0.08)")
-INTERACTIVE_QUIET_BORDER = _rgba("rgba(245,158,11,0.45)")
-INTERACTIVE_FILL = _rgba("rgba(245,158,11,0.15)")
-INTERACTIVE_BORDER = _rgba("#f59e0b")
-INTERACTIVE_GLOW = _rgba("rgba(245,158,11,0.35)")
-INTERACTIVE_CHIP_BG = _rgba("#f59e0b")
-
-CHIP_BG = _rgba("#3b82f6")
-CHIP_FG = _rgba("#ffffff")
+BADGE_BG = _rgba("#ffb020")
+BADGE_FG = _rgba("#2b1a00")
 COUNT_BG = _rgba("rgba(24,26,31,0.88)")
 COUNT_FG = _rgba("#e6e8ec")
-PIN_BG = _rgba("#f59e0b")
-PIN_FG = _rgba("#ffffff")
+PIN_BG = _rgba("#ffb020")
+PIN_FG = _rgba("#2b1a00")
 
-HOTSPOT_RADIUS = 6
-CHIP_HEIGHT = 24
-CHIP_PAD = 8
-PIN_SIZE = 36
+HOTSPOT_RADIUS = 8
+CORNER_LENGTH = 16.0
+CORNER_WIDTH = 2.5
+BADGE_HEIGHT = 24
+BADGE_PAD = 8
+PIN_SIZE = 40
 
-CHIP_FONT = "Bold 12"
-COUNT_FONT = "Bold 10"
-PIN_FONT = "Bold 16"
+BADGE_FONT = "Inter Bold 11"
+COUNT_FONT = "Inter Bold 10"
+PIN_FONT = "Inter Bold 15"
+
+# The mark an interactive activity carries: it opens something that plays.
+PLAY = "▶"
+
+# A page with more activities than this is marked with corners alone: a badge
+# on each of thirty questions is noise, not a map.
+CROWDED = 8
+
+# How long the marks stay lit after a page is turned to, so that a class sees
+# where the activities are before they settle back.
+PULSE_MS = 900.0
+PULSE_FILL_ALPHA = 0.26
 
 SEARCH_MATCH_FILL = _rgba("rgba(255, 235, 59, 0.40)")
 SEARCH_MATCH_BORDER = _rgba("rgba(245, 124, 0, 0.50)")
 SEARCH_ACTIVE_FILL = _rgba("rgba(255, 112, 67, 0.55)")
 SEARCH_ACTIVE_BORDER = _rgba("#ff5722")
 SEARCH_RADIUS = 3
+
+
+def short_label(spot: Spot) -> str:
+    """What fits in a badge: the activity's letter or number, else its position."""
+    label = (spot.label or "").strip()
+    return label if 0 < len(label) <= 3 else str(spot.act_index + 1)
 
 
 class PageView(Gtk.Widget):
@@ -114,6 +123,11 @@ class PageView(Gtk.Widget):
         self._pdf_size = (0.0, 0.0)
         self.rotation = 0
         self._crop_transform: Optional[PageTransform] = None
+        # A stand-in until the real render arrives: a texture of the whole
+        # page and the part of it (left, top, width, height as fractions) to show.
+        self._preview: Optional[Tuple[object, Tuple[float, float, float, float]]] = None
+        self._pulse_started: Optional[int] = None
+        self._pulse_tick = 0
         self._theme: Optional[str] = None
         self.set_overflow(Gtk.Overflow.VISIBLE)
 
@@ -192,12 +206,29 @@ class PageView(Gtk.Widget):
         self._texture = texture
         self._texture_page = page
         self._texture_rotation = rotation % 360
+        self._preview = None
         self.queue_draw()
 
     def clear_texture(self) -> None:
         self._texture = None
         self._crop_transform = None
+        self._preview = None
         self.queue_draw()
+
+    def set_preview(self, texture, part: Tuple[float, float, float, float]) -> None:
+        """
+        Show `part` of a whole-page texture until this view's own render
+        arrives. `part` is (left, top, width, height) as fractions of the page.
+        """
+        self._preview = (texture, part)
+        self.queue_draw()
+
+    @property
+    def texture(self):
+        """The texture on screen, if it is this page's."""
+        if self._texture is not None and self._texture_page == self.page:
+            return self._texture
+        return None
 
     @property
     def has_texture(self) -> bool:
@@ -216,7 +247,36 @@ class PageView(Gtk.Widget):
         self._overlay_page = page
         self._hover = None
         self._hover_pin = None
+        if overlay is not None and overlay.spots:
+            self._start_pulse()
         self.queue_draw()
+
+    def _start_pulse(self) -> None:
+        self._pulse_started = None
+        if not self._pulse_tick:
+            self._pulse_tick = self.add_tick_callback(self._on_pulse_tick)
+
+    def _on_pulse_tick(self, _widget, clock) -> bool:
+        now = clock.get_frame_time()
+        if self._pulse_started is None:
+            self._pulse_started = now
+        self.queue_draw()
+        if (now - self._pulse_started) / 1000.0 >= PULSE_MS:
+            self._pulse_tick = 0
+            self._pulse_started = None
+            return GLib.SOURCE_REMOVE
+        return GLib.SOURCE_CONTINUE
+
+    def _pulse(self) -> float:
+        """1.0 when a page has just appeared, easing to 0.0."""
+        if self._pulse_started is None or not self._pulse_tick:
+            return 0.0
+        clock = self.get_frame_clock()
+        if clock is None:
+            return 0.0
+        elapsed = (clock.get_frame_time() - self._pulse_started) / 1000.0
+        remaining = max(0.0, 1.0 - elapsed / PULSE_MS)
+        return remaining * remaining
 
     def set_reveal(self, reveal: bool) -> None:
         reveal = bool(reveal)
@@ -280,20 +340,42 @@ class PageView(Gtk.Widget):
             and self._texture_page == self.page
             and self._texture_rotation == self.rotation
         )
-        if usable:
+        if usable or self._preview is not None:
             mat, vec = get_theme_color_matrix(self.theme)
-            if mat is not None and vec is not None:
+            tinted = mat is not None and vec is not None
+            if tinted:
                 snapshot.push_color_matrix(mat, vec)
-                snapshot.append_scaled_texture(
-                    self._texture, Gsk.ScalingFilter.TRILINEAR, bounds
-                )
-                snapshot.pop()
+            if usable:
+                self._append_texture(snapshot, bounds)
             else:
-                snapshot.append_scaled_texture(
-                    self._texture, Gsk.ScalingFilter.TRILINEAR, bounds
-                )
+                self._append_preview(snapshot, bounds)
+            if tinted:
+                snapshot.pop()
         self.snapshot_search_highlights(snapshot)
         self.snapshot_overlay(snapshot, bounds)
+
+    def _append_texture(self, snapshot, bounds) -> None:
+        # Trilinear filtering keeps a page sharp while it is drawn smaller than
+        # it was rendered, mid-pinch. GTK 4.8 on the oldest boards only has the
+        # linear `append_texture`.
+        if hasattr(snapshot, "append_scaled_texture"):
+            snapshot.append_scaled_texture(  # floor: ok
+                self._texture, Gsk.ScalingFilter.TRILINEAR, bounds
+            )
+        else:
+            snapshot.append_texture(self._texture, bounds)
+
+    def _append_preview(self, snapshot, bounds) -> None:
+        texture, (left, top, part_w, part_h) = self._preview
+        if part_w <= 0 or part_h <= 0:
+            return
+        # The whole page, placed so that the wanted part lands on the bounds.
+        width, height = bounds.get_width(), bounds.get_height()
+        full_w, full_h = width / part_w, height / part_h
+        whole = Graphene.Rect().init(-left * full_w, -top * full_h, full_w, full_h)
+        snapshot.push_clip(bounds)
+        snapshot.append_texture(texture, whole)
+        snapshot.pop()
 
     def snapshot_search_highlights(self, snapshot) -> None:
         if not self._search_matches:
@@ -454,58 +536,82 @@ class PageView(Gtk.Widget):
         if transform is None:
             return
 
+        pulse = self._pulse()
+        crowded = len(overlay.activities) > CROWDED
         active = []
         for spot in overlay.spots:
             rect = transform.rect_to_widget(spot.rect)
-            is_active = spot is self._hover or spot.act_index == self._selected
-            if is_active:
+            if spot is self._hover or spot.act_index == self._selected:
                 active.append((spot, rect))
             elif self._reveal:
-                fill = INTERACTIVE_QUIET_FILL if spot.interactive else QUIET_FILL
-                border = INTERACTIVE_QUIET_BORDER if spot.interactive else QUIET_BORDER
-                self._draw_spot(snapshot, rect, fill, border, 1.0)
+                self._draw_quiet(snapshot, rect, spot, pulse, badge=not crowded)
 
-        # The active piece is drawn last and with its chip, so a hotspot that
-        # overlaps a neighbour is never covered by the thing it is on top of.
+        # The active piece is drawn last, so a hotspot that overlaps a
+        # neighbour is never covered by the thing it is on top of.
         for spot, rect in active:
-            fill = INTERACTIVE_FILL if spot.interactive else ACTIVE_FILL
-            border = INTERACTIVE_BORDER if spot.interactive else ACTIVE_BORDER
-            glow = INTERACTIVE_GLOW if spot.interactive else ACTIVE_GLOW
-            self._draw_spot(snapshot, rect, fill, border, 2.0, glow=glow)
-            self._draw_chip(snapshot, rect, spot)
+            self._draw_active(snapshot, rect, spot)
 
         for pin in overlay.pins:
             self._draw_pin(snapshot, transform, pin)
 
-    def _draw_spot(self, snapshot, rect, fill, border, width, glow: Gdk.RGBA | None = None) -> None:
+    def _draw_quiet(self, snapshot, rect, spot: Spot, pulse: float,
+                    badge: bool = True) -> None:
         x, y, w, h = rect
         if w <= 0 or h <= 0:
             return
-        graphene_rect = Graphene.Rect().init(x, y, w, h)
+        bounds = Graphene.Rect().init(x, y, w, h)
         rounded = Gsk.RoundedRect()
-        rounded.init_from_rect(graphene_rect, HOTSPOT_RADIUS)
-        if glow is not None:
-            snapshot.append_outset_shadow(rounded, glow, 0, 0, 4, 3)
+        rounded.init_from_rect(bounds, HOTSPOT_RADIUS)
+        alpha = QUIET_FILL_ALPHA + (PULSE_FILL_ALPHA - QUIET_FILL_ALPHA) * pulse
         snapshot.push_rounded_clip(rounded)
-        snapshot.append_color(fill, graphene_rect)
+        snapshot.append_color(_faded(MARK_FILL, alpha), bounds)
         snapshot.pop()
-        snapshot.append_border(rounded, [width] * 4, [border] * 4)
+        self._draw_corners(snapshot, x, y, w, h)
+        if badge and spot.part_index == 0:
+            self._draw_badge(snapshot, x - 7, y - BADGE_HEIGHT / 2, self._badge_text(spot),
+                             BADGE_FONT, BADGE_BG, BADGE_FG)
 
-    def _draw_chip(self, snapshot, rect, spot: Spot) -> None:
-        x, y, _w, h = rect
-        text = f"⚡ {spot.label}".strip() if spot.interactive else spot.label
-        chip_bg = INTERACTIVE_CHIP_BG if spot.interactive else CHIP_BG
-        if text:
-            self._draw_badge(
-                snapshot, x - 8, y - CHIP_HEIGHT + 9, text, CHIP_FONT, chip_bg, CHIP_FG
-            )
+    def _draw_corners(self, snapshot, x, y, w, h) -> None:
+        """Four corner marks: enough to say "this box", without drawing a box."""
+        length = min(CORNER_LENGTH, w / 3.0, h / 3.0)
+        t = CORNER_WIDTH
+        for cx, cy, dx, dy in ((x, y, 1, 1), (x + w, y, -1, 1),
+                               (x, y + h, 1, -1), (x + w, y + h, -1, -1)):
+            horizontal = Graphene.Rect().init(
+                cx if dx > 0 else cx - length, cy if dy > 0 else cy - t, length, t)
+            vertical = Graphene.Rect().init(
+                cx if dx > 0 else cx - t, cy if dy > 0 else cy - length, t, length)
+            snapshot.append_color(MARK, horizontal)
+            snapshot.append_color(MARK, vertical)
+
+    def _draw_active(self, snapshot, rect, spot: Spot) -> None:
+        x, y, w, h = rect
+        if w <= 0 or h <= 0:
+            return
+        bounds = Graphene.Rect().init(x, y, w, h)
+        rounded = Gsk.RoundedRect()
+        rounded.init_from_rect(bounds, HOTSPOT_RADIUS)
+        snapshot.append_outset_shadow(rounded, ACTIVE_GLOW, 0, 0, 4, 3)
+        snapshot.push_rounded_clip(rounded)
+        snapshot.append_color(_faded(MARK_FILL, ACTIVE_FILL_ALPHA), bounds)
+        snapshot.pop()
+        snapshot.append_border(rounded, [2.5] * 4, [MARK] * 4)
+
+        text = spot.label.strip() if spot.label else short_label(spot)
+        if spot.interactive:
+            text = f"{PLAY} {text}"
+        self._draw_badge(snapshot, x - 7, y - BADGE_HEIGHT / 2, text,
+                         BADGE_FONT, BADGE_BG, BADGE_FG)
         if spot.item_count:
             label = f"{spot.item_count} soru"
             width = self._badge_width(label, COUNT_FONT)
-            self._draw_badge(
-                snapshot, x + rect[2] - width + 4, y + h - 9,
-                label, COUNT_FONT, COUNT_BG, COUNT_FG,
-            )
+            self._draw_badge(snapshot, x + w - width + 5, y + h - BADGE_HEIGHT / 2,
+                             label, COUNT_FONT, COUNT_BG, COUNT_FG)
+
+    @staticmethod
+    def _badge_text(spot: Spot) -> str:
+        text = short_label(spot)
+        return f"{PLAY} {text}" if spot.interactive else text
 
     def _layout(self, text: str, font: str) -> Pango.Layout:
         layout = self.create_pango_layout(text)
@@ -513,22 +619,24 @@ class PageView(Gtk.Widget):
         return layout
 
     def _badge_width(self, text: str, font: str) -> float:
-        return self._layout(text, font).get_pixel_size()[0] + 2 * CHIP_PAD
+        return max(BADGE_HEIGHT, self._layout(text, font).get_pixel_size()[0] + 2 * BADGE_PAD)
 
     def _draw_badge(self, snapshot, x, y, text, font, background, foreground) -> None:
         layout = self._layout(text, font)
         text_w, text_h = layout.get_pixel_size()
-        width = text_w + 2 * CHIP_PAD
-        height = max(CHIP_HEIGHT, text_h + 4)
+        height = max(BADGE_HEIGHT, text_h + 4)
+        width = max(height, text_w + 2 * BADGE_PAD)
         rect = Graphene.Rect().init(x, y, width, height)
         rounded = Gsk.RoundedRect()
         rounded.init_from_rect(rect, height / 2)
-        snapshot.append_outset_shadow(rounded, SHADOW, 0, 2, 6, 0)
+        snapshot.append_outset_shadow(rounded, SHADOW, 0, 1, 4, 0)
         snapshot.push_rounded_clip(rounded)
         snapshot.append_color(background, rect)
         snapshot.pop()
         snapshot.save()
-        snapshot.translate(Graphene.Point().init(x + CHIP_PAD, y + (height - text_h) / 2))
+        snapshot.translate(Graphene.Point().init(
+            x + (width - text_w) / 2, y + (height - text_h) / 2
+        ))
         snapshot.append_layout(layout, foreground)
         snapshot.restore()
 
@@ -540,20 +648,19 @@ class PageView(Gtk.Widget):
         rounded = Gsk.RoundedRect()
         rounded.init_from_rect(rect, PIN_SIZE / 2)
         snapshot.append_outset_shadow(rounded, SHADOW, 0, 3, 6, 0)
+        if pin is self._hover_pin:
+            snapshot.append_outset_shadow(rounded, ACTIVE_GLOW, 0, 0, 6, 2)
         snapshot.push_rounded_clip(rounded)
         snapshot.append_color(PIN_BG, rect)
         snapshot.pop()
-        snapshot.append_border(rounded, [2] * 4, [PIN_FG] * 4)
-        if pin is self._hover_pin:
-            snapshot.append_outset_shadow(rounded, INTERACTIVE_GLOW, 0, 0, 6, 2)
-        layout = self._layout("⚡", PIN_FONT)
+        layout = self._layout(PLAY, PIN_FONT)
         text_w, text_h = layout.get_pixel_size()
         snapshot.save()
-        snapshot.translate(Graphene.Point().init(cx - text_w / 2, cy - text_h / 2))
+        snapshot.translate(Graphene.Point().init(cx - text_w / 2 + 1, cy - text_h / 2))
         snapshot.append_layout(layout, PIN_FG)
         snapshot.restore()
         if pin is self._hover_pin:
             self._draw_badge(
-                snapshot, cx + PIN_SIZE / 2 + 4, cy - CHIP_HEIGHT / 2,
-                f"⚡ {pin.label}", CHIP_FONT, INTERACTIVE_CHIP_BG, CHIP_FG,
+                snapshot, cx + PIN_SIZE / 2 + 6, cy - BADGE_HEIGHT / 2,
+                pin.label, BADGE_FONT, BADGE_BG, BADGE_FG,
             )

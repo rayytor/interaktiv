@@ -1,0 +1,45 @@
+#!/bin/sh
+# Starts Interaktiv from its own folder. Needs no sudo and touches nothing
+# outside this folder and the user's own settings.
+here=$(cd "$(dirname "$0")" && pwd)
+
+# lib-active and typelibs-active hold links to the bundled libraries this
+# system does not have itself; whatever it has is used from the system.
+[ -d "$here/lib-active" ] || sh "$here/activate.sh"
+
+export LD_LIBRARY_PATH="$here/lib-active${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+export GI_TYPELIB_PATH="$here/typelibs-active${GI_TYPELIB_PATH:+:$GI_TYPELIB_PATH}"
+export GSETTINGS_SCHEMA_DIR="$here/share/glib-2.0/schemas${GSETTINGS_SCHEMA_DIR:+:$GSETTINGS_SCHEMA_DIR}"
+export PYTHONPATH="$here/python:$here/app${PYTHONPATH:+:$PYTHONPATH}"
+
+say() {
+    zenity --error --no-wrap --title=Interaktiv --text="$1" 2>/dev/null \
+        || notify-send Interaktiv "$1" 2>/dev/null || echo "$1" >&2
+}
+
+if ! command -v python3 >/dev/null 2>&1; then
+    say "Interaktiv başlatılamadı: bu bilgisayarda Python 3 yok.
+
+Bu pencerenin fotoğrafını çekip geliştiriciye gönderin."
+    exit 1
+fi
+
+log_dir="${XDG_CACHE_HOME:-$HOME/.cache}/interaktiv"
+mkdir -p "$log_dir"
+
+cd "$here/app" || exit 1
+if [ "${1:-}" = "--selftest" ]; then
+    exec python3 -m interaktiv_gtk "$@"
+fi
+
+python3 -m interaktiv_gtk "$@" 2>>"$log_dir/launcher.log"
+status=$?
+# 1 is a failure the app has already explained in a window of its own.
+if [ "$status" -gt 1 ]; then
+    say "Interaktiv beklenmedik şekilde kapandı (kod $status).
+
+Bu pencerenin fotoğrafını çekip geliştiriciye gönderin.
+
+Ayrıntılar: $log_dir/launcher.log"
+fi
+exit "$status"

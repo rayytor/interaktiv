@@ -1,5 +1,6 @@
 """
-Unit tests for Milestone 5: Activity Dialog & interactive activity handling.
+Interactive activities: the WebKit window, and the browser hand-off used where
+WebKitGTK is not installed.
 """
 
 import os
@@ -14,14 +15,15 @@ if PROJECT_ROOT not in sys.path:
 import gi
 gi.require_version("Gtk", "4.0")
 gi.require_version("Adw", "1")
-gi.require_version("WebKit", "6.0")
-from gi.repository import Adw, Gtk, WebKit
+from gi.repository import Adw
 
-from interaktiv_gtk.reader.activity_dialog import ActivityDialog, HAS_WEBKIT
+from interaktiv_gtk.reader import activity_dialog
+from interaktiv_gtk.reader.activity_dialog import ActivityDialog, HAS_WEBKIT, WebKit
 from interaktiv_gtk.reader.overlay import Pin, Spot
 from interaktiv_core.oges import Oge
 
 
+@unittest.skipUnless(HAS_WEBKIT, "WebKitGTK 6.0 is not installed")
 class TestActivityDialog(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -33,13 +35,9 @@ class TestActivityDialog(unittest.TestCase):
         self.manager.activity_dir.return_value = None
         self.guid = "323bb88f-3ff7-483a-88ae-bcd170ceb53c"
 
-    def test_has_webkit(self):
-        """WebKit 6.0 should be available in the test environment."""
-        self.assertTrue(HAS_WEBKIT)
-
     def test_dialog_properties_and_structure(self):
-        """ActivityDialog initializes with floating presentation and proper dimensions."""
-        with patch("interaktiv_core.jobs.fetch_activity") as mock_fetch:
+        """ActivityDialog is a modal window of a usable size with its controls."""
+        with patch("interaktiv_core.jobs.fetch_activity"):
             dialog = ActivityDialog(
                 self.manager,
                 self.guid,
@@ -47,17 +45,14 @@ class TestActivityDialog(unittest.TestCase):
                 installed=False,
             )
             self.assertEqual(dialog.get_title(), "Sayfa 42 · Activity a")
-            self.assertEqual(dialog.get_content_width(), 960)
-            self.assertEqual(dialog.get_content_height(), 720)
-            self.assertEqual(
-                dialog.get_presentation_mode(), Adw.DialogPresentationMode.FLOATING
-            )
+            self.assertEqual(tuple(dialog.get_default_size()), (960, 720))
+            self.assertTrue(dialog.get_modal())
             self.assertIsNotNone(dialog.btn_browser)
             self.assertIsNotNone(dialog.btn_fullscreen)
             self.assertIsNotNone(dialog.banner)
             self.assertIsNotNone(dialog.webview)
             self.assertIsInstance(dialog.webview, WebKit.WebView)
-            dialog.force_close()
+            dialog.destroy()
 
     def test_dialog_fallback_when_no_webkit(self):
         """When WebKit is not available, dialog shows fallback StatusPage."""
@@ -71,7 +66,7 @@ class TestActivityDialog(unittest.TestCase):
             )
             self.assertIsNone(dialog.webview)
             self.assertFalse(dialog.spinner.get_visible())
-            dialog.force_close()
+            dialog.destroy()
 
     def test_local_url_resolution(self):
         """When local index.html exists, dialog loads file:// URL and does not fetch."""
@@ -85,7 +80,7 @@ class TestActivityDialog(unittest.TestCase):
             mock_fetch.assert_not_called()
             # Local load should not set 7s remote timer
             self.assertIsNone(dialog._timer_id)
-            dialog.force_close()
+            dialog.destroy()
 
     def test_remote_url_resolution_and_background_caching(self):
         """When not on disk, loads from CDN and initiates background caching."""
@@ -102,7 +97,7 @@ class TestActivityDialog(unittest.TestCase):
                 self.manager, self.guid, only_html=True, on_done=dialog._on_fetch_done
             )
             self.assertIsNotNone(dialog._timer_id)
-            dialog.force_close()
+            dialog.destroy()
 
     def test_7s_offline_timer_timeout(self):
         """If loading takes too long, timer triggers offline banner."""
@@ -114,7 +109,7 @@ class TestActivityDialog(unittest.TestCase):
             dialog._on_offline_timeout()
             self.assertTrue(dialog.banner.get_revealed())
             self.assertFalse(dialog.spinner.get_visible())
-            dialog.force_close()
+            dialog.destroy()
 
     def test_load_finished_cancels_timer_and_hides_banner(self):
         """When load completes, offline banner is hidden and timer cancelled."""
@@ -128,7 +123,7 @@ class TestActivityDialog(unittest.TestCase):
             self.assertIsNone(dialog._timer_id)
             self.assertFalse(dialog.banner.get_revealed())
             self.assertFalse(dialog.spinner.get_visible())
-            dialog.force_close()
+            dialog.destroy()
 
     def test_load_failed_reveals_banner(self):
         """When load fails, timer is cancelled and banner is revealed."""
@@ -139,32 +134,88 @@ class TestActivityDialog(unittest.TestCase):
             self.assertIsNone(dialog._timer_id)
             self.assertTrue(dialog.banner.get_revealed())
             self.assertFalse(dialog.spinner.get_visible())
-            dialog.force_close()
+            dialog.destroy()
 
     def test_open_in_browser(self):
-        """open_in_browser invokes Gtk.UriLauncher or fallback."""
+        """The header button hands the activity's URL to the desktop."""
         with patch("interaktiv_core.jobs.activity_asset_path", return_value=None), \
              patch("interaktiv_core.jobs.fetch_activity"), \
-             patch("gi.repository.Gtk.UriLauncher.launch") as mock_launch:
+             patch("interaktiv_gtk.browser.open_uri") as mock_open:
             dialog = ActivityDialog(self.manager, self.guid, title="Browser Test")
             dialog.open_in_browser()
-            mock_launch.assert_called_once()
-            dialog.force_close()
+            mock_open.assert_called_once_with(dialog.url)
+            dialog.destroy()
 
     def test_toggle_fullscreen(self):
-        """toggle_fullscreen toggles root window fullscreen state."""
+        """toggle_fullscreen takes the activity window in and out of fullscreen."""
         with patch("interaktiv_core.jobs.activity_asset_path", return_value=None), \
              patch("interaktiv_core.jobs.fetch_activity"):
             dialog = ActivityDialog(self.manager, self.guid, title="Fullscreen Test")
-            mock_root = MagicMock(spec=Gtk.Window)
-            mock_root.is_fullscreen.return_value = False
-            with patch.object(dialog, "get_root", return_value=mock_root):
+            with patch.object(dialog, "is_fullscreen", return_value=False), \
+                 patch.object(dialog, "fullscreen") as enter:
                 dialog.toggle_fullscreen()
-                mock_root.fullscreen.assert_called_once()
-                mock_root.is_fullscreen.return_value = True
+                enter.assert_called_once()
+            with patch.object(dialog, "is_fullscreen", return_value=True), \
+                 patch.object(dialog, "unfullscreen") as leave:
                 dialog.toggle_fullscreen()
-                mock_root.unfullscreen.assert_called_once()
-            dialog.force_close()
+                leave.assert_called_once()
+            dialog.destroy()
+
+
+class TestBrowserHandOff(unittest.TestCase):
+    """What a board without WebKitGTK does with an interactive activity."""
+
+    GUID = "323bb88f-3ff7-483a-88ae-bcd170ceb53c"
+
+    def setUp(self):
+        self.manager = MagicMock()
+        self.manager.activity_dir.return_value = None
+
+    def test_chrome_app_window_is_preferred(self):
+        with patch("interaktiv_core.jobs.fetch_activity"), \
+             patch("interaktiv_gtk.browser.open_as_app", return_value=True) as as_app, \
+             patch("interaktiv_gtk.browser.open_uri") as default:
+            self.assertTrue(activity_dialog.open_in_browser(self.manager, self.GUID))
+            as_app.assert_called_once_with(
+                f"https://ogm-large-cdn.eba.gov.tr/materyal/Uygulama/{self.GUID}/index.html"
+            )
+            default.assert_not_called()
+
+    def test_falls_back_to_the_default_browser(self):
+        with patch("interaktiv_core.jobs.fetch_activity"), \
+             patch("interaktiv_gtk.browser.open_as_app", return_value=False), \
+             patch("interaktiv_gtk.browser.open_uri", return_value=True) as default:
+            self.assertTrue(activity_dialog.open_in_browser(self.manager, self.GUID))
+            default.assert_called_once()
+
+    def test_a_remote_activity_is_cached_for_next_time(self):
+        with patch("interaktiv_core.jobs.fetch_activity") as fetch, \
+             patch("interaktiv_gtk.browser.open_as_app", return_value=True):
+            activity_dialog.open_in_browser(self.manager, self.GUID)
+            fetch.assert_called_once_with(self.manager, self.GUID, only_html=True)
+
+    def test_a_bad_guid_opens_nothing(self):
+        with patch("interaktiv_gtk.browser.open_as_app") as as_app:
+            self.assertFalse(activity_dialog.open_in_browser(self.manager, "not-a-guid"))
+            as_app.assert_not_called()
+
+    def test_chrome_is_started_as_an_app_window(self):
+        from interaktiv_gtk import browser
+
+        with patch("interaktiv_gtk.browser.shutil.which",
+                   side_effect=lambda name: "/usr/bin/google-chrome"
+                   if name == "google-chrome" else None), \
+             patch("interaktiv_gtk.browser.subprocess.Popen") as popen:
+            self.assertTrue(browser.open_as_app("https://example.invalid/a"))
+            command = popen.call_args[0][0]
+            self.assertEqual(command[0], "/usr/bin/google-chrome")
+            self.assertIn("--app=https://example.invalid/a", command)
+
+    def test_no_chrome_means_no_app_window(self):
+        from interaktiv_gtk import browser
+
+        with patch("interaktiv_gtk.browser.shutil.which", return_value=None):
+            self.assertFalse(browser.open_as_app("https://example.invalid/a"))
 
 
 class TestReaderPageActivityIntegration(unittest.TestCase):

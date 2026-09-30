@@ -44,6 +44,14 @@ def _isolate_stdout():
 
 
 def main() -> int:
+    try:
+        return _serve()
+    except BrokenPipeError:
+        # The reader closed the book while a page was on its way back.
+        return 0
+
+
+def _serve() -> int:
     out = _isolate_stdout()
     stdin = sys.stdin.buffer
 

@@ -1,0 +1,17 @@
+# A stand-in for a board that has never seen GTK 4: Debian 12 with Python,
+# GTK 3 and PyGObject, which is what Cinnamon on ETAP 23.4 brings. The bundle
+# is installed and started in it to prove that it carries everything else.
+#
+#   docker build -t interaktiv-board-sim -f packaging/board/Dockerfile.board packaging/board
+FROM debian:bookworm
+
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt-get update -qq \
+ && apt-get install -y -qq --no-install-recommends \
+        python3 python3-gi gir1.2-gtk-3.0 \
+        xvfb xauth zenity adwaita-icon-theme librsvg2-common fonts-dejavu-core \
+        libgl1 libegl1 \
+ && rm -rf /var/lib/apt/lists/* \
+ && useradd --create-home ogretmen
+USER ogretmen
+WORKDIR /home/ogretmen

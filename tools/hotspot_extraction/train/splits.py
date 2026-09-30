@@ -53,7 +53,7 @@ PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
 if PROJECT_ROOT not in sys.path:
     sys.path.insert(0, PROJECT_ROOT)
 
-from books_manager import BooksManager  # noqa: E402
+from interaktiv_core.catalogue import BooksManager  # noqa: E402
 
 SPLITS_VERSION = 1
 SPLITS_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "splits.json")

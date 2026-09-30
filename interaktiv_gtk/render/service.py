@@ -33,7 +33,7 @@ import subprocess
 import sys
 import threading
 import traceback
-from typing import Callable, Optional
+from typing import Callable, Optional, Sequence
 
 from gi.repository import GLib
 

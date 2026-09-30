@@ -1,18 +1,15 @@
 #!/usr/bin/env python3
 """
-The reader layer of the native School Edition.
+The reader's arithmetic and its renderer.
 
-Nothing here opens a window either. What is tested is the arithmetic the reader
-runs on -- which pages a spread shows, where next and previous go, how big a
-page is drawn -- the texture budget that keeps a board's memory bounded, the
-pipe the renderer speaks, and the renderer process itself against a PDF built
-on the spot.
+Nothing here opens a window. What is tested is the arithmetic the reader runs
+on -- which pages a spread shows, where next and previous go, how big a page
+is drawn -- the texture budget that keeps a board's memory bounded, the pipe
+the renderer speaks, and the renderer process itself against a PDF built on
+the spot.
 
-The paging tests are worth more than they look. They are the contract between
-this build and the web one: a teacher who knows that 42 faces 43 must find 42
-facing 43 here too, and the awkward cases -- the cover that stands alone, the
-odd last page, typing an odd number into the page box -- are exactly where a
-reimplementation drifts.
+The paging tests pin the book's conventions: 42 faces 43, the cover stands
+alone, the odd last page, and asking for an odd page number.
 """
 
 import os
@@ -42,7 +39,7 @@ SINGLE = "single"
 
 
 class TestPairing(unittest.TestCase):
-    """`pages_for` -- the port of `renderBookMode`'s spread alignment."""
+    """`pages_for`: which pages face each other."""
 
     def test_cover_stands_alone(self):
         self.assertEqual(paging.pages_for(1, 289, BOOK), [1])
@@ -75,7 +72,7 @@ class TestPairing(unittest.TestCase):
 
 
 class TestStepping(unittest.TestCase):
-    """`next_page` / `prev_page` -- the port of `viewer.js:626` and `:646`."""
+    """`next_page` / `prev_page`."""
 
     def test_next_from_the_cover_is_two_not_three(self):
         self.assertEqual(paging.next_page(1, 289, BOOK), 2)
@@ -128,7 +125,7 @@ class TestStepping(unittest.TestCase):
 
 
 class TestScale(unittest.TestCase):
-    """`fit_scale` -- the port of `calculateScale`."""
+    """`fit_scale`."""
 
     def test_fit_page_takes_the_tighter_of_the_two(self):
         # A 1140 x 797 pt spread in a short, wide viewport is height-bound.
@@ -145,7 +142,7 @@ class TestScale(unittest.TestCase):
         self.assertEqual(paging.fit_scale(570, 797, 1152, 551, "custom", 1.5), 1.5)
 
     def test_a_tiny_viewport_does_not_produce_a_tiny_page(self):
-        # `calculateScale` clamps the viewport at 320 px and the scale at 0.2,
+        # The fit clamps the viewport at 320 px and the scale at 0.2,
         # so a window dragged down to nothing still leaves a legible page.
         self.assertGreaterEqual(paging.fit_scale(1140, 797, 10, 10, "fit-page"), 0.2)
 
@@ -444,8 +441,8 @@ class TestWorkerProcess(unittest.TestCase):
 
     def test_rotation_moves_the_origin_the_way_geometry_says_it_does(self):
         # `pix.x` / `pix.y` is what `PageTransform` subtracts to get widget
-        # coordinates, so the two have to agree or every hotspot in M3 lands in
-        # the wrong place.
+        # coordinates, so the two have to agree or every hotspot lands in the
+        # wrong place.
         self._ask({"op": "open", "path": self.pdf})
         for rotation in (0, 90, 180, 270):
             with self.subTest(rotation=rotation):

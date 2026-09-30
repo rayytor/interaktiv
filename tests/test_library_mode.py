@@ -12,19 +12,15 @@ Verifies:
 import json
 import os
 import shutil
+import sys
 import tempfile
-import threading
-import time
 import unittest
-import urllib.error
-import urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-if ROOT not in sys.path if "sys" in locals() else True:
-    import sys
+if ROOT not in sys.path:
     sys.path.insert(0, ROOT)
 
-from books_manager import BooksManager
+from interaktiv_core.catalogue import BooksManager
 
 
 class TestLibraryMode(unittest.TestCase):

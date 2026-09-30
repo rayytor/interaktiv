@@ -1,11 +1,7 @@
 #!/usr/bin/env python3
 """
-The library layer of the native School Edition.
-
-Nothing here opens a window: the parts under test are the catalogue rules
-(which books a filter shows, ported from `js/dashboard.js`), the download
-plumbing `BooksManager` grew for previews, the preview cache, and the settings
-file. The widgets that draw them are exercised by running the app.
+The library: the catalogue rules (which books a filter shows), downloads to a
+chosen path, the preview cache, the settings file and the book card.
 """
 
 import http.server
@@ -22,7 +18,7 @@ PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if PROJECT_ROOT not in sys.path:
     sys.path.insert(0, PROJECT_ROOT)
 
-from books_manager import BooksManager  # noqa: E402
+from interaktiv_core.catalogue import BooksManager  # noqa: E402
 from interaktiv_core import jobs  # noqa: E402
 from interaktiv_gtk.library.model import (  # noqa: E402
     EMPTY_NO_INSTALLS,
@@ -74,7 +70,7 @@ SAMPLE = [
 
 
 class TestFilters(unittest.TestCase):
-    """The seven tabs, answering exactly as `dashboard.js:render` does."""
+    """The seven filter chips."""
 
     def setUp(self):
         self.model = LibraryModel(FakeManager(SAMPLE))
@@ -129,8 +125,7 @@ class TestFilters(unittest.TestCase):
         )
 
     def test_search_survives_turkish_casing(self):
-        # "İ".lower() is an "i" plus a combining dot in both Python and
-        # JavaScript, so the web dashboard finds nothing for either of these.
+        # "İ".lower() is an "i" plus a combining dot, which matches nothing.
         for typed in ("BİYOLOJİ", "Biyoloji", "biyoloji", "BIYOLOJI"):
             self.assertEqual(
                 [i.id for s in self.model.sections("all", typed) for i in s.items],
@@ -194,10 +189,12 @@ class TestItemIdentity(unittest.TestCase):
         model.reload()
         self.assertEqual(beats, [])
 
-    def test_meta_text_matches_the_web_card(self):
+    def test_removing_a_book_says_how_much_space_it_frees(self):
+        from interaktiv_gtk.library.view import LibraryPage
+
         item = BookItem(record("a", "K", 9, "9. Sınıf", installed=True, size=108 * 1024 * 1024))
-        self.assertEqual(item.meta_text, "9. Sınıf • 108 MB")
-        self.assertEqual(BookItem(record("b", "K", 9, "9. Sınıf")).meta_text, "9. Sınıf")
+        self.assertEqual(LibraryPage._freed_space(item), " ve 108 MB yer açılacak")
+        self.assertEqual(LibraryPage._freed_space(BookItem(record("b", "K", 9, "9. Sınıf"))), "")
 
     def test_progress_is_a_fraction(self):
         item = BookItem(record("a", "K", 9, "9. Sınıf"))
@@ -232,7 +229,7 @@ class _Payload(http.server.BaseHTTPRequestHandler):
 
 
 class TestDownloads(unittest.TestCase):
-    """`download_to`, the one thing `books_manager.py` grew for the GTK app."""
+    """`download_to`: downloading a book to a path of the caller's choosing."""
 
     @classmethod
     def setUpClass(cls):

@@ -1,15 +1,5 @@
-#!/usr/bin/env bash
-#
-# Interaktiv School Edition Launcher
-#
-set -euo pipefail
-
-DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-cd "$DIR"
-
-if ! command -v python3 >/dev/null 2>&1; then
-    echo "Error: Python 3 not found on PATH." >&2
-    exit 1
-fi
-
+#!/bin/sh
+# Starts Interaktiv from this source checkout. On a board, use the bundle from
+# packaging/board/ instead.
+cd "$(dirname "$0")" || exit 1
 exec python3 -m interaktiv_gtk "$@"

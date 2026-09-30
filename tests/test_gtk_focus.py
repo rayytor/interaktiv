@@ -1,17 +1,8 @@
-#!/usr/bin/env python3
 """
-Unit tests for Milestone 4 (Focus Mode).
-
-Tests cover:
-  * Scale and crop calculation (clamping, rotation, 8e6 px max pixel cap).
-  * Zooming a part alone, never unioned with siblings.
-  * Sub-item (question) stepping and part switching.
-  * Activity stepping across page boundaries (`step_activity_from`).
-  * Zoom bias nudging (0.5..3.0 clamp).
-  * Pre-focus state restoration.
+Focus mode: the crop's scale, stepping through parts, questions and
+activities, and restoring the page afterwards.
 """
 
-import math
 import os
 import sys
 import unittest
@@ -25,7 +16,7 @@ from interaktiv_gtk.reader.focus import (
     MAX_FOCUS_PIXELS,
     calculate_focus_scale,
 )
-from interaktiv_gtk.reader.overlay import PageOverlay, Spot
+from interaktiv_gtk.reader.overlay import PageOverlay
 
 
 def make_activity(
@@ -61,7 +52,7 @@ def make_item(iid: str, rect, part_index: int = 0, label: str = "1") -> Item:
 
 
 class TestFocusScale(unittest.TestCase):
-    """Scale selection ports `renderFocus` (viewer.js:1750) with its clamps."""
+    """The crop's scale and its clamps."""
 
     def test_basic_fit_and_clamping(self):
         # A 200 x 200 region inside an 800 x 600 stage (avail: 744 x 544)

@@ -1,65 +1,53 @@
 """
-The reader page: chrome around the canvas.
+The reader page: a book, and the controls for it.
 
-Layout is an `Adw.ToolbarView` with two top bars -- the header with the book's
-name, and the board-sized control row under it -- a scrolled canvas, and a
-status bar along the bottom. That is the same arrangement `index.html` has, for
-the same reason: on a smartboard the controls a teacher touches belong at the
-edges of the screen, where they can be found without looking away from the page.
+From the top: a slim header with the way back and the book's name; the page
+itself on a desk; and a dock along the bottom with everything a lesson touches.
+A board is driven standing up, so the controls are where a hand is, and the
+on-screen keyboard -- which floats at the top right -- covers none of them.
 
-The navigation rules are ported rather than reinvented. `next_page` and
-`prev_page` are `viewer.js:626` and `:646`, including book mode's asymmetry --
-forward from the cover lands on page 2, backward from anywhere in the first
-spread lands on page 1 -- and the zoom steps are the same 0.2 increments
-clamped to 0.3-3.0.
+Turning the page has three routes: the dock's arrows, a swipe across the sheet,
+and the two invisible strips down the left and right of the reading area, which
+make "next page" a tap anywhere along the edge of the board.
 
-The page turns themselves are not in the toolbar. They are two invisible
-strips down the left and right of the reading area, full height, so that the
-gesture for "next page" is a tap anywhere along the edge of the board rather
-than a jab at a 76 px target someone has to look at first. A chevron sits in
-each strip at a low enough opacity to be found and ignored, and brightens
-under a pointer.
+Book mode is asymmetric on purpose: forward from the cover lands on page 2,
+backward from anywhere in the first spread lands on page 1.
 """
 
-from gi.repository import Adw, Gdk, GLib, GObject, Gtk
+from typing import List, Optional
+
+from gi.repository import Adw, Gdk, GLib, Gtk
 
 from .. import icons
 from ..render.service import LANE_THUMBNAIL
 from ..theme import THEMES, apply_theme as apply_app_theme
 from ..touch import EdgePan, SwipeNavigator, bind_touch_tooltip
+from ..widgets import SidePanel
 from . import paging
+from .dock import ReaderDock
 from .focus import FocusOverlay
+from .help import HelpWindow
 from .holdrepeat import bind_hold_repeat
-from .overlay import activity_label
 from .page_view import PageView
 from .scroll_mode import ScrollModeView
 from .search import SearchController
 from .session import DocumentSession
-from .sidebar import ActivitiesSidebar, ReaderSidebar
+from .sidebar import ReaderSidebar
 from .spread import SpreadView
 
-ZOOM_CHOICES = [
-    ("fit-width", "Genişliğe Sığdır", "Genişliğe Sığdır"),
-    ("fit-page", "Sayfaya Sığdır", "Sayfaya Sığdır"),
-    ("0.5", "%50", None),
-    ("0.75", "%75", None),
-    ("1.0", "%100", None),
-    ("1.25", "%125", None),
-    ("1.5", "%150", None),
-    ("2.0", "%200", None),
-]
-
-MODE_LABELS = {
-    "book": "Çift Sayfa",
-    "single": "Tek Sayfa",
-    "scroll": "Kaydırma",
-}
+MODES = ("book", "single", "scroll")
 
 # The clamp lives with the rest of the pure paging arithmetic, so that the
-# dropdown, the keyboard, a pinch and ctrl+wheel cannot drift apart.
+# dock, the keyboard, a pinch and ctrl+wheel cannot drift apart.
 ZOOM_MIN = paging.ZOOM_MIN
 ZOOM_MAX = paging.ZOOM_MAX
 ZOOM_STEP = paging.ZOOM_STEP
+
+# What the search count reads before anything has been searched for.
+NO_MATCHES = "0 / 0"
+
+# Wide enough for the three tab names and two columns of thumbnails.
+SIDEBAR_WIDTH = 360
 
 # Where a double tap on the page lands. Twice the sheet is the step that makes
 # a diagram readable from the back of a classroom without leaving the page.
@@ -67,8 +55,7 @@ TAP_ZOOM = 2.0
 
 # What the reader responds to, in the shape `Gtk.ShortcutTrigger` parses. These
 # are attached to the page and not to the window, so they are inert while the
-# library is on screen and they lose to whatever has the keyboard focus -- which
-# is what lets digits reach the page-number entry instead of turning pages.
+# library is on screen and they lose to whatever has the keyboard focus.
 SHORTCUTS = [
     ("Right|Page_Down|space|j|J|n|N", "next"),
     ("Left|Page_Up|k|K|p|P", "prev"),
@@ -92,14 +79,43 @@ SHORTCUTS = [
 ]
 
 
-class ReaderPage(Adw.NavigationPage):
+def chapter_at(toc, page: int) -> str:
+    """The title of the outline entry that `page` falls under, or ''."""
+    title = ""
+    for entry in toc or ():
+        try:
+            _level, name, start = entry[0], entry[1], int(entry[2])
+        except (IndexError, TypeError, ValueError):
+            continue
+        if start > page:
+            break
+        title = str(name).strip()
+    return title
+
+
+def unit_pages(toc) -> List[int]:
+    """Where the book's top-level units begin."""
+    pages = []
+    for entry in toc or ():
+        try:
+            if int(entry[0]) == 1 and int(entry[2]) > 0:
+                pages.append(int(entry[2]))
+        except (IndexError, TypeError, ValueError):
+            continue
+    return pages
+
+
+class ReaderPage(Gtk.Box):
     __gtype_name__ = "InteraktivReaderPage"
 
     def __init__(self, app, item, path: str):
-        super().__init__(title=item.title, tag=f"reader:{item.id}")
+        super().__init__(orientation=Gtk.Orientation.VERTICAL)
+        self.add_css_class("reader")
         self.app = app
         self.item = item
         self.settings = app.settings
+        # Page sizes and render times are for whoever is tuning the renderer.
+        self.debug = getattr(app, "debug", False) is True
         self.session = DocumentSession(
             item.id, item.title, path,
             manager=app.manager,
@@ -112,64 +128,32 @@ class ReaderPage(Adw.NavigationPage):
         self.search_controller.connect("search-cleared", self._on_search_cleared)
 
         self.current_page = 1
-        self.view_mode = self.settings.get("view_mode") or "book"
+        mode = self.settings.get("view_mode")
+        self.view_mode = mode if mode in MODES else "book"
         self.zoom_mode = self.settings.get("zoom_mode") or "fit-page"
         self.custom_zoom = 1.0
         self._pre_tap_zoom = None
         self.rotation = 0
         self.show_activities = bool(self.settings.get("show_activities"))
-        self._syncing = False
         self._closed = False
         self._sidebar_loaded = False
         self._pre_focus_state = None
+        self._first_page_shown = False
+        self._fullscreen_handler = 0
 
         self._build()
         self._install_shortcuts()
-        self.apply_theme(self.settings.get("theme") or "dark")
+        self.apply_theme(self._theme())
         self._open()
+
+    def _theme(self) -> str:
+        theme = self.settings.get("theme")
+        return theme if theme in THEMES else "dark"
 
     # ------------------------------------------------------------------ UI
 
     def _build(self) -> None:
-        self.toast_overlay = Adw.ToastOverlay()
-        shell = Adw.ToolbarView()
-
-        self.window_title = Adw.WindowTitle(title=self.item.title, subtitle="")
-        header = Adw.HeaderBar()
-        self.btn_help = self._icon_button(
-            "help-about-symbolic", "Klavye kısayolları (?)", self.show_shortcuts_dialog
-        )
-        header.pack_end(self.btn_help)
-
-        self.btn_search = self._icon_button(
-            icons.SEARCH, "Belgede ara (Ctrl+F)", self.toggle_search
-        )
-        header.pack_end(self.btn_search)
-
-        self.btn_fullscreen = self._icon_button(
-            icons.FULLSCREEN, "Tam Ekran (F)", self._toggle_fullscreen
-        )
-        header.pack_end(self.btn_fullscreen)
-
-        self.btn_activities = Gtk.ToggleButton(
-            icon_name=icons.ACTIVITIES,
-            tooltip_text="Etkinlikleri göster (A)",
-            active=self.show_activities,
-        )
-        self.btn_activities.add_css_class("tool-btn")
-        self.btn_activities.connect("toggled", self._on_activities_toggled)
-        header.pack_end(self.btn_activities)
-
-        self.btn_sidebar = Gtk.ToggleButton(
-            icon_name=icons.SIDEBAR,
-            tooltip_text="Kenar çubuğu (F9 / T)",
-            active=False,
-        )
-        self.btn_sidebar.add_css_class("tool-btn")
-        header.pack_start(self.btn_sidebar)
-        shell.add_top_bar(header)
-        shell.add_top_bar(self._toolbar())
-        shell.add_top_bar(self._search_bar())
+        self.toast_overlay = Adw.ToastOverlay(vexpand=True)
 
         self.spread = SpreadView()
         self.spread.set_mode(self.view_mode if self.view_mode in ("book", "single") else "single")
@@ -205,48 +189,54 @@ class ReaderPage(Adw.NavigationPage):
             "scroll" if self.view_mode == "scroll" else "spread"
         )
 
-        self.stack = Gtk.Stack(transition_type=Gtk.StackTransitionType.CROSSFADE)
-        self.stack.add_named(self._loading_page(), "loading")
-        self.stack.add_named(self.canvas_stack, "canvas")
-        self.stack.set_visible_child_name("loading")
-
         self._install_zoom_gestures()
 
         # The page turns lie over the reading area, not beside it, so they
-        # cost the page no width. An edge that cannot turn -- the left one on
-        # page 1 -- is made insensitive, and GTK then picks straight through
-        # it to the sheet underneath instead of swallowing the press.
-        canvas_area = Gtk.Overlay()
-        canvas_area.set_child(self.stack)
+        # cost the page no width. An edge that cannot turn is insensitive, and
+        # GTK then picks straight through it to the sheet underneath.
+        canvas_area = Gtk.Overlay(vexpand=True)
+        canvas_area.set_child(self.canvas_stack)
         canvas_area.add_overlay(self._page_edge("prev"))
         canvas_area.add_overlay(self._page_edge("next"))
+        canvas_area.add_overlay(self._search_bar())
+        canvas_area.add_overlay(self._opening_layer())
+        if self.debug:
+            canvas_area.add_overlay(self._debug_label())
         self._install_swipe(canvas_area)
 
+        self.progress = Gtk.ProgressBar()
+        self.progress.add_css_class("reading-progress")
+
+        self.dock = ReaderDock(self._theme())
+        self._connect_dock()
+        dock_row = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL)
+        dock_row.add_css_class("dock-row")
+        self.dock.set_hexpand(True)
+        dock_row.append(self.dock)
+
+        main = Gtk.Box(orientation=Gtk.Orientation.VERTICAL)
+        main.append(canvas_area)
+        main.append(self.progress)
+        main.append(dock_row)
+
         self.sidebar = ReaderSidebar()
-        self.sidebar.connect("page-chosen", lambda _w, p: self.go_to_page(p))
+        self.sidebar.connect("page-chosen", self._on_sidebar_page_chosen)
         self.sidebar.connect("activity-chosen", self._on_activity_chosen)
 
-        # The list overlays the page rather than squeezing it: on a board the
-        # page is the point, and a sidebar that reflowed the spread every time
-        # it opened would re-render both sheets for the sake of a list.
-        self.split = Adw.OverlaySplitView(
+        self.split = SidePanel(
             sidebar=self.sidebar,
-            content=canvas_area,
-            show_sidebar=bool(self.settings.get("sidebar_open")),
-            sidebar_width_fraction=0.16,
-            min_sidebar_width=200,
-            max_sidebar_width=232,
+            content=main,
+            width=SIDEBAR_WIDTH,
+            show_sidebar=False,
         )
-        self.split.bind_property(
-            "show-sidebar", self.btn_sidebar, "active",
-            GObject.BindingFlags.BIDIRECTIONAL | GObject.BindingFlags.SYNC_CREATE,
-        )
-        # The list is built the first time it is asked for, not at open: for a
-        # book with ninety baked sheets it is real work, and most lessons never
-        # open it at all.
+        self.split.set_vexpand(True)
+        # The lists are built the first time the panel is opened, not when the
+        # book is: for a long book that is real work most lessons never need.
         self.split.connect("notify::show-sidebar", self._on_sidebar_shown)
-        shell.set_content(self.split)
-        shell.add_bottom_bar(self._status_bar())
+
+        shell = Gtk.Box(orientation=Gtk.Orientation.VERTICAL)
+        shell.append(self._header())
+        shell.append(self.split)
 
         self.focus_overlay = FocusOverlay(self)
         self.focus_overlay.set_visible(False)
@@ -256,107 +246,114 @@ class ReaderPage(Adw.NavigationPage):
         overlay.add_overlay(self.focus_overlay)
 
         self.toast_overlay.set_child(overlay)
-        self.set_child(self.toast_overlay)
+        self.append(self.toast_overlay)
 
-    def _loading_page(self) -> Gtk.Widget:
-        page = Adw.StatusPage(
-            title="Kitap açılıyor…",
-            description="Büyük kitaplarda bu birkaç saniye sürebilir.",
-            vexpand=True,
+        self.dock.set_mode(self.view_mode)
+        self.dock.set_activities_shown(self.show_activities)
+        self._update_zoom_status()
+
+    def _header(self) -> Gtk.Widget:
+        self.window_title = Adw.WindowTitle(title=self.item.title, subtitle="")
+        header = Adw.HeaderBar()
+        header.add_css_class("flat")
+        header.add_css_class("reader-header")
+        header.set_title_widget(self.window_title)
+        self.btn_back = Gtk.Button(tooltip_text="Kitaplığa dön (Esc)")
+        self.btn_back.add_css_class("back-btn")
+        back = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=6)
+        back.append(Gtk.Image.new_from_icon_name(icons.BACK))
+        back.append(Gtk.Label(label="Kitaplık"))
+        self.btn_back.set_child(back)
+        bind_touch_tooltip(self.btn_back)
+        self.btn_back.connect("clicked", lambda *_: self._close_book())
+        header.pack_start(self.btn_back)
+        self.header = header
+        return header
+
+    def _opening_layer(self) -> Gtk.Widget:
+        """
+        What covers the desk until the first page is on it: the book's cover
+        and a spinner, or the reason the book could not be opened.
+        """
+        opening = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=18,
+                          halign=Gtk.Align.CENTER, valign=Gtk.Align.CENTER)
+        cover = self._cover_picture()
+        if cover is not None:
+            opening.append(cover)
+        opening.append(Gtk.Spinner(spinning=True, width_request=36, height_request=36,
+                                   halign=Gtk.Align.CENTER))
+        label = Gtk.Label(label="Kitap açılıyor…")
+        label.add_css_class("dim-label")
+        opening.append(label)
+
+        self.status_page = Adw.StatusPage(
+            icon_name=icons.BOOK, title="Kitap açılamadı", vexpand=True,
         )
-        page.set_child(Adw.Spinner(width_request=42, height_request=42))
-        self.status_page = page
-        return page
 
-    def _toolbar(self) -> Gtk.Widget:
-        bar = Gtk.CenterBox()
-        bar.add_css_class("reader-toolbar")
+        self.opening_stack = Gtk.Stack()
+        self.opening_stack.add_css_class("opening-layer")
+        self.opening_stack.add_named(opening, "opening")
+        self.opening_stack.add_named(self.status_page, "error")
 
-        # -- centre: paging and view mode
-        centre = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=8)
-
-        self.page_entry = Gtk.SpinButton.new_with_range(1, 1, 1)
-        self.page_entry.set_numeric(True)
-        self.page_entry.set_width_chars(4)
-        # Centred, so the number sits in the same place whether the book is on
-        # page 7 or page 289 -- it is read at a glance from across the room.
-        self.page_entry.set_alignment(0.5)
-        self.page_entry.add_css_class("page-entry")
-        # Tabular figures: the number keeps its place as the book is paged,
-        # instead of the toolbar shuffling sideways between 9 and 10.
-        self.page_entry.add_css_class("numeric")
-        self.page_entry.set_tooltip_text("Sayfa numarası")
-        # On a board the only keyboard is the one the compositor puts on the
-        # screen, and it opens on whichever layout the field asks for -- so ask
-        # for the number pad rather than making a teacher find the digits on a
-        # full keyboard. The purpose belongs to the `GtkText` inside the spin
-        # button, which is what `get_delegate` hands back; `GtkEditable` itself
-        # carries no such property.
-        entry_text = self.page_entry.get_delegate()
-        if entry_text is not None:
-            entry_text.set_input_purpose(Gtk.InputPurpose.DIGITS)
-        bind_touch_tooltip(self.page_entry)
-        self.page_entry.connect("value-changed", self._on_page_entry)
-
-        self.page_total = Gtk.Label(label="/ …")
-        self.page_total.add_css_class("numeric")
-        self.page_total.add_css_class("dim-label")
-        self.page_total.add_css_class("page-total")
-
-        centre.append(self.page_entry)
-        centre.append(self.page_total)
-        centre.append(Gtk.Separator(orientation=Gtk.Orientation.VERTICAL))
-
-        self.mode_group = Adw.ToggleGroup()
-        # Pill, like the zoom drop-down and the icon buttons either side.
-        self.mode_group.add_css_class("round")
-        self.mode_group.add(Adw.Toggle(
-            name="book", label=MODE_LABELS["book"], icon_name=icons.MODE_BOOK,
-            tooltip="Çift sayfa görünümü (B)",
-        ))
-        self.mode_group.add(Adw.Toggle(
-            name="single", label=MODE_LABELS["single"], icon_name=icons.MODE_SINGLE,
-            tooltip="Tek sayfa görünümü (S)",
-        ))
-        scroll_toggle = Adw.Toggle(
-            name="scroll", label=MODE_LABELS["scroll"], icon_name=icons.MODE_SCROLL,
-            tooltip="Sürekli kaydırma görünümü (C)",
+        self.opening = Gtk.Revealer(
+            transition_type=Gtk.RevealerTransitionType.CROSSFADE,
+            transition_duration=180,
+            reveal_child=True,
+            child=self.opening_stack,
         )
-        self.mode_group.add(scroll_toggle)
-        self.mode_group.set_active_name(self.view_mode)
-        self.mode_group.connect("notify::active-name", self._on_mode_toggled)
-        centre.append(self.mode_group)
-        bar.set_center_widget(centre)
+        self.opening.connect("notify::child-revealed", self._on_opening_faded)
+        return self.opening
 
-        # -- right: zoom and rotation
-        right = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=6)
-        right.append(self._icon_button(icons.ZOOM_OUT, "Uzaklaştır (-)", lambda: self.step_zoom(-ZOOM_STEP)))
+    def _cover_picture(self) -> Optional[Gtk.Widget]:
+        try:
+            path = self.app.manager.get_thumbnail_path(self.item.id)
+        except Exception:
+            path = None
+        if not isinstance(path, str):
+            return None
+        picture = Gtk.Picture.new_for_filename(path)
+        picture.set_size_request(220, 311)
+        picture.set_halign(Gtk.Align.CENTER)
+        picture.add_css_class("opening-cover")
+        return picture
 
-        self.zoom_list = Gtk.StringList.new([c[1] for c in ZOOM_CHOICES])
-        self.zoom_drop = Gtk.DropDown(model=self.zoom_list)
-        self.zoom_drop.set_tooltip_text("Yakınlaştırma")
-        self.zoom_drop.set_selected(self._zoom_index())
-        self.zoom_drop.connect("notify::selected", self._on_zoom_selected)
-        right.append(self.zoom_drop)
+    def _on_opening_faded(self, revealer, _param) -> None:
+        if not revealer.get_child_revealed():
+            revealer.set_visible(False)
 
-        right.append(self._icon_button(icons.ZOOM_IN, "Yakınlaştır (+)", lambda: self.step_zoom(ZOOM_STEP)))
-        right.append(Gtk.Separator(orientation=Gtk.Orientation.VERTICAL))
-        right.append(self._icon_button(icons.ROTATE, "Döndür (R)", self.rotate))
-        bar.set_end_widget(right)
+    def _debug_label(self) -> Gtk.Widget:
+        self.debug_label = Gtk.Label(halign=Gtk.Align.START, valign=Gtk.Align.END)
+        self.debug_label.add_css_class("debug-label")
+        self.debug_label.add_css_class("numeric")
+        self.debug_label.set_can_target(False)
+        return self.debug_label
 
-        return bar
+    def _connect_dock(self) -> None:
+        dock = self.dock
+        dock.connect("previous", lambda _d: self.prev_page())
+        dock.connect("next", lambda _d: self.next_page())
+        dock.connect("page-chosen", lambda _d, page: self.go_to_page(page))
+        dock.connect("mode-chosen", lambda _d, mode: self.set_view_mode(mode))
+        dock.connect("zoom-stepped", lambda _d, step: self.step_zoom(step * ZOOM_STEP))
+        dock.connect("zoom-fit", lambda _d: self.toggle_fit())
+        dock.connect("sidebar-toggled", lambda _d, show: self.split.set_show_sidebar(show))
+        dock.connect("activities-toggled", lambda _d, show: self.set_show_activities(show))
+        dock.connect("search", lambda _d: self.toggle_search())
+        dock.connect("rotate", lambda _d: self.rotate())
+        dock.connect("fullscreen", lambda _d: self._toggle_fullscreen())
+        dock.connect("help", lambda _d: self.show_help())
+        dock.connect("theme-chosen", lambda _d, theme: self.set_theme(theme))
 
     def _search_bar(self) -> Gtk.Widget:
-        bar = Gtk.SearchBar()
-        bar.set_key_capture_widget(self)
-
+        """The search row, above the dock: within reach, clear of the keyboard."""
         box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=6)
-        box.add_css_class("reader-search-box")
+        box.add_css_class("dock")
+        box.add_css_class("reader-search")
 
-        self.search_entry = Gtk.SearchEntry()
-        self.search_entry.set_placeholder_text("Belgede ara…")
-        self.search_entry.set_hexpand(True)
-        bar.connect_entry(self.search_entry)
+        # The property, not `set_placeholder_text()`: the setter is GTK 4.10.
+        self.search_entry = Gtk.SearchEntry(placeholder_text="Kitapta ara…")
+        self.search_entry.add_css_class("dock-search")
+        self.search_entry.set_size_request(320, -1)
         self.search_entry.connect("activate", self._on_search_entry_activate)
         self.search_entry.connect("search-changed", self._on_search_entry_changed)
 
@@ -364,81 +361,38 @@ class ReaderPage(Adw.NavigationPage):
         key_ctrl.connect("key-pressed", self._on_search_key_pressed)
         self.search_entry.add_controller(key_ctrl)
 
-        self.search_count_label = Gtk.Label(label="0 of 0")
+        self.search_count_label = Gtk.Label(label=NO_MATCHES)
         self.search_count_label.add_css_class("numeric")
-        self.search_count_label.add_css_class("search-match-count")
-
-        self.btn_search_prev = self._icon_button(
-            "go-up-symbolic", "Önceki eşleşme (Shift+Enter)", self.prev_search_match
-        )
-        self.btn_search_next = self._icon_button(
-            "go-down-symbolic", "Sonraki eşleşme (Enter)", self.next_search_match
-        )
-        self.btn_search_close = self._icon_button(
-            icons.CANCEL, "Aramayı kapat (Esc)", self.close_search
-        )
+        self.search_count_label.add_css_class("dock-label")
 
         box.append(self.search_entry)
         box.append(self.search_count_label)
-        box.append(self.btn_search_prev)
-        box.append(self.btn_search_next)
-        box.append(self.btn_search_close)
+        for icon, tooltip, action in (
+            (icons.UP, "Önceki eşleşme (Shift+Enter)", self.prev_search_match),
+            (icons.DOWN, "Sonraki eşleşme (Enter)", self.next_search_match),
+            (icons.CANCEL, "Aramayı kapat (Esc)", self.close_search),
+        ):
+            button = Gtk.Button(icon_name=icon, tooltip_text=tooltip)
+            button.add_css_class("dock-btn")
+            bind_touch_tooltip(button)
+            button.connect("clicked", lambda _b, fn=action: fn())
+            box.append(button)
 
-        bar.set_child(box)
-        self.search_bar = bar
-        return bar
-
-    def _status_bar(self) -> Gtk.Widget:
-        bar = Gtk.ActionBar()
-        bar.add_css_class("reader-status")
-
-        left = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=8)
-        self.status_size = Gtk.Label(label="")
-        self.status_render = Gtk.Label(label="Hazır")
-        self.status_activity = Gtk.Label(label="")
-        for label in (self.status_size, self.status_render, self.status_activity):
-            label.add_css_class("caption")
-            label.add_css_class("dim-label")
-        self.status_activity.add_css_class("caption-heading")
-        self.status_activity.remove_css_class("caption")
-        left.append(self.status_size)
-        left.append(Gtk.Label(label="•", css_classes=["caption", "status-sep"]))
-        left.append(self.status_render)
-        left.append(Gtk.Label(label="•", css_classes=["caption", "status-sep"]))
-        left.append(self.status_activity)
-        bar.pack_start(left)
-
-        right = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=8)
-        self.status_zoom = Gtk.Label(label="")
-        self.status_mode = Gtk.Label(label=MODE_LABELS[self.view_mode])
-        for label in (self.status_zoom, self.status_mode):
-            label.add_css_class("caption")
-            label.add_css_class("dim-label")
-        right.append(self.status_zoom)
-        right.append(Gtk.Label(label="•", css_classes=["caption", "status-sep"]))
-        right.append(self.status_mode)
-        bar.pack_end(right)
-        return bar
-
-    def _icon_button(self, icon_name, tooltip, action) -> Gtk.Button:
-        button = Gtk.Button(icon_name=icon_name, tooltip_text=tooltip)
-        button.add_css_class("tool-btn")
-        # GTK will not show a tooltip to a finger at all, and these buttons are
-        # nothing but a symbol. A long press says what one is.
-        bind_touch_tooltip(button)
-        if action is not None:
-            button.connect("clicked", lambda *_: action())
-        return button
+        self.search_bar = Gtk.Revealer(
+            transition_type=Gtk.RevealerTransitionType.SLIDE_UP,
+            transition_duration=150,
+            halign=Gtk.Align.CENTER,
+            valign=Gtk.Align.END,
+            child=box,
+        )
+        return self.search_bar
 
     def _page_edge(self, which: str) -> Gtk.Widget:
         """
-        One of the two page-turn strips down the sides of the reading area.
-
-        It is a button like any other -- hold-repeat, tooltip, sensitivity --
-        drawn to nothing but a faint chevron. `valign=FILL` with no vexpand of
-        its own is what makes it the full height of the overlay; the width is
-        `.page-edge`'s, because a strip a finger can find without aiming is
-        measured in centimetres and not in icon sizes.
+        One of the two page-turn strips down the sides of the reading area: a
+        button like any other, drawn as nothing but a faint chevron. Its width
+        is `.page-edge`'s, because a strip a finger finds without aiming is
+        measured in centimetres.
         """
         forward = which == "next"
         button = Gtk.Button(
@@ -595,33 +549,24 @@ class ReaderPage(Adw.NavigationPage):
         if self._closed:
             return
         total = info.page_count
-        self.page_entry.set_range(1, max(1, total))
-        self.page_total.set_label(f"/ {total}")
-
         restored = min(max(self.settings.last_page(self.item.id), 1), max(1, total))
         self.current_page = restored
+        self.dock.set_page_marks(unit_pages(info.toc))
         self.spread.attach(self.session.service, info, self.session.overlay)
         self.scroll_view.attach(self.session.service, info, self.session.overlay)
         self.sidebar.load_book(info, self.session.service, self.rotation, self.view_mode)
-        self.stack.set_visible_child_name("canvas")
         if self.view_mode == "scroll":
             self.canvas_stack.set_visible_child_name("scroll")
             self.scroll_view.go_to_page(restored)
-            self._sync_page_entry()
-            self._update_nav_buttons()
-            self._update_status_size()
-            self._update_zoom_status()
-            self._update_activity_status()
-            self.sidebar.update_active_page(self.current_page)
+            self._update_position()
         else:
             self.canvas_stack.set_visible_child_name("spread")
-            self._apply_page(restored, force=True)
-            self._update_status_size()
-            self._update_zoom_status()
-            self._update_activity_status()
-            self.sidebar.update_active_page(self.current_page)
+            self._apply_page(restored)
+        self._update_zoom_status()
         self.search_controller.attach(self.session.service, info)
         self.session.check_bake(self._on_bake_changed)
+        if bool(self.settings.get("sidebar_open")):
+            self.split.set_show_sidebar(True)
 
     def _on_bake_changed(self) -> None:
         """
@@ -643,19 +588,16 @@ class ReaderPage(Adw.NavigationPage):
     def _on_error(self, message: str) -> None:
         """
         The book did not open. Say so in the teacher's language and keep the
-        renderer's own words underneath -- they name the actual cause, and a
-        lesson that has already started is not the moment to hide it.
+        renderer's own words underneath: they name the actual cause.
         """
         if self._closed:
             return
-        self.status_page.set_child(None)
-        self.status_page.set_icon_name("dialog-warning-symbolic")
-        self.status_page.set_title("Kitap açılamadı")
         self.status_page.set_description(
             "Dosya bozuk olabilir veya taşınmış olabilir. "
             "Kitaplıktan kaldırıp yeniden indirmeyi deneyin.\n\n"
             f"{message}"
         )
+        self.opening_stack.set_visible_child_name("error")
 
     def _on_result(self, result) -> None:
         if self._closed:
@@ -673,13 +615,29 @@ class ReaderPage(Adw.NavigationPage):
 
     def _on_pressure(self, rss_mb: float) -> None:
         """
-        The render thread reports the process is heavier than a board can carry.
+        The renderer reports the process is heavier than a board can carry.
         Give the textures back; they cost one re-render each and nothing else.
         """
         if self._closed:
             return
         self.spread.drop_textures()
         self.scroll_view.drop_textures()
+
+    def _on_page_rendered(self, _view, page: int, ms: int) -> None:
+        if not self._first_page_shown:
+            # The cover stays up until there is a page to show in its place.
+            self._first_page_shown = True
+            self.opening.set_reveal_child(False)
+        if self.debug:
+            width, height = self.session.info.size(page)
+            self.debug_label.set_label(
+                f"sayfa {page} · {round(width)} × {round(height)} pt · {ms} ms"
+            )
+
+    def page_texture(self, page: int):
+        """The texture on screen for `page`, for focus mode's first frame."""
+        view = self.scroll_view if self.view_mode == "scroll" else self.spread
+        return view.texture_for(page)
 
     # --------------------------------------------------------- navigation
 
@@ -691,12 +649,7 @@ class ReaderPage(Adw.NavigationPage):
         if self.view_mode == "scroll":
             self.current_page = page
             self.scroll_view.go_to_page(page)
-            self._sync_page_entry()
-            self._update_nav_buttons()
-            self._update_status_size()
-            self._update_activity_status()
-            self.sidebar.update_active_page(self.current_page)
-            self.settings.set_last_page(self.item.id, self.current_page)
+            self._update_position()
             return
         if self.view_mode == "book" and page in self.spread.pages:
             return
@@ -704,29 +657,21 @@ class ReaderPage(Adw.NavigationPage):
             return
         self._apply_page(page)
 
-    def _apply_page(self, page: int, force: bool = False) -> None:
+    def _apply_page(self, page: int) -> None:
         pages = self.spread.pages_for(page)
-        # Book mode snaps to the left page of the spread, exactly as
-        # `renderBookMode` rewrites `currentPage` before it draws.
+        # Book mode snaps to the left page of the spread.
         self.current_page = pages[0]
         self.spread.show_pages(pages)
-        self._sync_page_entry()
-        self._update_nav_buttons()
-        self._update_status_size()
-        self._update_activity_status()
-        self.sidebar.update_active_page(self.current_page)
-        self.settings.set_last_page(self.item.id, self.current_page)
+        self._update_position()
 
     def _on_dominant_page_changed(self, _scroll_view, page: int) -> None:
         if self.view_mode != "scroll":
             return
         self.current_page = page
-        self._sync_page_entry()
-        self._update_nav_buttons()
-        self._update_status_size()
-        self._update_activity_status()
-        self.sidebar.update_active_page(self.current_page)
-        self.settings.set_last_page(self.item.id, self.current_page)
+        self._update_position()
+
+    def _on_sidebar_page_chosen(self, _sidebar, page: int) -> None:
+        self.go_to_page(page)
 
     def next_page(self) -> None:
         if self.view_mode == "scroll":
@@ -745,71 +690,49 @@ class ReaderPage(Adw.NavigationPage):
                 self.current_page, self.session.page_count, self.view_mode
             ))
 
-    def _update_nav_buttons(self) -> None:
-        total = self.session.page_count
+    def _visible_pages(self) -> List[int]:
         if self.view_mode == "scroll":
-            self.btn_prev.set_sensitive(self.current_page > 1)
-            self.btn_next.set_sensitive(self.current_page < total)
-        else:
-            pages = self.spread.pages
-            self.btn_prev.set_sensitive(self.current_page > 1)
-            self.btn_next.set_sensitive(bool(pages) and total not in pages)
+            return [self.current_page]
+        return list(self.spread.pages) or [self.current_page]
 
-    def _sync_page_entry(self) -> None:
-        self._syncing = True
-        self.page_entry.set_value(self.current_page)
-        self._syncing = False
+    def _update_position(self) -> None:
+        """Everything that says where in the book this is."""
+        total = self.session.page_count
+        pages = self._visible_pages()
+        self.dock.set_page(self.current_page, total)
+        self.progress.set_fraction(pages[-1] / total if total > 0 else 0.0)
 
-    def _on_page_entry(self, spin) -> None:
-        if self._syncing:
-            return
-        self.go_to_page(int(spin.get_value()))
+        can_go_back = self.current_page > 1
+        can_go_on = bool(pages) and total not in pages and self.current_page < total
+        self.btn_prev.set_sensitive(can_go_back)
+        self.btn_next.set_sensitive(can_go_on)
+        self.dock.set_can_turn(can_go_back, can_go_on)
+
+        if self.session.is_open:
+            self.window_title.set_subtitle(chapter_at(self.session.info.toc, self.current_page))
+        self._update_activity_status()
+        self.sidebar.update_active_page(self.current_page)
+        self.settings.remember_position(self.item.id, self.current_page, total)
 
     # ---------------------------------------------------------- view mode
 
     def set_view_mode(self, mode: str) -> None:
-        if mode == self.view_mode or mode not in ("book", "single", "scroll"):
+        if mode == self.view_mode or mode not in MODES:
             return
         self.view_mode = mode
         self.settings.set("view_mode", mode)
-        self.status_mode.set_label(MODE_LABELS[mode])
-        if self.mode_group.get_active_name() != mode:
-            self.mode_group.set_active_name(mode)
+        self.dock.set_mode(mode)
         self.sidebar.set_view_mode(mode)
         if mode == "scroll":
             self.canvas_stack.set_visible_child_name("scroll")
             self.scroll_view.go_to_page(self.current_page)
-            self._sync_page_entry()
-            self._update_nav_buttons()
-            self._update_status_size()
-            self._update_activity_status()
-            self.sidebar.update_active_page(self.current_page)
+            self._update_position()
         else:
             self.canvas_stack.set_visible_child_name("spread")
             self.spread.set_mode(mode)
-            self._apply_page(self.current_page, force=True)
-
-    def _on_mode_toggled(self, group, _param) -> None:
-        name = group.get_active_name()
-        if name in ("book", "single", "scroll"):
-            self.set_view_mode(name)
+            self._apply_page(self.current_page)
 
     # --------------------------------------------------------------- zoom
-
-    def _zoom_index(self):
-        """
-        Which row of the dropdown the current zoom is, or None if it is a value
-        between the rungs of the ladder -- which `+` and `-` produce constantly.
-        """
-        for index, (value, _label, _status) in enumerate(ZOOM_CHOICES):
-            if self.zoom_mode == "custom":
-                if value not in ("fit-width", "fit-page") and abs(
-                    float(value) - self.custom_zoom
-                ) < 1e-6:
-                    return index
-            elif value == self.zoom_mode:
-                return index
-        return None
 
     def set_zoom(self, mode: str, custom: float = None) -> None:
         self.zoom_mode = mode
@@ -819,72 +742,28 @@ class ReaderPage(Adw.NavigationPage):
             self.settings.set("zoom_mode", mode)
         self.spread.set_zoom(mode, self.custom_zoom)
         self.scroll_view.set_zoom(mode, self.custom_zoom)
-        self._sync_zoom_drop()
         self._update_zoom_status()
 
     def step_zoom(self, delta: float) -> None:
-        # The web starts stepping from 100 %, not from whatever the fit happens
-        # to be, so that +/- always lands on the same ladder.
+        # Stepping starts from 100 %, not from whatever the fit happens to be,
+        # so that +/- always lands on the same ladder.
         current = self.custom_zoom if self.zoom_mode == "custom" else 1.0
         self.set_zoom("custom", min(ZOOM_MAX, max(ZOOM_MIN, current + delta)))
 
-    def _sync_zoom_drop(self) -> None:
-        """
-        Keep the dropdown honest about a zoom it has no row for.
+    def toggle_fit(self) -> None:
+        """The dock's zoom label: back to a fit, or from one fit to the other."""
+        self.set_zoom("fit-width" if self.zoom_mode == "fit-page" else "fit-page")
 
-        Stepping with `+` lands on 110 %, 130 %, 170 % -- none of which is on
-        the list. The web `<select>` simply goes blank in that case; here the
-        odd value is appended as a row of its own and taken away again as soon
-        as the zoom returns to the ladder, so the control always reads back
-        what the page is actually at.
-        """
-        self._syncing = True
-        index = self._zoom_index()
-        extra = self.zoom_list.get_n_items() > len(ZOOM_CHOICES)
-        if index is None:
-            label = f"%{round(self.custom_zoom * 100)}"
-            if extra:
-                self.zoom_list.splice(len(ZOOM_CHOICES), 1, [label])
-            else:
-                self.zoom_list.append(label)
-            self.zoom_drop.set_selected(len(ZOOM_CHOICES))
+    def _on_scale_changed(self, _view, _zoom: float) -> None:
+        self._update_zoom_status()
+
+    def _update_zoom_status(self) -> None:
+        if self.zoom_mode == "fit-page":
+            self.dock.set_zoom_text("Sığdır")
+        elif self.zoom_mode == "fit-width":
+            self.dock.set_zoom_text("Genişlik")
         else:
-            if extra:
-                self.zoom_list.splice(len(ZOOM_CHOICES), 1, None)
-            self.zoom_drop.set_selected(index)
-        self._syncing = False
-
-    def _on_zoom_selected(self, drop, _param) -> None:
-        if self._syncing:
-            return
-        selected = drop.get_selected()
-        if selected >= len(ZOOM_CHOICES):
-            return
-        value = ZOOM_CHOICES[selected][0]
-        if value in ("fit-width", "fit-page"):
-            self.set_zoom(value)
-        else:
-            self.set_zoom("custom", float(value))
-
-    def _on_scale_changed(self, _spread, zoom: float) -> None:
-        self._update_zoom_status(zoom)
-
-    def _update_zoom_status(self, zoom: float = None) -> None:
-        """
-        In a fit mode the label is the mode's own name and the number does not
-        matter. In custom mode the number is `custom_zoom` and not
-        `spread.zoom`: the spread only learns the new scale during its next
-        allocation, so reading it here would show the teacher the zoom they
-        just left.
-        """
-        if self.zoom_mode == "custom":
-            self.status_zoom.set_label(f"%{round(self.custom_zoom * 100)}")
-            return
-        for value, _label, status in ZOOM_CHOICES:
-            if value == self.zoom_mode and status:
-                self.status_zoom.set_label(status)
-                return
-        self.status_zoom.set_label(f"%{round((zoom or self.spread.zoom) * 100)}")
+            self.dock.set_zoom_text(f"%{round(self.custom_zoom * 100)}")
 
     # ------------------------------------------------------------- rotate
 
@@ -893,45 +772,26 @@ class ReaderPage(Adw.NavigationPage):
         self.spread.set_rotation(self.rotation)
         self.scroll_view.set_rotation(self.rotation)
         self.sidebar.set_rotation(self.rotation)
-        self._update_status_size()
-
-    # ------------------------------------------------------------- status
-
-    def _update_status_size(self) -> None:
-        if not self.session.is_open:
-            return
-        if self.view_mode == "scroll":
-            first = self.session.info.size(self.current_page)
-            text = f"{round(first[0])} × {round(first[1])} pt"
-        else:
-            pages = self.spread.pages or [self.current_page]
-            first = self.session.info.size(pages[0])
-            if len(pages) > 1:
-                spread_w = sum(self.session.info.size(p)[0] for p in pages)
-                spread_h = max(self.session.info.size(p)[1] for p in pages)
-                text = (f"{round(first[0])} × {round(first[1])} pt"
-                        f"  (açık: {round(spread_w)} × {round(spread_h)} pt)")
-            else:
-                text = f"{round(first[0])} × {round(first[1])} pt"
-        self.status_size.set_label(text)
-        self.window_title.set_subtitle(
-            f"Sayfa {self.current_page} / {self.session.page_count}"
-        )
-
-    def _on_page_rendered(self, _spread, page: int, ms: int) -> None:
-        self.status_render.set_label(f"{ms} ms'de çizildi")
 
     # --------------------------------------------------------- activities
 
-    def _on_activities_toggled(self, button) -> None:
-        self.show_activities = button.get_active()
+    def set_show_activities(self, show: bool) -> None:
+        self.show_activities = bool(show)
         self.settings.set("show_activities", self.show_activities)
         self.spread.set_reveal(self.show_activities)
         self.scroll_view.set_reveal(self.show_activities)
+        self.dock.set_activities_shown(self.show_activities)
+
+    def toggle_activities(self) -> None:
+        self.set_show_activities(not self.show_activities)
+
+    def toggle_sidebar(self) -> None:
+        self.split.set_show_sidebar(not self.split.get_show_sidebar())
 
     def _on_sidebar_shown(self, *_args) -> None:
         show = self.split.get_show_sidebar()
         self.settings.set("sidebar_open", show)
+        self.dock.set_sidebar_open(show)
         if show:
             self._load_sidebar()
 
@@ -945,9 +805,9 @@ class ReaderPage(Adw.NavigationPage):
         """
         A hotspot or a pin was pressed on the page itself.
 
-        A region is selected -- both its pieces light up and the list follows
-        it. A pin has no region and so no row to follow, so it names itself in
-        the status bar instead. Non-interactive regions open focus mode.
+        A region is selected: both its pieces light up and the list follows
+        it. An interactive one opens the publisher's activity; any other opens
+        focus mode. A pin has no region, only an activity to open.
         """
         if self._closed:
             return
@@ -956,7 +816,6 @@ class ReaderPage(Adw.NavigationPage):
         if isinstance(target, Pin):
             self.spread.clear_selection()
             self.scroll_view.clear_selection()
-            self.status_activity.set_label(f"⚡ {target.label}")
             if target.oge and target.oge.guid:
                 where = target.oge.printed_page or page
                 self.open_activity_dialog(
@@ -970,7 +829,6 @@ class ReaderPage(Adw.NavigationPage):
         else:
             self.spread.select_activity(page, target.act_index)
         self.sidebar.select_activity(page, target.act_index)
-        self._show_activity(target.label, target.item_count, target.interactive)
         if target.interactive and target.guid:
             self.open_activity_dialog(
                 guid=target.guid,
@@ -983,18 +841,29 @@ class ReaderPage(Adw.NavigationPage):
     def open_activity_dialog(
         self, guid: str, title: str = "", installed: bool = False
     ) -> None:
-        """Open the interactive activity modal dialog for a given GUID."""
+        """
+        Open a publisher activity: in a window of our own where WebKitGTK is
+        installed, in the board's browser where it is not.
+        """
         if not guid or self._closed:
             return
-        from .activity_dialog import ActivityDialog
+        from . import activity_dialog
 
-        dialog = ActivityDialog(
-            manager=self.session.manager or getattr(self.app, "manager", None),
+        manager = self.session.manager or getattr(self.app, "manager", None)
+        if not activity_dialog.HAS_WEBKIT:
+            if activity_dialog.open_in_browser(manager, guid):
+                self.toast_overlay.add_toast(Adw.Toast(title="Etkinlik tarayıcıda açıldı."))
+            else:
+                self.toast_overlay.add_toast(Adw.Toast(title="Etkinlik açılamadı."))
+            return
+
+        dialog = activity_dialog.ActivityDialog(
+            manager=manager,
             guid=guid,
             title=title,
             installed=installed,
         )
-        dialog.present(self)
+        dialog.show_for(self)
 
     # ------------------------------------------------------------ focus mode
 
@@ -1015,8 +884,6 @@ class ReaderPage(Adw.NavigationPage):
                 "vadj": scroller.get_vadjustment().get_value(),
             }
         self.focus_overlay.start(activity, part_index=part_index, sub_index=sub_index)
-        name = activity_label(activity) or activity.name()
-        self.status_mode.set_label(f"Odak: Sayfa {activity.page_num} · {name}")
 
     def exit_focus(self, silent: bool = False) -> None:
         """Exit focus mode and restore pre-focus state."""
@@ -1045,14 +912,13 @@ class ReaderPage(Adw.NavigationPage):
 
             GLib.idle_add(_restore_scroll)
 
-        self.status_mode.set_label(MODE_LABELS.get(self.view_mode, ""))
         self._update_activity_status()
         self._update_zoom_status()
 
     def step_activity_from(self, activity, direction: int):
         """
         Next / previous activity across page boundaries, in reading order.
-        direction is +1 or -1. Port of `viewer.js:1896-1909`.
+        direction is +1 or -1.
         """
         overlay = self.session.overlay(activity.page_num)
         acts = list(overlay.activities) if overlay else []
@@ -1078,76 +944,47 @@ class ReaderPage(Adw.NavigationPage):
             self.scroll_view.select_activity(page, act_index)
         else:
             self.spread.select_activity(page, act_index)
-        overlay = self.session.overlay(page)
-        spot = overlay.first_spot_of(act_index) if overlay else None
-        if spot is not None:
-            self._show_activity(spot.label, spot.item_count, spot.interactive)
-
-    def _show_activity(self, label: str, items: int, interactive: bool) -> None:
-        name = label or "Etkinlik"
-        parts = [f"⚡ {name}" if interactive else name]
-        if items:
-            parts.append(f"{items} soru")
-        self.status_activity.set_label(" · ".join(parts))
 
     def _update_activity_status(self) -> None:
         """
-        How many activities are on what is currently open.
-
-        Counted from the overlays rather than from the bake, so it says what is
-        actually drawn -- a sheet whose dimensions disagree with its bake has
-        its overlay dropped, and the count has to drop with it.
+        How many activities are on what is currently open, for the dock's
+        badge. Counted from the overlays rather than from the bake, so it says
+        what is actually drawn.
         """
-        if not self.session.is_open:
+        if not self.session.is_open or not self.session.activities_ready:
+            self.dock.set_activity_count(0)
             return
-        if not self.session.activities_ready:
-            self.status_activity.set_label(
-                "Etkinlik bilgisi yok" if self.session.bake_state != "baking" else ""
-            )
-            return
-        total = 0
-        pins = 0
-        pages = [self.current_page] if self.view_mode == "scroll" else (self.spread.pages or [self.current_page])
-        for page in pages:
+        count = 0
+        for page in self._visible_pages():
             overlay = self.session.overlay(page)
-            if overlay is None:
-                continue
-            total += len(overlay.activities)
-            pins += len(overlay.pins)
-        if not total and not pins:
-            self.status_activity.set_label("Bu sayfada etkinlik yok")
-        elif pins:
-            self.status_activity.set_label(f"{total} etkinlik · {pins} ⚡")
-        else:
-            self.status_activity.set_label(f"{total} etkinlik")
-
-    def toggle_activities(self) -> None:
-        self.btn_activities.set_active(not self.btn_activities.get_active())
-
-    def toggle_sidebar(self) -> None:
-        self.split.set_show_sidebar(not self.split.get_show_sidebar())
+            if overlay is not None:
+                count += len(overlay.activities) + len(overlay.pins)
+        self.dock.set_activity_count(count)
 
     # ------------------------------------------------------------- search
 
+    @property
+    def search_open(self) -> bool:
+        return self.search_bar.get_reveal_child()
+
     def toggle_search(self) -> None:
-        if self.search_bar.get_search_mode():
+        if self.search_open:
             self.close_search()
         else:
             self.open_search()
 
     def open_search(self) -> None:
-        self.search_bar.set_search_mode(True)
+        self.search_bar.set_reveal_child(True)
         self.search_entry.grab_focus()
-        text = self.search_entry.get_text()
-        if text:
+        if self.search_entry.get_text():
             self.search_entry.select_region(0, -1)
 
     def close_search(self) -> None:
-        self.search_bar.set_search_mode(False)
+        self.search_bar.set_reveal_child(False)
         self.search_controller.clear()
         self.spread.set_search_matches({}, None)
         self.scroll_view.set_search_matches({}, None)
-        self.search_count_label.set_label("0 of 0")
+        self.search_count_label.set_label(NO_MATCHES)
         self.grab_focus()
 
     def execute_search(self, query: str) -> None:
@@ -1162,7 +999,6 @@ class ReaderPage(Adw.NavigationPage):
         self.search_controller.prev_match()
 
     def _on_search_key_pressed(self, controller, keyval, keycode, state) -> bool:
-        from gi.repository import Gdk
         if keyval == Gdk.KEY_Escape:
             self.close_search()
             return True
@@ -1187,14 +1023,14 @@ class ReaderPage(Adw.NavigationPage):
             self.search_controller.clear()
             self.spread.set_search_matches({}, None)
             self.scroll_view.set_search_matches({}, None)
-            self.search_count_label.set_label("0 of 0")
+            self.search_count_label.set_label(NO_MATCHES)
 
     def _on_search_results_changed(self, _ctrl, total: int) -> None:
         if total == 0:
             if self.search_controller.query:
                 self.search_count_label.set_label("0 eşleşme")
             else:
-                self.search_count_label.set_label("0 of 0")
+                self.search_count_label.set_label(NO_MATCHES)
             self.spread.set_search_matches({}, None)
             self.scroll_view.set_search_matches({}, None)
             return
@@ -1224,59 +1060,22 @@ class ReaderPage(Adw.NavigationPage):
         self.scroll_view.set_search_matches(page_matches, active)
 
     def _on_search_cleared(self, _ctrl) -> None:
-        self.search_count_label.set_label("0 of 0")
+        self.search_count_label.set_label(NO_MATCHES)
         self.spread.set_search_matches({}, None)
         self.scroll_view.set_search_matches({}, None)
 
-    # ---------------------------------------------------------- shortcuts
+    # ------------------------------------------------------ help and theme
 
-    def show_shortcuts_dialog(self) -> None:
-        dialog = Adw.ShortcutsDialog()
-        dialog.set_title("Klavye Kısayolları")
-
-        nav = Adw.ShortcutsSection(title="Gezinme")
-        nav.add(Adw.ShortcutsItem(title="Sonraki sayfa / açık", accelerator="Right"))
-        nav.add(Adw.ShortcutsItem(title="Önceki sayfa / açık", accelerator="Left"))
-        nav.add(Adw.ShortcutsItem(title="İlk sayfa", accelerator="Home"))
-        nav.add(Adw.ShortcutsItem(title="Son sayfa", accelerator="End"))
-        dialog.add(nav)
-
-        view = Adw.ShortcutsSection(title="Görünüm ve Yakınlaştırma")
-        view.add(Adw.ShortcutsItem(title="Yakınlaştır", accelerator="plus"))
-        view.add(Adw.ShortcutsItem(title="Uzaklaştır", accelerator="minus"))
-        view.add(Adw.ShortcutsItem(title="Sayfaya sığdır", accelerator="0"))
-        view.add(Adw.ShortcutsItem(title="Çift sayfa görünümü", accelerator="b"))
-        view.add(Adw.ShortcutsItem(title="Tek sayfa görünümü", accelerator="s"))
-        view.add(Adw.ShortcutsItem(title="Kaydırma görünümü", accelerator="c"))
-        view.add(Adw.ShortcutsItem(title="Saat yönünde döndür", accelerator="r"))
-        view.add(Adw.ShortcutsItem(title="Tam ekran", accelerator="f"))
-        dialog.add(view)
-
-        tools = Adw.ShortcutsSection(title="Araçlar")
-        tools.add(Adw.ShortcutsItem(title="Belgede ara", accelerator="<Control>f"))
-        tools.add(Adw.ShortcutsItem(title="Kenar çubuğunu aç/kapat", accelerator="t"))
-        tools.add(Adw.ShortcutsItem(title="Okuma temasını değiştir", accelerator="m"))
-        tools.add(Adw.ShortcutsItem(title="Etkinlikleri göster/gizle", accelerator="a"))
-        tools.add(Adw.ShortcutsItem(title="Klavye kısayolları", accelerator="question"))
-        dialog.add(tools)
-
-        focus = Adw.ShortcutsSection(title="Odak Modu")
-        focus.add(Adw.ShortcutsItem(title="Sonraki etkinlik", accelerator="Right"))
-        focus.add(Adw.ShortcutsItem(title="Önceki etkinlik", accelerator="Left"))
-        focus.add(Adw.ShortcutsItem(title="Sonraki soru", accelerator="Down"))
-        focus.add(Adw.ShortcutsItem(title="Önceki soru", accelerator="Up"))
-        focus.add(Adw.ShortcutsItem(title="Odaktan çık", accelerator="Escape"))
-        dialog.add(focus)
-
-        dialog.present(self)
+    def show_help(self) -> None:
+        HelpWindow(self.get_root()).present()
 
     def cycle_theme(self) -> None:
-        themes = THEMES
-        current = self.settings.get("theme") or "dark"
-        next_idx = (themes.index(current) + 1) % len(themes) if current in themes else 0
-        new_theme = themes[next_idx]
-        self.settings.set("theme", new_theme)
-        self.apply_theme(new_theme)
+        current = self._theme()
+        self.set_theme(THEMES[(THEMES.index(current) + 1) % len(THEMES)])
+
+    def set_theme(self, theme: str) -> None:
+        self.settings.set("theme", theme)
+        self.apply_theme(theme)
 
     def apply_theme(self, theme: str) -> None:
         PageView.set_global_theme(theme)
@@ -1285,9 +1084,12 @@ class ReaderPage(Adw.NavigationPage):
             window.apply_theme(theme)
         else:
             apply_app_theme(theme, window)
+        self.dock.set_theme(theme)
         self.spread.queue_draw()
         self.scroll_view.queue_draw()
         self.focus_overlay.queue_draw()
+
+    # ---------------------------------------------------------- shortcuts
 
     def _install_shortcuts(self) -> None:
         def _on_next():
@@ -1331,7 +1133,7 @@ class ReaderPage(Adw.NavigationPage):
         def _on_close():
             if self.focus_overlay.is_active:
                 self.exit_focus()
-            elif self.search_bar.get_search_mode():
+            elif self.search_open:
                 self.close_search()
             else:
                 self._close_book()
@@ -1357,7 +1159,7 @@ class ReaderPage(Adw.NavigationPage):
             "toggle-activities": _ignore_during_focus(self.toggle_activities),
             "toggle-sidebar": _ignore_during_focus(self.toggle_sidebar),
             "cycle-theme": _ignore_during_focus(self.cycle_theme),
-            "help": self.show_shortcuts_dialog,
+            "help": self.show_help,
             "close": _on_close,
         }
         controller = Gtk.ShortcutController()
@@ -1373,31 +1175,50 @@ class ReaderPage(Adw.NavigationPage):
         self.add_controller(controller)
         self.set_focusable(True)
 
+    # ------------------------------------------------- fullscreen and close
+
     def _toggle_fullscreen(self) -> None:
         window = self.get_root()
         if window is None:
             return
+        if not self._fullscreen_handler:
+            self._fullscreen_handler = window.connect(
+                "notify::fullscreened", self._on_fullscreen_changed
+            )
         if window.is_fullscreen():
             window.unfullscreen()
         else:
             window.fullscreen()
 
+    def _on_fullscreen_changed(self, window, _param) -> None:
+        # In fullscreen the page has the whole board; the way out is in the
+        # dock's menu and on Esc.
+        fullscreen = window.is_fullscreen()
+        self.header.set_visible(not fullscreen)
+        self.dock.set_fullscreen(fullscreen)
+
     def _close_book(self) -> None:
         window = self.get_root()
-        if window is not None and hasattr(window, "navigation"):
+        if window is None:
+            return
+        if window.is_fullscreen():
+            window.unfullscreen()
+        if hasattr(window, "navigation"):
             window.navigation.pop()
-
-    # ----------------------------------------------------------- teardown
 
     def shutdown(self) -> None:
         """
-        Called when the page is popped. The render thread and the textures both
-        go now rather than when Python happens to collect the page: a book left
-        open is half a gigabyte of MuPDF store on a machine that has two.
+        Called when the page is popped. The render process and the textures
+        both go now rather than when Python happens to collect the page: a
+        book left open is half a gigabyte on a machine that has two.
         """
         if self._closed:
             return
         self._closed = True
+        window = self.get_root()
+        if window is not None and self._fullscreen_handler:
+            window.disconnect(self._fullscreen_handler)
+            self._fullscreen_handler = 0
         self.settings.set_last_page(self.item.id, self.current_page)
         self.focus_overlay.clear()
         self.search_controller.shutdown()

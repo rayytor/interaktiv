@@ -1,33 +1,33 @@
 """
-Focus mode: crop-zooming an activity, part, or numbered question.
+Focus mode: one activity, enlarged for the whole room.
 
-On a classroom smartboard, a teacher touches an activity to enlarge it for the
-whole room. A region that flows across multiple columns is zoomed piece by piece
--- never as a unioned bounding box covering everything in between.
-
-Focus mode owns the stage while active:
-  * Navigation (<-/->, N/P, Space, PageUp/Down) steps across activities.
-  * Sub-item navigation (^/v) steps through numbered questions.
-  * Zoom bias nudging (+/-/0) scales the crop with instant feedback.
-  * Tapping the background or pressing Esc restores the pre-focus state exactly.
+A teacher touches an activity and it fills the screen. A region that flows
+across columns is shown piece by piece, never as one box covering everything
+in between. The controls are in a dock at the bottom, like the reader's:
+step to the next activity, step through its numbered questions, zoom, close.
+Tapping the background or pressing Esc returns to the page as it was left.
 """
 
 import math
 from typing import Optional, Tuple
 
-from gi.repository import Gdk, GLib, Gtk, Pango
+from gi.repository import GLib, Gtk, Pango
 
 from interaktiv_core.geometry import PageTransform
 from interaktiv_core.regions import Activity
 
 from .. import icons
-from ..touch import TAP_SLOP, SwipeNavigator, bind_touch_tooltip, is_touch
+from ..touch import TAP_SLOP, SwipeNavigator, is_touch
+from .dock import dock_button, separator
 from .overlay import activity_label
 from .page_view import PageView
 
 Rect = Tuple[float, float, float, float]
 
 MAX_FOCUS_PIXELS = 8_000_000.0
+
+# What the stage is assumed to be before it has been laid out once.
+FALLBACK_STAGE = (800, 600)
 
 
 def calculate_focus_scale(
@@ -97,76 +97,7 @@ class FocusOverlay(Gtk.Box):
     # ------------------------------------------------------------------ UI
 
     def _build_ui(self) -> None:
-        # Top bar / chrome
-        bar = Gtk.CenterBox()
-        bar.add_css_class("focus-bar")
-
-        # Titles (left)
-        titles = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=12)
-        titles.add_css_class("focus-titles")
-
-        self.focus_label = Gtk.Label(label="Etkinlik")
-        self.focus_label.add_css_class("heading")
-
-        self.focus_headline = Gtk.Label(label="")
-        self.focus_headline.add_css_class("caption")
-        self.focus_headline.add_css_class("dim-label")
-        self.focus_headline.set_ellipsize(Pango.EllipsizeMode.END)
-        self.focus_headline.set_max_width_chars(50)
-        self.focus_headline.set_xalign(0.0)
-
-        titles.append(self.focus_label)
-        titles.append(self.focus_headline)
-        bar.set_start_widget(titles)
-
-        # Controls (right)
-        controls = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=6)
-        controls.add_css_class("focus-controls")
-
-        # Sub-item (question) navigation
-        self.btn_sub_prev = self._button(
-            "go-up-symbolic", "Önceki soru (↑)", lambda: self.step_sub_item(-1)
-        )
-        self.lbl_sub = Gtk.Label(label="Numaralı soru yok")
-        self.lbl_sub.add_css_class("caption-heading")
-        self.lbl_sub.add_css_class("focus-sub-label")
-
-        self.btn_sub_next = self._button(
-            "go-down-symbolic", "Sonraki soru (↓)", lambda: self.step_sub_item(1)
-        )
-
-        controls.append(self.btn_sub_prev)
-        controls.append(self.lbl_sub)
-        controls.append(self.btn_sub_next)
-        controls.append(Gtk.Separator(orientation=Gtk.Orientation.VERTICAL))
-
-        # Activity navigation
-        self.btn_prev = self._button(
-            icons.PREV_PAGE, "Önceki etkinlik (← / P)", lambda: self.step_activity(-1)
-        )
-        self.lbl_counter = Gtk.Label(label="%100")
-        self.lbl_counter.add_css_class("caption-heading")
-        self.lbl_counter.add_css_class("focus-counter")
-
-        self.btn_next = self._button(
-            icons.NEXT_PAGE, "Sonraki etkinlik (→ / N)", lambda: self.step_activity(1)
-        )
-
-        controls.append(self.btn_prev)
-        controls.append(self.lbl_counter)
-        controls.append(self.btn_next)
-        controls.append(Gtk.Separator(orientation=Gtk.Orientation.VERTICAL))
-
-        # Close
-        self.btn_close = self._button(
-            icons.CANCEL, "Odaktan çık (Esc)", self.exit
-        )
-        controls.append(self.btn_close)
-        bar.set_end_widget(controls)
-
-        self.append(bar)
-
-        # Stage (canvas host)
+        # The stage: the enlarged activity, centred.
         self.scroller = Gtk.ScrolledWindow(
             hscrollbar_policy=Gtk.PolicyType.AUTOMATIC,
             vscrollbar_policy=Gtk.PolicyType.AUTOMATIC,
@@ -176,11 +107,12 @@ class FocusOverlay(Gtk.Box):
         self.scroller.add_css_class("focus-stage")
 
         self.page_view = PageView()
+        self.page_view.add_css_class("focus-sheet")
         self.page_view.set_halign(Gtk.Align.CENTER)
         self.page_view.set_valign(Gtk.Align.CENTER)
         self.scroller.set_child(self.page_view)
 
-        # Clicking outside the page on the stage background exits focus
+        # A tap on the background leaves focus mode.
         self._stage_press = None
         self._stage_touch = False
         click = Gtk.GestureClick()
@@ -188,32 +120,97 @@ class FocusOverlay(Gtk.Box):
         click.connect("released", self._on_stage_clicked)
         self.scroller.add_controller(click)
 
-        # A flick sideways steps to the next activity, which is the same thing
-        # the arrows in the bar do and the only one of the two that is within
-        # reach of a teacher standing at the board. The crop fills the stage,
-        # so there is nothing here to pan and nothing to hand the drag back to.
+        # A flick sideways steps to the next activity, which is what the arrows
+        # in the dock do. The crop fills the stage, so there is nothing to pan.
         SwipeNavigator(self, lambda step: self.step_activity(step))
 
-        # Scroll / pinch nudging zoom
-        scroll = Gtk.EventControllerScroll.new(
-            Gtk.EventControllerScrollFlags.VERTICAL
-        )
+        scroll = Gtk.EventControllerScroll.new(Gtk.EventControllerScrollFlags.VERTICAL)
         scroll.connect("scroll", self._on_stage_scroll)
         self.scroller.add_controller(scroll)
 
-        # Window resize listener
-        self.scroller.connect("notify::width", self._on_stage_resized)
-        self.scroller.connect("notify::height", self._on_stage_resized)
+        # The stage's size is its adjustments' page size; a widget has no
+        # property to watch for its own allocation.
+        for adjustment in (self.scroller.get_hadjustment(), self.scroller.get_vadjustment()):
+            adjustment.connect("notify::page-size", self._on_stage_resized)
 
-        self.append(self.scroller)
+        # What is being shown, top left.
+        self.focus_label = Gtk.Label(label="Etkinlik", xalign=0.0)
+        self.focus_label.add_css_class("focus-title")
+        self.focus_headline = Gtk.Label(label="", xalign=0.0)
+        self.focus_headline.add_css_class("dim-label")
+        self.focus_headline.set_ellipsize(Pango.EllipsizeMode.END)
+        self.focus_headline.set_max_width_chars(60)
+        titles = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=2,
+                         halign=Gtk.Align.START, valign=Gtk.Align.START)
+        titles.add_css_class("focus-titles")
+        titles.set_can_target(False)
+        titles.append(self.focus_label)
+        titles.append(self.focus_headline)
+
+        stage = Gtk.Overlay(vexpand=True)
+        stage.set_child(self.scroller)
+        stage.add_overlay(titles)
+        self.append(stage)
+        self.append(self._build_dock())
+
+    def _build_dock(self) -> Gtk.Widget:
+        dock = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=2,
+                       halign=Gtk.Align.CENTER)
+        dock.add_css_class("dock")
+
+        self.btn_close = self._button(icons.CANCEL, "Odaktan çık (Esc)", self.exit)
+        dock.append(self.btn_close)
+        dock.append(separator())
+
+        self.btn_prev = self._button(
+            icons.PREV_PAGE, "Önceki etkinlik (←)", lambda: self.step_activity(-1)
+        )
+        self.lbl_counter = Gtk.Label(label="")
+        self.lbl_counter.add_css_class("dock-label")
+        self.lbl_counter.add_css_class("numeric")
+        self.btn_next = self._button(
+            icons.NEXT_PAGE, "Sonraki etkinlik (→)", lambda: self.step_activity(1)
+        )
+        dock.append(self.btn_prev)
+        dock.append(self.lbl_counter)
+        dock.append(self.btn_next)
+
+        # Numbered questions: only there when the activity has any.
+        self.btn_sub_prev = self._button(
+            icons.UP, "Önceki soru (↑)", lambda: self.step_sub_item(-1)
+        )
+        self.lbl_sub = Gtk.Label(label="")
+        self.lbl_sub.add_css_class("dock-label")
+        self.lbl_sub.add_css_class("numeric")
+        self.btn_sub_next = self._button(
+            icons.DOWN, "Sonraki soru (↓)", lambda: self.step_sub_item(1)
+        )
+        self.sub_group = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=2)
+        self.sub_group.append(separator())
+        self.sub_group.append(self.btn_sub_prev)
+        self.sub_group.append(self.lbl_sub)
+        self.sub_group.append(self.btn_sub_next)
+        dock.append(self.sub_group)
+
+        dock.append(separator())
+        dock.append(self._button(icons.ZOOM_OUT, "Küçült (−)", lambda: self.nudge_zoom(-0.2)))
+        self.lbl_zoom = Gtk.Label(label="")
+        self.lbl_zoom.add_css_class("dock-label")
+        self.lbl_zoom.add_css_class("numeric")
+        dock.append(self.lbl_zoom)
+        dock.append(self._button(icons.ZOOM_IN, "Büyüt (+)", lambda: self.nudge_zoom(0.2)))
+
+        row = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, halign=Gtk.Align.FILL)
+        row.add_css_class("dock-row")
+        dock.set_hexpand(True)
+        row.append(dock)
+        return row
 
     def _button(self, icon_name: str, tooltip: str, action) -> Gtk.Button:
-        btn = Gtk.Button(icon_name=icon_name, tooltip_text=tooltip)
-        btn.add_css_class("tool-btn")
-        bind_touch_tooltip(btn)
+        button = dock_button(icon_name, tooltip)
         if action is not None:
-            btn.connect("clicked", lambda *_: action())
-        return btn
+            button.connect("clicked", lambda *_: action())
+        return button
 
     # -------------------------------------------------------- Lifecycle
 
@@ -227,6 +224,8 @@ class FocusOverlay(Gtk.Box):
         self.set_visible(True)
         self.update_chrome()
         self.render_focus()
+        # The first time, the stage has no size yet and the crop was fitted to
+        # a guess; `_on_stage_resized` fits it again once the stage is laid out.
 
     def exit(self) -> None:
         if not self.is_active:
@@ -272,16 +271,19 @@ class FocusOverlay(Gtk.Box):
         if region_w <= 0 or region_h <= 0:
             return
 
-        # If region changed, clear stale texture so we don't display old pixels
+        # A new region must not show the previous one's pixels. Until its own
+        # render arrives it shows the same part of the page as already drawn
+        # by the reader: soft, but there at once.
         if self._last_rendered_region != region:
             self.page_view.clear_texture()
             self._last_rendered_region = region
+            self._show_preview(region)
 
         stage_w = self.scroller.get_width()
         stage_h = self.scroller.get_height()
         if stage_w <= 56 or stage_h <= 56:
-            stage_w = max(stage_w, 800)
-            stage_h = max(stage_h, 600)
+            stage_w = max(stage_w, FALLBACK_STAGE[0])
+            stage_h = max(stage_h, FALLBACK_STAGE[1])
 
         rot = self.reader.rotation % 360
         scale_factor = self.get_scale_factor()
@@ -320,27 +322,69 @@ class FocusOverlay(Gtk.Box):
 
         self.update_chrome()
 
+    def _show_preview(self, region: Rect) -> None:
+        """Show `region` out of the page texture the reader already holds."""
+        act = self.activity
+        info = getattr(self.reader.session, "info", None)
+        texture_for = getattr(self.reader, "page_texture", None)
+        if act is None or info is None or texture_for is None:
+            return
+        if getattr(self.reader, "rotation", 0) % 360:
+            return  # the page texture is rotated; the crop arrives soon enough
+        texture = texture_for(act.page_num)
+        if texture is None:
+            return
+        page_w, page_h = info.size(act.page_num)
+        if page_w <= 0 or page_h <= 0:
+            return
+        left, right = sorted((region[0], region[2]))
+        bottom, top = sorted((region[1], region[3]))
+        # PDF space has its origin at the bottom left; a texture at the top.
+        self.page_view.set_preview(texture, (
+            left / page_w, 1.0 - top / page_h,
+            (right - left) / page_w, (top - bottom) / page_h,
+        ))
+
+    def _position(self) -> Tuple[int, int]:
+        """Which activity of its page this is, and how many the page has."""
+        act = self.activity
+        overlay_for = getattr(self.reader.session, "overlay", None)
+        overlay = overlay_for(act.page_num) if overlay_for and act else None
+        activities = list(overlay.activities) if overlay is not None else []
+        for index, candidate in enumerate(activities):
+            if candidate is act or candidate.id == act.id:
+                return index + 1, len(activities)
+        return 0, len(activities)
+
     def update_chrome(self) -> None:
         act = self.activity
         if act is None:
             return
-        name = activity_label(act) or act.name()
-        self.focus_label.set_label(f"Sayfa {act.page_num} · {name}")
-        self.focus_headline.set_label(act.headline or "")
+        name = activity_label(act)
+        headline = (act.headline or "").strip()
+        title = f"Sayfa {act.page_num}"
+        if name and len(name) <= 3:
+            title += f" · Etkinlik {name}"
+        self.focus_label.set_label(title)
+        # The book's own heading for the activity, when it has more to say
+        # than the word "Etkinlik".
+        self.focus_headline.set_label(headline)
+        self.focus_headline.set_visible(len(headline) > len("Etkinlik"))
+
+        index, count = self._position()
+        self.lbl_counter.set_label(f"{index} / {count}" if index else "")
 
         has_items = len(act.items) > 0
+        self.sub_group.set_visible(has_items)
         self.btn_sub_prev.set_sensitive(has_items and self.sub_index > -1)
         self.btn_sub_next.set_sensitive(has_items and self.sub_index < len(act.items) - 1)
-
-        if not has_items:
-            self.lbl_sub.set_label("Numaralı soru yok")
-        elif self.sub_index >= 0:
-            q_label = act.items[self.sub_index].label or str(self.sub_index + 1)
-            self.lbl_sub.set_label(f"Soru {q_label} / {len(act.items)}")
-        else:
+        if has_items and self.sub_index >= 0:
+            question = act.items[self.sub_index].label or str(self.sub_index + 1)
+            self.lbl_sub.set_label(f"Soru {question}")
+        elif has_items:
             self.lbl_sub.set_label(f"{len(act.items)} soru")
 
-        self.lbl_counter.set_label(f"%{round(self.focus_scale * 100)}")
+        self.lbl_zoom.set_label(f"%{round(self.focus_scale * 100)}")
 
     # ------------------------------------------------------- Navigation
 
@@ -425,18 +469,14 @@ class FocusOverlay(Gtk.Box):
         if press is not None and self._stage_touch:
             if max(abs(x - press[0]), abs(y - press[1])) > TAP_SLOP:
                 return
-        # If click is outside the PageView, exit focus
-        child = self.scroller.get_child()
-        if child is not None:
-            success, point = child.compute_point(self.scroller, Gdk.Point(x=0, y=0))
-            # If coordinates are outside child bounds
-            w = child.get_width()
-            h = child.get_height()
-            cx = child.get_allocation().x
-            cy = child.get_allocation().y
-            if not (cx <= x <= cx + w and cy <= y <= cy + h):
-                gesture.set_state(Gtk.EventSequenceState.CLAIMED)
-                self.exit()
+        ok, bounds = self.page_view.compute_bounds(self.scroller)
+        inside = ok and (
+            bounds.get_x() <= x <= bounds.get_x() + bounds.get_width()
+            and bounds.get_y() <= y <= bounds.get_y() + bounds.get_height()
+        )
+        if not inside:
+            gesture.set_state(Gtk.EventSequenceState.CLAIMED)
+            self.exit()
 
     def _on_stage_scroll(self, _controller, _dx: float, dy: float) -> bool:
         if not self.is_active:

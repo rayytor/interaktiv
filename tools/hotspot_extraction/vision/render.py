@@ -262,7 +262,7 @@ def discover_books(books_dir: Path, only: Optional[Iterable[str]] = None) -> Lis
     for b in books:
         b["title"] = b["book_id"]
     try:
-        from books_manager import BooksManager  # noqa: WPS433
+        from interaktiv_core.catalogue import BooksManager  # noqa: WPS433
         manager = BooksManager(base_dir=str(PROJECT_ROOT), edition="full")
         titles = {b["id"]: b.get("title", b["id"]) for b in manager.books if b.get("id")}
         for b in books:

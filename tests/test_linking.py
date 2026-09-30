@@ -2,9 +2,8 @@
 The rule that joins the publisher's interactive activities to the regions on a
 page (`interaktiv_core.linking`).
 
-These are the cases `tools/hotspot_extraction/tests/test_interactive_links.mjs`
-covers for the web reader, ported so that the one shared Python implementation
-is held to the same standard, plus the two the JS version gets wrong.
+Including the two cases an earlier implementation got wrong: two activities
+with the same letter on one page, and a manifest entry no region claims.
 """
 
 import json

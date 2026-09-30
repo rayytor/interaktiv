@@ -1,39 +1,56 @@
 """
-The reader sidebar: thumbnails, bookmarks (TOC), and activities.
+The reader sidebar: three tabs over one stack.
 
-Layout uses an `Adw.ViewStack` and `Adw.InlineViewSwitcher` with three tabs:
-  1. Thumbnails (`ThumbnailsPanel`): page thumbnails with spread grouping in book
-     mode (`initBookThumbnails`, `viewer.js:2183`) and single pages in single/scroll mode.
-     Recycling in `Gtk.GridView` / `Gtk.ListView` is the lazy loader.
-  2. Bookmarks (`BookmarksPanel`): hierarchical outline from `doc.get_toc()`
-     rendered using `Gtk.TreeListModel` + `Gtk.TreeExpander` + `Gtk.ListView`.
-  3. Activities (`ActivitiesSidebar`): lettered & interactive activities list.
+  1. Thumbnails (`ThumbnailsPanel`): one row per page, or per spread in book
+     mode. A thumbnail is rendered only while its row is on screen.
+  2. Bookmarks (`BookmarksPanel`): the book's outline as a tree.
+  3. Activities (`ActivitiesSidebar`): every activity in the book, by page.
 """
 
-from typing import Callable, Dict, Iterator, List, Optional, Sequence, Tuple
+from collections import OrderedDict
+from typing import Dict, Iterator, List, Optional, Sequence, Tuple
 
 from gi.repository import Adw, Gio, GLib, GObject, Gtk, Pango
 
+from .. import icons
 from ..render.service import LANE_THUMBNAIL
+from ..widgets import SegmentedControl, after_layout, scroll_to_item
 
 BATCH = 40
 
-# The page area of one thumbnail row, in pixels -- a spread included, so the
-# two sheets of a spread get half of it each. Everything else about the row
-# (its height, the scale it is rendered at, and through those the width the
-# sidebar asks for) is derived from this and the page's own aspect ratio.
-THUMB_WIDTH = 140
+# How wide one page is drawn in the thumbnail list: half the panel when a row
+# is a spread, more when a row is a single page. The row's height and render
+# scale follow from the page's own aspect ratio.
+SPREAD_PAGE_WIDTH = 146
+SINGLE_PAGE_WIDTH = 210
 SPREAD_GAP = 4
 # Rendered a little above display size: a thumbnail is read at arm's length on
 # a board, and a soft one is worse than a slightly dearer render.
 THUMB_OVERSAMPLE = 1.5
 # Portrait A4 as the stand-in for a page whose size is not known yet.
 DEFAULT_RATIO = 1.414
+# How many rendered thumbnails are kept; the rest are rendered again on demand.
+THUMB_CACHE_MAX = 120
 
 
 # ==============================================================================
 # 1. Activities Tab
 # ==============================================================================
+
+def display_name(name: str) -> str:
+    """
+    What a row calls its activity. The book's own heading is kept; a bare
+    letter or number is only a label, so it is said in words.
+    """
+    name = (name or "").strip()
+    if not name:
+        return "Etkinlik"
+    if name.isdigit():
+        return f"Soru {name}"
+    if len(name) <= 2:
+        return f"Etkinlik {name}"
+    return name
+
 
 class ActivityItem(GObject.Object):
     __gtype_name__ = "InteraktivActivityItem"
@@ -67,19 +84,12 @@ class ActivitiesSidebar(Gtk.Box):
         self._fill_source = 0
         self._selecting = False
 
-        self.heading = Gtk.Label(label="Etkinlikler", xalign=0.0)
-        self.heading.add_css_class("heading")
+        # The tab above already says "Etkinlikler"; this line only counts them.
         self.subheading = Gtk.Label(label="", xalign=0.0)
         self.subheading.add_css_class("caption")
         self.subheading.add_css_class("dim-label")
-        head = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=2)
-        head.add_css_class("sidebar-head")
-        head.append(self.heading)
-        head.append(self.subheading)
-        self.append(head)
-        # No rule of its own: the sidebar's tab switcher already draws one
-        # directly above this heading, and two hairlines twelve pixels apart
-        # in a 232 px panel read as a mistake.
+        self.subheading.add_css_class("sidebar-head")
+        self.append(self.subheading)
 
         self.store = Gio.ListStore(item_type=ActivityItem)
         self.selection = Gtk.SingleSelection(model=self.store)
@@ -100,7 +110,7 @@ class ActivitiesSidebar(Gtk.Box):
         scroller.set_child(self.list)
 
         self.empty = Adw.StatusPage(
-            icon_name="edit-find-symbolic",
+            icon_name=icons.ACTIVITIES,
             title="Etkinlik yok",
             description="Bu kitap için hazırlanmış etkinlik bulunamadı.",
             vexpand=True,
@@ -185,8 +195,9 @@ class ActivitiesSidebar(Gtk.Box):
         text.append(name)
         text.append(detail)
 
-        bolt = Gtk.Label(label="⚡", valign=Gtk.Align.CENTER)
-        bolt.add_css_class("caption")
+        bolt = Gtk.Image.new_from_icon_name(icons.PLAY)
+        bolt.set_valign(Gtk.Align.CENTER)
+        bolt.set_tooltip_text("Etkileşimli etkinlik")
 
         row.append(page)
         row.append(text)
@@ -200,7 +211,7 @@ class ActivitiesSidebar(Gtk.Box):
     def _on_bind(self, _factory, list_item) -> None:
         item = list_item.get_item()
         list_item.page_label.set_label(str(item.page))
-        list_item.name_label.set_label(item.name or "Etkinlik")
+        list_item.name_label.set_label(display_name(item.name))
         # An activity with no numbered questions has nothing to say on the
         # second line, and an em dash standing in for it reads as a stray mark
         # under every second row. The row is simply one line tall instead,
@@ -229,7 +240,7 @@ class ActivitiesSidebar(Gtk.Box):
                 self._selecting = True
                 self.selection.set_selected(i)
                 self._selecting = False
-                self.list.scroll_to(i, Gtk.ListScrollFlags.NONE, None)
+                scroll_to_item(self.list, i)
                 return
 
     def shutdown(self) -> None:
@@ -268,8 +279,12 @@ class ThumbnailsPanel(Gtk.Box):
         self.mode = "book"
         self.rotation = 0
         self._selecting = False
-        self._thumb_cache: Dict[int, object] = {}  # page -> Gdk.Texture
+        self._thumb_cache: "OrderedDict[int, object]" = OrderedDict()  # page -> Gdk.Texture
         self._bound_pictures: Dict[int, List[Gtk.Picture]] = {}
+        # Pages asked for and not yet back, and the width each bound page wants.
+        self._requested: set = set()
+        self._slots: Dict[int, int] = {}
+        self._update_source = 0
 
         self.store = Gio.ListStore(item_type=ThumbnailItem)
         self.selection = Gtk.SingleSelection(model=self.store)
@@ -283,10 +298,10 @@ class ThumbnailsPanel(Gtk.Box):
         factory.connect("unbind", self._on_unbind)
         self._factory = factory
 
-        self.grid = Gtk.GridView(model=self.selection, factory=factory)
+        # A list, not a `Gtk.GridView`: GTK 4.8's grid view lays out only the
+        # first of these rows, whose heights differ with the pages' shapes.
+        self.grid = Gtk.ListView(model=self.selection, factory=factory)
         self.grid.add_css_class("thumbnails-grid")
-        self.grid.set_max_columns(1)
-        self.grid.set_min_columns(1)
 
         scroller = Gtk.ScrolledWindow(
             hscrollbar_policy=Gtk.PolicyType.NEVER,
@@ -296,6 +311,13 @@ class ThumbnailsPanel(Gtk.Box):
         scroller.set_child(self.grid)
         self.scroller = scroller
         self.append(scroller)
+
+        # The grid keeps some two hundred rows bound whether or not they can
+        # be seen, so thumbnails follow what is mapped, not what is bound.
+        vadjustment = scroller.get_vadjustment()
+        vadjustment.connect("value-changed", lambda *_: self._queue_update())
+        vadjustment.connect("changed", lambda *_: self._queue_update())
+        self.connect("map", self._on_map)
 
     def load(self, page_count: int, mode: str, rotation: int, service=None,
              page_sizes: Sequence[Tuple[float, float]] = ()) -> None:
@@ -314,6 +336,7 @@ class ThumbnailsPanel(Gtk.Box):
         # A spread gives each sheet half the width a single page gets, so the
         # cached pixels are at the wrong scale for the mode we just entered.
         self._thumb_cache.clear()
+        self._requested.clear()
         self._rebuild_items()
 
     def set_rotation(self, rotation: int) -> None:
@@ -322,7 +345,11 @@ class ThumbnailsPanel(Gtk.Box):
             return
         self.rotation = rotation
         self._thumb_cache.clear()
+        self._requested.clear()
         self._rebuild_items()
+
+    def _page_width(self) -> int:
+        return SPREAD_PAGE_WIDTH if self.mode == "book" else SINGLE_PAGE_WIDTH
 
     def _rebuild_items(self) -> None:
         self.store.remove_all()
@@ -364,13 +391,6 @@ class ThumbnailsPanel(Gtk.Box):
             if width > 0:
                 return width
         return 0.0
-
-    @staticmethod
-    def _slot_width(page_count: int) -> int:
-        """How wide one sheet of a row is: the whole row, or half of a spread."""
-        if page_count > 1:
-            return max(1, (THUMB_WIDTH - SPREAD_GAP) // 2)
-        return THUMB_WIDTH
 
     # -- factory callbacks ------------------------------------------------
 
@@ -417,7 +437,7 @@ class ThumbnailsPanel(Gtk.Box):
         list_item.label.set_text(item.label)
 
         pics = [list_item.pic1, list_item.pic2]
-        slot = self._slot_width(len(item.pages))
+        slot = self._page_width()
         for i, page in enumerate(item.pages):
             pic = pics[i]
             pic.set_visible(True)
@@ -426,11 +446,9 @@ class ThumbnailsPanel(Gtk.Box):
             # so the list does not jump as thumbnails land.
             pic.set_size_request(slot, max(1, round(slot * self._page_ratio(page))))
             self._bound_pictures.setdefault(page, []).append(pic)
-            if page in self._thumb_cache:
-                pic.set_paintable(self._thumb_cache[page])
-            else:
-                pic.set_paintable(None)
-                self._request_thumbnail(page, slot)
+            self._slots[page] = slot
+            pic.set_paintable(self._thumb_cache.get(page))
+        self._queue_update()
 
         if len(item.pages) < 2:
             list_item.pic2.set_visible(False)
@@ -447,8 +465,36 @@ class ThumbnailsPanel(Gtk.Box):
                         self._bound_pictures[page].remove(list_item.pic2)
                     if not self._bound_pictures[page]:
                         del self._bound_pictures[page]
+                        self._slots.pop(page, None)
         list_item.pic1.set_paintable(None)
         list_item.pic2.set_paintable(None)
+
+    def _on_map(self, *_args) -> None:
+        # The selection moved while the panel was closed; show it again.
+        after_layout(self, self._show_selection)
+
+    def _show_selection(self) -> None:
+        selected = self.selection.get_selected()
+        if selected != Gtk.INVALID_LIST_POSITION:
+            scroll_to_item(self.grid, selected)
+        self._queue_update()
+
+    def _queue_update(self) -> None:
+        if not self._update_source:
+            self._update_source = GLib.idle_add(self._request_visible)
+
+    def _request_visible(self) -> bool:
+        """Ask for the thumbnails whose rows are on screen and still empty."""
+        self._update_source = 0
+        if not self.get_mapped():
+            return GLib.SOURCE_REMOVE
+        for page, pictures in list(self._bound_pictures.items()):
+            if page in self._thumb_cache or page in self._requested:
+                continue
+            if any(picture.get_mapped() for picture in pictures):
+                self._requested.add(page)
+                self._request_thumbnail(page, self._slots.get(page, self._page_width()))
+        return GLib.SOURCE_REMOVE
 
     def _request_thumbnail(self, page: int, slot_width: int) -> None:
         if self.service is None:
@@ -472,7 +518,11 @@ class ThumbnailsPanel(Gtk.Box):
             # belongs to were re-requested when the rotation changed.
             return
         page = result.request.page
+        self._requested.discard(page)
         self._thumb_cache[page] = result.texture
+        self._thumb_cache.move_to_end(page)
+        while len(self._thumb_cache) > THUMB_CACHE_MAX:
+            self._thumb_cache.popitem(last=False)
         for pic in self._bound_pictures.get(page, []):
             pic.set_paintable(result.texture)
 
@@ -494,13 +544,18 @@ class ThumbnailsPanel(Gtk.Box):
                     self._selecting = True
                     self.selection.set_selected(i)
                     self._selecting = False
-                    self.grid.scroll_to(i, Gtk.ListScrollFlags.NONE, None)
+                    scroll_to_item(self.grid, i)
                 return
 
     def shutdown(self) -> None:
+        if self._update_source:
+            GLib.source_remove(self._update_source)
+            self._update_source = 0
         self.store.remove_all()
         self._thumb_cache.clear()
         self._bound_pictures.clear()
+        self._requested.clear()
+        self._slots.clear()
         self.service = None
 
 
@@ -547,7 +602,7 @@ class BookmarksPanel(Gtk.Box):
         self._selecting = False
 
         self.empty = Adw.StatusPage(
-            icon_name="user-bookmarks-symbolic",
+            icon_name=icons.BOOKMARK,
             title="Yer imi yok",
             description="Bu PDF'te yer imi bulunamadı.",
             vexpand=True,
@@ -666,33 +721,25 @@ class ReaderSidebar(Gtk.Box):
         self.activities.connect("activity-chosen", lambda _w, p, a: self.emit("activity-chosen", p, a))
 
         self.view_stack = Adw.ViewStack(vexpand=True)
-        self.view_stack.add_titled_with_icon(
-            self.thumbnails, "thumbnails", "Küçük Resimler", "view-grid-symbolic"
-        )
-        self.view_stack.add_titled_with_icon(
-            self.bookmarks, "bookmarks", "İçindekiler", "user-bookmarks-symbolic"
-        )
-        self.view_stack.add_titled_with_icon(
-            self.activities, "activities", "Etkinlikler", "selection-mode-symbolic"
-        )
+        self.view_stack.add_named(self.thumbnails, "thumbnails")
+        self.view_stack.add_named(self.bookmarks, "bookmarks")
+        self.view_stack.add_named(self.activities, "activities")
 
-        switcher = Adw.InlineViewSwitcher()
-        switcher.set_stack(self.view_stack)
-        # Icons, not labels: three Turkish tab names want three hundred pixels
-        # of header, and the sidebar is a hundred narrower than that. The
-        # switcher keeps each page's title as the button's tooltip.
-        switcher.set_display_mode(Adw.InlineViewSwitcherDisplayMode.ICONS)
-        # Three equal tabs across the sidebar rather than three buttons huddled
-        # at its left edge: the switcher is the sidebar's heading, so it spans it.
-        switcher.set_homogeneous(True)
+        switcher = SegmentedControl(homogeneous=True)
+        switcher.add("thumbnails", label="Sayfalar")
+        switcher.add("bookmarks", label="İçindekiler")
+        switcher.add("activities", label="Etkinlikler")
+        switcher.set_active_name("thumbnails")
+        switcher.connect(
+            "changed", lambda _s, name: self.view_stack.set_visible_child_name(name)
+        )
         switcher.set_hexpand(True)
         switcher.add_css_class("sidebar-switcher")
-        switcher.add_css_class("round")
+        self.switcher = switcher
 
         head = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
         head.add_css_class("sidebar-header-box")
         head.append(switcher)
-        head.append(Gtk.Separator())
 
         self.append(head)
         self.append(self.view_stack)

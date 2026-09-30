@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2cc4d0"/>
+      <stop offset="1" stop-color="#0a7f8c"/>
+    </linearGradient>
+    <linearGradient id="left" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#d9f1f3"/>
+    </linearGradient>
+  </defs>
+  <!-- tile -->
+  <rect x="10" y="12" width="108" height="108" rx="27" fill="#075c66"/>
+  <rect x="10" y="8" width="108" height="108" rx="27" fill="url(#tile)"/>
+  <!-- open book -->
+  <path d="M64 38c-9-7-23-8.500-37-5v53c14-3.500 28-2.500 37 5z" fill="url(#left)"/>
+  <path d="M64 38c9-7 23-8.500 37-5v53c-14-3.500-28-2.500-37 5z" fill="#ffffff"/>
+  <!-- lines of text on the left page -->
+  <g fill="#0a7f8c" opacity="0.38">
+    <rect x="35" y="46" width="21" height="4.500" rx="2.250"/>
+    <rect x="35" y="56" width="21" height="4.500" rx="2.250"/>
+    <rect x="35" y="66" width="14" height="4.500" rx="2.250"/>
+  </g>
+  <!-- the activity on the right page -->
+  <rect x="71.500" y="44" width="22" height="17" rx="4.500" fill="#ffb020"/>
+  <rect x="71.500" y="67" width="22" height="4.500" rx="2.250" fill="#0a7f8c" opacity="0.38"/>
+</svg>

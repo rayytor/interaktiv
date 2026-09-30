@@ -1,12 +1,8 @@
 """
 The rules about which pages are on screen, and how big they are.
 
-These are the parts of `viewer.js` that are pure arithmetic, kept out of the
-widgets so that they can be read -- and tested -- without a display attached.
-Every function here is a port of a specific piece of the web reader, named in
-its docstring, and the ports are deliberately literal: a teacher moving between
-the two builds should never find that page 41 faces page 42 in one and page 40
-in the other.
+Pure arithmetic, kept out of the widgets so that it can be read and tested
+without a display attached.
 
 The one thing worth knowing before reading them is the book-mode convention.
 Page 1 is a cover and stands alone; after that an even page faces the odd page
@@ -17,16 +13,15 @@ and `prev_page` are asymmetric at the front of the book.
 
 from typing import List, Optional, Sequence, Tuple
 
-# The web's `- 48`: 24 px of air on each side, so a page is never flush against
-# the chrome. (`calculateScale`, `viewer.js:680`.)
+# Air on each side of a page, so that it is never flush against the chrome.
 MARGIN = 24
 
-# `calculateScale`'s floor, and its "never smaller than a 320 px viewport" rule.
+# A fit never goes below this scale, and never fits a viewport smaller than this.
 MIN_SCALE = 0.2
 MIN_VIEWPORT = 320.0
 
-# What a zoom may be asked for, by any route: the dropdown, `+`/`-`, a pinch,
-# or ctrl+wheel. The web reader's own clamp (`viewer.js:700`).
+# What a zoom may be asked for, by any route: the dock, `+`/`-`, a pinch, or
+# ctrl+wheel.
 ZOOM_MIN = 0.3
 ZOOM_MAX = 3.0
 ZOOM_STEP = 0.2
@@ -34,12 +29,11 @@ ZOOM_STEP = 0.2
 
 def pages_for(page: int, total: int, mode: str) -> List[int]:
     """
-    Which pages a spread shows. Port of `renderBookMode` (`viewer.js:752`).
+    Which pages a spread shows.
 
-    In book mode this also decides what "the current page" becomes: the web
-    rewrites `currentPage` and the page-number box to the left page before it
-    draws, so typing 43 into the box lands on the 42|43 spread and the box then
-    reads 42.
+    In book mode this also decides what "the current page" becomes: the left
+    page of the spread, so asking for 43 lands on the 42|43 spread and the
+    page number then reads 42.
     """
     if total <= 0:
         return []
@@ -55,7 +49,7 @@ def pages_for(page: int, total: int, mode: str) -> List[int]:
 def next_page(current: int, total: int, mode: str,
               spread: Optional[Sequence[int]] = None) -> int:
     """
-    Where "next" goes. Port of `nextPage` (`viewer.js:626`).
+    Where "next" goes.
 
     Book mode's asymmetry at the cover is the whole point: from page 1, which is
     alone, next is page 2 and not page 3, because 2|3 is the first real spread.
@@ -79,7 +73,7 @@ def next_page(current: int, total: int, mode: str,
 
 def prev_page(current: int, total: int, mode: str) -> int:
     """
-    Where "previous" goes. Port of `prevPage` (`viewer.js:646`).
+    Where "previous" goes.
 
     Anywhere in the first spread goes to the cover, not to a half-step: from
     page 2 or 3, back is page 1.
@@ -112,8 +106,7 @@ def spread_size(sizes: Sequence[Tuple[float, float]], rotation: int = 0) -> Tupl
 def fit_scale(spread_w: float, spread_h: float, avail_w: float, avail_h: float,
               zoom_mode: str, custom_zoom: float = 1.0) -> float:
     """
-    Logical pixels per PDF point. Port of `calculateScale` (`viewer.js:680`),
-    floor and 320 px minimum viewport included.
+    Logical pixels per PDF point, with the floor and the minimum viewport applied.
 
     `avail_w` and `avail_h` are the space left after `MARGIN` has been taken off
     both sides, so callers subtract it rather than having it applied twice.

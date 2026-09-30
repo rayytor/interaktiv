@@ -1,17 +1,15 @@
 """
 Press to turn one page; hold to keep turning.
 
-A port of `bindHoldRepeat` (`viewer.js:2496`) and of the reasoning behind it: on
-a smartboard, twenty taps is the wrong gesture for twenty pages. Only after a
-pause does holding start to repeat, so a long press does not overshoot before
+On a smartboard, twenty taps is the wrong gesture for twenty pages. Only after
+a pause does holding start to repeat, so a long press does not overshoot before
 the teacher has decided how far to go.
 
 Mouse and finger commit at different moments, and this is the one place in the
 reader where that difference is visible:
 
   * **A mouse press is already a decision.** The button goes down on the page
-    turn and nowhere else, so the first page turns on the press -- immediately,
-    as the web version does.
+    turn and nowhere else, so the first page turns on the press, immediately.
   * **A finger press is not.** These buttons are the two invisible strips down
     the sides of the reading area, lying over the sheet itself, so a finger
     landing there may be starting a pan or a swipe rather than asking for a
@@ -21,12 +19,10 @@ reader where that difference is visible:
     the page turns on *release*, and only if the finger stayed put: a tap is
     still exactly one page, and a drag is no pages at all.
 
-Two further divergences from the web version, both deliberate:
+Two details follow from that:
 
-  * The trailing activation is swallowed once, not conditionally. In the browser
-    the press turns a page and the `click` that follows turns another unless a
-    hold intervened, which on a mouse means two pages per tap; here a pointer
-    press is the whole gesture and the button's own `clicked` is consumed.
+  * A pointer press is the whole gesture, so the button's own `clicked` that
+    trails it is consumed once; otherwise a mouse tap would turn two pages.
   * Keyboard activation still turns exactly one page. Enter and Space raise
     `clicked` with no pointer sequence in front of it, so nothing is swallowed.
 """

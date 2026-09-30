@@ -52,7 +52,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
 sys.path.insert(0, ROOT)
 
-from books_manager import BooksManager  # noqa: E402  (after sys.path)
+from interaktiv_core.catalogue import BooksManager  # noqa: E402  (after sys.path)
 
 SCANNER = os.path.join(HERE, "scan.py")
 USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) Interaktiv/1.0"

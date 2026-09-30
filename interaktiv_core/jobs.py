@@ -1,12 +1,9 @@
 """
 Work the reader starts and does not wait for.
 
-These four used to live inside `server.py`, where they were reachable only as
-HTTP endpoints. None of them is about HTTP: baking a book that arrived unbaked,
-resolving an activity bundle to a file, fetching one that is not on disk yet, and
-keeping MuPDF's cache from growing without bound are all things a reader does
-whatever its front end is. They are lifted here so the native reader can call
-them directly and the web server can keep calling them through its routes.
+Baking a book that arrived unbaked, resolving an activity bundle to a file,
+fetching one that is not on disk yet, and keeping MuPDF's cache from growing
+without bound.
 
 Everything here is safe to call from a worker thread and returns plain data; none
 of it touches a widget.
@@ -184,11 +181,9 @@ def fetch_activity(
     """
     Cache an activity bundle locally, so opening it a second time works offline.
 
-    The web reader has always asked for this and never got it -- it calls an
-    endpoint `server.py` does not define -- so this is the first implementation
-    rather than a port. `only_html` keeps the fetch small: the markup is stored
-    and its media references are rewritten to the CDN, which is what makes a
-    first open cheap and a second one instant.
+    `only_html` keeps the fetch small: the markup is stored and its media
+    references are rewritten to the CDN, which is what makes a first open cheap
+    and a second one instant.
 
     Returns True if a fetch was started.
     """

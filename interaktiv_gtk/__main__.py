@@ -1,23 +1,19 @@
-"""
-`python3 -m interaktiv_gtk` -- the native School Edition.
-
-The flags mirror `main.py`'s, minus everything about a port and a browser:
-there is no server and no Chromium to point at one.
-"""
+"""`python3 -m interaktiv_gtk`: start the reader."""
 
 import argparse
 import os
 import sys
+import traceback
 
-# Running from a source checkout, so that `books_manager` and `interaktiv_core`
-# import whether or not the project is installed.
+# Running from a source checkout or the board bundle, so that `interaktiv_core`
+# imports whether or not the project is installed.
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 
-def main(argv=None) -> int:
+def parse_args(argv=None):
     parser = argparse.ArgumentParser(
         prog="interaktiv_gtk",
-        description="Interaktiv PDF Reader - School Edition (GTK4 / libadwaita)",
+        description="Interaktiv, a textbook reader for classroom smart boards.",
     )
     parser.add_argument(
         "--edition",
@@ -34,18 +30,51 @@ def main(argv=None) -> int:
     parser.add_argument(
         "--activities-cache",
         default=None,
-        help="Where JIT-fetched interactive activities are cached. "
+        help="Where fetched interactive activities are cached. "
              "Default: $XDG_CACHE_HOME/interaktiv/activities",
     )
-    args = parser.parse_args(argv)
-
-    from .app import InteraktivApp
-
-    app = InteraktivApp(
-        edition=args.edition,
-        library_dir=args.library,
-        activities_cache_dir=args.activities_cache,
+    parser.add_argument(
+        "--debug",
+        action="store_true",
+        help="Show page sizes and render times in the reader's status bar.",
     )
+    parser.add_argument(
+        "--selftest",
+        action="store_true",
+        help="Report whether this machine has what the reader needs, and exit.",
+    )
+    return parser.parse_args(argv)
+
+
+def main(argv=None) -> int:
+    args = parse_args(argv)
+
+    from . import TOOLKIT_ERROR, failure
+
+    if args.selftest:
+        from . import selftest
+
+        return selftest.run()
+
+    failure.start_log()
+    if TOOLKIT_ERROR is not None:
+        failure.report(
+            "GTK 4 ve libadwaita bulunamadı.", f"{type(TOOLKIT_ERROR).__name__}: {TOOLKIT_ERROR}"
+        )
+        return 1
+
+    try:
+        from .app import InteraktivApp
+
+        app = InteraktivApp(
+            edition=args.edition,
+            library_dir=args.library,
+            activities_cache_dir=args.activities_cache,
+            debug=args.debug,
+        )
+    except Exception as error:
+        failure.report(f"{type(error).__name__}: {error}", traceback.format_exc())
+        return 1
     return app.run([])
 
 

@@ -59,7 +59,7 @@ if PROJECT_ROOT not in sys.path:
 import psutil  # noqa: E402
 import pymupdf  # noqa: E402
 
-from books_manager import BooksManager  # noqa: E402
+from interaktiv_core.catalogue import BooksManager  # noqa: E402
 from tools.hotspot_extraction.scan import _trim_memory  # noqa: E402
 from tools.hotspot_extraction.scanner import (  # noqa: E402
     PagePrimitives,

@@ -2,13 +2,9 @@
 The catalogue as the library view needs it.
 
 `BooksManager.get_all_books()` returns plain dicts rebuilt on every call. The
-view needs objects with a stable identity -- a card bound to a book must keep
-pointing at the same book across a reload, so that a download's progress lands
-on the card the teacher is watching -- so each record is folded into a
-long-lived `BookItem` instead of replacing it.
-
-The filter and grouping rules are a port of `js/dashboard.js:render()`, kept
-deliberately literal so that both editions answer a filter the same way.
+view needs objects with a stable identity, so that a download's progress lands
+on the card the teacher is watching after a reload; each record is folded into
+a long-lived `BookItem` instead of replacing it.
 """
 
 from dataclasses import dataclass, field
@@ -26,7 +22,7 @@ GRADES = [
     (0, "Seçmeli Dersler"),
 ]
 
-# The seven filter tabs, in the order `index.html` lists them.
+# The seven filter chips, in order.
 FILTERS = ["all", "installed", "9", "10", "11", "12", "0"]
 
 FILTER_LABELS = {
@@ -41,14 +37,12 @@ FILTER_LABELS = {
 
 CONFIDENCE_LABELS = {"strong": "Güçlü", "weak": "Zayıf", "none": "Yok"}
 
-# Searching a Turkish catalogue with `lower()` alone does not work, and the web
-# dashboard does exactly that. Python and JavaScript both lowercase "İ" to an
-# "i" followed by a combining dot above, so typing "BİYOLOJİ" matches nothing;
-# and a teacher on a keyboard without the Turkish letters types "cografya" for
-# "Coğrafya" and "TARIH" for "Tarih". Folding the dotted and dotless i together
-# with the other Turkish diacritics makes all of those find the book. This is a
-# deliberate divergence from `dashboard.js`: the rule there is not one worth
-# being faithful to.
+# Searching a Turkish catalogue with `lower()` alone does not work: Python
+# lowercases "İ" to an "i" followed by a combining dot above, so typing
+# "BİYOLOJİ" matches nothing; and a teacher on a keyboard without the Turkish
+# letters types "cografya" for "Coğrafya" and "TARIH" for "Tarih". Folding the
+# dotted and dotless i together with the other Turkish diacritics makes all of
+# those find the book.
 _FOLD = str.maketrans({
     "İ": "i", "I": "i", "ı": "i", "i": "i", "Î": "i", "î": "i",
     "Ş": "s", "ş": "s",
@@ -157,14 +151,6 @@ class BookItem(GObject.Object):
     # -- derived ----------------------------------------------------------
 
     @property
-    def meta_text(self) -> str:
-        """`gradeLabel` plus the file size, as `createBookCardHTML` composes it."""
-        text = self.grade_label
-        if self.is_installed and self.file_size:
-            text += f" • {self.file_size / (1024 * 1024):.0f} MB"
-        return text
-
-    @property
     def confidence_label(self) -> Optional[str]:
         if not self.confidence:
             return None
@@ -172,7 +158,7 @@ class BookItem(GObject.Object):
 
     def matches(self, query: str) -> bool:
         """
-        `dashboard.js` searches the title and the grade label, nothing else.
+        Whether a search hits this book: its title and grade label, nothing else.
 
         `query` is expected already folded by `fold()`; the haystack is folded
         here so that a search survives Turkish casing.
@@ -240,9 +226,6 @@ class LibraryModel:
     def sections(self, active_filter: str, query: str) -> List[Section]:
         """
         The groups to draw, in order, for one filter and search box.
-
-        A literal port of `dashboard.js:render` /
-        `renderInstalledSection` / `renderCatalogSection`:
 
           * search narrows first, on title and grade label;
           * `installed` keeps only installed books and shows no grade groups;

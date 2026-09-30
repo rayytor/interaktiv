@@ -112,8 +112,7 @@ class PageTransform:
         A rect in PDF user space to a widget rect, normalised.
 
         Both corners are transformed and then min/max'd, because a rotation
-        swaps which corner is which -- the same normalisation the web reader's
-        `rectToViewport` does after `convertToViewportRectangle`.
+        swaps which corner is which.
         """
         ax, ay = self.point_to_widget(rect[0], rect[1])
         bx, by = self.point_to_widget(rect[2], rect[3])

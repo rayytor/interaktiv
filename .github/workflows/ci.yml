@@ -1,0 +1,35 @@
+# Lint, the API floor and the test suite, on the toolkit the oldest board has:
+# Debian 12 with GTK 4.8, libadwaita 1.2 and Python 3.11.
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  floor:
+    runs-on: ubuntu-latest
+    container: debian:bookworm
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install the floor toolkit
+        run: |
+          apt-get update -qq
+          DEBIAN_FRONTEND=noninteractive apt-get install -y -qq --no-install-recommends \
+            python3 python3-pip python3-gi python3-pytest \
+            gir1.2-gtk-4.0 gir1.2-adw-1 gir1.2-graphene-1.0 \
+            libgtk-4-dev libadwaita-1-dev \
+            xvfb xauth adwaita-icon-theme librsvg2-common fonts-dejavu-core
+          pip3 install --break-system-packages --only-binary=:all: pymupdf psutil ruff
+      - name: Lint
+        run: ruff check .
+      - name: API floor
+        run: python3 tools/check_api_floor.py --maybe
+      - name: Tests
+        env:
+          GDK_BACKEND: x11
+          GSK_RENDERER: cairo
+          GTK_A11Y: none
+        run: xvfb-run -a python3 -m pytest
+      - name: Bundle scripts parse
+        run: for f in packaging/board/*.sh packaging/board/bundle/* packaging/board/stick/autorun.sh; do sh -n "$f"; done

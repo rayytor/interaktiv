@@ -16,8 +16,7 @@ Rect = Tuple[float, float, float, float]
 # applied. A page of a school book at fit-page on a 4K board is well under it;
 # the cap exists for deep custom zoom and for focus mode's crops, where the
 # requested scale is otherwise unbounded. Going over it does not fail -- the
-# scale is reduced and the result is painted up, slightly soft, which is what
-# the web reader's `dpr -= 0.25` back-off achieved by a different route.
+# scale is reduced and the result is painted up, slightly soft.
 MAX_RENDER_PIXELS = 8_000_000
 
 

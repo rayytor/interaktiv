@@ -1,10 +1,10 @@
 """
-One book in the catalogue grid.
+One book in the catalogue grid: a cover, a title, and one thing a tap does.
 
-The card is a port of `dashboard.js:createBookCardHTML`, including which
-controls appear when: a download in flight replaces the buttons entirely with
-its own progress and a cancel, so the install and preview paths can never both
-be running for one book and nothing has to arbitrate between them.
+The whole card is the button. What it does follows from the book's state: an
+installed book opens, a book that is not installed is downloaded, and in edit
+mode an installed book is removed. A download in flight shows its progress on
+the cover, with a cancel button of its own.
 
 One card is built per book and lives as long as the catalogue draw that made
 it, so the widget tree is built once in `__init__` and `bind()` only moves
@@ -13,37 +13,35 @@ values into it.
 
 from typing import Optional
 
-from gi.repository import GObject, Gtk
+from gi.repository import GObject, Gtk, Pango
 
 from .. import icons
 from ..touch import bind_touch_tooltip
 from .model import BookItem
 
-# Standard portrait A4 page aspect ratio (1 : sqrt(2) ≈ 1 : 1.414).
+# Portrait A4: 1 : sqrt(2).
 COVER_ASPECT_RATIO = 1.414
 
-# What `Gtk.FlowBox` divides the available width by to pick a column count,
-# standing in for `.books-grid`'s `minmax(232px, 1fr)`.
-CARD_WIDTH = 232
+# What `Gtk.FlowBox` divides the available width by to pick a column count.
+CARD_WIDTH = 196
 
-# At the minimum card width, an A4 page is 328 px tall.
 COVER_HEIGHT = int(round(CARD_WIDTH * COVER_ASPECT_RATIO))
 
 
 class AspectCover(Gtk.Widget):
     """
-    Maintains the cover aspect ratio (A4 portrait) height-for-width.
+    Keeps its child at the cover's aspect ratio, height for width.
 
-    GTK's AspectFrame cannot be given a child with its own minimum size without
-    tripping an assertion failure, so this widget directly implements
-    height-for-width size negotiation without relying on GtkAspectFrame.
+    `Gtk.AspectFrame` cannot be given a child with its own minimum size without
+    tripping an assertion, so the size negotiation is done here.
     """
 
     __gtype_name__ = "InteraktivAspectCover"
 
-    def __init__(self, ratio: float = COVER_ASPECT_RATIO):
+    def __init__(self, ratio: float = COVER_ASPECT_RATIO, width: int = CARD_WIDTH):
         super().__init__()
         self.ratio = ratio
+        self.natural_width = width
         self._child: Optional[Gtk.Widget] = None
         self.set_overflow(Gtk.Overflow.HIDDEN)
 
@@ -62,12 +60,10 @@ class AspectCover(Gtk.Widget):
 
     def do_measure(self, orientation: Gtk.Orientation, for_size: int):
         if orientation == Gtk.Orientation.HORIZONTAL:
-            return 0, CARD_WIDTH, -1, -1
-        else:
-            if for_size != -1:
-                h = int(round(for_size * self.ratio))
-                return h, h, -1, -1
-            return COVER_HEIGHT, COVER_HEIGHT, -1, -1
+            return 0, self.natural_width, -1, -1
+        width = for_size if for_size != -1 else self.natural_width
+        height = int(round(width * self.ratio))
+        return height, height, -1, -1
 
     def do_size_allocate(self, width: int, height: int, baseline: int) -> None:
         if self._child is not None:
@@ -80,46 +76,44 @@ class AspectCover(Gtk.Widget):
         Gtk.Widget.do_dispose(self)
 
 
-class BookCard(Gtk.Box):
-    """A cover, a title, and whichever actions the book's state allows."""
-
+class BookCard(Gtk.Button):
     __gtype_name__ = "InteraktivBookCard"
     __gsignals__ = {
-        # Each carries the BookItem the button belongs to.
+        # Each carries the BookItem the card is showing.
         "open-book": (GObject.SignalFlags.RUN_FIRST, None, (object,)),
-        "preview-book": (GObject.SignalFlags.RUN_FIRST, None, (object,)),
         "install-book": (GObject.SignalFlags.RUN_FIRST, None, (object,)),
         "cancel-download": (GObject.SignalFlags.RUN_FIRST, None, (object,)),
         "uninstall-book": (GObject.SignalFlags.RUN_FIRST, None, (object,)),
     }
 
-    def __init__(self, covers, library_mode: bool = False):
-        super().__init__(orientation=Gtk.Orientation.VERTICAL, spacing=0)
-        # `.card` is libadwaita's own surface: it carries the elevation, the
-        # corner radius and the border that the light, dark and high-contrast
-        # styles each want, so none of the three is hand-drawn here. The card
-        # clips, which is what lets the cover run to its top corners.
-        self.add_css_class("card")
+    def __init__(self, covers, library_mode: bool = False, show_confidence: bool = False):
+        super().__init__()
+        self.add_css_class("flat")
         self.add_css_class("book-card")
-        self.set_overflow(Gtk.Overflow.HIDDEN)
         self.set_size_request(CARD_WIDTH, -1)
         self.covers = covers
         self.library_mode = library_mode
+        # How sure the activity detector was of this book: a developer's
+        # number, not something a teacher can act on.
+        self.show_confidence = show_confidence
+        self.editing = False
         self.item: Optional[BookItem] = None
         self._changed_handler = 0
         self._cover_token = 0
 
-        self._build_cover()
-        self._build_info()
+        body = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=10)
+        body.append(self._build_cover())
+        body.append(self._build_text())
+        self.set_child(body)
+        self.connect("clicked", self._on_clicked)
 
     # -- construction -----------------------------------------------------
 
-    def _build_cover(self) -> None:
-        self.cover_frame = AspectCover(COVER_ASPECT_RATIO)
+    def _build_cover(self) -> Gtk.Widget:
+        self.cover_frame = AspectCover()
+        self.cover_frame.add_css_class("book-cover")
 
         self.cover = Gtk.Overlay()
-        self.cover.add_css_class("book-cover")
-        self.cover.set_overflow(Gtk.Overflow.HIDDEN)
 
         placeholder = Gtk.Box(
             orientation=Gtk.Orientation.VERTICAL, spacing=8,
@@ -130,134 +124,89 @@ class BookCard(Gtk.Box):
         image = Gtk.Image.new_from_icon_name(icons.BOOK)
         image.set_pixel_size(40)
         placeholder.append(image)
-        self.placeholder_title = Gtk.Label(wrap=True, justify=Gtk.Justification.CENTER, max_width_chars=18)
+        self.placeholder_title = Gtk.Label(
+            wrap=True, justify=Gtk.Justification.CENTER, max_width_chars=16,
+        )
         self.placeholder_title.add_css_class("caption")
-        self.placeholder_title.add_css_class("book-cover-placeholder-title")
         placeholder.append(self.placeholder_title)
         self.cover.set_child(placeholder)
 
+        # Contain, not cover: a cover is never cropped.
         self.picture = Gtk.Picture(content_fit=Gtk.ContentFit.CONTAIN)
+        self.picture.add_css_class("book-cover-picture")
         self.picture.set_visible(False)
         self.cover.add_overlay(self.picture)
 
-        self.cover_frame.set_child(self.cover)
-        self.append(self.cover_frame)
+        self.cover.add_overlay(self._build_download_chip())
+        self.cover.add_overlay(self._build_progress())
+        self.cover.add_overlay(self._build_remove_badge())
 
-        click = Gtk.GestureClick()
-        click.connect("released", self._on_cover_clicked)
-        self.cover.add_controller(click)
-        self.cover.set_cursor_from_name("pointer")
-
-    def _build_info(self) -> None:
-        info = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
-        info.add_css_class("book-info")
-
-        # Every cell in a grid row is as tall as the tallest card in it, and a
-        # two-line title makes one card taller than its neighbours. The text
-        # takes the slack so the buttons stay on one line across the row --
-        # a teacher aiming at "Aç" should not have to aim at a different height
-        # for every book.
-        text = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6,
-                       vexpand=True, valign=Gtk.Align.START)
-
-        self.title_label = Gtk.Label(
-            xalign=0.0, wrap=True, lines=2, max_width_chars=24,
-            ellipsize=3,  # Pango.EllipsizeMode.END
-        )
-        self.title_label.add_css_class("heading")
-        self.title_label.add_css_class("book-title")
-        self.title_label.set_cursor_from_name("pointer")
-        title_click = Gtk.GestureClick()
-        title_click.connect("released", self._on_cover_clicked)
-        self.title_label.add_controller(title_click)
-        text.append(self.title_label)
-
-        meta = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=8)
-        meta.add_css_class("book-meta")
-        self.meta_label = Gtk.Label(xalign=0.0, hexpand=True, ellipsize=3)
-        self.meta_label.add_css_class("caption")
-        self.meta_label.add_css_class("dim-label")
-        meta.append(self.meta_label)
-        self.confidence_label = Gtk.Label()
+        self.confidence_label = Gtk.Label(halign=Gtk.Align.START, valign=Gtk.Align.START)
         self.confidence_label.add_css_class("caption")
         self.confidence_label.add_css_class("book-confidence")
         self.confidence_label.set_visible(False)
-        meta.append(self.confidence_label)
-        text.append(meta)
-        info.append(text)
+        self.cover.add_overlay(self.confidence_label)
 
-        # One of two faces: the buttons, or a download in progress.
-        self.actions_stack = Gtk.Stack(vhomogeneous=False, valign=Gtk.Align.END)
-        self.actions_stack.add_named(self._build_actions(), "actions")
-        self.actions_stack.add_named(self._build_progress(), "progress")
-        info.append(self.actions_stack)
+        self.cover_frame.set_child(self.cover)
+        return self.cover_frame
 
-        self.append(info)
-
-    def _build_actions(self) -> Gtk.Widget:
-        """
-        One labelled button and one icon button per card.
-
-        The suggested and destructive styles are deliberately absent. The HIG
-        allows a view a single button in either style, and a catalogue of
-        fifty-six books would otherwise show fifty-six accent-filled "Aç"
-        buttons and fifty-six red bins -- a wall of colour in which nothing is
-        emphasised because everything is. The card's own emphasis is the cover;
-        the warning about removing a book belongs to the dialog that asks.
-        """
-        box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=6)
-        box.add_css_class("book-actions")
-
-        self.btn_open = self._action_button("Aç", "open-book")
-        self.btn_open.set_tooltip_text("Kitabı aç")
-        self.btn_open.set_hexpand(True)
-        box.append(self.btn_open)
-
-        self.btn_preview = self._action_button("Önizle", "preview-book")
-        self.btn_preview.set_hexpand(True)
-        self.btn_preview.set_tooltip_text("Kitabı indirip açar")
-        box.append(self.btn_preview)
-
-        self.btn_install = self._icon_button(icons.INSTALL, "Kitabı İndir", "install-book")
-        box.append(self.btn_install)
-
-        self.btn_uninstall = self._icon_button(icons.UNINSTALL, "Kitabı Kaldır", "uninstall-book")
-        box.append(self.btn_uninstall)
-        return box
+    def _build_download_chip(self) -> Gtk.Widget:
+        chip = Gtk.Box(
+            orientation=Gtk.Orientation.HORIZONTAL, spacing=6,
+            halign=Gtk.Align.CENTER, valign=Gtk.Align.END,
+        )
+        chip.add_css_class("cover-chip")
+        chip.append(Gtk.Image.new_from_icon_name(icons.INSTALL))
+        chip.append(Gtk.Label(label="İndir"))
+        self.download_chip = chip
+        return chip
 
     def _build_progress(self) -> Gtk.Widget:
-        box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=4)
-        box.add_css_class("download-progress-box")
+        box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6, valign=Gtk.Align.END)
+        box.add_css_class("cover-progress")
         self.progress_bar = Gtk.ProgressBar()
         box.append(self.progress_bar)
 
-        row = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=8)
-        self.progress_label = Gtk.Label(xalign=0.0, hexpand=True, ellipsize=3)
+        row = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=6)
+        self.progress_label = Gtk.Label(
+            xalign=0.0, hexpand=True, ellipsize=Pango.EllipsizeMode.END,
+        )
         self.progress_label.add_css_class("caption")
-        self.progress_label.add_css_class("dim-label")
+        self.progress_label.add_css_class("numeric")
         row.append(self.progress_label)
-        self.btn_cancel = self._icon_button(icons.CANCEL, "İptal", "cancel-download")
-        self.btn_cancel.add_css_class("btn-cancel-download")
+        self.btn_cancel = Gtk.Button(icon_name=icons.CANCEL, tooltip_text="İndirmeyi iptal et")
+        self.btn_cancel.add_css_class("cover-button")
+        bind_touch_tooltip(self.btn_cancel)
+        self.btn_cancel.connect("clicked", self._emit_for_item, "cancel-download")
         row.append(self.btn_cancel)
         box.append(row)
+        self.progress_box = box
         return box
 
-    def _action_button(self, label: str, signal: str) -> Gtk.Button:
-        """A label, no icon: outside a header bar the HIG asks for one or the
-        other, and the word is what is read from the back of a classroom."""
-        button = Gtk.Button(label=label)
-        button.add_css_class("btn-card-action")
-        button.connect("clicked", self._emit_for_item, signal)
-        return button
+    def _build_remove_badge(self) -> Gtk.Widget:
+        badge = Gtk.Image.new_from_icon_name(icons.UNINSTALL)
+        badge.set_halign(Gtk.Align.END)
+        badge.set_valign(Gtk.Align.START)
+        badge.add_css_class("cover-remove")
+        self.remove_badge = badge
+        return badge
 
-    def _icon_button(self, icon_name: str, tooltip: str, signal: str) -> Gtk.Button:
-        button = Gtk.Button(icon_name=icon_name, tooltip_text=tooltip)
-        button.add_css_class("flat")
-        button.add_css_class("btn-card-icon")
-        # A finger never sees a tooltip; a long press is how it asks.
-        bind_touch_tooltip(button)
-        button.connect("clicked", self._emit_for_item, signal)
-        return button
+    def _build_text(self) -> Gtk.Widget:
+        text = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=2)
+        text.add_css_class("book-info")
+
+        self.title_label = Gtk.Label(
+            xalign=0.0, yalign=0.0, wrap=True, lines=2, max_width_chars=20,
+            ellipsize=Pango.EllipsizeMode.END,
+        )
+        self.title_label.add_css_class("book-title")
+        text.append(self.title_label)
+
+        self.meta_label = Gtk.Label(xalign=0.0, ellipsize=Pango.EllipsizeMode.END)
+        self.meta_label.add_css_class("caption")
+        self.meta_label.add_css_class("dim-label")
+        text.append(self.meta_label)
+        return text
 
     # -- binding ----------------------------------------------------------
 
@@ -278,6 +227,13 @@ class BookCard(Gtk.Box):
         self.picture.set_visible(False)
         self.placeholder.set_visible(True)
 
+    def set_editing(self, editing: bool) -> None:
+        """In edit mode a tap on an installed book removes it."""
+        if editing == self.editing:
+            return
+        self.editing = editing
+        self.refresh()
+
     def _load_cover(self, item: BookItem) -> None:
         self._cover_token += 1
         token = self._cover_token
@@ -289,7 +245,7 @@ class BookCard(Gtk.Box):
 
         def done(texture):
             if token != self._cover_token:
-                return  # The card was recycled onto another book meanwhile.
+                return  # The card was bound to another book meanwhile.
             self._show_cover(texture)
 
         self.covers.load(item.id, done)
@@ -309,46 +265,41 @@ class BookCard(Gtk.Box):
             return
 
         self.title_label.set_label(item.title)
-        self.title_label.set_tooltip_text(item.title)
         self.placeholder_title.set_label(item.title)
-        self.meta_label.set_label(item.meta_text)
+        self.meta_label.set_label(item.grade_label)
 
-        label = item.confidence_label
+        label = item.confidence_label if self.show_confidence else None
+        self.confidence_label.set_visible(bool(label))
         if label:
             self.confidence_label.set_label(label)
-            self.confidence_label.set_tooltip_text(f"Etkinlik Tespiti: {label}")
-            for name in ("conf-strong", "conf-weak", "conf-none"):
-                self.confidence_label.remove_css_class(name)
-            self.confidence_label.add_css_class(f"conf-{item.confidence}")
-            self.confidence_label.set_visible(True)
-        else:
-            self.confidence_label.set_visible(False)
 
-        if item.is_downloading:
-            self.actions_stack.set_visible_child_name("progress")
+        available = item.is_installed or self.library_mode
+        downloading = item.is_downloading
+
+        self.progress_box.set_visible(downloading)
+        if downloading:
             self.progress_bar.set_fraction(item.progress)
             self.progress_label.set_label(self._progress_text(item))
-            return
+        self.download_chip.set_visible(not available and not downloading)
+        removable = self.editing and item.is_installed and not self.library_mode
+        self.remove_badge.set_visible(removable)
 
-        self.actions_stack.set_visible_child_name("actions")
-        installed = item.is_installed
-        # A packaged book is opened, never installed or removed.
-        self.btn_open.set_visible(installed or self.library_mode)
-        self.btn_preview.set_visible(not installed and not self.library_mode)
-        self.btn_install.set_visible(not installed and not self.library_mode)
-        self.btn_uninstall.set_visible(installed and not self.library_mode)
+        for name, on in (("not-installed", not available), ("removable", removable)):
+            if on:
+                self.add_css_class(name)
+            else:
+                self.remove_css_class(name)
 
     @staticmethod
     def _progress_text(item: BookItem) -> str:
         info = item.download or {}
         percent = round(info.get("progress") or 0)
-        verb = "Önizleme indiriliyor" if item.download_kind == "preview" else "İndiriliyor"
         total = info.get("total_bytes") or 0
         if total:
             done_mb = (info.get("downloaded_bytes") or 0) / (1024 * 1024)
             total_mb = total / (1024 * 1024)
-            return f"{verb}: %{percent} ({done_mb:.0f} / {total_mb:.0f} MB)"
-        return f"{verb}: %{percent}"
+            return f"%{percent} · {done_mb:.0f} / {total_mb:.0f} MB"
+        return f"%{percent}"
 
     # -- events -----------------------------------------------------------
 
@@ -356,15 +307,13 @@ class BookCard(Gtk.Box):
         if self.item is not None:
             self.emit(signal, self.item)
 
-    def _on_cover_clicked(self, gesture, n_press: int, _x: float, _y: float) -> None:
-        if n_press != 1 or self.item is None:
+    def _on_clicked(self, _button) -> None:
+        item = self.item
+        if item is None or item.is_downloading:
             return
-        gesture.set_state(Gtk.EventSequenceState.CLAIMED)
-        if self.item.is_downloading:
-            return
-        # The cover opens an installed book and previews one that is not, which
-        # is what a click on the cover does in the web dashboard.
-        if self.item.is_installed or self.library_mode:
-            self.emit("open-book", self.item)
+        if self.editing and item.is_installed and not self.library_mode:
+            self.emit("uninstall-book", item)
+        elif item.is_installed or self.library_mode:
+            self.emit("open-book", item)
         else:
-            self.emit("preview-book", self.item)
+            self.emit("install-book", item)

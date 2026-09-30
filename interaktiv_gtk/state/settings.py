@@ -19,29 +19,33 @@ from interaktiv_core import appdirs
 # Writes are coalesced over this long; a quit flushes whatever is pending.
 SAVE_DELAY_MS = 1000
 
+# How many books the library's "continue" shelf remembers.
+RECENT_MAX = 8
+
 
 class Settings:
     DEFAULTS: Dict[str, Any] = {
         # Window
         "window_width": 1280,
         "window_height": 820,
-        "window_maximized": False,
+        # A board has one job; a laptop remembers what the teacher chose.
+        "window_maximized": True,
         # Library
         "library_filter": "all",
-        # Reader (used from M2 on; declared here so one file holds the schema)
+        # Reader
         "theme": "dark",
         "view_mode": "book",
         "zoom_mode": "fit-page",
         "sidebar_open": False,
-        # Whether every activity region is outlined, or only the one under the
-        # pointer. On by default, unlike the web: a board is touched, not
-        # hovered, so hover-to-reveal would leave the activities invisible.
+        # Whether every activity region is marked, or only the one under the
+        # pointer. On by default: a board is touched, not hovered, so
+        # hover-to-reveal would leave the activities invisible.
         "show_activities": True,
         "last_pages": {},
+        # Most recently read first: [{"id", "page", "pages"}].
+        "recent_books": [],
         # Whether a bake's calibration confidence may suppress activity links.
-        # Off by default: the web reader never applied the gate (`bakedPage()`
-        # does not copy `confidence` onto the page), so leaving it off is what
-        # keeps the native reader showing the same hotspots.
+        # Off by default: a weak bake still shows its hotspots.
         "link_confidence_gate": False,
     }
 
@@ -101,6 +105,31 @@ class Settings:
         pages[book_id] = int(page)
         self._data["last_pages"] = pages
         self._schedule()
+
+    def remember_position(self, book_id: str, page: int, page_count: int) -> None:
+        """Record where a book was left, and that it was the last one read."""
+        self.set_last_page(book_id, page)
+        entry = {"id": book_id, "page": int(page), "pages": int(page_count)}
+        recent = [e for e in self.recent_books() if e.get("id") != book_id]
+        recent.insert(0, entry)
+        recent = recent[:RECENT_MAX]
+        if recent != self._data.get("recent_books"):
+            self._data["recent_books"] = recent
+            self._schedule()
+
+    def recent_books(self) -> list:
+        """The books read most recently, newest first."""
+        recent = self._data.get("recent_books")
+        if not isinstance(recent, list):
+            return []
+        return [e for e in recent if isinstance(e, dict) and e.get("id")]
+
+    def forget_book(self, book_id: str) -> None:
+        """Drop a book from the continue shelf, as when it is removed."""
+        recent = [e for e in self.recent_books() if e.get("id") != book_id]
+        if recent != self._data.get("recent_books"):
+            self._data["recent_books"] = recent
+            self._schedule()
 
     # -- persistence ------------------------------------------------------
 

@@ -11,12 +11,12 @@ way round -- there the request is the page's full size and the scrolled window
 does the rest.
 
 The rules about which pages face each other and how big they are drawn are not
-here at all -- they are in `paging.py`, ported from `viewer.js` and readable
-without a display. This widget is what turns those numbers into an allocation
-and a render request.
+here at all -- they are in `paging.py`, plain arithmetic testable without a
+display. This widget turns those numbers into an allocation and a render
+request.
 """
 
-from typing import List, Optional, Sequence, Tuple
+from typing import Dict, List, Optional, Sequence, Tuple
 
 from gi.repository import GLib, GObject, Graphene, Gsk, Gtk
 
@@ -142,6 +142,13 @@ class SpreadView(Gtk.Widget):
     @property
     def zoom(self) -> float:
         return self._zoom
+
+    def texture_for(self, page: int):
+        """The texture on screen for `page`, if it is one of the open pages."""
+        for view in self._views:
+            if view.page == page and view.texture is not None:
+                return view.texture
+        return None
 
     def invalidate(self) -> None:
         """Everything queued is now stale; re-ask for what is on screen."""

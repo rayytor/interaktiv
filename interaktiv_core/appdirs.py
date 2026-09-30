@@ -28,9 +28,8 @@ def preview_cache_dir() -> str:
     Where a book being previewed before install is downloaded to.
 
     A preview is a whole file: MuPDF cannot parse a partially-ranged PDF, and
-    `pymupdf` cannot read a URL, so the web reader's byte-range proxy has no
-    native equivalent. The download is cached here so that installing a book
-    that was previewed is a rename rather than a second download.
+    `pymupdf` cannot read a URL. The download is cached here so that installing
+    a book that was previewed is a rename rather than a second download.
     """
     return os.path.join(cache_dir(), "previews")
 

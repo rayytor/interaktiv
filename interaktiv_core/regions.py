@@ -175,8 +175,7 @@ class RegionsBook:
         Whether this bake describes the file that was opened.
 
         A different edition under the same catalogue id would not line up: the
-        page ordinals differ, so every rect would land on the wrong sheet. The
-        web reader makes the same check before trusting a bake.
+        page ordinals differ, so every rect would land on the wrong sheet.
         """
         return self.page_count == page_count
 

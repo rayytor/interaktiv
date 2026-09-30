@@ -9,20 +9,15 @@ Verifies:
 - Server /api/config reports edition='school', library_mode=False, and features.install=True.
 - Packaged library mode still functions when an explicit non-empty library is provided.
 """
-import json
 import os
 import sys
-import tempfile
-import threading
-import time
 import unittest
-import urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if ROOT not in sys.path:
     sys.path.insert(0, ROOT)
 
-from books_manager import BooksManager
+from interaktiv_core.catalogue import BooksManager
 
 
 class TestSchoolEdition(unittest.TestCase):

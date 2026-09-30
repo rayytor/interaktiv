@@ -1,18 +1,18 @@
 """
 The application object.
 
-It owns the three things that outlive any one window: the catalogue
-(`BooksManager`, shared unchanged with the web edition), the persisted
-`Settings`, and the stylesheet.
+It owns the things that outlive any one window: the catalogue
+(`BooksManager`), the persisted `Settings`, and the stylesheet.
 """
 
 import os
 
 from gi.repository import Adw, Gdk, Gio, Gtk
 
-from books_manager import BooksManager
+from interaktiv_core.catalogue import BooksManager
 
-from . import icons
+from . import fonts, icons
+from .board import RightClickGuard
 from .state import Settings
 from .window import MainWindow
 
@@ -29,7 +29,7 @@ class InteraktivApp(Adw.Application):
     __gtype_name__ = "InteraktivApp"
 
     def __init__(self, *, edition=None, library_dir=None, activities_cache_dir=None,
-                 base_dir=None):
+                 base_dir=None, debug=False):
         super().__init__(application_id=APP_ID, flags=Gio.ApplicationFlags.DEFAULT_FLAGS)
         self.manager = BooksManager(
             base_dir=base_dir or PROJECT_ROOT,
@@ -38,12 +38,16 @@ class InteraktivApp(Adw.Application):
             edition=edition or "school",
         )
         self.settings = Settings()
+        self.debug = bool(debug)
+        self.right_click_guard = RightClickGuard()
         self.window = None
 
     # -- lifecycle --------------------------------------------------------
 
     def do_startup(self) -> None:
         Adw.Application.do_startup(self)
+        self.right_click_guard.clean_stale()
+        fonts.register()
         icons.register()
         self._tune_for_touch()
         self._load_css()
@@ -52,9 +56,19 @@ class InteraktivApp(Adw.Application):
     def do_activate(self) -> None:
         if self.window is None:
             self.window = MainWindow(self)
+            # ETAP's long-press right click is a desktop-wide switch, so it is
+            # only held off while this window is the one being touched.
+            self.window.connect("notify::is-active", self._on_window_active)
         self.window.present()
 
+    def _on_window_active(self, window, _param) -> None:
+        if window.is_active():
+            self.right_click_guard.acquire()
+        else:
+            self.right_click_guard.release()
+
     def do_shutdown(self) -> None:
+        self.right_click_guard.release()
         self.settings.flush()
         Adw.Application.do_shutdown(self)
 
