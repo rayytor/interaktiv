@@ -35,7 +35,12 @@ REPEAT_DELAY_MS = 350
 REPEAT_INTERVAL_MS = 110
 
 
-def bind_hold_repeat(button: Gtk.Button, action) -> None:
+def bind_hold_repeat(button: Gtk.Button, action, tap_through=None) -> None:
+    """
+    `tap_through(button, x, y)`, when given, is asked about a tap before it
+    turns the page: returning True means something under the button took the
+    tap (a page-edge strip lying over an activity), and the page stays.
+    """
     state = {
         "delay": 0,
         "repeat": 0,
@@ -43,6 +48,7 @@ def bind_hold_repeat(button: Gtk.Button, action) -> None:
         "touch": False,
         "moved": False,
         "held": False,
+        "through": False,
     }
 
     def stop() -> None:
@@ -72,13 +78,18 @@ def bind_hold_repeat(button: Gtk.Button, action) -> None:
         state["repeat"] = GLib.timeout_add(REPEAT_INTERVAL_MS, step)
         return GLib.SOURCE_REMOVE
 
-    def on_begin(gesture, _x, _y) -> None:
+    def on_begin(gesture, x, y) -> None:
         stop()
         state["touch"] = is_touch(gesture)
         state["moved"] = False
         state["held"] = False
         state["swallow"] = True
+        state["press"] = (x, y)
+        state["through"] = False
         if not state["touch"]:
+            if tap_through is not None and tap_through(button, x, y):
+                state["through"] = True
+                return
             step()
         state["delay"] = GLib.timeout_add(REPEAT_DELAY_MS, begin_repeat)
 
@@ -93,7 +104,10 @@ def bind_hold_repeat(button: Gtk.Button, action) -> None:
     def on_end(_gesture, _dx, _dy) -> None:
         stop()
         if state["touch"] and not state["moved"] and not state["held"]:
-            step()
+            press = state.get("press")
+            if not (tap_through is not None and press is not None
+                    and tap_through(button, *press)):
+                step()
         _finish()
 
     def on_cancel(*_args) -> None:

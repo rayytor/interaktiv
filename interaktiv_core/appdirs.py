@@ -18,6 +18,11 @@ def cache_dir() -> str:
     return _xdg("XDG_CACHE_HOME", ".cache")
 
 
+def data_dir() -> str:
+    """The user's own work, such as drawings. Kept across app updates."""
+    return _xdg("XDG_DATA_HOME", os.path.join(".local", "share"))
+
+
 def state_path() -> str:
     """Where the window remembers its themes, view mode and last pages."""
     return os.path.join(config_dir(), "state.json")

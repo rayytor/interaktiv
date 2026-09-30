@@ -136,6 +136,10 @@ class ScrollModeView(Gtk.Box):
         # A scroll asked for before the list has a size, to apply once it has.
         self._pending_scroll = False
         self._common_size: Optional[Tuple[int, int]] = None
+        self._ink = None
+        self.last_zoom_tap = None
+        # See SpreadView.live: scale what is on screen, render when it settles.
+        self.live = False
 
         self._store = Gio.ListStore(item_type=ScrollPageItem)
         self._selection = Gtk.NoSelection(model=self._store)
@@ -259,9 +263,10 @@ class ScrollModeView(Gtk.Box):
         )
         if abs(zoom - self._zoom) > 1e-6:
             self._zoom = zoom
-            self._submitted.clear()
-            if self.service is not None:
-                self.service.bump_generation()
+            if not self.live:
+                self._submitted.clear()
+                if self.service is not None:
+                    self.service.bump_generation()
             self.emit("scale-changed", zoom)
             self._update_row_sizes()
             self._queue_update()
@@ -299,6 +304,9 @@ class ScrollModeView(Gtk.Box):
         return view.texture if view is not None else None
 
     def invalidate(self) -> None:
+        if self.live:
+            self._queue_update()
+            return
         self._submitted.clear()
         if self.service is not None:
             self.service.bump_generation()
@@ -319,7 +327,7 @@ class ScrollModeView(Gtk.Box):
     def _on_setup(self, _factory, list_item) -> None:
         view = PageView()
         view.connect("activity-activated", self._on_activity_activated)
-        view.connect("zoom-toggled", lambda *_: self.emit("zoom-toggled"))
+        view.connect("zoom-toggled", self._on_zoom_tap)
         wrapper = PageRowWrapper(view)
         list_item.set_child(wrapper)
         list_item.wrapper = wrapper
@@ -342,6 +350,7 @@ class ScrollModeView(Gtk.Box):
         if self.info is not None:
             view.set_pdf_size(*self.info.size(page))
         view.set_reveal(self._reveal)
+        view.set_ink(self._ink)
         overlay = self.overlay_provider(page) if self.overlay_provider else None
         view.set_overlay(overlay, page)
 
@@ -440,6 +449,8 @@ class ScrollModeView(Gtk.Box):
     def _request(self, page: int, view: PageView, lane: int) -> None:
         if self.service is None:
             return
+        if self.live and view.has_texture:
+            return  # mid-pinch: the texture on screen is scaled for now
         render_scale = self._zoom * self.get_scale_factor()
         key = (page, round(render_scale, 3), self.rotation % 360, None)
         cached = self.cache.get(key)
@@ -470,6 +481,21 @@ class ScrollModeView(Gtk.Box):
         view.set_texture(result.texture, page, rotation)
         self.emit("page-rendered", page, result.render_ms)
 
+    # -- ink --------------------------------------------------------------
+
+    def set_ink(self, ink) -> None:
+        self._ink = ink
+        for view in self._bound_views.values():
+            view.set_ink(ink)
+
+    def redraw_ink(self) -> None:
+        for view in self._bound_views.values():
+            view.queue_draw()
+
+    def page_views(self) -> List[PageView]:
+        """The page views laid out now, which may include some off screen."""
+        return [v for v in self._bound_views.values() if v.get_mapped()]
+
     # -- activities & overlays --------------------------------------------
 
     def refresh_overlays(self) -> None:
@@ -499,6 +525,11 @@ class ScrollModeView(Gtk.Box):
                 view.set_selected(None)
             else:
                 view.set_selected(self._selected[1])
+
+    def _on_zoom_tap(self, view) -> None:
+        # Kept for the reader, which zooms around the tapped point.
+        self.last_zoom_tap = (view, view.last_tap)
+        self.emit("zoom-toggled")
 
     def _on_activity_activated(self, view, target) -> None:
         self.emit("activity-activated", target, view.page)

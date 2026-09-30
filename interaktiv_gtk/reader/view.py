@@ -25,10 +25,14 @@ from ..touch import EdgePan, SwipeNavigator, bind_touch_tooltip
 from ..widgets import SidePanel
 from . import paging
 from .dock import ReaderDock
+from interaktiv_core.ink import BookInk
+
 from .focus import FocusOverlay
 from .help import HelpWindow
 from .holdrepeat import bind_hold_repeat
+from .ink_controller import InkController
 from .page_view import PageView
+from .pinch import PinchZoom
 from .scroll_mode import ScrollModeView
 from .search import SearchController
 from .session import DocumentSession
@@ -141,7 +145,15 @@ class ReaderPage(Gtk.Box):
         self._first_page_shown = False
         self._fullscreen_handler = 0
 
+        # The book's drawings, loaded before the pages are built so that the
+        # first frame already has them.
+        self.ink = BookInk.load(item.id)
+        self.ink_controller = InkController(self, self.ink)
+
         self._build()
+        self.spread.set_ink(self.ink)
+        self.scroll_view.set_ink(self.ink)
+        self.focus_overlay.page_view.set_ink(self.ink)
         self._install_shortcuts()
         self.apply_theme(self._theme())
         self._open()
@@ -203,6 +215,10 @@ class ReaderPage(Gtk.Box):
         if self.debug:
             canvas_area.add_overlay(self._debug_label())
         self._install_swipe(canvas_area)
+        for scroller in (self.scroller, self.scroll_view.scroller):
+            scroller.get_hadjustment().connect(
+                "changed", lambda *_: self._update_page_edges()
+            )
 
         self.progress = Gtk.ProgressBar()
         self.progress.add_css_class("reading-progress")
@@ -342,6 +358,7 @@ class ReaderPage(Gtk.Box):
         dock.connect("rotate", lambda _d: self.rotate())
         dock.connect("fullscreen", lambda _d: self._toggle_fullscreen())
         dock.connect("help", lambda _d: self.show_help())
+        dock.connect("clear-ink", lambda _d: self.clear_visible_ink())
         dock.connect("theme-chosen", lambda _d, theme: self.set_theme(theme))
 
     def _search_bar(self) -> Gtk.Widget:
@@ -404,7 +421,10 @@ class ReaderPage(Gtk.Box):
         )
         button.add_css_class("page-edge")
         button.add_css_class("page-edge-next" if forward else "page-edge-prev")
-        bind_hold_repeat(button, self.next_page if forward else self.prev_page)
+        bind_hold_repeat(
+            button, self.next_page if forward else self.prev_page,
+            tap_through=self._tap_through_edge,
+        )
         if forward:
             self.btn_next = button
         else:
@@ -457,6 +477,48 @@ class ReaderPage(Gtk.Box):
             ),
         )
 
+    def _tap_through_edge(self, button, x: float, y: float) -> bool:
+        """
+        A tap on a page-edge strip that lands on an activity opens the
+        activity: the strip is invisible, and a teacher touching a question
+        printed near the edge of the page meant the question.
+        """
+        root = self.get_root()
+        point = button.translate_coordinates(root, x, y) if root is not None else None
+        if point is None:
+            return False
+        view = self.ink_controller._geometric(*point)
+        if view is None:
+            return False
+        local = root.translate_coordinates(view, *point)
+        if local is None:
+            return False
+        spot, pin = view._probe(*local)
+        target = pin if pin is not None else spot
+        if target is None:
+            return False
+        view.emit("activity-activated", target)
+        return True
+
+    def _update_page_edges_idle(self) -> bool:
+        self._update_page_edges()
+        return GLib.SOURCE_REMOVE
+
+    def _update_page_edges(self) -> None:
+        """
+        The page-turn strips are there only while the sheet fits the width.
+
+        Zoomed in, a finger on the edge of the screen means "show me more of
+        this side of the page", as on a phone, and a strip there would turn
+        the page instead -- so they go, and the dock's arrows remain.
+        """
+        adjustment = self.canvas_scroller().get_hadjustment()
+        wide = adjustment is not None and (
+            adjustment.get_upper() - adjustment.get_page_size() > 1.0
+        )
+        for edge in (self.btn_prev, self.btn_next):
+            edge.set_visible(not wide)
+
     def _on_swipe(self, step: int) -> None:
         if step > 0:
             self.next_page()
@@ -473,30 +535,68 @@ class ReaderPage(Gtk.Box):
         tap is the whole zoom control for a teacher standing at the screen. It
         goes out to `TAP_ZOOM` and back to the fit the book was being read at
         -- remembered rather than assumed, so a class reading at Fit Width
-        returns to Fit Width and not to Fit Page.
+        returns to Fit Width and not to Fit Page. Like a phone, it zooms in
+        around the tapped point, which stays under the finger.
         """
-        if self.zoom_mode == "custom":
-            self.set_zoom(self._pre_tap_zoom or "fit-page")
-            return
-        self._pre_tap_zoom = self.zoom_mode
-        self.set_zoom("custom", TAP_ZOOM)
+        def apply() -> None:
+            if self.zoom_mode == "custom":
+                self.set_zoom(self._pre_tap_zoom or "fit-page")
+                return
+            self._pre_tap_zoom = self.zoom_mode
+            self.set_zoom("custom", TAP_ZOOM)
+
+        point = self._last_tap_point()
+        if point is None:
+            apply()
+        else:
+            self.pinch.zoom_at(*point, apply)
+
+    def _last_tap_point(self):
+        """Where the double tap that is being answered landed, in the scroller."""
+        canvas = self.scroll_view if self.view_mode == "scroll" else self.spread
+        tap = getattr(canvas, "last_zoom_tap", None)
+        canvas.last_zoom_tap = None
+        if not tap or tap[1] is None:
+            return None
+        view, (x, y) = tap
+        ok, b = view.compute_bounds(self.canvas_scroller())
+        if not ok:
+            return None
+        return (b.get_x() + x, b.get_y() + y)
+
+    def canvas_scroller(self) -> Gtk.ScrolledWindow:
+        """The scrolled window the page is in now."""
+        return self.scroll_view.scroller if self.view_mode == "scroll" else self.scroller
+
+    def visible_page_views(self) -> List[PageView]:
+        if self.view_mode == "scroll":
+            return self.scroll_view.page_views()
+        return self.spread.page_views()
 
     def _install_zoom_gestures(self) -> None:
         """
         Pinch to zoom, and ctrl+wheel for the people without a touchscreen.
 
-        `Gtk.GestureZoom` reports a scale relative to where the fingers
-        started, so the base zoom is taken once at `begin` and multiplied --
-        reading the live zoom each time would compound the same pinch. Every
-        applied step re-renders the visible sheets, so a change smaller than
-        a percent is dropped rather than queued.
+        Two fingers do what they do on a phone: the print between them stays
+        between them while they spread, and moving them together carries the
+        page along (see `pinch.py`). `Gtk.GestureZoom` reports a scale
+        relative to where the fingers started, and the centre of the fingers
+        as they are now, which is all that takes.
         """
-        self._pinch_base = 1.0
+        self.pinch = PinchZoom(
+            scroller=self.canvas_scroller,
+            views=self.visible_page_views,
+            zoom=self._effective_zoom,
+            set_zoom=lambda zoom, live: self.set_zoom("custom", zoom, live=live),
+            settle=self._settle_zoom,
+        )
         for widget in (self.scroller, self.scroll_view):
             pinch = Gtk.GestureZoom()
             pinch.set_propagation_phase(Gtk.PropagationPhase.CAPTURE)
             pinch.connect("begin", self._on_pinch_begin)
             pinch.connect("scale-changed", self._on_pinch_scale)
+            pinch.connect("end", self._on_pinch_end)
+            pinch.connect("cancel", self._on_pinch_end)
             widget.add_controller(pinch)
 
             wheel = Gtk.EventControllerScroll(
@@ -512,28 +612,91 @@ class ReaderPage(Gtk.Box):
         view = self.scroll_view if self.view_mode == "scroll" else self.spread
         return view.zoom or 1.0
 
+    def _pinch_centre(self, gesture):
+        """The fingers' centre, in the coordinates of the scroller on screen."""
+        ok, x, y = gesture.get_bounding_box_center()
+        if not ok:
+            return None
+        widget = gesture.get_widget()
+        scroller = self.canvas_scroller()
+        if widget is not scroller:
+            point = widget.translate_coordinates(scroller, x, y)
+            if point is None:
+                return None
+            x, y = point
+        return (x, y)
+
     def _on_pinch_begin(self, gesture, _sequence) -> None:
         # Claim the moment the second finger lands. `GtkGestureZoom` never
         # claims on its own, and `GtkScrolledWindow` takes any touch drag that
         # passes GTK's threshold -- so without this the scroller pans the sheet
         # under the pinch, and the finger that started on a hotspot opens it
-        # when the pinch ends.
+        # when the pinch ends. The pan it would have done, the pinch does.
         gesture.set_state(Gtk.EventSequenceState.CLAIMED)
-        self._pinch_base = self._effective_zoom()
+        centre = self._pinch_centre(gesture)
+        if centre is not None:
+            self.pinch.begin(*centre)
 
-    def _on_pinch_scale(self, _gesture, scale: float) -> None:
-        target = paging.pinch_zoom(self._pinch_base, scale)
-        if abs(target - self._effective_zoom()) < 0.01:
-            return
-        self.set_zoom("custom", target)
+    def _on_pinch_scale(self, gesture, scale: float) -> None:
+        centre = self._pinch_centre(gesture)
+        if centre is not None:
+            self.pinch.update(centre[0], centre[1], scale)
+
+    def _on_pinch_end(self, _gesture, _sequence) -> None:
+        self.pinch.end()
+
+    def _settle_zoom(self) -> None:
+        """The fingers let go or held still: render the pages sharp."""
+        for view in (self.spread, self.scroll_view):
+            view.live = False
+            view.invalidate()
+        self._update_page_edges()
+
+    def gesture_at_window(self, phase: str, x: float, y: float, scale: float) -> bool:
+        """
+        A two-finger gesture Rayyanpen forwarded from over this window while
+        its pen was out: the same pinch-and-pan, in window coordinates.
+        """
+        root = self.get_root()
+        if root is None:
+            return False
+        point = root.translate_coordinates(self.canvas_scroller(), x, y)
+        if point is None:
+            return False
+        if phase == "begin":
+            self.pinch.begin(*point)
+        elif phase == "update":
+            self.pinch.update(point[0], point[1], scale)
+        else:
+            self.pinch.end()
+        return True
 
     def _on_scroll_zoom(self, controller, _dx: float, dy: float) -> bool:
         if not (controller.get_current_event_state() & Gdk.ModifierType.CONTROL_MASK):
             return False
         if dy == 0:
             return False
-        self.set_zoom("custom", paging.wheel_zoom(self._effective_zoom(), dy))
+        target = paging.wheel_zoom(self._effective_zoom(), dy)
+        self.set_zoom("custom", target)
         return True
+
+    # ----------------------------------------------------------------- ink
+
+    def redraw_ink(self) -> None:
+        self.spread.redraw_ink()
+        self.scroll_view.redraw_ink()
+        self.focus_overlay.page_view.queue_draw()
+
+    def clear_visible_ink(self) -> None:
+        """The dock's "delete the drawings on this page", with an undo toast."""
+        pages = self._visible_pages()
+        token = self.ink_controller.clear_pages(pages)
+        if token is None:
+            self.toast_overlay.add_toast(Adw.Toast(title="Bu sayfada çizim yok"))
+            return
+        toast = Adw.Toast(title="Çizimler silindi", button_label="Geri al")
+        toast.connect("button-clicked", lambda *_: self.ink_controller.undo_erase(token))
+        self.toast_overlay.add_toast(toast)
 
     # ------------------------------------------------------------ opening
 
@@ -734,15 +897,26 @@ class ReaderPage(Gtk.Box):
 
     # --------------------------------------------------------------- zoom
 
-    def set_zoom(self, mode: str, custom: float = None) -> None:
+    def set_zoom(self, mode: str, custom: float = None, live: bool = False) -> None:
+        """
+        `live` is a pinch in flight: lay out at the new zoom but scale the
+        textures already on screen instead of rendering, until it settles.
+        """
         self.zoom_mode = mode
         if custom is not None:
-            self.custom_zoom = custom
+            self.custom_zoom = min(ZOOM_MAX, max(ZOOM_MIN, custom))
         if mode in ("fit-width", "fit-page"):
             self.settings.set("zoom_mode", mode)
+        for view in (self.spread, self.scroll_view):
+            if not live and view.live:
+                view.live = False
+            elif live:
+                view.live = True
         self.spread.set_zoom(mode, self.custom_zoom)
         self.scroll_view.set_zoom(mode, self.custom_zoom)
         self._update_zoom_status()
+        if not live:
+            GLib.idle_add(self._update_page_edges_idle)
 
     def step_zoom(self, delta: float) -> None:
         # Stepping starts from 100 %, not from whatever the fit happens to be,
@@ -1220,6 +1394,7 @@ class ReaderPage(Gtk.Box):
             window.disconnect(self._fullscreen_handler)
             self._fullscreen_handler = 0
         self.settings.set_last_page(self.item.id, self.current_page)
+        self.ink_controller.flush()
         self.focus_overlay.clear()
         self.search_controller.shutdown()
         self.sidebar.shutdown()

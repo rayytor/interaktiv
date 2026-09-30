@@ -57,6 +57,8 @@ class ReaderDock(Gtk.Box):
         "rotate": (GObject.SignalFlags.RUN_FIRST, None, ()),
         "fullscreen": (GObject.SignalFlags.RUN_FIRST, None, ()),
         "help": (GObject.SignalFlags.RUN_FIRST, None, ()),
+        # Delete the pen drawings on the pages on screen.
+        "clear-ink": (GObject.SignalFlags.RUN_FIRST, None, ()),
         "theme-chosen": (GObject.SignalFlags.RUN_FIRST, None, (str,)),
     }
 
@@ -242,6 +244,7 @@ class ReaderDock(Gtk.Box):
         for icon, label, signal in (
             (icons.ROTATE, "Sayfayı döndür", "rotate"),
             (icons.FULLSCREEN, "Tam ekran", "fullscreen"),
+            (icons.UNINSTALL, "Bu sayfadaki çizimleri sil", "clear-ink"),
             (icons.HELP, "Yardım", "help"),
         ):
             row = Gtk.Button()

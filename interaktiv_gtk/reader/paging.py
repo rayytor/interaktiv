@@ -23,7 +23,7 @@ MIN_VIEWPORT = 320.0
 # What a zoom may be asked for, by any route: the dock, `+`/`-`, a pinch, or
 # ctrl+wheel.
 ZOOM_MIN = 0.3
-ZOOM_MAX = 3.0
+ZOOM_MAX = 5.0
 ZOOM_STEP = 0.2
 
 

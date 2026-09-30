@@ -28,6 +28,7 @@ from interaktiv_core.geometry import PageTransform
 
 from ..theme import get_theme_color_matrix
 from ..touch import TAP_SLOP, is_touch
+from . import ink_layer
 from .overlay import Pin, Spot
 
 
@@ -68,6 +69,9 @@ CORNER_WIDTH = 2.5
 BADGE_HEIGHT = 24
 BADGE_PAD = 8
 PIN_SIZE = 40
+# A finger that lands this close outside an activity still means it: an
+# invisible margin round every hotspot, used only when nothing is hit directly.
+TOUCH_REACH = 12.0
 
 BADGE_FONT = "Inter Bold 11"
 COUNT_FONT = "Inter Bold 10"
@@ -140,6 +144,13 @@ class PageView(Gtk.Widget):
         self._search_matches: List[Tuple[float, float, float, float]] = []
         self._active_search_index: Optional[int] = None
 
+        # The book's drawings (`interaktiv_core.ink.BookInk`), shared by every
+        # page view of the open book, and this page's ink as one render node,
+        # kept until the page or its ink changes.
+        self._ink = None
+        self._ink_key = None
+        self._ink_node = None
+
         motion = Gtk.EventControllerMotion()
         motion.connect("motion", self._on_motion)
         motion.connect("leave", self._on_leave)
@@ -147,6 +158,7 @@ class PageView(Gtk.Widget):
 
         self._press: Optional[Tuple[float, float]] = None
         self._press_touch = False
+        self.last_tap: Optional[Tuple[float, float]] = None
 
         click = Gtk.GestureClick()
         click.connect("pressed", self._on_pressed)
@@ -237,6 +249,37 @@ class PageView(Gtk.Widget):
     @property
     def layout_size(self) -> Tuple[float, float]:
         return (self._width, self._height)
+
+    # -- ink --------------------------------------------------------------
+
+    def set_ink(self, ink) -> None:
+        if ink is self._ink:
+            return
+        self._ink = ink
+        self._ink_key = None
+        self._ink_node = None
+        self.queue_draw()
+
+    def _ink_for_page(self):
+        """This page's ink as a node in page space, or None if it has none."""
+        ink = self._ink
+        page_h = self._pdf_size[1]
+        if ink is None or page_h <= 0:
+            return None
+        key = (id(ink), self.page, ink.page_version(self.page), page_h)
+        if key != self._ink_key:
+            self._ink_key = key
+            self._ink_node = ink_layer.build_node(ink.strokes_on(self.page), page_h)
+        return self._ink_node
+
+    def _snapshot_ink(self, snapshot, bounds) -> None:
+        node = self._ink_for_page()
+        if node is None:
+            return
+        transform = self.transform()
+        if transform is None:
+            return
+        ink_layer.append_page_ink(snapshot, node, transform, bounds)
 
     # -- activities -------------------------------------------------------
 
@@ -352,6 +395,10 @@ class PageView(Gtk.Widget):
             if tinted:
                 snapshot.pop()
         self.snapshot_search_highlights(snapshot)
+        # Ink goes over the printed page and the search marks but under the
+        # activity marks, which have to stay pressable-looking. It is outside
+        # the theme's colour matrix: a red pen stays red on a dark page.
+        self._snapshot_ink(snapshot, bounds)
         self.snapshot_overlay(snapshot, bounds)
 
     def _append_texture(self, snapshot, bounds) -> None:
@@ -450,8 +497,13 @@ class PageView(Gtk.Widget):
 
     # -- pointer ----------------------------------------------------------
 
-    def _probe(self, wx: float, wy: float):
-        """What sits under a widget point: a pin, a spot, or nothing."""
+    def _probe(self, wx: float, wy: float, reach: float = 0.0):
+        """
+        What sits under a widget point: a pin, a spot, or nothing. With a
+        `reach`, a miss by up to that many pixels still finds the nearest
+        activity -- but a direct hit always wins, so padding can never take a
+        tap away from the activity the finger is actually on.
+        """
         overlay = self.overlay
         transform = self.transform()
         if overlay is None or transform is None:
@@ -464,7 +516,22 @@ class PageView(Gtk.Widget):
             if abs(wx - cx) <= PIN_SIZE / 2 and abs(wy - cy) <= PIN_SIZE / 2:
                 return (None, pin)
         px, py = transform.point_to_pdf(wx, wy)
-        return (overlay.hit_test(px, py), None)
+        spot = overlay.hit_test(px, py)
+        if spot is None and reach > 0:
+            spot = self._nearest_spot(overlay, transform, wx, wy, reach)
+        return (spot, None)
+
+    @staticmethod
+    def _nearest_spot(overlay, transform, wx, wy, reach):
+        best, best_d = None, None
+        for spot in overlay.spots:
+            left, top, width, height = transform.rect_to_widget(spot.rect)
+            dx = max(left - wx, 0.0, wx - (left + width))
+            dy = max(top - wy, 0.0, wy - (top + height))
+            d = max(dx, dy)
+            if d <= reach and (best_d is None or d < best_d):
+                best, best_d = spot, d
+        return best
 
     def _on_motion(self, _controller, x, y) -> None:
         spot, pin = self._probe(x, y)
@@ -514,12 +581,14 @@ class PageView(Gtk.Widget):
             spot, pin = self._probe(x, y)
             if spot is None and pin is None:
                 gesture.set_state(Gtk.EventSequenceState.CLAIMED)
+                # Where, for the reader to zoom around the tapped point.
+                self.last_tap = (x, y)
                 self.emit("zoom-toggled")
             return
         if n_press != 1:
             return
 
-        spot, pin = self._probe(x, y)
+        spot, pin = self._probe(x, y, TOUCH_REACH if self._press_touch else 0.0)
         target = pin if pin is not None else spot
         if target is None:
             return

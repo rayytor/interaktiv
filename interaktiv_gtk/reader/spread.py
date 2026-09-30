@@ -73,6 +73,11 @@ class SpreadView(Gtk.Widget):
         self._selected = None          # (page, act_index)
         self._search_matches: Dict[int, List[Tuple[float, float, float, float]]] = {}
         self._active_match: Optional[Tuple[int, int]] = None
+        self._ink = None
+        self.last_zoom_tap = None
+        # While a pinch is in flight the zoom changes every frame and the
+        # textures on screen are scaled instead of re-rendered.
+        self.live = False
 
     # -- wiring -----------------------------------------------------------
 
@@ -152,6 +157,8 @@ class SpreadView(Gtk.Widget):
 
     def invalidate(self) -> None:
         """Everything queued is now stale; re-ask for what is on screen."""
+        if self.live:
+            return
         self._submitted.clear()
         if self.service is not None:
             self.service.bump_generation()
@@ -253,11 +260,13 @@ class SpreadView(Gtk.Widget):
 
         if abs(zoom - self._zoom) > 1e-6:
             self._zoom = zoom
-            self._submitted.clear()
-            if self.service is not None:
-                self.service.bump_generation()
+            if not self.live:
+                self._submitted.clear()
+                if self.service is not None:
+                    self.service.bump_generation()
             self.emit("scale-changed", zoom)
-        self._schedule_submit()
+        if not self.live:
+            self._schedule_submit()
 
     def do_snapshot(self, snapshot):
         for view in self._views:
@@ -270,8 +279,9 @@ class SpreadView(Gtk.Widget):
             view = PageView()
             view.set_parent(self)
             view.connect("activity-activated", self._on_activity_activated)
-            view.connect("zoom-toggled", lambda *_: self.emit("zoom-toggled"))
+            view.connect("zoom-toggled", self._on_zoom_tap)
             view.set_reveal(self._reveal)
+            view.set_ink(self._ink)
             self._views.append(view)
         while len(self._views) > len(self._pages):
             self._views.pop().unparent()
@@ -281,6 +291,21 @@ class SpreadView(Gtk.Widget):
                 view.set_pdf_size(*self.info.size(page))
         self.refresh_overlays()
         self._apply_search_matches()
+
+    def page_views(self) -> List[PageView]:
+        """The page views on screen, in reading order."""
+        return list(self._views)
+
+    # -- ink --------------------------------------------------------------
+
+    def set_ink(self, ink) -> None:
+        self._ink = ink
+        for view in self._views:
+            view.set_ink(ink)
+
+    def redraw_ink(self) -> None:
+        for view in self._views:
+            view.queue_draw()
 
     # -- search -----------------------------------------------------------
 
@@ -350,6 +375,11 @@ class SpreadView(Gtk.Widget):
                 view.set_selected(None)
                 continue
             view.set_selected(self._selected[1])
+
+    def _on_zoom_tap(self, view) -> None:
+        # Kept for the reader, which zooms around the tapped point.
+        self.last_zoom_tap = (view, view.last_tap)
+        self.emit("zoom-toggled")
 
     def _on_activity_activated(self, view, target) -> None:
         page = view.page

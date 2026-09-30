@@ -13,6 +13,7 @@ from interaktiv_core.catalogue import BooksManager
 
 from . import fonts, icons
 from .board import RightClickGuard
+from .ink_service import InkService
 from .state import Settings
 from .window import MainWindow
 
@@ -20,6 +21,10 @@ APP_ID = "org.interaktiv.School"
 
 # Finger-sized rather than mouse-sized. See `_tune_for_touch`.
 TOUCH_DRAG_THRESHOLD = 16
+# A double tap by a finger: further apart and slower than a mouse's double
+# click, which is 5 px and 400 ms in GTK's defaults.
+TOUCH_DOUBLE_TAP_DISTANCE = 40
+TOUCH_DOUBLE_TAP_TIME = 400
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(HERE)
@@ -41,6 +46,30 @@ class InteraktivApp(Adw.Application):
         self.debug = bool(debug)
         self.right_click_guard = RightClickGuard()
         self.window = None
+        # Rayyanpen hands its strokes over this (see ink_service.py).
+        self.ink_service = InkService(lambda: self.window, self.current_reader)
+
+    def current_reader(self):
+        """The reader page on screen, if a book is open."""
+        from .reader import ReaderPage
+
+        window = self.window
+        page = window.navigation.get_visible_page() if window is not None else None
+        return page if isinstance(page, ReaderPage) else None
+
+    def do_dbus_register(self, connection, object_path) -> bool:
+        if not Adw.Application.do_dbus_register(self, connection, object_path):
+            return False
+        try:
+            self.ink_service.register(connection)
+        except Exception:
+            # Drawing on the book is an extra; the reader works without it.
+            pass
+        return True
+
+    def do_dbus_unregister(self, connection, object_path) -> None:
+        self.ink_service.unregister()
+        Adw.Application.do_dbus_unregister(self, connection, object_path)
 
     # -- lifecycle --------------------------------------------------------
 
@@ -69,6 +98,9 @@ class InteraktivApp(Adw.Application):
 
     def do_shutdown(self) -> None:
         self.right_click_guard.release()
+        reader = self.current_reader()
+        if reader is not None:
+            reader.ink_controller.flush()
         self.settings.flush()
         Adw.Application.do_shutdown(self)
 
@@ -93,6 +125,8 @@ class InteraktivApp(Adw.Application):
         settings = Gtk.Settings.get_for_display(display)
         if settings is not None:
             settings.set_property("gtk-dnd-drag-threshold", TOUCH_DRAG_THRESHOLD)
+            settings.set_property("gtk-double-click-distance", TOUCH_DOUBLE_TAP_DISTANCE)
+            settings.set_property("gtk-double-click-time", TOUCH_DOUBLE_TAP_TIME)
 
     def _load_css(self) -> None:
         display = Gdk.Display.get_default()
