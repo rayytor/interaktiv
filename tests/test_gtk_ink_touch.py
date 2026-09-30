@@ -135,6 +135,38 @@ class TestInkLayer(unittest.TestCase):
             self.assertAlmostEqual(out.y, expected[1], places=3, msg=rotation)
 
 
+class TestDeepZoomDetail(unittest.TestCase):
+    def test_only_past_the_render_cap(self):
+        from interaktiv_gtk.reader import detail
+        self.assertFalse(detail.needs_detail(595, 842, 2.0))
+        self.assertTrue(detail.needs_detail(595, 842, 10.0))
+
+    def test_clip_is_the_visible_part_padded_and_snapped(self):
+        from interaktiv_gtk.reader import detail
+        # A 500 x 700 pt page at 4 px/pt, scrolled so that (1000, 800) px of
+        # it is at the scroller's top-left, in a 400 x 300 px viewport.
+        view = FakeView(1, -1000, -800, 4.0)
+        scroller = MagicMock()
+        scroller.get_width.return_value = 400
+        scroller.get_height.return_value = 300
+        x0, y0, x1, y1 = detail.visible_clip(view, scroller)
+        # Visible: x 250..350 pt, y (from the top) 200..275 pt -> PDF y 425..500.
+        self.assertLessEqual(x0, 250 - 0.15 * 100)
+        self.assertGreaterEqual(x1, 350 + 0.15 * 100)
+        self.assertLessEqual(y0, 425)
+        self.assertGreaterEqual(y1, 500)
+        self.assertEqual(x0 % detail.GRID, 0)
+        self.assertLess(x1 - x0, 200)
+
+    def test_off_screen_page_has_no_clip(self):
+        from interaktiv_gtk.reader import detail
+        view = FakeView(1, 5000, 5000, 1.0)
+        scroller = MagicMock()
+        scroller.get_width.return_value = 400
+        scroller.get_height.return_value = 300
+        self.assertIsNone(detail.visible_clip(view, scroller))
+
+
 class TestInkService(unittest.TestCase):
     def _service(self, xid=42, reader=None):
         window = MagicMock()

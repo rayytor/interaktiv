@@ -22,7 +22,7 @@ from gi.repository import GLib, GObject, Graphene, Gsk, Gtk
 
 from ..render import TextureCache
 from ..render.service import LANE_PREFETCH, LANE_VISIBLE
-from . import paging
+from . import detail, paging
 from .page_view import PageView
 
 MARGIN = paging.MARGIN
@@ -78,6 +78,8 @@ class SpreadView(Gtk.Widget):
         # While a pinch is in flight the zoom changes every frame and the
         # textures on screen are scaled instead of re-rendered.
         self.live = False
+        self._detail_source = 0
+        self._detail_keys: Dict[int, Tuple] = {}
 
     # -- wiring -----------------------------------------------------------
 
@@ -92,6 +94,9 @@ class SpreadView(Gtk.Widget):
 
     def shutdown(self) -> None:
         self._cancel_submit()
+        if self._detail_source:
+            GLib.source_remove(self._detail_source)
+            self._detail_source = 0
         self.cache.clear()
         for view in self._views:
             view.unparent()
@@ -431,6 +436,45 @@ class SpreadView(Gtk.Widget):
             )
 
         self._prefetch(render_scale, generation)
+        self.schedule_detail()
+        return GLib.SOURCE_REMOVE
+
+    # -- deep zoom --------------------------------------------------------
+
+    def schedule_detail(self) -> None:
+        """Ask for sharp renders of what is on screen, once scrolling pauses."""
+        if self._detail_source:
+            GLib.source_remove(self._detail_source)
+        self._detail_source = GLib.timeout_add(120, self._request_detail)
+
+    def _request_detail(self) -> bool:
+        self._detail_source = 0
+        scroller = self.get_ancestor(Gtk.ScrolledWindow)
+        if self.live or self.service is None or self.info is None or scroller is None:
+            return GLib.SOURCE_REMOVE
+        render_scale = self._zoom * self.get_scale_factor()
+        generation = self.service.generation
+        for view, page in zip(self._views, self._pages):
+            if not detail.needs_detail(*self.info.size(page), render_scale):
+                self._detail_keys.pop(page, None)
+                view.clear_detail()
+                continue
+            clip = detail.visible_clip(view, scroller)
+            if clip is None:
+                continue
+            key = (page, round(render_scale, 3), self.rotation % 360, clip)
+            self._detail_keys[page] = key
+            cached = self.cache.get(key)
+            if cached is not None:
+                view.set_detail(cached, clip, page, self.rotation)
+                continue
+            if key in self._submitted:
+                continue
+            self._submitted.add(key)
+            self.service.submit(
+                page, render_scale, self.rotation, clip=clip,
+                lane=LANE_VISIBLE, generation=generation,
+            )
         return GLib.SOURCE_REMOVE
 
     def _prefetch(self, render_scale: float, generation: int) -> None:
@@ -461,6 +505,9 @@ class SpreadView(Gtk.Widget):
         self.cache.put(result.key, result.texture, result.nbytes)
         page, scale, rotation, clip = result.key
         if clip is not None:
+            for view, shown in zip(self._views, self._pages):
+                if shown == page and self._detail_keys.get(page) == result.key:
+                    view.set_detail(result.texture, clip, page, rotation)
             return
         want = round(self._zoom * self.get_scale_factor(), 3)
         for view, shown in zip(self._views, self._pages):

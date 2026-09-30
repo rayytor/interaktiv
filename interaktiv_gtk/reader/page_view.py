@@ -151,6 +151,12 @@ class PageView(Gtk.Widget):
         self._ink_key = None
         self._ink_node = None
         self._ink_strokes = ()
+        # Deep zoom: a sharp render of the part of the page on screen, drawn
+        # over the whole-page texture (see detail.py), and where it goes.
+        self._detail = None
+        self._detail_clip = None
+        self._detail_page = 0
+        self._detail_rotation = 0
 
         motion = Gtk.EventControllerMotion()
         motion.connect("motion", self._on_motion)
@@ -181,6 +187,7 @@ class PageView(Gtk.Widget):
             self._crop_transform = None
             self._search_matches = []
             self._active_search_index = None
+            self._detail = None
         self.page = page
         self.rotation = rotation % 360
 
@@ -222,7 +229,25 @@ class PageView(Gtk.Widget):
         self._preview = None
         self.queue_draw()
 
+    def set_detail(self, texture, clip, page: int, rotation: int) -> None:
+        """A sharp render of `clip` (PDF user space) of this page."""
+        self._detail = texture
+        self._detail_clip = clip
+        self._detail_page = page
+        self._detail_rotation = rotation % 360
+        self.queue_draw()
+
+    def clear_detail(self) -> None:
+        if self._detail is not None:
+            self._detail = None
+            self.queue_draw()
+
+    @property
+    def detail_clip(self):
+        return self._detail_clip if self._detail is not None else None
+
     def clear_texture(self) -> None:
+        self._detail = None
         self._texture = None
         self._crop_transform = None
         self._preview = None
@@ -399,6 +424,7 @@ class PageView(Gtk.Widget):
                 snapshot.push_color_matrix(mat, vec)
             if usable:
                 self._append_texture(snapshot, bounds)
+                self._append_detail(snapshot, bounds)
             else:
                 self._append_preview(snapshot, bounds)
             if tinted:
@@ -420,6 +446,23 @@ class PageView(Gtk.Widget):
             )
         else:
             snapshot.append_texture(self._texture, bounds)
+
+    def _append_detail(self, snapshot, bounds) -> None:
+        if (
+            self._detail is None
+            or self._detail_page != self.page
+            or self._detail_rotation != self.rotation
+        ):
+            return
+        transform = self.transform()
+        if transform is None:
+            return
+        x, y, w, h = transform.rect_to_widget(self._detail_clip)
+        if w <= 0 or h <= 0:
+            return
+        snapshot.push_clip(bounds)
+        snapshot.append_texture(self._detail, Graphene.Rect().init(x, y, w, h))
+        snapshot.pop()
 
     def _append_preview(self, snapshot, bounds) -> None:
         texture, (left, top, part_w, part_h) = self._preview

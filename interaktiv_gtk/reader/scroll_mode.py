@@ -17,7 +17,7 @@ from gi.repository import Gio, GLib, GObject, Graphene, Gsk, Gtk
 from ..render import TextureCache
 from ..render.service import LANE_PREFETCH, LANE_VISIBLE
 from ..widgets import after_layout, scroll_to_item
-from . import paging
+from . import detail, paging
 from .page_view import PageView
 
 PAGE_GAP = 20
@@ -140,6 +140,8 @@ class ScrollModeView(Gtk.Box):
         self.last_zoom_tap = None
         # See SpreadView.live: scale what is on screen, render when it settles.
         self.live = False
+        self._detail_source = 0
+        self._detail_keys: Dict[int, Tuple] = {}
 
         self._store = Gio.ListStore(item_type=ScrollPageItem)
         self._selection = Gtk.NoSelection(model=self._store)
@@ -191,7 +193,7 @@ class ScrollModeView(Gtk.Box):
         self.invalidate()
 
     def shutdown(self) -> None:
-        for name in ("_update_source", "_refit_source"):
+        for name in ("_update_source", "_refit_source", "_detail_source"):
             source = getattr(self, name)
             if source:
                 GLib.source_remove(source)
@@ -444,6 +446,47 @@ class ScrollModeView(Gtk.Box):
                 and not self._suppress_scroll_sync):
             self.current_page = best_page
             self.emit("dominant-page-changed", best_page)
+        self._schedule_detail()
+        return GLib.SOURCE_REMOVE
+
+    # -- deep zoom (see detail.py) ----------------------------------------
+
+    def _schedule_detail(self) -> None:
+        if self._detail_source:
+            GLib.source_remove(self._detail_source)
+        self._detail_source = GLib.timeout_add(120, self._request_detail)
+
+    def _request_detail(self) -> bool:
+        self._detail_source = 0
+        if self.live or self.service is None or self.info is None:
+            return GLib.SOURCE_REMOVE
+        render_scale = self._zoom * self.get_scale_factor()
+        height = self.scroller.get_height()
+        for page, view in list(self._bound_views.items()):
+            span = self._row_span(view)
+            if span is None or band(span[0], span[1], height) != ON_SCREEN:
+                continue
+            if not detail.needs_detail(*self.info.size(page), render_scale):
+                self._detail_keys.pop(page, None)
+                view.clear_detail()
+                continue
+            clip = detail.visible_clip(view, self.scroller)
+            if clip is None:
+                continue
+            key = (page, round(render_scale, 3), self.rotation % 360, clip)
+            self._detail_keys[page] = key
+            cached = self.cache.get(key)
+            if cached is not None:
+                view.set_detail(cached, clip, page, self.rotation)
+                continue
+            generation = self.service.generation
+            if self._submitted.get(key) == generation:
+                continue
+            self._submitted[key] = generation
+            self.service.submit(
+                page, render_scale, self.rotation, clip=clip,
+                lane=LANE_VISIBLE, generation=generation,
+            )
         return GLib.SOURCE_REMOVE
 
     def _request(self, page: int, view: PageView, lane: int) -> None:
@@ -470,6 +513,9 @@ class ScrollModeView(Gtk.Box):
         self._submitted.pop(result.key, None)
         page, scale, rotation, clip = result.key
         if clip is not None:
+            view = self._bound_views.get(page)
+            if view is not None and self._detail_keys.get(page) == result.key:
+                view.set_detail(result.texture, clip, page, rotation)
             return
         view = self._bound_views.get(page)
         want = round(self._zoom * self.get_scale_factor(), 3)

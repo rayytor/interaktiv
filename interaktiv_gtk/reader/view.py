@@ -219,6 +219,9 @@ class ReaderPage(Gtk.Box):
             scroller.get_hadjustment().connect(
                 "changed", lambda *_: self._update_page_edges()
             )
+        # Deep zoom renders what is on screen sharp; a pan moves what that is.
+        for adjustment in (self.scroller.get_hadjustment(), self.scroller.get_vadjustment()):
+            adjustment.connect("value-changed", lambda *_: self.spread.schedule_detail())
 
         self.progress = Gtk.ProgressBar()
         self.progress.add_css_class("reading-progress")
