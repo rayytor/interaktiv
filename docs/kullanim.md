@@ -17,9 +17,13 @@
   hızla çevirir.
 - **Sayfaya gitme:** alttaki sayfa numarasına dokunun; sayı tablasından
   numarayı yazın ya da kaydırıcıyı sürükleyin.
-- **Yakınlaştırma:** sayfaya iki kez dokunun (ikinci dokunuş geri alır), iki
-  parmağınızı açın veya alttaki − / + düğmelerini kullanın. **Sığdır** sayfayı
-  ekrana sığdırır.
+- **Yakınlaştırma:** telefondaki gibi. İki parmağınızı açıp kapatın; parmaklarınızın
+  arasındaki yer yerinde kalır. İki parmakla sürükleyince sayfa da birlikte kayar.
+  Sayfaya iki kez dokunmak dokunduğunuz yeri büyütür, yine iki kez dokunmak geri
+  alır. Alttaki − / + düğmeleri de çalışır. **Sığdır** sayfayı ekrana sığdırır.
+- **Yakınlaştırılmış sayfada gezinme:** tek parmakla her yöne kaydırın. Sayfa
+  büyütülmüşken kenara dokunmak sayfa çevirmez; sayfa çevirmek için alttaki
+  okları kullanın.
 - **Görünüm:** alttaki görünüm düğmesinden çift sayfa, tek sayfa ya da
   kaydırma seçilir.
 - **Sayfalar, içindekiler, etkinlikler:** alttaki ilk düğme sol panelde
@@ -29,6 +33,24 @@
   işaretlenir.
 - **Diğer:** üç nokta düğmesinde tema seçimi (koyu, açık, sepya, gece),
   sayfayı döndürme, tam ekran ve yardım vardır.
+
+## Kitaba çizim (Rayyanpen ile)
+
+- Rayyanpen kalemini ve Interaktiv'i aynı anda açabilirsiniz. Bellek
+  penceresinde önce birine, sonra diğerine dokunun.
+- Kalemle bir kitap sayfasının üstüne çizdiğiniz her şey o sayfaya yapışır:
+  yakınlaştırınca büyür, kaydırınca ve sayfa çevirince sayfayla birlikte gider,
+  kitabı bir sonraki açışınızda yine oradadır.
+- Kalem açıkken tek parmak çizer; **iki parmak** sayfayı kaydırır ve
+  yakınlaştırır. Kalemi kapatmanıza gerek yoktur.
+- Rayyanpen'in silgisi, geri al, yinele ve temizle düğmeleri kitaptaki
+  çizimlerde de çalışır. Temizle, ekrandaki sayfaların çizimlerini siler.
+- Kalem olmadan silmek için: alttaki **⋯** menüsünden **Bu sayfadaki çizimleri
+  sil**. Hemen çıkan **Geri al** ile vazgeçebilirsiniz.
+- Her kitap en çok 5 MB çizim saklar (binlerce çizgi). Dolunca en eski
+  çizimler kendiliğinden silinir.
+- Alttaki düğme çubuğunun, kenar boşluğunun ya da kitaplığın üstüne çizilenler
+  kitaba geçmez; ekranda Rayyanpen çizimi olarak kalır.
 
 ## Etkinlikler
 

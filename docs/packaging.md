@@ -48,6 +48,28 @@ Needs Docker or Podman. The first build creates the `interaktiv-floor` image
 `dist/interaktiv-board/` to the top of a stick labelled `INTERAKTIV`
 (FAT32 or exFAT; the label is how `autorun.sh` finds itself).
 
+## Sharing a stick with Rayyanpen
+
+The RAYYANPEN stick (Rayyanpen's board kit, `~/Projects/draw-on-screen/tools/board-kit/`)
+opens a window with one button per section of its `demos.ini`. Interaktiv goes on
+that stick as a second button:
+
+```sh
+packaging/board/build.sh --books df1e313c,0e966773 --stick /run/media/$USER/RAYYANPEN
+```
+
+This replaces only `interaktiv/` and `interaktiv-baslat.sh` on the stick. The
+kit's `demos.ini` has the `[Interaktiv]` section (`Exec=sh interaktiv-baslat.sh`).
+`interaktiv-baslat.sh` installs only when the stick's build or books differ from
+what is installed (it keeps a stamp in `~/.local/share/interaktiv/stick-stamp.txt`),
+so after the first time a tap starts the reader in seconds.
+
+With both apps running, strokes Rayyanpen finishes over a page are handed to
+Interaktiv over D-Bus (`interaktiv_gtk/ink_service.py`, Rayyanpen's D-030) and
+kept per book in `~/.local/share/interaktiv/drawings/<book id>.json`, at most
+5 MB each, oldest strokes deleted first. Drawings survive updates; `kaldir.sh`
+removes them with everything else.
+
 ## Testing without a board
 
 ```bash

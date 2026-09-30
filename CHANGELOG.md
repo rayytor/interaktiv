@@ -1,5 +1,34 @@
 # Changelog
 
+## Unreleased
+
+### Drawing on the book
+- Strokes drawn with Rayyanpen over a page are kept by the book: they stay on
+  the printed line through zoom, scroll, page turns, view modes and rotation,
+  and are there the next time the book is opened. Rayyanpen's eraser, undo,
+  redo and clear reach them too.
+- Each book keeps up to 5 MB of drawings; past that, the oldest strokes are
+  deleted first.
+- The dock's menu can delete the drawings on the pages on screen, with undo.
+
+### Touch like a phone
+- Pinch zooms around the point between the fingers, and moving both fingers
+  pans the page in the same gesture. The page is not re-rendered until the
+  fingers lift or hold still.
+- A double tap zooms around the tapped point; the double tap is tuned for
+  fingers (40 px, 400 ms).
+- Zooming goes to 500 %.
+- While zoomed in, the invisible page-edge strips step aside, so a finger at
+  the edge pans instead of turning the page. A tap on an activity under a strip
+  opens the activity.
+- A tap that misses an activity by up to 12 px still opens it.
+
+### Boards
+- The window's X class is `org.interaktiv.School`, so the menu entry and the
+  panel recognise the running app.
+- `interaktiv-baslat.sh` starts Interaktiv from the RAYYANPEN stick's window,
+  installing only when the stick has something new.
+
 ## 0.9.0 — 2026-09-30
 
 The first release prepared for a school district.
