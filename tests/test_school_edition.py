@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Unit tests for Interaktiv School Edition default behavior.
+Unit tests for Rayyan Ekitap School Edition default behavior.
 
 Verifies:
 - School edition ships with all 56 books by default (names, links, thumbnails, metadata).

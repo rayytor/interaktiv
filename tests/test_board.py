@@ -77,7 +77,7 @@ class TestRightClickGuard(unittest.TestCase):
 class TestFailureMessage(unittest.TestCase):
     def test_the_message_is_turkish_and_names_the_log(self):
         text = failure.message("GTK 4 ve libadwaita bulunamadı.")
-        self.assertIn("Interaktiv başlatılamadı.", text)
+        self.assertIn("Rayyan Ekitap başlatılamadı.", text)
         self.assertIn("GTK 4 ve libadwaita bulunamadı.", text)
         self.assertIn("fotoğrafını", text)
         self.assertIn(failure.log_path(), text)

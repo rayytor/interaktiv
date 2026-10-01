@@ -13,7 +13,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 def parse_args(argv=None):
     parser = argparse.ArgumentParser(
         prog="interaktiv_gtk",
-        description="Interaktiv, a textbook reader for classroom smart boards.",
+        description="Rayyan Ekitap, a textbook reader for classroom smart boards.",
     )
     parser.add_argument(
         "--edition",

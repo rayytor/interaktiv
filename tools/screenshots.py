@@ -215,6 +215,9 @@ def run_inside(args) -> int:
         (200, close_extra_windows),
         (300, close_book),
         (2500, lambda: shot("12-library-continue")),
+        (200, lambda: app.window.library.show_about()),
+        (1500, lambda: shot("13-about")),
+        (200, close_extra_windows),
         (200, app.quit),
     ]
 

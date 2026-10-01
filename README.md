@@ -1,4 +1,4 @@
-# Interaktiv
+# Rayyan Ekitap
 
 *[English](README.en.md)*
 
@@ -33,7 +33,7 @@ yönetici parolası gerekmeden, USB bellekten kurulur ve internet olmadan çalı
 ## Tahtaya kurulum
 
 Kurulum paketi bir USB bellekle gelir. Bellek tahtaya takılınca tahta
-"Çalıştır" diye sorar; Interaktiv öğretmenin hesabına kurulur ve açılır.
+"Çalıştır" diye sorar; Rayyan Ekitap öğretmenin hesabına kurulur ve açılır.
 Ayrıntılar: [docs/kurulum.md](docs/kurulum.md). Günlük kullanım:
 [docs/kullanim.md](docs/kullanim.md).
 
@@ -59,9 +59,9 @@ Testler: `python3 -m pytest`. Tahtanın kütüphane sürümleriyle test etmek i�
 
 ## Lisans ve içerik
 
-Interaktiv, GNU Affero General Public License v3.0 ile dağıtılır
+Rayyan Ekitap, GNU Affero General Public License v3.0 ile dağıtılır
 ([LICENSE](LICENSE)); PDF görüntüleme için kullandığı PyMuPDF de AGPL
 lisanslıdır. Ders kitapları Millî Eğitim Bakanlığının yayınıdır ve
-OGM Materyal üzerinden indirilir; Interaktiv kitapların içeriğini değiştirmez
+OGM Materyal üzerinden indirilir; Rayyan Ekitap kitapların içeriğini değiştirmez
 ve dağıtmaz. Arayüzde kullanılan Inter yazı tipi SIL Open Font License 1.1
 ile lisanslıdır.

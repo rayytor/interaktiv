@@ -2,7 +2,7 @@
 pymupdf>=1.23.0
 psutil>=5.9.0
 
-# System package dependencies for Interaktiv GTK School Edition (GTK4 + libadwaita + WebKitGTK):
+# System package dependencies for Rayyan Ekitap GTK School Edition (GTK4 + libadwaita + WebKitGTK):
 #
 # Debian / Ubuntu / Pardus:
 #   apt install python3-gi gir1.2-gtk-4.0 gir1.2-adw-1 gir1.2-webkit-6.0

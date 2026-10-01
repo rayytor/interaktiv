@@ -2,7 +2,7 @@
 
 ## Kitaplık
 
-- Pardus menüsünden **Interaktiv**'i açın. Son okuduğunuz kitap en üstte,
+- Pardus menüsünden **Rayyan Ekitap**'ı açın. Son okuduğunuz kitap en üstte,
   kaldığınız sayfayla birlikte durur; **Devam et** ile açılır.
 - Kitaplar sınıfa göre sıralanır. Alttaki çubuktan sınıf seçebilir ya da kitap
   adı yazarak arayabilirsiniz.
@@ -36,7 +36,7 @@
 
 ## Kitaba çizim (Rayyanpen ile)
 
-- Rayyanpen kalemini ve Interaktiv'i aynı anda açabilirsiniz. Bellek
+- Rayyanpen kalemini ve Rayyan Ekitap'ı aynı anda açabilirsiniz. Bellek
   penceresinde önce birine, sonra diğerine dokunun.
 - Kalemle bir kitap sayfasının üstüne çizdiğiniz her şey o sayfaya yapışır:
   yakınlaştırınca büyür, kaydırınca ve sayfa çevirince sayfayla birlikte gider,
@@ -49,7 +49,7 @@
   sil**. Hemen çıkan **Geri al** ile vazgeçebilirsiniz.
 - Her kitap en çok 5 MB çizim saklar (binlerce çizgi). Dolunca en eski
   çizimler kendiliğinden silinir.
-- Kalem açıkken de Interaktiv'in bütün düğmeleri çalışır: alttaki düğme çubuğu,
+- Kalem açıkken de Rayyan Ekitap'ın bütün düğmeleri çalışır: alttaki düğme çubuğu,
   üst çubuk, menüler, kitaplık. Kalem yalnızca sayfanın üstünde çizer.
 - İki sayfaya yayılan bir çizgi her iki sayfada da kalır.
 

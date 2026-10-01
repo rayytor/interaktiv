@@ -1,5 +1,5 @@
 """
-Interaktiv, the GTK4 / libadwaita textbook reader for classroom smart boards.
+Rayyan Ekitap, the GTK4 / libadwaita textbook reader for classroom smart boards.
 
 Books are baked ahead of time: every activity region is precomputed into
 `activities/books/<id>/regions.json`, so nothing here detects anything. The

@@ -1,6 +1,6 @@
 #!/bin/sh
 # Builds the smart-board bundle: a folder that goes on a USB stick and installs
-# Interaktiv into a teacher's home folder on Pardus ETAP, without sudo.
+# Rayyan Ekitap into a teacher's home folder on Pardus ETAP, without sudo.
 #
 #   packaging/board/build.sh                        # the app, no books
 #   packaging/board/build.sh --books 09f62a7e,cb558332

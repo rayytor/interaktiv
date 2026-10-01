@@ -1,6 +1,6 @@
 # Kurulum (BT öğretmeni için)
 
-Interaktiv, Pardus ETAP akıllı tahtalara USB bellekten kurulur. Yönetici
+Rayyan Ekitap, Pardus ETAP akıllı tahtalara USB bellekten kurulur. Yönetici
 (`etapadmin`) parolası gerekmez; kurulum, oturum açmış öğretmenin ev dizinine
 yapılır.
 
@@ -17,8 +17,8 @@ yapılır.
 2. Belleği takın. Tahta, *"Bu ortam kendiliğinden çalıştırılması istenen bir
    yazılım içeriyor. Çalıştırmak ister misiniz?"* diye sorar. **Çalıştır**'a
    dokunun.
-3. Bir dakika kadar süren kurulum bitince Interaktiv açılır. Bundan sonra
-   Pardus menüsünde **Interaktiv** adıyla bulunur ve bellek olmadan çalışır.
+3. Bir dakika kadar süren kurulum bitince Rayyan Ekitap açılır. Bundan sonra
+   Pardus menüsünde **Rayyan Ekitap** adıyla bulunur ve bellek olmadan çalışır.
 
 Soru çıkmazsa belleği Dosyalar'da açın, boş bir yere sağ tıklayın (parmağınızı
 basılı tutun), **Uçbirimde Aç**'ı seçin ve şunu yazın:
@@ -44,12 +44,12 @@ belleği o hesapta bir kez daha takın.
 ## Öğrenci hesabı
 
 `ogrenci` hesabında ETA Sınırlı Erişim uygulamaları kısıtlar. Öğrencilerin
-kullanması isteniyorsa Interaktiv o hesapta kurulmalı ve Sınırlı Erişim'de
+kullanması isteniyorsa Rayyan Ekitap o hesapta kurulmalı ve Sınırlı Erişim'de
 izin verilmelidir.
 
 ## Sorun giderme
 
-- **"Interaktiv başlatılamadı" penceresi.** Pencerenin fotoğrafını çekin;
+- **"Rayyan Ekitap başlatılamadı" penceresi.** Pencerenin fotoğrafını çekin;
   ayrıntılar `~/.cache/interaktiv/interaktiv.log` dosyasındadır.
 - **Kitap indirilemiyor.** Okul ağı filtreli olabilir; kitaplar
   `ogm-large-cdn.eba.gov.tr` adresinden indirilir. Kitaplar kurulum paketiyle

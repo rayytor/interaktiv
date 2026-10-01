@@ -1,4 +1,4 @@
-# Interaktiv
+# Rayyan Ekitap
 
 *[Türkçe](README.md)*
 
@@ -33,7 +33,7 @@ works offline.
 ## Installing on a board
 
 The app ships as a folder on a USB stick. When the stick is plugged into a
-board, the desktop offers to run it; Interaktiv installs into the teacher's
+board, the desktop offers to run it; Rayyan Ekitap installs into the teacher's
 account and starts. Details in [docs/kurulum.md](docs/kurulum.md) (Turkish).
 
 Supported: Pardus ETAP 23.4 and 25 (Debian 12 and 13). The install is per
@@ -57,8 +57,8 @@ Tests: `python3 -m pytest`. To test against the board's library versions:
 
 ## Licence and content
 
-Interaktiv is released under the GNU Affero General Public License v3.0
+Rayyan Ekitap is released under the GNU Affero General Public License v3.0
 ([LICENSE](LICENSE)); PyMuPDF, which renders the PDFs, is AGPL as well. The
 textbooks are published by the Ministry of Education and downloaded from OGM
-Materyal; Interaktiv neither alters nor redistributes their content. The Inter
+Materyal; Rayyan Ekitap neither alters nor redistributes their content. The Inter
 typeface is used under the SIL Open Font License 1.1.

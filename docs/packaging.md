@@ -51,7 +51,7 @@ Needs Docker or Podman. The first build creates the `interaktiv-floor` image
 ## Sharing a stick with Rayyanpen
 
 The RAYYANPEN stick (Rayyanpen's board kit, `~/Projects/draw-on-screen/tools/board-kit/`)
-opens a window with one button per section of its `demos.ini`. Interaktiv goes on
+opens a window with one button per section of its `demos.ini`. Rayyan Ekitap goes on
 that stick as a second button:
 
 ```sh
@@ -65,7 +65,7 @@ what is installed (it keeps a stamp in `~/.local/share/interaktiv/stick-stamp.tx
 so after the first time a tap starts the reader in seconds.
 
 With both apps running, strokes Rayyanpen finishes over a page are handed to
-Interaktiv over D-Bus (`interaktiv_gtk/ink_service.py`, Rayyanpen's D-030) and
+Rayyan Ekitap over D-Bus (`interaktiv_gtk/ink_service.py`, Rayyanpen's D-030) and
 kept per book in `~/.local/share/interaktiv/drawings/<book id>.json`, at most
 5 MB each, oldest strokes deleted first. Drawings survive updates; `kaldir.sh`
 removes them with everything else.

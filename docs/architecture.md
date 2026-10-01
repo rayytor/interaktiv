@@ -1,6 +1,6 @@
 # Architecture
 
-Interaktiv is a GTK 4 / libadwaita application written in Python. It reads PDF
+Rayyan Ekitap is a GTK 4 / libadwaita application written in Python. It reads PDF
 textbooks with PyMuPDF and draws, on top of each page, the activity regions
 that were computed ahead of time by the hotspot pipeline
 ([hotspot-pipeline.md](hotspot-pipeline.md)). Nothing is detected at run time.

@@ -1,5 +1,5 @@
 """
-Everything the Interaktiv readers agree on, with no user interface in it.
+Everything the Rayyan Ekitap readers agree on, with no user interface in it.
 
 The catalogue and downloads (`catalogue`), what a bake means (`regions`),
 what the publisher's manifest means (`oges`), how the two are joined

@@ -1,7 +1,7 @@
 [project]
 name = "interaktiv"
 version = "0.9.0"
-description = "Interactive textbook reader for classroom smart boards (Pardus ETAP), GTK 4"
+description = "Rayyan Ekitap: interactive textbook reader for classroom smart boards (Pardus ETAP), GTK 4"
 readme = "README.md"
 requires-python = ">=3.11"
 license = { file = "LICENSE" }

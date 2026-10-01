@@ -18,7 +18,7 @@ class MainWindow(Adw.ApplicationWindow):
     __gtype_name__ = "InteraktivWindow"
 
     def __init__(self, app):
-        super().__init__(application=app, title="Interaktiv")
+        super().__init__(application=app, title="Rayyan Ekitap")
         self.app = app
         self.settings = app.settings
 

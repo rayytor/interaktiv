@@ -33,6 +33,27 @@ MAX_COLUMNS = 12
 CARD_GAP = 14
 
 WEBSITE = "https://github.com/rayytor/interaktiv"
+AUTHOR_URL = "https://github.com/rayytor"
+MADE_BY = "Made by Rayyan Tor"
+
+
+def _link_label(root: Gtk.Widget, text: str, url: str) -> bool:
+    """
+    Turn the label under `root` that shows `text` into a link to `url`.
+
+    The about window's first page shows the developer's name as plain text and
+    has no property for a link there; where the label cannot be found, the
+    name stays as it is and the link on the details page is the only one.
+    """
+    if isinstance(root, Gtk.Label) and root.get_text() == text:
+        root.set_markup(f'<a href="{url}">{GLib.markup_escape_text(text)}</a>')
+        return True
+    child = root.get_first_child()
+    while child is not None:
+        if _link_label(child, text, url):
+            return True
+        child = child.get_next_sibling()
+    return False
 
 
 class LibraryPage(Gtk.Box):
@@ -100,7 +121,7 @@ class LibraryPage(Gtk.Box):
         mark = Gtk.Image.new_from_file(icons.app_icon_path())
         mark.set_pixel_size(32)
         brand.append(mark)
-        wordmark = Gtk.Label(label="Interaktiv")
+        wordmark = Gtk.Label(label="Rayyan Ekitap")
         wordmark.add_css_class("brand-wordmark")
         brand.append(wordmark)
         header.pack_start(brand)
@@ -347,10 +368,12 @@ class LibraryPage(Gtk.Box):
         about = Adw.AboutWindow(
             transient_for=window if isinstance(window, Gtk.Window) else None,
             modal=True,
-            application_name="Interaktiv",
+            application_name="Rayyan Ekitap",
             application_icon=icons.APP,
             version=__version__,
-            comments="Akıllı tahta için etkileşimli ders kitabı okuyucu.",
+            developer_name=MADE_BY,
+            comments="Akıllı tahta için etkileşimli ders kitabı okuyucu.\n\n"
+                     f'<a href="{AUTHOR_URL}">{MADE_BY}</a>',
             website=WEBSITE,
             license_type=Gtk.License.AGPL_3_0,
         )
@@ -359,10 +382,11 @@ class LibraryPage(Gtk.Box):
             "T.C. Millî Eğitim Bakanlığı",
             Gtk.License.CUSTOM,
             "Ders kitapları Millî Eğitim Bakanlığının yayınıdır ve OGM Materyal "
-            "üzerinden indirilir. Interaktiv kitapların içeriğini değiştirmez.",
+            "üzerinden indirilir. Rayyan Ekitap kitapların içeriğini değiştirmez.",
         )
         about.add_legal_section("Inter yazı tipi", "The Inter Project Authors",
                                 Gtk.License.CUSTOM, "SIL Open Font License 1.1")
+        _link_label(about, MADE_BY, AUTHOR_URL)
         about.present()
 
     # -- opening ----------------------------------------------------------

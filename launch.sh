@@ -1,5 +1,5 @@
 #!/bin/sh
-# Starts Interaktiv from this source checkout. On a board, use the bundle from
+# Starts Rayyan Ekitap from this source checkout. On a board, use the bundle from
 # packaging/board/ instead.
 cd "$(dirname "$0")" || exit 1
 # The boards are X11. On a Wayland desktop run through XWayland too, so that

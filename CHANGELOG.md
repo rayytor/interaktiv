@@ -2,13 +2,21 @@
 
 ## Unreleased
 
+### Rayyan Ekitap
+- Interaktiv is now called Rayyan Ekitap: the window, the menu entry, the
+  messages and the documents use the new name. Folders, the menu entry's id
+  and the stick's files keep their names, so an installed copy updates in
+  place and keeps its books, settings and drawings.
+- New icon: an open book beside a tablet.
+- The about window names the author, with a link.
+
 ### Drawing on the book
 - Strokes drawn with Rayyanpen over a page are kept by the book: they stay on
   the printed line through zoom, scroll, page turns, view modes and rotation,
   and are there the next time the book is opened. Rayyanpen's eraser, undo,
   redo and clear reach them too.
 - A stroke across two facing pages is kept on both.
-- Every button of Interaktiv works while Rayyanpen's pen is out: Rayyanpen
+- Every button of Rayyan Ekitap works while Rayyanpen's pen is out: Rayyanpen
   takes taps only over the pages.
 - Each book keeps up to 5 MB of drawings; past that, the oldest strokes are
   deleted first.
@@ -29,7 +37,7 @@
 ### Boards
 - The window's X class is `org.interaktiv.School`, so the menu entry and the
   panel recognise the running app.
-- `interaktiv-baslat.sh` starts Interaktiv from the RAYYANPEN stick's window,
+- `interaktiv-baslat.sh` starts Rayyan Ekitap from the RAYYANPEN stick's window,
   installing only when the stick has something new.
 
 ## 0.9.0 — 2026-09-30

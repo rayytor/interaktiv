@@ -18,8 +18,8 @@ from interaktiv_core import appdirs
 LOG_NAME = "interaktiv.log"
 MAX_LOG_BYTES = 512 * 1024
 
-TITLE = "Interaktiv"
-HEADLINE = "Interaktiv başlatılamadı."
+TITLE = "Rayyan Ekitap"
+HEADLINE = "Rayyan Ekitap başlatılamadı."
 ADVICE = "Bu pencerenin fotoğrafını çekip geliştiriciye gönderin."
 
 

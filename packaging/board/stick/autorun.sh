@@ -1,7 +1,7 @@
 #!/bin/sh
 # Lives at the top of the USB stick. When the stick is plugged into a board the
 # desktop asks whether to run the software on it; pressing "Çalıştır" runs this
-# with /bin/sh. It installs Interaktiv into the user's home folder (no sudo),
+# with /bin/sh. It installs Rayyan Ekitap into the user's home folder (no sudo),
 # writes a short report back to the stick, and starts the app.
 # By hand, from the stick's folder: sh autorun.sh
 here=$(dirname "$0")
@@ -12,12 +12,12 @@ for candidate in "$here" /media/*/INTERAKTIV /run/media/*/INTERAKTIV /media/INTE
 done
 
 say() {
-    zenity "$1" --no-wrap --title=Interaktiv --text="$2" 2>/dev/null \
-        || notify-send Interaktiv "$2" 2>/dev/null || echo "$2"
+    zenity "$1" --no-wrap --title="Rayyan Ekitap" --text="$2" 2>/dev/null \
+        || notify-send "Rayyan Ekitap" "$2" 2>/dev/null || echo "$2"
 }
 
 if [ -z "$stick" ]; then
-    say --error "Interaktiv dosyaları bulunamadı. Belleği çıkarıp yeniden takın."
+    say --error "Rayyan Ekitap dosyaları bulunamadı. Belleği çıkarıp yeniden takın."
     exit 1
 fi
 
@@ -37,7 +37,7 @@ run_install() {
 }
 if command -v zenity >/dev/null 2>&1; then
     run_install | zenity --progress --pulsate --auto-close --no-cancel \
-        --title=Interaktiv --text="Interaktiv kuruluyor…" 2>/dev/null
+        --title="Rayyan Ekitap" --text="Rayyan Ekitap kuruluyor…" 2>/dev/null
 fi
 [ -s "$status_file" ] || run_install
 status=$(cat "$status_file")
@@ -56,7 +56,7 @@ rm -f "$status_file"
 sync
 
 if [ "$status" != 0 ] || ! grep -q '^selftest: ok' "$report"; then
-    say --error "Interaktiv bu tahtada çalıştırılamadı.
+    say --error "Rayyan Ekitap bu tahtada çalıştırılamadı.
 
 Rapor belleğe yazıldı: results/rapor-$stamp.txt
 Bu pencerenin fotoğrafını çekip geliştiriciye gönderin."

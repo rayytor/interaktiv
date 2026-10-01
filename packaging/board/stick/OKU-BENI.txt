@@ -1,15 +1,15 @@
-INTERAKTIV - akıllı tahta için etkileşimli ders kitabı okuyucu
+RAYYAN EKITAP - akıllı tahta için etkileşimli ders kitabı okuyucu
 
 Kurulum
   1. Bu belleği tahtaya takın.
   2. "Bu ortam kendiliğinden çalıştırılması istenen bir yazılım içeriyor"
      sorusuna "Çalıştır" deyin.
-  3. Interaktiv kurulur ve açılır. Yönetici parolası gerekmez.
+  3. Rayyan Ekitap kurulur ve açılır. Yönetici parolası gerekmez.
 
 Soru çıkmazsa belleği Dosyalar'da açın, boş bir yere sağ tıklayın (parmağınızı
 basılı tutun), "Uçbirimde Aç" deyin ve şunu yazın:  sh autorun.sh
 
-Kurulumdan sonra Interaktiv, Pardus menüsünde "Interaktiv" adıyla bulunur ve
+Kurulumdan sonra Rayyan Ekitap, Pardus menüsünde "Rayyan Ekitap" adıyla bulunur ve
 bellek olmadan çalışır. Kurulum yalnızca oturum açan kullanıcı içindir; başka
 bir öğretmen hesabı için belleği o hesapta bir kez daha takın.
 

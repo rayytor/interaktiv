@@ -1,5 +1,5 @@
 #!/bin/sh
-# Installs Interaktiv from this folder into the user's own home folder.
+# Installs Rayyan Ekitap from this folder into the user's own home folder.
 # No sudo. Run again to update; books already installed are kept.
 #   sh install.sh
 set -e
@@ -39,7 +39,7 @@ cp "$dest/icon.svg" "$icons/org.interaktiv.School.svg"
 cat >"$applications/org.interaktiv.School.desktop" <<DESKTOP
 [Desktop Entry]
 Type=Application
-Name=Interaktiv
+Name=Rayyan Ekitap
 GenericName=Textbook Reader
 GenericName[tr]=Ders Kitabı Okuyucu
 Comment=Interactive textbooks for the smart board
@@ -52,4 +52,4 @@ Keywords=kitap;ders;pdf;tahta;etkinlik;
 StartupWMClass=org.interaktiv.School
 DESKTOP
 
-echo "Interaktiv kuruldu: $dest"
+echo "Rayyan Ekitap kuruldu: $dest"
