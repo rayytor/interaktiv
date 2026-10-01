@@ -7,4 +7,7 @@ cd "$(dirname "$0")" || exit 1
 # and hand its strokes to it; a Wayland window has no position it could ask for.
 # INTERAKTIV_GDK_BACKEND=wayland ./launch.sh runs it as a Wayland window anyway.
 [ -n "$DISPLAY" ] && export GDK_BACKEND="${INTERAKTIV_GDK_BACKEND:-x11}"
+# Draw with OpenGL, as the boards do. GTK's newer default, Vulkan, shows a
+# frame of the previous zoom over XWayland after a page is rendered again.
+[ -z "$GSK_RENDERER" ] && export GSK_RENDERER=gl
 exec python3 -m interaktiv_gtk "$@"

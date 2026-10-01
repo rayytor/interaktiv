@@ -9,6 +9,7 @@ through the answers it gives for windows it does and does not own.
 
 import os
 import sys
+import tempfile
 import unittest
 from unittest.mock import MagicMock, patch
 
@@ -229,8 +230,9 @@ class TestStrokeAcrossPages(unittest.TestCase):
         reader = MagicMock()
         reader.focus_overlay.is_active = False
         reader.visible_page_views.return_value = [left, right]
-        ink = BookInk("test-book")
+        ink = BookInk("test-book", path=os.path.join(tempfile.mkdtemp(), "ink.json"))
         controller = InkController(reader, ink)
+        controller.changed = lambda: None  # no save timer left behind
         controller._bounds = lambda v: (v.left, v.top, v.size[0] * v.scale, v.size[1] * v.scale)
         controller.view_at = lambda x, y: left if x < 500 else right
         return controller, ink
