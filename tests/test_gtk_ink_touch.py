@@ -211,6 +211,18 @@ class TestInkService(unittest.TestCase):
         reader.gesture_at_window.assert_called_with("update", 40.0, 30.0, 1.2)
         self.assertEqual(service.handle("Gesture", (42, "spin", 1.0, 1.0, 1.0)), (False,))
 
+    def test_surfaces_are_in_the_x_windows_pixels(self):
+        reader = MagicMock()
+        reader.ink_controller.surfaces.return_value = (
+            [(100.0, 50.0, 400.0, 600.0)], [(200.0, 600.0, 80.0, 40.0)])
+        service = self._service(reader=reader)
+        pages, controls = service.handle("Surfaces", (42,))
+        self.assertEqual(pages, [220.0, 140.0, 800.0, 1200.0])
+        self.assertEqual(controls, [420.0, 1240.0, 160.0, 80.0])
+        # Another window, or no book open: nothing to draw on, every tap is the app's.
+        self.assertEqual(service.handle("Surfaces", (7,)), ([], []))
+        self.assertEqual(self._service(reader=None).handle("Surfaces", (42,)), ([], []))
+
     def test_introspection_parses(self):
         from gi.repository import Gio
         info = Gio.DBusNodeInfo.new_for_xml(ink_service.INTROSPECTION)

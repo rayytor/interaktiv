@@ -7,6 +7,9 @@
   the printed line through zoom, scroll, page turns, view modes and rotation,
   and are there the next time the book is opened. Rayyanpen's eraser, undo,
   redo and clear reach them too.
+- A stroke across two facing pages is kept on both.
+- Every button of Interaktiv works while Rayyanpen's pen is out: Rayyanpen
+  takes taps only over the pages.
 - Each book keeps up to 5 MB of drawings; past that, the oldest strokes are
   deleted first.
 - The dock's menu can delete the drawings on the pages on screen, with undo.

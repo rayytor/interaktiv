@@ -49,8 +49,9 @@
   sil**. Hemen çıkan **Geri al** ile vazgeçebilirsiniz.
 - Her kitap en çok 5 MB çizim saklar (binlerce çizgi). Dolunca en eski
   çizimler kendiliğinden silinir.
-- Alttaki düğme çubuğunun, kenar boşluğunun ya da kitaplığın üstüne çizilenler
-  kitaba geçmez; ekranda Rayyanpen çizimi olarak kalır.
+- Kalem açıkken de Interaktiv'in bütün düğmeleri çalışır: alttaki düğme çubuğu,
+  üst çubuk, menüler, kitaplık. Kalem yalnızca sayfanın üstünde çizer.
+- İki sayfaya yayılan bir çizgi her iki sayfada da kalır.
 
 ## Etkinlikler
 

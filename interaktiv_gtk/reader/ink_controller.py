@@ -37,6 +37,19 @@ HISTORY = 200
 ID_SEPARATOR = "+"
 
 Point = Tuple[float, float]
+Rect = Tuple[float, float, float, float]  # x, y, width, height
+
+# Widgets that take a tap. Where one lies over a page, the tap is its.
+CONTROL_TYPES = (
+    Gtk.Button, Gtk.MenuButton, Gtk.Scale, Gtk.Editable, Gtk.Switch,
+    Gtk.ListBox, Gtk.ListView, Gtk.GridView, Gtk.DropDown,
+)
+
+
+def _intersect(a: Rect, b: Rect) -> Optional[Rect]:
+    x0, y0 = max(a[0], b[0]), max(a[1], b[1])
+    x1, y1 = min(a[0] + a[2], b[0] + b[2]), min(a[1] + a[3], b[1] + b[3])
+    return (x0, y0, x1 - x0, y1 - y0) if x1 > x0 and y1 > y0 else None
 
 
 def _bounded_put(store: "OrderedDict", key, value) -> None:
@@ -102,6 +115,85 @@ class InkController:
             if b and b[0] <= x <= b[0] + b[2] and b[1] <= y <= b[1] + b[3]:
                 return view
         return None
+
+    # -- what Rayyanpen may draw over ----------------------------------------
+
+    def surfaces(self) -> Tuple[List[Rect], List[Rect]]:
+        """
+        The pages on screen and the controls lying over them, as rectangles in
+        the window's logical coordinates.
+
+        Rayyanpen takes input only over the pages less the controls; a tap
+        anywhere else in the window comes straight here, so the dock, the
+        header and every other button work while its pen is out. With a menu
+        or a dialog open there are no pages to draw on at all.
+        """
+        root = self._root()
+        if root is None or self._menu_open(root):
+            return [], []
+        focus = getattr(self.reader, "focus_overlay", None)
+        clip = None
+        if focus is None or not focus.is_active:
+            clip = self._widget_rect(self.reader.canvas_scroller(), root)
+            if clip is None:
+                return [], []
+        pages = []
+        for view in self._views():
+            rect = self._bounds(view)
+            if rect is not None and clip is not None:
+                rect = _intersect(rect, clip)
+            if rect is not None:
+                pages.append(rect)
+        if not pages:
+            return [], []
+        controls: List[Rect] = []
+        self._collect_controls(self.reader, root, controls)
+        return pages, [c for c in controls if any(_intersect(c, p) for p in pages)]
+
+    @staticmethod
+    def _widget_rect(widget, root) -> Optional[Rect]:
+        ok, b = widget.compute_bounds(root)
+        if not ok or b.get_width() <= 0 or b.get_height() <= 0:
+            return None
+        return (b.get_x(), b.get_y(), b.get_width(), b.get_height())
+
+    @staticmethod
+    def _menu_open(root) -> bool:
+        """A dialog over the window, or a popover anywhere in it."""
+        for window in Gtk.Window.list_toplevels():
+            if window is not root and window.get_mapped() and window.get_transient_for() is root:
+                return True
+        stack = [root]
+        while stack:
+            widget = stack.pop()
+            if not widget.get_mapped():
+                continue
+            if isinstance(widget, Gtk.Popover):
+                return True
+            child = widget.get_first_child()
+            while child is not None:
+                stack.append(child)
+                child = child.get_next_sibling()
+        return False
+
+    def _collect_controls(self, widget, root, out: List[Rect]) -> None:
+        # The page-turn strips are invisible and lie over the sheet's edges:
+        # they stay drawable, as in `view_at`.
+        edges = [getattr(self.reader, n, None) for n in ("btn_prev", "btn_next")]
+        # The canvas holds only pages (scroll mode's are rows of a list view).
+        canvas = getattr(self.reader, "canvas_stack", None)
+        if not widget.get_mapped() or widget is canvas or isinstance(widget, PageView) or any(
+                widget is e for e in edges):
+            return
+        if isinstance(widget, CONTROL_TYPES) or widget is getattr(self.reader, "dock", None):
+            rect = self._widget_rect(widget, root)
+            if rect is not None:
+                out.append(rect)
+            return
+        child = widget.get_first_child()
+        while child is not None:
+            self._collect_controls(child, root, out)
+            child = child.get_next_sibling()
 
     def accepts(self, x: float, y: float) -> bool:
         return self.view_at(x, y) is not None

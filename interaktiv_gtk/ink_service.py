@@ -7,6 +7,8 @@ reader keeps the stroke in the book (see `reader/ink_controller.py`) and
 Rayyanpen drops its own copy, so the drawing moves and scales with the page
 from then on. Its eraser, undo and redo reach the book the same way, and so do
 the two-finger pinch and pan a teacher makes over the book with the pen out.
+`Surfaces` tells it where the pages are and which controls lie over them, so
+that it takes input only there and every button here works with its pen out.
 
 The object is `/org/interaktiv/School/Ink` on the application's own bus name,
 `org.interaktiv.School`, interface `org.interaktiv.School.Ink`.
@@ -79,6 +81,11 @@ INTROSPECTION = f"""
       <arg direction="in" type="d" name="y"/>
       <arg direction="in" type="d" name="scale"/>
       <arg direction="out" type="b" name="handled"/>
+    </method>
+    <method name="Surfaces">
+      <arg direction="in" type="t" name="xid"/>
+      <arg direction="out" type="ad" name="pages"/>
+      <arg direction="out" type="ad" name="controls"/>
     </method>
   </interface>
 </node>
@@ -165,6 +172,12 @@ class InkService:
 
         xid = args[1] if method == "Erase" else args[0]
         to_win = self._mapper(xid)
+        if method == "Surfaces":
+            # Flat x, y, width, height runs, in the X window's physical pixels.
+            if to_win is None or ink is None:
+                return ([], [])
+            pages, controls = ink.surfaces()
+            return (self._from_window(pages), self._from_window(controls))
         refused = {
             "Accepts": (False,), "AddStroke": ("",), "Erase": (0,),
             "ClearPage": ("",), "Gesture": (False,),
@@ -192,6 +205,15 @@ class InkService:
                 return (False,)
             return (bool(reader.gesture_at_window(phase, *to_win(x, y), scale)),)
         return refused
+
+    def _from_window(self, rects) -> list:
+        window = self._window()
+        scale = self._scale()
+        shadow_x, shadow_y = window.get_surface_transform()
+        out = []
+        for x, y, w, h in rects:
+            out += [(x + shadow_x) * scale, (y + shadow_y) * scale, w * scale, h * scale]
+        return out
 
     def _scale(self) -> int:
         window = self._window()
