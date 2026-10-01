@@ -33,6 +33,8 @@ SAVE_DELAY_MS = 1000
 SIMPLIFY_PX = 0.35
 # Undo history kept for strokes Rayyanpen took back and for eraser sessions.
 HISTORY = 200
+# Joins the ids of one stroke's pieces on different pages.
+ID_SEPARATOR = "+"
 
 Point = Tuple[float, float]
 
@@ -115,48 +117,84 @@ class InkController:
 
     def add_stroke(self, kind: str, rgba: str, width_px: float,
                    points: Sequence[Point]) -> str:
-        """Keep a finished stroke on the page it was drawn over. '' if refused."""
+        """
+        Keep a finished stroke on the pages it was drawn over. '' if refused.
+
+        A stroke across two facing pages is kept on both, each page holding the
+        part that is on it, so it is whole on screen and each half goes with
+        its own page afterwards. The pieces share one id (`a+b`), which
+        `remove` and `restore` take apart again.
+        """
         if kind not in KINDS or not points or width_px <= 0:
             return ""
         first = self.view_at(*points[0])
         if first is None:
             return ""
-        view = self._majority(points, first)
-        pdf, transform = self._to_pdf(view, points)
-        if pdf is None:
-            return ""
-        if kind in SHAPES:
-            pdf = [pdf[0], pdf[-1]]
-        elif kind in FREEHAND:
-            pdf = simplify(pdf, SIMPLIFY_PX / transform.scale)
-        try:
-            stroke = InkStroke(
-                page=view.page, kind=kind, rgba=rgba,
-                width=width_px / transform.scale,
-                points=[c for p in pdf for c in p],
-            )
-        except ValueError:
-            return ""
-        self.ink.add(stroke)
-        self.changed()
-        return stroke.id
-
-    def _majority(self, points: Sequence[Point], first: PageView) -> PageView:
-        """A stroke across two facing pages belongs to the one it is mostly on."""
-        best, best_n = first, -1
+        ids: List[str] = []
         for view in self._views():
             b = self._bounds(view)
             if b is None:
                 continue
-            n = sum(1 for x, y in points
-                    if b[0] <= x <= b[0] + b[2] and b[1] <= y <= b[1] + b[3])
-            if n > best_n or (n == best_n and view is first):
-                best, best_n = view, n
-        return best
+            for run in self._runs_on(kind, points, b, width_px / 2.0, view is first):
+                pdf, transform = self._to_pdf(view, run)
+                if pdf is None:
+                    continue
+                if kind in FREEHAND:
+                    pdf = simplify(pdf, SIMPLIFY_PX / transform.scale)
+                try:
+                    stroke = InkStroke(
+                        page=view.page, kind=kind, rgba=rgba,
+                        width=width_px / transform.scale,
+                        points=[c for p in pdf for c in p],
+                    )
+                except ValueError:
+                    continue
+                self.ink.add(stroke)
+                ids.append(stroke.id)
+        if not ids:
+            return ""
+        self.changed()
+        return ID_SEPARATOR.join(ids)
+
+    @staticmethod
+    def _runs_on(kind: str, points: Sequence[Point], bounds, pad: float,
+                 is_first: bool) -> List[List[Point]]:
+        """
+        The parts of a stroke that a page at `bounds` has to keep.
+
+        A shape is kept whole by every page its box reaches, and the page clips
+        it. A freehand stroke is cut into the runs of points on the page, each
+        with one point beyond either end so the ink runs up to the page's edge.
+        """
+        x0, y0 = bounds[0] - pad, bounds[1] - pad
+        x1, y1 = bounds[0] + bounds[2] + pad, bounds[1] + bounds[3] + pad
+        if kind in SHAPES:
+            (ax, ay), (bx, by) = points[0], points[-1]
+            reaches = (min(ax, bx) <= x1 and max(ax, bx) >= x0
+                       and min(ay, by) <= y1 and max(ay, by) >= y0)
+            return [[points[0], points[-1]]] if reaches or is_first else []
+        inside = [x0 <= x <= x1 and y0 <= y <= y1 for x, y in points]
+        runs: List[List[Point]] = []
+        run: List[Point] = []
+        for i, point in enumerate(points):
+            near = inside[i] or (i > 0 and inside[i - 1]) or (
+                i + 1 < len(points) and inside[i + 1])
+            if near:
+                run.append(point)
+            elif run:
+                runs.append(run)
+                run = []
+        if run:
+            runs.append(run)
+        return runs
+
+    @staticmethod
+    def _split_ids(ids: Sequence[str]) -> List[str]:
+        return [part for i in ids for part in i.split(ID_SEPARATOR) if part]
 
     def remove(self, ids: Sequence[str]) -> int:
         """Rayyanpen's undo of a stroke it handed over."""
-        removed = self.ink.remove(ids)
+        removed = self.ink.remove(self._split_ids(ids))
         for stroke in removed:
             _bounded_put(self._removed, stroke.id, stroke)
         if removed:
@@ -165,7 +203,7 @@ class InkController:
 
     def restore(self, ids: Sequence[str]) -> int:
         """Rayyanpen's redo of that undo."""
-        strokes = [self._removed.pop(i) for i in ids if i in self._removed]
+        strokes = [self._removed.pop(i) for i in self._split_ids(ids) if i in self._removed]
         if strokes:
             self.ink.restore(strokes)
             self.changed()

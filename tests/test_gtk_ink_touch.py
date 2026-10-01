@@ -220,6 +220,50 @@ class TestInkService(unittest.TestCase):
         )
 
 
+class TestStrokeAcrossPages(unittest.TestCase):
+    """Two facing pages, 500 pt wide each, side by side at 1 px per pt."""
+
+    def _controller(self):
+        from interaktiv_gtk.reader.ink_controller import InkController
+        left, right = FakeView(4, 0, 0, 1.0), FakeView(5, 500, 0, 1.0)
+        reader = MagicMock()
+        reader.focus_overlay.is_active = False
+        reader.visible_page_views.return_value = [left, right]
+        ink = BookInk("test-book")
+        controller = InkController(reader, ink)
+        controller._bounds = lambda v: (v.left, v.top, v.size[0] * v.scale, v.size[1] * v.scale)
+        controller.view_at = lambda x, y: left if x < 500 else right
+        return controller, ink
+
+    def test_a_pen_stroke_is_kept_on_both_pages(self):
+        controller, ink = self._controller()
+        points = [(float(x), 100.0 + (x % 7)) for x in range(300, 701, 10)]
+        stroke_id = controller.add_stroke("pen", "#000000ff", 4.0, points)
+        self.assertEqual(len(stroke_id.split("+")), 2)
+        (a,), (b,) = ink.strokes_on(4), ink.strokes_on(5)
+        # Each half runs just past the page's edge, so the two meet there.
+        self.assertGreater(max(x for x, _ in a.pairs()), 500)
+        self.assertLess(min(x for x, _ in b.pairs()), 0)
+        # One undo step takes both halves, one redo brings both back.
+        self.assertEqual(controller.remove([stroke_id]), 2)
+        self.assertEqual(len(ink), 0)
+        self.assertEqual(controller.restore([stroke_id]), 2)
+        self.assertEqual(len(ink), 2)
+
+    def test_a_shape_is_kept_whole_on_each_page_it_reaches(self):
+        controller, ink = self._controller()
+        controller.add_stroke("rect", "#000000ff", 4.0, [(400.0, 100.0), (650.0, 300.0)])
+        self.assertEqual(len(ink.strokes_on(4)), 1)
+        self.assertEqual(len(ink.strokes_on(5)), 1)
+
+    def test_a_stroke_on_one_page_stays_one_stroke(self):
+        controller, ink = self._controller()
+        stroke_id = controller.add_stroke("pen", "#000000ff", 4.0, [(100.0, 100.0), (200.0, 150.0)])
+        self.assertNotIn("+", stroke_id)
+        self.assertEqual(len(ink), 1)
+        self.assertEqual(ink.strokes_on(5), [])
+
+
 class TestReaderInkWiring(unittest.TestCase):
     def _page(self, tmp):
         from interaktiv_gtk.reader.view import ReaderPage
