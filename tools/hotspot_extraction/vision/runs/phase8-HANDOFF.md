@@ -203,3 +203,45 @@ $PY $V/infer.py --run student-8 --resolution 864 --all --conf 0.3 --out data/vis
 ```
 
 The eight new books show in the reader with the rules engine's hotspots until step 5.
+
+## 9. 2026-10-03, later: the labels, student-8, `bake-6` (not installed)
+
+The user asked for the Antigravity CLI when the API keys ran out. `teacher_all_routes.py` was copied in
+under a temporary name, run with `--route agy`, and deleted: 69 no-hint pages (`labels/agy/v2-nohint-g38`)
+and 319 of the 320 round-3 pages (`labels/agy/v2-round3-g38`), 448 of the CLI's 1,500 daily requests,
+10 minutes. With `qa.py --allow-miss`: no-hint 119 of 125 trusted, round 3 316 of 320
+(`runs/phase8-qa-round3-agy.json`). Section 8's steps 1 to 4 are done.
+
+Dataset (`--selection data/vision/select/round1+3.json`, the no-hint verdicts first): train 1,739 pages,
+4,345 boxes, 24 books (was 1,362 / 3,446 / 16); validation and held-out unchanged. The previous
+`dataset.json` is kept as `data/vision/dataset-student7.json`.
+
+`train.py --run student-8 --init student-7 --resolution 864 --epochs 7`: 706 s, 6.45 GB VRAM (9 GB
+reserved), RAM 10 of 14 GB, best epoch 5, val mAP50-95 0.882 (student-7: 0.869). `infer.py --all --conf
+0.3 --out data/vision/pred-s8-low`: 35 books. Confidence chosen on validation: 0.7 (at 0.6: found 0.857,
+12.3 % answering none). **`data/vision/bake-6/`** = student-8 at 0.7, `--icons bind`, admit, 35 books.
+
+| Against the teacher | Found (IoU ≥ 0.5) | IoU ≥ 0.85 | Same content | Regions answering no teacher box | Empty pages with a region |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| validation, `bake-5` (student-7) | 0.812 | 0.759 | 0.737 | 13 of 121 (10.7 %) | 0 of 28 |
+| validation, `bake-6` (student-8) | 0.850 | 0.789 | 0.767 | 11 of 124 (8.9 %) | 0 of 28 |
+| held-out, `bake-5` | 0.623 | 0.559 | 0.607 | 93 of 603 (15.4 %) | 7 of 83 |
+| held-out, `bake-6` (scored once) | 0.591 | 0.530 | 0.569 | 77 of 559 (13.8 %) | 4 of 83 |
+
+Scorecard, held-out (`runs/phase8-compare-bake5-as-rules-vs-bake6-student8.json`; its "rules" rows are
+`bake-5`, and its "?" split is the eight new books, whose "rules" row is the rules bake): `bake-6` 2,742
+regions, cuts/region 0.021, violations 0, match 0.455 (`bake-5`: 2,818, 0.023, 0, 0.473).
+
+**Eight more books did not make the student better on unseen books.** On held-out student-8 draws fewer
+hotspots: 16 fewer on nothing, 3 fewer on empty pages, and 27 fewer teacher boxes found. It is better on
+validation and on the books it trained on. Per book it gained on `51cdbbce` (maths), `cb558332` (physics),
+`a7a7886a`; it lost on `7fad03e9` (Fen Lisesi physics), `11941059` and `c9f63718` (ELT).
+
+**State.** `activities/books/` still holds `bake-5` for the 27 books and the rules bake for the eight new
+ones; `scan.py`'s `VISION_PRED` still names student-7. Installing `bake-6` is the user's choice:
+copy `data/vision/bake-6/activities/books/` over `activities/books/`, set `VISION_PRED` to
+`pred-s8-low`, run `python3 -m pytest tests`, restart the reader.
+
+Still open: old step 2 at scale (the limit on unseen books is not yet "more of the same eight"; the ELT and
+Fen Lisesi losses say which layouts to add), and a rules re-bake with the corrected ruler if the rules
+numbers are wanted again.
