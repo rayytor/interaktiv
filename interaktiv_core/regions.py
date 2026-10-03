@@ -11,8 +11,9 @@ Two things are load-bearing and easy to get wrong:
 
   * every rect is in **PDF user space, y-up, origin bottom-left**. Nothing here
     converts; `interaktiv_core.geometry` does, once.
-  * `pages` is **sparse** -- only sheets that carry activities appear, keyed by
-    the 1-based page number as a string. A 289-page book typically has 93 keys.
+  * `pages` is **sparse** -- only sheets that carry regions appear, keyed by
+    the 1-based page number as a string. With content regions in the bake that
+    is every sheet but the front matter and the chapter openers.
     Pages are therefore materialised on demand and held behind a small cache,
     because the raw file runs to several hundred kilobytes.
 """
@@ -57,6 +58,11 @@ class Activity:
     instead of a single bounding box covering -- and stealing clicks from -- its
     neighbours. `rect` is the region's extent and is only used when `parts` is
     empty.
+
+    `kind` is "activity" for an exercise and "content" for everything else a
+    page holds -- a passage, a figure, an explanation. A content region opens
+    in focus mode like any other; it has no label, no questions and never an
+    interactive version, and it is not counted or listed as an activity.
     """
 
     id: str
@@ -69,6 +75,11 @@ class Activity:
     anchored: bool = False
     oge_id: Optional[str] = None
     items: Tuple[Item, ...] = ()
+    kind: str = "activity"
+
+    @property
+    def is_content(self) -> bool:
+        return self.kind != "activity"
 
     @property
     def piece_rects(self) -> Tuple[Rect, ...]:
@@ -88,7 +99,7 @@ class Activity:
         """
         if self.label:
             return f"Activity {self.label}"
-        return self.headline or "Activity"
+        return self.headline or ("Content" if self.is_content else "Activity")
 
 
 @dataclass(frozen=True, slots=True)
@@ -256,6 +267,7 @@ class RegionsBook:
                     anchored=bool(a.get("anchored")),
                     oge_id=(str(a["ogeId"]) if a.get("ogeId") else None),
                     items=items,
+                    kind=str(a.get("kind") or "activity"),
                 )
             )
         return PageRegions(

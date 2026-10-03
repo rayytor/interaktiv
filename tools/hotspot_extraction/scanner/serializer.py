@@ -189,12 +189,17 @@ def detect_book_calibration(
     Calibrate document typography: marker font styles, dominant marker size,
     and detector confidence level ('strong', 'weak', 'none').
     """
+    # Confidence is about the labels the detector read, so only activities argue for it; a book
+    # with nothing but content regions still has something to draw.
+    any_region = any(acts for acts in (pages_activities or {}).values())
+    pages_activities = {
+        p: [a for a in acts if a.kind == "activity"] for p, acts in (pages_activities or {}).items()
+    }
     all_acts: List[ActivityRegion] = []
-    if pages_activities:
-        for acts in pages_activities.values():
-            all_acts.extend(acts)
+    for acts in pages_activities.values():
+        all_acts.extend(acts)
 
-    if _reads_a_run(pages_activities or {}):
+    if _reads_a_run(pages_activities):
         confidence = "strong"
         enabled = True
     elif all_acts:
@@ -202,7 +207,7 @@ def detect_book_calibration(
         enabled = True
     else:
         confidence = "none"
-        enabled = False
+        enabled = any_region
 
     marker_sizes: List[float] = []
     marker_styles: Set[str] = set()
@@ -274,6 +279,11 @@ def serialize_activity(act: ActivityRegion) -> Dict[str, Any]:
         "rect": [act.rect[0], act.rect[1], act.rect[2], act.rect[3]],
         "parts": [[p[0], p[1], p[2], p[3]] for p in (act.parts or [act.rect])],
     }
+
+    # An activity says nothing; a content region (scanner/content.py) says so. A reader that does not
+    # know the field draws it as one more region that opens in focus mode, which is what it is.
+    if act.kind != "activity":
+        out["kind"] = act.kind
 
     if act.headline:
         out["headline"] = act.headline

@@ -3,7 +3,7 @@
   "bookId": "c9f63718-e30b-4a3c-ad5b-63f83f2506e9",
   "fingerprint": "50915781-16924e6afbee9d0c622d20b60a1c205b",
   "profile": "c7de24295a4b",
-  "builtAt": "2026-10-03T08:00:19.005Z",
+  "builtAt": "2026-10-03T11:44:25.299Z",
   "pageCount": 71,
   "calibration": {
     "enabled": true,
@@ -114,6 +114,81 @@
   },
   "anchors": {},
   "pages": {
+    "10": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          58.5882,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p10-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            5.5039,
+            322.3615,
+            555.454,
+            759.535
+          ],
+          "parts": [
+            [
+              5.5039,
+              322.3615,
+              555.454,
+              759.535
+            ]
+          ],
+          "kind": "content",
+          "headline": "THEME 1"
+        },
+        {
+          "id": "p10-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            6.2126,
+            242.4115,
+            278.5925,
+            317.6512
+          ],
+          "parts": [
+            [
+              6.2126,
+              242.4115,
+              278.5925,
+              317.6512
+            ]
+          ],
+          "kind": "content",
+          "headline": "Functions"
+        },
+        {
+          "id": "p10-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            6.2126,
+            0.0,
+            524.54,
+            237.7015
+          ],
+          "parts": [
+            [
+              6.2126,
+              0.0,
+              524.54,
+              237.7015
+            ]
+          ],
+          "kind": "content",
+          "headline": "Social Language"
+        }
+      ]
+    },
     "11": {
       "pageWidth": 569.764,
       "pageHeight": 796.535,
@@ -220,6 +295,67 @@
           ]
         },
         {
+          "id": "p11-b",
+          "label": "b",
+          "column": 0,
+          "rect": [
+            45.0692,
+            77.3173,
+            269.4138,
+            602.3518
+          ],
+          "parts": [
+            [
+              45.0692,
+              77.3173,
+              269.4138,
+              602.3518
+            ]
+          ],
+          "headline": "Listen to the audio again and write the name of each city under the correct photo below. One is extra.",
+          "items": [
+            {
+              "id": "p11-b-1",
+              "label": "1",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                93.3939,
+                458.6579,
+                107.1039,
+                480.2779
+              ],
+              "text": "1"
+            },
+            {
+              "id": "p11-b-2",
+              "label": "2",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                65.062,
+                315.7169,
+                78.772,
+                337.3369
+              ],
+              "text": "2"
+            },
+            {
+              "id": "p11-b-3",
+              "label": "3",
+              "number": 3,
+              "partIndex": 0,
+              "rect": [
+                93.2154,
+                172.776,
+                106.9254,
+                194.396
+              ],
+              "text": "3"
+            }
+          ]
+        },
+        {
           "id": "p11-c",
           "label": "c",
           "column": 1,
@@ -303,67 +439,6 @@
                 462.5661
               ],
               "text": "How old are the Venetian walls? 5"
-            }
-          ]
-        },
-        {
-          "id": "p11-b",
-          "label": "b",
-          "column": 0,
-          "rect": [
-            45.0692,
-            77.3173,
-            269.4138,
-            602.3518
-          ],
-          "parts": [
-            [
-              45.0692,
-              77.3173,
-              269.4138,
-              602.3518
-            ]
-          ],
-          "headline": "Listen to the audio again and write the name of each city under the correct photo below. One is extra.",
-          "items": [
-            {
-              "id": "p11-b-1",
-              "label": "1",
-              "number": 1,
-              "partIndex": 0,
-              "rect": [
-                93.3939,
-                458.6579,
-                107.1039,
-                480.2779
-              ],
-              "text": "1"
-            },
-            {
-              "id": "p11-b-2",
-              "label": "2",
-              "number": 2,
-              "partIndex": 0,
-              "rect": [
-                65.062,
-                315.7169,
-                78.772,
-                337.3369
-              ],
-              "text": "2"
-            },
-            {
-              "id": "p11-b-3",
-              "label": "3",
-              "number": 3,
-              "partIndex": 0,
-              "rect": [
-                93.2154,
-                172.776,
-                106.9254,
-                194.396
-              ],
-              "text": "3"
             }
           ]
         },
@@ -587,6 +662,27 @@
             ]
           ],
           "headline": "Circle the correct option for each."
+        },
+        {
+          "id": "p12-c1",
+          "label": null,
+          "column": 2,
+          "rect": [
+            317.3112,
+            392.0908,
+            524.1286,
+            737.3969
+          ],
+          "parts": [
+            [
+              317.3112,
+              392.0908,
+              524.1286,
+              737.3969
+            ]
+          ],
+          "kind": "content",
+          "headline": "2"
         }
       ]
     },
@@ -748,6 +844,45 @@
       ],
       "activities": [
         {
+          "id": "p14-v2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            81.7366,
+            621.7089,
+            276.8091,
+            732.1224
+          ],
+          "parts": [
+            [
+              81.7366,
+              621.7089,
+              276.8091,
+              732.1224
+            ]
+          ]
+        },
+        {
+          "id": "p14-k",
+          "label": "k",
+          "column": 0,
+          "rect": [
+            60.0367,
+            433.4774,
+            281.0984,
+            609.1379
+          ],
+          "parts": [
+            [
+              60.0367,
+              433.4774,
+              281.0984,
+              609.1379
+            ]
+          ],
+          "headline": "Put the steps in Hazel and Emily’s journey in the correct order (1–5)."
+        },
+        {
           "id": "p14-l",
           "label": "l",
           "column": 1,
@@ -809,45 +944,6 @@
           ]
         },
         {
-          "id": "p14-v2",
-          "label": null,
-          "column": 0,
-          "rect": [
-            81.7366,
-            621.7089,
-            276.8091,
-            732.1224
-          ],
-          "parts": [
-            [
-              81.7366,
-              621.7089,
-              276.8091,
-              732.1224
-            ]
-          ]
-        },
-        {
-          "id": "p14-k",
-          "label": "k",
-          "column": 0,
-          "rect": [
-            60.0367,
-            433.4774,
-            281.0984,
-            609.1379
-          ],
-          "parts": [
-            [
-              60.0367,
-              433.4774,
-              281.0984,
-              609.1379
-            ]
-          ],
-          "headline": "Put the steps in Hazel and Emily’s journey in the correct order (1–5)."
-        },
-        {
           "id": "p14-v4",
           "label": null,
           "column": 0,
@@ -868,6 +964,137 @@
         }
       ]
     },
+    "15": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.0237,
+          279.1262
+        ],
+        [
+          283.1262,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p15-o",
+          "label": "o",
+          "column": 1,
+          "rect": [
+            281.7105,
+            15.5191,
+            556.4101,
+            734.2918
+          ],
+          "parts": [
+            [
+              281.7105,
+              15.5191,
+              556.4101,
+              734.2918
+            ]
+          ],
+          "headline": "Look at the pie chart and write a paragraph about it, considering the information below."
+        },
+        {
+          "id": "p15-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            12.9736,
+            12.0098,
+            281.5633,
+            737.9272
+          ],
+          "parts": [
+            [
+              12.9736,
+              12.0098,
+              281.5633,
+              737.9272
+            ]
+          ],
+          "kind": "content",
+          "headline": "n"
+        },
+        {
+          "id": "p15-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            557.1382,
+            478.4999,
+            569.764,
+            777.9798
+          ],
+          "parts": [
+            [
+              557.1382,
+              478.4999,
+              569.764,
+              777.9798
+            ]
+          ],
+          "kind": "content"
+        }
+      ]
+    },
+    "16": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          57.8795,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p16-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            12.535,
+            381.8341,
+            574.535
+          ],
+          "parts": [
+            [
+              0.0,
+              12.535,
+              381.8341,
+              574.535
+            ]
+          ],
+          "kind": "content",
+          "headline": "THEME 2"
+        },
+        {
+          "id": "p16-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            436.82,
+            73.0071,
+            524.54,
+            171.4142
+          ],
+          "parts": [
+            [
+              436.82,
+              73.0071,
+              524.54,
+              171.4142
+            ]
+          ],
+          "kind": "content",
+          "headline": "Theme 2"
+        }
+      ]
+    },
     "17": {
       "pageWidth": 569.764,
       "pageHeight": 796.535,
@@ -883,97 +1110,24 @@
       ],
       "activities": [
         {
-          "id": "p17-v1",
+          "id": "p17-c1",
           "label": null,
-          "column": 1,
+          "column": 0,
           "rect": [
-            304.6345,
-            609.3048,
-            495.205,
-            733.9024
+            49.2951,
+            529.9172,
+            266.7886,
+            727.313
           ],
           "parts": [
             [
-              304.6345,
-              609.3048,
-              495.205,
-              733.9024
-            ]
-          ]
-        },
-        {
-          "id": "p17-c",
-          "label": "c",
-          "column": 1,
-          "rect": [
-            282.5451,
-            341.1417,
-            497.8201,
-            599.5706
-          ],
-          "parts": [
-            [
-              282.5451,
-              341.1417,
-              497.8201,
-              599.5706
+              49.2951,
+              529.9172,
+              266.7886,
+              727.313
             ]
           ],
-          "headline": "Listen to the audio again and answer the questions below.",
-          "items": [
-            {
-              "id": "p17-c-1",
-              "label": "1",
-              "number": 1,
-              "partIndex": 0,
-              "rect": [
-                302.154,
-                508.0,
-                497.8201,
-                571.094
-              ],
-              "text": "What does Liz do after getting out of 1 bed in the morning?"
-            },
-            {
-              "id": "p17-c-2",
-              "label": "2",
-              "number": 2,
-              "partIndex": 0,
-              "rect": [
-                302.1418,
-                460.5,
-                497.8201,
-                510.579
-              ],
-              "text": "Who keeps her/his books in a locker? 2"
-            },
-            {
-              "id": "p17-c-3",
-              "label": "3",
-              "number": 3,
-              "partIndex": 0,
-              "rect": [
-                302.1418,
-                400.0,
-                497.8201,
-                463.0751
-              ],
-              "text": "What does Ted sometimes do during 3 the break when he has work to do?"
-            },
-            {
-              "id": "p17-c-4",
-              "label": "4",
-              "number": 4,
-              "partIndex": 0,
-              "rect": [
-                302.1418,
-                341.1417,
-                496.9787,
-                402.5712
-              ],
-              "text": "What does Ted do before he starts 4 working on his tasks at home?"
-            }
-          ]
+          "kind": "content"
         },
         {
           "id": "p17-a",
@@ -1102,26 +1256,6 @@
           ]
         },
         {
-          "id": "p17-d",
-          "label": "d",
-          "column": 1,
-          "rect": [
-            283.8248,
-            60.2407,
-            507.2235,
-            322.6745
-          ],
-          "parts": [
-            [
-              283.8248,
-              60.2407,
-              507.2235,
-              322.6745
-            ]
-          ],
-          "headline": "Listen to the audio and circle the sentences you hear."
-        },
-        {
           "id": "p17-b",
           "label": "b",
           "column": 0,
@@ -1168,6 +1302,119 @@
               "text": "During the break, Liz . 2  reads a book A  studies for quizzes B just relaxes C"
             }
           ]
+        },
+        {
+          "id": "p17-v1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            304.6345,
+            609.3048,
+            495.205,
+            733.9024
+          ],
+          "parts": [
+            [
+              304.6345,
+              609.3048,
+              495.205,
+              733.9024
+            ]
+          ]
+        },
+        {
+          "id": "p17-c",
+          "label": "c",
+          "column": 1,
+          "rect": [
+            282.5451,
+            341.1417,
+            497.8201,
+            599.5706
+          ],
+          "parts": [
+            [
+              282.5451,
+              341.1417,
+              497.8201,
+              599.5706
+            ]
+          ],
+          "headline": "Listen to the audio again and answer the questions below.",
+          "items": [
+            {
+              "id": "p17-c-1",
+              "label": "1",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                302.154,
+                508.0,
+                497.8201,
+                571.094
+              ],
+              "text": "What does Liz do after getting out of 1 bed in the morning?"
+            },
+            {
+              "id": "p17-c-2",
+              "label": "2",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                302.1418,
+                460.5,
+                497.8201,
+                510.579
+              ],
+              "text": "Who keeps her/his books in a locker? 2"
+            },
+            {
+              "id": "p17-c-3",
+              "label": "3",
+              "number": 3,
+              "partIndex": 0,
+              "rect": [
+                302.1418,
+                400.0,
+                497.8201,
+                463.0751
+              ],
+              "text": "What does Ted sometimes do during 3 the break when he has work to do?"
+            },
+            {
+              "id": "p17-c-4",
+              "label": "4",
+              "number": 4,
+              "partIndex": 0,
+              "rect": [
+                302.1418,
+                341.1417,
+                496.9787,
+                402.5712
+              ],
+              "text": "What does Ted do before he starts 4 working on his tasks at home?"
+            }
+          ]
+        },
+        {
+          "id": "p17-d",
+          "label": "d",
+          "column": 1,
+          "rect": [
+            283.8248,
+            60.2407,
+            507.2235,
+            322.6745
+          ],
+          "parts": [
+            [
+              283.8248,
+              60.2407,
+              507.2235,
+              322.6745
+            ]
+          ],
+          "headline": "Listen to the audio and circle the sentences you hear."
         }
       ]
     },
@@ -1384,6 +1631,48 @@
               "text": "4 A:  Aslı meets her friends at a café B: once every two weekends."
             }
           ]
+        },
+        {
+          "id": "p18-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            300.3126,
+            694.7569,
+            515.5526,
+            737.9269
+          ],
+          "parts": [
+            [
+              300.3126,
+              694.7569,
+              515.5526,
+              737.9269
+            ]
+          ],
+          "kind": "content",
+          "headline": "g"
+        },
+        {
+          "id": "p18-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            313.4674,
+            95.8578,
+            529.0677,
+            692.3052
+          ],
+          "parts": [
+            [
+              313.4674,
+              95.8578,
+              529.0677,
+              692.3052
+            ]
+          ],
+          "kind": "content",
+          "headline": "1"
         }
       ]
     },
@@ -1630,6 +1919,93 @@
       ],
       "activities": [
         {
+          "id": "p21-m",
+          "label": "m",
+          "column": 0,
+          "rect": [
+            46.2933,
+            74.703,
+            263.0151,
+            737.2398
+          ],
+          "parts": [
+            [
+              46.2933,
+              74.703,
+              263.0151,
+              737.2398
+            ]
+          ],
+          "headline": "Read the dialogue carefully and complete the missing parts, using the phrases below. One is extra.",
+          "items": [
+            {
+              "id": "p21-m-a",
+              "label": "a",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                64.0337,
+                672.0872,
+                170.5837,
+                693.7072
+              ],
+              "text": "bright and early a"
+            },
+            {
+              "id": "p21-m-b",
+              "label": "b",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                64.0337,
+                656.2572,
+                156.1737,
+                677.8772
+              ],
+              "text": "call it a day b"
+            },
+            {
+              "id": "p21-m-c",
+              "label": "c",
+              "number": 3,
+              "partIndex": 0,
+              "rect": [
+                64.0337,
+                640.4272,
+                178.5538,
+                662.0472
+              ],
+              "text": "hit the books c"
+            },
+            {
+              "id": "p21-m-d",
+              "label": "d",
+              "number": 4,
+              "partIndex": 0,
+              "rect": [
+                64.0337,
+                624.5972,
+                162.9137,
+                646.2172
+              ],
+              "text": "learn it by heart d"
+            },
+            {
+              "id": "p21-m-e",
+              "label": "e",
+              "number": 5,
+              "partIndex": 0,
+              "rect": [
+                64.0337,
+                75.6338,
+                263.0151,
+                630.3871
+              ],
+              "text": "work hard, play later e  Oh, there’s so much to study for Ozan: the history exam. We really need to focus.  Yeah, we can’t skip anything. We Adel: need to study properly and look at everything in deta"
+            }
+          ]
+        },
+        {
           "id": "p21-n",
           "label": "n",
           "column": 1,
@@ -1826,6 +2202,39 @@
             ]
           ],
           "headline": "Write a short paragraph about your study habits and how you prepare for exams. In your paragraph, include the activities you ticked in use the words and phrases"
+        }
+      ]
+    },
+    "22": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.1121,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p22-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            0.0,
+            558.093,
+            759.535
+          ],
+          "parts": [
+            [
+              0.0,
+              0.0,
+              558.093,
+              759.535
+            ]
+          ],
+          "kind": "content",
+          "headline": "THEME 3"
         }
       ]
     },
@@ -2060,6 +2469,198 @@
         }
       ]
     },
+    "24": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.1969,
+          167.2847
+        ],
+        [
+          171.2847,
+          293.3071
+        ],
+        [
+          297.3071,
+          389.6582
+        ],
+        [
+          393.6582,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p24-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            61.807,
+            497.187,
+            285.607,
+            737.9272
+          ],
+          "parts": [
+            [
+              61.807,
+              497.187,
+              285.607,
+              737.9272
+            ]
+          ],
+          "kind": "content",
+          "headline": "g"
+        },
+        {
+          "id": "p24-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            64.728,
+            263.085,
+            282.528,
+            496.365
+          ],
+          "parts": [
+            [
+              64.728,
+              263.085,
+              282.528,
+              496.365
+            ]
+          ],
+          "kind": "content",
+          "headline": "2"
+        },
+        {
+          "id": "p24-c3",
+          "label": null,
+          "column": 1,
+          "rect": [
+            64.785,
+            54.665,
+            282.585,
+            259.505
+          ],
+          "parts": [
+            [
+              64.785,
+              54.665,
+              282.585,
+              259.505
+            ]
+          ],
+          "kind": "content",
+          "headline": "3"
+        },
+        {
+          "id": "p24-c4",
+          "label": null,
+          "column": 3,
+          "rect": [
+            300.8449,
+            485.4551,
+            524.0449,
+            741.0551
+          ],
+          "parts": [
+            [
+              300.8449,
+              485.4551,
+              524.0449,
+              741.0551
+            ]
+          ],
+          "kind": "content",
+          "headline": "4"
+        },
+        {
+          "id": "p24-c5",
+          "label": null,
+          "column": 3,
+          "rect": [
+            300.3071,
+            407.3287,
+            522.2672,
+            479.4987
+          ],
+          "parts": [
+            [
+              300.3071,
+              407.3287,
+              522.2672,
+              479.4987
+            ]
+          ],
+          "kind": "content",
+          "headline": "h"
+        },
+        {
+          "id": "p24-c6",
+          "label": null,
+          "column": 3,
+          "rect": [
+            303.3074,
+            296.3289,
+            518.6114,
+            401.9199
+          ],
+          "parts": [
+            [
+              303.3074,
+              296.3289,
+              518.6114,
+              401.9199
+            ]
+          ],
+          "kind": "content",
+          "headline": "Ali – Comedy Show (clear-confident-fast)"
+        },
+        {
+          "id": "p24-c7",
+          "label": null,
+          "column": 3,
+          "rect": [
+            303.3074,
+            179.4002,
+            518.6114,
+            284.9912
+          ],
+          "parts": [
+            [
+              303.3074,
+              179.4002,
+              518.6114,
+              284.9912
+            ]
+          ],
+          "kind": "content",
+          "headline": "Hugo – Dancing (quick-slippery)"
+        },
+        {
+          "id": "p24-c8",
+          "label": null,
+          "column": 3,
+          "rect": [
+            303.3074,
+            62.4705,
+            518.6114,
+            168.0615
+          ],
+          "parts": [
+            [
+              303.3074,
+              62.4705,
+              518.6114,
+              168.0615
+            ]
+          ],
+          "kind": "content",
+          "headline": "Priya – Acting (expressive-quiet)"
+        }
+      ]
+    },
     "25": {
       "pageWidth": 569.764,
       "pageHeight": 796.535,
@@ -2239,80 +2840,6 @@
           ]
         },
         {
-          "id": "p26-m",
-          "label": "m",
-          "column": 2,
-          "rect": [
-            298.0133,
-            391.2589,
-            519.5952,
-            701.3624
-          ],
-          "parts": [
-            [
-              298.0133,
-              391.2589,
-              519.5952,
-              701.3624
-            ]
-          ],
-          "headline": "Read the text again and answer the following questions.",
-          "items": [
-            {
-              "id": "p26-m-1",
-              "label": "1",
-              "number": 1,
-              "partIndex": 0,
-              "rect": [
-                316.3101,
-                605.9,
-                511.1519,
-                671.8876
-              ],
-              "text": "What makes Sandra stand out? 1"
-            },
-            {
-              "id": "p26-m-2",
-              "label": "2",
-              "number": 2,
-              "partIndex": 0,
-              "rect": [
-                316.315,
-                529.6,
-                519.5952,
-                608.5447
-              ],
-              "text": "Why does Stefan not match the typical 2 celebrity image?"
-            },
-            {
-              "id": "p26-m-3",
-              "label": "3",
-              "number": 3,
-              "partIndex": 0,
-              "rect": [
-                316.315,
-                466.3,
-                515.4751,
-                532.2061
-              ],
-              "text": "How does Diallo help his community? 3"
-            },
-            {
-              "id": "p26-m-4",
-              "label": "4",
-              "number": 4,
-              "partIndex": 0,
-              "rect": [
-                316.315,
-                391.2589,
-                511.1519,
-                468.8675
-              ],
-              "text": "What personality traits does Diallo 4 have?"
-            }
-          ]
-        },
-        {
           "id": "p26-l",
           "label": "l",
           "column": 0,
@@ -2413,6 +2940,80 @@
           ]
         },
         {
+          "id": "p26-m",
+          "label": "m",
+          "column": 2,
+          "rect": [
+            298.0133,
+            391.2589,
+            519.5952,
+            701.3624
+          ],
+          "parts": [
+            [
+              298.0133,
+              391.2589,
+              519.5952,
+              701.3624
+            ]
+          ],
+          "headline": "Read the text again and answer the following questions.",
+          "items": [
+            {
+              "id": "p26-m-1",
+              "label": "1",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                316.3101,
+                605.9,
+                511.1519,
+                671.8876
+              ],
+              "text": "What makes Sandra stand out? 1"
+            },
+            {
+              "id": "p26-m-2",
+              "label": "2",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                316.315,
+                529.6,
+                519.5952,
+                608.5447
+              ],
+              "text": "Why does Stefan not match the typical 2 celebrity image?"
+            },
+            {
+              "id": "p26-m-3",
+              "label": "3",
+              "number": 3,
+              "partIndex": 0,
+              "rect": [
+                316.315,
+                466.3,
+                515.4751,
+                532.2061
+              ],
+              "text": "How does Diallo help his community? 3"
+            },
+            {
+              "id": "p26-m-4",
+              "label": "4",
+              "number": 4,
+              "partIndex": 0,
+              "rect": [
+                316.315,
+                391.2589,
+                511.1519,
+                468.8675
+              ],
+              "text": "What personality traits does Diallo 4 have?"
+            }
+          ]
+        },
+        {
           "id": "p26-v4",
           "label": null,
           "column": 2,
@@ -2448,78 +3049,24 @@
       ],
       "activities": [
         {
-          "id": "p27-p",
-          "label": "p",
-          "column": 1,
+          "id": "p27-c1",
+          "label": null,
+          "column": 0,
           "rect": [
-            283.9361,
-            464.4,
-            507.0566,
-            733.7912
+            50.7149,
+            533.4082,
+            267.4728,
+            731.3388
           ],
           "parts": [
             [
-              283.9361,
-              464.4,
-              507.0566,
-              733.7912
+              50.7149,
+              533.4082,
+              267.4728,
+              731.3388
             ]
           ],
-          "headline": "Read the situations below and match them to the statements in A friend of yours comes up with an",
-          "items": [
-            {
-              "id": "p27-p-1",
-              "label": "1",
-              "number": 1,
-              "partIndex": 0,
-              "rect": [
-                302.1441,
-                646.4,
-                507.0566,
-                706.7099
-              ],
-              "text": "A friend of yours comes up with an 1 idea, and you think it is exciting. You say:"
-            },
-            {
-              "id": "p27-p-2",
-              "label": "2",
-              "number": 2,
-              "partIndex": 0,
-              "rect": [
-                302.1418,
-                588.8,
-                507.0566,
-                649.0386
-              ],
-              "text": "You have a classmate who always 2 feeds stray cats on the way to school. You talk about her/him and say:"
-            },
-            {
-              "id": "p27-p-3",
-              "label": "3",
-              "number": 3,
-              "partIndex": 0,
-              "rect": [
-                302.1418,
-                531.1,
-                507.0566,
-                591.3693
-              ],
-              "text": "Your sister has a new hairstyle, and 3 you want to compliment her. You say:"
-            },
-            {
-              "id": "p27-p-4",
-              "label": "4",
-              "number": 4,
-              "partIndex": 0,
-              "rect": [
-                302.1418,
-                464.4,
-                507.0566,
-                533.6999
-              ],
-              "text": "Your friend’s brother wants to watch 4 a horror film with you. You think he is not old enough to watch it. You say:"
-            }
-          ]
+          "kind": "content"
         },
         {
           "id": "p27-o",
@@ -2596,6 +3143,80 @@
           ]
         },
         {
+          "id": "p27-p",
+          "label": "p",
+          "column": 1,
+          "rect": [
+            283.9361,
+            464.4,
+            507.0566,
+            733.7912
+          ],
+          "parts": [
+            [
+              283.9361,
+              464.4,
+              507.0566,
+              733.7912
+            ]
+          ],
+          "headline": "Read the situations below and match them to the statements in A friend of yours comes up with an",
+          "items": [
+            {
+              "id": "p27-p-1",
+              "label": "1",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                302.1441,
+                646.4,
+                507.0566,
+                706.7099
+              ],
+              "text": "A friend of yours comes up with an 1 idea, and you think it is exciting. You say:"
+            },
+            {
+              "id": "p27-p-2",
+              "label": "2",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                302.1418,
+                588.8,
+                507.0566,
+                649.0386
+              ],
+              "text": "You have a classmate who always 2 feeds stray cats on the way to school. You talk about her/him and say:"
+            },
+            {
+              "id": "p27-p-3",
+              "label": "3",
+              "number": 3,
+              "partIndex": 0,
+              "rect": [
+                302.1418,
+                531.1,
+                507.0566,
+                591.3693
+              ],
+              "text": "Your sister has a new hairstyle, and 3 you want to compliment her. You say:"
+            },
+            {
+              "id": "p27-p-4",
+              "label": "4",
+              "number": 4,
+              "partIndex": 0,
+              "rect": [
+                302.1418,
+                464.4,
+                507.0566,
+                533.6999
+              ],
+              "text": "Your friend’s brother wants to watch 4 a horror film with you. You think he is not old enough to watch it. You say:"
+            }
+          ]
+        },
+        {
           "id": "p27-q",
           "label": "q",
           "column": 1,
@@ -2637,6 +3258,39 @@
         }
       ]
     },
+    "28": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.1969,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p28-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            5.3796,
+            82.614,
+            554.6371,
+            759.535
+          ],
+          "parts": [
+            [
+              5.3796,
+              82.614,
+              554.6371,
+              759.535
+            ]
+          ],
+          "kind": "content",
+          "headline": "THEME 4"
+        }
+      ]
+    },
     "29": {
       "pageWidth": 569.764,
       "pageHeight": 796.535,
@@ -2651,6 +3305,68 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p29-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            48.7324,
+            589.3694,
+            269.4568,
+            735.3697
+          ],
+          "parts": [
+            [
+              48.7324,
+              589.3694,
+              269.4568,
+              735.3697
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p29-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            320.1537,
+            631.4547,
+            508.2939,
+            737.1947
+          ],
+          "parts": [
+            [
+              320.1537,
+              631.4547,
+              508.2939,
+              737.1947
+            ]
+          ],
+          "kind": "content",
+          "headline": "Which of the following best describes"
+        },
+        {
+          "id": "p29-c3",
+          "label": null,
+          "column": 1,
+          "rect": [
+            320.1537,
+            583.9646,
+            471.9738,
+            629.0446
+          ],
+          "parts": [
+            [
+              320.1537,
+              583.9646,
+              471.9738,
+              629.0446
+            ]
+          ],
+          "kind": "content",
+          "headline": "Whose job requires travelling?"
+        },
         {
           "id": "p29-a",
           "label": "a",
@@ -2880,6 +3596,27 @@
             ]
           ],
           "headline": "Listen to the audio again and circle the correct option for each."
+        },
+        {
+          "id": "p29-c4",
+          "label": null,
+          "column": 1,
+          "rect": [
+            320.1537,
+            552.3046,
+            408.7238,
+            581.7546
+          ],
+          "parts": [
+            [
+              320.1537,
+              552.3046,
+              408.7238,
+              581.7546
+            ]
+          ],
+          "kind": "content",
+          "headline": "C"
         }
       ]
     },
@@ -2897,6 +3634,171 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p30-e",
+          "label": "e",
+          "column": 0,
+          "rect": [
+            58.2561,
+            69.6968,
+            283.0458,
+            732.2893
+          ],
+          "parts": [
+            [
+              58.2561,
+              69.6968,
+              283.0458,
+              732.2893
+            ]
+          ],
+          "headline": "sentences with on ,",
+          "items": [
+            {
+              "id": "p30-e-1",
+              "label": "1",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                84.8214,
+                454.7936,
+                253.3814,
+                505.9536
+              ],
+              "text": "1 a news agency; there he writes articles and reports on important events. Every morning,"
+            },
+            {
+              "id": "p30-e-2",
+              "label": "2",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                84.8207,
+                412.7936,
+                255.8408,
+                463.9536
+              ],
+              "text": "2 he sits his desk, scans local news on the Internet, checks his emails, and makes phone"
+            },
+            {
+              "id": "p30-e-3",
+              "label": "3",
+              "number": 3,
+              "partIndex": 0,
+              "rect": [
+                84.82,
+                356.7936,
+                251.35,
+                421.9536
+              ],
+              "text": "3 calls. He seldom stays the newsroom; most of the time, he is out on assignments. When he needs to interview someone, he"
+            },
+            {
+              "id": "p30-e-4",
+              "label": "4",
+              "number": 4,
+              "partIndex": 0,
+              "rect": [
+                84.82,
+                342.7936,
+                262.1101,
+                365.9536
+              ],
+              "text": "4 often meets them a café or"
+            },
+            {
+              "id": "p30-e-5",
+              "label": "5",
+              "number": 5,
+              "partIndex": 0,
+              "rect": [
+                84.8201,
+                328.7936,
+                262.3004,
+                351.9536
+              ],
+              "text": "5 visits them their workplaces."
+            },
+            {
+              "id": "p30-e-6",
+              "label": "6",
+              "number": 6,
+              "partIndex": 0,
+              "rect": [
+                84.8199,
+                286.7936,
+                262.3299,
+                337.9536
+              ],
+              "text": "6 He also spends a lot of time  different locations, as he covers live events. Sometimes, he reports"
+            },
+            {
+              "id": "p30-e-7",
+              "label": "7",
+              "number": 7,
+              "partIndex": 0,
+              "rect": [
+                84.8195,
+                244.7936,
+                263.7296,
+                295.9536
+              ],
+              "text": "7 from the street and stands  a busy pavement while he explains the situation. At the end of the"
+            },
+            {
+              "id": "p30-e-8",
+              "label": "8",
+              "number": 8,
+              "partIndex": 0,
+              "rect": [
+                84.8195,
+                202.7936,
+                255.2703,
+                253.9536
+              ],
+              "text": "8 day, he is usually his office to edit his articles before they are published. When he finishes work,"
+            },
+            {
+              "id": "p30-e-9",
+              "label": "9",
+              "number": 9,
+              "partIndex": 0,
+              "rect": [
+                84.8177,
+                174.7936,
+                260.4477,
+                211.9536
+              ],
+              "text": " 9 he enjoys dinner home with his family. At weekends, he likes to"
+            },
+            {
+              "id": "p30-e-10",
+              "label": "10",
+              "number": 10,
+              "partIndex": 0,
+              "rect": [
+                84.8177,
+                160.7936,
+                261.9973,
+                183.9536
+              ],
+              "text": "10 relax his sofa or spend time"
+            },
+            {
+              "id": "p30-e-11",
+              "label": "11",
+              "number": 11,
+              "partIndex": 0,
+              "rect": [
+                84.8174,
+                132.7936,
+                249.9674,
+                171.9
+              ],
+              "text": "11 the library to read books about history."
+            }
+          ]
+        },
         {
           "id": "p30-f",
           "label": "f",
@@ -3127,6 +4029,90 @@
       ],
       "activities": [
         {
+          "id": "p31-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            48.0237,
+            717.7572,
+            373.2337,
+            737.9272
+          ],
+          "parts": [
+            [
+              48.0237,
+              717.7572,
+              373.2337,
+              737.9272
+            ]
+          ],
+          "kind": "content",
+          "headline": "h"
+        },
+        {
+          "id": "p31-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.244,
+            423.758,
+            515.938,
+            716.558
+          ],
+          "parts": [
+            [
+              53.244,
+              423.758,
+              515.938,
+              716.558
+            ]
+          ],
+          "kind": "content",
+          "headline": "1"
+        },
+        {
+          "id": "p31-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            57.7323,
+            147.9677,
+            278.1733,
+            423.0937
+          ],
+          "parts": [
+            [
+              57.7323,
+              147.9677,
+              278.1733,
+              423.0937
+            ]
+          ],
+          "kind": "content",
+          "headline": "3"
+        },
+        {
+          "id": "p31-c4",
+          "label": null,
+          "column": 1,
+          "rect": [
+            284.0426,
+            146.7435,
+            519.8884,
+            423.6963
+          ],
+          "parts": [
+            [
+              284.0426,
+              146.7435,
+              519.8884,
+              423.6963
+            ]
+          ],
+          "kind": "content",
+          "headline": "4"
+        },
+        {
           "id": "p31-i",
           "label": "i",
           "column": 0,
@@ -3217,26 +4203,6 @@
       ],
       "activities": [
         {
-          "id": "p32-k",
-          "label": "k",
-          "column": 1,
-          "rect": [
-            297.0674,
-            424.967,
-            519.5191,
-            735.738
-          ],
-          "parts": [
-            [
-              297.0674,
-              424.967,
-              519.5191,
-              735.738
-            ]
-          ],
-          "headline": "Match the highlighted words and phrases in the texts to the definitions below. One is extra."
-        },
-        {
           "id": "p32-j",
           "label": "j",
           "column": 0,
@@ -3255,6 +4221,26 @@
             ]
           ],
           "headline": "Read the texts carefully and answer the questions below."
+        },
+        {
+          "id": "p32-k",
+          "label": "k",
+          "column": 1,
+          "rect": [
+            297.0674,
+            424.967,
+            519.5191,
+            735.738
+          ],
+          "parts": [
+            [
+              297.0674,
+              424.967,
+              519.5191,
+              735.738
+            ]
+          ],
+          "headline": "Match the highlighted words and phrases in the texts to the definitions below. One is extra."
         },
         {
           "id": "p32-v3",
@@ -3291,6 +4277,26 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p33-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            50.0069,
+            585.6354,
+            267.4627,
+            731.3389
+          ],
+          "parts": [
+            [
+              50.0069,
+              585.6354,
+              267.4627,
+              731.3389
+            ]
+          ],
+          "kind": "content"
+        },
         {
           "id": "p33-m",
           "label": "m",
@@ -3366,6 +4372,27 @@
           ]
         },
         {
+          "id": "p33-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            301.2711,
+            570.613,
+            502.7612,
+            733.1809
+          ],
+          "parts": [
+            [
+              301.2711,
+              570.613,
+              502.7612,
+              733.1809
+            ]
+          ],
+          "kind": "content",
+          "headline": "Nick: Oh, does she travel a lot?"
+        },
+        {
           "id": "p33-n",
           "label": "n",
           "column": 1,
@@ -3384,6 +4411,39 @@
             ]
           ],
           "headline": "Choose two different jobs you have learnt throughout this theme and write a short paragraph to compare them."
+        }
+      ]
+    },
+    "34": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.4309,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p34-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            41.0,
+            563.6368,
+            759.535
+          ],
+          "parts": [
+            [
+              0.0,
+              41.0,
+              563.6368,
+              759.535
+            ]
+          ],
+          "kind": "content",
+          "headline": "THEME 5"
         }
       ]
     },
@@ -3476,25 +4536,6 @@
           ]
         },
         {
-          "id": "p35-v2",
-          "label": null,
-          "column": 1,
-          "rect": [
-            304.4676,
-            618.149,
-            501.2142,
-            733.068
-          ],
-          "parts": [
-            [
-              304.4676,
-              618.149,
-              501.2142,
-              733.068
-            ]
-          ]
-        },
-        {
           "id": "p35-b",
           "label": "b",
           "column": 0,
@@ -3569,26 +4610,6 @@
           ]
         },
         {
-          "id": "p35-d",
-          "label": "d",
-          "column": 1,
-          "rect": [
-            281.678,
-            280.715,
-            515.318,
-            612.9203
-          ],
-          "parts": [
-            [
-              281.678,
-              280.715,
-              515.318,
-              612.9203
-            ]
-          ],
-          "headline": "Put the words in the correct category. Then listen and check your answers."
-        },
-        {
           "id": "p35-c",
           "label": "c",
           "column": 0,
@@ -3650,6 +4671,45 @@
           ]
         },
         {
+          "id": "p35-v2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            304.4676,
+            618.149,
+            501.2142,
+            733.068
+          ],
+          "parts": [
+            [
+              304.4676,
+              618.149,
+              501.2142,
+              733.068
+            ]
+          ]
+        },
+        {
+          "id": "p35-d",
+          "label": "d",
+          "column": 1,
+          "rect": [
+            281.678,
+            280.715,
+            515.318,
+            612.9203
+          ],
+          "parts": [
+            [
+              281.678,
+              280.715,
+              515.318,
+              612.9203
+            ]
+          ],
+          "headline": "Put the words in the correct category. Then listen and check your answers."
+        },
+        {
           "id": "p35-v6",
           "label": null,
           "column": 1,
@@ -3688,6 +4748,26 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p36-f",
+          "label": "f",
+          "column": 0,
+          "rect": [
+            57.6997,
+            64.19,
+            285.6053,
+            734.3474
+          ],
+          "parts": [
+            [
+              57.6997,
+              64.19,
+              285.6053,
+              734.3474
+            ]
+          ],
+          "headline": "Complete the passage, using the correct form of the verbs in parentheses."
+        },
         {
           "id": "p36-g",
           "label": "g",
@@ -3866,6 +4946,48 @@
       ],
       "activities": [
         {
+          "id": "p37-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            48.0237,
+            659.3211,
+            504.7747,
+            737.9272
+          ],
+          "parts": [
+            [
+              48.0237,
+              659.3211,
+              504.7747,
+              737.9272
+            ]
+          ],
+          "kind": "content",
+          "headline": "i"
+        },
+        {
+          "id": "p37-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            64.5854,
+            356.5239,
+            510.1355,
+            656.4927
+          ],
+          "parts": [
+            [
+              64.5854,
+              356.5239,
+              510.1355,
+              656.4927
+            ]
+          ],
+          "kind": "content",
+          "headline": "UNIQUE HOUSING STYLES UNIQUE HOUSING STYLES"
+        },
+        {
           "id": "p37-j",
           "label": "j",
           "column": 0,
@@ -3978,6 +5100,54 @@
       ],
       "activities": [
         {
+          "id": "p38-l",
+          "label": "l",
+          "column": 0,
+          "rect": [
+            57.4215,
+            475.4179,
+            283.4353,
+            735.293
+          ],
+          "parts": [
+            [
+              57.4215,
+              475.4179,
+              283.4353,
+              735.293
+            ]
+          ],
+          "headline": "Read the text again and answer the questions below.",
+          "items": [
+            {
+              "id": "p38-l-1",
+              "label": "1",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                78.2069,
+                656.6,
+                283.4353,
+                706.7072
+              ],
+              "text": "yurts Which countries often use ? 1"
+            },
+            {
+              "id": "p38-l-2",
+              "label": "2",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                78.2047,
+                475.4179,
+                283.4353,
+                659.2039
+              ],
+              "text": "Where do people sit when they eat in 2 yurt a ? What natural materials do people use 3 hanok to build a ? mudhif Why is a a good house type for 4 hot weather?"
+            }
+          ]
+        },
+        {
           "id": "p38-m",
           "label": "m",
           "column": 1,
@@ -4039,54 +5209,6 @@
           ]
         },
         {
-          "id": "p38-l",
-          "label": "l",
-          "column": 0,
-          "rect": [
-            57.4215,
-            475.4179,
-            283.4353,
-            735.293
-          ],
-          "parts": [
-            [
-              57.4215,
-              475.4179,
-              283.4353,
-              735.293
-            ]
-          ],
-          "headline": "Read the text again and answer the questions below.",
-          "items": [
-            {
-              "id": "p38-l-1",
-              "label": "1",
-              "number": 1,
-              "partIndex": 0,
-              "rect": [
-                78.2069,
-                656.6,
-                283.4353,
-                706.7072
-              ],
-              "text": "yurts Which countries often use ? 1"
-            },
-            {
-              "id": "p38-l-2",
-              "label": "2",
-              "number": 2,
-              "partIndex": 0,
-              "rect": [
-                78.2047,
-                475.4179,
-                283.4353,
-                659.2039
-              ],
-              "text": "Where do people sit when they eat in 2 yurt a ? What natural materials do people use 3 hanok to build a ? mudhif Why is a a good house type for 4 hot weather?"
-            }
-          ]
-        },
-        {
           "id": "p38-v3",
           "label": null,
           "column": 1,
@@ -4121,6 +5243,26 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p39-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            50.0083,
+            585.2189,
+            268.1808,
+            731.3398
+          ],
+          "parts": [
+            [
+              50.0083,
+              585.2189,
+              268.1808,
+              731.3398
+            ]
+          ],
+          "kind": "content"
+        },
         {
           "id": "p39-o",
           "label": "o",
@@ -4207,6 +5349,121 @@
               "text": "as safe as houses e  Could you please hold the bags? I’ll Nehir: unlock the door.  Sure, it was a tiring day. For a June: while, I thought the meeting would never finish.  Yeah! Don’t worry. We’ll hav"
             }
           ]
+        },
+        {
+          "id": "p39-p",
+          "label": "p",
+          "column": 1,
+          "rect": [
+            282.6563,
+            60.0739,
+            555.1304,
+            636.338
+          ],
+          "parts": [
+            [
+              282.6563,
+              60.0739,
+              555.1304,
+              636.338
+            ]
+          ],
+          "headline": "Look at the photo. Describe and write a paragraph about it, considering the prompts below."
+        },
+        {
+          "id": "p39-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            302.634,
+            642.8571,
+            510.1581,
+            732.4751
+          ],
+          "parts": [
+            [
+              302.634,
+              642.8571,
+              510.1581,
+              732.4751
+            ]
+          ],
+          "kind": "content",
+          "headline": "Nehir: Of course, it’d be great."
+        },
+        {
+          "id": "p39-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            557.1615,
+            460.799,
+            569.764,
+            779.3246
+          ],
+          "parts": [
+            [
+              557.1615,
+              460.799,
+              569.764,
+              779.3246
+            ]
+          ],
+          "kind": "content"
+        }
+      ]
+    },
+    "40": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          57.8795,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p40-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            0.0,
+            426.4798,
+            565.1744
+          ],
+          "parts": [
+            [
+              0.0,
+              0.0,
+              426.4798,
+              565.1744
+            ]
+          ],
+          "kind": "content",
+          "headline": "THEME 6"
+        },
+        {
+          "id": "p40-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            436.82,
+            73.0071,
+            524.54,
+            171.4142
+          ],
+          "parts": [
+            [
+              436.82,
+              73.0071,
+              524.54,
+              171.4142
+            ]
+          ],
+          "kind": "content",
+          "headline": "Theme 6"
         }
       ]
     },
@@ -4225,123 +5482,24 @@
       ],
       "activities": [
         {
-          "id": "p41-v1",
+          "id": "p41-c1",
           "label": null,
-          "column": 1,
+          "column": 0,
           "rect": [
-            304.2451,
-            596.0663,
-            499.1555,
-            733.2349
+            47.0016,
+            565.3458,
+            270.4758,
+            734.3379
           ],
           "parts": [
             [
-              304.2451,
-              596.0663,
-              499.1555,
-              733.2349
-            ]
-          ]
-        },
-        {
-          "id": "p41-c",
-          "label": "c",
-          "column": 1,
-          "rect": [
-            282.8789,
-            323.5645,
-            506.1663,
-            590.3926
-          ],
-          "parts": [
-            [
-              282.8789,
-              323.5645,
-              506.1663,
-              590.3926
+              47.0016,
+              565.3458,
+              270.4758,
+              734.3379
             ]
           ],
-          "headline": "Listen to the audio again and answer the questions below.",
-          "items": [
-            {
-              "id": "p41-c-1",
-              "label": "1",
-              "number": 1,
-              "partIndex": 0,
-              "rect": [
-                302.1489,
-                526.6585,
-                503.579,
-                561.0585
-              ],
-              "text": "What food does Lena talk about from 1 last year’s fair?"
-            },
-            {
-              "id": "p41-c-2",
-              "label": "2",
-              "number": 2,
-              "partIndex": 0,
-              "rect": [
-                302.1418,
-                481.9714,
-                505.7318,
-                516.3714
-              ],
-              "text": "What kinds of desserts can visitors try 2 this year?"
-            },
-            {
-              "id": "p41-c-3",
-              "label": "3",
-              "number": 3,
-              "partIndex": 0,
-              "rect": [
-                302.1418,
-                437.3021,
-                506.1663,
-                471.7021
-              ],
-              "text": "What does Eren want to try that is new 3 for him?"
-            },
-            {
-              "id": "p41-c-4",
-              "label": "4",
-              "number": 4,
-              "partIndex": 0,
-              "rect": [
-                302.1418,
-                392.6328,
-                506.1663,
-                427.0328
-              ],
-              "text": "How does Lena describe the couscous 4 with yoghurt sauce?"
-            },
-            {
-              "id": "p41-c-5",
-              "label": "5",
-              "number": 5,
-              "partIndex": 0,
-              "rect": [
-                302.1418,
-                360.7436,
-                468.7919,
-                382.3636
-              ],
-              "text": "What time does the fair finish? 5"
-            },
-            {
-              "id": "p41-c-6",
-              "label": "6",
-              "number": 6,
-              "partIndex": 0,
-              "rect": [
-                302.1418,
-                329.0743,
-                486.942,
-                350.6943
-              ],
-              "text": "Who is Lena going to the fair with? 6"
-            }
-          ]
+          "kind": "content"
         },
         {
           "id": "p41-a",
@@ -4470,26 +5628,6 @@
           ]
         },
         {
-          "id": "p41-d",
-          "label": "d",
-          "column": 1,
-          "rect": [
-            283.491,
-            61.5757,
-            512.9545,
-            310.7154
-          ],
-          "parts": [
-            [
-              283.491,
-              61.5757,
-              512.9545,
-              310.7154
-            ]
-          ],
-          "headline": "Listen to the audio and circle the sentences you hear."
-        },
-        {
           "id": "p41-b",
           "label": "b",
           "column": 0,
@@ -4536,6 +5674,145 @@
               "text": "This year, the fair is serving . 2  coconut cake and chocolate A biscuits  couscous, falafel, and spicy B noodles grilled duck, lamb chops, and C curries"
             }
           ]
+        },
+        {
+          "id": "p41-v1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            304.2451,
+            596.0663,
+            499.1555,
+            733.2349
+          ],
+          "parts": [
+            [
+              304.2451,
+              596.0663,
+              499.1555,
+              733.2349
+            ]
+          ]
+        },
+        {
+          "id": "p41-c",
+          "label": "c",
+          "column": 1,
+          "rect": [
+            282.8789,
+            323.5645,
+            506.1663,
+            590.3926
+          ],
+          "parts": [
+            [
+              282.8789,
+              323.5645,
+              506.1663,
+              590.3926
+            ]
+          ],
+          "headline": "Listen to the audio again and answer the questions below.",
+          "items": [
+            {
+              "id": "p41-c-1",
+              "label": "1",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                302.1489,
+                526.6585,
+                503.579,
+                561.0585
+              ],
+              "text": "What food does Lena talk about from 1 last year’s fair?"
+            },
+            {
+              "id": "p41-c-2",
+              "label": "2",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                302.1418,
+                481.9714,
+                505.7318,
+                516.3714
+              ],
+              "text": "What kinds of desserts can visitors try 2 this year?"
+            },
+            {
+              "id": "p41-c-3",
+              "label": "3",
+              "number": 3,
+              "partIndex": 0,
+              "rect": [
+                302.1418,
+                437.3021,
+                506.1663,
+                471.7021
+              ],
+              "text": "What does Eren want to try that is new 3 for him?"
+            },
+            {
+              "id": "p41-c-4",
+              "label": "4",
+              "number": 4,
+              "partIndex": 0,
+              "rect": [
+                302.1418,
+                392.6328,
+                506.1663,
+                427.0328
+              ],
+              "text": "How does Lena describe the couscous 4 with yoghurt sauce?"
+            },
+            {
+              "id": "p41-c-5",
+              "label": "5",
+              "number": 5,
+              "partIndex": 0,
+              "rect": [
+                302.1418,
+                360.7436,
+                468.7919,
+                382.3636
+              ],
+              "text": "What time does the fair finish? 5"
+            },
+            {
+              "id": "p41-c-6",
+              "label": "6",
+              "number": 6,
+              "partIndex": 0,
+              "rect": [
+                302.1418,
+                329.0743,
+                486.942,
+                350.6943
+              ],
+              "text": "Who is Lena going to the fair with? 6"
+            }
+          ]
+        },
+        {
+          "id": "p41-d",
+          "label": "d",
+          "column": 1,
+          "rect": [
+            283.491,
+            61.5757,
+            512.9545,
+            310.7154
+          ],
+          "parts": [
+            [
+              283.491,
+              61.5757,
+              512.9545,
+              310.7154
+            ]
+          ],
+          "headline": "Listen to the audio and circle the sentences you hear."
         }
       ]
     },
@@ -4576,25 +5853,6 @@
             ]
           ],
           "headline": "Complete the sentences, using the correct form of or The Present Progressive Tense words in parentheses."
-        },
-        {
-          "id": "p42-v2",
-          "label": null,
-          "column": 2,
-          "rect": [
-            318.3222,
-            665.9299,
-            519.7983,
-            733.513
-          ],
-          "parts": [
-            [
-              318.3222,
-              665.9299,
-              519.7983,
-              733.513
-            ]
-          ]
         },
         {
           "id": "p42-f",
@@ -4669,6 +5927,99 @@
               "text": "It is Jack’s turn to make dinner, but he 4 is not preparing a meal in the kitchen now. (Henry and Alice)"
             }
           ]
+        },
+        {
+          "id": "p42-v2",
+          "label": null,
+          "column": 2,
+          "rect": [
+            318.3222,
+            665.9299,
+            519.7983,
+            733.513
+          ],
+          "parts": [
+            [
+              318.3222,
+              665.9299,
+              519.7983,
+              733.513
+            ]
+          ]
+        },
+        {
+          "id": "p42-g",
+          "label": "g",
+          "column": 2,
+          "rect": [
+            297.1787,
+            87.2184,
+            522.1909,
+            656.0845
+          ],
+          "parts": [
+            [
+              297.1787,
+              87.2184,
+              522.1909,
+              656.0845
+            ]
+          ],
+          "headline": "Look at the photos and write what is happening in each.",
+          "items": [
+            {
+              "id": "p42-g-1",
+              "label": "1",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                366.0707,
+                591.9562,
+                379.7807,
+                613.5762
+              ],
+              "text": "1"
+            },
+            {
+              "id": "p42-g-2",
+              "label": "2",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                458.5641,
+                455.3932,
+                472.2741,
+                477.0132
+              ],
+              "text": "2"
+            },
+            {
+              "id": "p42-g-3",
+              "label": "3",
+              "number": 3,
+              "partIndex": 0,
+              "rect": [
+                366.0707,
+                318.8302,
+                379.7807,
+                340.4502
+              ],
+              "text": "3"
+            },
+            {
+              "id": "p42-g-4",
+              "label": "4",
+              "number": 4,
+              "partIndex": 0,
+              "rect": [
+                458.5641,
+                182.2672,
+                472.2741,
+                203.8872
+              ],
+              "text": "4"
+            }
+          ]
         }
       ]
     },
@@ -4686,6 +6037,48 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p43-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            48.0237,
+            504.9199,
+            553.0,
+            783.535
+          ],
+          "parts": [
+            [
+              48.0237,
+              504.9199,
+              553.0,
+              783.535
+            ]
+          ],
+          "kind": "content",
+          "headline": "h"
+        },
+        {
+          "id": "p43-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            52.5215,
+            279.912,
+            499.8417,
+            502.4406
+          ],
+          "parts": [
+            [
+              52.5215,
+              279.912,
+              499.8417,
+              502.4406
+            ]
+          ],
+          "kind": "content",
+          "headline": "The second day is for shopping and food preparation. People buy jewellery and new"
+        },
         {
           "id": "p43-i",
           "label": "i",
@@ -4890,26 +6283,6 @@
       ],
       "activities": [
         {
-          "id": "p44-l",
-          "label": "l",
-          "column": 1,
-          "rect": [
-            296.5666,
-            451.0546,
-            526.205,
-            736.7392
-          ],
-          "parts": [
-            [
-              296.5666,
-              451.0546,
-              526.205,
-              736.7392
-            ]
-          ],
-          "headline": "Find and write the appropriate words in the text to describe the foods given below."
-        },
-        {
           "id": "p44-k",
           "label": "k",
           "column": 0,
@@ -4928,6 +6301,26 @@
             ]
           ],
           "headline": "Read the text again and answer the following questions."
+        },
+        {
+          "id": "p44-l",
+          "label": "l",
+          "column": 1,
+          "rect": [
+            296.5666,
+            451.0546,
+            526.205,
+            736.7392
+          ],
+          "parts": [
+            [
+              296.5666,
+              451.0546,
+              526.205,
+              736.7392
+            ]
+          ],
+          "headline": "Find and write the appropriate words in the text to describe the foods given below."
         },
         {
           "id": "p44-v3",
@@ -4968,6 +6361,100 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p45-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            51.0237,
+            590.0193,
+            267.1654,
+            732.3434
+          ],
+          "parts": [
+            [
+              51.0237,
+              590.0193,
+              267.1654,
+              732.3434
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p45-n",
+          "label": "n",
+          "column": 0,
+          "rect": [
+            45.4031,
+            71.8105,
+            265.2407,
+            578.8785
+          ],
+          "parts": [
+            [
+              45.4031,
+              71.8105,
+              265.2407,
+              578.8785
+            ]
+          ],
+          "headline": "Complete the dialogue with the statements below. One is extra.",
+          "items": [
+            {
+              "id": "p45-n-a",
+              "label": "a",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                64.0337,
+                528.3595,
+                193.6037,
+                549.9795
+              ],
+              "text": "What a delicious meal! a"
+            },
+            {
+              "id": "p45-n-b",
+              "label": "b",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                64.0337,
+                512.5295,
+                227.7437,
+                534.1495
+              ],
+              "text": "I’m full, but I can’t stop eating! b"
+            },
+            {
+              "id": "p45-n-c",
+              "label": "c",
+              "number": 3,
+              "partIndex": 0,
+              "rect": [
+                64.0337,
+                496.6995,
+                182.9037,
+                518.3195
+              ],
+              "text": "This tastes amazing! c"
+            },
+            {
+              "id": "p45-n-d",
+              "label": "d",
+              "number": 4,
+              "partIndex": 0,
+              "rect": [
+                63.6093,
+                73.402,
+                265.2407,
+                502.4895
+              ],
+              "text": "You’re good at cooking! d Wow, the food at this festival Janette: is incredible! I’m eating such delicious food for the first time in my life, ha-ha! I know, right? The tacos are so Fredrik: tasty! Do"
+            }
+          ]
+        },
         {
           "id": "p45-v1",
           "label": null,
@@ -5062,80 +6549,6 @@
           ]
         },
         {
-          "id": "p45-n",
-          "label": "n",
-          "column": 0,
-          "rect": [
-            45.4031,
-            71.8105,
-            265.2407,
-            578.8785
-          ],
-          "parts": [
-            [
-              45.4031,
-              71.8105,
-              265.2407,
-              578.8785
-            ]
-          ],
-          "headline": "Complete the dialogue with the statements below. One is extra.",
-          "items": [
-            {
-              "id": "p45-n-a",
-              "label": "a",
-              "number": 1,
-              "partIndex": 0,
-              "rect": [
-                64.0337,
-                528.3595,
-                193.6037,
-                549.9795
-              ],
-              "text": "What a delicious meal! a"
-            },
-            {
-              "id": "p45-n-b",
-              "label": "b",
-              "number": 2,
-              "partIndex": 0,
-              "rect": [
-                64.0337,
-                512.5295,
-                227.7437,
-                534.1495
-              ],
-              "text": "I’m full, but I can’t stop eating! b"
-            },
-            {
-              "id": "p45-n-c",
-              "label": "c",
-              "number": 3,
-              "partIndex": 0,
-              "rect": [
-                64.0337,
-                496.6995,
-                182.9037,
-                518.3195
-              ],
-              "text": "This tastes amazing! c"
-            },
-            {
-              "id": "p45-n-d",
-              "label": "d",
-              "number": 4,
-              "partIndex": 0,
-              "rect": [
-                63.6093,
-                73.402,
-                265.2407,
-                502.4895
-              ],
-              "text": "You’re good at cooking! d Wow, the food at this festival Janette: is incredible! I’m eating such delicious food for the first time in my life, ha-ha! I know, right? The tacos are so Fredrik: tasty! Do"
-            }
-          ]
-        },
-        {
           "id": "p45-p",
           "label": "p",
           "column": 1,
@@ -5154,6 +6567,39 @@
             ]
           ],
           "headline": "Imagine you are a food blogger. Use the sentence starter below and the statements in review about a food festival you are attending."
+        }
+      ]
+    },
+    "46": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.4309,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p46-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            0.0,
+            555.0022,
+            759.535
+          ],
+          "parts": [
+            [
+              0.0,
+              0.0,
+              555.0022,
+              759.535
+            ]
+          ],
+          "kind": "content",
+          "headline": "THEME 7"
         }
       ]
     },
@@ -5497,6 +6943,111 @@
       ],
       "activities": [
         {
+          "id": "p48-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            62.1969,
+            704.7572,
+            270.5269,
+            737.9272
+          ],
+          "parts": [
+            [
+              62.1969,
+              704.7572,
+              270.5269,
+              737.9272
+            ]
+          ],
+          "kind": "content",
+          "headline": "g"
+        },
+        {
+          "id": "p48-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            64.807,
+            508.716,
+            282.607,
+            704.196
+          ],
+          "parts": [
+            [
+              64.807,
+              508.716,
+              282.607,
+              704.196
+            ]
+          ],
+          "kind": "content",
+          "headline": "1"
+        },
+        {
+          "id": "p48-c3",
+          "label": null,
+          "column": 1,
+          "rect": [
+            64.746,
+            278.859,
+            282.546,
+            502.059
+          ],
+          "parts": [
+            [
+              64.746,
+              278.859,
+              282.546,
+              502.059
+            ]
+          ],
+          "kind": "content",
+          "headline": "2"
+        },
+        {
+          "id": "p48-c4",
+          "label": null,
+          "column": 1,
+          "rect": [
+            64.772,
+            61.685,
+            282.572,
+            272.285
+          ],
+          "parts": [
+            [
+              64.772,
+              61.685,
+              282.572,
+              272.285
+            ]
+          ],
+          "kind": "content",
+          "headline": "3"
+        },
+        {
+          "id": "p48-c5",
+          "label": null,
+          "column": 3,
+          "rect": [
+            303.076,
+            523.323,
+            520.876,
+            734.643
+          ],
+          "parts": [
+            [
+              303.076,
+              523.323,
+              520.876,
+              734.643
+            ]
+          ],
+          "kind": "content",
+          "headline": "4"
+        },
+        {
           "id": "p48-h",
           "label": "h",
           "column": 2,
@@ -5532,6 +7083,27 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p49-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            29.0497,
+            323.8576,
+            561.2597,
+            779.3926
+          ],
+          "parts": [
+            [
+              29.0497,
+              323.8576,
+              561.2597,
+              779.3926
+            ]
+          ],
+          "kind": "content",
+          "headline": "i"
+        },
         {
           "id": "p49-k",
           "label": "k",
@@ -5682,6 +7254,26 @@
       ],
       "activities": [
         {
+          "id": "p50-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            491.6265,
+            15.9415,
+            756.535
+          ],
+          "parts": [
+            [
+              0.0,
+              491.6265,
+              15.9415,
+              756.535
+            ]
+          ],
+          "kind": "content"
+        },
+        {
           "id": "p50-l",
           "label": "l",
           "column": 0,
@@ -5728,6 +7320,48 @@
               "text": "Which of the following is not 2 mentioned as a danger to giant pandas?  Air pollution A  Habitat loss B Illegal hunting C  Diseases D"
             }
           ]
+        },
+        {
+          "id": "p50-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            334.3269,
+            592.6971,
+            513.4269,
+            737.2172
+          ],
+          "parts": [
+            [
+              334.3269,
+              592.6971,
+              513.4269,
+              737.2172
+            ]
+          ],
+          "kind": "content",
+          "headline": "What are volunteers doing today to"
+        },
+        {
+          "id": "p50-c3",
+          "label": null,
+          "column": 1,
+          "rect": [
+            334.327,
+            458.5471,
+            517.587,
+            590.0671
+          ],
+          "parts": [
+            [
+              334.327,
+              458.5471,
+              517.587,
+              590.0671
+            ]
+          ],
+          "kind": "content",
+          "headline": "What should people do to help giant"
         },
         {
           "id": "p50-m",
@@ -5789,18 +7423,37 @@
           ]
         },
         {
+          "id": "p51-v2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            45.1805,
+            49.6722,
+            273.6106,
+            604.6323
+          ],
+          "parts": [
+            [
+              45.1805,
+              49.6722,
+              273.6106,
+              604.6323
+            ]
+          ]
+        },
+        {
           "id": "p51-o",
           "label": "o",
           "column": 2,
           "rect": [
-            272.8113,
+            273.8606,
             211.5098,
             558.4689,
             536.6043
           ],
           "parts": [
             [
-              272.8113,
+              273.8606,
               211.5098,
               558.4689,
               536.6043
@@ -5827,6 +7480,142 @@
             ]
           ],
           "headline": "Take the dialogue in Exercise n as a model and write a similar one in your notebook, using your notes in In your dialogue, you should… • introduce the endangere"
+        },
+        {
+          "id": "p51-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            51.0237,
+            610.782,
+            266.4568,
+            732.0683
+          ],
+          "parts": [
+            [
+              51.0237,
+              610.782,
+              266.4568,
+              732.0683
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p51-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            561.2599,
+            460.7818,
+            569.764,
+            782.1057
+          ],
+          "parts": [
+            [
+              561.2599,
+              460.7818,
+              569.764,
+              782.1057
+            ]
+          ],
+          "kind": "content"
+        }
+      ]
+    },
+    "52": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.1969,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p52-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            206.2209,
+            493.094,
+            565.1744
+          ],
+          "parts": [
+            [
+              0.0,
+              206.2209,
+              493.094,
+              565.1744
+            ]
+          ],
+          "kind": "content",
+          "headline": "THEME 8"
+        },
+        {
+          "id": "p52-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            62.1969,
+            156.296,
+            225.8859,
+            205.226
+          ],
+          "parts": [
+            [
+              62.1969,
+              156.296,
+              225.8859,
+              205.226
+            ]
+          ],
+          "kind": "content",
+          "headline": "• This (film) is a breath of fresh air!"
+        },
+        {
+          "id": "p52-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            38.4363,
+            0.0,
+            390.0183,
+            154.3389
+          ],
+          "parts": [
+            [
+              38.4363,
+              0.0,
+              390.0183,
+              154.3389
+            ]
+          ],
+          "kind": "content",
+          "headline": "Pronunciation"
+        },
+        {
+          "id": "p52-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            436.82,
+            73.0071,
+            524.54,
+            171.4142
+          ],
+          "parts": [
+            [
+              436.82,
+              73.0071,
+              524.54,
+              171.4142
+            ]
+          ],
+          "kind": "content",
+          "headline": "Theme 8"
         }
       ]
     },
@@ -6055,6 +7844,223 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p54-f",
+          "label": "f",
+          "column": 0,
+          "rect": [
+            57.9779,
+            69.6412,
+            283.491,
+            733.5687
+          ],
+          "parts": [
+            [
+              57.9779,
+              69.6412,
+              283.491,
+              733.5687
+            ]
+          ],
+          "headline": "Complete the sentences, using the correct form of or The Simple Future Tense words in parentheses.",
+          "items": [
+            {
+              "id": "p54-f-1",
+              "label": "1",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                71.1562,
+                509.0828,
+                245.3162,
+                545.2428
+              ],
+              "text": "1 (change) (change)  in many incredible ways. For example,"
+            },
+            {
+              "id": "p54-f-2",
+              "label": "2",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                71.1541,
+                483.0828,
+                239.3157,
+                519.2428
+              ],
+              "text": "2 (not (not people now  use) use) telegraphs any more, and"
+            },
+            {
+              "id": "p54-f-3",
+              "label": "3",
+              "number": 3,
+              "partIndex": 0,
+              "rect": [
+                71.1541,
+                457.0828,
+                257.0341,
+                493.2428
+              ],
+              "text": "3 (not (not soon, they  need) need) smartphones as much as they"
+            },
+            {
+              "id": "p54-f-4",
+              "label": "4",
+              "number": 4,
+              "partIndex": 0,
+              "rect": [
+                142.0202,
+                444.0828,
+                254.5462,
+                467.2428
+              ],
+              "text": "4 (do) (do)  today. Instead,"
+            },
+            {
+              "id": "p54-f-5",
+              "label": "5",
+              "number": 5,
+              "partIndex": 0,
+              "rect": [
+                71.1559,
+                392.0828,
+                262.176,
+                454.2428
+              ],
+              "text": "5 (use) (use) they  hologram technology to talk to each other, just like in science fiction films. In addition, advanced translation devices"
+            },
+            {
+              "id": "p54-f-6",
+              "label": "6",
+              "number": 6,
+              "partIndex": 0,
+              "rect": [
+                142.0202,
+                379.0828,
+                253.5962,
+                402.2428
+              ],
+              "text": "6 (remove) (remove)  language"
+            },
+            {
+              "id": "p54-f-7",
+              "label": "7",
+              "number": 7,
+              "partIndex": 0,
+              "rect": [
+                71.1541,
+                340.0828,
+                245.2441,
+                389.2428
+              ],
+              "text": "7 barriers, and it  (be) (be) easier to talk to anyone in the world. However, not everyone"
+            },
+            {
+              "id": "p54-f-8",
+              "label": "8",
+              "number": 8,
+              "partIndex": 0,
+              "rect": [
+                71.1562,
+                314.0828,
+                240.8063,
+                350.2428
+              ],
+              "text": "8 (adopt) (adopt)  these technologies quickly. Since some"
+            },
+            {
+              "id": "p54-f-9",
+              "label": "9",
+              "number": 9,
+              "partIndex": 0,
+              "rect": [
+                71.1562,
+                301.0828,
+                265.2059,
+                324.2428
+              ],
+              "text": "9 (not trust) (not trust) people  new"
+            },
+            {
+              "id": "p54-f-10",
+              "label": "10",
+              "number": 10,
+              "partIndex": 0,
+              "rect": [
+                71.1541,
+                249.0828,
+                264.5241,
+                311.2428
+              ],
+              "text": "10 (not (not inventions, they  stop) stop) using traditional communication methods easily. On the other hand, artificial intelligence assistants"
+            },
+            {
+              "id": "p54-f-11",
+              "label": "11",
+              "number": 11,
+              "partIndex": 0,
+              "rect": [
+                71.1538,
+                210.0828,
+                272.6748,
+                259.2428
+              ],
+              "text": "11 (help) (help)  people manage everyday tasks, like scheduling appointments or setting reminders,"
+            },
+            {
+              "id": "p54-f-12",
+              "label": "12",
+              "number": 12,
+              "partIndex": 0,
+              "rect": [
+                71.1538,
+                171.0828,
+                259.5441,
+                220.2428
+              ],
+              "text": "12 (not (not but they  replace) replace) human conversations—and unlike in some futuristic films, people"
+            },
+            {
+              "id": "p54-f-13",
+              "label": "13",
+              "number": 13,
+              "partIndex": 0,
+              "rect": [
+                71.1523,
+                145.0828,
+                250.6293,
+                181.2428
+              ],
+              "text": "13 (not read) (not read)  each other’s thoughts directly. The future"
+            },
+            {
+              "id": "p54-f-14",
+              "label": "14",
+              "number": 14,
+              "partIndex": 0,
+              "rect": [
+                71.1523,
+                132.0828,
+                251.3411,
+                156.2
+              ],
+              "text": "14 of communication "
+            },
+            {
+              "id": "p54-f-15",
+              "label": "15",
+              "number": 15,
+              "partIndex": 0,
+              "rect": [
+                71.1541,
+                106.0828,
+                263.5141,
+                143.2
+              ],
+              "text": "15 (be) (be) exciting, but it  (bring) (bring) new challenges; that is for sure."
+            }
+          ]
+        },
         {
           "id": "p54-g",
           "label": "g",
@@ -6290,6 +8296,47 @@
             ]
           ],
           "headline": "Read the text quickly again and circle what the topic below is not mentioned."
+        },
+        {
+          "id": "p55-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            147.9642,
+            538.7115,
+            759.535
+          ],
+          "parts": [
+            [
+              0.0,
+              147.9642,
+              538.7115,
+              759.535
+            ]
+          ],
+          "kind": "content",
+          "headline": "i"
+        },
+        {
+          "id": "p55-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            538.7115,
+            14.008,
+            564.517,
+            652.135
+          ],
+          "parts": [
+            [
+              538.7115,
+              14.008,
+              564.517,
+              652.135
+            ]
+          ],
+          "kind": "content"
         }
       ]
     },
@@ -6307,6 +8354,26 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p56-k",
+          "label": "k",
+          "column": 0,
+          "rect": [
+            58.9238,
+            402.8843,
+            284.3256,
+            734.7368
+          ],
+          "parts": [
+            [
+              58.9238,
+              402.8843,
+              284.3256,
+              734.7368
+            ]
+          ],
+          "headline": "Read the text carefully and answer the questions below."
+        },
         {
           "id": "p56-l",
           "label": "l",
@@ -6421,26 +8488,6 @@
           ]
         },
         {
-          "id": "p56-k",
-          "label": "k",
-          "column": 0,
-          "rect": [
-            58.9238,
-            402.8843,
-            284.3256,
-            734.7368
-          ],
-          "parts": [
-            [
-              58.9238,
-              402.8843,
-              284.3256,
-              734.7368
-            ]
-          ],
-          "headline": "Read the text carefully and answer the questions below."
-        },
-        {
           "id": "p56-v3",
           "label": null,
           "column": 0,
@@ -6475,6 +8522,26 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p57-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            50.0084,
+            554.4156,
+            267.4974,
+            732.8401
+          ],
+          "parts": [
+            [
+              50.0084,
+              554.4156,
+              267.4974,
+              732.8401
+            ]
+          ],
+          "kind": "content"
+        },
         {
           "id": "p57-n",
           "label": "n",
@@ -6550,6 +8617,48 @@
           ]
         },
         {
+          "id": "p57-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            300.6116,
+            639.8228,
+            505.0117,
+            734.3428
+          ],
+          "parts": [
+            [
+              300.6116,
+              639.8228,
+              505.0117,
+              734.3428
+            ]
+          ],
+          "kind": "content",
+          "headline": "Aysel: Me too. Superhero films are fun to"
+        },
+        {
+          "id": "p57-c3",
+          "label": null,
+          "column": 1,
+          "rect": [
+            300.6086,
+            531.4312,
+            506.259,
+            639.7028
+          ],
+          "parts": [
+            [
+              300.6086,
+              531.4312,
+              506.259,
+              639.7028
+            ]
+          ],
+          "kind": "content",
+          "headline": "Aysel:"
+        },
+        {
           "id": "p57-o",
           "label": "o",
           "column": 1,
@@ -6570,10 +8679,441 @@
           "headline": "Think of one way that people can watch films in the future and write a short paragraph to compare them. Use the points below to guide your writing."
         }
       ]
+    },
+    "58": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          58.3465,
+          194.296
+        ],
+        [
+          198.296,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p58-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            0.0,
+            0.0,
+            522.5989,
+            685.65
+          ],
+          "parts": [
+            [
+              0.0,
+              0.0,
+              522.5989,
+              685.65
+            ]
+          ],
+          "kind": "content",
+          "headline": "THEME 1 SCHOOL LIFE"
+        }
+      ]
+    },
+    "59": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          54.0275,
+          179.7545
+        ],
+        [
+          183.7545,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p59-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            40.8847,
+            41.0,
+            546.5648,
+            702.232
+          ],
+          "parts": [
+            [
+              40.8847,
+              41.0,
+              546.5648,
+              702.232
+            ]
+          ],
+          "kind": "content",
+          "headline": "Polish"
+        }
+      ]
+    },
+    "60": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          68.0589,
+          193.7859
+        ],
+        [
+          197.7859,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p60-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            55.0579,
+            51.7179,
+            560.738,
+            695.571
+          ],
+          "parts": [
+            [
+              55.0579,
+              51.7179,
+              560.738,
+              695.571
+            ]
+          ],
+          "kind": "content",
+          "headline": "leave school"
+        }
+      ]
+    },
+    "61": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          54.0275,
+          180.851
+        ],
+        [
+          184.851,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p61-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            40.8847,
+            41.122,
+            546.5648,
+            695.571
+          ],
+          "parts": [
+            [
+              40.8847,
+              41.122,
+              546.5648,
+              695.571
+            ]
+          ],
+          "kind": "content",
+          "headline": "curly"
+        }
+      ]
+    },
+    "62": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          68.0591,
+          198.9796
+        ],
+        [
+          202.9796,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p62-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            40.9365,
+            692.6,
+            543.284,
+            784.2778
+          ],
+          "parts": [
+            [
+              40.9365,
+              692.6,
+              543.284,
+              784.2778
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p62-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            62.0551,
+            63.802,
+            522.5989,
+            692.571
+          ],
+          "parts": [
+            [
+              62.0551,
+              63.802,
+              522.5989,
+              692.571
+            ]
+          ],
+          "kind": "content",
+          "headline": "accounting firm"
+        }
+      ]
+    },
+    "63": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          54.0276,
+          184.9481
+        ],
+        [
+          188.9481,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p63-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            40.8847,
+            66.9443,
+            546.5648,
+            698.614
+          ],
+          "parts": [
+            [
+              40.8847,
+              66.9443,
+              546.5648,
+              698.614
+            ]
+          ],
+          "kind": "content",
+          "headline": "scientist"
+        }
+      ]
+    },
+    "64": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          68.2007,
+          195.5258
+        ],
+        [
+          199.5258,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p64-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            55.0579,
+            46.4172,
+            560.738,
+            700.749
+          ],
+          "parts": [
+            [
+              55.0579,
+              46.4172,
+              560.738,
+              700.749
+            ]
+          ],
+          "kind": "content",
+          "headline": "harmonious"
+        }
+      ]
+    },
+    "65": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          54.0275,
+          181.3525
+        ],
+        [
+          185.3525,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p65-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            48.0237,
+            65.458,
+            508.5674,
+            717.7
+          ],
+          "parts": [
+            [
+              48.0237,
+              65.458,
+              508.5674,
+              717.7
+            ]
+          ],
+          "kind": "content",
+          "headline": "cuisine"
+        }
+      ]
+    },
+    "66": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          73.87,
+          198.1798
+        ],
+        [
+          202.1798,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p66-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            67.8661,
+            67.949,
+            528.4099,
+            701.458
+          ],
+          "parts": [
+            [
+              67.8661,
+              67.949,
+              528.4099,
+              701.458
+            ]
+          ],
+          "kind": "content",
+          "headline": "THEME 7 LIFE IN THE WORLD & NATURE"
+        }
+      ]
+    },
+    "67": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          54.0276,
+          173.8793
+        ],
+        [
+          177.8793,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p67-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            40.8847,
+            41.0,
+            546.5648,
+            698.614
+          ],
+          "parts": [
+            [
+              40.8847,
+              41.0,
+              546.5648,
+              698.614
+            ]
+          ],
+          "kind": "content",
+          "headline": "reduce"
+        }
+      ]
+    },
+    "68": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          68.2007,
+          195.5257
+        ],
+        [
+          199.5257,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p68-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            62.1969,
+            201.803,
+            522.7406,
+            717.7
+          ],
+          "parts": [
+            [
+              62.1969,
+              201.803,
+              522.7406,
+              717.7
+            ]
+          ],
+          "kind": "content",
+          "headline": "futuristic"
+        }
+      ]
     }
   },
   "engine": "vision",
   "checkpoint": "a9a76c4979dceebed2adb9cebfad673021ed4685e05a362dd3843b781b38fab7",
   "conf": 0.7,
-  "icons": "bind"
+  "icons": "bind",
+  "content": true,
+  "frontMatterEnd": 9,
+  "backMatterStart": 69,
+  "openers": []
 }

@@ -18,8 +18,8 @@ The student's raw boxes are scored beside the regions, so the difference is
 what snapping and baking did to them. The other direction is counted too: the
 regions on these pages that answer no teacher box (best IoU under 0.5), and the
 pages the teacher left empty that carry a region -- hotspots on nothing. Point
-`--bake-root` at the project root to score the rules bake the same way. Teacher boxes taller than a hotspot may
-be (`TALL_REGION`) are counted apart: no region is allowed to be that tall.
+`--bake-root` at the project root to score the rules bake the same way. Teacher boxes taller than
+`TALL_REGION` are counted apart, as they were while no region was allowed to be that tall (until 2026-10-03).
 
 One short-lived process per book. Usage:
     .venv-vision/bin/python tools/hotspot_extraction/vision/accuracy.py
@@ -92,6 +92,8 @@ def _book(job: Tuple[str, str, str, str]) -> Dict[str, Any]:
         page = im["page"]
         boxes = teacher.get(page) or []
         baked = (bake.get("pages") or {}).get(str(page)) or {}
+        # The teacher boxed exercises; a content region (scanner/content.py) answers none by design.
+        baked = {**baked, "activities": [a for a in baked.get("activities") or [] if a.get("kind", "activity") == "activity"]}
         if not boxes:
             # A page the teacher found no activity on: every region here is a hotspot on nothing.
             pages.append({"page": page, "teacher": 0, "regions": len(baked.get("activities") or []),

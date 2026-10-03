@@ -1097,7 +1097,8 @@ class ReaderPage(Gtk.Box):
 
     def step_activity_from(self, activity, direction: int):
         """
-        Next / previous activity across page boundaries, in reading order.
+        Next / previous region across page boundaries, in reading order:
+        activities and content alike, so that stepping walks the whole page.
         direction is +1 or -1.
         """
         overlay = self.session.overlay(activity.page_num)
@@ -1138,7 +1139,7 @@ class ReaderPage(Gtk.Box):
         for page in self._visible_pages():
             overlay = self.session.overlay(page)
             if overlay is not None:
-                count += len(overlay.activities) + len(overlay.pins)
+                count += overlay.activity_count + len(overlay.pins)
         self.dock.set_activity_count(count)
 
     # ------------------------------------------------------------- search

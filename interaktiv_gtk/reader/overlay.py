@@ -41,6 +41,8 @@ class Spot:
     guid: Optional[str] = None      # the interactive bundle, when there is one
     installed: bool = False
     activity: Optional[Activity] = None
+    content: bool = False           # a passage or a figure, not an exercise
+    number: int = 0                 # which activity of the sheet this is, from 1; 0 for content
 
     @property
     def key(self) -> Tuple[int, int]:
@@ -96,6 +98,11 @@ class PageOverlay:
         return self._page.activities
 
     @property
+    def activity_count(self) -> int:
+        """How many of the sheet's regions are exercises; content regions are not counted."""
+        return sum(1 for a in self._page.activities if not a.is_content)
+
+    @property
     def is_empty(self) -> bool:
         return not self.spots and not self.pins
 
@@ -145,12 +152,15 @@ def build_overlay(
     `confidence` is the book's calibration confidence, or None to leave the gate
     off.
     """
+    # Only exercises are offered to the join. A publisher icon beside a passage or a worked
+    # example stays a pin: a content region opens in focus mode, never as an interactive.
+    linkable = [i for i, a in enumerate(page.activities) if not a.is_content]
     region_views = [
         linking.region_view(
             a.id, a.label, a.rect, page.page_width, page.page_height,
             a.anchored, getattr(a, "oge_id", None),
         )
-        for a in page.activities
+        for a in (page.activities[i] for i in linkable)
     ]
     oge_views = [
         linking.oge_view(o.id, o.title, o.printed_page, o.posx, o.posy)
@@ -163,6 +173,8 @@ def build_overlay(
     # own and is matched by construction. Claiming it here is what stops the
     # same activity being drawn twice -- once as its region, once as the pin.
     links = linking.apply_anchored_ids(links, region_views, oge_views)
+    links = {linkable[ri]: oi for ri, oi in links.items()}
+    number = {i: n for n, i in enumerate(linkable, 1)}
 
     spots: List[Spot] = []
     for act_index, activity in enumerate(page.activities):
@@ -182,6 +194,8 @@ def build_overlay(
                 guid=guid,
                 installed=installed,
                 activity=activity,
+                content=activity.is_content,
+                number=number.get(act_index, 0),
             ))
 
     claimed = {oges[oi].id for oi in links.values()}

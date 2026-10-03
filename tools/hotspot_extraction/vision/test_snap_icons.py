@@ -67,9 +67,12 @@ def test_a_block_is_not_taken_when_it_brings_in_a_line_from_outside_it():
     assert snap.settle([(0.9, (90, 330, 410, 600))], geom) == [(90, 330, 410, 600)]
 
 
-def test_a_box_taller_than_a_hotspot_is_left_out_and_the_box_inside_it_stands():
+def test_a_box_as_tall_as_the_sheet_stands_and_of_two_nested_boxes_the_surer_is_kept():
+    # A task that fills its page is one activity (the user's decision of 2026-10-03).
     page, question = (50, 100, 550, 700), (60, 300, 300, 400)
-    assert snap.settle([(0.95, page), (0.7, question)], _geom()) == [question]
+    assert snap.settle([(0.95, page)], _geom()) == [page]
+    assert snap.settle([(0.95, page), (0.7, question)], _geom()) == [page]
+    assert snap.settle([(0.7, page), (0.95, question)], _geom()) == [question]
 
 
 def test_two_boxes_on_one_block_grow_to_their_shared_boundary():

@@ -3,7 +3,7 @@
   "bookId": "afec0d89-bd70-4495-bad3-e95831c33721",
   "fingerprint": "42926813-c096b357b1d33013213b00845f0a94c7",
   "profile": "c7de24295a4b",
-  "builtAt": "2026-10-03T07:59:59.744Z",
+  "builtAt": "2026-10-03T11:44:04.152Z",
   "pageCount": 196,
   "calibration": {
     "enabled": true,
@@ -234,6 +234,114 @@
   },
   "anchors": {},
   "pages": {
+    "13": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          135.3986,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p13-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            45.1891,
+            552.756,
+            779.528
+          ],
+          "parts": [
+            [
+              0.0,
+              45.1891,
+              552.756,
+              779.528
+            ]
+          ],
+          "kind": "content",
+          "headline": "1."
+        }
+      ]
+    },
+    "14": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          36.5197,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p14-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.5197,
+            618.2614,
+            501.3096,
+            716.4244
+          ],
+          "parts": [
+            [
+              39.5197,
+              618.2614,
+              501.3096,
+              716.4244
+            ]
+          ],
+          "kind": "content",
+          "headline": "İLK ADIM"
+        },
+        {
+          "id": "p14-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            255.3431,
+            501.981,
+            616.06
+          ],
+          "parts": [
+            [
+              53.6929,
+              255.3431,
+              501.981,
+              616.06
+            ]
+          ],
+          "kind": "content",
+          "headline": "▶"
+        },
+        {
+          "id": "p14-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.5197,
+            65.0,
+            499.0626,
+            253.6166
+          ],
+          "parts": [
+            [
+              39.5197,
+              65.0,
+              499.0626,
+              253.6166
+            ]
+          ],
+          "kind": "content",
+          "headline": "Aşağıdaki soruları cevaplayınız."
+        }
+      ]
+    },
     "15": {
       "pageWidth": 552.756,
       "pageHeight": 779.528,
@@ -244,6 +352,48 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p15-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            54.4016,
+            677.1257,
+            417.6367,
+            721.0044
+          ],
+          "parts": [
+            [
+              54.4016,
+              677.1257,
+              417.6367,
+              721.0044
+            ]
+          ],
+          "kind": "content",
+          "headline": "BİLGİ KÖPRÜSÜ"
+        },
+        {
+          "id": "p15-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            56.9935,
+            217.528,
+            515.8191,
+            674.9164
+          ],
+          "parts": [
+            [
+              56.9935,
+              217.528,
+              515.8191,
+              674.9164
+            ]
+          ],
+          "kind": "content",
+          "headline": "Sirkadiyen, Latincede \"yaklaşık bir gün\" anlamına gelen bir terimdir. Sirkadiyen ritim, vücudun"
+        },
         {
           "id": "p15-1",
           "label": "1",
@@ -306,6 +456,292 @@
         }
       ]
     },
+    "16": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          36.5197,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p16-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.7293,
+            59.1254,
+            500.1254,
+            673.5571
+          ],
+          "parts": [
+            [
+              39.7293,
+              59.1254,
+              500.1254,
+              673.5571
+            ]
+          ]
+        }
+      ]
+    },
+    "17": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          50.6929,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p17-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            54.0679,
+            616.904,
+            512.8609,
+            726.4525
+          ],
+          "parts": [
+            [
+              54.0679,
+              616.904,
+              512.8609,
+              726.4525
+            ]
+          ],
+          "kind": "content",
+          "headline": "ETKİNLİK"
+        },
+        {
+          "id": "p17-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            578.7219,
+            409.2678,
+            615.4819
+          ],
+          "parts": [
+            [
+              53.6929,
+              578.7219,
+              409.2678,
+              615.4819
+            ]
+          ],
+          "kind": "content",
+          "headline": "Aşağıdaki işlem basamaklarını takip ederek etkinliği gerçekleştiriniz."
+        },
+        {
+          "id": "p17-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            68.4331,
+            216.3168,
+            415.3674,
+            577.5387
+          ],
+          "parts": [
+            [
+              68.4331,
+              216.3168,
+              415.3674,
+              577.5387
+            ]
+          ],
+          "kind": "content",
+          "headline": "Psikolojinin Tanımı"
+        },
+        {
+          "id": "p17-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            68.4331,
+            50.9782,
+            415.4331,
+            213.3655
+          ],
+          "parts": [
+            [
+              68.4331,
+              50.9782,
+              415.4331,
+              213.3655
+            ]
+          ],
+          "kind": "content",
+          "headline": "Psikolojinin Konusu"
+        }
+      ]
+    },
+    "18": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          50.6929,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p18-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            144.4016,
+            569.3561,
+            501.7122,
+            728.9031
+          ],
+          "parts": [
+            [
+              144.4016,
+              569.3561,
+              501.7122,
+              728.9031
+            ]
+          ],
+          "kind": "content",
+          "headline": "davranışlar, duygular ve bilişsel süreçleri kapsar. Uyarıcı-organizma-tepki (U-O-T)"
+        },
+        {
+          "id": "p18-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            144.4016,
+            392.8523,
+            501.5146,
+            569.2395
+          ],
+          "parts": [
+            [
+              144.4016,
+              392.8523,
+              501.5146,
+              569.2395
+            ]
+          ],
+          "kind": "content",
+          "headline": "Psikolojinin Amaçları"
+        },
+        {
+          "id": "p18-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            52.6299,
+            258.8851,
+            246.7796,
+            392.6453
+          ],
+          "parts": [
+            [
+              52.6299,
+              258.8851,
+              246.7796,
+              392.6453
+            ]
+          ],
+          "kind": "content",
+          "headline": "1. Örnek Durum"
+        },
+        {
+          "id": "p18-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            254.9528,
+            256.5765,
+            501.6797,
+            371.1235
+          ],
+          "parts": [
+            [
+              254.9528,
+              256.5765,
+              501.6797,
+              371.1235
+            ]
+          ],
+          "kind": "content",
+          "headline": "Özlem Öğretmen, Türkiye Yüzyılı vizyonunda yer alan"
+        },
+        {
+          "id": "p18-c5",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            197.5765,
+            501.5711,
+            256.1235
+          ],
+          "parts": [
+            [
+              53.6929,
+              197.5765,
+              501.5711,
+              256.1235
+            ]
+          ],
+          "kind": "content",
+          "headline": "Birlikte düşündüklerinde öğrencilerin daha küçük ve ulaşılabilir hedeflerle ilerlemeleri durumunda"
+        },
+        {
+          "id": "p18-c6",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            61.7523,
+            246.7795,
+            195.4721
+          ],
+          "parts": [
+            [
+              53.6929,
+              61.7523,
+              246.7795,
+              195.4721
+            ]
+          ],
+          "kind": "content",
+          "headline": "2. Örnek Durum"
+        },
+        {
+          "id": "p18-c7",
+          "label": null,
+          "column": 0,
+          "rect": [
+            254.9528,
+            56.4033,
+            501.5835,
+            173.9503
+          ],
+          "parts": [
+            [
+              254.9528,
+              56.4033,
+              501.5835,
+              173.9503
+            ]
+          ],
+          "kind": "content",
+          "headline": "Bekir, okulda yapılan yangın tatbikatı sırasında aniden"
+        }
+      ]
+    },
     "19": {
       "pageWidth": 552.756,
       "pageHeight": 779.528,
@@ -316,6 +752,27 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p19-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            67.8661,
+            548.6159,
+            515.7809,
+            729.6847
+          ],
+          "parts": [
+            [
+              67.8661,
+              548.6159,
+              515.7809,
+              729.6847
+            ]
+          ],
+          "kind": "content",
+          "headline": "3. Örnek Durum"
+        },
         {
           "id": "p19-2",
           "label": "2",
@@ -500,6 +957,27 @@
       ],
       "activities": [
         {
+          "id": "p22-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            59.528,
+            306.142,
+            499.843,
+            722.835
+          ],
+          "parts": [
+            [
+              59.528,
+              306.142,
+              499.843,
+              722.835
+            ]
+          ],
+          "kind": "content",
+          "headline": "4. Örnek Durum"
+        },
+        {
           "id": "p22-2",
           "label": "2",
           "column": 0,
@@ -541,6 +1019,39 @@
         }
       ]
     },
+    "23": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          50.6929,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p23-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            56.2472,
+            51.3032,
+            424.6613,
+            700.9818
+          ],
+          "parts": [
+            [
+              56.2472,
+              51.3032,
+              424.6613,
+              700.9818
+            ]
+          ],
+          "headline": "Aşağıdaki bilgi notunu okuyunuz.",
+          "ogeId": "903f6314-55b3-f111-b31a-005056a7d529"
+        }
+      ]
+    },
     "24": {
       "pageWidth": 552.756,
       "pageHeight": 779.528,
@@ -555,6 +1066,69 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p24-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            144.4016,
+            695.3561,
+            501.6023,
+            728.9031
+          ],
+          "parts": [
+            [
+              144.4016,
+              695.3561,
+              501.6023,
+              728.9031
+            ]
+          ],
+          "kind": "content",
+          "headline": "özelliklerini göz önünde bulundurarak öğrenme ve öğretme süreçleri üzerine"
+        },
+        {
+          "id": "p24-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            144.4016,
+            600.0176,
+            501.5963,
+            692.4049
+          ],
+          "parts": [
+            [
+              144.4016,
+              600.0176,
+              501.5963,
+              692.4049
+            ]
+          ],
+          "kind": "content",
+          "headline": "Adli Psikoloji"
+        },
+        {
+          "id": "p24-c3",
+          "label": null,
+          "column": 1,
+          "rect": [
+            144.4016,
+            490.679,
+            501.7617,
+            597.0663
+          ],
+          "parts": [
+            [
+              144.4016,
+              490.679,
+              501.7617,
+              597.0663
+            ]
+          ],
+          "kind": "content",
+          "headline": "Endüstri ve Örgüt Psikolojisi"
+        },
         {
           "id": "p24-2",
           "label": "2",
@@ -642,6 +1216,48 @@
       ],
       "activities": [
         {
+          "id": "p25-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            493.5075,
+            519.2126,
+            729.3646
+          ],
+          "parts": [
+            [
+              53.6929,
+              493.5075,
+              519.2126,
+              729.3646
+            ]
+          ],
+          "kind": "content",
+          "headline": "Aşağıdaki metinden yararlanarak soruları cevaplayınız."
+        },
+        {
+          "id": "p25-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            70.7008,
+            417.6728,
+            422.537,
+            493.0545
+          ],
+          "parts": [
+            [
+              70.7008,
+              417.6728,
+              422.537,
+              493.0545
+            ]
+          ],
+          "kind": "content",
+          "headline": "riskleri artırabilir. Bu nedenle siber psikoloji, özellikle çocukların ve ergenlerin geli­"
+        },
+        {
           "id": "p25-v1",
           "label": null,
           "column": 0,
@@ -678,6 +1294,27 @@
               278.0946
             ]
           ]
+        },
+        {
+          "id": "p25-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            50.858,
+            60.5098,
+            516.0713,
+            135.4
+          ],
+          "parts": [
+            [
+              50.858,
+              60.5098,
+              516.0713,
+              135.4
+            ]
+          ],
+          "kind": "content",
+          "headline": "Gelecek Derse Hazırlık"
         }
       ]
     },
@@ -714,6 +1351,48 @@
             ]
           ],
           "headline": "Farabi, İbni Sina, Gazali, Mustafa Şekip Tunç, Çiğdem Kâğıtçıbaşı ve Doğan Cüceloğlu’nun eserlerine ve psikoloji bilimine katkılarına yönelik yaptığınız araştır"
+        },
+        {
+          "id": "p26-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            60.0276,
+            54.9509,
+            271.8756,
+            227.5059
+          ],
+          "parts": [
+            [
+              60.0276,
+              54.9509,
+              271.8756,
+              227.5059
+            ]
+          ],
+          "kind": "content",
+          "headline": "Bilim İnsanının"
+        },
+        {
+          "id": "p26-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            287.6496,
+            54.9509,
+            499.4976,
+            227.5059
+          ],
+          "parts": [
+            [
+              287.6496,
+              54.9509,
+              499.4976,
+              227.5059
+            ]
+          ],
+          "kind": "content",
+          "headline": "Bilim İnsanının"
         }
       ]
     },
@@ -768,6 +1447,38 @@
         }
       ]
     },
+    "28": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          47.8583,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p28-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            41.9425,
+            54.4321,
+            501.151,
+            688.628
+          ],
+          "parts": [
+            [
+              41.9425,
+              54.4321,
+              501.151,
+              688.628
+            ]
+          ],
+          "ogeId": "726fbb4a-55b3-f111-b31a-005056a7d529"
+        }
+      ]
+    },
     "29": {
       "pageWidth": 552.756,
       "pageHeight": 779.528,
@@ -797,6 +1508,69 @@
             ]
           ],
           "headline": "Bir deney sırasında oda sıcaklığı, gürültü, ışıklandırma gibi dışsal faktörlerin sabit tutulması ne işe yarar? Bu faktörler sabit tutulmazsa deney sonuçları nas"
+        },
+        {
+          "id": "p29-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            451.2617,
+            411.0672,
+            605.4836
+          ],
+          "parts": [
+            [
+              53.6929,
+              451.2617,
+              411.0672,
+              605.4836
+            ]
+          ],
+          "kind": "content",
+          "headline": "İlişkisel Yöntem"
+        },
+        {
+          "id": "p29-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            56.6929,
+            329.6687,
+            510.2359,
+            444.1177
+          ],
+          "parts": [
+            [
+              56.6929,
+              329.6687,
+              510.2359,
+              444.1177
+            ]
+          ],
+          "kind": "content",
+          "headline": "Nötr Korelasyon"
+        },
+        {
+          "id": "p29-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            52.49,
+            411.0771,
+            325.0456
+          ],
+          "parts": [
+            [
+              53.6929,
+              52.49,
+              411.0771,
+              325.0456
+            ]
+          ],
+          "kind": "content",
+          "headline": "Grafik 1.1: İlişkisel yöntem"
         }
       ]
     },
@@ -849,6 +1623,164 @@
             ]
           ],
           "headline": "Araştırmanızda ilişkisel yöntem kullanacak olsaydınız günlük hayatta karşılaştığınız hangi iki olgu arasındaki ilişkiyi incelemek isterdiniz? Açıklayınız."
+        },
+        {
+          "id": "p30-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            144.4016,
+            327.7892,
+            501.7716,
+            526.6804
+          ],
+          "parts": [
+            [
+              144.4016,
+              327.7892,
+              501.7716,
+              526.6804
+            ]
+          ],
+          "kind": "content",
+          "headline": "Betimsel Yöntem"
+        },
+        {
+          "id": "p30-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            38.4837,
+            67.1199,
+            501.7439,
+            327.3362
+          ],
+          "parts": [
+            [
+              38.4837,
+              67.1199,
+              501.7439,
+              327.3362
+            ]
+          ],
+          "kind": "content",
+          "headline": "doğal ortamında araştırmacının herhangi bir müdahalesi olmaksızın"
+        }
+      ]
+    },
+    "31": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          50.6929,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p31-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            65.0315,
+            678.1514,
+            400.4897,
+            722.8314
+          ],
+          "parts": [
+            [
+              65.0315,
+              678.1514,
+              400.4897,
+              722.8314
+            ]
+          ],
+          "kind": "content",
+          "headline": "katılımcıya ek sorular sormasına olanak tanır. Yapılandırılmamış görüşme"
+        },
+        {
+          "id": "p31-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            65.0315,
+            566.1514,
+            356.9516,
+            677.6984
+          ],
+          "parts": [
+            [
+              65.0315,
+              566.1514,
+              356.9516,
+              677.6984
+            ]
+          ],
+          "kind": "content",
+          "headline": "alışkanlıklarını incelemek amacıyla önceden hazırladığı ve tüm"
+        },
+        {
+          "id": "p31-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            362.8346,
+            572.8701,
+            510.2362,
+            671.2606
+          ],
+          "parts": [
+            [
+              362.8346,
+              572.8701,
+              510.2362,
+              671.2606
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p31-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            504.4822,
+            400.4125,
+            565.6984
+          ],
+          "parts": [
+            [
+              53.6929,
+              504.4822,
+              400.4125,
+              565.6984
+            ]
+          ],
+          "kind": "content",
+          "headline": "amacıyla herhangi bir soru listesi kullanmadan doğal bir sohbet ortamında"
+        },
+        {
+          "id": "p31-c5",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            56.1436,
+            514.2592,
+            504.0292
+          ],
+          "parts": [
+            [
+              53.6929,
+              56.1436,
+              514.2592,
+              504.0292
+            ]
+          ],
+          "kind": "content",
+          "headline": "standart araçlardır. Testler sayesinde bireyler hakkında ayrıntılı bilgi"
         }
       ]
     },
@@ -1024,6 +1956,90 @@
       ],
       "activities": [
         {
+          "id": "p34-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            403.1,
+            501.6327,
+            648.2576
+          ],
+          "parts": [
+            [
+              53.6929,
+              403.1,
+              501.6327,
+              648.2576
+            ]
+          ],
+          "kind": "content",
+          "headline": "5. Örnek Durum"
+        },
+        {
+          "id": "p34-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            45.5612,
+            257.8809,
+            199.5936,
+            394.5198
+          ],
+          "parts": [
+            [
+              45.5612,
+              257.8809,
+              199.5936,
+              394.5198
+            ]
+          ],
+          "kind": "content",
+          "headline": "6. Örnek Durum"
+        },
+        {
+          "id": "p34-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            206.7638,
+            256.6885,
+            501.6339,
+            372.7777
+          ],
+          "parts": [
+            [
+              206.7638,
+              256.6885,
+              501.6339,
+              372.7777
+            ]
+          ],
+          "kind": "content",
+          "headline": "Okuldaki bazı öğrenciler, üniversitede seçecekleri bölüm konu ­"
+        },
+        {
+          "id": "p34-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.693,
+            149.4,
+            501.552,
+            256.0152
+          ],
+          "parts": [
+            [
+              53.693,
+              149.4,
+              501.552,
+              256.0152
+            ]
+          ],
+          "kind": "content",
+          "headline": "konuşmaz. Yanıtlar toplandıktan sonra öğretmen, her öğrencinin hangi alanlara daha yatkın olduğunu"
+        },
+        {
           "id": "p34-4",
           "label": "4",
           "column": 0,
@@ -1074,6 +2090,69 @@
             ]
           ],
           "headline": "lojide kullanılan araştırma yöntem ve tekniklerinin işlevlerini açıklayan kısa bir rapor hazırlayınız."
+        },
+        {
+          "id": "p35-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6928,
+            385.7661,
+            513.2363,
+            439.9543
+          ],
+          "parts": [
+            [
+              53.6928,
+              385.7661,
+              513.2363,
+              439.9543
+            ]
+          ],
+          "kind": "content",
+          "headline": "“Psikolojinin Gelişimi” isimli e-içeriğe ulaşmak için karekodu kullanınız."
+        },
+        {
+          "id": "p35-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            276.6817,
+            512.4859,
+            378.8786
+          ],
+          "parts": [
+            [
+              53.6929,
+              276.6817,
+              512.4859,
+              378.8786
+            ]
+          ],
+          "kind": "content",
+          "headline": "PERFORMANS GÖREVİ"
+        },
+        {
+          "id": "p35-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            59.7053,
+            515.817,
+            273.5773
+          ],
+          "parts": [
+            [
+              53.6929,
+              59.7053,
+              515.817,
+              273.5773
+            ]
+          ],
+          "kind": "content",
+          "headline": "Bu çalışmada psikolojinin amaçlarını, alt dallarını, yöntem ve tekniklerini günlük hayatla ilişkilen­"
         }
       ]
     },
@@ -1088,44 +2167,95 @@
       ],
       "activities": [
         {
-          "id": "p36-1",
-          "label": "1",
+          "id": "p36-form",
+          "label": null,
           "column": 0,
           "rect": [
-            42.0505,
-            404.9769,
-            496.8326,
-            715.1698
+            39.5196,
+            48.1183,
+            499.5,
+            730.7819
           ],
           "parts": [
             [
-              42.0505,
-              404.9769,
-              496.8326,
-              715.1698
+              39.5196,
+              48.1183,
+              499.5,
+              730.7819
             ]
           ],
-          "headline": "Deneyimlerim ya da yakın çevreme ilişkin gözlemlerimden yararlanarak günlük hayatımdan örnek durumlar belirledim."
-        },
+          "headline": "Öz Değerlendirme Formu"
+        }
+      ]
+    },
+    "37": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          50.6929,
+          302.1313
+        ],
+        [
+          306.1313,
+          463.7528
+        ],
+        [
+          467.7528,
+          528.756
+        ]
+      ],
+      "activities": [
         {
-          "id": "p36-1",
-          "label": "1",
+          "id": "p37-v1",
+          "label": null,
           "column": 0,
           "rect": [
-            42.9142,
-            108.055,
-            496.9946,
-            404.7269
+            52.4147,
+            69.0516,
+            513.7284,
+            717.6513
           ],
           "parts": [
             [
-              42.9142,
-              108.055,
-              496.9946,
-              404.7269
+              52.4147,
+              69.0516,
+              513.7284,
+              717.6513
+            ]
+          ]
+        }
+      ]
+    },
+    "38": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          36.5197,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p38-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            39.7293,
+            55.8347,
+            499.6636,
+            728.4973
+          ],
+          "parts": [
+            [
+              39.7293,
+              55.8347,
+              499.6636,
+              728.4973
             ]
           ],
-          "headline": "Bu etkinlikten neler öğrendim?"
+          "headline": "Sistematik gözlem; kişiliği, zekâyı veya duygusal durumları ölçmek için kullanı­ lan standart testleri ifade eder."
         }
       ]
     },
@@ -1260,6 +2390,48 @@
           "headline": "Uyarıcıların duyu organlarını harekete geçirmesi ve duyusal sinyallerin beyne iletilmesi süreci"
         },
         {
+          "id": "p40-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.5197,
+            498.6705,
+            499.0627,
+            589.1
+          ],
+          "parts": [
+            [
+              39.5197,
+              498.6705,
+              499.0627,
+              589.1
+            ]
+          ],
+          "kind": "content",
+          "headline": "Aşağıda verilen çoktan seçmeli soruları cevaplayınız."
+        },
+        {
+          "id": "p40-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            42.52,
+            351.948,
+            496.063,
+            489.902
+          ],
+          "parts": [
+            [
+              42.52,
+              351.948,
+              496.063,
+              489.902
+            ]
+          ],
+          "kind": "content",
+          "headline": "Psikolojide araştırmacılar, günlük alışkanlıklarla davranışlar arasındaki ilişkileri incelemek"
+        },
+        {
           "id": "p40-1",
           "label": "1",
           "column": 0,
@@ -1312,6 +2484,48 @@
       ],
       "activities": [
         {
+          "id": "p41-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            708.8276,
+            513.2362,
+            742.6
+          ],
+          "parts": [
+            [
+              53.6929,
+              708.8276,
+              513.2362,
+              742.6
+            ]
+          ],
+          "kind": "content",
+          "headline": "Aşağıdaki metinden yararlanarak 3 ve 4. soruları cevaplayınız."
+        },
+        {
+          "id": "p41-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            56.693,
+            356.95,
+            510.236,
+            703.486
+          ],
+          "parts": [
+            [
+              56.693,
+              356.95,
+              510.236,
+              703.486
+            ]
+          ],
+          "kind": "content",
+          "headline": "Bir araştırmada benzer akademik düzeye sahip öğrenciler rastgele üç gruba ayrılmıştır."
+        },
+        {
           "id": "p41-3",
           "label": "3",
           "column": 0,
@@ -1353,6 +2567,46 @@
         }
       ]
     },
+    "42": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          36.5197,
+          200.3071
+        ],
+        [
+          204.3071,
+          366.524
+        ],
+        [
+          370.524,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p42-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            40.593,
+            56.9136,
+            499.7475,
+            719.4855
+          ],
+          "parts": [
+            [
+              40.593,
+              56.9136,
+              499.7475,
+              719.4855
+            ]
+          ],
+          "headline": "Aşağıda verilen açık uçlu soruları cevaplayınız."
+        }
+      ]
+    },
     "43": {
       "pageWidth": 552.756,
       "pageHeight": 779.528,
@@ -1382,6 +2636,48 @@
             ]
           ],
           "headline": "Çok sevdiğiniz bir yiyeceği düşünerek tadını zihninizde canlandırınız. Bu deneyim ile o yiyeceği yemek arasındaki farklar nelerdir? Açıklayınız."
+        },
+        {
+          "id": "p43-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            373.0924,
+            513.2359,
+            417.7
+          ],
+          "parts": [
+            [
+              53.6929,
+              373.0924,
+              513.2359,
+              417.7
+            ]
+          ],
+          "kind": "content",
+          "headline": "Aşağıdaki metinden yararlanarak 3 ve 4. soruları cevaplayınız."
+        },
+        {
+          "id": "p43-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            56.693,
+            55.705,
+            510.236,
+            365.874
+          ],
+          "parts": [
+            [
+              56.693,
+              55.705,
+              510.236,
+              365.874
+            ]
+          ],
+          "kind": "content",
+          "headline": "Psikolojide araştırmacılar, iki ya da daha fazla değişken arasındaki ilişkiyi incelemek amacıyla"
         }
       ]
     },
@@ -1434,6 +2730,48 @@
             ]
           ],
           "headline": "Korelasyonun neden-sonuç ilişkisi anlamına gelip gelmediğini gerekçeleriyle yazınız."
+        },
+        {
+          "id": "p44-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.5197,
+            480.9167,
+            499.063,
+            511.6
+          ],
+          "parts": [
+            [
+              39.5197,
+              480.9167,
+              499.063,
+              511.6
+            ]
+          ],
+          "kind": "content",
+          "headline": "Aşağıdaki metinden yararlanarak 5 ve 6. soruları cevaplayınız."
+        },
+        {
+          "id": "p44-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            42.52,
+            356.541,
+            496.063,
+            478.818
+          ],
+          "parts": [
+            [
+              42.52,
+              356.541,
+              496.063,
+              478.818
+            ]
+          ],
+          "kind": "content",
+          "headline": "Psikolog John Ridley Stroop (Con Ridli Sıtrup) dikkatin işleyişini anlamak amacıyla bir deney"
         },
         {
           "id": "p44-5",
@@ -1539,6 +2877,48 @@
       ],
       "activities": [
         {
+          "id": "p47-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            546.9001,
+            368.3149,
+            725.8367
+          ],
+          "parts": [
+            [
+              53.6929,
+              546.9001,
+              368.3149,
+              725.8367
+            ]
+          ],
+          "kind": "content",
+          "headline": "2.1. GELİŞİME GENEL BİR BAKIŞ"
+        },
+        {
+          "id": "p47-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            407.3575,
+            408.354,
+            545.0369
+          ],
+          "parts": [
+            [
+              53.6929,
+              407.3575,
+              408.354,
+              545.0369
+            ]
+          ],
+          "kind": "content",
+          "headline": "Altızlar Nasıl Bu Kadar Farklı Olabilir?"
+        },
+        {
           "id": "p47-1",
           "label": "1",
           "column": 0,
@@ -1577,6 +2957,102 @@
             ]
           ],
           "headline": "Kalıtım ve çevrenin gelişim üzerindeki etkilerine ilişkin düşüncelerinizi günlük hayattan örnekler vererek açıklayınız."
+        },
+        {
+          "id": "p47-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            47.646,
+            552.756,
+            299.9173
+          ],
+          "parts": [
+            [
+              0.0,
+              47.646,
+              552.756,
+              299.9173
+            ]
+          ],
+          "kind": "content",
+          "headline": "2.1.1. Gelişim Psikolojisinin Temel Kavramları"
+        }
+      ]
+    },
+    "48": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          141.4016,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p48-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            144.4016,
+            643.301,
+            501.0602,
+            720.4377
+          ],
+          "parts": [
+            [
+              144.4016,
+              643.301,
+              501.0602,
+              720.4377
+            ]
+          ],
+          "kind": "content",
+          "headline": "ilerlemeler ortaya çıkar ve bu durum gelişme kavramı ile tanımlanır. Gelişimin"
+        },
+        {
+          "id": "p48-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            444.472,
+            498.898,
+            640.63
+          ],
+          "parts": [
+            [
+              0.0,
+              444.472,
+              498.898,
+              640.63
+            ]
+          ],
+          "kind": "content",
+          "headline": "Görsel 2.1"
+        },
+        {
+          "id": "p48-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            144.4016,
+            49.9974,
+            501.1338,
+            438.4838
+          ],
+          "parts": [
+            [
+              144.4016,
+              49.9974,
+              501.1338,
+              438.4838
+            ]
+          ],
+          "kind": "content",
+          "headline": "Kültürel bağlam, gelişim süreçlerine anlam kazandırır (Görsel 2.1). Pek çok toplumda"
         }
       ]
     },
@@ -1800,6 +3276,27 @@
           "headline": "Aşağıdaki metinden yararlanarak soruyu cevaplayınız."
         },
         {
+          "id": "p50-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.5197,
+            254.1763,
+            498.563,
+            320.8289
+          ],
+          "parts": [
+            [
+              39.5197,
+              254.1763,
+              498.563,
+              320.8289
+            ]
+          ],
+          "kind": "content",
+          "headline": "2.1.2. Gelişimi Etkileyen Etmenler"
+        },
+        {
           "id": "p50-1",
           "label": "1",
           "column": 0,
@@ -1821,6 +3318,102 @@
         }
       ]
     },
+    "51": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          50.6929,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p51-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            569.3561,
+            457.3762,
+            728.9031
+          ],
+          "parts": [
+            [
+              53.6929,
+              569.3561,
+              457.3762,
+              728.9031
+            ]
+          ],
+          "kind": "content",
+          "headline": "Jim ve Jim ile kıkırdayan kardeşler Minnesota'da [Minesota] gerçekleştirilen ve Thomas"
+        },
+        {
+          "id": "p51-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            482.3483,
+            457.3167,
+            560.7299
+          ],
+          "parts": [
+            [
+              53.6929,
+              482.3483,
+              457.3167,
+              560.7299
+            ]
+          ],
+          "kind": "content",
+          "headline": "(…) Araştırmacılar bebeklerin anne rahmindeyken duyduklarının belirli sonuçlarının olduğunu"
+        },
+        {
+          "id": "p51-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            41.6456,
+            171.1672,
+            513.2362,
+            475.8119
+          ],
+          "parts": [
+            [
+              41.6456,
+              171.1672,
+              513.2362,
+              475.8119
+            ]
+          ],
+          "kind": "content",
+          "headline": "(…) Doğum travmalarına yönelik risk faktörlerinin bilinmesi, riskli gebelik­"
+        },
+        {
+          "id": "p51-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            58.994,
+            457.3083,
+            162.541
+          ],
+          "parts": [
+            [
+              53.6929,
+              58.994,
+              457.3083,
+              162.541
+            ]
+          ],
+          "kind": "content",
+          "headline": "(…) Ergenlik sırasındaki obezitenin yüksek oranlarına ilişkin ek sebepler fast foodların [fest fud"
+        }
+      ]
+    },
     "52": {
       "pageWidth": 552.756,
       "pageHeight": 779.528,
@@ -1831,6 +3424,27 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p52-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.5197,
+            519.1567,
+            501.7682,
+            729.3646
+          ],
+          "parts": [
+            [
+              39.5197,
+              519.1567,
+              501.7682,
+              729.3646
+            ]
+          ],
+          "kind": "content",
+          "headline": "Okuduğunuz örneklerden hareketle aşağıdaki görüşü değerlendirerek görüş geliştirme tekni­"
+        },
         {
           "id": "p52-3",
           "label": "3",
@@ -1850,6 +3464,48 @@
             ]
           ],
           "headline": "Tartışmada öne çıkan görüşleri özetleyerek yazınız."
+        },
+        {
+          "id": "p52-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.8947,
+            268.2666,
+            498.6877,
+            385.6045
+          ],
+          "parts": [
+            [
+              39.8947,
+              268.2666,
+              498.6877,
+              385.6045
+            ]
+          ],
+          "kind": "content",
+          "headline": "ETKİNLİK"
+        },
+        {
+          "id": "p52-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.5197,
+            50.8207,
+            501.7392,
+            266.13
+          ],
+          "parts": [
+            [
+              39.5197,
+              50.8207,
+              501.7392,
+              266.13
+            ]
+          ],
+          "kind": "content",
+          "headline": "Aşağıdaki işlem basamaklarını takip ederek etkinliği gerçekleştiriniz."
         }
       ]
     },
@@ -1863,6 +3519,27 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p53-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            608.5215,
+            514.2366,
+            728.9031
+          ],
+          "parts": [
+            [
+              53.6929,
+              608.5215,
+              514.2366,
+              728.9031
+            ]
+          ],
+          "kind": "content",
+          "headline": "ve sökülmeyi bekleyen oyuncakları için âdeta bir atölyeye dönüşmüştü."
+        },
         {
           "id": "p53-3",
           "label": "3",
@@ -2028,6 +3705,47 @@
       ],
       "activities": [
         {
+          "id": "p55-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            70.7008,
+            388.172,
+            516.071,
+            723.945
+          ],
+          "parts": [
+            [
+              70.7008,
+              388.172,
+              516.071,
+              723.945
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p55-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            364.9493,
+            475.6158,
+            386.7093
+          ],
+          "parts": [
+            [
+              53.6929,
+              364.9493,
+              475.6158,
+              386.7093
+            ]
+          ],
+          "kind": "content",
+          "headline": "Gelişim konusunda edindiğiniz bilgilerden hareketle aşağıdaki soruları cevaplayınız."
+        },
+        {
           "id": "p55-v1",
           "label": null,
           "column": 0,
@@ -2154,6 +3872,89 @@
             ]
           ],
           "headline": "Gelişim ilkelerini kendi cümlelerinizle ifade ediniz ve bu cümleleri grup arkadaşlarınızın cümle­ leriyle karşılaştırınız."
+        },
+        {
+          "id": "p56-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.5197,
+            608.5845,
+            427.0827,
+            652.3568
+          ],
+          "parts": [
+            [
+              39.5197,
+              608.5845,
+              427.0827,
+              652.3568
+            ]
+          ],
+          "kind": "content",
+          "headline": "Aşağıdaki metinden yararlanarak soruları grup arkadaşlarınızla cevaplayınız."
+        },
+        {
+          "id": "p56-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            59.5599,
+            485.1519,
+            275.0385,
+            603.5196
+          ],
+          "parts": [
+            [
+              59.5599,
+              485.1519,
+              275.0385,
+              603.5196
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p56-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            285.189,
+            479.9152,
+            501.6965,
+            608.4622
+          ],
+          "parts": [
+            [
+              285.189,
+              479.9152,
+              501.6965,
+              608.4622
+            ]
+          ],
+          "kind": "content",
+          "headline": "Yıllardır bağlama dersi veriyorum. Her öğren­"
+        },
+        {
+          "id": "p56-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            155.7402,
+            222.0806,
+            501.7046,
+            479.4622
+          ],
+          "parts": [
+            [
+              155.7402,
+              222.0806,
+              501.7046,
+              479.4622
+            ]
+          ],
+          "kind": "content",
+          "headline": "yönlendiren bir öğretmen… Hepsi bir araya gelerek gelişimi şekillendirir. En"
         },
         {
           "id": "p56-v4",
@@ -2346,6 +4147,48 @@
           ]
         },
         {
+          "id": "p57-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            56.6929,
+            164.4152,
+            509.4859,
+            237.3662
+          ],
+          "parts": [
+            [
+              56.6929,
+              164.4152,
+              509.4859,
+              237.3662
+            ]
+          ],
+          "kind": "content",
+          "headline": "Adı"
+        },
+        {
+          "id": "p57-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            53.6929,
+            141.8794,
+            385.5389,
+            160.6394
+          ],
+          "parts": [
+            [
+              53.6929,
+              141.8794,
+              385.5389,
+              160.6394
+            ]
+          ],
+          "kind": "content",
+          "headline": "Aşağıdaki işlem basamaklarını takip ederek etkinliği gerçekleştiriniz."
+        },
+        {
           "id": "p57-1",
           "label": "1",
           "column": 0,
@@ -2503,6 +4346,48 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p59-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            637.2397,
+            515.834,
+            714.9
+          ],
+          "parts": [
+            [
+              53.6929,
+              637.2397,
+              515.834,
+              714.9
+            ]
+          ],
+          "kind": "content",
+          "headline": "KONTROL NOKTASI"
+        },
+        {
+          "id": "p59-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            56.6929,
+            392.2558,
+            510.2363,
+            635.2853
+          ],
+          "parts": [
+            [
+              56.6929,
+              392.2558,
+              510.2363,
+              635.2853
+            ]
+          ],
+          "kind": "content",
+          "headline": "1"
+        },
         {
           "id": "p59-1",
           "label": "1",
@@ -2673,6 +4558,89 @@
               675.6809
             ]
           ]
+        },
+        {
+          "id": "p60-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.5197,
+            263.1514,
+            501.5811,
+            473.1332
+          ],
+          "parts": [
+            [
+              39.5197,
+              263.1514,
+              501.5811,
+              473.1332
+            ]
+          ],
+          "kind": "content",
+          "headline": "UYGULAMA"
+        },
+        {
+          "id": "p60-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            58.4942,
+            146.2756,
+            277.9959,
+            262.7592
+          ],
+          "parts": [
+            [
+              58.4942,
+              146.2756,
+              277.9959,
+              262.7592
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p60-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            288.0237,
+            145.4821,
+            501.669,
+            263.0291
+          ],
+          "parts": [
+            [
+              288.0237,
+              145.4821,
+              501.669,
+              263.0291
+            ]
+          ],
+          "kind": "content",
+          "headline": "Çocukluk dönemi; bilimsel olarak oyunun ön"
+        },
+        {
+          "id": "p60-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            144.4016,
+            55.8129,
+            501.5936,
+            145.3599
+          ],
+          "parts": [
+            [
+              144.4016,
+              55.8129,
+              501.5936,
+              145.3599
+            ]
+          ],
+          "kind": "content",
+          "headline": "Ergenlik ve genç yetişkinlik dönemi; bilimsel olarak kimlik arayışı, bağımsızlık ve"
         }
       ]
     },
@@ -2686,6 +4654,27 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p61-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            71.2677,
+            619.6869,
+            413.7951,
+            728.9031
+          ],
+          "parts": [
+            [
+              71.2677,
+              619.6869,
+              413.7951,
+              728.9031
+            ]
+          ],
+          "kind": "content",
+          "headline": "Yetişkinlik dönemi üretkenlik, toplumsal sorumluluk ve liderlikle öne çıkar."
+        },
         {
           "id": "p61-2",
           "label": "2",
@@ -2748,6 +4737,91 @@
         }
       ]
     },
+    "62": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          36.5197,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p62-5",
+          "label": "5",
+          "column": 0,
+          "rect": [
+            41.5197,
+            59.3412,
+            500.2334,
+            723.4236
+          ],
+          "parts": [
+            [
+              41.5197,
+              59.3412,
+              500.2334,
+              723.4236
+            ]
+          ]
+        }
+      ]
+    },
+    "63": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          65.4331,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p63-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            68.4331,
+            120.6506,
+            517.6727,
+            683.1434
+          ],
+          "parts": [
+            [
+              68.4331,
+              120.6506,
+              517.6727,
+              683.1434
+            ]
+          ],
+          "kind": "content",
+          "headline": "Ergenlik Dönemi (11-20 yaş): Çocukluğun sonu ile yetişkinliğin"
+        },
+        {
+          "id": "p63-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            68.4331,
+            60.4855,
+            400.4122,
+            119.9063
+          ],
+          "parts": [
+            [
+              68.4331,
+              60.4855,
+              400.4122,
+              119.9063
+            ]
+          ],
+          "kind": "content",
+          "headline": "hobiler edinme ve kuşaklar arası etkileşimler bireylerin sosyal bağlılıkla­"
+        }
+      ]
+    },
     "64": {
       "pageWidth": 552.756,
       "pageHeight": 779.528,
@@ -2796,6 +4870,60 @@
               183.9039
             ]
           ]
+        }
+      ]
+    },
+    "65": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          50.6929,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p65-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            557.0011,
+            515.8367,
+            730.5535
+          ],
+          "parts": [
+            [
+              53.6929,
+              557.0011,
+              515.8367,
+              730.5535
+            ]
+          ],
+          "kind": "content",
+          "headline": "2.3. GELİŞİM GÖREVLERİ"
+        },
+        {
+          "id": "p65-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            49.4409,
+            54.1924,
+            512.658,
+            554.1729
+          ],
+          "parts": [
+            [
+              49.4409,
+              54.1924,
+              512.658,
+              554.1729
+            ]
+          ],
+          "kind": "content",
+          "headline": "Havighurst’ün Gelişim Dönemleri ve Görevleri"
         }
       ]
     },
@@ -2891,6 +5019,143 @@
         }
       ]
     },
+    "67": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          50.6929,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p67-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            54.0679,
+            615.9921,
+            512.8609,
+            726.0106
+          ],
+          "parts": [
+            [
+              54.0679,
+              615.9921,
+              512.8609,
+              726.0106
+            ]
+          ],
+          "kind": "content",
+          "headline": "ETKİNLİK"
+        },
+        {
+          "id": "p67-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            509.7761,
+            515.8388,
+            615.04
+          ],
+          "parts": [
+            [
+              53.6929,
+              509.7761,
+              515.8388,
+              615.04
+            ]
+          ],
+          "kind": "content",
+          "headline": "Aşağıdaki işlem basamaklarını takip ederek etkinliği gerçekleştiriniz. Etkinlik sonunda Öz"
+        },
+        {
+          "id": "p67-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            70.7008,
+            375.832,
+            358.8932,
+            508.9008
+          ],
+          "parts": [
+            [
+              70.7008,
+              375.832,
+              358.8932,
+              508.9008
+            ]
+          ],
+          "kind": "content",
+          "headline": "1. Senaryo"
+        },
+        {
+          "id": "p67-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            366.3345,
+            380.8245,
+            511.0043,
+            489.1278
+          ],
+          "parts": [
+            [
+              366.3345,
+              380.8245,
+              511.0043,
+              489.1278
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p67-c5",
+          "label": null,
+          "column": 0,
+          "rect": [
+            70.7008,
+            316.832,
+            515.8362,
+            375.379
+          ],
+          "parts": [
+            [
+              70.7008,
+              316.832,
+              515.8362,
+              375.379
+            ]
+          ],
+          "kind": "content",
+          "headline": "ve motive edici görsellerle dolu dijital planlayıcısına baktığında o aşılmaz görünen projenin aslında"
+        },
+        {
+          "id": "p67-c6",
+          "label": null,
+          "column": 0,
+          "rect": [
+            70.7008,
+            57.2,
+            515.9205,
+            308.0243
+          ],
+          "parts": [
+            [
+              70.7008,
+              57.2,
+              515.9205,
+              308.0243
+            ]
+          ],
+          "kind": "content",
+          "headline": "a) Karakterin ulaşmak istediği amaç nedir?"
+        }
+      ]
+    },
     "68": {
       "pageWidth": 552.756,
       "pageHeight": 779.528,
@@ -2960,6 +5225,69 @@
             ]
           ],
           "headline": "Karakterin yerinde siz olsaydınız ne yapardınız?"
+        },
+        {
+          "id": "p68-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            38.413,
+            342.6302,
+            208.1319,
+            479.2748
+          ],
+          "parts": [
+            [
+              38.413,
+              342.6302,
+              208.1319,
+              479.2748
+            ]
+          ],
+          "kind": "content",
+          "headline": "2. Senaryo"
+        },
+        {
+          "id": "p68-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            215.2678,
+            341.1444,
+            501.6882,
+            457.4953
+          ],
+          "parts": [
+            [
+              215.2678,
+              341.1444,
+              501.6882,
+              457.4953
+            ]
+          ],
+          "kind": "content",
+          "headline": "Mustafa, kafenin bir köşesinde bir yandan dizüstü bilgisayarın­"
+        },
+        {
+          "id": "p68-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.693,
+            238.3404,
+            501.6334,
+            340.4337
+          ],
+          "parts": [
+            [
+              53.693,
+              238.3404,
+              501.6334,
+              340.4337
+            ]
+          ],
+          "kind": "content",
+          "headline": "cesaretlendirmişti: “Biz de böyle başladık, bu yolda devam et.” O andan beri aklında tek bir şey vardı:"
         },
         {
           "id": "p68-a",
@@ -3094,6 +5422,48 @@
           "headline": "Karakterin yerinde siz olsaydınız ne yapardınız?"
         },
         {
+          "id": "p69-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            67.8661,
+            230.9353,
+            515.8613,
+            398.6525
+          ],
+          "parts": [
+            [
+              67.8661,
+              230.9353,
+              515.8613,
+              398.6525
+            ]
+          ],
+          "kind": "content",
+          "headline": "3. Senaryo"
+        },
+        {
+          "id": "p69-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            70.7008,
+            145.8,
+            513.236,
+            224.8974
+          ],
+          "parts": [
+            [
+              70.7008,
+              145.8,
+              513.236,
+              224.8974
+            ]
+          ],
+          "kind": "content",
+          "headline": "a) Karakterin ulaşmak istediği amaç nedir?"
+        },
+        {
           "id": "p69-b",
           "label": "b",
           "column": 0,
@@ -3204,6 +5574,69 @@
             ]
           ],
           "headline": "Karakterin yerinde siz olsaydınız ne yapardınız?"
+        },
+        {
+          "id": "p70-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            46.444,
+            276.7173,
+            210.702,
+            411.0285
+          ],
+          "parts": [
+            [
+              46.444,
+              276.7173,
+              210.702,
+              411.0285
+            ]
+          ],
+          "kind": "content",
+          "headline": "4. Senaryo"
+        },
+        {
+          "id": "p70-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            215.0063,
+            274.9597,
+            501.7115,
+            389.5067
+          ],
+          "parts": [
+            [
+              215.0063,
+              274.9597,
+              501.7115,
+              389.5067
+            ]
+          ],
+          "kind": "content",
+          "headline": "Salih, üye olmak için gittiği spor salonunda kendisinden daha"
+        },
+        {
+          "id": "p70-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.693,
+            229.9597,
+            501.5136,
+            274.5067
+          ],
+          "parts": [
+            [
+              53.693,
+              229.9597,
+              501.5136,
+              274.5067
+            ]
+          ],
+          "kind": "content",
+          "headline": "Spor yapma hedefini \"başkaları gibi görünmek\" yerine \"kendi sağlığını korumak ve geliştirmek\" olarak"
         },
         {
           "id": "p70-a",
@@ -3387,6 +5820,69 @@
             ]
           ],
           "headline": "Karakterle empati kurdum."
+        },
+        {
+          "id": "p72-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.5196,
+            300.1357,
+            499.063,
+            354.3239
+          ],
+          "parts": [
+            [
+              39.5196,
+              300.1357,
+              499.063,
+              354.3239
+            ]
+          ],
+          "kind": "content",
+          "headline": "“Gelişim Görevleri” isimli e-içeriğe ulaşmak için karekodu kullanınız."
+        },
+        {
+          "id": "p72-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.5198,
+            209.0282,
+            498.3128,
+            292.8651
+          ],
+          "parts": [
+            [
+              39.5198,
+              209.0282,
+              498.3128,
+              292.8651
+            ]
+          ],
+          "kind": "content",
+          "headline": "PERFORMANS GÖREVİ"
+        },
+        {
+          "id": "p72-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.5197,
+            50.0213,
+            501.7076,
+            206.0598
+          ],
+          "parts": [
+            [
+              39.5197,
+              50.0213,
+              501.7076,
+              206.0598
+            ]
+          ],
+          "kind": "content",
+          "headline": "Bu çalışmada gelişim kuramlarını araştırmanız ve araştırmanızdan elde ettiğiniz sonuçlarla bir sunu"
         }
       ]
     },
@@ -3400,6 +5896,27 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p73-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            67.8661,
+            466.8221,
+            515.8442,
+            734.2744
+          ],
+          "parts": [
+            [
+              67.8661,
+              466.8221,
+              515.8442,
+              734.2744
+            ]
+          ],
+          "kind": "content",
+          "headline": "▶"
+        },
         {
           "id": "p73-1",
           "label": "1",
@@ -3419,6 +5936,102 @@
             ]
           ],
           "headline": "Grup üyeleri iş birliği içinde çalıştı."
+        },
+        {
+          "id": "p73-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6928,
+            53.6929,
+            513.2362,
+            107.881
+          ],
+          "parts": [
+            [
+              53.6928,
+              53.6929,
+              513.2362,
+              107.881
+            ]
+          ],
+          "kind": "content",
+          "headline": "Dereceli Puanlama Anahtarı’na karekoddan ulaşabilirsiniz."
+        }
+      ]
+    },
+    "74": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          36.5197,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p74-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.8947,
+            609.2896,
+            498.6877,
+            725.7439
+          ],
+          "parts": [
+            [
+              39.8947,
+              609.2896,
+              498.6877,
+              725.7439
+            ]
+          ],
+          "kind": "content",
+          "headline": "ETKİNLİK"
+        },
+        {
+          "id": "p74-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.5197,
+            489.9494,
+            501.759,
+            606.2692
+          ],
+          "parts": [
+            [
+              39.5197,
+              489.9494,
+              501.759,
+              606.2692
+            ]
+          ],
+          "kind": "content",
+          "headline": "Aşağıdaki işlem basamaklarını takip ederek etkinliği gerçekleştiriniz."
+        },
+        {
+          "id": "p74-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            37.3202,
+            60.1338,
+            499.063,
+            489.2094
+          ],
+          "parts": [
+            [
+              37.3202,
+              60.1338,
+              499.063,
+              489.2094
+            ]
+          ],
+          "kind": "content",
+          "headline": "açısı geliştirerek yüksek değerlere yönelmesidir. Bu durumda kişi, dünyayı"
         }
       ]
     },
@@ -3432,6 +6045,26 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p75-3",
+          "label": "3",
+          "column": 0,
+          "rect": [
+            56.7331,
+            109.026,
+            514.7,
+            724.5565
+          ],
+          "parts": [
+            [
+              56.7331,
+              109.026,
+              514.7,
+              724.5565
+            ]
+          ],
+          "headline": "Senaryonuzdaki her karakterin gelişimsel özelliklerini belirleyiniz. Bu özellikleri fiziksel, bilişsel, duygusal, sosyal ve ahlaki gelişim alanlarıyla ilişkilen"
+        },
         {
           "id": "p75-4",
           "label": "4",
@@ -3505,6 +6138,45 @@
         }
       ]
     },
+    "77": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          50.6929,
+          296.6288
+        ],
+        [
+          300.6288,
+          456.8749
+        ],
+        [
+          460.8749,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p77-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6562,
+            60.2044,
+            513.7151,
+            717.2197
+          ],
+          "parts": [
+            [
+              53.6562,
+              60.2044,
+              513.7151,
+              717.2197
+            ]
+          ]
+        }
+      ]
+    },
     "78": {
       "pageWidth": 552.756,
       "pageHeight": 779.528,
@@ -3515,6 +6187,68 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p78-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.5197,
+            657.1837,
+            306.4267,
+            730.5535
+          ],
+          "parts": [
+            [
+              39.5197,
+              657.1837,
+              306.4267,
+              730.5535
+            ]
+          ],
+          "kind": "content",
+          "headline": "2.4. İNSAN ZEKÂSI VE YAPAY ZEKÂ"
+        },
+        {
+          "id": "p78-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            46.7716,
+            472.1538,
+            199.6198,
+            631.9158
+          ],
+          "parts": [
+            [
+              46.7716,
+              472.1538,
+              199.6198,
+              631.9158
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p78-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            210.7931,
+            459.5703,
+            501.7016,
+            655.7257
+          ],
+          "parts": [
+            [
+              210.7931,
+              459.5703,
+              501.7016,
+              655.7257
+            ]
+          ],
+          "kind": "content",
+          "headline": "Edmond Belamy’nin Portresi"
+        },
         {
           "id": "p78-1",
           "label": "1",
@@ -3554,6 +6288,27 @@
             ]
           ],
           "headline": "Sizce zekâ var olanı işlemek midir yoksa hiç olmayanı üretmek midir? Açıklayınız."
+        },
+        {
+          "id": "p78-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.5197,
+            252.8907,
+            388.5457,
+            298.4561
+          ],
+          "parts": [
+            [
+              39.5197,
+              252.8907,
+              388.5457,
+              298.4561
+            ]
+          ],
+          "kind": "content",
+          "headline": "UYGULAMA"
         },
         {
           "id": "p78-1",
@@ -3686,6 +6441,123 @@
             ]
           ],
           "headline": "Tarihsel koşullar farklı zekâ türlerinin gelişimini nasıl etkilemiştir? Tartışınız."
+        },
+        {
+          "id": "p79-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            54.0679,
+            442.9657,
+            512.8609,
+            556.5855
+          ],
+          "parts": [
+            [
+              54.0679,
+              442.9657,
+              512.8609,
+              556.5855
+            ]
+          ],
+          "kind": "content",
+          "headline": "ETKİNLİK"
+        },
+        {
+          "id": "p79-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            359.0124,
+            515.8894,
+            437.1109
+          ],
+          "parts": [
+            [
+              53.6929,
+              359.0124,
+              515.8894,
+              437.1109
+            ]
+          ],
+          "kind": "content",
+          "headline": "Aşağıdaki işlem basamaklarını takip ederek etkinliği gerçekleştiriniz."
+        },
+        {
+          "id": "p79-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            68.4331,
+            50.3011,
+            400.6902,
+            350.3275
+          ],
+          "parts": [
+            [
+              68.4331,
+              50.3011,
+              400.6902,
+              350.3275
+            ]
+          ],
+          "kind": "content",
+          "headline": "Sosyal Zekâ"
+        }
+      ]
+    },
+    "80": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          152.7402,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p80-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            155.7402,
+            398.3484,
+            501.789,
+            728.9031
+          ],
+          "parts": [
+            [
+              155.7402,
+              398.3484,
+              501.789,
+              728.9031
+            ]
+          ],
+          "kind": "content",
+          "headline": "geliştirilen zekâ testleri, bugün kullanılan zekâ testleri için dayanak sağlamıştır."
+        },
+        {
+          "id": "p80-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            155.7402,
+            50.8365,
+            501.7826,
+            395.359
+          ],
+          "parts": [
+            [
+              155.7402,
+              50.8365,
+              501.7826,
+              395.359
+            ]
+          ],
+          "kind": "content",
+          "headline": "Analitik Zekâ"
         }
       ]
     },
@@ -3699,6 +6571,27 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p81-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            70.7008,
+            452.4257,
+            515.9368,
+            728.9031
+          ],
+          "parts": [
+            [
+              70.7008,
+              452.4257,
+              515.9368,
+              728.9031
+            ]
+          ],
+          "kind": "content",
+          "headline": "tanımlanmıştır. Günümüzde yapay zekâ; makine öğrenmesi, derin öğrenme,"
+        },
         {
           "id": "p81-3",
           "label": "3",
@@ -3790,6 +6683,142 @@
             ]
           ],
           "headline": "Öğrendiklerinizden hareketle insan zekâsı ve yapay zekâya ilişkin balık kılçığı diyagramını doldurunuz."
+        },
+        {
+          "id": "p82-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.5197,
+            168.3227,
+            324.9173,
+            233.1886
+          ],
+          "parts": [
+            [
+              39.5197,
+              168.3227,
+              324.9173,
+              233.1886
+            ]
+          ],
+          "kind": "content",
+          "headline": "2.5. KİŞİLİK VE BENLİK-DİJİTAL BENLİK"
+        },
+        {
+          "id": "p82-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            42.5197,
+            65.8329,
+            214.7244,
+            168.0945
+          ],
+          "parts": [
+            [
+              42.5197,
+              65.8329,
+              214.7244,
+              168.0945
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p82-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            225.0237,
+            87.6534,
+            501.6628,
+            166.4134
+          ],
+          "parts": [
+            [
+              225.0237,
+              87.6534,
+              501.6628,
+              166.4134
+            ]
+          ],
+          "kind": "content",
+          "headline": "Sosyal rol kuramına göre bireylerin meslekleri, toplumsal"
+        }
+      ]
+    },
+    "83": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          50.6929,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p83-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            54.0679,
+            607.4882,
+            512.8609,
+            726.0106
+          ],
+          "parts": [
+            [
+              54.0679,
+              607.4882,
+              512.8609,
+              726.0106
+            ]
+          ],
+          "kind": "content",
+          "headline": "ETKİNLİK"
+        },
+        {
+          "id": "p83-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            264.6002,
+            400.5028,
+            600.8668
+          ],
+          "parts": [
+            [
+              53.6929,
+              264.6002,
+              400.5028,
+              600.8668
+            ]
+          ],
+          "kind": "content",
+          "headline": "Aşağıdaki işlem basamaklarını takip ederek etkinliği gerçekleştiriniz."
+        },
+        {
+          "id": "p83-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            70.4018,
+            54.7633,
+            450.7036,
+            261.6319
+          ],
+          "parts": [
+            [
+              70.4018,
+              54.7633,
+              450.7036,
+              261.6319
+            ]
+          ],
+          "kind": "content"
         }
       ]
     },
@@ -4075,6 +7104,27 @@
       ],
       "activities": [
         {
+          "id": "p86-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.5197,
+            686.5292,
+            498.563,
+            732.5
+          ],
+          "parts": [
+            [
+              39.5197,
+              686.5292,
+              498.563,
+              732.5
+            ]
+          ],
+          "kind": "content",
+          "headline": "UYGULAMA"
+        },
+        {
           "id": "p86-1",
           "label": "1",
           "column": 0,
@@ -4186,6 +7236,321 @@
       ],
       "activities": [
         {
+          "id": "p88-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            597.6287,
+            201.1756,
+            729.3346
+          ],
+          "parts": [
+            [
+              53.6929,
+              597.6287,
+              201.1756,
+              729.3346
+            ]
+          ],
+          "kind": "content",
+          "headline": "Oyun Kartları"
+        },
+        {
+          "id": "p88-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            209.1969,
+            600.6287,
+            347.5949,
+            707.8457
+          ],
+          "parts": [
+            [
+              209.1969,
+              600.6287,
+              347.5949,
+              707.8457
+            ]
+          ],
+          "kind": "content",
+          "headline": "BENLİK"
+        },
+        {
+          "id": "p88-c3",
+          "label": null,
+          "column": 2,
+          "rect": [
+            358.6162,
+            600.6287,
+            497.0142,
+            707.8457
+          ],
+          "parts": [
+            [
+              358.6162,
+              600.6287,
+              497.0142,
+              707.8457
+            ]
+          ],
+          "kind": "content",
+          "headline": "DİJİTAL BENLİK"
+        },
+        {
+          "id": "p88-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            59.7776,
+            480.4998,
+            198.1756,
+            587.7168
+          ],
+          "parts": [
+            [
+              59.7776,
+              480.4998,
+              198.1756,
+              587.7168
+            ]
+          ],
+          "kind": "content",
+          "headline": "EMPATİ"
+        },
+        {
+          "id": "p88-c5",
+          "label": null,
+          "column": 1,
+          "rect": [
+            209.1969,
+            480.4998,
+            347.5949,
+            587.7168
+          ],
+          "parts": [
+            [
+              209.1969,
+              480.4998,
+              347.5949,
+              587.7168
+            ]
+          ],
+          "kind": "content",
+          "headline": "ÖZGÜNLÜK"
+        },
+        {
+          "id": "p88-c6",
+          "label": null,
+          "column": 2,
+          "rect": [
+            358.6162,
+            480.4998,
+            497.0142,
+            587.7168
+          ],
+          "parts": [
+            [
+              358.6162,
+              480.4998,
+              497.0142,
+              587.7168
+            ]
+          ],
+          "kind": "content",
+          "headline": "KİŞİLİK GELİŞİMİ"
+        },
+        {
+          "id": "p88-c7",
+          "label": null,
+          "column": 0,
+          "rect": [
+            59.7776,
+            363.3357,
+            198.1756,
+            470.5527
+          ],
+          "parts": [
+            [
+              59.7776,
+              363.3357,
+              198.1756,
+              470.5527
+            ]
+          ],
+          "kind": "content",
+          "headline": "SOSYALLEŞME"
+        },
+        {
+          "id": "p88-c8",
+          "label": null,
+          "column": 1,
+          "rect": [
+            209.1969,
+            363.3357,
+            347.5949,
+            470.5527
+          ],
+          "parts": [
+            [
+              209.1969,
+              363.3357,
+              347.5949,
+              470.5527
+            ]
+          ],
+          "kind": "content",
+          "headline": "DUYGUSAL TEPKİ"
+        },
+        {
+          "id": "p88-c9",
+          "label": null,
+          "column": 2,
+          "rect": [
+            359.9331,
+            363.3357,
+            498.3311,
+            470.5527
+          ],
+          "parts": [
+            [
+              359.9331,
+              363.3357,
+              498.3311,
+              470.5527
+            ]
+          ],
+          "kind": "content",
+          "headline": "KİŞİLİK TESTİ"
+        },
+        {
+          "id": "p88-c10",
+          "label": null,
+          "column": 0,
+          "rect": [
+            59.5276,
+            243.3357,
+            197.9256,
+            350.5527
+          ],
+          "parts": [
+            [
+              59.5276,
+              243.3357,
+              197.9256,
+              350.5527
+            ]
+          ],
+          "kind": "content",
+          "headline": "İFADE BECERİSİ"
+        },
+        {
+          "id": "p88-c11",
+          "label": null,
+          "column": 1,
+          "rect": [
+            209.1969,
+            243.3357,
+            347.5949,
+            350.5527
+          ],
+          "parts": [
+            [
+              209.1969,
+              243.3357,
+              347.5949,
+              350.5527
+            ]
+          ],
+          "kind": "content",
+          "headline": "BENLİK ALGISI"
+        },
+        {
+          "id": "p88-c12",
+          "label": null,
+          "column": 2,
+          "rect": [
+            358.6162,
+            243.7127,
+            497.0142,
+            350.9297
+          ],
+          "parts": [
+            [
+              358.6162,
+              243.7127,
+              497.0142,
+              350.9297
+            ]
+          ],
+          "kind": "content",
+          "headline": "İÇE DÖNÜKLÜK"
+        },
+        {
+          "id": "p88-c13",
+          "label": null,
+          "column": 0,
+          "rect": [
+            59.5276,
+            124.658,
+            197.9256,
+            231.875
+          ],
+          "parts": [
+            [
+              59.5276,
+              124.658,
+              197.9256,
+              231.875
+            ]
+          ],
+          "kind": "content",
+          "headline": "DIŞA DÖNÜKLÜK"
+        },
+        {
+          "id": "p88-c14",
+          "label": null,
+          "column": 1,
+          "rect": [
+            209.1969,
+            124.658,
+            347.5949,
+            231.875
+          ],
+          "parts": [
+            [
+              209.1969,
+              124.658,
+              347.5949,
+              231.875
+            ]
+          ],
+          "kind": "content",
+          "headline": "KARAKTER"
+        },
+        {
+          "id": "p88-c15",
+          "label": null,
+          "column": 2,
+          "rect": [
+            359.9331,
+            124.658,
+            498.3311,
+            231.875
+          ],
+          "parts": [
+            [
+              359.9331,
+              124.658,
+              498.3311,
+              231.875
+            ]
+          ],
+          "kind": "content",
+          "headline": "DİJİTAL KİMLİK"
+        },
+        {
           "id": "p88-q1",
           "label": null,
           "column": 0,
@@ -4204,6 +7569,38 @@
             ]
           ],
           "headline": "• Oyunu oynarken hangi kavramları anlatmak kolaydı, hangileri zordu? Neden?"
+        }
+      ]
+    },
+    "89": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          50.6929,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p89-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            53.7102,
+            52.49,
+            510.6515,
+            722.3986
+          ],
+          "parts": [
+            [
+              53.7102,
+              52.49,
+              510.6515,
+              722.3986
+            ]
+          ],
+          "headline": "Sosyal zekâ, farklı insanlarla etkili iletişim kurmayı ve sosyal ilişkileri yönetmeyi içerir."
         }
       ]
     },
@@ -4353,6 +7750,48 @@
           ]
         },
         {
+          "id": "p91-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            466.8745,
+            513.2362,
+            555.5
+          ],
+          "parts": [
+            [
+              53.6929,
+              466.8745,
+              513.2362,
+              555.5
+            ]
+          ],
+          "kind": "content",
+          "headline": "Ç)"
+        },
+        {
+          "id": "p91-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            56.693,
+            326.67,
+            510.236,
+            457.981
+          ],
+          "parts": [
+            [
+              56.693,
+              326.67,
+              510.236,
+              457.981
+            ]
+          ],
+          "kind": "content",
+          "headline": "11. sınıf öğrencisi Defne, okulda geçirdiği yoğun bir günün ardından otobüse binmişti. O"
+        },
+        {
           "id": "p91-1",
           "label": "1",
           "column": 0,
@@ -4423,6 +7862,48 @@
             ]
           ],
           "headline": "Defne'nin ihtiyacı olan bir bireye yer verme kararı aşağıdaki kuramsal yaklaşımlardan hangisinin birleşik bir ifadesidir?"
+        },
+        {
+          "id": "p92-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            56.5276,
+            569.1453,
+            301.9937,
+            589.3923
+          ],
+          "parts": [
+            [
+              56.5276,
+              569.1453,
+              301.9937,
+              589.3923
+            ]
+          ],
+          "kind": "content",
+          "headline": "Aşağıdaki metinden yararlanarak 4-6. soruları cevaplayınız."
+        },
+        {
+          "id": "p92-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            42.52,
+            427.539,
+            496.063,
+            562.558
+          ],
+          "parts": [
+            [
+              42.52,
+              427.539,
+              496.063,
+              562.558
+            ]
+          ],
+          "kind": "content",
+          "headline": "Kalıtımsal etkiler, doğum vakalarının %2-5’inde ciddi doğumsal farklılıklara neden olabilir."
         },
         {
           "id": "p92-4",
@@ -4497,6 +7978,27 @@
       ],
       "activities": [
         {
+          "id": "p93-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            506.1844,
+            513.2362,
+            729.0746
+          ],
+          "parts": [
+            [
+              53.6929,
+              506.1844,
+              513.2362,
+              729.0746
+            ]
+          ],
+          "kind": "content",
+          "headline": "Aşağıdaki tablodan yararlanarak 7 ve 8. soruları cevaplayınız."
+        },
+        {
           "id": "p93-7",
           "label": "7",
           "column": 0,
@@ -4549,6 +8051,48 @@
       ],
       "activities": [
         {
+          "id": "p94-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.5197,
+            658.1493,
+            499.063,
+            740.5
+          ],
+          "parts": [
+            [
+              39.5197,
+              658.1493,
+              499.063,
+              740.5
+            ]
+          ],
+          "kind": "content",
+          "headline": "D)"
+        },
+        {
+          "id": "p94-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            42.52,
+            400.498,
+            496.063,
+            652.971
+          ],
+          "parts": [
+            [
+              42.52,
+              400.498,
+              496.063,
+              652.971
+            ]
+          ],
+          "kind": "content",
+          "headline": "Duygusal"
+        },
+        {
           "id": "p94-1",
           "label": "1",
           "column": 0,
@@ -4600,6 +8144,48 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p95-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            701.741,
+            513.2362,
+            734.1
+          ],
+          "parts": [
+            [
+              53.6929,
+              701.741,
+              513.2362,
+              734.1
+            ]
+          ],
+          "kind": "content",
+          "headline": "Aşağıdaki metinden yararlanarak 3-5. soruları cevaplayınız."
+        },
+        {
+          "id": "p95-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.693,
+            404.03,
+            513.236,
+            699.058
+          ],
+          "parts": [
+            [
+              53.693,
+              404.03,
+              513.236,
+              699.058
+            ]
+          ],
+          "kind": "content",
+          "headline": "Ergenlik, çocukluktan yetişkinliğe geçişte fiziksel, zihinsel ve sosyal değişimlerin yoğunlaştığı"
+        },
         {
           "id": "p95-3",
           "label": "3",
@@ -4672,6 +8258,48 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p96-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.5197,
+            707.7883,
+            499.063,
+            740.3
+          ],
+          "parts": [
+            [
+              39.5197,
+              707.7883,
+              499.063,
+              740.3
+            ]
+          ],
+          "kind": "content",
+          "headline": "Aşağıdaki metinden yararlanarak 6 ve 7. soruları cevaplayınız."
+        },
+        {
+          "id": "p96-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.52,
+            428.34,
+            499.063,
+            705.811
+          ],
+          "parts": [
+            [
+              39.52,
+              428.34,
+              499.063,
+              705.811
+            ]
+          ],
+          "kind": "content",
+          "headline": "Aveyron’un Kayıp Çocuğu"
+        },
         {
           "id": "p96-6",
           "label": "6",
@@ -4794,6 +8422,69 @@
             ]
           ],
           "headline": "KONUYA BAŞLARKEN Aşağıdaki görselde bisiklet sürmeyi öğrenmenin aşamalarından birkaçı verilmiştir. Görselden yararlanarak soruyu cevaplayınız."
+        },
+        {
+          "id": "p99-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            243.5543,
+            513.2366,
+            353.2686
+          ],
+          "parts": [
+            [
+              53.6929,
+              243.5543,
+              513.2366,
+              353.2686
+            ]
+          ],
+          "kind": "content",
+          "headline": "ETKİNLİK"
+        },
+        {
+          "id": "p99-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            202.7034,
+            429.7179,
+            242.298
+          ],
+          "parts": [
+            [
+              53.6929,
+              202.7034,
+              429.7179,
+              242.298
+            ]
+          ],
+          "kind": "content",
+          "headline": "Aşağıdaki işlem basamaklarını takip ederek etkinliği gerçekleştiriniz."
+        },
+        {
+          "id": "p99-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            71.433,
+            60.618,
+            510.236,
+            196.391
+          ],
+          "parts": [
+            [
+              71.433,
+              60.618,
+              510.236,
+              196.391
+            ]
+          ],
+          "kind": "content",
+          "headline": "Psikoloji alanında yapılan bazı deneyler, hayvanlar üzerinde gerçekleştirilmiştir. Bu araştırmaların"
         }
       ]
     },
@@ -4807,6 +8498,48 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p100-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.52,
+            435.0176,
+            501.6365,
+            732.041
+          ],
+          "parts": [
+            [
+              39.52,
+              435.0176,
+              501.6365,
+              732.041
+            ]
+          ],
+          "kind": "content",
+          "headline": "Wolfgang Köhler'in Kavrama Yoluyla Öğrenme Deneyi"
+        },
+        {
+          "id": "p100-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.5197,
+            390.0176,
+            501.5173,
+            434.5646
+          ],
+          "parts": [
+            [
+              39.5197,
+              390.0176,
+              501.5173,
+              434.5646
+            ]
+          ],
+          "kind": "content",
+          "headline": "düzenlenmesinin organizmanın çözüme ulaşmasını kolaylaştırdığını vurgulamıştır. Bu deneyler, organiz­"
+        },
         {
           "id": "p100-2",
           "label": "2",
@@ -4984,6 +8717,27 @@
       ],
       "activities": [
         {
+          "id": "p103-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            70.7008,
+            599.2201,
+            513.2365,
+            739.7106
+          ],
+          "parts": [
+            [
+              70.7008,
+              599.2201,
+              513.2365,
+              739.7106
+            ]
+          ],
+          "kind": "content",
+          "headline": "▶"
+        },
+        {
           "id": "p103-3",
           "label": "3",
           "column": 0,
@@ -5042,6 +8796,92 @@
             ]
           ],
           "headline": "afiş hazırlayınız."
+        }
+      ]
+    },
+    "104": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          36.5197,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p104-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            41.1868,
+            59.9346,
+            501.4209,
+            723.1538
+          ],
+          "parts": [
+            [
+              41.1868,
+              59.9346,
+              501.4209,
+              723.1538
+            ]
+          ],
+          "headline": "Aşağıdaki bilgi notunu okuyunuz."
+        }
+      ]
+    },
+    "105": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          50.6929,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p105-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            387.0955,
+            410.9197,
+            728.9031
+          ],
+          "parts": [
+            [
+              53.6929,
+              387.0955,
+              410.9197,
+              728.9031
+            ]
+          ],
+          "kind": "content",
+          "headline": "uyarıcı olabileceği gibi çok yoğun ve sürekli olduğunda performansı olumsuz"
+        },
+        {
+          "id": "p105-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            51.1184,
+            410.9586,
+            384.686
+          ],
+          "parts": [
+            [
+              53.6929,
+              51.1184,
+              410.9586,
+              384.686
+            ]
+          ],
+          "kind": "content",
+          "headline": "Bütün Öğrenme: Öğrenilecek malzemenin tamamının bir bütün olarak ele"
         }
       ]
     },
@@ -5437,6 +9277,27 @@
           "headline": "Belirlediğiniz etmenleri daha olumlu hâle getirmek için uygulayabileceğiniz en az iki davranış düzenleme önerisi yazınız."
         },
         {
+          "id": "p108-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.5197,
+            582.1182,
+            363.1004,
+            603.8782
+          ],
+          "parts": [
+            [
+              39.5197,
+              582.1182,
+              363.1004,
+              603.8782
+            ]
+          ],
+          "kind": "content",
+          "headline": "Değerlendirme: Aşağıdaki Grup Değerlendirme Formu’nu doldurunuz."
+        },
+        {
           "id": "p108-1",
           "label": "1",
           "column": 0,
@@ -5455,6 +9316,45 @@
             ]
           ],
           "headline": "Grup üyeleri iş birliği içinde çalıştı."
+        }
+      ]
+    },
+    "109": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          64.8661,
+          271.7825
+        ],
+        [
+          275.7825,
+          464.2413
+        ],
+        [
+          468.2413,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p109-v1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            67.3671,
+            58.6399,
+            513.9983,
+            721.8052
+          ],
+          "parts": [
+            [
+              67.3671,
+              58.6399,
+              513.9983,
+              721.8052
+            ]
+          ]
         }
       ]
     },
@@ -5510,6 +9410,38 @@
         }
       ]
     },
+    "111": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          50.6929,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p111-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            53.9261,
+            60.636,
+            512.3789,
+            673.1454
+          ],
+          "parts": [
+            [
+              53.9261,
+              60.636,
+              512.3789,
+              673.1454
+            ]
+          ],
+          "headline": "Aşağıdaki davranışçı öğrenme yaklaşımına ait tanımlara, temel özelliklere ve örnek durumlara ilişkin metni okuyunuz."
+        }
+      ]
+    },
     "112": {
       "pageWidth": 552.756,
       "pageHeight": 779.528,
@@ -5520,6 +9452,48 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p112-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            114.6378,
+            541.3483,
+            501.6787,
+            714.9009
+          ],
+          "parts": [
+            [
+              114.6378,
+              541.3483,
+              501.6787,
+              714.9009
+            ]
+          ],
+          "kind": "content",
+          "headline": "Edimsel Koşullanma: Organizmanın belirli olumlu sonuçlara ulaşmak ya da olumsuz"
+        },
+        {
+          "id": "p112-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            37.0626,
+            216.3484,
+            501.6815,
+            540.8953
+          ],
+          "parts": [
+            [
+              37.0626,
+              216.3484,
+              501.6815,
+              540.8953
+            ]
+          ],
+          "kind": "content",
+          "headline": "kabının yanındaki kola dokunması beklenir."
+        },
         {
           "id": "p112-2",
           "label": "2",
@@ -5717,6 +9691,89 @@
       ],
       "activities": [
         {
+          "id": "p115-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            65.0315,
+            637.931,
+            400.6107,
+            713.3126
+          ],
+          "parts": [
+            [
+              65.0315,
+              637.931,
+              400.6107,
+              713.3126
+            ]
+          ],
+          "kind": "content",
+          "headline": "Bu öğrenme türünde deneme yanılma değil bir anda kavrama ve yaratıcı"
+        },
+        {
+          "id": "p115-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            67.8661,
+            469.5924,
+            323.8077,
+            637.478
+          ],
+          "parts": [
+            [
+              67.8661,
+              469.5924,
+              323.8077,
+              637.478
+            ]
+          ],
+          "kind": "content",
+          "headline": "gruba ayrılır ve bir labirente yerleştirilir."
+        },
+        {
+          "id": "p115-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            329.9289,
+            468.7863,
+            453.4089,
+            632.9463
+          ],
+          "parts": [
+            [
+              329.9289,
+              468.7863,
+              453.4089,
+              632.9463
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p115-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            67.8661,
+            349.0885,
+            400.6446,
+            466.4701
+          ],
+          "parts": [
+            [
+              67.8661,
+              349.0885,
+              400.6446,
+              466.4701
+            ]
+          ],
+          "kind": "content",
+          "headline": "İkinci gruptaki fareler daha önce hiç ödül almamış olmalarına rağmen yiyecek"
+        },
+        {
           "id": "p115-2",
           "label": "2",
           "column": 0,
@@ -5807,6 +9864,90 @@
             ]
           ],
           "headline": "Yol tarifi ezberlemeden yalnızca birkaç kez gitmiş olduğu bir yeri sonradan kolayca bulan bir kişinin durumunu bilişsel öğrenme yaklaşımı açısından açıklayınız."
+        },
+        {
+          "id": "p116-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            40.4617,
+            289.7039,
+            499.2547,
+            409.9476
+          ],
+          "parts": [
+            [
+              40.4617,
+              289.7039,
+              499.2547,
+              409.9476
+            ]
+          ],
+          "kind": "content",
+          "headline": "ETKİNLİK"
+        },
+        {
+          "id": "p116-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            40.0866,
+            224.1258,
+            502.2056,
+            284.3897
+          ],
+          "parts": [
+            [
+              40.0866,
+              224.1258,
+              502.2056,
+              284.3897
+            ]
+          ],
+          "kind": "content",
+          "headline": "Aşağıdaki işlem basamaklarını takip ederek etkinliği gerçekleştiriniz. Etkinlik sonunda Öz"
+        },
+        {
+          "id": "p116-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            41.4498,
+            67.8148,
+            216.4644,
+            195.6429
+          ],
+          "parts": [
+            [
+              41.4498,
+              67.8148,
+              216.4644,
+              195.6429
+            ]
+          ],
+          "kind": "content",
+          "headline": "Kapıyı açan ip"
+        },
+        {
+          "id": "p116-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            223.695,
+            50.616,
+            502.314,
+            196.2675
+          ],
+          "parts": [
+            [
+              223.695,
+              50.616,
+              502.314,
+              196.2675
+            ]
+          ],
+          "kind": "content",
+          "headline": "Edward Lee Thorndike [Edvırd Li Torndayk (1874-1949)] tara­"
         }
       ]
     },
@@ -5820,6 +9961,68 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p117-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            381.679,
+            526.3268,
+            729.0076
+          ],
+          "parts": [
+            [
+              53.6929,
+              381.679,
+              526.3268,
+              729.0076
+            ]
+          ],
+          "kind": "content",
+          "headline": "çeşitli davranışlar sergilemiş ancak ilkine göre daha kısa sürede çıkış yolunu"
+        },
+        {
+          "id": "p117-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            252.679,
+            353.2621,
+            381.3305
+          ],
+          "parts": [
+            [
+              53.6929,
+              252.679,
+              353.2621,
+              381.3305
+            ]
+          ],
+          "kind": "content",
+          "headline": "film gösterilmiştir. Daha sonra tüm çocuklar bir sınıf ortamında"
+        },
+        {
+          "id": "p117-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            358.9977,
+            271.0491,
+            513.6084,
+            380.6992
+          ],
+          "parts": [
+            [
+              358.9977,
+              271.0491,
+              513.6084,
+              380.6992
+            ]
+          ],
+          "kind": "content"
+        },
         {
           "id": "p117-a",
           "label": "a",
@@ -5891,6 +10094,90 @@
             ]
           ],
           "headline": "tasının uygun bölümlerine yazınız."
+        },
+        {
+          "id": "p118-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.5197,
+            486.2661,
+            323.4346,
+            508.0261
+          ],
+          "parts": [
+            [
+              39.5197,
+              486.2661,
+              323.4346,
+              508.0261
+            ]
+          ],
+          "kind": "content",
+          "headline": "Aşağıdaki metinden yararlanarak soruları cevaplayınız."
+        },
+        {
+          "id": "p118-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            149.736,
+            398.5681,
+            507.1324,
+            482.722
+          ],
+          "parts": [
+            [
+              149.736,
+              398.5681,
+              507.1324,
+              482.722
+            ]
+          ],
+          "kind": "content",
+          "headline": "Tarihsel Bir Öğrenme Örneği: Ahilikte Usta-Çırak İlişkisi"
+        },
+        {
+          "id": "p118-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            54.0704,
+            241.8988,
+            507.3135,
+            398.4458
+          ],
+          "parts": [
+            [
+              54.0704,
+              241.8988,
+              507.3135,
+              398.4458
+            ]
+          ],
+          "kind": "content",
+          "headline": "Hasan, ilk haftalarda sadece dükkânı temizler"
+        },
+        {
+          "id": "p118-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            149.7362,
+            182.8988,
+            507.1607,
+            241.4458
+          ],
+          "parts": [
+            [
+              149.7362,
+              182.8988,
+              507.1607,
+              241.4458
+            ]
+          ],
+          "kind": "content",
+          "headline": "Aylar sonra Hasan, ilk kez bir bakır levhayı döverek tabak yapmayı dener. Ustası"
         },
         {
           "id": "p118-v2",
@@ -6081,6 +10368,27 @@
               421.3678
             ]
           ]
+        },
+        {
+          "id": "p121-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            56.0031,
+            423.8197,
+            461.0673,
+            470.3882
+          ],
+          "parts": [
+            [
+              56.0031,
+              423.8197,
+              461.0673,
+              470.3882
+            ]
+          ],
+          "kind": "content",
+          "headline": "“Öğrenme Türleri” isimli e-içeriğe ulaşmak için karekodu kullanınız."
         }
       ]
     },
@@ -6112,6 +10420,27 @@
               679.0795
             ]
           ]
+        },
+        {
+          "id": "p122-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.5197,
+            441.7411,
+            388.5457,
+            487.3064
+          ],
+          "parts": [
+            [
+              39.5197,
+              441.7411,
+              388.5457,
+              487.3064
+            ]
+          ],
+          "kind": "content",
+          "headline": "UYGULAMA"
         },
         {
           "id": "p122-1",
@@ -6246,6 +10575,27 @@
       ],
       "activities": [
         {
+          "id": "p124-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            39.5197,
+            685.5074,
+            498.5627,
+            733.2
+          ],
+          "parts": [
+            [
+              39.5197,
+              685.5074,
+              498.5627,
+              733.2
+            ]
+          ],
+          "kind": "content",
+          "headline": "UYGULAMA"
+        },
+        {
           "id": "p124-1",
           "label": "1",
           "column": 0,
@@ -6264,6 +10614,48 @@
             ]
           ],
           "headline": "Aşağıdaki bilgi görselini inceleyiniz."
+        },
+        {
+          "id": "p124-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            53.6929,
+            230.792,
+            497.363,
+            346.1339
+          ],
+          "parts": [
+            [
+              53.6929,
+              230.792,
+              497.363,
+              346.1339
+            ]
+          ],
+          "kind": "content",
+          "headline": "MAKİNE ÖĞRENMESİNİN BİLEŞENLERİ"
+        },
+        {
+          "id": "p124-c3",
+          "label": null,
+          "column": 1,
+          "rect": [
+            53.6929,
+            54.192,
+            497.363,
+            226.3701
+          ],
+          "parts": [
+            [
+              53.6929,
+              54.192,
+              497.363,
+              226.3701
+            ]
+          ],
+          "kind": "content",
+          "headline": "MAKİNE ÖĞRENMESİNDEKİ YÖNTEMLER"
         }
       ]
     },
@@ -6277,6 +10669,27 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p125-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            71.433,
+            377.717,
+            510.236,
+            723.448
+          ],
+          "parts": [
+            [
+              71.433,
+              377.717,
+              510.236,
+              723.448
+            ]
+          ],
+          "kind": "content",
+          "headline": "BİYOLOJİK NÖRONLAR"
+        },
         {
           "id": "p125-2",
           "label": "2",
@@ -6319,6 +10732,42 @@
         }
       ]
     },
+    "126": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          36.5197,
+          233.5277
+        ],
+        [
+          237.5277,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p126-form",
+          "label": null,
+          "column": 1,
+          "rect": [
+            39.5197,
+            63.0997,
+            501.8977,
+            724.475
+          ],
+          "parts": [
+            [
+              39.5197,
+              63.0997,
+              501.8977,
+              724.475
+            ]
+          ],
+          "headline": "PERFORMANS GÖREVİ"
+        }
+      ]
+    },
     "127": {
       "pageWidth": 552.756,
       "pageHeight": 779.528,
@@ -6330,24 +10779,24 @@
       ],
       "activities": [
         {
-          "id": "p127-1",
-          "label": "1",
+          "id": "p127-form",
+          "label": null,
           "column": 0,
           "rect": [
-            55.1676,
-            205.3746,
-            509.7878,
-            707.6712
+            53.6929,
+            42.4313,
+            513.7,
+            729.3646
           ],
           "parts": [
             [
-              55.1676,
-              205.3746,
-              509.7878,
-              707.6712
+              53.6929,
+              42.4313,
+              513.7,
+              729.3646
             ]
           ],
-          "headline": "Cahit Arf’ın makalesini açıklayan yapılandırılmış metni okuyarak ana fikirleri, kavramları ve önemli düşünceleri not aldım."
+          "headline": "Öz Değerlendirme Formu"
         }
       ]
     },
@@ -6402,6 +10851,27 @@
           "headline": "Etkinliği yeniden yapacak olsaydım nelere dikkat ederdim?"
         },
         {
+          "id": "p128-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.0195,
+            444.8003,
+            498.5629,
+            498.9884
+          ],
+          "parts": [
+            [
+              39.0195,
+              444.8003,
+              498.5629,
+              498.9884
+            ]
+          ],
+          "kind": "content",
+          "headline": "Dereceli Puanlama Anahtarı’na karekoddan ulaşabilirsiniz."
+        },
+        {
           "id": "p128-v3",
           "label": null,
           "column": 0,
@@ -6419,6 +10889,73 @@
               438.3159
             ]
           ]
+        }
+      ]
+    },
+    "129": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          56.6122,
+          344.0138
+        ],
+        [
+          348.0138,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p129-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            57.0569,
+            56.9136,
+            510.0038,
+            727.1459
+          ],
+          "parts": [
+            [
+              57.0569,
+              56.9136,
+              510.0038,
+              727.1459
+            ]
+          ]
+        }
+      ]
+    },
+    "130": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          36.5197,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p130-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            41.8346,
+            53.1913,
+            499.6636,
+            729.3133
+          ],
+          "parts": [
+            [
+              41.8346,
+              53.1913,
+              499.6636,
+              729.3133
+            ]
+          ],
+          "headline": "Koşulsuz uyarıcı, organizmanın öğrenmeye bağlı olarak tepki verdiği uyarıcıdır."
         }
       ]
     },
@@ -6488,6 +11025,48 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p132-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.5197,
+            650.1616,
+            499.063,
+            740.5
+          ],
+          "parts": [
+            [
+              39.5197,
+              650.1616,
+              499.063,
+              740.5
+            ]
+          ],
+          "kind": "content",
+          "headline": "Ç)"
+        },
+        {
+          "id": "p132-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            42.52,
+            466.263,
+            496.063,
+            643.076
+          ],
+          "parts": [
+            [
+              42.52,
+              466.263,
+              496.063,
+              643.076
+            ]
+          ],
+          "kind": "content",
+          "headline": "Bir organizmanın öğrenme süreci hem kendi biyolojik özelliklerinden hem de çevresel"
+        },
         {
           "id": "p132-1",
           "label": "1",
@@ -6561,6 +11140,48 @@
       ],
       "activities": [
         {
+          "id": "p133-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            708.8276,
+            513.2362,
+            741.2
+          ],
+          "parts": [
+            [
+              53.6929,
+              708.8276,
+              513.2362,
+              741.2
+            ]
+          ],
+          "kind": "content",
+          "headline": "Aşağıdaki metinden yararlanarak 4-6. soruları cevaplayınız."
+        },
+        {
+          "id": "p133-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            56.693,
+            514.444,
+            510.236,
+            704.0599
+          ],
+          "parts": [
+            [
+              56.693,
+              514.444,
+              510.236,
+              704.0599
+            ]
+          ],
+          "kind": "content",
+          "headline": "•"
+        },
+        {
           "id": "p133-4",
           "label": "4",
           "column": 0,
@@ -6633,6 +11254,48 @@
       ],
       "activities": [
         {
+          "id": "p134-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.5197,
+            655.3146,
+            499.063,
+            740.5
+          ],
+          "parts": [
+            [
+              39.5197,
+              655.3146,
+              499.063,
+              740.5
+            ]
+          ],
+          "kind": "content",
+          "headline": "D)"
+        },
+        {
+          "id": "p134-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            42.52,
+            370.957,
+            496.063,
+            647.76
+          ],
+          "parts": [
+            [
+              42.52,
+              370.957,
+              496.063,
+              647.76
+            ]
+          ],
+          "kind": "content",
+          "headline": "Tolman ve Honzik tarafından yapılan bir deneyde yer alan üç fare grubunun günlere göre hata"
+        },
+        {
           "id": "p134-1",
           "label": "1",
           "column": 0,
@@ -6685,6 +11348,48 @@
       ],
       "activities": [
         {
+          "id": "p135-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            712.5363,
+            513.2362,
+            741.9
+          ],
+          "parts": [
+            [
+              53.6929,
+              712.5363,
+              513.2362,
+              741.9
+            ]
+          ],
+          "kind": "content",
+          "headline": "Aşağıdaki metinden yararlanarak 3 ve 4. soruları cevaplayınız."
+        },
+        {
+          "id": "p135-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            56.693,
+            440.652,
+            510.236,
+            710.007
+          ],
+          "parts": [
+            [
+              56.693,
+              440.652,
+              510.236,
+              710.007
+            ]
+          ],
+          "kind": "content",
+          "headline": "Günlük yaşamda bireyler, çevrelerindeki insanların duygularının kendilerinde de benzer"
+        },
+        {
           "id": "p135-3",
           "label": "3",
           "column": 0,
@@ -6736,6 +11441,48 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p136-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.5197,
+            708.8276,
+            499.063,
+            741.2
+          ],
+          "parts": [
+            [
+              39.5197,
+              708.8276,
+              499.063,
+              741.2
+            ]
+          ],
+          "kind": "content",
+          "headline": "Aşağıdaki metinden yararlanarak 5-7. soruları cevaplayınız."
+        },
+        {
+          "id": "p136-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.52,
+            455.478,
+            499.063,
+            706.342
+          ],
+          "parts": [
+            [
+              39.52,
+              455.478,
+              499.063,
+              706.342
+            ]
+          ],
+          "kind": "content",
+          "headline": "Aysun, fizik dersinde arkadaşlarıyla konuştuğu ve anlatılanları dinlemediği için öğretmeni"
+        },
         {
           "id": "p136-5",
           "label": "5",
@@ -6809,6 +11556,48 @@
       ],
       "activities": [
         {
+          "id": "p137-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            708.8276,
+            513.2362,
+            741.2
+          ],
+          "parts": [
+            [
+              53.6929,
+              708.8276,
+              513.2362,
+              741.2
+            ]
+          ],
+          "kind": "content",
+          "headline": "Aşağıdaki metinden yararlanarak 8 ve 9. soruları cevaplayınız."
+        },
+        {
+          "id": "p137-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.693,
+            453.079,
+            513.236,
+            706.746
+          ],
+          "parts": [
+            [
+              53.693,
+              453.079,
+              513.236,
+              706.746
+            ]
+          ],
+          "kind": "content",
+          "headline": "Yavuz, ehliyet sınavına girmek için direksiyon dersi alır. Derslerde araç kullanırken trafik"
+        },
+        {
           "id": "p137-8",
           "label": "8",
           "column": 0,
@@ -6879,6 +11668,27 @@
             ]
           ],
           "headline": "Günümüzde dijital oyunlar, eğlence aracı olmanın ötesine geçerek öğrenme süreçlerinde de önemli bir rol oynar. Oyun tabanlı öğrenme yaklaşımı, bireylerin yeni b"
+        },
+        {
+          "id": "p138-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.5196,
+            297.4727,
+            499.063,
+            351.6608
+          ],
+          "parts": [
+            [
+              39.5196,
+              297.4727,
+              499.063,
+              351.6608
+            ]
+          ],
+          "kind": "content",
+          "headline": "Daha fazla soruya ulaşmak için karekodu kullanınız."
         }
       ]
     },
@@ -6971,6 +11781,48 @@
             ]
           ],
           "headline": "Sağlıklı yaşam ve dengeyi korumaya yönelik belirlediğiniz bir hedefi yazınız."
+        },
+        {
+          "id": "p140-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            38.9528,
+            423.3472,
+            349.6187,
+            445.1072
+          ],
+          "parts": [
+            [
+              38.9528,
+              423.3472,
+              349.6187,
+              445.1072
+            ]
+          ],
+          "kind": "content",
+          "headline": "Aşağıdaki görselleri inceleyerek verilen adımları uygulayınız."
+        },
+        {
+          "id": "p140-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            64.0296,
+            552.756,
+            420.272
+          ],
+          "parts": [
+            [
+              0.0,
+              64.0296,
+              552.756,
+              420.272
+            ]
+          ],
+          "kind": "content",
+          "headline": "1"
         }
       ]
     },
@@ -6984,6 +11836,48 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p141-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            436.4149,
+            518.4551,
+            722.3744
+          ],
+          "parts": [
+            [
+              53.6929,
+              436.4149,
+              518.4551,
+              722.3744
+            ]
+          ],
+          "kind": "content",
+          "headline": "BİLGİ KÖPRÜSÜ"
+        },
+        {
+          "id": "p141-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            68.4331,
+            346.5803,
+            415.3455,
+            435.9619
+          ],
+          "parts": [
+            [
+              68.4331,
+              346.5803,
+              415.3455,
+              435.9619
+            ]
+          ],
+          "kind": "content",
+          "headline": "yönelmektedir. Bu durum yeni sosyal çevrelere uyum gerektiren yoğun bir"
+        },
         {
           "id": "p141-1",
           "label": "1",
@@ -7075,6 +11969,110 @@
             ]
           ],
           "headline": "Aşağıdaki metinden yararlanarak soruyu cevaplayınız."
+        },
+        {
+          "id": "p142-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.5197,
+            369.9181,
+            501.7603,
+            463.318
+          ],
+          "parts": [
+            [
+              39.5197,
+              369.9181,
+              501.7603,
+              463.318
+            ]
+          ],
+          "kind": "content",
+          "headline": "UYGULAMA"
+        },
+        {
+          "id": "p142-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            55.6177,
+            56.8031,
+            210.4612,
+            361.2527
+          ],
+          "parts": [
+            [
+              55.6177,
+              56.8031,
+              210.4612,
+              361.2527
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p142-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            223.7717,
+            277.6576,
+            501.5684,
+            367.4611
+          ],
+          "parts": [
+            [
+              223.7717,
+              277.6576,
+              501.5684,
+              367.4611
+            ]
+          ],
+          "kind": "content",
+          "headline": "1. Örnek Durum"
+        },
+        {
+          "id": "p142-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            223.7717,
+            170.9804,
+            501.6437,
+            260.7839
+          ],
+          "parts": [
+            [
+              223.7717,
+              170.9804,
+              501.6437,
+              260.7839
+            ]
+          ],
+          "kind": "content",
+          "headline": "2. Örnek Durum"
+        },
+        {
+          "id": "p142-c5",
+          "label": null,
+          "column": 0,
+          "rect": [
+            223.7717,
+            61.4686,
+            501.7119,
+            154.1067
+          ],
+          "parts": [
+            [
+              223.7717,
+              61.4686,
+              501.7119,
+              154.1067
+            ]
+          ],
+          "kind": "content",
+          "headline": "3. Örnek Durum"
         }
       ]
     },
@@ -7088,6 +12086,27 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p143-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            73.5354,
+            573.0073,
+            515.6151,
+            729.2853
+          ],
+          "parts": [
+            [
+              73.5354,
+              573.0073,
+              515.6151,
+              729.2853
+            ]
+          ],
+          "kind": "content",
+          "headline": "a) Sınıfta herkesin birbirini görebileceği bir oturma düzeni oluşturunuz."
+        },
         {
           "id": "p143-3",
           "label": "3",
@@ -7107,6 +12126,322 @@
             ]
           ],
           "headline": "Konuşma halkası etkinliğinde uyum sağlama ile ilgili öğrendiğiniz üç cümleyi yazınız."
+        },
+        {
+          "id": "p143-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            54.0679,
+            355.4111,
+            512.8609,
+            468.2697
+          ],
+          "parts": [
+            [
+              54.0679,
+              355.4111,
+              512.8609,
+              468.2697
+            ]
+          ],
+          "kind": "content",
+          "headline": "ETKİNLİK"
+        },
+        {
+          "id": "p143-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            255.6965,
+            515.8623,
+            351.6297
+          ],
+          "parts": [
+            [
+              53.6929,
+              255.6965,
+              515.8623,
+              351.6297
+            ]
+          ],
+          "kind": "content",
+          "headline": "Aşağıdaki işlem basamaklarını takip ederek etkinliği gerçekleştiriniz."
+        },
+        {
+          "id": "p143-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            51.024,
+            552.756,
+            250.093
+          ],
+          "parts": [
+            [
+              0.0,
+              51.024,
+              552.756,
+              250.093
+            ]
+          ],
+          "kind": "content",
+          "headline": "ÇALIŞMA KÂĞIDI"
+        }
+      ]
+    },
+    "144": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          152.7402,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p144-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            155.7402,
+            671.6105,
+            501.6755,
+            716.8559
+          ],
+          "parts": [
+            [
+              155.7402,
+              671.6105,
+              501.6755,
+              716.8559
+            ]
+          ],
+          "kind": "content",
+          "headline": "bireyin günlük yaşamını olumsuz etkilemeye başlaması, işlevsellik kaybına"
+        },
+        {
+          "id": "p144-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            40.2845,
+            547.2865,
+            213.0845,
+            664.6465
+          ],
+          "parts": [
+            [
+              40.2845,
+              547.2865,
+              213.0845,
+              664.6465
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p144-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            219.2766,
+            542.4678,
+            501.7108,
+            670.8083
+          ],
+          "parts": [
+            [
+              219.2766,
+              542.4678,
+              501.7108,
+              670.8083
+            ]
+          ],
+          "kind": "content",
+          "headline": "vb.), sosyal ilişkilerini (arkadaşlık kurma, aileyle iletişim vb.) ve"
+        },
+        {
+          "id": "p144-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            155.7402,
+            439.0235,
+            501.6469,
+            541.6656
+          ],
+          "parts": [
+            [
+              155.7402,
+              439.0235,
+              501.6469,
+              541.6656
+            ]
+          ],
+          "kind": "content",
+          "headline": "dadır, asıl neden ise psikolojik bozukluktur. Ancak unutulmamalıdır ki psikolojik"
+        },
+        {
+          "id": "p144-c5",
+          "label": null,
+          "column": 0,
+          "rect": [
+            155.7402,
+            341.5898,
+            501.5156,
+            436.4159
+          ],
+          "parts": [
+            [
+              155.7402,
+              341.5898,
+              501.5156,
+              436.4159
+            ]
+          ],
+          "kind": "content",
+          "headline": "Kaygı Bozuklukları"
+        },
+        {
+          "id": "p144-c6",
+          "label": null,
+          "column": 0,
+          "rect": [
+            40.2845,
+            84.6552,
+            213.0845,
+            333.1307
+          ],
+          "parts": [
+            [
+              40.2845,
+              84.6552,
+              213.0845,
+              333.1307
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p144-c7",
+          "label": null,
+          "column": 0,
+          "rect": [
+            226.6064,
+            60.6273,
+            501.7465,
+            335.62
+          ],
+          "parts": [
+            [
+              226.6064,
+              60.6273,
+              501.7465,
+              335.62
+            ]
+          ],
+          "kind": "content",
+          "headline": "•"
+        }
+      ]
+    },
+    "145": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          50.6929,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p145-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            596.1172,
+            400.4836,
+            717.1974
+          ],
+          "parts": [
+            [
+              53.6929,
+              596.1172,
+              400.4836,
+              717.1974
+            ]
+          ],
+          "kind": "content",
+          "headline": "Travma Sonrası Stres Bozukluğu"
+        },
+        {
+          "id": "p145-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            57.193,
+            339.0715,
+            394.017,
+            590.4385
+          ],
+          "parts": [
+            [
+              57.193,
+              339.0715,
+              394.017,
+              590.4385
+            ]
+          ],
+          "kind": "content",
+          "headline": "Uyum Bozukluğu"
+        },
+        {
+          "id": "p145-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            198.448,
+            400.4116,
+            333.5281
+          ],
+          "parts": [
+            [
+              53.6929,
+              198.448,
+              400.4116,
+              333.5281
+            ]
+          ],
+          "kind": "content",
+          "headline": "Majör Depresif Bozukluk"
+        },
+        {
+          "id": "p145-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            61.1094,
+            400.5949,
+            196.0242
+          ],
+          "parts": [
+            [
+              53.6929,
+              61.1094,
+              400.5949,
+              196.0242
+            ]
+          ],
+          "kind": "content",
+          "headline": "Bağımlılıklar"
         }
       ]
     },
@@ -7120,6 +12455,69 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p146-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            155.7402,
+            641.3089,
+            501.5135,
+            717.0269
+          ],
+          "parts": [
+            [
+              155.7402,
+              641.3089,
+              501.5135,
+              717.0269
+            ]
+          ],
+          "kind": "content",
+          "headline": "•"
+        },
+        {
+          "id": "p146-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            159.2402,
+            461.3009,
+            496.5082,
+            630.3789
+          ],
+          "parts": [
+            [
+              159.2402,
+              461.3009,
+              496.5082,
+              630.3789
+            ]
+          ],
+          "kind": "content",
+          "headline": "Alışveriş Davranışında Aşırılık"
+        },
+        {
+          "id": "p146-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            155.7402,
+            200.1199,
+            501.6696,
+            450.208
+          ],
+          "parts": [
+            [
+              155.7402,
+              200.1199,
+              501.6696,
+              450.208
+            ]
+          ],
+          "kind": "content",
+          "headline": "Yeme Bozuklukları"
+        },
         {
           "id": "p146-a",
           "label": "a",
@@ -7323,6 +12721,27 @@
           "headline": "Grup arkadaşlarınızla uyum sorunlarına ve uyum sorunlarıyla ilişkili psikolojik bozukluklara"
         },
         {
+          "id": "p149-c1",
+          "label": null,
+          "column": 2,
+          "rect": [
+            53.6929,
+            401.7236,
+            513.2362,
+            458.2547
+          ],
+          "parts": [
+            [
+              53.6929,
+              401.7236,
+              513.2362,
+              458.2547
+            ]
+          ],
+          "kind": "content",
+          "headline": "\"Uyum Sorunlarıyla İlişkili Psikolojik Bozukluklar\" isimli e-içeriğe"
+        },
+        {
           "id": "p149-v2",
           "label": null,
           "column": 2,
@@ -7354,6 +12773,48 @@
       ],
       "activities": [
         {
+          "id": "p150-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            41.5468,
+            660.0183,
+            308.4538,
+            730.5535
+          ],
+          "parts": [
+            [
+              41.5468,
+              660.0183,
+              308.4538,
+              730.5535
+            ]
+          ],
+          "kind": "content",
+          "headline": "4.2. UYUM SAĞLAMA"
+        },
+        {
+          "id": "p150-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            38.8362,
+            294.7,
+            501.7572,
+            657.799
+          ],
+          "parts": [
+            [
+              38.8362,
+              294.7,
+              501.7572,
+              657.799
+            ]
+          ],
+          "kind": "content",
+          "headline": "Kendini Yaşamak"
+        },
+        {
           "id": "p150-2",
           "label": "2",
           "column": 0,
@@ -7374,6 +12835,27 @@
           "headline": "Bireyin gerçek duygularını yaşaması ile yaşama uyum sağlaması arasında nasıl bir ilişki vardır?"
         },
         {
+          "id": "p150-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.5197,
+            91.9102,
+            391.1457,
+            137.4755
+          ],
+          "parts": [
+            [
+              39.5197,
+              91.9102,
+              391.1457,
+              137.4755
+            ]
+          ],
+          "kind": "content",
+          "headline": "UYGULAMA"
+        },
+        {
           "id": "p150-1",
           "label": "1",
           "column": 0,
@@ -7392,6 +12874,81 @@
             ]
           ],
           "headline": "Aşağıdaki soruyu cevaplayınız ve ardından bilgi notunu okuyunuz."
+        }
+      ]
+    },
+    "151": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          50.6929,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p151-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            50.858,
+            650.3404,
+            416.8583,
+            709.6877
+          ],
+          "parts": [
+            [
+              50.858,
+              650.3404,
+              416.8583,
+              709.6877
+            ]
+          ],
+          "kind": "content",
+          "headline": "Pozitif Psikolojinin Kavramları"
+        },
+        {
+          "id": "p151-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            412.0019,
+            510.0816,
+            649.8874
+          ],
+          "parts": [
+            [
+              53.6929,
+              412.0019,
+              510.0816,
+              649.8874
+            ]
+          ],
+          "kind": "content",
+          "headline": "ve değişime uyum sağlayabilme gücüdür. Bu özellik,"
+        },
+        {
+          "id": "p151-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            67.3247,
+            416.5914,
+            409.0505
+          ],
+          "parts": [
+            [
+              53.6929,
+              67.3247,
+              416.5914,
+              409.0505
+            ]
+          ],
+          "kind": "content",
+          "headline": "Karakter Güçleri ve Erdemler"
         }
       ]
     },
@@ -7577,6 +13134,113 @@
         }
       ]
     },
+    "153": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          50.6929,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p153-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            54.0679,
+            610.4368,
+            512.8609,
+            726.0106
+          ],
+          "parts": [
+            [
+              54.0679,
+              610.4368,
+              512.8609,
+              726.0106
+            ]
+          ],
+          "kind": "content",
+          "headline": "ETKİNLİK"
+        },
+        {
+          "id": "p153-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            326.1164,
+            518.8456,
+            608.0227
+          ],
+          "parts": [
+            [
+              53.6929,
+              326.1164,
+              518.8456,
+              608.0227
+            ]
+          ],
+          "kind": "content",
+          "headline": "Aşağıdaki işlem basamaklarını takip ederek etkinliği gerçekleştiriniz."
+        },
+        {
+          "id": "p153-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            65.598,
+            51.4393,
+            518.8456,
+            323.7865
+          ],
+          "parts": [
+            [
+              65.598,
+              51.4393,
+              518.8456,
+              323.7865
+            ]
+          ],
+          "kind": "content",
+          "headline": "Uyum Sağlamaya Yönelik Beceriler"
+        }
+      ]
+    },
+    "154": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          36.5197,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p154-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            41.2408,
+            52.1124,
+            498.9378,
+            724.5025
+          ],
+          "parts": [
+            [
+              41.2408,
+              52.1124,
+              498.9378,
+              724.5025
+            ]
+          ],
+          "headline": "Aşağıdaki örnek durumlara ilişkin metinlerden yararlanarak soruyu cevaplayınız."
+        }
+      ]
+    },
     "155": {
       "pageWidth": 552.756,
       "pageHeight": 779.528,
@@ -7639,6 +13303,48 @@
       ],
       "activities": [
         {
+          "id": "p156-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.5197,
+            669.9587,
+            388.5457,
+            730.3587
+          ],
+          "parts": [
+            [
+              39.5197,
+              669.9587,
+              388.5457,
+              730.3587
+            ]
+          ],
+          "kind": "content",
+          "headline": "UYGULAMA"
+        },
+        {
+          "id": "p156-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            145.961,
+            552.756,
+            668.244
+          ],
+          "parts": [
+            [
+              0.0,
+              145.961,
+              552.756,
+              668.244
+            ]
+          ],
+          "kind": "content",
+          "headline": "Geçmişten Günümüze Müzikle Terapi"
+        },
+        {
           "id": "p156-v1",
           "label": null,
           "column": 0,
@@ -7678,6 +13384,38 @@
         }
       ]
     },
+    "157": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          50.6929,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p157-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            56.2472,
+            55.7268,
+            512.2709,
+            725.7433
+          ],
+          "parts": [
+            [
+              56.2472,
+              55.7268,
+              512.2709,
+              725.7433
+            ]
+          ],
+          "headline": "Aşağıdaki metni okuyunuz. Ardından okuduğunuz metin ile uyum sağlamaya yönelik yaklaşım ve becerileri karşılaştırarak tabloyu doldurunuz."
+        }
+      ]
+    },
     "158": {
       "pageWidth": 552.756,
       "pageHeight": 779.528,
@@ -7707,6 +13445,48 @@
             ]
           ],
           "headline": "sonuçlarıyla ilgili bir yansıtma yazısı yazınız."
+        },
+        {
+          "id": "p158-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.8947,
+            132.6795,
+            498.6877,
+            246.9555
+          ],
+          "parts": [
+            [
+              39.8947,
+              132.6795,
+              498.6877,
+              246.9555
+            ]
+          ],
+          "kind": "content",
+          "headline": "ETKİNLİK"
+        },
+        {
+          "id": "p158-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.5197,
+            55.0516,
+            501.6638,
+            130.3156
+          ],
+          "parts": [
+            [
+              39.5197,
+              55.0516,
+              501.6638,
+              130.3156
+            ]
+          ],
+          "kind": "content",
+          "headline": "Aşağıdaki işlem basamaklarını takip ederek etkinliği gerçekleştiriniz."
         }
       ]
     },
@@ -7720,6 +13500,69 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p159-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            710.6046,
+            390.8177,
+            729.3646
+          ],
+          "parts": [
+            [
+              53.6929,
+              710.6046,
+              390.8177,
+              729.3646
+            ]
+          ],
+          "kind": "content",
+          "headline": "Grup arkadaşlarınızla örnek durumlara ilişkin metinleri okuyunuz."
+        },
+        {
+          "id": "p159-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            71.2677,
+            561.7892,
+            400.4979,
+            710.262
+          ],
+          "parts": [
+            [
+              71.2677,
+              561.7892,
+              400.4979,
+              710.262
+            ]
+          ],
+          "kind": "content",
+          "headline": "1. Örnek Durum"
+        },
+        {
+          "id": "p159-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            71.2677,
+            382.4506,
+            400.5843,
+            558.9234
+          ],
+          "parts": [
+            [
+              71.2677,
+              382.4506,
+              400.5843,
+              558.9234
+            ]
+          ],
+          "kind": "content",
+          "headline": "2. Örnek Durum"
+        },
         {
           "id": "p159-3",
           "label": "3",
@@ -7739,6 +13582,38 @@
             ]
           ],
           "headline": "Aşağıdaki tabloya örnek durumlardan hareketle uyum sağlamaya yardımcı olan ve olmayan davranışları yazınız."
+        }
+      ]
+    },
+    "160": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          36.5197,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p160-4",
+          "label": "4",
+          "column": 0,
+          "rect": [
+            41.5197,
+            54.2703,
+            498.2901,
+            723.2078
+          ],
+          "parts": [
+            [
+              41.5197,
+              54.2703,
+              498.2901,
+              723.2078
+            ]
+          ],
+          "headline": "1. Örnek Durum"
         }
       ]
     },
@@ -7795,6 +13670,26 @@
             ]
           ],
           "headline": "Duygu ve düşüncelerin ifade edilmesinde kontrollü olmanın önemini açıklayınız."
+        },
+        {
+          "id": "p161-6",
+          "label": "6",
+          "column": 0,
+          "rect": [
+            55.2756,
+            64.3043,
+            513.2426,
+            623.6764
+          ],
+          "parts": [
+            [
+              55.2756,
+              64.3043,
+              513.2426,
+              623.6764
+            ]
+          ],
+          "headline": "Ayça ve Selim’in yaşadıkları olaylar sonucundaki duygularını, düşüncelerini ve tepkilerini ince­ leyiniz. Her iki karakterin durumunu duygu yönetimi, uyum ve "
         }
       ]
     },
@@ -7808,6 +13703,48 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p162-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.8947,
+            597.5612,
+            498.6877,
+            726.0106
+          ],
+          "parts": [
+            [
+              39.8947,
+              597.5612,
+              498.6877,
+              726.0106
+            ]
+          ],
+          "kind": "content",
+          "headline": "ETKİNLİK"
+        },
+        {
+          "id": "p162-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.5197,
+            539.776,
+            501.5389,
+            594.3707
+          ],
+          "parts": [
+            [
+              39.5197,
+              539.776,
+              501.5389,
+              594.3707
+            ]
+          ],
+          "kind": "content",
+          "headline": "Aşağıdaki işlem basamaklarını takip ederek etkinliği gerçekleştiriniz."
+        },
         {
           "id": "p162-2",
           "label": "2",
@@ -7953,6 +13890,48 @@
           "headline": "Çıkış Kartı"
         },
         {
+          "id": "p164-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            41.001,
+            200.2028,
+            499.794,
+            328.6524
+          ],
+          "parts": [
+            [
+              41.001,
+              200.2028,
+              499.794,
+              328.6524
+            ]
+          ],
+          "kind": "content",
+          "headline": "ETKİNLİK"
+        },
+        {
+          "id": "p164-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            40.626,
+            175.2524,
+            372.472,
+            197.0125
+          ],
+          "parts": [
+            [
+              40.626,
+              175.2524,
+              372.472,
+              197.0125
+            ]
+          ],
+          "kind": "content",
+          "headline": "Aşağıdaki işlem basamaklarını takip ederek etkinliği gerçekleştiriniz."
+        },
+        {
           "id": "p164-1",
           "label": "1",
           "column": 0,
@@ -7984,6 +13963,48 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p165-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            71.2677,
+            418.0176,
+            517.446,
+            729.0361
+          ],
+          "parts": [
+            [
+              71.2677,
+              418.0176,
+              517.446,
+              729.0361
+            ]
+          ],
+          "kind": "content",
+          "headline": "Sen dili , odağını doğrudan karşı tarafa yönelten suçlayıcı ve yıkıcı bir iletişim"
+        },
+        {
+          "id": "p165-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            71.2677,
+            181.6313,
+            517.446,
+            415.0283
+          ],
+          "parts": [
+            [
+              71.2677,
+              181.6313,
+              517.446,
+              415.0283
+            ]
+          ],
+          "kind": "content",
+          "headline": "Sözel iletişim ögeleri ; kelimelerden oluşan mesaj içeriği, mesa­"
+        },
         {
           "id": "p165-2",
           "label": "2",
@@ -8205,6 +14226,185 @@
             ]
           ],
           "headline": "Sanal gerçeklik ve artırılmış gerçeklik teknolojileri; oyun ve eğlence dünyası dışında eğitim, tıp, psikoloji, iş hayatı, sanat, sosyal ilişkiler gibi alanlarda"
+        },
+        {
+          "id": "p168-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.5197,
+            273.3605,
+            501.898,
+            526.5476
+          ],
+          "parts": [
+            [
+              39.5197,
+              273.3605,
+              501.898,
+              526.5476
+            ]
+          ],
+          "kind": "content",
+          "headline": "UYGULAMA"
+        },
+        {
+          "id": "p168-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.8298,
+            129.9221,
+            258.3499,
+            267.8021
+          ],
+          "parts": [
+            [
+              39.8298,
+              129.9221,
+              258.3499,
+              267.8021
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p168-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            263.5984,
+            125.0219,
+            501.663,
+            273.2382
+          ],
+          "parts": [
+            [
+              263.5984,
+              125.0219,
+              501.663,
+              273.2382
+            ]
+          ],
+          "kind": "content",
+          "headline": "Fobi tedavisinde birey, korku duyulan bir nesneye ya"
+        },
+        {
+          "id": "p168-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            169.5355,
+            52.0219,
+            501.6996,
+            124.5689
+          ],
+          "parts": [
+            [
+              169.5355,
+              52.0219,
+              501.6996,
+              124.5689
+            ]
+          ],
+          "kind": "content",
+          "headline": "gerçeklik teknolojileri umut verici yeni imkânlar sunmaktadır. Bu yöntemle"
+        }
+      ]
+    },
+    "169": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          65.4331,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p169-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            68.4331,
+            552.2144,
+            519.1608,
+            728.4307
+          ],
+          "parts": [
+            [
+              68.4331,
+              552.2144,
+              519.1608,
+              728.4307
+            ]
+          ],
+          "kind": "content",
+          "headline": "üzerindeki kontrolünü artırmasına ve başa çıkma becerilerini güçlendirmesine"
+        },
+        {
+          "id": "p169-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            68.4331,
+            479.2144,
+            414.2871,
+            551.7614
+          ],
+          "parts": [
+            [
+              68.4331,
+              479.2144,
+              414.2871,
+              551.7614
+            ]
+          ],
+          "kind": "content",
+          "headline": "becerisini güçlendirmeye yardımcı olur. Otizm spektrum bozukluğu (OSB) olan"
+        },
+        {
+          "id": "p169-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            68.4331,
+            424.6805,
+            414.2439,
+            472.2275
+          ],
+          "parts": [
+            [
+              68.4331,
+              424.6805,
+              414.2439,
+              472.2275
+            ]
+          ],
+          "kind": "content",
+          "headline": "Tedavi süreci, bireysel ihtiyaçlara göre uzmanlar tarafından planlanır. Bu neden­"
+        },
+        {
+          "id": "p169-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            71.433,
+            57.094,
+            407.756,
+            412.276
+          ],
+          "parts": [
+            [
+              71.433,
+              57.094,
+              407.756,
+              412.276
+            ]
+          ],
+          "kind": "content",
+          "headline": "TÜBİTAK (Türkiye Bilimsel ve Teknolojik Araştırma Kurumu), sanal"
         }
       ]
     },
@@ -8310,6 +14510,27 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p171-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            587.8418,
+            516.0414,
+            730.3587
+          ],
+          "parts": [
+            [
+              53.6929,
+              587.8418,
+              516.0414,
+              730.3587
+            ]
+          ],
+          "kind": "content",
+          "headline": "UYGULAMA"
+        },
         {
           "id": "p171-3",
           "label": "3",
@@ -8443,6 +14664,27 @@
           "headline": "Yüz yüze terapi yöntemleri ile sanal ve artırılmış gerçeklik temelli uygulamalar arasındaki farklılıklar nelerdir?"
         },
         {
+          "id": "p172-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.5197,
+            568.5888,
+            499.0681,
+            590.3488
+          ],
+          "parts": [
+            [
+              39.5197,
+              568.5888,
+              499.0681,
+              590.3488
+            ]
+          ],
+          "kind": "content",
+          "headline": "Bu sınırlılıkları ve olası riskleri en aza indirmek için ne gibi etik kurallar geliştirilmelidir? Tartışınız."
+        },
+        {
           "id": "p172-v2",
           "label": null,
           "column": 0,
@@ -8482,6 +14724,38 @@
         }
       ]
     },
+    "173": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          50.6929,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p173-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            54.5739,
+            50.8716,
+            513.4585,
+            724.8262
+          ],
+          "parts": [
+            [
+              54.5739,
+              50.8716,
+              513.4585,
+              724.8262
+            ]
+          ],
+          "headline": "Aşağıda verilen bilgi notunu ve örnek durumlara ilişkin metinleri okuyunuz."
+        }
+      ]
+    },
     "174": {
       "pageWidth": 552.756,
       "pageHeight": 779.528,
@@ -8492,6 +14766,48 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p174-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            55.5008,
+            611.3948,
+            200.5031,
+            729.1596
+          ],
+          "parts": [
+            [
+              55.5008,
+              611.3948,
+              200.5031,
+              729.1596
+            ]
+          ],
+          "kind": "content",
+          "headline": "2. Örnek Durum"
+        },
+        {
+          "id": "p174-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            207.6391,
+            614.0176,
+            501.6416,
+            703.5646
+          ],
+          "parts": [
+            [
+              207.6391,
+              614.0176,
+              501.6416,
+              703.5646
+            ]
+          ],
+          "kind": "content",
+          "headline": "Sürücülerin yaya geçitlerinde durup yayalara yol vermesi gerekir."
+        },
         {
           "id": "p174-2",
           "label": "2",
@@ -8531,6 +14847,171 @@
             ]
           ],
           "headline": "Aşağıdaki metinlerden yararlanarak soruyu cevaplayınız."
+        }
+      ]
+    },
+    "175": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          50.6929,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p175-4",
+          "label": "4",
+          "column": 0,
+          "rect": [
+            56.949,
+            121.7035,
+            513.1346,
+            725.1499
+          ],
+          "parts": [
+            [
+              56.949,
+              121.7035,
+              513.1346,
+              725.1499
+            ]
+          ],
+          "headline": "Öğretmeninizin rehberliğinde aşağıdaki soruları temel alan bir tartışma gerçekleştirmek için kar topu tekniğinin adımlarını uygulayınız.",
+          "items": [
+            {
+              "id": "p175-4-a",
+              "label": "a",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                69.7008,
+                572.4314,
+                414.0639,
+                596.1914
+              ],
+              "text": "Her biriniz bu sorular ile ilgili düşüncelerinizi kısaca not ediniz. (3 dk.) a)"
+            },
+            {
+              "id": "p175-4-b",
+              "label": "b",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                69.7008,
+                554.5968,
+                425.2539,
+                578.3568
+              ],
+              "text": "Sıra arkadaşınızla eşleşiniz ve ortak fikirlerinizi bir kâğıda yazınız. (5 dk.) b)"
+            },
+            {
+              "id": "p175-4-c",
+              "label": "c",
+              "number": 3,
+              "partIndex": 0,
+              "rect": [
+                69.7008,
+                506.7722,
+                513.1346,
+                560.5222
+              ],
+              "text": " İkişerli grupları birleştirerek dörtlü gruplar oluşturunuz. Sorulara verdiğiniz cevapları karşı­ c) laştırarak ortak yanıtlarınızı belirleyiniz ve grup olarak görüşlerinizi kısa maddeler hâlinde yazı"
+            },
+            {
+              "id": "p175-4-ç",
+              "label": "ç",
+              "number": 3,
+              "partIndex": 0,
+              "rect": [
+                69.7008,
+                473.9375,
+                513.1346,
+                512.6875
+              ],
+              "text": " Dörtlü grupları birleştirerek sekizli gruplar oluşturunuz. Grup sözcüsü seçerek ortak bir rapor ç) hazırlayınız. (7 dk.)"
+            },
+            {
+              "id": "p175-4-d",
+              "label": "d",
+              "number": 4,
+              "partIndex": 0,
+              "rect": [
+                69.7008,
+                441.1029,
+                513.1346,
+                479.8529
+              ],
+              "text": "Grupların ulaştığı ortak sonuçları grup sözcüleri aracılığıyla sınıfta sözlü olarak paylaşınız. d) (5 dk.)"
+            },
+            {
+              "id": "p175-4-e",
+              "label": "e",
+              "number": 5,
+              "partIndex": 0,
+              "rect": [
+                56.949,
+                123.9,
+                513.1346,
+                447.0183
+              ],
+              "text": "Sınıfın tamamı tek grup olana dek bu süreci devam ettiriniz. e) Günlük yaşamda gözlemlediğiniz olumlu ya da olumsuz bir sosyal davranışın nasıl oluştu ­ Değerlendirme:  ğunu ve bu davranışın bireyin h"
+            }
+          ]
+        },
+        {
+          "id": "p175-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6928,
+            53.6929,
+            513.2362,
+            107.881
+          ],
+          "parts": [
+            [
+              53.6928,
+              53.6929,
+              513.2362,
+              107.881
+            ]
+          ],
+          "kind": "content",
+          "headline": "\"Tutum, Olumlu ve Olumsuz Sosyal Davranış\" isimli e-içeriğe ulaşmak için"
+        }
+      ]
+    },
+    "176": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          36.5197,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p176-form",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.5197,
+            51.4923,
+            501.8405,
+            724.475
+          ],
+          "parts": [
+            [
+              39.5197,
+              51.4923,
+              501.8405,
+              724.475
+            ]
+          ],
+          "headline": "PERFORMANS GÖREVİ"
         }
       ]
     },
@@ -8583,6 +15064,27 @@
             ]
           ],
           "headline": "Örnek durumlarda yer alan tutum ile olumlu ve olumsuz sosyal davranışları doğru biçimde belirledim."
+        },
+        {
+          "id": "p177-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            356.5748,
+            50.5809,
+            501.373,
+            63.1175
+          ],
+          "parts": [
+            [
+              356.5748,
+              50.5809,
+              501.373,
+              63.1175
+            ]
+          ],
+          "kind": "content",
+          "headline": "Form arka sayfada devam etmektedir."
         }
       ]
     },
@@ -8615,6 +15117,69 @@
             ]
           ],
           "headline": "Bu etkinlikten neler öğrendim?"
+        },
+        {
+          "id": "p178-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.5196,
+            458.8818,
+            499.063,
+            513.07
+          ],
+          "parts": [
+            [
+              39.5196,
+              458.8818,
+              499.063,
+              513.07
+            ]
+          ],
+          "kind": "content",
+          "headline": "Dereceli Puanlama Anahtarı’na karekoddan ulaşabilirsiniz."
+        },
+        {
+          "id": "p178-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.5197,
+            408.8391,
+            332.3368,
+            454.3264
+          ],
+          "parts": [
+            [
+              39.5197,
+              408.8391,
+              332.3368,
+              454.3264
+            ]
+          ],
+          "kind": "content",
+          "headline": "KONTROL NOKTASI"
+        },
+        {
+          "id": "p178-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            42.52,
+            231.287,
+            496.063,
+            407.598
+          ],
+          "parts": [
+            [
+              42.52,
+              231.287,
+              496.063,
+              407.598
+            ]
+          ],
+          "kind": "content",
+          "headline": "Paylaşmak"
         },
         {
           "id": "p178-1",
@@ -8655,6 +15220,38 @@
             ]
           ],
           "headline": "Kelime bulutunda yer almayan ancak kendi kültürünüzde veya sosyal çevrenizde sıklıkla gözlem­ lediğiniz tutum ve davranışlar nelerdir? Açıklayınız."
+        }
+      ]
+    },
+    "179": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          50.6929,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p179-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            54.25,
+            53.0295,
+            513.8368,
+            722.7223
+          ],
+          "parts": [
+            [
+              54.25,
+              53.0295,
+              513.8368,
+              722.7223
+            ]
+          ],
+          "headline": "Travma sonrası stres bozukluğu yaşayan bireylerde travmayı hatırlatan uyaranlardan kaçınma gözlenebilir."
         }
       ]
     },
@@ -8724,6 +15321,48 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p181-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            654.2787,
+            513.2362,
+            740.5
+          ],
+          "parts": [
+            [
+              53.6929,
+              654.2787,
+              513.2362,
+              740.5
+            ]
+          ],
+          "kind": "content",
+          "headline": "Ç)"
+        },
+        {
+          "id": "p181-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            56.693,
+            471.005,
+            510.236,
+            645.641
+          ],
+          "parts": [
+            [
+              56.693,
+              471.005,
+              510.236,
+              645.641
+            ]
+          ],
+          "kind": "content",
+          "headline": "Gonca için yükseklik günlük yaşamını kısıtlayan ve başa çıkılması zor bir fobiye dönüşmüştü."
+        },
         {
           "id": "p181-1",
           "label": "1",
@@ -8828,6 +15467,48 @@
       ],
       "activities": [
         {
+          "id": "p183-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            589.1963,
+            516.0029,
+            740.5
+          ],
+          "parts": [
+            [
+              53.6929,
+              589.1963,
+              516.0029,
+              740.5
+            ]
+          ],
+          "kind": "content",
+          "headline": "D)"
+        },
+        {
+          "id": "p183-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            69.6967,
+            332.5765,
+            513.3777,
+            588.5964
+          ],
+          "parts": [
+            [
+              69.6967,
+              332.5765,
+              513.3777,
+              588.5964
+            ]
+          ],
+          "kind": "content",
+          "headline": "%25"
+        },
+        {
           "id": "p183-1",
           "label": "1",
           "column": 0,
@@ -8880,6 +15561,48 @@
       ],
       "activities": [
         {
+          "id": "p184-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            56.5276,
+            705.993,
+            312.6857,
+            726.24
+          ],
+          "parts": [
+            [
+              56.5276,
+              705.993,
+              312.6857,
+              726.24
+            ]
+          ],
+          "kind": "content",
+          "headline": "Aşağıdaki metinden yararlanarak 3 ve 4. soruları cevaplayınız."
+        },
+        {
+          "id": "p184-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            42.52,
+            506.113,
+            496.063,
+            698.39
+          ],
+          "parts": [
+            [
+              42.52,
+              506.113,
+              496.063,
+              698.39
+            ]
+          ],
+          "kind": "content",
+          "headline": "Davranışçı yaklaşımda kullanılan maruz bırakma terapisi, bireyin korku ve kaygı oluşturan"
+        },
+        {
           "id": "p184-3",
           "label": "3",
           "column": 0,
@@ -8918,6 +15641,48 @@
             ]
           ],
           "headline": "Sanal gerçeklik destekli maruz bırakma terapilerinin avantajları neler olabilir? Örneklerle açıklayınız."
+        },
+        {
+          "id": "p184-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.5197,
+            294.6229,
+            499.0627,
+            328.3
+          ],
+          "parts": [
+            [
+              39.5197,
+              294.6229,
+              499.0627,
+              328.3
+            ]
+          ],
+          "kind": "content",
+          "headline": "Aşağıdaki metinden yararlanarak 5 ve 6. soruları cevaplayınız."
+        },
+        {
+          "id": "p184-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            42.52,
+            150.743,
+            496.063,
+            287.02
+          ],
+          "parts": [
+            [
+              42.52,
+              150.743,
+              496.063,
+              287.02
+            ]
+          ],
+          "kind": "content",
+          "headline": "Psikolojik sağlamlık bireyin zorlayıcı hayat koşullarına rağmen işlevselliğini koruyabilme,"
         },
         {
           "id": "p184-5",
@@ -8972,6 +15737,48 @@
           "headline": "İnsanların zorlukları bir tehdit değil kişisel gelişim fırsatı olarak görmelerinin psikolojik sağlam­ lık üzerindeki etkilerini açıklayınız."
         },
         {
+          "id": "p185-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            584.0978,
+            513.2359,
+            617.8
+          ],
+          "parts": [
+            [
+              53.6929,
+              584.0978,
+              513.2359,
+              617.8
+            ]
+          ],
+          "kind": "content",
+          "headline": "Aşağıdaki metinden yararlanarak 7 ve 8. soruları cevaplayınız."
+        },
+        {
+          "id": "p185-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            56.693,
+            454.218,
+            510.236,
+            576.495
+          ],
+          "parts": [
+            [
+              56.693,
+              454.218,
+              510.236,
+              576.495
+            ]
+          ],
+          "kind": "content",
+          "headline": "Kalıp yargı, belirli bir sosyal gruba üye olan bireylerin tümünün aynı özelliklere sahip olduğu"
+        },
+        {
           "id": "p185-7",
           "label": "7",
           "column": 0,
@@ -9010,6 +15817,48 @@
             ]
           ],
           "headline": "Kalıp yargıların sınırlı bilgilere dayanması, gerçeği yorumlarken ne gibi sorunlara yol açabilir?"
+        },
+        {
+          "id": "p185-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            192.8852,
+            513.2359,
+            229.4
+          ],
+          "parts": [
+            [
+              53.6929,
+              192.8852,
+              513.2359,
+              229.4
+            ]
+          ],
+          "kind": "content",
+          "headline": "Aşağıdaki metinden yararlanarak 9-11. soruları cevaplayınız."
+        },
+        {
+          "id": "p185-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            56.693,
+            49.006,
+            510.236,
+            185.283
+          ],
+          "parts": [
+            [
+              56.693,
+              49.006,
+              510.236,
+              185.283
+            ]
+          ],
+          "kind": "content",
+          "headline": "Kişiler arası ilişkilerde rahatsızlık duyulan bir davranışı dile getirme biçimi sorunu çözmek"
         }
       ]
     },
@@ -9023,6 +15872,27 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p186-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            42.52,
+            628.016,
+            496.063,
+            724.081
+          ],
+          "parts": [
+            [
+              42.52,
+              628.016,
+              496.063,
+              724.081
+            ]
+          ],
+          "kind": "content",
+          "headline": "bu davranışın kendisi üzerindeki somut etkisini belirtir ve son olarak bu durum karşısında"
+        },
         {
           "id": "p186-9",
           "label": "9",
@@ -9082,6 +15952,48 @@
             ]
           ],
           "headline": "Günlük yaşamdan bir örnek düşünerek aynı durumu hem “sen dili” hem de “ben dili” kullanarak ifade ediniz ve aradaki farkı açıklayınız."
+        },
+        {
+          "id": "p186-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.5197,
+            199.8489,
+            499.063,
+            236.7
+          ],
+          "parts": [
+            [
+              39.5197,
+              199.8489,
+              499.063,
+              236.7
+            ]
+          ],
+          "kind": "content",
+          "headline": "Aşağıdaki metinden yararlanarak 12 ve 13. soruları cevaplayınız."
+        },
+        {
+          "id": "p186-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            42.52,
+            55.587,
+            496.063,
+            194.724
+          ],
+          "parts": [
+            [
+              42.52,
+              55.587,
+              496.063,
+              194.724
+            ]
+          ],
+          "kind": "content",
+          "headline": "Öz güven, bireyin belirli bir alanda başarılı olabileceğine ve hedeflerine ulaşabileceğine"
         }
       ]
     },
@@ -9185,6 +16097,323 @@
               721.4815
             ]
           ]
+        },
+        {
+          "id": "p188-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.5196,
+            286.1338,
+            499.063,
+            340.3219
+          ],
+          "parts": [
+            [
+              39.5196,
+              286.1338,
+              499.063,
+              340.3219
+            ]
+          ],
+          "kind": "content",
+          "headline": "Daha fazla soruya ulaşmak için karekodu kullanınız."
+        }
+      ]
+    },
+    "189": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          53.5275,
+          282.3592
+        ],
+        [
+          286.3592,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p189-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            409.6663,
+            515.587,
+            740.7163
+          ],
+          "parts": [
+            [
+              53.6929,
+              409.6663,
+              515.587,
+              740.7163
+            ]
+          ],
+          "kind": "content",
+          "headline": "SÖZLÜK"
+        },
+        {
+          "id": "p189-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.693,
+            56.1715,
+            282.7512,
+            409.6663
+          ],
+          "parts": [
+            [
+              53.693,
+              56.1715,
+              282.7512,
+              409.6663
+            ]
+          ],
+          "kind": "content",
+          "headline": "ve her koşulu kendi çıkarları doğrultusunda de­"
+        },
+        {
+          "id": "p189-c3",
+          "label": null,
+          "column": 1,
+          "rect": [
+            286.525,
+            56.2075,
+            515.5927,
+            405.968
+          ],
+          "parts": [
+            [
+              286.525,
+              56.2075,
+              515.5927,
+              405.968
+            ]
+          ],
+          "kind": "content",
+          "headline": "E-F"
+        }
+      ]
+    },
+    "190": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          39.3544,
+          268.126
+        ],
+        [
+          272.126,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p190-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            39.52,
+            528.583,
+            552.756,
+            739.8
+          ],
+          "parts": [
+            [
+              39.52,
+              528.583,
+              552.756,
+              739.8
+            ]
+          ],
+          "kind": "content",
+          "headline": "G-H"
+        },
+        {
+          "id": "p190-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.52,
+            381.2078,
+            268.6396,
+            526.572
+          ],
+          "parts": [
+            [
+              39.52,
+              381.2078,
+              268.6396,
+              526.572
+            ]
+          ],
+          "kind": "content",
+          "headline": "I-İ-J"
+        },
+        {
+          "id": "p190-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.52,
+            161.0876,
+            268.6408,
+            378.426
+          ],
+          "parts": [
+            [
+              39.52,
+              161.0876,
+              268.6408,
+              378.426
+            ]
+          ],
+          "kind": "content",
+          "headline": "K-L"
+        },
+        {
+          "id": "p190-c4",
+          "label": null,
+          "column": 1,
+          "rect": [
+            272.291,
+            310.8825,
+            501.4108,
+            528.361
+          ],
+          "parts": [
+            [
+              272.291,
+              310.8825,
+              501.4108,
+              528.361
+            ]
+          ],
+          "kind": "content",
+          "headline": "O-Ö"
+        },
+        {
+          "id": "p190-c5",
+          "label": null,
+          "column": 1,
+          "rect": [
+            272.291,
+            161.3346,
+            501.4092,
+            310.661
+          ],
+          "parts": [
+            [
+              272.291,
+              161.3346,
+              501.4092,
+              310.661
+            ]
+          ],
+          "kind": "content",
+          "headline": "P-R"
+        },
+        {
+          "id": "p190-c6",
+          "label": null,
+          "column": 1,
+          "rect": [
+            42.3544,
+            48.9,
+            552.756,
+            160.4225
+          ],
+          "parts": [
+            [
+              42.3544,
+              48.9,
+              552.756,
+              160.4225
+            ]
+          ],
+          "kind": "content",
+          "headline": "kişisel gelişim: Bireylerin bedensel, ruhsal, zihin­"
+        }
+      ]
+    },
+    "191": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          53.5275,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p191-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.693,
+            535.468,
+            282.8122,
+            716.622
+          ],
+          "parts": [
+            [
+              53.693,
+              535.468,
+              282.8122,
+              716.622
+            ]
+          ],
+          "kind": "content",
+          "headline": "S-Ş"
+        },
+        {
+          "id": "p191-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.693,
+            316.0523,
+            282.805,
+            534.8264
+          ],
+          "parts": [
+            [
+              53.693,
+              316.0523,
+              282.805,
+              534.8264
+            ]
+          ],
+          "kind": "content",
+          "headline": "sosyal sorumluluk: Birey, yönetici veya örgütün"
+        },
+        {
+          "id": "p191-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            48.9,
+            499.0628,
+            313.294
+          ],
+          "parts": [
+            [
+              0.0,
+              48.9,
+              499.0628,
+              313.294
+            ]
+          ],
+          "kind": "content",
+          "headline": "V-Y-Z"
         }
       ]
     }
@@ -9192,5 +16421,13 @@
   "engine": "vision",
   "checkpoint": "a9a76c4979dceebed2adb9cebfad673021ed4685e05a362dd3843b781b38fab7",
   "conf": 0.7,
-  "icons": "bind"
+  "icons": "bind",
+  "content": true,
+  "frontMatterEnd": 12,
+  "backMatterStart": 192,
+  "openers": [
+    45,
+    97,
+    139
+  ]
 }

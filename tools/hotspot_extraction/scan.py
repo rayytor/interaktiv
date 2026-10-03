@@ -214,6 +214,7 @@ def scan_single_book(task: Dict[str, Any]) -> Dict[str, Any]:
         # boxes were inferred at, so every box in the file stands.
         vision_conf = task.get("conf") if task.get("conf") is not None else float(pred.get("conf") or 0.0)
         icon_mode = task.get("icons", "bind")
+    want_content = engine == "vision" and bool(task.get("content", True))
 
     t0 = time.time()
     try:
@@ -250,7 +251,8 @@ def scan_single_book(task: Dict[str, Any]) -> Dict[str, Any]:
             same_engine = existing.get("engine", "rules") == engine and (
                 engine == "rules" or (existing.get("checkpoint") == pred.get("checkpoint")
                                       and existing.get("conf") == vision_conf
-                                      and existing.get("icons") == icon_mode))
+                                      and existing.get("icons") == icon_mode
+                                      and bool(existing.get("content")) == want_content))
             if existing.get("fingerprint") == fp and existing.get("profile") == want_profile_hash and same_engine:
                 return {
                     "status": "skipped",
@@ -290,6 +292,12 @@ def scan_single_book(task: Dict[str, Any]) -> Dict[str, Any]:
         anchors_by_page: Dict[int, List[str]] = {}
         sample_spans: List[Any] = []
         page_traces: List[Dict[str, Any]] = []
+        openers: List[int] = []
+        contents_pages: List[int] = []
+        listed_pages: List[int] = []
+        first_chapter_folio: Optional[int] = None
+        bibliography_pages: List[int] = []
+        plate_pages: List[int] = []
 
         total_regions = 0
         total_anchored = 0
@@ -315,7 +323,20 @@ def scan_single_book(task: Dict[str, Any]) -> Dict[str, Any]:
                     printed_page=printed_page,
                     page_oges=page_oges,
                     icon_mode=icon_mode,
+                    content=want_content,
                 )
+                if result.opener:
+                    openers.append(p)
+                if result.contents == "named":
+                    contents_pages.append(p)
+                    if first_chapter_folio is None:
+                        first_chapter_folio = result.first_chapter
+                elif result.contents:
+                    listed_pages.append(p)
+                if result.bibliography:
+                    bibliography_pages.append(p)
+                if result.plate:
+                    plate_pages.append(p)
             else:
                 result = detect_page(
                     prim,
@@ -343,7 +364,7 @@ def scan_single_book(task: Dict[str, Any]) -> Dict[str, Any]:
             if activities:
                 pages_activities[p] = activities
                 pages_geometry[p] = result.geometry
-                total_regions += len(activities)
+                total_regions += sum(1 for a in activities if a.kind == "activity")
                 total_anchored += sum(1 for a in activities if a.anchored)
                 total_questions += sum(len(a.items) for a in activities if a.items)
 
@@ -361,6 +382,41 @@ def scan_single_book(task: Dict[str, Any]) -> Dict[str, Any]:
             del prim, layout, markers, activities, result
             del trace
             _trim_memory()
+
+        # The front matter is furniture, not content: cover, imprint, contents, how to use the book.
+        # So is the back matter: the bibliography and the map plates after it. Where one ends and
+        # the other starts is only known once every sheet has been seen, so their content regions
+        # are taken back here. An activity found there stays.
+        total_content = 0
+        if want_content:
+            from tools.hotspot_extraction.scanner.content import back_matter_start, contents_run, front_matter_end
+            contents_pages = contents_run(contents_pages, listed_pages)
+            # The first sheet of a run of sheets with activities: one stray box is not the book starting.
+            with_acts = sorted(p for p, acts in pages_activities.items() if any(a.kind == "activity" for a in acts))
+            first_activity = next((p for i, p in enumerate(with_acts)
+                                   if i + 1 < len(with_acts) and with_acts[i + 1] - p <= 3), None)
+            back_start = back_matter_start(bibliography_pages, plate_pages, page_count)
+            # The contents page speaks in printed page numbers; the bake in sheets.
+            first_chapter = next(
+                (p for p in sorted(folio_map) if folio_map[p] == first_chapter_folio
+                 and p > max(contents_pages, default=0)), None,
+            ) if first_chapter_folio is not None else None
+            front_end = front_matter_end(openers, contents_pages, first_chapter, page_count, first_activity)
+            for p in list(pages_activities):
+                if p <= front_end or p >= back_start:
+                    pages_activities[p] = [a for a in pages_activities[p] if a.kind == "activity"]
+                    if not pages_activities[p]:
+                        del pages_activities[p]
+                        pages_geometry.pop(p, None)
+            # So is whatever stands in the same place on sheet after sheet: running heads, ornaments.
+            from tools.hotspot_extraction.scanner.content import furniture
+            for p, dropped in furniture(pages_activities, page_count).items():
+                gone = {id(a) for a in dropped}
+                pages_activities[p] = [a for a in pages_activities[p] if id(a) not in gone]
+                if not pages_activities[p]:
+                    del pages_activities[p]
+                    pages_geometry.pop(p, None)
+            total_content = sum(1 for acts in pages_activities.values() for a in acts if a.kind != "activity")
 
         # Calibration
         cal_info = detect_book_calibration(
@@ -391,6 +447,11 @@ def scan_single_book(task: Dict[str, Any]) -> Dict[str, Any]:
             regions_json_data["checkpoint"] = pred.get("checkpoint")
             regions_json_data["conf"] = vision_conf
             regions_json_data["icons"] = icon_mode
+            regions_json_data["content"] = want_content
+            if want_content:
+                regions_json_data["frontMatterEnd"] = front_end
+                regions_json_data["backMatterStart"] = back_start
+                regions_json_data["openers"] = openers
 
         diag_json_data = serialize_diagnostics(
             book_id=book_id,
@@ -439,6 +500,7 @@ def scan_single_book(task: Dict[str, Any]) -> Dict[str, Any]:
         "duration": round(duration, 3),
         "pages_per_sec": round(page_count / max(0.001, duration), 1),
         "total_regions": total_regions,
+        "total_content": total_content,
         "total_anchored": total_anchored,
         "total_questions": total_questions,
         "worker_rss_mb": round(worker_rss, 1),
@@ -598,6 +660,13 @@ def main() -> int:
              "grow: also, any icon still unanswered gets the rules engine's icon-grown region",
     )
     parser.add_argument(
+        "--content",
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help="With --engine vision: also cut what the activities leave of each page into content regions "
+             "(scanner/content.py), so the whole page can be opened. --no-content bakes activities only",
+    )
+    parser.add_argument(
         "--profile",
         type=str,
         default=DEFAULT_PROFILE_PATH,
@@ -712,6 +781,7 @@ def main() -> int:
             "pred_dir": os.path.abspath(args.pred),
             "conf": args.conf,
             "icons": args.icons,
+            "content": args.content,
         }
         for b in books
     ]
@@ -756,7 +826,7 @@ def main() -> int:
                 rss = res.get("worker_rss_mb", 0)
                 print(
                     f"  ✓ [{b_id}] {title} | {pages:3d} pgs in {dur:5.2f}s ({pps:5.1f} pg/s) | "
-                    f"{regs:3d} acts, {qns:3d} qns | {rss:4.1f} MB RSS"
+                    f"{regs:3d} acts, {res.get('total_content', 0):4d} content, {qns:3d} qns | {rss:4.1f} MB RSS"
                 )
             elif status == "skipped":
                 dur = res.get("duration", 0)

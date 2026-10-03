@@ -687,6 +687,9 @@ def score_baked(
                     "items": a.get("items") or [],
                 }
                 for a in (page["activities"] if page else [])
+                # Content regions (content.py) are not activities: they are cut from the page's
+                # own seams, never linked, and measured by vision/content_coverage.py instead.
+                if a.get("kind", "activity") == "activity"
             ],
         }
         # A sheet with no regions is baked as nothing at all, but it may still

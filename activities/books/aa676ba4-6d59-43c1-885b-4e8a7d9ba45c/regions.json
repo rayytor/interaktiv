@@ -3,7 +3,7 @@
   "bookId": "aa676ba4-6d59-43c1-885b-4e8a7d9ba45c",
   "fingerprint": "174259691-74a780efefe438c4c3fd53808b492155",
   "profile": "c7de24295a4b",
-  "builtAt": "2026-10-03T08:01:32.366Z",
+  "builtAt": "2026-10-03T11:45:45.012Z",
   "pageCount": 147,
   "calibration": {
     "enabled": true,
@@ -203,6 +203,27 @@
       ],
       "activities": [
         {
+          "id": "p17-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            41.6951,
+            737.4329,
+            229.466,
+            836.6592
+          ],
+          "parts": [
+            [
+              41.6951,
+              737.4329,
+              229.466,
+              836.6592
+            ]
+          ],
+          "kind": "content",
+          "headline": "Lead-in"
+        },
+        {
           "id": "p17-2",
           "label": "2",
           "column": 0,
@@ -221,6 +242,27 @@
             ]
           ],
           "headline": "to gain new experiences to get to know different people"
+        },
+        {
+          "id": "p17-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            46.4367,
+            612.283,
+            558.5905
+          ],
+          "parts": [
+            [
+              0.0,
+              46.4367,
+              612.283,
+              558.5905
+            ]
+          ],
+          "kind": "content",
+          "headline": "Listening"
         }
       ]
     },
@@ -234,6 +276,26 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p18-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            44.0,
+            19.0,
+            421.898
+          ],
+          "parts": [
+            [
+              0.0,
+              44.0,
+              19.0,
+              421.898
+            ]
+          ],
+          "kind": "content"
+        },
         {
           "id": "p18-c",
           "label": "c",
@@ -253,6 +315,27 @@
             ]
           ],
           "headline": " Pre-departure Site-specific"
+        },
+        {
+          "id": "p18-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            57.9449,
+            513.4745,
+            215.2929,
+            560.0078
+          ],
+          "parts": [
+            [
+              57.9449,
+              513.4745,
+              215.2929,
+              560.0078
+            ]
+          ],
+          "kind": "content",
+          "headline": "Speaking"
         },
         {
           "id": "p18-a",
@@ -311,6 +394,27 @@
       ],
       "activities": [
         {
+          "id": "p19-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            41.6951,
+            730.2172,
+            228.9936,
+            836.6592
+          ],
+          "parts": [
+            [
+              41.6951,
+              730.2172,
+              228.9936,
+              836.6592
+            ]
+          ],
+          "kind": "content",
+          "headline": "Reading"
+        },
+        {
           "id": "p19-q1",
           "label": null,
           "column": 0,
@@ -329,6 +433,69 @@
             ]
           ],
           "headline": "Discuss the following questions with your peer. a Do you think cultural exchange adds value to your education? Explain your ideas."
+        },
+        {
+          "id": "p19-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            76.369,
+            409.4879,
+            312.9176,
+            590.1055
+          ],
+          "parts": [
+            [
+              76.369,
+              409.4879,
+              312.9176,
+              590.1055
+            ]
+          ],
+          "kind": "content",
+          "headline": "Erasmus+"
+        },
+        {
+          "id": "p19-c3",
+          "label": null,
+          "column": 1,
+          "rect": [
+            316.2283,
+            409.4879,
+            560.3371,
+            548.3233
+          ],
+          "parts": [
+            [
+              316.2283,
+              409.4879,
+              560.3371,
+              548.3233
+            ]
+          ],
+          "kind": "content",
+          "headline": "individually and some others through an"
+        },
+        {
+          "id": "p19-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            44.0,
+            612.283,
+            406.898
+          ],
+          "parts": [
+            [
+              0.0,
+              44.0,
+              612.283,
+              406.898
+            ]
+          ],
+          "kind": "content",
+          "headline": "activities, supporting innovation and cooperation,"
         }
       ]
     },
@@ -346,6 +513,47 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p20-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            160.898,
+            18.0,
+            406.898
+          ],
+          "parts": [
+            [
+              0.0,
+              160.898,
+              18.0,
+              406.898
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p20-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            62.1968,
+            589.8502,
+            604.6774,
+            821.898
+          ],
+          "parts": [
+            [
+              62.1968,
+              589.8502,
+              604.6774,
+              821.898
+            ]
+          ],
+          "kind": "content",
+          "headline": "If you take part in a project of your school,"
+        },
         {
           "id": "p20-d",
           "label": "d",
@@ -525,6 +733,27 @@
       ],
       "activities": [
         {
+          "id": "p21-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            41.6951,
+            733.1596,
+            229.466,
+            836.6592
+          ],
+          "parts": [
+            [
+              41.6951,
+              733.1596,
+              229.466,
+              836.6592
+            ]
+          ],
+          "kind": "content",
+          "headline": "Writing"
+        },
+        {
           "id": "p21-a",
           "label": "a",
           "column": 0,
@@ -575,6 +804,69 @@
             ]
           ],
           "headline": "Write an application letter for university admission by using additional linkers as in the sample letter in ‘Exercise a’. Mind the outline below."
+        },
+        {
+          "id": "p22-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            62.1968,
+            335.5457,
+            435.8649,
+            393.0827
+          ],
+          "parts": [
+            [
+              62.1968,
+              335.5457,
+              435.8649,
+              393.0827
+            ]
+          ],
+          "kind": "content",
+          "headline": "c"
+        },
+        {
+          "id": "p22-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            25.7582,
+            262.8422,
+            308.8918
+          ],
+          "parts": [
+            [
+              0.0,
+              25.7582,
+              262.8422,
+              308.8918
+            ]
+          ],
+          "kind": "content",
+          "headline": "Quote of the day! Quote of the day!"
+        },
+        {
+          "id": "p22-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            291.6568,
+            46.048,
+            544.122,
+            334.5178
+          ],
+          "parts": [
+            [
+              291.6568,
+              46.048,
+              544.122,
+              334.5178
+            ]
+          ],
+          "kind": "content",
+          "headline": "Do you"
         }
       ]
     },
@@ -627,6 +919,68 @@
             ]
           ],
           "headline": "Read the text and match the headings to the paragraphs below."
+        },
+        {
+          "id": "p23-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            72.8268,
+            605.7999,
+            230.1748,
+            645.7559
+          ],
+          "parts": [
+            [
+              72.8268,
+              605.7999,
+              230.1748,
+              645.7559
+            ]
+          ],
+          "kind": "content",
+          "headline": "Reading"
+        },
+        {
+          "id": "p23-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            75.7608,
+            209.6257,
+            551.0331,
+            446.965
+          ],
+          "parts": [
+            [
+              75.7608,
+              209.6257,
+              551.0331,
+              446.965
+            ]
+          ],
+          "kind": "content",
+          "headline": "Studying abroad is one of the best"
+        },
+        {
+          "id": "p23-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            591.0,
+            304.898,
+            612.283,
+            840.898
+          ],
+          "parts": [
+            [
+              591.0,
+              304.898,
+              612.283,
+              840.898
+            ]
+          ],
+          "kind": "content"
         }
       ]
     },
@@ -644,6 +998,27 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p24-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            62.1923,
+            593.7617,
+            292.3253,
+            784.7536
+          ],
+          "parts": [
+            [
+              62.1923,
+              593.7617,
+              292.3253,
+              784.7536
+            ]
+          ],
+          "kind": "content",
+          "headline": "C"
+        },
         {
           "id": "p24-v1",
           "label": null,
@@ -750,6 +1125,68 @@
             ]
           ],
           "headline": "Discuss with your peer. Think of your future career, what kind of qualifications do you need to contribute to your career?"
+        },
+        {
+          "id": "p24-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            62.1923,
+            564.7608,
+            279.4628,
+            593.7617
+          ],
+          "parts": [
+            [
+              62.1923,
+              564.7608,
+              279.4628,
+              593.7617
+            ]
+          ],
+          "kind": "content",
+          "headline": "chance to experience the global marketplace"
+        },
+        {
+          "id": "p24-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            62.1923,
+            256.2527,
+            298.6918,
+            564.7608
+          ],
+          "parts": [
+            [
+              62.1923,
+              256.2527,
+              298.6918,
+              564.7608
+            ]
+          ],
+          "kind": "content",
+          "headline": "network by getting in touch with someone doing"
+        },
+        {
+          "id": "p24-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            24.296,
+            21.0,
+            523.6709
+          ],
+          "parts": [
+            [
+              0.0,
+              24.296,
+              21.0,
+              523.6709
+            ]
+          ],
+          "kind": "content"
         }
       ]
     },
@@ -763,6 +1200,27 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p25-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            41.6951,
+            685.05,
+            230.1748,
+            836.6592
+          ],
+          "parts": [
+            [
+              41.6951,
+              685.05,
+              230.1748,
+              836.6592
+            ]
+          ],
+          "kind": "content",
+          "headline": "Speaking"
+        },
         {
           "id": "p25-v1",
           "label": null,
@@ -781,6 +1239,69 @@
               555.0262
             ]
           ]
+        },
+        {
+          "id": "p25-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            12.881,
+            216.1532,
+            543.4119,
+            506.5177
+          ],
+          "parts": [
+            [
+              12.881,
+              216.1532,
+              543.4119,
+              506.5177
+            ]
+          ],
+          "kind": "content",
+          "headline": "The programme’s period ranges from 2 to 12 months in another country within or"
+        },
+        {
+          "id": "p25-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            62.3893,
+            46.4367,
+            308.3313,
+            215.6615
+          ],
+          "parts": [
+            [
+              62.3893,
+              46.4367,
+              308.3313,
+              215.6615
+            ]
+          ],
+          "kind": "content",
+          "headline": "I will have a chance to explore a new country"
+        },
+        {
+          "id": "p25-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            315.9301,
+            54.5118,
+            559.3011,
+            171.4868
+          ],
+          "parts": [
+            [
+              315.9301,
+              54.5118,
+              559.3011,
+              171.4868
+            ]
+          ],
+          "kind": "content",
+          "headline": "It will be a real-life experience for me to"
         }
       ]
     },
@@ -918,6 +1439,68 @@
               "text": "3"
             }
           ]
+        },
+        {
+          "id": "p26-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            305.0551,
+            43.3584,
+            578.3717,
+            266.9096
+          ],
+          "parts": [
+            [
+              305.0551,
+              43.3584,
+              578.3717,
+              266.9096
+            ]
+          ],
+          "kind": "content",
+          "headline": "c"
+        },
+        {
+          "id": "p26-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            58.6535,
+            579.5197,
+            216.0016,
+            626.053
+          ],
+          "parts": [
+            [
+              58.6535,
+              579.5197,
+              216.0016,
+              626.053
+            ]
+          ],
+          "kind": "content",
+          "headline": "Listening"
+        },
+        {
+          "id": "p26-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            54.898,
+            21.0,
+            748.898
+          ],
+          "parts": [
+            [
+              0.0,
+              54.898,
+              21.0,
+              748.898
+            ]
+          ],
+          "kind": "content"
         }
       ]
     },
@@ -1086,6 +1669,47 @@
             ]
           ],
           "headline": "word with different stress. Then,"
+        },
+        {
+          "id": "p27-c1",
+          "label": null,
+          "column": 2,
+          "rect": [
+            76.7008,
+            631.8866,
+            296.3103,
+            771.5426
+          ],
+          "parts": [
+            [
+              76.7008,
+              631.8866,
+              296.3103,
+              771.5426
+            ]
+          ],
+          "kind": "content",
+          "headline": "Pronunciation"
+        },
+        {
+          "id": "p27-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            594.0,
+            584.898,
+            612.283,
+            818.898
+          ],
+          "parts": [
+            [
+              594.0,
+              584.898,
+              612.283,
+              818.898
+            ]
+          ],
+          "kind": "content"
         }
       ]
     },
@@ -1099,6 +1723,48 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p28-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            488.126,
+            594.0,
+            821.898
+          ],
+          "parts": [
+            [
+              0.0,
+              488.126,
+              594.0,
+              821.898
+            ]
+          ],
+          "kind": "content",
+          "headline": "Writing"
+        },
+        {
+          "id": "p28-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            62.1968,
+            172.2044,
+            535.914,
+            487.559
+          ],
+          "parts": [
+            [
+              62.1968,
+              172.2044,
+              535.914,
+              487.559
+            ]
+          ],
+          "kind": "content",
+          "headline": "Upload your CV "
+        },
         {
           "id": "p28-v1",
           "label": null,
@@ -1134,6 +1800,27 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p31-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            41.6951,
+            736.1331,
+            475.7023,
+            836.6592
+          ],
+          "parts": [
+            [
+              41.6951,
+              736.1331,
+              475.7023,
+              836.6592
+            ]
+          ],
+          "kind": "content",
+          "headline": "Reading"
+        },
         {
           "id": "p31-1",
           "label": "1",
@@ -1213,6 +1900,111 @@
             ]
           ],
           "headline": "interviewing an actor/actress about an"
+        },
+        {
+          "id": "p31-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            321.8124,
+            582.6051,
+            567.4564,
+            713.4359
+          ],
+          "parts": [
+            [
+              321.8124,
+              582.6051,
+              567.4564,
+              713.4359
+            ]
+          ],
+          "kind": "content",
+          "headline": "Discuss the following questions with"
+        },
+        {
+          "id": "p31-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            72.1181,
+            578.6714,
+            229.466,
+            625.2047
+          ],
+          "parts": [
+            [
+              72.1181,
+              578.6714,
+              229.466,
+              625.2047
+            ]
+          ],
+          "kind": "content",
+          "headline": "Listening"
+        },
+        {
+          "id": "p31-c4",
+          "label": null,
+          "column": 1,
+          "rect": [
+            315.1768,
+            427.5343,
+            547.0048,
+            582.6051
+          ],
+          "parts": [
+            [
+              315.1768,
+              427.5343,
+              547.0048,
+              582.6051
+            ]
+          ],
+          "kind": "content",
+          "headline": "A NIGHT"
+        },
+        {
+          "id": "p31-c5",
+          "label": null,
+          "column": 1,
+          "rect": [
+            315.8383,
+            172.3311,
+            553.0063,
+            427.5343
+          ],
+          "parts": [
+            [
+              315.8383,
+              172.3311,
+              553.0063,
+              427.5343
+            ]
+          ],
+          "kind": "content",
+          "headline": "Weekend hikes have always helped Jack clear"
+        },
+        {
+          "id": "p31-c6",
+          "label": null,
+          "column": 1,
+          "rect": [
+            315.8383,
+            81.1626,
+            553.0053,
+            172.3311
+          ],
+          "parts": [
+            [
+              315.8383,
+              81.1626,
+              553.0053,
+              172.3311
+            ]
+          ],
+          "kind": "content",
+          "headline": "crawled to a shallow space under a large rock."
         }
       ]
     },
@@ -1230,6 +2022,68 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p32-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            543.1506,
+            295.002,
+            818.898
+          ],
+          "parts": [
+            [
+              0.0,
+              543.1506,
+              295.002,
+              818.898
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p32-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            62.1958,
+            261.0017,
+            298.9763,
+            530.1765
+          ],
+          "parts": [
+            [
+              62.1958,
+              261.0017,
+              298.9763,
+              530.1765
+            ]
+          ],
+          "kind": "content",
+          "headline": "The next challenge was finding clean water,"
+        },
+        {
+          "id": "p32-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            62.1958,
+            81.1606,
+            298.9838,
+            260.4977
+          ],
+          "parts": [
+            [
+              62.1958,
+              81.1606,
+              298.9838,
+              260.4977
+            ]
+          ],
+          "kind": "content",
+          "headline": "Near midday, Jack heard a helicopter in the"
+        },
         {
           "id": "p32-b",
           "label": "b",
@@ -1416,6 +2270,48 @@
               363.9408
             ]
           ]
+        },
+        {
+          "id": "p34-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            345.4864,
+            421.1952,
+            505.1574,
+            628.9822
+          ],
+          "parts": [
+            [
+              345.4864,
+              421.1952,
+              505.1574,
+              628.9822
+            ]
+          ],
+          "kind": "content",
+          "headline": "Quote of the day! Quote of the day!"
+        },
+        {
+          "id": "p34-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            316.242,
+            637.896,
+            556.122,
+            803.7103
+          ],
+          "parts": [
+            [
+              316.242,
+              637.896,
+              556.122,
+              803.7103
+            ]
+          ],
+          "kind": "content",
+          "headline": "Do you"
         }
       ]
     },
@@ -1455,6 +2351,48 @@
               385.5777
             ]
           ]
+        },
+        {
+          "id": "p35-c1",
+          "label": null,
+          "column": 2,
+          "rect": [
+            41.6951,
+            409.7617,
+            554.911,
+            836.6592
+          ],
+          "parts": [
+            [
+              41.6951,
+              409.7617,
+              554.911,
+              836.6592
+            ]
+          ],
+          "kind": "content",
+          "headline": "Lead-in"
+        },
+        {
+          "id": "p35-c2",
+          "label": null,
+          "column": 2,
+          "rect": [
+            312.538,
+            239.546,
+            564.8855,
+            409.7617
+          ],
+          "parts": [
+            [
+              312.538,
+              239.546,
+              564.8855,
+              409.7617
+            ]
+          ],
+          "kind": "content",
+          "headline": "D When I opened my eyes, I found"
         }
       ]
     },
@@ -1615,6 +2553,131 @@
             ]
           ],
           "headline": "each story considering the sequence of the"
+        },
+        {
+          "id": "p36-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            56.7275,
+            203.8663,
+            279.7365,
+            346.9994
+          ],
+          "parts": [
+            [
+              56.7275,
+              203.8663,
+              279.7365,
+              346.9994
+            ]
+          ],
+          "kind": "content",
+          "headline": "I I know you can’t believe what you"
+        },
+        {
+          "id": "p36-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            43.0237,
+            539.644,
+            300.293,
+            776.045
+          ],
+          "parts": [
+            [
+              43.0237,
+              539.644,
+              300.293,
+              776.045
+            ]
+          ],
+          "kind": "content",
+          "headline": "E"
+        },
+        {
+          "id": "p36-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            64.55,
+            428.864,
+            296.75,
+            537.944
+          ],
+          "parts": [
+            [
+              64.55,
+              428.864,
+              296.75,
+              537.944
+            ]
+          ],
+          "kind": "content",
+          "headline": "G It was one of the days when the"
+        },
+        {
+          "id": "p36-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            42.845,
+            119.1073,
+            299.75,
+            203.8663
+          ],
+          "parts": [
+            [
+              42.845,
+              119.1073,
+              299.75,
+              203.8663
+            ]
+          ],
+          "kind": "content",
+          "headline": "J Our ship was struggling to save"
+        },
+        {
+          "id": "p36-c5",
+          "label": null,
+          "column": 0,
+          "rect": [
+            67.887,
+            346.9994,
+            300.447,
+            421.643
+          ],
+          "parts": [
+            [
+              67.887,
+              346.9994,
+              300.447,
+              421.643
+            ]
+          ],
+          "kind": "content",
+          "headline": "H Dear mum, I’m really sorry that I"
+        },
+        {
+          "id": "p36-c6",
+          "label": null,
+          "column": 0,
+          "rect": [
+            44.5632,
+            99.4825,
+            273.0594,
+            119.1073
+          ],
+          "parts": [
+            [
+              44.5632,
+              99.4825,
+              273.0594,
+              119.1073
+            ]
+          ],
+          "kind": "content"
         }
       ]
     },
@@ -1651,6 +2714,47 @@
             ]
           ],
           "headline": "statement."
+        },
+        {
+          "id": "p37-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            41.6951,
+            727.7769,
+            230.1748,
+            836.6592
+          ],
+          "parts": [
+            [
+              41.6951,
+              727.7769,
+              230.1748,
+              836.6592
+            ]
+          ],
+          "kind": "content",
+          "headline": "Speaking"
+        },
+        {
+          "id": "p37-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            571.0,
+            643.898,
+            612.283,
+            828.898
+          ],
+          "parts": [
+            [
+              571.0,
+              643.898,
+              612.283,
+              828.898
+            ]
+          ],
+          "kind": "content"
         },
         {
           "id": "p37-b",
@@ -1707,6 +2811,27 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p38-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            58.6535,
+            573.8807,
+            540.1874,
+            791.4557
+          ],
+          "parts": [
+            [
+              58.6535,
+              573.8807,
+              540.1874,
+              791.4557
+            ]
+          ],
+          "kind": "content",
+          "headline": "Listening"
+        },
         {
           "id": "p38-c",
           "label": "c",
@@ -1833,6 +2958,27 @@
           "headline": "The intention of the speaker also places the stress. Listen and pay attention to the stress in each sentence."
         },
         {
+          "id": "p39-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            65.8186,
+            520.0396,
+            315.4283,
+            780.4016
+          ],
+          "parts": [
+            [
+              65.8186,
+              520.0396,
+              315.4283,
+              780.4016
+            ]
+          ],
+          "kind": "content",
+          "headline": "Pronunciation"
+        },
+        {
           "id": "p39-b",
           "label": "b",
           "column": 3,
@@ -1871,6 +3017,48 @@
             ]
           ],
           "headline": "Circle the place of the sentence stress according to the intention."
+        },
+        {
+          "id": "p39-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            80.2726,
+            88.9531,
+            307.0446,
+            358.2441
+          ],
+          "parts": [
+            [
+              80.2726,
+              88.9531,
+              307.0446,
+              358.2441
+            ]
+          ],
+          "kind": "content",
+          "headline": "Exceptions:"
+        },
+        {
+          "id": "p39-c3",
+          "label": null,
+          "column": 1,
+          "rect": [
+            65.8186,
+            364.5803,
+            316.0627,
+            519.2682
+          ],
+          "parts": [
+            [
+              65.8186,
+              364.5803,
+              316.0627,
+              519.2682
+            ]
+          ],
+          "kind": "content",
+          "headline": "•"
         }
       ]
     },
@@ -1889,23 +3077,25 @@
       ],
       "activities": [
         {
-          "id": "p40-v1",
+          "id": "p40-c1",
           "label": null,
-          "column": 1,
+          "column": 0,
           "rect": [
-            304.5869,
-            446.2444,
-            535.5085,
-            732.6633
+            58.6535,
+            733.8682,
+            455.1511,
+            780.4016
           ],
           "parts": [
             [
-              304.5869,
-              446.2444,
-              535.5085,
-              732.6633
+              58.6535,
+              733.8682,
+              455.1511,
+              780.4016
             ]
-          ]
+          ],
+          "kind": "content",
+          "headline": "Discussion time"
         },
         {
           "id": "p40-a",
@@ -1948,6 +3138,46 @@
           "headline": "Search the Net and write a summary of a survival story that you have found using the linking words you have underlined in"
         },
         {
+          "id": "p40-v1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            304.5869,
+            446.2444,
+            535.5085,
+            732.6633
+          ],
+          "parts": [
+            [
+              304.5869,
+              446.2444,
+              535.5085,
+              732.6633
+            ]
+          ]
+        },
+        {
+          "id": "p40-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            62.1969,
+            392.598,
+            215.2929,
+            426.779
+          ],
+          "parts": [
+            [
+              62.1969,
+              392.598,
+              215.2929,
+              426.779
+            ]
+          ],
+          "kind": "content",
+          "headline": "Project"
+        },
+        {
           "id": "p40-v4",
           "label": null,
           "column": 0,
@@ -1982,6 +3212,27 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p43-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            41.6951,
+            561.898,
+            612.283,
+            836.6592
+          ],
+          "parts": [
+            [
+              41.6951,
+              561.898,
+              612.283,
+              836.6592
+            ]
+          ],
+          "kind": "content",
+          "headline": "Lead-in"
+        },
         {
           "id": "p43-a",
           "label": "a",
@@ -2058,6 +3309,67 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p44-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            558.898,
+            21.0,
+            811.898
+          ],
+          "parts": [
+            [
+              0.0,
+              558.898,
+              21.0,
+              811.898
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p44-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            44.0,
+            18.0,
+            409.898
+          ],
+          "parts": [
+            [
+              0.0,
+              44.0,
+              18.0,
+              409.898
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p44-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            57.9449,
+            740.2462,
+            215.2929,
+            786.7795
+          ],
+          "parts": [
+            [
+              57.9449,
+              740.2462,
+              215.2929,
+              786.7795
+            ]
+          ],
+          "kind": "content",
+          "headline": "Speaking"
+        },
         {
           "id": "p44-a",
           "label": "a",
@@ -2191,6 +3503,90 @@
               818.898
             ]
           ]
+        },
+        {
+          "id": "p45-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            76.5108,
+            350.3417,
+            292.3617,
+            503.6776
+          ],
+          "parts": [
+            [
+              76.5108,
+              350.3417,
+              292.3617,
+              503.6776
+            ]
+          ],
+          "kind": "content",
+          "headline": "By definition, social media is a website"
+        },
+        {
+          "id": "p45-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            76.3661,
+            83.9182,
+            292.2328,
+            344.8456
+          ],
+          "parts": [
+            [
+              76.3661,
+              83.9182,
+              292.2328,
+              344.8456
+            ]
+          ],
+          "kind": "content",
+          "headline": "A"
+        },
+        {
+          "id": "p45-c3",
+          "label": null,
+          "column": 1,
+          "rect": [
+            304.2306,
+            326.6743,
+            559.7761,
+            557.6249
+          ],
+          "parts": [
+            [
+              304.2306,
+              326.6743,
+              559.7761,
+              557.6249
+            ]
+          ],
+          "kind": "content",
+          "headline": "B"
+        },
+        {
+          "id": "p45-c4",
+          "label": null,
+          "column": 1,
+          "rect": [
+            304.2244,
+            106.3182,
+            559.7824,
+            323.3022
+          ],
+          "parts": [
+            [
+              304.2244,
+              106.3182,
+              559.7824,
+              323.3022
+            ]
+          ],
+          "kind": "content",
+          "headline": "C"
         }
       ]
     },
@@ -2208,6 +3604,27 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p46-b",
+          "label": "b",
+          "column": 0,
+          "rect": [
+            60.6902,
+            67.2415,
+            297.4117,
+            782.2707
+          ],
+          "parts": [
+            [
+              60.6902,
+              67.2415,
+              297.4117,
+              782.2707
+            ]
+          ],
+          "headline": "Read the text. Use textual clues to help you determine and choose the meaning of the highlighted words.",
+          "ogeId": "60e47ca3-acb2-f111-b31a-005056a7d529"
+        },
         {
           "id": "p46-c",
           "label": "c",
@@ -2227,6 +3644,27 @@
             ]
           ],
           "headline": "which of the tips in the article can be"
+        },
+        {
+          "id": "p46-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            305.2677,
+            41.0,
+            559.9044,
+            470.4188
+          ],
+          "parts": [
+            [
+              305.2677,
+              41.0,
+              559.9044,
+              470.4188
+            ]
+          ],
+          "kind": "content",
+          "headline": "d"
         }
       ]
     },
@@ -2240,6 +3678,69 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p47-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            41.6951,
+            706.9089,
+            545.0999,
+            836.6592
+          ],
+          "parts": [
+            [
+              41.6951,
+              706.9089,
+              545.0999,
+              836.6592
+            ]
+          ],
+          "kind": "content",
+          "headline": "Writing"
+        },
+        {
+          "id": "p47-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            212.4331,
+            607.3419,
+            324.1388,
+            629.5299
+          ],
+          "parts": [
+            [
+              212.4331,
+              607.3419,
+              324.1388,
+              629.5299
+            ]
+          ],
+          "kind": "content",
+          "headline": "I use social media to... I use social media to..."
+        },
+        {
+          "id": "p47-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            253.2503,
+            404.8415,
+            410.9399,
+            593.7067
+          ],
+          "parts": [
+            [
+              253.2503,
+              404.8415,
+              410.9399,
+              593.7067
+            ]
+          ],
+          "kind": "content",
+          "headline": "be more sociable."
+        },
         {
           "id": "p47-b",
           "label": "b",
@@ -2310,6 +3811,48 @@
               492.0882
             ]
           ]
+        },
+        {
+          "id": "p48-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            338.3799,
+            492.0882,
+            529.8799,
+            782.2776
+          ],
+          "parts": [
+            [
+              338.3799,
+              492.0882,
+              529.8799,
+              782.2776
+            ]
+          ],
+          "kind": "content",
+          "headline": "© jeanbaptisteparis/Flickr"
+        },
+        {
+          "id": "p48-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            312.4646,
+            46.4367,
+            564.93,
+            277.2816
+          ],
+          "parts": [
+            [
+              312.4646,
+              46.4367,
+              564.93,
+              277.2816
+            ]
+          ],
+          "kind": "content",
+          "headline": "Do you"
         }
       ]
     },
@@ -2342,6 +3885,27 @@
             ]
           ],
           "headline": "Discuss the following questions with your peer. How do you usually feel after spending too much time on social media? 1"
+        },
+        {
+          "id": "p49-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            72.8268,
+            579.898,
+            589.4459,
+            663.5628
+          ],
+          "parts": [
+            [
+              72.8268,
+              579.898,
+              589.4459,
+              663.5628
+            ]
+          ],
+          "kind": "content",
+          "headline": "Reading"
         },
         {
           "id": "p49-q4",
@@ -2390,6 +3954,27 @@
               "text": "If you consider the advantages and disadvantages of social media, is it mostly beneficial 2 or harmful? Why?"
             }
           ]
+        },
+        {
+          "id": "p49-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            34.5587,
+            92.1157,
+            605.0,
+            503.898
+          ],
+          "parts": [
+            [
+              34.5587,
+              92.1157,
+              605.0,
+              503.898
+            ]
+          ],
+          "kind": "content",
+          "headline": "SOCIAL MEDIA RESEARCH AND KEY DISCOVERIES"
         }
       ]
     },
@@ -2532,6 +4117,47 @@
               "text": "Social media is found out to be the 6 reason for narcissistic behaviours and self-centred attitudes. d Discuss with your peer. What is the place of social media in your daily life? What would you do a"
             }
           ]
+        },
+        {
+          "id": "p50-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            62.1968,
+            532.898,
+            591.0,
+            836.898
+          ],
+          "parts": [
+            [
+              62.1968,
+              532.898,
+              591.0,
+              836.898
+            ]
+          ],
+          "kind": "content",
+          "headline": "On the other hand, social media is reported to be the reason for many security issues and crimes"
+        },
+        {
+          "id": "p50-c2",
+          "label": null,
+          "column": 2,
+          "rect": [
+            536.6584,
+            448.6774,
+            591.0,
+            531.898
+          ],
+          "parts": [
+            [
+              536.6584,
+              448.6774,
+              591.0,
+              531.898
+            ]
+          ],
+          "kind": "content"
         }
       ]
     },
@@ -2588,6 +4214,68 @@
             ]
           ],
           "headline": "Listen to the audio to complete the sentences below."
+        },
+        {
+          "id": "p51-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            35.6968,
+            463.1015,
+            604.4882,
+            818.898
+          ],
+          "parts": [
+            [
+              35.6968,
+              463.1015,
+              604.4882,
+              818.898
+            ]
+          ],
+          "kind": "content",
+          "headline": "Listening"
+        },
+        {
+          "id": "p51-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            76.37,
+            373.4317,
+            307.6895,
+            444.5107
+          ],
+          "parts": [
+            [
+              76.37,
+              373.4317,
+              307.6895,
+              444.5107
+            ]
+          ],
+          "kind": "content",
+          "headline": "a"
+        },
+        {
+          "id": "p51-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            36.7832,
+            61.4878,
+            66.1692,
+            463.1015
+          ],
+          "parts": [
+            [
+              36.7832,
+              61.4878,
+              66.1692,
+              463.1015
+            ]
+          ],
+          "kind": "content"
         }
       ]
     },
@@ -2601,6 +4289,47 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p52-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            455.2722,
+            9.2126,
+            813.5529
+          ],
+          "parts": [
+            [
+              0.0,
+              455.2722,
+              9.2126,
+              813.5529
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p52-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            57.9449,
+            731.0335,
+            215.2929,
+            777.5668
+          ],
+          "parts": [
+            [
+              57.9449,
+              731.0335,
+              215.2929,
+              777.5668
+            ]
+          ],
+          "kind": "content",
+          "headline": "Speaking"
+        },
         {
           "id": "p52-a",
           "label": "a",
@@ -2685,6 +4414,27 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p53-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            41.6951,
+            731.7422,
+            470.0802,
+            836.6592
+          ],
+          "parts": [
+            [
+              41.6951,
+              731.7422,
+              470.0802,
+              836.6592
+            ]
+          ],
+          "kind": "content",
+          "headline": "Writing"
+        },
         {
           "id": "p53-a",
           "label": "a",
@@ -2798,6 +4548,26 @@
             ]
           ],
           "headline": "Read out the URLs and e-mail addresses below. Then, listen to check your pronunciation."
+        },
+        {
+          "id": "p53-a",
+          "label": "a",
+          "column": 2,
+          "rect": [
+            317.9208,
+            80.5703,
+            554.7021,
+            724.5346
+          ],
+          "parts": [
+            [
+              317.9208,
+              80.5703,
+              554.7021,
+              724.5346
+            ]
+          ],
+          "headline": "life, learning environment and academic"
         }
       ]
     },
@@ -2850,6 +4620,27 @@
             ]
           ],
           "headline": "structure of the essay."
+        },
+        {
+          "id": "p54-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            59.1263,
+            52.6205,
+            581.2678,
+            597.5661
+          ],
+          "parts": [
+            [
+              59.1263,
+              52.6205,
+              581.2678,
+              597.5661
+            ]
+          ],
+          "kind": "content",
+          "headline": "Discussion time"
         }
       ]
     },
@@ -3014,6 +4805,48 @@
           ],
           "headline": "and circle the answer that best completes",
           "ogeId": "6709d210-6db2-f111-b31a-005056a7d529"
+        },
+        {
+          "id": "p57-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            76.37,
+            739.6771,
+            229.466,
+            776.8581
+          ],
+          "parts": [
+            [
+              76.37,
+              739.6771,
+              229.466,
+              776.8581
+            ]
+          ],
+          "kind": "content",
+          "headline": "Lead-in"
+        },
+        {
+          "id": "p57-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            72.8268,
+            552.5905,
+            230.1748,
+            599.1238
+          ],
+          "parts": [
+            [
+              72.8268,
+              552.5905,
+              230.1748,
+              599.1238
+            ]
+          ],
+          "kind": "content",
+          "headline": "Listening"
         }
       ]
     },
@@ -3027,6 +4860,27 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p58-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            61.4882,
+            754.9134,
+            214.5842,
+            792.0944
+          ],
+          "parts": [
+            [
+              61.4882,
+              754.9134,
+              214.5842,
+              792.0944
+            ]
+          ],
+          "kind": "content",
+          "headline": "Speaking"
+        },
         {
           "id": "p58-a",
           "label": "a",
@@ -3087,6 +4941,85 @@
               "text": "3"
             }
           ]
+        },
+        {
+          "id": "p58-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            62.1969,
+            630.7233,
+            518.0065,
+            668.7588
+          ],
+          "parts": [
+            [
+              62.1969,
+              630.7233,
+              518.0065,
+              668.7588
+            ]
+          ],
+          "kind": "content",
+          "headline": "b"
+        },
+        {
+          "id": "p58-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            61.391,
+            46.4367,
+            555.954,
+            628.7873
+          ],
+          "parts": [
+            [
+              61.391,
+              46.4367,
+              555.954,
+              628.7873
+            ]
+          ],
+          "kind": "content",
+          "headline": "2"
+        }
+      ]
+    },
+    "59": {
+      "pageWidth": 612.283,
+      "pageHeight": 858.898,
+      "columns": [
+        [
+          57.4477,
+          309.2277
+        ],
+        [
+          313.2277,
+          588.283
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p59-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            41.0,
+            577.0,
+            836.6592
+          ],
+          "parts": [
+            [
+              0.0,
+              41.0,
+              577.0,
+              836.6592
+            ]
+          ],
+          "kind": "content",
+          "headline": "Reading"
         }
       ]
     },
@@ -3189,24 +5122,25 @@
           "headline": "appropriate phrases from the text for each."
         },
         {
-          "id": "p60-b",
-          "label": "b",
+          "id": "p60-c1",
+          "label": null,
           "column": 2,
           "rect": [
-            304.0487,
-            58.836,
-            553.122,
-            290.0051
+            298.5118,
+            536.9535,
+            455.8598,
+            583.4868
           ],
           "parts": [
             [
-              304.0487,
-              58.836,
-              553.122,
-              290.0051
+              298.5118,
+              536.9535,
+              455.8598,
+              583.4868
             ]
           ],
-          "headline": "current problems in your city. Explain it"
+          "kind": "content",
+          "headline": "Writing"
         },
         {
           "id": "p60-d",
@@ -3227,6 +5161,26 @@
             ]
           ],
           "headline": "Complete the following sentences with the correct form of the words in the box."
+        },
+        {
+          "id": "p60-b",
+          "label": "b",
+          "column": 2,
+          "rect": [
+            304.0487,
+            58.836,
+            553.122,
+            290.0051
+          ],
+          "parts": [
+            [
+              304.0487,
+              58.836,
+              553.122,
+              290.0051
+            ]
+          ],
+          "headline": "current problems in your city. Explain it"
         }
       ]
     },
@@ -3268,6 +5222,69 @@
           ]
         },
         {
+          "id": "p61-c2",
+          "label": null,
+          "column": 2,
+          "rect": [
+            316.2283,
+            624.4761,
+            602.4283,
+            812.898
+          ],
+          "parts": [
+            [
+              316.2283,
+              624.4761,
+              602.4283,
+              812.898
+            ]
+          ],
+          "kind": "content",
+          "headline": "excessive rainfalls, almost"
+        },
+        {
+          "id": "p61-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            72.1181,
+            583.9968,
+            229.466,
+            620.9527
+          ],
+          "parts": [
+            [
+              72.1181,
+              583.9968,
+              229.466,
+              620.9527
+            ]
+          ],
+          "kind": "content",
+          "headline": "Reading"
+        },
+        {
+          "id": "p61-c4",
+          "label": null,
+          "column": 2,
+          "rect": [
+            316.2283,
+            581.3873,
+            547.5688,
+            624.4761
+          ],
+          "parts": [
+            [
+              316.2283,
+              581.3873,
+              547.5688,
+              624.4761
+            ]
+          ],
+          "kind": "content",
+          "headline": "have enough land to be engaged in agriculture;"
+        },
+        {
           "id": "p61-v2",
           "label": null,
           "column": 0,
@@ -3285,6 +5302,48 @@
               581.3849
             ]
           ]
+        },
+        {
+          "id": "p61-c5",
+          "label": null,
+          "column": 2,
+          "rect": [
+            316.2283,
+            465.3834,
+            555.6541,
+            581.3873
+          ],
+          "parts": [
+            [
+              316.2283,
+              465.3834,
+              555.6541,
+              581.3873
+            ]
+          ],
+          "kind": "content",
+          "headline": "infections, and cholera epidemic will be becoming"
+        },
+        {
+          "id": "p61-c6",
+          "label": null,
+          "column": 1,
+          "rect": [
+            0.0,
+            41.0,
+            593.7051,
+            465.3834
+          ],
+          "parts": [
+            [
+              0.0,
+              41.0,
+              593.7051,
+              465.3834
+            ]
+          ],
+          "kind": "content",
+          "headline": "everlasting need for shelter, food, and clean water"
         }
       ]
     },
@@ -3456,6 +5515,47 @@
           "headline": "Discuss the following question with the class."
         },
         {
+          "id": "p63-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            332.0087,
+            668.7583,
+            549.4525,
+            800.5071
+          ],
+          "parts": [
+            [
+              332.0087,
+              668.7583,
+              549.4525,
+              800.5071
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p63-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            41.6951,
+            731.7422,
+            229.466,
+            836.6592
+          ],
+          "parts": [
+            [
+              41.6951,
+              731.7422,
+              229.466,
+              836.6592
+            ]
+          ],
+          "kind": "content",
+          "headline": "Speaking"
+        },
+        {
           "id": "p63-b",
           "label": "b",
           "column": 0,
@@ -3531,6 +5631,27 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p64-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            40.7244,
+            724.8769,
+            238.2444,
+            792.7969
+          ],
+          "parts": [
+            [
+              40.7244,
+              724.8769,
+              238.2444,
+              792.7969
+            ]
+          ],
+          "kind": "content",
+          "headline": "Listening"
+        },
         {
           "id": "p64-a",
           "label": "a",
@@ -3650,6 +5771,132 @@
             ]
           ],
           "headline": "written about air pollution in Germany."
+        },
+        {
+          "id": "p65-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            72.1181,
+            734.0079,
+            229.466,
+            780.5412
+          ],
+          "parts": [
+            [
+              72.1181,
+              734.0079,
+              229.466,
+              780.5412
+            ]
+          ],
+          "kind": "content",
+          "headline": "Writing"
+        },
+        {
+          "id": "p65-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            76.3701,
+            398.6412,
+            298.8066,
+            421.6722
+          ],
+          "parts": [
+            [
+              76.3701,
+              398.6412,
+              298.8066,
+              421.6722
+            ]
+          ],
+          "kind": "content",
+          "headline": "c"
+        },
+        {
+          "id": "p65-c3",
+          "label": null,
+          "column": 1,
+          "rect": [
+            29.1919,
+            328.6308,
+            575.8062,
+            394.1348
+          ],
+          "parts": [
+            [
+              29.1919,
+              328.6308,
+              575.8062,
+              394.1348
+            ]
+          ],
+          "kind": "content",
+          "headline": "state the purpose"
+        },
+        {
+          "id": "p65-c4",
+          "label": null,
+          "column": 1,
+          "rect": [
+            29.1919,
+            257.0561,
+            575.8062,
+            322.5601
+          ],
+          "parts": [
+            [
+              29.1919,
+              257.0561,
+              575.8062,
+              322.5601
+            ]
+          ],
+          "kind": "content",
+          "headline": "present all your"
+        },
+        {
+          "id": "p65-c5",
+          "label": null,
+          "column": 1,
+          "rect": [
+            29.1919,
+            184.0873,
+            575.8062,
+            249.5912
+          ],
+          "parts": [
+            [
+              29.1919,
+              184.0873,
+              575.8062,
+              249.5912
+            ]
+          ],
+          "kind": "content",
+          "headline": "In the"
+        },
+        {
+          "id": "p65-c6",
+          "label": null,
+          "column": 2,
+          "rect": [
+            76.3701,
+            85.7307,
+            553.2006,
+            174.4392
+          ],
+          "parts": [
+            [
+              76.3701,
+              85.7307,
+              553.2006,
+              174.4392
+            ]
+          ],
+          "kind": "content",
+          "headline": "d"
         }
       ]
     },
@@ -3683,6 +5930,67 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p66-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            57.9457,
+            667.8904,
+            296.2602,
+            787.4882
+          ],
+          "parts": [
+            [
+              57.9457,
+              667.8904,
+              296.2602,
+              787.4882
+            ]
+          ],
+          "kind": "content",
+          "headline": "Pronunciation"
+        },
+        {
+          "id": "p66-a",
+          "label": "a",
+          "column": 0,
+          "rect": [
+            63.5602,
+            474.7548,
+            294.721,
+            662.0149
+          ],
+          "parts": [
+            [
+              63.5602,
+              474.7548,
+              294.721,
+              662.0149
+            ]
+          ],
+          "headline": "Listen and repeat the words below."
+        },
+        {
+          "id": "p66-b",
+          "label": "b",
+          "column": 0,
+          "rect": [
+            63.5004,
+            245.7154,
+            295.3189,
+            467.5824
+          ],
+          "parts": [
+            [
+              63.5004,
+              245.7154,
+              295.3189,
+              467.5824
+            ]
+          ],
+          "headline": "Listen and say the sentences below."
+        },
         {
           "id": "p66-1",
           "label": "1",
@@ -3724,26 +6032,6 @@
           "headline": "heal 10 truck"
         },
         {
-          "id": "p66-a",
-          "label": "a",
-          "column": 0,
-          "rect": [
-            63.5602,
-            474.7548,
-            294.721,
-            662.0149
-          ],
-          "parts": [
-            [
-              63.5602,
-              474.7548,
-              294.721,
-              662.0149
-            ]
-          ],
-          "headline": "Listen and repeat the words below."
-        },
-        {
           "id": "p66-1",
           "label": "1",
           "column": 3,
@@ -3762,26 +6050,6 @@
             ]
           ],
           "headline": "Which one is easier in the long term: to protect the environment or to create a world in which the environment does not need protection? Why?"
-        },
-        {
-          "id": "p66-b",
-          "label": "b",
-          "column": 0,
-          "rect": [
-            63.5004,
-            245.7154,
-            295.3189,
-            467.5824
-          ],
-          "parts": [
-            [
-              63.5004,
-              245.7154,
-              295.3189,
-              467.5824
-            ]
-          ],
-          "headline": "Listen and say the sentences below."
         },
         {
           "id": "p66-c",
@@ -3821,6 +6089,27 @@
               202.8003
             ]
           ]
+        },
+        {
+          "id": "p66-c2",
+          "label": null,
+          "column": 3,
+          "rect": [
+            302.0551,
+            204.803,
+            455.1511,
+            238.984
+          ],
+          "parts": [
+            [
+              302.0551,
+              204.803,
+              455.1511,
+              238.984
+            ]
+          ],
+          "kind": "content",
+          "headline": "Project"
         }
       ]
     },
@@ -3863,6 +6152,27 @@
           "headline": "Discuss the following questions with your peer. What do you usually do to chill out and have fun? 1"
         },
         {
+          "id": "p69-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            72.3543,
+            608.6714,
+            229.7024,
+            655.2047
+          ],
+          "parts": [
+            [
+              72.3543,
+              608.6714,
+              229.7024,
+              655.2047
+            ]
+          ],
+          "kind": "content",
+          "headline": "Listening"
+        },
+        {
           "id": "p69-b",
           "label": "b",
           "column": 1,
@@ -3901,6 +6211,89 @@
             ]
           ],
           "headline": "Listen to the audio again and tick (  ) the sentences which are correct."
+        },
+        {
+          "id": "p69-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            76.37,
+            427.9196,
+            307.6476,
+            602.2902
+          ],
+          "parts": [
+            [
+              76.37,
+              427.9196,
+              307.6476,
+              602.2902
+            ]
+          ],
+          "kind": "content",
+          "headline": "a"
+        },
+        {
+          "id": "p69-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            30.3855,
+            105.0323,
+            311.949,
+            363.073
+          ],
+          "parts": [
+            [
+              30.3855,
+              105.0323,
+              311.949,
+              363.073
+            ]
+          ],
+          "kind": "content",
+          "headline": "1"
+        },
+        {
+          "id": "p69-c5",
+          "label": null,
+          "column": 0,
+          "rect": [
+            76.3701,
+            46.4367,
+            548.7907,
+            105.0323
+          ],
+          "parts": [
+            [
+              76.3701,
+              46.4367,
+              548.7907,
+              105.0323
+            ]
+          ],
+          "kind": "content",
+          "headline": "d"
+        },
+        {
+          "id": "p69-c6",
+          "label": null,
+          "column": 0,
+          "rect": [
+            27.5509,
+            363.073,
+            189.0709,
+            425.3529
+          ],
+          "parts": [
+            [
+              27.5509,
+              363.073,
+              189.0709,
+              425.3529
+            ]
+          ],
+          "kind": "content"
         }
       ]
     },
@@ -3914,6 +6307,27 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p70-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            64.3229,
+            737.4116,
+            221.6709,
+            783.9449
+          ],
+          "parts": [
+            [
+              64.3229,
+              737.4116,
+              221.6709,
+              783.9449
+            ]
+          ],
+          "kind": "content",
+          "headline": "Speaking"
+        },
         {
           "id": "p70-a",
           "label": "a",
@@ -3973,6 +6387,27 @@
             ]
           ],
           "headline": "your peer."
+        },
+        {
+          "id": "p70-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            296.6506,
+            80.276,
+            549.115,
+            287.7461
+          ],
+          "parts": [
+            [
+              296.6506,
+              80.276,
+              549.115,
+              287.7461
+            ]
+          ],
+          "kind": "content",
+          "headline": "Do you"
         }
       ]
     },
@@ -3986,6 +6421,27 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p71-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            41.6951,
+            741.3196,
+            231.0647,
+            836.6592
+          ],
+          "parts": [
+            [
+              41.6951,
+              741.3196,
+              231.0647,
+              836.6592
+            ]
+          ],
+          "kind": "content",
+          "headline": "Reading"
+        },
         {
           "id": "p71-q1",
           "label": null,
@@ -4005,6 +6461,69 @@
             ]
           ],
           "headline": "Discuss the following questions with your peer. a Do you think entertainment is a need? Why/Why not?"
+        },
+        {
+          "id": "p71-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            76.37,
+            624.9892,
+            532.0621,
+            660.2549
+          ],
+          "parts": [
+            [
+              76.37,
+              624.9892,
+              532.0621,
+              660.2549
+            ]
+          ],
+          "kind": "content",
+          "headline": "b"
+        },
+        {
+          "id": "p71-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            76.37,
+            436.4717,
+            552.2108,
+            624.9892
+          ],
+          "parts": [
+            [
+              76.37,
+              436.4717,
+              552.2108,
+              624.9892
+            ]
+          ],
+          "kind": "content",
+          "headline": "IN TÜRKİYE IN TÜRKİYE"
+        },
+        {
+          "id": "p71-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            46.1339,
+            22.2432,
+            572.0566,
+            434.1173
+          ],
+          "parts": [
+            [
+              46.1339,
+              22.2432,
+              572.0566,
+              434.1173
+            ]
+          ],
+          "kind": "content",
+          "headline": "Sports programmes"
         }
       ]
     },
@@ -4026,6 +6545,111 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p72-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            62.1924,
+            720.1006,
+            297.3676,
+            771.9331
+          ],
+          "parts": [
+            [
+              62.1924,
+              720.1006,
+              297.3676,
+              771.9331
+            ]
+          ],
+          "kind": "content",
+          "headline": "We sent the survey to 100 people who were"
+        },
+        {
+          "id": "p72-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            62.201,
+            370.2564,
+            285.8975,
+            707.9331
+          ],
+          "parts": [
+            [
+              62.201,
+              370.2564,
+              285.8975,
+              707.9331
+            ]
+          ],
+          "kind": "content",
+          "headline": "The answers to the questions about"
+        },
+        {
+          "id": "p72-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            29.0,
+            41.0,
+            294.0666,
+            370.2564
+          ],
+          "parts": [
+            [
+              29.0,
+              41.0,
+              294.0666,
+              370.2564
+            ]
+          ],
+          "kind": "content",
+          "headline": "games, shopping, travelling, arts, and theatre."
+        },
+        {
+          "id": "p72-c4",
+          "label": null,
+          "column": 2,
+          "rect": [
+            302.0557,
+            571.1,
+            541.3324,
+            771.8551
+          ],
+          "parts": [
+            [
+              302.0557,
+              571.1,
+              541.3324,
+              771.8551
+            ]
+          ],
+          "kind": "content",
+          "headline": "Based on the overall survey results as, we can"
+        },
+        {
+          "id": "p72-c5",
+          "label": null,
+          "column": 2,
+          "rect": [
+            321.8976,
+            313.3,
+            542.6754,
+            568.6369
+          ],
+          "parts": [
+            [
+              321.8976,
+              313.3,
+              542.6754,
+              568.6369
+            ]
+          ],
+          "kind": "content",
+          "headline": "2"
+        },
         {
           "id": "p72-d",
           "label": "d",
@@ -4228,6 +6852,27 @@
           "headline": "Discuss with your peer. Which facts and generalisations can be inferred from the charts?"
         },
         {
+          "id": "p73-c1",
+          "label": null,
+          "column": 2,
+          "rect": [
+            311.9764,
+            546.0729,
+            469.3244,
+            592.6063
+          ],
+          "parts": [
+            [
+              311.9764,
+              546.0729,
+              469.3244,
+              592.6063
+            ]
+          ],
+          "kind": "content",
+          "headline": "Writing"
+        },
+        {
           "id": "p73-a",
           "label": "a",
           "column": 2,
@@ -4368,6 +7013,27 @@
           "headline": "attention to the second"
         },
         {
+          "id": "p74-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            56.5276,
+            744.3741,
+            209.6236,
+            782.2995
+          ],
+          "parts": [
+            [
+              56.5276,
+              744.3741,
+              209.6236,
+              782.2995
+            ]
+          ],
+          "kind": "content",
+          "headline": "Pronunciation"
+        },
+        {
           "id": "p74-d",
           "label": "d",
           "column": 2,
@@ -4439,6 +7105,27 @@
           "headline": "Discuss the following questions with your classmates. What kind of things make you laugh? 1"
         },
         {
+          "id": "p75-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            72.8268,
+            617.8472,
+            230.1748,
+            657.8031
+          ],
+          "parts": [
+            [
+              72.8268,
+              617.8472,
+              230.1748,
+              657.8031
+            ]
+          ],
+          "kind": "content",
+          "headline": "Reading"
+        },
+        {
           "id": "p75-v2",
           "label": null,
           "column": 0,
@@ -4456,6 +7143,27 @@
               603.8585
             ]
           ]
+        },
+        {
+          "id": "p75-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            21.0,
+            34.8818,
+            552.2916,
+            517.8124
+          ],
+          "parts": [
+            [
+              21.0,
+              34.8818,
+              552.2916,
+              517.8124
+            ]
+          ],
+          "kind": "content",
+          "headline": "CULTURAL SENSE OF HUMOUR CULTURAL SENSE OF HUMOUR"
         }
       ]
     },
@@ -4473,6 +7181,27 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p76-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            62.1958,
+            720.1006,
+            533.199,
+            786.4336
+          ],
+          "parts": [
+            [
+              62.1958,
+              720.1006,
+              533.199,
+              786.4336
+            ]
+          ],
+          "kind": "content",
+          "headline": "What somebody finds a certain incident funny depends on several elements, including age,"
+        },
         {
           "id": "p76-b",
           "label": "b",
@@ -4550,6 +7279,27 @@
       ],
       "activities": [
         {
+          "id": "p77-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            0.0,
+            235.6793,
+            606.7799,
+            858.898
+          ],
+          "parts": [
+            [
+              0.0,
+              235.6793,
+              606.7799,
+              858.898
+            ]
+          ],
+          "kind": "content",
+          "headline": "Listening"
+        },
+        {
           "id": "p77-a",
           "label": "a",
           "column": 0,
@@ -4589,6 +7339,26 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p78-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            258.898,
+            18.0,
+            818.898
+          ],
+          "parts": [
+            [
+              0.0,
+              258.898,
+              18.0,
+              818.898
+            ]
+          ],
+          "kind": "content"
+        },
         {
           "id": "p78-b",
           "label": "b",
@@ -4689,23 +7459,46 @@
           "headline": "Turkish sense of humour below and tick"
         },
         {
-          "id": "p78-v6",
+          "id": "p78-c2",
           "label": null,
-          "column": 2,
+          "column": 0,
           "rect": [
-            307.158,
-            106.2117,
-            570.2484,
-            256.4142
+            58.6535,
+            516.3091,
+            216.0016,
+            562.8425
           ],
           "parts": [
             [
-              307.158,
-              106.2117,
-              570.2484,
-              256.4142
+              58.6535,
+              516.3091,
+              216.0016,
+              562.8425
             ]
-          ]
+          ],
+          "kind": "content",
+          "headline": "Writing"
+        },
+        {
+          "id": "p78-c3",
+          "label": null,
+          "column": 2,
+          "rect": [
+            302.0551,
+            267.7054,
+            455.1511,
+            304.8864
+          ],
+          "parts": [
+            [
+              302.0551,
+              267.7054,
+              455.1511,
+              304.8864
+            ]
+          ],
+          "kind": "content",
+          "headline": "Project"
         },
         {
           "id": "p78-b",
@@ -4726,6 +7519,25 @@
             ]
           ],
           "headline": "Write an essay of 250-300 words about the Turkish sense of humour. You should..."
+        },
+        {
+          "id": "p78-v6",
+          "label": null,
+          "column": 2,
+          "rect": [
+            307.158,
+            106.2117,
+            570.2484,
+            256.4142
+          ],
+          "parts": [
+            [
+              307.158,
+              106.2117,
+              570.2484,
+              256.4142
+            ]
+          ]
         }
       ]
     },
@@ -4743,6 +7555,48 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p81-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            41.6951,
+            396.7146,
+            550.5095,
+            836.6592
+          ],
+          "parts": [
+            [
+              41.6951,
+              396.7146,
+              550.5095,
+              836.6592
+            ]
+          ],
+          "kind": "content",
+          "headline": "Lead-in"
+        },
+        {
+          "id": "p81-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            72.8268,
+            353.2845,
+            230.1748,
+            393.8178
+          ],
+          "parts": [
+            [
+              72.8268,
+              353.2845,
+              230.1748,
+              393.8178
+            ]
+          ],
+          "kind": "content",
+          "headline": "Listening"
+        },
         {
           "id": "p81-a",
           "label": "a",
@@ -4815,6 +7669,27 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p82-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            57.9449,
+            754.7244,
+            215.2929,
+            798.2578
+          ],
+          "parts": [
+            [
+              57.9449,
+              754.7244,
+              215.2929,
+              798.2578
+            ]
+          ],
+          "kind": "content",
+          "headline": "Speaking"
+        },
         {
           "id": "p82-a",
           "label": "a",
@@ -4936,6 +7811,27 @@
           "headline": "Discuss the following questions with your peer. a Do you think beauty is a culture-specific or a universally-defined concept? Why?"
         },
         {
+          "id": "p83-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            41.6951,
+            745.3773,
+            229.3244,
+            836.6592
+          ],
+          "parts": [
+            [
+              41.6951,
+              745.3773,
+              229.3244,
+              836.6592
+            ]
+          ],
+          "kind": "content",
+          "headline": "Reading"
+        },
+        {
           "id": "p83-1",
           "label": "1",
           "column": 0,
@@ -4954,6 +7850,27 @@
             ]
           ],
           "headline": "People who often hear that they are pretty and one of a kind have more self-confidence."
+        },
+        {
+          "id": "p83-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            0.0,
+            559.808,
+            564.188
+          ],
+          "parts": [
+            [
+              0.0,
+              0.0,
+              559.808,
+              564.188
+            ]
+          ],
+          "kind": "content",
+          "headline": "Human-Made Human-Made"
         }
       ]
     },
@@ -4971,6 +7888,48 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p84-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            62.1969,
+            429.981,
+            297.0875,
+            748.3243
+          ],
+          "parts": [
+            [
+              62.1969,
+              429.981,
+              297.0875,
+              748.3243
+            ]
+          ],
+          "kind": "content",
+          "headline": "This is actually a technique of the cosmetics"
+        },
+        {
+          "id": "p84-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            62.1969,
+            99.9661,
+            296.4659,
+            429.81
+          ],
+          "parts": [
+            [
+              62.1969,
+              99.9661,
+              296.4659,
+              429.81
+            ]
+          ],
+          "kind": "content",
+          "headline": "What’s more, we should not forget that the"
+        },
         {
           "id": "p84-c",
           "label": "c",
@@ -5110,6 +8069,48 @@
             ]
           ],
           "headline": "of beauty considering the following outline"
+        },
+        {
+          "id": "p85-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            56.4639,
+            303.4082,
+            617.0423
+          ],
+          "parts": [
+            [
+              0.0,
+              56.4639,
+              303.4082,
+              617.0423
+            ]
+          ],
+          "kind": "content",
+          "headline": "The Unfading"
+        },
+        {
+          "id": "p85-c2",
+          "label": null,
+          "column": 2,
+          "rect": [
+            312.1447,
+            669.3801,
+            469.4927,
+            715.9134
+          ],
+          "parts": [
+            [
+              312.1447,
+              669.3801,
+              469.4927,
+              715.9134
+            ]
+          ],
+          "kind": "content",
+          "headline": "Writing"
         }
       ]
     },
@@ -5150,6 +8151,90 @@
             ]
           ],
           "headline": "Read out the following sentence aloud by putting stress on the words and syllables in bold."
+        },
+        {
+          "id": "p86-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            83.831,
+            569.9779,
+            274.421,
+            780.898
+          ],
+          "parts": [
+            [
+              83.831,
+              569.9779,
+              274.421,
+              780.898
+            ]
+          ],
+          "kind": "content",
+          "headline": "Tips"
+        },
+        {
+          "id": "p86-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            50.3339,
+            340.3316,
+            536.383,
+            569.9779
+          ],
+          "parts": [
+            [
+              50.3339,
+              340.3316,
+              536.383,
+              569.9779
+            ]
+          ],
+          "kind": "content",
+          "headline": "b"
+        },
+        {
+          "id": "p86-c3",
+          "label": null,
+          "column": 2,
+          "rect": [
+            302.6456,
+            744.6649,
+            455.7416,
+            782.5905
+          ],
+          "parts": [
+            [
+              302.6456,
+              744.6649,
+              455.7416,
+              782.5905
+            ]
+          ],
+          "kind": "content",
+          "headline": "Pronunciation"
+        },
+        {
+          "id": "p86-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            99.2903,
+            94.0434,
+            258.9613,
+            319.1714
+          ],
+          "parts": [
+            [
+              99.2903,
+              94.0434,
+              258.9613,
+              319.1714
+            ]
+          ],
+          "kind": "content",
+          "headline": "“Why do we close our eyes when"
         },
         {
           "id": "p86-v2",
@@ -5220,6 +8305,68 @@
             ]
           ],
           "headline": "Discuss the following questions with your peer. a 1"
+        },
+        {
+          "id": "p87-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            41.0,
+            550.0767,
+            531.3254
+          ],
+          "parts": [
+            [
+              0.0,
+              41.0,
+              550.0767,
+              531.3254
+            ]
+          ],
+          "kind": "content",
+          "headline": "QUALITY VS QUANTITY"
+        },
+        {
+          "id": "p87-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            368.0,
+            531.3254,
+            599.0,
+            816.898
+          ],
+          "parts": [
+            [
+              368.0,
+              531.3254,
+              599.0,
+              816.898
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p87-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            77.6457,
+            640.3636,
+            230.7417,
+            674.5446
+          ],
+          "parts": [
+            [
+              77.6457,
+              640.3636,
+              230.7417,
+              674.5446
+            ]
+          ],
+          "kind": "content",
+          "headline": "Reading"
         }
       ]
     },
@@ -5281,6 +8428,48 @@
             ]
           ],
           "headline": "of the given words."
+        },
+        {
+          "id": "p88-c1",
+          "label": null,
+          "column": 2,
+          "rect": [
+            321.8978,
+            403.7478,
+            540.3445,
+            786.6316
+          ],
+          "parts": [
+            [
+              321.8978,
+              403.7478,
+              540.3445,
+              786.6316
+            ]
+          ],
+          "kind": "content",
+          "headline": "5"
+        },
+        {
+          "id": "p88-c2",
+          "label": null,
+          "column": 2,
+          "rect": [
+            321.8977,
+            82.0,
+            537.6612,
+            400.898
+          ],
+          "parts": [
+            [
+              321.8977,
+              82.0,
+              537.6612,
+              400.898
+            ]
+          ],
+          "kind": "content",
+          "headline": "Rewrite the following sentences using the"
         }
       ]
     },
@@ -5397,6 +8586,168 @@
             ]
           ],
           "headline": "whether the following statements are"
+        },
+        {
+          "id": "p89-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            41.6951,
+            766.478,
+            469.7023,
+            836.6592
+          ],
+          "parts": [
+            [
+              41.6951,
+              766.478,
+              469.7023,
+              836.6592
+            ]
+          ],
+          "kind": "content",
+          "headline": "Listening"
+        },
+        {
+          "id": "p89-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            72.8268,
+            739.1197,
+            230.1748,
+            766.478
+          ],
+          "parts": [
+            [
+              72.8268,
+              739.1197,
+              230.1748,
+              766.478
+            ]
+          ],
+          "kind": "content"
+        }
+      ]
+    },
+    "90": {
+      "pageWidth": 612.283,
+      "pageHeight": 858.898,
+      "columns": [
+        [
+          59.1968,
+          323.4599
+        ],
+        [
+          327.4599,
+          588.283
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p90-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            57.9449,
+            394.0565,
+            580.0,
+            821.898
+          ],
+          "parts": [
+            [
+              57.9449,
+              394.0565,
+              580.0,
+              821.898
+            ]
+          ],
+          "kind": "content",
+          "headline": "Writing"
+        },
+        {
+          "id": "p90-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            62.1986,
+            331.8126,
+            295.6812,
+            384.8526
+          ],
+          "parts": [
+            [
+              62.1986,
+              331.8126,
+              295.6812,
+              384.8526
+            ]
+          ],
+          "kind": "content",
+          "headline": "b"
+        },
+        {
+          "id": "p90-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.3092,
+            84.7966,
+            293.1372,
+            324.7321
+          ],
+          "parts": [
+            [
+              53.3092,
+              84.7966,
+              293.1372,
+              324.7321
+            ]
+          ],
+          "kind": "content",
+          "headline": "Project"
+        },
+        {
+          "id": "p90-c4",
+          "label": null,
+          "column": 1,
+          "rect": [
+            302.611,
+            295.825,
+            545.721,
+            391.4713
+          ],
+          "parts": [
+            [
+              302.611,
+              295.825,
+              545.721,
+              391.4713
+            ]
+          ],
+          "kind": "content",
+          "headline": "Discussion time"
+        },
+        {
+          "id": "p90-c5",
+          "label": null,
+          "column": 1,
+          "rect": [
+            299.6638,
+            46.4367,
+            549.0006,
+            295.094
+          ],
+          "parts": [
+            [
+              299.6638,
+              46.4367,
+              549.0006,
+              295.094
+            ]
+          ],
+          "kind": "content",
+          "headline": "Discuss the following questions with your"
         }
       ]
     },
@@ -5435,24 +8786,25 @@
           "headline": "What emotion do you feel the strongest?"
         },
         {
-          "id": "p93-c",
-          "label": "c",
-          "column": 1,
+          "id": "p93-c2",
+          "label": null,
+          "column": 0,
           "rect": [
-            326.259,
-            301.6005,
-            547.0486,
-            449.2329
+            72.1181,
+            458.9076,
+            229.4662,
+            505.4409
           ],
           "parts": [
             [
-              326.259,
-              301.6005,
-              547.0486,
-              449.2329
+              72.1181,
+              458.9076,
+              229.4662,
+              505.4409
             ]
           ],
-          "headline": "Listen to the audio again and complete the table with the moods/feelings the colours evoke."
+          "kind": "content",
+          "headline": "Listening"
         },
         {
           "id": "p93-a",
@@ -5495,6 +8847,26 @@
           "headline": "Listen to the radio programme."
         },
         {
+          "id": "p93-c",
+          "label": "c",
+          "column": 1,
+          "rect": [
+            326.259,
+            301.6005,
+            547.0486,
+            449.2329
+          ],
+          "parts": [
+            [
+              326.259,
+              301.6005,
+              547.0486,
+              449.2329
+            ]
+          ],
+          "headline": "Listen to the audio again and complete the table with the moods/feelings the colours evoke."
+        },
+        {
           "id": "p93-d",
           "label": "d",
           "column": 1,
@@ -5526,6 +8898,89 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p94-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            44.0,
+            19.0238,
+            818.898
+          ],
+          "parts": [
+            [
+              0.0,
+              44.0,
+              19.0238,
+              818.898
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p94-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            58.6535,
+            682.498,
+            398.3474,
+            783.9449
+          ],
+          "parts": [
+            [
+              58.6535,
+              682.498,
+              398.3474,
+              783.9449
+            ]
+          ],
+          "kind": "content",
+          "headline": "Speaking"
+        },
+        {
+          "id": "p94-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            82.0418,
+            650.662,
+            346.1959,
+            682.498
+          ],
+          "parts": [
+            [
+              82.0418,
+              650.662,
+              346.1959,
+              682.498
+            ]
+          ],
+          "kind": "content",
+          "headline": "(disinterested)"
+        },
+        {
+          "id": "p94-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            82.0418,
+            614.5607,
+            323.8393,
+            650.662
+          ],
+          "parts": [
+            [
+              82.0418,
+              614.5607,
+              323.8393,
+              650.662
+            ]
+          ],
+          "kind": "content",
+          "headline": "(enthusiastic)"
+        },
         {
           "id": "p94-b",
           "label": "b",
@@ -5603,6 +9058,27 @@
       ],
       "activities": [
         {
+          "id": "p95-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            41.6951,
+            741.3196,
+            229.6474,
+            836.6592
+          ],
+          "parts": [
+            [
+              41.6951,
+              741.3196,
+              229.6474,
+              836.6592
+            ]
+          ],
+          "kind": "content",
+          "headline": "Reading"
+        },
+        {
           "id": "p95-q1",
           "label": null,
           "column": 0,
@@ -5621,6 +9097,48 @@
             ]
           ],
           "headline": "Discuss the following questions with the class. a What springs to your mind when you hear the word ‘relaxation’?"
+        },
+        {
+          "id": "p95-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            76.37,
+            622.2194,
+            527.8327,
+            660.2549
+          ],
+          "parts": [
+            [
+              76.37,
+              622.2194,
+              527.8327,
+              660.2549
+            ]
+          ],
+          "kind": "content",
+          "headline": "b"
+        },
+        {
+          "id": "p95-c3",
+          "label": null,
+          "column": 1,
+          "rect": [
+            60.945,
+            67.086,
+            579.685,
+            609.448
+          ],
+          "parts": [
+            [
+              60.945,
+              67.086,
+              579.685,
+              609.448
+            ]
+          ],
+          "kind": "content",
+          "headline": "RELAX RELAX ATION TECHNIQUES FOR STRESS RELIEF ATION TECHNIQUES FOR STRESS RELIEF"
         }
       ]
     },
@@ -5740,6 +9258,27 @@
               "text": "5"
             }
           ]
+        },
+        {
+          "id": "p96-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            62.1968,
+            105.4512,
+            523.6589,
+            199.6302
+          ],
+          "parts": [
+            [
+              62.1968,
+              105.4512,
+              523.6589,
+              199.6302
+            ]
+          ],
+          "kind": "content",
+          "headline": "e"
         }
       ]
     },
@@ -5831,6 +9370,48 @@
               778.2082
             ]
           ]
+        },
+        {
+          "id": "p98-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            63.123,
+            83.217,
+            543.468,
+            222.7198
+          ],
+          "parts": [
+            [
+              63.123,
+              83.217,
+              543.468,
+              222.7198
+            ]
+          ],
+          "kind": "content",
+          "headline": "Do you"
+        },
+        {
+          "id": "p98-c2",
+          "label": null,
+          "column": 2,
+          "rect": [
+            301.1646,
+            222.7198,
+            566.6552,
+            782.5312
+          ],
+          "parts": [
+            [
+              301.1646,
+              222.7198,
+              566.6552,
+              782.5312
+            ]
+          ],
+          "kind": "content",
+          "headline": "IDIOM OF THE DAY"
         }
       ]
     },
@@ -5857,6 +9438,48 @@
       ],
       "activities": [
         {
+          "id": "p99-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            41.6951,
+            618.0163,
+            299.2381,
+            836.6592
+          ],
+          "parts": [
+            [
+              41.6951,
+              618.0163,
+              299.2381,
+              836.6592
+            ]
+          ],
+          "kind": "content",
+          "headline": "Lead-in"
+        },
+        {
+          "id": "p99-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            72.4673,
+            569.4219,
+            229.8153,
+            609.3779
+          ],
+          "parts": [
+            [
+              72.4673,
+              569.4219,
+              229.8153,
+              609.3779
+            ]
+          ],
+          "kind": "content",
+          "headline": "Reading"
+        },
+        {
           "id": "p99-a",
           "label": "a",
           "column": 0,
@@ -5875,6 +9498,195 @@
             ]
           ],
           "headline": "Discuss the following questions with your peer."
+        },
+        {
+          "id": "p99-c3",
+          "label": null,
+          "column": 1,
+          "rect": [
+            76.748,
+            365.3787,
+            311.0601,
+            430.4232
+          ],
+          "parts": [
+            [
+              76.748,
+              365.3787,
+              311.0601,
+              430.4232
+            ]
+          ],
+          "kind": "content",
+          "headline": "b"
+        },
+        {
+          "id": "p99-c4",
+          "label": null,
+          "column": 1,
+          "rect": [
+            96.0785,
+            228.0837,
+            307.3011,
+            362.4387
+          ],
+          "parts": [
+            [
+              96.0785,
+              228.0837,
+              307.3011,
+              362.4387
+            ]
+          ],
+          "kind": "content",
+          "headline": "1"
+        },
+        {
+          "id": "p99-c5",
+          "label": null,
+          "column": 1,
+          "rect": [
+            96.488,
+            105.7167,
+            295.0055,
+            224.4343
+          ],
+          "parts": [
+            [
+              96.488,
+              105.7167,
+              295.0055,
+              224.4343
+            ]
+          ],
+          "kind": "content",
+          "headline": "2"
+        },
+        {
+          "id": "p99-c6",
+          "label": null,
+          "column": 2,
+          "rect": [
+            334.502,
+            563.1387,
+            536.264,
+            666.5052
+          ],
+          "parts": [
+            [
+              334.502,
+              563.1387,
+              536.264,
+              666.5052
+            ]
+          ],
+          "kind": "content",
+          "headline": "3"
+        },
+        {
+          "id": "p99-c7",
+          "label": null,
+          "column": 2,
+          "rect": [
+            334.502,
+            442.6722,
+            549.5361,
+            561.8622
+          ],
+          "parts": [
+            [
+              334.502,
+              442.6722,
+              549.5361,
+              561.8622
+            ]
+          ],
+          "kind": "content",
+          "headline": "4"
+        },
+        {
+          "id": "p99-c8",
+          "label": null,
+          "column": 2,
+          "rect": [
+            334.502,
+            338.9847,
+            549.5781,
+            439.2642
+          ],
+          "parts": [
+            [
+              334.502,
+              338.9847,
+              549.5781,
+              439.2642
+            ]
+          ],
+          "kind": "content",
+          "headline": "5"
+        },
+        {
+          "id": "p99-c9",
+          "label": null,
+          "column": 2,
+          "rect": [
+            335.9195,
+            236.4523,
+            537.3351,
+            337.7743
+          ],
+          "parts": [
+            [
+              335.9195,
+              236.4523,
+              537.3351,
+              337.7743
+            ]
+          ],
+          "kind": "content",
+          "headline": "6"
+        },
+        {
+          "id": "p99-c10",
+          "label": null,
+          "column": 2,
+          "rect": [
+            335.9195,
+            143.3887,
+            560.057,
+            234.1364
+          ],
+          "parts": [
+            [
+              335.9195,
+              143.3887,
+              560.057,
+              234.1364
+            ]
+          ],
+          "kind": "content",
+          "headline": "7"
+        },
+        {
+          "id": "p99-c11",
+          "label": null,
+          "column": 2,
+          "rect": [
+            337.1575,
+            88.1322,
+            526.2061,
+            141.1482
+          ],
+          "parts": [
+            [
+              337.1575,
+              88.1322,
+              526.2061,
+              141.1482
+            ]
+          ],
+          "kind": "content",
+          "headline": "POINTS POINTS"
         }
       ]
     },
@@ -5931,6 +9743,48 @@
             ]
           ],
           "headline": "Work in pairs. Create questions considering the following topics about your friend’s personality. Then, take turns to ask and answer the questions."
+        },
+        {
+          "id": "p100-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            44.0,
+            284.6438,
+            816.898
+          ],
+          "parts": [
+            [
+              0.0,
+              44.0,
+              284.6438,
+              816.898
+            ]
+          ],
+          "kind": "content",
+          "headline": "23-28 23-28"
+        },
+        {
+          "id": "p100-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            284.6438,
+            533.3317,
+            568.0,
+            787.618
+          ],
+          "parts": [
+            [
+              284.6438,
+              533.3317,
+              568.0,
+              787.618
+            ]
+          ],
+          "kind": "content",
+          "headline": "RESULTS"
         }
       ]
     },
@@ -5948,6 +9802,27 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p101-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            5.7945,
+            593.4453,
+            611.747,
+            836.6592
+          ],
+          "parts": [
+            [
+              5.7945,
+              593.4453,
+              611.747,
+              836.6592
+            ]
+          ],
+          "kind": "content",
+          "headline": "Listening"
+        },
         {
           "id": "p101-a",
           "label": "a",
@@ -6041,6 +9916,27 @@
       ],
       "activities": [
         {
+          "id": "p102-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            57.9449,
+            737.4116,
+            215.2929,
+            783.9449
+          ],
+          "parts": [
+            [
+              57.9449,
+              737.4116,
+              215.2929,
+              783.9449
+            ]
+          ],
+          "kind": "content",
+          "headline": "Speaking"
+        },
+        {
           "id": "p102-a",
           "label": "a",
           "column": 0,
@@ -6133,6 +10029,27 @@
       ],
       "activities": [
         {
+          "id": "p103-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            41.6951,
+            728.6713,
+            230.1748,
+            836.6592
+          ],
+          "parts": [
+            [
+              41.6951,
+              728.6713,
+              230.1748,
+              836.6592
+            ]
+          ],
+          "kind": "content",
+          "headline": "Writing"
+        },
+        {
           "id": "p103-a",
           "label": "a",
           "column": 0,
@@ -6150,6 +10067,90 @@
               722.861
             ]
           ]
+        },
+        {
+          "id": "p103-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            75.6898,
+            512.4,
+            563.2916,
+            674.8529
+          ],
+          "parts": [
+            [
+              75.6898,
+              512.4,
+              563.2916,
+              674.8529
+            ]
+          ],
+          "kind": "content",
+          "headline": "H"
+        },
+        {
+          "id": "p103-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            58.6661,
+            328.968,
+            527.9066,
+            480.408
+          ],
+          "parts": [
+            [
+              58.6661,
+              328.968,
+              527.9066,
+              480.408
+            ]
+          ],
+          "kind": "content",
+          "headline": "I"
+        },
+        {
+          "id": "p103-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            76.3682,
+            137.1,
+            563.0422,
+            299.4625
+          ],
+          "parts": [
+            [
+              76.3682,
+              137.1,
+              563.0422,
+              299.4625
+            ]
+          ],
+          "kind": "content",
+          "headline": "I"
+        },
+        {
+          "id": "p103-c5",
+          "label": null,
+          "column": 0,
+          "rect": [
+            76.3701,
+            46.4367,
+            530.5755,
+            116.0007
+          ],
+          "parts": [
+            [
+              76.3701,
+              46.4367,
+              530.5755,
+              116.0007
+            ]
+          ],
+          "kind": "content",
+          "headline": "b"
         }
       ]
     },
@@ -6172,24 +10173,25 @@
       ],
       "activities": [
         {
-          "id": "p104-c",
-          "label": "c",
-          "column": 2,
+          "id": "p104-c1",
+          "label": null,
+          "column": 1,
           "rect": [
-            303.989,
-            578.6355,
-            534.6116,
-            779.822
+            61.819,
+            740.1221,
+            214.915,
+            778.0475
           ],
           "parts": [
             [
-              303.989,
-              578.6355,
-              534.6116,
-              779.822
+              61.819,
+              740.1221,
+              214.915,
+              778.0475
             ]
           ],
-          "headline": "Listen to the audio and underline the stressed words in each sentence. Then, discuss how the meaning of each sentence changes."
+          "kind": "content",
+          "headline": "Pronunciation"
         },
         {
           "id": "p104-a",
@@ -6212,6 +10214,131 @@
           "headline": "Listen to the audio and underline the stressed words."
         },
         {
+          "id": "p104-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            62.1968,
+            508.3611,
+            294.5453,
+            546.3966
+          ],
+          "parts": [
+            [
+              62.1968,
+              508.3611,
+              294.5453,
+              546.3966
+            ]
+          ],
+          "kind": "content",
+          "headline": "b"
+        },
+        {
+          "id": "p104-c3",
+          "label": null,
+          "column": 1,
+          "rect": [
+            82.0418,
+            406.7316,
+            298.4409,
+            506.9796
+          ],
+          "parts": [
+            [
+              82.0418,
+              406.7316,
+              298.4409,
+              506.9796
+            ]
+          ],
+          "kind": "content",
+          "headline": "1"
+        },
+        {
+          "id": "p104-c4",
+          "label": null,
+          "column": 1,
+          "rect": [
+            82.0418,
+            301.4901,
+            291.7419,
+            405.3501
+          ],
+          "parts": [
+            [
+              82.0418,
+              301.4901,
+              291.7419,
+              405.3501
+            ]
+          ],
+          "kind": "content",
+          "headline": "2"
+        },
+        {
+          "id": "p104-c5",
+          "label": null,
+          "column": 1,
+          "rect": [
+            82.0418,
+            199.8606,
+            297.5589,
+            300.1086
+          ],
+          "parts": [
+            [
+              82.0418,
+              199.8606,
+              297.5589,
+              300.1086
+            ]
+          ],
+          "kind": "content",
+          "headline": "3"
+        },
+        {
+          "id": "p104-c6",
+          "label": null,
+          "column": 1,
+          "rect": [
+            82.0418,
+            97.9266,
+            290.3769,
+            198.4791
+          ],
+          "parts": [
+            [
+              82.0418,
+              97.9266,
+              290.3769,
+              198.4791
+            ]
+          ],
+          "kind": "content",
+          "headline": "4"
+        },
+        {
+          "id": "p104-c",
+          "label": "c",
+          "column": 2,
+          "rect": [
+            303.989,
+            578.6355,
+            534.6116,
+            779.822
+          ],
+          "parts": [
+            [
+              303.989,
+              578.6355,
+              534.6116,
+              779.822
+            ]
+          ],
+          "headline": "Listen to the audio and underline the stressed words in each sentence. Then, discuss how the meaning of each sentence changes."
+        },
+        {
           "id": "p104-1",
           "label": "1",
           "column": 2,
@@ -6230,6 +10357,27 @@
             ]
           ],
           "headline": "Do you think your favourite colour has an impact on your personality? Why/ Why not?"
+        },
+        {
+          "id": "p104-c7",
+          "label": null,
+          "column": 2,
+          "rect": [
+            302.0551,
+            217.4173,
+            455.1511,
+            254.5983
+          ],
+          "parts": [
+            [
+              302.0551,
+              217.4173,
+              455.1511,
+              254.5983
+            ]
+          ],
+          "kind": "content",
+          "headline": "Project"
         },
         {
           "id": "p104-v4",
@@ -6367,6 +10515,68 @@
           "headline": "Listen to the audio and write which speaker talks about the following features of the smart glass below."
         },
         {
+          "id": "p107-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            90.7086,
+            321.0899,
+            306.1416,
+            469.9111
+          ],
+          "parts": [
+            [
+              90.7086,
+              321.0899,
+              306.1416,
+              469.9111
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p107-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            77.0787,
+            738.9681,
+            230.1747,
+            776.1491
+          ],
+          "parts": [
+            [
+              77.0787,
+              738.9681,
+              230.1747,
+              776.1491
+            ]
+          ],
+          "kind": "content",
+          "headline": "Lead-in"
+        },
+        {
+          "id": "p107-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            78.496,
+            572.3588,
+            235.844,
+            618.8922
+          ],
+          "parts": [
+            [
+              78.496,
+              572.3588,
+              235.844,
+              618.8922
+            ]
+          ],
+          "kind": "content",
+          "headline": "Listening"
+        },
+        {
           "id": "p107-e",
           "label": "e",
           "column": 1,
@@ -6398,6 +10608,27 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p108-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            64.3229,
+            737.4116,
+            221.6709,
+            783.9449
+          ],
+          "parts": [
+            [
+              64.3229,
+              737.4116,
+              221.6709,
+              783.9449
+            ]
+          ],
+          "kind": "content",
+          "headline": "Speaking"
+        },
         {
           "id": "p108-a",
           "label": "a",
@@ -6439,6 +10670,27 @@
           "headline": "Work in pairs. Read the dialogues below and talk about if you have ever had problems like them and what you did."
         },
         {
+          "id": "p108-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            61.4882,
+            162.719,
+            536.598,
+            292.908
+          ],
+          "parts": [
+            [
+              61.4882,
+              162.719,
+              536.598,
+              292.908
+            ]
+          ],
+          "kind": "content",
+          "headline": "I have some problems with the headphones."
+        },
+        {
           "id": "p108-c",
           "label": "c",
           "column": 0,
@@ -6471,6 +10723,27 @@
       ],
       "activities": [
         {
+          "id": "p109-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            41.6951,
+            724.7803,
+            245.349,
+            836.6592
+          ],
+          "parts": [
+            [
+              41.6951,
+              724.7803,
+              245.349,
+              836.6592
+            ]
+          ],
+          "kind": "content",
+          "headline": "Reading"
+        },
+        {
           "id": "p109-v1",
           "label": null,
           "column": 0,
@@ -6490,6 +10763,26 @@
           ]
         },
         {
+          "id": "p109-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            329.7091,
+            649.5509,
+            609.4214,
+            858.898
+          ],
+          "parts": [
+            [
+              329.7091,
+              649.5509,
+              609.4214,
+              858.898
+            ]
+          ],
+          "kind": "content"
+        },
+        {
           "id": "p109-v2",
           "label": null,
           "column": 0,
@@ -6507,6 +10800,48 @@
               598.001
             ]
           ]
+        },
+        {
+          "id": "p109-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            63.054,
+            400.748,
+            555.668,
+            542.5
+          ],
+          "parts": [
+            [
+              63.054,
+              400.748,
+              555.668,
+              542.5
+            ]
+          ],
+          "kind": "content",
+          "headline": "PERSONAL ASSISTANT PERSONAL ASSISTANT"
+        },
+        {
+          "id": "p109-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            51.0,
+            26.898,
+            555.668,
+            400.748
+          ],
+          "parts": [
+            [
+              51.0,
+              26.898,
+              555.668,
+              400.748
+            ]
+          ],
+          "kind": "content",
+          "headline": "From getting information, ordering a meal, doing shopping, having entertainment, and"
         }
       ]
     },
@@ -6528,6 +10863,47 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p110-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            403.898,
+            28.9512,
+            818.898
+          ],
+          "parts": [
+            [
+              0.0,
+              403.898,
+              28.9512,
+              818.898
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p110-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            82.6878,
+            546.1164,
+            513.37,
+            757.4542
+          ],
+          "parts": [
+            [
+              82.6878,
+              546.1164,
+              513.37,
+              757.4542
+            ]
+          ],
+          "kind": "content",
+          "headline": "He first managed to unlock it by pressing her thumb on the phone, and then used a virtual"
+        },
         {
           "id": "p110-4",
           "label": "4",
@@ -6687,6 +11063,27 @@
             ]
           ],
           "headline": "according to the text."
+        },
+        {
+          "id": "p110-c3",
+          "label": null,
+          "column": 2,
+          "rect": [
+            298.501,
+            97.193,
+            541.381,
+            289.222
+          ],
+          "parts": [
+            [
+              298.501,
+              97.193,
+              541.381,
+              289.222
+            ]
+          ],
+          "kind": "content",
+          "headline": "know?"
         }
       ]
     },
@@ -6705,24 +11102,25 @@
       ],
       "activities": [
         {
-          "id": "p111-2",
-          "label": "2",
-          "column": 1,
+          "id": "p111-c1",
+          "label": null,
+          "column": 0,
           "rect": [
-            336.3969,
-            571.5826,
-            546.476,
-            778.9255
+            41.6951,
+            731.7119,
+            228.2581,
+            836.6592
           ],
           "parts": [
             [
-              336.3969,
-              571.5826,
-              546.476,
-              778.9255
+              41.6951,
+              731.7119,
+              228.2581,
+              836.6592
             ]
           ],
-          "headline": "The photocopy machine does not work."
+          "kind": "content",
+          "headline": "Writing"
         },
         {
           "id": "p111-a",
@@ -6765,6 +11163,46 @@
           "headline": "a note on behalf of each person for"
         },
         {
+          "id": "p111-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            96.6857,
+            90.9703,
+            304.2281,
+            296.6396
+          ],
+          "parts": [
+            [
+              96.6857,
+              90.9703,
+              304.2281,
+              296.6396
+            ]
+          ],
+          "headline": "party for his friend, but he has not got enough time to decorate the house."
+        },
+        {
+          "id": "p111-2",
+          "label": "2",
+          "column": 1,
+          "rect": [
+            336.3969,
+            571.5826,
+            546.476,
+            778.9255
+          ],
+          "parts": [
+            [
+              336.3969,
+              571.5826,
+              546.476,
+              778.9255
+            ]
+          ],
+          "headline": "The photocopy machine does not work."
+        },
+        {
           "id": "p111-3",
           "label": "3",
           "column": 1,
@@ -6803,26 +11241,6 @@
             ]
           ],
           "headline": "to get a mechanic to set up the new ultrasound device."
-        },
-        {
-          "id": "p111-1",
-          "label": "1",
-          "column": 0,
-          "rect": [
-            96.6857,
-            90.9703,
-            304.2281,
-            296.6396
-          ],
-          "parts": [
-            [
-              96.6857,
-              90.9703,
-              304.2281,
-              296.6396
-            ]
-          ],
-          "headline": "party for his friend, but he has not got enough time to decorate the house."
         }
       ]
     },
@@ -6922,6 +11340,90 @@
             ]
           ],
           "headline": "Listen to the audio, then match each sentence to its intended meaning below considering the stressed words."
+        },
+        {
+          "id": "p112-c1",
+          "label": null,
+          "column": 2,
+          "rect": [
+            339.1487,
+            370.8801,
+            498.8197,
+            553.9231
+          ],
+          "parts": [
+            [
+              339.1487,
+              370.8801,
+              498.8197,
+              553.9231
+            ]
+          ],
+          "kind": "content",
+          "headline": "Quote of the day! Quote of the day!"
+        },
+        {
+          "id": "p112-c2",
+          "label": null,
+          "column": 2,
+          "rect": [
+            302.0965,
+            560.1339,
+            538.1202,
+            784.5234
+          ],
+          "parts": [
+            [
+              302.0965,
+              560.1339,
+              538.1202,
+              784.5234
+            ]
+          ],
+          "kind": "content",
+          "headline": "c"
+        },
+        {
+          "id": "p112-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            61.3505,
+            465.6324,
+            215.2929,
+            504.4583
+          ],
+          "parts": [
+            [
+              61.3505,
+              465.6324,
+              215.2929,
+              504.4583
+            ]
+          ],
+          "kind": "content",
+          "headline": "Pronunciation"
+        },
+        {
+          "id": "p112-c4",
+          "label": null,
+          "column": 2,
+          "rect": [
+            351.0371,
+            332.3669,
+            511.9571,
+            359.4609
+          ],
+          "parts": [
+            [
+              351.0371,
+              332.3669,
+              511.9571,
+              359.4609
+            ]
+          ],
+          "kind": "content",
+          "headline": "IDIOM OF THE DAY"
         }
       ]
     },
@@ -6960,6 +11462,27 @@
           "headline": "What do you think has been the most important technological innovation in the last century? Why?"
         },
         {
+          "id": "p113-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            75.2583,
+            560.8472,
+            232.6063,
+            594.8031
+          ],
+          "parts": [
+            [
+              75.2583,
+              560.8472,
+              232.6063,
+              594.8031
+            ]
+          ],
+          "kind": "content",
+          "headline": "Reading"
+        },
+        {
           "id": "p113-v2",
           "label": null,
           "column": 0,
@@ -6978,6 +11501,90 @@
             ]
           ],
           "ogeId": "81bf78ca-aabc-f111-b31a-be655a4e2c97"
+        },
+        {
+          "id": "p113-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            56.5075,
+            226.9741,
+            307.2856,
+            426.9595
+          ],
+          "parts": [
+            [
+              56.5075,
+              226.9741,
+              307.2856,
+              426.9595
+            ]
+          ],
+          "kind": "content",
+          "headline": "INNOVATIVE WAYS TO"
+        },
+        {
+          "id": "p113-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            66.8257,
+            41.0,
+            312.439,
+            224.7457
+          ],
+          "parts": [
+            [
+              66.8257,
+              41.0,
+              312.439,
+              224.7457
+            ]
+          ],
+          "kind": "content",
+          "headline": "Water Recycling"
+        },
+        {
+          "id": "p113-c5",
+          "label": null,
+          "column": 1,
+          "rect": [
+            316.4529,
+            374.8589,
+            571.0407,
+            541.0153
+          ],
+          "parts": [
+            [
+              316.4529,
+              374.8589,
+              571.0407,
+              541.0153
+            ]
+          ],
+          "kind": "content",
+          "headline": "Drip Irrigation"
+        },
+        {
+          "id": "p113-c6",
+          "label": null,
+          "column": 1,
+          "rect": [
+            316.4529,
+            88.3663,
+            571.0661,
+            372.8504
+          ],
+          "parts": [
+            [
+              316.4529,
+              88.3663,
+              571.0661,
+              372.8504
+            ]
+          ],
+          "kind": "content",
+          "headline": "Agridrones"
         }
       ]
     },
@@ -6995,6 +11602,68 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p114-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            52.9782,
+            691.3234,
+            302.9247,
+            786.6573
+          ],
+          "parts": [
+            [
+              52.9782,
+              691.3234,
+              302.9247,
+              786.6573
+            ]
+          ],
+          "kind": "content",
+          "headline": "Biofertilisers, on the other hand, are tiny"
+        },
+        {
+          "id": "p114-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            52.2747,
+            500.0868,
+            304.5102,
+            680.7437
+          ],
+          "parts": [
+            [
+              52.2747,
+              500.0868,
+              304.5102,
+              680.7437
+            ]
+          ],
+          "kind": "content",
+          "headline": "Robots and Sensors"
+        },
+        {
+          "id": "p114-b",
+          "label": "b",
+          "column": 0,
+          "rect": [
+            53.9335,
+            92.7634,
+            302.5612,
+            482.2859
+          ],
+          "parts": [
+            [
+              53.9335,
+              92.7634,
+              302.5612,
+              482.2859
+            ]
+          ],
+          "headline": "✓ inferred from the text."
+        },
         {
           "id": "p114-c",
           "label": "c",
@@ -7170,26 +11839,6 @@
           ]
         },
         {
-          "id": "p114-b",
-          "label": "b",
-          "column": 0,
-          "rect": [
-            53.9335,
-            92.7634,
-            302.5612,
-            482.2859
-          ],
-          "parts": [
-            [
-              53.9335,
-              92.7634,
-              302.5612,
-              482.2859
-            ]
-          ],
-          "headline": "✓ inferred from the text."
-        },
-        {
           "id": "p114-e",
           "label": "e",
           "column": 1,
@@ -7230,6 +11879,27 @@
       ],
       "activities": [
         {
+          "id": "p115-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            41.6951,
+            673.5152,
+            553.3401,
+            836.6592
+          ],
+          "parts": [
+            [
+              41.6951,
+              673.5152,
+              553.3401,
+              836.6592
+            ]
+          ],
+          "kind": "content",
+          "headline": "Listening"
+        },
+        {
           "id": "p115-b",
           "label": "b",
           "column": 0,
@@ -7268,6 +11938,27 @@
             ]
           ],
           "headline": "statements below. Correct the false ones. 1 Drones can fly autonomously and locate the destination"
+        },
+        {
+          "id": "p115-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            72.1181,
+            336.4488,
+            229.466,
+            382.9821
+          ],
+          "parts": [
+            [
+              72.1181,
+              336.4488,
+              229.466,
+              382.9821
+            ]
+          ],
+          "kind": "content",
+          "headline": "Speaking"
         },
         {
           "id": "p115-a",
@@ -7321,6 +12012,27 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p116-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            57.9449,
+            736.8682,
+            215.2929,
+            780.4016
+          ],
+          "parts": [
+            [
+              57.9449,
+              736.8682,
+              215.2929,
+              780.4016
+            ]
+          ],
+          "kind": "content",
+          "headline": "Writing"
+        },
         {
           "id": "p116-a",
           "label": "a",
@@ -7455,6 +12167,89 @@
             ]
           ],
           "headline": "(T), False (F), or Not Mentioned (NM) to"
+        },
+        {
+          "id": "p119-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            81.3304,
+            527.2001,
+            363.5831
+          ],
+          "parts": [
+            [
+              0.0,
+              81.3304,
+              527.2001,
+              363.5831
+            ]
+          ],
+          "kind": "content",
+          "headline": "d"
+        },
+        {
+          "id": "p119-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            76.37,
+            739.6771,
+            229.466,
+            776.8581
+          ],
+          "parts": [
+            [
+              76.37,
+              739.6771,
+              229.466,
+              776.8581
+            ]
+          ],
+          "kind": "content",
+          "headline": "Lead-in"
+        },
+        {
+          "id": "p119-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            76.37,
+            364.9388,
+            295.289,
+            545.4517
+          ],
+          "parts": [
+            [
+              76.37,
+              364.9388,
+              295.289,
+              545.4517
+            ]
+          ],
+          "kind": "content",
+          "headline": "a"
+        },
+        {
+          "id": "p119-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            72.1181,
+            546.7816,
+            229.4662,
+            593.3149
+          ],
+          "parts": [
+            [
+              72.1181,
+              546.7816,
+              229.4662,
+              593.3149
+            ]
+          ],
+          "kind": "content"
         }
       ]
     },
@@ -7472,6 +12267,27 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p120-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            57.9449,
+            740.2462,
+            215.2929,
+            786.7795
+          ],
+          "parts": [
+            [
+              57.9449,
+              740.2462,
+              215.2929,
+              786.7795
+            ]
+          ],
+          "kind": "content",
+          "headline": "Speaking"
+        },
         {
           "id": "p120-a",
           "label": "a",
@@ -7550,6 +12366,26 @@
             ]
           ],
           "headline": "relationships and offering solutions for the related problem as in ‘Exercise b’. Use the"
+        },
+        {
+          "id": "p120-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            34.9547,
+            37.0,
+            440.898
+          ],
+          "parts": [
+            [
+              0.0,
+              34.9547,
+              37.0,
+              440.898
+            ]
+          ],
+          "kind": "content"
         }
       ]
     },
@@ -7567,6 +12403,27 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p121-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            41.6951,
+            741.3196,
+            231.0647,
+            836.6592
+          ],
+          "parts": [
+            [
+              41.6951,
+              741.3196,
+              231.0647,
+              836.6592
+            ]
+          ],
+          "kind": "content",
+          "headline": "Reading"
+        },
         {
           "id": "p121-1",
           "label": "1",
@@ -7586,6 +12443,47 @@
             ]
           ],
           "headline": "Why do you think we need a good friend?"
+        },
+        {
+          "id": "p121-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            76.3701,
+            19.1539,
+            543.7506,
+            610.6855
+          ],
+          "parts": [
+            [
+              76.3701,
+              19.1539,
+              543.7506,
+              610.6855
+            ]
+          ],
+          "kind": "content",
+          "headline": "Friends perceive and respond to things in"
+        },
+        {
+          "id": "p121-c3",
+          "label": null,
+          "column": 1,
+          "rect": [
+            543.7506,
+            23.898,
+            612.283,
+            684.898
+          ],
+          "parts": [
+            [
+              543.7506,
+              23.898,
+              612.283,
+              684.898
+            ]
+          ],
+          "kind": "content"
         }
       ]
     },
@@ -7662,6 +12560,47 @@
             ]
           ],
           "headline": "False (F), or Not Mentioned (NM) to the"
+        },
+        {
+          "id": "p122-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            34.9568,
+            32.948,
+            535.6135,
+            167.0378
+          ],
+          "parts": [
+            [
+              34.9568,
+              32.948,
+              535.6135,
+              167.0378
+            ]
+          ],
+          "kind": "content",
+          "headline": "121"
+        },
+        {
+          "id": "p122-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            314.2817,
+            167.0378,
+            593.862,
+            466.2637
+          ],
+          "parts": [
+            [
+              314.2817,
+              167.0378,
+              593.862,
+              466.2637
+            ]
+          ],
+          "kind": "content"
         }
       ]
     },
@@ -7693,6 +12632,48 @@
               727.0449
             ]
           ]
+        },
+        {
+          "id": "p123-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            76.37,
+            683.7585,
+            516.5347,
+            702.7762
+          ],
+          "parts": [
+            [
+              76.37,
+              683.7585,
+              516.5347,
+              702.7762
+            ]
+          ],
+          "kind": "content",
+          "headline": "b"
+        },
+        {
+          "id": "p123-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            2.3915,
+            181.7703,
+            608.1878,
+            683.7585
+          ],
+          "parts": [
+            [
+              2.3915,
+              181.7703,
+              608.1878,
+              683.7585
+            ]
+          ],
+          "kind": "content",
+          "headline": "elements:"
         },
         {
           "id": "p123-c",
@@ -7735,6 +12716,27 @@
       ],
       "activities": [
         {
+          "id": "p124-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            62.1969,
+            745.0827,
+            215.2929,
+            783.0085
+          ],
+          "parts": [
+            [
+              62.1969,
+              745.0827,
+              215.2929,
+              783.0085
+            ]
+          ],
+          "kind": "content",
+          "headline": "Pronunciation"
+        },
+        {
           "id": "p124-a",
           "label": "a",
           "column": 0,
@@ -7753,6 +12755,48 @@
             ]
           ],
           "headline": "Listen to the audio and decide if the words in bold contain strong (ðæt) or weak (ðət) form."
+        },
+        {
+          "id": "p124-c2",
+          "label": null,
+          "column": 2,
+          "rect": [
+            331.9443,
+            535.9977,
+            537.2863,
+            779.2777
+          ],
+          "parts": [
+            [
+              331.9443,
+              535.9977,
+              537.2863,
+              779.2777
+            ]
+          ],
+          "kind": "content",
+          "headline": "Quote of the day! Quote of the day!"
+        },
+        {
+          "id": "p124-c3",
+          "label": null,
+          "column": 2,
+          "rect": [
+            358.135,
+            482.4372,
+            511.536,
+            512.5312
+          ],
+          "parts": [
+            [
+              358.135,
+              482.4372,
+              511.536,
+              512.5312
+            ]
+          ],
+          "kind": "content",
+          "headline": "PROVERB OF THE DAY"
         },
         {
           "id": "p124-b",
@@ -7792,6 +12836,27 @@
               478.2215
             ]
           ]
+        },
+        {
+          "id": "p124-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            63.123,
+            68.923,
+            543.468,
+            212.7934
+          ],
+          "parts": [
+            [
+              63.123,
+              68.923,
+              543.468,
+              212.7934
+            ]
+          ],
+          "kind": "content",
+          "headline": "Do you"
         }
       ]
     },
@@ -7805,6 +12870,27 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p125-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            41.6951,
+            734.0071,
+            229.466,
+            836.6592
+          ],
+          "parts": [
+            [
+              41.6951,
+              734.0071,
+              229.466,
+              836.6592
+            ]
+          ],
+          "kind": "content",
+          "headline": "Lead-in"
+        },
         {
           "id": "p125-1",
           "label": "1",
@@ -7826,6 +12912,27 @@
           "headline": "Have you ever met a person and become friends quickly? What makes some people connect immediately?"
         },
         {
+          "id": "p125-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            72.0929,
+            524.3038,
+            229.4409,
+            564.2598
+          ],
+          "parts": [
+            [
+              72.0929,
+              524.3038,
+              229.4409,
+              564.2598
+            ]
+          ],
+          "kind": "content",
+          "headline": "Reading"
+        },
+        {
           "id": "p125-a",
           "label": "a",
           "column": 0,
@@ -7844,6 +12951,27 @@
             ]
           ],
           "headline": "Discuss the following questions with your peer."
+        },
+        {
+          "id": "p125-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            76.37,
+            314.6603,
+            291.7925,
+            352.6958
+          ],
+          "parts": [
+            [
+              76.37,
+              314.6603,
+              291.7925,
+              352.6958
+            ]
+          ],
+          "kind": "content",
+          "headline": "b"
         }
       ]
     },
@@ -7948,6 +13076,69 @@
             ]
           ],
           "headline": "thin together’ with a friend. What happens when you share your joy and what happens"
+        },
+        {
+          "id": "p127-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            76.37,
+            656.6396,
+            352.4091,
+            679.6706
+          ],
+          "parts": [
+            [
+              76.37,
+              656.6396,
+              352.4091,
+              679.6706
+            ]
+          ],
+          "kind": "content",
+          "headline": "b"
+        },
+        {
+          "id": "p127-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            76.9085,
+            183.2549,
+            446.1982,
+            604.8057
+          ],
+          "parts": [
+            [
+              76.9085,
+              183.2549,
+              446.1982,
+              604.8057
+            ]
+          ],
+          "kind": "content",
+          "headline": "So no one told you life was going to be this way"
+        },
+        {
+          "id": "p127-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            76.916,
+            97.8585,
+            541.0449,
+            170.5571
+          ],
+          "parts": [
+            [
+              76.916,
+              97.8585,
+              541.0449,
+              170.5571
+            ]
+          ],
+          "kind": "content",
+          "headline": "c"
         }
       ]
     },
@@ -7965,6 +13156,47 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p128-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            44.0,
+            8.504,
+            818.898
+          ],
+          "parts": [
+            [
+              0.0,
+              44.0,
+              8.504,
+              818.898
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p128-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            64.3229,
+            739.5375,
+            475.3715,
+            786.7795
+          ],
+          "parts": [
+            [
+              64.3229,
+              739.5375,
+              475.3715,
+              786.7795
+            ]
+          ],
+          "kind": "content",
+          "headline": "Writing"
+        },
         {
           "id": "p128-a",
           "label": "a",
@@ -8198,6 +13430,27 @@
           "headline": "Discuss the following questions with your classmates. What comes to your mind when you hear the word ‘regret’? 1"
         },
         {
+          "id": "p131-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            72.5071,
+            630.0894,
+            229.8551,
+            673.6227
+          ],
+          "parts": [
+            [
+              72.5071,
+              630.0894,
+              229.8551,
+              673.6227
+            ]
+          ],
+          "kind": "content",
+          "headline": "Listening"
+        },
+        {
           "id": "p131-a",
           "label": "a",
           "column": 0,
@@ -8306,6 +13559,27 @@
       ],
       "activities": [
         {
+          "id": "p132-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            58.4882,
+            737.4116,
+            215.8362,
+            783.9449
+          ],
+          "parts": [
+            [
+              58.4882,
+              737.4116,
+              215.8362,
+              783.9449
+            ]
+          ],
+          "kind": "content",
+          "headline": "Speaking"
+        },
+        {
           "id": "p132-a",
           "label": "a",
           "column": 0,
@@ -8382,6 +13656,27 @@
       ],
       "activities": [
         {
+          "id": "p133-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            41.6951,
+            720.4303,
+            252.399,
+            836.6592
+          ],
+          "parts": [
+            [
+              41.6951,
+              720.4303,
+              252.399,
+              836.6592
+            ]
+          ],
+          "kind": "content",
+          "headline": "Reading"
+        },
+        {
           "id": "p133-v1",
           "label": null,
           "column": 0,
@@ -8419,6 +13714,27 @@
             ]
           ],
           "headline": "Having been diagnosed with polio, Roosevelt decided to stop his"
+        },
+        {
+          "id": "p133-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            24.0,
+            41.0,
+            605.0,
+            523.1787
+          ],
+          "parts": [
+            [
+              24.0,
+              41.0,
+              605.0,
+              523.1787
+            ]
+          ],
+          "kind": "content",
+          "headline": "THE PARALYSIDENT THE PARALYSIDENT"
         }
       ]
     },
@@ -8436,6 +13752,47 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p134-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            616.898,
+            582.2885,
+            843.898
+          ],
+          "parts": [
+            [
+              0.0,
+              616.898,
+              582.2885,
+              843.898
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p134-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            62.1958,
+            390.7099,
+            296.1193,
+            616.5483
+          ],
+          "parts": [
+            [
+              62.1958,
+              390.7099,
+              296.1193,
+              616.5483
+            ]
+          ],
+          "kind": "content",
+          "headline": "Roosevelt was successful not only in economy"
+        },
         {
           "id": "p134-c",
           "label": "c",
@@ -8455,6 +13812,27 @@
             ]
           ],
           "headline": "or Not Mentioned (NM) to the statements"
+        },
+        {
+          "id": "p134-c3",
+          "label": null,
+          "column": 1,
+          "rect": [
+            301.315,
+            337.0842,
+            566.2654,
+            616.5483
+          ],
+          "parts": [
+            [
+              301.315,
+              337.0842,
+              566.2654,
+              616.5483
+            ]
+          ],
+          "kind": "content",
+          "headline": "Today, Roosevelt is regarded as one of the"
         },
         {
           "id": "p134-d",
@@ -8686,6 +14064,90 @@
             ]
           ],
           "headline": "Find the compound nouns and"
+        },
+        {
+          "id": "p136-c1",
+          "label": null,
+          "column": 2,
+          "rect": [
+            300.7749,
+            65.789,
+            553.24,
+            304.6994
+          ],
+          "parts": [
+            [
+              300.7749,
+              65.789,
+              553.24,
+              304.6994
+            ]
+          ],
+          "kind": "content",
+          "headline": "Do you"
+        },
+        {
+          "id": "p136-c2",
+          "label": null,
+          "column": 2,
+          "rect": [
+            320.698,
+            533.9484,
+            564.4487,
+            704.7712
+          ],
+          "parts": [
+            [
+              320.698,
+              533.9484,
+              564.4487,
+              704.7712
+            ]
+          ],
+          "kind": "content",
+          "headline": "Read the dialogue below and guess the"
+        },
+        {
+          "id": "p136-c3",
+          "label": null,
+          "column": 2,
+          "rect": [
+            334.7382,
+            314.1867,
+            521.8682,
+            520.1437
+          ],
+          "parts": [
+            [
+              334.7382,
+              314.1867,
+              521.8682,
+              520.1437
+            ]
+          ],
+          "kind": "content",
+          "headline": "Quote of the day! Quote of the day!"
+        },
+        {
+          "id": "p136-c4",
+          "label": null,
+          "column": 1,
+          "rect": [
+            61.9797,
+            704.7712,
+            518.1482,
+            793.1389
+          ],
+          "parts": [
+            [
+              61.9797,
+              704.7712,
+              518.1482,
+              793.1389
+            ]
+          ],
+          "kind": "content",
+          "headline": "IDIOM OF THE DAY"
         }
       ]
     },
@@ -8766,6 +14228,69 @@
               "text": "Do you think a Paralympic athlete feels different about winning a gold medal than an 2 Olympic athlete? Why/Why not?"
             }
           ]
+        },
+        {
+          "id": "p137-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            76.3702,
+            634.181,
+            229.4662,
+            668.362
+          ],
+          "parts": [
+            [
+              76.3702,
+              634.181,
+              229.4662,
+              668.362
+            ]
+          ],
+          "kind": "content",
+          "headline": "Reading"
+        },
+        {
+          "id": "p137-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            76.3701,
+            243.169,
+            547.9057,
+            537.4272
+          ],
+          "parts": [
+            [
+              76.3701,
+              243.169,
+              547.9057,
+              537.4272
+            ]
+          ],
+          "kind": "content",
+          "headline": "EQUAL IN SPORTS"
+        },
+        {
+          "id": "p137-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            69.4488,
+            44.0,
+            537.1654,
+            239.999
+          ],
+          "parts": [
+            [
+              69.4488,
+              44.0,
+              537.1654,
+              239.999
+            ]
+          ],
+          "kind": "content",
+          "headline": "136"
         }
       ]
     },
@@ -8783,6 +14308,67 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p138-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            61.8189,
+            599.898,
+            576.0231,
+            821.898
+          ],
+          "parts": [
+            [
+              61.8189,
+              599.898,
+              576.0231,
+              821.898
+            ]
+          ],
+          "kind": "content",
+          "headline": "Paralympic athletes compete in six different disability groups: Amputee, cerebral"
+        },
+        {
+          "id": "p138-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            72.9921,
+            317.4191,
+            286.3395,
+            598.6703
+          ],
+          "parts": [
+            [
+              72.9921,
+              317.4191,
+              286.3395,
+              598.6703
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p138-b",
+          "label": "b",
+          "column": 0,
+          "rect": [
+            64.0386,
+            90.6714,
+            295.3787,
+            306.2028
+          ],
+          "parts": [
+            [
+              64.0386,
+              90.6714,
+              295.3787,
+              306.2028
+            ]
+          ],
+          "headline": "questions."
+        },
         {
           "id": "p138-5",
           "label": "5",
@@ -8822,26 +14408,6 @@
             ]
           ],
           "headline": "the blanks with the Paralympic games"
-        },
-        {
-          "id": "p138-b",
-          "label": "b",
-          "column": 0,
-          "rect": [
-            64.0386,
-            90.6714,
-            295.3787,
-            306.2028
-          ],
-          "parts": [
-            [
-              64.0386,
-              90.6714,
-              295.3787,
-              306.2028
-            ]
-          ],
-          "headline": "questions."
         }
       ]
     },
@@ -8859,6 +14425,27 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p139-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            41.6951,
+            736.7029,
+            469.063,
+            836.6592
+          ],
+          "parts": [
+            [
+              41.6951,
+              736.7029,
+              469.063,
+              836.6592
+            ]
+          ],
+          "kind": "content",
+          "headline": "Listening"
+        },
         {
           "id": "p139-a",
           "label": "a",
@@ -9252,6 +14839,204 @@
             ]
           ],
           "headline": "of making paralysed people’s life easier"
+        },
+        {
+          "id": "p140-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            58.2505,
+            350.5185,
+            215.5985,
+            397.0518
+          ],
+          "parts": [
+            [
+              58.2505,
+              350.5185,
+              215.5985,
+              397.0518
+            ]
+          ],
+          "kind": "content",
+          "headline": "Writing"
+        },
+        {
+          "id": "p140-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            301.2519,
+            297.0472,
+            454.3479,
+            334.2283
+          ],
+          "parts": [
+            [
+              301.2519,
+              297.0472,
+              454.3479,
+              334.2283
+            ]
+          ],
+          "kind": "content",
+          "headline": "Project"
+        }
+      ]
+    },
+    "141": {
+      "pageWidth": 612.283,
+      "pageHeight": 858.898,
+      "columns": [
+        [
+          73.3701,
+          588.283
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p141-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            66.732,
+            248.6021,
+            571.63,
+            791.5869
+          ],
+          "parts": [
+            [
+              66.732,
+              248.6021,
+              571.63,
+              791.5869
+            ]
+          ],
+          "kind": "content",
+          "headline": "PHONEMIC CHART"
+        }
+      ]
+    },
+    "142": {
+      "pageWidth": 612.283,
+      "pageHeight": 858.898,
+      "columns": [
+        [
+          183.0432,
+          588.283
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p142-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            50.906,
+            312.6021,
+            555.804,
+            792.0593
+          ],
+          "parts": [
+            [
+              50.906,
+              312.6021,
+              555.804,
+              792.0593
+            ]
+          ],
+          "kind": "content",
+          "headline": "PHONEMIC CHART"
+        }
+      ]
+    },
+    "143": {
+      "pageWidth": 612.283,
+      "pageHeight": 858.898,
+      "columns": [
+        [
+          51.874,
+          122.751
+        ],
+        [
+          126.751,
+          196.924
+        ],
+        [
+          200.924,
+          320.8504
+        ],
+        [
+          324.8504,
+          395.0894
+        ],
+        [
+          399.0894,
+          588.283
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p143-c1",
+          "label": null,
+          "column": 2,
+          "rect": [
+            30.6237,
+            62.9593,
+            582.6312,
+            776.7193
+          ],
+          "parts": [
+            [
+              30.6237,
+              62.9593,
+              582.6312,
+              776.7193
+            ]
+          ],
+          "kind": "content",
+          "headline": "Past Participle"
+        }
+      ]
+    },
+    "144": {
+      "pageWidth": 612.283,
+      "pageHeight": 858.898,
+      "columns": [
+        [
+          52.7953,
+          123.2213
+        ],
+        [
+          127.2213,
+          317.0473
+        ],
+        [
+          321.0473,
+          588.283
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p144-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            29.7969,
+            62.9593,
+            581.8044,
+            776.7193
+          ],
+          "parts": [
+            [
+              29.7969,
+              62.9593,
+              581.8044,
+              776.7193
+            ]
+          ],
+          "kind": "content",
+          "headline": "Past Participle"
         }
       ]
     }
@@ -9259,5 +15044,20 @@
   "engine": "vision",
   "checkpoint": "a9a76c4979dceebed2adb9cebfad673021ed4685e05a362dd3843b781b38fab7",
   "conf": 0.7,
-  "icons": "bind"
+  "icons": "bind",
+  "content": true,
+  "frontMatterEnd": 14,
+  "backMatterStart": 145,
+  "openers": [
+    15,
+    29,
+    41,
+    55,
+    67,
+    79,
+    91,
+    105,
+    117,
+    129
+  ]
 }

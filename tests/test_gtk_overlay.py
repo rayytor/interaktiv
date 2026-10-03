@@ -22,11 +22,15 @@ from interaktiv_gtk.reader.overlay import build_overlay
 PAGE_W, PAGE_H = 600.0, 800.0
 
 
-def activity(aid, label, rect, parts=(), items=(), anchored=False, headline=""):
+def activity(aid, label, rect, parts=(), items=(), anchored=False, headline="", kind="activity"):
     return Activity(
         id=aid, page_num=5, label=label, column=0, rect=rect, parts=tuple(parts),
-        headline=headline, anchored=anchored, items=tuple(items),
+        headline=headline, anchored=anchored, items=tuple(items), kind=kind,
     )
+
+
+def passage(aid, rect, headline="Bir zamanlar"):
+    return activity(aid, None, rect, headline=headline, kind="content")
 
 
 def item(iid, rect, part_index=0, number=None):
@@ -173,6 +177,62 @@ class TestLinking(unittest.TestCase):
 # -- the session's guards --------------------------------------------------
 
 
+class TestContent(unittest.TestCase):
+    """A passage or a figure can be opened like an activity, and is not one."""
+
+    def test_a_content_region_is_a_spot_that_says_so(self):
+        overlay = build_overlay(page([passage("c1", (50, 600, 550, 700))]))
+        (spot,) = overlay.spots
+        self.assertTrue(spot.content)
+        self.assertFalse(spot.interactive)
+        self.assertEqual(spot.label, "Bir zamanlar")
+        self.assertIs(overlay.hit_test(300, 650), spot)
+
+    def test_a_publisher_icon_beside_a_passage_stays_a_pin(self):
+        # The icon hangs level with the passage, where it would link to an exercise.
+        regions = [passage("c1", (50, 600, 550, 700))]
+        entry = oge("o1", "5/a", posx=5.0, posy=13.0)
+        self.assertAlmostEqual(top_pct_to_y(12.5), 700.0)
+        overlay = build_overlay(page(regions), [entry])
+        self.assertFalse(overlay.spots[0].interactive)
+        self.assertEqual([p.oge.id for p in overlay.pins], ["o1"])
+
+    def test_the_join_still_reaches_the_exercise_that_follows_a_passage(self):
+        # Indices are the join's currency; leaving content out of it must not shift them.
+        regions = [
+            passage("c1", (50, 620, 550, 760)),
+            activity("a1", "a", (50, 400, 550, 600)),
+            passage("c2", (50, 100, 550, 380)),
+        ]
+        entry = oge("o1", "5/a", posx=5.0, posy=25.0)
+        overlay = build_overlay(page(regions), [entry])
+        self.assertEqual([s.interactive for s in overlay.spots], [False, True, False])
+        self.assertEqual(overlay.spots[1].guid, "guid-o1")
+        self.assertEqual(overlay.pins, [])
+
+    def test_only_exercises_are_counted_and_numbered(self):
+        regions = [
+            passage("c1", (50, 620, 550, 760)),
+            activity("v1", None, (50, 400, 550, 600)),
+            passage("c2", (50, 250, 550, 380)),
+            activity("v2", None, (50, 100, 550, 240)),
+        ]
+        overlay = build_overlay(page(regions))
+        self.assertEqual(overlay.activity_count, 2)
+        self.assertEqual(len(overlay.activities), 4)
+        self.assertEqual([s.number for s in overlay.spots], [0, 1, 0, 2])
+
+    def test_a_bake_without_the_field_reads_as_activities(self):
+        book = RegionsBook.from_dict(bake(baked_page(5, [
+            raw_activity("a1", "a", (50, 600, 550, 700)),
+            {**raw_activity("p5-c1", None, (50, 300, 550, 500)), "kind": "content", "headline": "Metin"},
+        ])))
+        first, second = book.page(5).activities
+        self.assertFalse(first.is_content)
+        self.assertTrue(second.is_content)
+        self.assertEqual(second.name(), "Metin")
+
+
 class FakeInfo:
     def __init__(self, page_count, sizes=None):
         self.page_count = page_count
@@ -293,6 +353,13 @@ class TestSessionGuards(unittest.TestCase):
         rows = list(s.activity_summaries())
         self.assertEqual([(r[0], r[1], r[2], r[3]) for r in rows],
                          [(3, 0, "a", 1), (8, 0, "b", 0), (8, 1, "c", 0)])
+
+    def test_the_summaries_list_exercises_and_keep_their_place_on_the_sheet(self):
+        content = {**raw_activity("p8-c1", None, (50, 720, 550, 780)), "kind": "content"}
+        pages = baked_page(8, [content, raw_activity("b1", "b", (50, 600, 550, 700))])
+        s = self.session(bake(pages), FakeInfo(10))
+        # The row's index is the region's position on the sheet, which is what selecting it uses.
+        self.assertEqual([(r[0], r[1], r[2]) for r in s.activity_summaries()], [(8, 1, "b")])
 
 
 if __name__ == "__main__":

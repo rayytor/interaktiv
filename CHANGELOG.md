@@ -2,6 +2,23 @@
 
 ## Unreleased
 
+### Hotspots for the whole page
+- A page's hotspots are no longer only its activities. Reading passages, poems,
+  explanations, figures, diagrams, tables and info panels each get a hotspot of
+  their own, marked in blue, that opens in focus mode. The arrows in focus mode
+  step through everything on the page in reading order, activities included, so
+  a book can be walked by its hotspots alone.
+- Activities keep their amber marks, their numbers and their interactive
+  versions; the activity list and the dock's count still show activities only.
+- A task or form that fills its page -- a performance task, a self- or
+  peer-assessment form, a rubric -- is one hotspot for the whole page instead
+  of a handful of fragments. A hotspot may now be as tall as the page.
+- Front matter and the opening page of a chapter get no content hotspots, and
+  neither do running heads, the bibliography and the map plates at the back.
+- Content hotspots come from the page's own geometry at bake time
+  (`tools/hotspot_extraction/scanner/content.py`); `scan.py --no-content` bakes
+  activities only. A book whose PDF has no text layer gets none.
+
 ### Rayyan Ekitap
 - Interaktiv is now called Rayyan Ekitap: the window, the menu entry, the
   messages and the documents use the new name. Folders, the menu entry's id

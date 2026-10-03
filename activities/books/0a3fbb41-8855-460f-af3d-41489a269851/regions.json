@@ -3,7 +3,7 @@
   "bookId": "0a3fbb41-8855-460f-af3d-41489a269851",
   "fingerprint": "151362384-07dbe7321dca341416f297306170fdd6",
   "profile": "c7de24295a4b",
-  "builtAt": "2026-10-03T08:01:47.469Z",
+  "builtAt": "2026-10-03T11:45:56.721Z",
   "pageCount": 162,
   "calibration": {
     "enabled": true,
@@ -221,6 +221,26 @@
       ],
       "activities": [
         {
+          "id": "p16-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            6.183,
+            727.4658,
+            521.74,
+            784.2778
+          ],
+          "parts": [
+            [
+              6.183,
+              727.4658,
+              521.74,
+              784.2778
+            ]
+          ],
+          "kind": "content"
+        },
+        {
           "id": "p16-a",
           "label": "a",
           "column": 0,
@@ -379,6 +399,26 @@
       ],
       "activities": [
         {
+          "id": "p17-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            27.693,
+            727.4658,
+            507.567,
+            784.2778
+          ],
+          "parts": [
+            [
+              27.693,
+              727.4658,
+              507.567,
+              784.2778
+            ]
+          ],
+          "kind": "content"
+        },
+        {
           "id": "p17-d",
           "label": "d",
           "column": 0,
@@ -504,6 +544,26 @@
             ]
           ],
           "headline": "Imagine you are Elif or Ali. Write a diary entry the night before the school event, answering the questions below."
+        },
+        {
+          "id": "p17-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            552.0,
+            44.0,
+            569.764,
+            703.535
+          ],
+          "parts": [
+            [
+              552.0,
+              44.0,
+              569.764,
+              703.535
+            ]
+          ],
+          "kind": "content"
         }
       ]
     },
@@ -517,6 +577,26 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p18-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            6.183,
+            727.4658,
+            521.74,
+            784.2778
+          ],
+          "parts": [
+            [
+              6.183,
+              727.4658,
+              521.74,
+              784.2778
+            ]
+          ],
+          "kind": "content"
+        },
         {
           "id": "p18-v1",
           "label": null,
@@ -535,6 +615,27 @@
               710.2066
             ]
           ]
+        },
+        {
+          "id": "p18-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            33.6973,
+            149.0518,
+            551.0173,
+            540.0118
+          ],
+          "parts": [
+            [
+              33.6973,
+              149.0518,
+              551.0173,
+              540.0118
+            ]
+          ],
+          "kind": "content",
+          "headline": "A Weekend Without Phones"
         }
       ]
     },
@@ -548,6 +649,26 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p19-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            27.693,
+            727.4658,
+            507.567,
+            784.2778
+          ],
+          "parts": [
+            [
+              27.693,
+              727.4658,
+              507.567,
+              784.2778
+            ]
+          ],
+          "kind": "content"
+        },
         {
           "id": "p19-h",
           "label": "h",
@@ -806,6 +927,26 @@
       ],
       "activities": [
         {
+          "id": "p20-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            44.0,
+            18.0,
+            704.535
+          ],
+          "parts": [
+            [
+              0.0,
+              44.0,
+              18.0,
+              704.535
+            ]
+          ],
+          "kind": "content"
+        },
+        {
           "id": "p20-a",
           "label": "a",
           "column": 0,
@@ -824,6 +965,26 @@
             ]
           ],
           "headline": "Listen to the audio and circle what it is about."
+        },
+        {
+          "id": "p20-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            40.9375,
+            710.8521,
+            521.031,
+            784.2773
+          ],
+          "parts": [
+            [
+              40.9375,
+              710.8521,
+              521.031,
+              784.2773
+            ]
+          ],
+          "kind": "content"
         },
         {
           "id": "p20-b",
@@ -934,6 +1095,81 @@
         }
       ]
     },
+    "21": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.0237,
+          289.6853
+        ],
+        [
+          293.6853,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p21-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            27.6941,
+            718.2388,
+            507.567,
+            784.2773
+          ],
+          "parts": [
+            [
+              27.6941,
+              718.2388,
+              507.567,
+              784.2773
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p21-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            50.9672,
+            96.9615,
+            505.276,
+            715.498
+          ],
+          "parts": [
+            [
+              50.9672,
+              96.9615,
+              505.276,
+              715.498
+            ]
+          ]
+        },
+        {
+          "id": "p21-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            556.0,
+            44.0,
+            569.764,
+            443.535
+          ],
+          "parts": [
+            [
+              556.0,
+              44.0,
+              569.764,
+              443.535
+            ]
+          ],
+          "kind": "content"
+        }
+      ]
+    },
     "22": {
       "pageWidth": 569.764,
       "pageHeight": 796.535,
@@ -953,6 +1189,46 @@
       ],
       "activities": [
         {
+          "id": "p22-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            44.0,
+            16.988,
+            756.535
+          ],
+          "parts": [
+            [
+              0.0,
+              44.0,
+              16.988,
+              756.535
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p22-c2",
+          "label": null,
+          "column": 2,
+          "rect": [
+            40.9375,
+            710.8521,
+            521.031,
+            784.2773
+          ],
+          "parts": [
+            [
+              40.9375,
+              710.8521,
+              521.031,
+              784.2773
+            ]
+          ],
+          "kind": "content"
+        },
+        {
           "id": "p22-e",
           "label": "e",
           "column": 0,
@@ -971,6 +1247,27 @@
             ]
           ],
           "headline": "Read the text quickly and circle the photo that describes it best."
+        },
+        {
+          "id": "p22-c3",
+          "label": null,
+          "column": 2,
+          "rect": [
+            34.3007,
+            346.3497,
+            541.9008,
+            578.9097
+          ],
+          "parts": [
+            [
+              34.3007,
+              346.3497,
+              541.9008,
+              578.9097
+            ]
+          ],
+          "kind": "content",
+          "headline": "Our Earth Needs Us"
         },
         {
           "id": "p22-f",
@@ -1148,6 +1445,242 @@
         }
       ]
     },
+    "23": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.1148,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p23-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            50.0213,
+            83.9922,
+            516.6268,
+            709.1353
+          ],
+          "parts": [
+            [
+              50.0213,
+              83.9922,
+              516.6268,
+              709.1353
+            ]
+          ]
+        },
+        {
+          "id": "p23-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            27.6941,
+            710.8521,
+            507.567,
+            784.2773
+          ],
+          "parts": [
+            [
+              27.6941,
+              710.8521,
+              507.567,
+              784.2773
+            ]
+          ],
+          "kind": "content"
+        }
+      ]
+    },
+    "24": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.0236,
+          317.6505
+        ],
+        [
+          321.6505,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p24-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            5.3796,
+            321.1181,
+            555.0626,
+            759.535
+          ],
+          "parts": [
+            [
+              5.3796,
+              321.1181,
+              555.0626,
+              759.535
+            ]
+          ],
+          "kind": "content",
+          "headline": "THEME 1"
+        },
+        {
+          "id": "p24-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            48.0236,
+            235.3248,
+            242.8656,
+            309.1367
+          ],
+          "parts": [
+            [
+              48.0236,
+              235.3248,
+              242.8656,
+              309.1367
+            ]
+          ],
+          "kind": "content",
+          "headline": "Functions"
+        },
+        {
+          "id": "p24-c3",
+          "label": null,
+          "column": 1,
+          "rect": [
+            324.874,
+            232.3047,
+            521.8786,
+            321.1181
+          ],
+          "parts": [
+            [
+              324.874,
+              232.3047,
+              521.8786,
+              321.1181
+            ]
+          ],
+          "kind": "content",
+          "headline": "Getting Ready"
+        },
+        {
+          "id": "p24-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            35.4363,
+            0.0,
+            544.5322,
+            232.2347
+          ],
+          "parts": [
+            [
+              35.4363,
+              0.0,
+              544.5322,
+              232.2347
+            ]
+          ],
+          "kind": "content",
+          "headline": "and how do they feel?"
+        }
+      ]
+    },
+    "25": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          93.3054,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p25-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            38.5592,
+            52.509,
+            568.0947,
+            704.2548
+          ],
+          "parts": [
+            [
+              38.5592,
+              52.509,
+              568.0947,
+              704.2548
+            ]
+          ],
+          "headline": "Look at the photos and say what they are about. Take notes of the words and phrases they remind you."
+        }
+      ]
+    },
+    "26": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          374.8926,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p26-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            97.5794,
+            376.1249,
+            556.256,
+            748.748
+          ],
+          "parts": [
+            [
+              97.5794,
+              376.1249,
+              556.256,
+              748.748
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p26-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            11.8312,
+            47.3596,
+            554.4498,
+            371.8345
+          ],
+          "parts": [
+            [
+              11.8312,
+              47.3596,
+              554.4498,
+              371.8345
+            ]
+          ],
+          "kind": "content",
+          "headline": "Merhaba!"
+        }
+      ]
+    },
     "27": {
       "pageWidth": 569.764,
       "pageHeight": 796.535,
@@ -1189,6 +1722,27 @@
             ]
           ],
           "headline": "Watch Digital Story 1 and tick (  ) the words you hear."
+        },
+        {
+          "id": "p27-c2",
+          "label": null,
+          "column": 3,
+          "rect": [
+            484.4663,
+            669.9654,
+            512.8819,
+            686.4934
+          ],
+          "parts": [
+            [
+              484.4663,
+              669.9654,
+              512.8819,
+              686.4934
+            ]
+          ],
+          "kind": "content",
+          "headline": "Digital Story 1"
         },
         {
           "id": "p27-b",
@@ -1307,6 +1861,26 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p28-e",
+          "label": "e",
+          "column": 0,
+          "rect": [
+            63.9315,
+            106.2974,
+            286.7181,
+            738.1425
+          ],
+          "parts": [
+            [
+              63.9315,
+              106.2974,
+              286.7181,
+              738.1425
+            ]
+          ],
+          "headline": "Work in pairs. Read the dialogue and make a similar one, using the role cards."
+        },
         {
           "id": "p28-a",
           "label": "a",
@@ -1675,6 +2249,27 @@
               "text": "Astana Bangkok Munich 7 8 9 Nora is a vlogger; she travels and makes videos. In her latest video, Nora's journey lasts two months and starts with Chile, where she practises her Spanish, goes sightseei"
             }
           ]
+        },
+        {
+          "id": "p29-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            49.2647,
+            58.9249,
+            425.3827,
+            81.9289
+          ],
+          "parts": [
+            [
+              49.2647,
+              58.9249,
+              425.3827,
+              81.9289
+            ]
+          ],
+          "kind": "content",
+          "headline": "d"
         }
       ]
     },
@@ -2022,6 +2617,27 @@
             ]
           ],
           "headline": "Read the text quickly and write the information about the topics below."
+        },
+        {
+          "id": "p31-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            24.5407,
+            338.4621,
+            523.0207,
+            620.0911
+          ],
+          "parts": [
+            [
+              24.5407,
+              338.4621,
+              523.0207,
+              620.0911
+            ]
+          ],
+          "kind": "content",
+          "headline": "A Warm Country"
         },
         {
           "id": "p31-c",
@@ -2411,6 +3027,27 @@
               "text": " 6 you  for loved ones, (shop) such as souvenirs, electronics, and luxury  items, but be careful while bargaining. You"
             }
           ]
+        },
+        {
+          "id": "p32-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            314.4803,
+            665.9772,
+            520.4543,
+            737.3772
+          ],
+          "parts": [
+            [
+              314.4803,
+              665.9772,
+              520.4543,
+              737.3772
+            ]
+          ],
+          "kind": "content",
+          "headline": "7 (not touch) or stay so close to"
         }
       ]
     },
@@ -2467,6 +3104,27 @@
             ]
           ],
           "headline": "Read the text quickly to write what each paragraph describes about the Republic of Chile."
+        },
+        {
+          "id": "p33-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            51.32,
+            228.067,
+            551.0,
+            573.667
+          ],
+          "parts": [
+            [
+              51.32,
+              228.067,
+              551.0,
+              573.667
+            ]
+          ],
+          "kind": "content",
+          "headline": "Somewhere Far Away Somewhere Far Away"
         },
         {
           "id": "p33-c",
@@ -2667,6 +3325,26 @@
             ]
           ],
           "headline": "Change your text with your peer’s. Check her/his paper, using"
+        },
+        {
+          "id": "p34-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            359.535,
+            21.0,
+            775.535
+          ],
+          "parts": [
+            [
+              0.0,
+              359.535,
+              21.0,
+              775.535
+            ]
+          ],
+          "kind": "content"
         }
       ]
     },
@@ -2703,6 +3381,27 @@
             ]
           ],
           "headline": "Look at the photo and the title of the text and discuss what the text is about with your classmates."
+        },
+        {
+          "id": "p35-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            55.8189,
+            423.8093,
+            510.9699,
+            621.8132
+          ],
+          "parts": [
+            [
+              55.8189,
+              423.8093,
+              510.9699,
+              621.8132
+            ]
+          ],
+          "kind": "content",
+          "headline": "order groceries, or buy travel tickets online. It also allows people to work from home, attend meetings, run their"
         },
         {
           "id": "p35-b",
@@ -2824,6 +3523,26 @@
             ]
           ],
           "headline": "Work in pairs to discuss the tasks you do online and the ways you can protect your personal information while using the Internet. Then share your ideas with the"
+        },
+        {
+          "id": "p35-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            552.0,
+            44.0,
+            569.764,
+            215.535
+          ],
+          "parts": [
+            [
+              552.0,
+              44.0,
+              569.764,
+              215.535
+            ]
+          ],
+          "kind": "content"
         }
       ]
     },
@@ -3070,6 +3789,26 @@
             ]
           ],
           "headline": "Work in groups of four. Imagine you are at a Cultural Exchange Fair. Prepare a short presentation similar to those in the audio about one of the countries from "
+        },
+        {
+          "id": "p36-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            3.535,
+            21.0,
+            455.535
+          ],
+          "parts": [
+            [
+              0.0,
+              3.535,
+              21.0,
+              455.535
+            ]
+          ],
+          "kind": "content"
         }
       ]
     },
@@ -3142,6 +3881,227 @@
             ]
           ],
           "headline": "What are your strengths in this theme?"
+        }
+      ]
+    },
+    "38": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          57.8795,
+          317.6505
+        ],
+        [
+          321.6505,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p38-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            83.127,
+            554.7319,
+            759.535
+          ],
+          "parts": [
+            [
+              0.0,
+              83.127,
+              554.7319,
+              759.535
+            ]
+          ],
+          "kind": "content",
+          "headline": "THEME 2"
+        }
+      ]
+    },
+    "39": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          93.3054,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p39-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            44.942,
+            133.623,
+            248.9151,
+            636.2598
+          ],
+          "parts": [
+            [
+              44.942,
+              133.623,
+              248.9151,
+              636.2598
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p39-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            256.341,
+            40.4038,
+            457.565,
+            189.3848
+          ],
+          "parts": [
+            [
+              256.341,
+              40.4038,
+              457.565,
+              189.3848
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p39-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            481.3739,
+            49.6677,
+            569.764,
+            176.6514
+          ],
+          "parts": [
+            [
+              481.3739,
+              49.6677,
+              569.764,
+              176.6514
+            ]
+          ],
+          "kind": "content"
+        }
+      ]
+    },
+    "40": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          50.0,
+          519.7639770507812
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p40-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            49.6677,
+            107.1359,
+            176.6514
+          ],
+          "parts": [
+            [
+              0.0,
+              49.6677,
+              107.1359,
+              176.6514
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p40-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            120.8091,
+            595.2798,
+            324.7821,
+            747.2729
+          ],
+          "parts": [
+            [
+              120.8091,
+              595.2798,
+              324.7821,
+              747.2729
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p40-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            128.1098,
+            40.4038,
+            332.0838,
+            189.3848
+          ],
+          "parts": [
+            [
+              128.1098,
+              40.4038,
+              332.0838,
+              189.3848
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p40-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            333.3845,
+            442.209,
+            537.3579,
+            744.2598
+          ],
+          "parts": [
+            [
+              333.3845,
+              442.209,
+              537.3579,
+              744.2598
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p40-c5",
+          "label": null,
+          "column": 0,
+          "rect": [
+            333.3844,
+            136.0659,
+            537.3584,
+            438.1177
+          ],
+          "parts": [
+            [
+              333.3844,
+              136.0659,
+              537.3584,
+              438.1177
+            ]
+          ],
+          "kind": "content"
         }
       ]
     },
@@ -3615,6 +4575,48 @@
             ]
           ],
           "headline": "Work in pairs. Talk about your own daily routine, using the words and sounds you have learnt."
+        },
+        {
+          "id": "p42-c1",
+          "label": null,
+          "column": 2,
+          "rect": [
+            299.9278,
+            706.7366,
+            511.5918,
+            751.171
+          ],
+          "parts": [
+            [
+              299.9278,
+              706.7366,
+              511.5918,
+              751.171
+            ]
+          ],
+          "kind": "content",
+          "headline": "Pronunciation"
+        },
+        {
+          "id": "p42-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            78.4101,
+            220.5404,
+            285.67,
+            301.5851
+          ],
+          "parts": [
+            [
+              78.4101,
+              220.5404,
+              285.67,
+              301.5851
+            ]
+          ],
+          "kind": "content",
+          "headline": "e.g. She wakes up at 7 a.m."
         }
       ]
     },
@@ -3644,6 +4646,93 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p43-c",
+          "label": "c",
+          "column": 3,
+          "rect": [
+            284.8263,
+            34.9875,
+            520.0209,
+            736.0492
+          ],
+          "parts": [
+            [
+              284.8263,
+              34.9875,
+              520.0209,
+              736.0492
+            ]
+          ],
+          "headline": "Read the text quickly to complete the phrases below.",
+          "items": [
+            {
+              "id": "p43-c-1",
+              "label": "1",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                299.3748,
+                682.2607,
+                453.6856,
+                709.0
+              ],
+              "text": "my messages 1"
+            },
+            {
+              "id": "p43-c-2",
+              "label": "2",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                299.3748,
+                666.6094,
+                430.5256,
+                693.3
+              ],
+              "text": "to school 2"
+            },
+            {
+              "id": "p43-c-3",
+              "label": "3",
+              "number": 3,
+              "partIndex": 0,
+              "rect": [
+                299.3748,
+                650.958,
+                486.1257,
+                677.7
+              ],
+              "text": "valuable information 3"
+            },
+            {
+              "id": "p43-c-4",
+              "label": "4",
+              "number": 4,
+              "partIndex": 0,
+              "rect": [
+                299.3748,
+                635.3066,
+                499.6367,
+                662.0
+              ],
+              "text": "in various social events 4"
+            },
+            {
+              "id": "p43-c-5",
+              "label": "5",
+              "number": 5,
+              "partIndex": 0,
+              "rect": [
+                284.8263,
+                50.6418,
+                519.6124,
+                646.4
+              ],
+              "text": "my outfits 5   Sally_  ... Sally_ 📌  As a university student, I usually need to get out of bed quite early in the mornings, although I am keen on having a lie-in. After having a shower quickly, I put"
+            }
+          ]
+        },
         {
           "id": "p43-a",
           "label": "a",
@@ -4066,6 +5155,67 @@
           ]
         },
         {
+          "id": "p45-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            35.74,
+            417.84,
+            532.134,
+            563.082
+          ],
+          "parts": [
+            [
+              35.74,
+              417.84,
+              532.134,
+              563.082
+            ]
+          ],
+          "kind": "content",
+          "headline": "Hi, I am James, and I live with my family in Boston. We do not wake up late on weekdays because we all have"
+        },
+        {
+          "id": "p45-c3",
+          "label": null,
+          "column": 1,
+          "rect": [
+            373.245,
+            566.0486,
+            528.6092,
+            618.9423
+          ],
+          "parts": [
+            [
+              373.245,
+              566.0486,
+              528.6092,
+              618.9423
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p45-c4",
+          "label": null,
+          "column": 1,
+          "rect": [
+            362.0846,
+            618.9423,
+            533.6846,
+            769.4912
+          ],
+          "parts": [
+            [
+              362.0846,
+              618.9423,
+              533.6846,
+              769.4912
+            ]
+          ],
+          "kind": "content"
+        },
+        {
           "id": "p45-e",
           "label": "e",
           "column": 1,
@@ -4275,6 +5425,26 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p46-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            44.0,
+            18.5641,
+            756.535
+          ],
+          "parts": [
+            [
+              0.0,
+              44.0,
+              18.5641,
+              756.535
+            ]
+          ],
+          "kind": "content"
+        },
         {
           "id": "p46-f",
           "label": "f",
@@ -4811,6 +5981,47 @@
             ]
           ],
           "headline": "Work in pairs. Take turns talking about your daily activities. Then share your ideas with the class."
+        },
+        {
+          "id": "p48-c1",
+          "label": null,
+          "column": 2,
+          "rect": [
+            296.4951,
+            709.8705,
+            511.1591,
+            751.3049
+          ],
+          "parts": [
+            [
+              296.4951,
+              709.8705,
+              511.1591,
+              751.3049
+            ]
+          ],
+          "kind": "content",
+          "headline": "Writing"
+        },
+        {
+          "id": "p48-c2",
+          "label": null,
+          "column": 2,
+          "rect": [
+            466.8549,
+            62.2524,
+            522.8789,
+            134.8824
+          ],
+          "parts": [
+            [
+              466.8549,
+              62.2524,
+              522.8789,
+              134.8824
+            ]
+          ],
+          "kind": "content"
         }
       ]
     },
@@ -4978,6 +6189,26 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p50-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            44.0,
+            18.5151,
+            257.535
+          ],
+          "parts": [
+            [
+              0.0,
+              44.0,
+              18.5151,
+              257.535
+            ]
+          ],
+          "kind": "content"
+        },
         {
           "id": "p50-a",
           "label": "a",
@@ -5233,6 +6464,227 @@
         }
       ]
     },
+    "52": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          57.8795,
+          315.9843
+        ],
+        [
+          319.9843,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p52-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            56.5269,
+            556.76,
+            790.618
+          ],
+          "parts": [
+            [
+              0.0,
+              56.5269,
+              556.76,
+              790.618
+            ]
+          ],
+          "kind": "content",
+          "headline": "THEME 3"
+        }
+      ]
+    },
+    "53": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          93.3054,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p53-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            29.598,
+            105.2229,
+            239.6934,
+            640.7954
+          ],
+          "parts": [
+            [
+              29.598,
+              105.2229,
+              239.6934,
+              640.7954
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p53-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            242.3449,
+            62.2133,
+            392.1769,
+            259.9883
+          ],
+          "parts": [
+            [
+              242.3449,
+              62.2133,
+              392.1769,
+              259.9883
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p53-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            402.3799,
+            62.2123,
+            552.2139,
+            259.9903
+          ],
+          "parts": [
+            [
+              402.3799,
+              62.2123,
+              552.2139,
+              259.9903
+            ]
+          ],
+          "kind": "content"
+        }
+      ]
+    },
+    "54": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          50.0,
+          519.7639770507812
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p54-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            13.305,
+            60.5507,
+            164.575,
+            260.2437
+          ],
+          "parts": [
+            [
+              13.305,
+              60.5507,
+              164.575,
+              260.2437
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p54-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            174.1782,
+            564.4359,
+            324.0102,
+            762.2109
+          ],
+          "parts": [
+            [
+              174.1782,
+              564.4359,
+              324.0102,
+              762.2109
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p54-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            170.6351,
+            60.5511,
+            321.9051,
+            260.2441
+          ],
+          "parts": [
+            [
+              170.6351,
+              60.5511,
+              321.9051,
+              260.2441
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p54-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            328.653,
+            408.0403,
+            533.079,
+            745.6938
+          ],
+          "parts": [
+            [
+              328.653,
+              408.0403,
+              533.079,
+              745.6938
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p54-c5",
+          "label": null,
+          "column": 0,
+          "rect": [
+            328.6536,
+            62.2136,
+            533.0787,
+            399.8667
+          ],
+          "parts": [
+            [
+              328.6536,
+              62.2136,
+              533.0787,
+              399.8667
+            ]
+          ],
+          "kind": "content"
+        }
+      ]
+    },
     "55": {
       "pageWidth": 569.764,
       "pageHeight": 796.535,
@@ -5274,6 +6726,27 @@
             ]
           ],
           "headline": "Tick (  ) the words that are mentioned in Digital Story 3 ."
+        },
+        {
+          "id": "p55-c2",
+          "label": null,
+          "column": 3,
+          "rect": [
+            457.9,
+            676.9,
+            514.8626,
+            743.7602
+          ],
+          "parts": [
+            [
+              457.9,
+              676.9,
+              514.8626,
+              743.7602
+            ]
+          ],
+          "kind": "content",
+          "headline": "Digital Story 3"
         },
         {
           "id": "p55-b",
@@ -5503,6 +6976,47 @@
               "text": "What type of person is Lucy? 6"
             }
           ]
+        },
+        {
+          "id": "p55-c3",
+          "label": null,
+          "column": 3,
+          "rect": [
+            285.8448,
+            308.2678,
+            510.0218,
+            475.137
+          ],
+          "parts": [
+            [
+              285.8448,
+              308.2678,
+              510.0218,
+              475.137
+            ]
+          ],
+          "kind": "content",
+          "headline": "1"
+        },
+        {
+          "id": "p55-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            538.0867,
+            44.0,
+            569.764,
+            490.922
+          ],
+          "parts": [
+            [
+              538.0867,
+              44.0,
+              569.764,
+              490.922
+            ]
+          ],
+          "kind": "content"
         }
       ]
     },
@@ -5778,6 +7292,48 @@
             ]
           ],
           "headline": "Work in pairs. Describe the photos and match the personality traits below to each. One is extra."
+        },
+        {
+          "id": "p57-c2",
+          "label": null,
+          "column": 2,
+          "rect": [
+            283.2993,
+            591.8342,
+            507.3371,
+            740.1752
+          ],
+          "parts": [
+            [
+              283.2993,
+              591.8342,
+              507.3371,
+              740.1752
+            ]
+          ],
+          "kind": "content",
+          "headline": "c"
+        },
+        {
+          "id": "p57-c3",
+          "label": null,
+          "column": 2,
+          "rect": [
+            299.2583,
+            92.8096,
+            534.4103,
+            588.3906
+          ],
+          "parts": [
+            [
+              299.2583,
+              92.8096,
+              534.4103,
+              588.3906
+            ]
+          ],
+          "kind": "content",
+          "headline": "Faces Behind the Fair"
         },
         {
           "id": "p57-d",
@@ -6119,6 +7675,89 @@
               "text": "The Opposite Twins: Sophie and Sam 4"
             }
           ]
+        },
+        {
+          "id": "p59-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            47.03,
+            729.7331,
+            486.8919,
+            752.2213
+          ],
+          "parts": [
+            [
+              47.03,
+              729.7331,
+              486.8919,
+              752.2213
+            ]
+          ],
+          "kind": "content",
+          "headline": "ENG"
+        },
+        {
+          "id": "p59-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            308.8549,
+            534.5375,
+            517.8949,
+            627.339
+          ],
+          "parts": [
+            [
+              308.8549,
+              534.5375,
+              517.8949,
+              627.339
+            ]
+          ],
+          "kind": "content",
+          "headline": "2"
+        },
+        {
+          "id": "p59-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            47.766,
+            326.4745,
+            534.0936,
+            534.5375
+          ],
+          "parts": [
+            [
+              47.766,
+              326.4745,
+              534.0936,
+              534.5375
+            ]
+          ],
+          "kind": "content",
+          "headline": "Sophie and Sam are twin siblings, but they are very"
+        },
+        {
+          "id": "p59-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            277.212,
+            627.339,
+            494.9671,
+            729.7331
+          ],
+          "parts": [
+            [
+              277.212,
+              627.339,
+              494.9671,
+              729.7331
+            ]
+          ],
+          "kind": "content"
         },
         {
           "id": "p59-c",
@@ -6661,6 +8300,47 @@
           ]
         },
         {
+          "id": "p61-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            48.1587,
+            246.2256,
+            569.764,
+            439.7781
+          ],
+          "parts": [
+            [
+              48.1587,
+              246.2256,
+              569.764,
+              439.7781
+            ]
+          ],
+          "kind": "content",
+          "headline": "Charming Personalities, Soft Furs"
+        },
+        {
+          "id": "p61-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            377.5648,
+            439.7781,
+            567.8848,
+            560.2605
+          ],
+          "parts": [
+            [
+              377.5648,
+              439.7781,
+              567.8848,
+              560.2605
+            ]
+          ],
+          "kind": "content"
+        },
+        {
           "id": "p61-d",
           "label": "d",
           "column": 0,
@@ -7121,6 +8801,26 @@
       ],
       "activities": [
         {
+          "id": "p64-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            44.0,
+            19.2238,
+            756.535
+          ],
+          "parts": [
+            [
+              0.0,
+              44.0,
+              19.2238,
+              756.535
+            ]
+          ],
+          "kind": "content"
+        },
+        {
           "id": "p64-a",
           "label": "a",
           "column": 0,
@@ -7360,6 +9060,167 @@
         }
       ]
     },
+    "66": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          57.8795,
+          317.874
+        ],
+        [
+          321.874,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p66-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            4.4752,
+            83.127,
+            554.7039,
+            759.535
+          ],
+          "parts": [
+            [
+              4.4752,
+              83.127,
+              554.7039,
+              759.535
+            ]
+          ],
+          "kind": "content",
+          "headline": "THEME 4"
+        }
+      ]
+    },
+    "67": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          93.3054,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p67-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            46.182,
+            51.5634,
+            569.4301,
+            704.4217
+          ],
+          "parts": [
+            [
+              46.182,
+              51.5634,
+              569.4301,
+              704.4217
+            ]
+          ],
+          "headline": "Look at the photos and say what they are about. Take notes of the words and phrases they remind you."
+        }
+      ]
+    },
+    "68": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          50.0,
+          519.7639770507812
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p68-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            62.1965,
+            562.4119,
+            296.2815,
+            750.8799
+          ],
+          "parts": [
+            [
+              62.1965,
+              562.4119,
+              296.2815,
+              750.8799
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p68-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            62.1964,
+            45.7078,
+            296.2814,
+            234.1758
+          ],
+          "parts": [
+            [
+              62.1964,
+              45.7078,
+              296.2814,
+              234.1758
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p68-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            297.4721,
+            300.4837,
+            531.5571,
+            678.4985
+          ],
+          "parts": [
+            [
+              297.4721,
+              300.4837,
+              531.5571,
+              678.4985
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p68-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            297.4727,
+            110.9368,
+            531.5567,
+            299.4048
+          ],
+          "parts": [
+            [
+              297.4727,
+              110.9368,
+              531.5567,
+              299.4048
+            ]
+          ],
+          "kind": "content"
+        }
+      ]
+    },
     "69": {
       "pageWidth": 569.764,
       "pageHeight": 796.535,
@@ -7585,6 +9446,27 @@
               "text": "Which job is more common in your 3 country? Why?"
             }
           ]
+        },
+        {
+          "id": "p69-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            47.165,
+            710.1069,
+            261.86,
+            751.5411
+          ],
+          "parts": [
+            [
+              47.165,
+              710.1069,
+              261.86,
+              751.5411
+            ]
+          ],
+          "kind": "content",
+          "headline": "Listening/Watching"
         }
       ]
     },
@@ -7798,6 +9680,27 @@
           "headline": "Work in groups. Choose two of your family members and talk about them, considering the questions below."
         },
         {
+          "id": "p70-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            299.9278,
+            706.7366,
+            511.5918,
+            751.171
+          ],
+          "parts": [
+            [
+              299.9278,
+              706.7366,
+              511.5918,
+              751.171
+            ]
+          ],
+          "kind": "content",
+          "headline": "Pronunciation"
+        },
+        {
           "id": "p70-h",
           "label": "h",
           "column": 0,
@@ -7838,26 +9741,6 @@
           "headline": "Work in pairs. Make sentences with the words in"
         },
         {
-          "id": "p70-e",
-          "label": "e",
-          "column": 1,
-          "rect": [
-            300.3502,
-            64.9132,
-            523.8131,
-            90.222
-          ],
-          "parts": [
-            [
-              300.3502,
-              64.9132,
-              523.8131,
-              90.222
-            ]
-          ],
-          "headline": "Assess each other’s pronunciation, using Rubric 2"
-        },
-        {
           "id": "p70-i",
           "label": "i",
           "column": 0,
@@ -7876,6 +9759,26 @@
             ]
           ],
           "headline": "Assess your peer’s performance in Exercise h"
+        },
+        {
+          "id": "p70-e",
+          "label": "e",
+          "column": 1,
+          "rect": [
+            300.3502,
+            64.9132,
+            523.8131,
+            90.222
+          ],
+          "parts": [
+            [
+              300.3502,
+              64.9132,
+              523.8131,
+              90.222
+            ]
+          ],
+          "headline": "Assess each other’s pronunciation, using Rubric 2"
         }
       ]
     },
@@ -7897,6 +9800,26 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p71-c",
+          "label": "c",
+          "column": 2,
+          "rect": [
+            282.9902,
+            43.6648,
+            543.0006,
+            737.929
+          ],
+          "parts": [
+            [
+              282.9902,
+              43.6648,
+              543.0006,
+              737.929
+            ]
+          ],
+          "headline": "Read the text quickly to complete the family tree of Tom as in the example."
+        },
         {
           "id": "p71-a",
           "label": "a",
@@ -8285,6 +10208,27 @@
             ]
           ],
           "headline": "Read the text quickly and circle the best title."
+        },
+        {
+          "id": "p73-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            27.517,
+            442.24,
+            519.637,
+            653.2
+          ],
+          "parts": [
+            [
+              27.517,
+              442.24,
+              519.637,
+              653.2
+            ]
+          ],
+          "kind": "content",
+          "headline": "My family is quite unique, and everyone has a different job. For example, I, Tolga, am an architect. Every"
         },
         {
           "id": "p73-b",
@@ -8849,6 +10793,68 @@
           ]
         },
         {
+          "id": "p75-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            341.9048,
+            588.8325,
+            515.2396,
+            756.535
+          ],
+          "parts": [
+            [
+              341.9048,
+              588.8325,
+              515.2396,
+              756.535
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p75-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            48.0237,
+            544.65,
+            491.6039,
+            588.8325
+          ],
+          "parts": [
+            [
+              48.0237,
+              544.65,
+              491.6039,
+              588.8325
+            ]
+          ],
+          "kind": "content",
+          "headline": "Divided by Routines, United by Ties"
+        },
+        {
+          "id": "p75-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            48.0237,
+            349.8941,
+            509.2952,
+            544.447
+          ],
+          "parts": [
+            [
+              48.0237,
+              349.8941,
+              509.2952,
+              544.447
+            ]
+          ],
+          "kind": "content",
+          "headline": "The Panyas live in the countryside in Thailand. Mr Panya is a virtual assistant who works from home. He"
+        },
+        {
           "id": "p75-c",
           "label": "c",
           "column": 0,
@@ -9103,6 +11109,27 @@
             ]
           ],
           "headline": "Change your paper with your peer’s. Give feedback to each other, using on Page 172"
+        },
+        {
+          "id": "p76-c2",
+          "label": null,
+          "column": 2,
+          "rect": [
+            475.2296,
+            64.0656,
+            516.0696,
+            89.5936
+          ],
+          "parts": [
+            [
+              475.2296,
+              64.0656,
+              516.0696,
+              89.5936
+            ]
+          ],
+          "kind": "content",
+          "headline": "In-Theme"
         }
       ]
     },
@@ -9167,6 +11194,27 @@
             ]
           ],
           "headline": "Read the text quickly and circle the values that are mentioned."
+        },
+        {
+          "id": "p77-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            48.1474,
+            337.7356,
+            510.3964,
+            530.6826
+          ],
+          "parts": [
+            [
+              48.1474,
+              337.7356,
+              510.3964,
+              530.6826
+            ]
+          ],
+          "kind": "content",
+          "headline": "Love Through Traditions"
         },
         {
           "id": "p77-c",
@@ -9281,6 +11329,47 @@
             ]
           ],
           "headline": "Discuss the values in Exercise b most important? Give reasons."
+        },
+        {
+          "id": "p77-c3",
+          "label": null,
+          "column": 2,
+          "rect": [
+            314.9227,
+            86.7179,
+            404.3727,
+            101.7179
+          ],
+          "parts": [
+            [
+              314.9227,
+              86.7179,
+              404.3727,
+              101.7179
+            ]
+          ],
+          "kind": "content",
+          "headline": "taking to hospital)"
+        },
+        {
+          "id": "p77-c4",
+          "label": null,
+          "column": 3,
+          "rect": [
+            511.0,
+            3.535,
+            569.764,
+            291.8278
+          ],
+          "parts": [
+            [
+              511.0,
+              3.535,
+              569.764,
+              291.8278
+            ]
+          ],
+          "kind": "content"
         }
       ]
     },
@@ -9509,6 +11598,166 @@
             ]
           ],
           "headline": "What are your strengths in this theme?"
+        }
+      ]
+    },
+    "80": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          57.8795,
+          317.874
+        ],
+        [
+          321.874,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p80-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            4.4776,
+            83.127,
+            559.1508,
+            759.535
+          ],
+          "parts": [
+            [
+              4.4776,
+              83.127,
+              559.1508,
+              759.535
+            ]
+          ],
+          "kind": "content",
+          "headline": "THEME 5"
+        }
+      ]
+    },
+    "81": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          93.3054,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p81-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            38.0028,
+            50.9515,
+            519.1863,
+            701.5849
+          ],
+          "parts": [
+            [
+              38.0028,
+              50.9515,
+              519.1863,
+              701.5849
+            ]
+          ]
+        }
+      ]
+    },
+    "82": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          50.0,
+          519.7639770507812
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p82-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            73.8821,
+            563.0298,
+            303.4721,
+            747.9028
+          ],
+          "parts": [
+            [
+              73.8821,
+              563.0298,
+              303.4721,
+              747.9028
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p82-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            73.8817,
+            54.6041,
+            303.4727,
+            239.4771
+          ],
+          "parts": [
+            [
+              73.8817,
+              54.6041,
+              303.4727,
+              239.4771
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p82-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            307.3936,
+            509.1031,
+            536.9846,
+            693.9761
+          ],
+          "parts": [
+            [
+              307.3936,
+              509.1031,
+              536.9846,
+              693.9761
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p82-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            307.3934,
+            129.2613,
+            536.9845,
+            504.0547
+          ],
+          "parts": [
+            [
+              307.3934,
+              129.2613,
+              536.9845,
+              504.0547
+            ]
+          ],
+          "kind": "content"
         }
       ]
     },
@@ -9939,6 +12188,27 @@
           "headline": "Prepare a short talk about your home and furniture. Use at least five words that include the sounds you have studied in the exercises above."
         },
         {
+          "id": "p84-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            66.096,
+            94.016,
+            282.456,
+            215.696
+          ],
+          "parts": [
+            [
+              66.096,
+              94.016,
+              282.456,
+              215.696
+            ]
+          ],
+          "kind": "content",
+          "headline": "Student B"
+        },
+        {
           "id": "p84-f",
           "label": "f",
           "column": 0,
@@ -10015,6 +12285,26 @@
           "headline": "Read the text quickly and discuss what it is about with your classmates."
         },
         {
+          "id": "p85-a",
+          "label": "a",
+          "column": 0,
+          "rect": [
+            49.5205,
+            61.5757,
+            270.1928,
+            705.7305
+          ],
+          "parts": [
+            [
+              49.5205,
+              61.5757,
+              270.1928,
+              705.7305
+            ]
+          ],
+          "headline": "Work in pairs. Watch Digital Story 5 the floor plans of the cottage. Then check if you placed them correctly."
+        },
+        {
           "id": "p85-c",
           "label": "c",
           "column": 1,
@@ -10089,18 +12379,18 @@
           ]
         },
         {
-          "id": "p85-v3",
+          "id": "p85-v4",
           "label": null,
           "column": 1,
           "rect": [
-            285.2715,
+            270.4428,
             49.9503,
             562.6721,
             570.0
           ],
           "parts": [
             [
-              285.2715,
+              270.4428,
               49.9503,
               562.6721,
               570.0
@@ -10498,6 +12788,48 @@
           ]
         },
         {
+          "id": "p87-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            65.3438,
+            337.6108,
+            278.0699,
+            507.7862
+          ],
+          "parts": [
+            [
+              65.3438,
+              337.6108,
+              278.0699,
+              507.7862
+            ]
+          ],
+          "kind": "content",
+          "headline": "Home Sweet Home"
+        },
+        {
+          "id": "p87-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            82.3516,
+            274.6795,
+            276.3935,
+            337.6108
+          ],
+          "parts": [
+            [
+              82.3516,
+              274.6795,
+              276.3935,
+              337.6108
+            ]
+          ],
+          "kind": "content",
+          "headline": "living room in a five-storey building. It is quite"
+        },
+        {
           "id": "p87-e",
           "label": "e",
           "column": 1,
@@ -10516,6 +12848,27 @@
             ]
           ],
           "headline": "Work in groups. Read and examine the sentences below."
+        },
+        {
+          "id": "p87-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            65.3438,
+            129.9415,
+            273.063,
+            274.6795
+          ],
+          "parts": [
+            [
+              65.3438,
+              129.9415,
+              273.063,
+              274.6795
+            ]
+          ],
+          "kind": "content",
+          "headline": "advantage."
         },
         {
           "id": "p87-f",
@@ -10612,6 +12965,27 @@
           ]
         },
         {
+          "id": "p87-c5",
+          "label": null,
+          "column": 0,
+          "rect": [
+            82.3516,
+            92.2552,
+            276.934,
+            129.9415
+          ],
+          "parts": [
+            [
+              82.3516,
+              92.2552,
+              276.934,
+              129.9415
+            ]
+          ],
+          "kind": "content",
+          "headline": "a warm bergère by the window. It looks through"
+        },
+        {
           "id": "p87-h",
           "label": "h",
           "column": 1,
@@ -10650,6 +13024,27 @@
             ]
           ],
           "headline": "Look at the photos on Pages 80 – 81 and make sentences with them, using Present Progressive Tense"
+        },
+        {
+          "id": "p87-c6",
+          "label": null,
+          "column": 0,
+          "rect": [
+            82.3516,
+            75.7727,
+            215.6885,
+            92.2552
+          ],
+          "parts": [
+            [
+              82.3516,
+              75.7727,
+              215.6885,
+              92.2552
+            ]
+          ],
+          "kind": "content",
+          "headline": "studying in their room right now."
         }
       ]
     },
@@ -10744,6 +13139,27 @@
             ]
           ],
           "headline": "Assess your peer’s performance, using Rating"
+        },
+        {
+          "id": "p88-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            64.1914,
+            708.3615,
+            251.3244,
+            752.7958
+          ],
+          "parts": [
+            [
+              64.1914,
+              708.3615,
+              251.3244,
+              752.7958
+            ]
+          ],
+          "kind": "content",
+          "headline": "Let’s Discover"
         },
         {
           "id": "p88-j",
@@ -10986,6 +13402,27 @@
               "text": "Human beings are still discovering a decent house type to protect themselves. 4"
             }
           ]
+        },
+        {
+          "id": "p89-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            18.1926,
+            171.3391,
+            523.8876,
+            558.0681
+          ],
+          "parts": [
+            [
+              18.1926,
+              171.3391,
+              523.8876,
+              558.0681
+            ]
+          ],
+          "kind": "content",
+          "headline": "Home is Where the Heart is"
         },
         {
           "id": "p89-c",
@@ -11256,6 +13693,27 @@
             ]
           ],
           "headline": "Change your house sale ad with your peer’s. Check her/ his poster, using on Page 172"
+        },
+        {
+          "id": "p90-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            468.7162,
+            81.3434,
+            518.7402,
+            150.9734
+          ],
+          "parts": [
+            [
+              468.7162,
+              81.3434,
+              518.7402,
+              150.9734
+            ]
+          ],
+          "kind": "content",
+          "headline": "In-Theme"
         }
       ]
     },
@@ -11300,6 +13758,27 @@
             ]
           ],
           "headline": "Read the text quickly and circle the best title."
+        },
+        {
+          "id": "p91-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            36.0654,
+            362.6493,
+            518.3384,
+            617.9143
+          ],
+          "parts": [
+            [
+              36.0654,
+              362.6493,
+              518.3384,
+              617.9143
+            ]
+          ],
+          "kind": "content",
+          "headline": "In modern life, people spend most of their time inside buildings. They"
         },
         {
           "id": "p91-b",
@@ -11466,6 +13945,26 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p92-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            44.0,
+            18.5151,
+            459.535
+          ],
+          "parts": [
+            [
+              0.0,
+              44.0,
+              18.5151,
+              459.535
+            ]
+          ],
+          "kind": "content"
+        },
         {
           "id": "p92-a",
           "label": "a",
@@ -11739,6 +14238,228 @@
             ]
           ],
           "headline": "What are your strengths in this theme?"
+        }
+      ]
+    },
+    "94": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          57.8795,
+          317.874
+        ],
+        [
+          321.874,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p94-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            4.4055,
+            220.9662,
+            554.6398,
+            759.535
+          ],
+          "parts": [
+            [
+              4.4055,
+              220.9662,
+              554.6398,
+              759.535
+            ]
+          ],
+          "kind": "content",
+          "headline": "THEME 6"
+        },
+        {
+          "id": "p94-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            5.5039,
+            0.0,
+            545.1292,
+            218.0615
+          ],
+          "parts": [
+            [
+              5.5039,
+              0.0,
+              545.1292,
+              218.0615
+            ]
+          ],
+          "kind": "content",
+          "headline": "Imagine you visit that place,"
+        }
+      ]
+    },
+    "95": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          93.3054,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p95-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            33.8504,
+            461.3152,
+            449.4571,
+            626.6221
+          ],
+          "parts": [
+            [
+              33.8504,
+              461.3152,
+              449.4571,
+              626.6221
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p95-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            33.85,
+            257.5022,
+            238.276,
+            422.2422
+          ],
+          "parts": [
+            [
+              33.85,
+              257.5022,
+              238.276,
+              422.2422
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p95-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            33.8507,
+            53.6902,
+            449.4571,
+            218.4302
+          ],
+          "parts": [
+            [
+              33.8507,
+              53.6902,
+              449.4571,
+              218.4302
+            ]
+          ],
+          "kind": "content"
+        }
+      ]
+    },
+    "96": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          50.0,
+          519.7639770507812
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p96-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            111.0941,
+            597.9421,
+            315.5201,
+            762.6821
+          ],
+          "parts": [
+            [
+              111.0941,
+              597.9421,
+              315.5201,
+              762.6821
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p96-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            111.0948,
+            53.6902,
+            315.5198,
+            218.4302
+          ],
+          "parts": [
+            [
+              111.0948,
+              53.6902,
+              315.5198,
+              218.4302
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p96-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            320.0,
+            414.535,
+            543.0,
+            762.6821
+          ],
+          "parts": [
+            [
+              320.0,
+              414.535,
+              543.0,
+              762.6821
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p96-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            329.0836,
+            53.6897,
+            533.5087,
+            399.8477
+          ],
+          "parts": [
+            [
+              329.0836,
+              53.6897,
+              533.5087,
+              399.8477
+            ]
+          ],
+          "kind": "content"
         }
       ]
     },
@@ -12056,6 +14777,26 @@
           "headline": "Work in pairs. Compare a food festival you have visited or heard about to the one in and discuss how they are similar or different."
         },
         {
+          "id": "p98-f",
+          "label": "f",
+          "column": 0,
+          "rect": [
+            63.8759,
+            57.4595,
+            286.1061,
+            408.2242
+          ],
+          "parts": [
+            [
+              63.8759,
+              57.4595,
+              286.1061,
+              408.2242
+            ]
+          ],
+          "headline": "Work in pairs. Pick a dish and role-play a scene like the ones in questions as in the example."
+        },
+        {
           "id": "p98-a",
           "label": "a",
           "column": 1,
@@ -12135,26 +14876,6 @@
               "text": "e ick bro boiled wi yme and 3 Th th th th th ga ered. th"
             }
           ]
-        },
-        {
-          "id": "p98-f",
-          "label": "f",
-          "column": 0,
-          "rect": [
-            63.8759,
-            57.4595,
-            286.1061,
-            408.2242
-          ],
-          "parts": [
-            [
-              63.8759,
-              57.4595,
-              286.1061,
-              408.2242
-            ]
-          ],
-          "headline": "Work in pairs. Pick a dish and role-play a scene like the ones in questions as in the example."
         },
         {
           "id": "p98-c",
@@ -12372,26 +15093,6 @@
       ],
       "activities": [
         {
-          "id": "p100-j",
-          "label": "j",
-          "column": 1,
-          "rect": [
-            299.0148,
-            671.8,
-            528.3212,
-            733.9024
-          ],
-          "parts": [
-            [
-              299.0148,
-              671.8,
-              528.3212,
-              733.9024
-            ]
-          ],
-          "headline": "Watch Digital Story 6 again to write similar words in using the adjectives you have learnt."
-        },
-        {
           "id": "p100-d",
           "label": "d",
           "column": 0,
@@ -12410,6 +15111,26 @@
             ]
           ],
           "headline": "Read the text quickly again to write the ingredients of the dishes below."
+        },
+        {
+          "id": "p100-j",
+          "label": "j",
+          "column": 1,
+          "rect": [
+            299.0148,
+            671.8,
+            528.3212,
+            733.9024
+          ],
+          "parts": [
+            [
+              299.0148,
+              671.8,
+              528.3212,
+              733.9024
+            ]
+          ],
+          "headline": "Watch Digital Story 6 again to write similar words in using the adjectives you have learnt."
         },
         {
           "id": "p100-k",
@@ -12607,6 +15328,48 @@
       ],
       "activities": [
         {
+          "id": "p101-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            47.03,
+            635.3776,
+            519.3271,
+            751.679
+          ],
+          "parts": [
+            [
+              47.03,
+              635.3776,
+              519.3271,
+              751.679
+            ]
+          ],
+          "kind": "content",
+          "headline": "ENG"
+        },
+        {
+          "id": "p101-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            52.6967,
+            248.6871,
+            546.4033,
+            635.1912
+          ],
+          "parts": [
+            [
+              52.6967,
+              248.6871,
+              546.4033,
+              635.1912
+            ]
+          ],
+          "kind": "content",
+          "headline": "Interviewer:"
+        },
+        {
           "id": "p101-c",
           "label": "c",
           "column": 0,
@@ -12699,6 +15462,27 @@
             ]
           ],
           "headline": "Work in pairs. Ask and answer questions about the dialogue by stating options as in Exercise c"
+        },
+        {
+          "id": "p101-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            46.8082,
+            49.6082,
+            367.5862,
+            85.939
+          ],
+          "parts": [
+            [
+              46.8082,
+              49.6082,
+              367.5862,
+              85.939
+            ]
+          ],
+          "kind": "content",
+          "headline": "e"
         }
       ]
     },
@@ -13512,6 +16296,27 @@
             ]
           ],
           "headline": "Change your paper with your peer’s. Check her/his paper, using Rubric 12"
+        },
+        {
+          "id": "p104-c2",
+          "label": null,
+          "column": 2,
+          "rect": [
+            467.566,
+            61.0331,
+            523.59,
+            133.6631
+          ],
+          "parts": [
+            [
+              467.566,
+              61.0331,
+              523.59,
+              133.6631
+            ]
+          ],
+          "kind": "content",
+          "headline": "In-Theme"
         }
       ]
     },
@@ -13585,6 +16390,27 @@
               "text": "A cultural festival in Türkiye and its food-focused part in Gaziantep 3"
             }
           ]
+        },
+        {
+          "id": "p105-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            38.4114,
+            346.061,
+            522.7574,
+            635.831
+          ],
+          "parts": [
+            [
+              38.4114,
+              346.061,
+              522.7574,
+              635.831
+            ]
+          ],
+          "kind": "content",
+          "headline": "Experiencing Türkiye Through Festivals"
         },
         {
           "id": "p105-b",
@@ -13753,6 +16579,26 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p106-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            44.0,
+            18.5151,
+            331.535
+          ],
+          "parts": [
+            [
+              0.0,
+              44.0,
+              18.5151,
+              331.535
+            ]
+          ],
+          "kind": "content"
+        },
         {
           "id": "p106-a",
           "label": "a",
@@ -14015,6 +16861,227 @@
         }
       ]
     },
+    "108": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.1969,
+          317.874
+        ],
+        [
+          321.874,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p108-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            4.374,
+            0.0,
+            554.8295,
+            759.535
+          ],
+          "parts": [
+            [
+              4.374,
+              0.0,
+              554.8295,
+              759.535
+            ]
+          ],
+          "kind": "content",
+          "headline": "THEME 7"
+        }
+      ]
+    },
+    "109": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          93.3054,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p109-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            31.9164,
+            109.2463,
+            236.3424,
+            636.8267
+          ],
+          "parts": [
+            [
+              31.9164,
+              109.2463,
+              236.3424,
+              636.8267
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p109-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            247.1571,
+            51.5671,
+            451.5831,
+            216.3071
+          ],
+          "parts": [
+            [
+              247.1571,
+              51.5671,
+              451.5831,
+              216.3071
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p109-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            557.152,
+            139.129,
+            569.764,
+            636.0469
+          ],
+          "parts": [
+            [
+              557.152,
+              139.129,
+              569.764,
+              636.0469
+            ]
+          ],
+          "kind": "content"
+        }
+      ]
+    },
+    "110": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          50.0,
+          519.7639770507812
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p110-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            137.6041,
+            19.1422,
+            631.8901
+          ],
+          "parts": [
+            [
+              0.0,
+              137.6041,
+              19.1422,
+              631.8901
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p110-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            121.0154,
+            599.9861,
+            325.4414,
+            764.7261
+          ],
+          "parts": [
+            [
+              121.0154,
+              599.9861,
+              325.4414,
+              764.7261
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p110-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            121.0161,
+            51.5671,
+            325.4411,
+            216.3071
+          ],
+          "parts": [
+            [
+              121.0161,
+              51.5671,
+              325.4411,
+              216.3071
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p110-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            334.3223,
+            427.0725,
+            538.7483,
+            764.7261
+          ],
+          "parts": [
+            [
+              334.3223,
+              427.0725,
+              538.7483,
+              764.7261
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p110-c5",
+          "label": null,
+          "column": 0,
+          "rect": [
+            334.3228,
+            81.2454,
+            538.7482,
+            418.8989
+          ],
+          "parts": [
+            [
+              334.3228,
+              81.2454,
+              538.7482,
+              418.8989
+            ]
+          ],
+          "kind": "content"
+        }
+      ]
+    },
     "111": {
       "pageWidth": 569.764,
       "pageHeight": 796.535,
@@ -14029,6 +17096,27 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p111-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            47.165,
+            699.0984,
+            511.1257,
+            752.1224
+          ],
+          "parts": [
+            [
+              47.165,
+              699.0984,
+              511.1257,
+              752.1224
+            ]
+          ],
+          "kind": "content",
+          "headline": "Listening/Watching"
+        },
         {
           "id": "p111-a",
           "label": "a",
@@ -14498,6 +17586,27 @@
           "headline": "Work in pairs. Look at the photo and the title of the text. Then discuss what the text can be about."
         },
         {
+          "id": "p113-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            48.6224,
+            146.1186,
+            512.5385,
+            327.3706
+          ],
+          "parts": [
+            [
+              48.6224,
+              146.1186,
+              512.5385,
+              327.3706
+            ]
+          ],
+          "kind": "content",
+          "headline": "activities such as overhunting take away their food sources and lessen their ability to survive."
+        },
+        {
           "id": "p113-d",
           "label": "d",
           "column": 0,
@@ -14845,6 +17954,47 @@
             ]
           ],
           "headline": "Read the text carefully to complete the information board."
+        },
+        {
+          "id": "p115-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            43.7411,
+            259.1674,
+            532.9236,
+            465.6774
+          ],
+          "parts": [
+            [
+              43.7411,
+              259.1674,
+              532.9236,
+              465.6774
+            ]
+          ],
+          "kind": "content",
+          "headline": "Old and Bald: Geronticus eremita"
+        },
+        {
+          "id": "p115-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            410.4979,
+            465.6774,
+            531.4441,
+            597.2988
+          ],
+          "parts": [
+            [
+              410.4979,
+              465.6774,
+              531.4441,
+              597.2988
+            ]
+          ],
+          "kind": "content"
         },
         {
           "id": "p115-d",
@@ -15340,6 +18490,27 @@
           "headline": "Read the text to underline the key facts about species, places, and projects/ programmes."
         },
         {
+          "id": "p117-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            48.0232,
+            202.0718,
+            540.7171,
+            503.5079
+          ],
+          "parts": [
+            [
+              48.0232,
+              202.0718,
+              540.7171,
+              503.5079
+            ]
+          ],
+          "kind": "content",
+          "headline": "Türkiye: The Noah’s Ark of the World"
+        },
+        {
           "id": "p117-d",
           "label": "d",
           "column": 0,
@@ -15568,6 +18739,47 @@
             ]
           ],
           "headline": "Imagine you are a wildlife volunteer and helping with a project to set up a national park in Türkiye. Describe your project, answering the questions below."
+        },
+        {
+          "id": "p118-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            475.2296,
+            81.6552,
+            516.0696,
+            94.4191
+          ],
+          "parts": [
+            [
+              475.2296,
+              81.6552,
+              516.0696,
+              94.4191
+            ]
+          ],
+          "kind": "content",
+          "headline": "In-Theme"
+        },
+        {
+          "id": "p118-c3",
+          "label": null,
+          "column": 1,
+          "rect": [
+            465.7162,
+            94.4191,
+            521.7402,
+            155.4162
+          ],
+          "parts": [
+            [
+              465.7162,
+              94.4191,
+              521.7402,
+              155.4162
+            ]
+          ],
+          "kind": "content"
         }
       ]
     },
@@ -15585,6 +18797,48 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p119-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            47.0464,
+            650.71,
+            494.1059,
+            752.299
+          ],
+          "parts": [
+            [
+              47.0464,
+              650.71,
+              494.1059,
+              752.299
+            ]
+          ],
+          "kind": "content",
+          "headline": "Roots and Routes"
+        },
+        {
+          "id": "p119-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            51.4805,
+            299.7636,
+            513.7295,
+            642.1426
+          ],
+          "parts": [
+            [
+              51.4805,
+              299.7636,
+              513.7295,
+              642.1426
+            ]
+          ],
+          "kind": "content",
+          "headline": "Ecological Corridors"
+        },
         {
           "id": "p119-b",
           "label": "b",
@@ -15715,6 +18969,47 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p120-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            44.0,
+            18.3057,
+            652.535
+          ],
+          "parts": [
+            [
+              0.0,
+              44.0,
+              18.3057,
+              652.535
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p120-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            61.5232,
+            706.8381,
+            276.1872,
+            751.2724
+          ],
+          "parts": [
+            [
+              61.5232,
+              706.8381,
+              276.1872,
+              751.2724
+            ]
+          ],
+          "kind": "content",
+          "headline": "Consolidation"
+        },
         {
           "id": "p120-a",
           "label": "a",
@@ -15930,6 +19225,64 @@
         }
       ]
     },
+    "122": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.1969,
+          317.874
+        ],
+        [
+          321.874,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p122-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            4.3946,
+            220.9662,
+            554.6306,
+            759.535
+          ],
+          "parts": [
+            [
+              4.3946,
+              220.9662,
+              554.6306,
+              759.535
+            ]
+          ],
+          "kind": "content",
+          "headline": "THEME 8"
+        },
+        {
+          "id": "p122-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            5.5039,
+            0.0,
+            544.421,
+            220.8962
+          ],
+          "parts": [
+            [
+              5.5039,
+              0.0,
+              544.421,
+              220.8962
+            ]
+          ],
+          "kind": "content",
+          "headline": "not?"
+        }
+      ]
+    },
     "123": {
       "pageWidth": 569.764,
       "pageHeight": 796.535,
@@ -15958,6 +19311,138 @@
               702.4749
             ]
           ]
+        },
+        {
+          "id": "p123-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            35.9767,
+            456.0129,
+            265.4557,
+            640.7959
+          ],
+          "parts": [
+            [
+              35.9767,
+              456.0129,
+              265.4557,
+              640.7959
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p123-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            35.9764,
+            45.7873,
+            504.2743,
+            396.0654
+          ],
+          "parts": [
+            [
+              35.9764,
+              45.7873,
+              504.2743,
+              396.0654
+            ]
+          ],
+          "kind": "content"
+        }
+      ]
+    },
+    "124": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          50.0,
+          519.7639770507812
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p124-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            58.403,
+            575.0676,
+            287.882,
+            759.8506
+          ],
+          "parts": [
+            [
+              58.403,
+              575.0676,
+              287.882,
+              759.8506
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p124-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            65.4896,
+            45.7867,
+            294.9686,
+            230.5698
+          ],
+          "parts": [
+            [
+              65.4896,
+              45.7867,
+              294.9686,
+              230.5698
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p124-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            313.7713,
+            290.6115,
+            543.2507,
+            682.3232
+          ],
+          "parts": [
+            [
+              313.7713,
+              290.6115,
+              543.2507,
+              682.3232
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p124-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            313.772,
+            83.6823,
+            543.25,
+            268.4653
+          ],
+          "parts": [
+            [
+              313.772,
+              83.6823,
+              543.25,
+              268.4653
+            ]
+          ],
+          "kind": "content"
         }
       ]
     },
@@ -15971,6 +19456,27 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p125-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            47.165,
+            697.681,
+            511.3193,
+            751.5411
+          ],
+          "parts": [
+            [
+              47.165,
+              697.681,
+              511.3193,
+              751.5411
+            ]
+          ],
+          "kind": "content",
+          "headline": "Listening/Watching"
+        },
         {
           "id": "p125-a",
           "label": "a",
@@ -16230,6 +19736,120 @@
           "headline": "Work in groups. Create an imaginary scene or a film about the photos, following the steps below."
         },
         {
+          "id": "p126-i",
+          "label": "i",
+          "column": 0,
+          "rect": [
+            64.321,
+            132.3294,
+            282.4652,
+            328.1813
+          ],
+          "parts": [
+            [
+              64.321,
+              132.3294,
+              282.4652,
+              328.1813
+            ]
+          ],
+          "headline": "Work in pairs. Brainstorm and take notes on the tasks below.",
+          "items": [
+            {
+              "id": "p126-i-1",
+              "label": "1",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                78.2073,
+                188.9174,
+                200.2752,
+                210.5374
+              ],
+              "text": "The genre of the film 1"
+            },
+            {
+              "id": "p126-i-2",
+              "label": "2",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                78.2073,
+                173.0828,
+                191.5852,
+                194.7028
+              ],
+              "text": "The plot of the film 2"
+            },
+            {
+              "id": "p126-i-3",
+              "label": "3",
+              "number": 3,
+              "partIndex": 0,
+              "rect": [
+                78.2073,
+                157.2481,
+                222.2052,
+                178.8681
+              ],
+              "text": "The characters of the film 3"
+            },
+            {
+              "id": "p126-i-4",
+              "label": "4",
+              "number": 4,
+              "partIndex": 0,
+              "rect": [
+                78.2073,
+                132.3294,
+                274.5052,
+                163.0335
+              ],
+              "text": "The technology: images, effects, and 4 sounds used"
+            }
+          ]
+        },
+        {
+          "id": "p126-j",
+          "label": "j",
+          "column": 0,
+          "rect": [
+            62.93,
+            89.8327,
+            286.9841,
+            127.4901
+          ],
+          "parts": [
+            [
+              62.93,
+              89.8327,
+              286.9841,
+              127.4901
+            ]
+          ],
+          "headline": "Present the film you created in Exercise i to the class and answer the questions if the class has any."
+        },
+        {
+          "id": "p126-k",
+          "label": "k",
+          "column": 0,
+          "rect": [
+            64.3767,
+            55.0121,
+            262.2917,
+            82.8241
+          ],
+          "parts": [
+            [
+              64.3767,
+              55.0121,
+              262.2917,
+              82.8241
+            ]
+          ],
+          "headline": "Assess your peer’s performance in Exercise j"
+        },
+        {
           "id": "p126-a",
           "label": "a",
           "column": 1,
@@ -16311,80 +19931,6 @@
           ]
         },
         {
-          "id": "p126-i",
-          "label": "i",
-          "column": 0,
-          "rect": [
-            64.321,
-            132.3294,
-            282.4652,
-            328.1813
-          ],
-          "parts": [
-            [
-              64.321,
-              132.3294,
-              282.4652,
-              328.1813
-            ]
-          ],
-          "headline": "Work in pairs. Brainstorm and take notes on the tasks below.",
-          "items": [
-            {
-              "id": "p126-i-1",
-              "label": "1",
-              "number": 1,
-              "partIndex": 0,
-              "rect": [
-                78.2073,
-                188.9174,
-                200.2752,
-                210.5374
-              ],
-              "text": "The genre of the film 1"
-            },
-            {
-              "id": "p126-i-2",
-              "label": "2",
-              "number": 2,
-              "partIndex": 0,
-              "rect": [
-                78.2073,
-                173.0828,
-                191.5852,
-                194.7028
-              ],
-              "text": "The plot of the film 2"
-            },
-            {
-              "id": "p126-i-3",
-              "label": "3",
-              "number": 3,
-              "partIndex": 0,
-              "rect": [
-                78.2073,
-                157.2481,
-                222.2052,
-                178.8681
-              ],
-              "text": "The characters of the film 3"
-            },
-            {
-              "id": "p126-i-4",
-              "label": "4",
-              "number": 4,
-              "partIndex": 0,
-              "rect": [
-                78.2073,
-                132.3294,
-                274.5052,
-                163.0335
-              ],
-              "text": "The technology: images, effects, and 4 sounds used"
-            }
-          ]
-        },
-        {
           "id": "p126-c",
           "label": "c",
           "column": 1,
@@ -16405,26 +19951,6 @@
           "headline": "Put the words in the correct category or categories. Then listen and check your answers."
         },
         {
-          "id": "p126-j",
-          "label": "j",
-          "column": 0,
-          "rect": [
-            62.93,
-            89.8327,
-            286.9841,
-            127.4901
-          ],
-          "parts": [
-            [
-              62.93,
-              89.8327,
-              286.9841,
-              127.4901
-            ]
-          ],
-          "headline": "Present the film you created in Exercise i to the class and answer the questions if the class has any."
-        },
-        {
           "id": "p126-d",
           "label": "d",
           "column": 1,
@@ -16443,26 +19969,6 @@
             ]
           ],
           "headline": "Work in pairs. Make sentences with the words in"
-        },
-        {
-          "id": "p126-k",
-          "label": "k",
-          "column": 0,
-          "rect": [
-            64.3767,
-            55.0121,
-            262.2917,
-            82.8241
-          ],
-          "parts": [
-            [
-              64.3767,
-              55.0121,
-              262.2917,
-              82.8241
-            ]
-          ],
-          "headline": "Assess your peer’s performance in Exercise j"
         },
         {
           "id": "p126-e",
@@ -16731,26 +20237,6 @@
           ]
         },
         {
-          "id": "p128-i",
-          "label": "i",
-          "column": 1,
-          "rect": [
-            299.3487,
-            501.8949,
-            511.5604,
-            529.1506
-          ],
-          "parts": [
-            [
-              299.3487,
-              501.8949,
-              511.5604,
-              529.1506
-            ]
-          ],
-          "headline": "Assess your peer’s performance, using Rubric 3"
-        },
-        {
           "id": "p128-e",
           "label": "e",
           "column": 0,
@@ -16769,25 +20255,6 @@
             ]
           ],
           "headline": "Read the text carefully to underline the words you do not know and guess their meanings."
-        },
-        {
-          "id": "p128-v4",
-          "label": null,
-          "column": 1,
-          "rect": [
-            298.514,
-            80.9885,
-            527.755,
-            495.1088
-          ],
-          "parts": [
-            [
-              298.514,
-              80.9885,
-              527.755,
-              495.1088
-            ]
-          ]
         },
         {
           "id": "p128-f",
@@ -16848,6 +20315,129 @@
             ]
           ],
           "headline": "Work in pairs to create questions related to films and film genres, using different forms of the words below. Then take turns answering them as in the example."
+        },
+        {
+          "id": "p128-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            309.5875,
+            690.6656,
+            519.3515,
+            730.3506
+          ],
+          "parts": [
+            [
+              309.5875,
+              690.6656,
+              519.3515,
+              730.3506
+            ]
+          ],
+          "kind": "content",
+          "headline": "How are robotic characters different"
+        },
+        {
+          "id": "p128-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            300.4727,
+            644.7711,
+            510.2367,
+            684.4561
+          ],
+          "parts": [
+            [
+              300.4727,
+              644.7711,
+              510.2367,
+              684.4561
+            ]
+          ],
+          "kind": "content",
+          "headline": "Robots do not have emotions, but"
+        },
+        {
+          "id": "p128-c3",
+          "label": null,
+          "column": 1,
+          "rect": [
+            309.5875,
+            595.8462,
+            519.3515,
+            635.5312
+          ],
+          "parts": [
+            [
+              309.5875,
+              595.8462,
+              519.3515,
+              635.5312
+            ]
+          ],
+          "kind": "content",
+          "headline": "Why is the director important in a"
+        },
+        {
+          "id": "p128-c4",
+          "label": null,
+          "column": 1,
+          "rect": [
+            308.5248,
+            537.1663,
+            518.2888,
+            589.3623
+          ],
+          "parts": [
+            [
+              308.5248,
+              537.1663,
+              518.2888,
+              589.3623
+            ]
+          ],
+          "kind": "content",
+          "headline": "The director guides the actors and the"
+        },
+        {
+          "id": "p128-i",
+          "label": "i",
+          "column": 1,
+          "rect": [
+            299.3487,
+            501.8949,
+            511.5604,
+            529.1506
+          ],
+          "parts": [
+            [
+              299.3487,
+              501.8949,
+              511.5604,
+              529.1506
+            ]
+          ],
+          "headline": "Assess your peer’s performance, using Rubric 3"
+        },
+        {
+          "id": "p128-v4",
+          "label": null,
+          "column": 1,
+          "rect": [
+            298.514,
+            80.9885,
+            527.755,
+            495.1088
+          ],
+          "parts": [
+            [
+              298.514,
+              80.9885,
+              527.755,
+              495.1088
+            ]
+          ]
         }
       ]
     },
@@ -16861,6 +20451,27 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p129-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            47.03,
+            710.2448,
+            261.725,
+            751.679
+          ],
+          "parts": [
+            [
+              47.03,
+              710.2448,
+              261.725,
+              751.679
+            ]
+          ],
+          "kind": "content",
+          "headline": "ENG"
+        },
         {
           "id": "p129-a",
           "label": "a",
@@ -16921,6 +20532,27 @@
               "text": "Film-Making Tomorrow: How Tech Is Changing Cinema 3"
             }
           ]
+        },
+        {
+          "id": "p129-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            47.8343,
+            378.4255,
+            514.4883,
+            632.5645
+          ],
+          "parts": [
+            [
+              47.8343,
+              378.4255,
+              514.4883,
+              632.5645
+            ]
+          ],
+          "kind": "content",
+          "headline": "»"
         },
         {
           "id": "p129-b",
@@ -17436,6 +21068,47 @@
               341.8648
             ]
           ]
+        },
+        {
+          "id": "p130-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            301.4724,
+            610.2786,
+            526.9668,
+            736.6685
+          ],
+          "parts": [
+            [
+              301.4724,
+              610.2786,
+              526.9668,
+              736.6685
+            ]
+          ],
+          "kind": "content",
+          "headline": "Kenji:"
+        },
+        {
+          "id": "p130-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            349.535,
+            14.0,
+            627.535
+          ],
+          "parts": [
+            [
+              0.0,
+              349.535,
+              14.0,
+              627.535
+            ]
+          ],
+          "kind": "content"
         }
       ]
     },
@@ -17468,6 +21141,48 @@
             ]
           ],
           "headline": "Work in pairs. Look at the photo and the title of the text below. Discuss what the text"
+        },
+        {
+          "id": "p131-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            48.0237,
+            603.3097,
+            305.9016,
+            674.9937
+          ],
+          "parts": [
+            [
+              48.0237,
+              603.3097,
+              305.9016,
+              674.9937
+            ]
+          ],
+          "kind": "content",
+          "headline": "b"
+        },
+        {
+          "id": "p131-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            42.668,
+            289.7008,
+            513.219,
+            596.1118
+          ],
+          "parts": [
+            [
+              42.668,
+              289.7008,
+              513.219,
+              596.1118
+            ]
+          ],
+          "kind": "content",
+          "headline": "Türkiye’s Roadmap for Growth"
         },
         {
           "id": "p131-c",
@@ -17806,6 +21521,27 @@
             ]
           ],
           "headline": "Change your paragraph with your peer’s. Give feedback to each other, using Rubric 12 on"
+        },
+        {
+          "id": "p132-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            467.4692,
+            61.0737,
+            523.4932,
+            133.7037
+          ],
+          "parts": [
+            [
+              467.4692,
+              61.0737,
+              523.4932,
+              133.7037
+            ]
+          ],
+          "kind": "content",
+          "headline": "In-Theme"
         }
       ]
     },
@@ -17862,6 +21598,27 @@
             ]
           ],
           "headline": "Read the text quickly and circle the best title."
+        },
+        {
+          "id": "p133-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.4667,
+            324.8687,
+            520.6967,
+            514.3827
+          ],
+          "parts": [
+            [
+              39.4667,
+              324.8687,
+              520.6967,
+              514.3827
+            ]
+          ],
+          "kind": "content",
+          "headline": "Türkiye started its own national space agency, the Turkish Space Agency (TSA), in 2018. The agency plans"
         },
         {
           "id": "p133-c",
@@ -17976,6 +21733,26 @@
             ]
           ],
           "headline": "Do you think countries should invest more time and money on space research? Discuss with your classmates, giving reasons."
+        },
+        {
+          "id": "p133-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            552.0,
+            44.0,
+            569.764,
+            418.535
+          ],
+          "parts": [
+            [
+              552.0,
+              44.0,
+              569.764,
+              418.535
+            ]
+          ],
+          "kind": "content"
         }
       ]
     },
@@ -17993,6 +21770,27 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p134-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            61.9282,
+            706.8381,
+            276.5922,
+            751.2724
+          ],
+          "parts": [
+            [
+              61.9282,
+              706.8381,
+              276.5922,
+              751.2724
+            ]
+          ],
+          "kind": "content",
+          "headline": "Consolidation"
+        },
         {
           "id": "p134-a",
           "label": "a",
@@ -18241,10 +22039,1272 @@
           "headline": "What are your strengths in this theme?"
         }
       ]
+    },
+    "136": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          151.5784,
+          215.7184
+        ],
+        [
+          219.7184,
+          283.75
+        ],
+        [
+          287.75,
+          351.7815
+        ],
+        [
+          355.7815,
+          421.3478
+        ],
+        [
+          425.3478,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p136-v1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            119.962,
+            53.3434,
+            404.0094,
+            740.8554
+          ],
+          "parts": [
+            [
+              119.962,
+              53.3434,
+              404.0094,
+              740.8554
+            ]
+          ]
+        },
+        {
+          "id": "p136-c1",
+          "label": null,
+          "column": 4,
+          "rect": [
+            408.8665,
+            76.933,
+            486.2438,
+            443.0633
+          ],
+          "parts": [
+            [
+              408.8665,
+              76.933,
+              486.2438,
+              443.0633
+            ]
+          ],
+          "kind": "content",
+          "headline": "."
+        }
+      ]
+    },
+    "137": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          118.3859,
+          202.8765
+        ],
+        [
+          206.8765,
+          265.2387
+        ],
+        [
+          269.2387,
+          335.4635
+        ],
+        [
+          339.4635,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p137-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            16.517,
+            15.4718,
+            402.565,
+            735.472
+          ],
+          "parts": [
+            [
+              16.517,
+              15.4718,
+              402.565,
+              735.472
+            ]
+          ],
+          "kind": "content",
+          "headline": "The speaker uses appropriate"
+        }
+      ]
+    },
+    "138": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          153.2616,
+          233.6009
+        ],
+        [
+          237.6009,
+          303.0605
+        ],
+        [
+          307.0605,
+          359.5202
+        ],
+        [
+          363.5202,
+          462.5119
+        ],
+        [
+          466.5119,
+          547.4705
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p138-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            89.2465,
+            15.4719,
+            472.7557,
+            734.3382
+          ],
+          "parts": [
+            [
+              89.2465,
+              15.4719,
+              472.7557,
+              734.3382
+            ]
+          ],
+          "kind": "content",
+          "headline": "sentences and short texts"
+        },
+        {
+          "id": "p138-c2",
+          "label": null,
+          "column": 4,
+          "rect": [
+            473.7699,
+            147.202,
+            527.1449,
+            662.3322
+          ],
+          "parts": [
+            [
+              473.7699,
+              147.202,
+              527.1449,
+              662.3322
+            ]
+          ],
+          "kind": "content",
+          "headline": "Meets Expectations. The student is comfortable with familiar vocabulary and shows a good understanding of the context."
+        },
+        {
+          "id": "p138-c3",
+          "label": null,
+          "column": 4,
+          "rect": [
+            528.9196,
+            90.5433,
+            544.1776,
+            601.5826
+          ],
+          "parts": [
+            [
+              528.9196,
+              90.5433,
+              544.1776,
+              601.5826
+            ]
+          ],
+          "kind": "content",
+          "headline": "Beginning Stage. The student needs significant assistance in all areas of vocabulary recognition and usage."
+        }
+      ]
+    },
+    "139": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          109.2852,
+          437.8736
+        ],
+        [
+          441.8736,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p139-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            77.8974,
+            53.0096,
+            427.3786,
+            728.4513
+          ],
+          "parts": [
+            [
+              77.8974,
+              53.0096,
+              427.3786,
+              728.4513
+            ]
+          ]
+        },
+        {
+          "id": "p139-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            428.3923,
+            77.7962,
+            502.7696,
+            602.2982
+          ],
+          "parts": [
+            [
+              428.3923,
+              77.7962,
+              502.7696,
+              602.2982
+            ]
+          ],
+          "kind": "content",
+          "headline": "The student has met all or nearly all expectations and has created a thorough, well-organised dictionary."
+        }
+      ]
+    },
+    "140": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          167.0913,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p140-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            89.5668,
+            15.8882,
+            373.4,
+            736.2556
+          ],
+          "parts": [
+            [
+              89.5668,
+              15.8882,
+              373.4,
+              736.2556
+            ]
+          ],
+          "kind": "content",
+          "headline": "Excellent (5)"
+        },
+        {
+          "id": "p140-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            374.1107,
+            54.7175,
+            536.8307,
+            744.4775
+          ],
+          "parts": [
+            [
+              374.1107,
+              54.7175,
+              536.8307,
+              744.4775
+            ]
+          ],
+          "kind": "content",
+          "headline": "Put a check mark in the appropriate box in each row."
+        }
+      ]
+    },
+    "141": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          110.873,
+          196.6483
+        ],
+        [
+          200.6483,
+          283.5677
+        ],
+        [
+          287.5677,
+          353.0274
+        ],
+        [
+          357.0274,
+          435.714
+        ],
+        [
+          439.714,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p141-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            120.373,
+            622.4893,
+            421.5693,
+            724.777
+          ],
+          "parts": [
+            [
+              120.373,
+              622.4893,
+              421.5693,
+              724.777
+            ]
+          ],
+          "kind": "content",
+          "headline": "summarises content with"
+        },
+        {
+          "id": "p141-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            16.517,
+            15.338,
+            426.601,
+            619.82
+          ],
+          "parts": [
+            [
+              16.517,
+              15.338,
+              426.601,
+              619.82
+            ]
+          ],
+          "kind": "content",
+          "headline": "Clear and mostly accurate"
+        },
+        {
+          "id": "p141-c3",
+          "label": null,
+          "column": 4,
+          "rect": [
+            443.972,
+            251.335,
+            505.843,
+            639.7162
+          ],
+          "parts": [
+            [
+              443.972,
+              251.335,
+              505.843,
+              639.7162
+            ]
+          ],
+          "kind": "content",
+          "headline": "The student needs significant assistance in all areas to build reading comprehension and fluency."
+        },
+        {
+          "id": "p141-c4",
+          "label": null,
+          "column": 4,
+          "rect": [
+            442.714,
+            79.0709,
+            506.334,
+            251.335
+          ],
+          "parts": [
+            [
+              442.714,
+              79.0709,
+              506.334,
+              251.335
+            ]
+          ],
+          "kind": "content",
+          "headline": "14-10 points: Approaching Expectations."
+        }
+      ]
+    },
+    "142": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          215.7962,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p142-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            89.5844,
+            14.7633,
+            517.532,
+            733.1764
+          ],
+          "parts": [
+            [
+              89.5844,
+              14.7633,
+              517.532,
+              733.1764
+            ]
+          ],
+          "kind": "content",
+          "headline": "Needs Improvement Excellent"
+        }
+      ]
+    },
+    "143": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          176.9543,
+          245.681
+        ],
+        [
+          249.681,
+          324.4969
+        ],
+        [
+          328.4969,
+          384.7098
+        ],
+        [
+          388.7098,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p143-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            16.517,
+            16.1805,
+            450.725,
+            735.3029
+          ],
+          "parts": [
+            [
+              16.517,
+              16.1805,
+              450.725,
+              735.3029
+            ]
+          ],
+          "kind": "content",
+          "headline": "Needs Improvement Excellent"
+        }
+      ]
+    },
+    "144": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          164.6403,
+          215.2737
+        ],
+        [
+          219.2737,
+          283.3052
+        ],
+        [
+          287.3052,
+          351.3068
+        ],
+        [
+          355.3068,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p144-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            103.3626,
+            60.0709,
+            429.245,
+            734.8386
+          ],
+          "parts": [
+            [
+              103.3626,
+              60.0709,
+              429.245,
+              734.8386
+            ]
+          ],
+          "kind": "content",
+          "headline": "Needs Improvement Excellent"
+        }
+      ]
+    },
+    "145": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          112.0324,
+          178.7894
+        ],
+        [
+          182.7894,
+          260.8046
+        ],
+        [
+          264.8046,
+          340.8122
+        ],
+        [
+          344.8122,
+          420.8198
+        ],
+        [
+          424.8198,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p145-c1",
+          "label": null,
+          "column": 2,
+          "rect": [
+            121.5324,
+            620.7145,
+            497.0313,
+            735.8461
+          ],
+          "parts": [
+            [
+              121.5324,
+              620.7145,
+              497.0313,
+              735.8461
+            ]
+          ],
+          "kind": "content",
+          "headline": "to speak, and fulfils her/his"
+        },
+        {
+          "id": "p145-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            16.517,
+            14.0546,
+            498.98,
+            619.463
+          ],
+          "parts": [
+            [
+              16.517,
+              14.0546,
+              498.98,
+              619.463
+            ]
+          ],
+          "kind": "content",
+          "headline": "cases, with minor errors or"
+        }
+      ]
+    },
+    "146": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          152.684,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p146-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            88.6684,
+            13.3459,
+            501.9,
+            761.3
+          ],
+          "parts": [
+            [
+              88.6684,
+              13.3459,
+              501.9,
+              761.3
+            ]
+          ],
+          "kind": "content",
+          "headline": "Comments and Suggestions"
+        }
+      ]
+    },
+    "147": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          112.2904,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p147-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            16.517,
+            15.4719,
+            421.8,
+            734.8384
+          ],
+          "parts": [
+            [
+              16.517,
+              15.4719,
+              421.8,
+              734.8384
+            ]
+          ],
+          "kind": "content",
+          "headline": "Comments and Suggestions"
+        }
+      ]
+    },
+    "148": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          152.1651,
+          270.8949
+        ],
+        [
+          274.8949,
+          360.8748
+        ],
+        [
+          364.8748,
+          431.8647
+        ],
+        [
+          435.8647,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p148-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            161.6651,
+            621.2058,
+            497.0547,
+            729.4759
+          ],
+          "parts": [
+            [
+              161.6651,
+              621.2058,
+              497.0547,
+              729.4759
+            ]
+          ],
+          "kind": "content",
+          "headline": "work is thorough and"
+        },
+        {
+          "id": "p148-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            88.1508,
+            14.0546,
+            500.014,
+            618.536
+          ],
+          "parts": [
+            [
+              88.1508,
+              14.0546,
+              500.014,
+              618.536
+            ]
+          ],
+          "kind": "content",
+          "headline": "is well-developed and"
+        }
+      ]
+    },
+    "149": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          36.378,
+          172.6747
+        ],
+        [
+          176.6747,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p149-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            27.693,
+            727.4658,
+            525.992,
+            784.2778
+          ],
+          "parts": [
+            [
+              27.693,
+              727.4658,
+              525.992,
+              784.2778
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p149-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            39.378,
+            54.046,
+            521.1734,
+            685.65
+          ],
+          "parts": [
+            [
+              39.378,
+              54.046,
+              521.1734,
+              685.65
+            ]
+          ],
+          "kind": "content",
+          "headline": "THEME 1 SCHOOL LIFE"
+        }
+      ]
+    },
+    "150": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.6969,
+          186.4812
+        ],
+        [
+          190.4812,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p150-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            39.554,
+            41.0,
+            559.634,
+            702.232
+          ],
+          "parts": [
+            [
+              39.554,
+              41.0,
+              559.634,
+              702.232
+            ]
+          ],
+          "kind": "content",
+          "headline": "Polish"
+        }
+      ]
+    },
+    "151": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.3819,
+          172.1662
+        ],
+        [
+          176.1662,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p151-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            27.693,
+            727.4658,
+            525.992,
+            784.2778
+          ],
+          "parts": [
+            [
+              27.693,
+              727.4658,
+              525.992,
+              784.2778
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p151-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            25.2391,
+            47.2409,
+            545.3191,
+            695.571
+          ],
+          "parts": [
+            [
+              25.2391,
+              47.2409,
+              545.3191,
+              695.571
+            ]
+          ],
+          "kind": "content",
+          "headline": "make (my) bed"
+        }
+      ]
+    },
+    "152": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.6969,
+          188.0791
+        ],
+        [
+          192.0791,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p152-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            39.554,
+            46.2205,
+            559.634,
+            695.571
+          ],
+          "parts": [
+            [
+              39.554,
+              46.2205,
+              559.634,
+              695.571
+            ]
+          ],
+          "kind": "content",
+          "headline": "elderly"
+        }
+      ]
+    },
+    "153": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.3819,
+          177.3646
+        ],
+        [
+          181.3646,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p153-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            27.693,
+            692.6,
+            525.992,
+            784.2778
+          ],
+          "parts": [
+            [
+              27.693,
+              692.6,
+              525.992,
+              784.2778
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p153-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            39.378,
+            66.216,
+            521.1734,
+            692.571
+          ],
+          "parts": [
+            [
+              39.378,
+              66.216,
+              521.1734,
+              692.571
+            ]
+          ],
+          "kind": "content",
+          "headline": "architect"
+        }
+      ]
+    },
+    "154": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.6969,
+          188.0791
+        ],
+        [
+          192.0791,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p154-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            49.634,
+            48.42,
+            543.434,
+            698.614
+          ],
+          "parts": [
+            [
+              49.634,
+              48.42,
+              543.434,
+              698.614
+            ]
+          ],
+          "kind": "content",
+          "headline": "serve"
+        }
+      ]
+    },
+    "155": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.5237,
+          173.9059
+        ],
+        [
+          177.9059,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p155-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            27.693,
+            727.4658,
+            525.992,
+            784.2778
+          ],
+          "parts": [
+            [
+              27.693,
+              727.4658,
+              525.992,
+              784.2778
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p155-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            25.3808,
+            42.5921,
+            545.4609,
+            700.749
+          ],
+          "parts": [
+            [
+              25.3808,
+              42.5921,
+              545.4609,
+              700.749
+            ]
+          ],
+          "kind": "content",
+          "headline": "penthouse"
+        }
+      ]
+    },
+    "156": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.6969,
+          186.1286
+        ],
+        [
+          190.1286,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p156-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            39.554,
+            41.0,
+            559.634,
+            700.749
+          ],
+          "parts": [
+            [
+              39.554,
+              41.0,
+              559.634,
+              700.749
+            ]
+          ],
+          "kind": "content",
+          "headline": "duck"
+        }
+      ]
+    },
+    "157": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.5237,
+          173.026
+        ],
+        [
+          177.026,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p157-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            27.693,
+            698.5,
+            525.992,
+            784.2778
+          ],
+          "parts": [
+            [
+              27.693,
+              698.5,
+              525.992,
+              784.2778
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p157-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            39.5197,
+            65.031,
+            521.3151,
+            698.458
+          ],
+          "parts": [
+            [
+              39.5197,
+              65.031,
+              521.3151,
+              698.458
+            ]
+          ],
+          "kind": "content",
+          "headline": "be at risk"
+        }
+      ]
+    },
+    "158": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.6969,
+          181.6706
+        ],
+        [
+          185.6706,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p158-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            49.634,
+            41.606,
+            543.434,
+            698.614
+          ],
+          "parts": [
+            [
+              49.634,
+              41.606,
+              543.434,
+              698.614
+            ]
+          ],
+          "kind": "content",
+          "headline": "shelter"
+        }
+      ]
+    },
+    "159": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.5237,
+          173.9059
+        ],
+        [
+          177.9059,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p159-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            27.693,
+            286.842,
+            525.992,
+            784.2778
+          ],
+          "parts": [
+            [
+              27.693,
+              286.842,
+              525.992,
+              784.2778
+            ]
+          ],
+          "kind": "content",
+          "headline": "intelligent"
+        }
+      ]
     }
   },
   "engine": "vision",
   "checkpoint": "a9a76c4979dceebed2adb9cebfad673021ed4685e05a362dd3843b781b38fab7",
   "conf": 0.7,
-  "icons": "bind"
+  "icons": "bind",
+  "content": true,
+  "frontMatterEnd": 15,
+  "backMatterStart": 160,
+  "openers": []
 }

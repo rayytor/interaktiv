@@ -346,7 +346,7 @@ class FocusOverlay(Gtk.Box):
         ))
 
     def _position(self) -> Tuple[int, int]:
-        """Which activity of its page this is, and how many the page has."""
+        """Which region of its page this is, and how many the page has (content included)."""
         act = self.activity
         overlay_for = getattr(self.reader.session, "overlay", None)
         overlay = overlay_for(act.page_num) if overlay_for and act else None

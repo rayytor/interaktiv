@@ -56,6 +56,14 @@ QUIET_FILL_ALPHA = 0.07
 ACTIVE_FILL_ALPHA = 0.20
 ACTIVE_GLOW = _rgba("rgba(240,140,0,0.35)")
 
+# A content region -- a passage, a figure -- is marked more quietly still, and in another
+# colour: it can be opened like an activity, but it is not one, and the amber has to keep
+# meaning "exercise".
+CONTENT_MARK = _rgba("#4f86c6")
+CONTENT_FILL = _rgba("#6aa5e8")
+CONTENT_GLOW = _rgba("rgba(79,134,198,0.35)")
+CONTENT_PULSE_ALPHA = 0.14
+
 BADGE_BG = _rgba("#ffb020")
 BADGE_FG = _rgba("#2b1a00")
 COUNT_BG = _rgba("rgba(24,26,31,0.88)")
@@ -99,7 +107,7 @@ SEARCH_RADIUS = 3
 def short_label(spot: Spot) -> str:
     """What fits in a badge: the activity's letter or number, else its position."""
     label = (spot.label or "").strip()
-    return label if 0 < len(label) <= 3 else str(spot.act_index + 1)
+    return label if 0 < len(label) <= 3 else str(spot.number or spot.act_index + 1)
 
 
 class PageView(Gtk.Widget):
@@ -658,7 +666,7 @@ class PageView(Gtk.Widget):
             return
 
         pulse = self._pulse()
-        crowded = len(overlay.activities) > CROWDED
+        crowded = overlay.activity_count > CROWDED
         active = []
         for spot in overlay.spots:
             rect = transform.rect_to_widget(spot.rect)
@@ -683,6 +691,15 @@ class PageView(Gtk.Widget):
         bounds = Graphene.Rect().init(x, y, w, h)
         rounded = Gsk.RoundedRect()
         rounded.init_from_rect(bounds, HOTSPOT_RADIUS)
+        if spot.content:
+            # Corners alone at rest: a page of prose is all content, and a tint over every
+            # paragraph would be a tint over the page.
+            if pulse > 0.0:
+                snapshot.push_rounded_clip(rounded)
+                snapshot.append_color(_faded(CONTENT_FILL, CONTENT_PULSE_ALPHA * pulse), bounds)
+                snapshot.pop()
+            self._draw_corners(snapshot, x, y, w, h, CONTENT_MARK)
+            return
         alpha = QUIET_FILL_ALPHA + (PULSE_FILL_ALPHA - QUIET_FILL_ALPHA) * pulse
         snapshot.push_rounded_clip(rounded)
         snapshot.append_color(_faded(MARK_FILL, alpha), bounds)
@@ -692,7 +709,7 @@ class PageView(Gtk.Widget):
             self._draw_badge(snapshot, x - 7, y - BADGE_HEIGHT / 2, self._badge_text(spot),
                              BADGE_FONT, BADGE_BG, BADGE_FG)
 
-    def _draw_corners(self, snapshot, x, y, w, h) -> None:
+    def _draw_corners(self, snapshot, x, y, w, h, colour=MARK) -> None:
         """Four corner marks: enough to say "this box", without drawing a box."""
         length = min(CORNER_LENGTH, w / 3.0, h / 3.0)
         t = CORNER_WIDTH
@@ -702,8 +719,8 @@ class PageView(Gtk.Widget):
                 cx if dx > 0 else cx - length, cy if dy > 0 else cy - t, length, t)
             vertical = Graphene.Rect().init(
                 cx if dx > 0 else cx - t, cy if dy > 0 else cy - length, t, length)
-            snapshot.append_color(MARK, horizontal)
-            snapshot.append_color(MARK, vertical)
+            snapshot.append_color(colour, horizontal)
+            snapshot.append_color(colour, vertical)
 
     def _draw_active(self, snapshot, rect, spot: Spot) -> None:
         x, y, w, h = rect
@@ -712,6 +729,13 @@ class PageView(Gtk.Widget):
         bounds = Graphene.Rect().init(x, y, w, h)
         rounded = Gsk.RoundedRect()
         rounded.init_from_rect(bounds, HOTSPOT_RADIUS)
+        if spot.content:
+            snapshot.append_outset_shadow(rounded, CONTENT_GLOW, 0, 0, 4, 3)
+            snapshot.push_rounded_clip(rounded)
+            snapshot.append_color(_faded(CONTENT_FILL, ACTIVE_FILL_ALPHA), bounds)
+            snapshot.pop()
+            snapshot.append_border(rounded, [2.5] * 4, [CONTENT_MARK] * 4)
+            return
         snapshot.append_outset_shadow(rounded, ACTIVE_GLOW, 0, 0, 4, 3)
         snapshot.push_rounded_clip(rounded)
         snapshot.append_color(_faded(MARK_FILL, ACTIVE_FILL_ALPHA), bounds)

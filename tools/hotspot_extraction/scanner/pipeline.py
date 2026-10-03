@@ -83,6 +83,13 @@ class PageResult:
     # need it: without it the last de-overlap cuts at midpoints, through lines
     # and blocks, and undoes the edge-snapping growth just did.
     geometry: Optional[PageGeometry] = None
+    # What kind of sheet this is when it is not content (`content.py`): the opening page of a
+    # chapter, a table of contents. A whole book's worth decides where its front matter ends.
+    opener: bool = False
+    contents: Optional[str] = None          # "named" or "listed" (content.contents_page)
+    first_chapter: Optional[int] = None     # the printed page a contents sheet gives for chapter one
+    bibliography: bool = False
+    plate: bool = False
 
     @property
     def panels(self) -> List[Rect]:

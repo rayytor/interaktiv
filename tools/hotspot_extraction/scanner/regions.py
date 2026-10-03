@@ -97,6 +97,7 @@ class ActivityRegion:
     items: Optional[List[SubItemRect]] = None  # Numbered sub-questions
     anchored: bool = False                   # grown from a publisher icon
     oge_id: Optional[str] = None             # the manifest entry bound to it
+    kind: str = "activity"                   # "content": what the page holds besides activities (content.py)
 
 
 # Geometric utility functions

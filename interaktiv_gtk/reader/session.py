@@ -274,6 +274,9 @@ class DocumentSession:
             if overlay is None:
                 continue
             for act_index, activity in enumerate(overlay.activities):
+                # The list is of exercises; a book's every paragraph would bury them.
+                if activity.is_content:
+                    continue
                 spot = overlay.first_spot_of(act_index)
                 if spot is None:
                     continue

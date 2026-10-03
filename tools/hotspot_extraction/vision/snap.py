@@ -9,9 +9,11 @@ lines than the student put in it. For one parsed sheet:
 
   1. the pixel boxes are converted to PDF points, y up (the `regions.json`
      convention), and clamped to the sheet;
-  2. a box taller than a hotspot may be (`TALL_REGION`) is left out: it is the
-     page, not an activity on it, and cutting it down would leave a hotspot
-     over part of an activity;
+  2. a box may be as tall as the sheet: a performance task or a form that
+     fills its page is one activity, and is kept whole. (Until 2026-10-03 a
+     box taller than `TALL_REGION` was left out; the rules below still never
+     *grow* a box past that height.) A sheet that is one form by its own title
+     (`content.page_form`) is one region, whatever was boxed on it;
   3. an edge that cuts through a line of type steps off it (`seam_snap`): out
      past a line the box holds most of, back inside one it only clips. An edge
      in the ascender room of a line is not through its letters and stays;
@@ -32,7 +34,11 @@ lines than the student put in it. For one parsed sheet:
      question ends, and never across a picture or a panel;
   7. the publisher's icons are read (`icons.py`): one hung at a region names
      it, and, by the mode the bake was given, one hung at nothing may bring a
-     region of its own.
+     region of its own;
+  8. what the activities left of the sheet -- passages, explanations, figures,
+     panels, tables -- is cut into content regions (`scanner/content.py`), so
+     that every part of a page can be opened, and the list is put in reading
+     order. The activities are not moved by it.
 
 Steps 3 and 4 were measured against the teacher's boxes on labelled pages
 (which lines and blocks a region holds, beside which the teacher's box holds):
@@ -59,6 +65,9 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
 from tools.hotspot_extraction.scanner.anchors import _page_geometry  # noqa: E402
+from tools.hotspot_extraction.scanner.content import (  # noqa: E402
+    content_regions, contents_page, is_bibliography, is_opener, is_plate, page_form,
+)
 from tools.hotspot_extraction.scanner.layout import detect_layout  # noqa: E402
 from tools.hotspot_extraction.scanner.markers import _is_bold  # noqa: E402
 from tools.hotspot_extraction.scanner.pipeline import PageResult, body_spans_of, ruler_blocks  # noqa: E402
@@ -322,18 +331,15 @@ def part_overlaps(rects: List[List[float]], geom: PageGeometry) -> None:
 
 def settle(boxes: Sequence[Tuple[float, Rect]], geom: PageGeometry) -> List[Rect]:
     """The student's boxes for one sheet, fitted to the page and to each other. See the module docstring."""
-    page_h = geom.sheet()[1]
-    max_h = (TALL_REGION - 0.005) * page_h
-    # A box taller than a hotspot may be is the page itself, not an activity on it. It is left out
-    # before anything is measured against it, so the smaller boxes inside it stand; cutting it down
-    # to the limit instead would leave a hotspot over the top of an activity and not its foot.
-    boxes = [(score, r) for score, r in boxes if r[3] - r[1] <= max_h]
+    # A box as tall as the sheet stands: a task that fills its page is one activity. Where the
+    # student drew such a box and smaller ones inside it, `drop_nested` keeps whichever it was
+    # surer of.
     rects = [list(seam_snap(r, geom)) for _, r in drop_nested(boxes)]
     fit_blocks(rects, geom)
     part_overlaps(rects, geom)
     out: List[Rect] = []
     for r in rects:
-        if r[3] - r[1] <= max_h and r[2] - r[0] >= MIN_HOTSPOT and r[3] - r[1] >= MIN_HOTSPOT:
+        if r[2] - r[0] >= MIN_HOTSPOT and r[3] - r[1] >= MIN_HOTSPOT:
             out.append((round(r[0], 4), round(r[1], 4), round(r[2], 4), round(r[3], 4)))
     return out
 
@@ -533,6 +539,7 @@ def vision_page(
     page_oges: Sequence[Any] = (),
     icon_mode: str = "off",
     siblings: bool = True,
+    content: bool = False,
 ) -> PageResult:
     """
     One sheet's result from the student's boxes, in the shape `detect_page` returns.
@@ -544,7 +551,9 @@ def vision_page(
     publisher's entries for this sheet only, and `icon_mode` says what is done
     with them once the boxes are settled (`icons.MODES`); "off" ignores them.
     `siblings` lets an unboxed label between two boxed ones have a region
-    (`between_siblings`).
+    (`between_siblings`). `content` cuts what the activities left of the sheet
+    into content regions (`scanner/content.py`) and puts the whole list in
+    reading order.
     """
     layout = detect_layout(prim)
     markers = detect_activity_markers(prim, layout=layout, trace=GrowthTrace())
@@ -565,6 +574,10 @@ def vision_page(
     # Top of the sheet first, then left to right, so ids and marker claims follow reading order.
     rects = sorted(settle(sure, geom), key=lambda r: (-r[3], r[0]))
     claimed: Dict[int, Rect] = {}
+    # A sheet that is one form is one region: the form, title to last line.
+    form = page_form(prim, geom) if content else None
+    if form is not None:
+        rects, labels, siblings = [form[0]], [], False
 
     def region(rect: Rect, m: Optional[Any], n: int) -> ActivityRegion:
         label = headline = items = None
@@ -588,6 +601,8 @@ def vision_page(
             taken.add(id(m))
             claimed[id(m)] = rect
         activities.append(region(rect, m, n))
+    if form is not None:
+        activities[0].id, activities[0].headline = f"p{page_num}-form", form[1][:160]
     if siblings:
         for m, rect in between_siblings(rects, claimed, labels, geom):
             activities.append(region(rect, m, len(activities) + 1))
@@ -596,6 +611,17 @@ def vision_page(
         icons.apply(icon_mode, activities, page_oges, prim=prim, layout=layout, geom=geom,
                     page_num=page_num, printed_page=printed_page)
 
+    opener, contents, first_chapter = False, None, None
+    if content:
+        opener = is_opener(prim, layout)
+        contents, first_chapter = contents_page(prim)
+        # A contents sheet lies in the front matter, whose content regions the bake takes back
+        # once it knows where the front matter ends; only an opener is known here.
+        if not opener:
+            activities = content_regions(prim, layout, geom, activities, page_num)
+
     return PageResult(layout=layout, markers=markers, activities=activities,
                       blocks=ruler_blocks(prim, layout, markers), anchor_ids=[],
-                      geometry=geom if activities else None)
+                      geometry=geom if activities else None, opener=opener, contents=contents,
+                      first_chapter=first_chapter,
+                      bibliography=content and is_bibliography(prim), plate=content and is_plate(prim))

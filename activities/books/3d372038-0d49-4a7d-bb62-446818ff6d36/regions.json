@@ -3,7 +3,7 @@
   "bookId": "3d372038-0d49-4a7d-bb62-446818ff6d36",
   "fingerprint": "33467427-e505e9f3c65feb44bd4acf490e22241d",
   "profile": "c7de24295a4b",
-  "builtAt": "2026-10-03T07:59:20.073Z",
+  "builtAt": "2026-10-03T11:43:24.034Z",
   "pageCount": 53,
   "calibration": {
     "enabled": true,
@@ -262,6 +262,27 @@
       ],
       "activities": [
         {
+          "id": "p12-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            696.0617,
+            548.0601,
+            742.528
+          ],
+          "parts": [
+            [
+              0.0,
+              696.0617,
+              548.0601,
+              742.528
+            ]
+          ],
+          "kind": "content",
+          "headline": "VOCABULARY"
+        },
+        {
           "id": "p12-1",
           "label": "1",
           "column": 0,
@@ -318,6 +339,26 @@
       ],
       "activities": [
         {
+          "id": "p13-c1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            7.1567,
+            712.2855,
+            552.756,
+            739.528
+          ],
+          "parts": [
+            [
+              7.1567,
+              712.2855,
+              552.756,
+              739.528
+            ]
+          ],
+          "kind": "content"
+        },
+        {
           "id": "p13-1",
           "label": "1",
           "column": 0,
@@ -372,6 +413,27 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p14-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            712.2855,
+            545.0601,
+            739.528
+          ],
+          "parts": [
+            [
+              0.0,
+              712.2855,
+              545.0601,
+              739.528
+            ]
+          ],
+          "kind": "content",
+          "headline": "Theme 2"
+        },
         {
           "id": "p14-1",
           "label": "1",
@@ -1355,6 +1417,26 @@
       ],
       "activities": [
         {
+          "id": "p19-c1",
+          "label": null,
+          "column": 2,
+          "rect": [
+            11.1252,
+            712.4329,
+            552.756,
+            739.528
+          ],
+          "parts": [
+            [
+              11.1252,
+              712.4329,
+              552.756,
+              739.528
+            ]
+          ],
+          "kind": "content"
+        },
+        {
           "id": "p19-1",
           "label": "1",
           "column": 0,
@@ -1416,6 +1498,27 @@
           ]
         },
         {
+          "id": "p19-c2",
+          "label": null,
+          "column": 2,
+          "rect": [
+            24.4913,
+            312.3542,
+            536.34,
+            612.3108
+          ],
+          "parts": [
+            [
+              24.4913,
+              312.3542,
+              536.34,
+              612.3108
+            ]
+          ],
+          "kind": "content",
+          "headline": "a"
+        },
+        {
           "id": "p19-2",
           "label": "2",
           "column": 0,
@@ -1466,6 +1569,27 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p20-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            699.0617,
+            548.0601,
+            742.528
+          ],
+          "parts": [
+            [
+              0.0,
+              699.0617,
+              548.0601,
+              742.528
+            ]
+          ],
+          "kind": "content",
+          "headline": "VOCABULARY"
+        },
         {
           "id": "p20-v1",
           "label": null,
@@ -1537,6 +1661,47 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p21-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            9.7079,
+            712.7631,
+            552.756,
+            739.528
+          ],
+          "parts": [
+            [
+              9.7079,
+              712.7631,
+              552.756,
+              739.528
+            ]
+          ],
+          "kind": "content"
+        },
+        {
+          "id": "p21-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            36.4663,
+            427.7865,
+            499.4231,
+            712.7631
+          ],
+          "parts": [
+            [
+              36.4663,
+              427.7865,
+              499.4231,
+              712.7631
+            ]
+          ],
+          "kind": "content",
+          "headline": "LANGUAGE IN USE"
+        },
         {
           "id": "p21-v1",
           "label": null,
@@ -1953,6 +2118,27 @@
           ]
         },
         {
+          "id": "p23-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            56.2203,
+            318.1887,
+            496.0633,
+            566.2197
+          ],
+          "parts": [
+            [
+              56.2203,
+              318.1887,
+              496.0633,
+              566.2197
+            ]
+          ],
+          "kind": "content",
+          "headline": "MAYA ANGELOU"
+        },
+        {
           "id": "p23-2",
           "label": "2",
           "column": 0,
@@ -2337,6 +2523,90 @@
             ]
           ],
           "headline": "Listen to the dialogue between Barbara and her mum. Write what Barbara regrets about."
+        },
+        {
+          "id": "p26-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.3386,
+            606.9223,
+            347.5415,
+            629.3223
+          ],
+          "parts": [
+            [
+              53.3386,
+              606.9223,
+              347.5415,
+              629.3223
+            ]
+          ],
+          "kind": "content",
+          "headline": "2."
+        },
+        {
+          "id": "p26-c3",
+          "label": null,
+          "column": 1,
+          "rect": [
+            24.3358,
+            270.7171,
+            482.2884,
+            605.528
+          ],
+          "parts": [
+            [
+              24.3358,
+              270.7171,
+              482.2884,
+              605.528
+            ]
+          ],
+          "kind": "content",
+          "headline": "5.2"
+        },
+        {
+          "id": "p26-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.6929,
+            226.3436,
+            269.5459,
+            269.7037
+          ],
+          "parts": [
+            [
+              53.6929,
+              226.3436,
+              269.5459,
+              269.7037
+            ]
+          ],
+          "kind": "content",
+          "headline": "SPEAKING"
+        },
+        {
+          "id": "p26-c5",
+          "label": null,
+          "column": 1,
+          "rect": [
+            55.0,
+            58.528,
+            498.0,
+            225.627
+          ],
+          "parts": [
+            [
+              55.0,
+              58.528,
+              498.0,
+              225.627
+            ]
+          ],
+          "kind": "content",
+          "headline": "1. if you had saved a lot of money?"
         }
       ]
     },
@@ -2489,6 +2759,26 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p28-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            711.499,
+            543.74,
+            779.528
+          ],
+          "parts": [
+            [
+              0.0,
+              711.499,
+              543.74,
+              779.528
+            ]
+          ],
+          "kind": "content"
+        },
         {
           "id": "p28-1",
           "label": "1",
@@ -3006,6 +3296,27 @@
               "text": "2. Who was feeling restless? ___________________."
             }
           ]
+        },
+        {
+          "id": "p31-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            42.7558,
+            336.0491,
+            482.5988,
+            560.8301
+          ],
+          "parts": [
+            [
+              42.7558,
+              336.0491,
+              482.5988,
+              560.8301
+            ]
+          ],
+          "kind": "content",
+          "headline": "Unexpected Kindness"
         },
         {
           "id": "p31-2",
@@ -3566,6 +3877,26 @@
       ],
       "activities": [
         {
+          "id": "p36-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            708.8716,
+            548.0601,
+            779.528
+          ],
+          "parts": [
+            [
+              0.0,
+              708.8716,
+              548.0601,
+              779.528
+            ]
+          ],
+          "kind": "content"
+        },
+        {
           "id": "p36-1",
           "label": "1",
           "column": 0,
@@ -3895,6 +4226,47 @@
             ]
           ],
           "headline": "Tourists usually buy Turkish tea sets and evil eye beads as souvenirs."
+        },
+        {
+          "id": "p37-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            73.8865,
+            213.3239,
+            466.3723,
+            229.1585
+          ],
+          "parts": [
+            [
+              73.8865,
+              213.3239,
+              466.3723,
+              229.1585
+            ]
+          ],
+          "kind": "content",
+          "headline": "_____________________________________________________________________."
+        },
+        {
+          "id": "p37-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            27.2865,
+            56.8688,
+            493.1724,
+            205.2285
+          ],
+          "parts": [
+            [
+              27.2865,
+              56.8688,
+              493.1724,
+              205.2285
+            ]
+          ],
+          "kind": "content"
         }
       ]
     },
@@ -4059,6 +4431,26 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p40-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            712.4159,
+            541.1001,
+            739.528
+          ],
+          "parts": [
+            [
+              0.0,
+              712.4159,
+              541.1001,
+              739.528
+            ]
+          ],
+          "kind": "content"
+        },
         {
           "id": "p40-1",
           "label": "1",
@@ -4283,6 +4675,27 @@
       ],
       "activities": [
         {
+          "id": "p42-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            699.3724,
+            544.4601,
+            742.528
+          ],
+          "parts": [
+            [
+              0.0,
+              699.3724,
+              544.4601,
+              742.528
+            ]
+          ],
+          "kind": "content",
+          "headline": "Theme 9"
+        },
+        {
           "id": "p42-1",
           "label": "1",
           "column": 0,
@@ -4373,6 +4786,47 @@
             ]
           ],
           "headline": "a) A friend means well even if s/he hurts you."
+        },
+        {
+          "id": "p43-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            46.591,
+            446.558,
+            486.322,
+            622.058
+          ],
+          "parts": [
+            [
+              46.591,
+              446.558,
+              486.322,
+              622.058
+            ]
+          ],
+          "kind": "content",
+          "headline": "A FRIEND INDEED"
+        },
+        {
+          "id": "p43-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            73.666,
+            297.2533,
+            467.5073,
+            446.4805
+          ],
+          "parts": [
+            [
+              73.666,
+              297.2533,
+              467.5073,
+              446.4805
+            ]
+          ],
+          "kind": "content"
         },
         {
           "id": "p43-2",
@@ -4708,6 +5162,26 @@
       ],
       "activities": [
         {
+          "id": "p45-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            7.8654,
+            709.1558,
+            552.756,
+            739.528
+          ],
+          "parts": [
+            [
+              7.8654,
+              709.1558,
+              552.756,
+              739.528
+            ]
+          ],
+          "kind": "content"
+        },
+        {
           "id": "p45-1",
           "label": "1",
           "column": 0,
@@ -4896,6 +5370,27 @@
           "headline": "a) The ties and relationships between family and community are important"
         },
         {
+          "id": "p47-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            42.3709,
+            339.4487,
+            480.6589,
+            597.7087
+          ],
+          "parts": [
+            [
+              42.3709,
+              339.4487,
+              480.6589,
+              597.7087
+            ]
+          ],
+          "kind": "content",
+          "headline": "SHINY HAPPY PEOPLE"
+        },
+        {
           "id": "p47-2",
           "label": "2",
           "column": 0,
@@ -4947,6 +5442,26 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p48-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            0.0,
+            711.8489,
+            545.0601,
+            739.528
+          ],
+          "parts": [
+            [
+              0.0,
+              711.8489,
+              545.0601,
+              739.528
+            ]
+          ],
+          "kind": "content"
+        },
         {
           "id": "p48-1",
           "label": "1",
@@ -5099,6 +5614,26 @@
       ],
       "activities": [
         {
+          "id": "p49-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            11.6921,
+            712.2363,
+            552.756,
+            739.528
+          ],
+          "parts": [
+            [
+              11.6921,
+              712.2363,
+              552.756,
+              739.528
+            ]
+          ],
+          "kind": "content"
+        },
+        {
           "id": "p49-1",
           "label": "1",
           "column": 0,
@@ -5159,10 +5694,193 @@
           "headline": "The Germans and the English don’t like being late for their appointments. (neither … nor) _____________________________________________________________________."
         }
       ]
+    },
+    "50": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          41.7305,
+          118.0215
+        ],
+        [
+          122.0215,
+          198.3124
+        ],
+        [
+          202.3124,
+          283.3856
+        ],
+        [
+          287.3856,
+          363.6765
+        ],
+        [
+          367.6765,
+          443.9675
+        ],
+        [
+          447.9675,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p50-c1",
+          "label": null,
+          "column": 2,
+          "rect": [
+            39.061,
+            678.6352,
+            527.329,
+            726.7387
+          ],
+          "parts": [
+            [
+              39.061,
+              678.6352,
+              527.329,
+              726.7387
+            ]
+          ],
+          "kind": "content",
+          "headline": "IRREGULAR VERBS LIST"
+        },
+        {
+          "id": "p50-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.061,
+            67.16,
+            121.092,
+            675.777
+          ],
+          "parts": [
+            [
+              39.061,
+              67.16,
+              121.092,
+              675.777
+            ]
+          ],
+          "kind": "content",
+          "headline": "awake"
+        },
+        {
+          "id": "p50-c3",
+          "label": null,
+          "column": 1,
+          "rect": [
+            122.352,
+            67.16,
+            201.383,
+            675.777
+          ],
+          "parts": [
+            [
+              122.352,
+              67.16,
+              201.383,
+              675.777
+            ]
+          ],
+          "kind": "content",
+          "headline": "awoke"
+        },
+        {
+          "id": "p50-c4",
+          "label": null,
+          "column": 2,
+          "rect": [
+            202.643,
+            67.16,
+            281.674,
+            675.777
+          ],
+          "parts": [
+            [
+              202.643,
+              67.16,
+              281.674,
+              675.777
+            ]
+          ],
+          "kind": "content",
+          "headline": "awoken"
+        },
+        {
+          "id": "p50-c5",
+          "label": null,
+          "column": 3,
+          "rect": [
+            284.716,
+            67.16,
+            366.747,
+            675.777
+          ],
+          "parts": [
+            [
+              284.716,
+              67.16,
+              366.747,
+              675.777
+            ]
+          ],
+          "kind": "content",
+          "headline": "hide"
+        },
+        {
+          "id": "p50-c6",
+          "label": null,
+          "column": 4,
+          "rect": [
+            368.007,
+            67.16,
+            447.038,
+            675.777
+          ],
+          "parts": [
+            [
+              368.007,
+              67.16,
+              447.038,
+              675.777
+            ]
+          ],
+          "kind": "content",
+          "headline": "hid"
+        },
+        {
+          "id": "p50-c7",
+          "label": null,
+          "column": 5,
+          "rect": [
+            448.298,
+            67.16,
+            527.329,
+            675.777
+          ],
+          "parts": [
+            [
+              448.298,
+              67.16,
+              527.329,
+              675.777
+            ]
+          ],
+          "kind": "content",
+          "headline": "hidden"
+        }
+      ]
     }
   },
   "engine": "vision",
   "checkpoint": "a9a76c4979dceebed2adb9cebfad673021ed4685e05a362dd3843b781b38fab7",
   "conf": 0.7,
-  "icons": "bind"
+  "icons": "bind",
+  "content": true,
+  "frontMatterEnd": 9,
+  "backMatterStart": 51,
+  "openers": []
 }

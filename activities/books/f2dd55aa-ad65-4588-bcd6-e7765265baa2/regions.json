@@ -3,7 +3,7 @@
   "bookId": "f2dd55aa-ad65-4588-bcd6-e7765265baa2",
   "fingerprint": "31002494-e3b56a80406435315ec4ec1524071844",
   "profile": "c7de24295a4b",
-  "builtAt": "2026-10-03T07:59:20.483Z",
+  "builtAt": "2026-10-03T11:43:24.515Z",
   "pageCount": 73,
   "calibration": {
     "enabled": true,
@@ -192,6 +192,27 @@
             ]
           ],
           "headline": "Listen again and fill in the blanks."
+        },
+        {
+          "id": "p10-c2",
+          "label": null,
+          "column": 2,
+          "rect": [
+            69.6595,
+            78.7968,
+            533.3395,
+            345.1968
+          ],
+          "parts": [
+            [
+              69.6595,
+              78.7968,
+              533.3395,
+              345.1968
+            ]
+          ],
+          "kind": "content",
+          "headline": "P R O N U N C I A T I O N"
         }
       ]
     },
@@ -585,6 +606,27 @@
           "headline": "Read the text quickly and tick ( ✓ ) the topics mentioned."
         },
         {
+          "id": "p14-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            63.067,
+            363.648,
+            548.347,
+            630.408
+          ],
+          "parts": [
+            [
+              63.067,
+              363.648,
+              548.347,
+              630.408
+            ]
+          ],
+          "kind": "content",
+          "headline": "26 SEPTEMBER TURKISH LANGUAGE FESTIVAL"
+        },
+        {
           "id": "p14-2",
           "label": "2",
           "column": 0,
@@ -845,6 +887,27 @@
               466.6849
             ]
           ]
+        },
+        {
+          "id": "p16-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            69.6595,
+            51.21,
+            533.3395,
+            359.37
+          ],
+          "parts": [
+            [
+              69.6595,
+              51.21,
+              533.3395,
+              359.37
+            ]
+          ],
+          "kind": "content",
+          "headline": "P R O N U N C I A T I O N"
         }
       ]
     },
@@ -1149,6 +1212,48 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p20-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            62.1969,
+            685.7976,
+            519.0551,
+            725.0462
+          ],
+          "parts": [
+            [
+              62.1969,
+              685.7976,
+              519.0551,
+              725.0462
+            ]
+          ],
+          "kind": "content",
+          "headline": "READING"
+        },
+        {
+          "id": "p20-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            84.039,
+            357.693,
+            536.748,
+            684.1274
+          ],
+          "parts": [
+            [
+              84.039,
+              357.693,
+              536.748,
+              684.1274
+            ]
+          ],
+          "kind": "content",
+          "headline": "🎧 recording episodes"
+        },
         {
           "id": "p20-2",
           "label": "2",
@@ -1760,6 +1865,47 @@
           "headline": "Read the text quickly to tick ( ✓ ) what is mentioned in it."
         },
         {
+          "id": "p26-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            64.07,
+            355.138,
+            524.51,
+            615.1423
+          ],
+          "parts": [
+            [
+              64.07,
+              355.138,
+              524.51,
+              615.1423
+            ]
+          ],
+          "kind": "content",
+          "headline": "Ikigai & Hygge: Two Ways to Feel Good"
+        },
+        {
+          "id": "p26-c3",
+          "label": null,
+          "column": 1,
+          "rect": [
+            368.3385,
+            615.1423,
+            544.181,
+            700.6792
+          ],
+          "parts": [
+            [
+              368.3385,
+              615.1423,
+              544.181,
+              700.6792
+            ]
+          ],
+          "kind": "content"
+        },
+        {
           "id": "p26-2",
           "label": "2",
           "column": 0,
@@ -2005,6 +2151,27 @@
           ]
         },
         {
+          "id": "p28-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            76.4954,
+            289.8395,
+            295.972,
+            317.9425
+          ],
+          "parts": [
+            [
+              76.4954,
+              289.8395,
+              295.972,
+              317.9425
+            ]
+          ],
+          "kind": "content",
+          "headline": "P R O N U N C I A T I O N"
+        },
+        {
           "id": "p28-1",
           "label": "1",
           "column": 0,
@@ -2232,6 +2399,48 @@
           "headline": "Complete the dialogue with the correct reflexive pronouns."
         },
         {
+          "id": "p30-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            62.1229,
+            529.1629,
+            410.4409,
+            548.8369
+          ],
+          "parts": [
+            [
+              62.1229,
+              529.1629,
+              410.4409,
+              548.8369
+            ]
+          ],
+          "kind": "content",
+          "headline": "5"
+        },
+        {
+          "id": "p30-c3",
+          "label": null,
+          "column": 1,
+          "rect": [
+            64.1968,
+            200.2991,
+            520.6769,
+            528.6191
+          ],
+          "parts": [
+            [
+              64.1968,
+              200.2991,
+              520.6769,
+              528.6191
+            ]
+          ],
+          "kind": "content",
+          "headline": "Last weekend, we went hiking and tried some different mountain routes. The first trail was"
+        },
+        {
           "id": "p30-6",
           "label": "6",
           "column": 0,
@@ -2364,6 +2573,27 @@
           "headline": "Look at the title. What do you think the text will be about? Tick ( ✓ ) your guesses."
         },
         {
+          "id": "p32-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            65.197,
+            266.425,
+            518.74,
+            620.756
+          ],
+          "parts": [
+            [
+              65.197,
+              266.425,
+              518.74,
+              620.756
+            ]
+          ],
+          "kind": "content",
+          "headline": "More Than Housemates"
+        },
+        {
           "id": "p32-2",
           "label": "2",
           "column": 0,
@@ -2423,6 +2653,69 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p33-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            48.0237,
+            687.1876,
+            289.2427,
+            725.0462
+          ],
+          "parts": [
+            [
+              48.0237,
+              687.1876,
+              289.2427,
+              725.0462
+            ]
+          ],
+          "kind": "content",
+          "headline": "WRITING"
+        },
+        {
+          "id": "p33-c3",
+          "label": null,
+          "column": 1,
+          "rect": [
+            48.024,
+            481.964,
+            507.567,
+            686.15
+          ],
+          "parts": [
+            [
+              48.024,
+              481.964,
+              507.567,
+              686.15
+            ]
+          ],
+          "kind": "content",
+          "headline": "Family Life in a Full House"
+        },
+        {
+          "id": "p33-c4",
+          "label": null,
+          "column": 1,
+          "rect": [
+            55.2237,
+            440.205,
+            488.076,
+            480.0776
+          ],
+          "parts": [
+            [
+              55.2237,
+              440.205,
+              488.076,
+              480.0776
+            ]
+          ],
+          "kind": "content",
+          "headline": "b"
+        },
         {
           "id": "p33-2",
           "label": "2",
@@ -2530,6 +2823,27 @@
             ]
           ],
           "headline": "The old bridge will be restored because it is part of the city’s ____________."
+        },
+        {
+          "id": "p34-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            76.4954,
+            247.9813,
+            295.972,
+            276.0843
+          ],
+          "parts": [
+            [
+              76.4954,
+              247.9813,
+              295.972,
+              276.0843
+            ]
+          ],
+          "kind": "content",
+          "headline": "P R O N U N C I A T I O N"
         },
         {
           "id": "p34-1",
@@ -2889,6 +3203,90 @@
       ],
       "activities": [
         {
+          "id": "p38-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            62.1969,
+            690.0223,
+            410.6039,
+            725.0462
+          ],
+          "parts": [
+            [
+              62.1969,
+              690.0223,
+              410.6039,
+              725.0462
+            ]
+          ],
+          "kind": "content",
+          "headline": "READING"
+        },
+        {
+          "id": "p38-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            82.039,
+            398.74,
+            513.2362,
+            687.0545
+          ],
+          "parts": [
+            [
+              82.039,
+              398.74,
+              513.2362,
+              687.0545
+            ]
+          ],
+          "kind": "content",
+          "headline": "__"
+        },
+        {
+          "id": "p38-c4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            85.039,
+            338.268,
+            510.236,
+            398.74
+          ],
+          "parts": [
+            [
+              85.039,
+              338.268,
+              510.236,
+              398.74
+            ]
+          ],
+          "kind": "content",
+          "headline": "B"
+        },
+        {
+          "id": "p38-c5",
+          "label": null,
+          "column": 0,
+          "rect": [
+            85.039,
+            277.795,
+            510.236,
+            338.267
+          ],
+          "parts": [
+            [
+              85.039,
+              277.795,
+              510.236,
+              338.267
+            ]
+          ],
+          "kind": "content",
+          "headline": "C"
+        },
+        {
           "id": "p38-2",
           "label": "2",
           "column": 0,
@@ -3095,6 +3493,27 @@
             ]
           ],
           "headline": "Cedric said the chefs he watched worked very f _________ ."
+        },
+        {
+          "id": "p40-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            76.4954,
+            349.9461,
+            295.972,
+            378.0491
+          ],
+          "parts": [
+            [
+              76.4954,
+              349.9461,
+              295.972,
+              378.0491
+            ]
+          ],
+          "kind": "content",
+          "headline": "P R O N U N C I A T I O N"
         },
         {
           "id": "p40-1",
@@ -3518,6 +3937,27 @@
           "headline": "Look at the title and tick ( ✓ ) what you think the text will focus on."
         },
         {
+          "id": "p44-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            65.197,
+            426.197,
+            518.74,
+            635.961
+          ],
+          "parts": [
+            [
+              65.197,
+              426.197,
+              518.74,
+              635.961
+            ]
+          ],
+          "kind": "content",
+          "headline": "Everyday Life in a Global World"
+        },
+        {
           "id": "p44-2",
           "label": "2",
           "column": 0,
@@ -3708,6 +4148,27 @@
       ],
       "activities": [
         {
+          "id": "p46-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            62.1969,
+            640.1482,
+            513.946,
+            722.0462
+          ],
+          "parts": [
+            [
+              62.1969,
+              640.1482,
+              513.946,
+              722.0462
+            ]
+          ],
+          "kind": "content",
+          "headline": "LISTENING"
+        },
+        {
           "id": "p46-2",
           "label": "2",
           "column": 0,
@@ -3726,6 +4187,48 @@
             ]
           ],
           "headline": "Listen again and decide if the statements are true (T) or false (F)."
+        },
+        {
+          "id": "p46-c3",
+          "label": null,
+          "column": 1,
+          "rect": [
+            62.1969,
+            263.7798,
+            521.2072,
+            537.7776
+          ],
+          "parts": [
+            [
+              62.1969,
+              263.7798,
+              521.2072,
+              537.7776
+            ]
+          ],
+          "kind": "content",
+          "headline": "3"
+        },
+        {
+          "id": "p46-c4",
+          "label": null,
+          "column": 1,
+          "rect": [
+            69.6595,
+            51.2166,
+            533.3395,
+            261.4566
+          ],
+          "parts": [
+            [
+              69.6595,
+              51.2166,
+              533.3395,
+              261.4566
+            ]
+          ],
+          "kind": "content",
+          "headline": "P R O N U N C I A T I O N"
         }
       ]
     },
@@ -4069,6 +4572,48 @@
       ],
       "activities": [
         {
+          "id": "p50-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            62.1969,
+            674.3344,
+            516.08,
+            725.0462
+          ],
+          "parts": [
+            [
+              62.1969,
+              674.3344,
+              516.08,
+              725.0462
+            ]
+          ],
+          "kind": "content",
+          "headline": "READING"
+        },
+        {
+          "id": "p50-c3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            65.197,
+            464.882,
+            518.74,
+            671.811
+          ],
+          "parts": [
+            [
+              65.197,
+              464.882,
+              518.74,
+              671.811
+            ]
+          ],
+          "kind": "content",
+          "headline": "Indian Ocean Tsunami"
+        },
+        {
           "id": "p50-2",
           "label": "2",
           "column": 0,
@@ -4286,6 +4831,27 @@
               361.4444
             ]
           ]
+        },
+        {
+          "id": "p52-c2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            76.3723,
+            163.695,
+            513.946,
+            264.4153
+          ],
+          "parts": [
+            [
+              76.3723,
+              163.695,
+              513.946,
+              264.4153
+            ]
+          ],
+          "kind": "content",
+          "headline": "P R O N U N C I A T I O N"
         },
         {
           "id": "p52-2",
@@ -4640,6 +5206,27 @@
           "headline": "Look at the picture and the title. Tick ( ✓ ) what you expect to read in the text."
         },
         {
+          "id": "p56-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            65.197,
+            345.827,
+            518.74,
+            632.126
+          ],
+          "parts": [
+            [
+              65.197,
+              345.827,
+              518.74,
+              632.126
+            ]
+          ],
+          "kind": "content",
+          "headline": "A Possible Clue in a Distant Sky"
+        },
+        {
           "id": "p56-2",
           "label": "2",
           "column": 0,
@@ -4736,10 +5323,824 @@
           "headline": "Choose a topic below and write your leaflet, completing the template."
         }
       ]
+    },
+    "58": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          60.0844,
+          133.4809
+        ],
+        [
+          137.4809,
+          209.1616
+        ],
+        [
+          213.1616,
+          288.2739
+        ],
+        [
+          292.2739,
+          365.6703
+        ],
+        [
+          369.6703,
+          443.0668
+        ],
+        [
+          447.0668,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p58-c1",
+          "label": null,
+          "column": 3,
+          "rect": [
+            58.832,
+            686.432,
+            527.4897,
+            734.3386
+          ],
+          "parts": [
+            [
+              58.832,
+              686.432,
+              527.4897,
+              734.3386
+            ]
+          ],
+          "kind": "content",
+          "headline": "IRREGULAR VERBS LIST"
+        },
+        {
+          "id": "p58-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            58.832,
+            74.957,
+            138.122,
+            683.574
+          ],
+          "parts": [
+            [
+              58.832,
+              74.957,
+              138.122,
+              683.574
+            ]
+          ],
+          "kind": "content",
+          "headline": "awake"
+        },
+        {
+          "id": "p58-c3",
+          "label": null,
+          "column": 1,
+          "rect": [
+            139.229,
+            74.957,
+            215.519,
+            683.574
+          ],
+          "parts": [
+            [
+              139.229,
+              74.957,
+              215.519,
+              683.574
+            ]
+          ],
+          "kind": "content",
+          "headline": "awoke"
+        },
+        {
+          "id": "p58-c4",
+          "label": null,
+          "column": 2,
+          "rect": [
+            216.625,
+            74.957,
+            292.915,
+            683.574
+          ],
+          "parts": [
+            [
+              216.625,
+              74.957,
+              292.915,
+              683.574
+            ]
+          ],
+          "kind": "content",
+          "headline": "awoken"
+        },
+        {
+          "id": "p58-c5",
+          "label": null,
+          "column": 3,
+          "rect": [
+            294.022,
+            74.957,
+            370.312,
+            683.574
+          ],
+          "parts": [
+            [
+              294.022,
+              74.957,
+              370.312,
+              683.574
+            ]
+          ],
+          "kind": "content",
+          "headline": "hide"
+        },
+        {
+          "id": "p58-c6",
+          "label": null,
+          "column": 4,
+          "rect": [
+            371.418,
+            74.957,
+            447.708,
+            683.574
+          ],
+          "parts": [
+            [
+              371.418,
+              74.957,
+              447.708,
+              683.574
+            ]
+          ],
+          "kind": "content",
+          "headline": "hid"
+        },
+        {
+          "id": "p58-c7",
+          "label": null,
+          "column": 5,
+          "rect": [
+            448.815,
+            74.957,
+            525.105,
+            683.574
+          ],
+          "parts": [
+            [
+              448.815,
+              74.957,
+              525.105,
+              683.574
+            ]
+          ],
+          "kind": "content",
+          "headline": "hidden"
+        }
+      ]
+    },
+    "59": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          53.5254,
+          374.0925
+        ],
+        [
+          378.0925,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p59-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            48.0233,
+            397.9498,
+            509.9609,
+            734.3386
+          ],
+          "parts": [
+            [
+              48.0233,
+              397.9498,
+              509.9609,
+              734.3386
+            ]
+          ],
+          "kind": "content",
+          "headline": "GLOSSARY"
+        },
+        {
+          "id": "p59-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            56.5254,
+            62.4498,
+            467.6753,
+            396.4798
+          ],
+          "parts": [
+            [
+              56.5254,
+              62.4498,
+              467.6753,
+              396.4798
+            ]
+          ],
+          "kind": "content",
+          "headline": "critically (adv) in a way that judges quality or importance carefully"
+        }
+      ]
+    },
+    "60": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          67.6986,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p60-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            70.7008,
+            357.377,
+            506.8907,
+            729.407
+          ],
+          "parts": [
+            [
+              70.7008,
+              357.377,
+              506.8907,
+              729.407
+            ]
+          ],
+          "kind": "content",
+          "headline": "host (v) to organise an event and welcome the people who come to it"
+        },
+        {
+          "id": "p60-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            70.6986,
+            66.0404,
+            518.906,
+            354.443
+          ],
+          "parts": [
+            [
+              70.6986,
+              66.0404,
+              518.906,
+              354.443
+            ]
+          ],
+          "kind": "content",
+          "headline": "THEME 2"
+        }
+      ]
+    },
+    "61": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          53.5276,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p61-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            56.5276,
+            398.4577,
+            457.6875,
+            732.4877
+          ],
+          "parts": [
+            [
+              56.5276,
+              398.4577,
+              457.6875,
+              732.4877
+            ]
+          ],
+          "kind": "content",
+          "headline": "curiosity (n) a strong desire to know or learn something"
+        },
+        {
+          "id": "p61-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            56.5276,
+            62.9577,
+            447.0875,
+            396.9877
+          ],
+          "parts": [
+            [
+              56.5276,
+              62.9577,
+              447.0875,
+              396.9877
+            ]
+          ],
+          "kind": "content",
+          "headline": "inspiration (n) something that gives you ideas or enthusiasm"
+        }
+      ]
+    },
+    "62": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          67.6986,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p62-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            70.7008,
+            532.377,
+            420.7307,
+            729.407
+          ],
+          "parts": [
+            [
+              70.7008,
+              532.377,
+              420.7307,
+              729.407
+            ]
+          ],
+          "kind": "content",
+          "headline": "satisfaction (n) the feeling of pleasure when something is successful or good"
+        },
+        {
+          "id": "p62-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            70.6986,
+            66.0404,
+            518.906,
+            530.443
+          ],
+          "parts": [
+            [
+              70.6986,
+              66.0404,
+              518.906,
+              530.443
+            ]
+          ],
+          "kind": "content",
+          "headline": "THEME 3"
+        }
+      ]
+    },
+    "63": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          53.5276,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p63-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            56.5276,
+            398.4577,
+            392.6475,
+            732.4877
+          ],
+          "parts": [
+            [
+              56.5276,
+              398.4577,
+              392.6475,
+              732.4877
+            ]
+          ],
+          "kind": "content",
+          "headline": "a fever (n) a high body temperature caused by illness"
+        },
+        {
+          "id": "p63-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            56.5276,
+            62.9577,
+            385.4475,
+            396.9877
+          ],
+          "parts": [
+            [
+              56.5276,
+              62.9577,
+              385.4475,
+              396.9877
+            ]
+          ],
+          "kind": "content",
+          "headline": "recovery (n) the process of becoming healthy again after illness or injury"
+        }
+      ]
+    },
+    "64": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          67.6986,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p64-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            70.6986,
+            401.2803,
+            518.906,
+            725.943
+          ],
+          "parts": [
+            [
+              70.6986,
+              401.2803,
+              518.906,
+              725.943
+            ]
+          ],
+          "kind": "content",
+          "headline": "THEME 4"
+        },
+        {
+          "id": "p64-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            70.6986,
+            65.7803,
+            481.8285,
+            399.8103
+          ],
+          "parts": [
+            [
+              70.6986,
+              65.7803,
+              481.8285,
+              399.8103
+            ]
+          ],
+          "kind": "content",
+          "headline": "cooperation (n) working together to achieve something"
+        }
+      ]
+    },
+    "65": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          53.5254,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p65-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            56.5276,
+            427.377,
+            477.1175,
+            729.407
+          ],
+          "parts": [
+            [
+              56.5276,
+              427.377,
+              477.1175,
+              729.407
+            ]
+          ],
+          "kind": "content",
+          "headline": "noise conflict (n phr) a problem or argument caused by too much noise."
+        },
+        {
+          "id": "p65-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            56.5254,
+            66.0404,
+            504.733,
+            424.443
+          ],
+          "parts": [
+            [
+              56.5254,
+              66.0404,
+              504.733,
+              424.443
+            ]
+          ],
+          "kind": "content",
+          "headline": "THEME 5"
+        }
+      ]
+    },
+    "66": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          67.6986,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p66-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            70.7008,
+            357.377,
+            464.0607,
+            729.407
+          ],
+          "parts": [
+            [
+              70.7008,
+              357.377,
+              464.0607,
+              729.407
+            ]
+          ],
+          "kind": "content",
+          "headline": "impact (n) a strong effect or influence"
+        },
+        {
+          "id": "p66-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            70.6986,
+            66.0431,
+            518.906,
+            355.485
+          ],
+          "parts": [
+            [
+              70.6986,
+              66.0431,
+              518.906,
+              355.485
+            ]
+          ],
+          "kind": "content",
+          "headline": "THEME 6"
+        }
+      ]
+    },
+    "67": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          53.5254,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p67-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            56.5276,
+            199.877,
+            455.4875,
+            729.407
+          ],
+          "parts": [
+            [
+              56.5276,
+              199.877,
+              455.4875,
+              729.407
+            ]
+          ],
+          "kind": "content",
+          "headline": "equip (v) to provide someone or something with the necessary tools or equipment"
+        },
+        {
+          "id": "p67-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            56.5254,
+            66.0404,
+            504.733,
+            196.943
+          ],
+          "parts": [
+            [
+              56.5254,
+              66.0404,
+              504.733,
+              196.943
+            ]
+          ],
+          "kind": "content",
+          "headline": "THEME 7"
+        }
+      ]
+    },
+    "68": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          67.7008,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p68-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            70.7008,
+            398.4577,
+            495.6307,
+            732.4877
+          ],
+          "parts": [
+            [
+              70.7008,
+              398.4577,
+              495.6307,
+              732.4877
+            ]
+          ],
+          "kind": "content",
+          "headline": "cure (v) to make an illness or problem go away"
+        },
+        {
+          "id": "p68-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            70.7008,
+            62.9577,
+            412.9406,
+            396.9877
+          ],
+          "parts": [
+            [
+              70.7008,
+              62.9577,
+              412.9406,
+              396.9877
+            ]
+          ],
+          "kind": "content",
+          "headline": "hunger (n) the state of not having enough food"
+        }
+      ]
+    },
+    "69": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          53.5254,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p69-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            56.5276,
+            444.877,
+            408.7775,
+            729.407
+          ],
+          "parts": [
+            [
+              56.5276,
+              444.877,
+              408.7775,
+              729.407
+            ]
+          ],
+          "kind": "content",
+          "headline": "shortage (n) a situation in which there is not enough of something"
+        },
+        {
+          "id": "p69-c2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            56.5254,
+            66.0404,
+            504.733,
+            441.943
+          ],
+          "parts": [
+            [
+              56.5254,
+              66.0404,
+              504.733,
+              441.943
+            ]
+          ],
+          "kind": "content",
+          "headline": "THEME 8"
+        }
+      ]
+    },
+    "70": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          67.7008,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p70-c1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            70.7008,
+            181.8849,
+            487.4506,
+            728.9149
+          ],
+          "parts": [
+            [
+              70.7008,
+              181.8849,
+              487.4506,
+              728.9149
+            ]
+          ],
+          "kind": "content",
+          "headline": "existence (n) the state of being real or alive"
+        }
+      ]
     }
   },
   "engine": "vision",
   "checkpoint": "a9a76c4979dceebed2adb9cebfad673021ed4685e05a362dd3843b781b38fab7",
   "conf": 0.7,
-  "icons": "bind"
+  "icons": "bind",
+  "content": true,
+  "frontMatterEnd": 9,
+  "backMatterStart": 71,
+  "openers": []
 }
