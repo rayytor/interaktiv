@@ -1,0 +1,531 @@
+{
+ "a": "data/vision/labels/api/v1-lite35",
+ "b": "data/vision/labels/api/v1",
+ "pages": 65,
+ "only_a": 0,
+ "only_b": 1,
+ "mean_agreement": 0.5539,
+ "iou": 0.7,
+ "rows": [
+  {
+   "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+   "page": 14,
+   "boxes_a": 5,
+   "boxes_b": 7,
+   "matches": 0,
+   "agreement": 0.0
+  },
+  {
+   "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+   "page": 17,
+   "boxes_a": 1,
+   "boxes_b": 1,
+   "matches": 1,
+   "agreement": 1.0
+  },
+  {
+   "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+   "page": 18,
+   "boxes_a": 7,
+   "boxes_b": 8,
+   "matches": 6,
+   "agreement": 0.8
+  },
+  {
+   "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+   "page": 20,
+   "boxes_a": 0,
+   "boxes_b": 0,
+   "matches": 0,
+   "agreement": 1.0
+  },
+  {
+   "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+   "page": 21,
+   "boxes_a": 0,
+   "boxes_b": 1,
+   "matches": 0,
+   "agreement": 0.0
+  },
+  {
+   "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+   "page": 24,
+   "boxes_a": 0,
+   "boxes_b": 0,
+   "matches": 0,
+   "agreement": 1.0
+  },
+  {
+   "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+   "page": 27,
+   "boxes_a": 0,
+   "boxes_b": 0,
+   "matches": 0,
+   "agreement": 1.0
+  },
+  {
+   "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+   "page": 34,
+   "boxes_a": 5,
+   "boxes_b": 3,
+   "matches": 2,
+   "agreement": 0.5
+  },
+  {
+   "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+   "page": 35,
+   "boxes_a": 1,
+   "boxes_b": 6,
+   "matches": 0,
+   "agreement": 0.0
+  },
+  {
+   "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+   "page": 37,
+   "boxes_a": 1,
+   "boxes_b": 1,
+   "matches": 1,
+   "agreement": 1.0
+  },
+  {
+   "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+   "page": 39,
+   "boxes_a": 2,
+   "boxes_b": 1,
+   "matches": 0,
+   "agreement": 0.0
+  },
+  {
+   "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+   "page": 40,
+   "boxes_a": 1,
+   "boxes_b": 1,
+   "matches": 1,
+   "agreement": 1.0
+  },
+  {
+   "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+   "page": 45,
+   "boxes_a": 7,
+   "boxes_b": 3,
+   "matches": 1,
+   "agreement": 0.2
+  },
+  {
+   "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+   "page": 49,
+   "boxes_a": 1,
+   "boxes_b": 3,
+   "matches": 0,
+   "agreement": 0.0
+  },
+  {
+   "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+   "page": 50,
+   "boxes_a": 1,
+   "boxes_b": 1,
+   "matches": 1,
+   "agreement": 1.0
+  },
+  {
+   "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+   "page": 51,
+   "boxes_a": 0,
+   "boxes_b": 0,
+   "matches": 0,
+   "agreement": 1.0
+  },
+  {
+   "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+   "page": 54,
+   "boxes_a": 0,
+   "boxes_b": 0,
+   "matches": 0,
+   "agreement": 1.0
+  },
+  {
+   "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+   "page": 55,
+   "boxes_a": 0,
+   "boxes_b": 0,
+   "matches": 0,
+   "agreement": 1.0
+  },
+  {
+   "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+   "page": 58,
+   "boxes_a": 1,
+   "boxes_b": 1,
+   "matches": 0,
+   "agreement": 0.0
+  },
+  {
+   "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+   "page": 65,
+   "boxes_a": 1,
+   "boxes_b": 1,
+   "matches": 0,
+   "agreement": 0.0
+  },
+  {
+   "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+   "page": 68,
+   "boxes_a": 1,
+   "boxes_b": 1,
+   "matches": 1,
+   "agreement": 1.0
+  },
+  {
+   "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+   "page": 74,
+   "boxes_a": 2,
+   "boxes_b": 8,
+   "matches": 0,
+   "agreement": 0.0
+  },
+  {
+   "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+   "page": 77,
+   "boxes_a": 1,
+   "boxes_b": 1,
+   "matches": 0,
+   "agreement": 0.0
+  },
+  {
+   "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+   "page": 88,
+   "boxes_a": 4,
+   "boxes_b": 4,
+   "matches": 3,
+   "agreement": 0.75
+  },
+  {
+   "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+   "page": 90,
+   "boxes_a": 5,
+   "boxes_b": 4,
+   "matches": 1,
+   "agreement": 0.222
+  },
+  {
+   "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+   "page": 91,
+   "boxes_a": 1,
+   "boxes_b": 2,
+   "matches": 0,
+   "agreement": 0.0
+  },
+  {
+   "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+   "page": 92,
+   "boxes_a": 5,
+   "boxes_b": 5,
+   "matches": 5,
+   "agreement": 1.0
+  },
+  {
+   "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+   "page": 98,
+   "boxes_a": 0,
+   "boxes_b": 1,
+   "matches": 0,
+   "agreement": 0.0
+  },
+  {
+   "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+   "page": 105,
+   "boxes_a": 1,
+   "boxes_b": 1,
+   "matches": 1,
+   "agreement": 1.0
+  },
+  {
+   "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+   "page": 112,
+   "boxes_a": 1,
+   "boxes_b": 3,
+   "matches": 0,
+   "agreement": 0.0
+  },
+  {
+   "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+   "page": 113,
+   "boxes_a": 0,
+   "boxes_b": 0,
+   "matches": 0,
+   "agreement": 1.0
+  },
+  {
+   "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+   "page": 116,
+   "boxes_a": 0,
+   "boxes_b": 0,
+   "matches": 0,
+   "agreement": 1.0
+  },
+  {
+   "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+   "page": 123,
+   "boxes_a": 1,
+   "boxes_b": 6,
+   "matches": 0,
+   "agreement": 0.0
+  },
+  {
+   "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+   "page": 124,
+   "boxes_a": 6,
+   "boxes_b": 6,
+   "matches": 2,
+   "agreement": 0.333
+  },
+  {
+   "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+   "page": 132,
+   "boxes_a": 1,
+   "boxes_b": 1,
+   "matches": 0,
+   "agreement": 0.0
+  },
+  {
+   "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+   "page": 134,
+   "boxes_a": 9,
+   "boxes_b": 8,
+   "matches": 6,
+   "agreement": 0.706
+  },
+  {
+   "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+   "page": 138,
+   "boxes_a": 1,
+   "boxes_b": 1,
+   "matches": 1,
+   "agreement": 1.0
+  },
+  {
+   "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+   "page": 145,
+   "boxes_a": 5,
+   "boxes_b": 4,
+   "matches": 0,
+   "agreement": 0.0
+  },
+  {
+   "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+   "page": 155,
+   "boxes_a": 1,
+   "boxes_b": 1,
+   "matches": 1,
+   "agreement": 1.0
+  },
+  {
+   "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+   "page": 156,
+   "boxes_a": 10,
+   "boxes_b": 10,
+   "matches": 10,
+   "agreement": 1.0
+  },
+  {
+   "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+   "page": 171,
+   "boxes_a": 0,
+   "boxes_b": 0,
+   "matches": 0,
+   "agreement": 1.0
+  },
+  {
+   "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+   "page": 173,
+   "boxes_a": 1,
+   "boxes_b": 1,
+   "matches": 0,
+   "agreement": 0.0
+  },
+  {
+   "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+   "page": 176,
+   "boxes_a": 4,
+   "boxes_b": 3,
+   "matches": 3,
+   "agreement": 0.857
+  },
+  {
+   "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+   "page": 177,
+   "boxes_a": 4,
+   "boxes_b": 4,
+   "matches": 1,
+   "agreement": 0.25
+  },
+  {
+   "book": "0a3fbb41-8855-460f-af3d-41489a269851",
+   "page": 9,
+   "boxes_a": 0,
+   "boxes_b": 0,
+   "matches": 0,
+   "agreement": 1.0
+  },
+  {
+   "book": "0a3fbb41-8855-460f-af3d-41489a269851",
+   "page": 12,
+   "boxes_a": 21,
+   "boxes_b": 0,
+   "matches": 0,
+   "agreement": 0.0
+  },
+  {
+   "book": "0a3fbb41-8855-460f-af3d-41489a269851",
+   "page": 14,
+   "boxes_a": 14,
+   "boxes_b": 1,
+   "matches": 0,
+   "agreement": 0.0
+  },
+  {
+   "book": "0a3fbb41-8855-460f-af3d-41489a269851",
+   "page": 20,
+   "boxes_a": 4,
+   "boxes_b": 3,
+   "matches": 3,
+   "agreement": 0.857
+  },
+  {
+   "book": "0a3fbb41-8855-460f-af3d-41489a269851",
+   "page": 21,
+   "boxes_a": 1,
+   "boxes_b": 1,
+   "matches": 0,
+   "agreement": 0.0
+  },
+  {
+   "book": "0a3fbb41-8855-460f-af3d-41489a269851",
+   "page": 28,
+   "boxes_a": 9,
+   "boxes_b": 7,
+   "matches": 5,
+   "agreement": 0.625
+  },
+  {
+   "book": "0a3fbb41-8855-460f-af3d-41489a269851",
+   "page": 36,
+   "boxes_a": 4,
+   "boxes_b": 5,
+   "matches": 4,
+   "agreement": 0.889
+  },
+  {
+   "book": "0a3fbb41-8855-460f-af3d-41489a269851",
+   "page": 40,
+   "boxes_a": 0,
+   "boxes_b": 0,
+   "matches": 0,
+   "agreement": 1.0
+  },
+  {
+   "book": "0a3fbb41-8855-460f-af3d-41489a269851",
+   "page": 44,
+   "boxes_a": 7,
+   "boxes_b": 7,
+   "matches": 6,
+   "agreement": 0.857
+  },
+  {
+   "book": "0a3fbb41-8855-460f-af3d-41489a269851",
+   "page": 45,
+   "boxes_a": 4,
+   "boxes_b": 8,
+   "matches": 2,
+   "agreement": 0.333
+  },
+  {
+   "book": "0a3fbb41-8855-460f-af3d-41489a269851",
+   "page": 51,
+   "boxes_a": 3,
+   "boxes_b": 3,
+   "matches": 3,
+   "agreement": 1.0
+  },
+  {
+   "book": "0a3fbb41-8855-460f-af3d-41489a269851",
+   "page": 55,
+   "boxes_a": 5,
+   "boxes_b": 5,
+   "matches": 5,
+   "agreement": 1.0
+  },
+  {
+   "book": "0a3fbb41-8855-460f-af3d-41489a269851",
+   "page": 58,
+   "boxes_a": 9,
+   "boxes_b": 9,
+   "matches": 9,
+   "agreement": 1.0
+  },
+  {
+   "book": "0a3fbb41-8855-460f-af3d-41489a269851",
+   "page": 62,
+   "boxes_a": 8,
+   "boxes_b": 9,
+   "matches": 7,
+   "agreement": 0.824
+  },
+  {
+   "book": "0a3fbb41-8855-460f-af3d-41489a269851",
+   "page": 66,
+   "boxes_a": 1,
+   "boxes_b": 1,
+   "matches": 0,
+   "agreement": 0.0
+  },
+  {
+   "book": "0a3fbb41-8855-460f-af3d-41489a269851",
+   "page": 67,
+   "boxes_a": 1,
+   "boxes_b": 1,
+   "matches": 0,
+   "agreement": 0.0
+  },
+  {
+   "book": "0a3fbb41-8855-460f-af3d-41489a269851",
+   "page": 80,
+   "boxes_a": 2,
+   "boxes_b": 2,
+   "matches": 0,
+   "agreement": 0.0
+  },
+  {
+   "book": "0a3fbb41-8855-460f-af3d-41489a269851",
+   "page": 86,
+   "boxes_a": 6,
+   "boxes_b": 6,
+   "matches": 6,
+   "agreement": 1.0
+  },
+  {
+   "book": "0a3fbb41-8855-460f-af3d-41489a269851",
+   "page": 93,
+   "boxes_a": 3,
+   "boxes_b": 3,
+   "matches": 3,
+   "agreement": 1.0
+  },
+  {
+   "book": "0a3fbb41-8855-460f-af3d-41489a269851",
+   "page": 95,
+   "boxes_a": 1,
+   "boxes_b": 1,
+   "matches": 0,
+   "agreement": 0.0
+  },
+  {
+   "book": "0a3fbb41-8855-460f-af3d-41489a269851",
+   "page": 107,
+   "boxes_a": 3,
+   "boxes_b": 3,
+   "matches": 3,
+   "agreement": 1.0
+  }
+ ]
+}

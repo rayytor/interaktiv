@@ -176,6 +176,8 @@ tools/hotspot_extraction/vision/
   evaluate.py        Phase 4: mAP + violation gates on held-out
   infer.py           Phase 5: student boxes for one book
   snap.py            Phase 5: boxes -> PDF points -> snapped regions
+  icons.py           Phase 5: what the publisher's icons do after the boxes
+  accuracy.py        Phase 5: baked regions against the teacher's boxes
   run_all.sh         Phase 6: the whole pipeline, every step skippable
   runs/              handoffs, metrics, logs (small files only)
 data/vision/         (gitignored) rendered pages, labels, checkpoints
@@ -405,6 +407,27 @@ these scripts. Under route B it *is* the teacher, one batch folder per
 task. Either way it never labels more than a batch in one task, and every
 label lands in a file so nothing is lost when a session ends.
 
+> **2026-10-01, Phases 3–5 as built.** Three things differ from the text below.
+>
+> 1. **The first student trains on the labels that already existed**: 718 CLI pages
+>    (`gemini-3.8-flash-low`, read from `~/Projects/interaktiv-local-teacher/data/labels/agy/v1-g38/`,
+>    not copied into the repo) and 66 API pages. Trusted pages only: 327 train, 65 valid, 187 held-out.
+>    The split folders are `train/`, `valid/`, `heldout/`, each with `_annotations.coco.json` (the
+>    layout RF-DETR reads); validation books are drawn from the books that have labels.
+> 2. **The student is RF-DETR Medium** (`rfdetr`, Apache-2.0), chosen by the user over the
+>    torchvision Faster R-CNN below, because it fine-tunes well on a few hundred images.
+>    `train.py` wraps `model.train()`: no flip, no crop, `last.ckpt` every epoch, best epoch by
+>    validation mAP in `checkpoint_best_total.pth`.
+> 3. **Flash-Lite is not a usable teacher.** `gemini-3.5-flash-lite` on the 66 API pages agreed
+>    with `gemini-3.6-flash` at 0.55 and with the CLI labels at 0.56 (IoU 0.7; the two trusted
+>    sources agree with each other at 0.67 on the same pages), and 99 of 176 requests were
+>    per-minute rate limits at 10 requests a minute per key. More labels come from the student
+>    itself (Phase 6 self-training) and from the existing teacher, not from Flash-Lite.
+>
+> `infer.py` writes one `boxes.json` per book; `scan.py --engine vision` reads it and never
+> loads a model; `compare.py` scores both engines' bakes side by side. The vision bake goes to
+> `data/vision/bake/` until it wins; `activities/books/` is not touched before that.
+
 ## Phase 3 — build the dataset
 
 **Goal.** Turn trusted labels into a training set the student can read,
@@ -514,6 +537,26 @@ explanation and the number.
 ---
 
 ## Phase 5 — snap the boxes and bake regions
+
+> **2026-10-02, snapping as built** (`runs/phase7-snap-icons-HANDOFF.md`). Task 2 below says to run
+> `snap_edges` and `clean_page_activities` over the student's boxes. That made them worse: measured
+> against the teacher's boxes on the 6 training books looked at, 131 of 1,354 came out holding less of
+> the right content than the student's own box, against 24 now. `snap.py` moves an edge only off a line
+> it cuts, never so that the box holds different lines; the serializer is told `clean=False`; a box
+> taller than a hotspot may be is left out, not cut down. `vision/accuracy.py` is the measure.
+> The publisher's icons are read after the boxes (`vision/icons.py`, `scan.py --icons`), not by
+> `link_oges` alone. The scorecard's cut count is no longer a fair gate on its own: about half of the
+> vision bake's cuts are on ruled "blocks" the detector reads across two activities.
+
+> **2026-10-03, the gate restated and passed; vision is the default** (`runs/phase8-HANDOFF.md` §6).
+> Task 4's gate ("match not more than 2 pp under rules on any book") cannot be met once an icon beside
+> something that is not an exercise is a pin, which the user decided on 2026-10-02. The gate is now:
+> overlaps, slivers and tall are 0; and, on the held-out books, against the teacher's boxes
+> (`vision/accuracy.py`), the vision bake finds more of them (IoU ≥ 0.5) and has a lower share of
+> regions answering none than the rules bake. Cuts/region, match and coverage are reported, not gated.
+> Held-out, 9 books: rules 0.379 found, 68.4 % answering none; vision (`bake-5`) 0.623 and 15.4 %,
+> violations 0. The user looked at the vision bake in the reader and said it stays, so
+> `scan.py --engine vision` is the default; `--engine rules` keeps the old path.
 
 **Goal.** The student's boxes become `regions.json` through the kept slice of
 the old detector, and the bake passes the same scorecard gates as before.

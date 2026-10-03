@@ -1,0 +1,43 @@
+{
+ "total": {
+  "pages": 65,
+  "teacher_boxes": 101,
+  "predicted_boxes": 80,
+  "mAP50": 0.8772,
+  "mAP50_95": 0.7818,
+  "precision": 0.95,
+  "recall": 0.7525,
+  "empty_pages": 28,
+  "empty_pages_with_a_box": 0
+ },
+ "books": {
+  "550e601a-7ae8-40c0-ba41-435fa30c16e8": {
+   "pages": 34,
+   "teacher_boxes": 64,
+   "predicted_boxes": 57,
+   "mAP50": 0.9561,
+   "mAP50_95": 0.881,
+   "precision": 0.9649,
+   "recall": 0.8594,
+   "empty_pages": 18,
+   "empty_pages_with_a_box": 0
+  },
+  "7763e45b-e8ba-49df-a7d1-5932bc68e6ed": {
+   "pages": 31,
+   "teacher_boxes": 37,
+   "predicted_boxes": 23,
+   "mAP50": 0.7075,
+   "mAP50_95": 0.5822,
+   "precision": 0.913,
+   "recall": 0.5676,
+   "empty_pages": 10,
+   "empty_pages_with_a_box": 0
+  }
+ },
+ "run": "student-4",
+ "checkpoint": "/home/rayyan/Projects/interaktiv/data/vision/checkpoints/student-4/checkpoint_best_total.pth",
+ "split": "valid",
+ "conf": 0.5,
+ "seconds": 3,
+ "created": "2026-10-01 18:16:59"
+}

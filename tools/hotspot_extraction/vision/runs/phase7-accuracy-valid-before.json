@@ -1,0 +1,42 @@
+{
+ "split": "valid",
+ "bake_root": "/home/rayyan/Projects/interaktiv/data/vision/bake",
+ "books": {
+  "550e601a-7ae8-40c0-ba41-435fa30c16e8": {
+   "teacher_boxes": 78,
+   "taller_than_a_hotspot": 1,
+   "student_iou_0.5": 0.844,
+   "student_iou_0.85": 0.779,
+   "student_same_content": 0.727,
+   "baked_iou_0.5": 0.831,
+   "baked_iou_0.85": 0.649,
+   "baked_same_content": 0.649,
+   "worse_than_the_student_drew": 8,
+   "better_than_the_student_drew": 1
+  },
+  "7763e45b-e8ba-49df-a7d1-5932bc68e6ed": {
+   "teacher_boxes": 63,
+   "taller_than_a_hotspot": 7,
+   "student_iou_0.5": 0.732,
+   "student_iou_0.85": 0.679,
+   "student_same_content": 0.643,
+   "baked_iou_0.5": 0.714,
+   "baked_iou_0.85": 0.643,
+   "baked_same_content": 0.661,
+   "worse_than_the_student_drew": 2,
+   "better_than_the_student_drew": 3
+  }
+ },
+ "total": {
+  "teacher_boxes": 141,
+  "taller_than_a_hotspot": 8,
+  "student_iou_0.5": 0.797,
+  "student_iou_0.85": 0.737,
+  "student_same_content": 0.692,
+  "baked_iou_0.5": 0.782,
+  "baked_iou_0.85": 0.647,
+  "baked_same_content": 0.654,
+  "worse_than_the_student_drew": 10,
+  "better_than_the_student_drew": 4
+ }
+}

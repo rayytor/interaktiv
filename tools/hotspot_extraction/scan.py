@@ -5,11 +5,17 @@ High-speed local activity hotspot scanner.
 Uses PyMuPDF to extract layout, markers, drawn panels, solutions, and publisher anchors
 in parallel across multiple worker processes with bounded memory (< 500 MB total RSS).
 
+Since 2026-10-03 the regions come from the vision engine by default (the user's decision after
+seeing it in the reader): the student's boxes, written beforehand by `vision/infer.py`, snapped to
+the page. A book the student has not looked at yet is refused with the command to run.
+`--engine rules` is the scanner's own detector, as before.
+
 Usage:
     python3 tools/hotspot_extraction/scan.py --all
     python3 tools/hotspot_extraction/scan.py --all --workers 4
     python3 tools/hotspot_extraction/scan.py --only 0e966773,1cc573f6 --force
     python3 tools/hotspot_extraction/scan.py --all --quiet
+    python3 tools/hotspot_extraction/scan.py --all --engine rules
 """
 
 import argparse
@@ -30,6 +36,10 @@ import pymupdf
 
 # Add project root to sys.path
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
+# The student whose boxes are baked by default, and the confidence a box needs to stand on its own.
+# Both change together when a new student ships (vision/runs/phase8-HANDOFF.md).
+VISION_PRED = os.path.join(PROJECT_ROOT, "data", "vision", "pred-s7-low")
+VISION_CONF = 0.7
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
@@ -183,6 +193,28 @@ def scan_single_book(task: Dict[str, Any]) -> Dict[str, Any]:
     apply_profile(profile)
     want_profile_hash = profile_hash(profile)
 
+    # The vision engine reads the boxes `vision/infer.py` wrote for this book;
+    # no model is loaded here, so the workers stay as light as the rules ones.
+    engine = task.get("engine", "rules")
+    pred: Dict[str, Any] = {}
+    if engine == "vision":
+        pred_file = os.path.join(task["pred_dir"], book_id, "boxes.json")
+        if not os.path.isfile(pred_file):
+            return {
+                "status": "error",
+                "book_id": book_id,
+                "title": title,
+                "error": f"No student boxes at {pred_file}; run vision/infer.py for this book first",
+                "duration": 0.0,
+            }
+        with open(pred_file, "r", encoding="utf-8") as f:
+            pred = json.load(f)
+        from tools.hotspot_extraction.vision.snap import vision_page
+        # The confidence a box needs to stand on its own. Left unset it is the one the
+        # boxes were inferred at, so every box in the file stands.
+        vision_conf = task.get("conf") if task.get("conf") is not None else float(pred.get("conf") or 0.0)
+        icon_mode = task.get("icons", "bind")
+
     t0 = time.time()
     try:
         fp = compute_fingerprint(pdf_path)
@@ -215,7 +247,11 @@ def scan_single_book(task: Dict[str, Any]) -> Dict[str, Any]:
         try:
             with open(regions_file, "r", encoding="utf-8") as f:
                 existing = json.load(f)
-            if existing.get("fingerprint") == fp and existing.get("profile") == want_profile_hash:
+            same_engine = existing.get("engine", "rules") == engine and (
+                engine == "rules" or (existing.get("checkpoint") == pred.get("checkpoint")
+                                      and existing.get("conf") == vision_conf
+                                      and existing.get("icons") == icon_mode))
+            if existing.get("fingerprint") == fp and existing.get("profile") == want_profile_hash and same_engine:
                 return {
                     "status": "skipped",
                     "book_id": book_id,
@@ -267,13 +303,27 @@ def scan_single_book(task: Dict[str, Any]) -> Dict[str, Any]:
             page_oges = [o for o in oges if o.sayfano == printed_page] if printed_page is not None else []
 
             trace = GrowthTrace(record=want_trace)
-            result = detect_page(
-                prim,
-                page_num=p,
-                printed_page=printed_page,
-                page_oges=page_oges,
-                trace=trace,
-            )
+            if engine == "vision":
+                seen = pred["pages"].get(str(p)) or {}
+                result = vision_page(
+                    prim,
+                    page_num=p,
+                    boxes=seen.get("boxes") or [],
+                    width_px=seen.get("width_px") or 1.0,
+                    height_px=seen.get("height_px") or 1.0,
+                    conf=vision_conf,
+                    printed_page=printed_page,
+                    page_oges=page_oges,
+                    icon_mode=icon_mode,
+                )
+            else:
+                result = detect_page(
+                    prim,
+                    page_num=p,
+                    printed_page=printed_page,
+                    page_oges=page_oges,
+                    trace=trace,
+                )
             layout = result.layout
             markers = result.markers
             activities = result.activities
@@ -332,7 +382,15 @@ def scan_single_book(task: Dict[str, Any]) -> Dict[str, Any]:
             page_dimensions=pages_dimensions,
             anchors_by_page=anchors_by_page,
             pages_geometry=pages_geometry,
+            # The student's regions are settled by vision/snap.py; the rules cleanup would move them again.
+            clean=engine != "vision",
         )
+
+        if engine == "vision":
+            regions_json_data["engine"] = "vision"
+            regions_json_data["checkpoint"] = pred.get("checkpoint")
+            regions_json_data["conf"] = vision_conf
+            regions_json_data["icons"] = icon_mode
 
         diag_json_data = serialize_diagnostics(
             book_id=book_id,
@@ -512,6 +570,34 @@ def main() -> int:
         help="Also write trace.json.gz: what each sheet refused, and under which rule",
     )
     parser.add_argument(
+        "--engine",
+        choices=("rules", "vision"),
+        default="vision",
+        help="vision (default): the student's boxes from vision/infer.py, snapped to the page. "
+             "rules: the scanner's own detector",
+    )
+    parser.add_argument(
+        "--pred",
+        type=str,
+        default=VISION_PRED,
+        help="Where vision/infer.py wrote <book-id>/boxes.json (with --engine vision)",
+    )
+    parser.add_argument(
+        "--conf",
+        type=float,
+        default=VISION_CONF,
+        help=f"With --engine vision: the confidence a box needs to stand on its own (default {VISION_CONF}). "
+             "A box below it is used only where a publisher icon is hung at it",
+    )
+    parser.add_argument(
+        "--icons",
+        choices=("off", "bind", "blocks", "grow"),
+        default="bind",
+        help="With --engine vision, what the publisher's icons do (vision/icons.py). bind: an icon hung at a region "
+             "names it. blocks: also, an icon hung at a panel or figure no region is on makes it a region. "
+             "grow: also, any icon still unanswered gets the rules engine's icon-grown region",
+    )
+    parser.add_argument(
         "--profile",
         type=str,
         default=DEFAULT_PROFILE_PATH,
@@ -622,6 +708,10 @@ def main() -> int:
             "quiet": args.quiet,
             "trace": args.trace,
             "profile": profile_dict,
+            "engine": args.engine,
+            "pred_dir": os.path.abspath(args.pred),
+            "conf": args.conf,
+            "icons": args.icons,
         }
         for b in books
     ]
@@ -635,7 +725,7 @@ def main() -> int:
 
     print(
         f"\nLaunching {len(tasks)} book(s) across {args.workers} worker process(es) "
-        f"| profile {active_hash}{profile_note}\n"
+        f"| engine {args.engine} | profile {active_hash}{profile_note}\n"
     )
 
     with ProcessPoolExecutor(max_workers=args.workers, max_tasks_per_child=1) as executor:

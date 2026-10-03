@@ -46,6 +46,7 @@ def run_scanner(workers: int = 4, force: bool = False) -> Tuple[float, Optional[
         sys.executable,
         os.path.join(PROJECT_ROOT, "tools", "hotspot_extraction", "scan.py"),
         "--all",
+        "--engine", "rules",          # this scorecard's gates are the rules detector's
         "--workers", str(workers),
     ]
     if force:

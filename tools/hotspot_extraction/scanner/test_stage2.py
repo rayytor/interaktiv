@@ -313,6 +313,18 @@ class TestDetectSolutionSpaces:
             rect = b["rect"]
             assert (rect[3] - rect[1]) < 200.0, f"Table merged across question prose: {rect}"
 
+    def test_two_tables_facing_across_the_gutter_stay_two(self):
+        """The facing sides of two ruled tables are not one lattice over the column gutter."""
+        left = [make_drawing(rect=(80.0, y, 280.0, y + 1.0)) for y in (470.0, 520.0, 570.0)]
+        left += [make_drawing(rect=(x, 470.0, x + 1.0, 570.0)) for x in (80.0, 180.0, 280.0)]
+        right = [make_drawing(rect=(330.0, y, 510.0, y + 1.0)) for y in (495.0, 545.0, 600.0)]
+        right += [make_drawing(rect=(x, 495.0, x + 1.0, 600.0)) for x in (326.0, 512.0)]
+
+        blocks = detect_solution_spaces(left + right, [])
+        assert blocks
+        for b in blocks:
+            assert b["rect"][2] <= 290.0 or b["rect"][0] >= 320.0, f"Block spans the gutter: {b}"
+
     def test_dense_mesh_throttled(self):
         """A dense mesh (like graph paper) emits a grid without tens of thousands of cells."""
         drawings = []

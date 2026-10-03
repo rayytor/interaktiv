@@ -377,17 +377,28 @@ def detect_solution_spaces(
         if root_i != root_j:
             parent[root_i] = root_j
 
+    def touching(a: Tuple[float, float, float, float], b: Tuple[float, float, float, float]) -> bool:
+        return (min(a[2], b[2]) + RULE_CLUSTER >= max(a[0], b[0])
+                and min(a[3], b[3]) + RULE_ROW >= max(a[1], b[1]))
+
+    # A vertical rule a horizontal one meets is already tied into its own lattice.
+    tied = {v for v in vertical if any(touching(v, h) for h in horizontal)}
+
     def near(a: Tuple[float, float, float, float], b: Tuple[float, float, float, float]) -> bool:
         is_vert_a = (a[2] - a[0] <= RULE_THICK * 1.5)
         is_vert_b = (b[2] - b[0] <= RULE_THICK * 1.5)
         if is_vert_a and is_vert_b:
+            # Side by side with nothing drawn between them, two vertical rules are one lattice
+            # only when the sheet rules it without horizontals. Two that each stand in a lattice
+            # of their own are the facing sides of two tables -- one activity's table and the
+            # notepad across the column gutter -- and no region can take that pair whole.
+            if a in tied and b in tied:
+                return False
             vert_overlap = min(a[3], b[3]) - max(a[1], b[1])
             min_h = min(a[3] - a[1], b[3] - b[1])
             return vert_overlap >= 0.5 * min_h and abs(a[0] - b[0]) <= 350.0
 
-        if min(a[2], b[2]) + RULE_CLUSTER < max(a[0], b[0]):
-            return False
-        if min(a[3], b[3]) + RULE_ROW < max(a[1], b[1]):
+        if not touching(a, b):
             return False
         # Do not link rules across text: if a prose span sits in the vertical gap between them,
         # they belong to different exercises/tables rather than one empty answer grid.

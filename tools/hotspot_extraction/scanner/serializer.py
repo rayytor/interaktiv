@@ -316,6 +316,7 @@ def serialize_book_regions(
     anchors_by_page: Optional[Dict[int, List[str]]] = None,
     built_at: Optional[str] = None,
     pages_geometry: Optional[Dict[int, Any]] = None,
+    clean: bool = True,
 ) -> Dict[str, Any]:
     """
     Build the complete dictionary representation of regions.json (BAKE_VERSION = 2).
@@ -324,6 +325,12 @@ def serialize_book_regions(
     final cleanup separates and snaps against it; a sheet without one is cleaned
     blind, cutting overlaps at midpoints, which is only right for callers that
     never had a page to look at.
+
+    `clean=False` writes the regions as they were handed over. The vision engine
+    asks for that: its regions were already settled against the page by
+    `vision/snap.py`, and the cleanup's `snap_edges` -- written for regions grown
+    by rules -- moves their edges off the lines and blocks the student put in
+    them. The zero-overlap check below still runs.
     """
     fingerprint = compute_fingerprint(pdf_path)
     now_iso = built_at or (datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.%f")[:-3] + "Z")
@@ -332,7 +339,7 @@ def serialize_book_regions(
     for p, raw_acts in sorted(pages_activities.items()):
         if not raw_acts:
             continue
-        acts = clean_page_activities(raw_acts, geom=(pages_geometry or {}).get(p))
+        acts = clean_page_activities(raw_acts, geom=(pages_geometry or {}).get(p)) if clean else list(raw_acts)
         if not acts:
             continue
 

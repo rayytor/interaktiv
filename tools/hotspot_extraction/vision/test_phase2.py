@@ -53,6 +53,25 @@ def test_sample_is_seeded_and_tops_up():
     assert len({r["page"] for r in a}) == 45
 
 
+def test_round2_doubt_is_highest_at_the_keep_line():
+    assert select.box_doubt(0.5) == 1.0
+    assert select.box_doubt(0.95) == 0.0
+    assert select.box_doubt(0.7) == pytest.approx(0.5)
+    assert select.box_doubt(0.25) == pytest.approx(0.5)
+    assert select.page_doubt([]) == 0.0
+    assert select.page_doubt([0.97, 0.55, 0.93]) == pytest.approx(select.box_doubt(0.55))
+
+
+def test_round2_ranks_missing_first_and_skips_asked_sure_and_spread_pages():
+    index = [{"page": p, "width_pt": 1100.0 if p == 1 else 550.0} for p in range(1, 8)]
+    box = lambda *scores: {"boxes": [{"px": [0, 0, 10, 10], "score": s} for s in scores]}
+    pred = {"1": box(0.5), "2": box(0.95), "3": box(0.6), "4": box(0.97), "5": box(0.5), "6": box(), "7": box(0.3)}
+    ranked = select.rank_round2(index, pred, {4: 2, 6: 1}, asked={5})
+    assert [r["page"] for r in ranked] == [4, 6, 3, 7]      # publisher lists more than the student found, then by doubt
+    assert ranked[0]["hint_count"] == 2 and ranked[0]["missing"] == 1 and ranked[0]["stratum"] == "manifest"
+    assert ranked[2]["stratum"] == "doubt" and ranked[2]["hint_count"] == 0
+
+
 # ---------------------------------------------------------------- teacher.py
 
 @pytest.mark.parametrize("text", [
@@ -171,6 +190,14 @@ def test_icon_band():
     assert qa.judge_page(_label([(40, 600, 340, 700)]), ctx, band=16, xband=0.10)["miss"] == 0
     assert qa.judge_page(_label([(40, 600, 340, 700)]), ctx, band=4, xband=0.10)["miss"] == 1
     assert qa.judge_page(_label([(40, 600, 340, 700)]), ctx, band=16, xband=0.01)["miss"] == 1
+
+
+def test_an_unboxed_icon_is_no_defect_when_misses_are_allowed():
+    ctx = FakeCtx(icons=[(400, 300)])
+    held = qa.judge_page(_label([(40, 600, 340, 700)]), ctx)
+    allowed = qa.judge_page(_label([(40, 600, 340, 700)]), ctx, miss_is_defect=False)
+    assert held["miss"] == allowed["miss"] == 1
+    assert not held["passes"] and allowed["passes"]
 
 
 def test_label_run():

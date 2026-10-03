@@ -1,0 +1,284 @@
+{
+ "books": {
+  "09f62a7e-20f7-43b2-99c6-b67d24e0809a": {
+   "rules": {
+    "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+    "regions": 440,
+    "cuts": 2,
+    "overlaps": 0,
+    "slivers": 0,
+    "tall": 0,
+    "oges": 21,
+    "matched": 21,
+    "coverage": 0.643,
+    "blank": 0.342,
+    "cuts_per_region": 0.0045,
+    "match": 1.0
+   },
+   "vision": {
+    "book": "09f62a7e-20f7-43b2-99c6-b67d24e0809a",
+    "regions": 208,
+    "cuts": 9,
+    "overlaps": 0,
+    "slivers": 0,
+    "tall": 0,
+    "oges": 21,
+    "matched": 3,
+    "coverage": 0.5,
+    "blank": 0.585,
+    "cuts_per_region": 0.0433,
+    "match": 0.143
+   }
+  },
+  "0a3fbb41-8855-460f-af3d-41489a269851": {
+   "rules": {
+    "book": "0a3fbb41-8855-460f-af3d-41489a269851",
+    "regions": 717,
+    "cuts": 47,
+    "overlaps": 0,
+    "slivers": 0,
+    "tall": 0,
+    "oges": 76,
+    "matched": 68,
+    "coverage": 0.561,
+    "blank": 0.253,
+    "cuts_per_region": 0.0656,
+    "match": 0.895
+   },
+   "vision": {
+    "book": "0a3fbb41-8855-460f-af3d-41489a269851",
+    "regions": 488,
+    "cuts": 56,
+    "overlaps": 0,
+    "slivers": 0,
+    "tall": 0,
+    "oges": 76,
+    "matched": 60,
+    "coverage": 0.632,
+    "blank": 0.383,
+    "cuts_per_region": 0.1148,
+    "match": 0.789
+   }
+  },
+  "0e966773-5012-4f57-8be5-d892e8c75f22": {
+   "rules": {
+    "book": "0e966773-5012-4f57-8be5-d892e8c75f22",
+    "regions": 529,
+    "cuts": 45,
+    "overlaps": 0,
+    "slivers": 0,
+    "tall": 0,
+    "oges": 165,
+    "matched": 161,
+    "coverage": 0.441,
+    "blank": 0.303,
+    "cuts_per_region": 0.0851,
+    "match": 0.976
+   },
+   "vision": {
+    "book": "0e966773-5012-4f57-8be5-d892e8c75f22",
+    "regions": 503,
+    "cuts": 43,
+    "overlaps": 0,
+    "slivers": 0,
+    "tall": 0,
+    "oges": 165,
+    "matched": 152,
+    "coverage": 0.543,
+    "blank": 0.333,
+    "cuts_per_region": 0.0855,
+    "match": 0.921
+   }
+  },
+  "550e601a-7ae8-40c0-ba41-435fa30c16e8": {
+   "rules": {
+    "book": "550e601a-7ae8-40c0-ba41-435fa30c16e8",
+    "regions": 174,
+    "cuts": 5,
+    "overlaps": 0,
+    "slivers": 0,
+    "tall": 0,
+    "oges": 49,
+    "matched": 44,
+    "coverage": 0.312,
+    "blank": 0.452,
+    "cuts_per_region": 0.0287,
+    "match": 0.898
+   },
+   "vision": {
+    "book": "550e601a-7ae8-40c0-ba41-435fa30c16e8",
+    "regions": 125,
+    "cuts": 11,
+    "overlaps": 0,
+    "slivers": 0,
+    "tall": 0,
+    "oges": 49,
+    "matched": 33,
+    "coverage": 0.439,
+    "blank": 0.452,
+    "cuts_per_region": 0.088,
+    "match": 0.673
+   }
+  },
+  "753fcdb0-64fa-4c5e-b677-1e3e612b31b5": {
+   "rules": {
+    "book": "753fcdb0-64fa-4c5e-b677-1e3e612b31b5",
+    "regions": 1907,
+    "cuts": 97,
+    "overlaps": 0,
+    "slivers": 0,
+    "tall": 0,
+    "oges": 96,
+    "matched": 77,
+    "coverage": 0.478,
+    "blank": 0.061,
+    "cuts_per_region": 0.0509,
+    "match": 0.802
+   },
+   "vision": {
+    "book": "753fcdb0-64fa-4c5e-b677-1e3e612b31b5",
+    "regions": 851,
+    "cuts": 89,
+    "overlaps": 0,
+    "slivers": 0,
+    "tall": 0,
+    "oges": 96,
+    "matched": 6,
+    "coverage": 0.457,
+    "blank": 0.405,
+    "cuts_per_region": 0.1046,
+    "match": 0.062
+   }
+  },
+  "7763e45b-e8ba-49df-a7d1-5932bc68e6ed": {
+   "rules": {
+    "book": "7763e45b-e8ba-49df-a7d1-5932bc68e6ed",
+    "regions": 431,
+    "cuts": 23,
+    "overlaps": 0,
+    "slivers": 0,
+    "tall": 0,
+    "oges": 7,
+    "matched": 7,
+    "coverage": 0.739,
+    "blank": 0.433,
+    "cuts_per_region": 0.0534,
+    "match": 1.0
+   },
+   "vision": {
+    "book": "7763e45b-e8ba-49df-a7d1-5932bc68e6ed",
+    "regions": 185,
+    "cuts": 0,
+    "overlaps": 0,
+    "slivers": 0,
+    "tall": 0,
+    "oges": 7,
+    "matched": 1,
+    "coverage": 0.659,
+    "blank": 0.621,
+    "cuts_per_region": 0.0,
+    "match": 0.143
+   }
+  },
+  "a0e5ed1a-c37b-45f1-9821-f98350b18911": {
+   "rules": {
+    "book": "a0e5ed1a-c37b-45f1-9821-f98350b18911",
+    "regions": 2011,
+    "cuts": 121,
+    "overlaps": 0,
+    "slivers": 0,
+    "tall": 0,
+    "oges": 47,
+    "matched": 40,
+    "coverage": 0.456,
+    "blank": 0.07,
+    "cuts_per_region": 0.0602,
+    "match": 0.851
+   },
+   "vision": {
+    "book": "a0e5ed1a-c37b-45f1-9821-f98350b18911",
+    "regions": 865,
+    "cuts": 128,
+    "overlaps": 0,
+    "slivers": 0,
+    "tall": 0,
+    "oges": 47,
+    "matched": 10,
+    "coverage": 0.873,
+    "blank": 0.361,
+    "cuts_per_region": 0.148,
+    "match": 0.213
+   }
+  },
+  "d13a75d3-33be-4102-8570-b14b1b6382b2": {
+   "rules": {
+    "book": "d13a75d3-33be-4102-8570-b14b1b6382b2",
+    "regions": 480,
+    "cuts": 42,
+    "overlaps": 0,
+    "slivers": 0,
+    "tall": 0,
+    "oges": 86,
+    "matched": 86,
+    "coverage": 0.692,
+    "blank": 0.263,
+    "cuts_per_region": 0.0875,
+    "match": 1.0
+   },
+   "vision": {
+    "book": "d13a75d3-33be-4102-8570-b14b1b6382b2",
+    "regions": 242,
+    "cuts": 5,
+    "overlaps": 0,
+    "slivers": 0,
+    "tall": 0,
+    "oges": 86,
+    "matched": 43,
+    "coverage": 0.555,
+    "blank": 0.564,
+    "cuts_per_region": 0.0207,
+    "match": 0.5
+   }
+  }
+ },
+ "totals": {
+  "train": {
+   "rules": {
+    "regions": 6689,
+    "cuts": 382,
+    "overlaps": 0,
+    "slivers": 0,
+    "tall": 0,
+    "oges": 547,
+    "matched": 504,
+    "books": 8,
+    "coverage": 0.54,
+    "cuts_per_region": 0.0571,
+    "match": 0.921
+   },
+   "vision": {
+    "regions": 3467,
+    "cuts": 341,
+    "overlaps": 0,
+    "slivers": 0,
+    "tall": 0,
+    "oges": 547,
+    "matched": 308,
+    "books": 8,
+    "coverage": 0.582,
+    "cuts_per_region": 0.0984,
+    "match": 0.563
+   }
+  }
+ },
+ "splits": {
+  "09f62a7e-20f7-43b2-99c6-b67d24e0809a": "train",
+  "0a3fbb41-8855-460f-af3d-41489a269851": "train",
+  "0e966773-5012-4f57-8be5-d892e8c75f22": "train",
+  "550e601a-7ae8-40c0-ba41-435fa30c16e8": "train",
+  "753fcdb0-64fa-4c5e-b677-1e3e612b31b5": "train",
+  "7763e45b-e8ba-49df-a7d1-5932bc68e6ed": "train",
+  "a0e5ed1a-c37b-45f1-9821-f98350b18911": "train",
+  "d13a75d3-33be-4102-8570-b14b1b6382b2": "train"
+ }
+}

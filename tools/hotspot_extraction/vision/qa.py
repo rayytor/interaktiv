@@ -162,7 +162,13 @@ def label_run_ok(labels: Sequence[Optional[str]]) -> Tuple[bool, int]:
 
 
 def judge_page(label: Dict[str, Any], ctx: BookContext, band: float = DEFAULT_BAND,
-               xband: float = DEFAULT_XBAND) -> Dict[str, Any]:
+               xband: float = DEFAULT_XBAND, miss_is_defect: bool = True) -> Dict[str, Any]:
+    """One page's label against the bake's geometry and the publisher's icons.
+
+    `miss_is_defect=False` records an icon no box answers and does not hold it against the page:
+    since 2026-10-02 an icon beside something that is not an exercise is a pin, so a label asked
+    without `--hint` is right to leave it unboxed.
+    """
     page = int(label["page"])
     index = label["index"]
     page_w, page_h = float(index["width_pt"]), float(index["height_pt"])
@@ -213,7 +219,7 @@ def judge_page(label: Dict[str, Any], ctx: BookContext, band: float = DEFAULT_BA
         defects.append("sliver")
     if overlap_major:
         defects.append("overlap")
-    if missed:
+    if missed and miss_is_defect:
         defects.append("miss")
     return {
         "book": label["book"], "page": page, "boxes": len(boxes), "cut": cut, "sliver": sliver, "tall": tall,
@@ -253,7 +259,7 @@ def load_label(path: Path) -> Dict[str, Any]:
 
 def run_gate(labels_dir: Path, reask_dir: Optional[Path], selection: Optional[Dict[str, Any]],
              band: float = DEFAULT_BAND, root: Path = PROJECT_ROOT, bakes_dir: Path = BAKES_DIR,
-             xband: float = DEFAULT_XBAND) -> List[Dict[str, Any]]:
+             xband: float = DEFAULT_XBAND, miss_is_defect: bool = True) -> List[Dict[str, Any]]:
     ctxs: Dict[str, BookContext] = {}
     sel_info: Dict[Tuple[str, int], Dict[str, Any]] = {}
     splits: Dict[str, str] = {}
@@ -279,8 +285,8 @@ def run_gate(labels_dir: Path, reask_dir: Optional[Path], selection: Optional[Di
         book_id, page = key
         seen.add(key)
         ctx = ctx_for(book_id)
-        first = judge_page(load_label(primary[key]), ctx, band, xband) if key in primary else None
-        second = judge_page(load_label(reask[key]), ctx, band, xband) if key in reask else None
+        first = judge_page(load_label(primary[key]), ctx, band, xband, miss_is_defect) if key in primary else None
+        second = judge_page(load_label(reask[key]), ctx, band, xband, miss_is_defect) if key in reask else None
         if first and first["passes"]:
             verdict, source, judged = "trusted", "primary", first
         elif second and second["passes"]:
@@ -430,6 +436,8 @@ def main(argv: Optional[List[str]] = None) -> int:
     ap.add_argument("--summary", default=None, help="write the per-book summary JSON here")
     ap.add_argument("--write-reask", default=None, const=str(DEFAULT_REASK), nargs="?",
                     help="write a selection of the re-ask pages (default path if no value)")
+    ap.add_argument("--allow-miss", action="store_true",
+                    help="an icon no box answers is counted, not a defect (labels asked without --hint: such an icon is a pin)")
     ap.add_argument("--agree", nargs=2, metavar=("DIR_A", "DIR_B"), default=None)
     args = ap.parse_args(argv)
 
@@ -449,7 +457,8 @@ def main(argv: Optional[List[str]] = None) -> int:
     if args.selection and Path(args.selection).is_file():
         with open(args.selection, encoding="utf-8") as fh:
             selection = json.load(fh)
-    verdicts = run_gate(Path(args.labels), Path(args.reask) if args.reask else None, selection, args.band, xband=args.xband)
+    verdicts = run_gate(Path(args.labels), Path(args.reask) if args.reask else None, selection, args.band, xband=args.xband,
+                        miss_is_defect=not args.allow_miss)
     if not verdicts:
         print(f"no labels under {args.labels}")
         return 1

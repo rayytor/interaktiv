@@ -28,8 +28,25 @@ Writes `data/vision/select/round1.json`:
                              "pages": [{"page": 31, "stratum": "baked", "why": "3 regions, 1 manifest entry"}]}},
      "total": 1188}
 
+Round 2 (`--round 2`, Phase 6 of the plan) is active learning: instead of a
+random sample it takes, from the training books only, the unlabelled pages the
+student is least sure of. It reads the student's boxes down to a low floor
+(`infer.py --conf 0.2 --out data/vision/pred-doubt`) and ranks a page by
+
+    doubt     its most doubtful box: a box scoring 0.5 is as doubtful as a box
+              gets, one at 0.9 or more is not doubtful at all
+    missing   the publisher lists more activities on the page than the student
+              found at 0.5; such a page goes ahead of every page that is only
+              doubtful
+
+Held-out and validation books are never picked (their labels only score, and
+the validation set must stay the same between students), nor is a page any
+teacher has already been asked about. Writes `data/vision/select/round2.json`
+in the same format, with `hint_count` for `teacher.py --hint`.
+
 Usage:
     .venv-vision/bin/python tools/hotspot_extraction/vision/select.py
+    .venv-vision/bin/python tools/hotspot_extraction/vision/select.py --round 2 --per-book 38
     .venv-vision/bin/python tools/hotspot_extraction/vision/select.py --per-book 45 --seed 20260928 --out data/vision/select/round1.json
 """
 
@@ -59,6 +76,14 @@ DEFAULT_PER_BOOK = 45
 SHARES = (0.70, 0.15, 0.15)          # baked, manifest, empty
 STRATA = ("baked", "manifest", "empty")
 SPREAD_WIDTH_PT = 700.0              # wider than this is a two-page spread
+
+PRED_DOUBT_DIR = PROJECT_ROOT / "data" / "vision" / "pred-doubt"
+LABELS_DIR = PROJECT_ROOT / "data" / "vision" / "labels"
+DATASET_JSON = PROJECT_ROOT / "data" / "vision" / "dataset" / "dataset.json"
+ROUND2_OUT = PROJECT_ROOT / "data" / "vision" / "select" / "round2.json"
+ROUND2_PER_BOOK = 38                 # 16 training books, about 600 pages
+KEEP_CONF = 0.5                      # the confidence the bake keeps a box at
+SURE_CONF = 0.9                      # at or above this the student is sure of a box
 
 
 def read_index(book_id: str, pages_dir: Path = PAGES_DIR) -> List[Dict[str, Any]]:
@@ -183,6 +208,105 @@ def build_selection(per_book: int = DEFAULT_PER_BOOK, seed: int = DEFAULT_SEED,
     }
 
 
+def box_doubt(score: float, keep: float = KEEP_CONF, sure: float = SURE_CONF) -> float:
+    """0..1: 1 for a box right at the keep/drop line, falling to 0 at `sure` and towards 0 as the score nears 0."""
+    if score >= sure:
+        return 0.0
+    if score >= keep:
+        return (sure - score) / (sure - keep)
+    return max(0.0, score / keep)
+
+
+def page_doubt(scores: Sequence[float]) -> float:
+    """A page is as doubtful as its most doubtful box; a page with no box at all is not doubtful."""
+    return max((box_doubt(s) for s in scores), default=0.0)
+
+
+def asked_pages(labels_dir: Path = LABELS_DIR) -> Dict[str, set]:
+    """book id -> pages some teacher was already asked about (any route, any prompt version; not the student's own)."""
+    out: Dict[str, set] = {}
+    for route in sorted(p for p in labels_dir.iterdir() if p.is_dir() and p.name != "self") if labels_dir.is_dir() else []:
+        for f in route.glob("*/*/*.json"):
+            if f.stem.isdigit():
+                out.setdefault(f.parent.name, set()).add(int(f.stem))
+    return out
+
+
+def rank_round2(index: Sequence[Dict[str, Any]], pred_pages: Dict[str, Any], manifest: Dict[int, int],
+                asked: set) -> List[Dict[str, Any]]:
+    """Every unlabelled single page of a book the student is unsure of, most worth asking first."""
+    ranked: List[Dict[str, Any]] = []
+    for rec in index:
+        p = int(rec["page"])
+        if p in asked or float(rec["width_pt"]) > SPREAD_WIDTH_PT or str(p) not in pred_pages:
+            continue
+        scores = [float(b["score"]) for b in pred_pages[str(p)].get("boxes", [])]
+        kept = sum(1 for s in scores if s >= KEEP_CONF)
+        n_manifest = manifest.get(p, 0)
+        missing = max(0, n_manifest - kept)
+        doubt = page_doubt(scores)
+        if not missing and doubt <= 0.0:
+            continue
+        why = []
+        if missing:
+            why.append(f"{n_manifest} manifest entr{'y' if n_manifest == 1 else 'ies'}, {kept} box(es)")
+        if doubt > 0.0:
+            worst = min(scores, key=lambda s: abs(s - KEEP_CONF))
+            why.append(f"box at {worst:.2f}")
+        ranked.append({"page": p, "stratum": "manifest" if n_manifest else "doubt", "why": "; ".join(why),
+                       "hint_count": n_manifest, "doubt": round(doubt, 3), "missing": missing})
+    ranked.sort(key=lambda r: (-min(r["missing"], 1), -r["doubt"], r["page"]))
+    return ranked
+
+
+def build_round2(per_book: int = ROUND2_PER_BOOK, only: Optional[Sequence[str]] = None,
+                 pred_dir: Path = PRED_DOUBT_DIR, pages_dir: Path = PAGES_DIR, bakes_dir: Path = BAKES_DIR,
+                 labels_dir: Path = LABELS_DIR, dataset_json: Path = DATASET_JSON) -> Dict[str, Any]:
+    with open(SPLITS) as fh:
+        splits = json.load(fh)
+    held = set(splits.get("heldOut") or [])
+    titles = {k: v.get("title", k) for k, v in (splits.get("books") or {}).items()}
+    with open(dataset_json, encoding="utf-8") as fh:
+        valid = set(json.load(fh).get("valid_books", []))
+    asked = asked_pages(labels_dir)
+    books: Dict[str, Any] = {}
+    checkpoint = None
+    for book_id in rendered_books(pages_dir):
+        if book_id in held or book_id in valid:
+            continue
+        if only and not any(w and w.lower() in book_id.lower() for w in only):
+            continue
+        pred_file = pred_dir / book_id / "boxes.json"
+        if not pred_file.is_file():
+            print(f"  {book_id[:8]} has no boxes under {pred_dir}; run infer.py --conf 0.2 --out {pred_dir} first", file=sys.stderr)
+            continue
+        with open(pred_file, encoding="utf-8") as fh:
+            pred = json.load(fh)
+        checkpoint = pred.get("checkpoint")
+        index = read_index(book_id, pages_dir)
+        ranked = rank_round2(index, pred["pages"], manifest_pages(book_id, load_bake(book_id, bakes_dir)),
+                             asked.get(book_id, set()))
+        pages = sorted(ranked[:per_book], key=lambda r: r["page"])
+        books[book_id] = {
+            "title": titles.get(book_id, book_id), "split": "train", "page_count": len(index),
+            "candidates": len(ranked), "missing": sum(1 for r in pages if r["missing"]),
+            "pages": pages,
+        }
+    return {
+        "created": time.strftime("%Y-%m-%d %H:%M:%S"), "round": 2, "per_book": per_book, "checkpoint": checkpoint,
+        "from": str(pred_dir), "books": books, "total": sum(len(b["pages"]) for b in books.values()),
+    }
+
+
+def print_round2(sel: Dict[str, Any]) -> None:
+    print(f"{'book':<10}{'title':<36}{'pages':>6}{'unsure':>8}{'picked':>8}{'missing':>9}{'doubt':>7}")
+    for book_id, b in sorted(sel["books"].items()):
+        mean = sum(r["doubt"] for r in b["pages"]) / len(b["pages"]) if b["pages"] else 0.0
+        print(f"{book_id[:8]:<10}{b['title'][:34]:<36}{b['page_count']:>6}{b['candidates']:>8}{len(b['pages']):>8}"
+              f"{b['missing']:>9}{mean:>7.2f}")
+    print(f"total {sel['total']} pages over {len(sel['books'])} training books")
+
+
 def iter_pages(selection: Dict[str, Any]):
     """(book_id, page record) for every selected page, in book then page order."""
     for book_id in sorted(selection["books"]):
@@ -201,14 +325,21 @@ def print_table(sel: Dict[str, Any]) -> None:
 
 def main(argv: Optional[List[str]] = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--per-book", type=int, default=DEFAULT_PER_BOOK)
+    ap.add_argument("--per-book", type=int, default=None, help=f"default {DEFAULT_PER_BOOK}, or {ROUND2_PER_BOOK} in round 2")
     ap.add_argument("--seed", type=int, default=DEFAULT_SEED)
     ap.add_argument("--only", default=None, help="comma-separated book id prefixes")
-    ap.add_argument("--out", default=str(DEFAULT_OUT))
+    ap.add_argument("--out", default=None, help="default: data/vision/select/round<N>.json")
+    ap.add_argument("--round", type=int, choices=(1, 2), default=1, help="2 = the pages the student is least sure of")
+    ap.add_argument("--pred", default=str(PRED_DOUBT_DIR), help="round 2: the student's boxes down to a low floor")
     args = ap.parse_args(argv)
-    sel = build_selection(args.per_book, args.seed, args.only.split(",") if args.only else None)
-    print_table(sel)
-    out = Path(args.out)
+    only = args.only.split(",") if args.only else None
+    if args.round == 2:
+        sel = build_round2(args.per_book or ROUND2_PER_BOOK, only, Path(args.pred))
+        print_round2(sel)
+    else:
+        sel = build_selection(args.per_book or DEFAULT_PER_BOOK, args.seed, only)
+        print_table(sel)
+    out = Path(args.out) if args.out else (ROUND2_OUT if args.round == 2 else DEFAULT_OUT)
     out.parent.mkdir(parents=True, exist_ok=True)
     with open(out, "w") as fh:
         json.dump(sel, fh, indent=1, ensure_ascii=False)
