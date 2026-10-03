@@ -1,0 +1,4745 @@
+{
+  "version": 2,
+  "bookId": "f2dd55aa-ad65-4588-bcd6-e7765265baa2",
+  "fingerprint": "31002494-e3b56a80406435315ec4ec1524071844",
+  "profile": "c7de24295a4b",
+  "builtAt": "2026-10-03T07:59:20.483Z",
+  "pageCount": 73,
+  "calibration": {
+    "enabled": true,
+    "confidence": "strong",
+    "markerSize": 10.0,
+    "markerStyles": [
+      "Helvetica-Bold|12.0",
+      "Helvetica|9.0",
+      "TimesNewRomanPSMT|20.0",
+      "Ubuntu-BoldItalic|10.0",
+      "Ubuntu-Bold|10.0",
+      "Ubuntu-Bold|9.9",
+      "Ubuntu-Medium|10.0",
+      "Ubuntu-Medium|9.0",
+      "Ubuntu-Medium|9.8",
+      "Ubuntu|10.0"
+    ],
+    "markerFonts": [
+      "Helvetica",
+      "Helvetica-Bold",
+      "TimesNewRomanPSMT",
+      "Ubuntu",
+      "Ubuntu-Bold",
+      "Ubuntu-BoldItalic",
+      "Ubuntu-Medium"
+    ]
+  },
+  "folio": {
+    "offset": 1,
+    "byPage": {
+      "1": 0,
+      "2": 1,
+      "3": 2,
+      "4": 3,
+      "5": 4,
+      "6": 5,
+      "7": 6,
+      "8": 7,
+      "9": 8,
+      "10": 9,
+      "11": 10,
+      "12": 11,
+      "13": 12,
+      "14": 13,
+      "15": 14,
+      "16": 15,
+      "17": 16,
+      "18": 17,
+      "19": 18,
+      "20": 19,
+      "21": 20,
+      "22": 21,
+      "23": 22,
+      "24": 23,
+      "25": 24,
+      "26": 25,
+      "27": 26,
+      "28": 27,
+      "29": 28,
+      "30": 29,
+      "31": 30,
+      "32": 31,
+      "33": 32,
+      "34": 33,
+      "35": 34,
+      "36": 35,
+      "37": 36,
+      "38": 37,
+      "39": 38,
+      "40": 39,
+      "41": 40,
+      "42": 41,
+      "43": 42,
+      "44": 43,
+      "45": 44,
+      "46": 45,
+      "47": 46,
+      "48": 47,
+      "49": 48,
+      "50": 49,
+      "51": 50,
+      "52": 51,
+      "53": 52,
+      "54": 53,
+      "55": 54,
+      "56": 55,
+      "57": 56,
+      "58": 57,
+      "59": 58,
+      "60": 59,
+      "61": 60,
+      "62": 61,
+      "63": 62,
+      "64": 63,
+      "65": 64,
+      "66": 65,
+      "67": 66,
+      "68": 67,
+      "69": 68,
+      "70": 69,
+      "71": 70,
+      "72": 71,
+      "73": 72
+    }
+  },
+  "anchors": {},
+  "pages": {
+    "10": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.1969,
+          123.2326
+        ],
+        [
+          127.2326,
+          220.3726
+        ],
+        [
+          224.3726,
+          389.685
+        ],
+        [
+          393.685,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p10-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            65.3782,
+            605.7162,
+            460.6519,
+            702.2524
+          ],
+          "parts": [
+            [
+              65.3782,
+              605.7162,
+              460.6519,
+              702.2524
+            ]
+          ],
+          "headline": "Read the quotes. Match them to the school subjects below. One is extra."
+        },
+        {
+          "id": "p10-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            64.2654,
+            471.1905,
+            511.786,
+            595.0094
+          ],
+          "parts": [
+            [
+              64.2654,
+              471.1905,
+              511.786,
+              595.0094
+            ]
+          ],
+          "headline": "Listen to the students on their first week at school. Write true (T) or false (F)."
+        },
+        {
+          "id": "p10-3",
+          "label": "3",
+          "column": 0,
+          "rect": [
+            63.3751,
+            357.3839,
+            447.6876,
+            458.1745
+          ],
+          "parts": [
+            [
+              63.3751,
+              357.3839,
+              447.6876,
+              458.1745
+            ]
+          ],
+          "headline": "Listen again and fill in the blanks."
+        }
+      ]
+    },
+    "11": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.0237,
+          292.1632
+        ],
+        [
+          296.1632,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p11-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            50.9115,
+            651.4121,
+            504.9978,
+            702.3636
+          ],
+          "parts": [
+            [
+              50.9115,
+              651.4121,
+              504.9978,
+              702.3636
+            ]
+          ]
+        },
+        {
+          "id": "p11-v2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            58.3118,
+            592.6732,
+            388.8219,
+            642.7347
+          ],
+          "parts": [
+            [
+              58.3118,
+              592.6732,
+              388.8219,
+              642.7347
+            ]
+          ]
+        },
+        {
+          "id": "p11-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            50.4664,
+            284.739,
+            520.7999,
+            582.4384
+          ],
+          "parts": [
+            [
+              50.4664,
+              284.739,
+              520.7999,
+              582.4384
+            ]
+          ],
+          "headline": "Read the school newspaper article and complete the text using the correct form of the verbs in brackets."
+        },
+        {
+          "id": "p11-v4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            50.8002,
+            177.3292,
+            479.403,
+            276.7848
+          ],
+          "parts": [
+            [
+              50.8002,
+              177.3292,
+              479.403,
+              276.7848
+            ]
+          ]
+        },
+        {
+          "id": "p11-4",
+          "label": "4",
+          "column": 0,
+          "rect": [
+            50.0237,
+            67.0825,
+            338.5756,
+            169.7087
+          ],
+          "parts": [
+            [
+              50.0237,
+              67.0825,
+              338.5756,
+              169.7087
+            ]
+          ],
+          "headline": "Add question tags to confirm the statements.",
+          "items": [
+            {
+              "id": "p11-4-1",
+              "label": "1",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                66.8662,
+                133.4236,
+                337.2133,
+                153.3536
+              ],
+              "text": "Our teacher is joining the meeting today, ___________? 1"
+            },
+            {
+              "id": "p11-4-2",
+              "label": "2",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                66.8662,
+                116.5936,
+                284.7242,
+                136.5236
+              ],
+              "text": "You work on the new project, ___________? 2"
+            },
+            {
+              "id": "p11-4-3",
+              "label": "3",
+              "number": 3,
+              "partIndex": 0,
+              "rect": [
+                66.8662,
+                99.7636,
+                335.9333,
+                119.6936
+              ],
+              "text": "Students enjoy the new school cafeteria, ___________? 3"
+            },
+            {
+              "id": "p11-4-4",
+              "label": "4",
+              "number": 4,
+              "partIndex": 0,
+              "rect": [
+                66.8662,
+                82.9336,
+                301.0133,
+                102.8636
+              ],
+              "text": "The art exhibition isn’t ready yet, ___________? 4"
+            },
+            {
+              "id": "p11-4-5",
+              "label": "5",
+              "number": 5,
+              "partIndex": 0,
+              "rect": [
+                66.8662,
+                67.0825,
+                334.9033,
+                86.0336
+              ],
+              "text": "We’re going to the assembly after lunch, ___________? 5"
+            }
+          ]
+        }
+      ]
+    },
+    "12": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.1969,
+          133.1793
+        ],
+        [
+          137.1793,
+          206.1893
+        ],
+        [
+          210.1893,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p12-5",
+          "label": "5",
+          "column": 0,
+          "rect": [
+            64.4879,
+            485.5415,
+            518.8524,
+            721.4426
+          ],
+          "parts": [
+            [
+              64.4879,
+              485.5415,
+              518.8524,
+              721.4426
+            ]
+          ],
+          "headline": "Read the podcast transcript and complete the sentences using a, an, the, zero article (–)."
+        },
+        {
+          "id": "p12-6",
+          "label": "6",
+          "column": 0,
+          "rect": [
+            65.4895,
+            299.4237,
+            517.0163,
+            471.5799
+          ],
+          "parts": [
+            [
+              65.4895,
+              299.4237,
+              517.0163,
+              471.5799
+            ]
+          ],
+          "headline": "Read the dialogues below and rewrite the requests politely, using may , might , or could ."
+        },
+        {
+          "id": "p12-7",
+          "label": "7",
+          "column": 0,
+          "rect": [
+            64.1969,
+            65.08,
+            477.9007,
+            289.6895
+          ],
+          "parts": [
+            [
+              64.1969,
+              65.08,
+              477.9007,
+              289.6895
+            ]
+          ],
+          "headline": "Choose the correct options to complete the statements."
+        }
+      ]
+    },
+    "13": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.023,
+          106.213
+        ],
+        [
+          110.213,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p13-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            49.9656,
+            485.2633,
+            505.6036,
+            720.0
+          ],
+          "parts": [
+            [
+              49.9656,
+              485.2633,
+              505.6036,
+              720.0
+            ]
+          ],
+          "headline": "Read the paragraph to fill in the blanks with the correct words below. Two are extra."
+        },
+        {
+          "id": "p13-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            50.7446,
+            351.0428,
+            502.3271,
+            477.8097
+          ],
+          "parts": [
+            [
+              50.7446,
+              351.0428,
+              502.3271,
+              477.8097
+            ]
+          ],
+          "headline": "Circle the correct verb in each sentence."
+        },
+        {
+          "id": "p13-a",
+          "label": "a",
+          "column": 0,
+          "rect": [
+            50.522,
+            142.6198,
+            504.8309,
+            339.0836
+          ],
+          "parts": [
+            [
+              50.522,
+              142.6198,
+              504.8309,
+              339.0836
+            ]
+          ],
+          "headline": "We have different systems, but the goal is the same work."
+        },
+        {
+          "id": "p13-v4",
+          "label": null,
+          "column": 1,
+          "rect": [
+            49.5205,
+            64.0232,
+            506.3332,
+            132.83
+          ],
+          "parts": [
+            [
+              49.5205,
+              64.0232,
+              506.3332,
+              132.83
+            ]
+          ]
+        }
+      ]
+    },
+    "14": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.1969,
+          208.9764
+        ],
+        [
+          212.9764,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p14-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            64.2654,
+            631.7212,
+            529.5912,
+            701.8074
+          ],
+          "parts": [
+            [
+              64.2654,
+              631.7212,
+              529.5912,
+              701.8074
+            ]
+          ],
+          "headline": "Read the text quickly and tick ( ✓ ) the topics mentioned."
+        },
+        {
+          "id": "p14-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            65.4338,
+            251.6977,
+            478.2345,
+            358.552
+          ],
+          "parts": [
+            [
+              65.4338,
+              251.6977,
+              478.2345,
+              358.552
+            ]
+          ],
+          "headline": "Match the words highlighted in the text to their meanings. One is extra."
+        },
+        {
+          "id": "p14-3",
+          "label": "3",
+          "column": 0,
+          "rect": [
+            62.2623,
+            163.6457,
+            543.7796,
+            245.5241
+          ],
+          "parts": [
+            [
+              62.2623,
+              163.6457,
+              543.7796,
+              245.5241
+            ]
+          ],
+          "headline": "Read the text again and write if the sentences are true (T) or false (F)."
+        },
+        {
+          "id": "p14-4",
+          "label": "4",
+          "column": 0,
+          "rect": [
+            63.5977,
+            60.7414,
+            532.3732,
+            161.1982
+          ],
+          "parts": [
+            [
+              63.5977,
+              60.7414,
+              532.3732,
+              161.1982
+            ]
+          ],
+          "headline": "Read again and answer the questions."
+        }
+      ]
+    },
+    "15": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.0237,
+          96.8014
+        ],
+        [
+          100.8014,
+          161.0137
+        ],
+        [
+          165.0137,
+          224.6018
+        ],
+        [
+          228.6018,
+          289.0137
+        ],
+        [
+          293.0137,
+          369.9843
+        ],
+        [
+          373.9843,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p15-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            0.0,
+            619.087,
+            504.567,
+            705.827
+          ],
+          "parts": [
+            [
+              0.0,
+              619.087,
+              504.567,
+              705.827
+            ]
+          ],
+          "headline": "Match the chat abbreviations to their meanings. One is extra."
+        },
+        {
+          "id": "p15-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            50.2438,
+            388.3108,
+            498.5008,
+            615.479
+          ],
+          "parts": [
+            [
+              50.2438,
+              388.3108,
+              498.5008,
+              615.479
+            ]
+          ],
+          "headline": "Below are three screenshots from Aylin’s class group chat. Each one relates to a different topic they often discuss. Match each screenshot to the correct title."
+        },
+        {
+          "id": "p15-3",
+          "label": "3",
+          "column": 0,
+          "rect": [
+            49.2979,
+            314.6647,
+            494.2035,
+            383.0265
+          ],
+          "parts": [
+            [
+              49.2979,
+              314.6647,
+              494.2035,
+              383.0265
+            ]
+          ],
+          "headline": "Read the chats and answer the questions."
+        },
+        {
+          "id": "p15-v4",
+          "label": null,
+          "column": 3,
+          "rect": [
+            49.6318,
+            177.6073,
+            506.3889,
+            308.8242
+          ],
+          "parts": [
+            [
+              49.6318,
+              177.6073,
+              506.3889,
+              308.8242
+            ]
+          ]
+        },
+        {
+          "id": "p15-5",
+          "label": "5",
+          "column": 0,
+          "rect": [
+            50.1882,
+            60.5189,
+            504.3301,
+            167.4837
+          ],
+          "parts": [
+            [
+              50.1882,
+              60.5189,
+              504.3301,
+              167.4837
+            ]
+          ],
+          "headline": "Write a short post for the school magazine that shows how your class uses the group chat as a learning and communication tool by following the steps below. Use "
+        }
+      ]
+    },
+    "16": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.1969,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p16-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            64.5992,
+            619.6508,
+            513.2883,
+            702.4749
+          ],
+          "parts": [
+            [
+              64.5992,
+              619.6508,
+              513.2883,
+              702.4749
+            ]
+          ],
+          "headline": "Listen to the dialogue to find what it is about."
+        },
+        {
+          "id": "p16-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            62.4849,
+            472.8592,
+            511.3966,
+            611.7522
+          ],
+          "parts": [
+            [
+              62.4849,
+              472.8592,
+              511.3966,
+              611.7522
+            ]
+          ],
+          "headline": "Listen to the dialogue again and complete the sentences with one word."
+        },
+        {
+          "id": "p16-v3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            64.0984,
+            366.1725,
+            511.953,
+            466.6849
+          ],
+          "parts": [
+            [
+              64.0984,
+              366.1725,
+              511.953,
+              466.6849
+            ]
+          ]
+        }
+      ]
+    },
+    "17": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.0237,
+          109.0552
+        ],
+        [
+          113.0552,
+          211.9821
+        ],
+        [
+          215.9821,
+          324.9821
+        ],
+        [
+          328.9821,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p17-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            50.8002,
+            582.1603,
+            510.4463,
+            701.8074
+          ],
+          "parts": [
+            [
+              50.8002,
+              582.1603,
+              510.4463,
+              701.8074
+            ]
+          ],
+          "headline": "The teacher announces an upcoming art exhibition at school. Look at the exhibition schedule to write full sentences."
+        },
+        {
+          "id": "p17-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            45.0237,
+            391.982,
+            505.6099,
+            581.9103
+          ],
+          "parts": [
+            [
+              45.0237,
+              391.982,
+              505.6099,
+              581.9103
+            ]
+          ],
+          "headline": "Rosa is preparing for the art exhibition. Read her planner notes and write full sentences about her personal arrangements."
+        },
+        {
+          "id": "p17-3",
+          "label": "3",
+          "column": 0,
+          "rect": [
+            50.4108,
+            294.8626,
+            506.6671,
+            385.6965
+          ],
+          "parts": [
+            [
+              50.4108,
+              294.8626,
+              506.6671,
+              385.6965
+            ]
+          ],
+          "headline": "In the art room, some students have habits that irritate their classmates. Rewrite the sentences using always to show irritation."
+        },
+        {
+          "id": "p17-4",
+          "label": "4",
+          "column": 0,
+          "rect": [
+            51.4679,
+            59.4064,
+            478.5684,
+            289.2445
+          ],
+          "parts": [
+            [
+              51.4679,
+              59.4064,
+              478.5684,
+              289.2445
+            ]
+          ],
+          "headline": "Read the short dialogues from the art lesson as students prepare for the exhibition."
+        }
+      ]
+    },
+    "18": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.1894,
+          128.8969
+        ],
+        [
+          132.8969,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p18-5",
+          "label": "5",
+          "column": 0,
+          "rect": [
+            64.0984,
+            517.4696,
+            516.293,
+            721.7764
+          ],
+          "parts": [
+            [
+              64.0984,
+              517.4696,
+              516.293,
+              721.7764
+            ]
+          ],
+          "headline": "The students are planning their exhibition tasks. Read the sentence pairs and combine them using Ms Clay can check the posters this morning. Ms Clay can check t"
+        },
+        {
+          "id": "p18-6",
+          "label": "6",
+          "column": 0,
+          "rect": [
+            63.7646,
+            393.8176,
+            494.8155,
+            505.733
+          ],
+          "parts": [
+            [
+              63.7646,
+              393.8176,
+              494.8155,
+              505.733
+            ]
+          ],
+          "headline": "Read the sentences about Diego’s classroom life. Circle the correct word."
+        },
+        {
+          "id": "p18-7",
+          "label": "7",
+          "column": 0,
+          "rect": [
+            64.1969,
+            265.9937,
+            496.0953,
+            384.6952
+          ],
+          "parts": [
+            [
+              64.1969,
+              265.9937,
+              496.0953,
+              384.6952
+            ]
+          ],
+          "headline": "Students experience different feelings during the preparations for the exhibition."
+        },
+        {
+          "id": "p18-8",
+          "label": "8",
+          "column": 0,
+          "rect": [
+            64.8218,
+            59.907,
+            489.1958,
+            251.5315
+          ],
+          "parts": [
+            [
+              64.8218,
+              59.907,
+              489.1958,
+              251.5315
+            ]
+          ],
+          "headline": "Read the mini dialogues between the students while they are preparing for their art exhibition. Complete them by writing the correct question tag."
+        }
+      ]
+    },
+    "19": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.0237,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p19-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            49.6318,
+            561.6907,
+            505.0535,
+            702.1968
+          ],
+          "parts": [
+            [
+              49.6318,
+              561.6907,
+              505.0535,
+              702.1968
+            ]
+          ],
+          "headline": "Read Yuki’s diary and complete the text with the correct words from the box. Two words are extra."
+        },
+        {
+          "id": "p19-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            50.7446,
+            439.5961,
+            512.9443,
+            552.4571
+          ],
+          "parts": [
+            [
+              50.7446,
+              439.5961,
+              512.9443,
+              552.4571
+            ]
+          ],
+          "headline": "Read the sentences about the school festival projects. Complete the blanks with the correct form of the words in bold."
+        },
+        {
+          "id": "p19-v3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            49.5205,
+            295.5857,
+            504.8309,
+            434.5343
+          ],
+          "parts": [
+            [
+              49.5205,
+              295.5857,
+              504.8309,
+              434.5343
+            ]
+          ]
+        },
+        {
+          "id": "p19-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            46.4046,
+            60.1295,
+            531.0378,
+            289.4114
+          ],
+          "parts": [
+            [
+              46.4046,
+              60.1295,
+              531.0378,
+              289.4114
+            ]
+          ],
+          "headline": "Tomorrow we are doing a ___________________ in history class to share creative ideas about the project."
+        }
+      ]
+    },
+    "20": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.1969,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p20-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            64.0984,
+            208.6454,
+            490.5312,
+            347.3716
+          ],
+          "parts": [
+            [
+              64.0984,
+              208.6454,
+              490.5312,
+              347.3716
+            ]
+          ],
+          "headline": "Read the posts about the creative classroom projects and choose the correct answer."
+        },
+        {
+          "id": "p20-v2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            63.9872,
+            150.759,
+            504.7753,
+            205.8086
+          ],
+          "parts": [
+            [
+              63.9872,
+              150.759,
+              504.7753,
+              205.8086
+            ]
+          ]
+        },
+        {
+          "id": "p20-4",
+          "label": "4",
+          "column": 0,
+          "rect": [
+            63.4308,
+            62.5769,
+            507.9468,
+            149.6284
+          ],
+          "parts": [
+            [
+              63.4308,
+              62.5769,
+              507.9468,
+              149.6284
+            ]
+          ],
+          "headline": "Imagine your class also joins the Creative Classroom Projects App . Write one short post about your classroom project."
+        }
+      ]
+    },
+    "21": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.0237,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p21-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            49.6318,
+            425.5232,
+            512.565,
+            701.863
+          ],
+          "parts": [
+            [
+              49.6318,
+              425.5232,
+              512.565,
+              701.863
+            ]
+          ],
+          "headline": "Fill in the blanks choosing the correct word from the box to finish the student’s vlog. One is extra."
+        },
+        {
+          "id": "p21-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            50.1326,
+            299.8131,
+            502.4384,
+            415.0659
+          ],
+          "parts": [
+            [
+              50.1326,
+              299.8131,
+              502.4384,
+              415.0659
+            ]
+          ],
+          "headline": "Complete the sentences with your ideas using an appropriate word."
+        },
+        {
+          "id": "p21-v3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            50.8559,
+            68.4731,
+            501.5481,
+            290.4126
+          ],
+          "parts": [
+            [
+              50.8559,
+              68.4731,
+              501.5481,
+              290.4126
+            ]
+          ]
+        }
+      ]
+    },
+    "22": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.1969,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p22-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            65.2113,
+            570.8961,
+            512.9545,
+            702.5305
+          ],
+          "parts": [
+            [
+              65.2113,
+              570.8961,
+              512.9545,
+              702.5305
+            ]
+          ],
+          "headline": "Listen to the dialogue to find what it is about."
+        },
+        {
+          "id": "p22-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            62.9856,
+            453.9471,
+            511.5635,
+            570.6461
+          ],
+          "parts": [
+            [
+              62.9856,
+              453.9471,
+              511.5635,
+              570.6461
+            ]
+          ],
+          "headline": "Listen to the dialogue again to circle the correct word in each sentence."
+        },
+        {
+          "id": "p22-v3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            62.8743,
+            332.5756,
+            511.6191,
+            439.763
+          ],
+          "parts": [
+            [
+              62.8743,
+              332.5756,
+              511.6191,
+              439.763
+            ]
+          ]
+        },
+        {
+          "id": "p22-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            71.82,
+            53.774,
+            530.1,
+            310.454
+          ],
+          "parts": [
+            [
+              71.82,
+              53.774,
+              530.1,
+              310.454
+            ]
+          ],
+          "headline": "Listen to the recording. Decide if the intonation goes up (  rising) or down ("
+        }
+      ]
+    },
+    "23": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.0137,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p23-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            51.5236,
+            417.3465,
+            501.8678,
+            701.863
+          ],
+          "parts": [
+            [
+              51.5236,
+              417.3465,
+              501.8678,
+              701.863
+            ]
+          ],
+          "headline": "Our school held a “Well-Being Workshop Week.” But some funny things happened during the sessions. Describe what was happening when each event occured by writing",
+          "items": [
+            {
+              "id": "p23-1-1",
+              "label": "1",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                76.6138,
+                603.7921,
+                451.362,
+                654.3622
+              ],
+              "text": " students/settle into their seats/breathing session/ 1 a cat/jump onto someone’s lap Well-being"
+            },
+            {
+              "id": "p23-1-2",
+              "label": "2",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                198.8022,
+                604.7622,
+                418.3112,
+                624.6922
+              ],
+              "text": " stress talk/begin/the lights/suddenly go off 2"
+            },
+            {
+              "id": "p23-1-3",
+              "label": "3",
+              "number": 3,
+              "partIndex": 0,
+              "rect": [
+                75.0167,
+                572.2223,
+                400.11,
+                632.216
+              ],
+              "text": " the trainer/enter the room/volunteers/ 3 organise the scattered materials Log Book"
+            },
+            {
+              "id": "p23-1-4",
+              "label": "4",
+              "number": 4,
+              "partIndex": 0,
+              "rect": [
+                198.8022,
+                557.4222,
+                402.601,
+                577.3522
+              ],
+              "text": " relaxation video/play/the internet/crash 4"
+            },
+            {
+              "id": "p23-1-5",
+              "label": "5",
+              "number": 5,
+              "partIndex": 0,
+              "rect": [
+                64.0337,
+                417.3465,
+                480.0242,
+                559.6823
+              ],
+              "text": " students/do stretching exercises/the fire alarm/ 5 start ringing ♥ The students were settling into their seats for the breathing session when a cat ___________________________________________________"
+            }
+          ]
+        },
+        {
+          "id": "p23-v2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            50.1882,
+            225.3326,
+            505.443,
+            404.8311
+          ],
+          "parts": [
+            [
+              50.1882,
+              225.3326,
+              505.443,
+              404.8311
+            ]
+          ]
+        },
+        {
+          "id": "p23-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            51.4123,
+            65.1913,
+            376.022,
+            212.5947
+          ],
+          "parts": [
+            [
+              51.4123,
+              65.1913,
+              376.022,
+              212.5947
+            ]
+          ],
+          "headline": "Alya was not able to finish her jogging routine last weekend."
+        }
+      ]
+    },
+    "24": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.1969,
+          128.8728
+        ],
+        [
+          132.8728,
+          221.6471
+        ],
+        [
+          225.6471,
+          339.1628
+        ],
+        [
+          343.1628,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p24-4",
+          "label": "4",
+          "column": 0,
+          "rect": [
+            65.0443,
+            559.2432,
+            497.9314,
+            721.6095
+          ],
+          "parts": [
+            [
+              65.0443,
+              559.2432,
+              497.9314,
+              721.6095
+            ]
+          ],
+          "headline": "Read the short dialogues to choose the correct answer."
+        },
+        {
+          "id": "p24-5",
+          "label": "5",
+          "column": 0,
+          "rect": [
+            64.9887,
+            440.0411,
+            508.9483,
+            554.237
+          ],
+          "parts": [
+            [
+              64.9887,
+              440.0411,
+              508.9483,
+              554.237
+            ]
+          ],
+          "headline": "Look at the mixed lines from a school well-being interview. Put them in the correct order."
+        },
+        {
+          "id": "p24-6",
+          "label": "6",
+          "column": 0,
+          "rect": [
+            64.5992,
+            347.5384,
+            443.5702,
+            434.0893
+          ],
+          "parts": [
+            [
+              64.5992,
+              347.5384,
+              443.5702,
+              434.0893
+            ]
+          ],
+          "headline": "Complete the sentences with the correct question tag."
+        },
+        {
+          "id": "p24-7",
+          "label": "7",
+          "column": 0,
+          "rect": [
+            64.7661,
+            207.3661,
+            512.0086,
+            345.536
+          ],
+          "parts": [
+            [
+              64.7661,
+              207.3661,
+              512.0086,
+              345.536
+            ]
+          ],
+          "headline": "Choose the correct option."
+        },
+        {
+          "id": "p24-8",
+          "label": "8",
+          "column": 0,
+          "rect": [
+            63.4864,
+            56.4583,
+            517.8509,
+            202.6937
+          ],
+          "parts": [
+            [
+              63.4864,
+              56.4583,
+              517.8509,
+              202.6937
+            ]
+          ],
+          "headline": "Read the short blog post and choose the correct preposition."
+        }
+      ]
+    },
+    "25": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.0219,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p25-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            50.2438,
+            565.8068,
+            506.6114,
+            702.308
+          ],
+          "parts": [
+            [
+              50.2438,
+              565.8068,
+              506.6114,
+              702.308
+            ]
+          ],
+          "headline": "Read the short text about the Emotional Awareness Talk . Complete with the correct words from the box. Two are extra."
+        },
+        {
+          "id": "p25-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            50.6333,
+            402.9399,
+            503.106,
+            554.5152
+          ],
+          "parts": [
+            [
+              50.6333,
+              402.9399,
+              503.106,
+              554.5152
+            ]
+          ],
+          "headline": "Match the definitions to the correct words. One is extra."
+        },
+        {
+          "id": "p25-3",
+          "label": "3",
+          "column": 0,
+          "rect": [
+            50.4664,
+            295.1407,
+            465.4927,
+            398.8237
+          ],
+          "parts": [
+            [
+              50.4664,
+              295.1407,
+              465.4927,
+              398.8237
+            ]
+          ],
+          "headline": "Circle the correct word in each sentence."
+        },
+        {
+          "id": "p25-v4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            50.5777,
+            104.4062,
+            505.5542,
+            284.1828
+          ],
+          "parts": [
+            [
+              50.5777,
+              104.4062,
+              505.5542,
+              284.1828
+            ]
+          ]
+        }
+      ]
+    },
+    "26": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.1919,
+          287.1819
+        ],
+        [
+          291.1819,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p26-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            64.5436,
+            636.3936,
+            350.6849,
+            702.9755
+          ],
+          "parts": [
+            [
+              64.5436,
+              636.3936,
+              350.6849,
+              702.9755
+            ]
+          ],
+          "headline": "Read the text quickly to tick ( ✓ ) what is mentioned in it."
+        },
+        {
+          "id": "p26-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            64.1969,
+            232.7862,
+            464.4912,
+            350.5978
+          ],
+          "parts": [
+            [
+              64.1969,
+              232.7862,
+              464.4912,
+              350.5978
+            ]
+          ],
+          "headline": "Read the text again to choose the correct option."
+        },
+        {
+          "id": "p26-v3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            8.504,
+            158.11,
+            561.26,
+            228.976
+          ],
+          "parts": [
+            [
+              8.504,
+              158.11,
+              561.26,
+              228.976
+            ]
+          ]
+        },
+        {
+          "id": "p26-v4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            64.5436,
+            63.4669,
+            515.7366,
+            156.2477
+          ],
+          "parts": [
+            [
+              64.5436,
+              63.4669,
+              515.7366,
+              156.2477
+            ]
+          ]
+        }
+      ]
+    },
+    "27": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.0237,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p27-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            50.0213,
+            447.9397,
+            508.7258,
+            701.7518
+          ],
+          "parts": [
+            [
+              50.0213,
+              447.9397,
+              508.7258,
+              701.7518
+            ]
+          ],
+          "headline": "Read the podcast and fill in the blanks choosing the correct word from the box. One is extra."
+        },
+        {
+          "id": "p27-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            50.3551,
+            354.0464,
+            501.103,
+            438.3167
+          ],
+          "parts": [
+            [
+              50.3551,
+              354.0464,
+              501.103,
+              438.3167
+            ]
+          ],
+          "headline": "Complete the sentences with your own ideas using one of the adverbs in exercise 1."
+        },
+        {
+          "id": "p27-v3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            51.4679,
+            66.415,
+            500.3796,
+            339.2505
+          ],
+          "parts": [
+            [
+              51.4679,
+              66.415,
+              500.3796,
+              339.2505
+            ]
+          ]
+        }
+      ]
+    },
+    "28": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.1969,
+          333.3747
+        ],
+        [
+          337.3747,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p28-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            64.4879,
+            616.2021,
+            513.0658,
+            702.8086
+          ],
+          "parts": [
+            [
+              64.4879,
+              616.2021,
+              513.0658,
+              702.8086
+            ]
+          ],
+          "headline": "Listen to the recording of friends talking about conflicts and match each statement to the correct person. Write Arda, Alin, Mateo or Selin."
+        },
+        {
+          "id": "p28-v2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            64.4879,
+            499.6699,
+            513.0658,
+            606.9129
+          ],
+          "parts": [
+            [
+              64.4879,
+              499.6699,
+              513.0658,
+              606.9129
+            ]
+          ]
+        },
+        {
+          "id": "p28-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            63.8202,
+            319.504,
+            379.2491,
+            492.3832
+          ],
+          "parts": [
+            [
+              63.8202,
+              319.504,
+              379.2491,
+              492.3832
+            ]
+          ],
+          "headline": "Why does Arda say they keep going in circles?",
+          "items": [
+            {
+              "id": "p28-1-a",
+              "label": "a",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                95.2069,
+                447.1538,
+                330.9759,
+                467.0838
+              ],
+              "text": " Because his parents keep changing their minds. a"
+            },
+            {
+              "id": "p28-1-b",
+              "label": "b",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                95.2069,
+                435.1538,
+                379.2491,
+                455.0838
+              ],
+              "text": " Because the same disagreement repeats without progress. b"
+            },
+            {
+              "id": "p28-1-c",
+              "label": "c",
+              "number": 3,
+              "partIndex": 0,
+              "rect": [
+                81.0169,
+                319.504,
+                362.3658,
+                443.0838
+              ],
+              "text": " Because he cannot explain his feelings clearly at all. c  What does Alin’s example show about everyday conflicts? 2  They usually happen because people don’t care. a  They can grow quickly when emoti"
+            }
+          ]
+        },
+        {
+          "id": "p28-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            80.5682,
+            232.6194,
+            512.2868,
+            289.3002
+          ],
+          "parts": [
+            [
+              80.5682,
+              232.6194,
+              512.2868,
+              289.3002
+            ]
+          ],
+          "headline": "Listen to the recording to match and write the words you hear next to the words that have a similar sound."
+        },
+        {
+          "id": "p28-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            69.6595,
+            50.989,
+            530.1,
+            232.3694
+          ],
+          "parts": [
+            [
+              69.6595,
+              50.989,
+              530.1,
+              232.3694
+            ]
+          ],
+          "headline": "Listen to the sentences and choose the option that has the similar sound in the bold words.",
+          "items": [
+            {
+              "id": "p28-2-1",
+              "label": "1",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                95.2147,
+                175.3486,
+                380.1347,
+                207.2786
+              ],
+              "text": "She up the hill slowly. 1 climbed comb club cab a b c"
+            },
+            {
+              "id": "p28-2-2",
+              "label": "2",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                95.2147,
+                148.4586,
+                378.1047,
+                180.4486
+              ],
+              "text": "They took the bus at 7:00 a.m. 2 city cereal cat car a b c "
+            },
+            {
+              "id": "p28-2-3",
+              "label": "3",
+              "number": 3,
+              "partIndex": 0,
+              "rect": [
+                95.2147,
+                121.6886,
+                512.7744,
+                153.6186
+              ],
+              "text": "Audio 4.4 Please the rice carefully. 3 cook centre candle cell a b c"
+            },
+            {
+              "id": "p28-2-4",
+              "label": "4",
+              "number": 4,
+              "partIndex": 0,
+              "rect": [
+                95.2147,
+                94.7986,
+                396.5847,
+                126.7886
+              ],
+              "text": "The were excited about the trip. 4 children chemist cabbage choose a b c "
+            },
+            {
+              "id": "p28-2-5",
+              "label": "5",
+              "number": 5,
+              "partIndex": 0,
+              "rect": [
+                95.2147,
+                67.9686,
+                384.0947,
+                99.9586
+              ],
+              "text": "He tied the around his wrist. 5 handkerchief had Wednesday hide a b c "
+            }
+          ]
+        }
+      ]
+    },
+    "29": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.0237,
+          201.0118
+        ],
+        [
+          205.0118,
+          311.0237
+        ],
+        [
+          315.0237,
+          403.0527
+        ],
+        [
+          407.0527,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p29-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            50.2995,
+            552.5127,
+            504.664,
+            701.9186
+          ],
+          "parts": [
+            [
+              50.2995,
+              552.5127,
+              504.664,
+              701.9186
+            ]
+          ],
+          "headline": "Use the words below to complete the paragraph. One is extra."
+        },
+        {
+          "id": "p29-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            51.4679,
+            208.8123,
+            509.8386,
+            539.6079
+          ],
+          "parts": [
+            [
+              51.4679,
+              208.8123,
+              509.8386,
+              539.6079
+            ]
+          ],
+          "headline": "Choose the correct options to complete the text."
+        },
+        {
+          "id": "p29-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            51.5236,
+            59.8514,
+            485.0406,
+            199.4675
+          ],
+          "parts": [
+            [
+              51.5236,
+              59.8514,
+              485.0406,
+              199.4675
+            ]
+          ],
+          "headline": "Her clothes are wet because she played with her friends in the rain."
+        }
+      ]
+    },
+    "30": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.1229,
+          134.4929
+        ],
+        [
+          138.4929,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p30-4",
+          "label": "4",
+          "column": 0,
+          "rect": [
+            64.4879,
+            549.3978,
+            526.6738,
+            721.6095
+          ],
+          "parts": [
+            [
+              64.4879,
+              549.3978,
+              526.6738,
+              721.6095
+            ]
+          ],
+          "headline": "Complete the dialogue with the correct reflexive pronouns."
+        },
+        {
+          "id": "p30-6",
+          "label": "6",
+          "column": 0,
+          "rect": [
+            64.7105,
+            59.8514,
+            400.8379,
+            192.1251
+          ],
+          "parts": [
+            [
+              64.7105,
+              59.8514,
+              400.8379,
+              192.1251
+            ]
+          ],
+          "headline": "Write the suitable How long… question for each answer."
+        }
+      ]
+    },
+    "31": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.0237,
+          195.1872
+        ],
+        [
+          199.1872,
+          307.126
+        ],
+        [
+          311.126,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p31-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            49.6318,
+            619.8733,
+            504.7196,
+            702.0299
+          ],
+          "parts": [
+            [
+              49.6318,
+              619.8733,
+              504.7196,
+              702.0299
+            ]
+          ],
+          "headline": "Match the housing types to their definitions. One is extra."
+        },
+        {
+          "id": "p31-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            49.7597,
+            325.1495,
+            503.885,
+            614.0328
+          ],
+          "parts": [
+            [
+              49.7597,
+              325.1495,
+              503.885,
+              614.0328
+            ]
+          ],
+          "headline": "Read the diary written by a teenager and complete it using the words or word groups below. One is extra emotional distance"
+        },
+        {
+          "id": "p31-3",
+          "label": "3",
+          "column": 0,
+          "rect": [
+            51.301,
+            59.017,
+            501.715,
+            324.8995
+          ],
+          "parts": [
+            [
+              51.301,
+              59.017,
+              501.715,
+              324.8995
+            ]
+          ],
+          "headline": "Read the s ocial media post and choose the correct options to fill in the blanks."
+        }
+      ]
+    },
+    "32": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.1894,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p32-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            64.1969,
+            634.0574,
+            488.1386,
+            704.9223
+          ],
+          "parts": [
+            [
+              64.1969,
+              634.0574,
+              488.1386,
+              704.9223
+            ]
+          ],
+          "headline": "Look at the title. What do you think the text will be about? Tick ( ✓ ) your guesses."
+        },
+        {
+          "id": "p32-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            65.2113,
+            175.7717,
+            492.2004,
+            253.8121
+          ],
+          "parts": [
+            [
+              65.2113,
+              175.7717,
+              492.2004,
+              253.8121
+            ]
+          ],
+          "headline": "Read the text and choose the best summary for it."
+        },
+        {
+          "id": "p32-3",
+          "label": "3",
+          "column": 0,
+          "rect": [
+            65.6008,
+            60.5745,
+            411.0758,
+            166.7606
+          ],
+          "parts": [
+            [
+              65.6008,
+              60.5745,
+              411.0758,
+              166.7606
+            ]
+          ],
+          "headline": "Read the text again. Decide if the sentences are true (T) or false (F)."
+        }
+      ]
+    },
+    "33": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.0237,
+          211.5874
+        ],
+        [
+          215.5874,
+          361.8274
+        ],
+        [
+          365.8274,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p33-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            49.5761,
+            64.8019,
+            507.5017,
+            439.4292
+          ],
+          "parts": [
+            [
+              49.5761,
+              64.8019,
+              507.5017,
+              439.4292
+            ]
+          ],
+          "headline": "Write a blog post about living with your family or the people you share your home with."
+        }
+      ]
+    },
+    "34": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.1969,
+          117.7972
+        ],
+        [
+          121.7972,
+          203.7564
+        ],
+        [
+          207.7564,
+          300.2672
+        ],
+        [
+          304.2672,
+          381.3486
+        ],
+        [
+          385.3486,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p34-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            64.0428,
+            527.3707,
+            526.5094,
+            702.5861
+          ],
+          "parts": [
+            [
+              64.0428,
+              527.3707,
+              526.5094,
+              702.5861
+            ]
+          ],
+          "headline": "Look at the pictures of problem-solving ideas in a city. Match the ideas to the benefits below."
+        },
+        {
+          "id": "p34-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            64.4323,
+            372.7361,
+            513.4553,
+            522.4201
+          ],
+          "parts": [
+            [
+              64.4323,
+              372.7361,
+              513.4553,
+              522.4201
+            ]
+          ],
+          "headline": "Listen to the interview and choose the correct answer to complete the sentences."
+        },
+        {
+          "id": "p34-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            64.7661,
+            279.121,
+            519.6219,
+            370.4555
+          ],
+          "parts": [
+            [
+              64.7661,
+              279.121,
+              519.6219,
+              370.4555
+            ]
+          ],
+          "headline": "The old bridge will be restored because it is part of the city’s ____________."
+        },
+        {
+          "id": "p34-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            81.5141,
+            173.9361,
+            516.1817,
+            246.136
+          ],
+          "parts": [
+            [
+              81.5141,
+              173.9361,
+              516.1817,
+              246.136
+            ]
+          ],
+          "headline": "Look at the words in the box. Listen and write each word next to the correct vowel sound group."
+        },
+        {
+          "id": "p34-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            83.5728,
+            65.6919,
+            516.905,
+            168.5962
+          ],
+          "parts": [
+            [
+              83.5728,
+              65.6919,
+              516.905,
+              168.5962
+            ]
+          ],
+          "headline": "Look at the words in the box. Listen and put each word under the correct sound group."
+        }
+      ]
+    },
+    "35": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.0237,
+          104.6628
+        ],
+        [
+          108.6628,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p35-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            45.0237,
+            516.443,
+            511.7198,
+            702.6417
+          ],
+          "parts": [
+            [
+              45.0237,
+              516.443,
+              511.7198,
+              702.6417
+            ]
+          ],
+          "headline": "Read the briefing announcement. Circle the correct option."
+        },
+        {
+          "id": "p35-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            50.2438,
+            337.1368,
+            505.6655,
+            514.5215
+          ],
+          "parts": [
+            [
+              50.2438,
+              337.1368,
+              505.6655,
+              514.5215
+            ]
+          ],
+          "headline": "Complete the dialogues using the correct future form."
+        },
+        {
+          "id": "p35-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            51.0228,
+            212.0941,
+            372.6835,
+            325.567
+          ],
+          "parts": [
+            [
+              51.0228,
+              212.0941,
+              372.6835,
+              325.567
+            ]
+          ],
+          "headline": "We’re going to restore the old bridge."
+        },
+        {
+          "id": "p35-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            50.0237,
+            60.9638,
+            505.8325,
+            199.69
+          ],
+          "parts": [
+            [
+              50.0237,
+              60.9638,
+              505.8325,
+              199.69
+            ]
+          ],
+          "headline": "The city is crowded and fast-paced; ____________, rural areas are calm and spacious."
+        }
+      ]
+    },
+    "36": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.1969,
+          297.811
+        ],
+        [
+          301.811,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p36-5",
+          "label": "5",
+          "column": 0,
+          "rect": [
+            65.2669,
+            583.4396,
+            516.6825,
+            721.5539
+          ],
+          "parts": [
+            [
+              65.2669,
+              583.4396,
+              516.6825,
+              721.5539
+            ]
+          ],
+          "headline": "Join the sentences using the words in brackets."
+        },
+        {
+          "id": "p36-6",
+          "label": "6",
+          "column": 0,
+          "rect": [
+            59.1969,
+            285.3429,
+            536.8099,
+            574.7067
+          ],
+          "parts": [
+            [
+              59.1969,
+              285.3429,
+              536.8099,
+              574.7067
+            ]
+          ],
+          "headline": "Read the story and complete it with the correct time linker."
+        },
+        {
+          "id": "p36-7",
+          "label": "7",
+          "column": 0,
+          "rect": [
+            64.1969,
+            176.9398,
+            400.1702,
+            282.2359
+          ],
+          "parts": [
+            [
+              64.1969,
+              176.9398,
+              400.1702,
+              282.2359
+            ]
+          ],
+          "headline": "Read the story again and put the events (1-6) in the correct order."
+        },
+        {
+          "id": "p36-8",
+          "label": "8",
+          "column": 0,
+          "rect": [
+            64.321,
+            67.4162,
+            533.653,
+            172.7124
+          ],
+          "parts": [
+            [
+              64.321,
+              67.4162,
+              533.653,
+              172.7124
+            ]
+          ],
+          "headline": "Match the sentence halves. One is extra."
+        }
+      ]
+    },
+    "37": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.0237,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p37-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            51.3567,
+            543.7241,
+            504.2189,
+            702.3636
+          ],
+          "parts": [
+            [
+              51.3567,
+              543.7241,
+              504.2189,
+              702.3636
+            ]
+          ]
+        },
+        {
+          "id": "p37-b",
+          "label": "b",
+          "column": 0,
+          "rect": [
+            57.2237,
+            423.5764,
+            506.2776,
+            534.6018
+          ],
+          "parts": [
+            [
+              57.2237,
+              423.5764,
+              506.2776,
+              534.6018
+            ]
+          ],
+          "headline": "Write each adjective next to its meaning below. Two are extra."
+        },
+        {
+          "id": "p37-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            50.8559,
+            296.2532,
+            504.7196,
+            417.7915
+          ],
+          "parts": [
+            [
+              50.8559,
+              296.2532,
+              504.7196,
+              417.7915
+            ]
+          ],
+          "headline": "Complete the sentences with the correct words below."
+        },
+        {
+          "id": "p37-v4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            50.0275,
+            152.0203,
+            504.7753,
+            293.1382
+          ],
+          "parts": [
+            [
+              50.0275,
+              152.0203,
+              504.7753,
+              293.1382
+            ]
+          ]
+        },
+        {
+          "id": "p37-v5",
+          "label": null,
+          "column": 0,
+          "rect": [
+            50.8559,
+            64.4125,
+            510.1725,
+            145.7904
+          ],
+          "parts": [
+            [
+              50.8559,
+              64.4125,
+              510.1725,
+              145.7904
+            ]
+          ]
+        }
+      ]
+    },
+    "38": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.1969,
+          295.6436
+        ],
+        [
+          299.6436,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p38-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            65.4895,
+            217.434,
+            448.0771,
+            270.8886
+          ],
+          "parts": [
+            [
+              65.4895,
+              217.434,
+              448.0771,
+              270.8886
+            ]
+          ],
+          "headline": "Choose the best summary of all three paragraphs above."
+        },
+        {
+          "id": "p38-3",
+          "label": "3",
+          "column": 0,
+          "rect": [
+            63.8202,
+            161.6988,
+            358.3281,
+            214.5416
+          ],
+          "parts": [
+            [
+              63.8202,
+              161.6988,
+              358.3281,
+              214.5416
+            ]
+          ],
+          "headline": "Find the details. Write A, B or C."
+        },
+        {
+          "id": "p38-4",
+          "label": "4",
+          "column": 0,
+          "rect": [
+            64.2097,
+            62.9107,
+            372.6835,
+            157.9164
+          ],
+          "parts": [
+            [
+              64.2097,
+              62.9107,
+              372.6835,
+              157.9164
+            ]
+          ],
+          "headline": "Write true (T) or false (F) next to the statements."
+        }
+      ]
+    },
+    "39": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.0237,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p39-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            51.4123,
+            397.0994,
+            470.1109,
+            700.6949
+          ],
+          "parts": [
+            [
+              51.4123,
+              397.0994,
+              470.1109,
+              700.6949
+            ]
+          ],
+          "headline": "Read the sample promo leaflet. Underline the future forms. Circle the adjectives."
+        },
+        {
+          "id": "p39-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            51.5236,
+            244.1891,
+            500.3796,
+            384.0278
+          ],
+          "parts": [
+            [
+              51.5236,
+              244.1891,
+              500.3796,
+              384.0278
+            ]
+          ],
+          "headline": "Plan your leaflet. Fill in the sections."
+        },
+        {
+          "id": "p39-3",
+          "label": "3",
+          "column": 0,
+          "rect": [
+            50.8002,
+            135.7224,
+            500.7691,
+            239.9617
+          ],
+          "parts": [
+            [
+              50.8002,
+              135.7224,
+              500.7691,
+              239.9617
+            ]
+          ],
+          "headline": "Write your promo leaflet to describe your neighbourhood by following the steps below."
+        },
+        {
+          "id": "p39-4",
+          "label": "4",
+          "column": 0,
+          "rect": [
+            51.4679,
+            59.4064,
+            469.7771,
+            126.7114
+          ],
+          "parts": [
+            [
+              51.4679,
+              59.4064,
+              469.7771,
+              126.7114
+            ]
+          ],
+          "headline": "Check your leaflet. Tick ( ✓ ) what you have included."
+        }
+      ]
+    },
+    "40": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.1969,
+          327.1177
+        ],
+        [
+          331.1177,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p40-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            65.1556,
+            476.3635,
+            511.4522,
+            701.0843
+          ],
+          "parts": [
+            [
+              65.1556,
+              476.3635,
+              511.4522,
+              701.0843
+            ]
+          ],
+          "headline": "Listen to the dialogue between Chef Cedric and Dalia to choose the correct answer."
+        },
+        {
+          "id": "p40-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            63.7646,
+            382.6928,
+            512.1755,
+            473.0261
+          ],
+          "parts": [
+            [
+              63.7646,
+              382.6928,
+              512.1755,
+              473.0261
+            ]
+          ],
+          "headline": "Cedric said the chefs he watched worked very f _________ ."
+        },
+        {
+          "id": "p40-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            82.6825,
+            275.0604,
+            514.5125,
+            348.8734
+          ],
+          "parts": [
+            [
+              82.6825,
+              275.0604,
+              514.5125,
+              348.8734
+            ]
+          ],
+          "headline": "Listen to the words and write them in the correct row based on the vowel sound of the underlined letter."
+        },
+        {
+          "id": "p40-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            83.4059,
+            185.1165,
+            513.5109,
+            267.2731
+          ],
+          "parts": [
+            [
+              83.4059,
+              185.1165,
+              513.5109,
+              267.2731
+            ]
+          ],
+          "headline": "Listen to the words and write them in the correct column based on the key consonant sound."
+        },
+        {
+          "id": "p40-3",
+          "label": "3",
+          "column": 0,
+          "rect": [
+            83.1833,
+            65.525,
+            516.905,
+            181.2785
+          ],
+          "parts": [
+            [
+              83.1833,
+              65.525,
+              516.905,
+              181.2785
+            ]
+          ],
+          "headline": "Listen to the sentences to choose the option that has the same sound as the words in bold.",
+          "items": [
+            {
+              "id": "p40-3-1",
+              "label": "1",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                95.2235,
+                124.953,
+                423.1335,
+                156.883
+              ],
+              "text": "At the international event, people listened to each country’s . 1 hym n compute autumn nice a b c"
+            },
+            {
+              "id": "p40-3-2",
+              "label": "2",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                95.2235,
+                98.063,
+                512.7744,
+                130.053
+              ],
+              "text": "The doctor said he has been studying for ten years. 2  p sychology Audio 6.5 place pizza pneumonia a b c "
+            },
+            {
+              "id": "p40-3-3",
+              "label": "3",
+              "number": 3,
+              "partIndex": 0,
+              "rect": [
+                95.2235,
+                71.293,
+                375.0635,
+                103.223
+              ],
+              "text": "We work together to solve the global problem. 3 shou l d would lively all a b c"
+            }
+          ]
+        }
+      ]
+    },
+    "41": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.0237,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p41-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            47.045,
+            541.062,
+            512.525,
+            702.0855
+          ],
+          "parts": [
+            [
+              47.045,
+              541.062,
+              512.525,
+              702.0855
+            ]
+          ],
+          "headline": "Read the short blog entry from a food festival and fill in the blanks with the correct modals."
+        },
+        {
+          "id": "p41-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            50.2995,
+            358.6632,
+            504.8866,
+            535.1024
+          ],
+          "parts": [
+            [
+              50.2995,
+              358.6632,
+              504.8866,
+              535.1024
+            ]
+          ],
+          "headline": "Match the situations (1–5) to the modal functions (a–e)."
+        },
+        {
+          "id": "p41-3",
+          "label": "3",
+          "column": 0,
+          "rect": [
+            47.045,
+            176.019,
+            512.525,
+            347.5384
+          ],
+          "parts": [
+            [
+              47.045,
+              176.019,
+              512.525,
+              347.5384
+            ]
+          ],
+          "headline": "Look at the rules from a cooking workshop about world heritage. Complete with have to , don’t have to"
+        },
+        {
+          "id": "p41-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            49.7987,
+            75.9823,
+            506.3332,
+            169.4306
+          ],
+          "parts": [
+            [
+              49.7987,
+              75.9823,
+              506.3332,
+              169.4306
+            ]
+          ],
+          "headline": "In the future, chefs will have to / will be able to use AI tools to design healthier menus."
+        }
+      ]
+    },
+    "42": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.1969,
+          220.1869
+        ],
+        [
+          224.1869,
+          324.1869
+        ],
+        [
+          328.1869,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p42-5",
+          "label": "5",
+          "column": 0,
+          "rect": [
+            65.2669,
+            572.3705,
+            388.4299,
+            727.2832
+          ],
+          "parts": [
+            [
+              65.2669,
+              572.3705,
+              388.4299,
+              727.2832
+            ]
+          ],
+          "headline": "Rewrite the sentences with the same meaning by using a modal."
+        },
+        {
+          "id": "p42-6",
+          "label": "6",
+          "column": 0,
+          "rect": [
+            64.7105,
+            379.1885,
+            500.804,
+            564.9725
+          ],
+          "parts": [
+            [
+              64.7105,
+              379.1885,
+              500.804,
+              564.9725
+            ]
+          ],
+          "headline": "Read the different conversations at an international youth festival. Choose the correct option."
+        },
+        {
+          "id": "p42-7",
+          "label": "7",
+          "column": 0,
+          "rect": [
+            63.6533,
+            238.9049,
+            541.7209,
+            373.0142
+          ],
+          "parts": [
+            [
+              63.6533,
+              238.9049,
+              541.7209,
+              373.0142
+            ]
+          ],
+          "headline": "Read the post from an international event app and answer the questions by using modals."
+        },
+        {
+          "id": "p42-8",
+          "label": "8",
+          "column": 0,
+          "rect": [
+            64.2654,
+            61.0751,
+            520.4104,
+            233.8431
+          ],
+          "parts": [
+            [
+              64.2654,
+              61.0751,
+              520.4104,
+              233.8431
+            ]
+          ],
+          "headline": "Read the problems and write solutions by using modals as in the example."
+        }
+      ]
+    },
+    "43": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.0162,
+          111.8762
+        ],
+        [
+          115.8762,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p43-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            49.7431,
+            468.4093,
+            506.055,
+            702.308
+          ],
+          "parts": [
+            [
+              49.7431,
+              468.4093,
+              506.055,
+              702.308
+            ]
+          ],
+          "headline": "Read the text about the Global Fusion Festival and complete it with the correct words below. One is extra."
+        },
+        {
+          "id": "p43-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            50.8559,
+            352.7115,
+            498.766,
+            460.0101
+          ],
+          "parts": [
+            [
+              50.8559,
+              352.7115,
+              498.766,
+              460.0101
+            ]
+          ],
+          "headline": "Circle the correct word in each sentence."
+        },
+        {
+          "id": "p43-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            50.8559,
+            215.9322,
+            504.2745,
+            346.0366
+          ],
+          "parts": [
+            [
+              50.8559,
+              215.9322,
+              504.2745,
+              346.0366
+            ]
+          ],
+          "headline": "Some traditions are _____________ from one generation to another."
+        },
+        {
+          "id": "p43-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            50.0262,
+            60.8526,
+            391.6015,
+            211.0929
+          ],
+          "parts": [
+            [
+              50.0262,
+              60.8526,
+              391.6015,
+              211.0929
+            ]
+          ],
+          "headline": "Sare This dish looks small."
+        }
+      ]
+    },
+    "44": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.1969,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p44-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            64.1969,
+            640.2317,
+            402.0063,
+            704.7555
+          ],
+          "parts": [
+            [
+              64.1969,
+              640.2317,
+              402.0063,
+              704.7555
+            ]
+          ],
+          "headline": "Look at the title and tick ( ✓ ) what you think the text will focus on."
+        },
+        {
+          "id": "p44-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            65.4338,
+            204.0287,
+            422.0371,
+            418.4034
+          ],
+          "parts": [
+            [
+              65.4338,
+              204.0287,
+              422.0371,
+              418.4034
+            ]
+          ],
+          "headline": "Read the text and choose the correct option."
+        },
+        {
+          "id": "p44-v3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            65.4338,
+            114.1403,
+            399.3912,
+            199.8569
+          ],
+          "parts": [
+            [
+              65.4338,
+              114.1403,
+              399.3912,
+              199.8569
+            ]
+          ]
+        },
+        {
+          "id": "p44-v4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            64.1969,
+            62.132,
+            500.8351,
+            111.8041
+          ],
+          "parts": [
+            [
+              64.1969,
+              62.132,
+              500.8351,
+              111.8041
+            ]
+          ]
+        }
+      ]
+    },
+    "45": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.0162,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p45-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            50.8002,
+            479.8678,
+            507.446,
+            702.0299
+          ],
+          "parts": [
+            [
+              50.8002,
+              479.8678,
+              507.446,
+              702.0299
+            ]
+          ],
+          "headline": "Read the text from a Global Culture Day booth and complete it with the correct words from below. One is extra."
+        },
+        {
+          "id": "p45-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            49.7987,
+            354.3246,
+            504.9978,
+            469.2993
+          ],
+          "parts": [
+            [
+              49.7987,
+              354.3246,
+              504.9978,
+              469.2993
+            ]
+          ],
+          "headline": "Read the text again and answer the questions."
+        },
+        {
+          "id": "p45-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            51.4123,
+            262.7119,
+            482.0181,
+            337.9711
+          ],
+          "parts": [
+            [
+              51.4123,
+              262.7119,
+              482.0181,
+              337.9711
+            ]
+          ],
+          "headline": "This food might / must be part of everyday life."
+        },
+        {
+          "id": "p45-4",
+          "label": "4",
+          "column": 0,
+          "rect": [
+            50.3551,
+            187.3971,
+            506.9758,
+            250.6415
+          ],
+          "parts": [
+            [
+              50.3551,
+              187.3971,
+              506.9758,
+              250.6415
+            ]
+          ],
+          "headline": "Complete the sentences with your own ideas."
+        },
+        {
+          "id": "p45-5",
+          "label": "5",
+          "column": 0,
+          "rect": [
+            51.1341,
+            86.7734,
+            491.9778,
+            174.548
+          ],
+          "parts": [
+            [
+              51.1341,
+              86.7734,
+              491.9778,
+              174.548
+            ]
+          ],
+          "headline": "Now, write a culture booth text that visitors will read at your school’s Global Cultures Day ."
+        }
+      ]
+    },
+    "46": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.1969,
+          220.3747
+        ],
+        [
+          224.3747,
+          334.3747
+        ],
+        [
+          338.3747,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p46-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            62.7074,
+            542.3891,
+            512.8989,
+            639.9536
+          ],
+          "parts": [
+            [
+              62.7074,
+              542.3891,
+              512.8989,
+              639.9536
+            ]
+          ],
+          "headline": "Listen again and decide if the statements are true (T) or false (F)."
+        }
+      ]
+    },
+    "47": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.0237,
+          111.8862
+        ],
+        [
+          115.8862,
+          250.6378
+        ],
+        [
+          254.6378,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p47-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            51.1341,
+            581.604,
+            504.8309,
+            702.4749
+          ],
+          "parts": [
+            [
+              51.1341,
+              581.604,
+              504.8309,
+              702.4749
+            ]
+          ],
+          "headline": "Match the sentence halves to make meaningful sentences. One is extra."
+        },
+        {
+          "id": "p47-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            51.0785,
+            367.3406,
+            500.3527,
+            567.5312
+          ],
+          "parts": [
+            [
+              51.0785,
+              367.3406,
+              500.3527,
+              567.5312
+            ]
+          ],
+          "headline": "Complete the sentences using who , which , or that ."
+        },
+        {
+          "id": "p47-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            50.4108,
+            107.0758,
+            505.0535,
+            352.8783
+          ],
+          "parts": [
+            [
+              50.4108,
+              107.0758,
+              505.0535,
+              352.8783
+            ]
+          ],
+          "headline": "Emma Have you seen the coastal cliff near the bay?"
+        },
+        {
+          "id": "p47-6",
+          "label": "6",
+          "column": 0,
+          "rect": [
+            69.8295,
+            60.9638,
+            505.7212,
+            106.5758
+          ],
+          "parts": [
+            [
+              69.8295,
+              60.9638,
+              505.7212,
+              106.5758
+            ]
+          ],
+          "headline": "Yes, the tornado completely destroyed the small town. It was categorized as a Daniel"
+        }
+      ]
+    },
+    "48": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.1969,
+          222.4409
+        ],
+        [
+          226.4409,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p48-a",
+          "label": "a",
+          "column": 1,
+          "rect": [
+            63.2638,
+            623.6557,
+            517.0719,
+            721.4426
+          ],
+          "parts": [
+            [
+              63.2638,
+              623.6557,
+              517.0719,
+              721.4426
+            ]
+          ],
+          "headline": "who developed a smart wildfire sensor that helps doctors monitor patients remotely b that destroyed several houses c which live in this forest are in danger bec"
+        },
+        {
+          "id": "p48-b",
+          "label": "b",
+          "column": 0,
+          "rect": [
+            71.61,
+            516.2459,
+            517.3501,
+            614.0328
+          ],
+          "parts": [
+            [
+              71.61,
+              516.2459,
+              517.3501,
+              614.0328
+            ]
+          ],
+          "headline": "Now, write your own complete sentences using the relative clauses above."
+        },
+        {
+          "id": "p48-v3",
+          "label": null,
+          "column": 1,
+          "rect": [
+            64.7661,
+            380.8016,
+            505.4986,
+            505.8442
+          ],
+          "parts": [
+            [
+              64.7661,
+              380.8016,
+              505.4986,
+              505.8442
+            ]
+          ]
+        },
+        {
+          "id": "p48-6",
+          "label": "6",
+          "column": 0,
+          "rect": [
+            63.7646,
+            182.1128,
+            518.0735,
+            370.9561
+          ],
+          "parts": [
+            [
+              63.7646,
+              182.1128,
+              518.0735,
+              370.9561
+            ]
+          ],
+          "headline": "Combine two sentences using who , which , or that . Add commas where necessary. Then, rewrite them as a smoother and more connected paragraph."
+        },
+        {
+          "id": "p48-7",
+          "label": "7",
+          "column": 0,
+          "rect": [
+            64.8218,
+            72.5336,
+            462.5994,
+            172.4342
+          ],
+          "parts": [
+            [
+              64.8218,
+              72.5336,
+              462.5994,
+              172.4342
+            ]
+          ],
+          "headline": "Complete the sentences using Defining or Non-defining Relative Clauses ."
+        }
+      ]
+    },
+    "49": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.0162,
+          388.3807
+        ],
+        [
+          392.3807,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p49-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            51.0228,
+            596.3444,
+            505.1648,
+            701.9186
+          ],
+          "parts": [
+            [
+              51.0228,
+              596.3444,
+              505.1648,
+              701.9186
+            ]
+          ],
+          "headline": "Look at the pictures and write the names of the disasters under each picture."
+        },
+        {
+          "id": "p49-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            50.8002,
+            483.2053,
+            504.8866,
+            591.1713
+          ],
+          "parts": [
+            [
+              50.8002,
+              483.2053,
+              504.8866,
+              591.1713
+            ]
+          ],
+          "headline": "Read the short descriptions and match the natural disasters to the descriptions. One is extra."
+        },
+        {
+          "id": "p49-3",
+          "label": "3",
+          "column": 0,
+          "rect": [
+            50.4108,
+            354.8808,
+            500.1571,
+            476.4191
+          ],
+          "parts": [
+            [
+              50.4108,
+              354.8808,
+              500.1571,
+              476.4191
+            ]
+          ],
+          "headline": "Circle the correct adjective to complete the sentences."
+        },
+        {
+          "id": "p49-v4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            50.522,
+            240.4623,
+            506.1107,
+            350.5421
+          ],
+          "parts": [
+            [
+              50.522,
+              240.4623,
+              506.1107,
+              350.5421
+            ]
+          ]
+        },
+        {
+          "id": "p49-v5",
+          "label": null,
+          "column": 0,
+          "rect": [
+            49.5761,
+            65.0244,
+            505.8881,
+            232.2856
+          ],
+          "parts": [
+            [
+              49.5761,
+              65.0244,
+              505.8881,
+              232.2856
+            ]
+          ]
+        }
+      ]
+    },
+    "50": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.1969,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p50-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            63.5977,
+            373.7929,
+            517.3501,
+            460.6776
+          ],
+          "parts": [
+            [
+              63.5977,
+              373.7929,
+              517.3501,
+              460.6776
+            ]
+          ],
+          "headline": "Read the text again to fill in the blanks using the highlighted words. One is extra."
+        },
+        {
+          "id": "p50-3",
+          "label": "3",
+          "column": 0,
+          "rect": [
+            64.8218,
+            203.0274,
+            489.0289,
+            367.9524
+          ],
+          "parts": [
+            [
+              64.8218,
+              203.0274,
+              489.0289,
+              367.9524
+            ]
+          ],
+          "headline": "Read the text in exercise 1 carefully and choose the correct option."
+        },
+        {
+          "id": "p50-4",
+          "label": "4",
+          "column": 0,
+          "rect": [
+            64.4323,
+            61.1863,
+            515.0132,
+            200.135
+          ],
+          "parts": [
+            [
+              64.4323,
+              61.1863,
+              515.0132,
+              200.135
+            ]
+          ],
+          "headline": "Read again and answer the questions."
+        }
+      ]
+    },
+    "51": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.0237,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p51-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            50.0213,
+            633.6676,
+            499.9345,
+            701.0843
+          ],
+          "parts": [
+            [
+              50.0213,
+              633.6676,
+              499.9345,
+              701.0843
+            ]
+          ],
+          "headline": "Answer the questions."
+        },
+        {
+          "id": "p51-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            50.0237,
+            340.1405,
+            505.276,
+            626.8819
+          ],
+          "parts": [
+            [
+              50.0237,
+              340.1405,
+              505.276,
+              626.8819
+            ]
+          ],
+          "headline": "Project Summary Earthquake GreenGuard is a simple, solar-powered sensor network that helps protect forests and wildlife from wildfires. Small devices placed on "
+        },
+        {
+          "id": "p51-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            50.0237,
+            59.1283,
+            504.7753,
+            329.405
+          ],
+          "parts": [
+            [
+              50.0237,
+              59.1283,
+              504.7753,
+              329.405
+            ]
+          ],
+          "headline": "Project Summary Earthquake"
+        }
+      ]
+    },
+    "52": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.1969,
+          220.3726
+        ],
+        [
+          224.3726,
+          295.9526
+        ],
+        [
+          299.9526,
+          386.1027
+        ],
+        [
+          390.1027,
+          442.1027
+        ],
+        [
+          446.1027,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p52-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            64.2654,
+            634.0018,
+            349.7038,
+            702.5305
+          ],
+          "parts": [
+            [
+              64.2654,
+              634.0018,
+              349.7038,
+              702.5305
+            ]
+          ],
+          "headline": "Listen to the audio to tick ( ✓ ) what each part is."
+        },
+        {
+          "id": "p52-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            63.4864,
+            365.0044,
+            390.9338,
+            628.495
+          ],
+          "parts": [
+            [
+              63.4864,
+              365.0044,
+              390.9338,
+              628.495
+            ]
+          ],
+          "headline": "Listen to the audio again and choose the correct option."
+        },
+        {
+          "id": "p52-v3",
+          "label": null,
+          "column": 1,
+          "rect": [
+            63.3195,
+            265.8269,
+            512.7319,
+            361.4444
+          ],
+          "parts": [
+            [
+              63.3195,
+              265.8269,
+              512.7319,
+              361.4444
+            ]
+          ]
+        },
+        {
+          "id": "p52-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            81.1246,
+            64.9688,
+            517.5727,
+            154.8015
+          ],
+          "parts": [
+            [
+              81.1246,
+              64.9688,
+              517.5727,
+              154.8015
+            ]
+          ],
+          "headline": "Listen to the sentences and choose the option with the same pronunciation pattern as the words in bold."
+        }
+      ]
+    },
+    "53": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.0162,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p53-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            51.3567,
+            573.9279,
+            444.1266,
+            702.3636
+          ],
+          "parts": [
+            [
+              51.3567,
+              573.9279,
+              444.1266,
+              702.3636
+            ]
+          ],
+          "headline": "Circle the correct option."
+        },
+        {
+          "id": "p53-v2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            48.7972,
+            417.2909,
+            506.055,
+            571.4248
+          ],
+          "parts": [
+            [
+              48.7972,
+              417.2909,
+              506.055,
+              571.4248
+            ]
+          ]
+        },
+        {
+          "id": "p53-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            51.4123,
+            248.7503,
+            506.5001,
+            410.8941
+          ],
+          "parts": [
+            [
+              51.4123,
+              248.7503,
+              506.5001,
+              410.8941
+            ]
+          ],
+          "headline": "You are designing class rules for a new school app."
+        },
+        {
+          "id": "p53-4",
+          "label": "4",
+          "column": 0,
+          "rect": [
+            50.0237,
+            62.2988,
+            510.0545,
+            244.4673
+          ],
+          "parts": [
+            [
+              50.0237,
+              62.2988,
+              510.0545,
+              244.4673
+            ]
+          ],
+          "headline": "Complete the sentences with the correct form of the verbs in brackets."
+        }
+      ]
+    },
+    "54": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.1869,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p54-5",
+          "label": "5",
+          "column": 0,
+          "rect": [
+            65.3225,
+            628.05,
+            443.6549,
+            721.7208
+          ],
+          "parts": [
+            [
+              65.3225,
+              628.05,
+              443.6549,
+              721.7208
+            ]
+          ],
+          "headline": "Complete the mini dialogues with the correct form of the verbs in brackets."
+        },
+        {
+          "id": "p54-6",
+          "label": "6",
+          "column": 0,
+          "rect": [
+            63.3195,
+            473.6379,
+            519.7427,
+            625.6582
+          ],
+          "parts": [
+            [
+              63.3195,
+              473.6379,
+              519.7427,
+              625.6582
+            ]
+          ],
+          "headline": "Read the sentences and tick ( ✓ ) the correct box."
+        },
+        {
+          "id": "p54-7",
+          "label": "7",
+          "column": 0,
+          "rect": [
+            65.3225,
+            306.8773,
+            515.9035,
+            470.9124
+          ],
+          "parts": [
+            [
+              65.3225,
+              306.8773,
+              515.9035,
+              470.9124
+            ]
+          ],
+          "headline": "Rewrite the sentences with I wish ."
+        },
+        {
+          "id": "p54-8",
+          "label": "8",
+          "column": 0,
+          "rect": [
+            62.8187,
+            177.941,
+            515.4583,
+            303.4843
+          ],
+          "parts": [
+            [
+              62.8187,
+              177.941,
+              515.4583,
+              303.4843
+            ]
+          ],
+          "headline": "Write Yes-no questions for the situations below with wish, addressing the person in each situation as in the example."
+        },
+        {
+          "id": "p54-9",
+          "label": "9",
+          "column": 0,
+          "rect": [
+            64.321,
+            59.6289,
+            515.7366,
+            175.0486
+          ],
+          "parts": [
+            [
+              64.321,
+              59.6289,
+              515.7366,
+              175.0486
+            ]
+          ],
+          "headline": "Write sentences using wish for the captions below as in the example."
+        }
+      ]
+    },
+    "55": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.0236,
+          326.0236
+        ],
+        [
+          330.0236,
+          413.019
+        ],
+        [
+          417.019,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p55-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            50.6333,
+            596.845,
+            505.443,
+            701.6405
+          ],
+          "parts": [
+            [
+              50.6333,
+              596.845,
+              505.443,
+              701.6405
+            ]
+          ],
+          "headline": "Complete the sentences with the words below. One is extra."
+        },
+        {
+          "id": "p55-v2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            50.1326,
+            425.0226,
+            504.9422,
+            589.7807
+          ],
+          "parts": [
+            [
+              50.1326,
+              425.0226,
+              504.9422,
+              589.7807
+            ]
+          ]
+        },
+        {
+          "id": "p55-v3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            51.2454,
+            223.2189,
+            504.3858,
+            416.7903
+          ],
+          "parts": [
+            [
+              51.2454,
+              223.2189,
+              504.3858,
+              416.7903
+            ]
+          ]
+        },
+        {
+          "id": "p55-v4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            50.2995,
+            65.4138,
+            505.7212,
+            215.8209
+          ],
+          "parts": [
+            [
+              50.2995,
+              65.4138,
+              505.7212,
+              215.8209
+            ]
+          ]
+        }
+      ]
+    },
+    "56": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.1969,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p56-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            64.6549,
+            637.3392,
+            454.6984,
+            703.8655
+          ],
+          "parts": [
+            [
+              64.6549,
+              637.3392,
+              454.6984,
+              703.8655
+            ]
+          ],
+          "headline": "Look at the picture and the title. Tick ( ✓ ) what you expect to read in the text."
+        },
+        {
+          "id": "p56-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            65.3225,
+            286.7415,
+            455.6443,
+            339.9736
+          ],
+          "parts": [
+            [
+              65.3225,
+              286.7415,
+              455.6443,
+              339.9736
+            ]
+          ],
+          "headline": "Read the text to match the topics to the paragraphs. One is extra."
+        },
+        {
+          "id": "p56-3",
+          "label": "3",
+          "column": 0,
+          "rect": [
+            64.4879,
+            60.1851,
+            403.7312,
+            281.5684
+          ],
+          "parts": [
+            [
+              64.4879,
+              60.1851,
+              403.7312,
+              281.5684
+            ]
+          ],
+          "headline": "Read the text carefully to choose the correct option."
+        }
+      ]
+    },
+    "57": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.0237,
+          277.0113
+        ],
+        [
+          281.0113,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p57-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            49.7987,
+            401.6049,
+            518.0698,
+            701.6405
+          ],
+          "parts": [
+            [
+              49.7987,
+              401.6049,
+              518.0698,
+              701.6405
+            ]
+          ],
+          "headline": "Read the model leaflet. Underline one sentence that explains why digital privacy is important."
+        },
+        {
+          "id": "p57-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            45.0237,
+            54.2082,
+            515.7648,
+            391.4257
+          ],
+          "parts": [
+            [
+              45.0237,
+              54.2082,
+              515.7648,
+              391.4257
+            ]
+          ],
+          "headline": "Choose a topic below and write your leaflet, completing the template."
+        }
+      ]
+    }
+  },
+  "engine": "vision",
+  "checkpoint": "a9a76c4979dceebed2adb9cebfad673021ed4685e05a362dd3843b781b38fab7",
+  "conf": 0.7,
+  "icons": "bind"
+}

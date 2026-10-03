@@ -3,7 +3,7 @@
   "bookId": "7fad03e9-392b-45a1-ba90-503059d9e41e",
   "fingerprint": "340477890-33e3d0ad7a8f2b20dcd3f8b66ab4e522",
   "profile": "c7de24295a4b",
-  "builtAt": "2026-10-03T06:03:31.975Z",
+  "builtAt": "2026-10-03T07:59:43.218Z",
   "pageCount": 329,
   "calibration": {
     "enabled": true,
@@ -411,17 +411,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            103.2432,
-            384.7478,
-            532.1442,
-            448.8337
+            103.4757,
+            75.6481,
+            535.7484,
+            220.0883
           ],
           "parts": [
             [
-              103.2432,
-              384.7478,
-              532.1442,
-              448.8337
+              103.4757,
+              75.6481,
+              535.7484,
+              220.0883
             ]
           ]
         }
@@ -446,17 +446,17 @@
           "label": null,
           "column": 1,
           "rect": [
-            37.026,
-            435.6447,
-            540.8641,
-            743.5243
+            35.4026,
+            436.9229,
+            542.3174,
+            749.9798
           ],
           "parts": [
             [
-              37.026,
-              435.6447,
-              540.8641,
-              743.5243
+              35.4026,
+              436.9229,
+              542.3174,
+              749.9798
             ]
           ]
         }
@@ -485,17 +485,17 @@
           "label": null,
           "column": 2,
           "rect": [
-            70.9797,
-            265.1169,
+            69.7008,
+            265.9303,
             538.9921,
-            319.9647
+            320.139
           ],
           "parts": [
             [
-              70.9797,
-              265.1169,
+              69.7008,
+              265.9303,
               538.9921,
-              319.9647
+              320.139
             ]
           ]
         },
@@ -504,17 +504,17 @@
           "label": null,
           "column": 2,
           "rect": [
-            68.5963,
-            247.8608,
-            536.0972,
-            261.8632
+            68.0149,
+            246.4664,
+            536.911,
+            261.2241
           ],
           "parts": [
             [
-              68.5963,
-              247.8608,
-              536.0972,
-              261.8632
+              68.0149,
+              246.4664,
+              536.911,
+              261.2241
             ]
           ]
         },
@@ -523,17 +523,17 @@
           "label": null,
           "column": 2,
           "rect": [
-            70.7472,
-            216.8927,
-            530.4584,
-            244.4909
+            69.2357,
+            216.3117,
+            530.8071,
+            243.7356
           ],
           "parts": [
             [
-              70.7472,
-              216.8927,
-              530.4584,
-              244.4909
+              69.2357,
+              216.3117,
+              530.8071,
+              243.7356
             ]
           ]
         },
@@ -542,17 +542,17 @@
           "label": null,
           "column": 2,
           "rect": [
-            68.8288,
-            183.7749,
-            516.9135,
-            209.2233
+            68.7125,
+            183.6587,
+            518.3307,
+            209.1652
           ],
           "parts": [
             [
-              68.8288,
-              183.7749,
-              516.9135,
-              209.2233
+              68.7125,
+              183.6587,
+              518.3307,
+              209.1652
             ]
           ]
         }
@@ -569,86 +569,83 @@
       ],
       "activities": [
         {
-          "id": "p20-2",
-          "label": "2",
+          "id": "p20-v1",
+          "label": null,
           "column": 0,
           "rect": [
             49.9843,
-            234.8481,
+            612.9122,
             549.0391,
             752.7373
           ],
           "parts": [
             [
               49.9843,
-              234.8481,
+              612.9122,
               549.0391,
               752.7373
-            ]
-          ],
-          "headline": "2. Dönme hareketi yaparak enerji üreten sistemlere örnek veriniz."
-        }
-      ]
-    },
-    "21": {
-      "pageWidth": 595.276,
-      "pageHeight": 841.89,
-      "columns": [
-        [
-          60.6908,
-          571.276
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p21-v1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            55.5165,
-            83.7823,
-            299.4401,
-            169.6562
-          ],
-          "parts": [
-            [
-              55.5165,
-              83.7823,
-              299.4401,
-              169.6562
             ]
           ]
         }
       ]
     },
-    "30": {
+    "36": {
       "pageWidth": 595.276,
       "pageHeight": 841.89,
       "columns": [
         [
-          49.748,
+          47.8583,
+          175.2441
+        ],
+        [
+          179.2441,
+          286.6882
+        ],
+        [
+          290.6882,
           582.3615
         ]
       ],
       "activities": [
         {
-          "id": "p30-v1",
-          "label": null,
-          "column": 0,
+          "id": "p36-a",
+          "label": "a",
+          "column": 2,
           "rect": [
-            54.005,
-            91.258,
-            526.796,
-            441.9777
+            293.7431,
+            199.3461,
+            516.9716,
+            327.4598
           ],
           "parts": [
             [
-              54.005,
-              91.258,
-              526.796,
-              441.9777
+              293.7431,
+              199.3461,
+              516.9716,
+              327.4598
             ]
-          ]
+          ],
+          "headline": "Enerji korunumu ile 20 metre yükseklik farkı sonucu A noktasındaki aracın çizgisel hızı bulunur."
+        },
+        {
+          "id": "p36-b",
+          "label": "b",
+          "column": 2,
+          "rect": [
+            295.1383,
+            86.3388,
+            500.404,
+            192.6063
+          ],
+          "parts": [
+            [
+              295.1383,
+              86.3388,
+              500.404,
+              192.6063
+            ]
+          ],
+          "headline": "Merkezcil kuvveti aracın toplam ağırlığı ile zeminin tepki kuvveti farkı oluşturur."
         }
       ]
     },
@@ -668,14 +665,14 @@
           "column": 0,
           "rect": [
             49.5591,
-            609.0424,
+            607.5088,
             551.2692,
             752.2293
           ],
           "parts": [
             [
               49.5591,
-              609.0424,
+              607.5088,
               551.2692,
               752.2293
             ]
@@ -699,17 +696,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            44.9945,
-            84.189,
-            528.7144,
-            394.044
+            45.6921,
+            83.2013,
+            527.0285,
+            394.6251
           ],
           "parts": [
             [
-              44.9945,
-              84.189,
-              528.7144,
-              394.044
+              45.6921,
+              83.2013,
+              527.0285,
+              394.6251
             ]
           ]
         }
@@ -734,17 +731,17 @@
           "label": null,
           "column": 1,
           "rect": [
-            55.5165,
-            422.9786,
-            524.8776,
-            726.5005
+            56.6791,
+            422.6881,
+            506.3093,
+            785.8802
           ],
           "parts": [
             [
-              55.5165,
-              422.9786,
-              524.8776,
-              726.5005
+              56.6791,
+              422.6881,
+              506.3093,
+              785.8802
             ]
           ]
         },
@@ -753,111 +750,20 @@
           "label": null,
           "column": 0,
           "rect": [
-            50.8077,
-            89.5343,
-            527.7843,
-            398.2273
+            50.5171,
+            88.8575,
+            526.9123,
+            396.31
           ],
           "parts": [
             [
-              50.8077,
-              89.5343,
-              527.7843,
-              398.2273
+              50.5171,
+              88.8575,
+              526.9123,
+              396.31
             ]
           ],
           "headline": "4"
-        }
-      ]
-    },
-    "67": {
-      "pageWidth": 595.276,
-      "pageHeight": 841.89,
-      "columns": [
-        [
-          63.9125,
-          571.276
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p67-q1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            33.7168,
-            425.1864,
-            538.7713,
-            746.7198
-          ],
-          "parts": [
-            [
-              33.7168,
-              425.1864,
-              538.7713,
-              746.7198
-            ]
-          ],
-          "headline": "7",
-          "items": [
-            {
-              "id": "p67--1",
-              "label": "1",
-              "number": 1,
-              "partIndex": 0,
-              "rect": [
-                101.3861,
-                453.4515,
-                115.4701,
-                475.2035
-              ],
-              "text": "1"
-            },
-            {
-              "id": "p67--2",
-              "label": "2",
-              "number": 2,
-              "partIndex": 0,
-              "rect": [
-                74.238,
-                442.3275,
-                204.7881,
-                470.4883
-              ],
-              "text": "2 2 ( =     m.r ve = m.r ) I I Disk Cisim 2"
-            }
-          ]
-        }
-      ]
-    },
-    "74": {
-      "pageWidth": 595.276,
-      "pageHeight": 841.89,
-      "columns": [
-        [
-          50.6542,
-          582.3615
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p74-v1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            43.6574,
-            78.4951,
-            527.1448,
-            496.7093
-          ],
-          "parts": [
-            [
-              43.6574,
-              78.4951,
-              527.1448,
-              496.7093
-            ]
-          ]
         }
       ]
     },
@@ -876,115 +782,83 @@
           "label": null,
           "column": 0,
           "rect": [
-            56.9698,
-            83.3175,
-            540.2246,
-            220.6693
+            55.4583,
+            83.2013,
+            537.9574,
+            221.2503
           ],
           "parts": [
             [
-              56.9698,
-              83.3175,
-              540.2246,
-              220.6693
+              55.4583,
+              83.2013,
+              537.9574,
+              221.2503
             ]
           ]
         }
       ]
     },
-    "78": {
+    "79": {
       "pageWidth": 595.276,
       "pageHeight": 841.89,
       "columns": [
         [
-          50.6929,
-          582.3615
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p78-v1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            55.6929,
-            116.0286,
-            523.5987,
-            391.4876
-          ],
-          "parts": [
-            [
-              55.6929,
-              116.0286,
-              523.5987,
-              391.4876
-            ]
-          ]
-        }
-      ]
-    },
-    "80": {
-      "pageWidth": 595.276,
-      "pageHeight": 841.89,
-      "columns": [
-        [
-          57.7768,
-          582.3615
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p80-q1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            46.2153,
-            422.6028,
-            538.0649,
-            749.102
-          ],
-          "parts": [
-            [
-              46.2153,
-              422.6028,
-              538.0649,
-              749.102
-            ]
-          ],
-          "headline": "4"
-        }
-      ]
-    },
-    "89": {
-      "pageWidth": 595.276,
-      "pageHeight": 841.89,
-      "columns": [
-        [
-          65.1024,
-          483.2871
+          72.564,
+          303.4899
         ],
         [
-          487.2871,
+          307.4899,
           571.276
         ]
       ],
       "activities": [
         {
-          "id": "p89-v1",
+          "id": "p79-v1",
           "label": null,
           "column": 0,
           "rect": [
-            6.1039,
-            81.5744,
-            542.2592,
-            444.418
+            84.0595,
+            419.5506,
+            291.6504,
+            457.2584
           ],
           "parts": [
             [
-              6.1039,
-              81.5744,
-              542.2592,
-              444.418
+              84.0595,
+              419.5506,
+              291.6504,
+              457.2584
+            ]
+          ]
+        }
+      ]
+    },
+    "84": {
+      "pageWidth": 595.276,
+      "pageHeight": 841.89,
+      "columns": [
+        [
+          50.5089,
+          582.3615
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p84-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            50.5089,
+            626.6822,
+            550.5364,
+            765.5495
+          ],
+          "parts": [
+            [
+              50.5089,
+              626.6822,
+              550.5364,
+              765.5495
             ]
           ]
         }
@@ -1009,61 +883,61 @@
       ],
       "activities": [
         {
-          "id": "p92-4",
-          "label": "4",
-          "column": 2,
-          "rect": [
-            295.9522,
-            464.5211,
-            522.3933,
-            697.5079
-          ],
-          "parts": [
-            [
-              295.9522,
-              464.5211,
-              522.3933,
-              697.5079
-            ]
-          ],
-          "headline": "ω açısal hızıyla dönen platform üzerindeki çocuk A noktasından B noktasına yürüyor."
-        },
-        {
           "id": "p92-1",
           "label": "1",
           "column": 0,
           "rect": [
-            55.1095,
-            478.5235,
+            53.8306,
+            478.756,
             288.761,
+            698.4956
+          ],
+          "parts": [
+            [
+              53.8306,
+              478.756,
+              288.761,
+              698.4956
+            ]
+          ],
+          "headline": "Düzgün çembersel hareket yapan cisim, yarıçapı 5 m olan yörünge üzerinde ok yönünde hareket ederek A noktasından B noktasına 6 s'de gelmek- tedir."
+        },
+        {
+          "id": "p92-4",
+          "label": "4",
+          "column": 2,
+          "rect": [
+            296.1266,
+            464.4049,
+            522.4942,
             697.3336
           ],
           "parts": [
             [
-              55.1095,
-              478.5235,
-              288.761,
+              296.1266,
+              464.4049,
+              522.4942,
               697.3336
             ]
           ],
-          "headline": "Düzgün çembersel hareket yapan cisim, yarıçapı 5 m olan yörünge üzerinde ok yönünde hareket ederek A noktasından B noktasına 6 s'de gelmek- tedir."
+          "headline": "ω açısal hızıyla dönen platform üzerindeki çocuk A noktasından B noktasına yürüyor."
         },
         {
           "id": "p92-2",
           "label": "2",
           "column": 0,
           "rect": [
-            54.6445,
-            273.4835,
-            286.1859,
-            448.7175
+            53.7725,
+            274.7618,
+            286.4184,
+            449.4728
           ],
           "parts": [
             [
-              54.6445,
-              273.4835,
-              286.1859,
-              448.7175
+              53.7725,
+              274.7618,
+              286.4184,
+              449.4728
             ]
           ],
           "headline": "X ve Y kasnaklarının yarıçapları sırasıyla 2r ve r'dir."
@@ -1073,17 +947,17 @@
           "label": "5",
           "column": 2,
           "rect": [
-            294.3826,
-            403.747,
-            523.1169,
-            442.3844
+            294.0338,
+            404.2699,
+            521.8548,
+            442.5006
           ],
           "parts": [
             [
-              294.3826,
-              403.747,
-              523.1169,
-              442.3844
+              294.0338,
+              404.2699,
+              521.8548,
+              442.5006
             ]
           ],
           "headline": "Ali Kuşçu, Uluğ Bey ve Galileo Galilei'nin gök cisimlerinin hareketleri ile ilgili görüşlerinde benzer ve farklı yanlar nelerdir?"
@@ -1093,37 +967,56 @@
           "label": "6",
           "column": 2,
           "rect": [
+            296.4754,
+            334.8968,
+            527.9174,
+            376.3231
+          ],
+          "parts": [
+            [
+              296.4754,
+              334.8968,
+              527.9174,
+              376.3231
+            ]
+          ],
+          "headline": "Ay ve gezegenlerin Güneş etrafındaki dönüşleri sırasında açısal momentumları, eylemsizlik mo- mentleri ve çizgisel hızları nasıl değişir?"
+        },
+        {
+          "id": "p92-v6",
+          "label": null,
+          "column": 2,
+          "rect": [
             289.1,
-            87.3265,
-            528.5981,
-            374.9868
+            88.7209,
+            527.4936,
+            314.1545
           ],
           "parts": [
             [
               289.1,
-              87.3265,
-              528.5981,
-              374.9868
+              88.7209,
+              527.4936,
+              314.1545
             ]
-          ],
-          "headline": "sırasında açısal momentumları, eylemsizlik mo- mentleri ve çizgisel hızları nasıl değişir?"
+          ]
         },
         {
           "id": "p92-3",
           "label": "3",
           "column": 0,
           "rect": [
-            54.3538,
-            103.8854,
+            54.2957,
+            104.234,
             278.1899,
-            249.3714
+            249.8943
           ],
           "parts": [
             [
-              54.3538,
-              103.8854,
+              54.2957,
+              104.234,
               278.1899,
-              249.3714
+              249.8943
             ]
           ],
           "headline": "Eşit kütleli ikiz kardeşlerden Cem Ekvator'da, Özge ise İstanbul’da yere göre hareketsiz duru- yorlar."
@@ -1145,108 +1038,21 @@
       ],
       "activities": [
         {
-          "id": "p93-12",
-          "label": "12",
-          "column": 1,
-          "rect": [
-            303.7,
-            493.5718,
-            535.1089,
-            730.5676
-          ],
-          "parts": [
-            [
-              303.7,
-              493.5718,
-              535.1089,
-              730.5676
-            ]
-          ],
-          "headline": "Eşit kütleli K ve L cisimleri, statik sürtünme katsayısının 0,5 olduğu yatay düzlemli tabla üzerine yerleştirilmiştir.",
-          "items": [
-            {
-              "id": "p93-12-1",
-              "label": "1",
-              "number": 1,
-              "partIndex": 0,
-              "rect": [
-                303.7,
-                610.5,
-                486.1285,
-                679.8517
-              ],
-              "text": "2 1 L K Tabla"
-            },
-            {
-              "id": "p93-12-2",
-              "label": "2",
-              "number": 2,
-              "partIndex": 0,
-              "rect": [
-                322.9893,
-                493.5718,
-                535.1089,
-                617.2836
-              ],
-              "text": "=1,5 m r =1,2 m r 2 1 A Dönme ekseni A-B doğrultusu olan metal çubuk sabit 2 rad/s hızla döndürüldüğünde K ve L cisimlerinin tabla üzerindeki durumları 2 ) (g=10 m/s için ne söylenebilir?"
-            }
-          ]
-        },
-        {
-          "id": "p93-13",
-          "label": "13",
-          "column": 1,
-          "rect": [
-            309.5551,
-            238.9713,
-            535.6903,
-            468.7044
-          ],
-          "parts": [
-            [
-              309.5551,
-              238.9713,
-              535.6903,
-              468.7044
-            ]
-          ],
-          "headline": "Yatay sürtünmelerin önemsenmediği masa üzerindeki m kütleli cisim, dönme merkezine çakılmış çiviye bağlı ipin ucunda çembersel hareket yapıyor."
-        },
-        {
-          "id": "p93-v3",
-          "label": null,
-          "column": 0,
-          "rect": [
-            61.37,
-            78.8437,
-            301.8817,
-            276.621
-          ],
-          "parts": [
-            [
-              61.37,
-              78.8437,
-              301.8817,
-              276.621
-            ]
-          ]
-        },
-        {
           "id": "p93-14",
           "label": "14",
           "column": 1,
           "rect": [
-            308.7994,
-            160.9991,
-            523.8313,
-            210.8502
+            309.032,
+            161.0572,
+            525.3282,
+            210.6759
           ],
           "parts": [
             [
-              308.7994,
-              160.9991,
-              523.8313,
-              210.8502
+              309.032,
+              161.0572,
+              525.3282,
+              210.6759
             ]
           ],
           "headline": "Topaç ve jiroskop hızlı bir şekilde döndürül- düğünde devrilmez."
@@ -1256,17 +1062,17 @@
           "label": "15",
           "column": 1,
           "rect": [
-            310.7178,
-            101.6194,
+            310.6015,
+            101.2708,
             521.2734,
-            138.2234
+            138.9206
           ],
           "parts": [
             [
-              310.7178,
-              101.6194,
+              310.6015,
+              101.2708,
               521.2734,
-              138.2234
+              138.9206
             ]
           ],
           "headline": "Bir kalemi ucundan döndürmek ortasından döndürmeye göre daha zordur."
@@ -1288,20 +1094,60 @@
           "label": "16",
           "column": 0,
           "rect": [
-            54.811,
-            202.1349,
+            55.749,
+            202.6579,
             492.0742,
-            229.6169
+            229.9074
           ],
           "parts": [
             [
-              54.811,
-              202.1349,
+              55.749,
+              202.6579,
               492.0742,
-              229.6169
+              229.9074
             ]
           ],
           "headline": "Tablo incelendiğinde yolların geometrik durumuna göre kaza sayıları ile ölü ve yaralı sayıları arasındaki oran aynı mıdır?"
+        },
+        {
+          "id": "p94-17",
+          "label": "17",
+          "column": 0,
+          "rect": [
+            55.4583,
+            177.9647,
+            523.2499,
+            193.4197
+          ],
+          "parts": [
+            [
+              55.4583,
+              177.9647,
+              523.2499,
+              193.4197
+            ]
+          ],
+          "headline": "Düşey eğimsiz viraj ile düşey eğimli viraj verilerinin istatistiksel değerlerini karşılaştırıp yorumlayınız."
+        },
+        {
+          "id": "p94-18",
+          "label": "18",
+          "column": 0,
+          "rect": [
+            55.6327,
+            143.8592,
+            502.4891,
+            170.2954
+          ],
+          "parts": [
+            [
+              55.6327,
+              143.8592,
+              502.4891,
+              170.2954
+            ]
+          ],
+          "headline": "Verilen yollardaki kaza sayıları, ölü sayısı ve yaralı sayısı birlikte düşünüldüğünde hangi yolun daha güvenli olduğunu düşünüyorsunuz? Sebebini açıklayınız."
         }
       ]
     },
@@ -1325,16 +1171,16 @@
           "column": 1,
           "rect": [
             304.3,
-            431.1885,
-            538.2481,
-            714.3573
+            431.1304,
+            537.7249,
+            714.0087
           ],
           "parts": [
             [
               304.3,
-              431.1885,
-              538.2481,
-              714.3573
+              431.1304,
+              537.7249,
+              714.0087
             ]
           ],
           "headline": "m ve 2m kütleli cisimler yarıçapı r ve 3r olan sürtünmesiz yatay düzlemde düzgün çembersel hareket yapmaktadır.",
@@ -1359,8 +1205,8 @@
               "partIndex": 0,
               "rect": [
                 304.3,
-                431.1885,
-                538.2481,
+                431.1304,
+                537.7249,
                 618.4
               ],
               "text": "v 2m 2 Cisimler şekildeki konumlarından K ve L nokta- larına aynı anda geldiklerine göre cisimlere uy- /F kaçtır? gulanan merkezcil kuvvetler oranı F 1 2 1 1 A)             B)             C) 1        "
@@ -1373,16 +1219,16 @@
           "column": 1,
           "rect": [
             304.3,
-            155.8281,
-            541.3872,
-            430.9385
+            154.7823,
+            542.4918,
+            430.8804
           ],
           "parts": [
             [
               304.3,
-              155.8281,
-              541.3872,
-              430.9385
+              154.7823,
+              542.4918,
+              430.8804
             ]
           ],
           "headline": "Yarıçapı x+y olan sürtünmesi önemsiz çeyrek çemberin tepe noktasından serbest bırakılan bir cisim, çembersel yörüngedeki A noktasından geçerken zeminin tepkisi ",
@@ -1407,7 +1253,7 @@
               "partIndex": 0,
               "rect": [
                 323.9724,
-                155.8281,
+                154.7823,
                 519.3498,
                 181.7097
               ],
@@ -1420,17 +1266,17 @@
           "label": "20",
           "column": 0,
           "rect": [
-            69.4682,
-            94.0081,
+            70.0496,
+            109.6955,
             304.3,
-            388.8149
+            389.0473
           ],
           "parts": [
             [
-              69.4682,
-              94.0081,
+              70.0496,
+              109.6955,
               304.3,
-              388.8149
+              389.0473
             ]
           ],
           "headline": "İpin ucuna bağlı m kütleli cisim, O noktası etrafında düşey olarak 1 dakika içinde 30 tur yapmaktadır. Cisim, düzgün çembersel hareketi sırasında B noktasına ge"
@@ -1464,21 +1310,41 @@
       ],
       "activities": [
         {
+          "id": "p96-23",
+          "label": "23",
+          "column": 0,
+          "rect": [
+            51.5053,
+            459.4663,
+            280.7796,
+            715.8099
+          ],
+          "parts": [
+            [
+              51.5053,
+              459.4663,
+              280.7796,
+              715.8099
+            ]
+          ],
+          "headline": "m kütleli cisim düşey düzlemde O noktası etrafında düzgün çembersel hareket yapmak- tadır. Yer çekimi ivmesinin g olduğu bir yerde ci- sim A noktasından geçerke"
+        },
+        {
           "id": "p96-25",
           "label": "25",
           "column": 2,
           "rect": [
             283.7,
-            462.8943,
-            524.7033,
-            714.8802
+            464.4049,
+            523.2499,
+            715.5775
           ],
           "parts": [
             [
               283.7,
-              462.8943,
-              524.7033,
-              714.8802
+              464.4049,
+              523.2499,
+              715.5775
             ]
           ],
           "headline": "Tekerlek, sürtünmesi önemsiz yatay düzlem üzerinde sabit v hızıyla kaymadan dönerek ilerlemektedir."
@@ -1488,20 +1354,160 @@
           "label": "26",
           "column": 2,
           "rect": [
-            295.429,
-            121.6063,
-            528.2493,
-            423.7339
+            294.9639,
+            122.7684,
+            528.5981,
+            422.1651
           ],
           "parts": [
             [
-              295.429,
-              121.6063,
-              528.2493,
-              423.7339
+              294.9639,
+              122.7684,
+              528.5981,
+              422.1651
             ]
           ],
           "headline": "Özdeş X ve Y küreleri eğik düzlemin h yüksek- liğinden serbest bırakılıyor. X cismi Şekil I'de sürtünmesi önemsiz zeminde dönmeden kaya- rak, Y cismi Şekil II'd"
+        },
+        {
+          "id": "p96-24",
+          "label": "24",
+          "column": 0,
+          "rect": [
+            53.4818,
+            170.9345,
+            281.7117,
+            421.1774
+          ],
+          "parts": [
+            [
+              53.4818,
+              170.9345,
+              281.7117,
+              421.1774
+            ]
+          ],
+          "headline": "53 0 eğimli r yarıçaplı sürtünmesi önemsiz bir viraja Şekil I’deki gibi K noktasından 60 km/h hızla giren araç virajı ancak dönebiliyor."
+        }
+      ]
+    },
+    "97": {
+      "pageWidth": 595.276,
+      "pageHeight": 841.89,
+      "columns": [
+        [
+          60.4587,
+          174.363
+        ],
+        [
+          178.363,
+          295.8869
+        ],
+        [
+          299.8869,
+          571.276
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p97-29",
+          "label": "29",
+          "column": 2,
+          "rect": [
+            298.6,
+            505.0759,
+            531.9117,
+            727.895
+          ],
+          "parts": [
+            [
+              298.6,
+              505.0759,
+              531.9117,
+              727.895
+            ]
+          ],
+          "headline": "Kütlesi 1 kg olan cisim 10 m/s sabit hızla yatay- da giderken 2 m uzunluğundaki düşey ipe asılı 4 kg kütleli duran cisme saplanıyor ve birlikte hareket ediyorla"
+        },
+        {
+          "id": "p97-27",
+          "label": "27",
+          "column": 0,
+          "rect": [
+            64.3526,
+            485.0309,
+            294.8476,
+            727.6626
+          ],
+          "parts": [
+            [
+              64.3526,
+              485.0309,
+              294.8476,
+              727.6626
+            ]
+          ],
+          "headline": "Kütleleri 1 kg ve 2 kg olan cisimler, kütlesi önemsiz çubuğa şekildeki gibi tutturulmuştur."
+        },
+        {
+          "id": "p97-30",
+          "label": "30",
+          "column": 2,
+          "rect": [
+            298.6,
+            258.6096,
+            540.6716,
+            491.8288
+          ],
+          "parts": [
+            [
+              298.6,
+              258.6096,
+              540.6716,
+              491.8288
+            ]
+          ],
+          "headline": "Uzunluğu 4 m olan ağırlıksız çubuğun uçlarına 3 kg ve 4 kg kütleli cisimler tutturulmuştur. Ci- simler, O noktası etrafında 2 rad/s açısal hızla döndürülmektedi"
+        },
+        {
+          "id": "p97-28",
+          "label": "28",
+          "column": 0,
+          "rect": [
+            65.5152,
+            89.0695,
+            292.348,
+            453.0751
+          ],
+          "parts": [
+            [
+              65.5152,
+              89.0695,
+              292.348,
+              453.0751
+            ]
+          ],
+          "headline": "Yatay ile α açısı yapan koni, sürtünmesiz ortamda yatayda sabit K noktasında bulunan m kütleli cisim konumunu koruyor."
+        },
+        {
+          "id": "p97-31",
+          "label": "31",
+          "column": 2,
+          "rect": [
+            304.8464,
+            66.0613,
+            539.2363,
+            245.7691
+          ],
+          "parts": [
+            [
+              304.8464,
+              66.0613,
+              539.2363,
+              245.7691
+            ]
+          ],
+          "headline": "O noktasından sabitlenmiş kütlesi 2 kg , yarıçapı 1 m olan homojen bir çembere sarılı kütle- si önemsiz ip, T sabit kuvveti ile yukarı doğru çekiliyor."
         }
       ]
     },
@@ -1528,17 +1534,17 @@
           "label": "32",
           "column": 0,
           "rect": [
-            51.6216,
-            455.3992,
+            50.8077,
+            454.2952,
             286.1,
-            728.2436
+            728.8827
           ],
           "parts": [
             [
-              51.6216,
-              455.3992,
+              50.8077,
+              454.2952,
               286.1,
-              728.2436
+              728.8827
             ]
           ],
           "headline": "Yatay düzlemde ok yönünde dönerek ilerleyen çember üzerinde bir delik açılıyor. 5 m/s sabit hızla yatayda hareket eden K cismi çemberin deliğinden girip aynı de"
@@ -1548,57 +1554,37 @@
           "label": "35",
           "column": 1,
           "rect": [
-            288.3949,
-            442.0358,
-            528.1357,
-            726.5005
-          ],
-          "parts": [
-            [
-              288.3949,
-              442.0358,
-              528.1357,
-              726.5005
-            ]
-          ],
-          "headline": "K, L ve M gezegenleri belirtilen konumlarında bulunmaktayken L gezegenine uygulanan bileşke kütle çekim kuvveti F olmaktadır."
-        },
-        {
-          "id": "p98-36",
-          "label": "36",
-          "column": 1,
-          "rect": [
             286.1,
-            111.2643,
-            531.5629,
-            441.7858
+            442.3844,
+            526.9704,
+            727.1978
           ],
           "parts": [
             [
               286.1,
-              111.2643,
-              531.5629,
-              441.7858
+              442.3844,
+              526.9704,
+              727.1978
             ]
           ],
-          "headline": "Güneş çevresinde 3r yarıçaplı yörüngede f frekansıyla dolaşan X gezegeni ile 5r yarıçaplı yörüngede f şekilde gösterilmiştir."
+          "headline": "K, L ve M gezegenleri belirtilen konumlarında bulunmaktayken L gezegenine uygulanan bileşke kütle çekim kuvveti F olmaktadır."
         },
         {
           "id": "p98-33",
           "label": "33",
           "column": 0,
           "rect": [
-            51.4472,
-            248.6742,
-            276.7103,
-            389.7445
+            51.2728,
+            248.9066,
+            275.8383,
+            390.3255
           ],
           "parts": [
             [
-              51.4472,
-              248.6742,
-              276.7103,
-              389.7445
+              51.2728,
+              248.9066,
+              275.8383,
+              390.3255
             ]
           ],
           "headline": "Kütle merkezleri arasında 30 cm mesafe bulu- nan iki cismin arasındaki kütle çekim kuvveti 26,68.10 Bu iki cismin kütleleri toplamı 13 kg olduğuna göre cisimler"
@@ -1608,17 +1594,17 @@
           "label": "34",
           "column": 0,
           "rect": [
-            51.5053,
-            101.6194,
+            50.6333,
+            102.7815,
             275.9546,
-            203.7618
+            204.9819
           ],
           "parts": [
             [
-              51.5053,
-              101.6194,
+              50.6333,
+              102.7815,
               275.9546,
-              203.7618
+              204.9819
             ]
           ],
           "headline": "Bir astronot; iniş yaptığı bir gezegenin yarıçapını Dünya’nın yarıçapının yarısı, çekim ivmesini ise Dünya’nın yüzeyindeki çekim ivmesinin 3 katı olarak buluyor",
@@ -1643,13 +1629,45 @@
               "partIndex": 0,
               "rect": [
                 62.7855,
-                101.6194,
+                102.7815,
                 251.489,
                 127.7327
               ],
               "text": "A)             B)             C)             D) 1        E) 4 4 2 4"
             }
           ]
+        }
+      ]
+    },
+    "102": {
+      "pageWidth": 595.276,
+      "pageHeight": 841.89,
+      "columns": [
+        [
+          64.7554,
+          585.4045
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p102-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            64.2945,
+            233.3935,
+            558.7215,
+            755.5313
+          ],
+          "parts": [
+            [
+              64.2945,
+              233.3935,
+              558.7215,
+              755.5313
+            ]
+          ],
+          "headline": "2. Ses yalıtımında sünger kullanılmasının nedenini açıklayınız?"
         }
       ]
     },
@@ -1668,19 +1686,39 @@
           "label": null,
           "column": 0,
           "rect": [
-            69.9333,
-            551.0342,
-            538.0737,
-            738.9923
+            71.8517,
+            550.8599,
+            536.9692,
+            738.2951
           ],
           "parts": [
             [
-              69.9333,
-              551.0342,
-              538.0737,
-              738.9923
+              71.8517,
+              550.8599,
+              536.9692,
+              738.2951
             ]
           ]
+        },
+        {
+          "id": "p112-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            56.1559,
+            379.5187,
+            539.0619,
+            534.7076
+          ],
+          "parts": [
+            [
+              56.1559,
+              379.5187,
+              539.0619,
+              534.7076
+            ]
+          ],
+          "headline": "UYGULAMA 4"
         }
       ]
     },
@@ -1699,17 +1737,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            55.3421,
-            481.8934,
-            526.4472,
-            703.26
+            54.5863,
+            481.3705,
+            527.3773,
+            730.7419
           ],
           "parts": [
             [
-              55.3421,
-              481.8934,
-              526.4472,
-              703.26
+              54.5863,
+              481.3705,
+              527.3773,
+              730.7419
             ]
           ]
         },
@@ -1718,70 +1756,55 @@
           "label": null,
           "column": 0,
           "rect": [
-            6.6852,
-            157.5711,
-            452.0377,
-            442.5006
+            0.0,
+            155.9443,
+            451.2239,
+            445.2314
           ],
           "parts": [
             [
-              6.6852,
-              157.5711,
-              452.0377,
-              442.5006
+              0.0,
+              155.9443,
+              451.2239,
+              445.2314
             ]
           ]
         }
       ]
     },
-    "120": {
+    "114": {
       "pageWidth": 595.276,
       "pageHeight": 841.89,
       "columns": [
         [
-          64.8738,
+          63.6247,
+          343.7746
+        ],
+        [
+          347.7746,
           585.4045
         ]
       ],
       "activities": [
         {
-          "id": "p120-v1",
+          "id": "p114-q2",
           "label": null,
           "column": 0,
           "rect": [
-            67.2592,
-            615.2363,
-            541.4934,
-            683.6217
+            54.9351,
+            80.5637,
+            551.1384,
+            318.5122
           ],
           "parts": [
             [
-              67.2592,
-              615.2363,
-              541.4934,
-              683.6217
-            ]
-          ]
-        },
-        {
-          "id": "p120-q1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            64.8738,
-            375.5097,
-            540.5153,
-            590.3091
-          ],
-          "parts": [
-            [
-              64.8738,
-              375.5097,
-              540.5153,
-              590.3091
+              54.9351,
+              80.5637,
+              551.1384,
+              318.5122
             ]
           ],
-          "headline": "Depremlerde oluşan hasarın fazla olması, bazı yapıların deprem riski gözetilmeden inşa edil- mesinden kaynaklanmaktadır. İnşaat sektöründe"
+          "headline": "5"
         }
       ]
     },
@@ -1800,44 +1823,43 @@
       ],
       "activities": [
         {
-          "id": "p122-4",
-          "label": "4",
-          "column": 1,
-          "rect": [
-            310.0202,
-            422.8043,
-            540.2827,
-            692.8017
-          ],
-          "parts": [
-            [
-              310.0202,
-              422.8043,
-              540.2827,
-              692.8017
-            ]
-          ],
-          "headline": "Yay sabiti k olan yaya asılı m kütleli cisim T bü- yüklüğünde periyotla basit harmonik hareket yapmaktadır."
-        },
-        {
           "id": "p122-5",
           "label": "5",
           "column": 1,
           "rect": [
-            310.0783,
-            159.4304,
-            537.8993,
-            391.6619
+            310.1365,
+            159.198,
+            537.6086,
+            391.7781
           ],
           "parts": [
             [
-              310.0783,
-              159.4304,
-              537.8993,
-              391.6619
+              310.1365,
+              159.198,
+              537.6086,
+              391.7781
             ]
           ],
           "headline": "Yay sabiti 2k olan yayın ucuna m kütleli X cismi, yay sabiti k olan yayın ucuna 2m kütleli Y cismi asılmakta ve cisimler O noktası hizasında den- gelenmektedir."
+        },
+        {
+          "id": "p122-v2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            318.8563,
+            92.3232,
+            540.399,
+            131.4255
+          ],
+          "parts": [
+            [
+              318.8563,
+              92.3232,
+              540.399,
+              131.4255
+            ]
+          ]
         }
       ]
     },
@@ -1868,17 +1890,17 @@
           "label": "6",
           "column": 0,
           "rect": [
-            57.2604,
-            384.7073,
+            57.2023,
+            386.3922,
             289.0,
-            714.9383
+            715.9261
           ],
           "parts": [
             [
-              57.2604,
-              384.7073,
+              57.2023,
+              386.3922,
               289.0,
-              714.9383
+              715.9261
             ]
           ],
           "headline": "Basit harmonik hareket yapan bir cisme ait konum zaman grafiği şekildeki gibidir."
@@ -1889,55 +1911,56 @@
           "column": 3,
           "rect": [
             296.6707,
-            687.4564,
+            686.8753,
             524.625,
-            714.5316
+            715.5775
           ],
           "parts": [
             [
               296.6707,
-              687.4564,
+              686.8753,
               524.625,
-              714.5316
+              715.5775
             ]
           ],
           "headline": "Düzgün çembersel hareket ile basit harmonik hareket arasındaki ilişki nedir?"
         },
         {
-          "id": "p123-v3",
-          "label": null,
+          "id": "p123-10",
+          "label": "10",
           "column": 3,
           "rect": [
-            312.5,
+            289.0,
             584.9,
             525.4577,
-            635.5137
+            636.5595
           ],
           "parts": [
             [
-              312.5,
+              289.0,
               584.9,
               525.4577,
-              635.5137
+              636.5595
             ]
-          ]
+          ],
+          "headline": "Tavana asılı bir cisme salınım hareketi yaptı- rıldığında bir süre sonra salınım hareketinin sönümlenmemesinin sebebi nedir?"
         },
         {
           "id": "p123-7",
           "label": "7",
           "column": 0,
           "rect": [
-            58.365,
-            284.2904,
+            57.1442,
+            284.3485,
             243.6,
-            384.4573
+            386.1422
           ],
           "parts": [
             [
-              58.365,
-              284.2904,
+              57.1442,
+              284.3485,
               243.6,
-              384.4573
+              386.1422
             ]
           ],
           "headline": "7. sinin büyüklüğü azalıyor."
@@ -1947,17 +1970,17 @@
           "label": "8",
           "column": 0,
           "rect": [
-            56.7954,
-            147.9263,
-            273.1643,
-            233.5097
+            56.5628,
+            147.8101,
+            273.6293,
+            234.265
           ],
           "parts": [
             [
-              56.7954,
-              147.9263,
-              273.1643,
-              233.5097
+              56.5628,
+              147.8101,
+              273.6293,
+              234.265
             ]
           ],
           "headline": "Durmakta olan asansör içinde salınım yapan bir basit sarkacın frekansını artırmak için I. Sarkacın boyu artırılmalı II. Asansör yukarı doğru hızlanmalı III. Dah"
@@ -1984,16 +2007,16 @@
           "column": 1,
           "rect": [
             300.2,
-            473.4106,
+            473.7011,
             556.5923,
-            722.4915
+            723.5955
           ],
           "parts": [
             [
               300.2,
-              473.4106,
+              473.7011,
               556.5923,
-              722.4915
+              723.5955
             ]
           ],
           "headline": "Özdeş yay ve özdeş cisimlerden oluşan yay sar- kaçlarına aynı genlikle şekillerdeki gibi basit har- monik hareket yaptırılıyor."
@@ -2003,17 +2026,17 @@
           "label": "11",
           "column": 0,
           "rect": [
-            70.2821,
-            425.7674,
-            284.1513,
-            451.1578
+            69.7008,
+            426.4646,
+            284.8489,
+            451.5064
           ],
           "parts": [
             [
-              70.2821,
-              425.7674,
-              284.1513,
-              451.1578
+              69.7008,
+              426.4646,
+              284.8489,
+              451.5064
             ]
           ],
           "headline": "Cem’in sarkaçlı saatin bozulduğunu düşün- mesinin sebebi ne olabilir?"
@@ -2023,20 +2046,80 @@
           "label": "16",
           "column": 1,
           "rect": [
-            309.7877,
-            166.4607,
+            309.3807,
+            164.8338,
             536.4898,
-            418.6209
+            417.2846
           ],
           "parts": [
             [
-              309.7877,
-              166.4607,
+              309.3807,
+              164.8338,
               536.4898,
-              418.6209
+              417.2846
             ]
           ],
           "headline": "m kütleli cisim yay sarkacına bağlanıp basit harmonik hareket yaptırıldığında cismin pe- riyodu T olmaktadır."
+        },
+        {
+          "id": "p124-12",
+          "label": "12",
+          "column": 0,
+          "rect": [
+            69.2938,
+            373.385,
+            294.8476,
+            405.9548
+          ],
+          "parts": [
+            [
+              69.2938,
+              373.385,
+              294.8476,
+              405.9548
+            ]
+          ],
+          "headline": "Asansörün hızlanarak yukarı çıkması sarkaçlı saatte nasıl bir değişiklik oluşturmuş olabilir?"
+        },
+        {
+          "id": "p124-13",
+          "label": "13",
+          "column": 0,
+          "rect": [
+            70.224,
+            336.0007,
+            273.1133,
+            361.1586
+          ],
+          "parts": [
+            [
+              70.224,
+              336.0007,
+              273.1133,
+              361.1586
+            ]
+          ],
+          "headline": "Asansör aşağı hızlanarak inseydi sarkaçlı saatte nasıl bir değişiklik olurdu?"
+        },
+        {
+          "id": "p124-14",
+          "label": "14",
+          "column": 0,
+          "rect": [
+            69.7008,
+            95.4026,
+            297.864,
+            264.013
+          ],
+          "parts": [
+            [
+              69.7008,
+              95.4026,
+              297.864,
+              264.013
+            ]
+          ],
+          "headline": "Denge konumundan geçen bir cismin yaptığı basit harmonik hareketin uzanım denklemi, x= 10.sin cm'dir."
         }
       ]
     },
@@ -2059,17 +2142,17 @@
           "label": "19",
           "column": 1,
           "rect": [
-            294.8476,
-            429.8926,
+            295.6615,
+            429.2535,
             524.4068,
-            718.192
+            720.1094
           ],
           "parts": [
             [
-              294.8476,
-              429.8926,
+              295.6615,
+              429.2535,
               524.4068,
-              718.192
+              720.1094
             ]
           ],
           "headline": "Duran asansörün içinde basit harmonik hareket yapan sarkacın periyodu T'dir.",
@@ -2094,7 +2177,7 @@
               "partIndex": 0,
               "rect": [
                 300.2823,
-                429.8926,
+                429.2535,
                 524.4068,
                 618.5608
               ],
@@ -2103,21 +2186,41 @@
           ]
         },
         {
+          "id": "p125-18",
+          "label": "18",
+          "column": 0,
+          "rect": [
+            5.1157,
+            104.5826,
+            291.6,
+            446.8583
+          ],
+          "parts": [
+            [
+              5.1157,
+              104.5826,
+              291.6,
+              446.8583
+            ]
+          ],
+          "headline": "L ve L uzunluğundaki iplerin ucuna m ve m"
+        },
+        {
           "id": "p125-20",
           "label": "20",
           "column": 1,
           "rect": [
-            295.7778,
-            92.7299,
+            296.0103,
+            92.6137,
             517.3845,
-            387.4205
+            386.3746
           ],
           "parts": [
             [
-              295.7778,
-              92.7299,
+              296.0103,
+              92.6137,
               517.3845,
-              387.4205
+              386.3746
             ]
           ],
           "headline": "Aynı noktaya bağlı özdeş iki basit sarkaç, şekil- deki X ve T noktaları arasında tutulurken aynı anda serbest bırakılıyor."
@@ -2147,41 +2250,90 @@
       ],
       "activities": [
         {
-          "id": "p126-24",
-          "label": "24",
-          "column": 1,
+          "id": "p126-v1",
+          "label": null,
+          "column": 0,
           "rect": [
-            309.497,
-            133.6333,
-            546.7524,
-            386.7814
+            66.736,
+            417.9818,
+            296.1305,
+            722.3753
           ],
           "parts": [
             [
-              309.497,
-              133.6333,
-              546.7524,
-              386.7814
+              66.736,
+              417.9818,
+              296.1305,
+              722.3753
             ]
-          ],
-          "headline": "Şekildeki yaylardan içteki yayı saran yayın yay sabiti 800 N/m, içteki yayın yay sabiti 100 N/m'dir."
+          ]
         },
         {
           "id": "p126-v2",
           "label": null,
-          "column": 0,
+          "column": 2,
           "rect": [
-            69.817,
-            122.013,
-            299.3987,
-            359.4156
+            337.9,
+            450.4605,
+            540.5153,
+            717.4948
           ],
           "parts": [
             [
-              69.817,
-              122.013,
+              337.9,
+              450.4605,
+              540.5153,
+              717.4948
+            ]
+          ]
+        },
+        {
+          "id": "p126-v3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            69.7008,
+            121.2577,
+            299.3987,
+            359.648
+          ],
+          "parts": [
+            [
+              69.7008,
+              121.2577,
               299.3987,
-              359.4156
+              359.648
+            ]
+          ]
+        }
+      ]
+    },
+    "130": {
+      "pageWidth": 595.276,
+      "pageHeight": 841.89,
+      "columns": [
+        [
+          64.8661,
+          585.4045
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p130-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            61.7366,
+            601.0014,
+            557.5974,
+            765.5094
+          ],
+          "parts": [
+            [
+              61.7366,
+              601.0014,
+              557.5974,
+              765.5094
             ]
           ]
         }
@@ -2203,14 +2355,14 @@
           "column": 0,
           "rect": [
             28.0476,
-            316.2462,
+            317.3501,
             530.7289,
             801.89
           ],
           "parts": [
             [
               28.0476,
-              316.2462,
+              317.3501,
               530.7289,
               801.89
             ]
@@ -2233,21 +2385,41 @@
       ],
       "activities": [
         {
+          "id": "p158-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            64.4107,
+            486.6577,
+            300.254,
+            598.503
+          ],
+          "parts": [
+            [
+              64.4107,
+              486.6577,
+              300.254,
+              598.503
+            ]
+          ],
+          "headline": "Işık kaynağı y doğrultusunda hareket ettirilirse kaynaktan çıkan ışınlar yarığın kenarlarına"
+        },
+        {
           "id": "p158-3",
           "label": "3",
           "column": 0,
           "rect": [
-            65.864,
-            323.6251,
+            64.7595,
+            323.9737,
             305.0606,
-            449.0661
+            449.7633
           ],
           "parts": [
             [
-              65.864,
-              323.6251,
+              64.7595,
+              323.9737,
               305.0606,
-              449.0661
+              449.7633
             ]
           ],
           "headline": "Şekil 3.1.21’deki gibi yarığın yarısı saydam ol- mayan bir engelle kapatılırsa yarık aralığı (w) küçülmüş olur. Saçak aralığı"
@@ -2257,113 +2429,20 @@
           "label": "4",
           "column": 0,
           "rect": [
-            65.8059,
-            186.3895,
-            299.9633,
-            284.1161
+            65.5152,
+            187.3772,
+            300.1958,
+            284.5809
           ],
           "parts": [
             [
-              65.8059,
-              186.3895,
-              299.9633,
-              284.1161
+              65.5152,
+              187.3772,
+              300.1958,
+              284.5809
             ]
           ],
           "headline": "Şekil 3.1.22’deki gibi yarığın yarısı cam gibi saydam bir engelle kapatılırsa girişim deseni aşağı doğru kayar. Bunun nedeni ışınların cam- dan geçerken yavaşla"
-        }
-      ]
-    },
-    "162": {
-      "pageWidth": 595.276,
-      "pageHeight": 841.89,
-      "columns": [
-        [
-          67.4236,
-          585.4045
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p162-v1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            59.3532,
-            90.5221,
-            541.6779,
-            425.5931
-          ],
-          "parts": [
-            [
-              59.3532,
-              90.5221,
-              541.6779,
-              425.5931
-            ]
-          ]
-        }
-      ]
-    },
-    "166": {
-      "pageWidth": 595.276,
-      "pageHeight": 841.89,
-      "columns": [
-        [
-          63.9213,
-          218.9527
-        ],
-        [
-          222.9527,
-          315.9528
-        ],
-        [
-          319.9528,
-          414.9528
-        ],
-        [
-          418.9528,
-          585.4045
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p166-v1",
-          "label": null,
-          "column": 1,
-          "rect": [
-            63.9213,
-            529.8447,
-            541.9686,
-            737.7141
-          ],
-          "parts": [
-            [
-              63.9213,
-              529.8447,
-              541.9686,
-              737.7141
-            ]
-          ]
-        },
-        {
-          "id": "p166-v2",
-          "label": null,
-          "column": 1,
-          "rect": [
-            66.5616,
-            460.5121,
-            525.6915,
-            529.5947
-          ],
-          "parts": [
-            [
-              66.5616,
-              460.5121,
-              525.6915,
-              529.5947
-            ]
-          ]
         }
       ]
     },
@@ -2382,21 +2461,40 @@
       ],
       "activities": [
         {
+          "id": "p170-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            60.7765,
+            625.985,
+            293.5106,
+            681.4719
+          ],
+          "parts": [
+            [
+              60.7765,
+              625.985,
+              293.5106,
+              681.4719
+            ]
+          ]
+        },
+        {
           "id": "p170-4",
           "label": "4",
           "column": 1,
           "rect": [
-            300.5446,
-            586.5922,
-            531.3885,
-            681.0652
+            299.7889,
+            587.4057,
+            531.0978,
+            681.4719
           ],
           "parts": [
             [
-              300.5446,
-              586.5922,
-              531.3885,
-              681.0652
+              299.7889,
+              587.4057,
+              531.0978,
+              681.4719
             ]
           ],
           "headline": "Tek yarıkta kırınım deneyinde kırmızı ışık, çift 4. yarıkta girişim deneyinde mor ışık kullanılmıştır."
@@ -2406,17 +2504,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            64.2363,
-            378.1823,
-            294.3826,
-            578.1094
+            62.0854,
+            377.4851,
+            295.3127,
+            578.6323
           ],
           "parts": [
             [
-              64.2363,
-              378.1823,
-              294.3826,
-              578.1094
+              62.0854,
+              377.4851,
+              295.3127,
+              578.6323
             ]
           ],
           "headline": "Derinliği her yerde aynı olan bir dalga leğenin- de özdeş ve aynı fazda çalışan iki noktasal kay- nak, λ dalga boylu dalgalar ile şekildeki girişim desenini olu",
@@ -2428,8 +2526,8 @@
               "partIndex": 0,
               "rect": [
                 70.8307,
-                378.1823,
-                294.3826,
+                377.4851,
+                295.3127,
                 459.1967
               ],
               "text": "K K 1 2 Girişim deseni üzerindeki A, B, C ve D noktaları- nın hangi çizgi üzerinde olduğunu belirtiniz. Bu noktaların kaynaklara olan uzaklık farklarını he- saplayınız."
@@ -2441,17 +2539,17 @@
           "label": "5",
           "column": 1,
           "rect": [
-            301.4747,
-            505.715,
-            530.6327,
-            546.0955
+            301.3585,
+            505.8312,
+            530.749,
+            546.6765
           ],
           "parts": [
             [
-              301.4747,
-              505.715,
-              530.6327,
-              546.0955
+              301.3585,
+              505.8312,
+              530.749,
+              546.6765
             ]
           ],
           "headline": "Elektromanyetik dalgaların ortak özellikleri nelerdir? Elektromanyetik dalgalar ile ses dal- galarının benzer yönlerini belirtiniz."
@@ -2461,17 +2559,17 @@
           "label": "6",
           "column": 1,
           "rect": [
-            301.2422,
-            416.5293,
+            301.0097,
+            416.1807,
             532.086,
-            457.4908
+            457.7813
           ],
           "parts": [
             [
-              301.2422,
-              416.5293,
+              301.0097,
+              416.1807,
               532.086,
-              457.4908
+              457.7813
             ]
           ],
           "headline": "Çift yarıkta girişim ile tek yarıkta kırınım deney- lerinin sonuçlarına göre ışığın doğası hakkında nasıl bir çıkarım yapılabilir? Açıklayınız."
@@ -2481,17 +2579,17 @@
           "label": "7",
           "column": 1,
           "rect": [
-            300.8934,
-            315.1423,
+            300.4865,
+            314.8518,
             532.116,
-            367.666
+            368.5375
           ],
           "parts": [
             [
-              300.8934,
-              315.1423,
+              300.4865,
+              314.8518,
               532.116,
-              367.666
+              368.5375
             ]
           ],
           "headline": "Elektromanyetik dalgaların enine dalgalar olması ne demektir? Açıklayınız. Elektrik ve manyetik alanları şekil üzerinde göstererek bir elektro- manyetik dalganı"
@@ -2501,17 +2599,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            62.1436,
-            141.9999,
-            292.5223,
-            336.1169
+            61.6785,
+            142.6391,
+            293.1037,
+            335.8845
           ],
           "parts": [
             [
-              62.1436,
-              141.9999,
-              292.5223,
-              336.1169
+              61.6785,
+              142.6391,
+              293.1037,
+              335.8845
             ]
           ],
           "headline": "Kırmızı renkli lazerle yapılan çift yarık deneyinde perdedeki desen oluşmaktadır."
@@ -2521,17 +2619,17 @@
           "label": "8",
           "column": 1,
           "rect": [
-            301.3585,
-            165.2986,
-            529.877,
-            272.2053
+            300.8934,
+            165.0081,
+            530.5746,
+            271.9148
           ],
           "parts": [
             [
-              301.3585,
-              165.2986,
-              529.877,
-              272.2053
+              300.8934,
+              165.0081,
+              530.5746,
+              271.9148
             ]
           ],
           "headline": "Sabah, telefonunun alarmı çalan Öykü alarm se- 8. sini duymakta ama yatmaya devam etmektedir."
@@ -2557,37 +2655,37 @@
           "label": "12",
           "column": 0,
           "rect": [
-            57.086,
-            218.8101,
+            56.9116,
+            219.1587,
             498.4489,
-            242.5736
+            243.2127
           ],
           "parts": [
             [
-              57.086,
-              218.8101,
+              56.9116,
+              219.1587,
               498.4489,
-              242.5736
+              243.2127
             ]
           ],
-          "headline": "Mavi çizgi sayısı fazla olduğuna göre mavi ışığın dizilim genişliği ile kırmızı ışığın dizilim genişliği farklı mıdır? Farklıysa bunun sebebi nedir?"
+          "headline": "Mavi çizgi sayısı fazla olduğuna göre mavi ışığın dizilim genişliği ile kırmızı ışığın dizilim genişliği"
         },
         {
           "id": "p171-13",
           "label": "13",
           "column": 0,
           "rect": [
-            56.6791,
-            133.1685,
-            492.6141,
-            159.0818
+            56.3884,
+            133.5752,
+            493.0792,
+            159.3142
           ],
           "parts": [
             [
-              56.6791,
-              133.1685,
-              492.6141,
-              159.0818
+              56.3884,
+              133.5752,
+              493.0792,
+              159.3142
             ]
           ],
           "headline": "Zeynep perdeye doğru yaklaşıp deneyi tekrarlasaydı ışıkların parlaklıkları ve sayısında nasıl bir değişim gözlemlenirdi?"
@@ -2609,43 +2707,43 @@
       ],
       "activities": [
         {
-          "id": "p172-17",
-          "label": "17",
-          "column": 1,
-          "rect": [
-            304.7302,
-            527.5031,
-            537.5536,
-            681.5881
-          ],
-          "parts": [
-            [
-              304.7302,
-              527.5031,
-              537.5536,
-              681.5881
-            ]
-          ],
-          "headline": "leğeninde girişim deseni oluşturuluyor."
-        },
-        {
-          "id": "p172-v2",
+          "id": "p172-v1",
           "label": null,
           "column": 0,
           "rect": [
             54.6358,
-            539.9368,
+            539.4139,
             289.5561,
-            680.8909
+            681.7624
           ],
           "parts": [
             [
               54.6358,
-              539.9368,
+              539.4139,
               289.5561,
-              680.8909
+              681.7624
             ]
           ]
+        },
+        {
+          "id": "p172-17",
+          "label": "17",
+          "column": 1,
+          "rect": [
+            303.335,
+            527.1545,
+            537.5536,
+            681.6462
+          ],
+          "parts": [
+            [
+              303.335,
+              527.1545,
+              537.5536,
+              681.6462
+            ]
+          ],
+          "headline": "leğeninde girişim deseni oluşturuluyor."
         },
         {
           "id": "p172-18",
@@ -2653,16 +2751,16 @@
           "column": 1,
           "rect": [
             304.8748,
-            363.4827,
+            362.6693,
             543.1581,
-            490.5505
+            490.6086
           ],
           "parts": [
             [
               304.8748,
-              363.4827,
+              362.6693,
               543.1581,
-              490.5505
+              490.6086
             ]
           ],
           "headline": "Derinliği her yerde aynı olan bir dalga leğeninde özdeş ve aynı fazda çalışan iki noktasal kaynak kul- lanılarak girişim deseni oluşturuluyor. Art arda ge- len "
@@ -2672,17 +2770,17 @@
           "label": "15",
           "column": 0,
           "rect": [
-            64.9208,
-            314.6194,
+            65.1664,
+            314.2126,
             298.8679,
-            489.7371
+            490.26
           ],
           "parts": [
             [
-              64.9208,
-              314.6194,
+              65.1664,
+              314.2126,
               298.8679,
-              489.7371
+              490.26
             ]
           ],
           "headline": "Derinliği her yerde aynı olan bir dalga leğeninde özdeş iki noktasal kaynak kullanılarak girişim de- seni oluşturuluyor."
@@ -2693,16 +2791,16 @@
           "column": 1,
           "rect": [
             311.4968,
-            153.6783,
-            538.2481,
-            279.5842
+            154.0269,
+            537.8993,
+            279.8166
           ],
           "parts": [
             [
               311.4968,
-              153.6783,
-              538.2481,
-              279.5842
+              154.0269,
+              537.8993,
+              279.8166
             ]
           ],
           "headline": "Aşağıda dalga çeşitleri verilmiştir."
@@ -2712,17 +2810,17 @@
           "label": "16",
           "column": 0,
           "rect": [
-            66.0966,
-            104.4664,
-            297.638,
-            279.2356
+            65.2246,
+            105.4541,
+            297.8124,
+            279.0613
           ],
           "parts": [
             [
-              66.0966,
-              104.4664,
-              297.638,
-              279.2356
+              65.2246,
+              105.4541,
+              297.8124,
+              279.0613
             ]
           ],
           "headline": "Derinliği her yerde aynı olan bir dalga leğeninde 16. özdeş ve aynı fazda çalışan iki noktasal kaynak kul-"
@@ -2748,44 +2846,44 @@
       ],
       "activities": [
         {
-          "id": "p173-24",
-          "label": "24",
-          "column": 2,
-          "rect": [
-            294.6151,
-            622.9637,
-            526.1982,
-            716.3909
-          ],
-          "parts": [
-            [
-              294.6151,
-              622.9637,
-              526.1982,
-              716.3909
-            ]
-          ],
-          "headline": "Çift yarıklı bir girişim deneyinde ekran yüzeyine aynı anda kırmızı ve yeşil ışık düşürülüyor."
-        },
-        {
           "id": "p173-20",
           "label": "20",
           "column": 0,
           "rect": [
             53.3543,
-            591.8795,
+            591.3566,
             273.4623,
-            715.8099
+            716.7976
           ],
           "parts": [
             [
               53.3543,
-              591.8795,
+              591.3566,
               273.4623,
-              715.8099
+              716.7976
             ]
           ],
           "headline": "Gama ve radyo dalgaları hakkında I. Yayılma hızları aynıdır."
+        },
+        {
+          "id": "p173-24",
+          "label": "24",
+          "column": 2,
+          "rect": [
+            294.7895,
+            622.3246,
+            526.1982,
+            716.7976
+          ],
+          "parts": [
+            [
+              294.7895,
+              622.3246,
+              526.1982,
+              716.7976
+            ]
+          ],
+          "headline": "Çift yarıklı bir girişim deneyinde ekran yüzeyine aynı anda kırmızı ve yeşil ışık düşürülüyor."
         },
         {
           "id": "p173-25",
@@ -2793,16 +2891,16 @@
           "column": 2,
           "rect": [
             299.5353,
-            408.9761,
-            524.7032,
-            554.2297
+            409.0342,
+            525.1683,
+            554.9851
           ],
           "parts": [
             [
               299.5353,
-              408.9761,
-              524.7032,
-              554.2297
+              409.0342,
+              525.1683,
+              554.9851
             ]
           ],
           "headline": "Yarık genişliği w olan tek yarıkla yapılan girişim deneyinde ekran üzerinde P noktasında 3. karan- lık saçak oluşuyor."
@@ -2812,17 +2910,17 @@
           "label": "21",
           "column": 0,
           "rect": [
-            55.4583,
-            423.8501,
-            288.5411,
-            553.9973
+            55.0514,
+            424.1406,
+            287.1742,
+            554.5783
           ],
           "parts": [
             [
-              55.4583,
-              423.8501,
-              288.5411,
-              553.9973
+              55.0514,
+              424.1406,
+              287.1742,
+              554.5783
             ]
           ],
           "headline": "Tek yarıkla yapılan bir kırınım deneyinde merkezî 21. aydınlık saçağın altında ve üstünde yer alan n.",
@@ -2834,7 +2932,7 @@
               "partIndex": 0,
               "rect": [
                 67.542,
-                423.8501,
+                424.1406,
                 286.3623,
                 506.7204
               ],
@@ -2847,17 +2945,17 @@
           "label": "26",
           "column": 2,
           "rect": [
-            293.8013,
-            277.9573,
-            528.7725,
-            383.4115
+            294.6732,
+            278.5384,
+            528.6562,
+            382.9467
           ],
           "parts": [
             [
-              293.8013,
-              277.9573,
-              528.7725,
-              383.4115
+              294.6732,
+              278.5384,
+              528.6562,
+              382.9467
             ]
           ],
           "headline": "Çift yarıkla yapılan girişim deneyinde P nok- tasında 2. karanlık saçak oluşuyor. Yarıkla ekran arasına sıvı doldurulursa P noktasında 3. aydın- lık saçak oluşu"
@@ -2867,60 +2965,60 @@
           "label": "22",
           "column": 0,
           "rect": [
-            55.2258,
-            221.4246,
-            284.5582,
-            382.5399
+            54.9351,
+            223.5744,
+            284.6745,
+            382.0751
           ],
           "parts": [
             [
-              55.2258,
-              221.4246,
-              284.5582,
-              382.5399
+              54.9351,
+              223.5744,
+              284.6745,
+              382.0751
             ]
           ],
           "headline": "Çift yarıkla yapılan bir girişim deneyinde ekran 22. üzerindeki bir P noktasında 7. aydınlık saçak"
-        },
-        {
-          "id": "p173-27",
-          "label": "27",
-          "column": 2,
-          "rect": [
-            293.2781,
-            123.7561,
-            523.5928,
-            204.4009
-          ],
-          "parts": [
-            [
-              293.2781,
-              123.7561,
-              523.5928,
-              204.4009
-            ]
-          ],
-          "headline": "Tek yarıkta kırınım deneyinde 1. aydınlık saçak- lar arası mesafe 3 cm olarak ölçülüyor."
         },
         {
           "id": "p173-23",
           "label": "23",
           "column": 0,
           "rect": [
-            55.5746,
-            84.0147,
-            284.5001,
-            203.4713
+            56.1559,
+            84.3052,
+            284.1513,
+            203.9942
           ],
           "parts": [
             [
-              55.5746,
-              84.0147,
-              284.5001,
-              203.4713
+              56.1559,
+              84.3052,
+              284.1513,
+              203.9942
             ]
           ],
           "headline": "Tek yarıkla yapılan bir kırınım deneyinde yarık düzlemi ile perde arasındaki uzaklık L iken perde üzerindeki P noktasında 3. karanlık saçak oluş- maktadır. Yarı"
+        },
+        {
+          "id": "p173-27",
+          "label": "27",
+          "column": 2,
+          "rect": [
+            294.2082,
+            125.0924,
+            523.5928,
+            203.9361
+          ],
+          "parts": [
+            [
+              294.2082,
+              125.0924,
+              523.5928,
+              203.9361
+            ]
+          ],
+          "headline": "Tek yarıkta kırınım deneyinde 1. aydınlık saçak- lar arası mesafe 3 cm olarak ölçülüyor."
         }
       ]
     },
@@ -2939,41 +3037,81 @@
       ],
       "activities": [
         {
+          "id": "p174-28",
+          "label": "28",
+          "column": 0,
+          "rect": [
+            67.5499,
+            585.2559,
+            298.6844,
+            717.2043
+          ],
+          "parts": [
+            [
+              67.5499,
+              585.2559,
+              298.6844,
+              717.2043
+            ]
+          ],
+          "headline": "Aşağıda verilen cihazlardan kaç tanesinde elektromanyetik dalgalar kullanılmamaktadır?"
+        },
+        {
           "id": "p174-31",
           "label": "31",
           "column": 1,
           "rect": [
-            305.7184,
-            606.3467,
+            306.5323,
+            606.0562,
             535.0671,
-            717.611
+            717.2043
           ],
           "parts": [
             [
-              305.7184,
-              606.3467,
+              306.5323,
+              606.0562,
               535.0671,
-              717.611
+              717.2043
             ]
           ],
           "headline": "Aşağıdaki bilim insanlarından hangisi elektro- manyetik teorinin kurucusudur?"
+        },
+        {
+          "id": "p174-29",
+          "label": "29",
+          "column": 0,
+          "rect": [
+            69.1194,
+            328.2151,
+            297.2892,
+            543.6553
+          ],
+          "parts": [
+            [
+              69.1194,
+              328.2151,
+              297.2892,
+              543.6553
+            ]
+          ],
+          "headline": "29. verilmiştir."
         },
         {
           "id": "p174-32",
           "label": "32",
           "column": 1,
           "rect": [
-            306.8598,
-            376.1488,
+            307.0555,
+            374.4638,
             528.7144,
-            543.4229
+            543.6553
           ],
           "parts": [
             [
-              306.8598,
-              376.1488,
+              307.0555,
+              374.4638,
               528.7144,
-              543.4229
+              543.6553
             ]
           ],
           "headline": "32. deneyinde perde üzerinde P noktasında n. ka- ranlık saçak oluşmaktadır."
@@ -2983,17 +3121,17 @@
           "label": "30",
           "column": 0,
           "rect": [
-            71.0378,
-            160.1857,
-            289.2088,
-            293.4704
+            70.3984,
+            160.36,
+            289.1507,
+            293.6447
           ],
           "parts": [
             [
-              71.0378,
-              160.1857,
-              289.2088,
-              293.4704
+              70.3984,
+              160.36,
+              289.1507,
+              293.6447
             ]
           ],
           "headline": "Aşağıdakilerden hangisi elektromanyetik dalgaların ortak özelliği değildir?"
@@ -3003,17 +3141,17 @@
           "label": "33",
           "column": 1,
           "rect": [
-            305.8928,
-            102.8977,
+            306.1835,
+            103.7111,
             536.9023,
-            292.5408
+            293.0637
           ],
           "parts": [
             [
-              305.8928,
-              102.8977,
+              306.1835,
+              103.7111,
               536.9023,
-              292.5408
+              293.0637
             ]
           ],
           "headline": "Hava ortamında tek yarıkla yapılan bir kırınım deneyinde I. Yarık düzlemi ile perde arasındaki mesafeyi azaltmak II. Yarık düzlemi ile perde arasını kırıcılık i"
@@ -3035,15 +3173,15 @@
           "label": null,
           "column": 0,
           "rect": [
-            61.9692,
-            272.0891,
+            63.3643,
+            268.3125,
             557.617,
             772.2882
           ],
           "parts": [
             [
-              61.9692,
-              272.0891,
+              63.3643,
+              268.3125,
               557.617,
               772.2882
             ]
@@ -3052,32 +3190,32 @@
         }
       ]
     },
-    "190": {
+    "193": {
       "pageWidth": 595.276,
       "pageHeight": 841.89,
       "columns": [
         [
-          63.5999,
-          585.4045
+          49.4488,
+          571.276
         ]
       ],
       "activities": [
         {
-          "id": "p190-v1",
+          "id": "p193-v1",
           "label": null,
           "column": 0,
           "rect": [
-            67.0267,
-            112.3682,
-            542.0646,
-            339.0801
+            45.5758,
+            81.4001,
+            526.6216,
+            380.274
           ],
           "parts": [
             [
-              67.0267,
-              112.3682,
-              542.0646,
-              339.0801
+              45.5758,
+              81.4001,
+              526.6216,
+              380.274
             ]
           ]
         }
@@ -3098,17 +3236,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            60.9228,
+            60.3415,
             270.7528,
-            539.9921,
-            411.3002
+            539.2945,
+            410.6029
           ],
           "parts": [
             [
-              60.9228,
+              60.3415,
               270.7528,
-              539.9921,
-              411.3002
+              539.2945,
+              410.6029
             ]
           ]
         }
@@ -3129,24 +3267,23 @@
       ],
       "activities": [
         {
-          "id": "p199-1",
-          "label": "1",
-          "column": 0,
+          "id": "p199-v1",
+          "label": null,
+          "column": 1,
           "rect": [
-            54.7623,
-            283.1465,
-            526.2728,
-            657.0693
+            56.0,
+            667.89,
+            523.1642,
+            739.341
           ],
           "parts": [
             [
-              54.7623,
-              283.1465,
-              526.2728,
-              657.0693
+              56.0,
+              667.89,
+              523.1642,
+              739.341
             ]
-          ],
-          "headline": "De Broglie hipotezinde maddeye eşlik eden De Broglie dalgaları ile Heisenberg belirsizlik ilkesinde belirtilen maddenin parçacık ve dalga özelliğinin aynı anda "
+          ]
         }
       ]
     },
@@ -3165,17 +3302,36 @@
           "label": null,
           "column": 0,
           "rect": [
-            305.4859,
-            429.3116,
-            541.8523,
-            563.6422
+            305.2533,
+            427.8591,
+            539.7595,
+            563.4679
           ],
           "parts": [
             [
-              305.4859,
-              429.3116,
-              541.8523,
-              563.6422
+              305.2533,
+              427.8591,
+              539.7595,
+              563.4679
+            ]
+          ]
+        },
+        {
+          "id": "p200-v2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            69.0,
+            33.8731,
+            556.5541,
+            176.1636
+          ],
+          "parts": [
+            [
+              69.0,
+              33.8731,
+              556.5541,
+              176.1636
             ]
           ]
         }
@@ -3213,37 +3369,6 @@
         }
       ]
     },
-    "204": {
-      "pageWidth": 595.276,
-      "pageHeight": 841.89,
-      "columns": [
-        [
-          59.3071,
-          585.4045
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p204-v1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            59.3071,
-            87.6751,
-            539.0,
-            185.5923
-          ],
-          "parts": [
-            [
-              59.3071,
-              87.6751,
-              539.0,
-              185.5923
-            ]
-          ]
-        }
-      ]
-    },
     "205": {
       "pageWidth": 595.276,
       "pageHeight": 841.89,
@@ -3259,16 +3384,16 @@
           "label": null,
           "column": 0,
           "rect": [
-            48.4243,
-            85.351,
-            526.6216,
+            47.3198,
+            85.1186,
+            525.2846,
             166.2282
           ],
           "parts": [
             [
-              48.4243,
-              85.351,
-              526.6216,
+              47.3198,
+              85.1186,
+              525.2846,
               166.2282
             ]
           ]
@@ -3298,55 +3423,19 @@
           "label": null,
           "column": 1,
           "rect": [
-            5.9876,
-            72.3944,
+            4.4181,
+            73.905,
             526.7495,
             484.2075
           ],
           "parts": [
             [
-              5.9876,
-              72.3944,
+              4.4181,
+              73.905,
               526.7495,
               484.2075
             ]
           ]
-        }
-      ]
-    },
-    "211": {
-      "pageWidth": 595.276,
-      "pageHeight": 841.89,
-      "columns": [
-        [
-          58.7795,
-          286.6907
-        ],
-        [
-          290.6907,
-          571.276
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p211-q1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            41.0996,
-            443.837,
-            527.3773,
-            744.6282
-          ],
-          "parts": [
-            [
-              41.0996,
-              443.837,
-              527.3773,
-              744.6282
-            ]
-          ],
-          "headline": "3"
         }
       ]
     },
@@ -3365,17 +3454,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            5.2319,
-            78.8437,
-            527.8424,
-            440.7576
+            3.8367,
+            80.0057,
+            526.2728,
+            441.2224
           ],
           "parts": [
             [
-              5.2319,
-              78.8437,
-              527.8424,
-              440.7576
+              3.8367,
+              80.0057,
+              526.2728,
+              441.2224
             ]
           ],
           "headline": "6"
@@ -3397,17 +3486,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            63.9457,
-            614.1904,
-            539.7014,
-            689.7223
+            64.1782,
+            613.6675,
+            538.5969,
+            690.129
           ],
           "parts": [
             [
-              63.9457,
-              614.1904,
-              539.7014,
-              689.7223
+              64.1782,
+              613.6675,
+              538.5969,
+              690.129
             ]
           ],
           "headline": "1"
@@ -3429,21 +3518,40 @@
       ],
       "activities": [
         {
+          "id": "p219-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.133,
+            648.6446,
+            526.7379,
+            725.3385
+          ],
+          "parts": [
+            [
+              53.133,
+              648.6446,
+              526.7379,
+              725.3385
+            ]
+          ]
+        },
+        {
           "id": "p219-92",
           "label": "92",
           "column": 0,
           "rect": [
-            5.2901,
-            96.1382,
-            528.3656,
-            450.3645
+            2.4416,
+            98.8306,
+            527.0867,
+            435.5383
           ],
           "parts": [
             [
-              5.2901,
-              96.1382,
-              528.3656,
-              450.3645
+              2.4416,
+              98.8306,
+              527.0867,
+              435.5383
             ]
           ],
           "headline": "90 2 226 222 \" Rn + Ra"
@@ -3465,24 +3573,24 @@
       ],
       "activities": [
         {
-          "id": "p227-13",
-          "label": "13",
-          "column": 1,
+          "id": "p227-12",
+          "label": "12",
+          "column": 0,
           "rect": [
-            317.8681,
-            81.1035,
-            559.1091,
-            543.4625
+            51.3827,
+            80.3713,
+            289.0557,
+            543.0303
           ],
           "parts": [
             [
-              317.8681,
-              81.1035,
-              559.1091,
-              543.4625
+              51.3827,
+              80.3713,
+              289.0557,
+              543.0303
             ]
           ],
-          "headline": "Cıva atomlarının bazı enerji seviyeleri şekildeki gibidir."
+          "headline": "Cıva atomlarının bazı enerji seviyeleri şekildeki 12. gibidir."
         }
       ]
     },
@@ -3501,21 +3609,41 @@
       ],
       "activities": [
         {
+          "id": "p228-14",
+          "label": "14",
+          "column": 0,
+          "rect": [
+            55.4002,
+            398.3435,
+            287.2904,
+            727.9531
+          ],
+          "parts": [
+            [
+              55.4002,
+              398.3435,
+              287.2904,
+              727.9531
+            ]
+          ],
+          "headline": "Hidrojen atomlarının bazı enerji seviyeleri şekildeki gibidir."
+        },
+        {
           "id": "p228-16",
           "label": "16",
           "column": 1,
           "rect": [
-            301.4166,
-            630.4588,
+            301.5329,
+            629.8778,
             519.1663,
-            725.8033
+            726.791
           ],
           "parts": [
             [
-              301.4166,
-              630.4588,
+              301.5329,
+              629.8778,
               519.1663,
-              725.8033
+              726.791
             ]
           ],
           "headline": "16. Aşağıdaki bilim insanlarından hangisi atom fiziği konusunda çalışmalar yapmamıştır?"
@@ -3525,17 +3653,17 @@
           "label": "17",
           "column": 1,
           "rect": [
-            302.9862,
+            302.6955,
             476.1995,
-            533.5975,
-            576.2502
+            533.7138,
+            576.4826
           ],
           "parts": [
             [
-              302.9862,
+              302.6955,
               476.1995,
-              533.5975,
-              576.2502
+              533.7138,
+              576.4826
             ]
           ],
           "headline": "Aşağıdaki bilim insanlarından hangisi modern 17. atom fiziği konusunda çalışmalar yapmamıştır?"
@@ -3545,17 +3673,17 @@
           "label": "18",
           "column": 1,
           "rect": [
-            301.1259,
-            304.9164,
+            301.4747,
+            304.9745,
             533.9667,
-            424.5473
+            424.0244
           ],
           "parts": [
             [
-              301.1259,
-              304.9164,
+              301.4747,
+              304.9745,
               533.9667,
-              424.5473
+              424.0244
             ]
           ],
           "headline": "elektron bir üst yörüngeye çıkarsa I. Açısal momentumu II. Toplam enerjisi III. Yörünge yarıçapı niceliklerinden hangileri artar?"
@@ -3565,17 +3693,17 @@
           "label": "15",
           "column": 0,
           "rect": [
-            54.9933,
-            73.4983,
-            285.3721,
-            363.5408
+            54.5863,
+            73.905,
+            284.7326,
+            362.9598
           ],
           "parts": [
             [
-              54.9933,
-              73.4983,
-              285.3721,
-              363.5408
+              54.5863,
+              73.905,
+              284.7326,
+              362.9598
             ]
           ],
           "headline": "Cıva atomlarının bazı enerji seviyeleri şekildeki gibidir."
@@ -3585,17 +3713,17 @@
           "label": "19",
           "column": 1,
           "rect": [
-            301.4166,
-            156.9901,
-            537.9574,
-            266.4533
+            301.4747,
+            156.8739,
+            538.0737,
+            266.6857
           ],
           "parts": [
             [
-              301.4166,
-              156.9901,
-              537.9574,
-              266.4533
+              301.4747,
+              156.8739,
+              538.0737,
+              266.6857
             ]
           ],
           "headline": "I. Yıldızların ışığının mavi renge doğru kayması II. Yıldızların ışığının kırmızı renge doğru kayması III. Mikrodalga seviyesinde yayılan kozmik ışınlar Işık il"
@@ -3621,80 +3749,120 @@
           "label": "23",
           "column": 1,
           "rect": [
-            321.8211,
-            659.3353,
+            319.9609,
+            659.1029,
             539.534,
-            724.0022
+            724.8737
           ],
           "parts": [
             [
-              321.8211,
-              659.3353,
+              319.9609,
+              659.1029,
               539.534,
-              724.0022
+              724.8737
             ]
           ],
           "headline": "23. Aşağıdaki parçacıklardan hangisinin karşıt parçacığı yine kendisidir?"
+        },
+        {
+          "id": "p229-20",
+          "label": "20",
+          "column": 0,
+          "rect": [
+            60.9809,
+            457.3746,
+            297.413,
+            724.467
+          ],
+          "parts": [
+            [
+              60.9809,
+              457.3746,
+              297.413,
+              724.467
+            ]
+          ],
+          "headline": "A, B ve C ışınları girişkenliklerine göre radyoaktif ışınımları temsil etmektedir."
         },
         {
           "id": "p229-24",
           "label": "24",
           "column": 1,
           "rect": [
-            320.8328,
-            391.5457,
-            544.4683,
-            613.2027
+            321.0654,
+            392.1848,
+            544.2939,
+            613.5513
           ],
           "parts": [
             [
-              320.8328,
-              391.5457,
-              544.4683,
-              613.2027
+              321.0654,
+              392.1848,
+              544.2939,
+              613.5513
             ]
           ],
           "headline": "Weinberg isimli bilim insanları yaptıkları hangi çalışmadan dolayı 1979 Nobel Fizik Ödülü’nü almaya hak kazanmışlardır?"
+        },
+        {
+          "id": "p229-21",
+          "label": "21",
+          "column": 0,
+          "rect": [
+            63.1241,
+            313.0732,
+            291.3971,
+            443.6752
+          ],
+          "parts": [
+            [
+              63.1241,
+              313.0732,
+              291.3971,
+              443.6752
+            ]
+          ],
+          "headline": "I. Nötron II. Pion III. Kaon IV. Elektron Yukarıda verilen atom altı parçacıklardan han- gileri bir kuark ve bir antikuarkın birleşmesiyle oluşmuştur?"
         },
         {
           "id": "p229-25",
           "label": "25",
           "column": 1,
           "rect": [
-            320.9491,
-            133.9238,
-            552.1999,
-            308.0539
+            320.7166,
+            134.0981,
+            552.6649,
+            309.274
           ],
           "parts": [
             [
-              320.9491,
-              133.9238,
-              552.1999,
-              308.0539
+              320.7166,
+              134.0981,
+              552.6649,
+              309.274
             ]
           ],
-          "headline": "I. Ağır bir çekirdeğin daha küçük iki çekirdeğe bölünmesine füzyon adı verilir."
+          "headline": "Fisyon ve füzyon tepkimeleri ile ilgili 25. I."
         },
         {
           "id": "p229-22",
           "label": "22",
           "column": 0,
           "rect": [
-            66.1547,
-            64.3764,
-            299.9052,
-            291.2045
+            66.0384,
+            64.6669,
+            300.8353,
+            292.7151
           ],
           "parts": [
             [
-              66.1547,
-              64.3764,
-              299.9052,
-              291.2045
+              66.0384,
+              64.6669,
+              300.8353,
+              292.7151
             ]
           ],
-          "headline": "asyonun etkilerine karşı koruma amaçlı hazır- lanmış bir uyarı levhasıdır?"
+          "headline": "Verilen işaretlerden hangisi insanları rady- asyonun etkilerine karşı koruma amaçlı hazır- lanmış bir uyarı levhasıdır?"
         }
       ]
     },
@@ -3725,17 +3893,17 @@
           "label": "30",
           "column": 3,
           "rect": [
-            301.7073,
-            626.4498,
+            299.5564,
+            625.5783,
             529.3765,
-            723.8279
+            724.2346
           ],
           "parts": [
             [
-              301.7073,
-              626.4498,
+              299.5564,
+              625.5783,
               529.3765,
-              723.8279
+              724.2346
             ]
           ],
           "headline": "Aşağıda verilen parçacıklardan hangisi kuark ve antikuarkın birleşiminden oluşmuştur?"
@@ -3746,16 +3914,16 @@
           "column": 0,
           "rect": [
             54.9122,
-            619.8844,
+            620.0006,
             274.9737,
-            723.7698
+            723.886
           ],
           "parts": [
             [
               54.9122,
-              619.8844,
+              620.0006,
               274.9737,
-              723.7698
+              723.886
             ]
           ],
           "headline": "Bir madde ile onun antimaddesinin I."
@@ -3765,17 +3933,17 @@
           "label": "31",
           "column": 3,
           "rect": [
-            302.9862,
-            509.3754,
+            303.1606,
+            509.5497,
             525.2425,
-            606.2305
+            606.4629
           ],
           "parts": [
             [
-              302.9862,
-              509.3754,
+              303.1606,
+              509.5497,
               525.2425,
-              606.2305
+              606.4629
             ]
           ],
           "headline": "Aşağıdakilerden hangisi modern atom teori- sinde yer almaz?"
@@ -3785,17 +3953,17 @@
           "label": "27",
           "column": 0,
           "rect": [
-            57.2023,
-            434.5407,
+            57.2604,
+            433.6692,
             293.9258,
-            588.6258
+            588.9744
           ],
           "parts": [
             [
-              57.2023,
-              434.5407,
+              57.2604,
+              433.6692,
               293.9258,
-              588.6258
+              588.9744
             ]
           ],
           "headline": "yaparak atom numarası 90, kütle numarası 231 olan Y elementine dönüşüyor."
@@ -3805,17 +3973,17 @@
           "label": "32",
           "column": 3,
           "rect": [
-            301.7654,
-            360.3452,
-            538.0443,
-            489.0399
+            301.5329,
+            360.0547,
+            536.9692,
+            489.2142
           ],
           "parts": [
             [
-              301.7654,
-              360.3452,
-              538.0443,
-              489.0399
+              301.5329,
+              360.0547,
+              536.9692,
+              489.2142
             ]
           ],
           "headline": "32. 1945 yılında üç gün arayla Japonya’nın Hiroşi- ma ve Nagazaki kentlerine atılarak on binlerce"
@@ -3825,17 +3993,17 @@
           "label": "28",
           "column": 0,
           "rect": [
-            58.2487,
-            289.81,
-            262.9076,
-            402.0039
+            58.365,
+            290.4491,
+            261.7122,
+            402.4687
           ],
           "parts": [
             [
-              58.2487,
-              289.81,
-              262.9076,
-              402.0039
+              58.365,
+              290.4491,
+              261.7122,
+              402.4687
             ]
           ],
           "headline": "C atomu kaç tane yukarı (u) ve aşağı (d)"
@@ -3845,17 +4013,17 @@
           "label": "33",
           "column": 3,
           "rect": [
-            302.4049,
-            140.4893,
-            537.3761,
-            334.9549
+            302.1723,
+            141.1865,
+            538.1318,
+            335.013
           ],
           "parts": [
             [
-              302.4049,
-              140.4893,
-              537.3761,
-              334.9549
+              302.1723,
+              141.1865,
+              538.1318,
+              335.013
             ]
           ],
           "headline": "I."
@@ -3865,52 +4033,20 @@
           "label": "29",
           "column": 0,
           "rect": [
-            56.7372,
-            83.7242,
-            249.2137,
-            275.9238
+            57.1442,
+            85.1767,
+            249.2718,
+            276.5629
           ],
           "parts": [
             [
-              56.7372,
-              83.7242,
-              249.2137,
-              275.9238
+              57.1442,
+              85.1767,
+              249.2718,
+              276.5629
             ]
           ],
           "headline": "Verilen tepkimelerden hangisi füzyon tepkimesidir?"
-        }
-      ]
-    },
-    "234": {
-      "pageWidth": 595.276,
-      "pageHeight": 841.89,
-      "columns": [
-        [
-          64.7008,
-          585.4045
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p234-q1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            54.1794,
-            290.5654,
-            552.5645,
-            755.5313
-          ],
-          "parts": [
-            [
-              54.1794,
-              290.5654,
-              552.5645,
-              755.5313
-            ]
-          ],
-          "headline": "Astronotlar, yolculuklarında dünyadaki insanlara göre daha yavaş mı yaşlanırlar?"
         }
       ]
     },
@@ -3929,17 +4065,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            48.0174,
-            83.0851,
-            527.0285,
-            166.112
+            48.308,
+            83.4918,
+            524.8776,
+            166.5769
           ],
           "parts": [
             [
-              48.0174,
-              83.0851,
-              527.0285,
-              166.112
+              48.308,
+              83.4918,
+              524.8776,
+              166.5769
             ]
           ]
         }
@@ -3964,17 +4100,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            61.2134,
-            102.7234,
-            540.5153,
-            211.9541
+            60.8646,
+            102.4329,
+            538.8876,
+            211.6636
           ],
           "parts": [
             [
-              61.2134,
-              102.7234,
-              540.5153,
-              211.9541
+              60.8646,
+              102.4329,
+              538.8876,
+              211.6636
             ]
           ]
         }
@@ -3995,70 +4131,20 @@
           "label": null,
           "column": 0,
           "rect": [
-            5.9295,
-            93.8338,
-            528.8888,
-            475.5604
+            5.7551,
+            95.1702,
+            528.1331,
+            474.8632
           ],
           "parts": [
             [
-              5.9295,
-              93.8338,
-              528.8888,
-              475.5604
+              5.7551,
+              95.1702,
+              528.1331,
+              474.8632
             ]
           ],
           "headline": "238 238 görelilik teorisi ile açıklanabilir mi?"
-        }
-      ]
-    },
-    "241": {
-      "pageWidth": 595.276,
-      "pageHeight": 841.89,
-      "columns": [
-        [
-          50.6887,
-          571.276
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p241-v1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            53.133,
-            491.1897,
-            512.9605,
-            741.5488
-          ],
-          "parts": [
-            [
-              53.133,
-              491.1897,
-              512.9605,
-              741.5488
-            ]
-          ]
-        },
-        {
-          "id": "p241-v2",
-          "label": null,
-          "column": 0,
-          "rect": [
-            6.9178,
-            88.8371,
-            542.4336,
-            477.8844
-          ],
-          "parts": [
-            [
-              6.9178,
-              88.8371,
-              542.4336,
-              477.8844
-            ]
-          ]
         }
       ]
     },
@@ -4077,17 +4163,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            61.7948,
-            654.1642,
-            540.2827,
-            734.6347
+            63.4806,
+            653.8156,
+            538.7132,
+            735.1577
           ],
           "parts": [
             [
-              61.7948,
-              654.1642,
-              540.2827,
-              734.6347
+              63.4806,
+              653.8156,
+              538.7132,
+              735.1577
             ]
           ]
         }
@@ -4108,35 +4194,16 @@
           "label": null,
           "column": 0,
           "rect": [
-            46.7966,
-            514.7788,
-            525.6334,
-            587.6381
-          ],
-          "parts": [
-            [
-              46.7966,
-              514.7788,
-              525.6334,
-              587.6381
-            ]
-          ]
-        },
-        {
-          "id": "p249-v2",
-          "label": null,
-          "column": 0,
-          "rect": [
-            7.6735,
-            83.0851,
-            526.6216,
+            5.5807,
+            85.1767,
+            526.5053,
             423.89
           ],
           "parts": [
             [
-              7.6735,
-              83.0851,
-              526.6216,
+              5.5807,
+              85.1767,
+              526.5053,
               423.89
             ]
           ]
@@ -4158,17 +4225,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            43.5993,
-            430.8804,
-            526.2147,
-            607.8574
+            43.6574,
+            431.3452,
+            525.1683,
+            608.206
           ],
           "parts": [
             [
-              43.5993,
-              430.8804,
-              526.2147,
-              607.8574
+              43.6574,
+              431.3452,
+              525.1683,
+              608.206
             ]
           ]
         }
@@ -4189,15 +4256,15 @@
           "label": null,
           "column": 0,
           "rect": [
-            54.0632,
-            635.5718,
+            55.1677,
+            633.1315,
             552.5892,
             755.5313
           ],
           "parts": [
             [
-              54.0632,
-              635.5718,
+              55.1677,
+              633.1315,
               552.5892,
               755.5313
             ]
@@ -4220,17 +4287,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            59.4695,
-            79.2504,
-            543.3056,
-            379.3444
+            61.6785,
+            77.7397,
+            541.9104,
+            379.4025
           ],
           "parts": [
             [
-              59.4695,
-              79.2504,
-              543.3056,
-              379.3444
+              61.6785,
+              77.7397,
+              541.9104,
+              379.4025
             ]
           ],
           "headline": "Hertz’in bu deneyinde primer devrede morötesi yerine kızılötesi ışın oluşması durumunda neler olabilir?"
@@ -4252,67 +4319,84 @@
           "label": null,
           "column": 0,
           "rect": [
-            42.3204,
-            431.6242,
-            524.4707,
-            735.8549
+            43.0761,
+            425.0121,
+            526.0984,
+            737.7141
           ],
           "parts": [
             [
-              42.3204,
-              431.6242,
-              524.4707,
-              735.8549
-            ]
-          ]
-        },
-        {
-          "id": "p259-v2",
-          "label": null,
-          "column": 0,
-          "rect": [
-            7.034,
-            81.2839,
-            529.005,
-            431.1242
-          ],
-          "parts": [
-            [
-              7.034,
-              81.2839,
-              529.005,
-              431.1242
+              43.0761,
+              425.0121,
+              526.0984,
+              737.7141
             ]
           ]
         }
       ]
     },
-    "274": {
+    "265": {
       "pageWidth": 595.276,
       "pageHeight": 841.89,
       "columns": [
         [
-          64.9299,
+          49.8141,
+          288.894
+        ],
+        [
+          292.894,
+          571.276
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p265-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            42.146,
+            521.17,
+            525.7496,
+            737.3074
+          ],
+          "parts": [
+            [
+              42.146,
+              521.17,
+              525.7496,
+              737.3074
+            ]
+          ],
+          "headline": "6"
+        }
+      ]
+    },
+    "270": {
+      "pageWidth": 595.276,
+      "pageHeight": 841.89,
+      "columns": [
+        [
+          65.5621,
           585.4045
         ]
       ],
       "activities": [
         {
-          "id": "p274-v1",
+          "id": "p270-v1",
           "label": null,
           "column": 0,
           "rect": [
-            59.0625,
-            525.0628,
-            539.9921,
-            738.8761
+            53.0749,
+            610.4719,
+            552.9818,
+            755.5313
           ],
           "parts": [
             [
-              59.0625,
-              525.0628,
-              539.9921,
-              738.8761
+              53.0749,
+              610.4719,
+              552.9818,
+              755.5313
             ]
           ]
         }
@@ -4333,17 +4417,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            5.0575,
-            85.04,
-            525.7496,
-            501.4736
+            2.7904,
+            81.2839,
+            527.6099,
+            501.6479
           ],
           "parts": [
             [
-              5.0575,
-              85.04,
-              525.7496,
-              501.4736
+              2.7904,
+              81.2839,
+              527.6099,
+              501.6479
             ]
           ],
           "headline": "3"
@@ -4369,17 +4453,17 @@
           "label": "13",
           "column": 1,
           "rect": [
-            297.0567,
-            278.5384,
+            296.301,
+            278.5965,
             532.0429,
-            419.6087
+            420.5383
           ],
           "parts": [
             [
-              297.0567,
-              278.5384,
+              296.301,
+              278.5965,
               532.0429,
-              419.6087
+              420.5383
             ]
           ],
           "headline": "I. Sadece tek bir dalga boyunda çok şiddetli bir ışıma yapabilir."
@@ -4389,17 +4473,17 @@
           "label": "14",
           "column": 1,
           "rect": [
-            296.5086,
-            112.0777,
+            297.4055,
+            111.9034,
             524.3231,
-            245.6529
+            245.4786
           ],
           "parts": [
             [
-              296.5086,
-              112.0777,
+              297.4055,
+              111.9034,
               524.3231,
-              245.6529
+              245.4786
             ]
           ],
           "headline": ". Einstein’ın özel görelilik teorisine göre I. Durgun ve hareketli gözlemciler aynı referans sisteminde değildir."
@@ -4421,61 +4505,61 @@
       ],
       "activities": [
         {
+          "id": "p278-15",
+          "label": "15",
+          "column": 0,
+          "rect": [
+            62.318,
+            618.3156,
+            261.7703,
+            724.1765
+          ],
+          "parts": [
+            [
+              62.318,
+              618.3156,
+              261.7703,
+              724.1765
+            ]
+          ],
+          "headline": "Kuantum fiziğinin ortaya çıkmasına I. Planck hipotezinin kabul görmesi II. Wien Yasası'nın kabul edilmesi III. Siyah cisim ışımasının sonuçları olaylarından han"
+        },
+        {
           "id": "p278-19",
           "label": "19",
           "column": 1,
           "rect": [
             305.8928,
-            485.7862,
-            525.5752,
-            723.9441
+            487.8198,
+            525.8659,
+            722.201
           ],
           "parts": [
             [
               305.8928,
-              485.7862,
-              525.5752,
-              723.9441
+              487.8198,
+              525.8659,
+              722.201
             ]
           ],
           "headline": "Dikdörtgen levha ışık hızına yakın bir v hızıyla hareket etmektedir."
-        },
-        {
-          "id": "p278-15",
-          "label": "15",
-          "column": 0,
-          "rect": [
-            62.0273,
-            618.3737,
-            261.189,
-            723.5955
-          ],
-          "parts": [
-            [
-              62.0273,
-              618.3737,
-              261.189,
-              723.5955
-            ]
-          ],
-          "headline": "Kuantum fiziğinin ortaya çıkmasına I. Planck hipotezinin kabul görmesi II. Wien Yasası'nın kabul edilmesi III. Siyah cisim ışımasının sonuçları olaylarından han"
         },
         {
           "id": "p278-16",
           "label": "16",
           "column": 0,
           "rect": [
-            62.0273,
-            467.4262,
+            61.8529,
+            466.8452,
             290.7328,
-            583.8615
+            584.152
           ],
           "parts": [
             [
-              62.0273,
-              467.4262,
+              61.8529,
+              466.8452,
               290.7328,
-              583.8615
+              584.152
             ]
           ],
           "headline": "Planck hipotezine göre I. Işık sadece dalga hâlinde yayılır."
@@ -4485,17 +4569,17 @@
           "label": "20",
           "column": 1,
           "rect": [
-            305.1371,
-            273.8902,
+            305.6603,
+            274.6456,
             541.4924,
-            467.1357
+            467.3681
           ],
           "parts": [
             [
-              305.1371,
-              273.8902,
+              305.6603,
+              274.6456,
               541.4924,
-              467.1357
+              467.3681
             ]
           ],
           "headline": "Fotoelektrik etkinin kullanıldığı günlük hayatı kolaylaştıracak tasarımlar bulunmaktadır."
@@ -4505,17 +4589,17 @@
           "label": "17",
           "column": 0,
           "rect": [
-            61.2134,
-            273.8321,
-            300.0214,
-            424.6054
+            61.5622,
+            273.5416,
+            301.4445,
+            424.4311
           ],
           "parts": [
             [
-              61.2134,
-              273.8321,
-              300.0214,
-              424.6054
+              61.5622,
+              273.5416,
+              301.4445,
+              424.4311
             ]
           ],
           "headline": "Bir astronot bir araçla ışık hızına yakın hızda hareket etmektedir."
@@ -4526,16 +4610,16 @@
           "column": 1,
           "rect": [
             306.1457,
-            87.036,
+            87.3846,
             524.7985,
-            234.9623
+            234.4975
           ],
           "parts": [
             [
               306.1457,
-              87.036,
+              87.3846,
               524.7985,
-              234.9623
+              234.4975
             ]
           ],
           "headline": "21. boyları eşittir. Buna göre bu maddelerin"
@@ -4545,17 +4629,17 @@
           "label": "18",
           "column": 0,
           "rect": [
-            61.911,
-            122.6522,
-            298.51,
-            233.684
+            61.9692,
+            122.7103,
+            298.6263,
+            233.9164
           ],
           "parts": [
             [
-              61.911,
-              122.6522,
-              298.51,
-              233.684
+              61.9692,
+              122.7103,
+              298.6263,
+              233.9164
             ]
           ],
           "headline": "Aşağıdakilerden hangisi fotonun özelliklerinden değildir?"
@@ -4581,17 +4665,17 @@
           "label": "22",
           "column": 0,
           "rect": [
-            57.493,
-            539.6463,
-            286.7672,
-            717.5529
+            56.9116,
+            539.8206,
+            287.9251,
+            717.611
           ],
           "parts": [
             [
-              57.493,
-              539.6463,
-              286.7672,
-              717.5529
+              56.9116,
+              539.8206,
+              287.9251,
+              717.611
             ]
           ],
           "headline": "Işık; bazı durumlarda tanecik modeli, bazı durumlarda dalga modeli, bazı durumlarda ise hem tanecik hem dalga modeli ile açıkla- nabilmektedir."
@@ -4601,17 +4685,17 @@
           "label": "25",
           "column": 1,
           "rect": [
-            302.8118,
-            598.4449,
+            302.9281,
+            598.2125,
             535.8621,
-            716.9719
+            716.9138
           ],
           "parts": [
             [
-              302.8118,
-              598.4449,
+              302.9281,
+              598.2125,
               535.8621,
-              716.9719
+              716.9138
             ]
           ],
           "headline": "Compton olayı ile ilgili olarak aşağıdakilerden hangisi yanlıştır?"
@@ -4621,17 +4705,17 @@
           "label": "26",
           "column": 1,
           "rect": [
-            300.8353,
-            462.6618,
-            525.6915,
-            553.9973
+            300.7772,
+            464.0563,
+            525.459,
+            553.7068
           ],
           "parts": [
             [
-              300.8353,
-              462.6618,
-              525.6915,
-              553.9973
+              300.7772,
+              464.0563,
+              525.459,
+              553.7068
             ]
           ],
           "headline": "Compton saçılması deneyinde, serbest elektro- na gönderilen foton, enerjisinin dörtte birini durmakta olan elektrona vererek saçılmaktadır."
@@ -4641,17 +4725,17 @@
           "label": "23",
           "column": 0,
           "rect": [
-            58.8881,
-            320.4295,
-            292.6967,
-            457.9556
+            58.5975,
+            320.2552,
+            294.0338,
+            457.607
           ],
           "parts": [
             [
-              58.8881,
-              320.4295,
-              292.6967,
-              457.9556
+              58.5975,
+              320.2552,
+              294.0338,
+              457.607
             ]
           ],
           "headline": "Compton ve fotoelektrik olaylarının ortak yön- leri bulunmaktadır."
@@ -4661,17 +4745,17 @@
           "label": "27",
           "column": 1,
           "rect": [
-            302.463,
-            309.5064,
-            527.4355,
-            411.9393
+            301.9979,
+            309.855,
+            527.3192,
+            412.346
           ],
           "parts": [
             [
-              302.463,
-              309.5064,
-              527.4355,
-              411.9393
+              301.9979,
+              309.855,
+              527.3192,
+              412.346
             ]
           ],
           "headline": "Compton saçılması deneyinde serbest elektrona gönderilen fotonun dalga boyu 62 Å, elektrona çarptıktan sonra saçılan fotonun dalga boyu 124 Å dur."
@@ -4681,17 +4765,17 @@
           "label": "28",
           "column": 1,
           "rect": [
-            302.9281,
-            150.8314,
+            302.5211,
+            151.0638,
             524.1088,
-            257.8542
+            257.738
           ],
           "parts": [
             [
-              302.9281,
-              150.8314,
+              302.5211,
+              151.0638,
               524.1088,
-              257.8542
+              257.738
             ]
           ],
           "headline": "Fotoelektrik olayda katottan elektron sökmek için aşağıdaki değişkenlerden hangisi etkili değildir?"
@@ -4701,17 +4785,17 @@
           "label": "24",
           "column": 0,
           "rect": [
-            58.4812,
-            150.4828,
+            58.4231,
+            151.0057,
             263.3972,
-            256.8084
+            257.4475
           ],
           "parts": [
             [
-              58.4812,
-              150.4828,
+              58.4231,
+              151.0057,
               263.3972,
-              256.8084
+              257.4475
             ]
           ],
           "headline": "II. Işık hızıyla yayılan fotonlara III. Hareket eden yüklü parçacıklar Madde ile ilgili yukarıdaki hangilerine bir dalga eşlik eder?"
@@ -4733,101 +4817,101 @@
       ],
       "activities": [
         {
-          "id": "p280-33",
-          "label": "33",
-          "column": 1,
-          "rect": [
-            304.8828,
-            616.4564,
-            530.3421,
-            718.8311
-          ],
-          "parts": [
-            [
-              304.8828,
-              616.4564,
-              530.3421,
-              718.8311
-            ]
-          ],
-          "headline": "Bir metale dalga boyu 4 000 Å olan ışık düşürülün- ce koparılan elektronların kinetik enerjileri 1,1 eV oluyor."
-        },
-        {
           "id": "p280-29",
           "label": "29",
           "column": 0,
           "rect": [
-            57.8418,
-            617.0955,
-            295.6615,
-            718.3663
+            58.5975,
+            616.2821,
+            296.301,
+            719.7608
           ],
           "parts": [
             [
-              57.8418,
-              617.0955,
-              295.6615,
-              718.3663
+              58.5975,
+              616.2821,
+              296.301,
+              719.7608
             ]
           ],
           "headline": "Compton saçılması deneyinde serbest elektro- na gönderilen fotonun dalga boyu λ, elektrona çarptıktan sonra saçılan fotonun dalga boyu 6 λ/5'tir."
         },
         {
-          "id": "p280-34",
-          "label": "34",
+          "id": "p280-33",
+          "label": "33",
           "column": 1,
           "rect": [
-            305.6603,
-            429.3697,
-            534.3331,
-            588.161
+            304.8828,
+            617.8508,
+            530.1677,
+            719.2379
           ],
           "parts": [
             [
-              305.6603,
-              429.3697,
-              534.3331,
-              588.161
+              304.8828,
+              617.8508,
+              530.1677,
+              719.2379
             ]
           ],
-          "headline": "Bir fotosel devreye λ dalga boyunda ışık düşürülmektedir. Devredeki elektronlar ters bağlı üreteç ile durdurulmak isteniyor."
+          "headline": "Bir metale dalga boyu 4 000 Å olan ışık düşürülün- ce koparılan elektronların kinetik enerjileri 1,1 eV oluyor."
         },
         {
           "id": "p280-30",
           "label": "30",
           "column": 0,
           "rect": [
-            58.9463,
+            59.0625,
             441.7914,
-            288.3949,
-            587.4057
+            288.0462,
+            588.4515
           ],
           "parts": [
             [
-              58.9463,
+              59.0625,
               441.7914,
-              288.3949,
-              587.4057
+              288.0462,
+              588.4515
             ]
           ],
-          "headline": "30. enerjisine eşit veya ondan büyük olmalıdır."
+          "headline": "I. Katottan elektron koparmak için gönderilen 30. enerjisine eşit veya ondan büyük olmalıdır."
+        },
+        {
+          "id": "p280-34",
+          "label": "34",
+          "column": 1,
+          "rect": [
+            305.079,
+            429.6021,
+            534.3331,
+            588.4515
+          ],
+          "parts": [
+            [
+              305.079,
+              429.6021,
+              534.3331,
+              588.4515
+            ]
+          ],
+          "headline": "Bir fotosel devreye λ dalga boyunda ışık düşürülmektedir. Devredeki elektronlar ters bağlı üreteç ile durdurulmak isteniyor."
         },
         {
           "id": "p280-31",
           "label": "31",
           "column": 0,
           "rect": [
-            57.5511,
-            334.0833,
-            288.0462,
-            427.1038
+            57.7836,
+            334.49,
+            287.6392,
+            427.1619
           ],
           "parts": [
             [
-              57.5511,
-              334.0833,
-              288.0462,
-              427.1038
+              57.7836,
+              334.49,
+              287.6392,
+              427.1619
             ]
           ],
           "headline": "Einstein, 1921’de hangi çalışması ile Nobel Ödülü almıştır?"
@@ -4838,16 +4922,16 @@
           "column": 1,
           "rect": [
             305.3115,
-            250.7659,
-            542.8703,
-            397.9949
+            249.8943,
+            541.3872,
+            397.472
           ],
           "parts": [
             [
               305.3115,
-              250.7659,
-              542.8703,
-              397.9949
+              249.8943,
+              541.3872,
+              397.472
             ]
           ],
           "headline": "Kütle ile ilgili I. Işık hızına yakın hızlarda hareket eden cisim- lerin kütleleri artar."
@@ -4857,20 +4941,51 @@
           "label": "32",
           "column": 0,
           "rect": [
-            58.4231,
-            81.4001,
+            58.5393,
+            82.5041,
             295.6874,
-            308.693
+            308.3444
           ],
           "parts": [
             [
-              58.4231,
-              81.4001,
+              58.5393,
+              82.5041,
               295.6874,
-              308.693
+              308.3444
             ]
           ],
           "headline": "Fotosel lamba bağlanmış bir devrede katoda gönderilen ışığın frekans-maksimum kinetik en- erji grafiği verilmiştir."
+        }
+      ]
+    },
+    "284": {
+      "pageWidth": 595.276,
+      "pageHeight": 841.89,
+      "columns": [
+        [
+          50.6929,
+          585.4045
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p284-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            40.5183,
+            624.5325,
+            537.8361,
+            751.9134
+          ],
+          "parts": [
+            [
+              40.5183,
+              624.5325,
+              537.8361,
+              751.9134
+            ]
+          ]
         }
       ]
     },
@@ -4890,19 +5005,51 @@
           "column": 0,
           "rect": [
             50.6929,
-            363.5117,
+            375.2773,
             552.7686,
             766.9697
           ],
           "parts": [
             [
               50.6929,
-              363.5117,
+              375.2773,
               552.7686,
               766.9697
             ]
           ],
           "headline": "1. Günlük hayatta gördüğünüz gelişen ve değişen teknolojik ürünler ile fizik biliminin ilişkisi hakkında örnekler veriniz?"
+        }
+      ]
+    },
+    "298": {
+      "pageWidth": 595.276,
+      "pageHeight": 841.89,
+      "columns": [
+        [
+          50.126,
+          585.4045
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p298-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            51.9704,
+            84.0728,
+            524.2963,
+            164.4271
+          ],
+          "parts": [
+            [
+              51.9704,
+              84.0728,
+              524.2963,
+              164.4271
+            ]
+          ],
+          "headline": "2"
         }
       ]
     },
@@ -4933,17 +5080,48 @@
           "label": null,
           "column": 2,
           "rect": [
-            55.9815,
-            173.9557,
-            539.527,
-            736.4359
+            55.3421,
+            177.2675,
+            538.5388,
+            735.6225
           ],
           "parts": [
             [
-              55.9815,
-              173.9557,
-              539.527,
-              736.4359
+              55.3421,
+              177.2675,
+              538.5388,
+              735.6225
+            ]
+          ]
+        }
+      ]
+    },
+    "306": {
+      "pageWidth": 595.276,
+      "pageHeight": 841.89,
+      "columns": [
+        [
+          50.6929,
+          585.4045
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p306-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            48.3662,
+            608.2641,
+            541.6464,
+            759.4446
+          ],
+          "parts": [
+            [
+              48.3662,
+              608.2641,
+              541.6464,
+              759.4446
             ]
           ]
         }
@@ -4965,50 +5143,18 @@
           "column": 0,
           "rect": [
             54.1025,
-            103.1882,
+            103.9435,
             543.0,
             189.9693
           ],
           "parts": [
             [
               54.1025,
-              103.1882,
+              103.9435,
               543.0,
               189.9693
             ]
           ]
-        }
-      ]
-    },
-    "310": {
-      "pageWidth": 595.276,
-      "pageHeight": 841.89,
-      "columns": [
-        [
-          49.2756,
-          585.4045
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p310-q1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            46.099,
-            267.0343,
-            541.6464,
-            771.6609
-          ],
-          "parts": [
-            [
-              46.099,
-              267.0343,
-              541.6464,
-              771.6609
-            ]
-          ],
-          "headline": "Özellikle göz, kalp ve hassas iç organların ameliyatlarında cerrahlar neşter yerine ne kullanmaktadır?"
         }
       ]
     },
@@ -5027,21 +5173,81 @@
       ],
       "activities": [
         {
+          "id": "p316-15",
+          "label": "15",
+          "column": 0,
+          "rect": [
+            55.9815,
+            484.8566,
+            368.5596,
+            498.3942
+          ],
+          "parts": [
+            [
+              55.9815,
+              484.8566,
+              368.5596,
+              498.3942
+            ]
+          ],
+          "headline": "Güneş enerjisi kullanımının ekonomi dışındaki katkıları nelerdir?"
+        },
+        {
+          "id": "p316-16",
+          "label": "16",
+          "column": 0,
+          "rect": [
+            56.7372,
+            460.3959,
+            430.5868,
+            474.8051
+          ],
+          "parts": [
+            [
+              56.7372,
+              460.3959,
+              430.5868,
+              474.8051
+            ]
+          ],
+          "headline": "Güneş enerjisi yukarıda verilen örnekler dışında hangi alanlarda kullanılabilir?"
+        },
+        {
+          "id": "p316-17",
+          "label": "17",
+          "column": 0,
+          "rect": [
+            57.086,
+            435.8771,
+            324.9602,
+            451.0997
+          ],
+          "parts": [
+            [
+              57.086,
+              435.8771,
+              324.9602,
+              451.0997
+            ]
+          ],
+          "headline": "Güneş enerjisi kullanımının ülkemize katkıları nelerdir?"
+        },
+        {
           "id": "p316-18",
           "label": "18",
           "column": 0,
           "rect": [
-            53.7144,
-            253.5547,
+            53.3074,
+            254.6587,
             281.0,
-            372.9532
+            373.5342
           ],
           "parts": [
             [
-              53.7144,
-              253.5547,
+              53.3074,
+              254.6587,
               281.0,
-              372.9532
+              373.5342
             ]
           ],
           "headline": "masına yardımcı I. MR çekimi II. Röntgen çekimi III. Tomografi çekimi A) Yalnız I"
@@ -5052,19 +5258,39 @@
           "column": 1,
           "rect": [
             303.0,
-            265.8141,
-            500.6364,
-            372.256
+            265.3493,
+            500.9271,
+            372.8951
           ],
           "parts": [
             [
               303.0,
-              265.8141,
-              500.6364,
-              372.256
+              265.3493,
+              500.9271,
+              372.8951
             ]
           ],
           "headline": "Termal kameralar ile ilgili I. Cisimlere dokunmadan sıcaklığı algılar."
+        },
+        {
+          "id": "p316-19",
+          "label": "19",
+          "column": 0,
+          "rect": [
+            55.3421,
+            110.6833,
+            279.5007,
+            217.9966
+          ],
+          "parts": [
+            [
+              55.3421,
+              110.6833,
+              279.5007,
+              217.9966
+            ]
+          ],
+          "headline": "Güneş pilleri ile ilgili I. Verimleri düşüktür."
         },
         {
           "id": "p316-21",
@@ -5072,39 +5298,19 @@
           "column": 1,
           "rect": [
             303.0,
-            109.405,
-            520.9828,
-            217.2413
+            108.0687,
+            522.2035,
+            217.4156
           ],
           "parts": [
             [
               303.0,
-              109.405,
-              520.9828,
-              217.2413
+              108.0687,
+              522.2035,
+              217.4156
             ]
           ],
           "headline": "PET ( Pozitron Emisyon Tomografi) ile ilgili I. X-ışınları kullanır."
-        },
-        {
-          "id": "p316-19",
-          "label": "19",
-          "column": 0,
-          "rect": [
-            55.9815,
-            110.5671,
-            278.9775,
-            217.067
-          ],
-          "parts": [
-            [
-              55.9815,
-              110.5671,
-              278.9775,
-              217.067
-            ]
-          ],
-          "headline": "Güneş pilleri ile ilgili I. Verimleri düşüktür."
         }
       ]
     },
@@ -5127,61 +5333,61 @@
       ],
       "activities": [
         {
-          "id": "p317-22",
-          "label": "22",
-          "column": 0,
-          "rect": [
-            68.48,
-            594.3197,
-            270.2576,
-            712.44
-          ],
-          "parts": [
-            [
-              68.48,
-              594.3197,
-              270.2576,
-              712.44
-            ]
-          ],
-          "headline": "Diyotlar ile ilgili I. Akımı tek yönde geçirir."
-        },
-        {
           "id": "p317-26",
           "label": "26",
           "column": 2,
           "rect": [
-            308.6832,
-            606.8696,
+            308.16,
+            606.2305,
             535.3766,
-            712.44
+            713.2534
           ],
           "parts": [
             [
-              308.6832,
-              606.8696,
+              308.16,
+              606.2305,
               535.3766,
-              712.44
+              713.2534
             ]
           ],
           "headline": "I. Leke tutmayan kumaşlar II. Kendini temizleyen camlar III. Kendi enerjisini üreten lambalar Yukarıdaki ürünlerden hangileri nanoteknoloji kullanılarak üretilm"
+        },
+        {
+          "id": "p317-22",
+          "label": "22",
+          "column": 0,
+          "rect": [
+            68.6544,
+            592.9834,
+            270.1995,
+            713.1372
+          ],
+          "parts": [
+            [
+              68.6544,
+              592.9834,
+              270.1995,
+              713.1372
+            ]
+          ],
+          "headline": "Diyotlar ile ilgili I. Akımı tek yönde geçirir."
         },
         {
           "id": "p317-27",
           "label": "27",
           "column": 2,
           "rect": [
-            308.5088,
-            453.017,
-            519.9364,
-            557.4253
+            308.6832,
+            452.0874,
+            519.8201,
+            557.8901
           ],
           "parts": [
             [
-              308.5088,
-              453.017,
-              519.9364,
-              557.4253
+              308.6832,
+              452.0874,
+              519.8201,
+              557.8901
             ]
           ],
           "headline": "Lazer ışığı ile ilgili I. Tek renklidir."
@@ -5191,17 +5397,17 @@
           "label": "23",
           "column": 0,
           "rect": [
-            70.224,
-            448.6594,
-            270.6646,
-            555.8566
+            70.5146,
+            449.1242,
+            269.3856,
+            556.4957
           ],
           "parts": [
             [
-              70.224,
-              448.6594,
-              270.6646,
-              555.8566
+              70.5146,
+              449.1242,
+              269.3856,
+              556.4957
             ]
           ],
           "headline": "Süper iletkenler ile ilgili I. Parçacık hızlandırıcılarında kullanılır."
@@ -5211,17 +5417,17 @@
           "label": "28",
           "column": 2,
           "rect": [
-            308.16,
-            304.8583,
-            534.4114,
-            421.7003
+            307.9856,
+            304.2192,
+            534.702,
+            421.9908
           ],
           "parts": [
             [
-              308.16,
-              304.8583,
-              534.4114,
-              421.7003
+              307.9856,
+              304.2192,
+              534.702,
+              421.9908
             ]
           ],
           "headline": "I. Yarı iletkenlerden yapılmıştır."
@@ -5231,17 +5437,17 @@
           "label": "24",
           "column": 0,
           "rect": [
-            71.3285,
-            313.9802,
-            270.6646,
-            419.2601
+            70.8634,
+            313.9221,
+            268.9787,
+            419.202
           ],
           "parts": [
             [
-              71.3285,
-              313.9802,
-              270.6646,
-              419.2601
+              70.8634,
+              313.9221,
+              268.9787,
+              419.202
             ]
           ],
           "headline": "I. Ciltte yanıklar oluşturabilir.  II. Tıpta kullanılmaz."
@@ -5251,37 +5457,37 @@
           "label": "29",
           "column": 2,
           "rect": [
-            308.5669,
-            133.9238,
-            518.1343,
-            265.4074
+            308.16,
+            134.04,
+            518.9481,
+            265.6398
           ],
           "parts": [
             [
-              308.5669,
-              133.9238,
-              518.1343,
-              265.4074
+              308.16,
+              134.04,
+              518.9481,
+              265.6398
             ]
           ],
-          "headline": "I. Saatte 500 km hıza ulaşabilir.  II. Süper iletken teknolojisi ile yapılmıştır."
+          "headline": "Maglev trenleri ile ilgili I. Saatte 500 km hıza ulaşabilir."
         },
         {
           "id": "p317-25",
           "label": "25",
           "column": 0,
           "rect": [
-            69.4682,
-            135.4345,
+            69.6426,
+            135.2602,
             298.1658,
-            265.0588
+            265.5236
           ],
           "parts": [
             [
-              69.4682,
-              135.4345,
+              69.6426,
+              135.2602,
               298.1658,
-              265.0588
+              265.5236
             ]
           ],
           "headline": "Diyot ve transistörler yarı iletken maddelerden yapılır."
@@ -5307,17 +5513,17 @@
           "label": null,
           "column": 1,
           "rect": [
-            296.4172,
-            566.3148,
-            518.89,
-            711.859
+            296.766,
+            566.3729,
+            519.5295,
+            713.021
           ],
           "parts": [
             [
-              296.4172,
-              566.3148,
-              518.89,
-              711.859
+              296.766,
+              566.3729,
+              519.5295,
+              713.021
             ]
           ]
         },
@@ -5326,17 +5532,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            52.7842,
-            568.116,
+            53.8306,
+            567.7674,
             285.9431,
-            710.2902
+            711.9171
           ],
           "parts": [
             [
-              52.7842,
-              568.116,
+              53.8306,
+              567.7674,
               285.9431,
-              710.2902
+              711.9171
             ]
           ]
         },
@@ -5345,17 +5551,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            54.2957,
-            409.1504,
-            277.2917,
-            540.8083
+            54.8189,
+            408.7437,
+            278.0055,
+            541.796
           ],
           "parts": [
             [
-              54.2957,
-              409.1504,
-              277.2917,
-              540.8083
+              54.8189,
+              408.7437,
+              278.0055,
+              541.796
             ]
           ]
         },
@@ -5364,17 +5570,17 @@
           "label": null,
           "column": 1,
           "rect": [
-            294.9639,
-            407.9303,
-            517.4948,
-            540.6921
+            295.6034,
+            408.2208,
+            517.0298,
+            541.1569
           ],
           "parts": [
             [
-              294.9639,
-              407.9303,
-              517.4948,
-              540.6921
+              295.6034,
+              408.2208,
+              517.0298,
+              541.1569
             ]
           ]
         },
@@ -5383,16 +5589,16 @@
           "label": null,
           "column": 1,
           "rect": [
-            295.022,
-            249.6619,
-            521.4478,
+            295.1383,
+            249.2552,
+            521.3316,
             383.0629
           ],
           "parts": [
             [
-              295.022,
-              249.6619,
-              521.4478,
+              295.1383,
+              249.2552,
+              521.3316,
               383.0629
             ]
           ]
@@ -5402,17 +5608,17 @@
           "label": "32",
           "column": 0,
           "rect": [
-            54.1794,
-            261.8632,
-            264.3281,
-            382.6562
+            53.9469,
+            261.9213,
+            264.27,
+            382.8886
           ],
           "parts": [
             [
-              54.1794,
-              261.8632,
-              264.3281,
-              382.6562
+              53.9469,
+              261.9213,
+              264.27,
+              382.8886
             ]
           ],
           "headline": "I. LCD teknolojisi II. Plazma teknolojisi III. Ultrason cihazı IV. Lazer ışını Yukarıda verilen teknolojilerden rinde sıvı kristaller kullanılır?"
@@ -5422,17 +5628,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            55.5165,
-            123.1751,
-            274.792,
-            230.7209
+            55.9234,
+            122.6522,
+            274.2106,
+            231.2438
           ],
           "parts": [
             [
-              55.5165,
-              123.1751,
-              274.792,
-              230.7209
+              55.9234,
+              122.6522,
+              274.2106,
+              231.2438
             ]
           ]
         }
@@ -5440,7 +5646,7 @@
     }
   },
   "engine": "vision",
-  "checkpoint": "46fcffa0b605e5b3ee7e46f877e50cca8f853620005585e9065ed5d81e5799c8",
+  "checkpoint": "a9a76c4979dceebed2adb9cebfad673021ed4685e05a362dd3843b781b38fab7",
   "conf": 0.7,
   "icons": "bind"
 }

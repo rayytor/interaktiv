@@ -26,7 +26,11 @@ lines than the student put in it. For one parsed sheet:
      numbered questions, when it is set as a label (`stands_apart`) and is not
      the first glyph of a line of mathematics; a box with no marker keeps
      `label = None`;
-  6. the publisher's icons are read (`icons.py`): one hung at a region names
+  6. a printed label the student left unboxed between two labels it boxed is a
+     question of the same list, and gets a region of its own lines and answer
+     rules (`between_siblings`): only where the page itself says where the
+     question ends, and never across a picture or a panel;
+  7. the publisher's icons are read (`icons.py`): one hung at a region names
      it, and, by the mode the bake was given, one hung at nothing may bring a
      region of its own.
 
@@ -77,6 +81,8 @@ TAKE_SHARE = 0.5         # share of a drawn block a box must hold to take it who
 LEAVE_COST = 0.25        # share of its own area a box may give up to leave a block it only clips
 NEIGHBOUR_GAP = 0.25     # pt: left between two boxes that grow to the same boundary
 MARKER_TOL = 6.0         # pt: a marker this far outside the box's top-left quarter still labels it
+SIBLING_RUN = 2          # unboxed labels in a row that two boxed ones may vouch for; more is a list the student refused
+SIBLING_PAD = 1.0        # pt: left round the lines and answer rules of a region made for an unboxed label
 
 
 def px_to_points(px: Sequence[float], width_px: float, height_px: float, page_w: float, page_h: float) -> Rect:
@@ -372,6 +378,140 @@ def stands_apart(marker: Any, spans: Sequence[Any]) -> bool:
     return min(after, key=lambda s: s.bbox[0]).color != span.color
 
 
+def _mid_y(rect: Sequence[float]) -> float:
+    return (rect[1] + rect[3]) / 2.0
+
+
+def between_siblings(
+    rects: Sequence[Rect],
+    claimed: Dict[int, Rect],
+    labels: Sequence[Any],
+    geom: PageGeometry,
+) -> List[Tuple[Any, Rect]]:
+    """
+    Regions for the printed labels the student left unboxed between two labels it boxed.
+
+    On a page of questions 3 to 7 the student may box 3, 4, 6 b), 6 c) and 7 and draw nothing at 5 and
+    6 a): they are questions like their neighbours, and a teacher sees a list with two holes in it. The
+    student's own boxes vouch for them: a run of at most `SIBLING_RUN` unboxed labels counts only when
+    the label next above it and the label next below it in the column each head a box (`claimed`: the
+    marker's id to its region), and the run counts on from the one or up to the other (`_in_sequence`).
+
+    A region made here is the label's own lines and the answer rules under them, down to the next
+    label. It is refused, and the page keeps its hole, wherever that cannot be read off the page: a
+    panel or a picture stands in the stretch (whose it is cannot be told), a line of type starts left
+    of the label's own text or runs out of the stretch (another paragraph), or the result would touch
+    a region or be too tall or too small to be a hotspot.
+    """
+    page_h = geom.sheet()[1]
+    max_h = (TALL_REGION - 0.005) * page_h
+    out: List[Tuple[Any, Rect]] = []
+    columns: Dict[int, List[Any]] = {}
+    for m in labels:
+        if not getattr(m, "is_prompt", False):
+            columns.setdefault(m.column_index, []).append(m)
+
+    def boxed(m: Any) -> bool:
+        b = m.span.bbox
+        cx, cy = (b[0] + b[2]) / 2.0, _mid_y(b)
+        return any(r[0] <= cx <= r[2] and r[1] <= cy <= r[3] for r in rects)
+
+    for column in columns.values():
+        column.sort(key=lambda m: -_mid_y(m.span.bbox))
+        i = 0
+        while i < len(column):
+            if id(column[i]) in claimed or boxed(column[i]):
+                i += 1
+                continue
+            j = i
+            while j < len(column) and id(column[j]) not in claimed and not boxed(column[j]):
+                j += 1
+            run, i = column[i:j], j
+            above = column[i - len(run) - 1] if i - len(run) - 1 >= 0 else None
+            below = column[j] if j < len(column) else None
+            if (above is None or below is None or id(above) not in claimed or id(below) not in claimed
+                    or len(run) > SIBLING_RUN or not _in_sequence(above, run, below)):
+                continue
+            upper, lower = claimed[id(above)], claimed[id(below)]
+            left_most = min(upper[0], lower[0]) - MARKER_TOL
+            right = max(upper[2], lower[2])
+            ceiling = upper[1]
+            made: List[Tuple[Any, Rect]] = []
+            for k, m in enumerate(run):
+                floor = run[k + 1].span.bbox[3] if k + 1 < len(run) else lower[3]
+                rect = _sibling_rect(m, ceiling, floor, left_most, right, geom)
+                if rect is None or rect[3] - rect[1] > max_h or any(rect_overlap(rect, r) > 0.0 for r in rects):
+                    made = []
+                    break
+                made.append((m, rect))
+                ceiling = rect[1]
+            # All of the run or none of it: a hole half filled says the rest are not questions.
+            out.extend(made)
+    return out
+
+
+def _kind(m: Any) -> str:
+    text = m.label.strip(".:) ")
+    return "step" if getattr(m, "is_step", False) else "digit" if text.isdigit() else "letter"
+
+
+def _in_sequence(above: Any, run: Sequence[Any], below: Any) -> bool:
+    """
+    Whether the unboxed labels count on from the boxed one above them, or up to the boxed one below.
+
+    4 | 5 6 | b) counts on from 4; 4 | 1 | 2 opens the list that 2 belongs to. A numbered step
+    ("2. Adım") heads the questions under it and is not one of them, so it is never filled in.
+    """
+    if any(_kind(m) == "step" for m in run):
+        return False
+    on = all(_kind(m) == _kind(above) and m.normalized_value == above.normalized_value + k
+             for k, m in enumerate(run, 1))
+    up = all(_kind(m) == _kind(below) and m.normalized_value == below.normalized_value - k
+             for k, m in enumerate(reversed(run), 1))
+    return on or up
+
+
+def _sibling_rect(m: Any, ceiling: float, floor: float, left_most: float, right: float,
+                  geom: PageGeometry) -> Optional[Rect]:
+    """The lines and answer rules from label `m` down to `floor`, or None when the page does not say so plainly."""
+    mb = m.span.bbox
+    top = min(mb[3], ceiling - NEIGHBOUR_GAP)
+    if mb[0] < left_most or mb[2] >= right or floor >= mb[1] or top <= _mid_y(mb):
+        return None
+    held: List[Rect] = []
+    opened = False
+    for ln in geom.lines:
+        r = _line_rect(ln)
+        if r[2] <= mb[0] - SIBLING_PAD or r[0] >= right + SIBLING_PAD or not floor < _mid_y(r) < top:
+            continue
+        on_label = r[1] < _mid_y(mb) < r[3]
+        # A line of the question hangs under its text, right of the label; one that starts further
+        # left, or runs out past the neighbours' right edge, is another paragraph.
+        if r[2] > right + MARKER_TOL or (on_label and r[0] < mb[0] - SIBLING_PAD) or (not on_label and r[0] < mb[2] - SIBLING_PAD):
+            return None
+        opened = opened or on_label
+        held.append(r)
+    if not opened:
+        return None
+    for b in geom.blocks:
+        r = tuple(b["rect"])
+        if r[2] <= mb[0] or r[0] >= right or r[3] <= floor or r[1] >= top:
+            continue
+        if b.get("kind") in ("panel", "figure"):
+            return None
+        if floor < _mid_y(r) < top:
+            if r[1] < floor or r[2] > right + MARKER_TOL:
+                return None
+            held.append(r)
+    rect = (round(min(r[0] for r in held) - SIBLING_PAD, 4),
+            round(max(floor + NEIGHBOUR_GAP, min(r[1] for r in held) - SIBLING_PAD), 4),
+            round(max(r[2] for r in held) + SIBLING_PAD, 4),
+            round(top, 4))
+    if rect[2] - rect[0] < MIN_HOTSPOT or rect[3] - rect[1] < MIN_HOTSPOT:
+        return None
+    return rect
+
+
 def _column_of(rect: Rect, layout: Any) -> int:
     cx = (rect[0] + rect[2]) / 2.0
     columns = sorted(layout.columns, key=lambda c: c.x0)
@@ -392,6 +532,7 @@ def vision_page(
     printed_page: Optional[int] = None,
     page_oges: Sequence[Any] = (),
     icon_mode: str = "off",
+    siblings: bool = True,
 ) -> PageResult:
     """
     One sheet's result from the student's boxes, in the shape `detect_page` returns.
@@ -402,6 +543,8 @@ def vision_page(
     publisher icon vouches for it (`icons.admit`). `page_oges` are the
     publisher's entries for this sheet only, and `icon_mode` says what is done
     with them once the boxes are settled (`icons.MODES`); "off" ignores them.
+    `siblings` lets an unboxed label between two boxed ones have a region
+    (`between_siblings`).
     """
     layout = detect_layout(prim)
     markers = detect_activity_markers(prim, layout=layout, trace=GrowthTrace())
@@ -416,18 +559,18 @@ def vision_page(
               for b in boxes]
     points = [(score, r) for score, r in points if r[2] > r[0] and r[3] > r[1]]
     sure = [b for b in points if b[0] >= conf]
+    labels = [m for m in markers if stands_apart(m, prim.spans)]
     if use_icons:
         sure += icons.admit(sure, [b for b in points if b[0] < conf], page_oges, prim.width, prim.height)
     # Top of the sheet first, then left to right, so ids and marker claims follow reading order.
     rects = sorted(settle(sure, geom), key=lambda r: (-r[3], r[0]))
-    labels = [m for m in markers if stands_apart(m, prim.spans)]
-    for n, rect in enumerate(rects, 1):
-        m = marker_for(rect, labels, taken)
+    claimed: Dict[int, Rect] = {}
+
+    def region(rect: Rect, m: Optional[Any], n: int) -> ActivityRegion:
         label = headline = items = None
         slug = f"v{n}"
         column = _column_of(rect, layout)
         if m is not None:
-            taken.add(id(m))
             inside = [s for s in body_spans
                       if s.bbox[0] >= rect[0] - 2.0 and s.bbox[2] <= rect[2] + 2.0
                       and s.bbox[1] >= rect[1] - 2.0 and s.bbox[3] <= rect[3] + 2.0]
@@ -436,8 +579,19 @@ def vision_page(
             headline = build_headline(m, inside)
             items = build_sub_items(m, rect, page_num, body_spans, solution_blocks, parts=[rect]) or None
             column = m.column_index
-        activities.append(ActivityRegion(id=f"p{page_num}-{slug}", label=label, column=column, rect=rect,
-                                         parts=[rect], headline=headline, items=items, anchored=False))
+        return ActivityRegion(id=f"p{page_num}-{slug}", label=label, column=column, rect=rect,
+                              parts=[rect], headline=headline, items=items, anchored=False)
+
+    for n, rect in enumerate(rects, 1):
+        m = marker_for(rect, labels, taken)
+        if m is not None:
+            taken.add(id(m))
+            claimed[id(m)] = rect
+        activities.append(region(rect, m, n))
+    if siblings:
+        for m, rect in between_siblings(rects, claimed, labels, geom):
+            activities.append(region(rect, m, len(activities) + 1))
+        activities.sort(key=lambda a: (-a.rect[3], a.rect[0]))
     if use_icons:
         icons.apply(icon_mode, activities, page_oges, prim=prim, layout=layout, geom=geom,
                     page_num=page_num, printed_page=printed_page)

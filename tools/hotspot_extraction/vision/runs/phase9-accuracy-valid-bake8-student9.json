@@ -1,0 +1,54 @@
+{
+ "split": "valid",
+ "bake_root": "data/vision/bake-8",
+ "books": {
+  "550e601a-7ae8-40c0-ba41-435fa30c16e8": {
+   "teacher_boxes": 78,
+   "taller_than_a_hotspot": 1,
+   "regions": 73,
+   "regions_answering_no_teacher_box": 2,
+   "empty_pages": 18,
+   "empty_pages_with_a_region": 0,
+   "student_iou_0.5": 0.896,
+   "student_iou_0.85": 0.883,
+   "student_same_content": 0.857,
+   "baked_iou_0.5": 0.922,
+   "baked_iou_0.85": 0.857,
+   "baked_same_content": 0.844,
+   "worse_than_the_student_drew": 1,
+   "better_than_the_student_drew": 3
+  },
+  "7763e45b-e8ba-49df-a7d1-5932bc68e6ed": {
+   "teacher_boxes": 63,
+   "taller_than_a_hotspot": 7,
+   "regions": 54,
+   "regions_answering_no_teacher_box": 12,
+   "empty_pages": 10,
+   "empty_pages_with_a_region": 0,
+   "student_iou_0.5": 0.786,
+   "student_iou_0.85": 0.75,
+   "student_same_content": 0.732,
+   "baked_iou_0.5": 0.75,
+   "baked_iou_0.85": 0.732,
+   "baked_same_content": 0.732,
+   "worse_than_the_student_drew": 6,
+   "better_than_the_student_drew": 0
+  }
+ },
+ "total": {
+  "teacher_boxes": 141,
+  "taller_than_a_hotspot": 8,
+  "regions": 127,
+  "regions_answering_no_teacher_box": 14,
+  "empty_pages": 28,
+  "empty_pages_with_a_region": 0,
+  "student_iou_0.5": 0.85,
+  "student_iou_0.85": 0.827,
+  "student_same_content": 0.805,
+  "baked_iou_0.5": 0.85,
+  "baked_iou_0.85": 0.805,
+  "baked_same_content": 0.797,
+  "worse_than_the_student_drew": 7,
+  "better_than_the_student_drew": 3
+ }
+}

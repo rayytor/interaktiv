@@ -3,7 +3,7 @@
   "bookId": "1a87adf5-d23f-4cae-8caf-877ad91f37dd",
   "fingerprint": "111478050-c46630a5457f3540cc661d7521980a73",
   "profile": "c7de24295a4b",
-  "builtAt": "2026-10-03T06:05:02.920Z",
+  "builtAt": "2026-10-03T08:02:33.742Z",
   "pageCount": 215,
   "calibration": {
     "enabled": true,
@@ -274,17 +274,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            64.5436,
-            98.3988,
-            519.4089,
-            523.6995
+            64.1969,
+            97.2863,
+            519.3532,
+            523.1989
           ],
           "parts": [
             [
-              64.5436,
-              98.3988,
-              519.4089,
-              523.6995
+              64.1969,
+              97.2863,
+              519.3532,
+              523.1989
             ]
           ],
           "headline": "Aşağıdaki tabloda verilen ölçütler çerçevesinde toplum türlerinin özelliklerini örnekteki gibi yazınız."
@@ -294,17 +294,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            64.5992,
+            63.542,
             68.1117,
-            516.8494,
-            87.9415
+            515.1245,
+            88.2752
           ],
           "parts": [
             [
-              64.5992,
+              63.542,
               68.1117,
-              516.8494,
-              87.9415
+              515.1245,
+              88.2752
             ]
           ],
           "headline": "Tablodaki ölçütlere göre bu toplumların benzerlik ve farklılıkları hakkındaki fikirlerinizi sınıf arkadaşla-"
@@ -326,17 +326,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            63.8759,
-            175.9386,
+            63.6533,
+            175.8273,
             518.9081,
-            233.6762
+            233.8431
           ],
           "parts": [
             [
-              63.8759,
-              175.9386,
+              63.6533,
+              175.8273,
               518.9081,
-              233.6762
+              233.8431
             ]
           ],
           "headline": "Sanayi Devrimi’yle ortaya çıkan kentleşme ile sosyolojinin doğuşu arasında nasıl bir ilişki kurulabilir?"
@@ -346,17 +346,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            63.2638,
-            110.8029,
-            519.4645,
-            170.988
+            62.8187,
+            112.0266,
+            520.2991,
+            170.8212
           ],
           "parts": [
             [
-              63.2638,
-              110.8029,
-              519.4645,
-              170.988
+              62.8187,
+              112.0266,
+              520.2991,
+              170.8212
             ]
           ],
           "headline": "Geleneksel otorite ve değerlerin sarsılması ile sosyolojinin doğuşu arasında nasıl bir ilişki kurulabilir?"
@@ -374,40 +374,21 @@
       ],
       "activities": [
         {
-          "id": "p22-v1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            63.9315,
-            702.8642,
-            392.1022,
-            713.2103
-          ],
-          "parts": [
-            [
-              63.9315,
-              702.8642,
-              392.1022,
-              713.2103
-            ]
-          ]
-        },
-        {
           "id": "p22-1",
           "label": "1",
           "column": 0,
           "rect": [
             64.1969,
-            673.606,
+            675.7198,
             498.6031,
-            698.3587
+            698.6368
           ],
           "parts": [
             [
               64.1969,
-              673.606,
+              675.7198,
               498.6031,
-              698.3587
+              698.6368
             ]
           ],
           "headline": "Sosyolojinin doğuşuna zemin hazırlayan düşünürlerin topluma ilişkin yaklaşımlarındaki benzerlikler nelerdir?"
@@ -417,20 +398,51 @@
           "label": "2",
           "column": 0,
           "rect": [
-            64.4879,
-            657.642,
-            454.4758,
-            670.4911
+            65.6008,
+            657.7532,
+            452.0832,
+            669.9349
           ],
           "parts": [
             [
-              64.4879,
-              657.642,
-              454.4758,
-              670.4911
+              65.6008,
+              657.7532,
+              452.0832,
+              669.9349
             ]
           ],
           "headline": "Sosyolojinin bilimsel bir disiplin olarak ortaya çıkışında bu fikirler nasıl bir rol oynamıştır?"
+        }
+      ]
+    },
+    "24": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          70.5334,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p24-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            89.7034,
+            80.9328,
+            484.9671,
+            92.7251
+          ],
+          "parts": [
+            [
+              89.7034,
+              80.9328,
+              484.9671,
+              92.7251
+            ]
+          ]
         }
       ]
     },
@@ -445,21 +457,40 @@
       ],
       "activities": [
         {
+          "id": "p25-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            75.6161,
+            214.6528,
+            492.7012,
+            273.2248
+          ],
+          "parts": [
+            [
+              75.6161,
+              214.6528,
+              492.7012,
+              273.2248
+            ]
+          ]
+        },
+        {
           "id": "p25-2",
           "label": "2",
           "column": 0,
           "rect": [
-            49.5205,
-            151.3528,
-            501.6594,
-            189.622
+            49.7987,
+            150.7409,
+            500.936,
+            190.1783
           ],
           "parts": [
             [
-              49.5205,
-              151.3528,
-              501.6594,
-              189.622
+              49.7987,
+              150.7409,
+              500.936,
+              190.1783
             ]
           ],
           "headline": "Öğretmeninizin rehberliğinde bir konuşma halkası oluşturarak düşüncelerinizi paylaşınız. Konuşma halkasının uygulanmasına ilişkin yönergeye 10. sayfadaki “Etkin"
@@ -469,52 +500,20 @@
           "label": "3",
           "column": 0,
           "rect": [
-            49.5761,
-            92.1689,
-            499.3225,
-            147.5147
+            49.7431,
+            92.5026,
+            498.6548,
+            147.626
           ],
           "parts": [
             [
-              49.5761,
-              92.1689,
-              499.3225,
-              147.5147
+              49.7431,
+              92.5026,
+              498.6548,
+              147.626
             ]
           ],
           "headline": "Konuşma halkasında sırayla söz alınız ve aşağıdaki tartışma konusuna dair düşüncelerinizi sınıf arka- daşlarınızla sözlü olarak paylaşınız."
-        }
-      ]
-    },
-    "26": {
-      "pageWidth": 569.764,
-      "pageHeight": 796.535,
-      "columns": [
-        [
-          59.1969,
-          545.764
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p26-q2",
-          "label": null,
-          "column": 0,
-          "rect": [
-            57.926,
-            309.597,
-            530.246,
-            675.9979
-          ],
-          "parts": [
-            [
-              57.926,
-              309.597,
-              530.246,
-              675.9979
-            ]
-          ],
-          "headline": "Bu form, çalışma kâğıdında öğrendiklerinizi ve hangi seviyede bulunduğunuzu değerlendirmeniz amacıyla ✔ oluşturulmuştur. Her ölçütün karşısı"
         }
       ]
     },
@@ -534,15 +533,15 @@
           "column": 0,
           "rect": [
             45.0237,
-            432.0868,
-            507.7242,
+            432.3093,
+            506.7783,
             745.3
           ],
           "parts": [
             [
               45.0237,
-              432.0868,
-              507.7242,
+              432.3093,
+              506.7783,
               745.3
             ]
           ]
@@ -564,57 +563,37 @@
           "label": "3",
           "column": 0,
           "rect": [
-            50.522,
-            218.9359,
-            505.6655,
-            716.8815
+            50.0237,
+            220.0483,
+            506.5001,
+            714.7121
           ],
           "parts": [
             [
-              50.522,
-              218.9359,
-              505.6655,
-              716.8815
+              50.0237,
+              220.0483,
+              506.5001,
+              714.7121
             ]
           ],
           "headline": "Sosyolojinin kurucu düşünürlerinden birini seçip onun ele aldığı temel problemleri, kullandığı temel kavram ve argümanları belirleyerek grubunuzla birlikte aşağ"
-        },
-        {
-          "id": "p29-4",
-          "label": "4",
-          "column": 0,
-          "rect": [
-            50.0769,
-            189.1214,
-            425.0417,
-            206.5874
-          ],
-          "parts": [
-            [
-              50.0769,
-              189.1214,
-              425.0417,
-              206.5874
-            ]
-          ],
-          "headline": "Tespitlerinizi grup sözcünüz aracılığıyla sınıf arkadaşlarınızla sözlü olarak paylaşınız."
         },
         {
           "id": "p29-1",
           "label": "1",
           "column": 0,
           "rect": [
-            49.91,
+            49.8543,
             112.5,
             504.9202,
-            154.9127
+            154.2452
           ],
           "parts": [
             [
-              49.91,
+              49.8543,
               112.5,
               504.9202,
-              154.9127
+              154.2452
             ]
           ],
           "headline": "Hangi düşünürün toplum anlayışını günümüz için daha açıklayıcı buluyorsunuz?"
@@ -624,17 +603,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            50.4108,
+            49.5205,
             67.8282,
-            506.834,
-            106.2417
+            504.9202,
+            106.9092
           ],
           "parts": [
             [
-              50.4108,
+              49.5205,
               67.8282,
-              506.834,
-              106.2417
+              504.9202,
+              106.9092
             ]
           ],
           "headline": "Size göre sosyolojinin konu edindiği en önemli problem nedir?"
@@ -656,16 +635,16 @@
           "label": "1",
           "column": 0,
           "rect": [
-            50.2995,
+            51.1341,
             641.9,
-            506.2219,
+            506.055,
             700.5837
           ],
           "parts": [
             [
-              50.2995,
+              51.1341,
               641.9,
-              506.2219,
+              506.055,
               700.5837
             ]
           ],
@@ -676,17 +655,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            49.131,
-            578.0441,
-            504.8309,
-            635.003
+            50.4664,
+            578.4335,
+            505.1648,
+            635.3368
           ],
           "parts": [
             [
-              49.131,
-              578.0441,
-              504.8309,
-              635.003
+              50.4664,
+              578.4335,
+              505.1648,
+              635.3368
             ]
           ],
           "headline": "Kuramların birey-toplum ilişkisine yaklaşımını karşılaştırınız."
@@ -712,6 +691,38 @@
         }
       ]
     },
+    "32": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.2121,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p32-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            64.216,
+            64.0788,
+            520.526,
+            611.0847
+          ],
+          "parts": [
+            [
+              64.216,
+              64.0788,
+              520.526,
+              611.0847
+            ]
+          ],
+          "headline": "Aşağıdaki iki metni inceleyiniz. Sosyolojik düşünme biçimini kullanarak merak ettiğiniz bir konuyu belir- leyiniz ve metnin altındaki ilgili kısma yazınız."
+        }
+      ]
+    },
     "33": {
       "pageWidth": 569.764,
       "pageHeight": 796.535,
@@ -727,17 +738,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            62.5405,
+            63.8759,
             462.6,
             505.0158,
-            501.6724
+            503.3411
           ],
           "parts": [
             [
-              62.5405,
+              63.8759,
               462.6,
               505.0158,
-              501.6724
+              503.3411
             ]
           ]
         },
@@ -746,17 +757,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            49.3536,
-            384.2503,
-            506.1663,
-            456.0608
+            50.0213,
+            384.0278,
+            505.5542,
+            456.172
           ],
           "parts": [
             [
-              49.3536,
-              384.2503,
-              506.1663,
-              456.0608
+              50.0213,
+              384.0278,
+              505.5542,
+              456.172
             ]
           ],
           "headline": "Sosyolojik düşünme biçimini kullanarak merak ettiğiniz konuya dair en az iki soru hazırlayınız."
@@ -766,17 +777,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            50.2438,
-            340.1961,
+            48.7972,
+            340.1405,
             507.2498,
-            377.186
+            377.4641
           ],
           "parts": [
             [
-              50.2438,
-              340.1961,
+              48.7972,
+              340.1405,
               507.2498,
-              377.186
+              377.4641
             ]
           ],
           "headline": "Sorularınızı sınıf arkadaşlarınızla paylaşınız ve bunlara soru cevap tekniği ile cevap arayınız. Soru cevap tekniğinin uygulanmasına ilişkin yönergeye 10. sayfa"
@@ -786,37 +797,57 @@
           "label": "4",
           "column": 0,
           "rect": [
-            49.6318,
-            311.3273,
-            497.0412,
-            335.3012
+            51.4123,
+            311.1604,
+            498.3209,
+            335.3568
           ],
           "parts": [
             [
-              49.6318,
-              311.3273,
-              497.0412,
-              335.3012
+              51.4123,
+              311.1604,
+              498.3209,
+              335.3568
             ]
           ],
           "headline": "Soruların cevaplarını güvenilir kaynaklardan (“edu” ve “gov” uzantılı siteler, akademik makaleler, bilim- sel kitaplar vb.) araştırınız ve notlar alınız."
+        },
+        {
+          "id": "p33-5",
+          "label": "5",
+          "column": 0,
+          "rect": [
+            49.1867,
+            294.8069,
+            384.6463,
+            306.9886
+          ],
+          "parts": [
+            [
+              49.1867,
+              294.8069,
+              384.6463,
+              306.9886
+            ]
+          ],
+          "headline": "Farklı kaynaklarla karşılaştırarak bilgilerinizin doğruluğunu değerlendiriniz."
         },
         {
           "id": "p33-1",
           "label": "1",
           "column": 0,
           "rect": [
-            50.7446,
-            164.925,
-            506.2219,
-            254.6464
+            49.9656,
+            163.6457,
+            506.055,
+            257.3164
           ],
           "parts": [
             [
-              50.7446,
-              164.925,
-              506.2219,
-              254.6464
+              49.9656,
+              163.6457,
+              506.055,
+              257.3164
             ]
           ],
           "headline": "Başarı sadece bireyin yetenekleri, kapasitesi ve çabası ile mi ilgilidir?"
@@ -826,53 +857,20 @@
           "label": "2",
           "column": 0,
           "rect": [
-            50.2438,
-            66.9156,
-            505.9994,
-            158.7508
+            50.1326,
+            68.195,
+            504.9978,
+            158.0833
           ],
           "parts": [
             [
-              50.2438,
-              66.9156,
-              505.9994,
-              158.7508
+              50.1326,
+              68.195,
+              504.9978,
+              158.0833
             ]
           ],
           "headline": "Toplumda belli dönemlerde psikolojik sorunların artışı sosyolojik olarak nasıl yorumlanabilir?"
-        }
-      ]
-    },
-    "34": {
-      "pageWidth": 569.764,
-      "pageHeight": 796.535,
-      "columns": [
-        [
-          59.4757,
-          545.764
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p34-1",
-          "label": "1",
-          "column": 0,
-          "rect": [
-            34.0762,
-            72.2055,
-            520.0215,
-            608.6929
-          ],
-          "parts": [
-            [
-              34.0762,
-              72.2055,
-              520.0215,
-              608.6929
-            ]
-          ],
-          "headline": "Aşağıdaki bilgi görseli ve metinden yararlanarak ilgili sorular üzerine tartışınız. Tartışma etkinliğinin uygu- lanmasına ilişkin yönergeye 10. sayfadaki “Etkin",
-          "ogeId": "0ead444c-ccad-f111-b31a-005056a7d529"
         }
       ]
     },
@@ -891,17 +889,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            50.0769,
-            160.8645,
-            502.3827,
-            358.7189
+            51.4123,
+            160.3082,
+            501.9537,
+            358.2182
           ],
           "parts": [
             [
-              50.0769,
-              160.8645,
-              502.3827,
-              358.7189
+              51.4123,
+              160.3082,
+              501.9537,
+              358.2182
             ]
           ],
           "headline": "Tartışma boyunca aşağıdaki ilkelere dikkat ediniz."
@@ -923,68 +921,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            49.7431,
-            263.3794,
+            49.4667,
+            263.2125,
             505.2152,
-            687.2895
+            677.3885
           ],
           "parts": [
             [
-              49.7431,
-              263.3794,
+              49.4667,
+              263.2125,
               505.2152,
-              687.2895
-            ]
-          ]
-        }
-      ]
-    },
-    "38": {
-      "pageWidth": 569.764,
-      "pageHeight": 796.535,
-      "columns": [
-        [
-          59.1901,
-          545.764
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p38-2",
-          "label": "2",
-          "column": 0,
-          "rect": [
-            64.2654,
-            209.5354,
-            518.0178,
-            645.6828
-          ],
-          "parts": [
-            [
-              64.2654,
-              209.5354,
-              518.0178,
-              645.6828
-            ]
-          ],
-          "headline": "Aşağıdaki tabloda yer alan araştırma sonuçlarının hangi yöntemle elde edilmiş olduğunu “ ✔ ” işareti ile belirtiniz."
-        },
-        {
-          "id": "p38-v2",
-          "label": null,
-          "column": 0,
-          "rect": [
-            63.542,
-            71.6993,
-            520.3548,
-            192.292
-          ],
-          "parts": [
-            [
-              63.542,
-              71.6993,
-              520.3548,
-              192.292
+              677.3885
             ]
           ]
         }
@@ -1005,17 +952,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            73.9469,
-            243.7998,
-            499.4337,
-            363.1688
+            75.0597,
+            244.2448,
+            498.6548,
+            363.1131
           ],
           "parts": [
             [
-              73.9469,
-              243.7998,
-              499.4337,
-              363.1688
+              75.0597,
+              244.2448,
+              498.6548,
+              363.1131
             ]
           ],
           "headline": "Pozitivist yaklaşımın “doğanın yasalarının bulunduğu gibi toplumun yasalarının da bulunabile- ceği” savı hakkındaki düşünceleriniz nelerdir?"
@@ -1025,17 +972,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            73.1123,
-            103.2937,
-            500.4909,
-            233.3425
+            73.78,
+            100.8462,
+            499.8789,
+            233.4537
           ],
           "parts": [
             [
-              73.1123,
-              103.2937,
-              500.4909,
-              233.3425
+              73.78,
+              100.8462,
+              499.8789,
+              233.4537
             ]
           ],
           "headline": "Yorumcu yaklaşımı benimseyen bir sosyoloğun yaşantılara, anlam dünyalarına, tarihsel ve toplumsal bağlama odaklanması yapılan araştırmaya ne gibi katkılar sunab"
@@ -1079,18 +1026,49 @@
           "rect": [
             59.2089,
             44.0,
-            520.8555,
-            311.7166
+            521.3563,
+            311.8835
           ],
           "parts": [
             [
               59.2089,
               44.0,
-              520.8555,
-              311.7166
+              521.3563,
+              311.8835
             ]
           ],
           "headline": "Değerlendirme Aşağıdaki tabloya nicel ve nitel araştırma yöntemlerinin güçlü ve zayıf yönlerinin neler olabileceğine ilişkin tespitlerinizi"
+        }
+      ]
+    },
+    "44": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          65.7041,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p44-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            146.0577,
+            114.0847,
+            514.7941,
+            198.8
+          ],
+          "parts": [
+            [
+              146.0577,
+              114.0847,
+              514.7941,
+              198.8
+            ]
+          ]
         }
       ]
     },
@@ -1109,16 +1087,16 @@
           "label": "1",
           "column": 0,
           "rect": [
-            63.9872,
-            360.4432,
-            519.854,
+            64.3767,
+            361.7226,
+            519.5758,
             436.3699
           ],
           "parts": [
             [
-              63.9872,
-              360.4432,
-              519.854,
+              64.3767,
+              361.7226,
+              519.5758,
               436.3699
             ]
           ],
@@ -1129,17 +1107,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            63.6533,
-            262.8788,
-            519.9653,
-            351.8771
+            63.9315,
+            263.435,
+            519.854,
+            352.2665
           ],
           "parts": [
             [
-              63.6533,
-              262.8788,
-              519.9653,
-              351.8771
+              63.9315,
+              263.435,
+              519.854,
+              352.2665
             ]
           ],
           "headline": "Durkheim’in yaşadığı dönemde sanayileşme, ekonomik dönüşüm, otoritenin değişimi gibi tarihsel koşulların toplumda neden bir “düzen krizi” oluşturduğunu açıklayı"
@@ -1149,17 +1127,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            63.709,
-            167.595,
-            520.5217,
-            254.7021
+            64.3767,
+            166.8719,
+            519.7983,
+            254.5352
           ],
           "parts": [
             [
-              63.709,
-              167.595,
-              520.5217,
-              254.7021
+              64.3767,
+              166.8719,
+              519.7983,
+              254.5352
             ]
           ],
           "headline": "Durkheim’in betimlediği bu kriz durumuyla günümüz toplumlarında yaşanan benzer toplumsal belirsiz- lik ve çözülme durumlarını karşılaştırarak benzerlik ve farkl"
@@ -1169,17 +1147,17 @@
           "label": "4",
           "column": 0,
           "rect": [
-            64.2097,
-            68.3062,
-            520.1878,
-            156.5814
+            63.8202,
+            68.64,
+            519.4645,
+            156.7483
           ],
           "parts": [
             [
-              64.2097,
-              68.3062,
-              520.1878,
-              156.5814
+              63.8202,
+              68.64,
+              519.4645,
+              156.7483
             ]
           ],
           "headline": "Durkheim’in sosyolojiyi toplumsal düzeni anlamlandırma ve normların işlevini açıklama çabasıyla nasıl ilişkilendirdiğini açıklayınız."
@@ -1201,17 +1179,17 @@
           "label": "5",
           "column": 0,
           "rect": [
-            48.7972,
-            446.271,
-            504.9978,
-            519.2496
+            50.4664,
+            444.3797,
+            504.6084,
+            519.3608
           ],
           "parts": [
             [
-              48.7972,
-              446.271,
-              504.9978,
-              519.2496
+              50.4664,
+              444.3797,
+              504.6084,
+              519.3608
             ]
           ],
           "headline": "Metinde sosyolojinin araştırma sahasına giren temel toplumsal olgu nedir?"
@@ -1221,17 +1199,17 @@
           "label": "6",
           "column": 0,
           "rect": [
-            48.9085,
+            49.6874,
             345.6472,
-            506.6114,
-            435.3687
+            505.443,
+            435.0905
           ],
           "parts": [
             [
-              48.9085,
+              49.6874,
               345.6472,
-              506.6114,
-              435.3687
+              505.443,
+              435.0905
             ]
           ],
           "headline": "Kasiyersiz alışveriş sistemini toplumsal bir olgu olarak ele almak için hangi sosyolojik sorular sorulabilir?"
@@ -1241,17 +1219,17 @@
           "label": "7",
           "column": 0,
           "rect": [
-            48.7415,
-            245.8579,
-            505.2204,
-            334.9674
+            48.5746,
+            245.9691,
+            503.4399,
+            334.8006
           ],
           "parts": [
             [
-              48.7415,
-              245.8579,
-              505.2204,
-              334.9674
+              48.5746,
+              245.9691,
+              503.4399,
+              334.8006
             ]
           ],
           "headline": "Kasiyersiz alışveriş sistemi ile ilgili yapılacak bir araştırmada hangi yöntem ve teknikleri kullanmanın daha etkili olabileceğini açıklayınız."
@@ -1261,17 +1239,17 @@
           "label": "8",
           "column": 0,
           "rect": [
-            49.2979,
-            148.1822,
-            505.6655,
-            236.5687
+            49.0754,
+            147.626,
+            504.8866,
+            236.4574
           ],
           "parts": [
             [
-              49.2979,
-              148.1822,
-              505.6655,
-              236.5687
+              49.0754,
+              147.626,
+              504.8866,
+              236.4574
             ]
           ],
           "headline": "Kasiyersiz alışveriş sistemi ile ilgili yapılacak bir araştırmada elde edilen bilgilerin doğruluğu değerlen- dirilirken hangi ölçütler kullanılmalıdır?"
@@ -1281,17 +1259,17 @@
           "label": "9",
           "column": 0,
           "rect": [
-            49.1867,
+            50.1882,
             67.8282,
-            506.2776,
-            138.5036
+            504.8866,
+            138.3924
           ],
           "parts": [
             [
-              49.1867,
+              50.1882,
               67.8282,
-              506.2776,
-              138.5036
+              504.8866,
+              138.3924
             ]
           ],
           "headline": "Metinde ifade edilen toplumsal olguya ilişkin hangi sosyolojik çıkarımlar yapılabilir?"
@@ -1313,17 +1291,17 @@
           "label": "10",
           "column": 0,
           "rect": [
-            63.8759,
-            362.2788,
-            512.4537,
-            439.6517
+            63.2638,
+            361.1107,
+            512.8432,
+            439.1511
           ],
           "parts": [
             [
-              63.8759,
-              362.2788,
-              512.4537,
-              439.6517
+              63.2638,
+              361.1107,
+              512.8432,
+              439.1511
             ]
           ],
           "headline": "Araştırmacıların tercih ettiği araştırma yöntemini ve dayandığı temel görüşü aşağıdaki ilgili kısımlara yazınız."
@@ -1333,17 +1311,17 @@
           "label": "11",
           "column": 0,
           "rect": [
-            63.4864,
+            63.6533,
             250.3,
-            520.1322,
-            351.2652
+            520.2991,
+            351.6546
           ],
           "parts": [
             [
-              63.4864,
+              63.6533,
               250.3,
-              520.1322,
-              351.2652
+              520.2991,
+              351.6546
             ]
           ],
           "headline": "İki farklı araştırma yönteminin “beslenme menüsündeki değişikliğin etkilerini ortaya koyma” bağlamın- daki ortak amaçlarını ve benzer işlevlerini belirtiniz."
@@ -1353,17 +1331,17 @@
           "label": "12",
           "column": 0,
           "rect": [
-            64.2097,
-            134.7212,
-            519.9096,
-            239.0161
+            63.6533,
+            134.165,
+            520.1322,
+            238.738
           ],
           "parts": [
             [
-              64.2097,
-              134.7212,
-              519.9096,
-              239.0161
+              63.6533,
+              134.165,
+              520.1322,
+              238.738
             ]
           ],
           "headline": "Birinci ve ikinci araştırmacının kullandığı yöntem ve teknikler, veri türü ve sonucun niteliği bakımından nasıl farklılaşmaktadır? Açıklayınız."
@@ -1385,21 +1363,20 @@
           "label": "13",
           "column": 0,
           "rect": [
-            49.6318,
-            271.7786,
-            507.5017,
-            731.5662
+            50.9672,
+            271.1111,
+            507.2235,
+            730.1756
           ],
           "parts": [
             [
-              49.6318,
-              271.7786,
-              507.5017,
-              731.5662
+              50.9672,
+              271.1111,
+              507.2235,
+              730.1756
             ]
           ],
-          "headline": "Aşağıdaki grafik, sanayileşme süreciyle birlikte 19. yüzyılda bazı Avrupa ülkelerindeki kentsel nüfus oranlarında yaşanan değişimi göstermektedir.",
-          "ogeId": "2c0baf62-d0ad-f111-b31a-005056a7d529"
+          "headline": "Aşağıdaki grafik, sanayileşme süreciyle birlikte 19. yüzyılda bazı Avrupa ülkelerindeki kentsel nüfus oranlarında yaşanan değişimi göstermektedir."
         },
         {
           "id": "p49-14",
@@ -1409,14 +1386,14 @@
             45.0216,
             44.0,
             507.2578,
-            262.6563
+            261.4326
           ],
           "parts": [
             [
               45.0216,
               44.0,
               507.2578,
-              262.6563
+              261.4326
             ]
           ],
           "headline": "Aşağıda verilen tabloda sosyolojinin kurucu düşünürleri ile düşünürlerin temel görüşlerini eşleştiriniz.",
@@ -1505,20 +1482,20 @@
           "label": "16",
           "column": 0,
           "rect": [
-            48.1851,
-            244.3521,
-            520.4104,
-            731.2881
+            47.5731,
+            241.2967,
+            507.8912,
+            728.5069
           ],
           "parts": [
             [
-              48.1851,
-              244.3521,
-              520.4104,
-              731.2881
+              47.5731,
+              241.2967,
+              507.8912,
+              728.5069
             ]
           ],
-          "headline": "Aşağıdaki tanılayıcı dallanmış ağaç şemasında yer alan yargılar doğru ise “D”, yanlış ise “Y” oklarını takip ederek ulaştığınız çıkışı işaretleyiniz. (Sadece bi",
+          "headline": "takip ederek ulaştığınız çıkışı işaretleyiniz. (Sadece bir çıkış işaretleyebilirsiniz.)",
           "items": [
             {
               "id": "p51-16-1",
@@ -1552,8 +1529,8 @@
               "number": 4,
               "partIndex": 0,
               "rect": [
-                48.1851,
-                244.3521,
+                47.5731,
+                241.3521,
                 504.6358,
                 402.8839
               ],
@@ -1575,6 +1552,77 @@
         }
       ]
     },
+    "55": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.0237,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p55-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            50.0213,
+            512.9084,
+            383.8117,
+            525.5351
+          ],
+          "parts": [
+            [
+              50.0213,
+              512.9084,
+              383.8117,
+              525.5351
+            ]
+          ],
+          "headline": "Türk modernleşmesi çerçevesinde gerçekleşen değişimlere örnek veriniz."
+        },
+        {
+          "id": "p55-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            51.2454,
+            486.4314,
+            486.3799,
+            510.7947
+          ],
+          "parts": [
+            [
+              51.2454,
+              486.4314,
+              486.3799,
+              510.7947
+            ]
+          ],
+          "headline": "Türk modernleşmesini konu edinen romanlara örnekler veriniz ve bu romanlarda modernleşmenin hangi etkilerinin işlendiğini açıklayınız."
+        },
+        {
+          "id": "p55-v3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            49.7987,
+            223.7752,
+            505.7768,
+            445.1585
+          ],
+          "parts": [
+            [
+              49.7987,
+              223.7752,
+              505.7768,
+              445.1585
+            ]
+          ]
+        }
+      ]
+    },
     "56": {
       "pageWidth": 569.764,
       "pageHeight": 796.535,
@@ -1590,17 +1638,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            76.0613,
+            77.8974,
             554.8,
-            519.4645,
-            627.3269
+            520.2435,
+            627.5494
           ],
           "parts": [
             [
-              76.0613,
+              77.8974,
               554.8,
-              519.4645,
-              627.3269
+              520.2435,
+              627.5494
             ]
           ]
         },
@@ -1609,50 +1657,143 @@
           "label": null,
           "column": 0,
           "rect": [
-            78.2869,
-            462.68,
-            519.075,
-            548.174
+            78.9546,
+            462.7,
+            519.9096,
+            548.7303
           ],
           "parts": [
             [
-              78.2869,
-              462.68,
-              519.075,
-              548.174
+              78.9546,
+              462.7,
+              519.9096,
+              548.7303
             ]
           ]
         }
       ]
     },
-    "64": {
+    "59": {
       "pageWidth": 569.764,
       "pageHeight": 796.535,
       "columns": [
         [
-          59.7114,
+          45.0237,
           545.764
         ]
       ],
       "activities": [
         {
-          "id": "p64-v1",
-          "label": null,
+          "id": "p59-4",
+          "label": "4",
           "column": 0,
           "rect": [
-            63.4308,
-            147.2922,
-            520.7442,
-            448.7184
+            48.4077,
+            415.4553,
+            500.1974,
+            439.2067
           ],
           "parts": [
             [
-              63.4308,
-              147.2922,
-              520.7442,
-              448.7184
+              48.4077,
+              415.4553,
+              500.1974,
+              439.2067
             ]
-          ]
+          ],
+          "headline": "Seçtiğiniz konuda modernleşmenin nedenlerini verilen alt başlıklar çerçevesinde inceleyerek bir sunum hazırlayınız."
+        },
+        {
+          "id": "p59-5",
+          "label": "5",
+          "column": 0,
+          "rect": [
+            50.0276,
+            397.8634,
+            361.5475,
+            410.9834
+          ],
+          "parts": [
+            [
+              50.0276,
+              397.8634,
+              361.5475,
+              410.9834
+            ]
+          ],
+          "headline": "Sunumlarınızı görseller ve edebî eserlerden örneklerle zenginleştiriniz."
+        },
+        {
+          "id": "p59-6",
+          "label": "6",
+          "column": 0,
+          "rect": [
+            50.0276,
+            382.0334,
+            299.3276,
+            395.1534
+          ],
+          "parts": [
+            [
+              50.0276,
+              382.0334,
+              299.3276,
+              395.1534
+            ]
+          ],
+          "headline": "Bir grup sözcüsü seçerek sunumunuzu gerçekleştiriniz."
+        },
+        {
+          "id": "p59-7",
+          "label": "7",
+          "column": 0,
+          "rect": [
+            45.0237,
+            67.8282,
+            512.643,
+            379.0772
+          ],
+          "parts": [
+            [
+              45.0237,
+              67.8282,
+              512.643,
+              379.0772
+            ]
+          ],
+          "headline": "Grup sözcüleri sunumlarını bitirdikten sonra konuya soru ve yorumlarınızla katkıda bulununuz."
+        }
+      ]
+    },
+    "62": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          58.9608,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p62-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            8.504,
+            44.0,
+            532.913,
+            363.9
+          ],
+          "parts": [
+            [
+              8.504,
+              44.0,
+              532.913,
+              363.9
+            ]
+          ],
+          "headline": "Modernleşme İle İlgili Farklı Yaklaşımlara Sahip Düşünürler Osmanlı’dan Cumhuriyet’e modernleşmenin neden ve sonuçlarını yorumlayabilme Amacı:"
         }
       ]
     },
@@ -1672,18 +1813,66 @@
           "column": 0,
           "rect": [
             44.7874,
-            78.1517,
+            78.2629,
             511.5544,
             368.3
           ],
           "parts": [
             [
               44.7874,
-              78.1517,
+              78.2629,
               511.5544,
               368.3
             ]
           ]
+        }
+      ]
+    },
+    "66": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          59.1949,
+          151.6437
+        ],
+        [
+          155.6437,
+          245.1641
+        ],
+        [
+          249.1641,
+          338.2095
+        ],
+        [
+          342.2095,
+          421.4993
+        ],
+        [
+          425.4993,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p66-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            57.741,
+            88.209,
+            531.141,
+            366.7287
+          ],
+          "parts": [
+            [
+              57.741,
+              88.209,
+              531.141,
+              366.7287
+            ]
+          ],
+          "headline": "Ülkelerin modernleşme süreçlerini grubumla iş birliği içinde çalışarak araştırdım."
         }
       ]
     },
@@ -1702,20 +1891,39 @@
           "label": null,
           "column": 0,
           "rect": [
-            45.0176,
-            364.7882,
-            506.1865,
-            698.5
+            49.4649,
+            357.3283,
+            504.1076,
+            683.5
           ],
           "parts": [
             [
-              45.0176,
-              364.7882,
-              506.1865,
-              698.5
+              49.4649,
+              357.3283,
+              504.1076,
+              683.5
             ]
           ],
           "headline": "Konuya Başlarken Konuya Başlarken Aşağıdaki metinden ve görselden yararlanarak sorunun cevabını sınıf arkadaşlarınızla sözlü olarak paylaşın"
+        },
+        {
+          "id": "p67-v2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            36.847,
+            44.0,
+            561.256,
+            316.5
+          ],
+          "parts": [
+            [
+              36.847,
+              44.0,
+              561.256,
+              316.5
+            ]
+          ]
         }
       ]
     },
@@ -1734,17 +1942,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            77.8418,
+            77.341,
             306.3,
-            519.4089,
-            375.851
+            519.0781,
+            375.1835
           ],
           "parts": [
             [
-              77.8418,
+              77.341,
               306.3,
-              519.4089,
-              375.851
+              519.0781,
+              375.1835
             ]
           ]
         },
@@ -1753,17 +1961,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            77.6749,
+            78.3425,
             242.9,
-            519.7427,
-            300.6475
+            519.5201,
+            301.0368
           ],
           "parts": [
             [
-              77.6749,
+              78.3425,
               242.9,
-              519.7427,
-              300.6475
+              519.5201,
+              301.0368
             ]
           ]
         },
@@ -1772,17 +1980,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            77.3966,
+            77.341,
             166.6,
             519.0781,
-            236.9024
+            237.2361
           ],
           "parts": [
             [
-              77.3966,
+              77.341,
               166.6,
               519.0781,
-              236.9024
+              237.2361
             ]
           ]
         },
@@ -1791,17 +1999,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            77.7861,
-            89.3321,
-            519.3532,
-            160.6976
+            78.2313,
+            89.6102,
+            519.6314,
+            161.0313
           ],
           "parts": [
             [
-              77.7861,
-              89.3321,
-              519.3532,
-              160.6976
+              78.2313,
+              89.6102,
+              519.6314,
+              161.0313
             ]
           ]
         }
@@ -1822,17 +2030,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            62.8743,
+            64.3767,
             673.6,
-            504.9422,
-            729.0631
+            504.9049,
+            729.675
           ],
           "parts": [
             [
-              62.8743,
+              64.3767,
               673.6,
-              504.9422,
-              729.0631
+              504.9049,
+              729.675
             ]
           ]
         },
@@ -1841,19 +2049,39 @@
           "label": null,
           "column": 0,
           "rect": [
-            62.4292,
-            610.1947,
-            505.8881,
-            666.653
+            63.8202,
+            610.2,
+            505.0535,
+            668.1549
           ],
           "parts": [
             [
-              62.4292,
-              610.1947,
-              505.8881,
-              666.653
+              63.8202,
+              610.2,
+              505.0535,
+              668.1549
             ]
           ]
+        },
+        {
+          "id": "p71-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            37.557,
+            44.0,
+            561.966,
+            468.6722
+          ],
+          "parts": [
+            [
+              37.557,
+              44.0,
+              561.966,
+              468.6722
+            ]
+          ],
+          "headline": "Ziya Gökalp ve Sabahattin Bey ile ilgili aşağıda verilen metinlerden hareketle soruları cevaplayınız."
         }
       ]
     },
@@ -1872,17 +2100,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            63.2638,
+            62.5405,
             660.6,
-            505.3317,
-            729.3412
+            504.9049,
+            729.8419
           ],
           "parts": [
             [
-              63.2638,
+              62.5405,
               660.6,
-              505.3317,
-              729.3412
+              504.9049,
+              729.8419
             ]
           ]
         },
@@ -1891,17 +2119,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            63.3195,
-            597.2,
-            504.9049,
-            654.2489
+            64.0428,
+            597.5681,
+            504.1632,
+            654.6939
           ],
           "parts": [
             [
-              63.3195,
-              597.2,
-              504.9049,
-              654.2489
+              64.0428,
+              597.5681,
+              504.1632,
+              654.6939
             ]
           ]
         },
@@ -1910,59 +2138,38 @@
           "label": null,
           "column": 0,
           "rect": [
-            62.5405,
-            549.7,
-            505.8325,
-            590.2814
+            63.0969,
+            533.9,
+            504.9049,
+            591.0601
           ],
           "parts": [
             [
-              62.5405,
-              549.7,
-              505.8325,
-              590.2814
+              63.0969,
+              533.9,
+              504.9049,
+              591.0601
             ]
           ]
         },
         {
-          "id": "p73-1",
-          "label": "1",
+          "id": "p73-3",
+          "label": "3",
           "column": 0,
           "rect": [
-            49.4649,
-            359.9426,
-            502.0489,
-            412.0066
+            36.85,
+            48.32,
+            561.259,
+            326.3457
           ],
           "parts": [
             [
-              49.4649,
-              359.9426,
-              502.0489,
-              412.0066
+              36.85,
+              48.32,
+              561.259,
+              326.3457
             ]
-          ],
-          "headline": "Öğretmeninizin rehberliğinde çember şeklinde oturabileceğiniz bir sınıf düzeni oluşturunuz. Konuşma sırasını takip edebilmek için sembol olarak kullanılabilecek"
-        },
-        {
-          "id": "p73-2",
-          "label": "2",
-          "column": 0,
-          "rect": [
-            49.91,
-            331.7412,
-            499.2668,
-            356.8833
-          ],
-          "parts": [
-            [
-              49.91,
-              331.7412,
-              499.2668,
-              356.8833
-            ]
-          ],
-          "headline": "Aşağıdaki diyalog Sabahattin Bey ve Ziya Gökalp’in düşünceleri çerçevesinde temsilî olarak oluşturul- muştur. Diyaloğu öğretmeninizin rehberliğinde canlandırını"
+          ]
         }
       ]
     },
@@ -1981,17 +2188,17 @@
           "label": "4",
           "column": 0,
           "rect": [
-            63.8202,
+            63.3751,
             68.1117,
             517.7068,
-            183.2253
+            183.1697
           ],
           "parts": [
             [
-              63.8202,
+              63.3751,
               68.1117,
               517.7068,
-              183.2253
+              183.1697
             ]
           ],
           "headline": "Konuşma sırası size geldiğinde aşağıdaki soruları sırasıyla cevaplayınız. Sınıf arkadaşlarınızın konu ile ilgili düşüncelerini dinleyiniz. Tüm sorularda aynı iş"
@@ -2013,24 +2220,23 @@
       ],
       "activities": [
         {
-          "id": "p75-4",
-          "label": "4",
+          "id": "p75-v1",
+          "label": null,
           "column": 0,
           "rect": [
-            49.6318,
-            485.2633,
-            507.0566,
-            732.535
+            49.7987,
+            484.3734,
+            505.8325,
+            701.1955
           ],
           "parts": [
             [
-              49.6318,
-              485.2633,
-              507.0566,
-              732.535
+              49.7987,
+              484.3734,
+              505.8325,
+              701.1955
             ]
-          ],
-          "headline": "4. Uygulama 4. Uygulama Türkiye’de sosyolojinin gelişim sürecini tarihsel bağlamda Türk modernleşmesi ile ilişkilendirerek bir"
+          ]
         },
         {
           "id": "p75-q2",
@@ -2070,14 +2276,14 @@
           "column": 0,
           "rect": [
             44.7914,
-            463.7925,
+            466.24,
             511.4857,
             718.7
           ],
           "parts": [
             [
               44.7914,
-              463.7925,
+              466.24,
               511.4857,
               718.7
             ]
@@ -2120,17 +2326,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            88.6918,
-            532.9331,
-            504.5527,
-            608.526
+            87.8015,
+            531.2644,
+            504.2189,
+            610.9552
           ],
           "parts": [
             [
-              88.6918,
-              532.9331,
-              504.5527,
-              608.526
+              87.8015,
+              531.2644,
+              504.2189,
+              610.9552
             ]
           ]
         },
@@ -2139,17 +2345,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            90.8061,
-            451.0546,
-            505.8325,
-            526.8701
+            90.6392,
+            451.8334,
+            504.4414,
+            526.7588
           ],
           "parts": [
             [
-              90.8061,
-              451.0546,
-              505.8325,
-              526.8701
+              90.6392,
+              451.8334,
+              504.4414,
+              526.7588
             ]
           ]
         },
@@ -2161,14 +2367,14 @@
             57.69,
             72.978,
             530.01,
-            432.0868
+            432.4206
           ],
           "parts": [
             [
               57.69,
               72.978,
               530.01,
-              432.0868
+              432.4206
             ]
           ],
           "headline": "Aşağıdaki roman özetinden yararlanarak metnin sosyolojik inceleme ölçütlerini tablodaki ilgili alana örnekteki gibi yazınız."
@@ -2190,17 +2396,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            64.5436,
-            337.3593,
-            520.5773,
-            731.5106
+            65.4338,
+            336.0799,
+            520.466,
+            730.8987
           ],
           "parts": [
             [
-              64.5436,
-              337.3593,
-              520.5773,
-              731.5106
+              65.4338,
+              336.0799,
+              520.466,
+              730.8987
             ]
           ],
           "headline": "İncelediğiniz edebî eser alıntılarından birini grubunuzun ortak kararı ile seçiniz. Seçtiğiniz metni belir- lediğiniz ölçütlere göre analiz ediniz ve tablodaki "
@@ -2210,17 +2416,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            64.198,
-            299.6462,
-            511.7304,
-            325.1776
+            65.2669,
+            300.1468,
+            512.5821,
+            325.3445
           ],
           "parts": [
             [
-              64.198,
-              299.6462,
-              511.7304,
-              325.1776
+              65.2669,
+              300.1468,
+              512.5821,
+              325.3445
             ]
           ],
           "headline": "İncelediğiniz eserdeki sosyolojik düşünce, tema ve problemleri sosyoloji ile ilişkisi içinde sözlü olarak sınıf arkadaşlarınızla paylaşınız."
@@ -2230,17 +2436,17 @@
           "label": "4",
           "column": 0,
           "rect": [
-            64.8218,
-            137.558,
+            63.709,
+            138.7818,
             443.815,
-            296.0307
+            295.9194
           ],
           "parts": [
             [
-              64.8218,
-              137.558,
+              63.709,
+              138.7818,
               443.815,
-              296.0307
+              295.9194
             ]
           ]
         }
@@ -2261,17 +2467,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            50.0769,
-            284.2384,
-            506.3889,
-            402.9399
+            51.3567,
+            285.7,
+            506.2219,
+            403.218
           ],
           "parts": [
             [
-              50.0769,
-              284.2384,
-              506.3889,
-              402.9399
+              51.3567,
+              285.7,
+              506.2219,
+              403.218
             ]
           ],
           "headline": "Metinde geçen “İnsan ekonomi içindir.” ve “Ekonomi insan içindir.” ifadelerinin toplumsal yansımalarını karşılaştırınız."
@@ -2281,17 +2487,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            51.1341,
-            154.7458,
-            494.3704,
-            274.2261
+            51.0228,
+            154.8571,
+            494.2591,
+            273.6142
           ],
           "parts": [
             [
-              51.1341,
-              154.7458,
-              494.3704,
-              274.2261
+              51.0228,
+              154.8571,
+              494.2591,
+              273.6142
             ]
           ],
           "headline": "Osmanlı iktisat tarihçisi Mehmet Genç’in analizine göre Batı’da kitlesel bir sefalet ve yoğun bir dilen- cilik görülürken Osmanlı şehirlerinde neredeyse hiç dil"
@@ -2313,17 +2519,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            64.2097,
-            624.8795,
-            516.5155,
-            730.8987
+            63.4308,
+            625.5469,
+            517.7451,
+            730.4537
           ],
           "parts": [
             [
-              64.2097,
-              624.8795,
-              516.5155,
-              730.8987
+              63.4308,
+              625.5469,
+              517.7451,
+              730.4537
             ]
           ],
           "headline": "Aşağıdakilerden hangisi Osmanlı İmparatorluğu’nun sömürgeci zihniyetten uzak olması, toprak mülki- yetinin devlete ait olması, kâr oranlarının sınırlandırılması"
@@ -2333,17 +2539,17 @@
           "label": "4",
           "column": 0,
           "rect": [
-            64.6549,
-            164.8138,
-            518.9081,
-            255.8145
+            64.7661,
+            164.1463,
+            519.6871,
+            256.1483
           ],
           "parts": [
             [
-              64.6549,
-              164.8138,
-              518.9081,
-              255.8145
+              64.7661,
+              164.1463,
+              519.6871,
+              256.1483
             ]
           ],
           "headline": "Japonya’da modernleşmeyi tetikleyen dışsal sebepler nelerdir?"
@@ -2353,17 +2559,17 @@
           "label": "5",
           "column": 0,
           "rect": [
-            64.2097,
-            66.8,
-            518.9637,
-            155.3577
+            63.9315,
+            68.1117,
+            519.9096,
+            155.2464
           ],
           "parts": [
             [
-              64.2097,
-              66.8,
-              518.9637,
-              155.3577
+              63.9315,
+              68.1117,
+              519.9096,
+              155.2464
             ]
           ],
           "headline": "Japonya’da modernleşme girişimleri toplumun hangi alanlarında köklü değişimlere yol açmıştır?"
@@ -2385,17 +2591,17 @@
           "label": "6",
           "column": 0,
           "rect": [
-            49.2423,
-            628.2169,
-            506.055,
-            729.8975
+            50.4664,
+            629.5519,
+            505.6655,
+            729.5637
           ],
           "parts": [
             [
-              49.2423,
-              628.2169,
-              506.055,
-              729.8975
+              50.4664,
+              629.5519,
+              505.6655,
+              729.5637
             ]
           ],
           "headline": "Batı’nın sadece bilim ve tekniğini alarak manevi ve kültürel değerler korunabilir mi? Bu yönüyle Türk modernleşmesi ile Japon modernleşmesini değerlendiriniz."
@@ -2405,17 +2611,17 @@
           "label": "7",
           "column": 0,
           "rect": [
-            49.4649,
-            512.9641,
-            506.9453,
-            617.704
+            50.9672,
+            514.9109,
+            506.3332,
+            617.6483
           ],
           "parts": [
             [
-              49.4649,
-              512.9641,
-              506.9453,
-              617.704
+              50.9672,
+              514.9109,
+              506.3332,
+              617.6483
             ]
           ],
           "headline": "Ziya Gökalp’in “hars ve medeniyet” ayrımıyla Meiji Dönemi’ndeki “Wakon Yosai” (Japon ruhu ve Batı ilmi) ayrımını karşılaştırınız."
@@ -2437,147 +2643,21 @@
       ],
       "activities": [
         {
-          "id": "p92-8",
-          "label": "8",
-          "column": 0,
-          "rect": [
-            62.8743,
-            238.9049,
-            519.5758,
-            731.01
-          ],
-          "parts": [
-            [
-              62.8743,
-              238.9049,
-              519.5758,
-              731.01
-            ]
-          ],
-          "headline": "Metinden yararlanarak aşağıdaki açıklamaları ilgili kavramlarla eşleştiriniz. Eşleşen kavramın yanında- ki harfi, açıklamanın başındaki yay ayracın içine yazını",
-          "items": [
-            {
-              "id": "p92-8-1",
-              "label": "1",
-              "number": 1,
-              "partIndex": 0,
-              "rect": [
-                84.0774,
-                617.8709,
-                431.2875,
-                676.7709
-              ],
-              "text": "Osmanlı aydınlarının devletin toprak bütünlüğünü Batıcılık (........) 1. a) korumak ve Batılı güçlerin yayılmacı emellerine set Sanayileşme b) çekmek için çözüm arayışına girmesine neden olan Pozitivi"
-            },
-            {
-              "id": "p92-8-2",
-              "label": "2",
-              "number": 2,
-              "partIndex": 0,
-              "rect": [
-                84.0774,
-                560.3611,
-                518.9666,
-                620.761
-              ],
-              "text": "Ekonomik bunalımlar ç) İmparatorluk içindeki unsurların ayrılma çabalarına (........) 2. karşı önce “Osmanlıcılık” ile dizginlenmeye Sömürgecilik ve Batı yayılmacılığı d) çalışılan, Cumhuriyet ile bir"
-            },
-            {
-              "id": "p92-8-3",
-              "label": "3",
-              "number": 3,
-              "partIndex": 0,
-              "rect": [
-                84.0774,
-                502.8611,
-                423.6974,
-                564.751
-              ],
-              "text": "Kentleşme f) Modernleşmenin mekânsal yansıması olarak (........) 3. tarıma dayalı geleneksel yapıdan kopan bireylerin Milliyetçilik g) sanayi merkezlerine göç etmesiyle yeni bir yaşam Taklitçilik ğ) t"
-            },
-            {
-              "id": "p92-8-4",
-              "label": "4",
-              "number": 4,
-              "partIndex": 0,
-              "rect": [
-                84.0774,
-                451.141,
-                457.7165,
-                508.7411
-              ],
-              "text": "Adem-i merkeziyet h) Toplum yasalarının bilimsel yöntemlerle (........) 4. bulunabileceğini ve bu yasalara göre toplumun Sekülerleşme ı) yeniden düzenlenebileceğini savunan yaklaşımdır. Milliyetçi isy"
-            },
-            {
-              "id": "p92-8-5",
-              "label": "5",
-              "number": 5,
-              "partIndex": 0,
-              "rect": [
-                84.0774,
-                413.8611,
-                357.1245,
-                459.761
-              ],
-              "text": "Türk modernleşmesinde bilim, teknik, hukuk ve (........) 5. yaşam tarzı alanlarında Avrupa medeniyetini örnek almayı ve ona uyum sağlamayı savunan akımdır."
-            },
-            {
-              "id": "p92-8-6",
-              "label": "6",
-              "number": 6,
-              "partIndex": 0,
-              "rect": [
-                84.0774,
-                356.3611,
-                350.4545,
-                415.261
-              ],
-              "text": "Modernleşme adımları atılırken toplumun manevi (........) 6. değerlerini, geleneklerini ve tarihsel sürekliliğini koruma refleksiyle ortaya çıkan dengeleyici yaklaşımdır."
-            },
-            {
-              "id": "p92-8-7",
-              "label": "7",
-              "number": 7,
-              "partIndex": 0,
-              "rect": [
-                84.0774,
-                311.8611,
-                346.7645,
-                357.761
-              ],
-              "text": "“İktisadi bağımsızlık” için devlet eliyle başlatılan (........) 7. fabrikalar kurma, makineleşme, madenleri işletme gibi üretim hamleleridir."
-            },
-            {
-              "id": "p92-8-8",
-              "label": "8",
-              "number": 8,
-              "partIndex": 0,
-              "rect": [
-                84.0874,
-                238.9049,
-                351.4154,
-                310.4211
-              ],
-              "text": " Osmanlı’nın son dönemindeki dış borçlar (........) 8. (Düyûn-ı Umûmiyye) ve 1929 Krizi (Büyük Buhran) nedeniyle işsizliğin yükselmesi, gelirlerin azalması ve toplumun geniş kesimlerinin alım gücünü y"
-            }
-          ]
-        },
-        {
           "id": "p92-9",
           "label": "9",
           "column": 0,
           "rect": [
-            63.4308,
-            148.6828,
+            63.6533,
+            148.1822,
             519.6314,
-            223.7752
+            224.0533
           ],
           "parts": [
             [
-              63.4308,
-              148.6828,
+              63.6533,
+              148.1822,
               519.6314,
-              223.7752
+              224.0533
             ]
           ],
           "headline": "Batıcılık ve muhafazakârlık arasındaki karşıtlığı açıklayınız."
@@ -2599,17 +2679,17 @@
           "label": "10",
           "column": 0,
           "rect": [
-            49.5205,
-            354.7139,
-            506.4445,
-            440.6529
+            50.5777,
+            353.4902,
+            506.1663,
+            441.0979
           ],
           "parts": [
             [
-              49.5205,
-              354.7139,
-              506.4445,
-              440.6529
+              50.5777,
+              353.4902,
+              506.1663,
+              441.0979
             ]
           ],
           "headline": "Yazarın yaşanan zamanın yanında bir “ikinci zaman”ın varlığını vurgulayarak modernleşmeye ilişkin nasıl bir yaklaşım sergilediğini açıklayınız."
@@ -2619,17 +2699,17 @@
           "label": "11",
           "column": 0,
           "rect": [
-            50.2438,
+            51.4123,
             194.4,
-            505.8881,
-            343.311
+            504.8866,
+            343.0329
           ],
           "parts": [
             [
-              50.2438,
+              51.4123,
               194.4,
-              505.8881,
-              343.311
+              504.8866,
+              343.0329
             ]
           ],
           "headline": "Bursa’nın “ikinci bir zaman”la iç içe yaşadığı düşüncesini modernleşme sürecinde toplumun geçmişle kurduğu ilişki bağlamında değerlendirerek kısa bir paragraf y"
@@ -2639,17 +2719,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            45.0237,
-            44.0,
-            505.1648,
-            194.15
+            140.5648,
+            63.3001,
+            503.9407,
+            182.1128
           ],
           "parts": [
             [
-              45.0237,
-              44.0,
-              505.1648,
-              194.15
+              140.5648,
+              63.3001,
+              503.9407,
+              182.1128
             ]
           ]
         }
@@ -2670,17 +2750,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            48.0738,
+            49.3536,
             495.4,
-            505.4986,
-            536.8267
+            504.9893,
+            537.1605
           ],
           "parts": [
             [
-              48.0738,
+              49.3536,
               495.4,
-              505.4986,
-              536.8267
+              504.9893,
+              537.1605
             ]
           ],
           "headline": "Bir insan kitlesinin “toplum” kimliği kazanabilmesi için sahip olması gereken özellikler neler olabilir?"
@@ -2690,17 +2770,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            48.7415,
-            448.329,
-            505.7212,
-            489.0458
+            49.0197,
+            448.0509,
+            504.9422,
+            489.5464
           ],
           "parts": [
             [
-              48.7415,
-              448.329,
-              505.7212,
-              489.0458
+              49.0197,
+              448.0509,
+              504.9422,
+              489.5464
             ]
           ],
           "headline": "Toplumsal yapı kavramının size çağrıştırdıklarını yazınız."
@@ -2710,17 +2790,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            48.5746,
-            400.4,
-            506.2776,
-            441.5429
+            50.1326,
+            400.2699,
+            505.6099,
+            441.6542
           ],
           "parts": [
             [
-              48.5746,
-              400.4,
-              506.2776,
-              441.5429
+              50.1326,
+              400.2699,
+              505.6099,
+              441.6542
             ]
           ],
           "headline": "Bir toplumun kültürünü oluşturan temel bileşenler neler olabilir?"
@@ -2730,17 +2810,17 @@
           "label": "4",
           "column": 0,
           "rect": [
-            48.6302,
-            352.9,
-            504.9893,
-            394.0957
+            50.2438,
+            368.8,
+            504.4971,
+            393.8176
           ],
           "parts": [
             [
-              48.6302,
-              352.9,
-              504.9893,
-              394.0957
+              50.2438,
+              368.8,
+              504.4971,
+              393.8176
             ]
           ],
           "headline": "Toplum için gelenekler neden önemlidir?"
@@ -2750,16 +2830,16 @@
           "label": "5",
           "column": 0,
           "rect": [
-            48.6859,
+            49.7987,
             292.4,
-            505.7768,
+            505.1648,
             346.7597
           ],
           "parts": [
             [
-              48.6859,
+              49.7987,
               292.4,
-              505.7768,
+              505.1648,
               346.7597
             ]
           ],
@@ -2789,40 +2869,20 @@
           "label": "2",
           "column": 0,
           "rect": [
-            50.5777,
+            48.4633,
             94.1713,
-            501.2142,
-            120.7596
+            501.3812,
+            119.9809
           ],
           "parts": [
             [
-              50.5777,
+              48.4633,
               94.1713,
-              501.2142,
-              120.7596
+              501.3812,
+              119.9809
             ]
           ],
           "headline": "Birlikte Türk kahvesi içmek, aşure yapıp komşulara dağıtmak gibi geleneklerin toplumsal yapıya nasıl katkıda bulunduğunu açıklayınız."
-        },
-        {
-          "id": "p97-3",
-          "label": "3",
-          "column": 0,
-          "rect": [
-            49.4649,
-            75.6486,
-            441.2889,
-            90.0552
-          ],
-          "parts": [
-            [
-              49.4649,
-              75.6486,
-              441.2889,
-              90.0552
-            ]
-          ],
-          "headline": "Bayram kutlamalarının toplumsal birlik ve düzene nasıl katkıda bulunduğunu açıklayınız."
         }
       ]
     },
@@ -2854,54 +2914,6 @@
               721.1
             ]
           ]
-        },
-        {
-          "id": "p98-1",
-          "label": "1",
-          "column": 0,
-          "rect": [
-            8.504,
-            68.1117,
-            533.4304,
-            476.9176
-          ],
-          "parts": [
-            [
-              8.504,
-              68.1117,
-              533.4304,
-              476.9176
-            ]
-          ],
-          "headline": "Farklı kültürlere ilişkin aşağıdaki görselleri inceleyiniz ve soruların cevaplarını arkadaşlarınızla paylaşınız.",
-          "items": [
-            {
-              "id": "p98-1-3",
-              "label": "3",
-              "number": 3,
-              "partIndex": 0,
-              "rect": [
-                61.3658,
-                270.1053,
-                509.709,
-                411.4531
-              ],
-              "text": "1 2 3 Geleneksel kıyafetleriyle Japon Geleneksel kıyafetleriyle Geleneksel kathakali dansı Görsel 3.1: Görsel 3.2: Görsel 3.3: kadınlar Sivaslı çocuklar yapan Hintliler"
-            },
-            {
-              "id": "p98-1-6",
-              "label": "6",
-              "number": 6,
-              "partIndex": 0,
-              "rect": [
-                61.3658,
-                68.1117,
-                519.5743,
-                268.0563
-              ],
-              "text": "4 5 6 Bir ramazan mahyası Geleneksel kıyafetleriyle Bir kına gecesi töreni Görsel 3.4: Görsel 3.5: Görsel 3.6: İskoçlar • Bu görseller hangi kültürel unsurları yansıtmaktadır? • Farklı kültürlerin ina"
-            }
-          ]
         }
       ]
     },
@@ -2920,17 +2932,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            64.4323,
+            65.1,
             44.0,
             526.0162,
-            370.3443
+            370.233
           ],
           "parts": [
             [
-              64.4323,
+              65.1,
               44.0,
               526.0162,
-              370.3443
+              370.233
             ]
           ],
           "headline": "Kültürel unsurların işlevlerine ilişkin kendi çevrenizden örnekler (yerel bir gelenek, bir kural, ortak semboller vb.) bulunuz ve bulduğunuz örneklerin toplumsa"
@@ -2952,20 +2964,20 @@
           "label": "2",
           "column": 0,
           "rect": [
-            50.2995,
+            50.5777,
             66.6,
-            507.2235,
-            272.168
+            505.9437,
+            271.8899
           ],
           "parts": [
             [
-              50.2995,
+              50.5777,
               66.6,
-              507.2235,
-              272.168
+              505.9437,
+              271.8899
             ]
           ],
-          "headline": "Yukarıdaki metinden hareketle Morgan’ın Avrupamer­kezci etnosentrik bakış açısını kültürel görelilik kavramına göre gözden geçiriniz ve bu bakış açısı ile ilgil"
+          "headline": "kavramına göre gözden  geçiriniz ve bu bakış açısı ile ilgili çıkarımlarda  bulununuz. Ulaştığınız çıkarım- ları içeren eleştirel bir yansıt"
         }
       ]
     },
@@ -2987,17 +2999,36 @@
             43.753,
             282.497,
             517.153,
-            674.8854
+            677.2772
           ],
           "parts": [
             [
               43.753,
               282.497,
               517.153,
-              674.8854
+              677.2772
             ]
           ],
           "headline": "Aşağıdaki form, çalışma kâğıdında öğrendiklerinizi ve bulunduğunuz seviyeyi değerlendirmeniz amacıyla ✔ oluşturulmuştur. Her ölçütün karşısı"
+        },
+        {
+          "id": "p105-v2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            43.918,
+            53.848,
+            515.878,
+            276.5623
+          ],
+          "parts": [
+            [
+              43.918,
+              53.848,
+              515.878,
+              276.5623
+            ]
+          ]
         }
       ]
     },
@@ -3017,51 +3048,19 @@
           "column": 0,
           "rect": [
             59.0279,
-            116.4766,
-            518.5186,
+            116.9215,
+            519.6871,
             428.9
           ],
           "parts": [
             [
               59.0279,
-              116.4766,
-              518.5186,
+              116.9215,
+              519.6871,
               428.9
             ]
           ],
           "headline": "Konuya Başlarken Konuya Başlarken Aşağıdaki metinden yararlanarak sorunun cevabını ilgili kısma yazınız."
-        }
-      ]
-    },
-    "109": {
-      "pageWidth": 569.764,
-      "pageHeight": 796.535,
-      "columns": [
-        [
-          44.6776,
-          545.764
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p109-1",
-          "label": "1",
-          "column": 0,
-          "rect": [
-            44.036,
-            44.0,
-            516.356,
-            305.0974
-          ],
-          "parts": [
-            [
-              44.036,
-              44.0,
-              516.356,
-              305.0974
-            ]
-          ],
-          "headline": "Toplumsal yapının unsurları, özellikleri, temel kavramları ve birey-toplum ilişkisine dair aşağıdaki bilgi notundan hareketle toplumsal yapıyı kendi cümlelerini"
         }
       ]
     },
@@ -3080,17 +3079,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            49.4649,
-            382.9153,
+            50.6333,
+            384.2503,
             501.5089,
-            465.1831
+            465.4056
           ],
           "parts": [
             [
-              49.4649,
-              382.9153,
+              50.6333,
+              384.2503,
               501.5089,
-              465.1831
+              465.4056
             ]
           ],
           "headline": "Aşağıdaki sorular çerçevesinde tartışınız. Tartışma etkinliğinin uygulanmasına ilişkin yönergeye 10."
@@ -3100,17 +3099,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            47.8513,
-            117.2553,
-            507.2791,
-            377.9647
+            42.865,
+            114.707,
+            515.905,
+            377.7422
           ],
           "parts": [
             [
-              47.8513,
-              117.2553,
-              507.2791,
-              377.9647
+              42.865,
+              114.707,
+              515.905,
+              377.7422
             ]
           ],
           "headline": "Aşağıdaki diyagramda toplumsal sapmanın olası nedenlerinden bazıları verilmiştir. Bu nedenlerin olası sonuçlarının neler olabileceğini diyagram üzerinde ilgili "
@@ -3135,14 +3134,14 @@
             59.1968,
             485.535,
             522.8774,
-            729.1187
+            728.5625
           ],
           "parts": [
             [
               59.1968,
               485.535,
               522.8774,
-              729.1187
+              728.5625
             ]
           ]
         },
@@ -3151,17 +3150,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            63.7646,
-            81.6,
-            518.9637,
-            413.2769
+            64.4323,
+            68.1117,
+            519.2976,
+            427.3969
           ],
           "parts": [
             [
-              63.7646,
-              81.6,
-              518.9637,
-              413.2769
+              64.4323,
+              68.1117,
+              519.2976,
+              427.3969
             ]
           ],
           "headline": "Aşağıdaki tabloyu inceleyiniz ve soruların cevaplarını gerekçelendirerek ilgili kısma yazınız."
@@ -3187,17 +3186,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            62.8187,
+            63.8202,
             649.5,
-            506.1663,
-            720.8308
+            505.3873,
+            721.4983
           ],
           "parts": [
             [
-              62.8187,
+              63.8202,
               649.5,
-              506.1663,
-              720.8308
+              505.3873,
+              721.4983
             ]
           ]
         },
@@ -3206,19 +3205,39 @@
           "label": null,
           "column": 0,
           "rect": [
-            63.4308,
+            65.1,
             570.3,
-            505.276,
-            642.846
+            504.9049,
+            643.1241
           ],
           "parts": [
             [
-              63.4308,
+              65.1,
               570.3,
-              505.276,
-              642.846
+              504.9049,
+              643.1241
             ]
           ]
+        },
+        {
+          "id": "p113-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            50.1882,
+            67.8282,
+            504.0519,
+            414.0
+          ],
+          "parts": [
+            [
+              50.1882,
+              67.8282,
+              504.0519,
+              414.0
+            ]
+          ],
+          "headline": "Etkileşim içinde olan ve ortak amaç taşıyan bireyler a) Aile, eğitim, ekonomi, din, toplumsal gruptur."
         }
       ]
     },
@@ -3238,14 +3257,14 @@
           "column": 0,
           "rect": [
             59.0289,
-            407.5011,
+            407.2229,
             515.278,
             687.2
           ],
           "parts": [
             [
               59.0289,
-              407.5011,
+              407.2229,
               515.278,
               687.2
             ]
@@ -3268,17 +3287,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            77.5636,
+            78.9546,
             673.6,
-            519.854,
-            729.9531
+            519.2419,
+            730.1756
           ],
           "parts": [
             [
-              77.5636,
+              78.9546,
               673.6,
-              519.854,
-              729.9531
+              519.2419,
+              730.1756
             ]
           ]
         },
@@ -3287,17 +3306,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            78.0643,
+            78.732,
             610.2,
-            520.0209,
-            667.6543
+            519.854,
+            668.2105
           ],
           "parts": [
             [
-              78.0643,
+              78.732,
               610.2,
-              520.0209,
-              667.6543
+              519.854,
+              668.2105
             ]
           ]
         },
@@ -3309,14 +3328,14 @@
             58.9608,
             44.0,
             530.605,
-            386.8646
+            389.9029
           ],
           "parts": [
             [
               58.9608,
               44.0,
               530.605,
-              386.8646
+              389.9029
             ]
           ],
           "headline": "Aşağıdaki bilgi notlarından yararlanarak soruların cevaplarını sınıf arkadaşlarınızla sözlü olarak paylaşınız."
@@ -3341,14 +3360,14 @@
             44.091,
             53.494,
             516.411,
-            460.1213
+            459.7876
           ],
           "parts": [
             [
               44.091,
               53.494,
               516.411,
-              460.1213
+              459.7876
             ]
           ],
           "headline": "Aşağıda verilen bilgi notundan hareketle sorular üzerine tartışınız. Tartışma etkinliğinin uygulanmasına ilişkin yönergeye 10. sayfadaki “Etkinlikler Yönergesi”"
@@ -3378,17 +3397,17 @@
           "label": null,
           "column": 1,
           "rect": [
-            77.6749,
-            469.9668,
-            517.2389,
-            584.3852
+            79.0659,
+            470.7455,
+            517.4058,
+            583.829
           ],
           "parts": [
             [
-              77.6749,
-              469.9668,
-              517.2389,
-              584.3852
+              79.0659,
+              470.7455,
+              517.4058,
+              583.829
             ]
           ]
         },
@@ -3397,20 +3416,52 @@
           "label": "2",
           "column": 0,
           "rect": [
-            63.7646,
+            64.8218,
             68.1117,
             523.6754,
-            464.4044
+            463.8481
           ],
           "parts": [
             [
-              63.7646,
+              64.8218,
               68.1117,
               523.6754,
-              464.4044
+              463.8481
             ]
           ],
           "headline": "Aşağıda toplumsal tabakalaşma ve toplumsal hareketliliğe ilişkin çeşitli tanım cümleleri verilmiştir."
+        }
+      ]
+    },
+    "121": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.0237,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p121-q2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            43.753,
+            249.2,
+            515.713,
+            680.1697
+          ],
+          "parts": [
+            [
+              43.753,
+              249.2,
+              515.713,
+              680.1697
+            ]
+          ],
+          "headline": "Bu form, etkinlikteki performansınızı değerlendirmeniz amacıyla oluşturulmuştur. Her ölçütün karşısın- ✔ daki derecelerden en uygun olduğunu"
         }
       ]
     },
@@ -3425,24 +3476,56 @@
       ],
       "activities": [
         {
-          "id": "p122-2",
-          "label": "2",
+          "id": "p122-1",
+          "label": "1",
           "column": 0,
           "rect": [
-            63.8202,
-            68.1117,
-            520.2991,
-            261.1544
+            63.717,
+            68.2506,
+            519.6314,
+            607.5248
           ],
           "parts": [
             [
-              63.8202,
-              68.1117,
-              520.2991,
-              261.1544
+              63.717,
+              68.2506,
+              519.6314,
+              607.5248
             ]
           ],
-          "headline": "Toplumsal tabakalaşma ve toplumsal hareketliliğin topluma ve bireye etkileri hakkında kısa bir yorum metni yazınız. Metin yazma etkinliğinin uygulanmasına ilişk"
+          "headline": "ve verilen sorular çerçevesinde düşüncelerinizi sınıf arkadaşlarınızla sözlü olarak paylaşınız. Konuşma halkasının uygulanmasına ilişkin yön"
+        }
+      ]
+    },
+    "123": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          44.6279,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p123-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            44.058,
+            53.563,
+            516.378,
+            483.7313
+          ],
+          "parts": [
+            [
+              44.058,
+              53.563,
+              516.378,
+              483.7313
+            ]
+          ],
+          "headline": "Değerlendirme Çalışmanızı aşağıda verilen “Öz Değerlendirme Formu” ile değerlendiriniz."
         }
       ]
     },
@@ -3465,17 +3548,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            59.1969,
-            85.3271,
-            525.65,
-            526.3551
+            63.709,
+            85.494,
+            520.65,
+            488.3783
           ],
           "parts": [
             [
-              59.1969,
-              85.3271,
-              525.65,
-              526.3551
+              63.709,
+              85.494,
+              520.65,
+              488.3783
             ]
           ],
           "headline": "Kırsaldan şehir merkezlerine taşınan bireylerin yeni meslek a) Toplumsal hareketlilik gruplarına katılarak toplumsal konumlarını değiştirmesi"
@@ -3497,17 +3580,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            49.4092,
-            502.8405,
-            505.1091,
-            559.5213
+            50.4664,
+            501.1718,
+            504.7196,
+            560.0219
           ],
           "parts": [
             [
-              49.4092,
-              502.8405,
-              505.1091,
-              559.5213
+              50.4664,
+              501.1718,
+              504.7196,
+              560.0219
             ]
           ],
           "headline": "Kendimiz olarak yaşayabilmek ile kültürel miras arasındaki ilişkiyi açıklayınız."
@@ -3517,17 +3600,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            49.2423,
-            432.0312,
-            506.3889,
-            491.382
+            50.3551,
+            431.1969,
+            505.7212,
+            491.3264
           ],
           "parts": [
             [
-              49.2423,
-              432.0312,
-              506.3889,
-              491.382
+              50.3551,
+              431.1969,
+              505.7212,
+              491.3264
             ]
           ],
           "headline": "Kendimiz olarak yaşayabilmenin neden önemli olduğunu açıklayınız."
@@ -3538,16 +3621,16 @@
           "column": 0,
           "rect": [
             50.0769,
-            185.0053,
+            184.894,
             502.0211,
-            289.9677
+            290.1902
           ],
           "parts": [
             [
               50.0769,
-              185.0053,
+              184.894,
               502.0211,
-              289.9677
+              290.1902
             ]
           ],
           "headline": "Kültürün maddi yönündeki hızlı değişimlere oranla manevi yönünün yavaş değişmesi aşağıdakilerden hangisinde ifade edilmiştir?"
@@ -3557,17 +3640,17 @@
           "label": "4",
           "column": 0,
           "rect": [
-            50.6333,
+            50.3551,
             70.5312,
-            498.5991,
-            176.3279
+            500.0211,
+            176.0498
           ],
           "parts": [
             [
-              50.6333,
+              50.3551,
               70.5312,
-              498.5991,
-              176.3279
+              500.0211,
+              176.0498
             ]
           ],
           "headline": "Kültürün maddi yönündeki hızlı değişimlere oranla manevi yönünün yavaş değişmesi aşağıdakilerden hangisine yol açmaz?"
@@ -3589,17 +3672,17 @@
           "label": "5",
           "column": 0,
           "rect": [
-            62.8743,
-            530.5412,
-            519.2419,
-            587.1664
+            63.9315,
+            546.6,
+            519.3532,
+            587.8895
           ],
           "parts": [
             [
-              62.8743,
-              530.5412,
-              519.2419,
-              587.1664
+              63.9315,
+              546.6,
+              519.3532,
+              587.8895
             ]
           ],
           "headline": "Ekonominin bir toplumda siyaseti ve hukuku nasıl şekillendirebileceğini açıklayınız."
@@ -3609,17 +3692,17 @@
           "label": "6",
           "column": 0,
           "rect": [
-            63.4864,
-            460.3994,
-            519.4089,
-            518.9715
+            63.542,
+            460.0657,
+            519.6314,
+            519.1383
           ],
           "parts": [
             [
-              63.4864,
-              460.3994,
-              519.4089,
-              518.9715
+              63.542,
+              460.0657,
+              519.6314,
+              519.1383
             ]
           ],
           "headline": "Marx’ın bu görüşünden yola çıkarak ekonomi ile bir üstyapı unsuru olan bilimin ilişkisini açıklayınız."
@@ -3629,17 +3712,17 @@
           "label": "7",
           "column": 0,
           "rect": [
-            63.542,
-            220.9383,
+            63.9872,
+            221.4946,
             519.2976,
-            278.1754
+            278.5647
           ],
           "parts": [
             [
-              63.542,
-              220.9383,
+              63.9872,
+              221.4946,
               519.2976,
-              278.1754
+              278.5647
             ]
           ],
           "headline": "Sendikalar ve diğer sivil toplum kuruluşları toplumsal yapının hangi unsurlarıyla ilişkilidir?"
@@ -3649,16 +3732,16 @@
           "label": "8",
           "column": 0,
           "rect": [
-            63.8759,
+            64.0428,
             150.4072,
-            519.9096,
+            519.9653,
             209.6467
           ],
           "parts": [
             [
-              63.8759,
+              64.0428,
               150.4072,
-              519.9096,
+              519.9653,
               209.6467
             ]
           ],
@@ -3681,16 +3764,16 @@
           "label": "9",
           "column": 0,
           "rect": [
-            50.522,
-            268.4412,
-            498.2096,
+            50.689,
+            268.2743,
+            499.3712,
             377.0
           ],
           "parts": [
             [
-              50.522,
-              268.4412,
-              498.2096,
+              50.689,
+              268.2743,
+              499.3712,
               377.0
             ]
           ],
@@ -3701,17 +3784,17 @@
           "label": "10",
           "column": 0,
           "rect": [
-            50.2995,
-            154.9127,
-            503.7737,
-            260.7651
+            49.8543,
+            154.8571,
+            504.4971,
+            260.2088
           ],
           "parts": [
             [
-              50.2995,
-              154.9127,
-              503.7737,
-              260.7651
+              49.8543,
+              154.8571,
+              504.4971,
+              260.2088
             ]
           ],
           "headline": "Kapalı ve kast temelli bir toplumsal yapının toplumun bütünleşmesine etkisi aşağıdakilerden hangisin- de doğru olarak ifade edilmiştir?"
@@ -3733,17 +3816,17 @@
           "label": "12",
           "column": 0,
           "rect": [
-            49.4092,
-            494.7194,
-            505.3317,
-            597.9575
+            50.4664,
+            494.0519,
+            505.1648,
+            598.1243
           ],
           "parts": [
             [
-              49.4092,
-              494.7194,
-              505.3317,
-              597.9575
+              50.4664,
+              494.0519,
+              505.1648,
+              598.1243
             ]
           ],
           "headline": "Bu senaryo üzerinden dikey hareketliliği açıklayınız. Dijitalleşme ve yeni iş modellerinin bu hareketliliği nasıl etkilediğini yorumlayınız."
@@ -3753,17 +3836,17 @@
           "label": "13",
           "column": 0,
           "rect": [
-            48.6859,
-            380.4678,
-            505.9994,
-            484.1509
+            49.6874,
+            381.1909,
+            505.443,
+            483.9284
           ],
           "parts": [
             [
-              48.6859,
-              380.4678,
-              505.9994,
-              484.1509
+              49.6874,
+              381.1909,
+              505.443,
+              483.9284
             ]
           ],
           "headline": "Dijital okuryazarlık, bilgiye erişim, teknolojik beceriler gibi unsurların toplumsal tabakalaşmayı nasıl etkilediğini açıklayınız."
@@ -3773,17 +3856,17 @@
           "label": "14",
           "column": 0,
           "rect": [
-            49.1867,
-            280.901,
-            505.7212,
-            369.8993
+            49.7987,
+            279.7885,
+            504.8866,
+            370.2886
           ],
           "parts": [
             [
-              49.1867,
-              280.901,
-              505.7212,
-              369.8993
+              49.7987,
+              279.7885,
+              504.8866,
+              370.2886
             ]
           ],
           "headline": "Dijital platformların prekarya olarak adlandırılan yeni çalışma grubunu nasıl etkilediğini açıklayınız."
@@ -3807,14 +3890,14 @@
           "rect": [
             45.0237,
             67.8282,
-            507.2791,
+            507.613,
             513.3
           ],
           "parts": [
             [
               45.0237,
               67.8282,
-              507.2791,
+              507.613,
               513.3
             ]
           ],
@@ -3839,15 +3922,15 @@
           "rect": [
             59.1989,
             44.0,
-            519.9096,
-            472.5344
+            520.5217,
+            470.078
           ],
           "parts": [
             [
               59.1989,
               44.0,
-              519.9096,
-              472.5344
+              520.5217,
+              470.078
             ]
           ]
         }
@@ -3869,14 +3952,14 @@
           "column": 0,
           "rect": [
             44.6449,
-            467.0743,
+            468.743,
             509.5662,
             720.3
           ],
           "parts": [
             [
               44.6449,
-              467.0743,
+              468.743,
               509.5662,
               720.3
             ]
@@ -3887,17 +3970,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            48.6859,
-            98.8438,
-            504.2189,
-            325.1776
+            50.7446,
+            99.4,
+            504.5662,
+            324.232
           ],
           "parts": [
             [
-              48.6859,
-              98.8438,
-              504.2189,
-              325.1776
+              50.7446,
+              99.4,
+              504.5662,
+              324.232
             ]
           ],
           "headline": "Aşağıdaki bilgi görselini inceleyerek ailenin işlevlerine ilişkin günlük hayatınızdan vereceğiniz örnekleri ilgili işlevlerin altındaki kısma yazınız."
@@ -3919,17 +4002,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            65.1556,
-            563.415,
-            504.1076,
-            729.5637
+            64.5436,
+            562.6363,
+            503.6625,
+            731.0656
           ],
           "parts": [
             [
-              65.1556,
-              563.415,
-              504.1076,
-              729.5637
+              64.5436,
+              562.6363,
+              503.6625,
+              731.0656
             ]
           ]
         },
@@ -3938,17 +4021,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            73.3905,
+            73.0567,
             373.6261,
-            504.5527,
-            555.9614
+            505.8881,
+            556.6845
           ],
           "parts": [
             [
-              73.3905,
+              73.0567,
               373.6261,
-              504.5527,
-              555.9614
+              505.8881,
+              556.6845
             ]
           ]
         },
@@ -3957,17 +4040,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            71.5543,
-            181.8347,
-            505.9994,
-            365.0044
+            71.9438,
+            182.1128,
+            504.1076,
+            363.8363
           ],
           "parts": [
             [
-              71.5543,
-              181.8347,
-              505.9994,
-              365.0044
+              71.9438,
+              182.1128,
+              504.1076,
+              363.8363
             ]
           ]
         },
@@ -3976,15 +4059,15 @@
           "label": "2",
           "column": 0,
           "rect": [
-            64.5992,
-            118.7571,
+            64.6549,
+            118.4234,
             519.6521,
             174.8817
           ],
           "parts": [
             [
-              64.5992,
-              118.7571,
+              64.6549,
+              118.4234,
               519.6521,
               174.8817
             ]
@@ -3996,51 +4079,19 @@
           "label": null,
           "column": 0,
           "rect": [
-            63.8202,
-            67.9725,
-            462.8776,
-            96.8969
+            63.9872,
+            68.5287,
+            462.4881,
+            97.4532
           ],
           "parts": [
             [
-              63.8202,
-              67.9725,
-              462.8776,
-              96.8969
+              63.9872,
+              68.5287,
+              462.4881,
+              97.4532
             ]
           ]
-        }
-      ]
-    },
-    "137": {
-      "pageWidth": 569.764,
-      "pageHeight": 796.535,
-      "columns": [
-        [
-          45.0089,
-          545.764
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p137-2",
-          "label": "2",
-          "column": 0,
-          "rect": [
-            49.8543,
-            62.6326,
-            507.2791,
-            605.9117
-          ],
-          "parts": [
-            [
-              49.8543,
-              62.6326,
-              507.2791,
-              605.9117
-            ]
-          ],
-          "headline": "İki farklı aile tipini yansıtan aşağıdaki metinleri inceleyiniz ve aile tiplerini sınıflandırmak için gerekli ölçütleri belirleyiniz. Belirlediğiniz ölçütlere g"
         }
       ]
     },
@@ -4059,20 +4110,20 @@
           "label": "3",
           "column": 0,
           "rect": [
-            63.2638,
-            67.3606,
-            520.2991,
-            406.778
+            63.4864,
+            69.1406,
+            518.5186,
+            406.4998
           ],
           "parts": [
             [
-              63.2638,
-              67.3606,
-              520.2991,
-              406.778
+              63.4864,
+              69.1406,
+              518.5186,
+              406.4998
             ]
           ],
-          "headline": "Aşağıdaki metinde ailenin hangi yönleriyle önemli ve değerli görüldüğünü metnin altındaki alana yazınız."
+          "headline": "yazınız."
         }
       ]
     },
@@ -4087,41 +4138,21 @@
       ],
       "activities": [
         {
-          "id": "p141-1",
-          "label": "1",
-          "column": 0,
-          "rect": [
-            48.4633,
-            602.9,
-            506.2776,
-            645.2378
-          ],
-          "parts": [
-            [
-              48.4633,
-              602.9,
-              506.2776,
-              645.2378
-            ]
-          ],
-          "headline": "Neler öğrendim?"
-        },
-        {
           "id": "p141-2",
           "label": "2",
           "column": 0,
           "rect": [
-            49.7431,
+            49.8543,
             555.4,
-            505.1648,
-            597.3456
+            504.9049,
+            597.7906
           ],
           "parts": [
             [
-              49.7431,
+              49.8543,
               555.4,
-              505.1648,
-              597.3456
+              504.9049,
+              597.7906
             ]
           ],
           "headline": "Öğrendiklerimi başka yerlerde veya durumlarda nasıl kullanabilirim?"
@@ -4131,17 +4162,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            50.0213,
-            508.6254,
-            505.276,
-            549.6759
+            50.0769,
+            506.5673,
+            503.7181,
+            549.8984
           ],
           "parts": [
             [
-              50.0213,
-              508.6254,
-              505.276,
-              549.6759
+              50.0769,
+              506.5673,
+              503.7181,
+              549.8984
             ]
           ],
           "headline": "Öğrendiklerim başka neleri merak etmeme yol açtı?"
@@ -4151,37 +4182,37 @@
           "label": "4",
           "column": 0,
           "rect": [
-            49.7987,
-            460.2326,
-            505.3317,
-            501.283
+            50.4664,
+            459.4538,
+            503.9407,
+            501.9505
           ],
           "parts": [
             [
-              49.7987,
-              460.2326,
-              505.3317,
-              501.283
+              50.4664,
+              459.4538,
+              503.9407,
+              501.9505
             ]
           ],
           "headline": "Öğrendiklerimin içinde en önemli konu hangisiydi?"
         },
         {
-          "id": "p141-v5",
+          "id": "p141-v4",
           "label": null,
           "column": 0,
           "rect": [
             45.0237,
             44.0,
             504.9049,
-            459.9826
+            438.3
           ],
           "parts": [
             [
               45.0237,
               44.0,
               504.9049,
-              459.9826
+              438.3
             ]
           ]
         }
@@ -4203,14 +4234,14 @@
           "column": 0,
           "rect": [
             58.8416,
-            418.5702,
+            419.1821,
             524.0857,
             720.8
           ],
           "parts": [
             [
               58.8416,
-              418.5702,
+              419.1821,
               524.0857,
               720.8
             ]
@@ -4233,17 +4264,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            63.709,
+            62.151,
             423.2,
-            520.0209,
-            623.2107
+            520.1878,
+            622.877
           ],
           "parts": [
             [
-              63.709,
+              62.151,
               423.2,
-              520.0209,
-              623.2107
+              520.1878,
+              622.877
             ]
           ],
           "headline": "Eğitim kurumunun aşağıda belirtilen işlevleri için örnekler veriniz."
@@ -4253,17 +4284,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            64.4879,
-            391.9264,
-            505.9994,
-            416.5121
+            63.542,
+            392.0932,
+            505.4986,
+            417.1796
           ],
           "parts": [
             [
-              64.4879,
-              391.9264,
-              505.9994,
-              416.5121
+              63.542,
+              392.0932,
+              505.4986,
+              417.1796
             ]
           ],
           "headline": "Eğitim kurumunun işlevlerinden birini vurgulayan özgün ve etkileyici bir slogan oluşturunuz ve bunu sınıf arkadaşlarınızla sözlü olarak paylaşınız."
@@ -4273,17 +4304,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            63.0413,
-            275.7835,
-            520.1322,
-            367.0625
+            63.0969,
+            275.7279,
+            520.1878,
+            373.7373
           ],
           "parts": [
             [
-              63.0413,
-              275.7835,
-              520.1322,
-              367.0625
+              63.0969,
+              275.7279,
+              520.1878,
+              373.7373
             ]
           ]
         }
@@ -4304,17 +4335,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            49.1867,
-            261.6551,
+            51.4123,
+            262.7675,
             502.5275,
-            613.1984
+            617.5371
           ],
           "parts": [
             [
-              49.1867,
-              261.6551,
+              51.4123,
+              262.7675,
               502.5275,
-              613.1984
+              617.5371
             ]
           ],
           "headline": "Aşağıdaki metinden yararlanarak sorunun cevabını sınıf arkadaşlarınızla sözlü olarak paylaşınız."
@@ -4324,17 +4355,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            50.5777,
+            49.8543,
             64.1344,
-            505.8881,
-            251.5871
+            504.9978,
+            251.9765
           ],
           "parts": [
             [
-              50.5777,
+              49.8543,
               64.1344,
-              505.8881,
-              251.5871
+              504.9978,
+              251.9765
             ]
           ]
         }
@@ -4351,61 +4382,21 @@
       ],
       "activities": [
         {
-          "id": "p146-2",
-          "label": "2",
-          "column": 0,
-          "rect": [
-            63.0969,
-            434.1449,
-            513.0101,
-            483.7059
-          ],
-          "parts": [
-            [
-              63.0969,
-              434.1449,
-              513.0101,
-              483.7059
-            ]
-          ],
-          "headline": "Dezavantajlı çocukların sosyal entegrasyon sorununun çözümünde eğitimin işlevinin ne olduğunu ve bu konuda Türkiye’de ne gibi uygulamaların yürütüldüğünü grup a"
-        },
-        {
-          "id": "p146-3",
-          "label": "3",
-          "column": 0,
-          "rect": [
-            63.542,
-            392.0932,
-            515.6809,
-            428.5269
-          ],
-          "parts": [
-            [
-              63.542,
-              392.0932,
-              515.6809,
-              428.5269
-            ]
-          ],
-          "headline": "Araştırma verilerinizden hareketle bir çıkarım oluşturunuz ve hem topladığınız bilgileri hem de bu çıka- rımı kapsayacak şekilde bir rapor hazırlayınız. Raporun"
-        },
-        {
           "id": "p146-1",
           "label": "1",
           "column": 0,
           "rect": [
-            64.1541,
-            223.2189,
-            519.2419,
-            263.88
+            63.9315,
+            223.6083,
+            519.9653,
+            263.6019
           ],
           "parts": [
             [
-              64.1541,
-              223.2189,
-              519.2419,
-              263.88
+              63.9315,
+              223.6083,
+              519.9653,
+              263.6019
             ]
           ],
           "headline": "Eğitim kurumunun işlevlerinden iki tanesini yazınız."
@@ -4415,17 +4406,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            63.5977,
-            175.4379,
-            518.296,
-            217.7678
+            63.542,
+            175.7,
+            519.1798,
+            217.9903
           ],
           "parts": [
             [
-              63.5977,
-              175.4379,
-              518.296,
-              217.7678
+              63.542,
+              175.7,
+              519.1798,
+              217.9903
             ]
           ],
           "headline": "Ziya Gökalp ve Sabahattin Bey’in eğitime dair görüşleri arasındaki farklardan birini yazınız."
@@ -4435,17 +4426,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            63.709,
-            125.877,
-            518.5186,
-            169.4306
+            62.0397,
+            126.9339,
+            518.5742,
+            169.7643
           ],
           "parts": [
             [
-              63.709,
-              125.877,
-              518.5186,
-              169.4306
+              62.0397,
+              126.9339,
+              518.5742,
+              169.7643
             ]
           ],
           "headline": "Vakıf sisteminin İslam dünyasında eğitimi nasıl etkilediğini açıklayınız."
@@ -4468,19 +4459,38 @@
           "column": 0,
           "rect": [
             45.0076,
-            319.5596,
+            320.6721,
             510.2207,
             720.8
           ],
           "parts": [
             [
               45.0076,
-              319.5596,
+              320.6721,
               510.2207,
               720.8
             ]
           ],
           "headline": "Konuya Başlarken Konuya Başlarken Aşağıdaki metinden yararlanarak soruların gerekçelendirilmiş cevabını sınıf arkadaşlarınızla sözlü olarak"
+        },
+        {
+          "id": "p147-v2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            36.851,
+            44.0,
+            561.26,
+            303.0213
+          ],
+          "parts": [
+            [
+              36.851,
+              44.0,
+              561.26,
+              303.0213
+            ]
+          ]
         }
       ]
     },
@@ -4499,17 +4509,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            64.5436,
-            100.6794,
-            505.8881,
-            382.4147
+            64.4323,
+            100.29,
+            505.6099,
+            382.1365
           ],
           "parts": [
             [
-              64.5436,
-              100.6794,
-              505.8881,
-              382.4147
+              64.4323,
+              100.29,
+              505.6099,
+              382.1365
             ]
           ],
           "headline": "Metinlerden yararlanarak soruların cevaplarını yazınız."
@@ -4531,17 +4541,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            63.3751,
-            662.2,
-            492.256,
-            717.8827
+            64.321,
+            662.4256,
+            491.4771,
+            718.4389
           ],
           "parts": [
             [
-              63.3751,
-              662.2,
-              492.256,
-              717.8827
+              64.321,
+              662.4256,
+              491.4771,
+              718.4389
             ]
           ]
         },
@@ -4550,17 +4560,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            63.5977,
-            598.2912,
-            491.2545,
-            655.5839
+            65.0443,
+            599.6262,
+            491.4214,
+            656.1957
           ],
           "parts": [
             [
-              63.5977,
-              598.2912,
-              491.2545,
-              655.5839
+              65.0443,
+              599.6262,
+              491.4214,
+              656.1957
             ]
           ]
         },
@@ -4571,15 +4581,15 @@
           "rect": [
             63.8202,
             535.6,
-            491.1432,
-            592.0613
+            491.7553,
+            593.0626
           ],
           "parts": [
             [
               63.8202,
               535.6,
-              491.1432,
-              592.0613
+              491.7553,
+              593.0626
             ]
           ]
         },
@@ -4616,61 +4626,72 @@
       ],
       "activities": [
         {
-          "id": "p150-1",
-          "label": "1",
-          "column": 0,
-          "rect": [
-            64.8774,
-            361.1663,
-            518.2404,
-            640.8992
-          ],
-          "parts": [
-            [
-              64.8774,
-              361.1663,
-              518.2404,
-              640.8992
-            ]
-          ],
-          "headline": "Aşağıdaki metinden yararlanarak soruyu cevaplandırınız."
-        },
-        {
           "id": "p150-2",
           "label": "2",
           "column": 0,
           "rect": [
-            63.4864,
-            112.0823,
+            62.8187,
+            113.1391,
             521.0643,
-            352.4334
+            352.6558
           ],
           "parts": [
             [
-              63.4864,
-              112.0823,
+              62.8187,
+              113.1391,
               521.0643,
-              352.4334
+              352.6558
             ]
           ],
-          "headline": "Din farklı toplumlarda ve çeşitli biçimlerde ortaya çıksa da toplumsal yaşamın"
+          "headline": "Aşağıdaki metni inceleyerek yöneltilen soru üzerinden tartışınız."
         },
         {
-          "id": "p150-v3",
+          "id": "p150-v2",
           "label": null,
           "column": 0,
           "rect": [
-            65.6008,
+            63.5977,
             50.6178,
             481.0642,
-            93.1145
+            94.0045
           ],
           "parts": [
             [
-              65.6008,
+              63.5977,
               50.6178,
               481.0642,
-              93.1145
+              94.0045
+            ]
+          ]
+        }
+      ]
+    },
+    "151": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.0199,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p151-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            35.2208,
+            67.8282,
+            562.8645,
+            616.3134
+          ],
+          "parts": [
+            [
+              35.2208,
+              67.8282,
+              562.8645,
+              616.3134
             ]
           ]
         }
@@ -4692,16 +4713,16 @@
           "column": 0,
           "rect": [
             57.926,
-            332.7,
+            333.0481,
             530.246,
-            713.4884
+            715.7134
           ],
           "parts": [
             [
               57.926,
-              332.7,
+              333.0481,
               530.246,
-              713.4884
+              715.7134
             ]
           ]
         },
@@ -4710,17 +4731,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            63.5977,
-            74.5917,
-            521.1337,
-            332.7
+            62.7631,
+            73.813,
+            520.1322,
+            332.7981
           ],
           "parts": [
             [
-              63.5977,
-              74.5917,
-              521.1337,
-              332.7
+              62.7631,
+              73.813,
+              520.1322,
+              332.7981
             ]
           ],
           "headline": "3. Uygulama 3. Uygulama ✔"
@@ -4755,26 +4776,38 @@
               720.8
             ]
           ]
-        },
+        }
+      ]
+    },
+    "155": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.0289,
+          545.764
+        ]
+      ],
+      "activities": [
         {
-          "id": "p153-1",
-          "label": "1",
+          "id": "p155-2",
+          "label": "2",
           "column": 0,
           "rect": [
-            37.298,
-            44.0,
-            561.707,
-            348.3728
+            51.4123,
+            706.2017,
+            500.2684,
+            729.8975
           ],
           "parts": [
             [
-              37.298,
-              44.0,
-              561.707,
-              348.3728
+              51.4123,
+              706.2017,
+              500.2684,
+              729.8975
             ]
           ],
-          "headline": "Aşağıdaki metni ve tabloyu inceleyerek ekonominin işlevlerine dair çıkarımınızı ilgili kısma yazınız."
+          "headline": "Yaşadığınız toplumda ekonomi kurumsal bir yapı kazanmasaydı ne gibi sonuçlar ortaya çıkardı? Varsa- yımlarınızı sınıf arkadaşlarınızla sözlü olarak paylaşınız."
         }
       ]
     },
@@ -4793,17 +4826,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            63.4308,
-            198.8556,
-            520.4104,
-            602.908
+            64.9331,
+            199.8569,
+            519.1863,
+            599.4037
           ],
           "parts": [
             [
-              63.4308,
-              198.8556,
-              520.4104,
-              602.908
+              64.9331,
+              199.8569,
+              519.1863,
+              599.4037
             ]
           ],
           "headline": "Aşağıdaki bilgi notundan yararlanarak kapitalizm, sosyalizm ve karma ekonominin üretim, tüketim ve bölüşüm kavramlarına yaklaşımını değerlendirerek tabloyu dold"
@@ -4813,16 +4846,16 @@
           "label": "2",
           "column": 0,
           "rect": [
-            63.8759,
+            62.8743,
             68.1117,
-            518.296,
+            518.9733,
             192.9595
           ],
           "parts": [
             [
-              63.8759,
+              62.8743,
               68.1117,
-              518.296,
+              518.9733,
               192.9595
             ]
           ],
@@ -4849,17 +4882,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            49.8143,
-            463.6813,
-            503.885,
-            730.12
+            50.9115,
+            462.3463,
+            502.7166,
+            729.8419
           ],
           "parts": [
             [
-              49.8143,
-              463.6813,
-              503.885,
-              730.12
+              50.9115,
+              462.3463,
+              502.7166,
+              729.8419
             ]
           ],
           "headline": "Her üç sistemin birey ve toplum açısından güçlü ve zayıf yönlerini aşağıdaki tabloya yazınız."
@@ -4869,17 +4902,17 @@
           "label": "4",
           "column": 0,
           "rect": [
-            50.2995,
-            429.3057,
-            496.4291,
-            453.7802
+            50.0213,
+            428.5825,
+            495.2607,
+            454.5033
           ],
           "parts": [
             [
-              50.2995,
-              429.3057,
-              496.4291,
-              453.7802
+              50.0213,
+              428.5825,
+              495.2607,
+              454.5033
             ]
           ],
           "headline": "Bu ekonomik sistemleri birey ve toplumda tasarruf bilinci oluşturmaları bakımından karşılaştırınız ve çıkarımlarınızı sınıf arkadaşlarınızla sözlü olarak paylaş"
@@ -4889,17 +4922,17 @@
           "label": "5",
           "column": 0,
           "rect": [
-            50.2995,
-            374.0154,
+            49.5761,
+            374.2379,
             499.6092,
-            426.302
+            425.9126
           ],
           "parts": [
             [
-              50.2995,
-              374.0154,
+              49.5761,
+              374.2379,
               499.6092,
-              426.302
+              425.9126
             ]
           ],
           "headline": "Öğretmeninizin rehberliğinde bir konuşma halkası oluşturunuz ve “Devlet ekonomiye müdahale etmeli midir, etmemeli midir?” sorusu üzerinden tartışma yapınız. Tar"
@@ -4911,15 +4944,115 @@
           "rect": [
             44.8143,
             44.0,
-            506.5001,
+            506.055,
             294.3
           ],
           "parts": [
             [
               44.8143,
               44.0,
-              506.5001,
+              506.055,
               294.3
+            ]
+          ]
+        }
+      ]
+    },
+    "159": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.2998,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p159-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            62.2623,
+            240.2955,
+            505.6099,
+            293.5832
+          ],
+          "parts": [
+            [
+              62.2623,
+              240.2955,
+              505.6099,
+              293.5832
+            ]
+          ]
+        },
+        {
+          "id": "p159-v2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            62.7074,
+            180.4441,
+            504.3858,
+            235.2893
+          ],
+          "parts": [
+            [
+              62.7074,
+              180.4441,
+              504.3858,
+              235.2893
+            ]
+          ]
+        },
+        {
+          "id": "p159-v3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            63.5977,
+            119.8,
+            504.7196,
+            174.548
+          ],
+          "parts": [
+            [
+              63.5977,
+              119.8,
+              504.7196,
+              174.548
+            ]
+          ]
+        }
+      ]
+    },
+    "163": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          63.4649,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p163-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            82.5713,
+            129.3813,
+            332.7889,
+            142.1748
+          ],
+          "parts": [
+            [
+              82.5713,
+              129.3813,
+              332.7889,
+              142.1748
             ]
           ]
         }
@@ -4936,21 +5069,41 @@
       ],
       "activities": [
         {
+          "id": "p164-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            63.542,
+            178.831,
+            523.6932,
+            729.0631
+          ],
+          "parts": [
+            [
+              63.542,
+              178.831,
+              523.6932,
+              729.0631
+            ]
+          ],
+          "headline": "dırınız ve öğrendiğiniz kavramlar arasındaki ilişkiyi gösteren bir kavram haritası hazırlayınız."
+        },
+        {
           "id": "p164-3",
           "label": "3",
           "column": 0,
           "rect": [
-            64.2097,
-            113.1391,
+            64.7105,
+            113.751,
             436.421,
-            165.7594
+            165.5925
           ],
           "parts": [
             [
-              64.2097,
-              113.1391,
+              64.7105,
+              113.751,
               436.421,
-              165.7594
+              165.5925
             ]
           ],
           "headline": "Arkadaşlarınızla yaptığınız tartışmalar ve akıl yürütme sürecinde öğrendikleriniz- den hareketle siyaset kurumunun işleyişi hakkındaki çıkarımlarınızı nedenleri"
@@ -4974,15 +5127,15 @@
           "rect": [
             58.9446,
             44.0,
-            522.4691,
-            344.1935
+            521.1894,
+            438.6505
           ],
           "parts": [
             [
               58.9446,
               44.0,
-              522.4691,
-              344.1935
+              521.1894,
+              438.6505
             ]
           ],
           "headline": "Toplumun düzen içinde işlemesini sağlayan aile, eğitim, din, ekonomi ve siyaset kurumlarının araların- daki ilişkileri gösteren bir diyagram oluşturunuz. İlişki"
@@ -5004,17 +5157,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            51.0228,
-            654.4714,
-            502.5496,
-            729.23
+            49.3536,
+            653.1364,
+            501.1586,
+            729.9531
           ],
           "parts": [
             [
-              51.0228,
-              654.4714,
-              502.5496,
-              729.23
+              49.3536,
+              653.1364,
+              501.1586,
+              729.9531
             ]
           ],
           "headline": "Aşağıdaki sorular temelinde sınıf arkadaşlarınızla tartışınız."
@@ -5024,20 +5177,20 @@
           "label": "3",
           "column": 0,
           "rect": [
-            51.4123,
-            317.3903,
-            503.2889,
-            652.3021
+            49.7987,
+            318.0577,
+            501.9376,
+            649.2428
           ],
           "parts": [
             [
-              51.4123,
-              317.3903,
-              503.2889,
-              652.3021
+              49.7987,
+              318.0577,
+              501.9376,
+              649.2428
             ]
           ],
-          "headline": "Hazırladığınız diyagram ve tartışmalarınızdan yola çıkarak toplumsal kurumların birbirleriyle olan ilişki- lerini ve toplumun nasıl sistemli bir şekilde işlediğ"
+          "headline": "lerini ve toplumun nasıl sistemli bir şekilde işlediğini anlatan 150 kelimelik bir metin yazınız. Metninizde kurumların birbirini tamamlayıc"
         },
         {
           "id": "p167-v3",
@@ -5047,14 +5200,14 @@
             43.838,
             44.0,
             514.718,
-            303.9849
+            304.5968
           ],
           "parts": [
             [
               43.838,
               44.0,
               514.718,
-              303.9849
+              304.5968
             ]
           ]
         }
@@ -5075,17 +5228,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            65.1,
-            340.2517,
-            516.126,
-            476.141
+            64.2097,
+            340.7523,
+            514.735,
+            476.2523
           ],
           "parts": [
             [
-              65.1,
-              340.2517,
-              516.126,
-              476.141
+              64.2097,
+              340.7523,
+              514.735,
+              476.2523
             ]
           ],
           "headline": "Aşağıdaki sorunun cevabını ilgili kısma yazınız. • Toplumun sistemli bir şekilde işleyebilmesi için toplumsal kurumların birbiriyle uyumunun"
@@ -5103,40 +5256,21 @@
       ],
       "activities": [
         {
-          "id": "p170-v1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            59.1935,
-            512.936,
-            516.0342,
-            713.9334
-          ],
-          "parts": [
-            [
-              59.1935,
-              512.936,
-              516.0342,
-              713.9334
-            ]
-          ]
-        },
-        {
           "id": "p170-1",
           "label": "1",
           "column": 0,
           "rect": [
-            64.0428,
-            404.998,
+            64.5992,
+            405.1649,
             519.9096,
-            512.686
+            511.8516
           ],
           "parts": [
             [
-              64.0428,
-              404.998,
+              64.5992,
+              405.1649,
               519.9096,
-              512.686
+              511.8516
             ]
           ],
           "headline": "Eski Türklerde aile kurmanın bireye yüklediği toplumsal ve hukuki sorumluluklar nelerdir?"
@@ -5146,17 +5280,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            63.6533,
-            276.006,
-            519.6314,
-            395.5419
+            64.321,
+            279.0097,
+            519.4089,
+            395.3194
           ],
           "parts": [
             [
-              63.6533,
-              276.006,
-              519.6314,
-              395.5419
+              64.321,
+              279.0097,
+              519.4089,
+              395.3194
             ]
           ],
           "headline": "Eski Türklerde bir delikanlının evlenmek için kahramanlık sınavından geçmek zorunda olmasının aile kurumunun sağlamlığına katkılarının neler olabileceğini yazın"
@@ -5166,16 +5300,16 @@
           "label": "3",
           "column": 0,
           "rect": [
-            63.2082,
-            147.6816,
-            519.6314,
+            63.542,
+            146.8472,
+            519.4089,
             265.9937
           ],
           "parts": [
             [
-              63.2082,
-              147.6816,
-              519.6314,
+              63.542,
+              146.8472,
+              519.4089,
               265.9937
             ]
           ],
@@ -5198,17 +5332,17 @@
           "label": "4",
           "column": 0,
           "rect": [
-            49.9656,
+            50.1882,
             333.9662,
-            505.7768,
-            440.4304
+            505.276,
+            440.5973
           ],
           "parts": [
             [
-              49.9656,
+              50.1882,
               333.9662,
-              505.7768,
-              440.4304
+              505.276,
+              440.5973
             ]
           ],
           "headline": "Toplumsal değerlerin aktarılmasında ebeveynlerin rol model olmasının etkisini değerlendiriniz."
@@ -5218,17 +5352,17 @@
           "label": "5",
           "column": 0,
           "rect": [
-            50.4108,
-            215.8209,
-            505.443,
-            323.3976
+            50.4664,
+            217.0447,
+            504.3858,
+            323.4533
           ],
           "parts": [
             [
-              50.4108,
-              215.8209,
-              505.443,
-              323.3976
+              50.4664,
+              217.0447,
+              504.3858,
+              323.4533
             ]
           ],
           "headline": "Ailede verilen eğitimin toplumsal düzen üzerindeki etkisini açıklayınız."
@@ -5238,17 +5372,17 @@
           "label": "6",
           "column": 0,
           "rect": [
-            50.2438,
-            100.29,
-            505.9994,
-            206.9767
+            49.5205,
+            100.6794,
+            505.3873,
+            206.8655
           ],
           "parts": [
             [
-              50.2438,
-              100.29,
-              505.9994,
-              206.9767
+              49.5205,
+              100.6794,
+              505.3873,
+              206.8655
             ]
           ],
           "headline": "Locke’un düşünceleri hangi noktalardan eleştirilebilir?"
@@ -5271,16 +5405,16 @@
           "column": 0,
           "rect": [
             59.0969,
-            535.1299,
+            534.2399,
             509.0231,
-            730.0644
+            730.2868
           ],
           "parts": [
             [
               59.0969,
-              535.1299,
+              534.2399,
               509.0231,
-              730.0644
+              730.2868
             ]
           ]
         },
@@ -5289,17 +5423,17 @@
           "label": "7",
           "column": 0,
           "rect": [
-            63.9872,
-            323.1752,
-            520.5773,
-            534.8799
+            64.3767,
+            324.7882,
+            520.466,
+            533.9899
           ],
           "parts": [
             [
-              63.9872,
-              323.1752,
-              520.5773,
-              534.8799
+              64.3767,
+              324.7882,
+              520.466,
+              533.9899
             ]
           ],
           "headline": "İnançların ahlak normlarının kaynağı olması ile insanların bir arada yaşayabilmesi arasındaki ilişkiyi açıklayınız."
@@ -5309,17 +5443,17 @@
           "label": "8",
           "column": 0,
           "rect": [
-            64.3767,
-            220.3265,
-            399.8363,
-            312.8291
+            64.2097,
+            220.4933,
+            399.3912,
+            312.6622
           ],
           "parts": [
             [
-              64.3767,
-              220.3265,
-              399.8363,
-              312.8291
+              64.2097,
+              220.4933,
+              399.3912,
+              312.6622
             ]
           ],
           "headline": "Metne göre inancın toplumsal yaşamdaki rolü aşağıdakilerden hangisidir?"
@@ -5341,17 +5475,17 @@
           "label": "9",
           "column": 0,
           "rect": [
-            49.3536,
-            331.2406,
-            505.4986,
-            451.1659
+            50.8559,
+            330.8513,
+            504.9422,
+            450.999
           ],
           "parts": [
             [
-              49.3536,
-              331.2406,
-              505.4986,
-              451.1659
+              50.8559,
+              330.8513,
+              504.9422,
+              450.999
             ]
           ],
           "headline": "İlkel dönem toplumlarında ekonomi kurumunun değer belirleme işlevi üzerine bir varsayımda bulu- nunuz."
@@ -5361,17 +5495,17 @@
           "label": "10",
           "column": 0,
           "rect": [
-            50.0769,
-            200.8025,
-            506.5558,
-            321.3952
+            50.522,
+            202.4712,
+            505.7212,
+            321.5621
           ],
           "parts": [
             [
-              50.0769,
-              200.8025,
-              506.5558,
-              321.3952
+              50.522,
+              202.4712,
+              505.7212,
+              321.5621
             ]
           ],
           "headline": "Metinde verilen örneklerden yararlanarak ekonomik işleyişte tekrar eden yapısal unsurlardan en az iki tanesini listeleyiniz."
@@ -5381,17 +5515,17 @@
           "label": "11",
           "column": 0,
           "rect": [
-            49.8543,
-            73.2567,
-            507.0009,
-            192.0139
+            50.0213,
+            72.6449,
+            505.443,
+            192.1807
           ],
           "parts": [
             [
-              49.8543,
-              73.2567,
-              507.0009,
-              192.0139
+              50.0213,
+              72.6449,
+              505.443,
+              192.1807
             ]
           ],
           "headline": "Metinde açıklanan hayvan, tuz, tütün gibi mallarla yapılan mübadele (değişim) ile günümüz para eko- nomisi arasındaki farkları kullanım kolaylığı, değer ölçümü "
@@ -5413,17 +5547,17 @@
           "label": "12",
           "column": 0,
           "rect": [
-            63.4308,
-            612.3084,
-            520.6886,
-            730.3981
+            64.321,
+            612.8647,
+            519.7983,
+            729.8975
           ],
           "parts": [
             [
-              63.4308,
-              612.3084,
-              520.6886,
-              730.3981
+              64.321,
+              612.8647,
+              519.7983,
+              729.8975
             ]
           ],
           "headline": "Metinde anlatılan mübadele biçimlerinin zorlukları dikkate alındığında devletin ekonomi alanına müda- halesinin gerekli olup olmadığı hakkında bir önerme oluştu"
@@ -5433,17 +5567,17 @@
           "label": "13",
           "column": 0,
           "rect": [
-            63.9872,
-            481.3697,
-            520.1878,
-            601.3505
+            64.6549,
+            481.5365,
+            519.9096,
+            601.2949
           ],
           "parts": [
             [
-              63.9872,
-              481.3697,
-              520.1878,
-              601.3505
+              64.6549,
+              481.5365,
+              519.9096,
+              601.2949
             ]
           ],
           "headline": "“Ortak bir değişim aracının (para vb.) kullanılması ekonomik düzeni ve toplumsal yaşamı kolaylaştırır.” önermesini metindeki mübadele zorluklarını dikkate alara"
@@ -5469,17 +5603,17 @@
           "label": "14",
           "column": 0,
           "rect": [
-            50.2438,
-            268.1631,
-            506.3889,
-            341.6979
+            50.689,
+            267.3287,
+            505.7212,
+            341.8092
           ],
           "parts": [
             [
-              50.2438,
-              268.1631,
-              506.3889,
-              341.6979
+              50.689,
+              267.3287,
+              505.7212,
+              341.8092
             ]
           ],
           "headline": "Metne göre siyaset kurumunun toplumsal yaşamdaki işlevini gerekçelendirerek açıklayınız."
@@ -5490,16 +5624,16 @@
           "column": 0,
           "rect": [
             50.1882,
-            187.1,
-            506.1107,
-            257.5389
+            178.9655,
+            505.0535,
+            257.3164
           ],
           "parts": [
             [
               50.1882,
-              187.1,
-              506.1107,
-              257.5389
+              178.9655,
+              505.0535,
+              257.3164
             ]
           ],
           "headline": "“Saltanat ile adalet birbirine muhtaç iki kardeştir.” ifadesinden hareketle siyaset kurumunun (saltanat) neden hukukla (adaletle) desteklenmesi gerektiğini gere"
@@ -5509,17 +5643,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            45.0161,
-            44.0,
-            506.2219,
-            178.9655
+            140.5648,
+            71.4212,
+            505.443,
+            160.1414
           ],
           "parts": [
             [
-              45.0161,
-              44.0,
-              506.2219,
-              178.9655
+              140.5648,
+              71.4212,
+              505.443,
+              160.1414
             ]
           ]
         }
@@ -5540,17 +5674,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            50.0213,
-            246.1916,
-            507.7799,
-            497.7787
+            50.3551,
+            247.5822,
+            506.5001,
+            498.335
           ],
           "parts": [
             [
-              50.0213,
-              246.1916,
-              507.7799,
-              497.7787
+              50.3551,
+              247.5822,
+              506.5001,
+              498.335
             ]
           ],
           "headline": "Aşağıdaki tabloda verilen anahtar kavramları okuduğunuzda aklınıza gelen ilk kelimeleri ilgili kutucuk- lara sırasıyla yazınız.",
@@ -5563,7 +5697,7 @@
               "rect": [
                 60.0,
                 415.6,
-                507.7799,
+                506.5001,
                 447.9
               ],
               "text": "1."
@@ -5576,7 +5710,7 @@
               "rect": [
                 60.0,
                 391.4,
-                507.7799,
+                506.5001,
                 423.6
               ],
               "text": "2."
@@ -5589,7 +5723,7 @@
               "rect": [
                 60.0,
                 367.1,
-                507.7799,
+                506.5001,
                 399.4
               ],
               "text": "3."
@@ -5602,7 +5736,7 @@
               "rect": [
                 60.0,
                 342.8,
-                507.7799,
+                506.5001,
                 375.1
               ],
               "text": "4."
@@ -5615,7 +5749,7 @@
               "rect": [
                 60.0,
                 318.5,
-                507.7799,
+                506.5001,
                 350.8
               ],
               "text": "5."
@@ -5628,7 +5762,7 @@
               "rect": [
                 60.0,
                 294.3,
-                507.7799,
+                506.5001,
                 326.5
               ],
               "text": "6."
@@ -5641,7 +5775,7 @@
               "rect": [
                 60.0,
                 270.0,
-                507.7799,
+                506.5001,
                 302.3
               ],
               "text": "7."
@@ -5653,8 +5787,8 @@
               "partIndex": 0,
               "rect": [
                 60.0,
-                246.1916,
-                507.7799,
+                247.5822,
+                506.5001,
                 278.0
               ],
               "text": "8."
@@ -5666,72 +5800,20 @@
           "label": "2",
           "column": 0,
           "rect": [
-            49.131,
+            49.7987,
             67.8408,
-            506.1663,
-            233.4537
+            504.5527,
+            233.3425
           ],
           "parts": [
             [
-              49.131,
+              49.7987,
               67.8408,
-              506.1663,
-              233.4537
+              504.5527,
+              233.3425
             ]
           ],
           "headline": "Tabloya yazdığınız kelimeler ile bunların ilişkili olduğu anahtar kavramların birlikte kullanıldığı anlamlı cümleler kurunuz."
-        }
-      ]
-    },
-    "180": {
-      "pageWidth": 569.764,
-      "pageHeight": 796.535,
-      "columns": [
-        [
-          59.5348,
-          545.764
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p180-2",
-          "label": "2",
-          "column": 0,
-          "rect": [
-            63.9872,
-            197.1869,
-            510.3394,
-            222.3846
-          ],
-          "parts": [
-            [
-              63.9872,
-              197.1869,
-              510.3394,
-              222.3846
-            ]
-          ],
-          "headline": "Küreselleşmenin çeşitli yönlerden (genel ağ, sosyal medya, göç, yabancı kültürler, markalar vb.) gün- lük yaşamınız veya düşünceleriniz üzerindeki etkilerine ör"
-        },
-        {
-          "id": "p180-3",
-          "label": "3",
-          "column": 0,
-          "rect": [
-            64.8218,
-            165.1475,
-            514.351,
-            190.957
-          ],
-          "parts": [
-            [
-              64.8218,
-              165.1475,
-              514.351,
-              190.957
-            ]
-          ],
-          "headline": "Yapay zekâ uygulamalarının (sosyal medya, çeviri uygulamaları, sohbet botları vb.) eğitim veya günlük hayat için faydalı olduğunu düşünüyor musunuz? Nedenleriyl"
         }
       ]
     },
@@ -5750,17 +5832,36 @@
           "label": null,
           "column": 0,
           "rect": [
-            74.392,
+            74.9484,
             146.2354,
-            474.0058,
-            207.978
+            473.505,
+            208.7567
           ],
           "parts": [
             [
-              74.392,
+              74.9484,
               146.2354,
-              474.0058,
-              207.978
+              473.505,
+              208.7567
+            ]
+          ]
+        },
+        {
+          "id": "p182-v2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            64.5436,
+            93.0032,
+            497.7089,
+            123.0402
+          ],
+          "parts": [
+            [
+              64.5436,
+              93.0032,
+              497.7089,
+              123.0402
             ]
           ]
         }
@@ -5777,26 +5878,6 @@
       ],
       "activities": [
         {
-          "id": "p183-1",
-          "label": "1",
-          "column": 0,
-          "rect": [
-            49.7083,
-            321.3396,
-            503.5512,
-            689.2364
-          ],
-          "parts": [
-            [
-              49.7083,
-              321.3396,
-              503.5512,
-              689.2364
-            ]
-          ],
-          "headline": "Aşağıdaki metinden yararlanarak sorunun cevabını sınıf arkadaşlarınızla sözlü olarak paylaşınız."
-        },
-        {
           "id": "p183-2",
           "label": "2",
           "column": 0,
@@ -5804,14 +5885,14 @@
             42.868,
             44.0,
             515.188,
-            303.0393
+            302.7612
           ],
           "parts": [
             [
               42.868,
               44.0,
               515.188,
-              303.0393
+              302.7612
             ]
           ],
           "headline": "İslam karşıtlığı ile ilgili sosyolojik analizler içeren aşağıdaki metinleri inceleyerek öğretmeninizin reh- berliğinde tartışma etkinliğini uygulayınız."
@@ -5833,17 +5914,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            50.8002,
-            559.2988,
-            490.1417,
-            721.832
+            50.5777,
+            558.1307,
+            489.7522,
+            722.2214
           ],
           "parts": [
             [
-              50.8002,
-              559.2988,
-              490.1417,
-              721.832
+              50.5777,
+              558.1307,
+              489.7522,
+              722.2214
             ]
           ],
           "headline": "Aşağıdaki soruları Sokratik tartışma tekniğini kullanarak cevaplayınız. Sokratik tartışma tekniğinin uygulanmasına ilişkin yönergeye 10. sayfadaki “Etkinlikler "
@@ -5853,17 +5934,17 @@
           "label": "4",
           "column": 0,
           "rect": [
-            50.3517,
-            217.434,
-            507.7242,
-            554.5708
+            50.4664,
+            220.1596,
+            508.7258,
+            554.2927
           ],
           "parts": [
             [
-              50.3517,
-              217.434,
-              507.7242,
-              554.5708
+              50.4664,
+              220.1596,
+              508.7258,
+              554.2927
             ]
           ],
           "headline": "paylaşınız."
@@ -5873,17 +5954,17 @@
           "label": "5",
           "column": 0,
           "rect": [
-            50.2438,
+            50.9672,
             66.9,
-            506.5001,
-            215.3203
+            506.7227,
+            215.5984
           ],
           "parts": [
             [
-              50.2438,
+              50.9672,
               66.9,
-              506.5001,
-              215.3203
+              506.7227,
+              215.5984
             ]
           ],
           "headline": "Aşağıdaki sorunun cevabını ilgili kısma yazınız."
@@ -5906,38 +5987,19 @@
           "column": 0,
           "rect": [
             45.0176,
-            344.4791,
-            503.1617,
+            344.1454,
+            502.6188,
             720.8
           ],
           "parts": [
             [
               45.0176,
-              344.4791,
-              503.1617,
+              344.1454,
+              502.6188,
               720.8
             ]
           ],
           "headline": "Konuya Başlarken Konuya Başlarken Aşağıdaki metinden yararlanarak sorulara cevap veriniz."
-        },
-        {
-          "id": "p189-v2",
-          "label": null,
-          "column": 0,
-          "rect": [
-            48.2964,
-            22.7502,
-            507.0009,
-            330.0169
-          ],
-          "parts": [
-            [
-              48.2964,
-              22.7502,
-              507.0009,
-              330.0169
-            ]
-          ]
         }
       ]
     },
@@ -5956,17 +6018,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            64.4323,
-            244.4116,
-            519.075,
-            734.1249
+            63.6226,
+            246.5253,
+            519.6871,
+            732.7343
           ],
           "parts": [
             [
-              64.4323,
-              244.4116,
-              519.075,
-              734.1249
+              63.6226,
+              246.5253,
+              519.6871,
+              732.7343
             ]
           ]
         },
@@ -5975,17 +6037,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            64.9331,
+            63.8202,
             149.4236,
             517.282,
-            216.5997
+            216.7109
           ],
           "parts": [
             [
-              64.9331,
+              63.8202,
               149.4236,
               517.282,
-              216.5997
+              216.7109
             ]
           ]
         }
@@ -6006,20 +6068,40 @@
           "label": "3",
           "column": 0,
           "rect": [
-            50.1882,
-            174.5951,
+            50.1326,
+            191.7358,
             507.5078,
-            320.6165
+            320.5608
           ],
           "parts": [
             [
-              50.1882,
-              174.5951,
+              50.1326,
+              191.7358,
               507.5078,
-              320.6165
+              320.5608
             ]
           ],
           "headline": "Anketinizi uygularken şu hususlara dikkat ediniz:"
+        },
+        {
+          "id": "p191-4",
+          "label": "4",
+          "column": 0,
+          "rect": [
+            50.689,
+            161.4763,
+            505.6099,
+            187.5083
+          ],
+          "parts": [
+            [
+              50.689,
+              161.4763,
+              505.6099,
+              187.5083
+            ]
+          ],
+          "headline": "Anketinizin sonuçlarını (grafik, tablo gibi sayısal veriler) ve yorumlarınızı grup sözcünüz aracılığıyla sını- fınızda sununuz."
         }
       ]
     },
@@ -6034,6 +6116,25 @@
       ],
       "activities": [
         {
+          "id": "p193-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            43.997,
+            475.339,
+            515.957,
+            729.7306
+          ],
+          "parts": [
+            [
+              43.997,
+              475.339,
+              515.957,
+              729.7306
+            ]
+          ]
+        },
+        {
           "id": "p193-q1",
           "label": null,
           "column": 0,
@@ -6041,14 +6142,14 @@
             43.832,
             58.173,
             516.152,
-            455.7827
+            455.0039
           ],
           "parts": [
             [
               43.832,
               58.173,
               516.152,
-              455.7827
+              455.0039
             ]
           ],
           "headline": "Aşağıdaki balık kılçığı diyagramında bazı tarihsel dönemler ve küreselleşmeye etki eden bazı unsurlar verilmiştir. Boş bırakılan tarihsel dö"
@@ -6071,15 +6172,15 @@
           "column": 0,
           "rect": [
             58.8408,
-            472.303,
-            517.7953,
+            469.5218,
+            515.4583,
             720.8
           ],
           "parts": [
             [
               58.8408,
-              472.303,
-              517.7953,
+              469.5218,
+              515.4583,
               720.8
             ]
           ],
@@ -6090,16 +6191,16 @@
           "label": null,
           "column": 0,
           "rect": [
-            75.5605,
-            142.0636,
-            519.5201,
+            75.3936,
+            141.3,
+            519.1863,
             198.355
           ],
           "parts": [
             [
-              75.5605,
-              142.0636,
-              519.5201,
+              75.3936,
+              141.3,
+              519.1863,
               198.355
             ]
           ]
@@ -6109,17 +6210,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            77.7861,
+            78.12,
             68.1242,
-            519.4089,
-            134.3875
+            519.3532,
+            134.9437
           ],
           "parts": [
             [
-              77.7861,
+              78.12,
               68.1242,
-              519.4089,
-              134.3875
+              519.3532,
+              134.9437
             ]
           ]
         }
@@ -6140,17 +6241,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            62.5405,
-            507.6798,
-            504.4971,
-            547.8403
+            63.0413,
+            507.2904,
+            504.0519,
+            548.0072
           ],
           "parts": [
             [
-              62.5405,
-              507.6798,
-              504.4971,
-              547.8403
+              63.0413,
+              507.2904,
+              504.0519,
+              548.0072
             ]
           ]
         },
@@ -6159,17 +6260,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            63.5977,
-            446.5491,
-            505.0535,
-            499.8924
+            63.9872,
+            445.381,
+            504.5527,
+            500.1149
           ],
           "parts": [
             [
-              63.5977,
-              446.5491,
-              505.0535,
-              499.8924
+              63.9872,
+              445.381,
+              504.5527,
+              500.1149
             ]
           ]
         },
@@ -6178,17 +6279,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            63.0969,
+            63.4864,
             140.7,
-            505.4986,
-            197.4094
+            504.5495,
+            197.6319
           ],
           "parts": [
             [
-              63.0969,
+              63.4864,
               140.7,
-              505.4986,
-              197.4094
+              504.5495,
+              197.6319
             ]
           ]
         },
@@ -6197,17 +6298,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            63.1526,
+            63.0969,
             67.8408,
-            506.1107,
-            133.275
+            504.5495,
+            133.9425
           ],
           "parts": [
             [
-              63.1526,
+              63.0969,
               67.8408,
-              506.1107,
-              133.275
+              504.5495,
+              133.9425
             ]
           ]
         }
@@ -6228,17 +6329,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            76.8402,
-            521.252,
-            519.1307,
-            562.6363
+            76.5064,
+            519.9171,
+            520.3548,
+            563.0813
           ],
           "parts": [
             [
-              76.8402,
-              521.252,
-              519.1307,
-              562.6363
+              76.5064,
+              519.9171,
+              520.3548,
+              563.0813
             ]
           ]
         },
@@ -6247,17 +6348,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            76.562,
-            473.6379,
-            519.4645,
-            514.5215
+            77.6749,
+            471.6911,
+            518.3517,
+            515.0222
           ],
           "parts": [
             [
-              76.562,
-              473.6379,
-              519.4645,
-              514.5215
+              77.6749,
+              471.6911,
+              518.3517,
+              515.0222
             ]
           ]
         },
@@ -6266,17 +6367,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            76.3395,
+            76.3951,
             150.4,
-            519.9653,
-            222.1621
+            519.9096,
+            222.0508
           ],
           "parts": [
             [
-              76.3395,
+              76.3951,
               150.4,
-              519.9653,
-              222.1621
+              519.9096,
+              222.0508
             ]
           ]
         },
@@ -6285,17 +6386,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            77.4523,
+            77.8418,
             74.0,
-            519.2587,
-            144.6779
+            519.2976,
+            144.3442
           ],
           "parts": [
             [
-              77.4523,
+              77.8418,
               74.0,
-              519.2587,
-              144.6779
+              519.2976,
+              144.3442
             ]
           ]
         }
@@ -6312,41 +6413,21 @@
       ],
       "activities": [
         {
-          "id": "p198-1",
-          "label": "1",
-          "column": 0,
-          "rect": [
-            63.9315,
-            576.5979,
-            514.623,
-            615.1453
-          ],
-          "parts": [
-            [
-              63.9315,
-              576.5979,
-              514.623,
-              615.1453
-            ]
-          ],
-          "headline": "Öğretmeninizin rehberliğinde beşer kişilik iki münazara grubu oluşturunuz ve bu münazarada savunmak için “Yapay zekâ ulusal ve uluslararası alanda eşitsizlikler"
-        },
-        {
           "id": "p198-2",
           "label": "2",
           "column": 0,
           "rect": [
-            65.3782,
-            291.9145,
-            519.6871,
-            562.3025
+            65.4338,
+            292.3,
+            520.4104,
+            561.7463
           ],
           "parts": [
             [
-              65.3782,
-              291.9145,
-              519.6871,
-              562.3025
+              65.4338,
+              292.3,
+              520.4104,
+              561.7463
             ]
           ],
           "headline": "Sınıfın geri kalanı münazarada jüri olarak görev alacak ve münazara gruplarını puanla değerlendirecektir."
@@ -6356,17 +6437,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            63.709,
-            143.3429,
+            62.93,
+            142.2861,
             519.3719,
-            278.676
+            278.2866
           ],
           "parts": [
             [
-              63.709,
-              143.3429,
+              62.93,
+              142.2861,
               519.3719,
-              278.676
+              278.2866
             ]
           ],
           "headline": "Grup olarak iddianızı destekleyen en az üç kanıt hazırlayınız. Diğer grubun söyleyebileceği görüşlere karşı argüman geliştiriniz ve kullandığınız bilgilerin doğ"
@@ -6384,40 +6465,20 @@
       ],
       "activities": [
         {
-          "id": "p199-1",
-          "label": "1",
-          "column": 0,
-          "rect": [
-            49.7987,
-            499.0025,
-            493.5211,
-            588.3901
-          ],
-          "parts": [
-            [
-              49.7987,
-              499.0025,
-              493.5211,
-              588.3901
-            ]
-          ],
-          "headline": "Aşağıdaki soruları cevaplayınız."
-        },
-        {
           "id": "p199-2",
           "label": "2",
           "column": 0,
           "rect": [
             44.7874,
             44.0,
-            508.1137,
+            506.9772,
             495.2757
           ],
           "parts": [
             [
               44.7874,
               44.0,
-              508.1137,
+              506.9772,
               495.2757
             ]
           ],
@@ -6436,40 +6497,41 @@
       ],
       "activities": [
         {
-          "id": "p200-v1",
+          "id": "p200-q2",
           "label": null,
           "column": 0,
           "rect": [
-            67.9933,
-            586.1096,
-            517.9066,
-            666.0412
+            67.6595,
+            586.4989,
+            518.9081,
+            666.7087
           ],
           "parts": [
             [
-              67.9933,
-              586.1096,
-              517.9066,
-              666.0412
+              67.6595,
+              586.4989,
+              518.9081,
+              666.7087
             ]
-          ]
+          ],
+          "headline": "Yapay zekânın toplumsal hayat üzerinde sizce önemli olan üç etkisini yazınız. Üç Yaz"
         },
         {
           "id": "p200-v2",
           "label": null,
           "column": 0,
           "rect": [
-            68.661,
-            481.7034,
-            519.4645,
-            575.1516
+            69.6069,
+            481.0915,
+            518.296,
+            575.4854
           ],
           "parts": [
             [
-              68.661,
-              481.7034,
-              519.4645,
-              575.1516
+              69.6069,
+              481.0915,
+              518.296,
+              575.4854
             ]
           ]
         },
@@ -6478,55 +6540,19 @@
           "label": null,
           "column": 0,
           "rect": [
-            69.2174,
-            89.9996,
-            519.9653,
-            468.0755
+            69.3843,
+            89.3877,
+            519.854,
+            467.1856
           ],
           "parts": [
             [
-              69.2174,
-              89.9996,
-              519.9653,
-              468.0755
+              69.3843,
+              89.3877,
+              519.854,
+              467.1856
             ]
           ]
-        }
-      ]
-    },
-    "201": {
-      "pageWidth": 569.764,
-      "pageHeight": 796.535,
-      "columns": [
-        [
-          44.7874,
-          321.5283
-        ],
-        [
-          325.5283,
-          545.764
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p201-1",
-          "label": "1",
-          "column": 0,
-          "rect": [
-            44.7874,
-            179.1647,
-            493.7584,
-            727.7281
-          ],
-          "parts": [
-            [
-              44.7874,
-              179.1647,
-              493.7584,
-              727.7281
-            ]
-          ],
-          "headline": "İslam’a karşı olumsuz söylemler ve ön yargılar a) Algoritma"
         }
       ]
     },
@@ -6541,40 +6567,21 @@
       ],
       "activities": [
         {
-          "id": "p202-v1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            59.1969,
-            447.0772,
-            518.7732,
-            707.8148
-          ],
-          "parts": [
-            [
-              59.1969,
-              447.0772,
-              518.7732,
-              707.8148
-            ]
-          ]
-        },
-        {
           "id": "p202-1",
           "label": "1",
           "column": 0,
           "rect": [
-            64.3767,
-            355.3258,
-            520.5773,
-            446.8272
+            64.9887,
+            353.824,
+            520.3548,
+            446.8828
           ],
           "parts": [
             [
-              64.3767,
-              355.3258,
-              520.5773,
-              446.8272
+              64.9887,
+              353.824,
+              520.3548,
+              446.8828
             ]
           ],
           "headline": "Küresel göç ve İslam karşıtlığı arasında nasıl bir ilişki vardır?"
@@ -6584,17 +6591,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            63.8759,
-            243.466,
-            520.1878,
-            346.8153
+            64.0428,
+            244.8566,
+            519.5201,
+            346.5372
           ],
           "parts": [
             [
-              63.8759,
-              243.466,
-              520.1878,
-              346.8153
+              64.0428,
+              244.8566,
+              519.5201,
+              346.5372
             ]
           ],
           "headline": "İslam karşıtlığının bazı devletlerin jeopolitik amaçlarına hizmet eden bilinçli bir çabanın ürünü olduğu iddiası nasıl temellendirilebilir?"
@@ -6604,17 +6611,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            62.93,
-            128.3245,
-            519.7427,
-            232.7862
+            62.8743,
+            128.8807,
+            519.5758,
+            233.2868
           ],
           "parts": [
             [
-              62.93,
-              128.3245,
-              519.7427,
-              232.7862
+              62.8743,
+              128.8807,
+              519.5758,
+              233.2868
             ]
           ],
           "headline": "İslam karşıtlığının ekonomik ve siyasi çıkarlar için bir \"mazeret\" olarak kullanılmasının sonuçlarını değerlendiren bir yansıtma yazısı kaleme alınız."
@@ -6636,17 +6643,17 @@
           "label": "4",
           "column": 0,
           "rect": [
-            49.5761,
-            320.7833,
-            505.9994,
-            406.6667
+            50.3551,
+            320.8946,
+            504.664,
+            407.0561
           ],
           "parts": [
             [
-              49.5761,
-              320.7833,
-              505.9994,
-              406.6667
+              50.3551,
+              320.8946,
+              504.664,
+              407.0561
             ]
           ],
           "headline": "Matbaanın bilgi dolaşımını hızlandırmasını günümüzde dijital teknolojilerin küreselleşme üzerindeki etkileriyle karşılaştırınız."
@@ -6656,17 +6663,17 @@
           "label": "5",
           "column": 0,
           "rect": [
-            49.8543,
-            206.4761,
-            506.3889,
-            309.6029
+            50.522,
+            206.2536,
+            505.3317,
+            309.2135
           ],
           "parts": [
             [
-              49.8543,
-              206.4761,
-              506.3889,
-              309.6029
+              50.522,
+              206.2536,
+              505.3317,
+              309.2135
             ]
           ],
           "headline": "Patates gibi tek bir tarımsal ürünün toplumların demografik ve kültürel yapısını etkilemesi küresel etkileşimler hakkında ne anlatır?"
@@ -6676,17 +6683,17 @@
           "label": "6",
           "column": 0,
           "rect": [
-            49.5761,
-            92.002,
-            505.4986,
-            195.7963
+            50.3551,
+            92.1689,
+            505.276,
+            195.7407
           ],
           "parts": [
             [
-              49.5761,
-              92.002,
-              505.4986,
-              195.7963
+              50.3551,
+              92.1689,
+              505.276,
+              195.7407
             ]
           ],
           "headline": "COVID-19 pandemisinin günümüzün gelişmiş ulaşım ağları aracılığıyla birkaç ay içinde tüm dünyaya yayılması küresel dayanışma anlayışını nasıl etkilemiştir?"
@@ -6708,41 +6715,21 @@
       ],
       "activities": [
         {
-          "id": "p204-7",
-          "label": "7",
-          "column": 0,
-          "rect": [
-            54.051,
-            294.9182,
-            533.977,
-            731.8999
-          ],
-          "parts": [
-            [
-              54.051,
-              294.9182,
-              533.977,
-              731.8999
-            ]
-          ],
-          "headline": "Aşağıdaki tanılayıcı dallanmış ağaç şemasında yer alan yargılar doğru ise “D”, yanlış ise “Y” sembolünü takip ederek doğru çıkışa ulaşınız."
-        },
-        {
           "id": "p204-8",
           "label": "8",
           "column": 0,
           "rect": [
-            64.7661,
-            74.1467,
-            520.3548,
-            275.2273
+            63.9315,
+            75.3705,
+            519.2419,
+            275.4498
           ],
           "parts": [
             [
-              64.7661,
-              74.1467,
-              520.3548,
-              275.2273
+              63.9315,
+              75.3705,
+              519.2419,
+              275.4498
             ]
           ],
           "headline": "Beypazarı’nda “bürgü” adı verilen geleneksel ipek şal dokumacılığı yapılmaktadır. Ancak son yıllarda kasabaya büyük markaların mağazaları açılınca insanlar bu m"
@@ -6764,17 +6751,17 @@
           "label": "9",
           "column": 0,
           "rect": [
-            48.4633,
-            473.4154,
-            504.6084,
-            543.3904
+            50.1326,
+            471.3574,
+            505.0535,
+            543.6685
           ],
           "parts": [
             [
-              48.4633,
-              473.4154,
-              504.6084,
-              543.3904
+              50.1326,
+              471.3574,
+              505.0535,
+              543.6685
             ]
           ],
           "headline": "Yapay zekâ sistemlerinin geçmiş verilerde yer alan ön yargıları öğrenip yeniden üretmesi, hukuk ala- nında hangi toplumsal sorunlara neden olabilir?"
@@ -6784,17 +6771,17 @@
           "label": "10",
           "column": 0,
           "rect": [
-            49.1867,
-            391.5926,
-            505.443,
-            461.79
+            50.0213,
+            391.4257,
+            504.1076,
+            461.6788
           ],
           "parts": [
             [
-              49.1867,
-              391.5926,
-              505.443,
-              461.79
+              50.0213,
+              391.4257,
+              504.1076,
+              461.6788
             ]
           ],
           "headline": "Yapay zekâ destekli hukuk sistemlerinde hem verimliliğin hem de adaletin eş zamanlı olarak sağlana- bilmesi için nasıl bir denetim ve şeffaflık mekanizması inşa"
@@ -6804,17 +6791,17 @@
           "label": "11",
           "column": 0,
           "rect": [
-            50.0213,
-            178.0523,
-            504.4971,
-            236.7912
+            50.6333,
+            177.3292,
+            504.5527,
+            237.0693
           ],
           "parts": [
             [
-              50.0213,
-              178.0523,
-              504.4971,
-              236.7912
+              50.6333,
+              177.3292,
+              504.5527,
+              237.0693
             ]
           ],
           "headline": "Veri güvenliği eksikliğinin hasta hakları ve toplumsal sağlık sistemi üzerindeki etkilerini değerlendiriniz."
@@ -6824,17 +6811,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            46.98,
-            57.02,
-            506.3332,
-            168.62
+            129.8661,
+            92.2801,
+            505.443,
+            167.7618
           ],
           "parts": [
             [
-              46.98,
-              57.02,
-              506.3332,
-              168.62
+              129.8661,
+              92.2801,
+              505.443,
+              167.7618
             ]
           ]
         }
@@ -6842,7 +6829,7 @@
     }
   },
   "engine": "vision",
-  "checkpoint": "46fcffa0b605e5b3ee7e46f877e50cca8f853620005585e9065ed5d81e5799c8",
+  "checkpoint": "a9a76c4979dceebed2adb9cebfad673021ed4685e05a362dd3843b781b38fab7",
   "conf": 0.7,
   "icons": "bind"
 }

@@ -2,6 +2,8 @@
 
     .venv-vision/bin/python -m pytest tools/hotspot_extraction/vision/test_snap_icons.py -q
 """
+from types import SimpleNamespace
+
 from tools.hotspot_extraction.scanner.anchors import PublisherOge
 from tools.hotspot_extraction.scanner.regions import ActivityRegion, PageGeometry
 from tools.hotspot_extraction.scanner.serializer import serialize_book_regions
@@ -77,6 +79,67 @@ def test_two_boxes_on_one_block_grow_to_their_shared_boundary():
     upper, lower = out
     assert lower[3] <= upper[1]                     # they do not overlap
     assert upper[1] <= 331 and upper[3] == 600      # the upper one came down to its neighbour
+
+
+# ------------------------------------------------- snap.py: between_siblings
+
+def _label(text, value, x0, y0, step=False):
+    span = SimpleNamespace(bbox=(x0, y0, x0 + 9, y0 + 14), text=text)
+    return SimpleNamespace(label=text, normalized_value=float(value), span=span, column_index=0,
+                           is_step=step, is_prompt=False)
+
+
+def _list_page(texts=("3.", "4.", "5.", "6.", "7."), values=(3, 4, 5, 6, 7), extra_lines=(), blocks=(), step=None):
+    """Five questions of two lines each down one column; the student boxed the first two and the last."""
+    labels, lines, rects = [], [], []
+    for n, (text, value) in enumerate(zip(texts, values)):
+        top = 700 - 60 * n
+        labels.append(_label(text, value, 65, top - 14, step=(n == step)))
+        lines += [_line(65, top - 14, 400, top), _line(85, top - 30, 400, top - 16)]
+        rects.append((64.0, top - 31.0, 401.0, top))
+    boxed = (0, 1, 4)
+    claimed = {id(labels[n]): rects[n] for n in boxed}
+    return [rects[n] for n in boxed], claimed, labels, _geom(lines + list(extra_lines), blocks)
+
+
+def test_unboxed_labels_between_two_boxed_ones_get_their_own_lines():
+    rects, claimed, labels, geom = _list_page()
+    made = snap.between_siblings(rects, claimed, labels, geom)
+    assert [m.label for m, _ in made] == ["5.", "6."]
+    for (m, rect), top in zip(made, (580, 520)):
+        assert rect == (64.0, top - 31.0, 401.0, top)
+        assert all(snap.rect_overlap(rect, r) == 0.0 for r in rects)
+
+
+def test_an_unboxed_label_takes_the_answer_rules_under_it_and_stops_at_the_next_label():
+    rules = [_block((100, 540 - 12 * n, 400, 552 - 12 * n), "cell") for n in range(2)]
+    rects, claimed, labels, geom = _list_page(blocks=rules)
+    made = dict((m.label, r) for m, r in snap.between_siblings(rects, claimed, labels, geom))
+    assert made["5."][1] == 527.0 and made["5."][1] > labels[3].span.bbox[3]
+
+
+def test_no_region_is_made_across_a_picture_or_a_foreign_paragraph_or_for_a_longer_run():
+    picture = [_block((100, 525, 400, 548), "figure")]
+    assert snap.between_siblings(*_list_page(blocks=picture)) == []
+    paragraph = [_line(50, 535, 400, 548)]            # starts left of the label: not the question's
+    assert snap.between_siblings(*_list_page(extra_lines=paragraph)) == []
+    rects, claimed, labels, geom = _list_page()
+    del claimed[id(labels[1])]                        # three unboxed in a row: the student refused the list
+    assert snap.between_siblings([rects[0], rects[2]], claimed, labels, geom) == []
+
+
+def test_unboxed_labels_must_count_on_from_a_boxed_neighbour_and_a_step_is_never_filled_in():
+    assert snap.between_siblings(*_list_page(values=(3, 4, 8, 9, 2))) == []
+    assert snap.between_siblings(*_list_page(step=2)) == []
+    # 4 | 1 2 | 3: a new list that the boxed 3 below belongs to.
+    made = snap.between_siblings(*_list_page(texts=("3.", "4.", "1.", "2.", "3."), values=(3, 4, 1, 2, 3)))
+    assert [m.label for m, _ in made] == ["1.", "2."]
+
+
+def test_no_label_at_the_foot_of_a_list_is_filled_in_without_a_boxed_one_below_it():
+    rects, claimed, labels, geom = _list_page()
+    del claimed[id(labels[4])]
+    assert snap.between_siblings(rects[:2], claimed, labels, geom) == []
 
 
 # ------------------------------------------------------------------ icons.py

@@ -3,7 +3,7 @@
   "bookId": "d13a75d3-33be-4102-8570-b14b1b6382b2",
   "fingerprint": "523863142-17575183206bd6ef60e7947cbf31ebfd",
   "profile": "c7de24295a4b",
-  "builtAt": "2026-10-03T06:03:54.626Z",
+  "builtAt": "2026-10-03T07:59:55.752Z",
   "pageCount": 319,
   "calibration": {
     "enabled": true,
@@ -396,19 +396,19 @@
           "column": 0,
           "rect": [
             41.5197,
-            54.3781,
-            443.2844,
-            69.0516
+            65.8688,
+            444.364,
+            80.1107
           ],
           "parts": [
             [
               41.5197,
-              54.3781,
-              443.2844,
-              69.0516
+              65.8688,
+              444.364,
+              80.1107
             ]
           ],
-          "headline": "Anadolu topraklarına Türkiye adı verilmesinin nedenleri hakkında neler söyleyebilirsiniz?"
+          "headline": "1."
         }
       ]
     },
@@ -456,22 +456,51 @@
       ],
       "activities": [
         {
-          "id": "p15-v1",
+          "id": "p15-q2",
           "label": null,
           "column": 0,
           "rect": [
-            15.5463,
-            493.7191,
-            501.7988,
-            708.858
+            39.4594,
+            494.0427,
+            497.8043,
+            547.5577
           ],
           "parts": [
             [
-              15.5463,
-              493.7191,
-              501.7988,
-              708.858
+              39.4594,
+              494.0427,
+              497.8043,
+              547.5577
             ]
+          ],
+          "headline": "Bu soruları arkadaşlarınızla birlikte cevaplayınız. 1. 2.",
+          "items": [
+            {
+              "id": "p15--1",
+              "label": "1",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                39.4594,
+                500.321,
+                497.8043,
+                521.9
+              ],
+              "text": "1."
+            },
+            {
+              "id": "p15--2",
+              "label": "2",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                39.4594,
+                494.0427,
+                497.8043,
+                510.3
+              ],
+              "text": "2."
+            }
           ]
         }
       ]
@@ -491,17 +520,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            41.1868,
-            213.6284,
-            497.8043,
-            307.9271
+            41.5647,
+            214.0061,
+            497.1565,
+            308.1968
           ],
           "parts": [
             [
-              41.1868,
-              213.6284,
-              497.8043,
-              307.9271
+              41.5647,
+              214.0061,
+              497.1565,
+              308.1968
             ]
           ],
           "headline": "Sizce Sultan Alp Arslan, Türklerle sürekli savaş hâlinde olan ve Malazgirt’te esir alınan Doğu Roma imparatoru- na neden konuk muamelesi yap"
@@ -523,17 +552,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            55.8694,
-            189.1906,
-            512.2169,
-            337.1121
+            56.1933,
+            189.3525,
+            512.001,
+            337.6516
           ],
           "parts": [
             [
-              55.8694,
-              189.1906,
-              512.2169,
-              337.1121
+              56.1933,
+              189.3525,
+              512.001,
+              337.6516
             ]
           ],
           "headline": "İncelediğiniz kaynaklara göre Türklerin Malazgirt Savaşı’nı kazanmasını sağlayan etken­ler nelerdir? Açık- layınız.",
@@ -544,20 +573,51 @@
           "label": "2",
           "column": 0,
           "rect": [
-            56.2472,
-            58.6399,
+            56.6251,
+            59.0715,
             513.178,
-            174.6251
+            174.733
           ],
           "parts": [
             [
-              56.2472,
-              58.6399,
+              56.6251,
+              59.0715,
               513.178,
-              174.6251
+              174.733
             ]
           ],
           "headline": "Malazgirt Savaşı’nın Türk tarihine etkileriyle ilgili bir gazete haberi yazsaydınız bu habere nasıl bir manşet atardınız? Neden?"
+        }
+      ]
+    },
+    "20": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          50.6929,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p20-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            55.7074,
+            204.997,
+            509.464,
+            264.2843
+          ],
+          "parts": [
+            [
+              55.7074,
+              204.997,
+              509.464,
+              264.2843
+            ]
+          ]
         }
       ]
     },
@@ -576,17 +636,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            20.7283,
-            626.8053,
-            499.0458,
-            702.4384
+            39.8373,
+            627.021,
+            499.9095,
+            687.2254
           ],
           "parts": [
             [
-              20.7283,
-              626.8053,
-              499.0458,
-              702.4384
+              39.8373,
+              627.021,
+              499.9095,
+              687.2254
             ]
           ],
           "headline": "İlk Türk beylikleri Anadolu’nun Türkleşmesi için hangi faaliyetleri yürütmüş olabilir? Açıklayınız."
@@ -608,16 +668,16 @@
           "label": null,
           "column": 0,
           "rect": [
-            54.4659,
+            55.4915,
             57.3,
-            511.5152,
+            510.3816,
             170.9567
           ],
           "parts": [
             [
-              54.4659,
+              55.4915,
               57.3,
-              511.5152,
+              510.3816,
               170.9567
             ]
           ],
@@ -640,17 +700,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            56.6251,
-            512.1688,
-            511.6771,
-            609.7581
+            56.949,
+            514.8122,
+            511.7311,
+            610.4055
           ],
           "parts": [
             [
-              56.6251,
-              512.1688,
-              511.6771,
-              609.7581
+              56.949,
+              514.8122,
+              511.7311,
+              610.4055
             ]
           ],
           "headline": "II. Haçlı Savaşı’nın sonuçları Türk tarihinin seyrini siyasi ve askerî açıdan nasıl etkilemiş olabilir? Açıklayınız."
@@ -660,17 +720,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            55.5455,
-            414.5,
-            510.7595,
-            501.7032
+            55.7614,
+            402.9,
+            510.5436,
+            502.2426
           ],
           "parts": [
             [
-              55.5455,
-              414.5,
-              510.7595,
-              501.7032
+              55.7614,
+              402.9,
+              510.5436,
+              502.2426
             ]
           ],
           "headline": "Selçukluların Haçlı askerlerine merhametli davrandıklarını gösteren tutum ve davranışlara örnekler veriniz."
@@ -692,20 +752,53 @@
           "label": null,
           "column": 0,
           "rect": [
-            42.4283,
-            628.0,
-            498.2361,
-            707.5093
+            40.701,
+            627.1829,
+            497.4264,
+            710.4225
           ],
           "parts": [
             [
-              42.4283,
-              628.0,
-              498.2361,
-              707.5093
+              40.701,
+              627.1829,
+              497.4264,
+              710.4225
             ]
           ],
-          "headline": "Hıttin Muharebesi’nin sonuçları Türk tarihinin seyrini siyasi açıdan nasıl etkilemiş olabilir? Açıklayınız."
+          "headline": "Hıttin Muharebesi’nin sonuçları Türk tarihinin seyrini siyasi açıdan nasıl etkilemiş olabilir? Açıklayınız.",
+          "ogeId": "056b5d44-1fa2-f111-b317-005056a7d529"
+        }
+      ]
+    },
+    "28": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          50.6929,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p28-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            54.7358,
+            631.0131,
+            511.1373,
+            711.1238
+          ],
+          "parts": [
+            [
+              54.7358,
+              631.0131,
+              511.1373,
+              711.1238
+            ]
+          ],
+          "headline": "III. Haçlı Savaşı’nın sonuçları Türk tarihinin seyrini siyasi ve askerî açıdan nasıl etkilemiş olabilir? Açıklayınız."
         }
       ]
     },
@@ -724,17 +817,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            39.9992,
-            517.7792,
-            497.6963,
-            591.3624
+            42.1584,
+            518.2648,
+            497.3724,
+            564.3891
           ],
           "parts": [
             [
-              39.9992,
-              517.7792,
-              497.6963,
-              591.3624
+              42.1584,
+              518.2648,
+              497.3724,
+              564.3891
             ]
           ],
           "headline": "IV. Haçlı Savaşı’nın Türk tarihinin seyrine etkileri nelerdir? Açıklayınız."
@@ -744,17 +837,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            41.7806,
-            450.9394,
-            496.6707,
-            505.857
+            41.5107,
+            449.9684,
+            496.7247,
+            506.6123
           ],
           "parts": [
             [
-              41.7806,
-              450.9394,
-              496.6707,
-              505.857
+              41.5107,
+              449.9684,
+              496.7247,
+              506.6123
             ]
           ],
           "headline": "Haçlı Savaşları ile sömürgecilik arasında nasıl bağlantı kurulabilir? Açıklayınız."
@@ -776,21 +869,20 @@
           "label": null,
           "column": 0,
           "rect": [
-            53.9261,
+            54.304,
             57.0,
-            512.7567,
-            250.0963
+            511.6771,
+            247.8306
           ],
           "parts": [
             [
-              53.9261,
+              54.304,
               57.0,
-              512.7567,
-              250.0963
+              511.6771,
+              247.8306
             ]
           ],
-          "headline": "Kösedağ Savaşı’nın Türk tarihindeki siyasi etkileri nelerdir?",
-          "ogeId": "4a3b50aa-1fa2-f111-b317-005056a7d529"
+          "headline": "Kösedağ Savaşı’nın Türk tarihindeki siyasi etkileri nelerdir?"
         }
       ]
     },
@@ -809,17 +901,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            34.2234,
-            469.2813,
-            510.8674,
-            706.9699
+            31.5783,
+            470.1984,
+            510.7055,
+            706.1067
           ],
           "parts": [
             [
-              34.2234,
-              469.2813,
-              510.8674,
-              706.9699
+              31.5783,
+              470.1984,
+              510.7055,
+              706.1067
             ]
           ],
           "headline": "Türk tarihinin seyrine etki eden başlıca savaşların benzerlik ve farklılıklarını ilgili alanlara yazınız. Savaşlar Benzerlikler"
@@ -862,14 +954,14 @@
           "column": 0,
           "rect": [
             36.5197,
-            302.964,
+            318.8,
             503.9966,
             663.2403
           ],
           "parts": [
             [
               36.5197,
-              302.964,
+              318.8,
               503.9966,
               663.2403
             ]
@@ -883,16 +975,16 @@
           "column": 0,
           "rect": [
             36.5197,
-            52.9755,
+            51.0874,
             503.9966,
-            302.714
+            307.2
           ],
           "parts": [
             [
               36.5197,
-              52.9755,
+              51.0874,
               503.9966,
-              302.714
+              307.2
             ]
           ],
           "headline": "Bilgi görseli ve tarih şeridinden yararlanarak soruları cevaplayınız. Asya Hun Devleti Türkiye Selçuklu Devleti",
@@ -915,17 +1007,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            55.2756,
-            139.398,
-            510.8135,
-            236.286
+            55.3836,
+            139.8295,
+            513.4585,
+            234.4518
           ],
           "parts": [
             [
-              55.2756,
-              139.398,
-              510.8135,
-              236.286
+              55.3836,
+              139.8295,
+              513.4585,
+              234.4518
             ]
           ],
           "headline": "Asya Hun ve Türkiye Selçuklu dönemlerindeki devlet ve ordu teşkilatlarının benzerlik ve farklılıklarını açık- layınız."
@@ -935,17 +1027,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            55.7074,
+            55.8154,
             56.8,
-            512.109,
-            127.206
+            512.3249,
+            127.6915
           ],
           "parts": [
             [
-              55.7074,
+              55.8154,
               56.8,
-              512.109,
-              127.206
+              512.3249,
+              127.6915
             ]
           ],
           "headline": "Asya Hun Devleti Dönemi’ndeki siyasi ve askerî uygulamalar neden sonraki Türk devletlerinde de devam ettirilmiş olabilir? Gerekçeleriyle açıklayınız."
@@ -967,48 +1059,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            33.0358,
-            330.8543,
-            517.399,
+            31.1465,
+            327.6715,
+            514.862,
             708.2646
           ],
           "parts": [
             [
-              33.0358,
-              330.8543,
-              517.399,
+              31.1465,
+              327.6715,
+              514.862,
               708.2646
-            ]
-          ]
-        }
-      ]
-    },
-    "39": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          36.5197,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p39-v1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            36.6525,
-            135.7296,
-            498.452,
-            636.8313
-          ],
-          "parts": [
-            [
-              36.6525,
-              135.7296,
-              498.452,
-              636.8313
             ]
           ]
         }
@@ -1029,15 +1090,15 @@
           "label": null,
           "column": 0,
           "rect": [
-            55.8694,
-            501.1637,
+            55.0057,
+            500.84,
             509.464,
             536.9303
           ],
           "parts": [
             [
-              55.8694,
-              501.1637,
+              55.0057,
+              500.84,
               509.464,
               536.9303
             ]
@@ -1049,19 +1110,20 @@
           "label": null,
           "column": 0,
           "rect": [
-            55.1676,
-            55.8347,
-            513.1346,
-            149.2162
+            54.5739,
+            56.9136,
+            511.947,
+            151.428
           ],
           "parts": [
             [
-              55.1676,
-              55.8347,
-              513.1346,
-              149.2162
+              54.5739,
+              56.9136,
+              511.947,
+              151.428
             ]
-          ]
+          ],
+          "ogeId": "f615e080-9ea7-f111-b317-005056a7d529"
         }
       ]
     },
@@ -1080,16 +1142,16 @@
           "label": null,
           "column": 0,
           "rect": [
-            31.3084,
-            549.9314,
-            511.5152,
+            31.5244,
+            550.6866,
+            510.9754,
             717.528
           ],
           "parts": [
             [
-              31.3084,
-              549.9314,
-              511.5152,
+              31.5244,
+              550.6866,
+              510.9754,
               717.528
             ]
           ],
@@ -1100,17 +1162,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            55.1676,
-            127.3679,
-            512.8269,
-            429.9003
+            55.0057,
+            127.7994,
+            512.5948,
+            432.521
           ],
           "parts": [
             [
-              55.1676,
-              127.3679,
-              512.8269,
-              429.9003
+              55.0057,
+              127.7994,
+              512.5948,
+              432.521
             ]
           ],
           "ogeId": "dcf17005-9ea7-f111-b317-005056a7d529"
@@ -1132,59 +1194,41 @@
           "label": "1",
           "column": 0,
           "rect": [
-            42.0505,
-            248.6937,
-            498.1281,
-            514.8661
+            42.6982,
+            250.2042,
+            496.9946,
+            513.1398
           ],
           "parts": [
             [
-              42.0505,
-              248.6937,
-              498.1281,
-              514.8661
+              42.6982,
+              250.2042,
+              496.9946,
+              513.1398
             ]
           ],
-          "headline": "Öğrendiğiniz bilgilerden yararlanarak Karahanlı, Gazneli, Büyük Selçuklu ve Türkiye Selçuklu devletlerin- deki ordu teşkilatlarının özelliklerini aşağıdaki tabl"
+          "headline": "1. deki ordu teşkilatlarının özelliklerini aşağıdaki tabloya yazınız."
         },
         {
           "id": "p47-2",
           "label": "2",
           "column": 0,
           "rect": [
-            40.8629,
-            125.21,
-            499.5316,
-            243.4609
+            40.9709,
+            125.5337,
+            498.9918,
+            244.1622
           ],
           "parts": [
             [
-              40.8629,
-              125.21,
-              499.5316,
-              243.4609
+              40.9709,
+              125.5337,
+              498.9918,
+              244.1622
             ]
           ],
-          "headline": "Karahanlı, Gazneli, Büyük Selçuklu ve Türkiye Selçuklu devletlerindeki ordu teşkilatlarında meydana gelen değişim ve sürekliliğin nedenlerini yazınız."
-        },
-        {
-          "id": "p47-v3",
-          "label": null,
-          "column": 0,
-          "rect": [
-            42.1045,
-            55.565,
-            497.5883,
-            115.3378
-          ],
-          "parts": [
-            [
-              42.1045,
-              55.565,
-              497.5883,
-              115.3378
-            ]
-          ]
+          "headline": "Karahanlı, Gazneli, Büyük Selçuklu ve Türkiye Selçuklu devletlerindeki ordu teşkilatlarında meydana gelen değişim ve sürekliliğin nedenlerini yazınız.",
+          "ogeId": "32b57f1e-9fa7-f111-b317-005056a7d529"
         }
       ]
     },
@@ -1203,17 +1247,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            55.2756,
-            258.9975,
-            510.0577,
-            702.5463
+            57.2729,
+            260.4541,
+            509.6799,
+            699.9029
           ],
           "parts": [
             [
-              55.2756,
-              258.9975,
-              510.0577,
-              702.5463
+              57.2729,
+              260.4541,
+              509.6799,
+              699.9029
             ]
           ],
           "headline": "Durum, kurum veya fikir belirlenmiştir."
@@ -1224,16 +1268,47 @@
           "column": 0,
           "rect": [
             50.6929,
-            55.0255,
+            55.2952,
             516.2389,
             189.528
           ],
           "parts": [
             [
               50.6929,
-              55.0255,
+              55.2952,
               516.2389,
               189.528
+            ]
+          ]
+        }
+      ]
+    },
+    "52": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          14.5534,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p52-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.3323,
+            598.4294,
+            511.4072,
+            667.9665
+          ],
+          "parts": [
+            [
+              53.3323,
+              598.4294,
+              511.4072,
+              667.9665
             ]
           ]
         }
@@ -1254,37 +1329,37 @@
           "label": null,
           "column": 0,
           "rect": [
-            36.5197,
-            325.0,
-            504.0639,
-            739.528
+            40.8089,
+            324.0571,
+            497.4264,
+            663.3967
           ],
           "parts": [
             [
-              36.5197,
-              325.0,
-              504.0639,
-              739.528
+              40.8089,
+              324.0571,
+              497.4264,
+              663.3967
             ]
           ],
-          "headline": "Verilen yönergeler doğrultusunda aşağıdaki etkinlikleri yapınız. Uygulama adımlarını takip ederek 5N1K etkinliğini gerçekleştiriniz."
+          "headline": "Uygulama adımlarını takip ederek 5N1K etkinliğini gerçekleştiriniz."
         },
         {
           "id": "p53-1",
           "label": "1",
           "column": 0,
           "rect": [
-            38.9196,
+            39.9992,
             52.544,
-            500.4493,
-            313.8612
+            498.8839,
+            314.6704
           ],
           "parts": [
             [
-              38.9196,
+              39.9992,
               52.544,
-              500.4493,
-              313.8612
+              498.8839,
+              314.6704
             ]
           ],
           "headline": "XIII. yüzyılda Anadolu’da ortaya çıkan ve Osmanlı Devleti’nin kurulmasında önemli rol oynayan dinî ve top- lumsal kuruluş."
@@ -1306,16 +1381,16 @@
           "label": null,
           "column": 0,
           "rect": [
-            57.6507,
-            506.4505,
-            509.7878,
+            52.9005,
+            505.857,
+            509.356,
             700.4
           ],
           "parts": [
             [
-              57.6507,
-              506.4505,
-              509.7878,
+              52.9005,
+              505.857,
+              509.356,
               700.4
             ]
           ]
@@ -1325,17 +1400,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            56.2472,
-            438.262,
-            511.5152,
-            498.4664
+            56.841,
+            438.4778,
+            509.464,
+            498.6282
           ],
           "parts": [
             [
-              56.2472,
-              438.262,
-              511.5152,
-              498.4664
+              56.841,
+              438.4778,
+              509.464,
+              498.6282
             ]
           ],
           "headline": "Yandaki karekodda verilen kavram eşleştirme etkinliğini yapınız."
@@ -1357,17 +1432,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            53.5482,
-            179.4803,
-            511.8931,
-            252.9015
+            53.7102,
+            179.8579,
+            512.5408,
+            253.2792
           ],
           "parts": [
             [
-              53.5482,
-              179.4803,
-              511.8931,
-              252.9015
+              53.7102,
+              179.8579,
+              512.5408,
+              253.2792
             ]
           ],
           "headline": "Selçuklu toplumunun güçlü ve huzurlu bir yapıya sahip olmasında hangi değerler etkili olmuştur?"
@@ -1377,17 +1452,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            55.0057,
-            122.4587,
-            510.9214,
-            170.7409
+            55.6924,
+            122.1,
+            511.3764,
+            169.0122
           ],
           "parts": [
             [
-              55.0057,
-              122.4587,
-              510.9214,
-              170.7409
+              55.6924,
+              122.1,
+              511.3764,
+              169.0122
             ]
           ],
           "headline": "Kaynak A ve Kaynak B’deki görsellerin ortak özelliği nedir?"
@@ -1397,20 +1472,52 @@
           "label": "3",
           "column": 0,
           "rect": [
-            56.1933,
+            55.3296,
             56.7,
-            511.8391,
-            113.2339
+            511.3533,
+            113.7733
           ],
           "parts": [
             [
-              56.1933,
+              55.3296,
               56.7,
-              511.8391,
-              113.2339
+              511.3533,
+              113.7733
             ]
           ],
           "headline": "Kaynaklarda bahsedilen ekonomik faaliyetlerden üçünü yazınız."
+        }
+      ]
+    },
+    "58": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          50.6929,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p58-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            55.2216,
+            329.9373,
+            510.2197,
+            402.927
+          ],
+          "parts": [
+            [
+              55.2216,
+              329.9373,
+              510.2197,
+              402.927
+            ]
+          ],
+          "headline": "Kaynak E görselinde dikkatinizi çeken üç ayrıntıyı yazınız."
         }
       ]
     },
@@ -1425,21 +1532,53 @@
       ],
       "activities": [
         {
-          "id": "p59-v1",
+          "id": "p59-q1",
           "label": null,
           "column": 0,
           "rect": [
-            39.5674,
-            558.7,
-            496.9946,
-            687.0636
+            40.2152,
+            558.2931,
+            498.6679,
+            685.4991
           ],
           "parts": [
             [
-              39.5674,
-              558.7,
-              496.9946,
-              687.0636
+              40.2152,
+              558.2931,
+              498.6679,
+              685.4991
+            ]
+          ],
+          "headline": "Türklerin ekonomik faaliyetleri ile Türk şehirlerinin fiziki yapıları arasındaki bağlantıyı gerekçeleriyle açıklayınız."
+        }
+      ]
+    },
+    "60": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          50.6929,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p60-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            55.5995,
+            456.9275,
+            508.8702,
+            514.7043
+          ],
+          "parts": [
+            [
+              55.5995,
+              456.9275,
+              508.8702,
+              514.7043
             ]
           ]
         }
@@ -1460,16 +1599,16 @@
           "label": "1",
           "column": 0,
           "rect": [
-            54.8438,
-            310.3546,
-            512.8238,
+            56.787,
+            311.1099,
+            512.055,
             395.6442
           ],
           "parts": [
             [
-              54.8438,
-              310.3546,
-              512.8238,
+              56.787,
+              311.1099,
+              512.055,
               395.6442
             ]
           ],
@@ -1480,17 +1619,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            55.3836,
-            219.8323,
-            511.4072,
-            300.5903
+            56.1933,
+            219.7244,
+            511.2993,
+            301.1837
           ],
           "parts": [
             [
-              55.3836,
-              219.8323,
-              511.4072,
-              300.5903
+              56.1933,
+              219.7244,
+              511.2993,
+              301.1837
             ]
           ],
           "headline": "Fütüvvet ve Ahilik teşkilatlarında öne çıkan değerler nelerdir? Bu değerlerin Türklerin sosyoekonomik ha- yatına etkileri neler olmuştur? Açıklayınız."
@@ -1500,17 +1639,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            54.9517,
-            126.181,
-            511.6232,
-            208.5035
+            56.841,
+            125.5876,
+            512.8238,
+            208.1798
           ],
           "parts": [
             [
-              54.9517,
-              126.181,
-              511.6232,
-              208.5035
+              56.841,
+              125.5876,
+              512.8238,
+              208.1798
             ]
           ],
           "headline": "Fütüvvet ve Ahilik teşkilatlarına mensup kişilerin hangi davranışları dayanışma ve fedakârlıklarına örnek gösterilebilir?"
@@ -1532,17 +1671,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            56.6251,
-            186.9788,
-            510.5975,
-            708.4264
+            56.3552,
+            187.3025,
+            510.1657,
+            703.9489
           ],
           "parts": [
             [
-              56.6251,
-              186.9788,
-              510.5975,
-              708.4264
+              56.3552,
+              187.3025,
+              510.1657,
+              703.9489
             ]
           ],
           "headline": "Uygulama adımları doğrultusunda etkinliği yapınız. Sayfa 52’deki “Keşfedelim” bölümünde yer alan 5N1K etkinliğinde edindiğiniz bilgileri aşa"
@@ -1565,16 +1704,16 @@
           "column": 0,
           "rect": [
             41.6186,
-            579.3323,
-            497.1565,
-            706.9159
+            579.8178,
+            496.1849,
+            706.6462
           ],
           "parts": [
             [
               41.6186,
-              579.3323,
-              497.1565,
-              706.9159
+              579.8178,
+              496.1849,
+              706.6462
             ]
           ]
         },
@@ -1584,19 +1723,62 @@
           "column": 0,
           "rect": [
             36.5176,
-            68.1,
-            499.2617,
-            579.0823
+            56.5,
+            498.2888,
+            579.7596
           ],
           "parts": [
             [
               36.5176,
-              68.1,
-              499.2617,
-              579.0823
+              56.5,
+              498.2888,
+              579.7596
             ]
           ],
           "headline": "Değerlendirelim"
+        }
+      ]
+    },
+    "66": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          50.6929,
+          202.8158
+        ],
+        [
+          206.8158,
+          282.4398
+        ],
+        [
+          286.4398,
+          371.2558
+        ],
+        [
+          375.2558,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p66-v1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            54.4119,
+            218.6994,
+            509.356,
+            706.5922
+          ],
+          "parts": [
+            [
+              54.4119,
+              218.6994,
+              509.356,
+              706.5922
+            ]
+          ]
         }
       ]
     },
@@ -1615,17 +1797,36 @@
           "label": null,
           "column": 0,
           "rect": [
-            57.1649,
-            185.3604,
-            512.109,
-            597.2965
+            56.787,
+            184.7131,
+            513.5125,
+            592.1176
           ],
           "parts": [
             [
-              57.1649,
-              185.3604,
-              512.109,
-              597.2965
+              56.787,
+              184.7131,
+              513.5125,
+              592.1176
+            ]
+          ]
+        },
+        {
+          "id": "p68-v2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            55.8154,
+            108.4326,
+            509.9498,
+            167.0186
+          ],
+          "parts": [
+            [
+              55.8154,
+              108.4326,
+              509.9498,
+              167.0186
             ]
           ]
         },
@@ -1634,17 +1835,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            57.0569,
-            68.0806,
-            511.5692,
-            95.8631
+            56.0313,
+            70.4542,
+            512.8239,
+            95.1078
           ],
           "parts": [
             [
-              57.0569,
-              68.0806,
-              511.5692,
-              95.8631
+              56.0313,
+              70.4542,
+              512.8239,
+              95.1078
             ]
           ],
           "headline": "TİKA ve Yunus Emre Enstitüsünün dünyanın farklı bölgelerinde faaliyetlerde bulunmalarını gerekçeleriyle açıklayınız."
@@ -1666,17 +1867,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            51.9288,
+            52.2527,
             56.6,
-            511.7311,
-            193.3445
+            510.306,
+            195.2866
           ],
           "parts": [
             [
-              51.9288,
+              52.2527,
               56.6,
-              511.7311,
-              193.3445
+              510.306,
+              195.2866
             ]
           ],
           "headline": "Türk-İslam medeniyetlerindeki bilim ve eğitim kurumlarının yaygınlığını hangi etkenler şekillendirmiştir?"
@@ -1698,17 +1899,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            38.7037,
-            606.3056,
-            497.5344,
-            711.0159
+            39.0816,
+            605.1727,
+            497.6963,
+            713.1198
           ],
           "parts": [
             [
-              38.7037,
-              606.3056,
-              497.5344,
-              711.0159
+              39.0816,
+              605.1727,
+              497.6963,
+              713.1198
             ]
           ]
         },
@@ -1717,16 +1918,16 @@
           "label": null,
           "column": 0,
           "rect": [
-            41.7806,
-            56.9,
-            498.8839,
+            41.8885,
+            57.1834,
+            497.2645,
             179.4791
           ],
           "parts": [
             [
-              41.7806,
-              56.9,
-              498.8839,
+              41.8885,
+              57.1834,
+              497.2645,
               179.4791
             ]
           ],
@@ -1749,82 +1950,20 @@
           "label": null,
           "column": 0,
           "rect": [
-            56.1393,
-            56.8,
-            512.3249,
+            55.3296,
+            56.3742,
+            511.4072,
             136.739
           ],
           "parts": [
             [
-              56.1393,
-              56.8,
-              512.3249,
+              55.3296,
+              56.3742,
+              511.4072,
               136.739
             ]
           ],
           "headline": "Türk-İslam ve Batı medeniyetlerinde eğitimin yaygınlaştırılması anlayışıyla ilgili iki cümle yazınız."
-        }
-      ]
-    },
-    "81": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          36.5154,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p81-v1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            17.5975,
-            323.5176,
-            501.5829,
-            706.808
-          ],
-          "parts": [
-            [
-              17.5975,
-              323.5176,
-              501.5829,
-              706.808
-            ]
-          ]
-        }
-      ]
-    },
-    "82": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          50.6896,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p82-v1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            54.8438,
-            55.9965,
-            513.2426,
-            362.4131
-          ],
-          "parts": [
-            [
-              54.8438,
-              55.9965,
-              513.2426,
-              362.4131
-            ]
-          ]
         }
       ]
     },
@@ -1843,17 +1982,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            41.4567,
+            42.1045,
             65.2,
-            498.0742,
-            231.1071
+            497.9122,
+            232.8334
           ],
           "parts": [
             [
-              41.4567,
+              42.1045,
               65.2,
-              498.0742,
-              231.1071
+              497.9122,
+              232.8334
             ]
           ],
           "headline": "İncelediğiniz kaynaklardan hareketle Türk-İslam ve Batı medeniyetlerinin mimari anlayışlarını karşılaştıra- rak benzer ve farklı yönlerini i"
@@ -1875,17 +2014,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            56.1933,
+            56.6924,
             500.8,
-            511.4072,
-            614.7212
+            511.6232,
+            614.991
           ],
           "parts": [
             [
-              56.1933,
+              56.6924,
               500.8,
-              511.4072,
-              614.7212
+              511.6232,
+              614.991
             ]
           ],
           "headline": "Türklerin bilim, eğitim ve kültür anlayışı Anadolu’nun Türkleşme ve İslamlaşma sürecini nasıl etkilemiştir?"
@@ -1895,17 +2034,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            55.6535,
-            363.3841,
-            511.8931,
-            488.4323
+            56.2472,
+            363.1144,
+            513.3179,
+            488.8639
           ],
           "parts": [
             [
-              55.6535,
-              363.3841,
-              511.8931,
-              488.4323
+              56.2472,
+              363.1144,
+              513.3179,
+              488.8639
             ]
           ],
           "headline": "Anadolu’nun birçok yerinde mimari eserler inşa edilmesi Anadolu’nun Türkleşme ve İslamlaşma sürecine nasıl bir katkı sağlamış olabilir? Örnekler vererek açıklay"
@@ -1927,16 +2066,16 @@
           "label": null,
           "column": 0,
           "rect": [
-            59.2701,
-            73.5292,
-            484.6871,
+            59.9179,
+            69.9687,
+            485.011,
             150.7714
           ],
           "parts": [
             [
-              59.2701,
-              73.5292,
-              484.6871,
+              59.9179,
+              69.9687,
+              485.011,
               150.7714
             ]
           ],
@@ -1959,17 +2098,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            62.5629,
-            74.0147,
-            481.3403,
-            171.8198
+            63.5345,
+            72.5581,
+            479.9908,
+            172.629
           ],
           "parts": [
             [
-              62.5629,
-              74.0147,
-              481.3403,
-              171.8198
+              63.5345,
+              72.5581,
+              479.9908,
+              172.629
             ]
           ],
           "headline": "Hacı Bektaş Veli’nin öğretilerinden kendiniz için önemli gördüğünüz üç öğüt yazınız."
@@ -1991,17 +2130,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            42.5903,
-            57.7768,
-            497.2645,
-            117.118
+            42.3744,
+            57.9926,
+            495.4291,
+            116.9562
           ],
           "parts": [
             [
-              42.5903,
-              57.7768,
-              497.2645,
-              117.118
+              42.3744,
+              57.9926,
+              495.4291,
+              116.9562
             ]
           ]
         }
@@ -2022,17 +2161,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            53.7642,
-            56.9,
-            512.109,
-            234.236
+            52.4686,
+            56.8597,
+            512.163,
+            233.5887
           ],
           "parts": [
             [
-              53.7642,
-              56.9,
-              512.109,
-              234.236
+              52.4686,
+              56.8597,
+              512.163,
+              233.5887
             ]
           ]
         }
@@ -2054,14 +2193,14 @@
           "column": 0,
           "rect": [
             40.5197,
-            63.7109,
+            68.9977,
             499.809,
             484.799
           ],
           "parts": [
             [
               40.5197,
-              63.7109,
+              68.9977,
               499.809,
               484.799
             ]
@@ -2085,16 +2224,16 @@
           "label": null,
           "column": 0,
           "rect": [
-            41.2408,
-            241.5188,
-            498.1821,
+            41.0249,
+            242.7596,
+            497.8043,
             317.8686
           ],
           "parts": [
             [
-              41.2408,
-              241.5188,
-              498.1821,
+              41.0249,
+              242.7596,
+              497.8043,
               317.8686
             ]
           ]
@@ -2104,38 +2243,39 @@
           "label": null,
           "column": 0,
           "rect": [
-            40.8629,
-            149.5939,
-            431.7327,
-            239.9544
+            41.5107,
+            151.9136,
+            433.1901,
+            239.0373
           ],
           "parts": [
             [
-              40.8629,
-              149.5939,
-              431.7327,
-              239.9544
+              41.5107,
+              151.9136,
+              433.1901,
+              239.0373
             ]
           ]
         },
         {
-          "id": "p101-v3",
-          "label": null,
+          "id": "p101-3",
+          "label": "3",
           "column": 0,
           "rect": [
-            41.1868,
-            57.1,
-            496.8326,
-            148.2991
+            41.8346,
+            56.8597,
+            497.9662,
+            148.1912
           ],
           "parts": [
             [
-              41.1868,
-              57.1,
-              496.8326,
-              148.2991
+              41.8346,
+              56.8597,
+              497.9662,
+              148.1912
             ]
-          ]
+          ],
+          "headline": "3.  Malazgirt ve Miryokefalon zaferlerinin askerî ve siyasi sonuçlarını karşılaştırarak benzerlik ve farklılık- larını yazınız."
         }
       ]
     },
@@ -2150,40 +2290,41 @@
       ],
       "activities": [
         {
-          "id": "p103-v1",
-          "label": null,
+          "id": "p103-4",
+          "label": "4",
           "column": 0,
           "rect": [
-            39.8373,
-            591.4163,
-            498.2901,
-            708.5883
+            40.9169,
+            591.1466,
+            498.7759,
+            708.1027
           ],
           "parts": [
             [
-              39.8373,
-              591.4163,
-              498.2901,
-              708.5883
+              40.9169,
+              591.1466,
+              498.7759,
+              708.1027
             ]
-          ]
+          ],
+          "headline": "4.  Coğrafi ve sosyokültürel koşulların Karahanlı, Gazneli, Büyük Selçuklu ve Türkiye Selçuklu devletlerin- deki askerî ve idari teşkilatlar"
         },
         {
           "id": "p103-v2",
           "label": null,
           "column": 0,
           "rect": [
-            40.3771,
-            410.3177,
-            498.1821,
-            575.1784
+            40.1612,
+            409.4545,
+            499.0458,
+            574.9087
           ],
           "parts": [
             [
-              40.3771,
-              410.3177,
-              498.1821,
-              575.1784
+              40.1612,
+              409.4545,
+              499.0458,
+              574.9087
             ]
           ]
         },
@@ -2192,17 +2333,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            39.7293,
-            242.2201,
+            40.2691,
+            241.9504,
             499.0627,
-            398.9349
+            398.881
           ],
           "parts": [
             [
-              39.7293,
-              242.2201,
+              40.2691,
+              241.9504,
               499.0627,
-              398.9349
+              398.881
             ]
           ]
         }
@@ -2223,38 +2364,39 @@
           "label": null,
           "column": 0,
           "rect": [
-            41.1868,
-            158.1714,
-            499.0718,
-            249.8266
+            41.8346,
+            156.3911,
+            498.0202,
+            249.7187
           ],
           "parts": [
             [
-              41.1868,
-              158.1714,
-              499.0718,
-              249.8266
+              41.8346,
+              156.3911,
+              498.0202,
+              249.7187
             ]
           ]
         },
         {
-          "id": "p105-v2",
-          "label": null,
+          "id": "p105-8",
+          "label": "8",
           "column": 0,
           "rect": [
-            41.4027,
+            42.3204,
             57.0,
-            499.0681,
-            150.2412
+            498.452,
+            149.8636
           ],
           "parts": [
             [
-              41.4027,
+              42.3204,
               57.0,
-              499.0681,
-              150.2412
+              498.452,
+              149.8636
             ]
-          ]
+          ],
+          "headline": "8.  Seçtiğiniz konu başlığından hareketle Türklerin sosyoekonomik faaliyetleri ve yerleşme anlayışları ile ilgili 5N1K soruları yazınız. ."
         }
       ]
     },
@@ -2273,59 +2415,59 @@
           "label": "9",
           "column": 0,
           "rect": [
-            56.3012,
-            346.0673,
-            509.9498,
-            709.1277
+            55.8154,
+            346.7686,
+            509.5179,
+            706.2146
           ],
           "parts": [
             [
-              56.3012,
-              346.0673,
-              509.9498,
-              709.1277
+              55.8154,
+              346.7686,
+              509.5179,
+              706.2146
             ]
           ],
           "headline": "9.   Verilen kaynakların hangi konularla ilgili olduğuna dair tablodaki ilgili alanları işaretleyiniz. Kaynaklar Konular"
         },
         {
-          "id": "p106-v2",
+          "id": "p106-10",
+          "label": "10",
+          "column": 0,
+          "rect": [
+            56.0853,
+            219.0,
+            513.2371,
+            335.4398
+          ],
+          "parts": [
+            [
+              56.0853,
+              219.0,
+              513.2371,
+              335.4398
+            ]
+          ],
+          "headline": "10.  Kaynak A’da Türk ailelerinin günlük yaşamdaki iş bölümünden ve sosyoekonomik faaliyetlerinden söz edilmektedir. Bu bilgiler hangi diğer"
+        },
+        {
+          "id": "p106-v3",
           "label": null,
           "column": 0,
           "rect": [
-            55.8154,
-            219.0,
-            512.109,
-            335.7095
+            55.7074,
+            57.4,
+            511.0834,
+            208.3956
           ],
           "parts": [
             [
-              55.8154,
-              219.0,
-              512.109,
-              335.7095
+              55.7074,
+              57.4,
+              511.0834,
+              208.3956
             ]
           ]
-        },
-        {
-          "id": "p106-11",
-          "label": "11",
-          "column": 0,
-          "rect": [
-            56.3012,
-            57.2913,
-            511.7851,
-            208.3417
-          ],
-          "parts": [
-            [
-              56.3012,
-              57.2913,
-              511.7851,
-              208.3417
-            ]
-          ],
-          "headline": "11.   Türklerin ekonomik faaliyetleri, yerleşim bölgelerinin seçimini ve şehirleşme anlayışlarını nasıl etkile- miştir? Tarihsel bağlamı ve"
         }
       ]
     },
@@ -2344,17 +2486,17 @@
           "label": "12",
           "column": 0,
           "rect": [
-            56.6791,
-            510.0109,
+            56.841,
+            510.6583,
             513.236,
-            712.4185
+            711.4474
           ],
           "parts": [
             [
-              56.6791,
-              510.0109,
+              56.841,
+              510.6583,
               513.236,
-              712.4185
+              711.4474
             ]
           ],
           "headline": "12. Öğrencilerin konuşmalarına göre Türk-İslam ve Batı medeniyetlerinin bilim, kültür, eğitim ve sanat anlayışlarındaki benzerlik ve farklıl"
@@ -2364,39 +2506,38 @@
           "label": null,
           "column": 0,
           "rect": [
-            55.2216,
-            268.9776,
-            510.9754,
-            502.4584
+            55.9234,
+            269.5171,
+            511.5692,
+            502.3505
           ],
           "parts": [
             [
-              55.2216,
-              268.9776,
-              510.9754,
-              502.4584
+              55.9234,
+              269.5171,
+              511.5692,
+              502.3505
             ]
           ]
         },
         {
-          "id": "p108-14",
-          "label": "14",
+          "id": "p108-v3",
+          "label": null,
           "column": 0,
           "rect": [
-            56.3552,
-            122.3508,
+            55.6535,
+            119.4917,
             513.2388,
-            261.2093
+            260.8317
           ],
           "parts": [
             [
-              56.3552,
-              122.3508,
+              55.6535,
+              119.4917,
               513.2388,
-              261.2093
+              260.8317
             ]
-          ],
-          "headline": "14. Medreselerin coğrafi dağılımından yola çıkarak bu kurumların Anadolu’nun Türkleşme ve İslamlaşma sürecine etkilerini açıklayınız."
+          ]
         }
       ]
     },
@@ -2415,19 +2556,51 @@
           "label": null,
           "column": 0,
           "rect": [
-            30.3368,
-            623.2987,
-            513.0806,
-            712.7961
+            32.7659,
+            622.5974,
+            514.3761,
+            698.8779
           ],
           "parts": [
             [
-              30.3368,
-              623.2987,
-              513.0806,
-              712.7961
+              32.7659,
+              622.5974,
+              514.3761,
+              698.8779
             ]
           ]
+        }
+      ]
+    },
+    "113": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          36.5155,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p113-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            40.3231,
+            482.0127,
+            497.5883,
+            588.3414
+          ],
+          "parts": [
+            [
+              40.3231,
+              482.0127,
+              497.5883,
+              588.3414
+            ]
+          ],
+          "headline": "Gibbons, Osman Bey’le ilgili iddialarını hangi kaynaklara dayandırmaktadır?"
         }
       ]
     },
@@ -2442,21 +2615,40 @@
       ],
       "activities": [
         {
+          "id": "p114-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            29.1492,
+            583.3243,
+            513.0878,
+            709.1817
+          ],
+          "parts": [
+            [
+              29.1492,
+              583.3243,
+              513.0878,
+              709.1817
+            ]
+          ]
+        },
+        {
           "id": "p114-q2",
           "label": null,
           "column": 0,
           "rect": [
-            53.7642,
-            58.2,
-            511.5152,
-            179.2105
+            54.7358,
+            58.586,
+            511.6232,
+            179.2645
           ],
           "parts": [
             [
-              53.7642,
-              58.2,
-              511.5152,
-              179.2105
+              54.7358,
+              58.586,
+              511.6232,
+              179.2645
             ]
           ],
           "headline": "Wittek, “gaza tezi”ni hangi kaynağa dayandırmaktadır? Gerekçeleriyle açıklayınız."
@@ -2478,16 +2670,16 @@
           "label": "1",
           "column": 0,
           "rect": [
-            39.9992,
+            39.3515,
             149.6,
-            498.9378,
+            498.2361,
             335.8728
           ],
           "parts": [
             [
-              39.9992,
+              39.3515,
               149.6,
-              498.9378,
+              498.2361,
               335.8728
             ]
           ],
@@ -2498,17 +2690,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            40.755,
-            56.2,
+            41.4027,
+            55.2952,
             497.7503,
-            136.0533
+            135.8375
           ],
           "parts": [
             [
-              40.755,
-              56.2,
+              41.4027,
+              55.2952,
               497.7503,
-              136.0533
+              135.8375
             ]
           ],
           "headline": "Halil İnancık’ın yaptığı çalışmaları çalışkanlık değeri ile ilişkilendiriniz ve Halil İnalcık’ın çalışkanlığına üç kanıt cümlesi yazınız."
@@ -2531,14 +2723,14 @@
           "column": 0,
           "rect": [
             40.5197,
-            57.7228,
+            56.3202,
             500.0687,
             486.4525
           ],
           "parts": [
             [
               40.5197,
-              57.7228,
+              56.3202,
               500.0687,
               486.4525
             ]
@@ -2562,17 +2754,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            56.895,
-            349.4659,
+            36.1667,
+            349.412,
             511.5692,
-            689.707
+            702.3747
           ],
           "parts": [
             [
-              56.895,
-              349.4659,
+              36.1667,
+              349.412,
               511.5692,
-              689.707
+              702.3747
             ]
           ]
         },
@@ -2581,19 +2773,51 @@
           "label": null,
           "column": 0,
           "rect": [
-            54.7898,
-            124.6166,
-            512.5948,
-            341.9673
+            55.8154,
+            124.9403,
+            513.2383,
+            340.7805
           ],
           "parts": [
             [
-              54.7898,
-              124.6166,
-              512.5948,
-              341.9673
+              55.8154,
+              124.9403,
+              513.2383,
+              340.7805
             ]
           ]
+        }
+      ]
+    },
+    "123": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          36.5197,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p123-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            42.4823,
+            274.2104,
+            498.9946,
+            299.5653
+          ],
+          "parts": [
+            [
+              42.4823,
+              274.2104,
+              498.9946,
+              299.5653
+            ]
+          ],
+          "headline": "Osmanlı Beyliği’nin başında siz olsaydınız sınırları genişletmek için nasıl bir siyasi ve askerî strateji izlerdiniz?"
         }
       ]
     },
@@ -2612,17 +2836,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            33.5756,
-            234.8294,
-            512.8647,
-            709.3435
+            32.1721,
+            235.1531,
+            512.6488,
+            708.9659
           ],
           "parts": [
             [
-              33.5756,
-              234.8294,
-              512.8647,
-              709.3435
+              32.1721,
+              235.1531,
+              512.6488,
+              708.9659
             ]
           ],
           "headline": "Müzenin sergi salonunda en çok ilginizi çeken nesne hangisiydi? Bu nesnenin adını yazarak tanımını yapınız ve aşağıda bırakılan boş alana resmini çiziniz."
@@ -2632,17 +2856,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            55.9773,
-            159.2,
-            510.5975,
-            227.0072
+            55.8154,
+            158.0635,
+            510.0577,
+            227.6006
           ],
           "parts": [
             [
-              55.9773,
-              159.2,
-              510.5975,
-              227.0072
+              55.8154,
+              158.0635,
+              510.0577,
+              227.6006
             ]
           ],
           "headline": "Osmanlı Devleti’nde bu nesne hangi amaçla kullanılmış olabilir?"
@@ -2652,17 +2876,17 @@
           "label": "4",
           "column": 0,
           "rect": [
-            54.4659,
-            57.0,
-            512.4868,
-            151.5899
+            55.5995,
+            56.3742,
+            512.001,
+            151.2662
           ],
           "parts": [
             [
-              54.4659,
-              57.0,
-              512.4868,
-              151.5899
+              55.5995,
+              56.3742,
+              512.001,
+              151.2662
             ]
           ],
           "headline": "Sizce günümüzde bu nesneyle benzer özellikler taşıyan başka nesneler var mı?"
@@ -2684,16 +2908,16 @@
           "label": null,
           "column": 0,
           "rect": [
-            53.8721,
+            54.8438,
             68.2,
-            511.4072,
+            511.2453,
             178.6399
           ],
           "parts": [
             [
-              53.8721,
+              54.8438,
               68.2,
-              511.4072,
+              511.2453,
               178.6399
             ]
           ],
@@ -2712,24 +2936,23 @@
       ],
       "activities": [
         {
-          "id": "p127-q1",
+          "id": "p127-v1",
           "label": null,
           "column": 0,
           "rect": [
             41.2408,
-            57.3992,
-            500.2873,
-            198.8471
+            56.8057,
+            499.1288,
+            200.3036
           ],
           "parts": [
             [
               41.2408,
-              57.3992,
-              500.2873,
-              198.8471
+              56.8057,
+              499.1288,
+              200.3036
             ]
-          ],
-          "headline": "Koyunhisar Zaferi ile Bursa ve İznik fetihleri, Osmanlı’nın beylikten devlete yükseliş sürecini nasıl etkilemiştir? Birer cümleyle açıklayın"
+          ]
         }
       ]
     },
@@ -2748,17 +2971,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            39.4055,
-            266.604,
-            497.7503,
-            364.0315
+            39.1356,
+            267.7369,
+            498.8839,
+            360.0933
           ],
           "parts": [
             [
-              39.4055,
-              266.604,
-              497.7503,
-              364.0315
+              39.1356,
+              267.7369,
+              498.8839,
+              360.0933
             ]
           ]
         }
@@ -2780,14 +3003,14 @@
           "column": 0,
           "rect": [
             36.5177,
-            396.9389,
+            396.0758,
             503.6549,
             685.2083
           ],
           "parts": [
             [
               36.5177,
-              396.9389,
+              396.0758,
               503.6549,
               685.2083
             ]
@@ -2800,19 +3023,51 @@
           "column": 0,
           "rect": [
             36.5177,
-            54.7018,
+            55.4571,
             503.6549,
-            396.6889
+            395.8258
           ],
           "parts": [
             [
               36.5177,
-              54.7018,
+              55.4571,
               503.6549,
-              396.6889
+              395.8258
             ]
           ],
           "headline": "Aşağıdaki kavram ağında Osmanlı Devleti’nin ordu, hukuk ve toprak sistemleriyle ilgili bazı kavramlar veril- miştir. Bu kavramları TDK Türkç"
+        }
+      ]
+    },
+    "142": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          50.6929,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p142-q2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            56.6791,
+            56.8057,
+            509.0861,
+            117.172
+          ],
+          "parts": [
+            [
+              56.6791,
+              56.8057,
+              509.0861,
+              117.172
+            ]
+          ],
+          "headline": "Yandaki karekod üzerinden Koyunhisar Savaşı ile ilgili belgeseli izleyiniz ve bu savaş bağlamında askerî başarıların devletleşme sürecine et"
         }
       ]
     },
@@ -2831,17 +3086,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            41.0249,
+            41.748,
             498.1,
             495.5697,
-            687.7109
+            687.8728
           ],
           "parts": [
             [
-              41.0249,
+              41.748,
               498.1,
               495.5697,
-              687.7109
+              687.8728
             ]
           ],
           "headline": "Aşağıdaki şemaya Osman Bey Dönemi’ndeki ilk askerî kuvvetleri yazınız."
@@ -2863,19 +3118,51 @@
           "label": null,
           "column": 0,
           "rect": [
-            37.3542,
+            53.3323,
             584.0,
-            513.4045,
-            708.6962
+            514.0278,
+            686.9017
           ],
           "parts": [
             [
-              37.3542,
+              53.3323,
               584.0,
-              513.4045,
-              708.6962
+              514.0278,
+              686.9017
             ]
           ]
+        }
+      ]
+    },
+    "147": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          36.5161,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p147-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            37.6781,
+            433.3528,
+            498.506,
+            707.1857
+          ],
+          "parts": [
+            [
+              37.6781,
+              433.3528,
+              498.506,
+              707.1857
+            ]
+          ],
+          "headline": "Uygulama adımlarını takip ederek ve düşün-eşleş-paylaş tekniğini kullanarak etkinliği yapınız. Edindiğiniz bilgilerden yola çıkarak tımar si"
         }
       ]
     },
@@ -2894,40 +3181,20 @@
           "label": "1",
           "column": 0,
           "rect": [
-            41.1868,
-            542.4868,
-            497.6423,
-            621.8961
+            41.7266,
+            542.0012,
+            498.2901,
+            622.5974
           ],
           "parts": [
             [
-              41.1868,
-              542.4868,
-              497.6423,
-              621.8961
+              41.7266,
+              542.0012,
+              498.2901,
+              622.5974
             ]
           ],
           "headline": "Devşirme sisteminin esaslarına ve kurallarına ilişkin beş madde yazınız."
-        },
-        {
-          "id": "p151-2",
-          "label": "2",
-          "column": 0,
-          "rect": [
-            35.53,
-            456.964,
-            497.3184,
-            531.6435
-          ],
-          "parts": [
-            [
-              35.53,
-              456.964,
-              497.3184,
-              531.6435
-            ]
-          ],
-          "headline": "Tarihsel akış şemasındaki boşluklara ilgili gelişmenin hangi padişah döneminde gerçekleştiğini yazınız."
         }
       ]
     },
@@ -2946,17 +3213,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            31.7943,
-            452.1262,
-            514.862,
-            708.5883
+            30.9306,
+            453.5289,
+            513.0806,
+            708.9659
           ],
           "parts": [
             [
-              31.7943,
-              452.1262,
-              514.862,
-              708.5883
+              30.9306,
+              453.5289,
+              513.0806,
+              708.9659
             ]
           ]
         }
@@ -2977,17 +3244,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            34.3853,
-            297.1377,
+            30.6607,
+            296.5443,
             518.2382,
-            709.4514
+            708.9659
           ],
           "parts": [
             [
-              34.3853,
-              297.1377,
+              30.6607,
+              296.5443,
               518.2382,
-              709.4514
+              708.9659
             ]
           ],
           "headline": "Yeniçeriler ile tımarlı sipahilerin benzerlik ve farklılıklarını aşağıdaki şemanın ilgili alanlarına yazınız."
@@ -3009,17 +3276,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            40.3771,
-            56.1584,
-            498.8839,
-            355.6698
+            41.8885,
+            55.3492,
+            498.1281,
+            355.0764
           ],
           "parts": [
             [
-              40.3771,
-              56.1584,
-              498.8839,
-              355.6698
+              41.8885,
+              55.3492,
+              498.1281,
+              355.0764
             ]
           ],
           "headline": "Osmanlı Devleti’nde kadıların görevlerini aşağıdaki alana çizeceğiniz bir şema üzerinde gösteriniz."
@@ -3041,17 +3308,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            55.0597,
-            322.4926,
-            434.359,
-            381.9957
+            55.6929,
+            256.1383,
+            513.2372,
+            662.6797
           ],
           "parts": [
             [
-              55.0597,
-              322.4926,
-              434.359,
-              381.9957
+              55.6929,
+              256.1383,
+              513.2372,
+              662.6797
             ]
           ]
         },
@@ -3061,14 +3328,14 @@
           "column": 0,
           "rect": [
             50.6929,
-            117.2799,
+            56.8057,
             518.2372,
             253.7753
           ],
           "parts": [
             [
               50.6929,
-              117.2799,
+              56.8057,
               518.2372,
               253.7753
             ]
@@ -3091,17 +3358,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            55.3296,
-            232.24,
-            510.9754,
-            315.3717
+            54.8438,
+            232.0242,
+            511.947,
+            316.7203
           ],
           "parts": [
             [
-              55.3296,
-              232.24,
-              510.9754,
-              315.3717
+              54.8438,
+              232.0242,
+              511.947,
+              316.7203
             ]
           ],
           "headline": "Günümüze ulaşabilen Osmanlı eserlerinin en fazla ve en az bulunduğu Balkan ülkeleri hangileridir? Bu du- rumun nedenleri sizce nelerdir? Açıklayınız."
@@ -3111,17 +3378,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            55.7074,
-            173.0067,
-            509.464,
-            219.9402
+            55.5455,
+            173.4382,
+            509.7339,
+            220.2099
           ],
           "parts": [
             [
-              55.7074,
-              173.0067,
-              509.464,
-              219.9402
+              55.5455,
+              173.4382,
+              509.7339,
+              220.2099
             ]
           ],
           "headline": "Osmanlıların en çok eser inşa ettiği üç Balkan ülkesi hangisidir? Bu durumun nedenleri sizce nelerdir?"
@@ -3131,17 +3398,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            55.9773,
-            115.7,
-            510.2367,
-            159.9516
+            56.7331,
+            115.068,
+            509.5719,
+            160.2213
           ],
           "parts": [
             [
-              55.9773,
-              115.7,
-              510.2367,
-              159.9516
+              56.7331,
+              115.068,
+              509.5719,
+              160.2213
             ]
           ],
           "headline": "Haritada gösterilen Osmanlı eserlerinden hangisi daha çok ilginizi çekti? Neden?"
@@ -3151,17 +3418,17 @@
           "label": "4",
           "column": 0,
           "rect": [
-            55.4375,
-            68.3,
-            510.4356,
-            101.5275
+            54.6818,
+            56.7518,
+            510.2197,
+            101.9051
           ],
           "parts": [
             [
-              55.4375,
-              68.3,
-              510.4356,
-              101.5275
+              54.6818,
+              56.7518,
+              510.2197,
+              101.9051
             ]
           ],
           "headline": "Siz olsaydınız Osmanlı Devleti’nin fethettiği topraklarda kalıcı olması için nasıl bir strateji izlerdiniz?"
@@ -3183,17 +3450,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            54.4119,
-            56.2663,
-            512.163,
-            174.4093
+            53.3863,
+            57.2373,
+            511.6771,
+            175.8658
           ],
           "parts": [
             [
-              54.4119,
-              56.2663,
-              512.163,
-              174.4093
+              53.3863,
+              57.2373,
+              511.6771,
+              175.8658
             ]
           ],
           "headline": "Osmanlı Devleti’nin iskân politikasında ekonomik faaliyetlerin dikkate alınmasının nedenleri ne olabilir?"
@@ -3215,17 +3482,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            41.7806,
-            554.1,
-            498.506,
-            679.619
+            41.6186,
+            553.1682,
+            499.0998,
+            680.6439
           ],
           "parts": [
             [
-              41.7806,
-              554.1,
-              498.506,
-              679.619
+              41.6186,
+              553.1682,
+              499.0998,
+              680.6439
             ]
           ],
           "headline": "Osmanlı Devleti’nin Balkanlarda istimalet politikası uygularken adaleti gözetmesi, fethedilen yerlerde kalı- cı olmayı nasıl etkilemiş olabilir? Gerekçeleriyle "
@@ -3235,17 +3502,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            40.539,
-            437.9383,
-            497.5344,
-            541.192
+            41.1868,
+            435.7804,
+            498.7219,
+            540.3828
           ],
           "parts": [
             [
-              40.539,
-              437.9383,
-              497.5344,
-              541.192
+              41.1868,
+              435.7804,
+              498.7219,
+              540.3828
             ]
           ],
           "headline": "Osmanlı Devleti’nin fethettiği topraklarda uyguladığı iskân ve istimalet politikalarına yönelik Kaynak F, Kaynak H ve Kaynak K’deki farklı bakış açılarının nede"
@@ -3255,20 +3522,51 @@
           "label": "3",
           "column": 0,
           "rect": [
-            41.6726,
-            57.8307,
+            42.1584,
+            57.561,
             498.6497,
-            423.8582
+            422.132
           ],
           "parts": [
             [
-              41.6726,
-              57.8307,
+              42.1584,
+              57.561,
               498.6497,
-              423.8582
+              422.132
             ]
           ],
-          "headline": "Osmanlı Devleti’nin istimalet politikasıyla ilgili Kaynak F, Kaynak H ve Kaynak K’deki farklı bakış açılarının olmasının nedenleri neler olabilir? Aşağıdaki tab"
+          "headline": "3. olmasının nedenleri neler olabilir? Aşağıdaki tablonun ilgili alanlarını işaretleyerek gerekçenizi yazınız."
+        }
+      ]
+    },
+    "168": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          50.6929,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p168-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            54.25,
+            54.0545,
+            509.302,
+            65.4372
+          ],
+          "parts": [
+            [
+              54.25,
+              54.0545,
+              509.302,
+              65.4372
+            ]
+          ]
         }
       ]
     },
@@ -3287,17 +3585,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            18.0293,
-            345.1502,
-            500.3953,
-            710.2606
+            39.9992,
+            344.5028,
+            498.452,
+            709.0738
           ],
           "parts": [
             [
-              18.0293,
-              345.1502,
-              500.3953,
-              710.2606
+              39.9992,
+              344.5028,
+              498.452,
+              709.0738
             ]
           ]
         }
@@ -3318,14 +3616,14 @@
           "label": "5",
           "column": 0,
           "rect": [
-            41.4567,
+            42.52,
             607.559,
             496.063,
             710.787
           ],
           "parts": [
             [
-              41.4567,
+              42.52,
               607.559,
               496.063,
               710.787
@@ -3341,14 +3639,14 @@
             42.5197,
             83.4725,
             496.0627,
-            593.9518
+            596.2176
           ],
           "parts": [
             [
               42.5197,
               83.4725,
               496.0627,
-              593.9518
+              596.2176
             ]
           ],
           "headline": "Uygulama adımlarını takip ederek etkinliği yapınız. Gelecek derse hazırlık bölümünde oluşturduğunuz gruplarınızla yeniden bir araya geliniz."
@@ -3366,40 +3664,41 @@
       ],
       "activities": [
         {
-          "id": "p174-v1",
-          "label": null,
+          "id": "p174-1",
+          "label": "1",
           "column": 0,
           "rect": [
-            52.6306,
-            124.5087,
-            512.7567,
+            53.0084,
+            123.9692,
+            514.0523,
             204.7812
           ],
           "parts": [
             [
-              52.6306,
-              124.5087,
-              512.7567,
+              53.0084,
+              123.9692,
+              514.0523,
               204.7812
             ]
-          ]
+          ],
+          "headline": "1.  Osmanlı Dönemi’ne ait Bursa şehir krokisi üzerinden Osmanlı şehirlerinin özelliklerine dair hangi çıka- rımlarda bulunabilirsiniz? Açıkl"
         },
         {
           "id": "p174-2",
           "label": "2",
           "column": 0,
           "rect": [
-            56.1393,
-            56.6979,
-            512.109,
-            113.7733
+            55.5995,
+            55.9965,
+            511.8931,
+            114.2588
           ],
           "parts": [
             [
-              56.1393,
-              56.6979,
-              512.109,
-              113.7733
+              55.5995,
+              55.9965,
+              511.8931,
+              114.2588
             ]
           ],
           "headline": "2. Krokideki hangi tarihî yapılar o dönemin ilim ve irfan geleneğinin oluşmasında etkili olmuş olabilir? Ne- den böyle düşündüğünüzü açıklay"
@@ -3421,17 +3720,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            54.6818,
-            148.7307,
-            511.0834,
-            242.8135
+            55.3836,
+            148.5689,
+            510.4356,
+            238.9752
           ],
           "parts": [
             [
-              54.6818,
-              148.7307,
-              511.0834,
-              242.8135
+              55.3836,
+              148.5689,
+              510.4356,
+              238.9752
             ]
           ],
           "headline": "Osmanlı şehirlerinde süreklilik sağlanmasının kazanımları neler olabilir? Açıklayınız."
@@ -3441,17 +3740,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            54.6278,
-            55.565,
-            512.5408,
-            137.348
+            55.4375,
+            55.4571,
+            511.7311,
+            136.9164
           ],
           "parts": [
             [
-              54.6278,
-              55.565,
-              512.5408,
-              137.348
+              55.4375,
+              55.4571,
+              511.7311,
+              136.9164
             ]
           ],
           "headline": "Osmanlı Devleti’nde cami, medrese ve çarşının ön plana çıkması şehirlere nasıl bir kimlik kazandırmış ola- bilir? Açıklayınız."
@@ -3469,24 +3768,23 @@
       ],
       "activities": [
         {
-          "id": "p177-q1",
+          "id": "p177-v1",
           "label": null,
           "column": 0,
           "rect": [
-            40.8629,
-            182.4473,
+            40.647,
+            183.1,
             497.5344,
             285.1839
           ],
           "parts": [
             [
-              40.8629,
-              182.4473,
+              40.647,
+              183.1,
               497.5344,
               285.1839
             ]
-          ],
-          "headline": "Fetihlerin ardından Osmanlı kimliği kazanan şehirler neden külliyelerin etrafında şekillenmiştir? Gerekçele- riyle açıklayınız."
+          ]
         }
       ]
     },
@@ -3509,17 +3807,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            32.1181,
-            172.8448,
-            513.8363,
-            707.9409
+            30.8226,
+            175.3264,
+            513.4045,
+            706.9699
           ],
           "parts": [
             [
-              32.1181,
-              172.8448,
-              513.8363,
-              707.9409
+              30.8226,
+              175.3264,
+              513.4045,
+              706.9699
             ]
           ]
         }
@@ -3540,17 +3838,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            41.2408,
-            600.1017,
-            497.0485,
-            680.0505
+            40.9709,
+            599.4543,
+            500.2334,
+            682.2084
           ],
           "parts": [
             [
-              41.2408,
-              600.1017,
-              497.0485,
-              680.0505
+              40.9709,
+              599.4543,
+              500.2334,
+              682.2084
             ]
           ],
           "headline": "Osmanlı şehirlerinin külliye, medrese, darüşşifa, imaret, tekke gibi kurumların etrafında şekillenerek geliş- mesi şehrin ilmî ve kültürel hayatını nasıl etkile"
@@ -3560,17 +3858,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            40.701,
-            57.6149,
+            41.5107,
+            55.7808,
             497.5883,
-            594.2215
+            592.0097
           ],
           "parts": [
             [
-              40.701,
-              57.6149,
+              41.5107,
+              55.7808,
               497.5883,
-              594.2215
+              592.0097
             ]
           ],
           "headline": "İlim merkezi niteliği taşıyan bir şehir planı tasarlayınız ve bu planı aşağıda bırakılan boş alana çiziniz."
@@ -3592,17 +3890,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            53.1164,
+            52.9545,
             612.1,
-            511.947,
-            691.2714
+            513.1696,
+            686.632
           ],
           "parts": [
             [
-              53.1164,
+              52.9545,
               612.1,
-              511.947,
-              691.2714
+              513.1696,
+              686.632
             ]
           ]
         }
@@ -3623,17 +3921,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            41.1868,
-            168.4212,
-            498.614,
-            263.7988
+            41.0249,
+            169.9857,
+            498.1821,
+            263.6369
           ],
           "parts": [
             [
-              41.1868,
-              168.4212,
-              498.614,
-              263.7988
+              41.0249,
+              169.9857,
+              498.1821,
+              263.6369
             ]
           ],
           "headline": "Kuruluş Dönemi’nde Osmanlı şehirlerindeki ilmî faaliyetlerin gelişmiş olmasının nedenleri neler olabilir?"
@@ -3643,17 +3941,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            40.647,
-            68.8,
-            497.4264,
-            159.574
+            40.9169,
+            56.8,
+            497.9122,
+            159.8976
           ],
           "parts": [
             [
-              40.647,
-              68.8,
-              497.4264,
-              159.574
+              40.9169,
+              56.8,
+              497.9122,
+              159.8976
             ]
           ],
           "headline": "Kuruluş Dönemi’nde Osmanlı şehirlerindeki ilmî faaliyetleri açıklayan üç cümle yazınız."
@@ -3675,17 +3973,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            40.8089,
-            601.0727,
-            497.5883,
-            683.5571
+            41.4567,
+            602.0438,
+            498.9918,
+            684.2584
           ],
           "parts": [
             [
-              40.8089,
-              601.0727,
-              497.5883,
-              683.5571
+              41.4567,
+              602.0438,
+              498.9918,
+              684.2584
             ]
           ],
           "headline": "Medreselerde eğitim alan ve eğitim veren kişiler Osmanlı şehir hayatının şekillenmesinde nasıl bir rol oy- namış olabilir? Açıklayınız."
@@ -3695,17 +3993,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            41.8346,
+            41.4027,
             514.9,
-            496.6707,
-            593.8978
+            497.4264,
+            594.6531
           ],
           "parts": [
             [
-              41.8346,
+              41.4027,
               514.9,
-              496.6707,
-              593.8978
+              497.4264,
+              594.6531
             ]
           ],
           "headline": "Kaynaklarda “Osmanlı Devleti’nde Kuruluş Dönemi’nden itibaren ilim ve irfan hayatına büyük önem veril- miştir.” yargısını destekleyen hangi kanıtlara yer verilm"
@@ -3728,16 +4026,16 @@
           "column": 0,
           "rect": [
             32.604,
-            369.588,
-            510.5436,
-            704.2725
+            369.8038,
+            509.7339,
+            703.1397
           ],
           "parts": [
             [
               32.604,
-              369.588,
-              510.5436,
-              704.2725
+              369.8038,
+              509.7339,
+              703.1397
             ]
           ]
         }
@@ -3758,17 +4056,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            40.8089,
-            278.7959,
-            497.2645,
-            381.4562
+            40.593,
+            278.4183,
+            498.6679,
+            402.1366
           ],
           "parts": [
             [
-              40.8089,
-              278.7959,
-              497.2645,
-              381.4562
+              40.593,
+              278.4183,
+              498.6679,
+              402.1366
             ]
           ],
           "headline": "Osmanlı Dönemi’nde tekkelerin sosyal ve kültürel hayattaki işlevleri nelerdir? Açıklayınız."
@@ -3778,17 +4076,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            40.2691,
+            40.593,
             150.9,
-            497.2645,
-            266.8737
+            497.9122,
+            266.604
           ],
           "parts": [
             [
-              40.2691,
+              40.593,
               150.9,
-              497.2645,
-              266.8737
+              497.9122,
+              266.604
             ]
           ],
           "headline": "Osmanlı Devleti’nde şehirlerden köylere kadar çok sayıda tekke ve zaviye bulunmasının nedenleri neler olabilir? Açıklayınız."
@@ -3810,17 +4108,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            18.4612,
-            599.0767,
-            497.7503,
-            707.3475
+            20.8363,
+            598.807,
+            498.506,
+            706.9159
           ],
           "parts": [
             [
-              18.4612,
-              599.0767,
-              497.7503,
-              707.3475
+              20.8363,
+              598.807,
+              498.506,
+              706.9159
             ]
           ]
         },
@@ -3829,39 +4127,88 @@
           "label": null,
           "column": 0,
           "rect": [
-            40.1612,
-            194.2482,
-            497.8582,
-            588.7729
+            41.4027,
+            191.4564,
+            499.0638,
+            587.2085
           ],
           "parts": [
             [
-              40.1612,
-              194.2482,
-              497.8582,
-              588.7729
+              41.4027,
+              191.4564,
+              499.0638,
+              587.2085
+            ]
+          ]
+        }
+      ]
+    },
+    "197": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          40.063,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p197-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            40.063,
+            284.6563,
+            498.0202,
+            665.6468
+          ],
+          "parts": [
+            [
+              40.063,
+              284.6563,
+              498.0202,
+              665.6468
             ]
           ]
         },
         {
-          "id": "p195-q3",
+          "id": "p197-v2",
           "label": null,
           "column": 0,
           "rect": [
-            36.5197,
-            53.7847,
-            504.0638,
-            194.2482
+            42.5363,
+            216.056,
+            495.1053,
+            284.4063
           ],
           "parts": [
             [
-              36.5197,
-              53.7847,
-              504.0638,
-              194.2482
+              42.5363,
+              216.056,
+              495.1053,
+              284.4063
             ]
+          ]
+        },
+        {
+          "id": "p197-v3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            40.063,
+            56.8597,
+            497.2598,
+            215.806
           ],
-          "headline": "Uygulayalım Verilen yönergeler doğrultusunda aşağıdaki etkinlikleri yapınız."
+          "parts": [
+            [
+              40.063,
+              56.8597,
+              497.2598,
+              215.806
+            ]
+          ]
         }
       ]
     },
@@ -3880,17 +4227,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            54.7898,
-            56.536,
+            55.8154,
+            56.3742,
             513.2329,
-            243.4069
+            243.2451
           ],
           "parts": [
             [
-              54.7898,
-              56.536,
+              55.8154,
+              56.3742,
               513.2329,
-              243.4069
+              243.2451
             ]
           ]
         }
@@ -3911,17 +4258,48 @@
           "label": null,
           "column": 0,
           "rect": [
-            41.3487,
-            471.1694,
-            499.3157,
-            705.8909
+            40.1612,
+            472.2483,
+            497.7503,
+            705.1357
           ],
           "parts": [
             [
-              41.3487,
-              471.1694,
-              499.3157,
-              705.8909
+              40.1612,
+              472.2483,
+              497.7503,
+              705.1357
+            ]
+          ]
+        }
+      ]
+    },
+    "200": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          56.9291,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p200-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            47.929,
+            151.297,
+            519.889,
+            231.937
+          ],
+          "parts": [
+            [
+              47.929,
+              151.297,
+              519.889,
+              231.937
             ]
           ]
         }
@@ -3942,39 +4320,38 @@
           "label": null,
           "column": 0,
           "rect": [
-            41.0788,
+            41.7806,
             294.0088,
-            499.0647,
-            704.1646
+            498.452,
+            702.1686
           ],
           "parts": [
             [
-              41.0788,
+              41.7806,
               294.0088,
-              499.0647,
-              704.1646
+              498.452,
+              702.1686
             ]
           ]
         },
         {
-          "id": "p201-4",
-          "label": "4",
+          "id": "p201-v2",
+          "label": null,
           "column": 0,
           "rect": [
-            41.8885,
-            54.4321,
-            497.8582,
-            275.1275
+            41.5197,
+            54.7018,
+            496.4008,
+            275.1815
           ],
           "parts": [
             [
-              41.8885,
-              54.4321,
-              497.8582,
-              275.1275
+              41.5197,
+              54.7018,
+              496.4008,
+              275.1815
             ]
-          ],
-          "headline": "4. Harita ve kaynaklardan hareketle aşağıdaki yargılardan hangilerine ulaşılabilir? (Birden fazla cümleyi işa- retleyebilirsiniz.)"
+          ]
         }
       ]
     },
@@ -3993,16 +4370,16 @@
           "label": "5",
           "column": 0,
           "rect": [
-            41.0788,
-            481.7969,
-            498.9918,
+            41.2408,
+            481.1495,
+            498.7219,
             584.5651
           ],
           "parts": [
             [
-              41.0788,
-              481.7969,
-              498.9918,
+              41.2408,
+              481.1495,
+              498.7219,
               584.5651
             ]
           ],
@@ -4014,18 +4391,38 @@
           "column": 0,
           "rect": [
             41.5197,
-            381.1865,
-            433.2441,
-            466.5839
+            381.2404,
+            432.8123,
+            466.9076
           ],
           "parts": [
             [
               41.5197,
-              381.1865,
-              433.2441,
-              466.5839
+              381.2404,
+              432.8123,
+              466.9076
             ]
           ]
+        },
+        {
+          "id": "p203-7",
+          "label": "7",
+          "column": 0,
+          "rect": [
+            42.9142,
+            56.6,
+            499.3697,
+            369.3183
+          ],
+          "parts": [
+            [
+              42.9142,
+              56.6,
+              499.3697,
+              369.3183
+            ]
+          ],
+          "headline": "7.  Osmanlı Devleti’nin ordu, hukuk ve toprak sistemleriyle ilgili üçer özellik yazınız. Ordu sistemi"
         }
       ]
     },
@@ -4040,24 +4437,23 @@
       ],
       "activities": [
         {
-          "id": "p204-8",
-          "label": "8",
+          "id": "p204-v1",
+          "label": null,
           "column": 0,
           "rect": [
-            56.787,
-            54.5939,
-            512.5948,
-            214.1679
+            55.1137,
+            54.8097,
+            511.947,
+            214.4916
           ],
           "parts": [
             [
-              56.787,
-              54.5939,
-              512.5948,
-              214.1679
+              55.1137,
+              54.8097,
+              511.947,
+              214.4916
             ]
-          ],
-          "headline": "8.  Osmanlı Devleti’nin uyguladığı iskân ve istimalet politikalarıyla ilgili kaynaklardaki farklı bakış açılarının nedenlerine dair aşağıdak"
+          ]
         }
       ]
     },
@@ -4076,17 +4472,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            41.8346,
-            599.6701,
-            497.6963,
-            705.1896
+            40.3771,
+            600.1557,
+            498.2361,
+            704.7041
           ],
           "parts": [
             [
-              41.8346,
-              599.6701,
-              497.6963,
-              705.1896
+              40.3771,
+              600.1557,
+              498.2361,
+              704.7041
             ]
           ]
         },
@@ -4095,17 +4491,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            42.5903,
-            511.9,
-            496.1309,
-            590.3374
+            41.5647,
+            500.3,
+            497.6963,
+            590.6611
           ],
           "parts": [
             [
-              42.5903,
-              511.9,
-              496.1309,
-              590.3374
+              41.5647,
+              500.3,
+              497.6963,
+              590.6611
             ]
           ]
         },
@@ -4114,16 +4510,16 @@
           "label": null,
           "column": 0,
           "rect": [
-            42.8602,
-            54.9716,
-            498.0742,
+            41.9965,
+            54.8637,
+            497.9122,
             123.6456
           ],
           "parts": [
             [
-              42.8602,
-              54.9716,
-              498.0742,
+              41.9965,
+              54.8637,
+              497.9122,
               123.6456
             ]
           ]
@@ -4145,39 +4541,40 @@
           "label": "a",
           "column": 0,
           "rect": [
-            56.0853,
-            230.1361,
-            510.7595,
-            321.4137
+            55.6929,
+            229.0032,
+            511.2453,
+            321.4676
           ],
           "parts": [
             [
-              56.0853,
-              230.1361,
-              510.7595,
-              321.4137
+              55.6929,
+              229.0032,
+              511.2453,
+              321.4676
             ]
           ],
           "headline": "a)    Saatli Medrese’deki eğitim hayatına dair hangi çıkarımlarda bulunabilirsiniz? Açıklayınız."
         },
         {
-          "id": "p206-v2",
-          "label": null,
+          "id": "p206-b",
+          "label": "b",
           "column": 0,
           "rect": [
-            54.7898,
-            128.9863,
-            512.055,
-            220.4797
+            56.1393,
+            127.3139,
+            511.5692,
+            220.3718
           ],
           "parts": [
             [
-              54.7898,
-              128.9863,
-              512.055,
-              220.4797
+              56.1393,
+              127.3139,
+              511.5692,
+              220.3718
             ]
-          ]
+          ],
+          "headline": "b)   Üç Şerefeli Cami ve Külliyesi’nin küçük bir yapı olarak tanımlanmasının nedenleri neler olabilir? Açıklayınız."
         }
       ]
     },
@@ -4198,40 +4595,53 @@
         {
           "id": "p209-v1",
           "label": null,
-          "column": 0,
-          "rect": [
-            40.9169,
-            78.6002,
-            453.6608,
-            93.0039
-          ],
-          "parts": [
-            [
-              40.9169,
-              78.6002,
-              453.6608,
-              93.0039
-            ]
-          ]
-        },
-        {
-          "id": "p209-v2",
-          "label": null,
           "column": 1,
           "rect": [
-            40.9169,
-            54.2163,
-            498.1821,
-            76.766
+            39.1356,
+            53.8926,
+            498.452,
+            77.3054
           ],
           "parts": [
             [
-              40.9169,
-              54.2163,
-              498.1821,
-              76.766
+              39.1356,
+              53.8926,
+              498.452,
+              77.3054
             ]
           ]
+        }
+      ]
+    },
+    "210": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          50.4699,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p210-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            50.4699,
+            172.9527,
+            517.953,
+            712.3106
+          ],
+          "parts": [
+            [
+              50.4699,
+              172.9527,
+              517.953,
+              712.3106
+            ]
+          ],
+          "headline": "Verilen yönergeler doğrultusunda aşağıdaki etkinlikleri yapınız. 1453-1683 yılları arasında Osmanlı Devleti’nin cihan devleti hâline gelmesi"
         }
       ]
     },
@@ -4250,17 +4660,48 @@
           "label": null,
           "column": 0,
           "rect": [
-            32.7119,
-            432.0042,
-            510.9754,
-            708.5883
+            32.1721,
+            431.6266,
+            510.3276,
+            706.3765
           ],
           "parts": [
             [
-              32.7119,
-              432.0042,
-              510.9754,
-              708.5883
+              32.1721,
+              431.6266,
+              510.3276,
+              706.3765
+            ]
+          ]
+        }
+      ]
+    },
+    "217": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          36.5197,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p217-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            41.6726,
+            62.4162,
+            496.0769,
+            121.3798
+          ],
+          "parts": [
+            [
+              41.6726,
+              62.4162,
+              496.0769,
+              121.3798
             ]
           ]
         }
@@ -4277,24 +4718,66 @@
       ],
       "activities": [
         {
-          "id": "p221-q1",
+          "id": "p221-v1",
           "label": null,
           "column": 0,
           "rect": [
-            40.9169,
-            418.8952,
-            497.8582,
-            531.8053
+            16.0321,
+            413.3387,
+            499.6396,
+            710.6922
           ],
           "parts": [
             [
-              40.9169,
-              418.8952,
-              497.8582,
-              531.8053
+              16.0321,
+              413.3387,
+              499.6396,
+              710.6922
             ]
+          ]
+        }
+      ]
+    },
+    "224": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          50.5711,
+          223.8739
+        ],
+        [
+          227.8739,
+          292.3067
+        ],
+        [
+          296.3067,
+          359.1406
+        ],
+        [
+          363.1406,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p224-v1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            54.25,
+            210.4456,
+            511.0294,
+            269.3013
           ],
-          "headline": "Osmanlı Devleti, Endülüs’teki Müslümanlarla birlikte Yahudilere de yardım ederken hangi değeri gözetmiş ola- bilir? Gerekçeleriyle açıklayın"
+          "parts": [
+            [
+              54.25,
+              210.4456,
+              511.0294,
+              269.3013
+            ]
+          ]
         }
       ]
     },
@@ -4313,17 +4796,130 @@
           "label": null,
           "column": 0,
           "rect": [
-            53.3323,
-            152.1,
-            511.6771,
-            325.7294
+            54.7358,
+            163.7,
+            511.3533,
+            326.4847
           ],
           "parts": [
             [
-              53.3323,
-              152.1,
-              511.6771,
-              325.7294
+              54.7358,
+              163.7,
+              511.3533,
+              326.4847
+            ]
+          ]
+        }
+      ]
+    },
+    "227": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          36.5197,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p227-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            39.4594,
+            348.7107,
+            498.3441,
+            468.3102
+          ],
+          "parts": [
+            [
+              39.4594,
+              348.7107,
+              498.3441,
+              468.3102
+            ]
+          ]
+        }
+      ]
+    },
+    "228": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          50.6845,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p228-q1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            55.0057,
+            56.3,
+            511.1373,
+            139.9374
+          ],
+          "parts": [
+            [
+              55.0057,
+              56.3,
+              511.1373,
+              139.9374
+            ]
+          ],
+          "headline": "Osmanlı Devleti’nin Akdeniz hâkimiyeti açısından Preveze Deniz Savaşı’nın önemi nedir? Açıklayınız."
+        }
+      ]
+    },
+    "234": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          50.5711,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p234-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            30.4987,
+            507.0439,
+            512.8107,
+            703.841
+          ],
+          "parts": [
+            [
+              30.4987,
+              507.0439,
+              512.8107,
+              703.841
+            ]
+          ]
+        },
+        {
+          "id": "p234-v2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            53.7642,
+            55.6729,
+            511.2453,
+            442.2001
+          ],
+          "parts": [
+            [
+              53.7642,
+              55.6729,
+              511.2453,
+              442.2001
             ]
           ]
         }
@@ -4344,20 +4940,39 @@
           "label": "2",
           "column": 0,
           "rect": [
-            16.4639,
-            577.552,
-            498.9378,
-            704.1107
+            19.001,
+            575.6639,
+            499.2617,
+            704.1646
           ],
           "parts": [
             [
-              16.4639,
-              577.552,
-              498.9378,
-              704.1107
+              19.001,
+              575.6639,
+              499.2617,
+              704.1646
             ]
           ],
           "headline": "Padişahların fermanlarından hareketle Osmanlı Devleti’nde farklı dinlere ve kültürlere mensup insanlara saygı duyulmasıyla ilgili farklı örnekler veriniz."
+        },
+        {
+          "id": "p235-v2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            36.5197,
+            126.1271,
+            503.6496,
+            456.925
+          ],
+          "parts": [
+            [
+              36.5197,
+              126.1271,
+              503.6496,
+              456.925
+            ]
+          ]
         }
       ]
     },
@@ -4376,17 +4991,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            56.0853,
-            182.0697,
-            512.2709,
-            292.822
+            56.4632,
+            185.3065,
+            512.5408,
+            292.9839
           ],
           "parts": [
             [
-              56.0853,
-              182.0697,
-              512.2709,
-              292.822
+              56.4632,
+              185.3065,
+              512.5408,
+              292.9839
             ]
           ],
           "headline": "Görsellere göre XVI. yüzyıl Osmanlı Devleti’nin yönetim ve ordu yapısı ile ilgili neler söylenebilir? Açıklayınız."
@@ -4396,52 +5011,20 @@
           "label": "2",
           "column": 0,
           "rect": [
-            55.9234,
+            56.7331,
             55.4571,
-            512.2709,
-            171.0106
+            512.6488,
+            171.658
           ],
           "parts": [
             [
-              55.9234,
+              56.7331,
               55.4571,
-              512.2709,
-              171.0106
+              512.6488,
+              171.658
             ]
           ],
           "headline": "XV-XVII. yüzyıllar arasında hüküm sürmüş devletlerin güçlenmesinde ve gerilemesinde askerî mücadele- ler ve ordu yapısındaki değişmeler neden önemlidir? Gerekçe"
-        }
-      ]
-    },
-    "238": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          50.5711,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p238-q1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            56.2472,
-            485.2494,
-            510.0577,
-            705.1896
-          ],
-          "parts": [
-            [
-              56.2472,
-              485.2494,
-              510.0577,
-              705.1896
-            ]
-          ],
-          "headline": "Uygulama adımlarını takip ederek anlat bakalım oyununu oynayınız. Öğretmeninizin rehberliğinde Osmanlı Devleti’nin yönetim ve ordu yapısıyla"
         }
       ]
     },
@@ -4460,17 +5043,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            55.0597,
-            53.1374,
-            513.3237,
-            76.9278
+            54.088,
+            53.0295,
+            511.8931,
+            77.1975
           ],
           "parts": [
             [
-              55.0597,
-              53.1374,
-              513.3237,
-              76.9278
+              54.088,
+              53.0295,
+              511.8931,
+              77.1975
             ]
           ]
         }
@@ -4491,17 +5074,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            30.7147,
-            613.0,
-            512.4329,
-            704.5423
+            31.0925,
+            612.941,
+            511.7311,
+            704.6502
           ],
           "parts": [
             [
-              30.7147,
-              613.0,
-              512.4329,
-              704.5423
+              31.0925,
+              612.941,
+              511.7311,
+              704.6502
             ]
           ],
           "headline": "Padişah kanunnameleriyle yapılan değişiklik ve düzenlemeler hangi ihtiyaçlardan kaynaklanmış olabilir?"
@@ -4523,16 +5106,16 @@
           "label": null,
           "column": 0,
           "rect": [
-            40.8089,
-            110.2129,
-            498.2901,
+            40.1612,
+            110.8,
+            497.7503,
             213.4004
           ],
           "parts": [
             [
-              40.8089,
-              110.2129,
-              498.2901,
+              40.1612,
+              110.8,
+              497.7503,
               213.4004
             ]
           ]
@@ -4554,17 +5137,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            32.388,
-            459.463,
-            514.7,
-            708.0488
+            29.689,
+            455.6867,
+            511.8931,
+            706.5922
           ],
           "parts": [
             [
-              32.388,
-              459.463,
-              514.7,
-              708.0488
+              29.689,
+              455.6867,
+              511.8931,
+              706.5922
             ]
           ]
         }
@@ -4585,17 +5168,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            32.7659,
-            453.6447,
-            513.0806,
-            707.833
+            33.0898,
+            439.3847,
+            512.3249,
+            705.7291
           ],
           "parts": [
             [
-              32.7659,
-              453.6447,
-              513.0806,
-              707.833
+              33.0898,
+              439.3847,
+              512.3249,
+              705.7291
             ]
           ]
         }
@@ -4617,14 +5200,14 @@
           "column": 0,
           "rect": [
             50.6929,
-            54.9716,
+            54.6479,
             518.2639,
             331.8703
           ],
           "parts": [
             [
               50.6929,
-              54.9716,
+              54.6479,
               518.2639,
               331.8703
             ]
@@ -4648,17 +5231,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            17.8134,
-            393.0547,
-            498.6679,
-            704.2725
+            18.839,
+            392.0837,
+            498.8839,
+            702.6541
           ],
           "parts": [
             [
-              17.8134,
-              393.0547,
-              498.6679,
-              704.2725
+              18.839,
+              392.0837,
+              498.8839,
+              702.6541
             ]
           ]
         }
@@ -4679,17 +5262,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            55.8154,
-            583.0,
-            513.0806,
-            691.3793
+            55.3836,
+            582.623,
+            513.8363,
+            706.2686
           ],
           "parts": [
             [
-              55.8154,
-              583.0,
-              513.0806,
-              691.3793
+              55.3836,
+              582.623,
+              513.8363,
+              706.2686
             ]
           ],
           "headline": "Avrupalıları bilmedikleri toprakları keşfetmeye ve buralarda karşılaşabilecekleri tehlikeleri göze almaya iten sebep neler olabilir? Açıklayınız."
@@ -4699,17 +5282,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            55.1676,
-            466.7458,
-            513.4585,
-            571.3482
+            55.5455,
+            466.3681,
+            512.9727,
+            570.8627
           ],
           "parts": [
             [
-              55.1676,
-              466.7458,
-              513.4585,
-              571.3482
+              55.5455,
+              466.3681,
+              512.9727,
+              570.8627
             ]
           ],
           "headline": "Orta Doğu ve Afrika’da toplumsal olaylar, askerî darbeler ve siyasi istikrarsızlıklar yaşanmasının nedenleri neler olabilir? Açıklayınız."
@@ -4719,15 +5302,15 @@
           "label": "3",
           "column": 0,
           "rect": [
-            55.5455,
-            352.1093,
+            55.7614,
+            352.2711,
             514.035,
             457.2512
           ],
           "parts": [
             [
-              55.5455,
-              352.1093,
+              55.7614,
+              352.2711,
               514.035,
               457.2512
             ]
@@ -4751,17 +5334,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            54.6818,
-            63.1175,
-            511.6771,
-            198.5234
+            55.2216,
+            63.2254,
+            511.4072,
+            198.901
           ],
           "parts": [
             [
-              54.6818,
-              63.1175,
-              511.6771,
-              198.5234
+              55.2216,
+              63.2254,
+              511.4072,
+              198.901
             ]
           ]
         }
@@ -4782,17 +5365,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            55.7074,
+            54.7358,
             56.6,
-            511.5152,
-            136.7546
+            511.2993,
+            136.1072
           ],
           "parts": [
             [
-              55.7074,
+              54.7358,
               56.6,
-              511.5152,
-              136.7546
+              511.2993,
+              136.1072
             ]
           ],
           "headline": "Köle toplama kampında yaşamak zorunda kalsaydınız neler hissederdiniz? Açıklayınız."
@@ -4814,17 +5397,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            40.8089,
-            355.7237,
-            499.8586,
-            698.6621
+            40.0532,
+            353.0264,
+            498.9918,
+            711.6093
           ],
           "parts": [
             [
-              40.8089,
-              355.7237,
-              499.8586,
-              698.6621
+              40.0532,
+              353.0264,
+              498.9918,
+              711.6093
             ]
           ]
         }
@@ -4845,16 +5428,16 @@
           "label": null,
           "column": 0,
           "rect": [
-            55.3836,
-            57.6149,
-            512.055,
+            54.5739,
+            56.9136,
+            511.947,
             145.5185
           ],
           "parts": [
             [
-              55.3836,
-              57.6149,
-              512.055,
+              54.5739,
+              56.9136,
+              511.947,
               145.5185
             ]
           ],
@@ -4877,17 +5460,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            55.5455,
-            325.5136,
-            510.3276,
-            406.5414
+            55.2756,
+            325.9452,
+            511.1373,
+            406.0559
           ],
           "parts": [
             [
-              55.5455,
-              325.5136,
-              510.3276,
-              406.5414
+              55.2756,
+              325.9452,
+              511.1373,
+              406.0559
             ]
           ],
           "headline": "Matbaanın gelişimi Avrupa’daki özgür düşüncenin yayılmasını nasıl etkilemişitir? Açıklayınız."
@@ -4897,16 +5480,16 @@
           "label": null,
           "column": 0,
           "rect": [
-            54.088,
-            56.2663,
-            512.055,
+            54.196,
+            55.6189,
+            512.8107,
             156.5264
           ],
           "parts": [
             [
-              54.088,
-              56.2663,
-              512.055,
+              54.196,
+              55.6189,
+              512.8107,
               156.5264
             ]
           ]
@@ -4928,17 +5511,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            55.8694,
-            468.0405,
-            512.9187,
-            558.8865
+            56.787,
+            467.6629,
+            511.7851,
+            558.7786
           ],
           "parts": [
             [
-              55.8694,
-              468.0405,
-              512.9187,
-              558.8865
+              56.787,
+              467.6629,
+              511.7851,
+              558.7786
             ]
           ],
           "headline": "Avrupa devletlerinin günümüzdeki ekonomik, siyasi ve kültürel politikalarını göz önünde bulundurarak, bu politikaların sömürgecilik ile benzerlik gösterip göste"
@@ -4948,20 +5531,39 @@
           "label": "2",
           "column": 0,
           "rect": [
-            54.25,
-            377.8418,
-            511.1913,
-            456.2801
+            56.1933,
+            376.9787,
+            510.3276,
+            456.5499
           ],
           "parts": [
             [
-              54.25,
-              377.8418,
-              511.1913,
-              456.2801
+              56.1933,
+              376.9787,
+              510.3276,
+              456.5499
             ]
           ],
           "headline": "Avrupalıların sömürgecilik faaliyetlerini insanların temel hak ve özgürlükler bağlamında değerlendiriniz."
+        },
+        {
+          "id": "p270-v3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            50.6925,
+            55.0795,
+            518.2474,
+            368.4368
+          ],
+          "parts": [
+            [
+              50.6925,
+              55.0795,
+              518.2474,
+              368.4368
+            ]
+          ]
         }
       ]
     },
@@ -4994,6 +5596,25 @@
             ]
           ],
           "headline": "Düşünelim Şiirleri okuyarak soruyu cevaplayınız."
+        },
+        {
+          "id": "p271-v2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            36.5156,
+            52.3282,
+            504.0675,
+            401.1769
+          ],
+          "parts": [
+            [
+              36.5156,
+              52.3282,
+              504.0675,
+              401.1769
+            ]
+          ]
         }
       ]
     },
@@ -5012,17 +5633,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            31.9022,
-            381.4399,
-            512.8107,
-            710.6382
+            27.7458,
+            319.7953,
+            514.2142,
+            710.5843
           ],
           "parts": [
             [
-              31.9022,
-              381.4399,
-              512.8107,
-              710.6382
+              27.7458,
+              319.7953,
+              514.2142,
+              710.5843
             ]
           ]
         }
@@ -5043,17 +5664,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            17.5975,
-            540.7605,
+            15.3843,
+            540.3289,
             499.0648,
-            703.1936
+            703.0318
           ],
           "parts": [
             [
-              17.5975,
-              540.7605,
+              15.3843,
+              540.3289,
               499.0648,
-              703.1936
+              703.0318
             ]
           ]
         }
@@ -5070,44 +5691,23 @@
       ],
       "activities": [
         {
-          "id": "p274-1",
-          "label": "1",
-          "column": 0,
-          "rect": [
-            33.1438,
-            642.5577,
-            513.7824,
-            702.816
-          ],
-          "parts": [
-            [
-              33.1438,
-              642.5577,
-              513.7824,
-              702.816
-            ]
-          ],
-          "headline": "Kaynak C ve Kaynak Ç’den hareketle Osmanlı Devleti’ndeki önemli isyanların hangi üç temel sorundan kay- naklandığını belirleyerek bu sorunları açıklayınız."
-        },
-        {
-          "id": "p274-2",
-          "label": "2",
+          "id": "p274-v1",
+          "label": null,
           "column": 0,
           "rect": [
             55.1137,
-            614.1278,
-            511.0834,
-            633.4407
+            618.9291,
+            511.3533,
+            633.6565
           ],
           "parts": [
             [
               55.1137,
-              614.1278,
-              511.0834,
-              633.4407
+              618.9291,
+              511.3533,
+              633.6565
             ]
-          ],
-          "headline": "Tablo 3.6 ve Kaynak D’den hareketle Osmanlı ekonomisine ilişkin hangi çıkarımlara ulaşılabilir? Açıklayınız."
+          ]
         }
       ]
     },
@@ -5126,17 +5726,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            16.4639,
-            525.7094,
-            500.4493,
-            703.7331
+            15.7082,
+            524.9541,
+            498.6679,
+            704.2725
           ],
           "parts": [
             [
-              16.4639,
-              525.7094,
-              500.4493,
-              703.7331
+              15.7082,
+              524.9541,
+              498.6679,
+              704.2725
             ]
           ]
         }
@@ -5157,17 +5757,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            18.0833,
-            511.4675,
-            498.506,
-            711.7711
+            17.5975,
+            512.0069,
+            497.7503,
+            711.4474
           ],
           "parts": [
             [
-              18.0833,
-              511.4675,
-              498.506,
-              711.7711
+              17.5975,
+              512.0069,
+              497.7503,
+              711.4474
             ]
           ]
         }
@@ -5188,17 +5788,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            32.3341,
-            465.5589,
+            31.4164,
+            465.2353,
             513.2389,
-            704.866
+            704.4883
           ],
           "parts": [
             [
-              32.3341,
-              465.5589,
+              31.4164,
+              465.2353,
               513.2389,
-              704.866
+              704.4883
             ]
           ]
         }
@@ -5219,17 +5819,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            56.6251,
-            503.7531,
-            510.3816,
-            704.3804
+            55.5455,
+            502.7821,
+            509.8958,
+            703.0857
           ],
           "parts": [
             [
-              56.6251,
-              503.7531,
-              510.3816,
-              704.3804
+              55.5455,
+              502.7821,
+              509.8958,
+              703.0857
             ]
           ],
           "headline": "Aşağıdaki uygulama adımlarını takip ederek müzakere etkinliğini yapınız. Öğretmeninizin rehberliğinde 1453-1683 yılları arasında Osmanlı Dev"
@@ -5239,17 +5839,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            55.4915,
-            253.8186,
-            510.3276,
-            452.6118
+            55.3836,
+            254.1963,
+            510.9214,
+            451.6407
           ],
           "parts": [
             [
-              55.4915,
-              253.8186,
-              510.3276,
-              452.6118
+              55.3836,
+              254.1963,
+              510.9214,
+              451.6407
             ]
           ]
         },
@@ -5258,17 +5858,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            55.8154,
-            180.8289,
-            509.7339,
-            241.2491
+            56.5711,
+            182.0697,
+            510.5975,
+            241.4649
           ],
           "parts": [
             [
-              55.8154,
-              180.8289,
-              509.7339,
-              241.2491
+              56.5711,
+              182.0697,
+              510.5975,
+              241.4649
             ]
           ],
           "headline": "Yandaki karekod üzerinden Osmanlı Devleti’nde gerçekleşen önemli isyanlarla ilgili kavram eşleştirme etkinliğini yapınız."
@@ -5279,14 +5879,14 @@
           "column": 0,
           "rect": [
             50.6893,
-            53.6768,
+            54.2163,
             516.2361,
             165.9013
           ],
           "parts": [
             [
               50.6893,
-              53.6768,
+              54.2163,
               516.2361,
               165.9013
             ]
@@ -5310,17 +5910,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            39.8373,
-            626.9132,
-            498.6507,
-            686.0925
+            41.2948,
+            626.5895,
+            498.7759,
+            686.0386
           ],
           "parts": [
             [
-              39.8373,
-              626.9132,
-              498.6507,
-              686.0925
+              41.2948,
+              626.5895,
+              498.7759,
+              686.0386
             ]
           ],
           "headline": "İncelediğiniz eserlerden hangileri Osmanlı mimarisinin abidevi eserlerine örnek gösterilebilir? Neden böyle düşündüğünüzü açıklayınız."
@@ -5330,20 +5930,39 @@
           "label": "2",
           "column": 0,
           "rect": [
-            40.3771,
+            40.647,
             537.8,
-            496.3468,
-            617.2567
+            497.6963,
+            617.6343
           ],
           "parts": [
             [
-              40.3771,
+              40.647,
               537.8,
-              496.3468,
-              617.2567
+              497.6963,
+              617.6343
             ]
           ],
           "headline": "Bu eserlerin yapılma amaçları ile günümüzdeki işlevlerini değişim ve süreklilik bağlamında açıklayınız."
+        },
+        {
+          "id": "p287-v3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            40.701,
+            55.8347,
+            499.3697,
+            526.1949
+          ],
+          "parts": [
+            [
+              40.701,
+              55.8347,
+              499.3697,
+              526.1949
+            ]
+          ]
         }
       ]
     },
@@ -5362,17 +5981,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            30.2828,
-            598.753,
-            513.0806,
-            704.812
+            31.5783,
+            599.3465,
+            513.6204,
+            704.4344
           ],
           "parts": [
             [
-              30.2828,
-              598.753,
-              513.0806,
-              704.812
+              31.5783,
+              599.3465,
+              513.6204,
+              704.4344
             ]
           ],
           "headline": "T.C. Merkez Bankası tarafından 100 Türk lirasının arka yüzüne Itri’nin portresinin basılmış olmasının neden- leri neler olabilir? Açıklayınız."
@@ -5382,17 +6001,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            54.5199,
-            484.6021,
-            512.001,
-            589.5282
+            55.8694,
+            484.3863,
+            512.4329,
+            589.9058
           ],
           "parts": [
             [
-              54.5199,
-              484.6021,
-              512.001,
-              589.5282
+              55.8694,
+              484.3863,
+              512.4329,
+              589.9058
             ]
           ],
           "headline": "Itri’nin “Segâh Bayram Tekbiri” adlı bestesinin dünyanın dört bir tarafında hâlâ okunuyor ve dinleniyor ol- masının nedenleri neler olabilir? Açıklayınız."
@@ -5434,14 +6053,14 @@
           "column": 0,
           "rect": [
             50.8546,
-            65.9767,
+            66.0846,
             518.3998,
             197.9528
           ],
           "parts": [
             [
               50.8546,
-              65.9767,
+              66.0846,
               518.3998,
               197.9528
             ]
@@ -5464,17 +6083,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            73.7908,
-            502.1887,
-            494.6734,
-            696.8819
+            74.6544,
+            500.2466,
+            493.4859,
+            696.6661
           ],
           "parts": [
             [
-              73.7908,
-              502.1887,
-              494.6734,
-              696.8819
+              74.6544,
+              500.2466,
+              493.4859,
+              696.6661
             ]
           ],
           "headline": "Kaynakları yazan veya oluşturan kişi ya da kişilerin bakış açısı kaynak veya kanıta nasıl yansımıştır?"
@@ -5485,16 +6104,16 @@
           "column": 0,
           "rect": [
             73.4021,
-            291.7431,
-            493.5398,
-            488.4323
+            291.3115,
+            491.7585,
+            486.9757
           ],
           "parts": [
             [
               73.4021,
-              291.7431,
-              493.5398,
-              488.4323
+              291.3115,
+              491.7585,
+              486.9757
             ]
           ],
           "headline": "Kaynakların yanlılık ve yanıltıcılık durumu nedir?"
@@ -5504,17 +6123,17 @@
           "label": "5",
           "column": 0,
           "rect": [
-            73.7368,
-            68.8898,
+            74.7624,
+            68.8358,
             498.1883,
-            278.5801
+            277.5012
           ],
           "parts": [
             [
-              73.7368,
-              68.8898,
+              74.7624,
+              68.8358,
               498.1883,
-              278.5801
+              277.5012
             ]
           ],
           "headline": "Bu kaynaklar çalıştığınız konuya, yazdığınız metne veya yaptığınız tartışmaya hangi katkıları sağ- lamaktadır?"
@@ -5536,16 +6155,16 @@
           "label": null,
           "column": 0,
           "rect": [
-            30.9846,
-            568.9745,
-            514.808,
+            30.1749,
+            567.7877,
+            512.2709,
             703.3555
           ],
           "parts": [
             [
-              30.9846,
-              568.9745,
-              514.808,
+              30.1749,
+              567.7877,
+              512.2709,
               703.3555
             ]
           ]
@@ -5567,17 +6186,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            41.1328,
-            598.5373,
-            496.7786,
-            679.0255
+            41.7266,
+            599.1846,
+            497.2645,
+            680.1584
           ],
           "parts": [
             [
-              41.1328,
-              598.5373,
-              496.7786,
-              679.0255
+              41.7266,
+              599.1846,
+              497.2645,
+              680.1584
             ]
           ],
           "headline": "Öğrendiklerinizden yola çıkarak Akşemseddin’in benimsediği ve hayatına yansıttığı değerleri listeleyiniz."
@@ -5587,17 +6206,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            41.5647,
-            508.5004,
-            496.7786,
-            588.665
+            41.2408,
+            506.5583,
+            497.0485,
+            588.8808
           ],
           "parts": [
             [
-              41.5647,
-              508.5004,
-              496.7786,
-              588.665
+              41.2408,
+              506.5583,
+              497.0485,
+              588.8808
             ]
           ],
           "headline": "Bu değerleri size göre en önemliden daha az önemliye doğru sıralayınız."
@@ -5607,17 +6226,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            41.2948,
-            418.4096,
-            496.9946,
-            497.7651
+            41.8346,
+            417.2768,
+            497.8043,
+            497.3874
           ],
           "parts": [
             [
-              41.2948,
-              418.4096,
-              496.9946,
-              497.7651
+              41.8346,
+              417.2768,
+              497.8043,
+              497.3874
             ]
           ],
           "headline": "Bu değerleri seçme gerekçelerinizi açıklayınız."
@@ -5639,17 +6258,60 @@
           "label": null,
           "column": 0,
           "rect": [
-            54.6818,
-            124.8,
-            511.6232,
-            240.0083
+            54.9517,
+            123.9692,
+            512.8428,
+            240.332
           ],
           "parts": [
             [
-              54.6818,
-              124.8,
-              511.6232,
-              240.0083
+              54.9517,
+              123.9692,
+              512.8428,
+              240.332
+            ]
+          ]
+        }
+      ]
+    },
+    "304": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          50.6929,
+          178.252
+        ],
+        [
+          182.252,
+          273.685
+        ],
+        [
+          277.685,
+          372.8976
+        ],
+        [
+          376.8976,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p304-v1",
+          "label": null,
+          "column": 2,
+          "rect": [
+            55.2216,
+            156.8766,
+            510.8135,
+            665.5609
+          ],
+          "parts": [
+            [
+              55.2216,
+              156.8766,
+              510.8135,
+              665.5609
             ]
           ]
         }
@@ -5666,23 +6328,24 @@
       ],
       "activities": [
         {
-          "id": "p306-v1",
-          "label": null,
+          "id": "p306-1",
+          "label": "1",
           "column": 0,
           "rect": [
-            56.4632,
-            64.7359,
-            430.1672,
-            76.8199
+            56.3012,
+            64.6819,
+            431.5167,
+            76.4423
           ],
           "parts": [
             [
-              56.4632,
-              64.7359,
-              430.1672,
-              76.8199
+              56.3012,
+              64.6819,
+              431.5167,
+              76.4423
             ]
-          ]
+          ],
+          "headline": "1.  Metinde geçen siyasi ve askerî mücadeleleri belirleyerek harita üzerinde gösteriniz."
         }
       ]
     },
@@ -5701,17 +6364,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            40.4311,
-            418.5175,
+            40.8629,
+            418.3017,
             499.0638,
-            706.3765
+            704.7581
           ],
           "parts": [
             [
-              40.4311,
-              418.5175,
+              40.8629,
+              418.3017,
               499.0638,
-              706.3765
+              704.7581
             ]
           ]
         }
@@ -5732,17 +6395,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            55.4915,
+            55.3296,
             492.748,
-            512.6488,
-            708.4804
+            513.229,
+            707.6172
           ],
           "parts": [
             [
-              55.4915,
+              55.3296,
               492.748,
-              512.6488,
-              708.4804
+              513.229,
+              707.6172
             ]
           ]
         }
@@ -5763,17 +6426,17 @@
           "label": "5",
           "column": 0,
           "rect": [
-            40.4311,
-            492.5322,
-            496.2388,
-            549.3919
+            40.8629,
+            489.6191,
+            497.4804,
+            550.0393
           ],
           "parts": [
             [
-              40.4311,
-              492.5322,
-              496.2388,
-              549.3919
+              40.8629,
+              489.6191,
+              497.4804,
+              550.0393
             ]
           ],
           "headline": "5.  Avrupalıların sömürgeci politikalarını hangi koşullar belirlemiştir? Açıklayınız."
@@ -5783,17 +6446,17 @@
           "label": "6",
           "column": 0,
           "rect": [
-            41.2408,
-            424.6674,
-            496.5087,
-            480.7719
+            41.7806,
+            421.3767,
+            497.2105,
+            480.61
           ],
           "parts": [
             [
-              41.2408,
-              424.6674,
-              496.5087,
-              480.7719
+              41.7806,
+              421.3767,
+              497.2105,
+              480.61
             ]
           ],
           "headline": "6.  Avrupalıların Güney Amerika’daki sömürge politikalarının sonuçları neler olmuştur? Açıklayınız."
@@ -5803,17 +6466,17 @@
           "label": "7",
           "column": 0,
           "rect": [
-            41.0788,
+            41.2408,
             341.266,
-            497.0485,
-            410.3716
+            497.7503,
+            409.8861
           ],
           "parts": [
             [
-              41.0788,
+              41.2408,
               341.266,
-              497.0485,
-              410.3716
+              497.7503,
+              409.8861
             ]
           ],
           "headline": "7.  Günümüzde sömürgeciliğin Güney Amerika’da devam etmekte olan etkileri nelerdir?"
@@ -5835,39 +6498,39 @@
           "label": null,
           "column": 0,
           "rect": [
-            55.7074,
-            398.1797,
+            56.0853,
+            396.6692,
             513.236,
-            525.5475
+            524.9541
           ],
           "parts": [
             [
-              55.7074,
-              398.1797,
+              56.0853,
+              396.6692,
               513.236,
-              525.5475
+              524.9541
             ]
           ]
         },
         {
-          "id": "p310-10",
-          "label": "10",
+          "id": "p310-9",
+          "label": "9",
           "column": 0,
           "rect": [
-            54.5199,
-            116.4707,
-            439.9916,
-            286.726
+            54.4119,
+            286.8339,
+            476.752,
+            389.9798
           ],
           "parts": [
             [
-              54.5199,
-              116.4707,
-              439.9916,
-              286.726
+              54.4119,
+              286.8339,
+              476.752,
+              389.9798
             ]
           ],
-          "headline": "Aşağıda XVII. yüzyılda yapılan bazı ıslahatlar verilmiştir. Sultan IV. Murad, Koçi Bey ve Kâtip Çelebi’ye layihalar yazdırdı."
+          "headline": "I. Padişahların otoritesi güçlendi."
         }
       ]
     },
@@ -5886,17 +6549,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            41.8346,
-            126.6126,
+            42.3204,
+            126.7745,
             420.186,
-            186.9788
+            186.9249
           ],
           "parts": [
             [
-              41.8346,
-              126.6126,
+              42.3204,
+              126.7745,
               420.186,
-              186.9788
+              186.9249
             ]
           ]
         },
@@ -5905,17 +6568,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            42.4823,
-            54.9176,
+            41.5647,
+            55.2413,
             420.186,
-            113.8812
+            113.9891
           ],
           "parts": [
             [
-              42.4823,
-              54.9176,
+              41.5647,
+              55.2413,
               420.186,
-              113.8812
+              113.9891
             ]
           ]
         }
@@ -5923,7 +6586,7 @@
     }
   },
   "engine": "vision",
-  "checkpoint": "46fcffa0b605e5b3ee7e46f877e50cca8f853620005585e9065ed5d81e5799c8",
+  "checkpoint": "a9a76c4979dceebed2adb9cebfad673021ed4685e05a362dd3843b781b38fab7",
   "conf": 0.7,
   "icons": "bind"
 }

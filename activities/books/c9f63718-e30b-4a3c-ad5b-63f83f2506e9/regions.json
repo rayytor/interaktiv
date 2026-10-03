@@ -3,7 +3,7 @@
   "bookId": "c9f63718-e30b-4a3c-ad5b-63f83f2506e9",
   "fingerprint": "50915781-16924e6afbee9d0c622d20b60a1c205b",
   "profile": "c7de24295a4b",
-  "builtAt": "2026-10-03T06:03:46.801Z",
+  "builtAt": "2026-10-03T08:00:19.005Z",
   "pageCount": 71,
   "calibration": {
     "enabled": true,
@@ -137,17 +137,17 @@
           "label": "a",
           "column": 0,
           "rect": [
-            44.6797,
-            610.9735,
-            268.5235,
-            735.9605
+            44.5685,
+            611.6966,
+            268.1897,
+            735.5711
           ],
           "parts": [
             [
-              44.6797,
-              610.9735,
-              268.5235,
-              735.9605
+              44.5685,
+              611.6966,
+              268.1897,
+              735.5711
             ]
           ],
           "headline": "Listen to the audio and circle the topic that is not mentioned.",
@@ -211,7 +211,7 @@
               "partIndex": 0,
               "rect": [
                 64.0337,
-                610.9735,
+                611.6966,
                 174.2937,
                 630.2181
               ],
@@ -224,17 +224,17 @@
           "label": "c",
           "column": 1,
           "rect": [
-            283.4353,
-            414.5097,
-            501.4925,
-            732.9568
+            283.0458,
+            412.2847,
+            501.3255,
+            731.3437
           ],
           "parts": [
             [
-              283.4353,
-              414.5097,
-              501.4925,
-              732.9568
+              283.0458,
+              412.2847,
+              501.3255,
+              731.3437
             ]
           ],
           "headline": "Answer the following questions according to the audio.",
@@ -247,7 +247,7 @@
               "rect": [
                 302.1411,
                 641.5,
-                501.4925,
+                501.3255,
                 704.5793
               ],
               "text": "What nationality are the people in the 1 Turkish Republic of Northern Cyprus?"
@@ -298,7 +298,7 @@
               "partIndex": 0,
               "rect": [
                 302.1418,
-                414.5097,
+                412.5,
                 496.9787,
                 462.5661
               ],
@@ -311,17 +311,17 @@
           "label": "b",
           "column": 0,
           "rect": [
-            44.9579,
-            75.0367,
-            270.5266,
-            602.2961
+            45.0692,
+            77.3173,
+            269.4138,
+            602.3518
           ],
           "parts": [
             [
-              44.9579,
-              75.0367,
-              270.5266,
-              602.2961
+              45.0692,
+              77.3173,
+              269.4138,
+              602.3518
             ]
           ],
           "headline": "Listen to the audio again and write the name of each city under the correct photo below. One is extra.",
@@ -372,17 +372,17 @@
           "label": "d",
           "column": 1,
           "rect": [
-            283.3797,
-            62.7994,
-            507.3904,
-            403.2736
+            283.9917,
+            63.9675,
+            507.3348,
+            400.5481
           ],
           "parts": [
             [
-              283.3797,
-              62.7994,
-              507.3904,
-              403.2736
+              283.9917,
+              63.9675,
+              507.3348,
+              400.5481
             ]
           ],
           "headline": "Say the words and circle the one with a different sound in each line. Then listen and check your answers.",
@@ -433,7 +433,7 @@
               "partIndex": 0,
               "rect": [
                 302.144,
-                62.7994,
+                63.9675,
                 497.6242,
                 131.8276
               ],
@@ -466,56 +466,37 @@
           "label": "e",
           "column": 0,
           "rect": [
-            58.0336,
-            201.5531,
+            58.7013,
+            201.3306,
             289.087,
-            735.2374
+            735.5155
           ],
           "parts": [
             [
-              58.0336,
-              201.5531,
+              58.7013,
+              201.3306,
               289.087,
-              735.2374
+              735.5155
             ]
           ],
           "headline": "Read the texts and complete the sentences with the correct forms of be or"
-        },
-        {
-          "id": "p12-v2",
-          "label": null,
-          "column": 2,
-          "rect": [
-            317.6545,
-            390.3689,
-            521.0224,
-            733.9024
-          ],
-          "parts": [
-            [
-              317.6545,
-              390.3689,
-              521.0224,
-              733.9024
-            ]
-          ]
         },
         {
           "id": "p12-g",
           "label": "g",
           "column": 2,
           "rect": [
-            296.8448,
-            74.9255,
-            511.8973,
-            378.5766
+            297.0674,
+            73.8686,
+            511.1183,
+            378.521
           ],
           "parts": [
             [
-              296.8448,
-              74.9255,
-              511.8973,
-              378.5766
+              297.0674,
+              73.8686,
+              511.1183,
+              378.521
             ]
           ],
           "headline": "Use to be and can to form correct sentences.",
@@ -528,7 +509,7 @@
               "rect": [
                 316.3186,
                 287.6,
-                511.1519,
+                511.1183,
                 350.6808
               ],
               "text": "famous / its / blossom / Japan / for / 1 season / ."
@@ -541,7 +522,7 @@
               "rect": [
                 316.315,
                 240.0,
-                511.1519,
+                511.1183,
                 290.1567
               ],
               "text": "Where / visit / Big Ben / I / ? 2"
@@ -554,7 +535,7 @@
               "rect": [
                 316.315,
                 192.5,
-                511.8973,
+                511.1183,
                 242.6528
               ],
               "text": "speak / My / English / brother / not / . 3"
@@ -567,7 +548,7 @@
               "rect": [
                 316.315,
                 132.0,
-                511.5052,
+                511.1183,
                 195.1488
               ],
               "text": "very / beautiful / in / The / beaches / 4 Thailand / ."
@@ -579,8 +560,8 @@
               "partIndex": 0,
               "rect": [
                 316.315,
-                74.9255,
-                511.1519,
+                73.8686,
+                511.1183,
                 134.6449
               ],
               "text": "explore / in / tourists / Brazil / the 5 rainforests / ?"
@@ -592,17 +573,17 @@
           "label": "f",
           "column": 0,
           "rect": [
-            57.9779,
-            61.7982,
+            57.8667,
+            62.0207,
             275.4787,
-            201.3031
+            201.0806
           ],
           "parts": [
             [
-              57.9779,
-              61.7982,
+              57.8667,
+              62.0207,
               275.4787,
-              201.3031
+              201.0806
             ]
           ],
           "headline": "Circle the correct option for each."
@@ -628,17 +609,17 @@
           "label": "h",
           "column": 0,
           "rect": [
-            44.9579,
-            299.2012,
-            507.8912,
-            735.8492
+            45.7369,
+            299.8131,
+            508.3363,
+            734.403
           ],
           "parts": [
             [
-              44.9579,
-              299.2012,
-              507.8912,
-              735.8492
+              45.7369,
+              299.8131,
+              508.3363,
+              734.403
             ]
           ],
           "headline": "Read the text quickly and write the name of the city under each photo below."
@@ -648,20 +629,107 @@
           "label": "i",
           "column": 0,
           "rect": [
-            43.9008,
-            61.4868,
-            508.1421,
-            291.0801
+            43.0661,
+            71.6436,
+            268.913,
+            291.3583
           ],
           "parts": [
             [
-              43.9008,
-              61.4868,
-              508.1421,
-              291.0801
+              43.0661,
+              71.6436,
+              268.913,
+              291.3583
             ]
           ],
           "headline": "Read the text to find at least three words related to each category below."
+        },
+        {
+          "id": "p13-j",
+          "label": "j",
+          "column": 1,
+          "rect": [
+            281.321,
+            61.4088,
+            507.0566,
+            289.8564
+          ],
+          "parts": [
+            [
+              281.321,
+              61.4088,
+              507.0566,
+              289.8564
+            ]
+          ],
+          "headline": "Read the text again and write True (T), False (F), or Not Mentioned (NM) for the statements below.",
+          "items": [
+            {
+              "id": "p13-j-1",
+              "label": "1",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                302.262,
+                199.8254,
+                503.1257,
+                247.2247
+              ],
+              "text": "Hazel and Emily enjoy visiting 1 different countries and exploring new places."
+            },
+            {
+              "id": "p13-j-2",
+              "label": "2",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                302.2556,
+                157.9908,
+                507.0566,
+                205.3954
+              ],
+              "text": "They are currently travelling 2 in a country that is famous for both cultural and historical places."
+            },
+            {
+              "id": "p13-j-3",
+              "label": "3",
+              "number": 3,
+              "partIndex": 0,
+              "rect": [
+                302.2556,
+                116.1561,
+                499.3456,
+                163.5608
+              ],
+              "text": "Visitors can only see modern art 3 pieces at the Tokyo National Museum."
+            },
+            {
+              "id": "p13-j-4",
+              "label": "4",
+              "number": 4,
+              "partIndex": 0,
+              "rect": [
+                302.2556,
+                87.3215,
+                495.2757,
+                121.7261
+              ],
+              "text": "Kyoto has many well-preserved 4 sites that attract visitors."
+            },
+            {
+              "id": "p13-j-5",
+              "label": "5",
+              "number": 5,
+              "partIndex": 0,
+              "rect": [
+                302.2556,
+                61.4088,
+                491.0557,
+                92.8915
+              ],
+              "text": "Next year, Hazel and Emily will 5 visit Scotland in the summer."
+            }
+          ]
         }
       ]
     },
@@ -684,17 +752,17 @@
           "label": "l",
           "column": 1,
           "rect": [
-            295.0087,
-            427.6926,
+            294.7304,
+            429.0275,
             517.5714,
-            735.738
+            736.7392
           ],
           "parts": [
             [
-              295.0087,
-              427.6926,
+              294.7304,
+              429.0275,
               517.5714,
-              735.738
+              736.7392
             ]
           ],
           "headline": "Complete the dialogue with the highlighted words and phrases in the text. One is extra.",
@@ -732,7 +800,7 @@
               "partIndex": 0,
               "rect": [
                 315.274,
-                427.6926,
+                429.0275,
                 517.5714,
                 525.6384
               ],
@@ -741,27 +809,46 @@
           ]
         },
         {
+          "id": "p14-v2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            81.7366,
+            621.7089,
+            276.8091,
+            732.1224
+          ],
+          "parts": [
+            [
+              81.7366,
+              621.7089,
+              276.8091,
+              732.1224
+            ]
+          ]
+        },
+        {
           "id": "p14-k",
           "label": "k",
           "column": 0,
           "rect": [
-            60.3705,
-            433.1993,
-            280.3194,
-            608.3591
+            60.0367,
+            433.4774,
+            281.0984,
+            609.1379
           ],
           "parts": [
             [
-              60.3705,
-              433.1993,
-              280.3194,
-              608.3591
+              60.0367,
+              433.4774,
+              281.0984,
+              609.1379
             ]
           ],
           "headline": "Put the steps in Hazel and Emily’s journey in the correct order (1–5)."
         },
         {
-          "id": "p14-v3",
+          "id": "p14-v4",
           "label": null,
           "column": 0,
           "rect": [
@@ -800,17 +887,17 @@
           "label": null,
           "column": 1,
           "rect": [
-            304.412,
-            609.1935,
-            495.8171,
-            733.2349
+            304.6345,
+            609.3048,
+            495.205,
+            733.9024
           ],
           "parts": [
             [
-              304.412,
-              609.1935,
-              495.8171,
-              733.2349
+              304.6345,
+              609.3048,
+              495.205,
+              733.9024
             ]
           ]
         },
@@ -819,17 +906,17 @@
           "label": "c",
           "column": 1,
           "rect": [
-            283.4353,
-            342.5323,
-            498.8773,
-            599.8487
+            282.5451,
+            341.1417,
+            497.8201,
+            599.5706
           ],
           "parts": [
             [
-              283.4353,
-              342.5323,
-              498.8773,
-              599.8487
+              282.5451,
+              341.1417,
+              497.8201,
+              599.5706
             ]
           ],
           "headline": "Listen to the audio again and answer the questions below.",
@@ -842,7 +929,7 @@
               "rect": [
                 302.154,
                 508.0,
-                498.8773,
+                497.8201,
                 571.094
               ],
               "text": "What does Liz do after getting out of 1 bed in the morning?"
@@ -855,7 +942,7 @@
               "rect": [
                 302.1418,
                 460.5,
-                498.8773,
+                497.8201,
                 510.579
               ],
               "text": "Who keeps her/his books in a locker? 2"
@@ -868,7 +955,7 @@
               "rect": [
                 302.1418,
                 400.0,
-                498.8773,
+                497.8201,
                 463.0751
               ],
               "text": "What does Ted sometimes do during 3 the break when he has work to do?"
@@ -880,7 +967,7 @@
               "partIndex": 0,
               "rect": [
                 302.1418,
-                342.5323,
+                341.1417,
                 496.9787,
                 402.5712
               ],
@@ -893,17 +980,17 @@
           "label": "a",
           "column": 0,
           "rect": [
-            44.3459,
-            257.0939,
-            271.0274,
-            507.5129
+            44.5685,
+            258.6514,
+            268.6905,
+            508.0692
           ],
           "parts": [
             [
-              44.3459,
-              257.0939,
-              271.0274,
-              507.5129
+              44.5685,
+              258.6514,
+              268.6905,
+              508.0692
             ]
           ],
           "headline": "Listen to the audio and match each sentence to its speaker:",
@@ -968,7 +1055,7 @@
               "rect": [
                 64.0316,
                 315.8146,
-                270.0216,
+                268.6905,
                 350.2146
               ],
               "text": "I sometimes stay in the classroom and 5 work on my tasks."
@@ -994,7 +1081,7 @@
               "rect": [
                 64.0316,
                 283.9253,
-                270.6916,
+                268.6905,
                 305.5453
               ],
               "text": "If I finish early, I watch a documentary. 7"
@@ -1006,7 +1093,7 @@
               "partIndex": 0,
               "rect": [
                 64.0316,
-                257.0939,
+                258.6514,
                 177.5916,
                 276.7107
               ],
@@ -1019,17 +1106,17 @@
           "label": "d",
           "column": 1,
           "rect": [
-            282.9346,
-            60.5745,
-            507.5017,
-            323.0083
+            283.8248,
+            60.2407,
+            507.2235,
+            322.6745
           ],
           "parts": [
             [
-              282.9346,
-              60.5745,
-              507.5017,
-              323.0083
+              283.8248,
+              60.2407,
+              507.2235,
+              322.6745
             ]
           ],
           "headline": "Listen to the audio and circle the sentences you hear."
@@ -1039,17 +1126,17 @@
           "label": "b",
           "column": 0,
           "rect": [
-            45.1249,
-            72.5893,
-            261.1233,
-            247.6378
+            44.791,
+            73.1455,
+            261.1789,
+            247.6935
           ],
           "parts": [
             [
-              45.1249,
-              72.5893,
-              261.1233,
-              247.6378
+              44.791,
+              73.1455,
+              261.1789,
+              247.6935
             ]
           ],
           "headline": "Listen to the audio again and circle the correct option to complete each sentence.",
@@ -1062,7 +1149,7 @@
               "rect": [
                 64.0337,
                 135.7926,
-                261.1233,
+                261.1789,
                 204.9019
               ],
               "text": ". When Ted arrives at school, he 1  goes straight to his classroom A  talks to some of his friends B takes his books from his locker C"
@@ -1074,7 +1161,7 @@
               "partIndex": 0,
               "rect": [
                 64.0259,
-                72.5893,
+                73.1455,
                 217.074,
                 141.5826
               ],
@@ -1103,17 +1190,17 @@
           "label": "e",
           "column": 0,
           "rect": [
-            57.7554,
-            454.3364,
-            283.667,
-            735.738
+            58.8126,
+            451.889,
+            282.3781,
+            734.848
           ],
           "parts": [
             [
-              57.7554,
-              454.3364,
-              283.667,
-              735.738
+              58.8126,
+              451.889,
+              282.3781,
+              734.848
             ]
           ],
           "headline": "Complete the sentences, using the correct form of and the words in parentheses.",
@@ -1191,7 +1278,7 @@
               "rect": [
                 78.2045,
                 529.3079,
-                283.667,
+                282.3781,
                 563.5079
               ],
               "text": "6 long to walk (not take) to school, my parents"
@@ -1216,7 +1303,7 @@
               "partIndex": 0,
               "rect": [
                 78.2045,
-                454.3364,
+                451.889,
                 278.5945,
                 498.5079
               ],
@@ -1229,17 +1316,17 @@
           "label": "f",
           "column": 0,
           "rect": [
-            57.5884,
-            58.9614,
-            283.6022,
-            437.3711
+            57.8667,
+            59.5176,
+            284.4369,
+            437.093
           ],
           "parts": [
             [
-              57.5884,
-              58.9614,
-              283.6022,
-              437.3711
+              57.8667,
+              59.5176,
+              284.4369,
+              437.093
             ]
           ],
           "headline": "Write questions according to the underlined expressions in the answers below.",
@@ -1252,7 +1339,7 @@
               "rect": [
                 78.2069,
                 309.0065,
-                283.6022,
+                284.3795,
                 390.9144
               ],
               "text": "1 A:  Alice takes English classes on B: Mondays and Wednesdays."
@@ -1265,7 +1352,7 @@
               "rect": [
                 78.2026,
                 216.8333,
-                283.6022,
+                284.3795,
                 311.7365
               ],
               "text": "2 A:  I usually help with my little B: brother’s homework after dinner on weekdays."
@@ -1278,7 +1365,7 @@
               "rect": [
                 78.2026,
                 137.6601,
-                283.6022,
+                284.3795,
                 219.5633
               ],
               "text": "3 A:  My father drives to work at least B: half an hour every day."
@@ -1290,8 +1377,8 @@
               "partIndex": 0,
               "rect": [
                 78.2126,
-                58.9614,
-                283.6022,
+                59.5176,
+                284.3795,
                 140.3901
               ],
               "text": "4 A:  Aslı meets her friends at a café B: once every two weekends."
@@ -1315,17 +1402,17 @@
           "label": "h",
           "column": 0,
           "rect": [
-            19.1405,
-            362.5013,
-            547.5632,
-            733.8468
+            15.9133,
+            355.5483,
+            547.4519,
+            732.7343
           ],
           "parts": [
             [
-              19.1405,
-              362.5013,
-              547.5632,
-              733.8468
+              15.9133,
+              355.5483,
+              547.4519,
+              732.7343
             ]
           ],
           "headline": "Read the text quickly and match the sentences to the correct person, Bora or Bartu.",
@@ -1376,7 +1463,7 @@
               "partIndex": 0,
               "rect": [
                 64.0175,
-                362.5013,
+                355.5536,
                 506.6076,
                 679.6
               ],
@@ -1392,14 +1479,14 @@
             42.012,
             51.641,
             520.092,
-            352.489
+            351.3209
           ],
           "parts": [
             [
               42.012,
               51.641,
               520.092,
-              352.489
+              351.3209
             ]
           ],
           "headline": "Read the text carefully to complete the table."
@@ -1425,17 +1512,17 @@
           "label": "j",
           "column": 0,
           "rect": [
-            56.7538,
-            418.014,
-            282.3225,
-            735.6824
+            56.8651,
+            415.9559,
+            282.4338,
+            735.3486
           ],
           "parts": [
             [
-              56.7538,
-              418.014,
-              282.3225,
-              735.6824
+              56.8651,
+              415.9559,
+              282.4338,
+              735.3486
             ]
           ],
           "headline": "Read the text again and circle the answers to the questions."
@@ -1445,17 +1532,17 @@
           "label": null,
           "column": 1,
           "rect": [
-            318.823,
-            619.2614,
-            514.6794,
-            733.068
+            318.7117,
+            619.3727,
+            516.0148,
+            733.6243
           ],
           "parts": [
             [
-              318.823,
-              619.2614,
-              514.6794,
-              733.068
+              318.7117,
+              619.3727,
+              516.0148,
+              733.6243
             ]
           ]
         },
@@ -1464,17 +1551,17 @@
           "label": "k",
           "column": 1,
           "rect": [
-            296.0658,
-            407.4454,
-            522.803,
-            613.7547
+            296.344,
+            407.3342,
+            523.6932,
+            613.1428
           ],
           "parts": [
             [
-              296.0658,
-              407.4454,
-              522.803,
-              613.7547
+              296.344,
+              407.3342,
+              523.6932,
+              613.1428
             ]
           ],
           "headline": "Complete the paragraph below with the correct forms of the words and phrases highlighted in the text. One is extra.",
@@ -1487,7 +1574,7 @@
               "rect": [
                 316.1449,
                 522.5105,
-                522.803,
+                523.6932,
                 556.7005
               ],
               "text": "1 quickly. Then I have breakfast and leave home at 7 a.m. I always"
@@ -1499,8 +1586,8 @@
               "partIndex": 0,
               "rect": [
                 316.14,
-                407.4454,
-                522.803,
+                407.3342,
+                523.6932,
                 530.7005
               ],
               "text": "2 to school because it is too 3 far from home. At school, I  carefully and listen to my teacher. After school, I often do my homework, but 4 sometimes I first. In the evening, I help my mother with th"
@@ -1547,17 +1634,17 @@
           "label": "n",
           "column": 1,
           "rect": [
-            283.1571,
-            461.0113,
-            503.156,
-            734.6811
+            283.1015,
+            460.9557,
+            502.1601,
+            735.2374
           ],
           "parts": [
             [
-              283.1571,
-              461.0113,
-              503.156,
-              734.6811
+              283.1015,
+              460.9557,
+              502.1601,
+              735.2374
             ]
           ],
           "headline": "Tick ( ✓ ) the ones that you do before an exam week.",
@@ -1700,7 +1787,7 @@
               "rect": [
                 302.1429,
                 487.9614,
-                503.156,
+                502.1601,
                 535.366
               ],
               "text": "Try to memorise everything and 11 stay up too late the day before an exam."
@@ -1712,8 +1799,8 @@
               "partIndex": 0,
               "rect": [
                 302.1329,
-                461.0113,
-                503.156,
+                460.9557,
+                502.1601,
                 493.5314
               ],
               "text": "Study for the exam earlier and call 12 it a day before getting too tired."
@@ -1727,15 +1814,15 @@
           "rect": [
             272.0179,
             44.0,
-            561.084,
-            454.9483
+            561.9742,
+            455.727
           ],
           "parts": [
             [
               272.0179,
               44.0,
-              561.084,
-              454.9483
+              561.9742,
+              455.727
             ]
           ],
           "headline": "Write a short paragraph about your study habits and how you prepare for exams. In your paragraph, include the activities you ticked in use the words and phrases"
@@ -1761,17 +1848,17 @@
           "label": "d",
           "column": 1,
           "rect": [
-            284.2143,
-            484.5959,
-            501.9996,
-            735.293
+            284.1587,
+            491.1595,
+            500.5466,
+            735.4599
           ],
           "parts": [
             [
-              284.2143,
-              484.5959,
-              501.9996,
-              735.293
+              284.1587,
+              491.1595,
+              500.5466,
+              735.4599
             ]
           ],
           "headline": "Answer the questions below according to the audio.",
@@ -1784,7 +1871,7 @@
               "rect": [
                 302.1396,
                 672.3054,
-                500.8498,
+                500.5466,
                 706.7054
               ],
               "text": "Why does Merve thank people in her 1 environment?"
@@ -1848,15 +1935,15 @@
           "label": "a",
           "column": 0,
           "rect": [
-            45.3474,
-            352.0024,
+            43.9008,
+            355.1864,
             275.9869,
             734.4586
           ],
           "parts": [
             [
-              45.3474,
-              352.0024,
+              43.9008,
+              355.1864,
               275.9869,
               734.4586
             ]
@@ -1896,17 +1983,17 @@
           "label": "e",
           "column": 1,
           "rect": [
-            282.2669,
-            249.974,
-            508.0581,
-            475.1398
+            283.2128,
+            251.0309,
+            507.2791,
+            474.8617
           ],
           "parts": [
             [
-              282.2669,
-              249.974,
-              508.0581,
-              475.1398
+              283.2128,
+              251.0309,
+              507.2791,
+              474.8617
             ]
           ],
           "headline": "Listen to the audio and read the sentences aloud, paying attention to the words with the letters in bold."
@@ -1916,103 +2003,60 @@
           "label": "b",
           "column": 0,
           "rect": [
+            44.012,
+            304.8749,
+            269.3025,
+            354.9364
+          ],
+          "parts": [
+            [
+              44.012,
+              304.8749,
+              269.3025,
+              354.9364
+            ]
+          ],
+          "headline": "Listen to the audio and write the names of the people in Exercise a"
+        },
+        {
+          "id": "p23-c",
+          "label": "c",
+          "column": 0,
+          "rect": [
             43.804,
             51.659,
             278.524,
-            351.154
+            298.5556
           ],
           "parts": [
             [
               43.804,
               51.659,
               278.524,
-              351.154
+              298.5556
             ]
           ],
-          "headline": "Listen to the audio and write the names of the people in Exercise a"
+          "headline": "Listen to the audio again and complete the table."
         },
         {
           "id": "p23-f",
           "label": "f",
           "column": 1,
           "rect": [
-            281.8217,
+            282.5451,
             47.947,
             516.119,
-            245.3016
+            244.2448
           ],
           "parts": [
             [
-              281.8217,
+              282.5451,
               47.947,
               516.119,
-              245.3016
+              244.2448
             ]
           ],
           "headline": "Write the similarly pronounced words you have learnt for this theme in the correct category."
-        }
-      ]
-    },
-    "24": {
-      "pageWidth": 569.764,
-      "pageHeight": 796.535,
-      "columns": [
-        [
-          59.1969,
-          167.2847
-        ],
-        [
-          171.2847,
-          293.3071
-        ],
-        [
-          297.3071,
-          389.6582
-        ],
-        [
-          393.6582,
-          545.764
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p24-v1",
-          "label": null,
-          "column": 3,
-          "rect": [
-            302.242,
-            487.975,
-            520.805,
-            738.895
-          ],
-          "parts": [
-            [
-              302.242,
-              487.975,
-              520.805,
-              738.895
-            ]
-          ]
-        },
-        {
-          "id": "p24-h",
-          "label": "h",
-          "column": 2,
-          "rect": [
-            295.0643,
-            63.1888,
-            521.1337,
-            476.9754
-          ],
-          "parts": [
-            [
-              295.0643,
-              63.1888,
-              521.1337,
-              476.9754
-            ]
-          ],
-          "headline": "Read the paragraphs about three students who prepare for their school’s talent show. Complete each paragraph, using given in parentheses."
         }
       ]
     },
@@ -2035,20 +2079,20 @@
           "label": "i",
           "column": 0,
           "rect": [
-            43.3443,
-            488.029,
+            46.5715,
+            489.407,
             516.356,
-            735.0149
+            732.2337
           ],
           "parts": [
             [
-              43.3443,
-              488.029,
+              46.5715,
+              489.407,
               516.356,
-              735.0149
+              732.2337
             ]
           ],
-          "headline": "Look at the photos below and write sentences to describe each of the person’s physical appearance."
+          "headline": "appearance."
         },
         {
           "id": "p25-j",
@@ -2058,14 +2102,14 @@
             25.572,
             13.005,
             552.252,
-            487.779
+            489.157
           ],
           "parts": [
             [
               25.572,
               13.005,
               552.252,
-              487.779
+              489.157
             ]
           ],
           "headline": "Read the text quickly and circle the best title."
@@ -2099,17 +2143,17 @@
           "label": "k",
           "column": 0,
           "rect": [
-            58.2561,
-            607.636,
+            58.9795,
+            607.9698,
             281.8113,
-            735.5711
+            735.738
           ],
           "parts": [
             [
-              58.2561,
-              607.636,
+              58.9795,
+              607.9698,
               281.8113,
-              735.5711
+              735.738
             ]
           ],
           "headline": "Read the text quickly again and tick ( ✓ ) the topics that are mentioned.",
@@ -2186,7 +2230,7 @@
               "partIndex": 0,
               "rect": [
                 78.5602,
-                607.636,
+                607.9698,
                 137.7602,
                 627.5393
               ],
@@ -2195,21 +2239,95 @@
           ]
         },
         {
+          "id": "p26-m",
+          "label": "m",
+          "column": 2,
+          "rect": [
+            298.0133,
+            391.2589,
+            519.5952,
+            701.3624
+          ],
+          "parts": [
+            [
+              298.0133,
+              391.2589,
+              519.5952,
+              701.3624
+            ]
+          ],
+          "headline": "Read the text again and answer the following questions.",
+          "items": [
+            {
+              "id": "p26-m-1",
+              "label": "1",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                316.3101,
+                605.9,
+                511.1519,
+                671.8876
+              ],
+              "text": "What makes Sandra stand out? 1"
+            },
+            {
+              "id": "p26-m-2",
+              "label": "2",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                316.315,
+                529.6,
+                519.5952,
+                608.5447
+              ],
+              "text": "Why does Stefan not match the typical 2 celebrity image?"
+            },
+            {
+              "id": "p26-m-3",
+              "label": "3",
+              "number": 3,
+              "partIndex": 0,
+              "rect": [
+                316.315,
+                466.3,
+                515.4751,
+                532.2061
+              ],
+              "text": "How does Diallo help his community? 3"
+            },
+            {
+              "id": "p26-m-4",
+              "label": "4",
+              "number": 4,
+              "partIndex": 0,
+              "rect": [
+                316.315,
+                391.2589,
+                511.1519,
+                468.8675
+              ],
+              "text": "What personality traits does Diallo 4 have?"
+            }
+          ]
+        },
+        {
           "id": "p26-l",
           "label": "l",
           "column": 0,
           "rect": [
-            56.7538,
-            359.9982,
-            282.9346,
-            603.9092
+            57.4215,
+            359.8313,
+            282.6007,
+            602.6855
           ],
           "parts": [
             [
-              56.7538,
-              359.9982,
-              282.9346,
-              603.9092
+              57.4215,
+              359.8313,
+              282.6007,
+              602.6855
             ]
           ],
           "headline": "Complete the sentences below, using the words about personality in the text.",
@@ -2235,7 +2353,7 @@
               "rect": [
                 78.1996,
                 484.8061,
-                282.9346,
+                282.6007,
                 519.2108
               ],
               "text": "Stefan is ; he does not talk 2 much in social settings."
@@ -2248,7 +2366,7 @@
               "rect": [
                 78.2074,
                 455.9715,
-                282.9346,
+                282.6007,
                 490.3761
               ],
               "text": "Diallo is , as feels sure 3 about his own ability to do things well."
@@ -2274,7 +2392,7 @@
               "rect": [
                 78.1996,
                 385.3022,
-                282.9346,
+                282.6007,
                 419.7069
               ],
               "text": "Stefan is ; he feels nervous 5 when he speaks in front of a crowd."
@@ -2286,12 +2404,31 @@
               "partIndex": 0,
               "rect": [
                 78.1998,
-                359.9982,
-                282.9346,
+                359.8313,
+                282.6007,
                 390.8722
               ],
               "text": "Diallo is since he regularly 6 donates large amounts of money."
             }
+          ]
+        },
+        {
+          "id": "p26-v4",
+          "label": null,
+          "column": 2,
+          "rect": [
+            8.504,
+            17.007,
+            550.63,
+            349.033
+          ],
+          "parts": [
+            [
+              8.504,
+              17.007,
+              550.63,
+              349.033
+            ]
           ]
         }
       ]
@@ -2315,17 +2452,17 @@
           "label": "p",
           "column": 1,
           "rect": [
-            283.324,
+            283.9361,
             464.4,
-            507.2791,
-            734.0693
+            507.0566,
+            733.7912
           ],
           "parts": [
             [
-              283.324,
+              283.9361,
               464.4,
-              507.2791,
-              734.0693
+              507.0566,
+              733.7912
             ]
           ],
           "headline": "Read the situations below and match them to the statements in A friend of yours comes up with an",
@@ -2338,7 +2475,7 @@
               "rect": [
                 302.1441,
                 646.4,
-                507.2791,
+                507.0566,
                 706.7099
               ],
               "text": "A friend of yours comes up with an 1 idea, and you think it is exciting. You say:"
@@ -2351,7 +2488,7 @@
               "rect": [
                 302.1418,
                 588.8,
-                507.2791,
+                507.0566,
                 649.0386
               ],
               "text": "You have a classmate who always 2 feeds stray cats on the way to school. You talk about her/him and say:"
@@ -2364,7 +2501,7 @@
               "rect": [
                 302.1418,
                 531.1,
-                507.2791,
+                507.0566,
                 591.3693
               ],
               "text": "Your sister has a new hairstyle, and 3 you want to compliment her. You say:"
@@ -2377,7 +2514,7 @@
               "rect": [
                 302.1418,
                 464.4,
-                507.2791,
+                507.0566,
                 533.6999
               ],
               "text": "Your friend’s brother wants to watch 4 a horror film with you. You think he is not old enough to watch it. You say:"
@@ -2389,17 +2526,17 @@
           "label": "o",
           "column": 0,
           "rect": [
-            44.3459,
-            79.1529,
-            266.1866,
-            519.3608
+            44.5128,
+            80.7104,
+            266.9511,
+            518.0259
           ],
           "parts": [
             [
-              44.3459,
-              79.1529,
-              266.1866,
-              519.3608
+              44.5128,
+              80.7104,
+              266.9511,
+              518.0259
             ]
           ],
           "headline": "Complete the dialogue with the statements below. One is extra.",
@@ -2450,8 +2587,8 @@
               "partIndex": 0,
               "rect": [
                 64.0337,
-                79.8999,
-                266.1866,
+                80.7104,
+                266.9511,
                 442.8358
               ],
               "text": "What a good person! d 1 Hey, Lance! Jada: Thanks, Jada! Do you like my new Lance: sweatshirt? Yes, it looks great on you! By the Jada: way, do you know Marsha? Yes, I do. She is in my chess club. Lanc"
@@ -2463,17 +2600,17 @@
           "label": "q",
           "column": 1,
           "rect": [
-            282.6563,
-            130.0488,
-            505.5542,
-            457.062
+            283.8248,
+            130.3825,
+            504.664,
+            456.9508
           ],
           "parts": [
             [
-              282.6563,
-              130.0488,
-              505.5542,
-              457.062
+              283.8248,
+              130.3825,
+              504.664,
+              456.9508
             ]
           ],
           "headline": "Imagine that the girl in the photo is a new student in your class. Take notes about her appearance and imaginary personality."
@@ -2483,17 +2620,17 @@
           "label": "r",
           "column": 1,
           "rect": [
-            281.7661,
-            60.7414,
-            508.1641,
-            117.6447
+            281.5992,
+            61.1863,
+            506.6671,
+            117.2553
           ],
           "parts": [
             [
-              281.7661,
-              60.7414,
-              508.1641,
-              117.6447
+              281.5992,
+              61.1863,
+              506.6671,
+              117.2553
             ]
           ],
           "headline": "Write a short dialogue in your notebook to describe your new classmate in Exercise q language structures in"
@@ -2515,40 +2652,21 @@
       ],
       "activities": [
         {
-          "id": "p29-v1",
-          "label": null,
-          "column": 1,
-          "rect": [
-            305.024,
-            632.8337,
-            506.2939,
-            732.7343
-          ],
-          "parts": [
-            [
-              305.024,
-              632.8337,
-              506.2939,
-              732.7343
-            ]
-          ]
-        },
-        {
           "id": "p29-a",
           "label": "a",
           "column": 0,
           "rect": [
-            45.3474,
-            225.1933,
+            44.9579,
+            225.527,
             279.3701,
-            582.3271
+            582.1046
           ],
           "parts": [
             [
-              45.3474,
-              225.1933,
+              44.9579,
+              225.527,
               279.3701,
-              582.3271
+              582.1046
             ]
           ],
           "headline": "Listen to the audio and complete the missing information in Lara’s project.",
@@ -2686,21 +2804,21 @@
           ]
         },
         {
-          "id": "p29-v3",
+          "id": "p29-v2",
           "label": null,
           "column": 1,
           "rect": [
-            304.9684,
-            460.0101,
-            490.0538,
-            549.7315
+            305.803,
+            459.8432,
+            488.7507,
+            549.3421
           ],
           "parts": [
             [
-              304.9684,
-              460.0101,
-              490.0538,
-              549.7315
+              305.803,
+              459.8432,
+              488.7507,
+              549.3421
             ]
           ]
         },
@@ -2709,37 +2827,37 @@
           "label": "c",
           "column": 1,
           "rect": [
-            282.2112,
-            289.467,
-            507.3904,
-            450.6096
+            281.7661,
+            291.8589,
+            506.7227,
+            450.0534
           ],
           "parts": [
             [
-              282.2112,
-              289.467,
-              507.3904,
-              450.6096
+              281.7661,
+              291.8589,
+              506.7227,
+              450.0534
             ]
           ],
           "headline": "Listen to the tongue twisters, focusing on the letters in bold."
         },
         {
-          "id": "p29-v5",
+          "id": "p29-v4",
           "label": null,
           "column": 1,
           "rect": [
-            282.4894,
-            149.6841,
+            282.9902,
+            149.5728,
             502.714,
-            282.3472
+            282.514
           ],
           "parts": [
             [
-              282.4894,
-              149.6841,
+              282.9902,
+              149.5728,
               502.714,
-              282.3472
+              282.514
             ]
           ]
         },
@@ -2748,17 +2866,17 @@
           "label": "b",
           "column": 0,
           "rect": [
-            44.2902,
-            60.2407,
-            269.4138,
-            224.9433
+            43.8451,
+            61.8538,
+            269.0243,
+            225.277
           ],
           "parts": [
             [
-              44.2902,
-              60.2407,
-              269.4138,
-              224.9433
+              43.8451,
+              61.8538,
+              269.0243,
+              225.277
             ]
           ],
           "headline": "Listen to the audio again and circle the correct option for each."
@@ -2784,17 +2902,17 @@
           "label": "f",
           "column": 1,
           "rect": [
-            298.0133,
-            447.9397,
+            298.681,
+            446.6603,
             518.957,
-            736.5167
+            735.3486
           ],
           "parts": [
             [
-              298.0133,
-              447.9397,
+              298.681,
+              446.6603,
               518.957,
-              736.5167
+              735.3486
             ]
           ],
           "headline": "Circle the correct preposition in each sentence.",
@@ -2897,7 +3015,7 @@
               "partIndex": 0,
               "rect": [
                 319.1569,
-                447.9397,
+                446.6603,
                 518.957,
                 478.897
               ],
@@ -2910,17 +3028,17 @@
           "label": "g",
           "column": 1,
           "rect": [
-            298.9592,
-            164.2575,
-            518.2404,
-            434.6456
+            299.8494,
+            161.9769,
+            519.2493,
+            433.3106
           ],
           "parts": [
             [
-              298.9592,
-              164.2575,
-              518.2404,
-              434.6456
+              299.8494,
+              161.9769,
+              519.2493,
+              433.3106
             ]
           ],
           "headline": "Complete each sentence below, using a correct preposition and a suitable workplace as in the example.",
@@ -2984,8 +3102,8 @@
               "partIndex": 0,
               "rect": [
                 319.1492,
-                164.2575,
-                518.2404,
+                161.9769,
+                519.2493,
                 204.3976
               ],
               "text": "Anna is a content creator. She spends 5 a lot of her time creating videos ."
@@ -3013,17 +3131,17 @@
           "label": "i",
           "column": 0,
           "rect": [
-            43.4,
-            60.5745,
-            424.0958,
-            144.3998
+            43.9564,
+            60.5189,
+            424.7635,
+            143.7879
           ],
           "parts": [
             [
-              43.4,
-              60.5745,
-              424.0958,
-              144.3998
+              43.9564,
+              60.5189,
+              424.7635,
+              143.7879
             ]
           ],
           "headline": "Read the texts quickly again and circle the topic that is not mentioned.",
@@ -3074,7 +3192,7 @@
               "partIndex": 0,
               "rect": [
                 64.0337,
-                60.5745,
+                60.5189,
                 323.7637,
                 79.6824
               ],
@@ -3099,7 +3217,47 @@
       ],
       "activities": [
         {
-          "id": "p32-v1",
+          "id": "p32-k",
+          "label": "k",
+          "column": 1,
+          "rect": [
+            297.0674,
+            424.967,
+            519.5191,
+            735.738
+          ],
+          "parts": [
+            [
+              297.0674,
+              424.967,
+              519.5191,
+              735.738
+            ]
+          ],
+          "headline": "Match the highlighted words and phrases in the texts to the definitions below. One is extra."
+        },
+        {
+          "id": "p32-j",
+          "label": "j",
+          "column": 0,
+          "rect": [
+            57.1433,
+            414.5097,
+            284.9376,
+            735.293
+          ],
+          "parts": [
+            [
+              57.1433,
+              414.5097,
+              284.9376,
+              735.293
+            ]
+          ],
+          "headline": "Read the texts carefully and answer the questions below."
+        },
+        {
+          "id": "p32-v3",
           "label": null,
           "column": 0,
           "rect": [
@@ -3134,40 +3292,21 @@
       ],
       "activities": [
         {
-          "id": "p33-v1",
-          "label": null,
-          "column": 1,
-          "rect": [
-            300.684,
-            572.0923,
-            500.7612,
-            730.3981
-          ],
-          "parts": [
-            [
-              300.684,
-              572.0923,
-              500.7612,
-              730.3981
-            ]
-          ]
-        },
-        {
           "id": "p33-m",
           "label": "m",
           "column": 0,
           "rect": [
-            48.0182,
-            46.6685,
+            47.3505,
+            47.7253,
             270.0642,
-            578.9897
+            577.766
           ],
           "parts": [
             [
-              48.0182,
-              46.6685,
+              47.3505,
+              47.7253,
               270.0642,
-              578.9897
+              577.766
             ]
           ],
           "headline": "Complete the dialogue with the expressions given below. One is extra.",
@@ -3218,7 +3357,7 @@
               "partIndex": 0,
               "rect": [
                 62.1611,
-                46.6685,
+                47.7253,
                 270.0642,
                 501.8944
               ],
@@ -3231,20 +3370,20 @@
           "label": "n",
           "column": 1,
           "rect": [
-            272.3367,
-            44.0,
-            564.3112,
-            559.0207
+            282.6007,
+            43.7204,
+            565.6465,
+            559.6882
           ],
           "parts": [
             [
-              272.3367,
-              44.0,
-              564.3112,
-              559.0207
+              282.6007,
+              43.7204,
+              565.6465,
+              559.6882
             ]
           ],
-          "headline": "learnt throughout this theme and write a short paragraph to compare them."
+          "headline": "Choose two different jobs you have learnt throughout this theme and write a short paragraph to compare them."
         }
       ]
     },
@@ -3267,17 +3406,17 @@
           "label": "a",
           "column": 0,
           "rect": [
-            44.6241,
-            640.2873,
-            267.9671,
-            736.0717
+            45.1805,
+            640.7879,
+            268.4679,
+            735.4599
           ],
           "parts": [
             [
-              44.6241,
-              640.2873,
-              267.9671,
-              736.0717
+              45.1805,
+              640.7879,
+              268.4679,
+              735.4599
             ]
           ],
           "headline": "Listen to the audio and circle what it is about.",
@@ -3328,7 +3467,7 @@
               "partIndex": 0,
               "rect": [
                 64.0337,
-                640.2873,
+                640.7879,
                 184.1937,
                 659.2172
               ],
@@ -3341,17 +3480,17 @@
           "label": null,
           "column": 1,
           "rect": [
-            303.9669,
+            304.4676,
             618.149,
-            500.8804,
-            732.4006
+            501.2142,
+            733.068
           ],
           "parts": [
             [
-              303.9669,
+              304.4676,
               618.149,
-              500.8804,
-              732.4006
+              501.2142,
+              733.068
             ]
           ]
         },
@@ -3360,17 +3499,17 @@
           "label": "b",
           "column": 0,
           "rect": [
-            43.6226,
-            450.7209,
-            263.6828,
-            634.9474
+            44.4015,
+            450.3871,
+            262.6256,
+            634.5024
           ],
           "parts": [
             [
-              43.6226,
-              450.7209,
-              263.6828,
-              634.9474
+              44.4015,
+              450.3871,
+              262.6256,
+              634.5024
             ]
           ],
           "headline": "Listen to the audio again to complete the sentences below.",
@@ -3383,7 +3522,7 @@
               "rect": [
                 64.0337,
                 558.3101,
-                263.6828,
+                262.6256,
                 605.7094
               ],
               "text": "The living room has a(n) 1 , an armchair, a coffee table, and a TV stand."
@@ -3421,7 +3560,7 @@
               "partIndex": 0,
               "rect": [
                 64.0342,
-                450.7209,
+                450.3871,
                 261.3244,
                 493.2108
               ],
@@ -3437,14 +3576,14 @@
             281.678,
             280.715,
             515.318,
-            612.3084
+            612.9203
           ],
           "parts": [
             [
               281.678,
               280.715,
               515.318,
-              612.3084
+              612.9203
             ]
           ],
           "headline": "Put the words in the correct category. Then listen and check your answers."
@@ -3454,17 +3593,17 @@
           "label": "c",
           "column": 0,
           "rect": [
-            45.1805,
-            94.3938,
-            266.7304,
-            440.9867
+            44.791,
+            93.3926,
+            266.0753,
+            443.601
           ],
           "parts": [
             [
-              45.1805,
-              94.3938,
-              266.7304,
-              440.9867
+              44.791,
+              93.3926,
+              266.0753,
+              443.601
             ]
           ],
           "headline": "Listen to the audio again to choose the correct answer for each question.",
@@ -3490,7 +3629,7 @@
               "rect": [
                 64.0304,
                 197.8462,
-                266.7304,
+                266.0753,
                 334.5662
               ],
               "text": "Which of the following is true? 2  There is a small dining room in the A flat.  The kitchen has space for a dining B table. The dining room is next to the C kitchen.  The flat has a separate dining D "
@@ -3502,7 +3641,7 @@
               "partIndex": 0,
               "rect": [
                 64.0304,
-                94.3938,
+                93.3926,
                 261.3004,
                 203.4162
               ],
@@ -3515,17 +3654,17 @@
           "label": null,
           "column": 1,
           "rect": [
-            281.9887,
-            92.9476,
-            506.8896,
-            274.1705
+            282.5451,
+            93.8932,
+            506.834,
+            273.3361
           ],
           "parts": [
             [
-              281.9887,
-              92.9476,
-              506.8896,
-              274.1705
+              282.5451,
+              93.8932,
+              506.834,
+              273.3361
             ]
           ]
         }
@@ -3554,17 +3693,17 @@
           "label": "g",
           "column": 2,
           "rect": [
-            296.7892,
-            305.3755,
-            506.7227,
-            735.6267
+            297.3456,
+            310.1035,
+            507.8912,
+            733.958
           ],
           "parts": [
             [
-              296.7892,
-              305.3755,
-              506.7227,
-              735.6267
+              297.3456,
+              310.1035,
+              507.8912,
+              733.958
             ]
           ],
           "headline": "Circle the correct option for each.",
@@ -3577,7 +3716,7 @@
               "rect": [
                 316.3169,
                 621.7678,
-                506.7227,
+                507.8912,
                 719.7072
               ],
               "text": "in a flat, but he My brother 1 to move to a penthouse.  live / want A  lives / wants B is living / wants C  is living / want D"
@@ -3603,7 +3742,7 @@
               "rect": [
                 316.3086,
                 411.4214,
-                506.7227,
+                507.8912,
                 522.3846
               ],
               "text": "The Morgans dinner on the 3 terrace right now, but they usually it in the kitchen.  are having / are having A  have / have B have / are having C  are having / have D"
@@ -3615,8 +3754,8 @@
               "partIndex": 0,
               "rect": [
                 316.3086,
-                306.2483,
-                506.7227,
+                310.1035,
+                507.232,
                 419.7
               ],
               "text": "At the moment, the cat on 4 the sofa, and the dog near the door.  sleeps / is relaxing A  sleeps / relaxes B is sleeping / is relaxing C  is sleeping / relaxes D"
@@ -3628,17 +3767,17 @@
           "label": "h",
           "column": 2,
           "rect": [
-            296.6779,
-            124.7645,
-            517.7396,
-            301.5931
+            297.1787,
+            124.097,
+            517.3501,
+            301.5374
           ],
           "parts": [
             [
-              296.6779,
-              124.7645,
-              517.7396,
-              301.5931
+              297.1787,
+              124.097,
+              517.3501,
+              301.5374
             ]
           ],
           "headline": "Underline and correct the mistakes in the sentences below.",
@@ -3651,7 +3790,7 @@
               "rect": [
                 316.3224,
                 237.1382,
-                517.7396,
+                517.3501,
                 271.5382
               ],
               "text": "He lives with she parents in a terraced 1 house."
@@ -3677,7 +3816,7 @@
               "rect": [
                 316.315,
                 179.4518,
-                517.7396,
+                517.3501,
                 213.8518
               ],
               "text": "My sister is playing with his toys in the 3 garden."
@@ -3690,7 +3829,7 @@
               "rect": [
                 316.315,
                 150.6172,
-                517.7396,
+                517.3501,
                 185.0172
               ],
               "text": "The cat is sleeping on their bed, not in 4 its basket."
@@ -3702,7 +3841,7 @@
               "partIndex": 0,
               "rect": [
                 316.315,
-                124.7645,
+                124.097,
                 514.2951,
                 156.1825
               ],
@@ -3731,17 +3870,17 @@
           "label": "j",
           "column": 0,
           "rect": [
-            44.2346,
-            190.4008,
-            522.1353,
-            344.0898
+            43.6782,
+            190.6789,
+            520.466,
+            344.4791
           ],
           "parts": [
             [
-              44.2346,
-              190.4008,
-              522.1353,
-              344.0898
+              43.6782,
+              190.6789,
+              520.466,
+              344.4791
             ]
           ],
           "headline": "Read the text quickly again and write the names of the houses in the photos below.",
@@ -3766,17 +3905,17 @@
           "label": "k",
           "column": 0,
           "rect": [
-            47.0167,
-            61.242,
-            509.0596,
-            178.9979
+            45.9038,
+            61.2976,
+            507.3904,
+            177.9966
           ],
           "parts": [
             [
-              47.0167,
-              61.242,
-              509.0596,
-              178.9979
+              45.9038,
+              61.2976,
+              507.3904,
+              177.9966
             ]
           ],
           "headline": "Read the text carefully and write True (T), False (F), or Not Mentioned (NM) for the statements below.",
@@ -3789,7 +3928,7 @@
               "rect": [
                 65.0037,
                 117.1104,
-                508.4845,
+                507.3904,
                 151.5111
               ],
               "text": "yurt hanoks A has thick fabric walls that People in sleep on low beds 4 1 help with temperature. with cushions."
@@ -3802,7 +3941,7 @@
               "rect": [
                 64.9984,
                 88.2758,
-                509.0596,
+                507.3904,
                 122.6804
               ],
               "text": "Yurts  have more than one room People rarely use reeds and mud to 2 5 mudhifs with colourful carpets. build ."
@@ -3814,7 +3953,7 @@
               "partIndex": 0,
               "rect": [
                 64.9984,
-                61.242,
+                61.2976,
                 506.5845,
                 93.8458
               ],
@@ -3839,69 +3978,21 @@
       ],
       "activities": [
         {
-          "id": "p38-l",
-          "label": "l",
-          "column": 0,
-          "rect": [
-            56.8095,
-            476.5304,
-            283.9361,
-            735.7936
-          ],
-          "parts": [
-            [
-              56.8095,
-              476.5304,
-              283.9361,
-              735.7936
-            ]
-          ],
-          "headline": "Read the text again and answer the questions below.",
-          "items": [
-            {
-              "id": "p38-l-1",
-              "label": "1",
-              "number": 1,
-              "partIndex": 0,
-              "rect": [
-                78.2069,
-                656.6,
-                283.9361,
-                706.7072
-              ],
-              "text": "yurts Which countries often use ? 1"
-            },
-            {
-              "id": "p38-l-2",
-              "label": "2",
-              "number": 2,
-              "partIndex": 0,
-              "rect": [
-                78.2047,
-                476.5304,
-                283.9361,
-                659.2039
-              ],
-              "text": "Where do people sit when they eat in 2 yurt a ? What natural materials do people use 3 hanok to build a ? mudhif Why is a a good house type for 4 hot weather?"
-            }
-          ]
-        },
-        {
           "id": "p38-m",
           "label": "m",
           "column": 1,
           "rect": [
-            298.4584,
-            431.6975,
+            298.514,
+            431.7531,
             516.543,
-            735.3486
+            735.6824
           ],
           "parts": [
             [
-              298.4584,
-              431.6975,
+              298.514,
+              431.7531,
               516.543,
-              735.3486
+              735.6824
             ]
           ],
           "headline": "Complete the dialogue with the highlighted words in the text. One is extra.",
@@ -3939,11 +4030,59 @@
               "partIndex": 0,
               "rect": [
                 316.533,
-                431.6975,
+                431.7531,
                 516.543,
                 546.8027
               ],
               "text": "3  I want a wooden with Elif: plants and a table for tea. Perfect! For the kitchen, we need Dan: 4 a big to keep all the food and plates. 5  And maybe a large  Elif: so we can invite our friends over "
+            }
+          ]
+        },
+        {
+          "id": "p38-l",
+          "label": "l",
+          "column": 0,
+          "rect": [
+            57.4215,
+            475.4179,
+            283.4353,
+            735.293
+          ],
+          "parts": [
+            [
+              57.4215,
+              475.4179,
+              283.4353,
+              735.293
+            ]
+          ],
+          "headline": "Read the text again and answer the questions below.",
+          "items": [
+            {
+              "id": "p38-l-1",
+              "label": "1",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                78.2069,
+                656.6,
+                283.4353,
+                706.7072
+              ],
+              "text": "yurts Which countries often use ? 1"
+            },
+            {
+              "id": "p38-l-2",
+              "label": "2",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                78.2047,
+                475.4179,
+                283.4353,
+                659.2039
+              ],
+              "text": "Where do people sit when they eat in 2 yurt a ? What natural materials do people use 3 hanok to build a ? mudhif Why is a a good house type for 4 hot weather?"
             }
           ]
         },
@@ -3987,17 +4126,17 @@
           "label": "o",
           "column": 0,
           "rect": [
-            44.9579,
-            59.1839,
-            269.6364,
-            575.541
+            45.6813,
+            57.5152,
+            270.5822,
+            574.5398
           ],
           "parts": [
             [
-              44.9579,
-              59.1839,
-              269.6364,
-              575.541
+              45.6813,
+              57.5152,
+              270.5822,
+              574.5398
             ]
           ],
           "headline": "Read the dialogue and complete it with the given expressions below. One is extra.",
@@ -4061,8 +4200,8 @@
               "partIndex": 0,
               "rect": [
                 63.524,
-                59.1839,
-                269.6364,
+                58.9151,
+                270.5822,
                 472.511
               ],
               "text": "as safe as houses e  Could you please hold the bags? I’ll Nehir: unlock the door.  Sure, it was a tiring day. For a June: while, I thought the meeting would never finish.  Yeah! Don’t worry. We’ll hav"
@@ -4090,17 +4229,17 @@
           "label": null,
           "column": 1,
           "rect": [
-            304.1894,
-            596.2331,
-            498.0984,
-            732.6787
+            304.2451,
+            596.0663,
+            499.1555,
+            733.2349
           ],
           "parts": [
             [
-              304.1894,
-              596.2331,
-              498.0984,
-              732.6787
+              304.2451,
+              596.0663,
+              499.1555,
+              733.2349
             ]
           ]
         },
@@ -4109,17 +4248,17 @@
           "label": "c",
           "column": 1,
           "rect": [
-            282.1556,
-            321.8958,
-            507.9468,
-            589.2245
+            282.8789,
+            323.5645,
+            506.1663,
+            590.3926
           ],
           "parts": [
             [
-              282.1556,
-              321.8958,
-              507.9468,
-              589.2245
+              282.8789,
+              323.5645,
+              506.1663,
+              590.3926
             ]
           ],
           "headline": "Listen to the audio again and answer the questions below.",
@@ -4158,7 +4297,7 @@
               "rect": [
                 302.1418,
                 437.3021,
-                507.9468,
+                506.1663,
                 471.7021
               ],
               "text": "What does Eren want to try that is new 3 for him?"
@@ -4171,7 +4310,7 @@
               "rect": [
                 302.1418,
                 392.6328,
-                507.322,
+                506.1663,
                 427.0328
               ],
               "text": "How does Lena describe the couscous 4 with yoghurt sauce?"
@@ -4209,17 +4348,17 @@
           "label": "a",
           "column": 0,
           "rect": [
-            44.791,
-            292.0814,
-            269.0799,
-            553.4583
+            44.1233,
+            292.8045,
+            268.2453,
+            554.4039
           ],
           "parts": [
             [
-              44.791,
-              292.0814,
-              269.0799,
-              553.4583
+              44.1233,
+              292.8045,
+              268.2453,
+              554.4039
             ]
           ],
           "headline": "Listen to the audio and match each sentence to its speaker:",
@@ -4322,7 +4461,7 @@
               "partIndex": 0,
               "rect": [
                 64.0316,
-                292.0814,
+                292.8045,
                 193.8616,
                 309.4931
               ],
@@ -4335,17 +4474,17 @@
           "label": "d",
           "column": 1,
           "rect": [
-            282.6007,
-            60.7414,
-            513.4553,
-            311.2716
+            283.491,
+            61.5757,
+            512.9545,
+            310.7154
           ],
           "parts": [
             [
-              282.6007,
-              60.7414,
-              513.4553,
-              311.2716
+              283.491,
+              61.5757,
+              512.9545,
+              310.7154
             ]
           ],
           "headline": "Listen to the audio and circle the sentences you hear."
@@ -4355,17 +4494,17 @@
           "label": "b",
           "column": 0,
           "rect": [
-            44.6797,
-            58.6833,
-            249.4387,
-            285.184
+            45.1249,
+            61.1307,
+            249.6612,
+            285.1284
           ],
           "parts": [
             [
-              44.6797,
-              58.6833,
-              249.4387,
-              285.184
+              45.1249,
+              61.1307,
+              249.6612,
+              285.1284
             ]
           ],
           "headline": "Listen to the audio again and circle the correct option to complete each sentence.",
@@ -4390,7 +4529,7 @@
               "partIndex": 0,
               "rect": [
                 64.0327,
-                58.7707,
+                61.1307,
                 248.8367,
                 166.6792
               ],
@@ -4423,17 +4562,17 @@
           "label": "e",
           "column": 0,
           "rect": [
-            58.4231,
-            362.6957,
+            58.3674,
+            364.3644,
             288.579,
-            735.4043
+            736.9061
           ],
           "parts": [
             [
-              58.4231,
-              362.6957,
+              58.3674,
+              364.3644,
               288.579,
-              735.4043
+              736.9061
             ]
           ],
           "headline": "Complete the sentences, using the correct form of or The Present Progressive Tense words in parentheses."
@@ -4443,17 +4582,17 @@
           "label": null,
           "column": 2,
           "rect": [
-            318.0997,
-            666.2081,
-            519.3532,
-            732.6787
+            318.3222,
+            665.9299,
+            519.7983,
+            733.513
           ],
           "parts": [
             [
-              318.0997,
-              666.2081,
-              519.3532,
-              732.6787
+              318.3222,
+              665.9299,
+              519.7983,
+              733.513
             ]
           ]
         },
@@ -4462,17 +4601,17 @@
           "label": "f",
           "column": 0,
           "rect": [
-            58.2561,
-            63.5226,
+            59.369,
+            64.3569,
             284.6038,
-            362.4457
+            364.1144
           ],
           "parts": [
             [
-              58.2561,
-              63.5226,
+              59.369,
+              64.3569,
               284.6038,
-              362.4457
+              364.1144
             ]
           ],
           "headline": "Rewrite the sentences below, using the words in parentheses and considering the other changes in the sentences.",
@@ -4523,11 +4662,214 @@
               "partIndex": 0,
               "rect": [
                 78.2047,
-                63.5226,
+                64.3569,
                 284.3796,
                 137.5561
               ],
               "text": "It is Jack’s turn to make dinner, but he 4 is not preparing a meal in the kitchen now. (Henry and Alice)"
+            }
+          ]
+        }
+      ]
+    },
+    "43": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.0116,
+          279.1373
+        ],
+        [
+          283.1373,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p43-i",
+          "label": "i",
+          "column": 0,
+          "rect": [
+            43.4,
+            106.1861,
+            262.4587,
+            248.9172
+          ],
+          "parts": [
+            [
+              43.4,
+              106.1861,
+              262.4587,
+              248.9172
+            ]
+          ],
+          "headline": "Read the text quickly to match the topics below to the paragraphs. One is extra.",
+          "items": [
+            {
+              "id": "p43-i-1",
+              "label": "1",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                64.0216,
+                183.792,
+                262.4587,
+                205.412
+              ],
+              "text": "The main day of celebration 1"
+            },
+            {
+              "id": "p43-i-2",
+              "label": "2",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                64.0273,
+                167.9644,
+                228.3973,
+                189.5844
+              ],
+              "text": "Duration of the festival 2"
+            },
+            {
+              "id": "p43-i-3",
+              "label": "3",
+              "number": 3,
+              "partIndex": 0,
+              "rect": [
+                64.0273,
+                152.1298,
+                258.2073,
+                173.7498
+              ],
+              "text": "Visiting the graves of loved ones 3"
+            },
+            {
+              "id": "p43-i-4",
+              "label": "4",
+              "number": 4,
+              "partIndex": 0,
+              "rect": [
+                64.0273,
+                136.2951,
+                247.9073,
+                157.9151
+              ],
+              "text": "Traditional desserts and food 4"
+            },
+            {
+              "id": "p43-i-5",
+              "label": "5",
+              "number": 5,
+              "partIndex": 0,
+              "rect": [
+                64.0273,
+                120.4605,
+                235.3273,
+                142.0805
+              ],
+              "text": "The start of the new year 5"
+            },
+            {
+              "id": "p43-i-6",
+              "label": "6",
+              "number": 6,
+              "partIndex": 0,
+              "rect": [
+                64.0273,
+                106.1861,
+                261.1273,
+                126.2458
+              ],
+              "text": "Preparing houses to the festival 6"
+            }
+          ]
+        },
+        {
+          "id": "p43-j",
+          "label": "j",
+          "column": 1,
+          "rect": [
+            280.3751,
+            59.462,
+            506.834,
+            248.0272
+          ],
+          "parts": [
+            [
+              280.3751,
+              59.462,
+              506.834,
+              248.0272
+            ]
+          ],
+          "headline": "Read the text and write True (T), False (F), or Not Mentioned (NM) for the statements below.",
+          "items": [
+            {
+              "id": "p43-j-1",
+              "label": "1",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                302.1473,
+                171.2865,
+                490.6176,
+                205.6812
+              ],
+              "text": "Diwali People celebrate only in 1 India."
+            },
+            {
+              "id": "p43-j-2",
+              "label": "2",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                302.1375,
+                142.4518,
+                506.834,
+                176.8565
+              ],
+              "text": "People light oil lamps to symbolise 2 light over darkness."
+            },
+            {
+              "id": "p43-j-3",
+              "label": "3",
+              "number": 3,
+              "partIndex": 0,
+              "rect": [
+                302.1375,
+                113.6171,
+                502.9076,
+                148.0218
+              ],
+              "text": "Families only eat vegetarian food 3 Diwali during ."
+            },
+            {
+              "id": "p43-j-4",
+              "label": "4",
+              "number": 4,
+              "partIndex": 0,
+              "rect": [
+                302.1275,
+                84.7825,
+                506.834,
+                119.1871
+              ],
+              "text": "Fireworks are an important part of 4 the third day’s celebrations."
+            },
+            {
+              "id": "p43-j-5",
+              "label": "5",
+              "number": 5,
+              "partIndex": 0,
+              "rect": [
+                302.1375,
+                59.462,
+                506.834,
+                90.3525
+              ],
+              "text": "On the last day, sisters give gifts to 5 their brothers."
             }
           ]
         }
@@ -4552,17 +4894,17 @@
           "label": "l",
           "column": 1,
           "rect": [
-            295.2869,
-            451.7221,
+            296.5666,
+            451.0546,
             526.205,
-            737.6292
+            736.7392
           ],
           "parts": [
             [
-              295.2869,
-              451.7221,
+              296.5666,
+              451.0546,
               526.205,
-              737.6292
+              736.7392
             ]
           ],
           "headline": "Find and write the appropriate words in the text to describe the foods given below."
@@ -4572,17 +4914,17 @@
           "label": "k",
           "column": 0,
           "rect": [
-            56.6982,
-            494.4969,
-            284.1311,
-            734.7368
+            57.6997,
+            493.7182,
+            284.4369,
+            734.5143
           ],
           "parts": [
             [
-              56.6982,
-              494.4969,
-              284.1311,
-              734.7368
+              57.6997,
+              493.7182,
+              284.4369,
+              734.5143
             ]
           ],
           "headline": "Read the text again and answer the following questions."
@@ -4595,14 +4937,14 @@
             8.504,
             15.563,
             552.756,
-            451.4721
+            450.8046
           ],
           "parts": [
             [
               8.504,
               15.563,
               552.756,
-              451.4721
+              450.8046
             ]
           ]
         }
@@ -4627,21 +4969,40 @@
       ],
       "activities": [
         {
+          "id": "p45-v1",
+          "label": null,
+          "column": 2,
+          "rect": [
+            303.7443,
+            650.0215,
+            506.3596,
+            729.0631
+          ],
+          "parts": [
+            [
+              303.7443,
+              650.0215,
+              506.3596,
+              729.0631
+            ]
+          ]
+        },
+        {
           "id": "p45-o",
           "label": "o",
           "column": 1,
           "rect": [
-            282.6007,
-            377.3529,
-            506.6114,
-            638.8411
+            283.2128,
+            376.0179,
+            506.2776,
+            639.5642
           ],
           "parts": [
             [
-              282.6007,
-              377.3529,
-              506.6114,
-              638.8411
+              283.2128,
+              376.0179,
+              506.2776,
+              639.5642
             ]
           ],
           "headline": "Read the situations below and match them to the statements (a–d) in Exercise n Your friend cooked a delicious meal",
@@ -4705,17 +5066,17 @@
           "label": "n",
           "column": 0,
           "rect": [
-            45.7926,
-            71.3099,
-            268.9729,
-            582.2715
+            45.4031,
+            71.8105,
+            265.2407,
+            578.8785
           ],
           "parts": [
             [
-              45.7926,
-              71.3099,
-              268.9729,
-              582.2715
+              45.4031,
+              71.8105,
+              265.2407,
+              578.8785
             ]
           ],
           "headline": "Complete the dialogue with the statements below. One is extra.",
@@ -4767,7 +5128,7 @@
               "rect": [
                 63.6093,
                 73.402,
-                268.9729,
+                265.2407,
                 502.4895
               ],
               "text": "You’re good at cooking! d Wow, the food at this festival Janette: is incredible! I’m eating such delicious food for the first time in my life, ha-ha! I know, right? The tacos are so Fredrik: tasty! Do"
@@ -4779,17 +5140,17 @@
           "label": "p",
           "column": 1,
           "rect": [
-            281.3766,
-            14.4622,
-            560.9727,
-            366.395
+            281.2097,
+            16.0197,
+            561.4178,
+            368.2862
           ],
           "parts": [
             [
-              281.3766,
-              14.4622,
-              560.9727,
-              366.395
+              281.2097,
+              16.0197,
+              561.4178,
+              368.2862
             ]
           ],
           "headline": "Imagine you are a food blogger. Use the sentence starter below and the statements in review about a food festival you are attending."
@@ -4819,17 +5180,17 @@
           "label": "a",
           "column": 0,
           "rect": [
-            43.9008,
+            43.6226,
             457.681,
             274.692,
-            736.0717
+            735.9049
           ],
           "parts": [
             [
-              43.9008,
+              43.6226,
               457.681,
               274.692,
-              736.0717
+              735.9049
             ]
           ],
           "headline": "Look at the photos and match them to the given expressions. One is extra.",
@@ -4867,17 +5228,17 @@
           "label": null,
           "column": 2,
           "rect": [
-            283.9361,
-            418.2921,
-            508.3919,
-            735.9049
+            283.5466,
+            418.014,
+            507.3348,
+            734.6811
           ],
           "parts": [
             [
-              283.9361,
-              418.2921,
-              508.3919,
-              735.9049
+              283.5466,
+              418.014,
+              507.3348,
+              734.6811
             ]
           ],
           "headline": "How can we minimise our average consumption at home and work?"
@@ -4887,17 +5248,17 @@
           "label": "b",
           "column": 0,
           "rect": [
-            45.4031,
-            281.6797,
-            269.1912,
-            457.507
+            44.5128,
+            280.456,
+            268.2453,
+            457.5626
           ],
           "parts": [
             [
-              45.4031,
-              281.6797,
-              269.1912,
-              457.507
+              44.5128,
+              280.456,
+              268.2453,
+              457.5626
             ]
           ],
           "headline": "Listen to the audio and circle the topics below that are not mentioned.",
@@ -4961,7 +5322,7 @@
               "partIndex": 0,
               "rect": [
                 64.1767,
-                281.6797,
+                280.456,
                 232.7667,
                 313.0804
               ],
@@ -4974,17 +5335,17 @@
           "label": "e",
           "column": 2,
           "rect": [
-            282.3781,
-            239.6836,
-            506.9453,
-            407.9461
+            282.9902,
+            240.1286,
+            506.2776,
+            407.1117
           ],
           "parts": [
             [
-              282.3781,
-              239.6836,
-              506.9453,
-              407.9461
+              282.9902,
+              240.1286,
+              506.2776,
+              407.1117
             ]
           ],
           "headline": "Listen to the audio and read the sentences aloud, paying attention to the words with letters in bold.",
@@ -5010,7 +5371,7 @@
               "rect": [
                 302.1339,
                 277.0804,
-                506.9453,
+                506.2776,
                 311.7004
               ],
               "text": "e r ly use packaged food mat rial 2 W are e because it imp rs our health. ai"
@@ -5022,7 +5383,7 @@
               "partIndex": 0,
               "rect": [
                 302.1339,
-                239.6836,
+                240.1286,
                 501.204,
                 282.8704
               ],
@@ -5035,17 +5396,17 @@
           "label": "c",
           "column": 0,
           "rect": [
-            44.012,
+            44.6797,
             55.329,
             277.313,
-            276.5623
+            276.1173
           ],
           "parts": [
             [
-              44.012,
+              44.6797,
               55.329,
               277.313,
-              276.5623
+              276.1173
             ]
           ],
           "headline": "Listen to the audio carefully and complete the table below."
@@ -5055,17 +5416,17 @@
           "label": "f",
           "column": 2,
           "rect": [
-            281.321,
-            87.5521,
-            507.1678,
-            233.6762
+            282.2112,
+            88.609,
+            506.7227,
+            232.7306
           ],
           "parts": [
             [
-              281.321,
-              87.5521,
-              507.1678,
-              233.6762
+              282.2112,
+              88.609,
+              506.7227,
+              232.7306
             ]
           ],
           "headline": "Listen to the audio and say tongue twisters as fast as possible.",
@@ -5103,7 +5464,7 @@
               "partIndex": 0,
               "rect": [
                 302.1439,
-                87.5521,
+                88.609,
                 457.644,
                 119.7073
               ],
@@ -5140,17 +5501,17 @@
           "label": "h",
           "column": 2,
           "rect": [
-            295.6763,
-            47.6697,
-            520.6886,
-            518.8046
+            296.3997,
+            47.336,
+            521.0781,
+            518.1927
           ],
           "parts": [
             [
-              295.6763,
-              47.6697,
-              520.6886,
-              518.8046
+              296.3997,
+              47.336,
+              521.0781,
+              518.1927
             ]
           ],
           "headline": "Complete the paragraph below, using The Simple Present Tense with the correct form of the verbs in parentheses."
@@ -5176,17 +5537,17 @@
           "label": "k",
           "column": 1,
           "rect": [
-            283.0458,
-            58.127,
+            283.2684,
+            59.0726,
             505.0557,
-            308.4348
+            308.3236
           ],
           "parts": [
             [
-              283.0458,
-              58.127,
+              283.2684,
+              59.0726,
               505.0557,
-              308.4348
+              308.3236
             ]
           ],
           "headline": "Match the highlighted words and phrases in the text to the definitions below. One is extra.",
@@ -5276,13 +5637,33 @@
               "partIndex": 0,
               "rect": [
                 302.1426,
-                58.127,
+                59.0726,
                 501.0057,
                 92.2696
               ],
               "text": ": to give money or goods 7 to help an organisation"
             }
           ]
+        },
+        {
+          "id": "p49-j",
+          "label": "j",
+          "column": 0,
+          "rect": [
+            44.0677,
+            53.215,
+            277.856,
+            307.8229
+          ],
+          "parts": [
+            [
+              44.0677,
+              53.215,
+              277.856,
+              307.8229
+            ]
+          ],
+          "headline": "Read the text carefully and complete the missing information."
         }
       ]
     },
@@ -5300,6 +5681,54 @@
         ]
       ],
       "activities": [
+        {
+          "id": "p50-l",
+          "label": "l",
+          "column": 0,
+          "rect": [
+            56.7538,
+            456.2276,
+            275.5069,
+            736.3499
+          ],
+          "parts": [
+            [
+              56.7538,
+              456.2276,
+              275.5069,
+              736.3499
+            ]
+          ],
+          "headline": "Read the text again and circle the answers to the questions.",
+          "items": [
+            {
+              "id": "p50-l-1",
+              "label": "1",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                78.2069,
+                556.9871,
+                275.5069,
+                706.7072
+              ],
+              "text": "What happened to giant panda 1 habitats in the past?  There were not enough bamboos A left in the forests.  People destroyed them for B farming, roads, and buildings. They became wider, but giant C pa"
+            },
+            {
+              "id": "p50-l-2",
+              "label": "2",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                78.2069,
+                456.2276,
+                256.6069,
+                562.5571
+              ],
+              "text": "Which of the following is not 2 mentioned as a danger to giant pandas?  Air pollution A  Habitat loss B Illegal hunting C  Diseases D"
+            }
+          ]
+        },
         {
           "id": "p50-m",
           "label": "m",
@@ -5345,17 +5774,17 @@
           "label": null,
           "column": 2,
           "rect": [
-            304.0781,
-            543.7241,
+            304.3007,
+            544.2804,
             504.153,
-            729.7862
+            730.4537
           ],
           "parts": [
             [
-              304.0781,
-              543.7241,
+              304.3007,
+              544.2804,
               504.153,
-              729.7862
+              730.4537
             ]
           ]
         },
@@ -5365,16 +5794,16 @@
           "column": 2,
           "rect": [
             272.8113,
-            211.5654,
-            549.3437,
-            535.7699
+            211.5098,
+            558.4689,
+            536.6043
           ],
           "parts": [
             [
               272.8113,
-              211.5654,
-              549.3437,
-              535.7699
+              211.5098,
+              558.4689,
+              536.6043
             ]
           ],
           "headline": "Search the Internet for endangered animals and choose one to focus on."
@@ -5384,17 +5813,17 @@
           "label": "p",
           "column": 2,
           "rect": [
-            282.2112,
-            59.9626,
-            508.8371,
-            211.3154
+            281.8774,
+            60.4632,
+            508.8927,
+            211.2598
           ],
           "parts": [
             [
-              282.2112,
-              59.9626,
-              508.8371,
-              211.3154
+              281.8774,
+              60.4632,
+              508.8927,
+              211.2598
             ]
           ],
           "headline": "Take the dialogue in Exercise n as a model and write a similar one in your notebook, using your notes in In your dialogue, you should… • introduce the endangere"
@@ -5420,17 +5849,17 @@
           "label": "a",
           "column": 0,
           "rect": [
-            43.9564,
-            280.2053,
+            43.9008,
+            279.2692,
             277.0848,
-            735.4599
+            736.0161
           ],
           "parts": [
             [
-              43.9564,
-              280.2053,
+              43.9008,
+              279.2692,
               277.0848,
-              735.4599
+              736.0161
             ]
           ],
           "headline": "Listen to the audio and circle the poster of the genre that is not mentioned."
@@ -5440,17 +5869,17 @@
           "label": "c",
           "column": 1,
           "rect": [
-            283.8805,
-            322.8414,
-            506.4445,
-            734.5699
+            283.2128,
+            322.6189,
+            506.5558,
+            734.403
           ],
           "parts": [
             [
-              283.8805,
-              322.8414,
-              506.4445,
-              734.5699
+              283.2128,
+              322.6189,
+              506.5558,
+              734.403
             ]
           ],
           "headline": "Listen to the audio again and circle the correct option for each.",
@@ -5476,7 +5905,7 @@
               "rect": [
                 302.144,
                 516.6171,
-                506.4445,
+                506.5558,
                 614.5571
               ],
               "text": "What does Johan think will happen to 2 films in the future?  Human actors will disappear. A  They will be more interactive. B People will stop watching them. C  They will only be about time travel. D"
@@ -5489,7 +5918,7 @@
               "rect": [
                 302.144,
                 411.4671,
-                506.4445,
+                506.5558,
                 522.4071
               ],
               "text": "What does Minel think artificial 3 intelligence will do?  It will help astronauts wear glasses. A  It will create films without human B actors. It will make films less realistic. C  It will not produc"
@@ -5501,8 +5930,8 @@
               "partIndex": 0,
               "rect": [
                 302.144,
-                322.8414,
-                506.4445,
+                322.6189,
+                506.5558,
                 417.2571
               ],
               "text": "What film genres do Johan and Minel 4 consider watching at the end?  Horror and documentary A  Comedy and drama B Superhero or space adventure C  Musical and biographical D"
@@ -5514,17 +5943,17 @@
           "label": "d",
           "column": 1,
           "rect": [
-            282.8789,
-            185.3946,
-            506.7783,
-            318.5584
+            283.3797,
+            186.0065,
+            506.5558,
+            317.0565
           ],
           "parts": [
             [
-              282.8789,
-              185.3946,
-              506.7783,
-              318.5584
+              283.3797,
+              186.0065,
+              506.5558,
+              317.0565
             ]
           ],
           "headline": "Listen to the tongue twisters, focusing on the letters in bold.",
@@ -5562,7 +5991,7 @@
               "partIndex": 0,
               "rect": [
                 302.1439,
-                185.3946,
+                186.0065,
                 495.854,
                 216.6949
               ],
@@ -5575,17 +6004,17 @@
           "label": "b",
           "column": 0,
           "rect": [
-            44.5685,
-            61.3532,
-            265.6858,
-            279.9553
+            44.6241,
+            62.0207,
+            265.5189,
+            279.1766
           ],
           "parts": [
             [
-              44.5685,
-              61.3532,
-              265.6858,
-              279.9553
+              44.6241,
+              62.0207,
+              265.5189,
+              279.1766
             ]
           ],
           "headline": "Listen to the audio again and order the sentences below from 1 to 6."
@@ -5595,17 +6024,17 @@
           "label": "e",
           "column": 1,
           "rect": [
-            282.7676,
-            75.4261,
-            506.834,
-            179.721
+            283.1015,
+            75.3148,
+            506.2776,
+            178.9979
           ],
           "parts": [
             [
-              282.7676,
-              75.4261,
-              506.834,
-              179.721
+              283.1015,
+              75.3148,
+              506.2776,
+              178.9979
             ]
           ],
           "headline": "Repeat the tongue twisters in Exercise d as fast as you can. Then write your own, using the sounds you have practised."
@@ -5631,17 +6060,17 @@
           "label": "g",
           "column": 1,
           "rect": [
-            298.5697,
-            348.3172,
-            522.7473,
-            735.6267
+            297.5681,
+            351.599,
+            522.1909,
+            733.958
           ],
           "parts": [
             [
-              298.5697,
-              348.3172,
-              522.7473,
-              735.6267
+              297.5681,
+              351.599,
+              522.1909,
+              733.958
             ]
           ],
           "headline": "Put the words in the correct order to make meaningful sentences.",
@@ -5654,7 +6083,7 @@
               "rect": [
                 316.2903,
                 649.3,
-                522.4594,
+                522.1909,
                 706.7076
               ],
               "text": "one / speak / language / will / world / 1 the / whole /?"
@@ -5667,7 +6096,7 @@
               "rect": [
                 316.2845,
                 594.4,
-                522.4594,
+                522.1909,
                 651.8732
               ],
               "text": "from / people / future / work / will / 2 home / in / the /."
@@ -5680,7 +6109,7 @@
               "rect": [
                 316.2845,
                 539.6,
-                522.4594,
+                522.1909,
                 597.0386
               ],
               "text": "intelligence / some / artificial / 2050 / 3 replace / will / jobs / by /?"
@@ -5693,7 +6122,7 @@
               "rect": [
                 316.2845,
                 471.8,
-                522.4594,
+                522.1909,
                 542.2039
               ],
               "text": "think / do / next / not / the / new / 4 scientists / will / discover / planets / five / I / in / years /."
@@ -5706,7 +6135,7 @@
               "rect": [
                 316.2845,
                 416.9,
-                522.4594,
+                522.1909,
                 474.3693
               ],
               "text": "energy / fossil / fuels / take / place / 5 renewable / will / sources / the / of /."
@@ -5718,8 +6147,8 @@
               "partIndex": 0,
               "rect": [
                 316.2845,
-                349.1,
-                522.4594,
+                351.599,
+                522.1909,
                 419.5346
               ],
               "text": "advanced / in / 2100 / travel / 6 spaceships / will / galaxies / humans / other / to / with /."
@@ -5731,17 +6160,17 @@
           "label": "h",
           "column": 1,
           "rect": [
-            295.8433,
-            63.3557,
-            525.6407,
-            343.5891
+            296.511,
+            63.0219,
+            524.6948,
+            343.311
           ],
           "parts": [
             [
-              295.8433,
-              63.3557,
-              525.6407,
-              343.5891
+              296.511,
+              63.0219,
+              524.6948,
+              343.311
             ]
           ],
           "headline": "Complete the sentences according to your own ideas. Use Tense to express your predictions, beliefs, or expectations about the future.",
@@ -5818,13 +6247,49 @@
               "partIndex": 0,
               "rect": [
                 316.3003,
-                63.3557,
+                63.0219,
                 522.5503,
                 104.8722
               ],
               "text": "I believe that in the future, artificial 6 intelligence ."
             }
           ]
+        }
+      ]
+    },
+    "55": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.0237,
+          290.5205
+        ],
+        [
+          294.5205,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p55-j",
+          "label": "j",
+          "column": 0,
+          "rect": [
+            42.9549,
+            60.5189,
+            500.9917,
+            140.3392
+          ],
+          "parts": [
+            [
+              42.9549,
+              60.5189,
+              500.9917,
+              140.3392
+            ]
+          ],
+          "headline": "Read the text quickly again and circle what the topic below is not mentioned."
         }
       ]
     },
@@ -5843,7 +6308,140 @@
       ],
       "activities": [
         {
-          "id": "p56-v1",
+          "id": "p56-l",
+          "label": "l",
+          "column": 1,
+          "rect": [
+            296.2328,
+            396.7656,
+            522.786,
+            736.3499
+          ],
+          "parts": [
+            [
+              296.2328,
+              396.7656,
+              522.786,
+              736.3499
+            ]
+          ],
+          "headline": "Match the highlighted words and phrases in the text to the definitions below. One is extra. Then make sentences with them.",
+          "items": [
+            {
+              "id": "p56-l-1",
+              "label": "1",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                316.3171,
+                646.3079,
+                522.786,
+                680.7072
+              ],
+              "text": ": a group of people 1 with special skills working together"
+            },
+            {
+              "id": "p56-l-2",
+              "label": "2",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                316.3162,
+                604.4732,
+                522.786,
+                651.8779
+              ],
+              "text": ": the study and 2 development of computer systems that can copy intelligent human behaviour"
+            },
+            {
+              "id": "p56-l-3",
+              "label": "3",
+              "number": 3,
+              "partIndex": 0,
+              "rect": [
+                316.3162,
+                575.6386,
+                513.2242,
+                610.0432
+              ],
+              "text": ": connected with 3 technology"
+            },
+            {
+              "id": "p56-l-4",
+              "label": "4",
+              "number": 4,
+              "partIndex": 0,
+              "rect": [
+                316.3162,
+                533.8039,
+                522.786,
+                581.2086
+              ],
+              "text": ": to examine a 4 subject or a possibility to find out more about it"
+            },
+            {
+              "id": "p56-l-5",
+              "label": "5",
+              "number": 5,
+              "partIndex": 0,
+              "rect": [
+                316.3162,
+                491.9693,
+                510.8861,
+                539.3739
+              ],
+              "text": ": a person in 5 charge of a film or play who tells the actors and staff what to do"
+            },
+            {
+              "id": "p56-l-6",
+              "label": "6",
+              "number": 6,
+              "partIndex": 0,
+              "rect": [
+                316.3162,
+                437.1346,
+                519.4431,
+                497.5393
+              ],
+              "text": ": images and 6 sounds created by a computer that seem almost real to the user, who can interact with them by using sensors"
+            },
+            {
+              "id": "p56-l-7",
+              "label": "7",
+              "number": 7,
+              "partIndex": 0,
+              "rect": [
+                316.3162,
+                396.7656,
+                522.4881,
+                442.7046
+              ],
+              "text": ": a person who 7 performs on the stage, on television or in films, especially as a profession"
+            }
+          ]
+        },
+        {
+          "id": "p56-k",
+          "label": "k",
+          "column": 0,
+          "rect": [
+            58.9238,
+            402.8843,
+            284.3256,
+            734.7368
+          ],
+          "parts": [
+            [
+              58.9238,
+              402.8843,
+              284.3256,
+              734.7368
+            ]
+          ],
+          "headline": "Read the text carefully and answer the questions below."
+        },
+        {
+          "id": "p56-v3",
           "label": null,
           "column": 0,
           "rect": [
@@ -5882,17 +6480,17 @@
           "label": "n",
           "column": 0,
           "rect": [
-            44.9023,
-            73.4792,
-            267.4107,
-            544.8366
+            45.0692,
+            76.4273,
+            268.7483,
+            544.1135
           ],
           "parts": [
             [
-              44.9023,
-              73.4792,
-              267.4107,
-              544.8366
+              45.0692,
+              76.4273,
+              268.7483,
+              544.1135
             ]
           ],
           "headline": "Complete the dialogue with the sentences given below. One is extra.",
@@ -5943,8 +6541,8 @@
               "partIndex": 0,
               "rect": [
                 61.4937,
-                74.3228,
-                267.4107,
+                76.4273,
+                268.7483,
                 467.9693
               ],
               "text": "What’s next? d Marta, do you want to watch a film Aysel: this evening? Sure! What kind of film are you in Marta: the mood for? I’m thinking of something futuristic. Aysel: Maybe a robot film or a spac"
@@ -5956,17 +6554,17 @@
           "label": "o",
           "column": 1,
           "rect": [
-            281.5435,
-            45.9454,
-            560.2494,
-            524.367
+            282.7676,
+            42.163,
+            564.033,
+            524.3114
           ],
           "parts": [
             [
-              281.5435,
-              45.9454,
-              560.2494,
-              524.367
+              282.7676,
+              42.163,
+              564.033,
+              524.3114
             ]
           ],
           "headline": "Think of one way that people can watch films in the future and write a short paragraph to compare them. Use the points below to guide your writing."
@@ -5975,7 +6573,7 @@
     }
   },
   "engine": "vision",
-  "checkpoint": "46fcffa0b605e5b3ee7e46f877e50cca8f853620005585e9065ed5d81e5799c8",
+  "checkpoint": "a9a76c4979dceebed2adb9cebfad673021ed4685e05a362dd3843b781b38fab7",
   "conf": 0.7,
   "icons": "bind"
 }

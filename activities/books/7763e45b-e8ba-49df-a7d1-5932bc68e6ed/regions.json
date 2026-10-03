@@ -3,7 +3,7 @@
   "bookId": "7763e45b-e8ba-49df-a7d1-5932bc68e6ed",
   "fingerprint": "181827585-1c8cc2323e6379626fb1c9f86edd6c2c",
   "profile": "c7de24295a4b",
-  "builtAt": "2026-10-03T06:04:44.148Z",
+  "builtAt": "2026-10-03T08:01:26.365Z",
   "pageCount": 240,
   "calibration": {
     "enabled": true,
@@ -303,17 +303,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            62.6518,
-            383.3046,
-            521.5789,
-            720.942
+            62.8743,
+            393.9844,
+            522.024,
+            720.052
           ],
           "parts": [
             [
-              62.6518,
-              383.3046,
-              521.5789,
-              720.942
+              62.8743,
+              393.9844,
+              522.024,
+              720.052
             ]
           ],
           "ogeId": "1e77b622-e2a2-f111-b317-005056a7d529"
@@ -323,17 +323,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            65.0443,
-            350.8759,
-            521.5806,
-            376.2404
+            64.4323,
+            350.8203,
+            520.9112,
+            375.7954
           ],
           "parts": [
             [
-              65.0443,
-              350.8759,
-              521.5806,
-              376.2404
+              64.4323,
+              350.8203,
+              520.9112,
+              375.7954
             ]
           ],
           "headline": "söylenebilir?"
@@ -359,17 +359,48 @@
           "label": null,
           "column": 1,
           "rect": [
-            52.1356,
-            253.0334,
+            60.0367,
+            256.3152,
             540.619,
-            728.0619
+            739.6317
           ],
           "parts": [
             [
-              52.1356,
-              253.0334,
+              60.0367,
+              256.3152,
               540.619,
-              728.0619
+              739.6317
+            ]
+          ]
+        }
+      ]
+    },
+    "24": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          45.0374,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p24-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            49.6874,
+            314.4422,
+            507.2235,
+            374.4604
+          ],
+          "parts": [
+            [
+              49.6874,
+              314.4422,
+              507.2235,
+              374.4604
             ]
           ]
         }
@@ -390,17 +421,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            65.879,
-            289.6339,
-            517.2389,
-            320.2827
+            64.0984,
+            289.3002,
+            516.4599,
+            320.8389
           ],
           "parts": [
             [
-              65.879,
-              289.6339,
-              517.2389,
-              320.2827
+              64.0984,
+              289.3002,
+              516.4599,
+              320.8389
             ]
           ],
           "headline": "Süveyş Kanalı'nın kıtalara ve denizlere göre konumu nasıldır? Açıklayınız."
@@ -410,17 +441,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            63.5977,
-            220.7715,
-            518.9637,
-            279.8441
+            63.709,
+            221.2721,
+            519.4089,
+            280.1222
           ],
           "parts": [
             [
-              63.5977,
-              220.7715,
-              518.9637,
-              279.8441
+              63.709,
+              221.2721,
+              519.4089,
+              280.1222
             ]
           ],
           "headline": "Olayın yaşanmasına neden olan doğa olayları dikkate alındığında bölgenin coğrafi özellikleri hakkın­ da neler söylenebilir?"
@@ -430,17 +461,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            63.8759,
-            159.9189,
-            518.1291,
-            210.0917
+            63.5977,
+            160.4195,
+            518.0178,
+            210.3698
           ],
           "parts": [
             [
-              63.8759,
-              159.9189,
-              518.1291,
-              210.0917
+              63.5977,
+              160.4195,
+              518.0178,
+              210.3698
             ]
           ],
           "headline": "Süveyş Kanalı'nın kaza nedeniyle kapalı kalmasının bölgesel ve küresel etkileri neler olabilir?"
@@ -450,20 +481,20 @@
           "label": "4",
           "column": 0,
           "rect": [
-            64.3767,
-            66.0813,
-            519.4645,
-            148.6272
+            63.9315,
+            66.3594,
+            520.466,
+            148.9609
           ],
           "parts": [
             [
-              64.3767,
-              66.0813,
-              519.4645,
-              148.6272
+              63.9315,
+              66.3594,
+              520.466,
+              148.9609
             ]
           ],
-          "headline": "yal, politik etkileri neler olabilir?"
+          "headline": "Yaşanan olay sonucunda ham petrol ve LNG sevkiyatında aksaklıklar yaşanmasının ekonomik, sos­ yal, politik etkileri neler olabilir?"
         }
       ]
     },
@@ -482,17 +513,17 @@
           "label": "5",
           "column": 0,
           "rect": [
-            50.1882,
-            280.1778,
-            506.1107,
-            343.8116
+            50.7446,
+            280.011,
+            506.3332,
+            343.756
           ],
           "parts": [
             [
-              50.1882,
-              280.1778,
-              506.1107,
-              343.8116
+              50.7446,
+              280.011,
+              506.3332,
+              343.756
             ]
           ],
           "headline": "Uydu görüntülerindeki değişim dikkate alındığında Aral Gölü'nde nasıl bir çevre sorunu yaşandığı söylene­ bilir?"
@@ -504,15 +535,15 @@
           "rect": [
             50.2995,
             223.535,
-            484.6889,
-            270.833
+            481.6286,
+            270.9999
           ],
           "parts": [
             [
               50.2995,
               223.535,
-              484.6889,
-              270.833
+              481.6286,
+              270.9999
             ]
           ],
           "headline": "Aral Gölü’nde yaşanan sorundan doğrudan etkilenen ülkelerin hangileri olduğunu işaretleyiniz."
@@ -522,17 +553,17 @@
           "label": "7",
           "column": 0,
           "rect": [
-            51.2454,
-            136.2787,
-            506.3889,
-            214.4303
+            51.5236,
+            137.558,
+            506.6114,
+            214.2635
           ],
           "parts": [
             [
-              51.2454,
-              136.2787,
-              506.3889,
-              214.4303
+              51.5236,
+              137.558,
+              506.6114,
+              214.2635
             ]
           ],
           "headline": "Aral Gölü'nde yaşanan sorunun ortaya çıkmasında etkili olan doğal ve beşerî faktörler neler olabilir?"
@@ -542,17 +573,17 @@
           "label": "8",
           "column": 0,
           "rect": [
-            50.4664,
-            65.08,
-            505.8881,
-            125.7101
+            50.8002,
+            65.3025,
+            505.8325,
+            125.6545
           ],
           "parts": [
             [
-              50.4664,
-              65.08,
-              505.8881,
-              125.7101
+              50.8002,
+              65.3025,
+              505.8325,
+              125.6545
             ]
           ],
           "headline": "Aral Gölü'nde yaşanan değişimin ekonomik, sosyal ve çevresel etkileri neler olabilir?"
@@ -574,17 +605,17 @@
           "label": "9",
           "column": 0,
           "rect": [
-            66.6023,
-            207.5,
-            521.4119,
-            266.1606
+            65.9346,
+            192.2,
+            521.6345,
+            265.9381
           ],
           "parts": [
             [
-              66.6023,
-              207.5,
-              521.4119,
-              266.1606
+              65.9346,
+              192.2,
+              521.6345,
+              265.9381
             ]
           ],
           "headline": "Petrol kuyusu felaketi, yaşandığı yerdeki beşerî ortamda ne tür etkiler ortaya çıkarmıştır? Açıklayınız."
@@ -594,16 +625,16 @@
           "label": "10",
           "column": 0,
           "rect": [
-            64.5436,
-            115.3641,
-            515.4595,
+            64.1541,
+            115.1416,
+            514.4568,
             180.2216
           ],
           "parts": [
             [
-              64.5436,
-              115.3641,
-              515.4595,
+              64.1541,
+              115.1416,
+              514.4568,
               180.2216
             ]
           ],
@@ -622,21 +653,21 @@
       ],
       "activities": [
         {
-          "id": "p31-v1",
-          "label": null,
+          "id": "p31-3",
+          "label": "3",
           "column": 0,
           "rect": [
-            62.6518,
-            431.6975,
-            522.8039,
-            722.5551
+            64.2654,
+            55.179,
+            521.9683,
+            438.9286
           ],
           "parts": [
             [
-              62.6518,
-              431.6975,
-              522.8039,
-              722.5551
+              64.2654,
+              55.179,
+              521.9683,
+              438.9286
             ]
           ]
         }
@@ -657,51 +688,56 @@
           "label": "1. Adım",
           "column": 0,
           "rect": [
-            47.7956,
-            106.9649,
-            538.2712,
-            415.1772
+            47.6287,
+            109.1898,
+            539.4396,
+            416.0115
           ],
           "parts": [
             [
-              47.7956,
-              106.9649,
-              538.2712,
-              415.1772
+              47.6287,
+              109.1898,
+              539.4396,
+              416.0115
             ]
           ],
           "headline": "Grup olarak dijital harita uygulamalarından ve yakın çevrenize ait elde ettiğiniz mekânsal verilerden (park alanlarının, konut alanlarının, iş yerlerinin, ulaşı"
         }
       ]
     },
-    "40": {
+    "38": {
       "pageWidth": 569.764,
       "pageHeight": 796.535,
       "columns": [
         [
-          46.1797,
+          45.1207,
+          104.446
+        ],
+        [
+          108.446,
           545.764
         ]
       ],
       "activities": [
         {
-          "id": "p40-v1",
+          "id": "p38-q1",
           "label": null,
           "column": 0,
           "rect": [
-            46.5715,
-            171.878,
-            527.6727,
-            434.2562
+            39.4776,
+            442.1875,
+            526.5976,
+            741.5765
           ],
           "parts": [
             [
-              46.5715,
-              171.878,
-              527.6727,
-              434.2562
+              39.4776,
+              442.1875,
+              526.5976,
+              741.5765
             ]
-          ]
+          ],
+          "headline": "Mekânsal bilgi teknolojileriyle harita oluşturma etkinliğine ilişkin değerlendirme yapmak amacıyla aşağıdaki maddeleri okuyunuz ve her madde"
         }
       ]
     },
@@ -720,37 +756,37 @@
           "label": "1",
           "column": 0,
           "rect": [
-            64.9887,
-            212.9841,
+            65.1556,
+            214.2078,
             519.5758,
-            362.0563
+            361.5557
           ],
           "parts": [
             [
-              64.9887,
-              212.9841,
+              65.1556,
+              214.2078,
               519.5758,
-              362.0563
+              361.5557
             ]
           ],
-          "headline": "Görselleri verilen uygulamaların aşağıdaki alanlardan hangisinde kullanıldığını belirleyip uygulama­ nın harfini ilgili yere yazınız."
+          "headline": "nın harfini ilgili yere yazınız."
         },
         {
           "id": "p41-2",
           "label": "2",
           "column": 0,
           "rect": [
-            63.4864,
-            143.2873,
+            62.93,
+            142.7311,
             519.5201,
-            204.4736
+            205.2524
           ],
           "parts": [
             [
-              63.4864,
-              143.2873,
+              62.93,
+              142.7311,
               519.5201,
-              204.4736
+              205.2524
             ]
           ],
           "headline": "Görselleri verilen uygulamalar insanlara günlük hayatta ne tür kolaylıklar sağlar? Açıklayınız."
@@ -760,17 +796,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            64.8774,
-            54.289,
-            519.9096,
-            133.8868
+            64.3767,
+            54.5671,
+            521.4119,
+            133.9981
           ],
           "parts": [
             [
-              64.8774,
-              54.289,
-              519.9096,
-              133.8868
+              64.3767,
+              54.5671,
+              521.4119,
+              133.9981
             ]
           ],
           "headline": "İnsanların günlük hayatını kolaylaştıran başka CBS tabanlı hangi uygulamalar bulunmaktadır? Ör­ nekler veriniz."
@@ -792,17 +828,17 @@
           "label": "4",
           "column": 0,
           "rect": [
-            64.4879,
-            549.954,
-            516.5712,
-            730.0644
+            65.1556,
+            549.1196,
+            517.8469,
+            729.5637
           ],
           "parts": [
             [
-              64.4879,
-              549.954,
-              516.5712,
-              730.0644
+              65.1556,
+              549.1196,
+              517.8469,
+              729.5637
             ]
           ],
           "headline": "1. Harita  2. Harita"
@@ -812,36 +848,36 @@
           "label": "5",
           "column": 0,
           "rect": [
-            63.6533,
-            275.6167,
+            64.7661,
+            275.3942,
             522.8004,
-            536.048
+            534.1012
           ],
           "parts": [
             [
-              63.6533,
-              275.6167,
+              64.7661,
+              275.3942,
               522.8004,
-              536.048
+              534.1012
             ]
           ],
-          "headline": "Mekânsal verilerin haritalarda gösteriminde kullanılan sembollerin (nokta, çizgi, alan) ne olduğunu aşağıdaki tabloya işaretleyiniz."
+          "headline": "aşağıdaki tabloya işaretleyiniz."
         },
         {
           "id": "p43-6",
           "label": "6",
           "column": 0,
           "rect": [
-            63.4308,
-            215.8766,
-            519.854,
+            64.0984,
+            216.099,
+            520.4104,
             269.1643
           ],
           "parts": [
             [
-              63.4308,
-              215.8766,
-              519.854,
+              64.0984,
+              216.099,
+              520.4104,
               269.1643
             ]
           ],
@@ -855,14 +891,14 @@
             65.8233,
             65.369,
             521.7119,
-            204.8074
+            204.6961
           ],
           "parts": [
             [
               65.8233,
               65.369,
               521.7119,
-              204.8074
+              204.6961
             ]
           ],
           "headline": "2. Harita 1. Harita"
@@ -884,37 +920,36 @@
           "label": "8",
           "column": 0,
           "rect": [
-            53.9161,
-            355.6595,
-            505.6099,
-            407.5011
+            54.25,
+            354.9364,
+            504.3858,
+            406.8892
           ],
           "parts": [
             [
-              53.9161,
-              355.6595,
-              505.6099,
-              407.5011
+              54.25,
+              354.9364,
+              504.3858,
+              406.8892
             ]
-          ],
-          "headline": "Bu harita hangi alanlarda kullanılabilir?"
+          ]
         },
         {
           "id": "p44-9",
           "label": "9",
           "column": 0,
           "rect": [
-            53.3041,
-            290.5239,
-            506.1663,
-            344.3123
+            53.0815,
+            291.4695,
+            506.2776,
+            344.4791
           ],
           "parts": [
             [
-              53.3041,
-              290.5239,
-              506.1663,
-              344.3123
+              53.0815,
+              291.4695,
+              506.2776,
+              344.4791
             ]
           ],
           "headline": "Haritanın amaca uygun olarak oluşturulmasında hangi tür mekânsal veriler elde edilmiştir?"
@@ -924,69 +959,69 @@
           "label": "10",
           "column": 0,
           "rect": [
-            49.7987,
-            120.9265,
+            50.5256,
+            120.5371,
             507.4608,
-            282.2359
+            280.7897
           ],
           "parts": [
             [
-              49.7987,
-              120.9265,
+              50.5256,
+              120.5371,
               507.4608,
-              282.2359
+              280.7897
             ]
           ],
-          "headline": "Elde edilen mekânsal verilerin haritadaki gösteriminde kullanılan sembollerin (nokta, çizgi, alan) ne olduğunu aşağıdaki tabloya işaretleyiniz."
+          "headline": "ne olduğunu aşağıdaki tabloya işaretleyiniz."
         },
         {
           "id": "p44-11",
           "label": "11",
           "column": 0,
           "rect": [
-            51.301,
-            78.7079,
-            504.4414,
-            114.4185
+            49.7987,
+            78.2629,
+            504.7753,
+            114.9191
           ],
           "parts": [
             [
-              51.301,
-              78.7079,
-              504.4414,
-              114.4185
+              49.7987,
+              78.2629,
+              504.7753,
+              114.9191
             ]
           ],
           "headline": "İnsanlar, oluşturulan bu haritayı günlük hayatta hangi amaçlar doğrultusunda kullanabilir?"
         }
       ]
     },
-    "46": {
+    "45": {
       "pageWidth": 569.764,
       "pageHeight": 796.535,
       "columns": [
         [
-          45.0237,
+          59.1969,
           545.764
         ]
       ],
       "activities": [
         {
-          "id": "p46-v1",
+          "id": "p45-v1",
           "label": null,
           "column": 0,
           "rect": [
-            36.2223,
-            161.3651,
-            526.2527,
-            325.5114
+            63.4864,
+            133.9981,
+            521.6334,
+            376.3517
           ],
           "parts": [
             [
-              36.2223,
-              161.3651,
-              526.2527,
-              325.5114
+              63.4864,
+              133.9981,
+              521.6334,
+              376.3517
             ]
           ]
         }
@@ -1003,21 +1038,61 @@
       ],
       "activities": [
         {
+          "id": "p48-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            52.692,
+            113.5285,
+            491.0876,
+            126.4889
+          ],
+          "parts": [
+            [
+              52.692,
+              113.5285,
+              491.0876,
+              126.4889
+            ]
+          ],
+          "headline": "Bilim insanları yerkürenin yapısı hakkındaki bilgilere ulaşmada hangi bulgulardan yararlanmış olabilir?"
+        },
+        {
+          "id": "p48-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            50.689,
+            96.0626,
+            355.3275,
+            109.5236
+          ],
+          "parts": [
+            [
+              50.689,
+              96.0626,
+              355.3275,
+              109.5236
+            ]
+          ],
+          "headline": "Yerküreyi oluşturan katmanlar hangi özellikleriyle birbirinden ayrılır?"
+        },
+        {
           "id": "p48-3",
           "label": "3",
           "column": 0,
           "rect": [
-            51.9687,
-            79.1529,
-            446.9643,
-            92.7251
+            52.1356,
+            79.6535,
+            447.2425,
+            93.0032
           ],
           "parts": [
             [
-              51.9687,
-              79.1529,
-              446.9643,
-              92.7251
+              52.1356,
+              79.6535,
+              447.2425,
+              93.0032
             ]
           ],
           "headline": "Yerkürenin iç yapısı, kıtaların konumlarının zamanla yer değiştirmesinde nasıl bir rol oynar?"
@@ -1035,21 +1110,41 @@
       ],
       "activities": [
         {
+          "id": "p55-2. Adım",
+          "label": "2. Adım",
+          "column": 0,
+          "rect": [
+            62.4849,
+            430.4738,
+            519.6314,
+            731.1212
+          ],
+          "parts": [
+            [
+              62.4849,
+              430.4738,
+              519.6314,
+              731.1212
+            ]
+          ],
+          "headline": "Dünya fiziki haritasını inceleyiniz ve aşağıdaki soruyu cevaplayıp cevaplarınızı arkadaşlarınızla paylaşınız."
+        },
+        {
           "id": "p55-3. Adım",
           "label": "3. Adım",
           "column": 0,
           "rect": [
-            64.5992,
-            78.4854,
-            521.0224,
-            408.6692
+            64.2654,
+            74.9255,
+            521.6335,
+            411.4358
           ],
           "parts": [
             [
-              64.5992,
-              78.4854,
-              521.0224,
-              408.6692
+              64.2654,
+              74.9255,
+              521.6335,
+              411.4358
             ]
           ],
           "headline": "Yer kabuğunda meydana gelen tektonik süreçleri ve bu süreçlere bağlı oluşan yeryüzü şekilleri­ ni gösteren görseli inceledikten sonra aşağıdaki soruları cevapla",
@@ -1087,7 +1182,7 @@
               "partIndex": 0,
               "rect": [
                 103.9306,
-                78.4854,
+                76.7919,
                 501.2986,
                 109.8219
               ],
@@ -1112,51 +1207,60 @@
           "label": "4. Adım",
           "column": 0,
           "rect": [
-            46.5159,
-            214.3747,
-            509.5604,
-            740.7998
+            46.6828,
+            261.5994,
+            511.4522,
+            734.403
           ],
           "parts": [
             [
-              46.5159,
-              214.3747,
-              509.5604,
-              740.7998
+              46.6828,
+              261.5994,
+              511.4522,
+              734.403
             ]
           ],
           "headline": "Levha tektoniğine bağlı olarak kıta ve okyanusların konumunda ve görünümünde geçmişten bu­ güne yaşanan değişimi gösteren haritaları inceleyiniz. 10 milyon yıl "
-        }
-      ]
-    },
-    "65": {
-      "pageWidth": 569.764,
-      "pageHeight": 796.535,
-      "columns": [
-        [
-          58.9927,
-          545.764
-        ]
-      ],
-      "activities": [
+        },
         {
-          "id": "p65-v1",
-          "label": null,
+          "id": "p56-1",
+          "label": "1",
           "column": 0,
           "rect": [
-            46.961,
-            55.0121,
-            537.0471,
-            579.8303
+            52.9702,
+            232.23,
+            490.0307,
+            256.1483
           ],
           "parts": [
             [
-              46.961,
-              55.0121,
-              537.0471,
-              579.8303
+              52.9702,
+              232.23,
+              490.0307,
+              256.1483
             ]
-          ]
+          ],
+          "headline": "Levha tektoniği yaşanmamış olsaydı yer kabuğunda yaşanan süreçlerden hangilerinin gerçekleşmesi beklenemezdi?"
+        },
+        {
+          "id": "p56-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            50.6333,
+            211.9273,
+            493.3132,
+            226.3339
+          ],
+          "parts": [
+            [
+              50.6333,
+              211.9273,
+              493.3132,
+              226.3339
+            ]
+          ],
+          "headline": "Karalardaki bu değişim gelecekte iklimi, canlı türlerini ve insan yaşamını nasıl etkileyebilir? Açıklayınız."
         }
       ]
     },
@@ -1179,20 +1283,72 @@
           "label": null,
           "column": 0,
           "rect": [
-            34.6644,
-            63.535,
-            523.4707,
+            34.8313,
+            63.5226,
+            524.4166,
             346.04
           ],
           "parts": [
             [
-              34.6644,
-              63.535,
-              523.4707,
+              34.8313,
+              63.5226,
+              524.4166,
               346.04
             ]
           ],
           "headline": "Aşağıdaki soruyu bir canlı türünün geçmişten günümüze fosilleşme sürecini gösteren görselden yararla­"
+        }
+      ]
+    },
+    "71": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          58.2841,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p71-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            67.1031,
+            98.1763,
+            431.2735,
+            110.4135
+          ],
+          "parts": [
+            [
+              67.1031,
+              98.1763,
+              431.2735,
+              110.4135
+            ]
+          ],
+          "headline": "Görsellerin bulunduğu alanlarda hangi tür ayrışmanın daha etkili olduğu söylenebilir?"
+        },
+        {
+          "id": "p71-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            63.7356,
+            78.9304,
+            385.0358,
+            93.2257
+          ],
+          "parts": [
+            [
+              63.7356,
+              78.9304,
+              385.0358,
+              93.2257
+            ]
+          ],
+          "headline": "Görsellerin bulunduğu alanların iklim özellikleriyle ilgili neler söylenebilir?"
         }
       ]
     },
@@ -1215,17 +1371,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            33.0508,
-            199.9681,
-            523.415,
-            563.1848
+            33.4959,
+            202.6381,
+            524.3609,
+            561.3013
           ],
           "parts": [
             [
-              33.0508,
-              199.9681,
-              523.415,
-              563.1848
+              33.4959,
+              202.6381,
+              524.3609,
+              561.3013
             ]
           ]
         }
@@ -1246,17 +1402,17 @@
           "label": "2. Adım",
           "column": 0,
           "rect": [
-            50.5777,
-            560.745,
-            502.5496,
-            621.6533
+            50.8559,
+            560.2444,
+            503.2173,
+            621.2083
           ],
           "parts": [
             [
-              50.5777,
-              560.745,
-              502.5496,
-              621.6533
+              50.8559,
+              560.2444,
+              503.2173,
+              621.2083
             ]
           ],
           "headline": "Aşağıda verilen soruların cevaplarını grup üyesi arkadaşlarınızla tartışınız.",
@@ -1269,7 +1425,7 @@
               "rect": [
                 88.9165,
                 575.4533,
-                502.5496,
+                503.2173,
                 608.4833
               ],
               "text": " Yeryüzünde bulunan farklı türdeki kayaçların (magmatik, tortul, başkalaşım) ayrışma hızlarında­ 1. ki farklılıkların nedenleri nelerdir?"
@@ -1281,7 +1437,7 @@
               "partIndex": 0,
               "rect": [
                 86.9365,
-                560.745,
+                560.2444,
                 388.3943,
                 578.814
               ],
@@ -1294,17 +1450,17 @@
           "label": "3. Adım",
           "column": 0,
           "rect": [
-            50.5777,
-            338.0267,
+            50.1882,
+            335.6905,
             507.2628,
-            541.8885
+            541.0542
           ],
           "parts": [
             [
-              50.5777,
-              338.0267,
+              50.1882,
+              335.6905,
               507.2628,
-              541.8885
+              541.0542
             ]
           ],
           "headline": "Aşağıda verilen iklim bölgelerinde, aynı özelliğe sahip kayaçlarda hangi ayrışma türünün daha ön planda olduğunu tablodaki ilgili alana işaretleyiniz."
@@ -1314,17 +1470,17 @@
           "label": "4. Adım",
           "column": 0,
           "rect": [
-            49.8543,
-            65.4694,
+            49.0197,
+            65.0244,
             505.3665,
-            337.7767
+            335.4405
           ],
           "parts": [
             [
-              49.8543,
-              65.4694,
+              49.0197,
+              65.0244,
               505.3665,
-              337.7767
+              335.4405
             ]
           ],
           "headline": "Aşağıdaki dünya haritasında gösterilen numaralanmış alanlar ile bu alanların iklim özelliklerini yan­ sıtan grafikleri inceleyiniz. Bu alanlarda bulunan kayaçla"
@@ -1375,59 +1531,51 @@
           "column": 0,
           "rect": [
             63.709,
-            317.1678,
-            520.6886,
+            316.6115,
+            520.2991,
             377.2688
           ],
           "parts": [
             [
               63.709,
-              317.1678,
-              520.6886,
+              316.6115,
+              520.2991,
               377.2688
             ]
           ],
           "headline": "Grup olarak yaptığınız çıkarımlardan yararlanarak iklim özellikleri ile kayaçların ayrışma türü ve ay­ Tablo 1 O rışma hızı arasındaki ilişkiyi ortaya koyan bir"
-        },
+        }
+      ]
+    },
+    "76": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          43.436,
+          545.764
+        ]
+      ],
+      "activities": [
         {
-          "id": "p75-2",
-          "label": "2",
-          "column": 0,
-          "rect": [
-            64.1541,
-            190.5677,
-            351.373,
-            204.3624
-          ],
-          "parts": [
-            [
-              64.1541,
-              190.5677,
-              351.373,
-              204.3624
-            ]
-          ],
-          "headline": "Haritada belirlenmiş yerlerde hangi ayrışma türü daha etkili olur?"
-        },
-        {
-          "id": "p75-3",
+          "id": "p76-3",
           "label": "3",
           "column": 0,
           "rect": [
-            64.4879,
-            172.0449,
-            457.6904,
-            185.2834
+            49.0197,
+            233.8987,
+            395.4963,
+            246.4697
           ],
           "parts": [
             [
-              64.4879,
-              172.0449,
-              457.6904,
-              185.2834
+              49.0197,
+              233.8987,
+              395.4963,
+              246.4697
             ]
           ],
-          "headline": "Ayrışma ürünü olan toprak, dünyada hangi iklim bölgelerinde daha kolay oluşabilmektedir?"
+          "headline": "Yakın çevrenizde numaralanmış yeryüzü şekillerinden hangileri bulunmaktadır?"
         }
       ]
     },
@@ -1446,15 +1594,15 @@
           "label": null,
           "column": 0,
           "rect": [
-            34.72,
-            105.5186,
+            31.6597,
+            110.191,
             542.936,
             603.1119
           ],
           "parts": [
             [
-              34.72,
-              105.5186,
+              31.6597,
+              110.191,
               542.936,
               603.1119
             ]
@@ -1482,17 +1630,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            46.2933,
-            262.3226,
-            536.435,
-            590.535
+            45.57,
+            264.8256,
+            537.9373,
+            588.3901
           ],
           "parts": [
             [
-              46.2933,
-              262.3226,
-              536.435,
-              590.535
+              45.57,
+              264.8256,
+              537.9373,
+              588.3901
             ]
           ]
         }
@@ -1509,55 +1657,43 @@
       ],
       "activities": [
         {
+          "id": "p84-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            49.8543,
+            420.6283,
+            507.4607,
+            730.5093
+          ],
+          "parts": [
+            [
+              49.8543,
+              420.6283,
+              507.4607,
+              730.5093
+            ]
+          ]
+        },
+        {
           "id": "p84-q1",
           "label": null,
           "column": 0,
           "rect": [
-            34.5531,
+            36.0554,
             54.0335,
-            522.9142,
+            523.0255,
             403.535
           ],
           "parts": [
             [
-              34.5531,
+              36.0554,
               54.0335,
-              522.9142,
+              523.0255,
               403.535
             ]
           ],
           "headline": "Uygulama Çözünebilen kayaçlarda aşınım ve birikim süreçlerinin etkisine bağlı oluşan yeryüzü şekillerinin isimlerini"
-        }
-      ]
-    },
-    "85": {
-      "pageWidth": 569.764,
-      "pageHeight": 796.535,
-      "columns": [
-        [
-          59.1969,
-          545.764
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p85-v1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            65.4895,
-            77.8735,
-            529.0904,
-            591.9829
-          ],
-          "parts": [
-            [
-              65.4895,
-              77.8735,
-              529.0904,
-              591.9829
-            ]
-          ]
         }
       ]
     },
@@ -1576,16 +1712,16 @@
           "label": null,
           "column": 0,
           "rect": [
-            33.7185,
+            33.6072,
             199.5872,
-            524.3609,
+            526.0301,
             618.3954
           ],
           "parts": [
             [
-              33.7185,
+              33.6072,
               199.5872,
-              524.3609,
+              526.0301,
               618.3954
             ]
           ]
@@ -1607,17 +1743,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            53.8605,
-            187.2302,
-            485.0784,
-            296.0307
+            52.4138,
+            188.8433,
+            484.9114,
+            295.8638
           ],
           "parts": [
             [
-              53.8605,
-              187.2302,
-              485.0784,
-              296.0307
+              52.4138,
+              188.8433,
+              484.9114,
+              295.8638
             ]
           ],
           "headline": "Numaralanmış görsellerdeki yeryüzü şekillerinin neler olduğunu aşağıya yazınız.",
@@ -1667,16 +1803,16 @@
           "label": "2",
           "column": 0,
           "rect": [
-            51.9131,
-            145.1785,
-            388.7638,
+            51.5792,
+            146.2354,
+            388.7081,
             158.6951
           ],
           "parts": [
             [
-              51.9131,
-              145.1785,
-              388.7638,
+              51.5792,
+              146.2354,
+              388.7081,
               158.6951
             ]
           ],
@@ -1687,17 +1823,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            52.9702,
-            127.6013,
-            455.4773,
-            141.7855
+            52.4138,
+            127.7682,
+            455.7555,
+            140.9511
           ],
           "parts": [
             [
-              52.9702,
-              127.6013,
-              455.4773,
-              141.7855
+              52.4138,
+              127.7682,
+              455.7555,
+              140.9511
             ]
           ],
           "headline": "Bu yeryüzü şekillerinin oluşumunda aşınım ve birikim süreçlerinden hangileri etkili olmuştur?"
@@ -1719,17 +1855,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            64.9331,
-            155.9696,
-            506.6114,
-            179.8879
+            64.2097,
+            154.8015,
+            507.7242,
+            179.7766
           ],
           "parts": [
             [
-              64.9331,
-              155.9696,
-              506.6114,
-              179.8879
+              64.2097,
+              154.8015,
+              507.7242,
+              179.7766
             ]
           ],
           "headline": "Görsellerde verilen yeryüzü şekillerinin oluşumunda hangi kuvvetlerin aşınım ve birikim süreçleri etkili olmuştur?"
@@ -1739,17 +1875,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            63.8759,
-            124.1527,
-            515.4027,
-            149.9622
+            63.1526,
+            124.3752,
+            514.5681,
+            150.1847
           ],
           "parts": [
             [
-              63.8759,
-              124.1527,
-              515.4027,
-              149.9622
+              63.1526,
+              124.3752,
+              514.5681,
+              150.1847
             ]
           ],
           "headline": "Görsellerdeki yeryüzü şekillerinin oluşumunda etkili olan kuvvetlerin aşınım ve birikim süreçleriyle yeryü­ zü şekillerinin bulunduğu alanların coğrafi koşullar"
@@ -1771,17 +1907,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            45.7926,
-            78.7079,
+            45.2918,
+            78.4298,
             541.0105,
-            582.1603
+            581.5484
           ],
           "parts": [
             [
-              45.7926,
-              78.7079,
+              45.2918,
+              78.4298,
               541.0105,
-              582.1603
+              581.5484
             ]
           ],
           "headline": "Yakın Çevremizdeki Yer Şekillerini Araştıralım :"
@@ -1803,17 +1939,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            49.6874,
-            213.2066,
+            49.7431,
+            214.8197,
             506.13,
-            682.0053
+            684.119
           ],
           "parts": [
             [
-              49.6874,
-              213.2066,
+              49.7431,
+              214.8197,
               506.13,
-              682.0053
+              684.119
             ]
           ]
         }
@@ -1834,41 +1970,41 @@
       ],
       "activities": [
         {
-          "id": "p101-2",
-          "label": "2",
+          "id": "p101-1",
+          "label": "1",
           "column": 0,
           "rect": [
-            63.709,
-            197.2425,
-            307.7504,
-            213.3735
+            66.2684,
+            220.549,
+            522.3578,
+            294.5288
           ],
           "parts": [
             [
-              63.709,
-              197.2425,
-              307.7504,
-              213.3735
+              66.2684,
+              220.549,
+              522.3578,
+              294.5288
             ]
           ],
-          "headline": "Paylaşılan soruları tüm sınıfın katılımıyla cevaplayınız."
+          "headline": "Yeryüzü şekilleri ile beşerî faaliyetler arasındaki etkileşim bağlamında aşağıda boş bırakılan alana soru/ sorular yazarak arkadaşlarınızla paylaşınız."
         },
         {
           "id": "p101-1",
           "label": "1",
           "column": 1,
           "rect": [
-            66.313,
-            64.3013,
-            520.2991,
-            178.6085
+            66.6023,
+            64.5238,
+            519.6314,
+            178.7198
           ],
           "parts": [
             [
-              66.313,
-              64.3013,
-              520.2991,
-              178.6085
+              66.6023,
+              64.5238,
+              519.6314,
+              178.7198
             ]
           ],
           "headline": "Yakın çevrenizde bulunan yeryüzü şekillerinin (ova, dağ, plato, vadi, kıyı vb.) ekonomi, yer­ leşme, sosyal hayat ve kültürel dokuya etkilerine yönelik sorular "
@@ -1890,166 +2026,20 @@
           "label": "1. Adım",
           "column": 0,
           "rect": [
-            50.4311,
-            138.003,
+            50.0769,
+            138.5593,
             507.8703,
-            634.2799
+            633.5568
           ],
           "parts": [
             [
-              50.4311,
-              138.003,
+              50.0769,
+              138.5593,
               507.8703,
-              634.2799
+              633.5568
             ]
           ],
           "headline": "Ders öncesi düzenlediğiniz bilgilerden yararlanarak yeryüzü şekillerinin ekonomiye, sosyal hayata, kültürel dokuya ve yerleşmeye olan etkilerine yönelik görüşle"
-        }
-      ]
-    },
-    "103": {
-      "pageWidth": 569.764,
-      "pageHeight": 796.535,
-      "columns": [
-        [
-          59.1969,
-          548.1365
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p103-2. Adım",
-          "label": "2. Adım",
-          "column": 0,
-          "rect": [
-            63.2638,
-            280.011,
-            521.6363,
-            730.8431
-          ],
-          "parts": [
-            [
-              63.2638,
-              280.011,
-              521.6363,
-              730.8431
-            ]
-          ],
-          "headline": "Yaşadığınız yerdeki yeryüzü şekillerinin beşerî faaliyetlere olan etkilerini GZFT analiz tekniğine göre çözümleyiniz."
-        },
-        {
-          "id": "p103-3. Adım",
-          "label": "3. Adım",
-          "column": 0,
-          "rect": [
-            65.1,
-            65.611,
-            521.4112,
-            262.3226
-          ],
-          "parts": [
-            [
-              65.1,
-              65.611,
-              521.4112,
-              262.3226
-            ]
-          ],
-          "headline": "Yaşadığınız yerdeki yeryüzü şekillerine bağlı ortaya çıkan beşerî faaliyetler sırasında doğal çevrenin korunması için farkındalık oluşturmaya yönelik sloganlar "
-        }
-      ]
-    },
-    "104": {
-      "pageWidth": 569.764,
-      "pageHeight": 796.535,
-      "columns": [
-        [
-          44.7943,
-          545.764
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p104-v1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            49.0197,
-            203.0274,
-            506.1663,
-            262.99
-          ],
-          "parts": [
-            [
-              49.0197,
-              203.0274,
-              506.1663,
-              262.99
-            ]
-          ]
-        }
-      ]
-    },
-    "105": {
-      "pageWidth": 569.764,
-      "pageHeight": 796.535,
-      "columns": [
-        [
-          58.7034,
-          545.764
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p105-1. Adım",
-          "label": "1. Adım",
-          "column": 0,
-          "rect": [
-            45.9595,
-            296.8094,
-            536.4907,
-            533.1556
-          ],
-          "parts": [
-            [
-              45.9595,
-              296.8094,
-              536.4907,
-              533.1556
-            ]
-          ],
-          "headline": "Temin ettiğiniz malzemeleri kullanarak sınıf ortamında grup arkadaşlarınızla belirlediğiniz yeryüzü şeklinin üç boyutlu modelini yapınız."
-        }
-      ]
-    },
-    "107": {
-      "pageWidth": 569.764,
-      "pageHeight": 796.535,
-      "columns": [
-        [
-          59.4469,
-          545.764
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p107-v1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            56.7538,
-            138.6705,
-            521.6901,
-            404.5681
-          ],
-          "parts": [
-            [
-              56.7538,
-              138.6705,
-              521.6901,
-              404.5681
-            ]
-          ]
         }
       ]
     },
@@ -2068,17 +2058,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            52.1913,
-            206.8655,
-            506.3889,
-            280.456
+            52.3582,
+            205.9755,
+            506.1107,
+            280.5672
           ],
           "parts": [
             [
-              52.1913,
-              206.8655,
-              506.3889,
-              280.456
+              52.3582,
+              205.9755,
+              506.1107,
+              280.5672
             ]
           ],
           "headline": "Hindistan karasının son 80 milyon yılda kuzeye doğru hareketi sonucunda gerçekleşen değişimler nelerdir?"
@@ -2088,17 +2078,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            50.0769,
-            135.3331,
-            506.7783,
-            195.5182
+            50.8559,
+            134.4987,
+            505.443,
+            195.7963
           ],
           "parts": [
             [
-              50.0769,
-              135.3331,
-              506.7783,
-              195.5182
+              50.8559,
+              134.4987,
+              505.443,
+              195.7963
             ]
           ],
           "headline": "Bu değişimin gerçekleşmesine sebep olan etkenler neler olabilir?"
@@ -2108,17 +2098,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            50.0769,
-            55.8464,
-            507.0566,
-            124.2083
+            50.3551,
+            56.0133,
+            506.9453,
+            124.1527
           ],
           "parts": [
             [
-              50.0769,
-              55.8464,
-              507.0566,
-              124.2083
+              50.3551,
+              56.0133,
+              506.9453,
+              124.1527
             ]
           ],
           "headline": "Himalaya Dağları'nın oluşumunda Hindistan karasının gerçekleştirdiği hareketin nasıl bir etkisi olabilir?"
@@ -2140,20 +2130,20 @@
           "label": "4",
           "column": 0,
           "rect": [
-            64.4879,
-            200.0794,
-            520.2435,
-            380.301
+            64.5992,
+            200.8025,
+            520.8555,
+            379.6891
           ],
           "parts": [
             [
-              64.4879,
-              200.0794,
-              520.2435,
-              380.301
+              64.5992,
+              200.8025,
+              520.8555,
+              379.6891
             ]
           ],
-          "headline": "Haritadaki numaralanmış alanlarda bulunan yer şekli ve bu şeklin oluşumunda etkili olan levha hare­ ketini aşağıdaki tabloya işaretleyiniz.",
+          "headline": "ketini aşağıdaki tabloya işaretleyiniz.",
           "items": [
             {
               "id": "p109-4-1",
@@ -2227,16 +2217,16 @@
           "label": "5",
           "column": 0,
           "rect": [
-            64.1541,
-            64.8575,
-            519.7983,
+            63.8202,
+            64.7463,
+            520.4104,
             183.4478
           ],
           "parts": [
             [
-              64.1541,
-              64.8575,
-              519.7983,
+              63.8202,
+              64.7463,
+              520.4104,
               183.4478
             ]
           ],
@@ -2259,17 +2249,17 @@
           "label": "6",
           "column": 0,
           "rect": [
-            50.0213,
-            310.326,
+            51.301,
+            312.7179,
             507.4613,
-            415.0659
+            414.899
           ],
           "parts": [
             [
-              50.0213,
-              310.326,
+              51.301,
+              312.7179,
               507.4613,
-              415.0659
+              414.899
             ]
           ],
           "headline": "oluşmuş olanları (E) harfiyle ilgili alana yazınız."
@@ -2279,16 +2269,16 @@
           "label": "7",
           "column": 0,
           "rect": [
-            52.8033,
+            52.1913,
             15.1956,
-            507.1678,
+            506.5001,
             288.4776
           ],
           "parts": [
             [
-              52.8033,
+              52.1913,
               15.1956,
-              507.1678,
+              506.5001,
               288.4776
             ]
           ],
@@ -2311,16 +2301,16 @@
           "label": "8",
           "column": 0,
           "rect": [
-            63.7646,
-            657.0301,
-            520.3548,
+            63.4864,
+            657.5863,
+            521.0224,
             730.565
           ],
           "parts": [
             [
-              63.7646,
-              657.0301,
-              520.3548,
+              63.4864,
+              657.5863,
+              521.0224,
               730.565
             ]
           ],
@@ -2331,17 +2321,17 @@
           "label": "9",
           "column": 0,
           "rect": [
-            67.3256,
+            67.0474,
             215.535,
-            519.4645,
-            313.6635
+            519.5201,
+            313.2741
           ],
           "parts": [
             [
-              67.3256,
+              67.0474,
               215.535,
-              519.4645,
-              313.6635
+              519.5201,
+              313.2741
             ]
           ],
           "headline": "Anadolu Levhası’nda yaşanan tektonik süreçlerde etkili olan levhaları belirleyip ilgili kutucuğu işa­ retleyiniz."
@@ -2351,37 +2341,37 @@
           "label": "10",
           "column": 0,
           "rect": [
-            64.5992,
-            140.673,
-            521.0781,
-            215.1534
+            64.6549,
+            140.0055,
+            521.1337,
+            214.9309
           ],
           "parts": [
             [
-              64.5992,
-              140.673,
-              521.0781,
-              215.1534
+              64.6549,
+              140.0055,
+              521.1337,
+              214.9309
             ]
           ],
-          "headline": "Anadolu Levhası’nda yaşanan tektonik süreçlerin etkisiyle Türkiye arazisinde oluşan fay sistemleri nelerdir?"
+          "headline": "nelerdir?"
         },
         {
           "id": "p111-11",
           "label": "11",
           "column": 0,
           "rect": [
-            65.4895,
-            70.3643,
-            520.7442,
-            130.4382
+            64.9887,
+            70.4199,
+            521.6345,
+            130.4938
           ],
           "parts": [
             [
-              65.4895,
-              70.3643,
-              520.7442,
-              130.4382
+              64.9887,
+              70.4199,
+              521.6345,
+              130.4938
             ]
           ],
           "headline": "Türkiye'deki dağ kuşaklarının uzanışı ile çevresindeki levhaların hareket yönleri arasında nasıl bir ilişki vardır? Açıklayınız."
@@ -2403,17 +2393,17 @@
           "label": "12",
           "column": 0,
           "rect": [
-            50.1326,
-            178.6085,
-            506.3332,
-            705.0336
+            51.1897,
+            173.0461,
+            506.2219,
+            705.2561
           ],
           "parts": [
             [
-              50.1326,
-              178.6085,
-              506.3332,
-              705.0336
+              51.1897,
+              173.0461,
+              506.2219,
+              705.2561
             ]
           ],
           "headline": "Tektonizmaya bağlı gerçekleşen başlıca olayları, jeolojik zaman çizelgesindeki önemli olaylar başlığı altında bulunan boş alanlara yazınız."
@@ -2423,17 +2413,17 @@
           "label": "13",
           "column": 0,
           "rect": [
-            49.9656,
+            50.4108,
             88.2752,
-            507.5017,
-            146.4579
+            507.1678,
+            146.736
           ],
           "parts": [
             [
-              49.9656,
+              50.4108,
               88.2752,
-              507.5017,
-              146.4579
+              507.1678,
+              146.736
             ]
           ],
           "headline": "Türkiye arazisinin oluşum sürecinde yaşanan değişimi, jeolojik süreçlerde Türkiye arazisinde yaşanan olaylardan yararlanarak açıklayınız."
@@ -2455,17 +2445,17 @@
           "label": "14",
           "column": 0,
           "rect": [
-            64.2097,
+            63.7646,
             304.4299,
-            520.5773,
-            394.93
+            520.0209,
+            394.5963
           ],
           "parts": [
             [
-              64.2097,
+              63.7646,
               304.4299,
-              520.5773,
-              394.93
+              520.0209,
+              394.5963
             ]
           ],
           "headline": "Kırgıbayır ile peribacasının oluşumunda hangi iç ve dış etkenlerin etkili olduğu söylenebilir?"
@@ -2475,17 +2465,17 @@
           "label": "15",
           "column": 0,
           "rect": [
-            64.8218,
-            192.8482,
-            521.8571,
-            294.7513
+            64.5436,
+            193.9051,
+            521.5232,
+            294.5844
           ],
           "parts": [
             [
-              64.8218,
-              192.8482,
-              521.8571,
-              294.7513
+              64.5436,
+              193.9051,
+              521.5232,
+              294.5844
             ]
           ],
           "headline": "Verilen görsellere göre kırgıbayır ile peribacası arasında oluşum özellikleri açısından ne tür bir fark vardır?"
@@ -2495,17 +2485,17 @@
           "label": "16",
           "column": 0,
           "rect": [
-            64.8218,
-            78.4854,
-            520.9668,
-            182.6691
+            64.9887,
+            78.2629,
+            521.5789,
+            182.2797
           ],
           "parts": [
             [
-              64.8218,
-              78.4854,
-              520.9668,
-              182.6691
+              64.9887,
+              78.2629,
+              521.5789,
+              182.2797
             ]
           ],
           "headline": "Kırgıbayır ile peribacasının oluşum sürecinde kayaç özellikleri nasıl bir etkiye sahiptir? Kayaçların aşınmaya karşı direnci bakımından açıklayınız."
@@ -2527,40 +2517,40 @@
           "label": "17",
           "column": 0,
           "rect": [
-            51.6349,
-            257.0383,
-            506.1107,
-            476.586
+            51.8574,
+            258.4289,
+            506.4445,
+            475.5848
           ],
           "parts": [
             [
-              51.6349,
-              257.0383,
-              506.1107,
-              476.586
+              51.8574,
+              258.4289,
+              506.4445,
+              475.5848
             ]
           ],
-          "headline": "Aşağıdaki alanlarda arazinin şekillenmesinde etkili olan başlıca dış etkenlerin neler olduğunu belirle­ yip alanların karşısında verilen ilgili dış etkenleri iş"
+          "headline": "yip alanların karşısında verilen ilgili dış etkenleri işaretleyiniz. Buzul Rüzgâr"
         },
         {
           "id": "p114-18",
           "label": "18",
           "column": 0,
           "rect": [
-            51.1897,
-            47.781,
-            506.3332,
-            253.1446
+            50.0237,
+            48.0035,
+            506.2776,
+            251.5871
           ],
           "parts": [
             [
-              51.1897,
-              47.781,
-              506.3332,
-              253.1446
+              50.0237,
+              48.0035,
+              506.2776,
+              251.5871
             ]
           ],
-          "headline": "İşaretlediğiniz dış etkenlerin ilgili alanın şekillenmesinde başlıca dış etkenler olmasının nedenlerini boş bırakılan alanlara kısaca yazınız."
+          "headline": "bırakılan alanlara kısaca yazınız."
         }
       ]
     },
@@ -2579,17 +2569,17 @@
           "label": "19",
           "column": 0,
           "rect": [
-            67.882,
-            209.4242,
-            480.5158,
-            297.0875
+            67.2143,
+            209.5354,
+            479.6255,
+            297.1988
           ],
           "parts": [
             [
-              67.882,
-              209.4242,
-              480.5158,
-              297.0875
+              67.2143,
+              209.5354,
+              479.6255,
+              297.1988
             ]
           ],
           "headline": "Aşağıdaki kıyı tiplerini harita üzerinde harfler ile gösterilen kıyı tipleri ile eşleştiriniz."
@@ -2599,17 +2589,17 @@
           "label": "20",
           "column": 0,
           "rect": [
-            65.0443,
-            70.5312,
+            65.4338,
+            70.3643,
             521.5471,
-            198.0213
+            197.3538
           ],
           "parts": [
             [
-              65.0443,
-              70.5312,
+              65.4338,
+              70.3643,
               521.5471,
-              198.0213
+              197.3538
             ]
           ],
           "headline": "Aşağıdaki kıyı tiplerinin haritadaki görüldüğü yerlerin coğrafi özellikleri de dikkate alındığında, alanın hangi doğal özellikleri bu kıyı tiplerinin oluşumunda"
@@ -2631,16 +2621,16 @@
           "label": "21",
           "column": 0,
           "rect": [
-            49.7431,
-            300.5362,
-            506.7227,
+            51.5792,
+            300.9812,
+            506.9453,
             402.1612
           ],
           "parts": [
             [
-              49.7431,
-              300.5362,
-              506.7227,
+              51.5792,
+              300.9812,
+              506.9453,
               402.1612
             ]
           ],
@@ -2651,17 +2641,17 @@
           "label": "22",
           "column": 0,
           "rect": [
-            49.1867,
-            76.8167,
-            507.6686,
-            291.692
+            50.5777,
+            78.5966,
+            507.1678,
+            291.1358
           ],
           "parts": [
             [
-              49.1867,
-              76.8167,
-              507.6686,
-              291.692
+              50.5777,
+              78.5966,
+              507.1678,
+              291.1358
             ]
           ],
           "headline": "Eşleştirdiğiniz yer şekillerinin aşınım ve birikim süreçlerinde etkili olan unsurlardan hangisinin etkisiy­ le oluştuğunu kavram şemasına yazarak eşleştiriniz."
@@ -2683,17 +2673,17 @@
           "label": "23",
           "column": 0,
           "rect": [
-            65.7677,
-            349.819,
-            520.9112,
-            497.3337
+            63.5977,
+            350.6534,
+            520.1322,
+            497.0556
           ],
           "parts": [
             [
-              65.7677,
-              349.819,
-              520.9112,
-              497.3337
+              63.5977,
+              350.6534,
+              520.1322,
+              497.0556
             ]
           ],
           "headline": "Öğrencilerin yeryüzü şekilleriyle beşerî faaliyetler arasındaki etkileşime yönelik ortaya koydukları önermeler sınıflandırılmak istenirse hangi öğrencinin yeryü"
@@ -2703,17 +2693,17 @@
           "label": "24",
           "column": 0,
           "rect": [
-            64.8218,
-            245.1348,
+            64.2097,
+            245.246,
             521.5485,
-            335.8574
+            335.468
           ],
           "parts": [
             [
-              64.8218,
-              245.1348,
+              64.2097,
+              245.246,
               521.5485,
-              335.8574
+              335.468
             ]
           ],
           "headline": "Öğrencilerin önermelerinden hareketle, yeryüzü şekillerinin ekonomiye, sosyal hayata, kültürel dokuya ve yerleşmeye olan etkilerine yönelik aşağıdaki alana Türk"
@@ -2723,17 +2713,17 @@
           "label": "25",
           "column": 0,
           "rect": [
-            64.4879,
-            139.2824,
-            522.3578,
-            229.2819
+            65.1556,
+            139.338,
+            522.2466,
+            228.9482
           ],
           "parts": [
             [
-              64.4879,
-              139.2824,
-              522.3578,
-              229.2819
+              65.1556,
+              139.338,
+              522.2466,
+              228.9482
             ]
           ],
           "headline": "Türkiye’de yeryüzü şekillerinin beşerî faaliyetlere olan etkilerinin olumlu ve olumsuz yönleri hakkındaki görüşlerinizi aşağıdaki alana yazınız."
@@ -2756,38 +2746,38 @@
           "column": 0,
           "rect": [
             49.0197,
-            96.8969,
-            481.9625,
-            109.0786
+            97.3419,
+            481.9068,
+            108.6892
           ],
           "parts": [
             [
               49.0197,
-              96.8969,
-              481.9625,
-              109.0786
+              97.3419,
+              481.9068,
+              108.6892
             ]
-          ],
-          "headline": "Görselleri verilen yerleşmelerin yerleşme alanı olarak seçilmesinde belirleyici olan faktörler nelerdir?"
+          ]
         },
         {
           "id": "p120-2",
           "label": "2",
           "column": 0,
           "rect": [
-            49.6874,
-            79.431,
-            429.7712,
-            91.9464
+            48.9465,
+            79.2641,
+            428.6027,
+            92.5026
           ],
           "parts": [
             [
-              49.6874,
-              79.431,
-              429.7712,
-              91.9464
+              48.9465,
+              79.2641,
+              428.6027,
+              92.5026
             ]
-          ]
+          ],
+          "headline": "Görselleri verilen yerleşmeler hangi özellikleri bakımından birbirinden farklılık gösterir?"
         }
       ]
     },
@@ -2802,40 +2792,21 @@
       ],
       "activities": [
         {
-          "id": "p121-v1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            67.1105,
-            463.2297,
-            515.1801,
-            663.9831
-          ],
-          "parts": [
-            [
-              67.1105,
-              463.2297,
-              515.1801,
-              663.9831
-            ]
-          ]
-        },
-        {
           "id": "p121-1",
           "label": "1",
           "column": 0,
           "rect": [
-            67.5482,
-            428.0263,
-            512.1755,
-            441.4317
+            66.491,
+            428.3044,
+            512.1199,
+            442.1548
           ],
           "parts": [
             [
-              67.5482,
-              428.0263,
-              512.1755,
-              441.4317
+              66.491,
+              428.3044,
+              512.1199,
+              442.1548
             ]
           ]
         },
@@ -2844,55 +2815,20 @@
           "label": "2",
           "column": 0,
           "rect": [
-            65.4895,
-            345.3691,
-            519.2976,
-            424.6889
+            74.5118,
+            344.5904,
+            520.0743,
+            415.1772
           ],
           "parts": [
             [
-              65.4895,
-              345.3691,
-              519.2976,
-              424.6889
+              74.5118,
+              344.5904,
+              520.0743,
+              415.1772
             ]
           ],
           "headline": "a.  geçmişten bugüne ne tür bir değişim yaşanmıştır?"
-        }
-      ]
-    },
-    "125": {
-      "pageWidth": 569.764,
-      "pageHeight": 796.535,
-      "columns": [
-        [
-          59.1969,
-          289.0551
-        ],
-        [
-          293.0551,
-          545.764
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p125-v1",
-          "label": null,
-          "column": 1,
-          "rect": [
-            299.056,
-            447.031,
-            569.764,
-            705.273
-          ],
-          "parts": [
-            [
-              299.056,
-              447.031,
-              569.764,
-              705.273
-            ]
-          ]
         }
       ]
     },
@@ -2907,56 +2843,44 @@
       ],
       "activities": [
         {
+          "id": "p129-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            68.6054,
+            96.0069,
+            523.4479,
+            121.0933
+          ],
+          "parts": [
+            [
+              68.6054,
+              96.0069,
+              523.4479,
+              121.0933
+            ]
+          ],
+          "headline": "Eşsiz bir güzelliğe sahip olan Salda Gölü’nde yürütülen ekonomik faaliyetler ve bu faaliyetlere bağlı kurulacak yerleşmeler bu alanın doğal yapısına ne tür zara"
+        },
+        {
           "id": "p129-2",
           "label": "2",
           "column": 0,
           "rect": [
-            68.7723,
-            77.9848,
-            486.0243,
-            91.5014
+            67.7708,
+            78.1517,
+            486.2468,
+            91.9464
           ],
           "parts": [
             [
-              68.7723,
-              77.9848,
-              486.0243,
-              91.5014
+              67.7708,
+              78.1517,
+              486.2468,
+              91.9464
             ]
           ],
           "headline": "Salda Gölü’nün doğal yapısını korumaya yönelik olarak bireysel ve toplumsal olarak neler yapılabilir?"
-        }
-      ]
-    },
-    "133": {
-      "pageWidth": 569.764,
-      "pageHeight": 796.535,
-      "columns": [
-        [
-          47.477,
-          545.764
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p133-4. Adım",
-          "label": "4. Adım",
-          "column": 0,
-          "rect": [
-            64.321,
-            81.4891,
-            521.0224,
-            287.9652
-          ],
-          "parts": [
-            [
-              64.321,
-              81.4891,
-              521.0224,
-              287.9652
-            ]
-          ],
-          "headline": "Balık kılçığı tekniğiyle yaptığınız çalışmayı diğer gruplarla paylaşınız. Yapılan paylaşımlardan yarar­ lanarak aşağıdaki tabloyu doldurunuz."
         }
       ]
     },
@@ -2975,52 +2899,20 @@
           "label": "1. Adım",
           "column": 0,
           "rect": [
-            46.4602,
-            269.4424,
-            536.7689,
-            582.7165
+            45.8482,
+            270.2768,
+            537.826,
+            586.3877
           ],
           "parts": [
             [
-              46.4602,
-              269.4424,
-              536.7689,
-              582.7165
+              45.8482,
+              270.2768,
+              537.826,
+              586.3877
             ]
           ],
           "headline": "Doğal ve beşerî faktörlerle yaşadığınız yerleşmenin kuruluşunda ve gelişiminde etkili olan fonksiyonlar ara­ sında nasıl bir ilişki olduğunu belirleyiniz."
-        }
-      ]
-    },
-    "137": {
-      "pageWidth": 569.764,
-      "pageHeight": 796.535,
-      "columns": [
-        [
-          59.2106,
-          545.764
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p137-1",
-          "label": "1",
-          "column": 0,
-          "rect": [
-            63.8759,
-            357.5508,
-            521.6515,
-            730.535
-          ],
-          "parts": [
-            [
-              63.8759,
-              357.5508,
-              521.6515,
-              730.535
-            ]
-          ],
-          "headline": "rin yaşadığım yerleşmeyi nasıl etkilediğine yönelik çalışma sorusu oluş­ turdum."
         }
       ]
     },
@@ -3039,40 +2931,40 @@
           "label": "1",
           "column": 0,
           "rect": [
-            53.3597,
-            235.1224,
+            52.7477,
+            238.2374,
             506.8757,
-            402.6618
+            402.2168
           ],
           "parts": [
             [
-              53.3597,
-              235.1224,
+              52.7477,
+              238.2374,
               506.8757,
-              402.6618
+              402.2168
             ]
           ],
-          "headline": "Bu yerleşme alanının yerleşme yeri olarak seçilmesinde hangi coğrafi faktörlerin etkili olabileceğini işaretleyiniz."
+          "headline": "işaretleyiniz."
         },
         {
           "id": "p138-2",
           "label": "2",
           "column": 0,
           "rect": [
-            49.1867,
-            156.3589,
+            49.6874,
+            157.1377,
             506.7783,
-            228.5032
+            228.5588
           ],
           "parts": [
             [
-              49.1867,
-              156.3589,
+              49.6874,
+              157.1377,
               506.7783,
-              228.5032
+              228.5588
             ]
           ],
-          "headline": "sunmuş olabilir?"
+          "headline": "Bu yerleşme alanının yer seçiminde etkili olan coğrafi faktörler, yerleşmenin gelişimine ne tür katkılar sunmuş olabilir?"
         },
         {
           "id": "p138-3",
@@ -3080,16 +2972,16 @@
           "column": 0,
           "rect": [
             50.6333,
-            74.2024,
-            506.3889,
-            147.4035
+            74.0911,
+            506.834,
+            147.1253
           ],
           "parts": [
             [
               50.6333,
-              74.2024,
-              506.3889,
-              147.4035
+              74.0911,
+              506.834,
+              147.1253
             ]
           ],
           "headline": "Bu yerleşme alanının gelişiminde etkili olan coğrafi faktörlerde meydana gelebilecek değişiklikler , bu yerleşim alanında hangi sonuçlara yol açabilir?"
@@ -3123,37 +3015,37 @@
           "label": "4",
           "column": 0,
           "rect": [
-            63.8759,
-            253.8121,
-            518.8524,
-            325.2332
+            63.709,
+            254.0346,
+            518.9637,
+            325.4001
           ],
           "parts": [
             [
-              63.8759,
-              253.8121,
-              518.8524,
-              325.2332
+              63.709,
+              254.0346,
+              518.9637,
+              325.4001
             ]
           ],
-          "headline": "menin alansal gelişiminde ne tür etkiler ortaya çıkarmış olabilir?"
+          "headline": "Yerleşmelerin haritadaki alanlarına bakıldığında, kara yolunun güzergâhındaki değişim her iki yerleş­ menin alansal gelişiminde ne tür etkiler ortaya çıkarmış o"
         },
         {
           "id": "p139-5",
           "label": "5",
           "column": 0,
           "rect": [
-            63.6533,
-            170.8768,
-            519.5758,
-            244.1891
+            62.8743,
+            171.0436,
+            519.854,
+            244.356
           ],
           "parts": [
             [
-              63.6533,
-              170.8768,
-              519.5758,
-              244.1891
+              62.8743,
+              171.0436,
+              519.854,
+              244.356
             ]
           ],
           "headline": "Değişen kara yolu güzergâhı, diğerine göre daha eski bir yerleşme olan Eski Gediz'de yürütülen ekono­ mik faaliyetlerde ne tür değişmelere neden olmuş olabilir?"
@@ -3163,17 +3055,17 @@
           "label": "6",
           "column": 0,
           "rect": [
-            63.709,
-            88.609,
-            520.0209,
-            161.5876
+            63.542,
+            88.6646,
+            521.1337,
+            162.0326
           ],
           "parts": [
             [
-              63.709,
-              88.609,
-              520.0209,
-              161.5876
+              63.542,
+              88.6646,
+              521.1337,
+              162.0326
             ]
           ],
           "headline": "Yaşanan deprem sonrası ilçe merkezinin Gediz'e taşınmış olması Eski Gediz yerleşmesinin fonksiyonla­ rında ne tür değişimler meydana getirmiş olabilir?"
@@ -3195,17 +3087,17 @@
           "label": "7",
           "column": 0,
           "rect": [
-            52.0243,
-            189.1771,
-            506.3332,
-            309.436
+            52.2469,
+            189.5664,
+            507.3758,
+            308.9354
           ],
           "parts": [
             [
-              52.0243,
-              189.1771,
-              506.3332,
-              309.436
+              52.2469,
+              189.5664,
+              507.3758,
+              308.9354
             ]
           ],
           "headline": "Adana şehrinin kurulduğu ve üzerinde gelişim gösterdiği alanın sahip olduğu coğrafi koşullar, aşağıdaki fonksiyonlardan hangilerinin şehirde gelişimine olanak t"
@@ -3215,20 +3107,82 @@
           "label": "8",
           "column": 0,
           "rect": [
-            50.0769,
-            112.6385,
-            507.2791,
-            184.1709
+            50.8002,
+            112.1379,
+            507.7799,
+            184.1153
           ],
           "parts": [
             [
-              50.0769,
-              112.6385,
-              507.2791,
-              184.1709
+              50.8002,
+              112.1379,
+              507.7799,
+              184.1153
             ]
           ],
           "headline": "çıkarmış olabilir?"
+        }
+      ]
+    },
+    "141": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          58.9469,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p141-10",
+          "label": "10",
+          "column": 0,
+          "rect": [
+            63.8759,
+            64.5794,
+            520.466,
+            141.6742
+          ],
+          "parts": [
+            [
+              63.8759,
+              64.5794,
+              520.466,
+              141.6742
+            ]
+          ]
+        }
+      ]
+    },
+    "143": {
+      "pageWidth": 569.764,
+      "pageHeight": 796.535,
+      "columns": [
+        [
+          458.0522,
+          545.764
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p143-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            45.9595,
+            65.8588,
+            537.826,
+            146.1241
+          ],
+          "parts": [
+            [
+              45.9595,
+              65.8588,
+              537.826,
+              146.1241
+            ]
+          ]
         }
       ]
     },
@@ -3243,44 +3197,23 @@
       ],
       "activities": [
         {
-          "id": "p145-2",
-          "label": "2",
+          "id": "p145-v1",
+          "label": null,
           "column": 0,
           "rect": [
-            64.5992,
-            354.6027,
-            499.7119,
-            371.1628
+            62.2623,
+            373.6817,
+            524.194,
+            722.3326
           ],
           "parts": [
             [
-              64.5992,
-              354.6027,
-              499.7119,
-              371.1628
+              62.2623,
+              373.6817,
+              524.194,
+              722.3326
             ]
-          ],
-          "headline": "Yaşadığınız yerde yürütülen bu ekonomik faaliyetler, hangi ekonomik sektör gruplarında yer alabilir?"
-        },
-        {
-          "id": "p145-3",
-          "label": "3",
-          "column": 0,
-          "rect": [
-            64.9887,
-            274.8379,
-            521.5789,
-            352.7671
-          ],
-          "parts": [
-            [
-              64.9887,
-              274.8379,
-              521.5789,
-              352.7671
-            ]
-          ],
-          "headline": "Yaşadığınız yerin gelişiminde hangi ekonomik faaliyetler daha fazla etkili olmuştur? Açıklayınız."
+          ]
         }
       ]
     },
@@ -3295,21 +3228,41 @@
       ],
       "activities": [
         {
+          "id": "p151-1. Adım",
+          "label": "1. Adım",
+          "column": 0,
+          "rect": [
+            61.1495,
+            306.8773,
+            519.6314,
+            634.1687
+          ],
+          "parts": [
+            [
+              61.1495,
+              306.8773,
+              519.6314,
+              634.1687
+            ]
+          ],
+          "headline": "Aşağıdaki ekonomik faaliyetleri üretim özelliklerine göre sınıflandırıp verilen tabloya yazınız."
+        },
+        {
           "id": "p151-2. Adım",
           "label": "2. Adım",
           "column": 0,
           "rect": [
-            63.542,
-            157.8051,
-            510.7845,
-            283.849
+            63.2082,
+            160.197,
+            510.7289,
+            283.6821
           ],
           "parts": [
             [
-              63.542,
-              157.8051,
-              510.7845,
-              283.849
+              63.2082,
+              160.197,
+              510.7289,
+              283.6821
             ]
           ],
           "headline": "Aşağıdaki soruları cevaplayınız..",
@@ -3322,7 +3275,7 @@
               "rect": [
                 105.7106,
                 237.571,
-                510.7845,
+                510.7289,
                 270.6011
               ],
               "text": " Ekonomik faaliyetlerden elde edilen gelir, bu faaliyetlerin sektörlere göre sınıflandırılma­sında 1. belirleyici bir faktör olabilir mi? Açıklayınız."
@@ -3348,7 +3301,7 @@
               "rect": [
                 103.9306,
                 190.2325,
-                510.7845,
+                510.7289,
                 223.2625
               ],
               "text": " Türkiye’nin ekonomik açıdan daha da ilerleyebilmesi için hangi ekonomik sektörlerde yer alan 3. faaliyetlerin daha fazla ilerlemesi gereklidir?"
@@ -3361,7 +3314,7 @@
               "rect": [
                 103.3906,
                 160.5632,
-                510.7845,
+                510.7289,
                 193.5932
               ],
               "text": " Hangi ekonomik faaliyet kolunda çalışmak isterdiniz? Ülke ekonomisine katkı sunabilmek için 4. seçmiş olduğunuz faaliyet kolunda ne gibi yenilikler ortaya koymak isterdiniz?"
@@ -3385,36 +3338,37 @@
           "label": "1",
           "column": 0,
           "rect": [
-            54.862,
-            478.6441,
-            504.7753,
-            510.5166
+            54.4726,
+            478.6997,
+            503.885,
+            511.4622
           ],
           "parts": [
             [
-              54.862,
-              478.6441,
-              504.7753,
-              510.5166
+              54.4726,
+              478.6997,
+              503.885,
+              511.4622
             ]
-          ]
+          ],
+          "headline": "Doğrudan doğal ortama bağlı olarak sürdürülen ekonomik faaliyetleri kapsayan sektör hangisidir?"
         },
         {
           "id": "p152-2",
           "label": "2",
           "column": 0,
           "rect": [
-            52.8033,
-            438.7617,
-            506.2219,
-            471.7467
+            52.9146,
+            438.4836,
+            504.3858,
+            472.5811
           ],
           "parts": [
             [
-              52.8033,
-              438.7617,
-              506.2219,
-              471.7467
+              52.9146,
+              438.4836,
+              504.3858,
+              472.5811
             ]
           ],
           "headline": "Üst düzey karar verme ve kontrol etme faaliyetlerini kapsayan ekonomik sektör hangisidir?"
@@ -3424,17 +3378,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            53.3597,
-            400.1587,
-            504.664,
-            432.3093
+            52.692,
+            399.825,
+            505.1091,
+            432.2537
           ],
           "parts": [
             [
-              53.3597,
-              400.1587,
-              504.664,
-              432.3093
+              52.692,
+              399.825,
+              505.1091,
+              432.2537
             ]
           ],
           "headline": "Bilgi ve enformasyon işleme faaliyetlerini kapsayan ekonomik sektör hangisidir?"
@@ -3444,17 +3398,17 @@
           "label": "4",
           "column": 0,
           "rect": [
-            52.1913,
-            348.5953,
-            504.8866,
-            392.9276
+            51.9687,
+            348.9847,
+            503.7181,
+            393.0945
           ],
           "parts": [
             [
-              52.1913,
-              348.5953,
-              504.8866,
-              392.9276
+              51.9687,
+              348.9847,
+              503.7181,
+              393.0945
             ]
           ],
           "headline": "Birincil ekonomik faaliyetlerle elde edilen ham mad­delerin işlenerek insanların kullanabileceği hâle geti­ rildiği faaliyetleri kapsayan sektör hangisidir?"
@@ -3464,17 +3418,17 @@
           "label": "5",
           "column": 0,
           "rect": [
-            53.5267,
-            297.6994,
-            506.055,
-            342.0317
+            52.7477,
+            298.2556,
+            504.664,
+            342.2542
           ],
           "parts": [
             [
-              53.5267,
-              297.6994,
-              506.055,
-              342.0317
+              52.7477,
+              298.2556,
+              504.664,
+              342.2542
             ]
           ],
           "headline": "Fiziksel ürünler yerine maddi olmayan mal ve hizmetler sağlayan ekonomik faaliyet kollarını kapsayan sektör hangisidir?"
@@ -3484,17 +3438,17 @@
           "label": "6",
           "column": 0,
           "rect": [
-            53.9718,
-            257.8726,
-            506.3889,
-            290.8576
+            53.3041,
+            257.6501,
+            505.7212,
+            291.3583
           ],
           "parts": [
             [
-              53.9718,
-              257.8726,
-              506.3889,
-              290.8576
+              53.3041,
+              257.6501,
+              505.7212,
+              291.3583
             ]
           ],
           "headline": "Birincil sektörde yer alan ekonomik faaliyetler hangileridir?"
@@ -3504,17 +3458,17 @@
           "label": "7",
           "column": 0,
           "rect": [
-            54.0274,
-            217.3228,
-            506.3889,
-            251.0865
+            53.2484,
+            218.8246,
+            506.1107,
+            252.6996
           ],
           "parts": [
             [
-              54.0274,
-              217.3228,
-              506.3889,
-              251.0865
+              53.2484,
+              218.8246,
+              506.1107,
+              252.6996
             ]
           ],
           "headline": "İkincil sektörde yer alan ekonomik faaliyetler hangileridir?"
@@ -3524,17 +3478,17 @@
           "label": "8",
           "column": 0,
           "rect": [
-            54.25,
-            178.6641,
-            505.3317,
-            211.7048
+            52.5251,
+            179.6654,
+            504.8866,
+            212.0385
           ],
           "parts": [
             [
-              54.25,
-              178.6641,
-              505.3317,
-              211.7048
+              52.5251,
+              179.6654,
+              504.8866,
+              212.0385
             ]
           ],
           "headline": "Üçüncül sektörde yer alan ekonomik faaliyetler hangileridir?"
@@ -3544,17 +3498,17 @@
           "label": "9",
           "column": 0,
           "rect": [
-            52.9146,
-            139.2824,
-            505.276,
-            173.1017
+            51.9131,
+            138.9486,
+            505.3317,
+            173.658
           ],
           "parts": [
             [
-              52.9146,
-              139.2824,
-              505.276,
-              173.1017
+              51.9131,
+              138.9486,
+              505.3317,
+              173.658
             ]
           ],
           "headline": "Dördüncül sektörde yer alan ekonomik faaliyetler hangileridir?"
@@ -3564,52 +3518,20 @@
           "label": "10",
           "column": 0,
           "rect": [
-            50.7446,
-            98.4544,
-            506.3889,
-            133.1081
+            49.3536,
+            98.8438,
+            507.0566,
+            134.4431
           ],
           "parts": [
             [
-              50.7446,
-              98.4544,
-              506.3889,
-              133.1081
+              49.3536,
+              98.8438,
+              507.0566,
+              134.4431
             ]
           ],
           "headline": "Beşincil sektörde yer alan ekonomik faaliyetler hangileridir?"
-        }
-      ]
-    },
-    "155": {
-      "pageWidth": 569.764,
-      "pageHeight": 796.535,
-      "columns": [
-        [
-          59.1609,
-          547.5891
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p155-4. Adım",
-          "label": "4. Adım",
-          "column": 0,
-          "rect": [
-            64.9887,
-            138.5036,
-            519.854,
-            356.4383
-          ],
-          "parts": [
-            [
-              64.9887,
-              138.5036,
-              519.854,
-              356.4383
-            ]
-          ],
-          "headline": "Ülkelerdeki çalışan nüfusun ekonomik sektörlere dağılışı ile bu sektörlerin GSYİH yüzdesi bilgilerin­ den yararlanarak ülkelerin ekonomik gelişmişlik durumunu a"
         }
       ]
     },
@@ -3638,14 +3560,14 @@
           "rect": [
             58.999,
             303.307,
-            500.032,
+            500.324,
             481.889
           ],
           "parts": [
             [
               58.999,
               303.307,
-              500.032,
+              500.324,
               481.889
             ]
           ]
@@ -3655,17 +3577,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            68.661,
-            61.9651,
+            68.4384,
+            62.4101,
             527.4249,
-            220.549
+            221.0496
           ],
           "parts": [
             [
-              68.661,
-              61.9651,
+              68.4384,
+              62.4101,
               527.4249,
-              220.549
+              221.0496
             ]
           ],
           "headline": "Ekonomik sektörlerin Türkiye ekonomisindeki yeri ile ilgili oluşturacağınız tablo, grafik şekil ve/veya diyagramın amacını belirleyiniz."
@@ -3687,17 +3609,17 @@
           "label": "1. Adım",
           "column": 0,
           "rect": [
-            50.0769,
-            250.3634,
-            507.4641,
-            616.0353
+            50.9672,
+            249.4734,
+            506.5001,
+            615.5903
           ],
           "parts": [
             [
-              50.0769,
-              250.3634,
-              507.4641,
-              616.0353
+              50.9672,
+              249.4734,
+              506.5001,
+              615.5903
             ]
           ],
           "headline": "Ekonomik sektörlerin Türkiye ekonomisindeki yerine ilişkin ders öncesinde belirlediğiniz amaç ve elde ettiğiniz veriler doğrultusunda aşağıdaki çizim alanında t"
@@ -3707,17 +3629,17 @@
           "label": "2. Adım",
           "column": 0,
           "rect": [
-            50.0769,
-            121.0933,
-            506.5001,
-            237.4586
+            49.5761,
+            119.814,
+            505.3873,
+            237.6255
           ],
           "parts": [
             [
-              50.0769,
-              121.0933,
-              506.5001,
-              237.4586
+              49.5761,
+              119.814,
+              505.3873,
+              237.6255
             ]
           ],
           "headline": "Aşağıdaki soruları oluşturduğunuz tablo, grafik, şekil ve/veya diyagramdan yararlanarak cevaplayınız.",
@@ -3730,7 +3652,7 @@
               "rect": [
                 89.5434,
                 178.936,
-                506.5001,
+                505.3873,
                 223.9661
               ],
               "text": " Türkiye'nin ekonomisinde geçmişten bugüne nasıl bir değişim yaşandığını, Türkiye'de ekonomik 1. sektörlerin istihdam ve gayrisafi yurt içi hasıladaki yerine ilişkin verileri aktardığınız tablo, grafi"
@@ -3755,7 +3677,7 @@
               "partIndex": 0,
               "rect": [
                 89.5434,
-                121.0933,
+                119.814,
                 488.1396,
                 152.6275
               ],
@@ -3776,24 +3698,43 @@
       ],
       "activities": [
         {
-          "id": "p159-1. Adım",
-          "label": "1. Adım",
+          "id": "p159-q1",
+          "label": null,
           "column": 0,
           "rect": [
-            49.91,
-            54.3446,
-            541.3871,
-            281.1234
+            49.267,
+            433.667,
+            536.387,
+            733.033
           ],
           "parts": [
             [
-              49.91,
-              54.3446,
-              541.3871,
-              281.1234
+              49.267,
+              433.667,
+              536.387,
+              733.033
             ]
           ],
-          "headline": "Düzenlediğiniz bilgileri coğrafi temsiller aracıyla görselleştiriniz."
+          "headline": "Ekonomik sektörlerin Türkiye ekonomisindeki yeri ve önemi etkinliğine ilişkin değerlendirme yapmak ama­ cıyla aşağıdaki maddeleri okuyunuz v"
+        },
+        {
+          "id": "p159-v2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            65.9346,
+            280.456,
+            522.6917,
+            425.3007
+          ],
+          "parts": [
+            [
+              65.9346,
+              280.456,
+              522.6917,
+              425.3007
+            ]
+          ]
         }
       ]
     },
@@ -3816,21 +3757,40 @@
       ],
       "activities": [
         {
+          "id": "p162-v1",
+          "label": null,
+          "column": 2,
+          "rect": [
+            117.5695,
+            511.2397,
+            443.9585,
+            649.2984
+          ],
+          "parts": [
+            [
+              117.5695,
+              511.2397,
+              443.9585,
+              649.2984
+            ]
+          ]
+        },
+        {
           "id": "p162-1",
           "label": "1",
           "column": 0,
           "rect": [
-            50.5777,
-            354.0464,
+            52.7477,
+            367.1072,
             475.2134,
-            503.1743
+            503.1186
           ],
           "parts": [
             [
-              50.5777,
-              354.0464,
+              52.7477,
+              367.1072,
               475.2134,
-              503.1743
+              503.1186
             ]
           ],
           "headline": "ARNAVUTLUK AVUSTRALYA KOLOMBİYA"
@@ -3840,17 +3800,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            49.9656,
+            50.1326,
             280.7936,
-            505.7212,
-            336.6361
+            504.4971,
+            336.5249
           ],
           "parts": [
             [
-              49.9656,
+              50.1326,
               280.7936,
-              505.7212,
-              336.6361
+              504.4971,
+              336.5249
             ]
           ],
           "headline": "Verilen ülkelerde çalışan nüfusun sektörel dağılımında ne tür farklılıklar bulunmaktadır? Açıklayınız."
@@ -3860,17 +3820,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            49.6874,
-            206.7542,
-            506.9453,
-            273.7255
+            50.689,
+            206.643,
+            507.3348,
+            273.2805
           ],
           "parts": [
             [
-              49.6874,
-              206.7542,
-              506.9453,
-              273.7255
+              50.689,
+              206.643,
+              507.3348,
+              273.2805
             ]
           ],
           "headline": "Verilen ülkelerde çalışan nüfusun sektörel dağılımındaki farklılığın ortaya çıkmasında ülkelerin eko­ nomik kalkınma düzeyi ne ölçüde etkili olmuş olabilir? Açı"
@@ -3881,16 +3841,16 @@
           "column": 0,
           "rect": [
             50.0237,
-            51.174,
-            430.6614,
-            196.13
+            51.6747,
+            429.4373,
+            195.8519
           ],
           "parts": [
             [
               50.0237,
-              51.174,
-              430.6614,
-              196.13
+              51.6747,
+              429.4373,
+              195.8519
             ]
           ],
           "headline": "Verilen ülkelerin ekonomik gelişmişlik durumlarını aşağıdaki tabloya işaretleyiniz."
@@ -3912,17 +3872,17 @@
           "label": "5",
           "column": 0,
           "rect": [
-            65.4895,
-            293.3051,
-            518.9637,
-            508.1804
+            65.4338,
+            293.032,
+            537.165,
+            507.2904
           ],
           "parts": [
             [
-              65.4895,
-              293.3051,
-              518.9637,
-              508.1804
+              65.4338,
+              293.032,
+              537.165,
+              507.2904
             ]
           ],
           "headline": "Tablodaki verilerden yararlanarak aşağıdaki grafiği oluşturunuz."
@@ -3932,17 +3892,17 @@
           "label": "6",
           "column": 0,
           "rect": [
-            63.9315,
-            198.9669,
-            521.7458,
-            283.849
+            63.9872,
+            198.6331,
+            521.6345,
+            284.0715
           ],
           "parts": [
             [
-              63.9315,
-              198.9669,
-              521.7458,
-              283.849
+              63.9872,
+              198.6331,
+              521.6345,
+              284.0715
             ]
           ],
           "headline": "Türkiye’de yıllar itibarıyla imalat sanayisinde üretilen ürünlerin teknoloji düzeyine göre satış değe­ rinin yüzdelik dağılımında ne tür değişimler yaşanmıştır?"
@@ -3952,17 +3912,17 @@
           "label": "7",
           "column": 0,
           "rect": [
-            63.9872,
-            102.2924,
-            520.7999,
-            188.3427
+            64.4879,
+            102.4037,
+            522.0796,
+            188.6764
           ],
           "parts": [
             [
-              63.9872,
-              102.2924,
-              520.7999,
-              188.3427
+              64.4879,
+              102.4037,
+              522.0796,
+              188.6764
             ]
           ],
           "headline": "İmalat sanayisinde üretilen yüksek teknoloji ürünlerinin satış değerinin diğer teknoloji düzeylerine göre yüzdelik açıdan artırılmasının ülke ekonomisine etkile"
@@ -3984,37 +3944,37 @@
           "label": "8",
           "column": 0,
           "rect": [
-            49.91,
-            401.3268,
-            506.5558,
-            525.5907
+            50.6333,
+            400.9374,
+            507.0566,
+            524.7564
           ],
           "parts": [
             [
-              49.91,
-              401.3268,
-              506.5558,
-              525.5907
+              50.6333,
+              400.9374,
+              507.0566,
+              524.7564
             ]
           ],
-          "headline": "Ekonomik faaliyetlerin sektörlere göre sınıflandırılmasında aşağıdakilerden hangisi ölçüt olarak kullanılır? İşaretleyiniz."
+          "headline": "kullanılır? İşaretleyiniz."
         },
         {
           "id": "p164-9",
           "label": "9",
           "column": 0,
           "rect": [
-            50.9672,
-            53.399,
-            506.4445,
-            387.6433
+            51.8018,
+            53.2321,
+            504.2189,
+            387.0871
           ],
           "parts": [
             [
-              50.9672,
-              53.399,
-              506.4445,
-              387.6433
+              51.8018,
+              53.2321,
+              504.2189,
+              387.0871
             ]
           ],
           "headline": "diğiniz ölçütlerden yararlanarak işaretleyiniz."
@@ -4040,37 +4000,37 @@
           "label": "11",
           "column": 0,
           "rect": [
-            50.0477,
-            418.5703,
-            504.2189,
-            602.463
+            50.2995,
+            428.9022,
+            504.4414,
+            603.0749
           ],
           "parts": [
             [
-              50.0477,
-              418.5703,
-              504.2189,
-              602.463
+              50.2995,
+              428.9022,
+              504.4414,
+              603.0749
             ]
           ],
-          "headline": "YİH) paylarına ait verilerden yararlanarak aşağıdaki pasta grafiklerini oluşturunuz. ÇALIŞAN NÜFUSUN EKONOMİK FAALİYET EKONOMİK FAALİYET TÜR"
+          "headline": "Verilen ülkelerdeki çalışan nüfusun sektörel dağılımı ile sektörlerin gayrisafi yurt içi hasıladaki (GS­ YİH) paylarına ait verilerden yararlanarak aşağıdaki pa"
         },
         {
           "id": "p166-12",
           "label": "12",
           "column": 0,
           "rect": [
-            49.5761,
-            317.7998,
-            506.6114,
-            407.0561
+            49.6874,
+            320.0602,
+            506.5558,
+            407.0004
           ],
           "parts": [
             [
-              49.5761,
-              317.7998,
-              506.6114,
-              407.0561
+              49.6874,
+              320.0602,
+              506.5558,
+              407.0004
             ]
           ],
           "headline": "Verilen ülkelerde çalışan nüfusun sektörel dağılımı ile bu sektörlerin ülkelerin GSYİH'deki yüzdesi arasında ne tür farklılıklar bulunmaktadır? Açıklayınız."
@@ -4080,20 +4040,20 @@
           "label": "13",
           "column": 0,
           "rect": [
-            51.1897,
-            67.75,
-            507.459,
-            311.1048
+            50.0237,
+            67.9168,
+            506.2219,
+            310.1035
           ],
           "parts": [
             [
-              51.1897,
-              67.75,
-              507.459,
-              311.1048
+              50.0237,
+              67.9168,
+              506.2219,
+              310.1035
             ]
           ],
-          "headline": "Verilen ülkelerde çalışan nüfusun sektörel dağılımı ile bu sektörlerin ülkelerin GSYİH'deki yüzdesi arasındaki farklılıktan yararlanarak ülkeleri aşağıda verile"
+          "headline": "arasındaki farklılıktan yararlanarak ülkeleri aşağıda verilen bilgiler açısından karşılaştırınız."
         }
       ]
     },
@@ -4112,17 +4072,17 @@
           "label": "14",
           "column": 0,
           "rect": [
-            64.0984,
-            663.26,
-            521.0781,
-            729.675
+            64.6549,
+            663.3712,
+            520.7999,
+            730.2868
           ],
           "parts": [
             [
-              64.0984,
-              663.26,
-              521.0781,
-              729.675
+              64.6549,
+              663.3712,
+              520.7999,
+              730.2868
             ]
           ],
           "headline": "rın sosyoekonomik yaşantıları hakkında neler söylenebilir?"
@@ -4132,37 +4092,37 @@
           "label": "15",
           "column": 0,
           "rect": [
-            64.1969,
-            206.0048,
-            520.5217,
-            425.1895
+            64.8218,
+            203.0549,
+            521.6349,
+            424.3551
           ],
           "parts": [
             [
-              64.1969,
-              206.0048,
-              520.5217,
-              425.1895
+              64.8218,
+              203.0549,
+              521.6349,
+              424.3551
             ]
           ],
-          "headline": "Türkiye'de yıllara göre çalışan nüfusun sektörlere dağılım yüzdeliği grafiğini tablodaki bilgilerden yararlanarak oluşturunuz."
+          "headline": "yararlanarak oluşturunuz. Türkiye’de Yıllara Göre Çalışan Nüfusun Sektörlere Dağılım Yüzdeliği"
         },
         {
           "id": "p167-16",
           "label": "16",
           "column": 0,
           "rect": [
-            64.0428,
+            62.9856,
             131.0908,
-            532.4289,
-            204.0287
+            521.3563,
+            202.8049
           ],
           "parts": [
             [
-              64.0428,
+              62.9856,
               131.0908,
-              532.4289,
-              204.0287
+              521.3563,
+              202.8049
             ]
           ],
           "headline": "Türkiye’de yıllar itibarıyla çalışan nüfusun sektörel dağılım oranında ne tür değişimler yaşanmıştır?"
@@ -4173,16 +4133,16 @@
           "column": 0,
           "rect": [
             64.321,
-            55.8464,
+            56.9589,
             521.6339,
-            125.2651
+            125.0983
           ],
           "parts": [
             [
               64.321,
-              55.8464,
+              56.9589,
               521.6339,
-              125.2651
+              125.0983
             ]
           ],
           "headline": "Türkiye’de yıllar içerisinde çalışan nüfusun sektörel dağılım yüzdesinde yaşanan değişim, ülkenin ekonomik gelişmişliğini nasıl etkilemiş olabilir? Açıklayınız."
@@ -4200,24 +4160,23 @@
       ],
       "activities": [
         {
-          "id": "p171-2",
-          "label": "2",
+          "id": "p171-1",
+          "label": "1",
           "column": 0,
           "rect": [
-            65.712,
-            282.655,
-            527.811,
-            332.695
+            65.6564,
+            335.3568,
+            467.3839,
+            345.9253
           ],
           "parts": [
             [
-              65.712,
-              282.655,
-              527.811,
-              332.695
+              65.6564,
+              335.3568,
+              467.3839,
+              345.9253
             ]
-          ],
-          "headline": "İki farklı yerde yaşanan bu depremlerin etkilerinin farklılık göstermesinde ül­ kelerin afetle mücadele stratejilerindeki farklılıklar etkili midir? Açıklayınız"
+          ]
         }
       ]
     },
@@ -4232,52 +4191,111 @@
       ],
       "activities": [
         {
-          "id": "p174-v1",
-          "label": null,
+          "id": "p174-1",
+          "label": "1",
           "column": 0,
           "rect": [
-            34.1079,
-            219.9927,
-            521.1337,
-            723.6781
+            52.692,
+            298.645,
+            270.6935,
+            311.2716
           ],
           "parts": [
             [
-              34.1079,
-              219.9927,
-              521.1337,
-              723.6781
+              52.692,
+              298.645,
+              270.6935,
+              311.2716
             ]
           ]
+        },
+        {
+          "id": "p174-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            50.2877,
+            280.901,
+            449.9689,
+            293.5832
+          ],
+          "parts": [
+            [
+              50.2877,
+              280.901,
+              449.9689,
+              293.5832
+            ]
+          ]
+        },
+        {
+          "id": "p174-3",
+          "label": "3",
+          "column": 0,
+          "rect": [
+            50.4878,
+            251.8096,
+            493.7584,
+            277.7304
+          ],
+          "parts": [
+            [
+              50.4878,
+              251.8096,
+              493.7584,
+              277.7304
+            ]
+          ],
+          "headline": "Afete maruz kalmış kişilerin duygularını anlamaya ve yardımcı olmaya yönelik bireysel ve toplumsal an­ lamda neler yapılabilir?"
+        },
+        {
+          "id": "p174-4",
+          "label": "4",
+          "column": 0,
+          "rect": [
+            49.4649,
+            220.549,
+            509.6717,
+            246.8035
+          ],
+          "parts": [
+            [
+              49.4649,
+              220.549,
+              509.6717,
+              246.8035
+            ]
+          ],
+          "headline": "Geçmişten günümüze yaşanan afetler göz önünde bulundurulduğunda ülkelerin afet riski taşıyan olaylara karşı hazırlıklarında ne gibi eksiklikler gözlemektesiniz?"
         }
       ]
     },
-    "178": {
+    "179": {
       "pageWidth": 569.764,
       "pageHeight": 796.535,
       "columns": [
         [
-          45.0237,
-          545.764
+          60.1555,
+          548.684
         ]
       ],
       "activities": [
         {
-          "id": "p178-v1",
+          "id": "p179-v1",
           "label": null,
           "column": 0,
           "rect": [
-            35.9997,
-            198.2438,
-            529.3524,
-            506.178
+            61.6502,
+            172.1005,
+            519.5758,
+            225.3326
           ],
           "parts": [
             [
-              35.9997,
-              198.2438,
-              529.3524,
-              506.178
+              61.6502,
+              172.1005,
+              519.5758,
+              225.3326
             ]
           ]
         }
@@ -4298,72 +4316,40 @@
           "label": "2. Adım",
           "column": 0,
           "rect": [
-            48.7415,
-            519.194,
-            506.5001,
-            730.6206
+            50.0213,
+            518.749,
+            506.8896,
+            729.1744
           ],
           "parts": [
             [
-              48.7415,
-              519.194,
-              506.5001,
-              730.6206
+              50.0213,
+              518.749,
+              506.8896,
+              729.1744
             ]
           ],
-          "headline": "Doldurduğunuz karşılaştırmalı analiz tablosundan yararlanarak Türkiye ve Japonya’da yaşanma ola­ sılığı yüksek olan doğa kaynaklı afetlerin neler olabileceğini "
+          "headline": "sılığı yüksek olan doğa kaynaklı afetlerin neler olabileceğini aşağıdaki tabloda işaretleyiniz (Her bir maddeye iki ülkeyi de işaretleyebili"
         },
         {
           "id": "p182-3. Adım",
           "label": "3. Adım",
           "column": 0,
           "rect": [
-            49.131,
-            65.4694,
-            508.1694,
-            515.1563
+            48.1851,
+            64.6907,
+            508.3363,
+            512.1853
           ],
           "parts": [
             [
-              49.131,
-              65.4694,
-              508.1694,
-              515.1563
+              48.1851,
+              64.6907,
+              508.3363,
+              512.1853
             ]
           ],
           "headline": "Türkiye ve Japonya’da yaşanan tsunamiler ile sonrasında afete dirençli yaşam alanları oluşturmak için yürütülen çalışmalar hakkında aşağıda verilen metinleri ok"
-        }
-      ]
-    },
-    "183": {
-      "pageWidth": 569.764,
-      "pageHeight": 796.535,
-      "columns": [
-        [
-          59.1969,
-          547.5891
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p183-4. Adım",
-          "label": "4. Adım",
-          "column": 0,
-          "rect": [
-            63.5977,
-            125.3208,
-            521.0781,
-            314.7203
-          ],
-          "parts": [
-            [
-              63.5977,
-              125.3208,
-              521.0781,
-              314.7203
-            ]
-          ],
-          "headline": "Türkiye ve Japonya’da yaşanan tsunamiler sonrasında afete dirençli yaşam alanları oluşturmak için yürütülen faaliyetleri, aşağıdaki tabloda verilen afete direnç"
         }
       ]
     },
@@ -4417,17 +4403,17 @@
           "label": "1",
           "column": 1,
           "rect": [
-            66.9766,
-            62.9663,
-            520.6886,
-            171.0993
+            67.7151,
+            63.4113,
+            520.5217,
+            169.4306
           ],
           "parts": [
             [
-              66.9766,
-              62.9663,
-              520.6886,
-              171.0993
+              67.7151,
+              63.4113,
+              520.5217,
+              169.4306
             ]
           ],
           "headline": "Yaşadığınız yerde gerçekleşme riski yüksek olan afet türünün ne olduğunu ve bu afetten korunmaya yönelik dünyada geliştirilen uygulamaların amacını belirleyiniz"
@@ -4449,57 +4435,37 @@
           "label": "2. Adım",
           "column": 0,
           "rect": [
-            50.9672,
-            400.7149,
-            506.9453,
-            549.509
+            49.6318,
+            400.8262,
+            507.0009,
+            549.2865
           ],
           "parts": [
             [
-              50.9672,
-              400.7149,
-              506.9453,
-              549.509
+              49.6318,
+              400.8262,
+              507.0009,
+              549.2865
             ]
           ],
           "headline": "Grup olarak belirlediğiniz uygulama örneğinin yaşadığınız yerde gerçekleşme riski yüksek olan afete okul, sinema, ev ve açık alan gibi farklı mekânlarda yakalan"
-        },
-        {
-          "id": "p188-3. Adım",
-          "label": "3. Adım",
-          "column": 0,
-          "rect": [
-            51.301,
-            359.6088,
-            507.7003,
-            384.5284
-          ],
-          "parts": [
-            [
-              51.301,
-              359.6088,
-              507.7003,
-              384.5284
-            ]
-          ],
-          "headline": "Grupların drama gösterilerinden sonra yaşadığınız yerdeki afet riskinde etkili olacak en iyi uygulama örneğini sınıf olarak belirleyiniz."
         },
         {
           "id": "p188-4. Adım",
           "label": "4. Adım",
           "column": 0,
           "rect": [
-            49.6318,
-            129.8263,
+            49.131,
+            130.2157,
             507.7012,
-            354.7696
+            354.8808
           ],
           "parts": [
             [
-              49.6318,
-              129.8263,
+              49.131,
+              130.2157,
               507.7012,
-              354.7696
+              354.8808
             ]
           ],
           "headline": "Belirlediğiniz iyi uygulama örneğine göre okulunuzun ilgili afet riskine hazır olup olmadığını aşağıda verilen kontrol listesindeki ölçütlere göre değerlendirin"
@@ -4517,21 +4483,41 @@
       ],
       "activities": [
         {
+          "id": "p192-q3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            56.3087,
+            384.1,
+            498.9886,
+            447.9397
+          ],
+          "parts": [
+            [
+              56.3087,
+              384.1,
+              498.9886,
+              447.9397
+            ]
+          ],
+          "headline": "Afet bilinci ile ilgili öğrendiğiniz en ilginç bilgi neydi?"
+        },
+        {
           "id": "p192-q4",
           "label": null,
           "column": 0,
           "rect": [
-            54.4726,
-            306.8217,
-            499.0442,
-            373.4036
+            56.2531,
+            309.3,
+            498.8773,
+            373.6817
           ],
           "parts": [
             [
-              54.4726,
-              306.8217,
-              499.0442,
-              373.4036
+              56.2531,
+              309.3,
+              498.8773,
+              373.6817
             ]
           ],
           "headline": "Afet bilinci ile ilgili öğrendiğiniz hangi bilgileri günlük hayatınızda kullanabilirsiniz?"
@@ -4541,79 +4527,72 @@
           "label": null,
           "column": 0,
           "rect": [
-            54.8064,
-            215.3759,
-            499.9345,
-            298.1444
+            56.2531,
+            215.7653,
+            499.7119,
+            298.4225
           ],
           "parts": [
             [
-              54.8064,
-              215.3759,
-              499.9345,
-              298.1444
+              56.2531,
+              215.7653,
+              499.7119,
+              298.4225
             ]
           ],
           "headline": "Afet bilinci ile ilgili hangi konuda daha fazla bilgi edinmek isterdiniz?"
         },
         {
-          "id": "p192-v3",
+          "id": "p192-q6",
           "label": null,
           "column": 0,
           "rect": [
             50.7335,
             79.3371,
-            500.4353,
-            215.1259
+            500.9917,
+            215.5153
           ],
           "parts": [
             [
               50.7335,
               79.3371,
-              500.4353,
-              215.1259
+              500.9917,
+              215.5153
             ]
-          ]
+          ],
+          "headline": "Toplumların afetler karşısında ortaya koydukları tutum ve davranışlar ile sosyokültürel yapıları arasın­ da nasıl bir ilişki olduğunu yoruml"
         }
       ]
     },
-    "193": {
+    "195": {
       "pageWidth": 569.764,
       "pageHeight": 796.535,
       "columns": [
         [
-          58.1128,
-          117.0391
-        ],
-        [
-          121.0391,
-          213.8174
-        ],
-        [
-          217.8174,
+          58.2382,
           545.764
         ]
       ],
       "activities": [
         {
-          "id": "p193-1. Adım",
-          "label": "1. Adım",
+          "id": "p195-1",
+          "label": "1",
           "column": 0,
           "rect": [
-            46.4046,
-            76.7611,
-            536.7689,
-            592.441
+            62.0397,
+            190.957,
+            525.2932,
+            736.0717
           ],
           "parts": [
             [
-              46.4046,
-              76.7611,
-              536.7689,
-              592.441
+              62.0397,
+              190.957,
+              525.2932,
+              736.0717
             ]
           ],
-          "headline": "Seçtiğiniz ülkelerin afetle mücadele uygulamalarına yönelik topladığınız bilgilerden yararlanarak karşılaştırma tablosu oluşturunuz."
+          "headline": "Çalışma yapmak istediğim afet türünü seçtim."
         }
       ]
     },
@@ -4632,37 +4611,37 @@
           "label": "1",
           "column": 0,
           "rect": [
-            64.7105,
-            627.8832,
+            66.2684,
+            624.535,
             521.6334,
-            730.6762
+            730.3425
           ],
           "parts": [
             [
-              64.7105,
-              627.8832,
+              66.2684,
+              624.535,
               521.6334,
-              730.6762
+              730.3425
             ]
           ],
-          "headline": "Afetlerden korunma uygulaması olan BEUS'un aşağıdaki olumsuz durumlardan hangilerini önlemeye olanak sağladığını işaretleyiniz."
+          "headline": "olanak sağladığını işaretleyiniz."
         },
         {
           "id": "p197-2",
           "label": "2",
           "column": 0,
           "rect": [
-            63.6533,
-            533.0443,
-            521.1894,
-            619.0389
+            63.8202,
+            532.0987,
+            521.245,
+            618.9277
           ],
           "parts": [
             [
-              63.6533,
-              533.0443,
-              521.1894,
-              619.0389
+              63.8202,
+              532.0987,
+              521.245,
+              618.9277
             ]
           ],
           "headline": "İstanbul gibi yoğun nüfuslu yerleşmelerde geliştirilen bu tür uygulamalar, günlük hayatın akışında insanlara ne tür kolaylıklar sağlar? Açıklayınız."
@@ -4672,37 +4651,37 @@
           "label": "3",
           "column": 0,
           "rect": [
-            62.4849,
-            208.4786,
-            520.6886,
-            493.6069
+            64.8218,
+            208.8123,
+            519.7427,
+            492.2163
           ],
           "parts": [
             [
-              62.4849,
-              208.4786,
-              520.6886,
-              493.6069
+              64.8218,
+              208.8123,
+              519.7427,
+              492.2163
             ]
           ],
-          "headline": "Yaşadığınız yerde yaşanması olası bir afet durumu için sizden afet ve acil durum çantası oluşturma­ nız istense çantanıza neler koyardınız? Boş bırakılan alanla"
+          "headline": "nız istense çantanıza neler koyardınız? Boş bırakılan alanlara yazınız."
         },
         {
           "id": "p197-4",
           "label": "4",
           "column": 0,
           "rect": [
-            63.542,
-            117.8115,
-            520.5773,
-            184.1153
+            63.9872,
+            117.7003,
+            521.5789,
+            184.2265
           ],
           "parts": [
             [
-              63.542,
-              117.8115,
-              520.5773,
-              184.1153
+              63.9872,
+              117.7003,
+              521.5789,
+              184.2265
             ]
           ],
           "headline": "hangi açılardan fayda sağlayacaktır? Açıklayınız."
@@ -4724,37 +4703,37 @@
           "label": "5",
           "column": 0,
           "rect": [
-            50.689,
-            190.6233,
-            506.8896,
-            326.8463
+            51.1897,
+            194.4057,
+            506.3332,
+            325.6782
           ],
           "parts": [
             [
-              50.689,
-              190.6233,
-              506.8896,
-              326.8463
+              51.1897,
+              194.4057,
+              506.3332,
+              325.6782
             ]
           ],
-          "headline": "Görsellerde verilen alanların coğrafi özellikleri düşünüldüğünde Artvin’de aşağıdaki afet türlerin­ den hangilerinin yaşanma olasılığının yüksek olduğunu işaret"
+          "headline": "den hangilerinin yaşanma olasılığının yüksek olduğunu işaretleyiniz."
         },
         {
           "id": "p198-6",
           "label": "6",
           "column": 0,
           "rect": [
-            49.8543,
-            67.6387,
-            507.446,
-            173.213
+            49.7987,
+            68.2506,
+            508.0025,
+            173.3242
           ],
           "parts": [
             [
-              49.8543,
-              67.6387,
-              507.446,
-              173.213
+              49.7987,
+              68.2506,
+              508.0025,
+              173.3242
             ]
           ],
           "headline": "Belirlediğiniz afet türlerine karşı Artvin’de afete dirençli yaşam alanı oluşturabilmek amacıyla ne tür çalışmalar yapılabilir? Açıklayınız."
@@ -4776,16 +4755,16 @@
           "label": "7",
           "column": 0,
           "rect": [
-            66.7136,
-            312.1616,
-            520.4104,
+            66.1015,
+            308.5926,
+            524.3714,
             476.141
           ],
           "parts": [
             [
-              66.7136,
-              312.1616,
-              520.4104,
+              66.1015,
+              308.5926,
+              524.3714,
               476.141
             ]
           ],
@@ -4796,17 +4775,17 @@
           "label": "8",
           "column": 0,
           "rect": [
-            64.0984,
-            143.8435,
-            520.0209,
-            295.975
+            64.4323,
+            143.621,
+            519.5201,
+            295.1407
           ],
           "parts": [
             [
-              64.0984,
-              143.8435,
-              520.0209,
-              295.975
+              64.4323,
+              143.621,
+              519.5201,
+              295.1407
             ]
           ],
           "headline": "Yaşadığınız yerde yaşanma ihtimali olan bir afet türüne yönelik dirençli yaşam alanı oluşturmak is­ teyen bir çalışma grubu içerisinde olsaydınız arkadaşlarınız"
@@ -4816,82 +4795,139 @@
           "label": "9",
           "column": 0,
           "rect": [
-            64.6549,
-            65.0635,
-            516.4599,
-            126.9339
+            64.5436,
+            63.496,
+            516.0148,
+            126.8782
           ],
           "parts": [
             [
-              64.6549,
-              65.0635,
-              516.4599,
-              126.9339
+              64.5436,
+              63.496,
+              516.0148,
+              126.8782
             ]
           ],
           "headline": "Dirençli yaşam alanı oluşturmada toplumsal farkındalık oluşturulmasının önemi nedir? Açıklayınız."
         }
       ]
     },
-    "203": {
+    "206": {
       "pageWidth": 569.764,
       "pageHeight": 796.535,
       "columns": [
         [
-          57.7075,
-          545.764
+          45.0237,
+          139.3787
+        ],
+        [
+          143.3787,
+          204.0069
+        ],
+        [
+          208.0069,
+          270.521
+        ],
+        [
+          274.521,
+          330.8541
+        ],
+        [
+          334.8541,
+          588.9692
         ]
       ],
       "activities": [
         {
-          "id": "p203-v1",
-          "label": null,
+          "id": "p206-1",
+          "label": "1",
           "column": 0,
           "rect": [
-            64.7105,
-            189.7486,
-            522.0796,
-            722.4439
+            53.2484,
+            364.17,
+            490.1973,
+            389.4233
           ],
           "parts": [
             [
-              64.7105,
-              189.7486,
-              522.0796,
-              722.4439
+              53.2484,
+              364.17,
+              490.1973,
+              389.4233
+            ]
+          ],
+          "headline": "Bugünkü Türk devletleri ve topluluklarının yayılış alanı, Türk kültürünün ocağı olarak kabul edilen Orta Asya’ya göre nasıl bir değişim yaşamıştır? Açıklayınız."
+        },
+        {
+          "id": "p206-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            51.1341,
+            347.0935,
+            463.7122,
+            359.4976
+          ],
+          "parts": [
+            [
+              51.1341,
+              347.0935,
+              463.7122,
+              359.4976
             ]
           ]
+        },
+        {
+          "id": "p206-3",
+          "label": "3",
+          "column": 0,
+          "rect": [
+            50.9115,
+            318.169,
+            501.0577,
+            342.866
+          ],
+          "parts": [
+            [
+              50.9115,
+              318.169,
+              501.0577,
+              342.866
+            ]
+          ],
+          "headline": "Türk kültürünün yayılış alanı dikkate alındığında Türk kültürünün hangi medeniyetlerle etkileşim içinde olduğu söylenebilir?"
         }
       ]
     },
-    "209": {
+    "215": {
       "pageWidth": 569.764,
       "pageHeight": 796.535,
       "columns": [
         [
-          59.1969,
+          58.9621,
           545.764
         ]
       ],
       "activities": [
         {
-          "id": "p209-v1",
-          "label": null,
+          "id": "p215-2",
+          "label": "2",
           "column": 0,
           "rect": [
-            9.212,
-            494.93,
-            569.764,
-            731.336
+            64.4323,
+            110.6917,
+            491.8109,
+            123.3183
           ],
           "parts": [
             [
-              9.212,
-              494.93,
-              569.764,
-              731.336
+              64.4323,
+              110.6917,
+              491.8109,
+              123.3183
             ]
-          ]
+          ],
+          "headline": "Yaşadığınız yerden Türk kültürüne ait somut ve somut olmayan kültürel mirasa ait örnekler veriniz."
         }
       ]
     },
@@ -4910,17 +4946,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            50.7446,
-            704.8111,
+            50.6333,
+            705.5342,
             499.959,
-            731.2325
+            731.0656
           ],
           "parts": [
             [
-              50.7446,
-              704.8111,
+              50.6333,
+              705.5342,
               499.959,
-              731.2325
+              731.0656
             ]
           ],
           "headline": "Türk kültürüne ait somut olmayan kültür mirasın ilişkilendirildiği alanlar düşünüldüğünde Türk kültürünün yayılış alanı hakkında neler söylenebilir?"
@@ -4931,16 +4967,16 @@
           "column": 0,
           "rect": [
             50.0237,
-            675.9979,
-            491.7553,
-            700.9174
+            676.8879,
+            490.253,
+            701.0286
           ],
           "parts": [
             [
               50.0237,
-              675.9979,
-              491.7553,
-              700.9174
+              676.8879,
+              490.253,
+              701.0286
             ]
           ],
           "headline": "Türk kültürüne ait somut olmayan ortak kültürel mirasın farklı coğrafi alanlarda hâlâ yaşatılıyor olması, Türklerin aidiyet duygusunu nasıl etkilemektedir?"
@@ -4950,91 +4986,40 @@
           "label": "3",
           "column": 0,
           "rect": [
-            51.301,
-            646.2947,
-            503.6625,
-            670.8248
+            50.689,
+            647.129,
+            504.8201,
+            671.2142
           ],
           "parts": [
             [
-              51.301,
-              646.2947,
-              503.6625,
-              670.8248
+              50.689,
+              647.129,
+              504.8201,
+              671.2142
             ]
           ],
-          "headline": "devamlılığının sağlanabilmesi için neden önemlidir?"
+          "headline": "Türk kültürüne ait somut olmayan ortak kültürel mirasın gelecek nesillere aktarılabilmesi, Türk kültürünün devamlılığının sağlanabilmesi için neden önemlidir?"
         },
         {
           "id": "p218-4",
           "label": "4",
           "column": 0,
           "rect": [
-            50.0237,
-            605.9117,
-            487.0814,
+            51.301,
+            605.8561,
+            487.6935,
             641.3442
           ],
           "parts": [
             [
-              50.0237,
-              605.9117,
-              487.0814,
+              51.301,
+              605.8561,
+              487.6935,
               641.3442
             ]
           ],
           "headline": "Farklı coğrafi alanlarda yaşayan Türklerin ortak kültürel mirasa sahip çıkması gibi ekonomik, sosyal ve politik alanlarda birlikte hareket edebilmesi durumunda "
-        },
-        {
-          "id": "p218-v5",
-          "label": null,
-          "column": 0,
-          "rect": [
-            50.2438,
-            77.7067,
-            508.1137,
-            583.4729
-          ],
-          "parts": [
-            [
-              50.2438,
-              77.7067,
-              508.1137,
-              583.4729
-            ]
-          ]
-        }
-      ]
-    },
-    "219": {
-      "pageWidth": 569.764,
-      "pageHeight": 796.535,
-      "columns": [
-        [
-          58.1128,
-          545.764
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p219-1. Adım",
-          "label": "1. Adım",
-          "column": 0,
-          "rect": [
-            46.1264,
-            300.2581,
-            537.7704,
-            585.9427
-          ],
-          "parts": [
-            [
-              46.1264,
-              300.2581,
-              537.7704,
-              585.9427
-            ]
-          ],
-          "headline": "Topladığınız bilgi ve görselleri düzenleyiniz."
         }
       ]
     },
@@ -5053,17 +5038,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            53.3597,
-            323.6758,
-            506.3332,
-            404.1636
+            52.2469,
+            324.1764,
+            507.4592,
+            403.7186
           ],
           "parts": [
             [
-              53.3597,
-              323.6758,
-              506.3332,
-              404.1636
+              52.2469,
+              324.1764,
+              507.4592,
+              403.7186
             ]
           ],
           "headline": "ait unsurların bulunduğunu işaretleyiniz."
@@ -5073,37 +5058,37 @@
           "label": "2",
           "column": 0,
           "rect": [
-            49.5205,
-            144.4554,
-            506.1107,
-            307.4336
+            50.4664,
+            144.066,
+            506.8896,
+            306.3767
           ],
           "parts": [
             [
-              49.5205,
-              144.4554,
-              506.1107,
-              307.4336
+              50.4664,
+              144.066,
+              506.8896,
+              306.3767
             ]
           ],
-          "headline": "İşaretlediğiniz ülkelerin Türk kültürüne ait somut ya da somut olmayan kültürel miraslarından birini yazınız."
+          "headline": "yazınız."
         },
         {
           "id": "p222-3",
           "label": "3",
           "column": 0,
           "rect": [
-            49.7431,
-            72.478,
-            507.0566,
-            138.7818
+            50.5777,
+            71.9218,
+            507.2791,
+            138.5036
           ],
           "parts": [
             [
-              49.7431,
-              72.478,
-              507.0566,
-              138.7818
+              50.5777,
+              71.9218,
+              507.2791,
+              138.5036
             ]
           ],
           "headline": "Türk kültürünün farklı coğrafi mekânlardan izler taşıyor olması, Türk kültürüne ait unsurlarda ne tür etkiler ortaya çıkarmış olabilir? Açıklayınız."
@@ -5125,17 +5110,17 @@
           "label": "4",
           "column": 0,
           "rect": [
-            64.1541,
-            172.1561,
-            519.2419,
-            224.7208
+            64.0984,
+            172.323,
+            520.2991,
+            224.9989
           ],
           "parts": [
             [
-              64.1541,
-              172.1561,
-              519.2419,
-              224.7208
+              64.0984,
+              172.323,
+              520.2991,
+              224.9989
             ]
           ],
           "headline": "Ortak Türk Alfabesi’nde, Türkiye Türkçesi’nden farklı harfler bulunmasının sebepleri nelerdir?"
@@ -5145,17 +5130,17 @@
           "label": "5",
           "column": 0,
           "rect": [
-            63.3751,
-            95.117,
-            520.6886,
-            161.0313
+            63.0413,
+            94.9501,
+            521.7458,
+            161.1982
           ],
           "parts": [
             [
-              63.3751,
-              95.117,
-              520.6886,
-              161.0313
+              63.0413,
+              94.9501,
+              521.7458,
+              161.1982
             ]
           ],
           "headline": "Ortak Türk Alfabesi’yle Türk Devletleri Teşkilatı’na üye ülkelerde dil birlikteliğinin sağlanacak olma­ sı, Türk dünyasına kültür aktarımı açısından ne tür kola"
@@ -5178,16 +5163,16 @@
           "column": 0,
           "rect": [
             50.3347,
-            290.6908,
+            293.1382,
             419.4854,
-            405.7211
+            406.4442
           ],
           "parts": [
             [
               50.3347,
-              290.6908,
+              293.1382,
               419.4854,
-              405.7211
+              406.4442
             ]
           ],
           "headline": "Türkiye"
@@ -5197,17 +5182,17 @@
           "label": "7",
           "column": 0,
           "rect": [
-            52.1356,
+            52.6364,
             132.221,
             445.4313,
-            279.8441
+            280.2891
           ],
           "parts": [
             [
-              52.1356,
+              52.6364,
               132.221,
               445.4313,
-              279.8441
+              280.2891
             ]
           ],
           "headline": "12 Hayvanlı Takvim Ekinoks Tarihleri"
@@ -5217,17 +5202,17 @@
           "label": "8",
           "column": 0,
           "rect": [
-            51.1341,
-            54.0109,
-            506.9453,
-            126.2664
+            50.4108,
+            54.5671,
+            506.7783,
+            126.6001
           ],
           "parts": [
             [
-              51.1341,
-              54.0109,
-              506.9453,
-              126.2664
+              50.4108,
+              54.5671,
+              506.7783,
+              126.6001
             ]
           ]
         }
@@ -5244,41 +5229,41 @@
       ],
       "activities": [
         {
-          "id": "p225-9",
-          "label": "9",
+          "id": "p225-10",
+          "label": "10",
           "column": 0,
           "rect": [
-            62.8743,
-            167.2612,
-            531.003,
-            709.706
+            64.0428,
+            165.4256,
+            520.9668,
+            236.2349
           ],
           "parts": [
             [
-              62.8743,
-              167.2612,
-              531.003,
-              709.706
+              64.0428,
+              165.4256,
+              520.9668,
+              236.2349
             ]
           ],
-          "headline": "Numaralanmış görsellerdeki Türk kültür mirasına ait unsurların hangi coğrafi alanda yer aldığını hari­ tadaki boş bırakılan alanlara yazınız."
+          "headline": "Türk kültür ve medeniyetinin çok geniş bir coğrafyaya yayılmasının sebepleri neler olabilir? Açıklayınız."
         },
         {
           "id": "p225-11",
           "label": "11",
           "column": 0,
           "rect": [
-            65.7677,
-            67.0825,
+            65.2669,
+            67.8612,
             521.6356,
-            154.5233
+            154.134
           ],
           "parts": [
             [
-              65.7677,
-              67.0825,
+              65.2669,
+              67.8612,
               521.6356,
-              154.5233
+              154.134
             ]
           ],
           "headline": "Görsellerdeki kültürel miras unsurlarından hangileri konargöçer Türk kültürü dönemine, hangileri Türk-İslam kültürü dönemine aittir?"
@@ -5287,7 +5272,7 @@
     }
   },
   "engine": "vision",
-  "checkpoint": "46fcffa0b605e5b3ee7e46f877e50cca8f853620005585e9065ed5d81e5799c8",
+  "checkpoint": "a9a76c4979dceebed2adb9cebfad673021ed4685e05a362dd3843b781b38fab7",
   "conf": 0.7,
   "icons": "bind"
 }

@@ -27,6 +27,12 @@
 > `bake-5`, which the reader shows. The no-hint re-ask (54 of 123 pages) and the labelling of eight new
 > books (0 of 320) stopped at the free tier's daily quota; the retrain waits for them.
 
+> **2026-10-03, Phase 9 (`runs/phase9-HANDOFF.md`).** An unboxed label between two boxed ones now gets a
+> region (`snap.between_siblings`), eight more books were labelled (five English, three science) and
+> student-9 trained on 32 books. `bake-8` (student-9 at 0.7) is installed for 43 books: on held-out it
+> finds 64.0 % of the teacher's boxes with 12.3 % of regions on none (`bake-7`: 59.2 %, 13.8 %). Fen Lisesi
+> Fizik did not move (29 %).
+
 Written 2026-10-02. Branch `vision-student`, nothing committed since `225a0ba`.
 Point a fresh agent at this file. It is self-contained; the full history is in
 `tools/hotspot_extraction/vision/PLAN.md` (read §0) and
