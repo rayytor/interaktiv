@@ -3,7 +3,7 @@
   "bookId": "b0410882-883b-4df3-86a4-d857b0bf27b7",
   "fingerprint": "77540970-28260479bad7c1ade3208843091f56e4",
   "profile": "c7de24295a4b",
-  "builtAt": "2026-10-03T05:27:10.613Z",
+  "builtAt": "2026-10-03T06:05:04.713Z",
   "pageCount": 155,
   "calibration": {
     "enabled": true,
@@ -180,152 +180,8 @@
       "155": 154
     }
   },
-  "anchors": {
-    "15": [
-      "c900af7c-acaa-f111-b317-005056a7d529"
-    ],
-    "17": [
-      "a2da2fe0-7aaa-f111-b317-005056a7d529"
-    ],
-    "19": [
-      "8d2a0d01-7baa-f111-b317-005056a7d529"
-    ],
-    "20": [
-      "909a271b-7baa-f111-b317-005056a7d529"
-    ],
-    "21": [
-      "db9ff13c-7baa-f111-b317-005056a7d529"
-    ],
-    "23": [
-      "4de01d75-7baa-f111-b317-005056a7d529"
-    ],
-    "24": [
-      "758d7f90-7baa-f111-b317-005056a7d529"
-    ],
-    "25": [
-      "dd090ab2-7baa-f111-b317-005056a7d529"
-    ],
-    "29": [
-      "e65bcac5-a5aa-f111-b317-005056a7d529"
-    ],
-    "31": [
-      "d01dd9ea-a5aa-f111-b317-005056a7d529"
-    ],
-    "32": [
-      "38264133-67ab-f111-b317-005056a7d529"
-    ],
-    "33": [
-      "dacb890c-a6aa-f111-b317-005056a7d529"
-    ],
-    "37": [
-      "a32e62df-7caa-f111-b317-005056a7d529"
-    ],
-    "38": [
-      "c89fc9f9-7caa-f111-b317-005056a7d529"
-    ],
-    "39": [
-      "120b401c-7daa-f111-b317-005056a7d529"
-    ],
-    "40": [
-      "46d52d34-7daa-f111-b317-005056a7d529"
-    ],
-    "41": [
-      "767211f5-7daa-f111-b317-005056a7d529"
-    ],
-    "43": [
-      "a03c0631-7eaa-f111-b317-005056a7d529"
-    ],
-    "44": [
-      "1d319154-7eaa-f111-b317-005056a7d529"
-    ],
-    "46": [
-      "9b31ae46-a6aa-f111-b317-005056a7d529"
-    ],
-    "47": [
-      "8ca4118c-7eaa-f111-b317-005056a7d529"
-    ],
-    "48": [
-      "066474b3-7eaa-f111-b317-005056a7d529"
-    ],
-    "49": [
-      "df8ba7cf-7eaa-f111-b317-005056a7d529"
-    ],
-    "50": [
-      "5ce2d2e6-7eaa-f111-b317-005056a7d529"
-    ],
-    "53": [
-      "e831713e-7faa-f111-b317-005056a7d529"
-    ],
-    "54": [
-      "850c355b-7faa-f111-b317-005056a7d529"
-    ],
-    "55": [
-      "bd402682-7faa-f111-b317-005056a7d529"
-    ],
-    "59": [
-      "99687d66-a6aa-f111-b317-005056a7d529"
-    ],
-    "60": [
-      "c431f8cb-7faa-f111-b317-005056a7d529"
-    ],
-    "62": [
-      "0c7b80fb-7faa-f111-b317-005056a7d529"
-    ],
-    "67": [
-      "f7728729-80aa-f111-b317-005056a7d529"
-    ],
-    "70": [
-      "f2c346b6-a6aa-f111-b317-005056a7d529"
-    ],
-    "71": [
-      "12d41e8a-80aa-f111-b317-005056a7d529"
-    ],
-    "72": [
-      "7852ef9f-80aa-f111-b317-005056a7d529"
-    ],
-    "81": [
-      "0ee20fe9-a6aa-f111-b317-005056a7d529"
-    ],
-    "82": [
-      "801889fb-a6aa-f111-b317-005056a7d529"
-    ],
-    "84": [
-      "f024f202-81aa-f111-b317-005056a7d529"
-    ]
-  },
+  "anchors": {},
   "pages": {
-    "11": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          44.2119,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p11-1",
-          "label": "1",
-          "column": 0,
-          "rect": [
-            52.4729,
-            592.9453,
-            317.7753,
-            684.7655
-          ],
-          "parts": [
-            [
-              52.4729,
-              592.9453,
-              317.7753,
-              684.7655
-            ]
-          ],
-          "headline": "ÜNİTE ÜNİTE"
-        }
-      ]
-    },
     "13": {
       "pageWidth": 552.756,
       "pageHeight": 779.528,
@@ -337,141 +193,43 @@
       ],
       "activities": [
         {
-          "id": "p13-q1",
+          "id": "p13-v1",
           "label": null,
           "column": 0,
           "rect": [
-            28.3622,
-            505.6963,
-            512.5668,
-            682.0184
+            40.755,
+            484.634,
+            496.9946,
+            627.9381
           ],
           "parts": [
             [
-              28.3622,
-              505.6963,
-              512.5668,
-              682.0184
+              40.755,
+              484.634,
+              496.9946,
+              627.9381
             ]
-          ],
-          "headline": "DÜŞÜNELİM"
+          ]
         },
         {
           "id": "p13-q2",
           "label": null,
           "column": 0,
           "rect": [
-            33.312,
-            191.9693,
-            502.264,
-            502.3677
+            41.4435,
+            56.3742,
+            495.807,
+            484.134
           ],
           "parts": [
             [
-              33.312,
-              191.9693,
-              502.264,
-              502.3677
+              41.4435,
+              56.3742,
+              495.807,
+              484.134
             ]
           ],
-          "headline": "Uygulama adımlarını takip ederek etkinliği yapınız."
-        }
-      ]
-    },
-    "14": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          49.5489,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p14-q1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            47.935,
-            664.6052,
-            519.7675,
-            685.1588
-          ],
-          "parts": [
-            [
-              47.935,
-              664.6052,
-              519.7675,
-              685.1588
-            ]
-          ],
-          "headline": "Verilen yönergeler doğrultusunda aşağıdaki etkinlikleri yapınız."
-        }
-      ]
-    },
-    "15": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          37.7045,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p15-oge-c900af7c-acaa-f111-b317-005056a7d529",
-          "label": null,
-          "column": 0,
-          "rect": [
-            29.7045,
-            665.4572,
-            536.756,
-            693.5772
-          ],
-          "parts": [
-            [
-              29.7045,
-              665.4572,
-              536.756,
-              693.5772
-            ]
-          ],
-          "headline": "Kavramlar",
-          "anchored": true
-        }
-      ]
-    },
-    "16": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          50.6155,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p16-q1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            45.259,
-            418.8514,
-            518.5132,
-            684.1525
-          ],
-          "parts": [
-            [
-              45.259,
-              418.8514,
-              518.5132,
-              684.1525
-            ]
-          ],
-          "headline": "Verilen yönergeler doğrultusunda aşağıdaki etkinlikleri yapınız."
+          "headline": "Öğretmeninizin rehberliğinde eşit sayıda kişiden oluşan gruplara ayrılınız. •"
         }
       ]
     },
@@ -486,347 +244,24 @@
       ],
       "activities": [
         {
-          "id": "p17-1",
-          "label": "1",
-          "column": 0,
-          "rect": [
-            39.4382,
-            48.6,
-            504.3465,
-            152.8639
-          ],
-          "parts": [
-            [
-              39.4382,
-              48.6,
-              504.3465,
-              152.8639
-            ]
-          ],
-          "headline": "Antik Çağ Atina şehir devletinde vatandaşların yönetime doğrudan katılmasının toplumsal yaşama"
-        },
-        {
-          "id": "p17-oge-a2da2fe0-7aaa-f111-b317-005056a7d529",
+          "id": "p17-v1",
           "label": null,
           "column": 0,
           "rect": [
-            37.1956,
-            501.0161,
-            506.5526,
-            730.7031
+            44.4256,
+            501.3255,
+            499.9635,
+            725.042
           ],
           "parts": [
             [
-              37.1956,
-              501.0161,
-              506.5526,
-              730.7031
+              44.4256,
+              501.3255,
+              499.9635,
+              725.042
             ]
           ],
-          "headline": "katılırdı. Modern demokrasilerden farklı olarak yurttaşlar yönetim faaliyetlerine doğrudan katılıyordu.",
-          "anchored": true
-        }
-      ]
-    },
-    "19": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          36.3939,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p19-oge-8d2a0d01-7baa-f111-b317-005056a7d529",
-          "label": null,
-          "column": 0,
-          "rect": [
-            28.3939,
-            573.0786,
-            536.756,
-            734.4705
-          ],
-          "parts": [
-            [
-              28.3939,
-              573.0786,
-              536.756,
-              734.4705
-            ]
-          ],
-          "headline": "■ Magna Carta ile ilgili metin ve kaynaktan yararlanarak soruyu cevaplayınız.",
-          "anchored": true
-        }
-      ]
-    },
-    "20": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          50.3833,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p20-oge-909a271b-7baa-f111-b317-005056a7d529",
-          "label": null,
-          "column": 1,
-          "rect": [
-            276.378,
-            615.784,
-            512.756,
-            734.4705
-          ],
-          "parts": [
-            [
-              276.378,
-              615.784,
-              512.756,
-              734.4705
-            ]
-          ],
-          "headline": "■ Fransız İhtilali  ile ilgili metin ve kaynaktan yararlanarak soruyu cevaplayınız.",
-          "anchored": true
-        }
-      ]
-    },
-    "21": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          36.4956,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p21-q1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            34.6036,
-            59.048,
-            505.4977,
-            273.4518
-          ],
-          "parts": [
-            [
-              34.6036,
-              59.048,
-              505.4977,
-              273.4518
-            ]
-          ],
-          "headline": "Uygulama adımlarını takip ederek “Zıt Panel” etkinliğini yapınız."
-        },
-        {
-          "id": "p21-oge-db9ff13c-7baa-f111-b317-005056a7d529",
-          "label": null,
-          "column": 0,
-          "rect": [
-            28.4956,
-            487.9723,
-            536.756,
-            734.4705
-          ],
-          "parts": [
-            [
-              28.4956,
-              487.9723,
-              536.756,
-              734.4705
-            ]
-          ],
-          "headline": "■ Sened-i İttifak ile ilgili metin ve kaynaktan yararlanarak etkinliği yapınız.",
-          "anchored": true
-        }
-      ]
-    },
-    "23": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          35.811,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p23-oge-4de01d75-7baa-f111-b317-005056a7d529",
-          "label": null,
-          "column": 0,
-          "rect": [
-            27.811,
-            497.0312,
-            536.756,
-            734.4705
-          ],
-          "parts": [
-            [
-              27.811,
-              497.0312,
-              536.756,
-              734.4705
-            ]
-          ],
-          "headline": "■ Islahat Fermanı ile ilgili metin ve kaynaktan yararlanarak soruyu cevaplayınız.",
-          "anchored": true
-        }
-      ]
-    },
-    "24": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          50.6929,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p24-oge-758d7f90-7baa-f111-b317-005056a7d529",
-          "label": null,
-          "column": 1,
-          "rect": [
-            257.8458,
-            428.7489,
-            517.8318,
-            700.0235
-          ],
-          "parts": [
-            [
-              257.8458,
-              428.7489,
-              517.8318,
-              700.0235
-            ]
-          ],
-          "headline": "Görsel 1.11:  Muayede Salonu'nda Meclis-i Umûminin Açılış Töreni, L'lllustration (Lilüstrasyon), Mart 1877, İBB Atatürk Kitaplığı Koleksiyonu",
-          "anchored": true
-        }
-      ]
-    },
-    "25": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          35.3386,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p25-oge-dd090ab2-7baa-f111-b317-005056a7d529",
-          "label": null,
-          "column": 0,
-          "rect": [
-            34.6107,
-            683.8693,
-            503.5627,
-            742.3795
-          ],
-          "parts": [
-            [
-              34.6107,
-              683.8693,
-              503.5627,
-              742.3795
-            ]
-          ],
-          "headline": "■ Türkiye Cumhuriyeti Anayasalarıyla ilgili verilen bilgi görselinden yararlanarak 26. sayfadaki etkinliği",
-          "anchored": true
-        }
-      ]
-    },
-    "27": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          37.7822,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p27-q1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            34.6508,
-            584.129,
-            503.6028,
-            733.8422
-          ],
-          "parts": [
-            [
-              34.6508,
-              584.129,
-              503.6028,
-              733.8422
-            ]
-          ],
-          "headline": "Uygulama adımlarını takip ederek etkinliği yapınız."
-        }
-      ]
-    },
-    "28": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          50.4095,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p28-q1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            48.4095,
-            694.6608,
-            140.8483,
-            725.3728
-          ],
-          "parts": [
-            [
-              48.4095,
-              694.6608,
-              140.8483,
-              725.3728
-            ]
-          ],
-          "headline": "UYGULAYALIM"
-        },
-        {
-          "id": "p28-q2",
-          "label": null,
-          "column": 0,
-          "rect": [
-            46.1938,
-            501.6074,
-            524.177,
-            681.3022
-          ],
-          "parts": [
-            [
-              46.1938,
-              501.6074,
-              524.177,
-              681.3022
-            ]
-          ],
-          "headline": "Uygulama adımlarını takip ederek etkinliği yapınız."
+          "ogeId": "a2da2fe0-7aaa-f111-b317-005056a7d529"
         }
       ]
     },
@@ -845,17 +280,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            34.6904,
-            351.9,
-            503.6004,
-            415.0069
+            40.593,
+            374.0,
+            495.4291,
+            406.5414
           ],
           "parts": [
             [
-              34.6904,
-              351.9,
-              503.6004,
-              415.0069
+              40.593,
+              374.0,
+              495.4291,
+              406.5414
             ]
           ],
           "headline": "Gazete haberinde \"Başka yerde zorla alınan bu hakkı, bizde hükûmet veriyor.” sözüyle anlatılmak iste­ nen nedir? Yazınız."
@@ -865,17 +300,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            34.6904,
-            301.8973,
-            504.378,
-            340.6083
+            40.593,
+            304.7982,
+            496.9406,
+            353.9974
           ],
           "parts": [
             [
-              34.6904,
-              301.8973,
-              504.378,
-              340.6083
+              40.593,
+              304.7982,
+              496.9406,
+              353.9974
             ]
           ],
           "headline": "Türkiye Cumhuriyeti Devleti tarafından kadınlara tanınan milletvekili seçme ve seçilme hakkının insan ve toplum yaşamına etkilerini değerlendiriniz."
@@ -885,17 +320,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            34.1389,
-            139.8016,
-            498.5439,
-            298.8973
+            41.0249,
+            133.7336,
+            496.7247,
+            294.6562
           ],
           "parts": [
             [
-              34.1389,
-              139.8016,
-              498.5439,
-              298.8973
+              41.0249,
+              133.7336,
+              496.7247,
+              294.6562
             ]
           ],
           "headline": "Aşağıda demokrasi ile ilgili kavramların insan ve toplum yaşamına etkilerine ilişkin ifadeler verilmiştir."
@@ -905,41 +340,20 @@
           "label": "4",
           "column": 0,
           "rect": [
-            34.1389,
-            48.1165,
-            501.8803,
-            132.0244
+            41.5647,
+            52.9216,
+            494.1876,
+            124.185
           ],
           "parts": [
             [
-              34.1389,
-              48.1165,
-              501.8803,
-              132.0244
+              41.5647,
+              52.9216,
+              494.1876,
+              124.185
             ]
           ],
           "headline": "Aşağıdakilerden hangisi Fransız İhtilali’nin insan ve toplum yaşamına etkileri ile ilgili yanlış bir ifadedir?"
-        },
-        {
-          "id": "p29-oge-e65bcac5-a5aa-f111-b317-005056a7d529",
-          "label": null,
-          "column": 0,
-          "rect": [
-            28.1389,
-            653.0251,
-            536.756,
-            725.1752
-          ],
-          "parts": [
-            [
-              28.1389,
-              653.0251,
-              536.756,
-              725.1752
-            ]
-          ],
-          "headline": "DEĞERLENDİRELİM",
-          "anchored": true
         }
       ]
     },
@@ -958,184 +372,77 @@
           "label": "5",
           "column": 0,
           "rect": [
-            41.2623,
-            198.8591,
-            526.4673,
-            740.6311
+            48.798,
+            405.3888,
+            518.5326,
+            733.0261
           ],
           "parts": [
             [
-              41.2623,
-              198.8591,
-              526.4673,
-              740.6311
+              48.798,
+              405.3888,
+              518.5326,
+              733.0261
             ]
           ],
           "headline": "Aşağıda tanımları verilen kavramları sarmal bulmacada numaraları takip ederek ilgili alana yazınız."
-        }
-      ]
-    },
-    "31": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          36.4488,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p31-q1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            28.4488,
-            592.0044,
-            512.5668,
-            682.0184
-          ],
-          "parts": [
-            [
-              28.4488,
-              592.0044,
-              512.5668,
-              682.0184
-            ]
-          ],
-          "headline": "DÜŞÜNELİM"
         },
         {
-          "id": "p31-oge-d01dd9ea-a5aa-f111-b317-005056a7d529",
+          "id": "p30-v2",
           "label": null,
           "column": 0,
           "rect": [
-            28.4488,
-            688.8148,
-            536.756,
-            721.9788
+            53.2783,
+            295.6812,
+            504.6597,
+            405.1388
           ],
           "parts": [
             [
-              28.4488,
-              688.8148,
-              536.756,
-              721.9788
+              53.2783,
+              295.6812,
+              504.6597,
+              405.1388
             ]
-          ],
-          "headline": "1.2. İNSAN HAK VE ÖZGÜRLÜKLERİNİN TARİHSEL GELİŞİMİ",
-          "anchored": true
-        }
-      ]
-    },
-    "32": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          178.252,
-          528.756
-        ]
-      ],
-      "activities": [
+          ]
+        },
         {
-          "id": "p32-oge-38264133-67ab-f111-b317-005056a7d529",
-          "label": null,
-          "column": 1,
-          "rect": [
-            172.9134,
-            548.6015,
-            518.6954,
-            703.7805
-          ],
-          "parts": [
-            [
-              172.9134,
-              548.6015,
-              518.6954,
-              703.7805
-            ]
-          ],
-          "headline": "(…) insan mensup olduğu milletin varlığını ve saadetini",
-          "anchored": true
-        }
-      ]
-    },
-    "33": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          36.9449,
-          179.1045
-        ],
-        [
-          183.1045,
-          287.5927
-        ],
-        [
-          291.5927,
-          367.6844
-        ],
-        [
-          371.6844,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p33-oge-dacb890c-a6aa-f111-b317-005056a7d529",
+          "id": "p30-v3",
           "label": null,
           "column": 0,
           "rect": [
-            28.9449,
-            640.2114,
-            187.1045,
-            725.8625
+            54.088,
+            202.0839,
+            516.2654,
+            291.1497
           ],
           "parts": [
             [
-              28.9449,
-              640.2114,
-              187.1045,
-              725.8625
+              54.088,
+              202.0839,
+              516.2654,
+              291.1497
             ]
-          ],
-          "headline": "KEŞFEDELİM",
-          "anchored": true
-        }
-      ]
-    },
-    "37": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          36.2711,
-          528.756
-        ]
-      ],
-      "activities": [
+          ]
+        },
         {
-          "id": "p37-oge-a32e62df-7caa-f111-b317-005056a7d529",
+          "id": "p30-v4",
           "label": null,
           "column": 0,
           "rect": [
-            28.2711,
-            520.2135,
-            536.756,
-            705.1174
+            56.7331,
+            54.8097,
+            510.6515,
+            188.813
           ],
           "parts": [
             [
-              28.2711,
-              520.2135,
-              536.756,
-              705.1174
+              56.7331,
+              54.8097,
+              510.6515,
+              188.813
             ]
-          ],
-          "headline": "Yazılı hukukun ilk örnekleri Sümerlerde görülmüştür. Bu dönemde hukuki",
-          "anchored": true
+          ]
         }
       ]
     },
@@ -1150,58 +457,23 @@
       ],
       "activities": [
         {
-          "id": "p38-oge-c89fc9f9-7caa-f111-b317-005056a7d529",
-          "label": null,
-          "column": 1,
-          "rect": [
-            249.2352,
-            379.0705,
-            516.2348,
-            700.582
-          ],
-          "parts": [
-            [
-              249.2352,
-              379.0705,
-              516.2348,
-              700.582
-            ]
-          ],
-          "headline": "Görsel 1.13:  Hammurabi Kanunları'nın yazılı olduğu konik stel (MÖ 1792-MÖ 1750), Louvre Müzesi, Paris/Fransa",
-          "anchored": true
-        }
-      ]
-    },
-    "39": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          36.5197,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p39-oge-120b401c-7daa-f111-b317-005056a7d529",
+          "id": "p38-v1",
           "label": null,
           "column": 0,
           "rect": [
-            28.5197,
-            616.6573,
-            536.756,
-            734.5908
+            55.4915,
+            384.9088,
+            513.0266,
+            723.9091
           ],
           "parts": [
             [
-              28.5197,
-              616.6573,
-              536.756,
-              734.5908
+              55.4915,
+              384.9088,
+              513.0266,
+              723.9091
             ]
-          ],
-          "headline": "■ Kyros'un silindiri ile ilgili metin ve kaynaktan yararlanarak soruyu cevaplayınız.",
-          "anchored": true
+          ]
         }
       ]
     },
@@ -1216,533 +488,92 @@
       ],
       "activities": [
         {
-          "id": "p40-oge-46d52d34-7daa-f111-b317-005056a7d529",
+          "id": "p40-v1",
           "label": null,
-          "column": 1,
+          "column": 0,
           "rect": [
-            248.3849,
-            502.3038,
-            516.5885,
-            701.2363
+            55.1137,
+            67.703,
+            510.2197,
+            141.394
           ],
           "parts": [
             [
-              248.3849,
-              502.3038,
-              516.5885,
-              701.2363
+              55.1137,
+              67.703,
+              510.2197,
+              141.394
             ]
-          ],
-          "headline": "Görsel 1.15:  On İki Levha Kanunları (Temsilî)",
-          "anchored": true
+          ]
         }
       ]
     },
-    "41": {
+    "45": {
       "pageWidth": 552.756,
       "pageHeight": 779.528,
       "columns": [
         [
-          36.283,
+          72.9528,
           528.756
         ]
       ],
       "activities": [
         {
-          "id": "p41-13",
-          "label": "13",
+          "id": "p45-v1",
+          "label": null,
           "column": 0,
           "rect": [
-            42.1808,
-            515.8665,
-            490.7449,
-            566.6662
+            41.0788,
+            205.1049,
+            496.4548,
+            711.5723
           ],
           "parts": [
             [
-              42.1808,
-              515.8665,
-              490.7449,
-              566.6662
+              41.0788,
+              205.1049,
+              496.4548,
+              711.5723
             ]
-          ],
-          "headline": "Takvâ sahibi müminler saldırganlara, haksız bir fiil tasarlayanlara ve cürüm işleyenlere, bir hakka tecavüz edenlere, müminler arasında karışıklık çıkarmak iste"
+          ]
         },
         {
-          "id": "p41-16",
-          "label": "16",
+          "id": "p45-v2",
+          "label": null,
           "column": 0,
           "rect": [
-            42.1808,
-            448.528,
-            463.9238,
-            512.8665
+            42.0505,
+            155.474,
+            452.515,
+            186.3854
           ],
           "parts": [
             [
-              42.1808,
-              448.528,
-              463.9238,
-              512.8665
+              42.0505,
+              155.474,
+              452.515,
+              186.3854
             ]
-          ],
-          "headline": "Yahudilerden bize tâbi olanlar, zulme uğramadan ve onların düşmanlarıyla yardımlaşmadan yardımımıza hak kazanacaktır."
+          ]
         },
         {
-          "id": "p41-31",
-          "label": "31",
-          "column": 0,
-          "rect": [
-            42.1808,
-            409.0793,
-            439.0547,
-            445.528
-          ],
-          "parts": [
-            [
-              42.1808,
-              409.0793,
-              439.0547,
-              445.528
-            ]
-          ],
-          "headline": "(…) Haksız bir fiil işleyen kimse sadece kendine ve aile fertlerine zarar vermiş olacaktır."
-        },
-        {
-          "id": "p41-40",
-          "label": "40",
-          "column": 0,
-          "rect": [
-            42.1808,
-            389.41,
-            463.1528,
-            406.0793
-          ],
-          "parts": [
-            [
-              42.1808,
-              389.41,
-              463.1528,
-              406.0793
-            ]
-          ],
-          "headline": "Himaye altındaki kimse bizzat himaye eden gibidir; ne zulmedilir ne de kendisi zulüm işleyebilir."
-        },
-        {
-          "id": "p41-41",
-          "label": "41",
-          "column": 0,
-          "rect": [
-            31.1983,
-            86.0,
-            504.202,
-            386.41
-          ],
-          "parts": [
-            [
-              31.1983,
-              86.0,
-              504.202,
-              386.41
-            ]
-          ],
-          "headline": "Himaye hakkına sahip kimselerin izni olmadıkça kimseye himaye hakkı verilemez."
-        },
-        {
-          "id": "p41-oge-767211f5-7daa-f111-b317-005056a7d529",
+          "id": "p45-v3",
           "label": null,
           "column": 0,
           "rect": [
-            28.283,
-            618.7027,
-            536.756,
-            734.0916
+            42.4283,
+            55.7808,
+            497.5344,
+            146.0334
           ],
           "parts": [
             [
-              28.283,
-              618.7027,
-              536.756,
-              734.0916
+              42.4283,
+              55.7808,
+              497.5344,
+              146.0334
             ]
-          ],
-          "headline": "■ Medine Sözleşmesi ile ilgili metin ve kaynaklardan yararlanarak soruyu cevaplayınız.",
-          "anchored": true
-        }
-      ]
-    },
-    "42": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          50.5554,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p42-q1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            45.0363,
-            141.0863,
-            517.9084,
-            399.9756
-          ],
-          "parts": [
-            [
-              45.0363,
-              141.0863,
-              517.9084,
-              399.9756
-            ]
-          ],
-          "headline": "Kaynak I (…) Ey insanlar! Biliniz ki rabbiniz birdir, atanız da birdir. Bütün insanlar Âdem’den gelmiş, Âdem de"
-        },
-        {
-          "id": "p42-q2",
-          "label": null,
-          "column": 0,
-          "rect": [
-            80.1024,
-            123.8788,
-            145.2524,
-            138.0863
-          ],
-          "parts": [
-            [
-              80.1024,
-              123.8788,
-              145.2524,
-              138.0863
-            ]
-          ],
-          "headline": "Açıklayınız."
-        },
-        {
-          "id": "p42-2",
-          "label": "2",
-          "column": 0,
-          "rect": [
-            69.1522,
-            84.1713,
-            474.7064,
-            120.8788
-          ],
-          "parts": [
-            [
-              69.1522,
-              84.1713,
-              474.7064,
-              120.8788
-            ]
-          ],
-          "headline": "2. Veda Hutbesi’ni kişiler arası iletişim açısından değerlendirerek günümüzde bireylerin bu mesajlardan nasıl yararlanabileceğini açıklayını"
-        }
-      ]
-    },
-    "43": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          36.9936,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p43-oge-a03c0631-7eaa-f111-b317-005056a7d529",
-          "label": null,
-          "column": 0,
-          "rect": [
-            28.9936,
-            619.2909,
-            536.756,
-            734.7989
-          ],
-          "parts": [
-            [
-              28.9936,
-              619.2909,
-              536.756,
-              734.7989
-            ]
-          ],
-          "headline": "■ Hz. Ömer'in Kudüs Emannamesi ile ilgili metin ve kaynaktan yararlanarak soruyu cevaplayınız.",
-          "anchored": true
-        }
-      ]
-    },
-    "44": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          50.6432,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p44-oge-1d319154-7eaa-f111-b317-005056a7d529",
-          "label": null,
-          "column": 1,
-          "rect": [
-            289.121,
-            373.7615,
-            519.4638,
-            700.6912
-          ],
-          "parts": [
-            [
-              289.121,
-              373.7615,
-              519.4638,
-              700.6912
-            ]
-          ],
-          "headline": "Görsel 1.17:  Fatih Sultan Mehmet'in 1480 yılında İtalyan ressam Gentile Bellini'ye (Centile Bellini) yaptırdığı tablo, Ulusal Galeri, İngiltere",
-          "anchored": true
-        }
-      ]
-    },
-    "46": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          50.1576,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p46-oge-9b31ae46-a6aa-f111-b317-005056a7d529",
-          "label": null,
-          "column": 1,
-          "rect": [
-            48.3997,
-            146.4846,
-            517.7567,
-            303.8516
-          ],
-          "parts": [
-            [
-              48.3997,
-              146.4846,
-              517.7567,
-              303.8516
-            ]
-          ],
-          "headline": "Akbay, 1950, s. 446-449*",
-          "anchored": true
-        }
-      ]
-    },
-    "47": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          36.3262,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p47-oge-8ca4118c-7eaa-f111-b317-005056a7d529",
-          "label": null,
-          "column": 0,
-          "rect": [
-            34.6841,
-            684.0287,
-            506.1541,
-            743.4594
-          ],
-          "parts": [
-            [
-              34.6841,
-              684.0287,
-              506.1541,
-              743.4594
-            ]
-          ],
-          "headline": "■ Fransız İnsan ve Yurttaş Hakları Bildirgesi ile ilgili metin ve kaynaklardan yararlanarak soruyu",
-          "anchored": true
-        }
-      ]
-    },
-    "48": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          50.6693,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p48-oge-066474b3-7eaa-f111-b317-005056a7d529",
-          "label": null,
-          "column": 1,
-          "rect": [
-            232.7861,
-            414.3267,
-            517.4068,
-            698.5566
-          ],
-          "parts": [
-            [
-              232.7861,
-              414.3267,
-              517.4068,
-              698.5566
-            ]
-          ],
-          "headline": "Görsel 1.20:  Osmanlı Devleti'nde Sıbyan Mektebi (Temsilî)",
-          "anchored": true
-        }
-      ]
-    },
-    "49": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          36.1671,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p49-q1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            54.7165,
-            47.3829,
-            119.8665,
-            75.5029
-          ],
-          "parts": [
-            [
-              54.7165,
-              47.3829,
-              119.8665,
-              75.5029
-            ]
-          ],
-          "headline": "Açıklayınız."
-        },
-        {
-          "id": "p49-oge-df8ba7cf-7eaa-f111-b317-005056a7d529",
-          "label": null,
-          "column": 0,
-          "rect": [
-            28.1671,
-            509.5274,
-            536.756,
-            734.483
-          ],
-          "parts": [
-            [
-              28.1671,
-              509.5274,
-              536.756,
-              734.483
-            ]
-          ],
-          "headline": "■ Fabrikalar Yasası ile ilgili metin ve kaynaktan yararlanarak soruyu cevaplayınız.",
-          "anchored": true
-        }
-      ]
-    },
-    "50": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          51.0273,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p50-q1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            48.4887,
-            166.6737,
-            519.1816,
-            288.5736
-          ],
-          "parts": [
-            [
-              48.4887,
-              166.6737,
-              519.1816,
-              288.5736
-            ]
-          ],
-          "headline": "Uygulama adımlarını takip ederek etkinliği yapınız."
-        },
-        {
-          "id": "p50-oge-5ce2d2e6-7eaa-f111-b317-005056a7d529",
-          "label": null,
-          "column": 1,
-          "rect": [
-            387.9382,
-            539.1272,
-            519.7702,
-            705.187
-          ],
-          "parts": [
-            [
-              387.9382,
-              539.1272,
-              519.7702,
-              705.187
-            ]
-          ],
-          "headline": "� Birleşmiş Milletler",
-          "anchored": true
-        }
-      ]
-    },
-    "51": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          36.0594,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p51-q1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            34.0025,
-            140.8794,
-            502.9545,
-            359.4351
-          ],
-          "parts": [
-            [
-              34.0025,
-              140.8794,
-              502.9545,
-              359.4351
-            ]
-          ],
-          "headline": "Uygulama adımlarını takip ederek \"Ben Olsaydım\" etkinliğini yapınız."
+          ]
         }
       ]
     },
@@ -1757,95 +588,23 @@
       ],
       "activities": [
         {
-          "id": "p53-oge-e831713e-7faa-f111-b317-005056a7d529",
+          "id": "p53-v1",
           "label": null,
           "column": 0,
           "rect": [
-            27.8145,
-            628.1463,
-            536.756,
-            734.5711
+            40.755,
+            54.5939,
+            498.2361,
+            143.1203
           ],
           "parts": [
             [
-              27.8145,
-              628.1463,
-              536.756,
-              734.5711
+              40.755,
+              54.5939,
+              498.2361,
+              143.1203
             ]
-          ],
-          "headline": "■ Çocuk Haklarına Dair Sözleşme ile ilgili metin ve kaynaktan yararlanarak soruyu cevaplayınız.",
-          "anchored": true
-        }
-      ]
-    },
-    "54": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          50.1688,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p54-oge-850c355b-7faa-f111-b317-005056a7d529",
-          "label": null,
-          "column": 1,
-          "rect": [
-            276.378,
-            617.6895,
-            512.756,
-            734.5711
-          ],
-          "parts": [
-            [
-              276.378,
-              617.6895,
-              512.756,
-              734.5711
-            ]
-          ],
-          "headline": "■ Dijital Dünyada Çocuk Hakları Sözleşmesi ile ilgili metin ve kaynaktan yararlanarak soruyu cevaplayınız.",
-          "anchored": true
-        }
-      ]
-    },
-    "55": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          40.9843,
-          266.8032
-        ],
-        [
-          270.8032,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p55-oge-bd402682-7faa-f111-b317-005056a7d529",
-          "label": null,
-          "column": 0,
-          "rect": [
-            32.9843,
-            611.2762,
-            274.8032,
-            725.2898
-          ],
-          "parts": [
-            [
-              32.9843,
-              611.2762,
-              274.8032,
-              725.2898
-            ]
-          ],
-          "headline": "Madde 6",
-          "anchored": true
+          ]
         }
       ]
     },
@@ -1860,57 +619,23 @@
       ],
       "activities": [
         {
-          "id": "p57-q1",
+          "id": "p57-v1",
           "label": null,
           "column": 0,
           "rect": [
-            35.1883,
-            628.6962,
-            506.6583,
-            733.74
+            43.346,
+            53.8387,
+            445.7135,
+            84.4803
           ],
           "parts": [
             [
-              35.1883,
-              628.6962,
-              506.6583,
-              733.74
+              43.346,
+              53.8387,
+              445.7135,
+              84.4803
             ]
-          ],
-          "headline": "Uygulama adımlarını takip ederek etkinliği yapınız."
-        }
-      ]
-    },
-    "59": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          36.2101,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p59-oge-99687d66-a6aa-f111-b317-005056a7d529",
-          "label": null,
-          "column": 0,
-          "rect": [
-            28.2101,
-            619.8155,
-            536.756,
-            735.6852
-          ],
-          "parts": [
-            [
-              28.2101,
-              619.8155,
-              536.756,
-              735.6852
-            ]
-          ],
-          "headline": "■ Hocalı Katliamı ile ilgili metin ve kaynaklardan yararlanarak soruları cevaplayınız.",
-          "anchored": true
+          ]
         }
       ]
     },
@@ -1929,110 +654,123 @@
       ],
       "activities": [
         {
-          "id": "p60-2",
-          "label": "2",
-          "column": 0,
+          "id": "p60-v1",
+          "label": null,
+          "column": 1,
           "rect": [
-            68.4831,
-            52.5089,
-            494.8909,
-            93.6289
+            55.3836,
+            419.5,
+            512.163,
+            719.8092
           ],
           "parts": [
             [
-              68.4831,
-              52.5089,
-              494.8909,
-              93.6289
+              55.3836,
+              419.5,
+              512.163,
+              719.8092
             ]
-          ],
-          "headline": "2. Savaş nedeniyle insanların yaşadıkları yerleri terk etmek zorunda kalmaları hangi hakların ihlali anlamına gelir? Açıklayınız."
+          ]
         },
         {
-          "id": "p60-oge-c431f8cb-7faa-f111-b317-005056a7d529",
+          "id": "p60-v2",
           "label": null,
           "column": 1,
           "rect": [
-            56.8516,
-            419.5,
-            518.131,
-            724.2344
+            55.4375,
+            122.2429,
+            510.7595,
+            207.9101
           ],
           "parts": [
             [
-              56.8516,
-              419.5,
-              518.131,
-              724.2344
+              55.4375,
+              122.2429,
+              510.7595,
+              207.9101
             ]
+          ]
+        },
+        {
+          "id": "p60-v3",
+          "label": null,
+          "column": 1,
+          "rect": [
+            56.949,
+            58.2084,
+            511.8931,
+            115.6615
           ],
-          "headline": "Karabağ'da hayat başladı",
-          "anchored": true
+          "parts": [
+            [
+              56.949,
+              58.2084,
+              511.8931,
+              115.6615
+            ]
+          ]
         }
       ]
     },
-    "62": {
+    "63": {
       "pageWidth": 552.756,
       "pageHeight": 779.528,
       "columns": [
         [
-          50.2326,
+          36.3467,
           528.756
         ]
       ],
       "activities": [
         {
-          "id": "p62-oge-0c7b80fb-7faa-f111-b317-005056a7d529",
-          "label": null,
-          "column": 1,
-          "rect": [
-            193.1777,
-            436.4251,
-            519.5735,
-            702.2881
-          ],
-          "parts": [
-            [
-              193.1777,
-              436.4251,
-              519.5735,
-              702.2881
-            ]
-          ],
-          "headline": "Görsel 1.25:  Potocari (Potoçari) Anıt Merkezi'ndeki mezarlıkta Boşnak kadın, Srebrenitsa/Bosna-Hersek",
-          "anchored": true
-        }
-      ]
-    },
-    "65": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          35.4765,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p65-q1",
+          "id": "p63-v1",
           "label": null,
           "column": 0,
           "rect": [
-            30.4793,
-            504.5391,
-            507.831,
-            733.5178
+            43.4,
+            54.9176,
+            497.4264,
+            325.6215
           ],
           "parts": [
             [
-              30.4793,
-              504.5391,
-              507.831,
-              733.5178
+              43.4,
+              54.9176,
+              497.4264,
+              325.6215
             ]
+          ]
+        }
+      ]
+    },
+    "64": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          50.4167,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p64-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            55.8694,
+            400.7152,
+            510.1117,
+            584.2414
           ],
-          "headline": "Uygulama adımlarını takip ederek etkinliği yapınız."
+          "parts": [
+            [
+              55.8694,
+              400.7152,
+              510.1117,
+              584.2414
+            ]
+          ]
         }
       ]
     },
@@ -2047,25 +785,61 @@
       ],
       "activities": [
         {
-          "id": "p67-oge-f7728729-80aa-f111-b317-005056a7d529",
+          "id": "p67-v1",
           "label": null,
           "column": 0,
           "rect": [
-            34.7031,
-            328.8,
-            504.0601,
-            740.9521
+            41.0249,
+            346.0673,
+            498.2361,
+            725.2578
           ],
           "parts": [
             [
-              34.7031,
-              328.8,
-              504.0601,
-              740.9521
+              41.0249,
+              346.0673,
+              498.2361,
+              725.2578
             ]
+          ]
+        },
+        {
+          "id": "p67-v2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            42.2124,
+            95.3775,
+            497.3184,
+            328.8
           ],
-          "headline": "65 - Irak Savaşı",
-          "anchored": true
+          "parts": [
+            [
+              42.2124,
+              95.3775,
+              497.3184,
+              328.8
+            ]
+          ]
+        },
+        {
+          "id": "p67-v3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            43.5619,
+            53.6768,
+            482.6898,
+            83.9948
+          ],
+          "parts": [
+            [
+              43.5619,
+              53.6768,
+              482.6898,
+              83.9948
+            ]
+          ]
         }
       ]
     },
@@ -2080,90 +854,43 @@
       ],
       "activities": [
         {
+          "id": "p69-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            41.8885,
+            363.9775,
+            496.0229,
+            443.7106
+          ],
+          "parts": [
+            [
+              41.8885,
+              363.9775,
+              496.0229,
+              443.7106
+            ]
+          ]
+        },
+        {
           "id": "p69-q1",
           "label": null,
           "column": 0,
           "rect": [
-            31.554,
-            36.0,
-            505.3676,
-            442.7883
+            41.2948,
+            42.528,
+            500.714,
+            362.317
           ],
           "parts": [
             [
-              31.554,
-              36.0,
-              505.3676,
-              442.7883
+              41.2948,
+              42.528,
+              500.714,
+              362.317
             ]
           ],
           "headline": "Uygulama adımlarını takip ederek etkinliği yapınız."
-        }
-      ]
-    },
-    "70": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          50.3292,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p70-oge-f2c346b6-a6aa-f111-b317-005056a7d529",
-          "label": null,
-          "column": 1,
-          "rect": [
-            49.088,
-            227.9842,
-            518.445,
-            380.0312
-          ],
-          "parts": [
-            [
-              49.088,
-              227.9842,
-              518.445,
-              380.0312
-            ]
-          ],
-          "headline": "(…)  İnsan Hakları Evrensel Bildirgesi’nin “Her ferdin bir uyrukluk hakkı vardır” şeklindeki 15’inci maddesi,",
-          "anchored": true
-        }
-      ]
-    },
-    "71": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          36.0594,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p71-oge-12d41e8a-80aa-f111-b317-005056a7d529",
-          "label": null,
-          "column": 0,
-          "rect": [
-            28.0594,
-            587.9691,
-            536.756,
-            699.8591
-          ],
-          "parts": [
-            [
-              28.0594,
-              587.9691,
-              536.756,
-              699.8591
-            ]
-          ],
-          "headline": "Uzun yıllara dayanan Filistin-İsrail",
-          "anchored": true
         }
       ]
     },
@@ -2178,373 +905,61 @@
       ],
       "activities": [
         {
-          "id": "p72-oge-7852ef9f-80aa-f111-b317-005056a7d529",
-          "label": null,
-          "column": 1,
-          "rect": [
-            48.212,
-            367.2,
-            519.426,
-            739.4227
-          ],
-          "parts": [
-            [
-              48.212,
-              367.2,
-              519.426,
-              739.4227
-            ]
-          ],
-          "headline": "70 - Filistin",
-          "anchored": true
-        }
-      ]
-    },
-    "73": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          37.5174,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p73-1",
-          "label": "1",
-          "column": 0,
-          "rect": [
-            34.3545,
-            248.248,
-            237.7055,
-            311.184
-          ],
-          "parts": [
-            [
-              34.3545,
-              248.248,
-              237.7055,
-              311.184
-            ]
-          ],
-          "headline": "Farklı toplumlarda yaşanan kitlesel şiddet olayları düşünüldüğünde şiddet olgusunun evrensel olarak reddedilmesi neden bu kadar önemlidir?"
-        },
-        {
-          "id": "p73-2",
-          "label": "2",
-          "column": 0,
-          "rect": [
-            34.3545,
-            183.752,
-            237.7055,
-            246.688
-          ],
-          "parts": [
-            [
-              34.3545,
-              183.752,
-              237.7055,
-              246.688
-            ]
-          ],
-          "headline": "Hocalı, Ruanda, Bosna, Afganistan, Irak, Doğu Türkistan, Myanmar ve Filistin'de yaşanan insan hakları ihlallerinin ortak noktaları nelerdir?"
-        },
-        {
-          "id": "p73-3",
-          "label": "3",
-          "column": 0,
-          "rect": [
-            40.3605,
-            120.5488,
-            235.6726,
-            175.4847
-          ],
-          "parts": [
-            [
-              40.3605,
-              120.5488,
-              235.6726,
-              175.4847
-            ]
-          ],
-          "headline": "Bu örneklerde toplumsal ve siyasi koşullar şiddetin ortaya çıkışını nasıl etkilemiştir?"
-        },
-        {
-          "id": "p73-4",
-          "label": "4",
-          "column": 0,
-          "rect": [
-            34.3545,
-            57.3438,
-            237.7055,
-            120.2798
-          ],
-          "parts": [
-            [
-              34.3545,
-              57.3438,
-              237.7055,
-              120.2798
-            ]
-          ],
-          "headline": "Uluslararası toplum, bu olaylar yaşanırken nasıl bir tutum sergilemiştir/ sergilemektedir? Bu tutumla ilgili düşünceleriniz nelerdir?"
-        }
-      ]
-    },
-    "74": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          56.3622,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p74-5",
-          "label": "5",
-          "column": 0,
-          "rect": [
-            49.0355,
-            666.8086,
-            252.3865,
-            731.0016
-          ],
-          "parts": [
-            [
-              49.0355,
-              666.8086,
-              252.3865,
-              731.0016
-            ]
-          ],
-          "headline": "Kitlesel şiddet vakalarının arkasında genellikle nefret söylemi, ayrımcılık, propaganda gibi etkenler bulunmaktadır."
-        },
-        {
-          "id": "p74-6",
-          "label": "6",
-          "column": 0,
-          "rect": [
-            48.3269,
-            602.5176,
-            251.6779,
-            665.4536
-          ],
-          "parts": [
-            [
-              48.3269,
-              602.5176,
-              251.6779,
-              665.4536
-            ]
-          ],
-          "headline": "Hocalı, Ruanda ve Bosna’da yaşananlar, şiddetin kısa sürede kitlesel boyuta ulaşabileceğini göstermektedir. Bu olaylardan ne gibi dersler çıkarılabilir?"
-        },
-        {
-          "id": "p74-7",
-          "label": "7",
-          "column": 0,
-          "rect": [
-            49.0355,
-            535.0605,
-            252.3865,
-            597.9965
-          ],
-          "parts": [
-            [
-              49.0355,
-              535.0605,
-              252.3865,
-              597.9965
-            ]
-          ],
-          "headline": "Myanmar ve Doğu Türkistan örnekleri, günümüzde devam eden riskler hakkında hangi mesajları vermektedir?"
-        },
-        {
-          "id": "p74-8",
-          "label": "8",
-          "column": 0,
-          "rect": [
-            48.3269,
-            466.3887,
-            251.6779,
-            529.3247
-          ],
-          "parts": [
-            [
-              48.3269,
-              466.3887,
-              251.6779,
-              529.3247
-            ]
-          ],
-          "headline": "Sizce devletler ve uluslararası kuruluşların şiddetin önlenmesi için uygulaması gereken en önemli politikalar nelerdir?"
-        },
-        {
-          "id": "p74-9",
-          "label": "9",
-          "column": 0,
-          "rect": [
-            54.4548,
-            399.0586,
-            244.8404,
-            453.9946
-          ],
-          "parts": [
-            [
-              54.4548,
-              399.0586,
-              244.8404,
-              453.9946
-            ]
-          ],
-          "headline": "Şiddetin coğrafya, kimlik veya inanç ayırt etmeksizin ele alınması neden önemlidir?"
-        },
-        {
-          "id": "p74-10",
-          "label": "10",
-          "column": 0,
-          "rect": [
-            48.3269,
-            333.0195,
-            251.6779,
-            395.9555
-          ],
-          "parts": [
-            [
-              48.3269,
-              333.0195,
-              251.6779,
-              395.9555
-            ]
-          ],
-          "headline": "“Her türlü şiddete karşı çıkmak” ilkesinin evrensel düzeyde benimsenebilmesi için neler yapılmalıdır?"
-        },
-        {
-          "id": "p74-11",
-          "label": "11",
-          "column": 0,
-          "rect": [
-            48.3269,
-            266.9805,
-            251.6779,
-            329.9165
-          ],
-          "parts": [
-            [
-              48.3269,
-              266.9805,
-              251.6779,
-              329.9165
-            ]
-          ],
-          "headline": "Bu örneklerin tekrar etmemesi için insanlığa vermek istediğiniz temel mesaj nedir?"
-        },
-        {
-          "id": "p74-12",
-          "label": "12",
-          "column": 0,
-          "rect": [
-            48.3269,
-            60.8633,
-            251.6779,
-            263.8774
-          ],
-          "parts": [
-            [
-              48.3269,
-              60.8633,
-              251.6779,
-              263.8774
-            ]
-          ],
-          "headline": "Gelecek nesillerin benzer trajedileri yaşamaması için nasıl bir dünya hayal ediyorsunuz?"
-        }
-      ]
-    },
-    "75": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          36.378,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p75-q1",
+          "id": "p72-v1",
           "label": null,
           "column": 0,
           "rect": [
-            34.378,
-            694.4143,
-            126.8168,
-            725.1263
+            56.6791,
+            382.2,
+            509.5179,
+            722.8841
           ],
           "parts": [
             [
-              34.378,
-              694.4143,
-              126.8168,
-              725.1263
+              56.6791,
+              382.2,
+              509.5179,
+              722.8841
             ]
-          ],
-          "headline": "UYGULAYALIM"
+          ]
         },
         {
-          "id": "p75-q2",
+          "id": "p72-v2",
           "label": null,
           "column": 0,
           "rect": [
-            33.6183,
-            549.9048,
-            503.9364,
-            687.4739
+            56.5711,
+            122.0811,
+            511.1913,
+            367.2
           ],
           "parts": [
             [
-              33.6183,
-              549.9048,
-              503.9364,
-              687.4739
+              56.5711,
+              122.0811,
+              511.1913,
+              367.2
             ]
-          ],
-          "headline": "Uygulama adımlarını takip ederek etkinliği yapınız."
-        }
-      ]
-    },
-    "76": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          52.2702,
-          528.756
-        ]
-      ],
-      "activities": [
+          ]
+        },
         {
-          "id": "p76-q1",
+          "id": "p72-v3",
           "label": null,
           "column": 0,
           "rect": [
-            49.2257,
-            205.904,
-            525.8199,
-            735.732
+            56.5711,
+            82.6462,
+            508.5463,
+            111.1839
           ],
           "parts": [
             [
-              49.2257,
-              205.904,
-              525.8199,
-              735.732
+              56.5711,
+              82.6462,
+              508.5463,
+              111.1839
             ]
-          ],
-          "headline": "Uygulama adımlarını takip ederek etkinliği yapınız."
+          ]
         }
       ]
     },
@@ -2559,80 +974,40 @@
       ],
       "activities": [
         {
-          "id": "p77-q1",
+          "id": "p77-v1",
           "label": null,
           "column": 0,
           "rect": [
-            34.7697,
-            48.7509,
-            504.313,
-            380.3
+            40.7697,
+            358.3,
+            499.4939,
+            725.762
           ],
           "parts": [
             [
-              34.7697,
-              48.7509,
-              504.313,
-              380.3
-            ]
-          ],
-          "headline": "PERFORMANS GÖREVİ Aşağıdaki uygulama adımları doğrultusunda tarihsel süreçte insan hak ve özgürlüklerinde meydana gelen"
-        }
-      ]
-    },
-    "78": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          49.9162,
-          239.2405
-        ],
-        [
-          243.2405,
-          349.7917
-        ],
-        [
-          353.7917,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p78-q1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            47.9162,
-            675.9,
-            253.2,
-            727.1516
-          ],
-          "parts": [
-            [
-              47.9162,
-              675.9,
-              253.2,
-              727.1516
+              40.7697,
+              358.3,
+              499.4939,
+              725.762
             ]
           ]
         },
         {
-          "id": "p78-q2",
+          "id": "p77-v2",
           "label": null,
           "column": 0,
           "rect": [
-            56.862,
-            129.4,
-            516.738,
-            546.6
+            40.2152,
+            54.8637,
+            498.0742,
+            341.0227
           ],
           "parts": [
             [
-              56.862,
-              129.4,
-              516.738,
-              546.6
+              40.2152,
+              54.8637,
+              498.0742,
+              341.0227
             ]
           ]
         }
@@ -2649,250 +1024,22 @@
       ],
       "activities": [
         {
-          "id": "p79-1",
-          "label": "1",
-          "column": 0,
-          "rect": [
-            73.1,
-            396.0,
-            394.0,
-            422.3
-          ],
-          "parts": [
-            [
-              73.1,
-              396.0,
-              394.0,
-              422.3
-            ]
-          ],
-          "headline": "Etkinlik çalışmalarına gönüllü olarak katıldı."
-        },
-        {
-          "id": "p79-2",
-          "label": "2",
-          "column": 0,
-          "rect": [
-            73.1,
-            376.1,
-            394.0,
-            393.0
-          ],
-          "parts": [
-            [
-              73.1,
-              376.1,
-              394.0,
-              393.0
-            ]
-          ],
-          "headline": "Alınan kararlarda etkin rol oynadı."
-        },
-        {
-          "id": "p79-3",
-          "label": "3",
-          "column": 0,
-          "rect": [
-            73.1,
-            356.3,
-            394.0,
-            373.1
-          ],
-          "parts": [
-            [
-              73.1,
-              356.3,
-              394.0,
-              373.1
-            ]
-          ],
-          "headline": "Arkadaşlarının görüşlerine önem verdi."
-        },
-        {
-          "id": "p79-4",
-          "label": "4",
-          "column": 0,
-          "rect": [
-            73.1,
-            336.5,
-            394.0,
-            353.3
-          ],
-          "parts": [
-            [
-              73.1,
-              336.5,
-              394.0,
-              353.3
-            ]
-          ],
-          "headline": "Arkadaşlarıyla aynı düşüncede olmadığı zamanlarda yapıcı bir dil kullandı."
-        },
-        {
-          "id": "p79-5",
-          "label": "5",
-          "column": 0,
-          "rect": [
-            73.1,
-            316.6,
-            394.0,
-            333.5
-          ],
-          "parts": [
-            [
-              73.1,
-              316.6,
-              394.0,
-              333.5
-            ]
-          ],
-          "headline": "Üzerine düşen görev ve sorumlulukları yerine getirdi."
-        },
-        {
-          "id": "p79-6",
-          "label": "6",
-          "column": 0,
-          "rect": [
-            73.1,
-            296.8,
-            394.0,
-            313.6
-          ],
-          "parts": [
-            [
-              73.1,
-              296.8,
-              394.0,
-              313.6
-            ]
-          ],
-          "headline": "Görevini zamanında tamamladı."
-        },
-        {
-          "id": "p79-7",
-          "label": "7",
-          "column": 0,
-          "rect": [
-            73.1,
-            276.9,
-            394.0,
-            293.8
-          ],
-          "parts": [
-            [
-              73.1,
-              276.9,
-              394.0,
-              293.8
-            ]
-          ],
-          "headline": "Arkadaşlarıyla nitelikli iş birliği yaptı."
-        },
-        {
-          "id": "p79-8",
-          "label": "8",
-          "column": 0,
-          "rect": [
-            73.1,
-            257.1,
-            394.0,
-            273.9
-          ],
-          "parts": [
-            [
-              73.1,
-              257.1,
-              394.0,
-              273.9
-            ]
-          ],
-          "headline": "Arkadaşlarının çalışmalarına destek oldu."
-        },
-        {
-          "id": "p79-9",
-          "label": "9",
-          "column": 0,
-          "rect": [
-            73.1,
-            228.0,
-            394.0,
-            254.1
-          ],
-          "parts": [
-            [
-              73.1,
-              228.0,
-              394.0,
-              254.1
-            ]
-          ],
-          "headline": "Grupta diğer bireylerle uyumlu çalıştı."
-        },
-        {
-          "id": "p79-10",
-          "label": "10",
-          "column": 0,
-          "rect": [
-            73.1,
-            67.0624,
-            504.1,
-            160.755
-          ],
-          "parts": [
-            [
-              73.1,
-              67.0624,
-              504.1,
-              160.755
-            ]
-          ],
-          "headline": "Türkçeyi doğru, güzel ve etkili kullandı."
-        }
-      ]
-    },
-    "80": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          50.6221,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p80-q1",
+          "id": "p79-v1",
           "label": null,
           "column": 0,
           "rect": [
-            42.6221,
-            589.4667,
-            526.74,
-            682.0184
+            50.2015,
+            66.1385,
+            496.5087,
+            148.1373
           ],
           "parts": [
             [
-              42.6221,
-              589.4667,
-              526.74,
-              682.0184
+              50.2015,
+              66.1385,
+              496.5087,
+              148.1373
             ]
-          ],
-          "headline": "DÜŞÜNELİM",
-          "items": [
-            {
-              "id": "p80--b",
-              "label": "b",
-              "number": 2,
-              "partIndex": 0,
-              "rect": [
-                62.1041,
-                593.4667,
-                300.9056,
-                612.1677
-              ],
-              "text": "a b"
-            }
           ]
         }
       ]
@@ -2908,78 +1055,23 @@
       ],
       "activities": [
         {
-          "id": "p81-q1",
+          "id": "p81-v1",
           "label": null,
           "column": 0,
           "rect": [
-            34.6661,
-            504.504,
-            504.2956,
-            679.3065
+            42.2124,
+            52.8676,
+            493.5398,
+            82.4304
           ],
           "parts": [
             [
-              34.6661,
-              504.504,
-              504.2956,
-              679.3065
+              42.2124,
+              52.8676,
+              493.5398,
+              82.4304
             ]
-          ],
-          "headline": "Verilen yönergeler doğrultusunda aşağıdaki etkinlikleri yapınız.",
-          "ogeId": "0ee20fe9-a6aa-f111-b317-005056a7d529"
-        }
-      ]
-    },
-    "82": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          51.0067,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p82-q1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            48.8652,
-            463.8772,
-            517.9164,
-            685.9469
-          ],
-          "parts": [
-            [
-              48.8652,
-              463.8772,
-              517.9164,
-              685.9469
-            ]
-          ],
-          "headline": "Verilen yönergeler doğrultusunda aşağıdaki etkinlikleri yapınız."
-        },
-        {
-          "id": "p82-q2",
-          "label": null,
-          "column": 0,
-          "rect": [
-            48.5345,
-            61.5246,
-            520.0045,
-            228.4323
-          ],
-          "parts": [
-            [
-              48.5345,
-              61.5246,
-              520.0045,
-              228.4323
-            ]
-          ],
-          "headline": "Uygulama adımlarını takip ederek etkinliği yapınız.",
-          "ogeId": "801889fb-a6aa-f111-b317-005056a7d529"
+          ]
         }
       ]
     },
@@ -2994,148 +1086,43 @@
       ],
       "activities": [
         {
-          "id": "p84-1",
-          "label": "1",
+          "id": "p84-v1",
+          "label": null,
           "column": 0,
           "rect": [
-            53.6259,
-            89.4484,
-            516.5344,
-            125.3284
+            56.3012,
+            618.4975,
+            510.8135,
+            714.3066
           ],
           "parts": [
             [
-              53.6259,
-              89.4484,
-              516.5344,
-              125.3284
+              56.3012,
+              618.4975,
+              510.8135,
+              714.3066
             ]
-          ],
-          "headline": "Bir bireyin kendi ulusal kimliğine sıkı sıkıya bağlı kalması küresel sorunlara yönelik bir bakış açısı"
+          ]
         },
         {
           "id": "p84-2",
           "label": "2",
           "column": 0,
           "rect": [
-            69.3581,
-            48.0207,
-            516.9042,
-            89.1407
+            75.3562,
+            54.54,
+            510.2737,
+            81.1896
           ],
           "parts": [
             [
-              69.3581,
-              48.0207,
-              516.9042,
-              89.1407
+              75.3562,
+              54.54,
+              510.2737,
+              81.1896
             ]
           ],
           "headline": "Hz. Mevlana’nın pergel metaforunu dikkate alarak ulusal değerlere bağlılığın bireyin kimliğini nasıl şekillendirdiğini açıklayınız."
-        },
-        {
-          "id": "p84-oge-f024f202-81aa-f111-b317-005056a7d529",
-          "label": null,
-          "column": 1,
-          "rect": [
-            48.636,
-            608.3207,
-            517.993,
-            719.9297
-          ],
-          "parts": [
-            [
-              48.636,
-              608.3207,
-              517.993,
-              719.9297
-            ]
-          ],
-          "headline": "Töre, 2017, s. 556*",
-          "anchored": true
-        }
-      ]
-    },
-    "86": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          51.4016,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p86-q1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            45.4366,
-            404.04,
-            523.286,
-            734.9406
-          ],
-          "parts": [
-            [
-              45.4366,
-              404.04,
-              523.286,
-              734.9406
-            ]
-          ],
-          "headline": "Uygulama adımlarını takip ederek etkinliği yapınız."
-        }
-      ]
-    },
-    "87": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          36.192,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p87-q1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            28.192,
-            661.6921,
-            512.134,
-            727.3544
-          ],
-          "parts": [
-            [
-              28.192,
-              661.6921,
-              512.134,
-              727.3544
-            ]
-          ]
-        },
-        {
-          "id": "p87-q2",
-          "label": null,
-          "column": 0,
-          "rect": [
-            34.5138,
-            555.2202,
-            506.1089,
-            658.6921
-          ],
-          "parts": [
-            [
-              34.5138,
-              555.2202,
-              506.1089,
-              658.6921
-            ]
-          ],
-          "headline": "Uygulama adımlarını takip ederek etkinliği yapınız."
         }
       ]
     },
@@ -3150,24 +1137,61 @@
       ],
       "activities": [
         {
-          "id": "p88-q1",
+          "id": "p88-v1",
           "label": null,
           "column": 0,
           "rect": [
-            47.6056,
-            572.1031,
-            516.8598,
-            731.2427
+            56.2472,
+            395.86,
+            510.3276,
+            573.0205
           ],
           "parts": [
             [
-              47.6056,
-              572.1031,
-              516.8598,
-              731.2427
+              56.2472,
+              395.86,
+              510.3276,
+              573.0205
             ]
+          ]
+        },
+        {
+          "id": "p88-v2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            55.8154,
+            229.8664,
+            511.5206,
+            391.714
           ],
-          "headline": "Uygulama adımlarını takip ederek etkinliği yapınız."
+          "parts": [
+            [
+              55.8154,
+              229.8664,
+              511.5206,
+              391.714
+            ]
+          ]
+        },
+        {
+          "id": "p88-v3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            56.0313,
+            58.2084,
+            510.9754,
+            223.3388
+          ],
+          "parts": [
+            [
+              56.0313,
+              58.2084,
+              510.9754,
+              223.3388
+            ]
+          ]
         }
       ]
     },
@@ -3182,43 +1206,43 @@
       ],
       "activities": [
         {
-          "id": "p91-q1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            28.4516,
-            672.938,
-            512.1444,
-            727.8603
-          ],
-          "parts": [
-            [
-              28.4516,
-              672.938,
-              512.1444,
-              727.8603
-            ]
-          ]
-        },
-        {
           "id": "p91-q2",
           "label": null,
           "column": 0,
           "rect": [
-            34.6,
-            157.4478,
-            503.938,
-            672.938
+            42.4283,
+            155.0964,
+            497.2645,
+            672.9
           ],
           "parts": [
             [
-              34.6,
-              157.4478,
-              503.938,
-              672.938
+              42.4283,
+              155.0964,
+              497.2645,
+              672.9
             ]
           ],
           "headline": "Sevgili öğrenciler, Öğrendiğiniz bilgilerden hareketle vatandaşlık anlayışındaki değişimi dönemin koşulları çerçevesinde sorgulatan değişim"
+        },
+        {
+          "id": "p91-v2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            40.3231,
+            64.5201,
+            496.8326,
+            149.5939
+          ],
+          "parts": [
+            [
+              40.3231,
+              64.5201,
+              496.8326,
+              149.5939
+            ]
+          ]
         }
       ]
     },
@@ -3237,37 +1261,75 @@
           "label": "1",
           "column": 0,
           "rect": [
-            48.3378,
-            245.3325,
-            518.6388,
-            501.1644
+            54.6818,
+            428.7134,
+            510.0577,
+            491.1836
           ],
           "parts": [
             [
-              48.3378,
-              245.3325,
-              518.6388,
-              501.1644
+              54.6818,
+              428.7134,
+              510.0577,
+              491.1836
             ]
           ],
           "headline": "Geçmişten günümüze demokrasinin tarihsel gelişimini halk iradesi ve temel özgürlükler açısından karşılaştırınız. Bu gelişim sürecinde en önemli dönüm noktası ol"
+        },
+        {
+          "id": "p92-v2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            54.8438,
+            366.3512,
+            509.8418,
+            415.5505
+          ],
+          "parts": [
+            [
+              54.8438,
+              366.3512,
+              509.8418,
+              415.5505
+            ]
+          ]
+        },
+        {
+          "id": "p92-v3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            56.0853,
+            247.2911,
+            509.501,
+            357.7197
+          ],
+          "parts": [
+            [
+              56.0853,
+              247.2911,
+              509.501,
+              357.7197
+            ]
+          ]
         },
         {
           "id": "p92-4",
           "label": "4",
           "column": 0,
           "rect": [
-            49.0956,
-            55.0,
-            518.6388,
-            242.3325
+            54.9517,
+            62.7399,
+            511.8931,
+            237.0952
           ],
           "parts": [
             [
-              49.0956,
-              55.0,
-              518.6388,
-              242.3325
+              54.9517,
+              62.7399,
+              511.8931,
+              237.0952
             ]
           ],
           "headline": "Kadınların seçme ve seçilme hakkını elde etmesi ve siyasi hayata katılımı, dünyanın her yerinde aynı anda gerçekleşmemiştir. Yeni Zelanda'da kadınlar seçme hakk"
@@ -3289,20 +1351,39 @@
           "label": "5",
           "column": 0,
           "rect": [
-            34.5197,
-            57.3219,
-            504.8135,
-            470.1761
+            42.4823,
+            399.6902,
+            487.3321,
+            461.513
           ],
           "parts": [
             [
-              34.5197,
-              57.3219,
-              504.8135,
-              470.1761
+              42.4823,
+              399.6902,
+              487.3321,
+              461.513
             ]
           ],
           "headline": "XIX. yüzyılın sonlarına kadar insan hak ve özgürlüklerinin değişiminde aşağıdaki olay ve olgulardan hangisinin etkisi görülmez?"
+        },
+        {
+          "id": "p93-v2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            41.7806,
+            59.4491,
+            498.3441,
+            386.2575
+          ],
+          "parts": [
+            [
+              41.7806,
+              59.4491,
+              498.3441,
+              386.2575
+            ]
+          ]
         }
       ]
     },
@@ -3317,21 +1398,40 @@
       ],
       "activities": [
         {
+          "id": "p94-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            54.6278,
+            643.259,
+            511.772,
+            717.3816
+          ],
+          "parts": [
+            [
+              54.6278,
+              643.259,
+              511.772,
+              717.3816
+            ]
+          ]
+        },
+        {
           "id": "p94-7",
           "label": "7",
           "column": 0,
           "rect": [
-            48.3179,
-            447.1,
-            518.6113,
-            644.3455
+            55.0597,
+            455.6328,
+            512.3249,
+            636.2459
           ],
           "parts": [
             [
-              48.3179,
-              447.1,
-              518.6113,
-              644.3455
+              55.0597,
+              455.6328,
+              512.3249,
+              636.2459
             ]
           ],
           "headline": "Aşağıdakilerden hangisi/hangileri tarihsel süreçte insan hak ve özgürlüklerinde meydana gelen deği­ şimin gerekçeleriyle doğrudan ilgili bir konu değildir?",
@@ -3344,7 +1444,7 @@
               "rect": [
                 68.9,
                 564.5,
-                514.5,
+                512.3249,
                 600.8
               ],
               "text": "a Köleliğe karşı verilen mücadeleler"
@@ -3357,7 +1457,7 @@
               "rect": [
                 68.9,
                 536.1,
-                514.5,
+                512.3249,
                 572.5
               ],
               "text": "b Anayasal yönetimlerin yaygınlaşması"
@@ -3370,7 +1470,7 @@
               "rect": [
                 68.9,
                 507.8,
-                514.5,
+                512.3249,
                 544.1
               ],
               "text": "c Sanayide robotik sistemlerin kullanımı"
@@ -3383,7 +1483,7 @@
               "rect": [
                 68.9,
                 479.5,
-                514.5,
+                512.3249,
                 515.8
               ],
               "text": "ç Dijital ortamda kişisel verilerin kullanımı"
@@ -3395,8 +1495,8 @@
               "partIndex": 0,
               "rect": [
                 68.9,
-                451.1,
-                514.5,
+                455.6328,
+                512.3249,
                 487.5
               ],
               "text": "d Pandemi döneminde aşı üretim çalışmaları"
@@ -3408,17 +1508,17 @@
           "label": "8",
           "column": 0,
           "rect": [
-            48.3179,
-            257.248,
-            518.2363,
-            437.5847
+            55.5995,
+            257.8646,
+            511.8931,
+            450.1842
           ],
           "parts": [
             [
-              48.3179,
-              257.248,
-              518.2363,
-              437.5847
+              55.5995,
+              257.8646,
+              511.8931,
+              450.1842
             ]
           ],
           "headline": "Aşağıdakilerden hangisi/hangileri tarihsel süreçte insan hak ve özgürlüklerinde meydana gelen değişimin gerekçelerine ilişkin araştırma sorusu olarak kullanılab",
@@ -3431,7 +1531,7 @@
               "rect": [
                 68.6,
                 372.6,
-                514.1,
+                511.8931,
                 408.9
               ],
               "text": "a Kanun-ı Esasi’nin ilan edilmesinde hangi siyasal koşullar etkili olmuştur?"
@@ -3444,7 +1544,7 @@
               "rect": [
                 68.6,
                 344.2,
-                514.1,
+                511.8931,
                 380.6
               ],
               "text": "b İnsan Hakları Bildirgesi’nin hangi maddelerinde ekonomi konusu ele alınmıştır?"
@@ -3457,7 +1557,7 @@
               "rect": [
                 68.6,
                 315.9,
-                514.1,
+                511.8931,
                 352.2
               ],
               "text": "c Türk Çocuk Hakları Sözleşmesi hangi toplumsal ihtiyaçlar doğrultusunda hazırlanmıştır?"
@@ -3470,7 +1570,7 @@
               "rect": [
                 68.6,
                 285.9,
-                514.1,
+                511.8931,
                 323.9
               ],
               "text": "XXI. yüzyılda dijital araçların hızının artışı mı yoksa doğru bilgiyi sunma özelliği mi ön planda ç tutulmalıdır?"
@@ -3482,8 +1582,8 @@
               "partIndex": 0,
               "rect": [
                 68.6,
-                257.248,
-                514.1,
+                257.8646,
+                511.8931,
                 293.9
               ],
               "text": "Medine Sözleşmesi’nin insan hak ve özgürlüklerinin gelişiminde dönüm noktası olarak kabul d edilmesinin nedenleri neler olabilir?"
@@ -3495,17 +1595,17 @@
           "label": "9",
           "column": 0,
           "rect": [
-            48.3179,
-            63.9,
-            518.6113,
-            254.248
+            55.2216,
+            69.0516,
+            512.4329,
+            251.6068
           ],
           "parts": [
             [
-              48.3179,
-              63.9,
-              518.6113,
-              254.248
+              55.2216,
+              69.0516,
+              512.4329,
+              251.6068
             ]
           ],
           "headline": "Aşağıdakilerden hangisi/hangileri tarihsel süreçte insan hak ve özgürlüklerinde meydana gelen değişimin gerekçelerine ilişkin farklı kaynaklardan bilgi toplama ",
@@ -3518,7 +1618,7 @@
               "rect": [
                 68.9,
                 183.0,
-                514.5,
+                512.4329,
                 219.3
               ],
               "text": "a Çelişkili ifadelerin dikkate alınmaması"
@@ -3531,7 +1631,7 @@
               "rect": [
                 68.9,
                 154.6,
-                514.5,
+                512.4329,
                 191.0
               ],
               "text": "b Bilgilerin önem derecesine göre sınıflandırılması"
@@ -3544,7 +1644,7 @@
               "rect": [
                 68.9,
                 126.3,
-                514.5,
+                512.4329,
                 162.6
               ],
               "text": "c Kaynaklarda yer alan tüm bilgilerin kayıt altına alınması"
@@ -3557,7 +1657,7 @@
               "rect": [
                 68.9,
                 97.9,
-                514.5,
+                512.4329,
                 134.3
               ],
               "text": "ç Kaynağın adı, yazarı, yayımlanma tarihi, sayfa numarası vb. bilgilerin kayıt altına alınması"
@@ -3569,8 +1669,8 @@
               "partIndex": 0,
               "rect": [
                 68.9,
-                67.9,
-                514.5,
+                69.0516,
+                512.4329,
                 105.9
               ],
               "text": "Kaynaklarda yer alan subjektif ve objektif değerlendirmelerin analizlerinin yapılarak not d edilmesi"
@@ -3594,17 +1694,17 @@
           "label": "10",
           "column": 0,
           "rect": [
-            34.5197,
-            439.3,
-            504.0629,
-            524.3061
+            41.1328,
+            447.325,
+            496.8866,
+            515.4056
           ],
           "parts": [
             [
-              34.5197,
-              439.3,
-              504.0629,
-              524.3061
+              41.1328,
+              447.325,
+              496.8866,
+              515.4056
             ]
           ],
           "headline": "İşçi haklarının ortaya çıkışında kaynakların farklı gerekçeleri daha önemli bulma nedenleri neler ola­ bilir? Açıklayınız."
@@ -3614,20 +1714,58 @@
           "label": "11",
           "column": 0,
           "rect": [
-            34.1248,
-            58.0,
-            504.0629,
-            429.0689
+            40.9169,
+            371.3682,
+            495.807,
+            441.8225
           ],
           "parts": [
             [
-              34.1248,
-              58.0,
-              504.0629,
-              429.0689
+              40.9169,
+              371.3682,
+              495.807,
+              441.8225
             ]
           ],
           "headline": "İpek performans ödevinde işçi haklarının ortaya çıkış gerekçesini en doğru şekilde nasıl ifade etmelidir? Açıklayınız."
+        },
+        {
+          "id": "p95-v3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            41.3487,
+            122.0,
+            493.6478,
+            172.3593
+          ],
+          "parts": [
+            [
+              41.3487,
+              122.0,
+              493.6478,
+              172.3593
+            ]
+          ]
+        },
+        {
+          "id": "p95-v4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            40.2152,
+            61.4991,
+            493.8097,
+            116.3628
+          ],
+          "parts": [
+            [
+              40.2152,
+              61.4991,
+              493.8097,
+              116.3628
+            ]
+          ]
         }
       ]
     },
@@ -3646,17 +1784,17 @@
           "label": "14",
           "column": 0,
           "rect": [
-            48.9967,
-            667.4301,
-            519.2485,
-            730.6447
+            54.25,
+            669.5849,
+            512.055,
+            722.992
           ],
           "parts": [
             [
-              48.9967,
-              667.4301,
-              519.2485,
-              730.6447
+              54.25,
+              669.5849,
+              512.055,
+              722.992
             ]
           ],
           "headline": "14. Küresel vatandaşlık yaklaşımının birey ve toplum üzerindeki etkilerini açıklayınız."
@@ -3666,17 +1804,17 @@
           "label": "15",
           "column": 0,
           "rect": [
-            45.4533,
-            343.4927,
-            518.3255,
-            664.4301
+            55.1137,
+            548.6906,
+            485.1729,
+            660.1442
           ],
           "parts": [
             [
-              45.4533,
-              343.4927,
-              518.3255,
-              664.4301
+              55.1137,
+              548.6906,
+              485.1729,
+              660.1442
             ]
           ],
           "headline": "15. Aşağıdakilerden hangisi küresel vatandaşlık yaklaşımını benimseyen bir bireyin tutum ve davranışlarına yönelik doğru bir ifade değildir?"
@@ -3686,583 +1824,87 @@
           "label": "16",
           "column": 0,
           "rect": [
-            48.9967,
-            53.7786,
-            519.2485,
-            339.1013
+            54.7358,
+            268.0066,
+            510.9214,
+            330.8543
           ],
           "parts": [
             [
-              48.9967,
-              53.7786,
-              519.2485,
-              339.1013
+              54.7358,
+              268.0066,
+              510.9214,
+              330.8543
             ]
           ],
           "headline": "16. Ahıskalı Türkler örneğinden hareketle vatandaşlık anlayışında meydana gelen dönüşümü neden ve sonuçlarıyla açıklayınız."
-        }
-      ]
-    },
-    "97": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          44.8543,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p97-2",
-          "label": "2",
-          "column": 0,
-          "rect": [
-            52.4729,
-            592.9453,
-            317.7753,
-            684.7655
-          ],
-          "parts": [
-            [
-              52.4729,
-              592.9453,
-              317.7753,
-              684.7655
-            ]
-          ],
-          "headline": "ÜNİTE"
-        }
-      ]
-    },
-    "99": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          36.3107,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p99-q1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            28.3107,
-            596.0779,
-            512.5668,
-            682.0184
-          ],
-          "parts": [
-            [
-              28.3107,
-              596.0779,
-              512.5668,
-              682.0184
-            ]
-          ],
-          "headline": "DÜŞÜNELİM"
         },
         {
-          "id": "p99-q2",
+          "id": "p96-v4",
           "label": null,
           "column": 0,
           "rect": [
-            54.8871,
-            48.1154,
-            120.0371,
-            76.2354
+            55.2756,
+            160.6529,
+            508.8162,
+            257.1094
           ],
           "parts": [
             [
-              54.8871,
-              48.1154,
-              120.0371,
-              76.2354
+              55.2756,
+              160.6529,
+              508.8162,
+              257.1094
             ]
-          ],
-          "headline": "Açıklayınız."
-        }
-      ]
-    },
-    "100": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          50.6929,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p100-q1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            60.4605,
-            688.1626,
-            200.0095,
-            716.4226
-          ],
-          "parts": [
-            [
-              60.4605,
-              688.1626,
-              200.0095,
-              716.4226
-            ]
-          ],
-          "headline": "Tamamlama” testini yapınız."
+          ]
         },
         {
-          "id": "p100-q2",
+          "id": "p96-v5",
           "label": null,
           "column": 0,
           "rect": [
-            42.6929,
-            86.7905,
-            533.4641,
-            628.5625
+            56.1393,
+            61.8228,
+            510.4896,
+            144.7926
           ],
           "parts": [
             [
-              42.6929,
-              86.7905,
-              533.4641,
-              628.5625
-            ]
-          ],
-          "headline": "Kendinizi tanıtan bir paragraf yazınız ve tabloyu doldurunuz. Ben Aysel Işınsoy"
-        }
-      ]
-    },
-    "103": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          36.6858,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p103-q1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            34.6858,
-            631.3866,
-            506.5399,
-            686.353
-          ],
-          "parts": [
-            [
-              34.6858,
-              631.3866,
-              506.5399,
-              686.353
-            ]
-          ],
-          "headline": "Verilen yönergeler doğrultusunda aşağıdaki etkinlikleri yapınız."
-        },
-        {
-          "id": "p103-q2",
-          "label": null,
-          "column": 0,
-          "rect": [
-            34.3748,
-            48.8288,
-            503.918,
-            310.9931
-          ],
-          "parts": [
-            [
-              34.3748,
-              48.8288,
-              503.918,
-              310.9931
-            ]
-          ],
-          "headline": "PERFORMANS GÖREVİ Araştırma raporunun hazırlanmasına yönelik aşağıda uygulama adımları verilen performans görevini"
-        }
-      ]
-    },
-    "104": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          54.8179,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p104-q1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            48.8,
-            707.0,
-            518.236,
-            722.7
-          ],
-          "parts": [
-            [
-              48.8,
-              707.0,
-              518.236,
-              722.7
-            ]
-          ],
-          "headline": "Bu form, etkin vatandaşın özellikleri ile ilgili yaptığınız araştırmayı değerlendirmeniz amacıyla hazırlan­ mıştır. Aşağıdaki ölçütleri gerç"
-        },
-        {
-          "id": "p104-q2",
-          "label": null,
-          "column": 0,
-          "rect": [
-            48.818,
-            48.8,
-            518.236,
-            124.3
-          ],
-          "parts": [
-            [
-              48.818,
-              48.8,
-              518.236,
-              124.3
-            ]
-          ],
-          "headline": "Değerlendirme Sistemi Değerlendirme sonunda “Hayır” ile işaretlenen bölümleri bir kez daha gözden geçiriniz ve eksikliklerinizi tamamlayınız"
-        }
-      ]
-    },
-    "108": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          54.7681,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p108-q1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            48.6411,
-            194.8594,
-            519.0775,
-            467.0874
-          ],
-          "parts": [
-            [
-              48.6411,
-              194.8594,
-              519.0775,
-              467.0874
-            ]
-          ],
-          "headline": "Eserin/Kaynağın Adı: Kaynaktaki bilgiler güncel midir? Eserin/Kaynağın Yazarı:"
-        },
-        {
-          "id": "p108-q2",
-          "label": null,
-          "column": 0,
-          "rect": [
-            49.2247,
-            57.5331,
-            517.7358,
-            193.0051
-          ],
-          "parts": [
-            [
-              49.2247,
-              57.5331,
-              517.7358,
-              193.0051
-            ]
-          ],
-          "headline": "Kaynakların Sorgulanması •"
-        }
-      ]
-    },
-    "109": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          39.5037,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p109-1",
-          "label": "1",
-          "column": 0,
-          "rect": [
-            34.7,
-            487.8,
-            503.9,
-            572.8
-          ],
-          "parts": [
-            [
-              34.7,
-              487.8,
-              503.9,
-              572.8
-            ]
-          ],
-          "headline": "1. İncelediğiniz kaynaklar birincil ya da ikincil kaynaklardan hangisine girmektedir? Nedenini açıklayınız."
-        },
-        {
-          "id": "p109-2",
-          "label": "2",
-          "column": 0,
-          "rect": [
-            34.7,
-            380.0,
-            503.9,
-            465.1
-          ],
-          "parts": [
-            [
-              34.7,
-              380.0,
-              503.9,
-              465.1
-            ]
-          ],
-          "headline": "2. Kaynakların türü nedir?"
-        },
-        {
-          "id": "p109-3",
-          "label": "3",
-          "column": 0,
-          "rect": [
-            34.7,
-            272.3,
-            503.9,
-            357.4
-          ],
-          "parts": [
-            [
-              34.7,
-              272.3,
-              503.9,
-              357.4
-            ]
-          ],
-          "headline": "3. Kaynakları yazan veya oluşturan kişi ya da kişilerin bakış açısı kaynak veya kanıta nasıl yansımıştır?"
-        },
-        {
-          "id": "p109-4",
-          "label": "4",
-          "column": 0,
-          "rect": [
-            34.7,
-            164.6,
-            503.9,
-            249.7
-          ],
-          "parts": [
-            [
-              34.7,
-              164.6,
-              503.9,
-              249.7
-            ]
-          ],
-          "headline": "4. Kaynakların yanlılık ve yanıltıcılık durumu nedir?"
-        },
-        {
-          "id": "p109-5",
-          "label": "5",
-          "column": 0,
-          "rect": [
-            34.7,
-            43.3,
-            503.9,
-            136.4
-          ],
-          "parts": [
-            [
-              34.7,
-              43.3,
-              503.9,
-              136.4
-            ]
-          ],
-          "headline": "5. Bu kaynaklar çalıştığınız konuya, yazdığınız metne veya yaptığınız tartışmaya nasıl katkıda bulunmaktadır?"
-        }
-      ]
-    },
-    "110": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          50.7415,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p110-q1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            115.2237,
-            683.1166,
-            491.8185,
-            724.0708
-          ],
-          "parts": [
-            [
-              115.2237,
-              683.1166,
-              491.8185,
-              724.0708
-            ]
-          ],
-          "headline": "Kaynaklardan Elde Edilen Bilgilerin Yorumlanması •   Araştırma sürecinde edindiğiniz bilgileri ana fikir, şahıslar, eserler, mekânlar ve ku­"
-        },
-        {
-          "id": "p110-q2",
-          "label": null,
-          "column": 0,
-          "rect": [
-            45.4621,
-            251.0596,
-            518.3342,
-            628.4662
-          ],
-          "parts": [
-            [
-              45.4621,
-              251.0596,
-              518.3342,
-              628.4662
-            ]
-          ],
-          "headline": "• Ulaştığınız bilgileri aşağıda verilen örnek olaydan hareketle grup olarak yorumlayınız."
-        }
-      ]
-    },
-    "112": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          126.2898,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p112-q1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            128.953,
-            605.4443,
-            499.3608,
-            722.8812
-          ],
-          "parts": [
-            [
-              128.953,
-              605.4443,
-              499.3608,
-              722.8812
-            ]
-          ],
-          "headline": "Araştırma Raporunun Hazırlanması Etkin vatandaşın özellikleri ile ilgili edindiğiniz bilgileri bir araştırma raporu hâlinde"
-        },
-        {
-          "id": "p112-q2",
-          "label": null,
-          "column": 0,
-          "rect": [
-            47.851,
-            50.467,
-            525.5437,
-            137.542
-          ],
-          "parts": [
-            [
-              47.851,
-              50.467,
-              525.5437,
-              137.542
+              56.1393,
+              61.8228,
+              510.4896,
+              144.7926
             ]
           ]
         }
       ]
     },
-    "113": {
+    "102": {
       "pageWidth": 552.756,
       "pageHeight": 779.528,
       "columns": [
         [
-          36.2362,
-          225.0237
-        ],
-        [
-          229.0237,
-          335.5748
-        ],
-        [
-          339.5748,
+          53.5276,
           528.756
         ]
       ],
       "activities": [
         {
-          "id": "p113-q1",
+          "id": "p102-v1",
           "label": null,
           "column": 0,
           "rect": [
-            34.2362,
-            659.4,
-            239.0,
-            728.2934
+            55.1676,
+            65.599,
+            509.5719,
+            96.2407
           ],
           "parts": [
             [
-              34.2362,
-              659.4,
-              239.0,
-              728.2934
-            ]
-          ]
-        },
-        {
-          "id": "p113-q2",
-          "label": null,
-          "column": 0,
-          "rect": [
-            34.6,
-            150.391,
-            502.521,
-            659.4
-          ],
-          "parts": [
-            [
-              34.6,
-              150.391,
-              502.521,
-              659.4
+              55.1676,
+              65.599,
+              509.5719,
+              96.2407
             ]
           ]
         }
@@ -4283,328 +1925,23 @@
       ],
       "activities": [
         {
-          "id": "p114-1",
-          "label": "1",
-          "column": 0,
-          "rect": [
-            88.1,
-            473.25,
-            279.9,
-            501.5
-          ],
-          "parts": [
-            [
-              88.1,
-              473.25,
-              279.9,
-              501.5
-            ]
-          ],
-          "headline": "Grup üyeleri araştırma sürecinde birbirleriyle yardımlaştı."
-        },
-        {
-          "id": "p114-3",
-          "label": "3",
-          "column": 0,
-          "rect": [
-            88.1,
-            455.0,
-            279.9,
-            472.25
-          ],
-          "parts": [
-            [
-              88.1,
-              455.0,
-              279.9,
-              472.25
-            ]
-          ],
-          "headline": "Grup üyeleri görev ve sorumluklarını zamanında yerine getirdi."
-        },
-        {
-          "id": "p114-4",
-          "label": "4",
-          "column": 0,
-          "rect": [
-            88.1,
-            427.5,
-            279.9,
-            452.0
-          ],
-          "parts": [
-            [
-              88.1,
-              427.5,
-              279.9,
-              452.0
-            ]
-          ],
-          "headline": "Grup üyeleri her aşamada görüş alışverişinde bulundu."
-        },
-        {
-          "id": "p114-5",
-          "label": "5",
-          "column": 0,
-          "rect": [
-            57.151,
-            387.452,
-            518.4,
-            417.5
-          ],
-          "parts": [
-            [
-              57.151,
-              387.452,
-              518.4,
-              417.5
-            ]
-          ],
-          "headline": "Grup üyeleri araştırma sürecinde birbirine saygılı davrandı."
-        },
-        {
-          "id": "p114-7",
-          "label": "7",
-          "column": 0,
-          "rect": [
-            88.1,
-            371.0,
-            279.9,
-            387.452
-          ],
-          "parts": [
-            [
-              88.1,
-              371.0,
-              279.9,
-              387.452
-            ]
-          ],
-          "headline": "Grup üyeleri etkinlik sürecinde zamanı verimli şekilde kullandı."
-        },
-        {
-          "id": "p114-8",
-          "label": "8",
-          "column": 0,
-          "rect": [
-            88.1,
-            314.85,
-            249.8682,
-            368.0
-          ],
-          "parts": [
-            [
-              88.1,
-              314.85,
-              249.8682,
-              368.0
-            ]
-          ],
-          "headline": "Grubunuzun güçlü yönleri nelerdir?"
-        },
-        {
-          "id": "p114-9",
-          "label": "9",
-          "column": 0,
-          "rect": [
-            57.151,
-            207.877,
-            518.4,
-            313.85
-          ],
-          "parts": [
-            [
-              57.151,
-              207.877,
-              518.4,
-              313.85
-            ]
-          ],
-          "headline": "Grubunuz etkinlik sırasında hangi zorluklarla karşılaştı?"
-        },
-        {
-          "id": "p114-11",
-          "label": "11",
-          "column": 0,
-          "rect": [
-            57.2,
-            64.0387,
-            518.4,
-            154.0
-          ],
-          "parts": [
-            [
-              57.2,
-              64.0387,
-              518.4,
-              154.0
-            ]
-          ],
-          "headline": "Görüşler"
-        },
-        {
-          "id": "p114-1",
-          "label": "1",
-          "column": 1,
-          "rect": [
-            275.9213,
-            644.978,
-            322.9113,
-            664.423
-          ],
-          "parts": [
-            [
-              275.9213,
-              644.978,
-              322.9113,
-              664.423
-            ]
-          ],
-          "headline": "Üye:"
-        },
-        {
-          "id": "p114-2",
-          "label": "2",
-          "column": 1,
-          "rect": [
-            275.9213,
-            630.978,
-            322.9113,
-            641.978
-          ],
-          "parts": [
-            [
-              275.9213,
-              630.978,
-              322.9113,
-              641.978
-            ]
-          ],
-          "headline": "Üye:"
-        },
-        {
-          "id": "p114-3",
-          "label": "3",
-          "column": 1,
-          "rect": [
-            275.9213,
-            616.978,
-            322.9113,
-            627.978
-          ],
-          "parts": [
-            [
-              275.9213,
-              616.978,
-              322.9113,
-              627.978
-            ]
-          ],
-          "headline": "Üye:"
-        },
-        {
-          "id": "p114-4",
-          "label": "4",
-          "column": 1,
-          "rect": [
-            275.9213,
-            602.978,
-            322.9113,
-            613.978
-          ],
-          "parts": [
-            [
-              275.9213,
-              602.978,
-              322.9113,
-              613.978
-            ]
-          ],
-          "headline": "Üye:"
-        },
-        {
-          "id": "p114-5",
-          "label": "5",
-          "column": 1,
-          "rect": [
-            271.9,
-            501.5,
-            397.6,
-            599.978
-          ],
-          "parts": [
-            [
-              271.9,
-              501.5,
-              397.6,
-              599.978
-            ]
-          ],
-          "headline": "Üye:"
-        }
-      ]
-    },
-    "115": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          36.4488,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p115-q1",
+          "id": "p114-v1",
           "label": null,
-          "column": 0,
+          "column": 1,
           "rect": [
-            28.4488,
-            651.6521,
-            512.5668,
-            682.0184
+            64.2363,
+            63.1175,
+            508.7622,
+            145.9255
           ],
           "parts": [
             [
-              28.4488,
-              651.6521,
-              512.5668,
-              682.0184
+              64.2363,
+              63.1175,
+              508.7622,
+              145.9255
             ]
-          ],
-          "headline": "DÜŞÜNELİM"
-        }
-      ]
-    },
-    "117": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          36.8039,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p117-q1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            34.8039,
-            629.4633,
-            506.5399,
-            685.9469
-          ],
-          "parts": [
-            [
-              34.8039,
-              629.4633,
-              506.5399,
-              685.9469
-            ]
-          ],
-          "headline": "Verilen yönergeler doğrultusunda aşağıdaki etkinlikleri yapınız."
+          ]
         }
       ]
     },
@@ -4619,24 +1956,23 @@
       ],
       "activities": [
         {
-          "id": "p119-q1",
+          "id": "p119-v1",
           "label": null,
           "column": 0,
           "rect": [
-            34.0935,
-            695.6848,
-            503.0455,
-            731.7947
+            49.4457,
+            410.0479,
+            498.1281,
+            600.0416
           ],
           "parts": [
             [
-              34.0935,
-              695.6848,
-              503.0455,
-              731.7947
+              49.4457,
+              410.0479,
+              498.1281,
+              600.0416
             ]
-          ],
-          "headline": "Uygulama adımlarını takip ederek etkinliği yapınız."
+          ]
         }
       ]
     },
@@ -4655,104 +1991,70 @@
           "label": null,
           "column": 0,
           "rect": [
-            128.4578,
-            450.6,
-            508.7827,
-            490.8803
+            63.0487,
+            406.8651,
+            509.248,
+            544.6446
           ],
           "parts": [
             [
-              128.4578,
-              450.6,
-              508.7827,
-              490.8803
+              63.0487,
+              406.8651,
+              509.248,
+              544.6446
             ]
           ],
           "headline": "Hangi hakla ilgilidir?"
+        }
+      ]
+    },
+    "123": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          37.2042,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p123-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            41.7266,
+            393.3784,
+            497.6963,
+            728.8895
+          ],
+          "parts": [
+            [
+              41.7266,
+              393.3784,
+              497.6963,
+              728.8895
+            ]
+          ]
         },
         {
-          "id": "p120-q2",
+          "id": "p123-v2",
           "label": null,
           "column": 0,
           "rect": [
-            47.7296,
-            58.1883,
-            519.2887,
-            427.7
+            40.701,
+            55.2413,
+            495.0513,
+            377.5721
           ],
           "parts": [
             [
-              47.7296,
-              58.1883,
-              519.2887,
-              427.7
+              40.701,
+              55.2413,
+              495.0513,
+              377.5721
             ]
-          ],
-          "headline": "Kimler nasıl etkilenir?"
-        }
-      ]
-    },
-    "121": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          43.4563,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p121-q1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            34.5189,
-            48.953,
-            504.0639,
-            537.1453
-          ],
-          "parts": [
-            [
-              34.5189,
-              48.953,
-              504.0639,
-              537.1453
-            ]
-          ],
-          "headline": "Mevcut durumun geliştirilmesi gereken yönleri nelerdir?"
-        }
-      ]
-    },
-    "122": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          51.3665,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p122-q1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            52.7144,
-            236.1,
-            510.7878,
-            344.2106
-          ],
-          "parts": [
-            [
-              52.7144,
-              236.1,
-              510.7878,
-              344.2106
-            ]
-          ],
-          "headline": "Çözüm Önerileriniz:"
+          ]
         }
       ]
     },
@@ -4767,164 +2069,21 @@
       ],
       "activities": [
         {
-          "id": "p124-2",
-          "label": "2",
-          "column": 0,
-          "rect": [
-            68.9972,
-            49.0419,
-            519.1003,
-            77.1619
-          ],
-          "parts": [
-            [
-              68.9972,
-              49.0419,
-              519.1003,
-              77.1619
-            ]
-          ],
-          "headline": "2. Kaynaklarda yer alan uygulamalar, insana ve topluma değer verme anlayışını nasıl yansıtmaktadır?"
-        }
-      ]
-    },
-    "125": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          40.4679,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p125-q1",
+          "id": "p124-v1",
           "label": null,
           "column": 0,
           "rect": [
-            35.0516,
-            632.8455,
-            503.5626,
-            730.76
+            57.1649,
+            55.2952,
+            512.1003,
+            108.5945
           ],
           "parts": [
             [
-              35.0516,
-              632.8455,
-              503.5626,
-              730.76
-            ]
-          ],
-          "headline": "Etkinlik planının hazırlanması •   Belirlediğiniz sorunun çözümüne yönelik aşağıda verilen etkinlik planını doldurunuz."
-        },
-        {
-          "id": "p125-q2",
-          "label": null,
-          "column": 0,
-          "rect": [
-            34.468,
-            526.0,
-            503.229,
-            628.291
-          ],
-          "parts": [
-            [
-              34.468,
-              526.0,
-              503.229,
-              628.291
-            ]
-          ],
-          "headline": "ETKİNLİK PLANI Bu form; etkin vatandaş olarak çocukların, kadınların, yaşlıların ve özel gereksinimli bireylerin toplumsal yaşam­ da karşıla"
-        }
-      ]
-    },
-    "126": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          50.6155,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p126-q1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            42.6155,
-            476.0,
-            526.4488,
-            717.9279
-          ],
-          "parts": [
-            [
-              42.6155,
-              476.0,
-              526.4488,
-              717.9279
-            ]
-          ],
-          "headline": "UYGULAYALIM"
-        }
-      ]
-    },
-    "127": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          36.2362,
-          221.7166
-        ],
-        [
-          225.7166,
-          337.9371
-        ],
-        [
-          341.9371,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p127-q1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            111.5,
-            657.9,
-            235.7,
-            728.2934
-          ],
-          "parts": [
-            [
-              111.5,
-              657.9,
-              235.7,
-              728.2934
-            ]
-          ]
-        },
-        {
-          "id": "p127-q2",
-          "label": null,
-          "column": 0,
-          "rect": [
-            34.6,
-            147.752,
-            503.938,
-            620.7
-          ],
-          "parts": [
-            [
-              34.6,
-              147.752,
-              503.938,
-              620.7
+              57.1649,
+              55.2952,
+              512.1003,
+              108.5945
             ]
           ]
         }
@@ -4945,180 +2104,58 @@
           "label": "1",
           "column": 0,
           "rect": [
-            52.8179,
-            487.7,
-            519.5,
-            513.7
+            47.5564,
+            258.7351,
+            517.8309,
+            729.7353
           ],
           "parts": [
             [
-              52.8179,
-              487.7,
-              519.5,
-              513.7
+              47.5564,
+              258.7351,
+              517.8309,
+              729.7353
             ]
           ],
           "headline": "Etkinlik çalışmalarına gönüllü olarak katıldı."
         },
         {
-          "id": "p128-2",
-          "label": "2",
+          "id": "p128-v2",
+          "label": null,
           "column": 0,
           "rect": [
-            52.8179,
-            469.7,
-            519.5,
-            487.7
+            54.8977,
+            206.1838,
+            509.5719,
+            258.2351
           ],
           "parts": [
             [
-              52.8179,
-              469.7,
-              519.5,
-              487.7
+              54.8977,
+              206.1838,
+              509.5719,
+              258.2351
             ]
-          ],
-          "headline": "Alınan kararlarda etkin rol oynadı."
+          ]
         },
         {
-          "id": "p128-3",
-          "label": "3",
+          "id": "p128-v3",
+          "label": null,
           "column": 0,
           "rect": [
-            52.8179,
-            451.7,
-            519.5,
-            469.7
+            56.1933,
+            53.1913,
+            509.8958,
+            197.93
           ],
           "parts": [
             [
-              52.8179,
-              451.7,
-              519.5,
-              469.7
+              56.1933,
+              53.1913,
+              509.8958,
+              197.93
             ]
-          ],
-          "headline": "Arkadaşlarının görüşlerine önem verdi."
-        },
-        {
-          "id": "p128-4",
-          "label": "4",
-          "column": 0,
-          "rect": [
-            52.8179,
-            433.7,
-            519.5,
-            451.7
-          ],
-          "parts": [
-            [
-              52.8179,
-              433.7,
-              519.5,
-              451.7
-            ]
-          ],
-          "headline": "Arkadaşlarıyla aynı düşüncede olmadığı zamanlarda yapıcı bir dil kullandı."
-        },
-        {
-          "id": "p128-5",
-          "label": "5",
-          "column": 0,
-          "rect": [
-            52.8179,
-            415.7,
-            519.5,
-            433.7
-          ],
-          "parts": [
-            [
-              52.8179,
-              415.7,
-              519.5,
-              433.7
-            ]
-          ],
-          "headline": "Üzerine düşen görev ve sorumlulukları yerine getirdi."
-        },
-        {
-          "id": "p128-6",
-          "label": "6",
-          "column": 0,
-          "rect": [
-            52.8179,
-            397.7,
-            519.5,
-            415.7
-          ],
-          "parts": [
-            [
-              52.8179,
-              397.7,
-              519.5,
-              415.7
-            ]
-          ],
-          "headline": "Görevini zamanında tamamladı."
-        },
-        {
-          "id": "p128-7",
-          "label": "7",
-          "column": 0,
-          "rect": [
-            52.8179,
-            379.7,
-            519.5,
-            397.7
-          ],
-          "parts": [
-            [
-              52.8179,
-              379.7,
-              519.5,
-              397.7
-            ]
-          ],
-          "headline": "Arkadaşlarıyla nitelikli iş birliği yaptı."
-        },
-        {
-          "id": "p128-8",
-          "label": "8",
-          "column": 0,
-          "rect": [
-            52.8179,
-            361.7,
-            519.5,
-            379.7
-          ],
-          "parts": [
-            [
-              52.8179,
-              361.7,
-              519.5,
-              379.7
-            ]
-          ],
-          "headline": "Arkadaşlarının çalışmalarına destek oldu."
-        },
-        {
-          "id": "p128-9",
-          "label": "9",
-          "column": 0,
-          "rect": [
-            47.7797,
-            54.3596,
-            519.529,
-            278.0
-          ],
-          "parts": [
-            [
-              47.7797,
-              54.3596,
-              519.529,
-              278.0
-            ]
-          ],
-          "headline": "Grup içerisinde diğer bireylerle uyumlu çalıştı."
+          ]
         }
       ]
     },
@@ -5133,24 +2170,23 @@
       ],
       "activities": [
         {
-          "id": "p129-q1",
+          "id": "p129-v1",
           "label": null,
           "column": 0,
           "rect": [
-            27.4473,
-            525.8157,
-            512.5668,
-            682.0184
+            42.8602,
+            50.9795,
+            497.2645,
+            523.2278
           ],
           "parts": [
             [
-              27.4473,
-              525.8157,
-              512.5668,
-              682.0184
+              42.8602,
+              50.9795,
+              497.2645,
+              523.2278
             ]
-          ],
-          "headline": "DÜŞÜNELİM"
+          ]
         }
       ]
     },
@@ -5169,84 +2205,20 @@
           "label": "2",
           "column": 0,
           "rect": [
-            68.6604,
-            48.8178,
-            518.5064,
-            343.448
+            56.1393,
+            55.7268,
+            512.8107,
+            362.7368
           ],
           "parts": [
             [
-              68.6604,
-              48.8178,
-              518.5064,
-              343.448
+              56.1393,
+              55.7268,
+              512.8107,
+              362.7368
             ]
           ],
           "headline": "2. Demokrasinin korunması ile ilgili aşağıdaki tabloda verilen örnekleri inceleyerek siz de Türkiye’den ve dünyadan örnekler veriniz."
-        }
-      ]
-    },
-    "131": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          36.169,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p131-q1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            34.169,
-            294.858,
-            506.1016,
-            697.9941
-          ],
-          "parts": [
-            [
-              34.169,
-              294.858,
-              506.1016,
-              697.9941
-            ]
-          ],
-          "headline": "Verilen yönergeler doğrultusunda aşağıdaki etkinlikleri yapınız."
-        }
-      ]
-    },
-    "133": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          37.274,
-          529.5458
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p133-q1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            34.6904,
-            662.4871,
-            506.1604,
-            730.3491
-          ],
-          "parts": [
-            [
-              34.6904,
-              662.4871,
-              506.1604,
-              730.3491
-            ]
-          ],
-          "headline": "Arjantin, 1973 Şili ve 1974 Yunanistan darbelerinden birini ve antidemokratik uygulamalar üzerinden demokrasinin sürdürülebilirliğini sınırl"
         }
       ]
     },
@@ -5265,17 +2237,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            35.1023,
-            390.5676,
-            503.9018,
-            665.684
+            43.1301,
+            394.3495,
+            496.9946,
+            658.364
           ],
           "parts": [
             [
-              35.1023,
-              390.5676,
-              503.9018,
-              665.684
+              43.1301,
+              394.3495,
+              496.9946,
+              658.364
             ]
           ],
           "headline": "Belirlediğiniz soruna ilişkin yazılı, görsel, basılı ve dijital kaynaklardan araştırma yapınız ve farklı bakış açılarını analiz ederek aşağıdaki tabloya yazınız"
@@ -5285,17 +2257,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            34.4902,
-            48.6929,
-            503.9022,
-            387.5676
+            41.1328,
+            55.4571,
+            497.4804,
+            381.5102
           ],
           "parts": [
             [
-              34.4902,
-              48.6929,
-              503.9022,
-              387.5676
+              41.1328,
+              55.4571,
+              497.4804,
+              381.5102
             ]
           ],
           "headline": "Belirlediğiniz sorunun çözümünde yapılan uygulamaları ve alınan kararları değerlendirerek aşağıdaki tabloya yazınız."
@@ -5317,17 +2289,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            48.7587,
-            562.1686,
-            518.5656,
-            730.6446
+            55.8694,
+            565.6298,
+            510.9754,
+            721.5894
           ],
           "parts": [
             [
-              48.7587,
-              562.1686,
-              518.5656,
-              730.6446
+              55.8694,
+              565.6298,
+              510.9754,
+              721.5894
             ]
           ],
           "headline": "Bu sorunun çözümü için uygulanan yöntemler ve alınan kararların güncel sorunların ortaya çıkmasına olan etkilerini belirleyerek aşağıdaki ilgili alana yazınız."
@@ -5337,17 +2309,17 @@
           "label": "4",
           "column": 0,
           "rect": [
-            48.3638,
-            411.276,
-            518.1707,
-            559.1686
+            55.4915,
+            414.04,
+            511.2453,
+            554.9484
           ],
           "parts": [
             [
-              48.3638,
-              411.276,
-              518.1707,
-              559.1686
+              55.4915,
+              414.04,
+              511.2453,
+              554.9484
             ]
           ],
           "headline": "Alternatif çözüm önerilerinizi aşağıdaki ilgili alana yazınız."
@@ -5357,96 +2329,20 @@
           "label": "5",
           "column": 0,
           "rect": [
-            48.3638,
-            48.8995,
-            517.6008,
-            408.276
+            55.1676,
+            55.6729,
+            510.2197,
+            402.7112
           ],
           "parts": [
             [
-              48.3638,
-              48.8995,
-              517.6008,
-              408.276
+              55.1676,
+              55.6729,
+              510.2197,
+              402.7112
             ]
           ],
           "headline": "Geliştirdiğiniz alternatif önerilerin olası sonuçlarını, Türkiye'deki ve dünyadaki darbe örneklerinin yanı sıra dünyadaki antidemokratik uygulamalara yönelik al"
-        }
-      ]
-    },
-    "137": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          36.6195,
-          276.8071
-        ],
-        [
-          280.8071,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p137-1",
-          "label": "1",
-          "column": 1,
-          "rect": [
-            278.8071,
-            158.6053,
-            462.2162,
-            181.0699
-          ],
-          "parts": [
-            [
-              278.8071,
-              158.6053,
-              462.2162,
-              181.0699
-            ]
-          ],
-          "headline": "Bu kavramlardan üç tanesini seçiniz."
-        },
-        {
-          "id": "p137-2",
-          "label": "2",
-          "column": 1,
-          "rect": [
-            278.8071,
-            111.1159,
-            481.2739,
-            155.6053
-          ],
-          "parts": [
-            [
-              278.8071,
-              111.1159,
-              481.2739,
-              155.6053
-            ]
-          ],
-          "headline": "Seçtiğiniz kavramların demokrasinin sürdürülebilirliği açısından neden gerekli olduğunu açıklayınız."
-        },
-        {
-          "id": "p137-3",
-          "label": "3",
-          "column": 1,
-          "rect": [
-            278.8071,
-            71.8313,
-            494.5452,
-            108.1159
-          ],
-          "parts": [
-            [
-              278.8071,
-              71.8313,
-              494.5452,
-              108.1159
-            ]
-          ],
-          "headline": "“Eğer bu ilke zedelenirse demokrasi …………” cümlesini tamamlayınız."
         }
       ]
     },
@@ -5465,164 +2361,42 @@
       ],
       "activities": [
         {
-          "id": "p138-1",
-          "label": "1",
-          "column": 1,
-          "rect": [
-            292.4817,
-            628.6209,
-            473.4406,
-            651.0856
-          ],
-          "parts": [
-            [
-              292.4817,
-              628.6209,
-              473.4406,
-              651.0856
-            ]
-          ],
-          "headline": "Bu olayda hangi hak söz konusudur?"
-        },
-        {
-          "id": "p138-2",
-          "label": "2",
-          "column": 1,
-          "rect": [
-            292.4817,
-            595.1317,
-            464.1208,
-            625.6209
-          ],
-          "parts": [
-            [
-              292.4817,
-              595.1317,
-              464.1208,
-              625.6209
-            ]
-          ],
-          "headline": "Hak kullanımındaki hangi davranış demokrasiye zarar vermektedir?"
-        },
-        {
-          "id": "p138-3",
-          "label": "3",
-          "column": 1,
-          "rect": [
-            292.4817,
-            561.4624,
-            491.2107,
-            592.1317
-          ],
-          "parts": [
-            [
-              292.4817,
-              561.4624,
-              491.2107,
-              592.1317
-            ]
-          ],
-          "headline": "Eğer bu durum yaygınlaşırsa demokratik kültür nasıl etkilenir?"
-        },
-        {
-          "id": "p138-4",
-          "label": "4",
-          "column": 1,
-          "rect": [
-            292.4817,
-            527.793,
-            512.0919,
-            558.4624
-          ],
-          "parts": [
-            [
-              292.4817,
-              527.793,
-              512.0919,
-              558.4624
-            ]
-          ],
-          "headline": "Demokrasinin sürdürülebilirliği için üç çözüm önerisi yazınız."
-        },
-        {
-          "id": "p138-5",
-          "label": "5",
-          "column": 1,
-          "rect": [
-            54.8798,
-            401.3366,
-            509.9442,
-            524.793
-          ],
-          "parts": [
-            [
-              54.8798,
-              401.3366,
-              509.9442,
-              524.793
-            ]
-          ],
-          "headline": "“Demokratik bir toplumda ifade özgürlüğü ……………… ile anlam kazanır.” cümlesini tamamlayınız."
-        },
-        {
-          "id": "p138-1",
-          "label": "1",
-          "column": 1,
-          "rect": [
-            292.4817,
-            367.7774,
-            489.7908,
-            398.3366
-          ],
-          "parts": [
-            [
-              292.4817,
-              367.7774,
-              489.7908,
-              398.3366
-            ]
-          ],
-          "headline": "Beş maddelik bir “Demokratik Vatandaş Davranış Listesi” oluşturunuz."
-        },
-        {
-          "id": "p138-2",
-          "label": "2",
-          "column": 1,
-          "rect": [
-            292.4817,
-            322.8234,
-            473.5499,
-            364.7774
-          ],
-          "parts": [
-            [
-              292.4817,
-              322.8234,
-              473.5499,
-              364.7774
-            ]
-          ],
-          "headline": "Listeye bir slogan ekleyiniz."
-        },
-        {
-          "id": "p138-q1",
+          "id": "p138-v1",
           "label": null,
           "column": 0,
           "rect": [
-            48.3,
-            44.4075,
-            517.8431,
-            310.9931
+            56.74,
+            467.8589,
+            511.4,
+            722.834
           ],
           "parts": [
             [
-              48.3,
-              44.4075,
-              517.8431,
-              310.9931
+              56.74,
+              467.8589,
+              511.4,
+              722.834
             ]
+          ]
+        },
+        {
+          "id": "p138-v2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            55.2216,
+            309.5454,
+            510.3276,
+            467.6089
           ],
-          "headline": "PERFORMANS GÖREVİ Aşağıdaki uygulama adımları doğrultusunda demokrasinin sürdürülebilirliğini sınırlayan antidemokratik"
+          "parts": [
+            [
+              55.2216,
+              309.5454,
+              510.3276,
+              467.6089
+            ]
+          ]
         }
       ]
     },
@@ -5649,64 +2423,23 @@
       ],
       "activities": [
         {
-          "id": "p139-1",
-          "label": "1",
-          "column": 1,
-          "rect": [
-            146.9002,
-            560.1927,
-            223.884,
-            583.3
-          ],
-          "parts": [
-            [
-              146.9002,
-              560.1927,
-              223.884,
-              583.3
-            ]
-          ],
-          "headline": "(Geliştirilmeli)"
-        },
-        {
-          "id": "p139-2",
-          "label": "2",
+          "id": "p139-v1",
+          "label": null,
           "column": 2,
           "rect": [
-            248.4534,
-            560.1927,
-            336.6243,
-            587.1007
+            42.1584,
+            55.6189,
+            497.0485,
+            137.348
           ],
           "parts": [
             [
-              248.4534,
-              560.1927,
-              336.6243,
-              587.1007
+              42.1584,
+              55.6189,
+              497.0485,
+              137.348
             ]
-          ],
-          "headline": "(Kabul Edilebilir)"
-        },
-        {
-          "id": "p139-3",
-          "label": "3",
-          "column": 3,
-          "rect": [
-            363.7856,
-            560.1927,
-            435.5854,
-            583.3
-          ],
-          "parts": [
-            [
-              363.7856,
-              560.1927,
-              435.5854,
-              583.3
-            ]
-          ],
-          "headline": "(Oldukça İyi)"
+          ]
         }
       ]
     },
@@ -5725,37 +2458,56 @@
           "label": "1",
           "column": 0,
           "rect": [
-            48.6653,
-            381.9,
-            518.9588,
-            490.5833
+            56.1393,
+            385.0167,
+            511.7311,
+            482.3903
           ],
           "parts": [
             [
-              48.6653,
-              381.9,
-              518.9588,
-              490.5833
+              56.1393,
+              385.0167,
+              511.7311,
+              482.3903
             ]
           ],
           "headline": "Öğrencilerin etkin vatandaşın özellikleri ile ilgili yapacakları araştırma için önerebileceğiniz iki soru yazınız."
+        },
+        {
+          "id": "p140-v2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            55.2216,
+            294.5483,
+            511.5152,
+            374.2813
+          ],
+          "parts": [
+            [
+              55.2216,
+              294.5483,
+              511.5152,
+              374.2813
+            ]
+          ]
         },
         {
           "id": "p140-3",
           "label": "3",
           "column": 0,
           "rect": [
-            48.6653,
-            187.7944,
-            517.956,
-            293.0243
+            55.0597,
+            191.7261,
+            511.1373,
+            285.0537
           ],
           "parts": [
             [
-              48.6653,
-              187.7944,
-              517.956,
-              293.0243
+              55.0597,
+              191.7261,
+              511.1373,
+              285.0537
             ]
           ],
           "headline": "İklim Koruyucuları grubunun çelişkili ifadeleri karşılaştırarak doğru sonuca varmaları için neler önerirsiniz?"
@@ -5765,17 +2517,17 @@
           "label": "4",
           "column": 0,
           "rect": [
-            48.6653,
-            76.4,
-            518.2364,
-            184.7944
+            55.3836,
+            81.9448,
+            510.8674,
+            180.2355
           ],
           "parts": [
             [
-              48.6653,
-              76.4,
-              518.2364,
-              184.7944
+              55.3836,
+              81.9448,
+              510.8674,
+              180.2355
             ]
           ],
           "headline": "İklim Koruyucuları, Çevreciler ve Parlak Fikirler grubu için kaynakları sorgulama aşamasında önerileriniz nelerdir? Açıklayınız."
@@ -5793,24 +2545,62 @@
       ],
       "activities": [
         {
+          "id": "p141-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            42.0505,
+            310.7862,
+            496.8326,
+            398.1257
+          ],
+          "parts": [
+            [
+              42.0505,
+              310.7862,
+              496.8326,
+              398.1257
+            ]
+          ]
+        },
+        {
           "id": "p141-6",
           "label": "6",
           "column": 0,
           "rect": [
-            34.5197,
-            205.9,
-            504.0632,
-            307.3927
+            40.2691,
+            214.4376,
+            496.9406,
+            299.1338
           ],
           "parts": [
             [
-              34.5197,
-              205.9,
-              504.0632,
-              307.3927
+              40.2691,
+              214.4376,
+              496.9406,
+              299.1338
             ]
           ],
           "headline": "Sunum esnasında etkin vatandaşın özelliklerine ilişkin nasıl bir başlık kullanılabilir? Yazınız."
+        },
+        {
+          "id": "p141-v3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            41.2948,
+            76.4423,
+            484.3092,
+            201.0049
+          ],
+          "parts": [
+            [
+              41.2948,
+              76.4423,
+              484.3092,
+              201.0049
+            ]
+          ]
         }
       ]
     },
@@ -5825,204 +2615,23 @@
       ],
       "activities": [
         {
-          "id": "p142-8",
-          "label": "8",
+          "id": "p142-v1",
+          "label": null,
           "column": 0,
           "rect": [
-            47.748,
-            580.0324,
-            517.9708,
-            727.1014
+            54.4119,
+            68.5122,
+            511.1373,
+            177.4303
           ],
           "parts": [
             [
-              47.748,
-              580.0324,
-              517.9708,
-              727.1014
+              54.4119,
+              68.5122,
+              511.1373,
+              177.4303
             ]
-          ],
-          "headline": "10. sınıf öğrencisi Kaya, etkin vatandaşlık konusu işlenirken öğretmenine “Etkin vatandaş olabilmek için her şeye müdahale etmeli miyiz?” sorusunu yöneltir. “Bi"
-        },
-        {
-          "id": "p142-a",
-          "label": "a",
-          "column": 0,
-          "rect": [
-            63.0866,
-            540.8628,
-            491.3759,
-            577.0324
-          ],
-          "parts": [
-            [
-              63.0866,
-              540.8628,
-              491.3759,
-              577.0324
-            ]
-          ],
-          "headline": "Etkin vatandaş hak arama sürecinde kamu kurumlarına yönelik baskıcı davranışları bir yöntem olarak benimser."
-        },
-        {
-          "id": "p142-b",
-          "label": "b",
-          "column": 0,
-          "rect": [
-            63.0866,
-            491.0203,
-            485.2257,
-            530.9103
-          ],
-          "parts": [
-            [
-              63.0866,
-              491.0203,
-              485.2257,
-              530.9103
-            ]
-          ],
-          "headline": "Etkin vatandaş hukukun üstünlüğü ilkesi doğrultusunda anayasa ve kanunlara uygun davranışlar sergiler."
-        },
-        {
-          "id": "p142-c",
-          "label": "c",
-          "column": 0,
-          "rect": [
-            63.0866,
-            453.0203,
-            436.5459,
-            480.9103
-          ],
-          "parts": [
-            [
-              63.0866,
-              453.0203,
-              436.5459,
-              480.9103
-            ]
-          ],
-          "headline": "Etkin vatandaş kişisel menfaatleri toplumsal yarardan daha önemli görür."
-        },
-        {
-          "id": "p142-ç",
-          "label": "ç",
-          "column": 0,
-          "rect": [
-            63.0866,
-            415.0203,
-            468.4059,
-            442.9103
-          ],
-          "parts": [
-            [
-              63.0866,
-              415.0203,
-              468.4059,
-              442.9103
-            ]
-          ],
-          "headline": "Etkin vatandaş kamu kurumlarının ve devlet mallarının tahrip edilmesine karşıdır."
-        },
-        {
-          "id": "p142-d",
-          "label": "d",
-          "column": 0,
-          "rect": [
-            63.0866,
-            365.1778,
-            485.4958,
-            405.0678
-          ],
-          "parts": [
-            [
-              63.0866,
-              365.1778,
-              485.4958,
-              405.0678
-            ]
-          ],
-          "headline": "Etkin vatandaş siyasal ve toplumsal yaşama demokrasi anlayışı çerçevesinde katılım gösterir."
-        },
-        {
-          "id": "p142-e",
-          "label": "e",
-          "column": 0,
-          "rect": [
-            63.0866,
-            327.3353,
-            515.5159,
-            355.2253
-          ],
-          "parts": [
-            [
-              63.0866,
-              327.3353,
-              515.5159,
-              355.2253
-            ]
-          ],
-          "headline": "Etkin vatandaş protesto ve gösterilerde can ve mal güvenliğine yönelik ihlalleri meşru görür."
-        },
-        {
-          "id": "p142-f",
-          "label": "f",
-          "column": 0,
-          "rect": [
-            63.0866,
-            277.3353,
-            509.6558,
-            317.2253
-          ],
-          "parts": [
-            [
-              63.0866,
-              277.3353,
-              509.6558,
-              317.2253
-            ]
-          ],
-          "headline": "Etkin vatandaş gerektiğinde şiddeti ve olumsuz davranışları destekleyen aşırılıkçı gruplara dâhil olabilir."
-        },
-        {
-          "id": "p142-g",
-          "label": "g",
-          "column": 0,
-          "rect": [
-            63.0866,
-            239.4927,
-            499.0048,
-            267.3827
-          ],
-          "parts": [
-            [
-              63.0866,
-              239.4927,
-              499.0048,
-              267.3827
-            ]
-          ],
-          "headline": "Etkin vatandaş sosyal medyada insan haklarına yönelik ihlalleri sadece okumakla yetinir."
-        },
-        {
-          "id": "p142-ğ",
-          "label": "ğ",
-          "column": 0,
-          "rect": [
-            47.748,
-            64.6501,
-            518.64,
-            229.3827
-          ],
-          "parts": [
-            [
-              47.748,
-              64.6501,
-              518.64,
-              229.3827
-            ]
-          ],
-          "headline": "Etkin vatandaş haklarını ararken her zaman hukuki yollara başvurur."
+          ]
         }
       ]
     },
@@ -6041,40 +2650,78 @@
           "label": "9",
           "column": 0,
           "rect": [
-            34.5197,
-            555.4,
-            504.0633,
-            730.6447
+            39.8373,
+            641.5866,
+            498.8299,
+            722.3446
           ],
           "parts": [
             [
-              34.5197,
-              555.4,
-              504.0633,
-              730.6447
+              39.8373,
+              641.5866,
+              498.8299,
+              722.3446
             ]
           ],
           "headline": "Mehmet Bey’in öz yeterlilik kaybı ve sosyal izolasyon sorunlarına yönelik nasıl bir çözüm önerisi planı hazırlardınız?"
+        },
+        {
+          "id": "p143-v2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            40.8629,
+            563.3641,
+            496.9946,
+            631.2828
+          ],
+          "parts": [
+            [
+              40.8629,
+              563.3641,
+              496.9946,
+              631.2828
+            ]
+          ]
         },
         {
           "id": "p143-11",
           "label": "11",
           "column": 0,
           "rect": [
-            34.5197,
-            59.7,
-            502.3028,
-            269.3139
+            42.3744,
+            147.436,
+            493.9177,
+            261.3172
           ],
           "parts": [
             [
-              34.5197,
-              59.7,
-              502.3028,
-              269.3139
+              42.3744,
+              147.436,
+              493.9177,
+              261.3172
             ]
           ],
           "headline": "Aşağıdakilerden hangisi Dilek’in anne ve babasının hazırladığı planda yer alabilecek uygun hak arama yollarından birisi değildir?"
+        },
+        {
+          "id": "p143-v4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            41.9425,
+            65.3293,
+            491.2727,
+            136.8625
+          ],
+          "parts": [
+            [
+              41.9425,
+              65.3293,
+              491.2727,
+              136.8625
+            ]
+          ]
         }
       ]
     },
@@ -6093,17 +2740,17 @@
           "label": "13",
           "column": 0,
           "rect": [
-            48.6929,
-            437.0389,
-            519.714,
-            654.3061
+            54.9517,
+            435.6725,
+            507.8985,
+            645.4708
           ],
           "parts": [
             [
-              48.6929,
-              437.0389,
-              519.714,
-              654.3061
+              54.9517,
+              435.6725,
+              507.8985,
+              645.4708
             ]
           ],
           "headline": "Aşağıdaki balık kılçığı diyagramında üst taraftaki kılçıkların üzerine atık sorununun nedenlerini, alt taraftaki kılçıkların üzerine ise bu nedenlere yönelik ül"
@@ -6113,130 +2760,26 @@
           "label": "14",
           "column": 0,
           "rect": [
-            48.6929,
-            49.0538,
-            518.5064,
-            436.9203
+            55.7074,
+            145.7097,
+            512.6488,
+            428.2279
           ],
           "parts": [
             [
-              48.6929,
-              49.0538,
-              518.5064,
-              436.9203
+              55.7074,
+              145.7097,
+              512.6488,
+              428.2279
             ]
           ],
           "headline": "Demokrasinin sürdürülebilirliğini sınırlayan atık sorununa karşı geliştirdiğiniz alternatif çözüm öne­ rilerinizin olası sonuçlarını, aşağıda örnek olarak veril"
         }
       ]
-    },
-    "153": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          36.5172,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p153-q1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            34.7579,
-            226.4575,
-            501.4016,
-            267.5775
-          ],
-          "parts": [
-            [
-              34.7579,
-              226.4575,
-              501.4016,
-              267.5775
-            ]
-          ],
-          "headline": "Kitabın görsel ve genel ağ kaynakçasına ulaşmak"
-        }
-      ]
-    },
-    "155": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          37.6292,
-          110.1856
-        ],
-        [
-          114.1856,
-          166.1414
-        ],
-        [
-          170.1414,
-          228.3671
-        ],
-        [
-          232.3671,
-          293.4276
-        ],
-        [
-          297.4276,
-          360.0576
-        ],
-        [
-          364.0576,
-          426.6902
-        ],
-        [
-          430.6902,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p155-6",
-          "label": "6",
-          "column": 2,
-          "rect": [
-            56.7768,
-            71.1127,
-            155.9725,
-            348.5077
-          ],
-          "parts": [
-            [
-              56.7768,
-              71.1127,
-              155.9725,
-              348.5077
-            ]
-          ],
-          "headline": "A 6"
-        },
-        {
-          "id": "p155-8",
-          "label": "8",
-          "column": 4,
-          "rect": [
-            47.2768,
-            71.1127,
-            53.7768,
-            355.0217
-          ],
-          "parts": [
-            [
-              47.2768,
-              71.1127,
-              53.7768,
-              355.0217
-            ]
-          ],
-          "headline": "Sarıkamış G."
-        }
-      ]
     }
-  }
+  },
+  "engine": "vision",
+  "checkpoint": "46fcffa0b605e5b3ee7e46f877e50cca8f853620005585e9065ed5d81e5799c8",
+  "conf": 0.7,
+  "icons": "bind"
 }

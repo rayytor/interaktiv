@@ -3,7 +3,7 @@
   "bookId": "11941059-5fe2-451d-a33c-4fa44d846a59",
   "fingerprint": "59671857-e502101ce0f0619dc6fd65ba52a7ebc0",
   "profile": "c7de24295a4b",
-  "builtAt": "2026-10-03T05:23:24.750Z",
+  "builtAt": "2026-10-03T06:04:24.182Z",
   "pageCount": 109,
   "calibration": {
     "enabled": true,
@@ -165,40 +165,59 @@
           "label": "1",
           "column": 0,
           "rect": [
-            54.9517,
-            412.5184,
+            56.6251,
+            421.096,
             501.3732,
-            579.4402
+            579.7099
           ],
           "parts": [
             [
-              54.9517,
-              412.5184,
+              56.6251,
+              421.096,
               501.3732,
-              579.4402
+              579.7099
             ]
           ],
           "headline": "Look at the headlines. Discuss which ones are likely/not likely to happen in the future."
+        },
+        {
+          "id": "p14-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            57.2189,
+            271.925,
+            509.306,
+            421.096
+          ],
+          "parts": [
+            [
+              57.2189,
+              271.925,
+              509.306,
+              421.096
+            ]
+          ]
         },
         {
           "id": "p14-3",
           "label": "3",
           "column": 0,
           "rect": [
-            57.003,
-            87.6092,
-            498.7759,
-            270.596
+            56.6251,
+            91.3316,
+            497.5883,
+            271.675
           ],
           "parts": [
             [
-              57.003,
-              87.6092,
-              498.7759,
-              270.596
+              56.6251,
+              91.3316,
+              497.5883,
+              271.675
             ]
           ],
-          "headline": "3 Almost 85% of the jobs that today’s children will work in the future haven’t been invented",
+          "headline": "Read the paragraph. Guess and match the highlighted jobs with their definitions.",
           "items": [
             {
               "id": "p14-3-1",
@@ -233,7 +252,7 @@
               "partIndex": 0,
               "rect": [
                 86.7087,
-                87.8578,
+                91.3316,
                 413.7326,
                 148.2578
               ],
@@ -246,17 +265,17 @@
           "label": "4",
           "column": 0,
           "rect": [
-            55.7074,
-            49.1993,
-            509.248,
-            85.6672
+            56.3012,
+            48.8756,
+            508.4383,
+            84.804
           ],
           "parts": [
             [
-              55.7074,
-              49.1993,
-              509.248,
-              85.6672
+              56.3012,
+              48.8756,
+              508.4383,
+              84.804
             ]
           ],
           "headline": "Work in groups. Make five predictions about future jobs and share them in the class."
@@ -278,37 +297,37 @@
           "label": "1",
           "column": 0,
           "rect": [
-            41.7266,
-            565.5759,
-            514.646,
-            709.5054
+            42.9681,
+            564.9825,
+            515.4018,
+            708.3185
           ],
           "parts": [
             [
-              41.7266,
-              565.5759,
-              514.646,
-              709.5054
+              42.9681,
+              564.9825,
+              515.4018,
+              708.3185
             ]
           ],
-          "headline": "Read the dialogue and find out Lata’s request from Eric. Share your ideas."
+          "headline": "1 Lata: Hi, Eric. Guess what? I’m going to be on"
         },
         {
           "id": "p15-2",
           "label": "2",
           "column": 0,
           "rect": [
-            41.8346,
-            492.1546,
-            498.9378,
-            551.9274
+            43.454,
+            493.0178,
+            499.5856,
+            552.4669
           ],
           "parts": [
             [
-              41.8346,
-              492.1546,
-              498.9378,
-              551.9274
+              43.454,
+              493.0178,
+              499.5856,
+              552.4669
             ]
           ],
           "headline": "Match the numbered idioms in the dialogue with their definitions. One is extra.",
@@ -345,8 +364,8 @@
               "partIndex": 0,
               "rect": [
                 75.4887,
-                492.1546,
-                498.9378,
+                493.0178,
+                499.5856,
                 516.9957
               ],
               "text": "d)  something that someone likes or is good at c)  safely or successfully achieved"
@@ -358,7 +377,7 @@
               "partIndex": 0,
               "rect": [
                 282.4889,
-                492.5957,
+                493.0178,
                 299.9289,
                 516.9957
               ]
@@ -370,17 +389,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            41.2408,
-            309.6533,
-            352.4359,
-            482.4982
+            42.9681,
+            310.0849,
+            355.8906,
+            482.0127
           ],
           "parts": [
             [
-              41.2408,
-              309.6533,
-              352.4359,
-              482.4982
+              42.9681,
+              310.0849,
+              355.8906,
+              482.0127
             ]
           ],
           "headline": "Read the dialogue again and choose the correct option.",
@@ -418,8 +437,8 @@
               "partIndex": 0,
               "rect": [
                 58.5348,
-                309.6533,
-                352.4359,
+                310.0849,
+                354.5955,
                 363.6425
               ],
               "text": "______________________ 3.  An intern is .   a)  an environmental volunteer who educates others   b)  a student or a trainee who works to gain work experience"
@@ -431,20 +450,20 @@
           "label": "4",
           "column": 0,
           "rect": [
-            18.1913,
-            158.7648,
-            434.5936,
-            302.5107
+            17.2736,
+            58.528,
+            501.7788,
+            297.893
           ],
           "parts": [
             [
-              18.1913,
-              158.7648,
-              434.5936,
-              302.5107
+              17.2736,
+              58.528,
+              501.7788,
+              297.893
             ]
           ],
-          "headline": "Listen to Lata’s interview and tick ( ✓ ) the correct option.",
+          "headline": "✓ 4 1.1",
           "items": [
             {
               "id": "p15-4-1",
@@ -518,7 +537,7 @@
               "partIndex": 0,
               "rect": [
                 58.5287,
-                158.7648,
+                156.5831,
                 386.0556,
                 180.9831
               ],
@@ -547,17 +566,17 @@
           "label": "5",
           "column": 0,
           "rect": [
-            30.8226,
-            353.2961,
-            497.4264,
-            500.7861
+            31.9022,
+            50.8772,
+            524.3085,
+            500.3545
           ],
           "parts": [
             [
-              30.8226,
-              353.2961,
-              497.4264,
-              500.7861
+              31.9022,
+              50.8772,
+              524.3085,
+              500.3545
             ]
           ],
           "headline": "5 1.2 __________________",
@@ -609,7 +628,7 @@
               "rect": [
                 72.5311,
                 386.4678,
-                497.4264,
+                498.1599,
                 421.6578
               ],
               "text": "4.  Travelling from __________________ to __________________ made Lata feel nervous in  the beginning."
@@ -633,80 +652,13 @@
               "number": 6,
               "partIndex": 0,
               "rect": [
-                72.5311,
-                353.2961,
-                447.9411,
+                56.4351,
+                50.8772,
+                503.5073,
                 374.8678
               ],
-              "text": "6.  After gaining enough experience, she will come back to __________________."
+              "text": "6.  After gaining enough experience, she will come back to __________________. 6 Look at the statements and say which one is a prediction, a promise, a plan or an offer.  3. 1. Of course! I’ll listen "
             }
-          ]
-        },
-        {
-          "id": "p16-6",
-          "label": "6",
-          "column": 0,
-          "rect": [
-            56.1933,
-            244.0004,
-            511.4072,
-            351.8935
-          ],
-          "parts": [
-            [
-              56.1933,
-              244.0004,
-              511.4072,
-              351.8935
-            ]
-          ],
-          "headline": "Look at the statements and say which one is a prediction, a promise, a plan or an offer.",
-          "items": [
-            {
-              "id": "p16-6-1",
-              "label": "1",
-              "number": 1,
-              "partIndex": 0,
-              "rect": [
-                75.5072,
-                312.5143,
-                297.5472,
-                338.7943
-              ],
-              "text": "3. 1."
-            },
-            {
-              "id": "p16-6-2",
-              "label": "2",
-              "number": 2,
-              "partIndex": 0,
-              "rect": [
-                82.596,
-                250.2912,
-                498.419,
-                326.8219
-              ],
-              "text": "Of course! I’ll listen to I’m going to 2. your interview tonight. I’ll help you study molecular 4. with the new cuisine next Look at you! One day, techniques in summer. you’ll be a very famous cooking"
-            }
-          ]
-        },
-        {
-          "id": "p16-v3",
-          "label": null,
-          "column": 1,
-          "rect": [
-            75.734,
-            52.9216,
-            500.6112,
-            66.5701
-          ],
-          "parts": [
-            [
-              75.734,
-              52.9216,
-              500.6112,
-              66.5701
-            ]
           ]
         }
       ]
@@ -738,40 +690,40 @@
           "label": "1",
           "column": 0,
           "rect": [
-            45.2619,
-            543.7275,
-            515.0779,
-            704.9199
+            42.5363,
+            544.7525,
+            514.5381,
+            707.2396
           ],
           "parts": [
             [
-              45.2619,
-              543.7275,
-              515.0779,
-              704.9199
+              42.5363,
+              544.7525,
+              514.5381,
+              707.2396
             ]
           ],
-          "headline": "1"
+          "headline": "Look at the pictures of famous entrepreneurs. What do you know about them? Share your ideas."
         },
         {
           "id": "p17-2",
           "label": "2",
           "column": 0,
           "rect": [
-            41.7806,
-            466.6379,
-            470.1125,
-            539.6276
+            42.4283,
+            464.2103,
+            502.8244,
+            539.7355
           ],
           "parts": [
             [
-              41.7806,
-              466.6379,
-              470.1125,
-              539.6276
+              42.4283,
+              464.2103,
+              502.8244,
+              539.7355
             ]
           ],
-          "headline": "✓ 2 risk-taking"
+          "headline": "Guess and tick ( ✓ ) the common qualities of these successful people. Share your ideas."
         },
         {
           "id": "p17-3",
@@ -779,19 +731,19 @@
           "column": 0,
           "rect": [
             42.9681,
-            384.3694,
-            509.7339,
-            459.0314
+            384.2075,
+            509.9031,
+            458.6538
           ],
           "parts": [
             [
               42.9681,
-              384.3694,
-              509.7339,
-              459.0314
+              384.2075,
+              509.9031,
+              458.6538
             ]
           ],
-          "headline": "Read the text and the comments. Then, match the highlighted expressions with their meanings.",
+          "headline": "3 1. to do something yourself",
           "items": [
             {
               "id": "p17-3-1",
@@ -826,7 +778,7 @@
               "partIndex": 0,
               "rect": [
                 72.5354,
-                384.3694,
+                384.2075,
                 477.1774,
                 405.5051
               ],
@@ -863,20 +815,20 @@
           "label": "4",
           "column": 0,
           "rect": [
-            54.8977,
-            169.2032,
-            412.2216,
-            518.2108
+            56.5171,
+            134.6731,
+            500.7192,
+            513.7332
           ],
           "parts": [
             [
-              54.8977,
-              169.2032,
-              412.2216,
-              518.2108
+              56.5171,
+              134.6731,
+              500.7192,
+              513.7332
             ]
           ],
-          "headline": "Read the text and the comments again. Then, choose the correct answer.",
+          "headline": "4 1.",
           "items": [
             {
               "id": "p18-4-1",
@@ -923,34 +875,14 @@
               "number": 4,
               "partIndex": 0,
               "rect": [
-                56.4329,
-                169.2032,
-                390.7343,
+                56.5171,
+                134.6731,
+                499.9333,
                 274.1353
               ],
               "text": "4.  What advice can’t be given to Ira’s parents by Vanessa and her team?   a)   Look for the ways to show that you trust your teen.   b)   Set your own rules without any explanations.   c)   Spend tim"
             }
           ]
-        },
-        {
-          "id": "p18-5",
-          "label": "5",
-          "column": 0,
-          "rect": [
-            55.2756,
-            138.4269,
-            498.9918,
-            168.7032
-          ],
-          "parts": [
-            [
-              55.2756,
-              138.4269,
-              498.9918,
-              168.7032
-            ]
-          ],
-          "headline": "___________________________________________________________________________"
         }
       ]
     },
@@ -977,60 +909,40 @@
           "label": "1",
           "column": 0,
           "rect": [
-            44.3716,
-            484.3863,
+            41.2408,
+            484.1705,
             552.756,
-            711.9869
+            714.6303
           ],
           "parts": [
             [
-              44.3716,
-              484.3863,
+              41.2408,
+              484.1705,
               552.756,
-              711.9869
+              714.6303
             ]
           ],
-          "headline": "1 1."
-        },
-        {
-          "id": "p19-2",
-          "label": "2",
-          "column": 0,
-          "rect": [
-            18.839,
-            404.3296,
-            501.5289,
-            482.5521
-          ],
-          "parts": [
-            [
-              18.839,
-              404.3296,
-              501.5289,
-              482.5521
-            ]
-          ],
-          "headline": "Listen to the phone call to make an appointment. Note down the required info on the agenda."
+          "headline": "Look at the steps to make an appointment and match them with the following statements."
         },
         {
           "id": "p19-3",
           "label": "3",
           "column": 0,
           "rect": [
-            20.3231,
-            43.5349,
-            506.7191,
-            397.9639
+            39.6214,
+            40.0284,
+            501.7448,
+            399.5283
           ],
           "parts": [
             [
-              20.3231,
-              43.5349,
-              506.7191,
-              397.9639
+              39.6214,
+              40.0284,
+              501.7448,
+              399.5283
             ]
           ],
-          "headline": "3 company for your internship."
+          "headline": "Work in pairs. Make a phone call to set a time to see the human resources manager of a big company for your internship."
         }
       ]
     },
@@ -1065,17 +977,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            55.3836,
-            46.2322,
-            501.097,
-            106.3826
+            57.1649,
+            45.8006,
+            500.4493,
+            106.1669
           ],
           "parts": [
             [
-              55.3836,
-              46.2322,
-              501.097,
-              106.3826
+              57.1649,
+              45.8006,
+              500.4493,
+              106.1669
             ]
           ],
           "headline": "a) Match the parts of Mila’s letter of intent above with the parts of the outline in the appendix on page 93."
@@ -1093,40 +1005,21 @@
       ],
       "activities": [
         {
-          "id": "p21-v1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            41.9965,
-            673.6848,
-            349.6829,
-            688.3044
-          ],
-          "parts": [
-            [
-              41.9965,
-              673.6848,
-              349.6829,
-              688.3044
-            ]
-          ]
-        },
-        {
           "id": "p21-2",
           "label": "2",
           "column": 0,
           "rect": [
-            43.6699,
-            601.2885,
-            406.852,
-            664.8376
+            44.8035,
+            431.7884,
+            496.8326,
+            664.2442
           ],
           "parts": [
             [
-              43.6699,
-              601.2885,
-              406.852,
-              664.8376
+              44.8035,
+              431.7884,
+              496.8326,
+              664.2442
             ]
           ],
           "headline": "2 a)",
@@ -1152,7 +1045,7 @@
               "rect": [
                 58.4331,
                 613.4105,
-                406.852,
+                409.852,
                 637.8105
               ],
               "text": "b)  Remember you are going to be one of the most famous cellists of all time"
@@ -1163,14 +1056,34 @@
               "number": 3,
               "partIndex": 0,
               "rect": [
-                58.4331,
-                601.2885,
-                317.593,
+                48.4147,
+                432.9957,
+                496.8326,
                 620.8105
               ],
-              "text": "c)  Don’t forget what it means to be a best-selling author"
+              "text": "c)  Don’t forget what it means to be a best-selling author 1  2  Dear Self, Dear Future Me, Clearly, life isn’t all sunshine and rainbows. Never be afraid to fail. How we live our lives There will be "
             }
           ]
+        },
+        {
+          "id": "p21-3",
+          "label": "3",
+          "column": 0,
+          "rect": [
+            38.9736,
+            76.352,
+            499.2077,
+            427.2029
+          ],
+          "parts": [
+            [
+              38.9736,
+              76.352,
+              499.2077,
+              427.2029
+            ]
+          ],
+          "headline": "Read the text and give two reasons why you should write notes or letters to your future self."
         }
       ]
     },
@@ -1189,17 +1102,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            56.3012,
-            263.0701,
-            510.4356,
-            571.8337
+            56.7331,
+            265.6869,
+            511.0294,
+            570.9166
           ],
           "parts": [
             [
-              56.3012,
-              263.0701,
-              510.4356,
-              571.8337
+              56.7331,
+              265.6869,
+              511.0294,
+              570.9166
             ]
           ],
           "headline": "a) Look at the hobbies below. Find their names in the word cloud and write them under the photos."
@@ -1209,20 +1122,20 @@
           "label": "2",
           "column": 0,
           "rect": [
-            56.4632,
-            53.4611,
-            512.6488,
-            262.0185
+            57.3268,
+            53.4071,
+            512.7028,
+            260.9396
           ],
           "parts": [
             [
-              56.4632,
-              53.4611,
-              512.6488,
-              262.0185
+              57.3268,
+              53.4071,
+              512.7028,
+              260.9396
             ]
           ],
-          "headline": "a) Look at the questionnaire and tick ( ✓ ) the best option for you.",
+          "headline": "✓ 2 Questionnaire",
           "items": [
             {
               "id": "p22-2-1",
@@ -1232,7 +1145,7 @@
               "rect": [
                 71.8428,
                 203.3002,
-                512.6488,
+                512.7028,
                 227.7002
               ],
               "text": "1. Some people have no skills at all."
@@ -1245,7 +1158,7 @@
               "rect": [
                 71.8428,
                 187.8002,
-                512.6488,
+                512.7028,
                 212.2002
               ],
               "text": "2. Parents must choose hobbies for their children."
@@ -1258,7 +1171,7 @@
               "rect": [
                 71.8428,
                 172.3002,
-                512.6488,
+                512.7028,
                 196.7002
               ],
               "text": "3. Indoor activities are better than outdoor activities."
@@ -1271,7 +1184,7 @@
               "rect": [
                 71.8428,
                 156.8002,
-                512.6488,
+                512.7028,
                 181.2002
               ],
               "text": "4. Hobbies make people’s lives more interesting."
@@ -1284,7 +1197,7 @@
               "rect": [
                 71.8428,
                 141.3002,
-                512.6488,
+                512.7028,
                 165.7002
               ],
               "text": "5. You can learn a new skill at any age."
@@ -1297,7 +1210,7 @@
               "rect": [
                 71.8428,
                 113.8002,
-                512.6488,
+                512.7028,
                 150.2002
               ],
               "text": "6. If you could do something well, it’s likely that you are still good at it."
@@ -1310,7 +1223,7 @@
               "rect": [
                 71.8428,
                 98.3002,
-                512.6488,
+                512.7028,
                 122.7002
               ],
               "text": "7. Your hobbies can tell a lot about who you are."
@@ -1322,8 +1235,8 @@
               "partIndex": 0,
               "rect": [
                 71.8428,
-                53.4611,
-                512.6488,
+                53.4071,
+                512.7028,
                 107.2002
               ],
               "text": "8. If you are unable to learn a skill as a child, you will never be able to master it. b) Now, share your answers with the class. Give reasons."
@@ -1347,16 +1260,16 @@
           "label": "1",
           "column": 0,
           "rect": [
-            39.9992,
-            357.6658,
-            517.0752,
+            43.238,
+            352.3251,
+            514.808,
             713.5483
           ],
           "parts": [
             [
-              39.9992,
-              357.6658,
-              517.0752,
+              43.238,
+              352.3251,
+              514.808,
               713.5483
             ]
           ],
@@ -1382,7 +1295,7 @@
               "partIndex": 0,
               "rect": [
                 44.489,
-                357.6658,
+                355.2972,
                 500.8154,
                 597.8471
               ],
@@ -1395,17 +1308,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            43.4,
-            148.3531,
-            494.7922,
-            348.6567
+            44.7495,
+            146.7886,
+            494.1876,
+            349.0343
           ],
           "parts": [
             [
-              43.4,
-              148.3531,
-              494.7922,
-              348.6567
+              44.7495,
+              146.7886,
+              494.1876,
+              349.0343
             ]
           ],
           "headline": "2 1.",
@@ -1457,7 +1370,7 @@
               "rect": [
                 58.3722,
                 180.4972,
-                494.7922,
+                494.1876,
                 223.6872
               ],
               "text": "4.   The young couple didn’t want to spend a fortune on their wedding ceremony, so they kept it low-key.   a)  unusual b)  special c)  simple"
@@ -1469,7 +1382,7 @@
               "partIndex": 0,
               "rect": [
                 58.3722,
-                148.3531,
+                146.7886,
                 360.8811,
                 186.1072
               ],
@@ -1482,17 +1395,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            43.238,
-            57.7768,
-            494.1876,
-            138.1572
+            44.4796,
+            57.8847,
+            494.5115,
+            139.5058
           ],
           "parts": [
             [
-              43.238,
-              57.7768,
-              494.1876,
-              138.1572
+              44.4796,
+              57.8847,
+              494.5115,
+              139.5058
             ]
           ],
           "headline": "3 with the class."
@@ -1518,16 +1431,16 @@
           "label": "4",
           "column": 0,
           "rect": [
-            30.6607,
-            480.5021,
-            512.8647,
+            30.1749,
+            479.1535,
+            512.2169,
             713.4491
           ],
           "parts": [
             [
-              30.6607,
-              480.5021,
-              512.8647,
+              30.1749,
+              479.1535,
+              512.2169,
               713.4491
             ]
           ],
@@ -1538,17 +1451,17 @@
           "label": "5",
           "column": 0,
           "rect": [
-            29.6351,
-            295.1957,
-            500.8271,
-            464.8576
+            30.9846,
+            294.4404,
+            501.4749,
+            464.3721
           ],
           "parts": [
             [
-              29.6351,
-              295.1957,
-              500.8271,
-              464.8576
+              30.9846,
+              294.4404,
+              501.4749,
+              464.3721
             ]
           ],
           "headline": "Listen to the podcast again and choose the correct option.",
@@ -1561,7 +1474,7 @@
               "rect": [
                 72.5354,
                 366.523,
-                500.8271,
+                501.4749,
                 448.3449
               ],
               "text": "1.  Marc upcycled old products to ... . 3.  For Lina, having different types of hobbies … .   a)  design new clothes a)  takes a lot of time   b)  reduce waste b)  has become a lifestyle   c)  do volu"
@@ -1573,7 +1486,7 @@
               "partIndex": 0,
               "rect": [
                 72.5354,
-                295.1957,
+                294.4404,
                 496.5765,
                 373.1849
               ],
@@ -1586,37 +1499,37 @@
           "label": "6",
           "column": 0,
           "rect": [
-            30.5527,
-            91.9789,
-            503.6881,
-            274.2104
+            31.2545,
+            92.3565,
+            501.7448,
+            275.5591
           ],
           "parts": [
             [
-              30.5527,
-              91.9789,
-              503.6881,
-              274.2104
+              31.2545,
+              92.3565,
+              501.7448,
+              275.5591
             ]
           ],
-          "headline": "6 2.3 Zara:"
+          "headline": "Listen to the dialogue and fill in the blanks with the words or phrases you hear."
         },
         {
           "id": "p24-v4",
           "label": null,
           "column": 1,
           "rect": [
-            57.4348,
-            63.3872,
-            514.808,
-            78.3844
+            57.0569,
+            62.3083,
+            515.2938,
+            79.6791
           ],
           "parts": [
             [
-              57.4348,
-              63.3872,
-              514.808,
-              78.3844
+              57.0569,
+              62.3083,
+              515.2938,
+              79.6791
             ]
           ]
         }
@@ -1650,14 +1563,14 @@
           "column": 0,
           "rect": [
             40.2619,
-            541.7855,
+            541.192,
             503.7775,
             739.528
           ],
           "parts": [
             [
               40.2619,
-              541.7855,
+              541.192,
               503.7775,
               739.528
             ]
@@ -1671,18 +1584,18 @@
           "rect": [
             36.056,
             261.691,
-            496.2388,
-            406.3796
+            496.0769,
+            405.7861
           ],
           "parts": [
             [
               36.056,
               261.691,
-              496.2388,
-              406.3796
+              496.0769,
+              405.7861
             ]
           ],
-          "headline": "Guess the meaning of the highlighted words in the text and choose the correct option.",
+          "headline": "2 highlighted 4.",
           "items": [
             {
               "id": "p25-2-1",
@@ -1730,17 +1643,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            43.1301,
-            161.7858,
+            43.5619,
+            162.8647,
             498.7775,
-            257.541
+            256.8396
           ],
           "parts": [
             [
-              43.1301,
-              161.7858,
+              43.5619,
+              162.8647,
               498.7775,
-              257.541
+              256.8396
             ]
           ],
           "headline": "Read the text and underline the sentences which mention Steven Spielberg’s past abilities."
@@ -1762,16 +1675,16 @@
           "label": "4",
           "column": 0,
           "rect": [
-            55.4375,
-            579.1704,
-            507.2508,
+            55.8694,
+            578.5231,
+            507.3587,
             713.4775
           ],
           "parts": [
             [
-              55.4375,
-              579.1704,
-              507.2508,
+              55.8694,
+              578.5231,
+              507.3587,
               713.4775
             ]
           ],
@@ -1785,7 +1698,7 @@
               "rect": [
                 72.5287,
                 644.9151,
-                507.2508,
+                507.3587,
                 684.9871
               ],
               "text": "1.  In his free time, he preferred to watch TV alone rather than hang out with friends. (fancy)  ____________________________________________________________________________________________."
@@ -1798,7 +1711,7 @@
               "rect": [
                 72.5355,
                 609.4901,
-                507.2508,
+                507.3587,
                 649.5614
               ],
               "text": "2.   What he liked most was spending time with filming tools. (keen on)  ____________________________________________________________________________________________."
@@ -1810,8 +1723,8 @@
               "partIndex": 0,
               "rect": [
                 72.5355,
-                579.1704,
-                507.2508,
+                578.5231,
+                507.3587,
                 614.1364
               ],
               "text": "3.   He preferred pursuing his dreams to giving up. (choose)  ____________________________________________________________________________________________."
@@ -1823,40 +1736,40 @@
           "label": "5",
           "column": 0,
           "rect": [
-            55.0597,
-            440.1501,
-            405.5776,
-            566.9246
+            55.2756,
+            441.9303,
+            404.4727,
+            564.9285
           ],
           "parts": [
             [
-              55.0597,
-              440.1501,
-              405.5776,
-              566.9246
+              55.2756,
+              441.9303,
+              404.4727,
+              564.9285
             ]
           ],
-          "headline": "Read the text again and write true (T) or false (F)."
+          "headline": "5  1."
         },
         {
           "id": "p26-6",
           "label": "6",
           "column": 0,
           "rect": [
-            56.5711,
-            396.6152,
-            510.7595,
-            426.1779
+            56.1933,
+            397.802,
+            510.0577,
+            426.8793
           ],
           "parts": [
             [
-              56.5711,
-              396.6152,
-              510.7595,
-              426.1779
+              56.1933,
+              397.802,
+              510.0577,
+              426.8793
             ]
           ],
-          "headline": "6 become famous? Share your answers with the class."
+          "headline": "Do you know any other person who has turned his/her hobby into a profession and"
         }
       ]
     },
@@ -1871,62 +1784,124 @@
       ],
       "activities": [
         {
-          "id": "p27-1",
-          "label": "1",
-          "column": 0,
-          "rect": [
-            41.8346,
-            682.4031,
-            488.5737,
-            711.8251
-          ],
-          "parts": [
-            [
-              41.8346,
-              682.4031,
-              488.5737,
-              711.8251
-            ]
-          ],
-          "headline": "1 your answers with the class."
-        },
-        {
           "id": "p27-2",
           "label": "2",
           "column": 0,
           "rect": [
-            44.4796,
-            408.5914,
-            551.0826,
-            681.9031
+            43.1301,
+            412.0979,
+            552.4861,
+            681.1834
           ],
           "parts": [
             [
-              44.4796,
-              408.5914,
-              551.0826,
-              681.9031
+              43.1301,
+              412.0979,
+              552.4861,
+              681.1834
             ]
           ],
           "headline": "Read the dialogue below and tick ( ✓ ) the correct statements."
         },
         {
-          "id": "p27-v3",
-          "label": null,
+          "id": "p27-3",
+          "label": "3",
           "column": 0,
           "rect": [
-            46.6928,
-            47.419,
-            495.5911,
-            156.7148
+            30.7152,
+            45.477,
+            511.1066,
+            406.2177
           ],
           "parts": [
             [
-              46.6928,
-              47.419,
-              495.5911,
-              156.7148
+              30.7152,
+              45.477,
+              511.1066,
+              406.2177
             ]
+          ],
+          "headline": "3  k",
+          "ogeId": "c0a03db3-d4b0-f111-b31a-005056a7d529",
+          "items": [
+            {
+              "id": "p27-3-1",
+              "label": "1",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                95.0772,
+                234.1467,
+                265.9172,
+                258.5468
+              ],
+              "text": "1. Make some changes in your life."
+            },
+            {
+              "id": "p27-3-2",
+              "label": "2",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                95.0772,
+                218.6467,
+                263.1582,
+                243.0468
+              ],
+              "text": "2. A group of students are waiting."
+            },
+            {
+              "id": "p27-3-3",
+              "label": "3",
+              "number": 3,
+              "partIndex": 0,
+              "rect": [
+                95.0772,
+                203.1467,
+                266.2962,
+                227.5468
+              ],
+              "text": "3. These are the photos of my son."
+            },
+            {
+              "id": "p27-3-4",
+              "label": "4",
+              "number": 4,
+              "partIndex": 0,
+              "rect": [
+                95.0772,
+                187.6467,
+                290.9821,
+                212.0468
+              ],
+              "text": "4. She takes up a new hobby every year."
+            },
+            {
+              "id": "p27-3-5",
+              "label": "5",
+              "number": 5,
+              "partIndex": 0,
+              "rect": [
+                95.0772,
+                172.1467,
+                264.8372,
+                196.5468
+              ],
+              "text": "5. Sue watches her diet to keep fit."
+            },
+            {
+              "id": "p27-3-6",
+              "label": "6",
+              "number": 6,
+              "partIndex": 0,
+              "rect": [
+                51.5321,
+                46.7,
+                497.0473,
+                181.0468
+              ],
+              "text": "6. Mike prefers outdoor sports. B.  Listen and write the words in the correct column. Then, listen again and repeat. 2.5 calls cups crashes fixes times months glasses laughs bags /s/ /z/ /ız/"
+            }
           ]
         }
       ]
@@ -1946,37 +1921,57 @@
           "label": "1",
           "column": 0,
           "rect": [
-            55.6535,
-            343.8555,
-            511.0294,
-            713.3356
+            56.6251,
+            345.1502,
+            509.41,
+            714.5763
           ],
           "parts": [
             [
-              55.6535,
-              343.8555,
-              511.0294,
-              713.3356
+              56.6251,
+              345.1502,
+              509.41,
+              714.5763
             ]
           ],
           "headline": "1"
         },
         {
-          "id": "p28-v2",
-          "label": null,
+          "id": "p28-2",
+          "label": "2",
           "column": 0,
           "rect": [
-            56.787,
-            45.104,
-            510.8674,
-            190.2696
+            56.4632,
+            203.7023,
+            510.3816,
+            333.2819
           ],
           "parts": [
             [
-              56.787,
-              45.104,
-              510.8674,
-              190.2696
+              56.4632,
+              203.7023,
+              510.3816,
+              333.2819
+            ]
+          ],
+          "headline": "2 _____________________ High School Clubs Application Form"
+        },
+        {
+          "id": "p28-v3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            55.6535,
+            43.427,
+            511.4612,
+            190.1077
+          ],
+          "parts": [
+            [
+              55.6535,
+              43.427,
+              511.4612,
+              190.1077
             ]
           ]
         }
@@ -2009,119 +2004,38 @@
           "label": "1",
           "column": 0,
           "rect": [
-            42.1045,
-            614.0199,
-            488.4657,
-            684.6899
+            41.9425,
+            613.912,
+            488.3578,
+            685.3912
           ],
           "parts": [
             [
-              42.1045,
-              614.0199,
-              488.4657,
-              684.6899
+              41.9425,
+              613.912,
+              488.3578,
+              685.3912
             ]
           ],
           "headline": "✓ 1 your friend."
         },
         {
-          "id": "p29-2",
-          "label": "2",
-          "column": 0,
+          "id": "p29-v2",
+          "label": null,
+          "column": 1,
           "rect": [
-            29.6963,
-            246.1582,
-            499.7475,
-            604.7511
+            42.5903,
+            586.1295,
+            372.5165,
+            601.3425
           ],
           "parts": [
             [
-              29.6963,
-              246.1582,
-              499.7475,
-              604.7511
+              42.5903,
+              586.1295,
+              372.5165,
+              601.3425
             ]
-          ],
-          "headline": "Read the text and choose the correct option below for each gap.",
-          "items": [
-            {
-              "id": "p29-2-1",
-              "label": "1",
-              "number": 1,
-              "partIndex": 0,
-              "rect": [
-                58.363,
-                337.7886,
-                303.313,
-                362.1886
-              ],
-              "text": "1.  a)  data b)  report c)  software"
-            },
-            {
-              "id": "p29-2-2",
-              "label": "2",
-              "number": 2,
-              "partIndex": 0,
-              "rect": [
-                58.363,
-                318.9986,
-                289.423,
-                343.3986
-              ],
-              "text": "2. a)  without b)  short of c)  full of"
-            },
-            {
-              "id": "p29-2-3",
-              "label": "3",
-              "number": 3,
-              "partIndex": 0,
-              "rect": [
-                58.363,
-                300.2086,
-                292.203,
-                324.6086
-              ],
-              "text": "3. a)  digital b)  physical c)  actual"
-            },
-            {
-              "id": "p29-2-4",
-              "label": "4",
-              "number": 4,
-              "partIndex": 0,
-              "rect": [
-                58.363,
-                281.4186,
-                278.863,
-                305.8186
-              ],
-              "text": "4. a)  remain b)  modify c)  cut"
-            },
-            {
-              "id": "p29-2-5",
-              "label": "5",
-              "number": 5,
-              "partIndex": 0,
-              "rect": [
-                58.363,
-                262.6286,
-                301.479,
-                287.0286
-              ],
-              "text": "5. a)  common b)  rare c)  different"
-            },
-            {
-              "id": "p29-2-6",
-              "label": "6",
-              "number": 6,
-              "partIndex": 0,
-              "rect": [
-                58.363,
-                246.1582,
-                308.883,
-                268.2386
-              ],
-              "text": "6. a) simple b)  elementary c)  advanced"
-            }
           ]
         },
         {
@@ -2129,20 +2043,20 @@
           "label": "3",
           "column": 0,
           "rect": [
-            16.356,
+            16.7878,
             44.0,
-            531.4339,
-            234.1821
+            530.3003,
+            236.1242
           ],
           "parts": [
             [
-              16.356,
+              16.7878,
               44.0,
-              531.4339,
-              234.1821
+              530.3003,
+              236.1242
             ]
           ],
-          "headline": "3 a)"
+          "headline": "Match the fields in which CAD is used with the photos below. One is extra."
         }
       ]
     },
@@ -2166,14 +2080,14 @@
           "column": 0,
           "rect": [
             29.0538,
-            350.7067,
+            352.8106,
             527.0244,
             739.528
           ],
           "parts": [
             [
               29.0538,
-              350.7067,
+              352.8106,
               527.0244,
               739.528
             ]
@@ -2185,37 +2099,37 @@
           "label": "2",
           "column": 0,
           "rect": [
-            54.7358,
-            216.7034,
-            512.109,
-            339.7555
+            56.0313,
+            215.5705,
+            510.8135,
+            340.6187
           ],
           "parts": [
             [
-              54.7358,
-              216.7034,
-              512.109,
-              339.7555
+              56.0313,
+              215.5705,
+              510.8135,
+              340.6187
             ]
           ],
-          "headline": "2 Match them with their explanations. One is extra."
+          "headline": "a) Read the following statements about staying positive and strong during hard times."
         },
         {
           "id": "p30-v3",
           "label": null,
           "column": 1,
           "rect": [
-            76.8676,
-            53.3532,
-            497.2105,
-            82.4843
+            76.9756,
+            53.5689,
+            497.5344,
+            82.2685
           ],
           "parts": [
             [
-              76.8676,
-              53.3532,
-              497.2105,
-              82.4843
+              76.9756,
+              53.5689,
+              497.5344,
+              82.2685
             ]
           ]
         }
@@ -2236,56 +2150,37 @@
           "label": "1",
           "column": 0,
           "rect": [
-            39.5134,
-            473.0036,
-            497.5883,
-            708.6962
+            39.8913,
+            473.8667,
+            496.8866,
+            709.2896
           ],
           "parts": [
             [
-              39.5134,
-              473.0036,
-              497.5883,
-              708.6962
+              39.8913,
+              473.8667,
+              496.8866,
+              709.2896
             ]
           ],
           "headline": "1 share your ideas with the class."
-        },
-        {
-          "id": "p31-v2",
-          "label": null,
-          "column": 0,
-          "rect": [
-            42.3744,
-            171.658,
-            499.4237,
-            287.4813
-          ],
-          "parts": [
-            [
-              42.3744,
-              171.658,
-              499.4237,
-              287.4813
-            ]
-          ]
         },
         {
           "id": "p31-3",
           "label": "3",
           "column": 0,
           "rect": [
-            42.1584,
-            58.6399,
-            437.5625,
-            153.9635
+            43.6699,
+            59.2333,
+            439.6137,
+            154.1254
           ],
           "parts": [
             [
-              42.1584,
-              58.6399,
-              437.5625,
-              153.9635
+              43.6699,
+              59.2333,
+              439.6137,
+              154.1254
             ]
           ],
           "headline": "Match the words with the correct definitions. One is extra.",
@@ -2324,7 +2219,7 @@
               "rect": [
                 178.8255,
                 84.0892,
-                437.5625,
+                439.1034,
                 108.4893
               ],
               "text": "c)  fourth or final year student of a college or high school"
@@ -2337,7 +2232,7 @@
               "rect": [
                 72.5355,
                 69.2592,
-                437.5625,
+                439.6137,
                 103.3538
               ],
               "text": " 3. shelter d)  a student who is given support to study at a university"
@@ -2349,7 +2244,7 @@
               "partIndex": 0,
               "rect": [
                 72.5355,
-                58.6399,
+                59.2333,
                 365.7554,
                 87.5192
               ],
@@ -2380,15 +2275,15 @@
           "rect": [
             29.632,
             286.017,
-            511.7597,
-            711.5852
+            518.1008,
+            709.3975
           ],
           "parts": [
             [
               29.632,
               286.017,
-              511.7597,
-              711.5852
+              518.1008,
+              709.3975
             ]
           ]
         }
@@ -2413,141 +2308,21 @@
       ],
       "activities": [
         {
-          "id": "p33-1",
-          "label": "1",
-          "column": 0,
-          "rect": [
-            41.3487,
-            565.9535,
-            414.0812,
-            709.4514
-          ],
-          "parts": [
-            [
-              41.3487,
-              565.9535,
-              414.0812,
-              709.4514
-            ]
-          ],
-          "headline": "1"
-        },
-        {
-          "id": "p33-2",
-          "label": "2",
-          "column": 0,
-          "rect": [
-            43.8318,
-            353.9974,
-            521.7714,
-            561.5839
-          ],
-          "parts": [
-            [
-              43.8318,
-              353.9974,
-              521.7714,
-              561.5839
-            ]
-          ],
-          "headline": "2 1.",
-          "items": [
-            {
-              "id": "p33-2-1",
-              "label": "1",
-              "number": 1,
-              "partIndex": 0,
-              "rect": [
-                58.3622,
-                510.9466,
-                521.7714,
-                550.1766
-              ],
-              "text": "1.  Millions of people immigrated to the new world for better living conditions. a)  to visit for a short time b)  to arrive at somewhere c)  to enter a country permanently"
-            },
-            {
-              "id": "p33-2-2",
-              "label": "2",
-              "number": 2,
-              "partIndex": 0,
-              "rect": [
-                58.3622,
-                479.1566,
-                421.9222,
-                518.3866
-              ],
-              "text": "2.  The boat was kept stable after everything was tossed into the sea. a)  to keep b)  to throw c)  to catch"
-            },
-            {
-              "id": "p33-2-3",
-              "label": "3",
-              "number": 3,
-              "partIndex": 0,
-              "rect": [
-                58.3622,
-                447.3666,
-                429.0821,
-                486.5966
-              ],
-              "text": "3.  As it was his last resort , the survivor ate whatever he could find on the island. a) only place to stay b)  only choice left c)  final truth"
-            },
-            {
-              "id": "p33-2-4",
-              "label": "4",
-              "number": 4,
-              "partIndex": 0,
-              "rect": [
-                58.3622,
-                415.5767,
-                452.4922,
-                454.8066
-              ],
-              "text": "4.  New immigrants struggled to adapt to the poor working conditions. a)  to fight b)  to agree c)  to make peace"
-            },
-            {
-              "id": "p33-2-5",
-              "label": "5",
-              "number": 5,
-              "partIndex": 0,
-              "rect": [
-                58.3622,
-                383.7867,
-                504.682,
-                423.0167
-              ],
-              "text": "5.  It was quite touching to see the baby hugging her mother after being separated for a few days. a)  entertaining b)  strange c)  heartbreaking"
-            },
-            {
-              "id": "p33-2-6",
-              "label": "6",
-              "number": 6,
-              "partIndex": 0,
-              "rect": [
-                58.3622,
-                353.9974,
-                423.5221,
-                391.2267
-              ],
-              "text": "6.  He dreamed of having a steady life with a full-time job and a reliable income. a)  regular b)  uncertain c)  moving"
-            }
-          ]
-        },
-        {
           "id": "p33-3",
           "label": "3",
           "column": 0,
           "rect": [
-            42.9681,
-            288.0208,
-            509.7339,
-            351.6238
+            42.3204,
+            288.6681,
+            510.0038,
+            352.0554
           ],
           "parts": [
             [
-              42.9681,
-              288.0208,
-              509.7339,
-              351.6238
+              42.3204,
+              288.6681,
+              510.0038,
+              352.0554
             ]
           ],
           "headline": "3 a)"
@@ -2569,17 +2344,17 @@
           "label": "4",
           "column": 0,
           "rect": [
-            55.8154,
-            550.1472,
-            509.5179,
-            708.9659
+            56.0313,
+            549.7696,
+            508.8702,
+            708.9119
           ],
           "parts": [
             [
-              55.8154,
-              550.1472,
-              509.5179,
-              708.9659
+              56.0313,
+              549.7696,
+              508.8702,
+              708.9119
             ]
           ],
           "headline": "4 Characters (Who were the"
@@ -2589,17 +2364,17 @@
           "label": "5",
           "column": 0,
           "rect": [
-            55.5455,
-            457.2512,
-            513.8363,
-            528.2049
+            56.0313,
+            459.463,
+            514.5921,
+            546.501
           ],
           "parts": [
             [
-              55.5455,
-              457.2512,
-              513.8363,
-              528.2049
+              56.0313,
+              459.463,
+              514.5921,
+              546.501
             ]
           ],
           "headline": "Work in pairs. Talk about a hard time you have passed through. Ask and answer the questions below."
@@ -2609,20 +2384,20 @@
           "label": "6",
           "column": 0,
           "rect": [
-            55.7614,
-            298.8101,
-            516.9132,
-            454.446
+            55.6535,
+            298.6482,
+            517.8309,
+            454.2302
           ],
           "parts": [
             [
-              55.7614,
-              298.8101,
-              516.9132,
-              454.446
+              55.6535,
+              298.6482,
+              517.8309,
+              454.2302
             ]
           ],
-          "headline": "Imagine Grandpa George didn’t leave his village. Write a different story for him."
+          "headline": "6 My great grandpa was born into a happy family in a small village in 1912. His father was a farmer,"
         }
       ]
     },
@@ -2637,60 +2412,21 @@
       ],
       "activities": [
         {
-          "id": "p35-1",
-          "label": "1",
-          "column": 0,
-          "rect": [
-            42.2124,
-            560.6128,
-            497.2105,
-            710.3146
-          ],
-          "parts": [
-            [
-              42.2124,
-              560.6128,
-              497.2105,
-              710.3146
-            ]
-          ],
-          "headline": "a) Fill in the table with your childhood habits."
-        },
-        {
-          "id": "p35-v2",
-          "label": null,
-          "column": 0,
-          "rect": [
-            60.9975,
-            456.442,
-            487.4401,
-            552.7366
-          ],
-          "parts": [
-            [
-              60.9975,
-              456.442,
-              487.4401,
-              552.7366
-            ]
-          ]
-        },
-        {
           "id": "p35-2",
           "label": "2",
           "column": 0,
           "rect": [
-            46.099,
-            57.9386,
-            532.7834,
-            447.9184
+            46.2069,
+            58.0465,
+            532.8373,
+            447.7566
           ],
           "parts": [
             [
-              46.099,
-              57.9386,
-              532.7834,
-              447.9184
+              46.2069,
+              58.0465,
+              532.8373,
+              447.7566
             ]
           ],
           "headline": "2",
@@ -2766,8 +2502,8 @@
               "number": 6,
               "partIndex": 0,
               "rect": [
-                46.099,
-                57.9386,
+                46.2069,
+                58.0465,
                 497.1737,
                 102.2
               ],
@@ -2793,19 +2529,125 @@
           "column": 0,
           "rect": [
             55.3836,
-            466.7458,
-            496.8866,
-            707.9949
+            465.9905,
+            496.9946,
+            710.0448
           ],
           "parts": [
             [
               55.3836,
-              466.7458,
-              496.8866,
-              707.9949
+              465.9905,
+              496.9946,
+              710.0448
             ]
           ],
-          "headline": "1 Living with your parents during university is ideal because it is more comfortable. "
+          "headline": "Work in pairs. Discuss if you agree or disagree with the statements. Give reasons."
+        },
+        {
+          "id": "p36-3",
+          "label": "3",
+          "column": 0,
+          "rect": [
+            56.949,
+            76.3884,
+            460.7248,
+            185.792
+          ],
+          "parts": [
+            [
+              56.949,
+              76.3884,
+              460.7248,
+              185.792
+            ]
+          ],
+          "headline": "a) Read the essay and complete the paragraphs with the sentences below.",
+          "items": [
+            {
+              "id": "p36-3-a",
+              "label": "a",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                86.7087,
+                148.0995,
+                370.7186,
+                172.4995
+              ],
+              "text": "a)  I used to make a list of the places to visit during my breaks"
+            },
+            {
+              "id": "p36-3-b",
+              "label": "b",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                86.7087,
+                133.2695,
+                398.1806,
+                157.6696
+              ],
+              "text": "b)  You can learn how to manage your life and be more independent"
+            },
+            {
+              "id": "p36-3-c",
+              "label": "c",
+              "number": 3,
+              "partIndex": 0,
+              "rect": [
+                86.7087,
+                118.4395,
+                406.8486,
+                142.8395
+              ],
+              "text": "c)  The difficulties you experience at school help you be well-prepared"
+            },
+            {
+              "id": "p36-3-d",
+              "label": "d",
+              "number": 4,
+              "partIndex": 0,
+              "rect": [
+                86.7087,
+                103.6095,
+                321.2486,
+                128.0095
+              ],
+              "text": "d)  I had the chance to live my life by my own rules"
+            },
+            {
+              "id": "p36-3-e",
+              "label": "e",
+              "number": 5,
+              "partIndex": 0,
+              "rect": [
+                72.5354,
+                76.3884,
+                460.7248,
+                113.1795
+              ],
+              "text": "e)  It is not easy to make a budget plan for the bills, books and food b) Read the essay again and underline the topic sentences in the paragraphs."
+            }
+          ]
+        },
+        {
+          "id": "p36-v3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            57.4888,
+            52.3821,
+            517.399,
+            68.8898
+          ],
+          "parts": [
+            [
+              57.4888,
+              52.3821,
+              517.399,
+              68.8898
+            ]
+          ]
         }
       ]
     },
@@ -2832,20 +2674,68 @@
           "label": "1",
           "column": 0,
           "rect": [
-            42.2124,
-            632.1999,
-            494.6734,
-            681.2374
+            43.1301,
+            625.8579,
+            494.7274,
+            681.6689
           ],
           "parts": [
             [
-              42.2124,
-              632.1999,
-              494.6734,
-              681.2374
+              43.1301,
+              625.8579,
+              494.7274,
+              681.6689
             ]
           ],
           "headline": "1 Do you think our mood affects our physical health? "
+        },
+        {
+          "id": "p37-4",
+          "label": "4",
+          "column": 0,
+          "rect": [
+            44.2637,
+            44.0,
+            504.0301,
+            275.8828
+          ],
+          "parts": [
+            [
+              44.2637,
+              44.0,
+              504.0301,
+              275.8828
+            ]
+          ],
+          "headline": "Fill in the blanks with the bold words in the text.",
+          "items": [
+            {
+              "id": "p37-4-(1",
+              "label": "(1",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                44.2637,
+                70.3867,
+                502.9621,
+                222.5573
+              ],
+              "text": "(1) ________________ disorder. Sharing (3) _______________. changed everything. Colours have that kind stories with others is of power. really helpful. 5 Say at least three facts you’ve learnt about m"
+            },
+            {
+              "id": "p37-4-(2",
+              "label": "(2",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                61.4253,
+                210.3773,
+                467.1515,
+                256.7573
+              ],
+              "text": "They thought it would be (2) ________________ She thinks less about hard for me to walk after was important in my her illness now breaking my leg, but recovery from an eating because she attends"
+            }
+          ]
         }
       ]
     },
@@ -2864,21 +2754,40 @@
       ],
       "activities": [
         {
+          "id": "p38-v1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            305.4193,
+            624.4856,
+            528.7888,
+            711.933
+          ],
+          "parts": [
+            [
+              305.4193,
+              624.4856,
+              528.7888,
+              711.933
+            ]
+          ]
+        },
+        {
           "id": "p38-1",
           "label": "1",
           "column": 0,
           "rect": [
-            54.8977,
-            459.7327,
-            433.3347,
-            575.5021
+            55.5995,
+            463.1853,
+            433.8919,
+            575.0705
           ],
           "parts": [
             [
-              54.8977,
-              459.7327,
-              433.3347,
-              575.5021
+              55.5995,
+              463.1853,
+              433.8919,
+              575.0705
             ]
           ],
           "headline": "Match the sentence halves below to describe life."
@@ -2888,40 +2797,20 @@
           "label": "2",
           "column": 0,
           "rect": [
-            56.0853,
-            419.7583,
-            508.2224,
-            453.2052
+            55.9773,
+            419.5965,
+            509.0321,
+            453.8525
           ],
           "parts": [
             [
-              56.0853,
-              419.7583,
-              508.2224,
-              453.2052
+              55.9773,
+              419.5965,
+              509.0321,
+              453.8525
             ]
           ],
-          "headline": "2 __________________________________________________________________________________________."
-        },
-        {
-          "id": "p38-4",
-          "label": "4",
-          "column": 0,
-          "rect": [
-            54.5199,
-            42.3481,
-            505.0376,
-            77.8449
-          ],
-          "parts": [
-            [
-              54.5199,
-              42.3481,
-              505.0376,
-              77.8449
-            ]
-          ],
-          "headline": "4 ____________________________________________________________________________________________________"
+          "headline": "How do you define life in your own words? Write and share it with your classmates."
         }
       ]
     },
@@ -2944,17 +2833,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            41.1328,
-            470.1984,
-            497.2645,
-            713.5514
+            40.4851,
+            455.1814,
+            497.9122,
+            713.4944
           ],
           "parts": [
             [
-              41.1328,
-              470.1984,
-              497.2645,
-              713.5514
+              40.4851,
+              455.1814,
+              497.9122,
+              713.4944
             ]
           ],
           "headline": "1 a)",
@@ -2975,21 +2864,41 @@
           ]
         },
         {
+          "id": "p39-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            41.3487,
+            191.9419,
+            498.1281,
+            454.6814
+          ],
+          "parts": [
+            [
+              41.3487,
+              191.9419,
+              498.1281,
+              454.6814
+            ]
+          ],
+          "headline": "act it out."
+        },
+        {
           "id": "p39-3",
           "label": "3",
           "column": 0,
           "rect": [
-            42.6982,
-            52.4361,
-            502.8244,
-            182.4473
+            41.6186,
+            52.0584,
+            502.2306,
+            181.6381
           ],
           "parts": [
             [
-              42.6982,
-              52.4361,
-              502.8244,
-              182.4473
+              41.6186,
+              52.0584,
+              502.2306,
+              181.6381
             ]
           ],
           "headline": "Guess the meaning of the bold words and choose the correct option.",
@@ -3002,7 +2911,7 @@
               "rect": [
                 58.3622,
                 123.5481,
-                502.8244,
+                502.2306,
                 166.7382
               ],
               "text": "1.  After Susie had moved to Italy, she was diagnosed with diabetes.   a)  to name exactly what the illness is b)  to give information about the illness"
@@ -3027,8 +2936,8 @@
               "partIndex": 0,
               "rect": [
                 58.3622,
-                52.4361,
-                502.8244,
+                52.0584,
+                502.2306,
                 91.5781
               ],
               "text": "3.  The famous tennis player made a remarkable recovery from a shin injury.    a)  physical damage to someone’s body b)  becoming well again after an illness"
@@ -3052,21 +2961,40 @@
       ],
       "activities": [
         {
+          "id": "p40-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            74.1146,
+            603.3385,
+            515.3478,
+            711.1238
+          ],
+          "parts": [
+            [
+              74.1146,
+              603.3385,
+              515.3478,
+              711.1238
+            ]
+          ]
+        },
+        {
           "id": "p40-4",
           "label": "4",
           "column": 0,
           "rect": [
-            31.3084,
-            329.7215,
-            495.2132,
-            591.5242
+            31.5244,
+            328.157,
+            496.3468,
+            592.9268
           ],
           "parts": [
             [
-              31.3084,
-              329.7215,
-              495.2132,
-              591.5242
+              31.5244,
+              328.157,
+              496.3468,
+              592.9268
             ]
           ],
           "headline": "Listen to the text about Terry Fox and match the events.",
@@ -3143,7 +3071,7 @@
               "partIndex": 0,
               "rect": [
                 104.2441,
-                329.7215,
+                328.157,
                 223.6241,
                 351.9792
               ],
@@ -3156,20 +3084,40 @@
           "label": "5",
           "column": 0,
           "rect": [
-            29.9589,
-            141.394,
-            524.6324,
-            311.7033
+            31.7403,
+            140.8545,
+            522.1493,
+            313.2678
           ],
           "parts": [
             [
-              29.9589,
-              141.394,
-              524.6324,
-              311.7033
+              31.7403,
+              140.8545,
+              522.1493,
+              313.2678
             ]
           ],
-          "headline": "5 4.2"
+          "headline": "Listen to the text again and put the events in the correct order."
+        },
+        {
+          "id": "p40-6",
+          "label": "6",
+          "column": 0,
+          "rect": [
+            56.4092,
+            65.1135,
+            366.1469,
+            128.9863
+          ],
+          "parts": [
+            [
+              56.4092,
+              65.1135,
+              366.1469,
+              128.9863
+            ]
+          ],
+          "headline": "6 How can you describe Terry’s life? "
         }
       ]
     },
@@ -3188,17 +3136,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            41.1328,
-            644.23,
-            479.8829,
-            710.5843
+            41.8346,
+            643.6366,
+            480.8005,
+            710.7461
           ],
           "parts": [
             [
-              41.1328,
-              644.23,
-              479.8829,
-              710.5843
+              41.8346,
+              643.6366,
+              480.8005,
+              710.7461
             ]
           ],
           "headline": "1 life. Do you agree with him? Discuss with the class."
@@ -3208,17 +3156,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            43.346,
-            456.1722,
-            477.9396,
-            636.5156
+            42.4823,
+            454.8775,
+            475.9963,
+            637.1091
           ],
           "parts": [
             [
-              43.346,
-              456.1722,
-              477.9396,
-              636.5156
+              42.4823,
+              454.8775,
+              475.9963,
+              637.1091
             ]
           ],
           "headline": "2 given words in the blanks. One is extra.",
@@ -3255,17 +3203,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            44.6955,
-            357.9355,
+            42.9142,
+            358.8526,
             499.4576,
-            446.6237
+            446.8395
           ],
           "parts": [
             [
-              44.6955,
-              357.9355,
+              42.9142,
+              358.8526,
               499.4576,
-              446.6237
+              446.8395
             ]
           ],
           "headline": "a) Work in pairs. Look at the names of the books written by the perfectly imperfect people given above. Guess who wrote them and share your guesses with the cla"
@@ -3275,17 +3223,17 @@
           "label": "4",
           "column": 0,
           "rect": [
-            42.5363,
-            257.541,
-            481.7182,
-            346.0673
+            42.9681,
+            257.1094,
+            481.6642,
+            345.6357
           ],
           "parts": [
             [
-              42.5363,
-              257.541,
-              481.7182,
-              346.0673
+              42.9681,
+              257.1094,
+              481.6642,
+              345.6357
             ]
           ],
           "headline": "4 a)",
@@ -3349,7 +3297,7 @@
               "partIndex": 0,
               "rect": [
                 58.3622,
-                257.541,
+                257.1094,
                 345.3211,
                 276.7344
               ],
@@ -3374,17 +3322,17 @@
           "label": "5",
           "column": 0,
           "rect": [
-            56.1393,
-            613.2647,
-            507.7906,
-            709.2356
+            55.9234,
+            612.887,
+            508.7622,
+            710.3146
           ],
           "parts": [
             [
-              56.1393,
-              613.2647,
-              507.7906,
-              709.2356
+              55.9234,
+              612.887,
+              508.7622,
+              710.3146
             ]
           ],
           "headline": "5  a)"
@@ -3394,19 +3342,20 @@
           "label": "6",
           "column": 0,
           "rect": [
-            54.25,
-            479.5851,
-            421.9083,
-            600.5872
+            55.3296,
+            479.8008,
+            419.2703,
+            601.2885
           ],
           "parts": [
             [
-              54.25,
-              479.5851,
-              421.9083,
-              600.5872
+              55.3296,
+              479.8008,
+              419.2703,
+              601.2885
             ]
           ],
+          "headline": "Read the biography again and answer the questions.",
           "items": [
             {
               "id": "p42-6-1",
@@ -3442,7 +3391,7 @@
               "rect": [
                 72.5354,
                 526.4628,
-                421.9083,
+                419.2703,
                 550.8628
               ],
               "text": "3.  How many years did it take Marquez to find a publisher for his first novel?"
@@ -3480,7 +3429,7 @@
               "partIndex": 0,
               "rect": [
                 72.5354,
-                479.5851,
+                479.8008,
                 362.8414,
                 499.8628
               ],
@@ -3494,16 +3443,16 @@
           "column": 0,
           "rect": [
             56.0313,
-            260.8856,
-            495.3212,
-            367.538
+            261.6409,
+            494.0257,
+            368.2933
           ],
           "parts": [
             [
               56.0313,
-              260.8856,
-              495.3212,
-              367.538
+              261.6409,
+              494.0257,
+              368.2933
             ]
           ],
           "headline": "never give up. Write a biography of her/him considering the information below."
@@ -3525,17 +3474,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            42.3744,
-            610.8713,
-            511.1373,
-            710.0448
+            41.7266,
+            611.5448,
+            510.9214,
+            709.9369
           ],
           "parts": [
             [
-              42.3744,
-              610.8713,
-              511.1373,
-              710.0448
+              41.7266,
+              611.5448,
+              510.9214,
+              709.9369
             ]
           ],
           "headline": "1 Being an astronaut/teacher/actress, etc. "
@@ -3545,17 +3494,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            42.3744,
-            386.7969,
-            518.2627,
-            610.3713
+            41.8346,
+            388.6851,
+            517.9928,
+            611.0448
           ],
           "parts": [
             [
-              42.3744,
-              386.7969,
-              518.2627,
-              610.3713
+              41.8346,
+              388.6851,
+              517.9928,
+              611.0448
             ]
           ]
         },
@@ -3564,17 +3513,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            42.1584,
-            254.466,
-            479.0732,
-            287.9129
+            43.238,
+            255.491,
+            479.2351,
+            287.0497
           ],
           "parts": [
             [
-              42.1584,
-              254.466,
-              479.0732,
-              287.9129
+              43.238,
+              255.491,
+              479.2351,
+              287.0497
             ]
           ],
           "headline": "Work in pairs and prepare a dialogue about your childhood as in exercise 2. Think about your favourite toys, books and the activities you did as a child."
@@ -3596,17 +3545,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            56.949,
-            656.7456,
-            489.8692,
-            709.7751
+            58.4064,
+            655.8285,
+            489.3834,
+            709.9909
           ],
           "parts": [
             [
-              56.949,
-              656.7456,
-              489.8692,
-              709.7751
+              58.4064,
+              655.8285,
+              489.3834,
+              709.9909
             ]
           ],
           "headline": "1 ideas with the class."
@@ -3616,17 +3565,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            56.6791,
-            203.8641,
-            471.0301,
-            220.156
+            56.4092,
+            204.6194,
+            470.4903,
+            220.4797
           ],
           "parts": [
             [
-              56.6791,
-              203.8641,
-              471.0301,
-              220.156
+              56.4092,
+              204.6194,
+              470.4903,
+              220.4797
             ]
           ]
         },
@@ -3635,17 +3584,17 @@
           "label": "4",
           "column": 0,
           "rect": [
-            56.7331,
-            52.8137,
-            497.2105,
-            191.6182
+            57.5428,
+            53.1374,
+            497.3724,
+            193.5064
           ],
           "parts": [
             [
-              56.7331,
-              52.8137,
-              497.2105,
-              191.6182
+              57.5428,
+              53.1374,
+              497.3724,
+              193.5064
             ]
           ],
           "headline": "Search the Net for a well-known figure from Turkish history. Use the plan given below to write an essay about him/her in your notebooks."
@@ -3667,17 +3616,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            43.4,
-            530.5646,
-            506.711,
-            683.8268
+            41.8885,
+            612.941,
+            507.7366,
+            685.2294
           ],
           "parts": [
             [
-              43.4,
-              530.5646,
-              506.711,
-              683.8268
+              41.8885,
+              612.941,
+              507.7366,
+              685.2294
             ]
           ],
           "headline": "1 a)",
@@ -3714,34 +3663,14 @@
               "number": 3,
               "partIndex": 0,
               "rect": [
-                58.3622,
-                531.1923,
-                492.6401,
+                75.3155,
+                612.941,
+                354.4534,
                 634.7239
               ],
-              "text": "c)  too advanced or modern to be understood or appreciated Throughout history, humanity has come a long way in terms of expressing itself. Artwork, no (1) matter when and how they were created, truly "
+              "text": "c)  too advanced or modern to be understood or appreciated"
             }
           ]
-        },
-        {
-          "id": "p45-3",
-          "label": "3",
-          "column": 0,
-          "rect": [
-            43.346,
-            24.3839,
-            497.6423,
-            118.2509
-          ],
-          "parts": [
-            [
-              43.346,
-              24.3839,
-              497.6423,
-              118.2509
-            ]
-          ],
-          "headline": "Read the quote by Vincent van Gogh. Discuss the role of art in life with your partner."
         }
       ]
     },
@@ -3764,61 +3693,41 @@
       ],
       "activities": [
         {
-          "id": "p46-1",
-          "label": "1",
-          "column": 0,
-          "rect": [
-            55.4915,
-            491.1296,
-            507.6826,
-            579.5481
-          ],
-          "parts": [
-            [
-              55.4915,
-              491.1296,
-              507.6826,
-              579.5481
-            ]
-          ],
-          "headline": "If you had a remote control for your life, which button would you press most: rewind, pause or fast forward? Why? Share your answers with the class."
-        },
-        {
           "id": "p46-2",
           "label": "2",
           "column": 0,
           "rect": [
-            56.3552,
-            250.42,
-            507.7366,
-            483.0376
+            56.1933,
+            247.8845,
+            508.4923,
+            484.3324
           ],
           "parts": [
             [
-              56.3552,
-              250.42,
-              507.7366,
-              483.0376
+              56.1933,
+              247.8845,
+              508.4923,
+              484.3324
             ]
           ],
-          "headline": "2 a b"
+          "headline": "Match the quotes with their explanations. One is extra."
         },
         {
-          "id": "p46-v3",
+          "id": "p46-v2",
           "label": null,
           "column": 1,
           "rect": [
-            56.3552,
-            55.9965,
-            516.9672,
-            71.3174
+            56.895,
+            54.9176,
+            518.4786,
+            71.5332
           ],
           "parts": [
             [
-              56.3552,
-              55.9965,
-              516.9672,
-              71.3174
+              56.895,
+              54.9176,
+              518.4786,
+              71.5332
             ]
           ]
         }
@@ -3847,17 +3756,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            41.4027,
-            423.103,
-            497.7503,
-            709.3975
+            41.0249,
+            422.1859,
+            497.9122,
+            708.3725
           ],
           "parts": [
             [
-              41.4027,
-              423.103,
-              497.7503,
-              709.3975
+              41.0249,
+              422.1859,
+              497.9122,
+              708.3725
             ]
           ],
           "headline": "1 answers with the class."
@@ -3867,17 +3776,17 @@
           "label": null,
           "column": 1,
           "rect": [
-            59.9719,
-            309.9231,
-            427.9001,
-            412.3676
+            61.4833,
+            310.1389,
+            427.7921,
+            412.6913
           ],
           "parts": [
             [
-              59.9719,
-              309.9231,
-              427.9001,
-              412.3676
+              61.4833,
+              310.1389,
+              427.7921,
+              412.6913
             ]
           ]
         },
@@ -3886,17 +3795,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            43.346,
-            149.6478,
-            488.1958,
-            297.1377
+            44.5336,
+            148.5689,
+            489.5453,
+            297.6772
           ],
           "parts": [
             [
-              43.346,
-              149.6478,
-              488.1958,
-              297.1377
+              44.5336,
+              148.5689,
+              489.5453,
+              297.6772
             ]
           ],
           "headline": "Guess the meaning of the bold phrases and choose the correct option.",
@@ -3922,7 +3831,7 @@
               "rect": [
                 58.3622,
                 209.0509,
-                488.1958,
+                489.5453,
                 248.2809
               ],
               "text": "2.  Please keep me posted on your journey and send me photos each time you visit a new city. a)  inform b)  send c)  ask"
@@ -3947,7 +3856,7 @@
               "partIndex": 0,
               "rect": [
                 58.3722,
-                149.6478,
+                148.5689,
                 408.2522,
                 184.7009
               ],
@@ -3960,17 +3869,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            18.1913,
-            66.0846,
-            458.1829,
-            135.4059
+            17.0037,
+            65.7609,
+            458.6147,
+            137.4019
           ],
           "parts": [
             [
-              18.1913,
-              66.0846,
-              458.1829,
-              135.4059
+              17.0037,
+              65.7609,
+              458.6147,
+              137.4019
             ]
           ],
           "headline": "Listen to the dialogues and match them with the problems. One problem is extra."
@@ -3996,20 +3905,20 @@
           "label": "4",
           "column": 0,
           "rect": [
-            32.7119,
-            453.6907,
-            515.3478,
-            712.4568
+            30.8766,
+            455.5788,
+            514.4841,
+            708.4804
           ],
           "parts": [
             [
-              32.7119,
-              453.6907,
-              515.3478,
-              712.4568
+              30.8766,
+              455.5788,
+              514.4841,
+              708.4804
             ]
           ],
-          "headline": "Listen again and choose the correct option.",
+          "headline": "4 5.2 1",
           "items": [
             {
               "id": "p48-4-1",
@@ -4044,7 +3953,7 @@
               "partIndex": 0,
               "rect": [
                 72.3829,
-                453.6907,
+                455.5788,
                 508.3026,
                 505.5682
               ],
@@ -4057,39 +3966,20 @@
           "label": "5",
           "column": 0,
           "rect": [
-            56.2472,
+            57.6507,
             272.3853,
             509.0688,
-            447.9724
+            447.0553
           ],
           "parts": [
             [
-              56.2472,
+              57.6507,
               272.3853,
               509.0688,
-              447.9724
+              447.0553
             ]
           ],
-          "headline": "a) Work in pairs. Match the situations with their results. One is extra."
-        },
-        {
-          "id": "p48-v3",
-          "label": null,
-          "column": 0,
-          "rect": [
-            57.527,
-            56.749,
-            509.986,
-            272.1353
-          ],
-          "parts": [
-            [
-              57.527,
-              56.749,
-              509.986,
-              272.1353
-            ]
-          ]
+          "headline": "5 a)"
         }
       ]
     },
@@ -4108,20 +3998,20 @@
           "label": "1",
           "column": 0,
           "rect": [
-            42.3204,
-            495.6611,
-            546.5483,
-            709.6672
+            42.1045,
+            497.5493,
+            546.7642,
+            709.1277
           ],
           "parts": [
             [
-              42.3204,
-              495.6611,
-              546.5483,
-              709.6672
+              42.1045,
+              497.5493,
+              546.7642,
+              709.1277
             ]
           ],
-          "headline": "Do the survey and compare your answers with your partner’s. Who is more open to advice from the elderly?",
+          "headline": "1 advice from the elderly?",
           "items": [
             {
               "id": "p49-1-1",
@@ -4182,7 +4072,7 @@
               "partIndex": 0,
               "rect": [
                 58.3629,
-                495.6611,
+                497.5493,
                 375.7328,
                 536.0263
               ],
@@ -4195,17 +4085,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            42.8062,
-            389.5482,
-            420.7747,
-            490.6441
+            42.9142,
+            389.4943,
+            416.8881,
+            490.1586
           ],
           "parts": [
             [
-              42.8062,
-              389.5482,
-              420.7747,
-              490.6441
+              42.9142,
+              389.4943,
+              416.8881,
+              490.1586
             ]
           ],
           "headline": "2"
@@ -4231,20 +4121,20 @@
           "label": "5",
           "column": 0,
           "rect": [
-            54.9517,
-            407.947,
-            429.4655,
-            710.5303
+            55.3296,
+            378.287,
+            429.1956,
+            707.4014
           ],
           "parts": [
             [
-              54.9517,
-              407.947,
-              429.4655,
-              710.5303
+              55.3296,
+              378.287,
+              429.1956,
+              707.4014
             ]
           ],
-          "headline": "Read the letter again and choose the correct option.",
+          "headline": "5 1.",
           "items": [
             {
               "id": "p50-5-1",
@@ -4267,7 +4157,7 @@
               "rect": [
                 72.5354,
                 594.267,
-                429.4655,
+                429.1956,
                 633.497
               ],
               "text": "2.  Which of the following is not one of the themes of the letter? a)  anger b)  regret c)  remembrance"
@@ -4293,7 +4183,7 @@
               "rect": [
                 72.5254,
                 499.607,
-                429.4655,
+                429.1956,
                 568.497
               ],
               "text": "4.  What does Tom mean by saying “It still burns me up today.” in paragraph 3? a)  He has an injury that still hurts. b)  He feels bad when he thinks about it. c)  He smiles when he remembers it."
@@ -4318,11 +4208,11 @@
               "partIndex": 0,
               "rect": [
                 72.5054,
-                407.947,
+                378.287,
                 344.0694,
                 444.177
               ],
-              "text": "6.  What three words can describe Tom based on his letter? a)  careless, confused, selfish"
+              "text": "6.  What three words can describe Tom based on his letter? a)  careless, confused, selfish b)  wise, thoughtful, self-loving c)  mean, illogical, unrealistic"
             }
           ]
         }
@@ -4343,174 +4233,40 @@
           "label": "1",
           "column": 0,
           "rect": [
-            40.8089,
-            625.6724,
-            490.0311,
-            709.1277
+            40.3231,
+            626.7513,
+            491.3806,
+            709.0198
           ],
           "parts": [
             [
-              40.8089,
-              625.6724,
-              490.0311,
-              709.1277
+              40.3231,
+              626.7513,
+              491.3806,
+              709.0198
             ]
           ],
           "headline": "1 with the class."
-        },
-        {
-          "id": "p51-2",
-          "label": "2",
-          "column": 0,
-          "rect": [
-            18.6231,
-            440.501,
-            498.506,
-            616.6633
-          ],
-          "parts": [
-            [
-              18.6231,
-              440.501,
-              498.506,
-              616.6633
-            ]
-          ],
-          "headline": "2 5.5 statements. One is extra.",
-          "items": [
-            {
-              "id": "p51-2-a",
-              "label": "a",
-              "number": 1,
-              "partIndex": 0,
-              "rect": [
-                65.2586,
-                557.3838,
-                78.8186,
-                581.7838
-              ]
-            },
-            {
-              "id": "p51-2-b",
-              "label": "b",
-              "number": 2,
-              "partIndex": 0,
-              "rect": [
-                65.2586,
-                440.501,
-                402.4875,
-                581.7838
-              ],
-              "text": "a b Wendy Dan"
-            }
-          ]
-        },
-        {
-          "id": "p51-3",
-          "label": "3",
-          "column": 0,
-          "rect": [
-            17.6515,
-            272.9697,
-            332.3013,
-            380.3234
-          ],
-          "parts": [
-            [
-              17.6515,
-              272.9697,
-              332.3013,
-              380.3234
-            ]
-          ],
-          "headline": "Listen again and tick ( ü ) Yes or No.",
-          "items": [
-            {
-              "id": "p51-3-1",
-              "label": "1",
-              "number": 1,
-              "partIndex": 0,
-              "rect": [
-                58.3622,
-                328.4223,
-                252.2112,
-                352.8223
-              ],
-              "text": "1. Wendy wishes she had studied more."
-            },
-            {
-              "id": "p51-3-2",
-              "label": "2",
-              "number": 2,
-              "partIndex": 0,
-              "rect": [
-                58.3622,
-                313.5923,
-                273.5292,
-                337.9923
-              ],
-              "text": "2. She wishes she had chosen an easier job."
-            },
-            {
-              "id": "p51-3-3",
-              "label": "3",
-              "number": 3,
-              "partIndex": 0,
-              "rect": [
-                58.3622,
-                298.7623,
-                280.1892,
-                323.1623
-              ],
-              "text": "3. She wishes she hadn’t gotten married at all."
-            },
-            {
-              "id": "p51-3-4",
-              "label": "4",
-              "number": 4,
-              "partIndex": 0,
-              "rect": [
-                58.3622,
-                283.9323,
-                286.8651,
-                308.3323
-              ],
-              "text": "4. Dan wishes he had worked more to be richer."
-            },
-            {
-              "id": "p51-3-5",
-              "label": "5",
-              "number": 5,
-              "partIndex": 0,
-              "rect": [
-                58.3622,
-                272.9697,
-                284.0612,
-                293.5023
-              ],
-              "text": "5. He wishes he had been with his family more."
-            }
-          ]
         },
         {
           "id": "p51-4",
           "label": "4",
           "column": 0,
           "rect": [
-            40.647,
-            54.9406,
-            480.108,
-            258.1883
+            44.4256,
+            56.6439,
+            471.6239,
+            257.3252
           ],
           "parts": [
             [
-              40.647,
-              54.9406,
-              480.108,
-              258.1883
+              44.4256,
+              56.6439,
+              471.6239,
+              257.3252
             ]
           ],
-          "headline": "Work in pairs. Talk about the ideas below as in the example. Give reasons.",
+          "headline": "4 1. I/grow up on a farm",
           "items": [
             {
               "id": "p51-4-1",
@@ -4596,20 +4352,20 @@
           "label": "2",
           "column": 0,
           "rect": [
-            56.949,
-            268.2224,
-            525.604,
-            648.0063
+            57.3268,
+            270.4342,
+            522.5811,
+            645.201
           ],
           "parts": [
             [
-              56.949,
-              268.2224,
-              525.604,
-              648.0063
+              57.3268,
+              270.4342,
+              522.5811,
+              645.201
             ]
           ],
-          "headline": "Read the social media post of Duncan. Then, match the photos with the sentences. One is extra.",
+          "headline": "2 2:00 PM Hi, everyone! Today is my birthday, and I’m",
           "items": [
             {
               "id": "p52-2-a",
@@ -4657,8 +4413,8 @@
               "partIndex": 0,
               "rect": [
                 72.5354,
-                268.2224,
-                525.604,
+                270.4342,
+                522.5811,
                 290.8057
               ],
               "text": "d)  I’m about to leave my hometown for university, and #Iwish I had spent more time with my family."
@@ -4670,17 +4426,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            43.8858,
-            56.4821,
-            524.3085,
-            265.9566
+            43.454,
+            55.3492,
+            523.7147,
+            265.1474
           ],
           "parts": [
             [
-              43.8858,
-              56.4821,
-              524.3085,
-              265.9566
+              43.454,
+              55.3492,
+              523.7147,
+              265.1474
             ]
           ],
           "headline": "Write down the things you wish you’d done sooner by using the #Iwish hashtag."
@@ -4714,17 +4470,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            41.9425,
-            592.1716,
+            43.0221,
+            591.6321,
             497.1734,
-            680.6439
+            680.0505
           ],
           "parts": [
             [
-              41.9425,
-              592.1716,
+              43.0221,
+              591.6321,
               497.1734,
-              680.6439
+              680.0505
             ]
           ],
           "headline": "1 in pairs and discuss the following questions."
@@ -4734,37 +4490,37 @@
           "label": "2",
           "column": 0,
           "rect": [
-            43.7239,
-            550.7945,
-            493.2699,
-            580.8428
+            43.1841,
+            552.0353,
+            491.1647,
+            581.2204
           ],
           "parts": [
             [
-              43.7239,
-              550.7945,
-              493.2699,
-              580.8428
+              43.1841,
+              552.0353,
+              491.1647,
+              581.2204
             ]
           ],
-          "headline": "Read through the timeline quickly. Complete the sentences with a question word and then match them with their answers. One is extra."
+          "headline": "Read through the timeline quickly. Complete the sentences with a question word and"
         },
         {
           "id": "p53-3",
           "label": "3",
           "column": 0,
           "rect": [
-            44.9114,
-            83.38,
-            496.1849,
-            144.5229
+            43.292,
+            87.6632,
+            494.9433,
+            144.1992
           ],
           "parts": [
             [
-              44.9114,
-              83.38,
-              496.1849,
-              144.5229
+              43.292,
+              87.6632,
+              494.9433,
+              144.1992
             ]
           ],
           "headline": "Work in pairs. Ask and answer the following questions. Share your answers with the class."
@@ -4786,20 +4542,20 @@
           "label": "1",
           "column": 0,
           "rect": [
-            56.3552,
-            309.0599,
-            495.915,
-            567.9495
+            58.2445,
+            307.8192,
+            495.3212,
+            570.3771
           ],
           "parts": [
             [
-              56.3552,
-              309.0599,
-              495.915,
-              567.9495
+              58.2445,
+              307.8192,
+              495.3212,
+              570.3771
             ]
           ],
-          "headline": "1  What feelings do these photos arise in you?",
+          "headline": "Look at the photos and answer the questions.",
           "items": [
             {
               "id": "p54-1-5",
@@ -4834,37 +4590,37 @@
           "label": "2",
           "column": 0,
           "rect": [
-            56.1393,
-            68.7279,
-            492.4063,
-            299.5114
+            56.7331,
+            74.3923,
+            493.054,
+            298.2167
           ],
           "parts": [
             [
-              56.1393,
-              68.7279,
-              492.4063,
-              299.5114
+              56.7331,
+              74.3923,
+              493.054,
+              298.2167
             ]
           ],
-          "headline": "a) Read the ad below. What do you think is it for? Write two more options in the spaces given thinking of your needs and wants."
+          "headline": "2 given thinking of your needs and wants."
         },
         {
           "id": "p54-v3",
           "label": null,
           "column": 0,
           "rect": [
-            75.4641,
-            52.8137,
-            493.3779,
-            66.4082
+            74.9783,
+            52.8676,
+            493.054,
+            67.0556
           ],
           "parts": [
             [
-              75.4641,
-              52.8137,
-              493.3779,
-              66.4082
+              74.9783,
+              52.8676,
+              493.054,
+              67.0556
             ]
           ]
         }
@@ -4889,16 +4645,16 @@
           "label": "1",
           "column": 0,
           "rect": [
-            40.755,
-            536.175,
-            497.8043,
+            41.5647,
+            537.2,
+            497.3184,
             714.1448
           ],
           "parts": [
             [
-              40.755,
-              536.175,
-              497.8043,
+              41.5647,
+              537.2,
+              497.3184,
               714.1448
             ]
           ],
@@ -4910,7 +4666,7 @@
               "number": 2,
               "partIndex": 0,
               "rect": [
-                41.3543,
+                41.5647,
                 537.7347,
                 483.1425,
                 572.9247
@@ -4920,59 +4676,21 @@
           ]
         },
         {
-          "id": "p55-v2",
-          "label": null,
-          "column": 0,
-          "rect": [
-            60.9975,
-            357.0184,
-            488.7356,
-            387.9298
-          ],
-          "parts": [
-            [
-              60.9975,
-              357.0184,
-              488.7356,
-              387.9298
-            ]
-          ]
-        },
-        {
-          "id": "p55-v3",
-          "label": null,
-          "column": 0,
-          "rect": [
-            60.0258,
-            320.1729,
-            487.2242,
-            351.2462
-          ],
-          "parts": [
-            [
-              60.0258,
-              320.1729,
-              487.2242,
-              351.2462
-            ]
-          ]
-        },
-        {
           "id": "p55-3",
           "label": "3",
           "column": 0,
           "rect": [
-            42.8602,
-            65.7609,
-            475.9423,
-            307.2257
+            44.1017,
+            66.5701,
+            476.3202,
+            306.7402
           ],
           "parts": [
             [
-              42.8602,
-              65.7609,
-              475.9423,
-              307.2257
+              44.1017,
+              66.5701,
+              476.3202,
+              306.7402
             ]
           ],
           "headline": "Guess the meaning of the bold words/phrases and choose the correct option.",
@@ -5011,7 +4729,7 @@
               "rect": [
                 58.3722,
                 117.2712,
-                475.9423,
+                476.3202,
                 179.2513
               ],
               "text": "3.  The police are still looking for a vital clue for the bank robbery.   a)  false information that is given by the suspects about a case   b)  an object, a piece of evidence or some information that"
@@ -5023,7 +4741,7 @@
               "partIndex": 0,
               "rect": [
                 58.3722,
-                65.7609,
+                66.5701,
                 461.1219,
                 122.8813
               ],
@@ -5048,16 +4766,16 @@
           "label": "4",
           "column": 0,
           "rect": [
-            30.8766,
-            549.0143,
-            520.6918,
+            30.5527,
+            550.4709,
+            520.7998,
             712.9587
           ],
           "parts": [
             [
-              30.8766,
-              549.0143,
-              520.6918,
+              30.5527,
+              550.4709,
+              520.7998,
               712.9587
             ]
           ],
@@ -5068,81 +4786,88 @@
           "label": "5",
           "column": 0,
           "rect": [
-            29.5811,
-            415.065,
-            512.5948,
-            538.171
+            30.1209,
+            415.8202,
+            512.8107,
+            540.1131
           ],
           "parts": [
             [
-              29.5811,
-              415.065,
-              512.5948,
-              538.171
+              30.1209,
+              415.8202,
+              512.8107,
+              540.1131
             ]
           ],
-          "headline": "5 6.2 Suspect 1"
+          "headline": "Now, listen to part 2 and complete the alibi report."
         },
         {
-          "id": "p56-6",
-          "label": "6",
+          "id": "p56-7",
+          "label": "7",
           "column": 0,
           "rect": [
-            55.2756,
-            269.7868,
-            364.3655,
-            406.973
+            33.6836,
+            165.2923,
+            423.0419,
+            258.458
           ],
           "parts": [
             [
-              55.2756,
-              269.7868,
-              364.3655,
-              406.973
+              33.6836,
+              165.2923,
+              423.0419,
+              258.458
             ]
           ],
-          "headline": "Match Mr Johnson’s sentences with their meanings.",
+          "headline": "Listen to part 3 and answer the questions.",
           "items": [
             {
-              "id": "p56-6-a",
-              "label": "a",
+              "id": "p56-7-1",
+              "label": "1",
               "number": 1,
               "partIndex": 0,
               "rect": [
-                104.4254,
-                302.6843,
-                252.2584,
-                327.0843
+                72.6895,
+                198.9149,
+                423.0419,
+                242.105
               ],
-              "text": "a)  It’s certain that it happened."
+              "text": "1.  How might have Alex felt while he was spending time at his aunt’s house?  _______________________________________________________________________. "
             },
             {
-              "id": "p56-6-b",
-              "label": "b",
+              "id": "p56-7-2",
+              "label": "2",
               "number": 2,
               "partIndex": 0,
               "rect": [
-                104.4254,
-                283.8943,
-                269.4754,
-                308.2943
+                72.6688,
+                165.2923,
+                415.9183,
+                204.5172
               ],
-              "text": "b)  It’s impossible that it happened."
-            },
-            {
-              "id": "p56-6-c",
-              "label": "c",
-              "number": 3,
-              "partIndex": 0,
-              "rect": [
-                104.4254,
-                269.7868,
-                214.0754,
-                289.5043
-              ],
-              "text": "c)  I think it happened."
+              "text": "2.  What might have he done that day?  _______________________________________________________________________."
             }
           ]
+        },
+        {
+          "id": "p56-8",
+          "label": "8",
+          "column": 0,
+          "rect": [
+            31.3084,
+            92.7342,
+            413.1095,
+            157.6319
+          ],
+          "parts": [
+            [
+              31.3084,
+              92.7342,
+              413.1095,
+              157.6319
+            ]
+          ],
+          "headline": "8 6.4 ___________________________________________________________________________"
         }
       ]
     },
@@ -5165,17 +4890,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            42.5903,
-            697.2595,
-            478.8573,
-            710.908
+            41.0249,
+            696.72,
+            479.1811,
+            711.5553
           ],
           "parts": [
             [
-              42.5903,
-              697.2595,
-              478.8573,
-              710.908
+              41.0249,
+              696.72,
+              479.1811,
+              711.5553
             ]
           ]
         },
@@ -5184,20 +4909,20 @@
           "label": "2",
           "column": 0,
           "rect": [
-            42.9142,
-            470.1984,
-            511.1373,
-            683.665
+            42.1045,
+            468.6878,
+            509.7878,
+            685.5531
           ],
           "parts": [
             [
-              42.9142,
-              470.1984,
-              511.1373,
-              683.665
+              42.1045,
+              468.6878,
+              509.7878,
+              685.5531
             ]
           ],
-          "headline": "2 words near their meanings.",
+          "headline": "Read the poem by Emily Dickinson, a famous American poet. Guess and write the highlighted words near their meanings.",
           "items": [
             {
               "id": "p57-2-1",
@@ -5219,7 +4944,7 @@
               "partIndex": 0,
               "rect": [
                 58.3622,
-                470.1984,
+                468.6878,
                 411.9144,
                 490.1194
               ],
@@ -5244,17 +4969,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            54.0341,
-            645.3089,
-            435.9431,
-            714.3606
+            55.2756,
+            643.3129,
+            433.9998,
+            713.929
           ],
           "parts": [
             [
-              54.0341,
-              645.3089,
-              435.9431,
-              714.3606
+              55.2756,
+              643.3129,
+              433.9998,
+              713.929
             ]
           ]
         },
@@ -5266,14 +4991,14 @@
             29.6077,
             449.3271,
             531.4326,
-            637.3788
+            638.7275
           ],
           "parts": [
             [
               29.6077,
               449.3271,
               531.4326,
-              637.3788
+              638.7275
             ]
           ]
         },
@@ -5282,17 +5007,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            56.1933,
-            342.9384,
-            479.1272,
-            447.9184
+            56.6791,
+            343.1542,
+            479.613,
+            447.1632
           ],
           "parts": [
             [
-              56.1933,
-              342.9384,
-              479.1272,
-              447.9184
+              56.6791,
+              343.1542,
+              479.613,
+              447.1632
             ]
           ]
         }
@@ -5313,17 +5038,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            13.9808,
-            308.4126,
-            529.9764,
-            712.7422
+            11.693,
+            304.7982,
+            548.976,
+            713.2277
           ],
           "parts": [
             [
-              13.9808,
-              308.4126,
-              529.9764,
-              712.7422
+              11.693,
+              304.7982,
+              548.976,
+              713.2277
             ]
           ],
           "headline": "1 2 Work in pairs. Read the events and criticise the people with your partner."
@@ -5345,40 +5070,40 @@
           "label": "1",
           "column": 0,
           "rect": [
-            56.4092,
-            311.5415,
-            507.3048,
-            709.2356
+            56.4632,
+            307.6573,
+            508.4923,
+            710.7461
           ],
           "parts": [
             [
-              56.4092,
-              311.5415,
-              507.3048,
-              709.2356
+              56.4632,
+              307.6573,
+              508.4923,
+              710.7461
             ]
           ],
-          "headline": "1 Finally To make matters worse"
+          "headline": "Read the letter and fill in the blanks with the correct expressions. One is extra."
         },
         {
           "id": "p60-2",
           "label": "2",
           "column": 0,
           "rect": [
-            55.2756,
-            179.3724,
-            476.5361,
-            288.2366
+            58.1365,
+            180.2895,
+            476.752,
+            287.3734
           ],
           "parts": [
             [
-              55.2756,
-              179.3724,
-              476.5361,
-              288.2366
+              58.1365,
+              180.2895,
+              476.752,
+              287.3734
             ]
           ],
-          "headline": "Study the following plan and use the information given in the box to write a letter of complaint to the restaurant manager."
+          "headline": "2 complaint to the restaurant manager."
         }
       ]
     },
@@ -5397,20 +5122,107 @@
           "label": "1",
           "column": 0,
           "rect": [
-            41.5647,
-            466.1524,
-            497.1565,
-            676.4901
+            42.9142,
+            458.8156,
+            497.4264,
+            676.7598
           ],
           "parts": [
             [
-              41.5647,
-              466.1524,
-              497.1565,
-              676.4901
+              42.9142,
+              458.8156,
+              497.4264,
+              676.7598
             ]
           ],
-          "headline": "1 Standing here all day is too"
+          "headline": "Read the bubbles. What do they all agree with? Share your ideas with the class."
+        },
+        {
+          "id": "p61-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            45.3433,
+            66.3543,
+            419.4792,
+            456.8196
+          ],
+          "parts": [
+            [
+              45.3433,
+              66.3543,
+              419.4792,
+              456.8196
+            ]
+          ],
+          "headline": "2 The Gift to Sing",
+          "items": [
+            {
+              "id": "p61-2-a",
+              "label": "a",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                72.2855,
+                198.524,
+                247.9955,
+                222.924
+              ],
+              "text": "a)  a strong feeling of fear or worry"
+            },
+            {
+              "id": "p61-2-b",
+              "label": "b",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                72.2855,
+                181.524,
+                242.9915,
+                205.924
+              ],
+              "text": "b)  a musical sound and its symbol"
+            },
+            {
+              "id": "p61-2-c",
+              "label": "c",
+              "number": 3,
+              "partIndex": 0,
+              "rect": [
+                72.2855,
+                164.524,
+                229.0955,
+                188.924
+              ],
+              "text": "c)  to increase in size or amount"
+            },
+            {
+              "id": "p61-2-d",
+              "label": "d",
+              "number": 4,
+              "partIndex": 0,
+              "rect": [
+                72.2855,
+                147.524,
+                226.3255,
+                171.924
+              ],
+              "text": "d)  to make a hole in something"
+            },
+            {
+              "id": "p61-2-e",
+              "label": "e",
+              "number": 5,
+              "partIndex": 0,
+              "rect": [
+                45.3433,
+                66.3543,
+                291.9355,
+                154.924
+              ],
+              "text": "e)  to think about the things that make you sad 3  4 Listen to the song Singing in the Rain  song?"
+            }
+          ]
         }
       ]
     },
@@ -5437,44 +5249,64 @@
       ],
       "activities": [
         {
-          "id": "p62-3",
-          "label": "3",
+          "id": "p62-1",
+          "label": "1",
           "column": 0,
           "rect": [
-            56.1393,
-            76.4423,
-            464.7145,
-            122.9442
+            57.0569,
+            522.6147,
+            513.3505,
+            574.1534
           ],
           "parts": [
             [
-              56.1393,
-              76.4423,
-              464.7145,
-              122.9442
+              57.0569,
+              522.6147,
+              513.3505,
+              574.1534
             ]
           ],
-          "headline": "Read the destinations in the brochure again and match them with the correct monuments. One is extra."
+          "headline": "Discuss the following questions with your partner and share your answers with the class."
+        },
+        {
+          "id": "p62-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            54.7898,
+            73.1588,
+            527.9791,
+            522.1147
+          ],
+          "parts": [
+            [
+              54.7898,
+              73.1588,
+              527.9791,
+              522.1147
+            ]
+          ],
+          "headline": "Read the brochure and tick ( ü ) the correct statements."
         },
         {
           "id": "p62-4",
           "label": "4",
           "column": 0,
           "rect": [
-            58.0826,
-            44.3441,
-            485.6587,
-            74.716
+            55.9773,
+            44.5599,
+            486.7923,
+            72.6588
           ],
           "parts": [
             [
-              58.0826,
-              44.3441,
-              485.6587,
-              74.716
+              55.9773,
+              44.5599,
+              486.7923,
+              72.6588
             ]
           ],
-          "headline": "What three things have you learned about the monuments in the brochure? Share them with the class."
+          "headline": "4"
         }
       ]
     },
@@ -5501,108 +5333,21 @@
       ],
       "activities": [
         {
-          "id": "p63-1",
-          "label": "1",
-          "column": 0,
-          "rect": [
-            40.9169,
-            269.9134,
-            498.8839,
-            612.887
-          ],
-          "parts": [
-            [
-              40.9169,
-              269.9134,
-              498.8839,
-              612.887
-            ]
-          ],
-          "headline": "1 Match them with the photos below. One photo is extra.",
-          "items": [
-            {
-              "id": "p63-1-a",
-              "label": "a",
-              "number": 1,
-              "partIndex": 0,
-              "rect": [
-                58.3612,
-                562.0914,
-                360.0871,
-                586.4914
-              ],
-              "text": "a)  a round open structure with levels of seats for drama or sports"
-            },
-            {
-              "id": "p63-1-b",
-              "label": "b",
-              "number": 2,
-              "partIndex": 0,
-              "rect": [
-                58.3612,
-                547.2614,
-                394.5791,
-                571.6613
-              ],
-              "text": "b)  a stone structure with a column head and a baseless column at its top"
-            },
-            {
-              "id": "p63-1-c",
-              "label": "c",
-              "number": 3,
-              "partIndex": 0,
-              "rect": [
-                58.3612,
-                532.4313,
-                440.7141,
-                556.8313
-              ],
-              "text": "c)   the halls that were developed by ancient Rome for public bathing and socialising"
-            },
-            {
-              "id": "p63-1-d",
-              "label": "d",
-              "number": 4,
-              "partIndex": 0,
-              "rect": [
-                58.3612,
-                517.6013,
-                342.8891,
-                542.0013
-              ],
-              "text": "d)  an open public area that is used for meetings and markets"
-            },
-            {
-              "id": "p63-1-e",
-              "label": "e",
-              "number": 5,
-              "partIndex": 0,
-              "rect": [
-                46.614,
-                270.7134,
-                454.7636,
-                527.1713
-              ],
-              "text": "e)  a Roman resting spot with a fountain and plants 1  2  3  agora nymphaeum Doric temple 4  5  6  thermal bath amphitheatre mosaic"
-            }
-          ]
-        },
-        {
           "id": "p63-2",
           "label": "2",
           "column": 0,
           "rect": [
-            43.238,
-            53.1913,
-            499.5316,
-            268.0605
+            43.4,
+            52.3821,
+            500.9351,
+            267.8987
           ],
           "parts": [
             [
-              43.238,
-              53.1913,
-              499.5316,
-              268.0605
+              43.4,
+              52.3821,
+              500.9351,
+              267.8987
             ]
           ],
           "headline": "Guess the meaning of the bold words in the sentences and match them with the following words. One is",
@@ -5666,7 +5411,7 @@
               "partIndex": 0,
               "rect": [
                 75.3154,
-                53.1913,
+                52.3821,
                 290.5544,
                 84.6654
               ],
@@ -5699,17 +5444,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            29.689,
-            326.5386,
-            474.5928,
-            518.4805
+            31.1465,
+            325.7294,
+            472.3796,
+            518.6424
           ],
           "parts": [
             [
-              29.689,
-              326.5386,
-              474.5928,
-              518.4805
+              31.1465,
+              325.7294,
+              472.3796,
+              518.6424
             ]
           ],
           "headline": "Listen to the Historic Arc podcast and choose the correct option.",
@@ -5786,101 +5531,13 @@
               "partIndex": 0,
               "rect": [
                 72.5454,
-                326.5386,
+                325.7294,
                 460.4354,
                 360.5829
               ],
               "text": "6. Most of the __________ were destroyed by natural causes. a)  ruins b)  monuments c)  furniture"
             }
           ]
-        },
-        {
-          "id": "p64-4",
-          "label": "4",
-          "column": 0,
-          "rect": [
-            30.4448,
-            212.7653,
-            361.9904,
-            319.9571
-          ],
-          "parts": [
-            [
-              30.4448,
-              212.7653,
-              361.9904,
-              319.9571
-            ]
-          ],
-          "headline": "Listen to the podcast again and write true (T) or false (F)."
-        },
-        {
-          "id": "p64-5",
-          "label": "5",
-          "column": 0,
-          "rect": [
-            53.8181,
-            54.5939,
-            519.0184,
-            209.2588
-          ],
-          "parts": [
-            [
-              53.8181,
-              54.5939,
-              519.0184,
-              209.2588
-            ]
-          ],
-          "headline": "a) Choose one of the monuments or historical sites below and prepare a short presentation using the guidelines in the appendix on page 97."
-        }
-      ]
-    },
-    "65": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          36.5197,
-          103.1977
-        ],
-        [
-          107.1977,
-          218.1698
-        ],
-        [
-          222.1698,
-          277.6977
-        ],
-        [
-          281.6977,
-          359.4977
-        ],
-        [
-          363.4977,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p65-1",
-          "label": "1",
-          "column": 0,
-          "rect": [
-            36.5197,
-            640.0222,
-            505.9077,
-            709.2356
-          ],
-          "parts": [
-            [
-              36.5197,
-              640.0222,
-              505.9077,
-              709.2356
-            ]
-          ],
-          "headline": "1 a) Pergamon"
         }
       ]
     },
@@ -5899,17 +5556,17 @@
           "label": "4",
           "column": 0,
           "rect": [
-            56.3012,
-            594.9768,
-            505.6314,
-            709.6133
+            55.2756,
+            594.0057,
+            505.3075,
+            709.9369
           ],
           "parts": [
             [
-              56.3012,
-              594.9768,
-              505.6314,
-              709.6133
+              55.2756,
+              594.0057,
+              505.3075,
+              709.9369
             ]
           ],
           "headline": "Match the highlighted words in the text with their definitions below.",
@@ -5922,7 +5579,7 @@
               "rect": [
                 72.5354,
                 669.6743,
-                505.6314,
+                505.3075,
                 694.0743
               ],
               "text": "1. a castle or an area that is usually built on top of a hill to resist attacks __________________"
@@ -5935,7 +5592,7 @@
               "rect": [
                 72.5354,
                 653.8443,
-                505.6314,
+                505.3075,
                 678.2443
               ],
               "text": "2. to be more than something __________________"
@@ -5948,7 +5605,7 @@
               "rect": [
                 72.5254,
                 638.0143,
-                505.6314,
+                505.3075,
                 662.4143
               ],
               "text": "3. the place or society where something important began __________________"
@@ -5961,7 +5618,7 @@
               "rect": [
                 72.5254,
                 622.1843,
-                505.6314,
+                505.3075,
                 646.5843
               ],
               "text": "4. to have existed for a certain period of time or since a certain time __________________"
@@ -5974,7 +5631,7 @@
               "rect": [
                 72.5154,
                 606.3542,
-                505.6314,
+                505.3075,
                 630.7542
               ],
               "text": "5. a place where people come to live and make their homes __________________"
@@ -5986,8 +5643,8 @@
               "partIndex": 0,
               "rect": [
                 72.5053,
-                594.9768,
-                505.6314,
+                594.0057,
+                505.3075,
                 614.9242
               ],
               "text": "6. the pieces of ancient objects and structures that have survived __________________"
@@ -5999,20 +5656,20 @@
           "label": "5",
           "column": 0,
           "rect": [
-            57.3808,
-            404.4375,
-            512.3249,
-            590.0137
+            56.2472,
+            404.6533,
+            512.109,
+            590.715
           ],
           "parts": [
             [
-              57.3808,
-              404.4375,
-              512.3249,
-              590.0137
+              56.2472,
+              404.6533,
+              512.109,
+              590.715
             ]
           ],
-          "headline": "5 1. What evidence showed that Troy was the cradle of different civilisations?",
+          "headline": "Read the guide again and answer the questions.",
           "items": [
             {
               "id": "p66-5-1",
@@ -6022,7 +5679,7 @@
               "rect": [
                 72.4953,
                 534.9498,
-                512.3249,
+                512.109,
                 575.2043
               ],
               "text": "1. What evidence showed that Troy was the cradle of different civilisations? ."
@@ -6035,7 +5692,7 @@
               "rect": [
                 72.5316,
                 500.4459,
-                512.3249,
+                512.109,
                 540.6798
               ],
               "text": "2. What made the architecture of Pergamon so unique? ."
@@ -6048,7 +5705,7 @@
               "rect": [
                 72.5316,
                 465.942,
-                512.3249,
+                512.109,
                 506.1759
               ],
               "text": "3. Why was Pergamon an important place for such a long time in history? ."
@@ -6061,7 +5718,7 @@
               "rect": [
                 72.5316,
                 431.438,
-                512.3249,
+                512.109,
                 471.672
               ],
               "text": "4. Which Cappadocia attractions show the region’s historical importance? ."
@@ -6073,8 +5730,8 @@
               "partIndex": 0,
               "rect": [
                 72.5316,
-                404.4375,
-                512.3249,
+                404.6533,
+                512.109,
                 437.168
               ],
               "text": "5. What is the importance of Tilkitepe Mound? ."
@@ -6103,16 +5760,16 @@
           "column": 0,
           "rect": [
             43.4,
-            663.9745,
-            487.1162,
-            708.4264
+            664.7836,
+            487.3321,
+            709.3435
           ],
           "parts": [
             [
               43.4,
-              663.9745,
-              487.1162,
-              708.4264
+              664.7836,
+              487.3321,
+              709.3435
             ]
           ],
           "headline": "1 nature lover who enjoys exploring the world’s natural wonders? Share your answers with the class."
@@ -6134,17 +5791,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            54.8977,
-            631.8223,
-            467.2515,
-            708.8041
+            56.1933,
+            631.121,
+            467.0356,
+            708.858
           ],
           "parts": [
             [
-              54.8977,
-              631.8223,
-              467.2515,
-              708.8041
+              56.1933,
+              631.121,
+              467.0356,
+              708.858
             ]
           ],
           "headline": "1 E.g."
@@ -6154,20 +5811,20 @@
           "label": "3",
           "column": 0,
           "rect": [
-            55.3836,
+            56.4092,
             89.0,
-            510.0577,
-            211.6324
+            509.2,
+            212.4956
           ],
           "parts": [
             [
-              55.3836,
+              56.4092,
               89.0,
-              510.0577,
-              211.6324
+              509.2,
+              212.4956
             ]
           ],
-          "headline": "3 1. Where is she?",
+          "headline": "Read the blog post again and answer the questions. Give short answers.",
           "items": [
             {
               "id": "p68-3-1",
@@ -6177,7 +5834,7 @@
               "rect": [
                 74.0758,
                 161.5,
-                510.0577,
+                509.2,
                 195.1
               ],
               "text": "1. Where is she?"
@@ -6190,7 +5847,7 @@
               "rect": [
                 74.0758,
                 136.0,
-                510.0577,
+                509.2,
                 169.5
               ],
               "text": "2. How does she feel?"
@@ -6203,7 +5860,7 @@
               "rect": [
                 74.0758,
                 110.5,
-                510.0577,
+                509.2,
                 144.0
               ],
               "text": "3. What has she done so far?"
@@ -6216,7 +5873,7 @@
               "rect": [
                 74.0758,
                 89.0,
-                510.0577,
+                509.2,
                 118.5
               ],
               "text": "4. What are her plans for tomorrow?"
@@ -6228,20 +5885,20 @@
           "label": "4",
           "column": 0,
           "rect": [
-            58.0286,
-            52.3282,
-            485.065,
-            83.3475
+            56.841,
+            53.9466,
+            486.4684,
+            83.0238
           ],
           "parts": [
             [
-              58.0286,
-              52.3282,
-              485.065,
-              83.3475
+              56.841,
+              53.9466,
+              486.4684,
+              83.0238
             ]
           ],
-          "headline": "Go to the appendix on page 98 and write a blog post describing a place to visit in Türkiye."
+          "headline": "Go to the appendix on page 98 and write a blog post describing a place to visit in"
         }
       ]
     },
@@ -6264,17 +5921,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            44.3176,
+            43.346,
             249.7187,
-            485.1729,
-            340.2411
+            485.2809,
+            340.3489
           ],
           "parts": [
             [
-              44.3176,
+              43.346,
               249.7187,
-              485.1729,
-              340.2411
+              485.2809,
+              340.3489
             ]
           ],
           "headline": "ü"
@@ -6284,17 +5941,17 @@
           "label": "4",
           "column": 0,
           "rect": [
-            41.2948,
+            42.2664,
             44.0,
-            497.6963,
-            238.0123
+            497.3184,
+            238.8754
           ],
           "parts": [
             [
-              41.2948,
+              42.2664,
               44.0,
-              497.6963,
-              238.0123
+              497.3184,
+              238.8754
             ]
           ],
           "headline": "4 Pamukkale is known Gediz is a river delta"
@@ -6316,17 +5973,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            56.5171,
-            335.3859,
-            501.6908,
-            569.8377
+            56.787,
+            334.9003,
+            502.5545,
+            570.2153
           ],
           "parts": [
             [
-              56.5171,
-              335.3859,
-              501.6908,
-              569.8377
+              56.787,
+              334.9003,
+              502.5545,
+              570.2153
             ]
           ],
           "headline": "Work in pairs to solve the riddles. Think of as many answers as possible. Then, go to page 99 to check your answers.",
@@ -6455,13 +6112,33 @@
               "partIndex": 0,
               "rect": [
                 71.4843,
-                335.3859,
+                334.9003,
                 305.1238,
                 352.5187
               ],
               "text": "I have two wings to fly on snow. Who am I? 10."
             }
           ]
+        },
+        {
+          "id": "p70-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            56.4092,
+            54.6479,
+            511.0294,
+            197.7681
+          ],
+          "parts": [
+            [
+              56.4092,
+              54.6479,
+              511.0294,
+              197.7681
+            ]
+          ],
+          "headline": "2 Decide what you want to ask first. Make sure that your answer is simple enough to guess for "
         }
       ]
     },
@@ -6488,15 +6165,15 @@
           "label": "1",
           "column": 0,
           "rect": [
-            43.0761,
-            569.8916,
+            42.5363,
+            569.6219,
             512.376,
             712.9587
           ],
           "parts": [
             [
-              43.0761,
-              569.8916,
+              42.5363,
+              569.6219,
               512.376,
               712.9587
             ]
@@ -6508,40 +6185,40 @@
           "label": "2",
           "column": 0,
           "rect": [
-            32.2261,
-            228.4098,
-            516.1035,
-            560.4289
+            32.0102,
+            203.5404,
+            516.4274,
+            557.376
           ],
           "parts": [
             [
-              32.2261,
-              228.4098,
-              516.1035,
-              560.4289
+              32.0102,
+              203.5404,
+              516.4274,
+              557.376
             ]
           ],
-          "headline": "a) Look at the photos of the extreme sports and match them with their names. One is extra."
+          "headline": "2 1"
         },
         {
           "id": "p71-3",
           "label": "3",
           "column": 0,
           "rect": [
-            42.6443,
-            65.7609,
-            513.6204,
-            192.859
+            42.5903,
+            65.3293,
+            514.5921,
+            193.5603
           ],
           "parts": [
             [
-              42.6443,
-              65.7609,
-              513.6204,
-              192.859
+              42.5903,
+              65.3293,
+              514.5921,
+              193.5603
             ]
           ],
-          "headline": "3 Josh: Nowadays, I’m really into watching extreme sports on the Net. Do you enjoy watching them?"
+          "headline": "Work in pairs. Prepare a dialogue as in the example. Then, act it out."
         }
       ]
     },
@@ -6560,17 +6237,17 @@
           "label": "4",
           "column": 0,
           "rect": [
-            54.6278,
-            597.4583,
-            444.202,
-            713.1005
+            55.9234,
+            597.782,
+            441.3411,
+            714.5763
           ],
           "parts": [
             [
-              54.6278,
-              597.4583,
-              444.202,
-              713.1005
+              55.9234,
+              597.782,
+              441.3411,
+              714.5763
             ]
           ],
           "headline": "4 1.",
@@ -6596,7 +6273,7 @@
               "rect": [
                 72.5354,
                 658.7849,
-                443.4372,
+                441.3411,
                 683.1848
               ],
               "text": "2.  If you try AFF, accelerated free fall, you experience the slowest/fastest free fall."
@@ -6634,7 +6311,7 @@
               "partIndex": 0,
               "rect": [
                 72.5354,
-                597.4583,
+                597.782,
                 423.1252,
                 616.0249
               ],
@@ -6647,40 +6324,101 @@
           "label": "5",
           "column": 0,
           "rect": [
-            30.7686,
-            378.4352,
-            501.8528,
-            589.9597
+            31.5244,
+            378.5431,
+            500.9598,
+            591.74
           ],
           "parts": [
             [
-              30.7686,
-              378.4352,
-              501.8528,
-              589.9597
+              31.5244,
+              378.5431,
+              500.9598,
+              591.74
             ]
           ],
-          "headline": "✓ 5 8.1"
+          "headline": "Listen to the podcast about two extreme sports and tick ( ✓ ) the words you hear."
         },
         {
           "id": "p72-6",
           "label": "6",
           "column": 0,
           "rect": [
-            29.743,
-            193.2906,
-            462.1287,
-            370.0196
+            31.8482,
+            193.0208,
+            461.3677,
+            371.1524
           ],
           "parts": [
             [
-              29.743,
-              193.2906,
-              462.1287,
-              370.0196
+              31.8482,
+              193.0208,
+              461.3677,
+              371.1524
             ]
           ],
           "headline": "Listen to the podcast again and write true (T), false (F) or not stated (NS)."
+        },
+        {
+          "id": "p72-7",
+          "label": "7",
+          "column": 0,
+          "rect": [
+            31.8482,
+            50.9795,
+            520.152,
+            183.2026
+          ],
+          "parts": [
+            [
+              31.8482,
+              50.9795,
+              520.152,
+              183.2026
+            ]
+          ],
+          "headline": "Listen again and answer the questions with one word.",
+          "items": [
+            {
+              "id": "p72-7-1",
+              "label": "1",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                72.6018,
+                139.3069,
+                280.1054,
+                163.7069
+              ],
+              "text": "_______________  1.  What is a brain bucket?"
+            },
+            {
+              "id": "p72-7-2",
+              "label": "2",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                72.6054,
+                120.5161,
+                332.3596,
+                144.9178
+              ],
+              "text": "_______________ 2.  How does Lisa feel with each jump? "
+            },
+            {
+              "id": "p72-7-3",
+              "label": "3",
+              "number": 3,
+              "partIndex": 0,
+              "rect": [
+                56.2818,
+                50.9795,
+                520.152,
+                126.1261
+              ],
+              "text": "_______________ 3.  What kind of sport is skydiving? 8 Work in pairs. Answer the questions. Then, report your partner’s statements to the class.  Why do you think people are interested in extreme spor"
+            }
+          ]
         }
       ]
     },
@@ -6699,71 +6437,39 @@
           "label": "1",
           "column": 0,
           "rect": [
-            43.7778,
-            409.0769,
-            496.8326,
-            709.6672
+            42.4283,
+            407.7282,
+            497.9122,
+            712.3106
           ],
           "parts": [
             [
-              43.7778,
-              409.0769,
-              496.8326,
-              709.6672
+              42.4283,
+              407.7282,
+              497.9122,
+              712.3106
             ]
           ],
-          "headline": "1 your ideas with the class reporting what they say."
+          "headline": "Read what Ivan, May and Dave say about extreme sports. Who do you agree with? Share your ideas with the class reporting what they say."
         },
         {
           "id": "p73-v2",
           "label": null,
           "column": 0,
           "rect": [
-            11.5517,
-            44.0,
-            552.1622,
-            347.528
+            10.0943,
+            53.2453,
+            552.3241,
+            345.4739
           ],
           "parts": [
             [
-              11.5517,
-              44.0,
-              552.1622,
-              347.528
+              10.0943,
+              53.2453,
+              552.3241,
+              345.4739
             ]
           ]
-        }
-      ]
-    },
-    "74": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          40.3709,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p74-3",
-          "label": "3",
-          "column": 0,
-          "rect": [
-            55.2756,
-            568.6509,
-            497.4804,
-            711.5553
-          ],
-          "parts": [
-            [
-              55.2756,
-              568.6509,
-              497.4804,
-              711.5553
-            ]
-          ],
-          "headline": "3  1."
         }
       ]
     },
@@ -6778,21 +6484,41 @@
       ],
       "activities": [
         {
+          "id": "p75-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            42.6982,
+            685.661,
+            481.2864,
+            712.6343
+          ],
+          "parts": [
+            [
+              42.6982,
+              685.661,
+              481.2864,
+              712.6343
+            ]
+          ],
+          "headline": "1"
+        },
+        {
           "id": "p75-2",
           "label": "2",
           "column": 0,
           "rect": [
-            42.3204,
-            524.7383,
-            479.505,
-            676.9756
+            44.0477,
+            525.4396,
+            480.5573,
+            676.0585
           ],
           "parts": [
             [
-              42.3204,
-              524.7383,
-              479.505,
-              676.9756
+              44.0477,
+              525.4396,
+              480.5573,
+              676.0585
             ]
           ],
           "headline": "2 swimmer Karan Beydemir and complete the missing parts with the questions below. One is extra.",
@@ -6869,33 +6595,13 @@
               "partIndex": 0,
               "rect": [
                 58.3622,
-                524.7383,
+                525.4396,
                 390.6631,
                 543.1795
               ],
               "text": "f) What drives you to get up in the morning and go to training every day?"
             }
           ]
-        },
-        {
-          "id": "p75-3",
-          "label": "3",
-          "column": 0,
-          "rect": [
-            43.1301,
-            53.7847,
-            351.0864,
-            152.6688
-          ],
-          "parts": [
-            [
-              43.1301,
-              53.7847,
-              351.0864,
-              152.6688
-            ]
-          ],
-          "headline": "Work in pairs. Prepare a similar dialogue as in exercise 2."
         }
       ]
     },
@@ -6915,39 +6621,39 @@
           "column": 0,
           "rect": [
             42.6443,
-            454.0144,
-            519.9361,
-            712.63
+            454.7696,
+            520.0441,
+            709.1817
           ],
           "parts": [
             [
               42.6443,
-              454.0144,
-              519.9361,
-              712.63
+              454.7696,
+              520.0441,
+              709.1817
             ]
           ],
-          "headline": "Read Alisha’s interview report about Karan Beydemir on her blog. Complete the missing parts with the words given below. One is extra."
+          "headline": "1 missing parts with the words given below. One is extra."
         },
         {
           "id": "p76-2",
           "label": "2",
           "column": 0,
           "rect": [
-            42.5363,
-            265.0935,
-            519.9361,
-            439.1791
+            41.6726,
+            266.9816,
+            520.6378,
+            439.5028
           ],
           "parts": [
             [
-              42.5363,
-              265.0935,
-              519.9361,
-              439.1791
+              41.6726,
+              266.9816,
+              520.6378,
+              439.5028
             ]
           ],
-          "headline": "2 sportsperson in exercise 3 on page 74 and prepare your report."
+          "headline": "Write a report as in exercise 1. Use your interview notes that you have made with a sportsperson in exercise 3 on page 74 and prepare your report."
         }
       ]
     },
@@ -6966,17 +6672,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            43.238,
-            165.3463,
-            495.861,
-            196.5813
+            43.346,
+            165.1305,
+            496.5087,
+            197.876
           ],
           "parts": [
             [
-              43.238,
-              165.3463,
-              495.861,
-              196.5813
+              43.346,
+              165.1305,
+              496.5087,
+              197.876
             ]
           ],
           "headline": "What is the message Mr Bright wants to give? Write and share your ideas with the class."
@@ -6986,20 +6692,20 @@
           "label": "4",
           "column": 0,
           "rect": [
-            43.8318,
-            79.3554,
-            495.9689,
-            154.8806
+            42.5903,
+            78.0607,
+            496.9946,
+            155.4201
           ],
           "parts": [
             [
-              43.8318,
-              79.3554,
-              495.9689,
-              154.8806
+              42.5903,
+              78.0607,
+              496.9946,
+              155.4201
             ]
           ],
-          "headline": "4 her/him. _________________________________________________________________________________________________"
+          "headline": "Write two questions you want to ask your PE teacher. Then, make a mini interview with her/him."
         }
       ]
     },
@@ -7026,20 +6732,20 @@
           "label": "1",
           "column": 0,
           "rect": [
-            55.4375,
-            486.8139,
-            512.5948,
-            570.4311
+            54.5739,
+            450.0763,
+            512.5408,
+            570.9166
           ],
           "parts": [
             [
-              55.4375,
-              486.8139,
-              512.5948,
-              570.4311
+              54.5739,
+              450.0763,
+              512.5408,
+              570.9166
             ]
           ],
-          "headline": "1 A sweet friendship refreshes the soul."
+          "headline": "Read the proverbs about friendship. Which one do you like most? Give your reasons."
         }
       ]
     },
@@ -7058,60 +6764,21 @@
       ],
       "activities": [
         {
-          "id": "p79-1",
-          "label": "1",
-          "column": 0,
-          "rect": [
-            43.454,
-            681.3992,
-            476.806,
-            709.1277
-          ],
-          "parts": [
-            [
-              43.454,
-              681.3992,
-              476.806,
-              709.1277
-            ]
-          ],
-          "headline": "1"
-        },
-        {
-          "id": "p79-v2",
-          "label": null,
-          "column": 0,
-          "rect": [
-            61.6992,
-            520.8542,
-            390.0061,
-            562.0694
-          ],
-          "parts": [
-            [
-              61.6992,
-              520.8542,
-              390.0061,
-              562.0694
-            ]
-          ]
-        },
-        {
           "id": "p79-3",
           "label": "3",
           "column": 0,
           "rect": [
-            41.9965,
-            54.1084,
-            502.2306,
-            422.7254
+            41.9425,
+            54.1624,
+            499.3697,
+            422.5635
           ],
           "parts": [
             [
-              41.9965,
-              54.1084,
-              502.2306,
-              422.7254
+              41.9425,
+              54.1624,
+              499.3697,
+              422.5635
             ]
           ],
           "headline": "3 a) Scavenger hunt"
@@ -7133,17 +6800,17 @@
           "label": "4",
           "column": 0,
           "rect": [
-            31.9562,
-            480.5021,
-            511.6232,
-            707.1317
+            30.8226,
+            479.0995,
+            511.5692,
+            708.2646
           ],
           "parts": [
             [
-              31.9562,
-              480.5021,
-              511.6232,
-              707.1317
+              30.8226,
+              479.0995,
+              511.5692,
+              708.2646
             ]
           ],
           "headline": "4 9.1 school fundraising events. Write their favourite events under the photos."
@@ -7153,20 +6820,40 @@
           "label": "5",
           "column": 0,
           "rect": [
-            32.388,
-            209.0969,
-            511.3533,
-            462.9156
+            31.4704,
+            209.4206,
+            512.8107,
+            463.509
           ],
           "parts": [
             [
-              32.388,
-              209.0969,
-              511.3533,
-              462.9156
+              31.4704,
+              209.4206,
+              512.8107,
+              463.509
             ]
           ],
           "headline": "5 9.2"
+        },
+        {
+          "id": "p80-6",
+          "label": "6",
+          "column": 0,
+          "rect": [
+            28.7817,
+            50.978,
+            511.2453,
+            199.1708
+          ],
+          "parts": [
+            [
+              28.7817,
+              50.978,
+              511.2453,
+              199.1708
+            ]
+          ],
+          "headline": "Work in pairs. Choose an event you would like to attend from exercise 5 and describe it without giving its name. Try to find each other’s favourite event."
         }
       ]
     },
@@ -7189,57 +6876,37 @@
           "label": "1",
           "column": 0,
           "rect": [
-            40.9709,
+            39.8913,
             543.9742,
             489.6684,
-            709.0738
+            709.829
           ],
           "parts": [
             [
-              40.9709,
+              39.8913,
               543.9742,
               489.6684,
-              709.0738
+              709.829
             ]
           ],
-          "headline": "1 additional information about him, fill in the K column in exercise 6."
-        },
-        {
-          "id": "p81-2",
-          "label": "2",
-          "column": 0,
-          "rect": [
-            41.9965,
-            510.5504,
-            492.2983,
-            539.6276
-          ],
-          "parts": [
-            [
-              41.9965,
-              510.5504,
-              492.2983,
-              539.6276
-            ]
-          ],
-          "headline": "2 him in the W column in exercise 6."
+          "headline": "Read the facts about Alper Gezeravcı and tick the ones you know. If you have additional information about him, fill in the K column in exercise 6."
         },
         {
           "id": "p81-3",
           "label": "3",
           "column": 0,
           "rect": [
-            41.4027,
+            43.0761,
             415.282,
             522.0222,
-            503.1597
+            503.3215
           ],
           "parts": [
             [
-              41.4027,
+              43.0761,
               415.282,
               522.0222,
-              503.1597
+              503.3215
             ]
           ],
           "headline": "3 b)"
@@ -7249,17 +6916,17 @@
           "label": "4",
           "column": 0,
           "rect": [
-            41.4567,
-            298.918,
-            507.8985,
-            401.0928
+            41.8885,
+            298.7022,
+            494.4575,
+            401.4704
           ],
           "parts": [
             [
-              41.4567,
-              298.918,
-              507.8985,
-              401.0928
+              41.8885,
+              298.7022,
+              494.4575,
+              401.4704
             ]
           ],
           "headline": "Match the highlighted words in the text with their definitions.",
@@ -7272,7 +6939,7 @@
               "rect": [
                 58.3622,
                 359.9184,
-                495.3622,
+                494.4575,
                 384.3184
               ],
               "text": "1. a certain way of looking at something; a point of view ______________"
@@ -7285,7 +6952,7 @@
               "rect": [
                 58.3622,
                 343.6684,
-                495.3622,
+                494.4575,
                 368.0684
               ],
               "text": "2. a high-IQ person who plans and achieves complex tasks ______________"
@@ -7298,7 +6965,7 @@
               "rect": [
                 58.3622,
                 327.4184,
-                495.3622,
+                494.4575,
                 351.8184
               ],
               "text": "3. a person who starts something with the help of another person ______________"
@@ -7311,7 +6978,7 @@
               "rect": [
                 58.3622,
                 311.1684,
-                495.3622,
+                494.4575,
                 335.5684
               ],
               "text": "4. highly important and worthy of attention; remarkable ______________"
@@ -7323,8 +6990,8 @@
               "partIndex": 0,
               "rect": [
                 58.3622,
-                298.918,
-                495.3622,
+                298.7022,
+                494.4575,
                 319.3184
               ],
               "text": "5. to send a spacecraft into space ______________"
@@ -7356,17 +7023,17 @@
           "label": "5",
           "column": 0,
           "rect": [
-            54.5199,
-            530.4027,
-            478.6953,
-            709.7751
+            54.7358,
+            530.7804,
+            483.7105,
+            709.5593
           ],
           "parts": [
             [
-              54.5199,
-              530.4027,
-              478.6953,
-              709.7751
+              54.7358,
+              530.7804,
+              483.7105,
+              709.5593
             ]
           ],
           "headline": "a) Tick ( ✓ ) the qualities that have helped Alper Gezeravcı to be successful.",
@@ -7417,7 +7084,7 @@
               "partIndex": 0,
               "rect": [
                 103.4887,
-                530.4027,
+                530.7804,
                 442.6366,
                 552.0231
               ],
@@ -7430,20 +7097,40 @@
           "label": "6",
           "column": 0,
           "rect": [
-            56.5171,
-            331.4478,
-            487.1162,
-            525.3318
+            55.9234,
+            332.203,
+            488.1958,
+            525.4936
           ],
           "parts": [
             [
-              56.5171,
-              331.4478,
-              487.1162,
-              525.3318
+              55.9234,
+              332.203,
+              488.1958,
+              525.4936
             ]
           ],
           "headline": "Fill in the L column below with the information you’ve learned from the article."
+        },
+        {
+          "id": "p82-7",
+          "label": "7",
+          "column": 0,
+          "rect": [
+            54.4119,
+            30.5877,
+            540.7724,
+            318.123
+          ],
+          "parts": [
+            [
+              54.4119,
+              30.5877,
+              540.7724,
+              318.123
+            ]
+          ],
+          "headline": "7 using the template in the appendix on page 100."
         }
       ]
     },
@@ -7470,37 +7157,37 @@
           "label": "2",
           "column": 0,
           "rect": [
-            42.9142,
-            338.299,
-            491.5426,
-            675.3572
+            41.6726,
+            339.1082,
+            491.8665,
+            675.7348
           ],
           "parts": [
             [
-              42.9142,
-              338.299,
-              491.5426,
-              675.3572
+              41.6726,
+              339.1082,
+              491.8665,
+              675.7348
             ]
           ],
-          "headline": "2"
+          "headline": "a) Make guesses about your partner and write them in the table."
         },
         {
           "id": "p83-v2",
           "label": null,
           "column": 1,
           "rect": [
-            60.1338,
-            244.228,
-            493.9717,
-            329.9373
+            60.8355,
+            244.8096,
+            493.6478,
+            330.2609
           ],
           "parts": [
             [
-              60.1338,
-              244.228,
-              493.9717,
-              329.9373
+              60.8355,
+              244.8096,
+              493.6478,
+              330.2609
             ]
           ]
         }
@@ -7525,40 +7212,127 @@
           "label": "1",
           "column": 0,
           "rect": [
-            55.4375,
-            636.2999,
-            435.5113,
+            57.5967,
+            636.4078,
+            437.0227,
             708.6422
           ],
           "parts": [
             [
-              55.4375,
-              636.2999,
-              435.5113,
+              57.5967,
+              636.4078,
+              437.0227,
               708.6422
             ]
           ],
           "headline": "1 What do you like the most about your hometown? "
         },
         {
+          "id": "p84-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            55.1676,
+            102.7143,
+            514.1062,
+            625.025
+          ],
+          "parts": [
+            [
+              55.1676,
+              102.7143,
+              514.1062,
+              625.025
+            ]
+          ],
+          "headline": "2",
+          "items": [
+            {
+              "id": "p84-2-1",
+              "label": "1",
+              "number": 1,
+              "partIndex": 0,
+              "rect": [
+                72.5354,
+                169.4755,
+                400.3853,
+                193.8755
+              ],
+              "text": "1.  Its location makes İzmir an important trade port in the Mediterranean."
+            },
+            {
+              "id": "p84-2-2",
+              "label": "2",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                72.5354,
+                151.5155,
+                287.0203,
+                175.9155
+              ],
+              "text": "2.  The Gulf of Kuşadası is in the west of İzmir."
+            },
+            {
+              "id": "p84-2-3",
+              "label": "3",
+              "number": 3,
+              "partIndex": 0,
+              "rect": [
+                72.5354,
+                133.5555,
+                324.2813,
+                157.9556
+              ],
+              "text": "3.  İzmir is the second largest Aegean city after Athens."
+            },
+            {
+              "id": "p84-2-4",
+              "label": "4",
+              "number": 4,
+              "partIndex": 0,
+              "rect": [
+                72.5354,
+                115.5955,
+                342.4363,
+                139.9955
+              ],
+              "text": "4.  One of the world’s three quarantine islands is in Çeşme."
+            },
+            {
+              "id": "p84-2-5",
+              "label": "5",
+              "number": 5,
+              "partIndex": 0,
+              "rect": [
+                72.5354,
+                102.7143,
+                338.6893,
+                122.0355
+              ],
+              "text": "5.  The residents of İzmir prefer veggies over meat dishes."
+            }
+          ]
+        },
+        {
           "id": "p84-3",
           "label": "3",
           "column": 0,
           "rect": [
-            57.4348,
-            52.4361,
-            485.1729,
-            82.4304
+            56.841,
+            52.1124,
+            484.2553,
+            83.3475
           ],
           "parts": [
             [
-              57.4348,
-              52.4361,
-              485.1729,
-              82.4304
+              56.841,
+              52.1124,
+              484.2553,
+              83.3475
             ]
           ],
-          "headline": "3 using the spider map in the appendix on page 101."
+          "headline": "Now it’s your turn. In your notebook, write a booklet to describe your hometown using the spider map in the appendix on page 101."
         }
       ]
     },
@@ -7577,60 +7351,20 @@
           "label": "1",
           "column": 0,
           "rect": [
-            41.7266,
-            644.1761,
-            492.5142,
-            680.1045
+            41.2408,
+            644.5537,
+            492.7301,
+            679.7808
           ],
           "parts": [
             [
-              41.7266,
-              644.1761,
-              492.5142,
-              680.1045
+              41.2408,
+              644.5537,
+              492.7301,
+              679.7808
             ]
           ],
-          "headline": "Do you agree with the statement below? Share your opinions with the class."
-        },
-        {
-          "id": "p85-3",
-          "label": "3",
-          "column": 0,
-          "rect": [
-            43.9398,
-            100.5025,
-            494.2416,
-            129.7955
-          ],
-          "parts": [
-            [
-              43.9398,
-              100.5025,
-              494.2416,
-              129.7955
-            ]
-          ],
-          "headline": "3 exercise 1. Have you changed your mind?"
-        },
-        {
-          "id": "p85-4",
-          "label": "4",
-          "column": 0,
-          "rect": [
-            44.8574,
-            30.8574,
-            497.1565,
-            96.2946
-          ],
-          "parts": [
-            [
-              44.8574,
-              30.8574,
-              497.1565,
-              96.2946
-            ]
-          ],
-          "headline": "Write your own cinquain poem following the guidelines in the appendix on page 102."
+          "headline": "1 Not everyone can write poems; it requires a certain level of education, knowledge and skill."
         }
       ]
     },
@@ -7657,17 +7391,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            56.3552,
-            409.2927,
-            524.3085,
-            565.7377
+            55.9234,
+            410.8571,
+            522.797,
+            565.2522
           ],
           "parts": [
             [
-              56.3552,
-              409.2927,
-              524.3085,
-              565.7377
+              55.9234,
+              410.8571,
+              522.797,
+              565.2522
             ]
           ],
           "headline": "Read the quote. If you define your character, which two values come first? Fill in the blanks."
@@ -7677,20 +7411,20 @@
           "label": "2",
           "column": 0,
           "rect": [
-            55.9773,
-            310.031,
-            483.1757,
-            397.2626
+            56.0853,
+            310.1928,
+            481.0704,
+            398.2876
           ],
           "parts": [
             [
-              55.9773,
-              310.031,
-              483.1757,
-              397.2626
+              56.0853,
+              310.1928,
+              481.0704,
+              398.2876
             ]
           ],
-          "headline": "2 1.",
+          "headline": "What do the following phrases mean? Choose a or b.",
           "items": [
             {
               "id": "p86-2-1",
@@ -7738,7 +7472,7 @@
               "partIndex": 0,
               "rect": [
                 86.764,
-                310.031,
+                310.1928,
                 207.774,
                 330.7192
               ],
@@ -7751,91 +7485,20 @@
           "label": "3",
           "column": 0,
           "rect": [
-            57.0569,
-            79.8409,
+            56.0313,
+            51.8796,
             516.0495,
-            301.7771
+            301.4535
           ],
           "parts": [
             [
-              57.0569,
-              79.8409,
+              56.0313,
+              51.8796,
               516.0495,
-              301.7771
+              301.4535
             ]
           ],
           "headline": "a) Complete the bubbles with the values given below. One bubble is extra."
-        }
-      ]
-    },
-    "87": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          40.2619,
-          398.4907
-        ],
-        [
-          402.4907,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p87-1",
-          "label": "1",
-          "column": 0,
-          "rect": [
-            41.4027,
-            657.3587,
-            496.4008,
-            709.6672
-          ],
-          "parts": [
-            [
-              41.4027,
-              657.3587,
-              496.4008,
-              709.6672
-            ]
-          ],
-          "headline": "1 best way to be a human being of value? Share your ideas with the class."
-        },
-        {
-          "id": "p87-2",
-          "label": "2",
-          "column": 0,
-          "rect": [
-            42.2124,
-            488.6481,
-            497.9122,
-            633.171
-          ],
-          "parts": [
-            [
-              42.2124,
-              488.6481,
-              497.9122,
-              633.171
-            ]
-          ],
-          "headline": "Match the bold words with their synonyms below. One is extra.",
-          "items": [
-            {
-              "id": "p87-2-d",
-              "label": "d",
-              "number": 4,
-              "partIndex": 0,
-              "rect": [
-                89.407,
-                488.6481,
-                465.7307,
-                513.0355
-              ],
-              "text": "a)   rules b)  morality c)  tradition d)  principles e)  diversity"
-            }
-          ]
         }
       ]
     },
@@ -7854,39 +7517,60 @@
           "label": "5",
           "column": 0,
           "rect": [
-            30.2828,
+            29.689,
             624.432,
-            512.9727,
-            709.2896
+            512.7567,
+            710.6382
           ],
           "parts": [
             [
-              30.2828,
+              29.689,
               624.432,
-              512.9727,
-              709.2896
+              512.7567,
+              710.6382
             ]
           ],
-          "headline": "5 10.1 Find out what they are talking about."
+          "headline": "Listen to the talk show between the host and the humanoid robots, Sonia and lan."
         },
         {
-          "id": "p88-v2",
-          "label": null,
+          "id": "p88-6",
+          "label": "6",
           "column": 0,
           "rect": [
-            74.2226,
-            80.3804,
-            495.915,
-            317.9072
+            31.3084,
+            530.9422,
+            453.0548,
+            609.5424
           ],
           "parts": [
             [
-              74.2226,
-              80.3804,
-              495.915,
-              317.9072
+              31.3084,
+              530.9422,
+              453.0548,
+              609.5424
             ]
-          ]
+          ],
+          "headline": "6 10.2"
+        },
+        {
+          "id": "p88-8",
+          "label": "8",
+          "column": 0,
+          "rect": [
+            55.7074,
+            329.9373,
+            466.7657,
+            385.1785
+          ],
+          "parts": [
+            [
+              55.7074,
+              329.9373,
+              466.7657,
+              385.1785
+            ]
+          ],
+          "headline": "8 countries you heard in exercise 5 with your country as in the example."
         }
       ]
     },
@@ -7905,60 +7589,60 @@
           "label": "1",
           "column": 0,
           "rect": [
-            41.2948,
-            523.3897,
-            520.26,
-            710.2067
+            39.9453,
+            523.2278,
+            522.3652,
+            711.7711
           ],
           "parts": [
             [
-              41.2948,
-              523.3897,
-              520.26,
-              710.2067
+              39.9453,
+              523.2278,
+              522.3652,
+              711.7711
             ]
           ],
-          "headline": "1 and proverbs in your own language? Share your ideas with the other pairs."
+          "headline": "Work in pairs. Read the proverbs from different cultures. Do you have similar sayings and proverbs in your own language? Share your ideas with the other pairs."
         },
         {
           "id": "p89-2",
           "label": "2",
           "column": 0,
           "rect": [
-            41.6186,
-            483.3613,
-            478.8828,
-            513.3556
+            41.9425,
+            483.685,
+            479.2891,
+            513.5175
           ],
           "parts": [
             [
-              41.6186,
-              483.3613,
-              478.8828,
-              513.3556
+              41.9425,
+              483.685,
+              479.2891,
+              513.5175
             ]
           ],
-          "headline": "2 what would you put in it? Share your ideas with the class."
+          "headline": "If you could choose three aspects of your culture to put in a time box for the future, what would you put in it? Share your ideas with the class."
         },
         {
           "id": "p89-3",
           "label": "3",
           "column": 0,
           "rect": [
-            42.2124,
-            377.5181,
-            439.1819,
-            474.3522
+            43.0221,
+            373.7292,
+            437.8324,
+            474.1904
           ],
           "parts": [
             [
-              42.2124,
-              377.5181,
-              439.1819,
-              474.3522
+              43.0221,
+              373.7292,
+              437.8324,
+              474.1904
             ]
           ],
-          "headline": "Read the page from a school e-magazine and choose a catchy title for the page."
+          "headline": "3 A. APPRECIATE THE SIMILARITIES, RESPECT THE DIFFERENCES"
         }
       ]
     },
@@ -7977,37 +7661,37 @@
           "label": "4",
           "column": 0,
           "rect": [
-            55.9773,
-            676.3282,
-            494.4035,
-            709.3975
+            55.3296,
+            679.2953,
+            492.6762,
+            709.9369
           ],
           "parts": [
             [
-              55.9773,
-              676.3282,
-              494.4035,
-              709.3975
+              55.3296,
+              679.2953,
+              492.6762,
+              709.9369
             ]
           ],
-          "headline": "4 experiences in your notebooks."
+          "headline": "Work in pairs. Scan the e-magazine and summarise Matthew and Hanna’s culture shock experiences in your notebooks."
         },
         {
           "id": "p90-5",
           "label": "5",
           "column": 0,
           "rect": [
-            56.1933,
-            598.2136,
-            504.6058,
-            669.4231
+            55.5995,
+            598.4294,
+            503.6881,
+            669.9086
           ],
           "parts": [
             [
-              56.1933,
-              598.2136,
-              504.6058,
-              669.4231
+              55.5995,
+              598.4294,
+              503.6881,
+              669.9086
             ]
           ],
           "headline": "5 a)"
@@ -8017,20 +7701,20 @@
           "label": "6",
           "column": 0,
           "rect": [
-            55.4915,
-            360.3631,
-            498.8839,
-            493.827
+            56.5171,
+            360.1473,
+            498.452,
+            494.6901
           ],
           "parts": [
             [
-              55.4915,
-              360.3631,
-              498.8839,
-              493.827
+              56.5171,
+              360.1473,
+              498.452,
+              494.6901
             ]
           ],
-          "headline": "6 about why experiencing culture shock is good for young adults. Follow the steps below:"
+          "headline": "Search for some culture shock stories from travellers around the world and write an essay about why experiencing culture shock is good for young adults. Follow "
         }
       ]
     },
@@ -8057,17 +7741,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            41.9965,
-            587.3164,
-            497.2645,
-            709.2356
+            42.1584,
+            551.3879,
+            498.7219,
+            709.829
           ],
           "parts": [
             [
-              41.9965,
-              587.3164,
-              497.2645,
-              709.2356
+              42.1584,
+              551.3879,
+              498.7219,
+              709.829
             ]
           ],
           "headline": "1 a)",
@@ -8132,7 +7816,7 @@
               "rect": [
                 85.5354,
                 601.2811,
-                497.2645,
+                498.7219,
                 628.3543
               ],
               "text": "e)  but everyone can help someone. 5.  Gratitude is richness whereas"
@@ -8143,51 +7827,13 @@
               "number": 6,
               "partIndex": 0,
               "rect": [
-                85.5354,
-                587.3164,
-                469.2495,
+                58.3579,
+                551.3879,
+                473.5372,
                 611.3543
               ],
-              "text": "f)  what you cannot by force. 6.  Pursue what catches your heart,"
+              "text": "f)  what you cannot by force. 6.  Pursue what catches your heart, b) Work in pairs. Prepare a similar dialogue with the quotes above. Use the given expressions in the table as in the example. Then, ac"
             }
-          ]
-        },
-        {
-          "id": "p91-v2",
-          "label": null,
-          "column": 1,
-          "rect": [
-            48.5281,
-            170.9812,
-            494.6734,
-            257.8107
-          ],
-          "parts": [
-            [
-              48.5281,
-              170.9812,
-              494.6734,
-              257.8107
-            ]
-          ]
-        },
-        {
-          "id": "p91-v3",
-          "label": null,
-          "column": 1,
-          "rect": [
-            50.2555,
-            53.1374,
-            495.1592,
-            170.4812
-          ],
-          "parts": [
-            [
-              50.2555,
-              53.1374,
-              495.1592,
-              170.4812
-            ]
           ]
         }
       ]
@@ -8211,20 +7857,20 @@
           "label": "2",
           "column": 0,
           "rect": [
-            56.3012,
-            65.8688,
-            512.7028,
-            238.0662
+            56.6251,
+            65.0596,
+            512.2709,
+            239.4149
           ],
           "parts": [
             [
-              56.3012,
-              65.8688,
-              512.7028,
-              238.0662
+              56.6251,
+              65.0596,
+              512.2709,
+              239.4149
             ]
           ],
-          "headline": "2 gratitude, compassion, respect, etc.) in the spaces provided, following the steps with your partner."
+          "headline": "Write at least three slogans on moral and social values (kindness, honesty, love, justice, gratitude, compassion, respect, etc.) in the spaces provided, followi"
         }
       ]
     },
@@ -8243,17 +7889,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            41.9965,
-            500.3545,
-            477.4538,
-            685.2294
+            44.3176,
+            500.4084,
+            477.1299,
+            684.636
           ],
           "parts": [
             [
-              41.9965,
-              500.3545,
-              477.4538,
-              685.2294
+              44.3176,
+              500.4084,
+              477.1299,
+              684.636
             ]
           ],
           "headline": "1 1.",
@@ -8317,7 +7963,7 @@
               "partIndex": 0,
               "rect": [
                 72.5354,
-                500.3545,
+                500.4084,
                 422.2723,
                 599.1648
               ],
@@ -8342,17 +7988,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            56.949,
-            453.0973,
-            516.4814,
-            650.1102
+            55.9234,
+            461.8366,
+            517.0752,
+            650.326
           ],
           "parts": [
             [
-              56.949,
-              453.0973,
-              516.4814,
-              650.1102
+              55.9234,
+              461.8366,
+              517.0752,
+              650.326
             ]
           ],
           "headline": "2",
@@ -8441,17 +8087,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            63.4806,
-            176.5132,
-            505.1456,
-            303.1798
+            63.5885,
+            526.5725,
+            510.4558,
+            650.8115
           ],
           "parts": [
             [
-              63.4806,
-              176.5132,
-              505.1456,
-              303.1798
+              63.5885,
+              526.5725,
+              510.4558,
+              650.8115
             ]
           ]
         },
@@ -8460,17 +8106,55 @@
           "label": null,
           "column": 0,
           "rect": [
-            64.3982,
-            54.486,
-            504.8217,
-            162.4331
+            65.4778,
+            316.1269,
+            505.4694,
+            514.5964
           ],
           "parts": [
             [
-              64.3982,
-              54.486,
-              504.8217,
-              162.4331
+              65.4778,
+              316.1269,
+              505.4694,
+              514.5964
+            ]
+          ]
+        },
+        {
+          "id": "p96-v3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            62.8868,
+            175.9198,
+            504.8757,
+            303.8271
+          ],
+          "parts": [
+            [
+              62.8868,
+              175.9198,
+              504.8757,
+              303.8271
+            ]
+          ]
+        },
+        {
+          "id": "p96-v4",
+          "label": null,
+          "column": 0,
+          "rect": [
+            63.5345,
+            53.0834,
+            505.6314,
+            163.5121
+          ],
+          "parts": [
+            [
+              63.5345,
+              53.0834,
+              505.6314,
+              163.5121
             ]
           ]
         }
@@ -8491,20 +8175,20 @@
           "label": "1",
           "column": 0,
           "rect": [
-            55.2756,
-            415.2807,
-            511.4612,
-            675.4111
+            56.0313,
+            413.9321,
+            511.947,
+            676.544
           ],
           "parts": [
             [
-              55.2756,
-              415.2807,
-              511.4612,
-              675.4111
+              56.0313,
+              413.9321,
+              511.947,
+              676.544
             ]
           ],
-          "headline": "words. One is extra.",
+          "headline": "Look at the short presentation about Aphrodisias and fill in the blanks with the given words. One is extra.",
           "items": [
             {
               "id": "p98-1-e",
@@ -8522,41 +8206,21 @@
           ]
         },
         {
-          "id": "p98-2",
-          "label": "2",
-          "column": 0,
-          "rect": [
-            55.5455,
-            99.0999,
-            413.5414,
-            407.0269
-          ],
-          "parts": [
-            [
-              55.5455,
-              99.0999,
-              413.5414,
-              407.0269
-            ]
-          ],
-          "headline": "Look up information about the monument you’ve chosen on the Internet. "
-        },
-        {
-          "id": "p98-v3",
+          "id": "p98-v2",
           "label": null,
           "column": 0,
           "rect": [
-            73.5748,
-            45.8006,
-            496.8866,
-            74.3384
+            76.8136,
+            44.7217,
+            497.0485,
+            73.0437
           ],
           "parts": [
             [
-              73.5748,
-              45.8006,
-              496.8866,
-              74.3384
+              76.8136,
+              44.7217,
+              497.0485,
+              73.0437
             ]
           ]
         }
@@ -8577,17 +8241,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            55.9773,
-            521.07,
-            303.8044,
-            665.9705
+            56.1933,
+            521.1779,
+            304.2317,
+            665.7547
           ],
           "parts": [
             [
-              55.9773,
-              521.07,
-              303.8044,
-              665.9705
+              56.1933,
+              521.1779,
+              304.2317,
+              665.7547
             ]
           ],
           "headline": "Key to the riddles on page 69",
@@ -8613,7 +8277,7 @@
               "rect": [
                 72.5354,
                 612.8475,
-                303.8044,
+                304.2317,
                 636.8775
               ],
               "text": "2.  Because she keeps running away from the ball."
@@ -8703,47 +8367,12 @@
               "partIndex": 0,
               "rect": [
                 66.8654,
-                521.07,
+                521.1779,
                 215.0874,
                 552.8775
               ],
               "text": "9.  During a basketball match. 10. A skier."
             }
-          ]
-        }
-      ]
-    },
-    "101": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          39.4328,
-          203.4765
-        ],
-        [
-          207.4765,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p101-v1",
-          "label": null,
-          "column": 1,
-          "rect": [
-            41.8346,
-            94.8381,
-            498.614,
-            571.5564
-          ],
-          "parts": [
-            [
-              41.8346,
-              94.8381,
-              498.614,
-              571.5564
-            ]
           ]
         }
       ]
@@ -8763,20 +8392,40 @@
           "label": "1",
           "column": 0,
           "rect": [
-            55.7614,
-            182.1236,
-            483.3916,
-            669.5849
+            57.8666,
+            181.4223,
+            482.366,
+            672.2283
           ],
           "parts": [
             [
-              55.7614,
-              182.1236,
-              483.3916,
-              669.5849
+              57.8666,
+              181.4223,
+              482.366,
+              672.2283
             ]
           ],
-          "headline": "Begin by giving basic details about your hometown in the middle section. "
+          "headline": "Organise the information about your hometown in the spider-map below."
+        },
+        {
+          "id": "p102-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            55.8694,
+            124.0232,
+            510.2737,
+            175.3264
+          ],
+          "parts": [
+            [
+              55.8694,
+              124.0232,
+              510.2737,
+              175.3264
+            ]
+          ],
+          "headline": "Organise your notes into a booklet on paper. Include some pictures of your hometown as well."
         }
       ]
     },
@@ -8795,65 +8444,46 @@
           "label": "1",
           "column": 0,
           "rect": [
-            42.7522,
-            600.9109,
-            349.8989,
-            678.1624
+            41.9965,
+            600.857,
+            348.8193,
+            678.1085
           ],
           "parts": [
             [
-              42.7522,
-              600.9109,
-              349.8989,
-              678.1624
+              41.9965,
+              600.857,
+              348.8193,
+              678.1085
             ]
           ],
           "headline": "Write about what you like best. "
         },
         {
-          "id": "p103-2",
-          "label": "2",
+          "id": "p103-3",
+          "label": "3",
           "column": 0,
           "rect": [
-            41.9425,
-            401.2007,
-            496.0229,
-            598.2136
+            41.5647,
+            65.1675,
+            469.8426,
+            391.7061
           ],
           "parts": [
             [
-              41.9425,
-              401.2007,
-              496.0229,
-              598.2136
+              41.5647,
+              65.1675,
+              469.8426,
+              391.7061
             ]
           ],
-          "headline": "Follow the basic layout:"
-        },
-        {
-          "id": "p103-4",
-          "label": "4",
-          "column": 0,
-          "rect": [
-            40.647,
-            98.1288,
-            468.817,
-            369.4801
-          ],
-          "parts": [
-            [
-              40.647,
-              98.1288,
-              468.817,
-              369.4801
-            ]
-          ]
+          "headline": "Write your own cinquain in the space provided.  4"
         }
       ]
     }
   },
   "engine": "vision",
-  "checkpoint": "eff266a9c0d1bdd5aa147105c10f86309615df68d4899c22d655e692c5670bf9",
+  "checkpoint": "46fcffa0b605e5b3ee7e46f877e50cca8f853620005585e9065ed5d81e5799c8",
   "conf": 0.7,
   "icons": "bind"
 }

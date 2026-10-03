@@ -3,7 +3,7 @@
   "bookId": "79cbecfa-b783-4472-9ba2-3933ffeb9b72",
   "fingerprint": "120046150-956b6c59b1f45f9647b4fdf2886a009b",
   "profile": "c7de24295a4b",
-  "builtAt": "2026-10-03T05:24:19.899Z",
+  "builtAt": "2026-10-03T06:04:51.365Z",
   "pageCount": 213,
   "calibration": {
     "enabled": true,
@@ -256,180 +256,6 @@
   },
   "anchors": {},
   "pages": {
-    "8": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          87.5433,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p8-v1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            92.5433,
-            63.657,
-            505.0916,
-            525.1905
-          ],
-          "parts": [
-            [
-              92.5433,
-              63.657,
-              505.0916,
-              525.1905
-            ]
-          ]
-        }
-      ]
-    },
-    "16": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          50.6929,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p16-v1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            72.4157,
-            115.9312,
-            500.5395,
-            168.3673
-          ],
-          "parts": [
-            [
-              72.4157,
-              115.9312,
-              500.5395,
-              168.3673
-            ]
-          ]
-        },
-        {
-          "id": "p16-v2",
-          "label": null,
-          "column": 0,
-          "rect": [
-            73.7368,
-            63.5491,
-            498.1281,
-            105.4656
-          ],
-          "parts": [
-            [
-              73.7368,
-              63.5491,
-              498.1281,
-              105.4656
-            ]
-          ]
-        }
-      ]
-    },
-    "19": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          36.5094,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p19-v1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            41.9425,
-            52.0584,
-            497.4262,
-            229.3808
-          ],
-          "parts": [
-            [
-              41.9425,
-              52.0584,
-              497.4262,
-              229.3808
-            ]
-          ]
-        }
-      ]
-    },
-    "22": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          50.6927,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p22-v1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            286.6342,
-            411.0729,
-            510.3816,
-            634.0341
-          ],
-          "parts": [
-            [
-              286.6342,
-              411.0729,
-              510.3816,
-              634.0341
-            ]
-          ]
-        }
-      ]
-    },
-    "27": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          36.3519,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p27-v1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            48.4201,
-            139.7756,
-            482.4199,
-            403.1428
-          ],
-          "parts": [
-            [
-              48.4201,
-              139.7756,
-              482.4199,
-              403.1428
-            ]
-          ]
-        }
-      ]
-    },
     "30": {
       "pageWidth": 552.756,
       "pageHeight": 779.528,
@@ -449,17 +275,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            62.5653,
-            360.4171,
-            498.0742,
-            403.7362
+            62.1311,
+            360.5789,
+            498.7759,
+            404.0599
           ],
           "parts": [
             [
-              62.5653,
-              360.4171,
-              498.0742,
-              403.7362
+              62.1311,
+              360.5789,
+              498.7759,
+              404.0599
             ]
           ],
           "headline": "0. zaman aralığında bakteriler hangi azotlu besi yerinde çoğaltılmıştır?"
@@ -469,17 +295,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            62.6169,
-            310.5704,
-            498.398,
-            353.458
+            62.0771,
+            310.6244,
+            497.7503,
+            353.2422
           ],
           "parts": [
             [
-              62.6169,
-              310.5704,
-              498.398,
-              353.458
+              62.0771,
+              310.6244,
+              497.7503,
+              353.2422
             ]
           ],
           "headline": "İkinci nesil bakterilerin % kaçı normal azotlu DNA taşır?"
@@ -489,17 +315,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            61.8612,
-            245.2411,
-            499.1538,
-            303.0179
+            62.293,
+            245.1332,
+            498.7759,
+            302.6942
           ],
           "parts": [
             [
-              61.8612,
-              245.2411,
-              499.1538,
-              303.0179
+              62.293,
+              245.1332,
+              498.7759,
+              302.6942
             ]
           ],
           "headline": "Bakteri kültüründe nesiller boyunca çoğaltılan normal azotlu DNA’nın oranı artarken ağır azot taşıyan DNA oranı azalmaktadır. Bu değişimin nedenini açıklayınız."
@@ -509,17 +335,17 @@
           "label": "4",
           "column": 0,
           "rect": [
-            61.6992,
-            180.0737,
-            504.6058,
-            236.9334
+            61.3214,
+            182.9,
+            505.1456,
+            237.0413
           ],
           "parts": [
             [
-              61.6992,
-              180.0737,
-              504.6058,
-              236.9334
+              61.3214,
+              182.9,
+              505.1456,
+              237.0413
             ]
           ],
           "headline": "Dördüncü nesilde oluşan bakterilerin kaç tanesinde ağır azot taşıyan DNA zincirine rastlanır? Gerekçesi- ni yazınız."
@@ -537,62 +363,59 @@
       ],
       "activities": [
         {
-          "id": "p33-1",
-          "label": "1",
+          "id": "p33-v1",
+          "label": null,
           "column": 0,
           "rect": [
-            49.1758,
-            400.0678,
-            489.1135,
-            588.719
+            58.8383,
+            401.0928,
+            485.011,
+            454.1223
           ],
           "parts": [
             [
-              49.1758,
-              400.0678,
-              489.1135,
-              588.719
+              58.8383,
+              401.0928,
+              485.011,
+              454.1223
             ]
-          ],
-          "headline": "1.  Aşağıdaki deney ve açıklamalardan yararlanarak soruları cevaplayınız. Avery ve arkadaşları, deneylerinde kalıtımda rol oynayan molekülü",
-          "ogeId": "837735e4-06b1-f111-b31a-005056a7d529"
+          ]
         },
         {
-          "id": "p33-2",
-          "label": "2",
+          "id": "p33-v2",
+          "label": null,
           "column": 0,
           "rect": [
-            48.798,
-            220.2639,
-            489.2214,
-            391.8679
+            49.3378,
+            220.4797,
+            489.5993,
+            380.315
           ],
           "parts": [
             [
-              48.798,
-              220.2639,
-              489.2214,
-              391.8679
+              49.3378,
+              220.4797,
+              489.5993,
+              380.315
             ]
-          ],
-          "headline": "DNA ve RNA yapı ve görevleri bakımından birbirinden farklı moleküllerdir."
+          ]
         },
         {
           "id": "p33-3",
           "label": "3",
           "column": 0,
           "rect": [
-            48.9599,
-            143.2282,
-            487.0082,
-            214.3297
+            48.852,
+            143.1203,
+            487.2242,
+            214.0061
           ],
           "parts": [
             [
-              48.9599,
-              143.2282,
-              487.0082,
-              214.3297
+              48.852,
+              143.1203,
+              487.2242,
+              214.0061
             ]
           ],
           "headline": "DNA’ları 15 N’le işaretlenmiş E. coli bakterileri, 14 N içeren besi ortamında üç kez çoğaltılmıştır. Üretilen bakterilerin DNA‘ları ayrıştırıldıktan sonra santr"
@@ -602,17 +425,17 @@
           "label": "4",
           "column": 0,
           "rect": [
-            48.798,
-            66.1385,
-            487.1702,
-            136.7006
+            48.0962,
+            65.3293,
+            486.7923,
+            137.4019
           ],
           "parts": [
             [
-              48.798,
-              66.1385,
-              487.1702,
-              136.7006
+              48.0962,
+              65.3293,
+              486.7923,
+              137.4019
             ]
           ],
           "headline": "DNA replikasyonunda rol oynayan enzimlerden birinin hücrede sentezlenememesi sonucu hücre bö- lünmesi gerçekleşemez."
@@ -634,55 +457,20 @@
           "label": null,
           "column": 0,
           "rect": [
-            55.8154,
-            55.0795,
-            510.2737,
-            331.6096
+            55.7614,
+            57.7228,
+            510.2197,
+            354.2132
           ],
           "parts": [
             [
-              55.8154,
-              55.0795,
-              510.2737,
-              331.6096
+              55.7614,
+              57.7228,
+              510.2197,
+              354.2132
             ]
           ],
           "headline": "BİR FİKRİN VAR MI? Günümüzde biyoteknolojik yolla üretilen bazı organik molekül-"
-        }
-      ]
-    },
-    "37": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          36.5197,
-          260.2589
-        ],
-        [
-          264.2589,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p37-v1",
-          "label": null,
-          "column": 1,
-          "rect": [
-            38.9196,
-            54.5939,
-            496.1849,
-            304.906
-          ],
-          "parts": [
-            [
-              38.9196,
-              54.5939,
-              496.1849,
-              304.906
-            ]
-          ]
         }
       ]
     },
@@ -701,17 +489,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            61.1594,
+            61.5913,
             419.3,
             499.5856,
-            466.2603
+            464.5879
           ],
           "parts": [
             [
-              61.1594,
+              61.5913,
               419.3,
               499.5856,
-              466.2603
+              464.5879
             ]
           ],
           "headline": "Araştırmacılar, tirozin amino asidinin şifresinin çözümünde hangi yapay mRNA şifrelerini kullanmışlardır?"
@@ -721,17 +509,17 @@
           "label": "4",
           "column": 0,
           "rect": [
-            61.4833,
-            62.2004,
-            500.3413,
-            109.2418
+            61.2674,
+            61.3912,
+            500.3953,
+            109.7273
           ],
           "parts": [
             [
-              61.4833,
-              62.2004,
-              500.3413,
-              109.2418
+              61.2674,
+              61.3912,
+              500.3953,
+              109.7273
             ]
           ],
           "headline": "Bir amino asidin birden fazla şifresinin olması canlıya nasıl bir yarar sağlar? Açıklayınız."
@@ -749,21 +537,41 @@
       ],
       "activities": [
         {
+          "id": "p46-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            62.8868,
+            369.588,
+            499.2077,
+            412.0979
+          ],
+          "parts": [
+            [
+              62.8868,
+              369.588,
+              499.2077,
+              412.0979
+            ]
+          ],
+          "headline": "Zebra balıklarının model organizma olarak kullanılmasının nedenleri nelerdir?"
+        },
+        {
           "id": "p46-2",
           "label": "2",
           "column": 0,
           "rect": [
-            62.5089,
-            294.2246,
+            62.9408,
+            294.6562,
             502.7426,
-            362.1973
+            361.2802
           ],
           "parts": [
             [
-              62.5089,
-              294.2246,
+              62.9408,
+              294.6562,
               502.7426,
-              362.1973
+              361.2802
             ]
           ],
           "headline": "Zebra balıklarının özelliklerini göz önünde bulundurduğunuzda hangi araştırmalarda ve hangi hastalık- ların tedavisinde model organizma olarak kullanılabileceği"
@@ -773,17 +581,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            62.8328,
-            242.2741,
-            498.9918,
-            285.5932
+            61.9691,
+            242.2201,
+            499.2617,
+            285.2695
           ],
           "parts": [
             [
-              62.8328,
-              242.2741,
-              498.9918,
-              285.5932
+              61.9691,
+              242.2201,
+              499.2617,
+              285.2695
             ]
           ],
           "headline": "Tüm bilimsel çalışmalarda Zebra balıklarının kullanılmamasının nedenleri neler olabilir?"
@@ -793,17 +601,17 @@
           "label": "4",
           "column": 0,
           "rect": [
-            63.0487,
-            193.0748,
-            498.8299,
-            235.315
+            63.5345,
+            193.1827,
+            499.2077,
+            235.0992
           ],
           "parts": [
             [
-              63.0487,
-              193.0748,
-              498.8299,
-              235.315
+              63.5345,
+              193.1827,
+              499.2077,
+              235.0992
             ]
           ],
           "headline": "\"Modeller asla son sözü söylemez ama yaklaşık bir fikir verir.\" sözünü açıklayınız."
@@ -813,92 +621,20 @@
           "label": "5",
           "column": 0,
           "rect": [
-            62.8868,
-            142.1492,
-            498.6679,
-            184.4973
+            62.1311,
+            142.0413,
+            498.7219,
+            184.9828
           ],
           "parts": [
             [
-              62.8868,
-              142.1492,
-              498.6679,
-              184.4973
+              62.1311,
+              142.0413,
+              498.7219,
+              184.9828
             ]
           ],
           "headline": "Canlıların genomlarının çözümlenmesinin sağlayacağı faydalar neler olabilir? Düşüncelerinizi açıklayınız."
-        }
-      ]
-    },
-    "48": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          56.3622,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p48-1",
-          "label": "1",
-          "column": 0,
-          "rect": [
-            62.8868,
-            223.8783,
-            498.9378,
-            267.3053
-          ],
-          "parts": [
-            [
-              62.8868,
-              223.8783,
-              498.9378,
-              267.3053
-            ]
-          ],
-          "headline": "Kaç numaralı DNA parmak izi görüntüsü dayıya aittir?"
-        },
-        {
-          "id": "p48-2",
-          "label": "2",
-          "column": 0,
-          "rect": [
-            63.1027,
-            174.1935,
-            499.5316,
-            217.2429
-          ],
-          "parts": [
-            [
-              63.1027,
-              174.1935,
-              499.5316,
-              217.2429
-            ]
-          ],
-          "headline": "Kaç numaralı DNA parmak izi görüntüsü halaya aittir?"
-        },
-        {
-          "id": "p48-3",
-          "label": "3",
-          "column": 0,
-          "rect": [
-            62.5089,
-            124.0771,
-            499.9635,
-            166.8028
-          ],
-          "parts": [
-            [
-              62.5089,
-              124.0771,
-              499.9635,
-              166.8028
-            ]
-          ],
-          "headline": "Kaç numaralı DNA parmak izleri çocuklara aittir?"
         }
       ]
     },
@@ -917,17 +653,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            41.9965,
-            573.0745,
-            487.1702,
-            708.6962
+            42.2664,
+            54.7018,
+            498.9725,
+            370.9367
           ],
           "parts": [
             [
-              41.9965,
-              573.0745,
-              487.1702,
-              708.6962
+              42.2664,
+              54.7018,
+              498.9725,
+              370.9367
             ]
           ]
         }
@@ -944,44 +680,62 @@
       ],
       "activities": [
         {
+          "id": "p50-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            54.7898,
+            201.5444,
+            509.302,
+            214.8153
+          ],
+          "parts": [
+            [
+              54.7898,
+              201.5444,
+              509.302,
+              214.8153
+            ]
+          ]
+        },
+        {
           "id": "p50-3",
           "label": "3",
           "column": 0,
           "rect": [
-            55.7614,
-            169.5541,
-            501.0431,
-            196.5274
+            55.6535,
+            164.9147,
+            502.6625,
+            197.2287
           ],
           "parts": [
             [
-              55.7614,
-              169.5541,
-              501.0431,
-              196.5274
+              55.6535,
+              164.9147,
+              502.6625,
+              197.2287
             ]
           ],
           "headline": "İstenen geni taşıyan DNA parçası ile bakteri plazmiti DNA ligaz enzimi yardımıyla birleştirilerek rekombi- nant DNA molekülü elde edilir."
         },
         {
-          "id": "p50-4",
-          "label": "4",
+          "id": "p50-v3",
+          "label": null,
           "column": 0,
           "rect": [
-            55.3296,
-            151.5359,
-            449.87,
-            163.3502
+            56.3012,
+            152.1833,
+            448.3181,
+            163.8357
           ],
           "parts": [
             [
-              55.3296,
-              151.5359,
-              449.87,
-              163.3502
+              56.3012,
+              152.1833,
+              448.3181,
+              163.8357
             ]
-          ],
-          "headline": "Rekombinant DNA, bir bakteri hücresine aktarılır ve rekombinant bakteri hücresi elde edilir."
+          ]
         }
       ]
     },
@@ -1000,17 +754,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            49.3378,
-            383.2904,
-            484.2013,
-            425.4227
+            49.2838,
+            382.8588,
+            484.4712,
+            425.3687
           ],
           "parts": [
             [
-              49.3378,
-              383.2904,
-              484.2013,
-              425.4227
+              49.2838,
+              382.8588,
+              484.4712,
+              425.3687
             ]
           ],
           "headline": "Rekombinant DNA oluşumunda restriksiyon enzimlerinin rolü nedir?"
@@ -1020,20 +774,40 @@
           "label": "2",
           "column": 0,
           "rect": [
-            48.9599,
-            319.6874,
-            484.3092,
-            375.5761
+            48.744,
+            319.3637,
+            484.957,
+            374.8748
           ],
           "parts": [
             [
-              48.9599,
-              319.6874,
-              484.3092,
-              375.5761
+              48.744,
+              319.3637,
+              484.957,
+              374.8748
             ]
           ],
           "headline": "Rekombinant DNA oluşturma sürecinde hem istenen DNA bölümünün hem de bakteriyel plazmitin aynı restriksiyon enzimiyle kesilmesinin nedeni nedir?"
+        },
+        {
+          "id": "p51-3",
+          "label": "3",
+          "column": 0,
+          "rect": [
+            48.9059,
+            297.2456,
+            429.1956,
+            312.1888
+          ],
+          "parts": [
+            [
+              48.9059,
+              297.2456,
+              429.1956,
+              312.1888
+            ]
+          ],
+          "headline": "İnsülinin rekombinant DNA teknolojisiyle elde edilmesinin avantajları nelerdir? Tartışınız."
         }
       ]
     },
@@ -1060,17 +834,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            55.1137,
-            263.0435,
+            54.8977,
+            264.0145,
             502.8131,
-            287.9668
+            287.6971
           ],
           "parts": [
             [
-              55.1137,
-              263.0435,
+              54.8977,
+              264.0145,
               502.8131,
-              287.9668
+              287.6971
             ]
           ],
           "headline": "Finn Dorset koyunun meme hücresi alınır. Bu somatik hücre genetik olarak bir koyunun oluşması için gerekli bütün genleri içermektedir. Fakat bu genlerden sadece"
@@ -1080,150 +854,72 @@
           "label": "2",
           "column": 0,
           "rect": [
-            54.9517,
-            230.1361,
+            56.4632,
+            230.7834,
             508.3021,
-            257.0015
+            257.4331
           ],
           "parts": [
             [
-              54.9517,
-              230.1361,
+              56.4632,
+              230.7834,
               508.3021,
-              257.0015
+              257.4331
             ]
           ],
           "headline": "Finn Dorset koyununun meme hücresi besin bakımından fakir bir ortama alınarak hücre döngüsü durdurulur."
-        },
-        {
-          "id": "p52-v3",
-          "label": null,
-          "column": 0,
-          "rect": [
-            56.0853,
-            212.7653,
-            391.2476,
-            226.0362
-          ],
-          "parts": [
-            [
-              56.0853,
-              212.7653,
-              391.2476,
-              226.0362
-            ]
-          ]
         },
         {
           "id": "p52-4",
           "label": "4",
           "column": 0,
           "rect": [
-            55.6535,
+            54.0341,
             180.3434,
-            507.3048,
-            205.8062
+            506.8729,
+            205.9141
           ],
           "parts": [
             [
-              55.6535,
+              54.0341,
               180.3434,
-              507.3048,
-              205.8062
+              506.8729,
+              205.9141
             ]
           ],
           "headline": "Finn Dorset koyunundan alınan meme hücresinin çekirdeği, yetişkin İskoç Blackface koyununun sadece çekir- deği çıkarılmış yumurta hücresinin içine yerleştirilip"
-        },
-        {
-          "id": "p52-5",
-          "label": "5",
-          "column": 0,
-          "rect": [
-            56.6791,
-            148.6228,
-            497.6482,
-            174.1395
-          ],
-          "parts": [
-            [
-              56.6791,
-              148.6228,
-              497.6482,
-              174.1395
-            ]
-          ],
-          "headline": "Elektrik akımı aynı zamanda yumurta hücresinin bölünmeye başlamasını sağlar. Hücre füzyonundan sonra, nükleer transfer yapılmış embriyolar 6 gün süreyle in vitr"
-        },
-        {
-          "id": "p52-7",
-          "label": "7",
-          "column": 0,
-          "rect": [
-            55.3296,
-            98.7222,
-            510.447,
-            125.5337
-          ],
-          "parts": [
-            [
-              55.3296,
-              98.7222,
-              510.447,
-              125.5337
-            ]
-          ],
-          "headline": "Embriyonik gelişimin tamamlanması ile bir kuzu dünyaya gelir. Bu kuzu, genetik olarak meme hücresinin çekir- değinin kullanıldığı Finn Dorset koyunuyla özdeştir"
-        },
-        {
-          "id": "p52-v7",
-          "label": null,
-          "column": 0,
-          "rect": [
-            55.8694,
-            53.6768,
-            508.9952,
-            92.0868
-          ],
-          "parts": [
-            [
-              55.8694,
-              53.6768,
-              508.9952,
-              92.0868
-            ]
-          ]
         }
       ]
     },
-    "53": {
+    "55": {
       "pageWidth": 552.756,
       "pageHeight": 779.528,
       "columns": [
         [
-          36.5252,
+          36.4066,
           528.756
         ]
       ],
       "activities": [
         {
-          "id": "p53-q1",
+          "id": "p55-q1",
           "label": null,
           "column": 0,
           "rect": [
-            41.6186,
-            50.494,
-            498.3441,
-            354.1053
+            42.5363,
+            56.6979,
+            497.9662,
+            498.0887
           ],
           "parts": [
             [
-              41.6186,
-              50.494,
-              498.3441,
-              354.1053
+              42.5363,
+              56.6979,
+              497.9662,
+              498.0887
             ]
           ],
-          "headline": "Doku ve organ nakillerinde karşılaşılan problemlerle ilgili yapılan çalışmaları araştırarak rapor hâline getiriniz. Araş- tırma sonuçlarını"
+          "headline": "SIRA SİZDE Aşağıda altı şapkalı düşünme etkinliği ve şapkaların ifade ettiği düşünce şekilleri verilmiştir. Genetiği"
         }
       ]
     },
@@ -1242,17 +938,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            56.0,
-            104.1,
-            505.7393,
-            530.528
+            55.2216,
+            106.1669,
+            506.0092,
+            531.4277
           ],
           "parts": [
             [
-              56.0,
-              104.1,
-              505.7393,
-              530.528
+              55.2216,
+              106.1669,
+              506.0092,
+              531.4277
             ]
           ],
           "headline": "Bu etkinlikte laboratuvar kurallarına uyunuz ve güvenlik önlemlerini alınız. Etkinliğin Adı"
@@ -1274,20 +970,39 @@
           "label": "c",
           "column": 0,
           "rect": [
-            73.6288,
-            594.707,
-            505.5234,
-            681.561
+            73.035,
+            568.6509,
+            506.765,
+            681.2374
           ],
           "parts": [
             [
-              73.6288,
-              594.707,
-              505.5234,
-              681.561
+              73.035,
+              568.6509,
+              506.765,
+              681.2374
             ]
           ],
           "headline": "a, b ve c olaylarının prokaryot ve ökaryotlarda gerçekleştiği yerleri tabloda uygun olan yerlere yazınız."
+        },
+        {
+          "id": "p58-v2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            61.3067,
+            60.4202,
+            508.4923,
+            557.7536
+          ],
+          "parts": [
+            [
+              61.3067,
+              60.4202,
+              508.4923,
+              557.7536
+            ]
+          ]
         }
       ]
     },
@@ -1310,17 +1025,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            61.0515,
-            506.9252,
-            467.2939,
-            533.6935
+            61.5373,
+            510.928,
+            466.118,
+            532.183
           ],
           "parts": [
             [
-              61.0515,
-              506.9252,
-              467.2939,
-              533.6935
+              61.5373,
+              510.928,
+              466.118,
+              532.183
             ]
           ],
           "headline": "Bazı canlıların somatik hücrelerinde ikiden fazla kromozom takımına sahip olması durumuna"
@@ -1330,60 +1045,60 @@
           "label": "4",
           "column": 0,
           "rect": [
-            62.4549,
+            60.7276,
             479.1,
             500.594,
-            500.6242
+            501.7571
           ],
           "parts": [
             [
-              62.4549,
+              60.7276,
               479.1,
               500.594,
-              500.6242
+              501.7571
             ]
           ],
           "headline": "Aynı çeşit proteinden kısa sürede ve çok miktarda üretilmeyi sağlayan, bir mRNA üzerine birden fazla"
+        },
+        {
+          "id": "p60-6",
+          "label": "6",
+          "column": 0,
+          "rect": [
+            60.1878,
+            424.9372,
+            501.205,
+            451.2631
+          ],
+          "parts": [
+            [
+              60.1878,
+              424.9372,
+              501.205,
+              451.2631
+            ]
+          ],
+          "headline": "Biyoteknolojinin insan sağlığı ve çevreye zarar vermeden uygulanmasını sağlamak için alınması gere- ken politik ve işlevsel önlemlerin tümüne"
         },
         {
           "id": "p60-8",
           "label": "8",
           "column": 0,
           "rect": [
-            61.7532,
-            357.9355,
+            61.5913,
+            357.6658,
             512.0806,
-            401.848
+            401.4704
           ],
           "parts": [
             [
-              61.7532,
-              357.9355,
+              61.5913,
+              357.6658,
               512.0806,
-              401.848
+              401.4704
             ]
           ],
           "headline": "Bakteri üremesini engelleyen veya bakterileri öldüren biyosentetik kökenlerine göre doğal, yarı sentetik ya da sentetik biyoteknolojik ürünlere"
-        },
-        {
-          "id": "p60-10",
-          "label": "10",
-          "column": 0,
-          "rect": [
-            56.4586,
-            324.5965,
-            505.7393,
-            349.5199
-          ],
-          "parts": [
-            [
-              56.4586,
-              324.5965,
-              505.7393,
-              349.5199
-            ]
-          ],
-          "headline": "Hasarlı veya işlevini yitirmiş bir organın yerine doku mühendisliği yoluyla mekanik ve biyomalzemeler- den üretilen organlara"
         }
       ]
     },
@@ -1402,17 +1117,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            72.0094,
-            232.7255,
-            505.0376,
-            366.7828
+            72.6032,
+            377.5721,
+            511.4072,
+            420.2438
           ],
           "parts": [
             [
-              72.0094,
-              232.7255,
-              505.0376,
-              366.7828
+              72.6032,
+              377.5721,
+              511.4072,
+              420.2438
             ]
           ]
         },
@@ -1422,16 +1137,35 @@
           "column": 0,
           "rect": [
             73.035,
-            80.0028,
-            505.1456,
-            226.8453
+            232.9413,
+            503.6341,
+            367.2143
           ],
           "parts": [
             [
               73.035,
-              80.0028,
-              505.1456,
-              226.8453
+              232.9413,
+              503.6341,
+              367.2143
+            ]
+          ]
+        },
+        {
+          "id": "p62-v3",
+          "label": null,
+          "column": 0,
+          "rect": [
+            73.3049,
+            79.5173,
+            506.4782,
+            228.0861
+          ],
+          "parts": [
+            [
+              73.3049,
+              79.5173,
+              506.4782,
+              228.0861
             ]
           ]
         }
@@ -1448,41 +1182,21 @@
       ],
       "activities": [
         {
-          "id": "p63-43",
-          "label": "43",
-          "column": 0,
-          "rect": [
-            41.5107,
-            436.5896,
-            498.1712,
-            693.2674
-          ],
-          "parts": [
-            [
-              41.5107,
-              436.5896,
-              498.1712,
-              693.2674
-            ]
-          ],
-          "headline": "“DNA kendini nasıl eşler?” sorusu bilim insanları tarafından deneylerle açıklanmaya çalışılmıştır. Üç model ileri sürülmüştür. Bu hipotezler; parçalı eşleme, ta"
-        },
-        {
-          "id": "p63-v2",
+          "id": "p63-v1",
           "label": null,
           "column": 0,
           "rect": [
             58.4604,
-            331.1241,
-            490.8408,
-            358.9066
+            331.5557,
+            489.6533,
+            358.475
           ],
           "parts": [
             [
               58.4604,
-              331.1241,
-              490.8408,
-              358.9066
+              331.5557,
+              489.6533,
+              358.475
             ]
           ]
         },
@@ -1491,17 +1205,17 @@
           "label": "44",
           "column": 0,
           "rect": [
-            42.9681,
-            67.1635,
+            42.7522,
+            66.3543,
             497.4123,
-            274.9657
+            274.2644
           ],
           "parts": [
             [
-              42.9681,
-              67.1635,
+              42.7522,
+              66.3543,
               497.4123,
-              274.9657
+              274.2644
             ]
           ],
           "headline": "Erwin Chargaff, sitozinin hücre içindeki sayısının guanin sayısına eşit olduğunu kanıtlamış timin sayısının ade- nin sayısına eşit olduğunu göstermiştir. A ve T"
@@ -1527,40 +1241,60 @@
           "label": "45",
           "column": 0,
           "rect": [
-            55.3296,
-            537.9013,
-            512.001,
-            724.7183
+            56.787,
+            538.0092,
+            512.3596,
+            723.7473
           ],
           "parts": [
             [
-              55.3296,
-              537.9013,
-              512.001,
-              724.7183
+              56.787,
+              538.0092,
+              512.3596,
+              723.7473
             ]
           ],
           "headline": "Moleküler biyoloji teknolojisinin temelini oluşturan gen, izole edilebilen ve çoğaltılabilen bir üründür."
+        },
+        {
+          "id": "p64-46",
+          "label": "46",
+          "column": 0,
+          "rect": [
+            55.8346,
+            296.0588,
+            508.8162,
+            491.1296
+          ],
+          "parts": [
+            [
+              55.8346,
+              296.0588,
+              508.8162,
+              491.1296
+            ]
+          ],
+          "headline": "DNA'nın yapısıyla ilgili verilen şekilde harflerle gösterilen kısımların adlarını yazınız."
         },
         {
           "id": "p64-47",
           "label": "47",
           "column": 0,
           "rect": [
-            56.841,
-            77.8989,
-            508.4923,
-            288.2905
+            57.003,
+            73.6371,
+            508.2764,
+            290.9339
           ],
           "parts": [
             [
-              56.841,
-              77.8989,
-              508.4923,
-              288.2905
+              57.003,
+              73.6371,
+              508.2764,
+              290.9339
             ]
           ],
-          "headline": "47. nı uygun boşluklara yazınız."
+          "headline": "Aşağıda hücrede protein sentezi ile ilgili verilen şekil üzerinde harflerle gösterilen yapı ve olayların adları- nı uygun boşluklara yazınız."
         }
       ]
     },
@@ -1591,17 +1325,17 @@
           "label": "51",
           "column": 2,
           "rect": [
-            272.3295,
-            440.8514,
-            496.5087,
-            698.8779
+            273.3551,
+            438.0462,
+            495.861,
+            700.0647
           ],
           "parts": [
             [
-              272.3295,
-              440.8514,
-              496.5087,
-              698.8779
+              273.3551,
+              438.0462,
+              495.861,
+              700.0647
             ]
           ],
           "headline": "A amino asidi — GUC, UCU, CAU B amino asidi — AGA, AGG, CGU, CGC, ACA C amino asidi — GUU, GUA, GCA, GUG D amino asidi — UGC, UGU Yukarıda verilen amino asit çe"
@@ -1611,17 +1345,17 @@
           "label": "48",
           "column": 0,
           "rect": [
-            41.2948,
-            538.4947,
+            40.8629,
+            537.7934,
             265.9157,
-            697.3134
+            698.0687
           ],
           "parts": [
             [
-              41.2948,
-              538.4947,
+              40.8629,
+              537.7934,
               265.9157,
-              697.3134
+              698.0687
             ]
           ],
           "headline": "Aşağıda bir polipeptit sentezine katılan dört farklı amino asidin kodon ve antikodonları verilmiştir."
@@ -1632,16 +1366,16 @@
           "column": 0,
           "rect": [
             41.2408,
-            309.1139,
-            260.184,
-            494.4743
+            310.1389,
+            260.5078,
+            495.3375
           ],
           "parts": [
             [
               41.2408,
-              309.1139,
-              260.184,
-              494.4743
+              310.1389,
+              260.5078,
+              495.3375
             ]
           ],
           "headline": "100 aminoasit kullanılan bir protein sentezinde I."
@@ -1651,17 +1385,17 @@
           "label": "52",
           "column": 2,
           "rect": [
-            273.3551,
-            242.7596,
-            489.5993,
-            398.1797
+            275.3524,
+            242.2201,
+            488.6277,
+            397.802
           ],
           "parts": [
             [
-              273.3551,
-              242.7596,
-              489.5993,
-              398.1797
+              275.3524,
+              242.2201,
+              488.6277,
+              397.802
             ]
           ],
           "headline": "Kök hücrelerle ilgili I."
@@ -1671,15 +1405,15 @@
           "label": "50",
           "column": 0,
           "rect": [
-            40.8629,
-            56.4281,
+            41.2408,
+            56.8057,
             265.6959,
             260.7366
           ],
           "parts": [
             [
-              40.8629,
-              56.4281,
+              41.2408,
+              56.8057,
               265.6959,
               260.7366
             ]
@@ -1691,17 +1425,17 @@
           "label": null,
           "column": 3,
           "rect": [
-            275.1904,
-            53.1913,
+            276.0001,
+            52.7598,
             495.8301,
-            186.1696
+            186.763
           ],
           "parts": [
             [
-              275.1904,
-              53.1913,
+              276.0001,
+              52.7598,
               495.8301,
-              186.1696
+              186.763
             ]
           ]
         }
@@ -1730,17 +1464,17 @@
           "label": "57",
           "column": 2,
           "rect": [
-            287.4979,
-            483.4153,
+            288.5775,
+            494.0246,
             511.9611,
-            725.2038
+            723.9091
           ],
           "parts": [
             [
-              287.4979,
-              483.4153,
+              288.5775,
+              494.0246,
               511.9611,
-              725.2038
+              723.9091
             ]
           ],
           "headline": "Gen klonlama çalışmasının basamakları karışık olarak aşağıda verilmiştir."
@@ -1750,17 +1484,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            54.9517,
-            565.6838,
-            278.6452,
-            724.017
+            54.3579,
+            566.3311,
+            277.9434,
+            723.7473
           ],
           "parts": [
             [
-              54.9517,
-              565.6838,
-              278.6452,
-              724.017
+              54.3579,
+              566.3311,
+              277.9434,
+              723.7473
             ]
           ]
         },
@@ -1769,16 +1503,16 @@
           "label": "55",
           "column": 0,
           "rect": [
-            56.841,
-            296.2206,
-            277.5656,
+            56.1933,
+            297.4075,
+            276.9178,
             545.9
           ],
           "parts": [
             [
-              56.841,
-              296.2206,
-              277.5656,
+              56.1933,
+              297.4075,
+              276.9178,
               545.9
             ]
           ],
@@ -1789,17 +1523,17 @@
           "label": "58",
           "column": 2,
           "rect": [
-            287.3899,
-            274.1565,
+            287.9297,
+            274.0486,
             512.8418,
-            432.9752
+            432.3279
           ],
           "parts": [
             [
-              287.3899,
-              274.1565,
+              287.9297,
+              274.0486,
               512.8418,
-              432.9752
+              432.3279
             ]
           ],
           "headline": "Bir bilim insanı, bir balık fosilinin DNA’sını ya- kın akraba olduğunu düşündüğü bir balık tü- rünün DNA’sı ile karşılaştırmak istemektedir."
@@ -1809,17 +1543,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            55.1137,
-            54.3242,
-            273.0852,
-            277.2315
+            55.3836,
+            55.2952,
+            271.9516,
+            276.1525
           ],
           "parts": [
             [
-              55.1137,
-              54.3242,
-              273.0852,
-              277.2315
+              55.3836,
+              55.2952,
+              271.9516,
+              276.1525
             ]
           ]
         },
@@ -1828,17 +1562,17 @@
           "label": null,
           "column": 2,
           "rect": [
-            288.1996,
-            52.9755,
-            510.8674,
-            237.8505
+            287.228,
+            53.4071,
+            511.0834,
+            237.2031
           ],
           "parts": [
             [
-              288.1996,
-              52.9755,
-              510.8674,
-              237.8505
+              287.228,
+              53.4071,
+              511.0834,
+              237.2031
             ]
           ]
         }
@@ -1859,43 +1593,44 @@
       ],
       "activities": [
         {
+          "id": "p67-64",
+          "label": "64",
+          "column": 1,
+          "rect": [
+            273.3551,
+            430.0621,
+            497.4374,
+            725.0959
+          ],
+          "parts": [
+            [
+              273.3551,
+              430.0621,
+              497.4374,
+              725.0959
+            ]
+          ],
+          "headline": "Radyoaktif azot içeren kültür ortamında E. coli bakterilerinin bir süre çoğalması bekleniyor. Olu- şan yeni bakterilerin RNA’larındaki I. Fosfat moleküllerinden"
+        },
+        {
           "id": "p67-60",
           "label": "60",
           "column": 0,
           "rect": [
-            35.141,
-            546.8564,
-            256.5673,
-            724.2328
+            34.6012,
+            545.0223,
+            256.9991,
+            724.1249
           ],
           "parts": [
             [
-              35.141,
-              546.8564,
-              256.5673,
-              724.2328
+              34.6012,
+              545.0223,
+              256.9991,
+              724.1249
             ]
           ],
           "headline": "I. Büyüme hormonu geninin sağlıklı insandan elde edilip bakteriye klonlanması II."
-        },
-        {
-          "id": "p67-v2",
-          "label": null,
-          "column": 1,
-          "rect": [
-            274.2188,
-            431.7884,
-            492.5682,
-            575.1244
-          ],
-          "parts": [
-            [
-              274.2188,
-              431.7884,
-              492.5682,
-              575.1244
-            ]
-          ]
         },
         {
           "id": "p67-61",
@@ -1903,16 +1638,16 @@
           "column": 0,
           "rect": [
             41.4027,
-            393.6482,
-            261.1016,
-            519.3976
+            393.8639,
+            261.7494,
+            519.3437
           ],
           "parts": [
             [
               41.4027,
-              393.6482,
-              261.1016,
-              519.3976
+              393.8639,
+              261.7494,
+              519.3437
             ]
           ],
           "headline": "I. Peptit bağlarının oluşması II."
@@ -1922,17 +1657,17 @@
           "label": null,
           "column": 1,
           "rect": [
-            273.7869,
-            221.2349,
+            273.733,
+            224.202,
             486.8964,
-            407.1888
+            408.4295
           ],
           "parts": [
             [
-              273.7869,
-              221.2349,
+              273.733,
+              224.202,
               486.8964,
-              407.1888
+              408.4295
             ]
           ]
         },
@@ -1941,17 +1676,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            41.2408,
-            240.332,
-            260.2919,
-            359.7158
+            41.5107,
+            240.278,
+            261.1556,
+            359.6618
           ],
           "parts": [
             [
-              41.2408,
-              240.332,
-              260.2919,
-              359.7158
+              41.5107,
+              240.278,
+              261.1556,
+              359.6618
             ]
           ]
         },
@@ -1960,17 +1695,17 @@
           "label": "63",
           "column": 0,
           "rect": [
-            41.5647,
-            62.7938,
-            262.5591,
-            217.3508
+            40.9709,
+            62.9017,
+            262.829,
+            216.8652
           ],
           "parts": [
             [
-              41.5647,
-              62.7938,
-              262.5591,
-              217.3508
+              40.9709,
+              62.9017,
+              262.829,
+              216.8652
             ]
           ],
           "headline": "DNA'ya ait bazı bilgiler aşağıda verilmiştir."
@@ -1980,48 +1715,17 @@
           "label": null,
           "column": 1,
           "rect": [
-            274.3807,
-            62.3083,
+            274.2728,
+            62.1465,
             485.2095,
-            205.4825
+            206.5614
           ],
           "parts": [
             [
-              274.3807,
-              62.3083,
+              274.2728,
+              62.1465,
               485.2095,
-              205.4825
-            ]
-          ]
-        }
-      ]
-    },
-    "69": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          60.1969,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p69-v1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            302.5043,
-            495.1756,
-            489.0595,
-            707.4554
-          ],
-          "parts": [
-            [
-              302.5043,
-              495.1756,
-              489.0595,
-              707.4554
+              206.5614
             ]
           ]
         }
@@ -2042,17 +1746,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            54.8977,
-            55.565,
-            510.0038,
-            276.2065
+            54.8438,
+            57.3452,
+            510.6515,
+            319.3637
           ],
           "parts": [
             [
-              54.8977,
-              55.565,
-              510.0038,
-              276.2065
+              54.8438,
+              57.3452,
+              510.6515,
+              319.3637
             ]
           ],
           "headline": "BİR FİKRİN VAR MI?"
@@ -2070,61 +1774,21 @@
       ],
       "activities": [
         {
-          "id": "p72-1",
-          "label": "1",
-          "column": 0,
-          "rect": [
-            61.0515,
-            242.0043,
-            258.2407,
-            295.4114
-          ],
-          "parts": [
-            [
-              61.0515,
-              242.0043,
-              258.2407,
-              295.4114
-            ]
-          ],
-          "headline": "Hücrelerin açık sistemler olmasının nedeni nedir? Örnek vererek açıklayınız."
-        },
-        {
-          "id": "p72-2",
-          "label": "2",
-          "column": 0,
-          "rect": [
-            59.8639,
-            179.2105,
-            255.4337,
-            235.3689
-          ],
-          "parts": [
-            [
-              59.8639,
-              179.2105,
-              255.4337,
-              235.3689
-            ]
-          ],
-          "headline": "Bir hücrenin enerji mekanizması ile ilgili bileşenleri nelerdir? Açıklayınız."
-        },
-        {
           "id": "p72-3",
           "label": "3",
           "column": 0,
           "rect": [
-            60.0798,
-            117.2799,
-            500.3413,
-            166.2094
+            60.6736,
+            117.2259,
+            500.5572,
+            165.8318
           ],
           "parts": [
             [
-              60.0798,
-              117.2799,
-              500.3413,
-              166.2094
+              60.6736,
+              117.2259,
+              500.5572,
+              165.8318
             ]
           ],
           "headline": "Bir hücrenin enerji mekanizması ile ilgili bileşenleri arasında nasıl bir ilişki vardır? Örneklerle açıklayınız."
@@ -2134,17 +1798,17 @@
           "label": "4",
           "column": 0,
           "rect": [
-            60.1338,
-            61.3912,
-            501.205,
-            109.2418
+            60.9975,
+            61.2833,
+            503.1483,
+            109.8352
           ],
           "parts": [
             [
-              60.1338,
-              61.3912,
-              501.205,
-              109.2418
+              60.9975,
+              61.2833,
+              503.1483,
+              109.8352
             ]
           ],
           "headline": "Hücrede görev yapan bileşenlerden birinin olmaması sistemi nasıl etkiler? Örneklerle açıklayınız."
@@ -2166,17 +1830,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            60.2418,
-            244.1622,
-            506.765,
-            300.6443
+            60.5117,
+            244.324,
+            507.3048,
+            300.3745
           ],
           "parts": [
             [
-              60.2418,
-              244.1622,
-              506.765,
-              300.6443
+              60.5117,
+              244.324,
+              507.3048,
+              300.3745
             ]
           ],
           "headline": "Bir cevizin ağaçtan yere düşmesine, aynı cevizin yerdeki bir sincap tarafından yenerek sincabın hücreleri- ne geçmesine kadar gerçekleşen enerji dönüşümlerini s"
@@ -2186,17 +1850,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            61.2134,
-            148.0294,
-            496.1217,
-            232.8874
+            60.4037,
+            149.5939,
+            499.6936,
+            232.1861
           ],
           "parts": [
             [
-              61.2134,
-              148.0294,
-              496.1217,
-              232.8874
+              60.4037,
+              149.5939,
+              499.6936,
+              232.1861
             ]
           ],
           "headline": "Aşağıda canlı hücrelerde gerçekleşen bazı olaylar verilmiştir. Verilen olayları ekzergonik ve endergonik reaksiyonlar olarak sınıflandırıp karşılarına yazınız."
@@ -2206,17 +1870,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            60.4037,
-            66.5161,
-            506.9269,
-            138.2651
+            61.3214,
+            65.8688,
+            507.7906,
+            138.8045
           ],
           "parts": [
             [
-              60.4037,
-              66.5161,
-              506.9269,
-              138.2651
+              61.3214,
+              65.8688,
+              507.7906,
+              138.8045
             ]
           ],
           "headline": ". Aşağıda verilen ATP sentezleme şekilleri hangi canlılarda gerçekleşir? Yanlarındaki boşluğa yazınız."
@@ -2238,20 +1902,72 @@
           "label": null,
           "column": 0,
           "rect": [
-            54.6818,
-            54.54,
-            509.7878,
-            337.8674
+            54.4119,
+            56.4281,
+            509.6799,
+            350.4909
           ],
           "parts": [
             [
-              54.6818,
-              54.54,
-              509.7878,
-              337.8674
+              54.4119,
+              56.4281,
+              509.6799,
+              350.4909
             ]
           ],
           "headline": "BİR FİKRİN VAR MI?"
+        }
+      ]
+    },
+    "81": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          42.3967,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p81-4",
+          "label": "4",
+          "column": 0,
+          "rect": [
+            70.9838,
+            139.2361,
+            442.488,
+            180.1816
+          ],
+          "parts": [
+            [
+              70.9838,
+              139.2361,
+              442.488,
+              180.1816
+            ]
+          ],
+          "headline": "Yapraklarda sadece klorofil pigmenti olsaydı sonuç ne olurdu? Açıklayınız."
+        },
+        {
+          "id": "p81-5",
+          "label": "5",
+          "column": 0,
+          "rect": [
+            70.6599,
+            120.3009,
+            370.3573,
+            135.1362
+          ],
+          "parts": [
+            [
+              70.6599,
+              120.3009,
+              370.3573,
+              135.1362
+            ]
+          ],
+          "headline": "Yandaki karekodu okutarak Öz Değerlendirme Formu’nu doldurunuz."
         }
       ]
     },
@@ -2270,17 +1986,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            62.8328,
-            246.0503,
+            62.0771,
+            245.5648,
             503.6632,
-            300.8061
+            300.1048
           ],
           "parts": [
             [
-              62.8328,
-              246.0503,
+              62.0771,
+              245.5648,
               503.6632,
-              300.8061
+              300.1048
             ]
           ],
           "headline": "Hangi renk ışık, klorofil çözeltisi tarafından en fazla soğrulmuştur? Ulaştığınız sonucu gerekçelendirerek yazınız."
@@ -2290,17 +2006,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            62.1311,
+            61.9691,
             186.8,
-            501.5829,
-            240.8715
+            500.0714,
+            240.8175
           ],
           "parts": [
             [
-              62.1311,
+              61.9691,
               186.8,
-              501.5829,
-              240.8715
+              500.0714,
+              240.8175
             ]
           ],
           "headline": "Hangi renk ışık, klorofil çözeltisi tarafından en az soğrulmuştur? Ulaştığınız sonucu gerekçelendirerek yazınız."
@@ -2310,17 +2026,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            62.8328,
-            125.6955,
-            501.4209,
-            180.2895
+            60.8355,
+            126.6126,
+            500.2873,
+            180.2355
           ],
           "parts": [
             [
-              62.8328,
-              125.6955,
-              501.4209,
-              180.2895
+              60.8355,
+              126.6126,
+              500.2873,
+              180.2355
             ]
           ],
           "headline": "Ölçümlerle elde ettiğiniz sonuçlardan yola çıkarak ışığın dalga boyu ile fotosentez arasındaki ilişkisini nasıl değerlendirirsiniz? Açıklayınız."
@@ -2330,17 +2046,17 @@
           "label": "4",
           "column": 0,
           "rect": [
-            61.7532,
-            65.0596,
-            502.3926,
-            119.8693
+            61.4293,
+            64.7898,
+            502.2306,
+            119.7075
           ],
           "parts": [
             [
-              61.7532,
-              65.0596,
-              502.3926,
-              119.8693
+              61.4293,
+              64.7898,
+              502.2306,
+              119.7075
             ]
           ],
           "headline": "Deneyde kullanılan farklı dalga boylarındaki ışıklar yerine X ışını kullanılsaydı nasıl bir sonuçla karşılaşır- dınız? Açıklayınız."
@@ -2358,21 +2074,41 @@
       ],
       "activities": [
         {
+          "id": "p86-1",
+          "label": "1",
+          "column": 0,
+          "rect": [
+            62.185,
+            286.6721,
+            510.0,
+            360.2345
+          ],
+          "parts": [
+            [
+              62.185,
+              286.6721,
+              510.0,
+              360.2345
+            ]
+          ],
+          "headline": "T, P, S, R, Y ve Z ile gösterilen maddeler nelerdir?"
+        },
+        {
           "id": "p86-2",
           "label": "2",
           "column": 0,
           "rect": [
-            62.293,
-            231.1611,
-            498.0742,
-            278.5801
+            61.6992,
+            230.6756,
+            497.8582,
+            277.9867
           ],
           "parts": [
             [
-              62.293,
-              231.1611,
-              498.0742,
-              278.5801
+              61.6992,
+              230.6756,
+              497.8582,
+              277.9867
             ]
           ],
           "headline": "Fotosentezde bu maddelerden hangileri glikoz için hidrojen kaynağıdır?"
@@ -2382,17 +2118,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            62.293,
-            175.65,
-            498.3441,
-            223.2309
+            61.8072,
+            174.9487,
+            498.398,
+            223.0691
           ],
           "parts": [
             [
-              62.293,
-              175.65,
-              498.3441,
-              223.2309
+              61.8072,
+              174.9487,
+              498.398,
+              223.0691
             ]
           ],
           "headline": "Fotosentezde bu maddelerden hangileri fotofosforilasyonla üretilir?"
@@ -2402,17 +2138,17 @@
           "label": "4",
           "column": 0,
           "rect": [
-            63.1567,
-            120.4627,
-            497.5883,
-            167.0186
+            62.8328,
+            119.9772,
+            498.0742,
+            167.5041
           ],
           "parts": [
             [
-              63.1567,
-              120.4627,
-              497.5883,
-              167.0186
+              62.8328,
+              119.9772,
+              498.0742,
+              167.5041
             ]
           ],
           "headline": "Fotosentezde bu maddelerden hangileri atmosfer için oksijen kaynağıdır?"
@@ -2422,17 +2158,17 @@
           "label": "5",
           "column": 0,
           "rect": [
-            62.4549,
-            62.8478,
-            499.0998,
-            111.2918
+            62.7788,
+            62.9017,
+            498.614,
+            111.5615
           ],
           "parts": [
             [
-              62.4549,
-              62.8478,
-              499.0998,
-              111.2918
+              62.7788,
+              62.9017,
+              498.614,
+              111.5615
             ]
           ],
           "headline": "Fotosentezde bu maddelerden hangileri glikozun yapısındaki oksijenin kaynağıdır?"
@@ -2454,51 +2190,20 @@
           "label": null,
           "column": 0,
           "rect": [
-            55.5455,
+            56.0,
             195.0027,
-            508.1145,
+            508.8162,
             723.528
           ],
           "parts": [
             [
-              55.5455,
+              56.0,
               195.0027,
-              508.1145,
+              508.8162,
               723.528
             ]
           ],
           "headline": "Bu etkinlikte laboratuvar kurallarına uyunuz ve güvenlik önlemlerini alınız. Etkinliğin Adı"
-        }
-      ]
-    },
-    "90": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          50.6929,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p90-v1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            285.9325,
-            121.0571,
-            511.947,
-            495.4993
-          ],
-          "parts": [
-            [
-              285.9325,
-              121.0571,
-              511.947,
-              495.4993
-            ]
-          ]
         }
       ]
     },
@@ -2517,40 +2222,21 @@
       ],
       "activities": [
         {
-          "id": "p91-v1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            49.2838,
-            600.9109,
-            309.3058,
-            701.4134
-          ],
-          "parts": [
-            [
-              49.2838,
-              600.9109,
-              309.3058,
-              701.4134
-            ]
-          ]
-        },
-        {
           "id": "p91-b",
           "label": "b",
           "column": 0,
           "rect": [
-            49.3378,
-            383.5062,
-            490.5709,
-            422.8872
+            48.69,
+            383.3444,
+            490.0851,
+            422.7793
           ],
           "parts": [
             [
-              49.3378,
-              383.5062,
-              490.5709,
-              422.8872
+              48.69,
+              383.3444,
+              490.0851,
+              422.7793
             ]
           ],
           "headline": ") Araştırmacı, bu deney sonunda ulaşılan sonuçlarla ilgili nasıl bir genelleme yapmıştır?"
@@ -2560,51 +2246,52 @@
           "label": "5",
           "column": 1,
           "rect": [
-            49.8776,
-            211.7403,
-            488.6816,
-            374.0656
+            50.0935,
+            215.8402,
+            489.9772,
+            374.5511
           ],
           "parts": [
             [
-              49.8776,
-              211.7403,
-              488.6816,
-              374.0656
+              50.0935,
+              215.8402,
+              489.9772,
+              374.5511
             ]
           ],
           "headline": "Fotoliz olayı"
         }
       ]
     },
-    "92": {
+    "93": {
       "pageWidth": 552.756,
       "pageHeight": 779.528,
       "columns": [
         [
-          313.0382,
+          36.6447,
           528.756
         ]
       ],
       "activities": [
         {
-          "id": "p92-v1",
+          "id": "p93-q1",
           "label": null,
           "column": 0,
           "rect": [
-            307.7944,
-            510.2807,
-            493.4319,
-            705.5133
+            42.1584,
+            57.3452,
+            496.5087,
+            345.5278
           ],
           "parts": [
             [
-              307.7944,
-              510.2807,
-              493.4319,
-              705.5133
+              42.1584,
+              57.3452,
+              496.5087,
+              345.5278
             ]
-          ]
+          ],
+          "headline": "BİR FİKRİN VAR MI?"
         }
       ]
     },
@@ -2627,17 +2314,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            64.1823,
+            63.6965,
             115.3917,
-            500.7192,
-            170.9028
+            501.259,
+            171.0106
           ],
           "parts": [
             [
-              64.1823,
+              63.6965,
               115.3917,
-              500.7192,
-              170.9028
+              501.259,
+              171.0106
             ]
           ],
           "headline": "Topraksız tarım (Hidroponik) yapılırken bitkinin gelişiminde rol oynayan azot tuzlarının mutlaka suya eklen- mesi gerekir. Doğadaki azotlu bileşikler, hangi yol"
@@ -2647,51 +2334,20 @@
           "label": "3",
           "column": 0,
           "rect": [
-            63.8045,
-            65.4911,
-            501.5289,
-            107.1918
+            63.2107,
+            64.628,
+            501.4209,
+            107.4616
           ],
           "parts": [
             [
-              63.8045,
-              65.4911,
-              501.5289,
-              107.1918
+              63.2107,
+              64.628,
+              501.4209,
+              107.4616
             ]
           ],
           "headline": "Endüstride arkelerin enzimlerinin tercih edilmesinin nedeni nedir?"
-        }
-      ]
-    },
-    "97": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          60.1969,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p97-v1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            285.7165,
-            511.3596,
-            472.7035,
-            716.6263
-          ],
-          "parts": [
-            [
-              285.7165,
-              511.3596,
-              472.7035,
-              716.6263
-            ]
-          ]
         }
       ]
     },
@@ -2710,51 +2366,20 @@
           "label": null,
           "column": 0,
           "rect": [
-            55.7074,
-            55.9426,
-            508.8702,
-            395.6736
+            55.8694,
+            55.4031,
+            509.6259,
+            381.1865
           ],
           "parts": [
             [
-              55.7074,
-              55.9426,
-              508.8702,
-              395.6736
+              55.8694,
+              55.4031,
+              509.6259,
+              381.1865
             ]
           ],
           "headline": "BİR FİKRİN VAR MI?"
-        }
-      ]
-    },
-    "101": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          36.52,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p101-v1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            40.3771,
-            369.4801,
-            398.9128,
-            380.647
-          ],
-          "parts": [
-            [
-              40.3771,
-              369.4801,
-              398.9128,
-              380.647
-            ]
-          ]
         }
       ]
     },
@@ -2777,17 +2402,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            49.9856,
-            413.0689,
-            484.3092,
-            461.3511
+            50.1475,
+            413.015,
+            484.6871,
+            461.1353
           ],
           "parts": [
             [
-              49.9856,
-              413.0689,
-              484.3092,
-              461.3511
+              50.1475,
+              413.015,
+              484.6871,
+              461.1353
             ]
           ],
           "headline": "A şişesinde termometrede ölçülen sıcaklık değerleri neden sabit kalmıştır? Belirtiniz."
@@ -2797,20 +2422,52 @@
           "label": "2",
           "column": 0,
           "rect": [
-            48.798,
-            356.2632,
-            484.5791,
-            405.1927
+            47.9343,
+            358.6368,
+            485.9286,
+            405.0848
           ],
           "parts": [
             [
-              48.798,
-              356.2632,
-              484.5791,
-              405.1927
+              47.9343,
+              358.6368,
+              485.9286,
+              405.0848
             ]
           ],
           "headline": "B şişesinde termometre ile ölçülen sıcaklık değerleri neden değişmiştir? Belirtiniz."
+        }
+      ]
+    },
+    "107": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          36.7687,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p107-3",
+          "label": "3",
+          "column": 0,
+          "rect": [
+            65.4763,
+            227.8703,
+            442.488,
+            268.7618
+          ],
+          "parts": [
+            [
+              65.4763,
+              227.8703,
+              442.488,
+              268.7618
+            ]
+          ],
+          "headline": "Deneyde mayanın üzerine şeker eklenmesinin nedenleri nelerdir?"
         }
       ]
     },
@@ -2829,16 +2486,16 @@
           "label": null,
           "column": 0,
           "rect": [
-            41.6186,
+            42.0,
             248.0732,
-            496.7247,
+            496.0629,
             723.528
           ],
           "parts": [
             [
-              41.6186,
+              42.0,
               248.0732,
-              496.7247,
+              496.0629,
               723.528
             ]
           ],
@@ -2861,36 +2518,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            56.0853,
-            374.4432,
-            508.6003,
-            707.2396
+            56.6791,
+            60.3123,
+            509.1941,
+            357.6658
           ],
           "parts": [
             [
-              56.0853,
-              374.4432,
-              508.6003,
-              707.2396
-            ]
-          ]
-        },
-        {
-          "id": "p112-v2",
-          "label": null,
-          "column": 0,
-          "rect": [
-            55.8694,
-            57.6149,
-            507.8985,
-            358.528
-          ],
-          "parts": [
-            [
-              55.8694,
-              57.6149,
-              507.8985,
-              358.528
+              56.6791,
+              60.3123,
+              509.1941,
+              357.6658
             ]
           ]
         }
@@ -2911,17 +2549,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            62.7248,
-            591.74,
+            64.0204,
+            592.1716,
             504.5543,
-            699.0397
+            698.77
           ],
           "parts": [
             [
-              62.7248,
-              591.74,
+              64.0204,
+              592.1716,
               504.5543,
-              699.0397
+              698.77
             ]
           ]
         },
@@ -2930,17 +2568,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            63.1567,
-            542.1091,
-            501.6368,
-            584.2414
+            62.293,
+            541.8934,
+            500.7732,
+            584.3493
           ],
           "parts": [
             [
-              63.1567,
-              542.1091,
-              501.6368,
-              584.2414
+              62.293,
+              541.8934,
+              500.7732,
+              584.3493
             ]
           ],
           "headline": "Bitkide fotosentez hızı solunum hızına eşit olursa ne gibi sonuçlar ortaya çıkar?"
@@ -2950,17 +2588,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            63.9124,
-            482.9297,
-            501.6908,
-            537.5776
+            63.7505,
+            482.8219,
+            501.8528,
+            536.6605
           ],
           "parts": [
             [
-              63.9124,
-              482.9297,
-              501.6908,
-              537.5776
+              63.7505,
+              482.8219,
+              501.8528,
+              536.6605
             ]
           ],
           "headline": "Oksijensiz solunumda monomerler inorganik maddelere kadar parçalanır. Buna rağmen oksijensiz solunumda oksijenli solunuma göre daha az enerji üretilmesinin sebe"
@@ -2970,17 +2608,17 @@
           "label": "4",
           "column": 0,
           "rect": [
-            63.9664,
-            422.4017,
-            502.2846,
-            476.7798
+            63.5885,
+            421.8622,
+            502.0147,
+            475.647
           ],
           "parts": [
             [
-              63.9664,
-              422.4017,
-              502.2846,
-              476.7798
+              63.5885,
+              421.8622,
+              502.0147,
+              475.647
             ]
           ],
           "headline": "Fermantasyon çeşitlerinde substrat olarak glikoz kullanılmasına rağmen oluşan ürünlerin birbirinden farklı olmasının nedeni nedir?"
@@ -2990,17 +2628,17 @@
           "label": "5",
           "column": 0,
           "rect": [
-            63.8045,
+            63.6965,
             362.2,
-            501.6908,
-            415.3886
+            501.5829,
+            415.1728
           ],
           "parts": [
             [
-              63.8045,
+              63.6965,
               362.2,
-              501.6908,
-              415.3886
+              501.5829,
+              415.1728
             ]
           ],
           "headline": "Fermantasyon reaksiyonlarında piruvattan sonra enerji üretimi olmamasına rağmen bu tepkimelerin gerçekleşmesinin nedeni nedir?"
@@ -3010,17 +2648,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            62.7248,
-            68.7819,
-            505.5774,
-            355.0224
+            62.5089,
+            66.7859,
+            506.2252,
+            355.1303
           ],
           "parts": [
             [
-              62.7248,
-              68.7819,
-              505.5774,
-              355.0224
+              62.5089,
+              66.7859,
+              506.2252,
+              355.1303
             ]
           ]
         }
@@ -3045,39 +2683,40 @@
       ],
       "activities": [
         {
-          "id": "p116-v1",
-          "label": null,
-          "column": 1,
+          "id": "p116-1",
+          "label": "1",
+          "column": 0,
           "rect": [
-            58.5684,
-            559.1023,
-            512.9727,
-            697.6911
+            62.9947,
+            528.1909,
+            422.3401,
+            550.5787
           ],
           "parts": [
             [
-              58.5684,
-              559.1023,
-              512.9727,
-              697.6911
+              62.9947,
+              528.1909,
+              422.3401,
+              550.5787
             ]
-          ]
+          ],
+          "headline": "Organik bir molekülün yapısına bir fosfat eklenmesi ile ATP sentezlenmesi olayına"
         },
         {
           "id": "p116-2",
           "label": "2",
           "column": 0,
           "rect": [
-            62.0771,
-            497.0637,
-            495.4831,
+            61.8072,
+            497.0098,
+            477.2379,
             525.8
           ],
           "parts": [
             [
-              62.0771,
-              497.0637,
-              495.4831,
+              61.8072,
+              497.0098,
+              477.2379,
               525.8
             ]
           ],
@@ -3096,21 +2735,40 @@
       ],
       "activities": [
         {
+          "id": "p118-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            72.7651,
+            462.4,
+            511.2453,
+            516.2687
+          ],
+          "parts": [
+            [
+              72.7651,
+              462.4,
+              511.2453,
+              516.2687
+            ]
+          ]
+        },
+        {
           "id": "p118-43",
           "label": "43",
           "column": 0,
           "rect": [
-            57.1109,
-            57.1834,
-            510.5975,
-            443.0632
+            55.5995,
+            55.4031,
+            512.9727,
+            441.7146
           ],
           "parts": [
             [
-              57.1109,
-              57.1834,
-              510.5975,
-              443.0632
+              55.5995,
+              55.4031,
+              512.9727,
+              441.7146
             ]
           ],
           "headline": "Fotosentez hızı ile görünür ışık spektrumu arasındaki ilişki, 1883 yılında Theodore Engelmann tarafından yapılan bir deneyle gösterilmiştir. Bu deneyde ipliksi ",
@@ -3123,7 +2781,7 @@
               "rect": [
                 69.7008,
                 103.4,
-                510.5975,
+                512.9727,
                 155.0554
               ],
               "text": "a) Aerobik bakteri sayısının her bölgede aynı olmamasının nedeni nedir?"
@@ -3135,8 +2793,8 @@
               "partIndex": 0,
               "rect": [
                 69.7008,
-                57.1834,
-                510.5975,
+                55.4031,
+                512.9727,
                 104.7169
               ],
               "text": "b) Engelmann bu deneyle neyi amaçlamıştır?"
@@ -3160,17 +2818,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            64.0204,
-            369.8577,
-            494.1336,
-            399.3126
+            64.8841,
+            369.534,
+            493.9717,
+            398.881
           ],
           "parts": [
             [
-              64.0204,
-              369.8577,
-              494.1336,
-              399.3126
+              64.8841,
+              369.534,
+              493.9717,
+              398.881
             ]
           ]
         },
@@ -3179,17 +2837,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            64.3982,
-            332.1491,
-            493.9177,
-            361.9276
+            64.1283,
+            332.4188,
+            493.8097,
+            361.3881
           ],
           "parts": [
             [
-              64.3982,
-              332.1491,
-              493.9177,
-              361.9276
+              64.1283,
+              332.4188,
+              493.8097,
+              361.3881
             ]
           ]
         },
@@ -3198,17 +2856,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            64.2903,
-            296.0049,
-            493.6478,
-            324.3268
+            64.4522,
+            296.4364,
+            494.1876,
+            324.165
           ],
           "parts": [
             [
-              64.2903,
-              296.0049,
-              493.6478,
-              324.3268
+              64.4522,
+              296.4364,
+              494.1876,
+              324.165
             ]
           ]
         },
@@ -3218,16 +2876,16 @@
           "column": 0,
           "rect": [
             63.8584,
-            258.8896,
-            494.0796,
-            287.4274
+            259.0515,
+            494.2416,
+            286.9958
           ],
           "parts": [
             [
               63.8584,
-              258.8896,
-              494.0796,
-              287.4274
+              259.0515,
+              494.2416,
+              286.9958
             ]
           ]
         },
@@ -3236,17 +2894,17 @@
           "label": "45",
           "column": 0,
           "rect": [
-            42.8602,
-            57.6,
-            498.398,
-            247.6148
+            42.1045,
+            58.1005,
+            498.506,
+            247.9924
           ],
           "parts": [
             [
-              42.8602,
-              57.6,
-              498.398,
-              247.6148
+              42.1045,
+              58.1005,
+              498.506,
+              247.9924
             ]
           ],
           "headline": "Aşağıdaki deney düzeneklerini hazırlayan bir öğrenci bir süre sonra 1. deney tüpünde fenol kırmızısının sarı renge dönüştüğünü, 2. tüpte ise herhangi bir renk d"
@@ -3272,37 +2930,37 @@
           "label": "46",
           "column": 0,
           "rect": [
-            55.7614,
-            535.3119,
-            506.8729,
-            722.8841
+            55.7074,
+            534.9882,
+            506.603,
+            724.3946
           ],
           "parts": [
             [
-              55.7614,
-              535.3119,
-              506.8729,
-              722.8841
+              55.7074,
+              534.9882,
+              506.603,
+              724.3946
             ]
           ],
-          "headline": "46. şekildeki harflendirilmiş yapı ve olayların isimlerini aşağıda boş bırakılan yerlere yazınız."
+          "headline": "Aşağıdaki diyagramda ışıktan bağımsız reaksiyonlarda üretilen organik besinler gösterilmiştir. Buna göre şekildeki harflendirilmiş yapı ve olayların isimlerini "
         },
         {
           "id": "p120-47",
           "label": "47",
           "column": 0,
           "rect": [
-            55.0597,
-            302.6989,
-            510.0857,
-            519.8831
+            56.787,
+            300.1048,
+            508.8702,
+            522.1489
           ],
           "parts": [
             [
-              55.0597,
-              302.6989,
-              510.0857,
-              519.8831
+              56.787,
+              300.1048,
+              508.8702,
+              522.1489
             ]
           ],
           "headline": "Aşağıda fotosentez reaksiyonları ile ilgili verilen şekil üzerinde harf ile gösterilen yapı ve olayların adlarını uygun boşluklara yazınız."
@@ -3332,17 +2990,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            41.8885,
-            634.7354,
+            41.6726,
+            634.6275,
             259.3797,
-            723.1538
+            722.8841
           ],
           "parts": [
             [
-              41.8885,
-              634.7354,
+              41.6726,
+              634.6275,
               259.3797,
-              723.1538
+              722.8841
             ]
           ]
         },
@@ -3351,17 +3009,17 @@
           "label": null,
           "column": 2,
           "rect": [
-            273.733,
-            494.2046,
+            272.8693,
+            493.2875,
             498.6284,
-            721.8591
+            722.8841
           ],
           "parts": [
             [
-              273.733,
-              494.2046,
+              272.8693,
+              493.2875,
               498.6284,
-              721.8591
+              722.8841
             ]
           ]
         },
@@ -3370,17 +3028,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            41.1868,
-            466.9616,
-            243.3422,
-            588.0177
+            41.5107,
+            467.555,
+            244.2598,
+            587.5861
           ],
           "parts": [
             [
-              41.1868,
-              466.9616,
-              243.3422,
-              588.0177
+              41.5107,
+              467.555,
+              244.2598,
+              587.5861
             ]
           ]
         },
@@ -3389,17 +3047,17 @@
           "label": "55",
           "column": 2,
           "rect": [
-            273.4631,
-            333.228,
-            493.7167,
-            437.4528
+            273.2471,
+            333.0122,
+            492.2983,
+            439.0712
           ],
           "parts": [
             [
-              273.4631,
-              333.228,
-              493.7167,
-              437.4528
+              273.2471,
+              333.0122,
+              492.2983,
+              439.0712
             ]
           ],
           "headline": "Aşağıda verilen olaylardan hangisi tüm ototrof canlılarda ortak olarak gerçekleşir?"
@@ -3409,17 +3067,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            40.4311,
-            280.8998,
-            254.678,
-            417.7083
+            40.9709,
+            281.9248,
+            255.3258,
+            417.2228
           ],
           "parts": [
             [
-              40.4311,
-              280.8998,
-              254.678,
-              417.7083
+              40.9709,
+              281.9248,
+              255.3258,
+              417.2228
             ]
           ]
         },
@@ -3428,17 +3086,17 @@
           "label": "56",
           "column": 2,
           "rect": [
-            274.6506,
-            53.4071,
-            495.4831,
-            275.3433
+            273.7869,
+            52.1663,
+            495.1053,
+            278.1485
           ],
           "parts": [
             [
-              274.6506,
-              53.4071,
-              495.4831,
-              275.3433
+              273.7869,
+              52.1663,
+              495.1053,
+              278.1485
             ]
           ],
           "headline": "Fotosentez ile ilgili hazırlanan düzenek aşağıda gösterilmiştir."
@@ -3448,17 +3106,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            40.8629,
-            53.0834,
-            263.2608,
-            235.261
+            41.4027,
+            53.4071,
+            262.829,
+            235.5307
           ],
           "parts": [
             [
-              40.8629,
-              53.0834,
-              263.2608,
-              235.261
+              41.4027,
+              53.4071,
+              262.829,
+              235.5307
             ]
           ],
           "headline": "Glikoliz reaksiyonları tüm canlılarda sitoplaz- mada gerçekleşir."
@@ -3492,17 +3150,17 @@
           "label": null,
           "column": 3,
           "rect": [
-            287.8218,
-            578.0376,
-            509.6259,
-            724.3946
+            287.4979,
+            577.8218,
+            509.1401,
+            724.6104
           ],
           "parts": [
             [
-              287.8218,
-              578.0376,
-              509.6259,
-              724.3946
+              287.4979,
+              577.8218,
+              509.1401,
+              724.6104
             ]
           ]
         },
@@ -3511,75 +3169,76 @@
           "label": "57",
           "column": 0,
           "rect": [
-            55.7074,
-            345.1502,
-            278.48,
-            722.7762
+            56.0853,
+            485.5731,
+            275.8627,
+            724.2328
           ],
           "parts": [
             [
-              55.7074,
-              345.1502,
-              278.48,
-              722.7762
+              56.0853,
+              485.5731,
+              275.8627,
+              724.2328
             ]
           ],
-          "headline": "57. gösterilmiştir."
+          "headline": "Aşağıda fotosentez reaksiyonları arasındaki ilişki gösterilmiştir."
         },
         {
           "id": "p122-v3",
           "label": null,
           "column": 3,
           "rect": [
-            288.1996,
-            368.6169,
-            511.5298,
-            526.6265
+            287.8218,
+            368.2393,
+            510.9214,
+            527.1659
           ],
           "parts": [
             [
-              288.1996,
-              368.6169,
-              511.5298,
-              526.6265
+              287.8218,
+              368.2393,
+              510.9214,
+              527.1659
             ]
           ]
         },
         {
-          "id": "p122-v4",
-          "label": null,
-          "column": 3,
+          "id": "p122-58",
+          "label": "58",
+          "column": 0,
           "rect": [
-            288.1456,
-            213.9521,
-            505.8899,
-            333.3359
+            55.9234,
+            344.287,
+            277.8355,
+            472.6259
           ],
           "parts": [
             [
-              288.1456,
-              213.9521,
-              505.8899,
-              333.3359
+              55.9234,
+              344.287,
+              277.8355,
+              472.6259
             ]
-          ]
+          ],
+          "headline": "I. Piruvat II."
         },
         {
           "id": "p122-v5",
           "label": null,
-          "column": 1,
+          "column": 3,
           "rect": [
-            55.7074,
-            200.6813,
-            273.0852,
-            333.228
+            288.5775,
+            214.8692,
+            505.8899,
+            334.0911
           ],
           "parts": [
             [
-              55.7074,
-              200.6813,
-              273.0852,
-              333.228
+              288.5775,
+              214.8692,
+              505.8899,
+              334.0911
             ]
           ]
         },
@@ -3588,17 +3247,36 @@
           "label": null,
           "column": 1,
           "rect": [
-            55.7614,
-            53.0834,
-            277.9974,
-            171.7119
+            55.4375,
+            199.926,
+            273.3551,
+            332.4188
           ],
           "parts": [
             [
-              55.7614,
-              53.0834,
-              277.9974,
-              171.7119
+              55.4375,
+              199.926,
+              273.3551,
+              332.4188
+            ]
+          ]
+        },
+        {
+          "id": "p122-v7",
+          "label": null,
+          "column": 1,
+          "rect": [
+            56.0853,
+            52.9216,
+            277.6195,
+            171.9277
+          ],
+          "parts": [
+            [
+              56.0853,
+              52.9216,
+              277.6195,
+              171.9277
             ]
           ]
         },
@@ -3607,17 +3285,17 @@
           "label": "64",
           "column": 3,
           "rect": [
-            287.066,
-            53.1913,
+            287.282,
+            52.8137,
             484.4712,
-            161.1384
+            162.541
           ],
           "parts": [
             [
-              287.066,
-              53.1913,
+              287.282,
+              52.8137,
               484.4712,
-              161.1384
+              162.541
             ]
           ],
           "headline": "Fotosentezin ışığa bağımlı reaksiyonlarında I."
@@ -3639,99 +3317,100 @@
       ],
       "activities": [
         {
-          "id": "p123-v1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            41.8346,
-            577.9836,
-            256.0275,
-            724.8262
-          ],
-          "parts": [
-            [
-              41.8346,
-              577.9836,
-              256.0275,
-              724.8262
-            ]
-          ]
-        },
-        {
           "id": "p123-68",
           "label": "68",
           "column": 1,
           "rect": [
-            273.8409,
-            453.2052,
-            494.8354,
+            272.9772,
+            456.8196,
+            494.0257,
             724.2867
           ],
           "parts": [
             [
-              273.8409,
-              453.2052,
-              494.8354,
+              272.9772,
+              456.8196,
+              494.0257,
               724.2867
             ]
           ],
           "headline": "Aşağıdaki fotosentez hızına etki eden çevresel faktörlere ait grafiklerden hangisi yanlıştır?"
         },
         {
+          "id": "p123-v2",
+          "label": null,
+          "column": 0,
+          "rect": [
+            41.4567,
+            577.8757,
+            256.2974,
+            723.8012
+          ],
+          "parts": [
+            [
+              41.4567,
+              577.8757,
+              256.2974,
+              723.8012
+            ]
+          ]
+        },
+        {
           "id": "p123-66",
           "label": "66",
           "column": 0,
           "rect": [
-            42.7522,
-            220.2099,
+            42.4823,
+            220.8033,
             266.5258,
-            568.8666
+            569.4061
           ],
           "parts": [
             [
-              42.7522,
-              220.2099,
+              42.4823,
+              220.8033,
               266.5258,
-              568.8666
+              569.4061
             ]
           ],
           "headline": "Aşağıda fotosentez ile solunum arasındaki ilişki gösterilmiştir."
         },
         {
-          "id": "p123-v4",
-          "label": null,
+          "id": "p123-69",
+          "label": "69",
           "column": 1,
           "rect": [
-            277.1877,
-            57.9386,
-            495.2672,
-            428.2109
+            274.2188,
+            57.1834,
+            496.5627,
+            441.229
           ],
           "parts": [
             [
-              277.1877,
-              57.9386,
-              495.2672,
-              428.2109
+              274.2188,
+              57.1834,
+              496.5627,
+              441.229
             ]
-          ]
+          ],
+          "headline": "Aşağıda aynı türe ait ve başlangıçta özdeş ağır- lıkta olan iki bitki verilmiştir."
         },
         {
           "id": "p123-v5",
           "label": null,
           "column": 0,
           "rect": [
-            41.5107,
-            61.0675,
-            260.8317,
-            203.9181
+            41.4567,
+            61.1754,
+            261.0476,
+            203.8102
           ],
           "parts": [
             [
-              41.5107,
-              61.0675,
-              260.8317,
-              203.9181
+              41.4567,
+              61.1754,
+              261.0476,
+              203.8102
             ]
           ]
         }
@@ -3752,17 +3431,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            55.1676,
-            56.3742,
-            509.356,
-            375.1445
+            56.0853,
+            57.2373,
+            509.8958,
+            375.2524
           ],
           "parts": [
             [
-              55.1676,
-              56.3742,
-              509.356,
-              375.1445
+              56.0853,
+              57.2373,
+              509.8958,
+              375.2524
             ]
           ],
           "headline": "BİR FİKRİN  VAR MI?"
@@ -3780,24 +3459,44 @@
       ],
       "activities": [
         {
-          "id": "p131-q1",
-          "label": null,
+          "id": "p131-1",
+          "label": "1",
           "column": 0,
           "rect": [
-            42.52,
-            389.3864,
-            495.861,
-            714.83
+            46.7467,
+            469.9826,
+            288.6854,
+            539.8434
           ],
           "parts": [
             [
-              42.52,
-              389.3864,
-              495.861,
-              714.83
+              46.7467,
+              469.9826,
+              288.6854,
+              539.8434
             ]
           ],
-          "headline": "Ağaç halkalarının incelenmesi ile ilgilenen bir bilim dalı olan dendrokronolojinin çalışma alanlarını yazılı ve görsel kaynaklardan araştırı"
+          "headline": "Çivinin yerden yüksekliğinde bir değişiklik olmuş mu- dur? Nedenini açıklayınız."
+        },
+        {
+          "id": "p131-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            47.0166,
+            394.1876,
+            287.9297,
+            462.8616
+          ],
+          "parts": [
+            [
+              47.0166,
+              394.1876,
+              287.9297,
+              462.8616
+            ]
+          ],
+          "headline": "Çivinin ağacın dışında kalan uzunluğunda bir değişik- lik olmuş mudur? Nedenini açıklayınız."
         }
       ]
     },
@@ -3816,17 +3515,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            86.1522,
-            317.8532,
-            496.9406,
-            374.1195
+            85.9363,
+            317.7453,
+            498.2901,
+            373.1485
           ],
           "parts": [
             [
-              86.1522,
-              317.8532,
-              496.9406,
-              374.1195
+              85.9363,
+              317.7453,
+              498.2901,
+              373.1485
             ]
           ],
           "headline": "Elodea gövdesinden aldığınız enine kesitte gözlemlediğiniz temel doku çeşitleri nelerdir? Görev- lerini yazınız."
@@ -3836,17 +3535,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            85.6664,
-            267.575,
-            496.0769,
-            311.5954
+            84.7487,
+            267.4132,
+            496.7247,
+            311.8112
           ],
           "parts": [
             [
-              85.6664,
-              267.575,
-              496.0769,
-              311.5954
+              84.7487,
+              267.4132,
+              496.7247,
+              311.8112
             ]
           ],
           "headline": "Yapraktan aldığınız enine kesitte gözlemlediğiniz temel doku çeşitleri nelerdir? Görevlerini yazınız."
@@ -3857,16 +3556,16 @@
           "column": 0,
           "rect": [
             66.6352,
-            205.9141,
-            497.0485,
-            260.508
+            205.6443,
+            495.699,
+            260.0225
           ],
           "parts": [
             [
               66.6352,
-              205.9141,
-              497.0485,
-              260.508
+              205.6443,
+              495.699,
+              260.0225
             ]
           ],
           "headline": "Ayva ile hazırladığınız preparatta hangi temel doku çeşidini gördünüz? Bu hücrelerin bitkideki görevini yazınız."
@@ -3876,17 +3575,17 @@
           "label": "4",
           "column": 0,
           "rect": [
-            87.3398,
-            145.8176,
+            82.2656,
+            146.8965,
             499.8174,
-            199.3865
+            199.3326
           ],
           "parts": [
             [
-              87.3398,
-              145.8176,
+              82.2656,
+              146.8965,
               499.8174,
-              199.3865
+              199.3326
             ]
           ],
           "headline": "Patates ile hazırladığınız preperatta hangi temel doku çeşidini gördünüz? Bu hücrelerin bitkideki görevini yazınız."
@@ -3896,56 +3595,20 @@
           "label": "5",
           "column": 0,
           "rect": [
-            86.3141,
-            88.4184,
+            85.3425,
+            88.6342,
             457.512,
-            140.5848
+            140.5308
           ],
           "parts": [
             [
-              86.3141,
-              88.4184,
+              85.3425,
+              88.6342,
               457.512,
-              140.5848
+              140.5308
             ]
           ],
           "headline": "5. hücrelerin bitkideki görevini yazınız."
-        }
-      ]
-    },
-    "139": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          36.5197,
-          187.0805
-        ],
-        [
-          191.0805,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p139-q1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            41.7266,
-            58.8557,
-            494.1336,
-            489.3
-          ],
-          "parts": [
-            [
-              41.7266,
-              58.8557,
-              494.1336,
-              489.3
-            ]
-          ],
-          "headline": "Bu etkinlikte laboratuvar kurallarına uyunuz ve güvenlik önlemlerini alınız. Etkinliğin Adı"
         }
       ]
     },
@@ -3964,17 +3627,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            49.5537,
-            123.3219,
+            48.5595,
+            123.6995,
             489.2135,
-            179.9658
+            179.75
           ],
           "parts": [
             [
-              49.5537,
-              123.3219,
+              48.5595,
+              123.6995,
               489.2135,
-              179.9658
+              179.75
             ]
           ],
           "headline": "Cossus cossus , kestane ağacının gövdesinin dışından merkezine ulaşıncaya kadar sırayla hangi dokulara ve tabakalara zarar verir?"
@@ -3984,17 +3647,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            48.744,
-            58.8557,
-            484.957,
-            115.7154
+            48.852,
+            58.9636,
+            485.6048,
+            115.8233
           ],
           "parts": [
             [
-              48.744,
-              58.8557,
-              484.957,
-              115.7154
+              48.852,
+              58.9636,
+              485.6048,
+              115.8233
             ]
           ],
           "headline": "Enginar bitkisinin köküne en dış tabakadan giren Phragmacossia albida ’nın kök merkezine ulaşıncaya kadar zarar verdiği doku ve tabakaları sırasıyla yazınız."
@@ -4016,16 +3679,16 @@
           "label": null,
           "column": 0,
           "rect": [
-            55.4915,
-            312.1888,
-            507.2508,
+            55.3296,
+            312.4046,
+            509.6259,
             723.528
           ],
           "parts": [
             [
-              55.4915,
-              312.1888,
-              507.2508,
+              55.3296,
+              312.4046,
+              509.6259,
               723.528
             ]
           ],
@@ -4048,17 +3711,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            55.5455,
-            54.7018,
-            510.6515,
-            309.006
+            55.4375,
+            55.7808,
+            510.2197,
+            309.6533
           ],
           "parts": [
             [
-              55.5455,
-              54.7018,
-              510.6515,
-              309.006
+              55.4375,
+              55.7808,
+              510.2197,
+              309.6533
             ]
           ],
           "headline": "SIRA SİZDE Aşağıda numaralandırılmış yaprak örneklerinin fiziksel özelliklerinden yola çıkarak bu yapraklara sahip",
@@ -4126,15 +3789,15 @@
           "column": 0,
           "rect": [
             42.0,
-            360.4171,
-            495.2132,
+            360.9026,
+            495.3752,
             723.528
           ],
           "parts": [
             [
               42.0,
-              360.4171,
-              495.2132,
+              360.9026,
+              495.3752,
               723.528
             ]
           ],
@@ -4142,53 +3805,136 @@
         }
       ]
     },
-    "152": {
+    "153": {
       "pageWidth": 552.756,
       "pageHeight": 779.528,
       "columns": [
         [
-          50.6929,
+          36.5197,
           528.756
         ]
       ],
       "activities": [
         {
-          "id": "p152-3",
-          "label": "3",
-          "column": 0,
-          "rect": [
-            55.1676,
-            641.4248,
-            417.5899,
-            657.1772
-          ],
-          "parts": [
-            [
-              55.1676,
-              641.4248,
-              417.5899,
-              657.1772
-            ]
-          ],
-          "headline": "Koleoptil ucu ışık geçirmeyen bir başlık ile kapatıldığında ışığa yönelim olmamıştır."
-        },
-        {
-          "id": "p152-v2",
+          "id": "p153-q1",
           "label": null,
           "column": 0,
           "rect": [
-            56.5171,
-            53.4611,
-            502.0429,
-            90.3605
+            42.0505,
+            56.536,
+            497.6423,
+            587.2624
           ],
           "parts": [
             [
-              56.5171,
-              53.4611,
-              502.0429,
-              90.3605
+              42.0505,
+              56.536,
+              497.6423,
+              587.2624
             ]
+          ],
+          "headline": "SIRA SİZDE Aşağıda farklı ortamlarda koleoptillerle yapılmış fototropizma deneyleri verilmiştir. Boş bırakılan yerlere",
+          "items": [
+            {
+              "id": "p153--2",
+              "label": "2",
+              "number": 2,
+              "partIndex": 0,
+              "rect": [
+                200.8036,
+                519.457,
+                217.1336,
+                539.847
+              ]
+            },
+            {
+              "id": "p153--3",
+              "label": "3",
+              "number": 3,
+              "partIndex": 0,
+              "rect": [
+                46.0571,
+                417.7682,
+                461.7119,
+                539.847
+              ],
+              "text": "2. 1. 3. Kleoptilin ucu kesilirse Karanlık ortam Işık Işık Oksin Büyüme: Yönelim: Büyüme: Yönelim: Büyüme: Yönelim:"
+            },
+            {
+              "id": "p153--5",
+              "label": "5",
+              "number": 5,
+              "partIndex": 0,
+              "rect": [
+                46.0571,
+                300.5365,
+                461.0033,
+                415.5502
+              ],
+              "text": "4. 6. 5. Kleoptilin ucuna ışık geçiren Kleoptilin ucuna ışık geçirmeyen Kleoptilin ucu açıkta bırakılıp, alt başlık geçirilirse başlık geçirilirse kısmı ışığı geçirmeyen bir örtü ile kapatılırsa Işık "
+            },
+            {
+              "id": "p153--6",
+              "label": "6",
+              "number": 6,
+              "partIndex": 0,
+              "rect": [
+                348.9638,
+                395.1602,
+                365.1938,
+                415.5502
+              ]
+            },
+            {
+              "id": "p153--7",
+              "label": "7",
+              "number": 7,
+              "partIndex": 0,
+              "rect": [
+                46.0571,
+                183.6314,
+                461.0033,
+                299.8119
+              ],
+              "text": "8. 9. 7. Kleoptilin ucu jelatin bir blokla diğer Kleoptilin ucu mika geçirilerek diğer Karanlıkta kesik kleoptil ucu kısımlarından ayrılırsa kısımlarından ayrılırsa merkezin sağına yerleştirilirse Işı"
+            },
+            {
+              "id": "p153--8",
+              "label": "8",
+              "number": 8,
+              "partIndex": 0,
+              "rect": [
+                200.8326,
+                279.4219,
+                217.1026,
+                299.8119
+              ]
+            },
+            {
+              "id": "p153--9",
+              "label": "9",
+              "number": 9,
+              "partIndex": 0,
+              "rect": [
+                349.1203,
+                279.3766,
+                365.0403,
+                299.7666
+              ]
+            },
+            {
+              "id": "p153--12",
+              "label": "12",
+              "number": 12,
+              "partIndex": 0,
+              "rect": [
+                46.0571,
+                63.6575,
+                490.8479,
+                183.3666
+              ],
+              "text": "10. 11. 12. Karanlıkta kesik kleoptil ucu Karanlıkta ucu kesilen kleoptilin üstüne Uç kısmı kesilerek yan yerleştirilen merkezin soluna yerleştirilirse oksin yedirilmiş agar konulursa yerden ışık veri"
+            }
           ]
         }
       ]
@@ -4208,17 +3954,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            63.4266,
-            381.5641,
-            497.6423,
-            424.3977
+            63.1567,
+            381.8878,
+            499.3157,
+            424.128
           ],
           "parts": [
             [
-              63.4266,
-              381.5641,
-              497.6423,
-              424.3977
+              63.1567,
+              381.8878,
+              499.3157,
+              424.128
             ]
           ],
           "headline": "Birinci düzenekteki bitkide kökün ve gövdenin yönelimi nasıl olur? Nedenini açıklayınız."
@@ -4228,17 +3974,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            62.6169,
-            329.8294,
-            500.5572,
-            373.634
+            61.5913,
+            332.0951,
+            501.259,
+            373.1485
           ],
           "parts": [
             [
-              62.6169,
-              329.8294,
-              500.5572,
-              373.634
+              61.5913,
+              332.0951,
+              501.259,
+              373.1485
             ]
           ],
           "headline": "İkinci düzenekte bitkide kökün ve gövdenin yönelimi nasıl olur? Nedenini açıklayınız."
@@ -4260,16 +4006,16 @@
           "label": null,
           "column": 0,
           "rect": [
-            55.7074,
-            56.59,
-            507.6286,
+            56.0,
+            62.4162,
+            509.248,
             522.528
           ],
           "parts": [
             [
-              55.7074,
-              56.59,
-              507.6286,
+              56.0,
+              62.4162,
+              509.248,
               522.528
             ]
           ],
@@ -4292,17 +4038,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            62.347,
-            440.6896,
-            497.3724,
-            482.3903
+            61.6452,
+            440.0422,
+            497.6963,
+            482.3363
           ],
           "parts": [
             [
-              62.347,
-              440.6896,
-              497.3724,
-              482.3903
+              61.6452,
+              440.0422,
+              497.6963,
+              482.3363
             ]
           ],
           "headline": "Numaralandırılmış yapıların hangilerinde kısa gün bitkileri çiçek açar?"
@@ -4312,17 +4058,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            63.2107,
-            389.818,
-            497.6423,
-            431.7884
+            62.4549,
+            390.735,
+            498.1281,
+            431.6805
           ],
           "parts": [
             [
-              63.2107,
-              389.818,
-              497.6423,
-              431.7884
+              62.4549,
+              390.735,
+              498.1281,
+              431.6805
             ]
           ],
           "headline": "Numaralandırılmış yapıların hangilerinde uzun gün bitkileri çiçek açar?"
@@ -4363,17 +4109,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            48.5281,
-            529.2159,
-            491.4346,
-            718.8921
+            48.744,
+            529.7554,
+            491.0568,
+            718.4065
           ],
           "parts": [
             [
-              48.5281,
-              529.2159,
-              491.4346,
-              718.8921
+              48.744,
+              529.7554,
+              491.0568,
+              718.4065
             ]
           ],
           "headline": "2. Aşağıdaki tabloda stoma, lentisel ve hidatota ait bazı özellikler verilmiştir. Bir özelliğin  birden fazla ya- pıda görülebildiğini göz ö"
@@ -4383,17 +4129,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            49.1219,
-            349.1422,
-            484.2553,
-            519.1818
+            49.2298,
+            349.7356,
+            483.8234,
+            518.9121
           ],
           "parts": [
             [
-              49.1219,
-              349.1422,
-              484.2553,
-              519.1818
+              49.2298,
+              349.7356,
+              483.8234,
+              518.9121
             ]
           ],
           "headline": "3. Aşağıda romen rakamları ile verilen bitki dokularına ait görevleri ,harflerle verilen bitki yapı ve do- kuları ile eşleştirerek doğru har"
@@ -4403,17 +4149,17 @@
           "label": "4",
           "column": 0,
           "rect": [
-            49.1758,
-            190.2696,
-            482.366,
-            342.7765
+            48.5314,
+            190.2156,
+            481.7182,
+            342.5608
           ],
           "parts": [
             [
-              49.1758,
-              190.2696,
-              482.366,
-              342.7765
+              48.5314,
+              190.2156,
+              481.7182,
+              342.5608
             ]
           ],
           "headline": "4.  Aşağıdaki tabloda bitkilerde bulunan bazı  hormonlara ait özellikler verilmiştir. Tabloda verilen özelliklerin karşısındaki boşluğa etki",
@@ -4490,17 +4236,17 @@
           "label": "a",
           "column": 0,
           "rect": [
-            47.6104,
-            61.1215,
-            474.7008,
-            183.2026
+            48.2582,
+            61.553,
+            474.107,
+            183.0407
           ],
           "parts": [
             [
-              47.6104,
-              61.1215,
-              474.7008,
-              183.2026
+              48.2582,
+              61.553,
+              474.107,
+              183.0407
             ]
           ],
           "headline": "Akşam sefası bitkisinin yapraklarının gündüz kapalı, gece açık olması b) Ayçiçeği bitkisinin güneşe yönelmesi c) Küstüm otu bitkisinin dokununca yapraklarını ka"
@@ -4522,17 +4268,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            58.2425,
-            105.4656,
-            484.3632,
-            148.7847
+            59.2161,
+            106.059,
+            485.7127,
+            149.0004
           ],
           "parts": [
             [
-              58.2425,
-              105.4656,
-              484.3632,
-              148.7847
+              59.2161,
+              106.059,
+              485.7127,
+              149.0004
             ]
           ]
         },
@@ -4541,59 +4287,51 @@
           "label": null,
           "column": 0,
           "rect": [
-            58.2441,
-            54.7558,
-            483.9314,
-            97.6972
+            59.1622,
+            54.0005,
+            485.6048,
+            97.5894
           ],
           "parts": [
             [
-              58.2441,
-              54.7558,
-              483.9314,
-              97.6972
+              59.1622,
+              54.0005,
+              485.6048,
+              97.5894
             ]
           ]
         }
       ]
     },
-    "168": {
+    "164": {
       "pageWidth": 552.756,
       "pageHeight": 779.528,
       "columns": [
         [
-          50.6882,
-          297.9432
-        ],
-        [
-          301.9432,
-          353.9012
-        ],
-        [
-          357.9012,
+          51.2602,
           528.756
         ]
       ],
       "activities": [
         {
-          "id": "p168-2",
-          "label": "2",
+          "id": "p164-q1",
+          "label": null,
           "column": 0,
           "rect": [
-            55.7074,
-            258.4041,
-            281.1898,
-            323.8952
+            57.003,
+            482.2824,
+            509.0861,
+            711.0159
           ],
           "parts": [
             [
-              55.7074,
-              258.4041,
-              281.1898,
-              323.8952
+              57.003,
+              482.2824,
+              509.0861,
+              711.0159
             ]
           ],
-          "headline": "Arkadaş hücrelerinden kalburlu borulara geçen besin maddeleri (sukroz, amino asitler gibi), kalburlu boru hücrelerinin hücre içi yoğunluğu- nu artırır. Bu sayed"
+          "headline": "Aşağıda verilen metne ve tabloya göre soruyu cevaplayınız."
         }
       ]
     },
@@ -4612,17 +4350,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            40.2691,
+            41.6726,
             361.778,
-            496.1167,
-            664.9455
+            496.5627,
+            665.485
           ],
           "parts": [
             [
-              40.2691,
+              41.6726,
               361.778,
-              496.1167,
-              664.9455
+              496.5627,
+              665.485
             ]
           ]
         },
@@ -4631,16 +4369,16 @@
           "label": null,
           "column": 0,
           "rect": [
-            40.9709,
-            55.511,
-            494.2956,
+            41.4027,
+            59.0176,
+            494.4035,
             361.528
           ],
           "parts": [
             [
-              40.9709,
-              55.511,
-              494.2956,
+              41.4027,
+              59.0176,
+              494.4035,
               361.528
             ]
           ]
@@ -4662,41 +4400,21 @@
       ],
       "activities": [
         {
-          "id": "p170-1",
-          "label": "1",
-          "column": 0,
-          "rect": [
-            62.0771,
-            580.0336,
-            504.1199,
-            699.9029
-          ],
-          "parts": [
-            [
-              62.0771,
-              580.0336,
-              504.1199,
-              699.9029
-            ]
-          ],
-          "headline": "1. Aşağıdaki tabloda terlemeye etki eden genetik ve çevresel faktörler karışık olarak verilmiştir. Çev- resel faktörlere ait olanların başın"
-        },
-        {
           "id": "p170-a",
           "label": "a",
           "column": 0,
           "rect": [
-            74.6005,
-            317.3138,
-            505.4155,
-            372.6629
+            75.2482,
+            317.098,
+            505.2535,
+            372.0156
           ],
           "parts": [
             [
-              74.6005,
-              317.3138,
-              505.4155,
-              372.6629
+              75.2482,
+              317.098,
+              505.2535,
+              372.0156
             ]
           ],
           "headline": "Bekçi hücrelerinde glikoz artışı, C0 artışı, turgor artışı ve K + azalışı stomaların açılıp kapanmasında nasıl bir etki gösterir? Açıklayınız."
@@ -4706,37 +4424,37 @@
           "label": "b",
           "column": 0,
           "rect": [
-            75.4102,
-            266.7658,
-            505.0916,
-            309.1678
+            74.7624,
+            267.0355,
+            505.6854,
+            309.2757
           ],
           "parts": [
             [
-              75.4102,
-              266.7658,
-              505.0916,
-              309.1678
+              74.7624,
+              267.0355,
+              505.6854,
+              309.2757
             ]
           ],
           "headline": "Stoma bekçi hücreleri ile epidermis hücreleri arasında ortak gerçekleşen hücresel olaylar nelerdir?"
         },
         {
-          "id": "p170-v4",
+          "id": "p170-v3",
           "label": null,
           "column": 0,
           "rect": [
-            62.9947,
-            61.553,
-            506.4411,
-            258.1883
+            62.4549,
+            61.3373,
+            507.1968,
+            258.3501
           ],
           "parts": [
             [
-              62.9947,
-              61.553,
-              506.4411,
-              258.1883
+              62.4549,
+              61.3373,
+              507.1968,
+              258.3501
             ]
           ]
         }
@@ -4757,17 +4475,17 @@
           "label": "b",
           "column": 0,
           "rect": [
-            61.6452,
-            675.1414,
-            492.2443,
-            718.4605
+            60.1878,
+            674.3861,
+            492.5142,
+            717.975
           ],
           "parts": [
             [
-              61.6452,
-              675.1414,
-              492.2443,
-              718.4605
+              60.1878,
+              674.3861,
+              492.5142,
+              717.975
             ]
           ],
           "headline": "Emici tüylerle alınan suyun ksileme taşınırken numaralandırılmış yapılardan geçiş sırasını belirtiniz."
@@ -4777,17 +4495,17 @@
           "label": "c",
           "column": 0,
           "rect": [
-            60.7953,
-            625.9421,
-            491.1647,
-            668.3981
+            60.9975,
+            625.7803,
+            491.0028,
+            668.0204
           ],
           "parts": [
             [
-              60.7953,
-              625.9421,
-              491.1647,
-              668.3981
+              60.9975,
+              625.7803,
+              491.0028,
+              668.0204
             ]
           ],
           "headline": "Mavi ve kırmızı yolların isimlerini yazarak taşınımın en hızlı olduğu yolu belirtiniz."
@@ -4797,17 +4515,17 @@
           "label": "ç",
           "column": 0,
           "rect": [
-            60.7953,
-            571.9955,
-            491.2727,
-            616.7712
+            60.8895,
+            572.6429,
+            490.8948,
+            616.4475
           ],
           "parts": [
             [
-              60.7953,
-              571.9955,
-              491.2727,
-              616.7712
+              60.8895,
+              572.6429,
+              490.8948,
+              616.4475
             ]
           ],
           "headline": "Numaralandırılmış yapılardan hangisi su moleküllerini belirli bölgelerden geçmeye zorlar?"
@@ -4817,17 +4535,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            49.4457,
-            247.9385,
-            493.9177,
-            564.0114
+            49.6077,
+            247.4529,
+            494.2956,
+            565.2522
           ],
           "parts": [
             [
-              49.4457,
-              247.9385,
-              493.9177,
-              564.0114
+              49.6077,
+              247.4529,
+              494.2956,
+              565.2522
             ]
           ]
         },
@@ -4836,17 +4554,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            49.4457,
-            58.8557,
-            489.7073,
-            235.3689
+            50.4174,
+            57.9926,
+            489.8152,
+            235.8005
           ],
           "parts": [
             [
-              49.4457,
-              58.8557,
-              489.7073,
-              235.3689
+              50.4174,
+              57.9926,
+              489.8152,
+              235.8005
             ]
           ]
         }
@@ -4867,17 +4585,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            41.6726,
-            56.8057,
-            496.4008,
-            291.5273
+            42.6443,
+            55.9426,
+            496.5627,
+            295.2496
           ],
           "parts": [
             [
-              41.6726,
-              56.8057,
-              496.4008,
-              291.5273
+              42.6443,
+              55.9426,
+              496.5627,
+              295.2496
             ]
           ],
           "headline": "BİR FİKRİN VAR MI?"
@@ -4899,20 +4617,51 @@
           "label": null,
           "column": 0,
           "rect": [
-            55.8154,
-            336.8964,
-            507.3587,
+            56.0,
+            337.274,
+            509.0321,
             723.528
           ],
           "parts": [
             [
-              55.8154,
-              336.8964,
-              507.3587,
+              56.0,
+              337.274,
+              509.0321,
               723.528
             ]
           ],
           "headline": "Bu etkinlikte laboratuvar kurallarına uyunuz ve güvenlik önlemlerini alınız. Etkinliğin Adı"
+        }
+      ]
+    },
+    "180": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          50.6929,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p180-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            54.142,
+            54.7558,
+            512.6488,
+            330.153
+          ],
+          "parts": [
+            [
+              54.142,
+              54.7558,
+              512.6488,
+              330.153
+            ]
+          ]
         }
       ]
     },
@@ -4931,17 +4680,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            42.0,
-            213.8442,
-            495.3752,
-            650.528
+            41.9965,
+            215.9481,
+            495.1592,
+            651.6746
           ],
           "parts": [
             [
-              42.0,
-              213.8442,
-              495.3752,
-              650.528
+              41.9965,
+              215.9481,
+              495.1592,
+              651.6746
             ]
           ],
           "headline": "Bu etkinlikte laboratuvar kurallarına uyunuz ve güvenlik önlemlerini alınız. Etkinliğin Adı"
@@ -4963,17 +4712,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            55.1676,
-            259.2672,
-            506.9269,
-            538.1339
+            55.7614,
+            259.2133,
+            507.4667,
+            530.9961
           ],
           "parts": [
             [
-              55.1676,
-              259.2672,
-              506.9269,
-              538.1339
+              55.7614,
+              259.2133,
+              507.4667,
+              530.9961
             ]
           ],
           "headline": "Bu etkinlikte laboratuvar kurallarına uyunuz ve güvenlik önlemlerini alınız. Etkinliğin Adı"
@@ -4995,17 +4744,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            75.5721,
-            500.1926,
-            504.8757,
-            543.5657
+            75.95,
+            499.815,
+            505.9553,
+            543.4039
           ],
           "parts": [
             [
-              75.5721,
-              500.1926,
-              504.8757,
-              543.5657
+              75.95,
+              499.815,
+              505.9553,
+              543.4039
             ]
           ]
         },
@@ -5014,17 +4763,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            75.0863,
-            451.6947,
-            504.7137,
-            493.5572
+            75.5721,
+            451.1013,
+            505.1995,
+            493.0178
           ],
           "parts": [
             [
-              75.0863,
-              451.6947,
-              504.7137,
-              493.5572
+              75.5721,
+              451.1013,
+              505.1995,
+              493.0178
             ]
           ]
         },
@@ -5033,36 +4782,75 @@
           "label": null,
           "column": 0,
           "rect": [
+            75.896,
+            400.3375,
+            505.3075,
+            442.9014
+          ],
+          "parts": [
+            [
+              75.896,
+              400.3375,
+              505.3075,
+              442.9014
+            ]
+          ]
+        },
+        {
+          "id": "p184-v4",
+          "label": null,
+          "column": 0,
+          "rect": [
             63.5745,
-            349.5738,
-            505.1995,
-            393.2705
+            349.8975,
+            505.2535,
+            392.1377
           ],
           "parts": [
             [
               63.5745,
-              349.5738,
-              505.1995,
-              393.2705
+              349.8975,
+              505.2535,
+              392.1377
             ]
           ]
+        },
+        {
+          "id": "p184-2",
+          "label": "2",
+          "column": 0,
+          "rect": [
+            63.8584,
+            120.5166,
+            499.5316,
+            329.8294
+          ],
+          "parts": [
+            [
+              63.8584,
+              120.5166,
+              499.5316,
+              329.8294
+            ]
+          ],
+          "headline": "Aşağıda çiçekli bir bitkinin erkek ve dişi organına ait yapılar verilmiştir."
         },
         {
           "id": "p184-3",
           "label": "3",
           "column": 0,
           "rect": [
-            63.3726,
-            57.8847,
-            502.7165,
-            103.0919
+            63.2107,
+            59.7189,
+            502.7704,
+            103.3616
           ],
           "parts": [
             [
-              63.3726,
-              57.8847,
-              502.7165,
-              103.0919
+              63.2107,
+              59.7189,
+              502.7704,
+              103.3616
             ]
           ],
           "headline": "Bir tohumun çimlenmesinde etkili olan hormon ve çevresel faktörleri yazınız."
@@ -5080,103 +4868,64 @@
       ],
       "activities": [
         {
-          "id": "p186-v1",
-          "label": null,
-          "column": 0,
-          "rect": [
-            58.0286,
-            543.3499,
-            513.7284,
-            698.0147
-          ],
-          "parts": [
-            [
-              58.0286,
-              543.3499,
-              513.7284,
-              698.0147
-            ]
-          ]
-        },
-        {
           "id": "p186-1",
           "label": "1",
           "column": 0,
           "rect": [
-            61.4833,
-            511.2517,
+            62.7788,
+            511.4675,
             511.3632,
-            536.7145
+            537.0921
           ],
           "parts": [
             [
-              61.4833,
-              511.2517,
+              62.7788,
+              511.4675,
               511.3632,
-              536.7145
+              537.0921
             ]
           ],
           "headline": "Meristem hücre bulundukları yere göre grupta incelenir."
-        }
-      ]
-    },
-    "188": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          50.3334,
-          528.756
-        ]
-      ],
-      "activities": [
+        },
         {
-          "id": "p188-43",
-          "label": "43",
+          "id": "p186-3",
+          "label": "3",
           "column": 0,
           "rect": [
-            56.6251,
-            56.2123,
-            511.7311,
-            439.1791
+            62.1311,
+            462.6458,
+            476.6981,
+            480.7
           ],
           "parts": [
             [
-              56.6251,
-              56.2123,
-              511.7311,
-              439.1791
+              62.1311,
+              462.6458,
+              476.6981,
+              480.7
             ]
           ],
-          "headline": "Bitkilerin ışığa yönelimi ile ilgili deneylerde ışığın sadece koleoptilin ucundan algılandığı fakat kıvrılmanın uçtan belli uzaklıkta gerçekleştiği, sinyalin je",
-          "items": [
-            {
-              "id": "p188-43-a",
-              "label": "a",
-              "number": 1,
-              "partIndex": 0,
-              "rect": [
-                70.3304,
-                80.5539,
-                506.0974,
-                204.85
-              ],
-              "text": "a) Görselde numaralarla belirtilen bitkilerin hangilerinde yönelim, büyüme veya hem yönelim hem de büyüme olayı olduğunu aşağıda verilen numaraların karşısına belirtiniz (Not: Yönelim varsa hangi yöne"
-            },
-            {
-              "id": "p188-43-b",
-              "label": "b",
-              "number": 2,
-              "partIndex": 0,
-              "rect": [
-                70.6904,
-                56.2123,
-                495.0105,
-                86.05
-              ],
-              "text": "b) Yapılan uygulamada etkili olan hormon nedir ve bu hormonun etkili olduğu yönelim hareketi nedir?"
-            }
-          ]
+          "headline": "4. Kök ucunda bulunan , kökün toprak içinde ilerlerken zarar görmesini engeller."
+        },
+        {
+          "id": "p186-10",
+          "label": "10",
+          "column": 0,
+          "rect": [
+            54.7358,
+            55.1873,
+            513.0266,
+            307.9
+          ],
+          "parts": [
+            [
+              54.7358,
+              55.1873,
+              513.0266,
+              307.9
+            ]
+          ],
+          "headline": "Polen tüpünde bulunan spermlerin yumurta hücresini döllemesi ile ri döllemesi ile"
         }
       ]
     },
@@ -5203,17 +4952,17 @@
           "label": "44",
           "column": 0,
           "rect": [
-            41.2948,
-            593.1426,
-            472.3257,
-            723.5315
+            41.9965,
+            591.9018,
+            472.1097,
+            724.6643
           ],
           "parts": [
             [
-              41.2948,
-              593.1426,
-              472.3257,
-              723.5315
+              41.9965,
+              591.9018,
+              472.1097,
+              724.6643
             ]
           ],
           "headline": "44. Aşağıdaki tabloda özellikleri verilen doku çeşitlerinin isimlerini boş bırakılan yerlere yazınız. Özellikleri Doku Çeşidi"
@@ -5223,17 +4972,17 @@
           "label": "45",
           "column": 0,
           "rect": [
-            40.3231,
+            40.3366,
             368.326,
             496.5974,
-            566.9246
+            568.7587
           ],
           "parts": [
             [
-              40.3231,
+              40.3366,
               368.326,
               496.5974,
-              566.9246
+              568.7587
             ]
           ],
           "headline": "45. Aşağıdaki görselde yaprak kesitinde bulunan yapılar numaralandırılarak gösterilmiştir. Görselden yarar- lanarak soruları cevaplayınız."
@@ -5243,78 +4992,19 @@
           "label": null,
           "column": 0,
           "rect": [
-            40.9169,
-            55.1873,
-            491.2187,
-            342.2371
+            40.1612,
+            54.8637,
+            491.2727,
+            342.8844
           ],
           "parts": [
             [
-              40.9169,
-              55.1873,
-              491.2187,
-              342.2371
+              40.1612,
+              54.8637,
+              491.2727,
+              342.8844
             ]
           ]
-        }
-      ]
-    },
-    "190": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          50.0262,
-          197.437
-        ],
-        [
-          201.437,
-          278.8795
-        ],
-        [
-          282.8795,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p190-v1",
-          "label": null,
-          "column": 2,
-          "rect": [
-            55.9773,
-            285.3774,
-            511.3533,
-            453.5289
-          ],
-          "parts": [
-            [
-              55.9773,
-              285.3774,
-              511.3533,
-              453.5289
-            ]
-          ]
-        },
-        {
-          "id": "p190-49",
-          "label": "49",
-          "column": 0,
-          "rect": [
-            55.5455,
-            59.2333,
-            509.8024,
-            272.1065
-          ],
-          "parts": [
-            [
-              55.5455,
-              59.2333,
-              509.8024,
-              272.1065
-            ]
-          ],
-          "headline": "Bitkilerde üretilen hormonlarla ilgili olarak 50. Bitkilerde organik besin taşınması ile ilgili I."
         }
       ]
     },
@@ -5337,17 +5027,17 @@
           "label": "54",
           "column": 1,
           "rect": [
-            273.625,
-            612.2397,
-            464.7685,
-            723.9091
+            273.733,
+            611.8081,
+            463.9588,
+            724.1249
           ],
           "parts": [
             [
-              273.625,
-              612.2397,
-              464.7685,
-              723.9091
+              273.733,
+              611.8081,
+              463.9588,
+              724.1249
             ]
           ],
           "headline": "Stoma ve lentiseller için I."
@@ -5357,17 +5047,17 @@
           "label": "51",
           "column": 0,
           "rect": [
-            41.0249,
-            617.5804,
-            251.1153,
-            722.1828
+            40.9709,
+            617.6343,
+            251.2773,
+            721.5354
           ],
           "parts": [
             [
-              41.0249,
-              617.5804,
-              251.1153,
-              722.1828
+              40.9709,
+              617.6343,
+              251.2773,
+              721.5354
             ]
           ],
           "headline": "Aşağıdakilerden hangisi parankima dokusu- nun görevlerinden değildir?"
@@ -5377,17 +5067,17 @@
           "label": "52",
           "column": 0,
           "rect": [
-            41.8885,
-            354.9685,
+            40.4851,
+            356.9645,
             266.1088,
-            586.2374
+            585.0506
           ],
           "parts": [
             [
-              41.8885,
-              354.9685,
+              40.4851,
+              356.9645,
               266.1088,
-              586.2374
+              585.0506
             ]
           ],
           "headline": "Aşağıda genç bir bitkinin gövde enine kesiti verilmiştir."
@@ -5397,16 +5087,16 @@
           "label": "55",
           "column": 1,
           "rect": [
-            274.7586,
-            442.5777,
-            495.3212,
+            274.2188,
+            442.7395,
+            494.9973,
             561.2062
           ],
           "parts": [
             [
-              274.7586,
-              442.5777,
-              495.3212,
+              274.2188,
+              442.7395,
+              494.9973,
               561.2062
             ]
           ],
@@ -5417,17 +5107,17 @@
           "label": "56",
           "column": 1,
           "rect": [
-            274.9205,
-            282.6801,
-            488.4117,
-            387.9298
+            274.3267,
+            282.4103,
+            487.602,
+            387.3904
           ],
           "parts": [
             [
-              274.9205,
-              282.6801,
-              488.4117,
-              387.9298
+              274.3267,
+              282.4103,
+              487.602,
+              387.3904
             ]
           ],
           "headline": "Aşağıdakilerden hangisi meristem hücrenin özelliklerinden biridir?"
@@ -5437,17 +5127,17 @@
           "label": "53",
           "column": 0,
           "rect": [
-            43.346,
-            52.3821,
-            263.4228,
-            319.9032
+            42.6443,
+            52.7598,
+            261.7494,
+            320.3348
           ],
           "parts": [
             [
-              43.346,
-              52.3821,
-              263.4228,
-              319.9032
+              42.6443,
+              52.7598,
+              261.7494,
+              320.3348
             ]
           ],
           "headline": "Aşağıdaki görselde yaprağın enine kesiti göste- rilmiştir."
@@ -5457,17 +5147,17 @@
           "label": "57",
           "column": 1,
           "rect": [
-            274.0029,
-            66.4082,
+            275.8382,
+            66.0846,
             496.4357,
-            224.7954
+            225.5506
           ],
           "parts": [
             [
-              274.0029,
-              66.4082,
+              275.8382,
+              66.0846,
               496.4357,
-              224.7954
+              225.5506
             ]
           ],
           "headline": "Bitkide görülen I."
@@ -5489,61 +5179,61 @@
       ],
       "activities": [
         {
-          "id": "p192-58",
-          "label": "58",
-          "column": 0,
-          "rect": [
-            54.7898,
-            568.0035,
-            261.0476,
-            724.7183
-          ],
-          "parts": [
-            [
-              54.7898,
-              568.0035,
-              261.0476,
-              724.7183
-            ]
-          ],
-          "headline": "Bitkilerde topraktan alınan su ve mineraller I."
-        },
-        {
           "id": "p192-61",
           "label": "61",
           "column": 1,
           "rect": [
-            287.4439,
-            598.4833,
-            505.4155,
-            724.2328
+            287.228,
+            598.3754,
+            505.5234,
+            724.5025
           ],
           "parts": [
             [
-              287.4439,
-              598.4833,
-              505.4155,
-              724.2328
+              287.228,
+              598.3754,
+              505.5234,
+              724.5025
             ]
           ],
           "headline": "I. Bitkiyi dış etkilere karşı koruma II."
+        },
+        {
+          "id": "p192-58",
+          "label": "58",
+          "column": 0,
+          "rect": [
+            55.4375,
+            578.1994,
+            261.2096,
+            723.6933
+          ],
+          "parts": [
+            [
+              55.4375,
+              578.1994,
+              261.2096,
+              723.6933
+            ]
+          ],
+          "headline": "Bitkilerde topraktan alınan su ve mineraller I."
         },
         {
           "id": "p192-62",
           "label": "62",
           "column": 1,
           "rect": [
-            287.6598,
-            345.0962,
-            509.0861,
-            502.836
+            287.4439,
+            345.6897,
+            508.2764,
+            502.9439
           ],
           "parts": [
             [
-              287.6598,
-              345.0962,
-              509.0861,
-              502.836
+              287.4439,
+              345.6897,
+              508.2764,
+              502.9439
             ]
           ],
           "headline": "Aşağıda verilen bitkisel hormonlar ve görevleri ile ilgili eşleştirmelerden hangisi doğrudur?"
@@ -5553,17 +5243,17 @@
           "label": "59",
           "column": 0,
           "rect": [
-            55.1676,
-            310.7862,
-            272.1136,
-            442.0922
+            55.2756,
+            310.9481,
+            272.9772,
+            442.0382
           ],
           "parts": [
             [
-              55.1676,
-              310.7862,
-              272.1136,
-              442.0922
+              55.2756,
+              310.9481,
+              272.9772,
+              442.0382
             ]
           ],
           "headline": "Bitkilerin taşıma sistemi ile ilgili aşağıdaki ifadelerden hangisi doğru değildir?"
@@ -5573,17 +5263,17 @@
           "label": "63",
           "column": 1,
           "rect": [
-            287.8218,
-            66.1924,
-            498.2584,
-            295.897
+            287.7678,
+            66.3003,
+            497.4804,
+            295.6272
           ],
           "parts": [
             [
-              287.8218,
-              66.1924,
-              498.2584,
-              295.897
+              287.7678,
+              66.3003,
+              497.4804,
+              295.6272
             ]
           ],
           "headline": "I. Canlı hücrelerden oluşur."
@@ -5593,17 +5283,17 @@
           "label": "60",
           "column": 0,
           "rect": [
-            55.3836,
+            55.6535,
             61.4991,
             275.2954,
-            186.2775
+            186.1157
           ],
           "parts": [
             [
-              55.3836,
+              55.6535,
               61.4991,
               275.2954,
-              186.2775
+              186.1157
             ]
           ],
           "headline": "Mikoriza ve nodül ile ilgili I."
@@ -5629,17 +5319,17 @@
           "label": "67",
           "column": 1,
           "rect": [
-            273.3551,
-            509.8491,
-            492.7301,
-            723.8551
+            273.9489,
+            507.907,
+            493.5591,
+            725.7433
           ],
           "parts": [
             [
-              273.3551,
-              509.8491,
-              492.7301,
-              723.8551
+              273.9489,
+              507.907,
+              493.5591,
+              725.7433
             ]
           ],
           "headline": "Stoma ile ilgili olarak I."
@@ -5649,17 +5339,17 @@
           "label": null,
           "column": 0,
           "rect": [
-            41.7806,
-            565.1443,
-            260.184,
-            721.967
+            41.8346,
+            565.9535,
+            260.5618,
+            721.6433
           ],
           "parts": [
             [
-              41.7806,
-              565.1443,
-              260.184,
-              721.967
+              41.8346,
+              565.9535,
+              260.5618,
+              721.6433
             ]
           ]
         },
@@ -5668,17 +5358,17 @@
           "label": "65",
           "column": 0,
           "rect": [
-            42.6982,
-            298.2706,
-            264.7817,
-            512.5464
+            42.2664,
+            296.6522,
+            264.5024,
+            512.6543
           ],
           "parts": [
             [
-              42.6982,
-              298.2706,
-              264.7817,
-              512.5464
+              42.2664,
+              296.6522,
+              264.5024,
+              512.6543
             ]
           ],
           "headline": "Stomaların açılması sürecinde meydana gelen I."
@@ -5688,17 +5378,17 @@
           "label": "68",
           "column": 1,
           "rect": [
-            274.7046,
-            307.2797,
-            485.5508,
-            447.0013
+            273.3551,
+            306.8481,
+            483.2836,
+            447.2711
           ],
           "parts": [
             [
-              274.7046,
-              307.2797,
-              485.5508,
-              447.0013
+              273.3551,
+              306.8481,
+              483.2836,
+              447.2711
             ]
           ],
           "headline": "Bir tohumun çimlenmesi için I."
@@ -5708,17 +5398,17 @@
           "label": "69",
           "column": 1,
           "rect": [
-            275.1904,
-            54.9176,
-            487.9799,
-            253.8726
+            274.5966,
+            55.0255,
+            488.0879,
+            254.412
           ],
           "parts": [
             [
-              275.1904,
-              54.9176,
-              487.9799,
-              253.8726
+              274.5966,
+              55.0255,
+              488.0879,
+              254.412
             ]
           ],
           "headline": "Aşağıdaki şekilde tam bir çiçeğin yapısını oluştu- ran kısımlar numaralandırılmıştır."
@@ -5728,17 +5418,17 @@
           "label": "66",
           "column": 0,
           "rect": [
-            41.6186,
-            61.2294,
-            264.7941,
-            213.8442
+            41.8885,
+            61.3912,
+            263.4228,
+            213.1969
           ],
           "parts": [
             [
-              41.6186,
-              61.2294,
-              264.7941,
-              213.8442
+              41.8885,
+              61.3912,
+              263.4228,
+              213.1969
             ]
           ],
           "headline": "Kısa gün bitkileriyle ilgili I."
@@ -5764,61 +5454,61 @@
       ],
       "activities": [
         {
-          "id": "p194-70",
-          "label": "70",
-          "column": 0,
-          "rect": [
-            56.5171,
-            605.9279,
-            278.7531,
-            724.2867
-          ],
-          "parts": [
-            [
-              56.5171,
-              605.9279,
-              278.7531,
-              724.2867
-            ]
-          ],
-          "headline": "Tohumun çimlenmesi ile ilgili olarak aşağıdaki- lerin hangisi söylenemez?"
-        },
-        {
           "id": "p194-73",
           "label": "73",
           "column": 2,
           "rect": [
-            289.1713,
-            546.8025,
-            509.464,
-            723.963
+            289.0633,
+            547.5577,
+            509.302,
+            723.7473
           ],
           "parts": [
             [
-              289.1713,
-              546.8025,
-              509.464,
-              723.963
+              289.0633,
+              547.5577,
+              509.302,
+              723.7473
             ]
           ],
           "headline": "Meyve ile ilgili olarak I."
+        },
+        {
+          "id": "p194-70",
+          "label": "70",
+          "column": 0,
+          "rect": [
+            57.0569,
+            605.4424,
+            279.7248,
+            723.4236
+          ],
+          "parts": [
+            [
+              57.0569,
+              605.4424,
+              279.7248,
+              723.4236
+            ]
+          ],
+          "headline": "Tohumun çimlenmesi ile ilgili olarak aşağıdaki- lerin hangisi söylenemez?"
         },
         {
           "id": "p194-71",
           "label": "71",
           "column": 0,
           "rect": [
-            55.9234,
-            270.3177,
+            55.4915,
+            270.596,
             279.0508,
-            556.7287
+            555.2182
           ],
           "parts": [
             [
-              55.9234,
-              270.3177,
+              55.4915,
+              270.596,
               279.0508,
-              556.7287
+              555.2182
             ]
           ],
           "headline": "Çiçekli bitkilerde erkek üreme hücrelerinin olu- şum evreleri aşağıdaki şekilde gösterilmiştir."
@@ -5828,17 +5518,17 @@
           "label": "74",
           "column": 2,
           "rect": [
-            289.2252,
-            311.7573,
-            511.5152,
-            439.7725
+            288.7934,
+            310.6244,
+            510.7595,
+            440.8514
           ],
           "parts": [
             [
-              289.2252,
-              311.7573,
-              511.5152,
-              439.7725
+              288.7934,
+              310.6244,
+              510.7595,
+              440.8514
             ]
           ],
           "headline": "Çiçekli bitkilerde I."
@@ -5848,17 +5538,17 @@
           "label": "75",
           "column": 2,
           "rect": [
-            289.927,
-            59.5031,
-            508.8702,
-            220.6415
+            288.4155,
+            60.9596,
+            509.6799,
+            221.4507
           ],
           "parts": [
             [
-              289.927,
-              59.5031,
-              508.8702,
-              220.6415
+              288.4155,
+              60.9596,
+              509.6799,
+              221.4507
             ]
           ],
           "headline": "Çiçekli bitkilerde gerçekleşen tozlaşmayla ilgili"
@@ -5868,17 +5558,17 @@
           "label": "72",
           "column": 0,
           "rect": [
-            55.9773,
-            63.8727,
-            277.6195,
-            205.1588
+            55.3296,
+            64.5741,
+            276.7559,
+            205.6983
           ],
           "parts": [
             [
-              55.9773,
-              63.8727,
-              277.6195,
-              205.1588
+              55.3296,
+              64.5741,
+              276.7559,
+              205.6983
             ]
           ],
           "headline": "Çiçekli bitkilerde I."
@@ -5900,61 +5590,61 @@
       ],
       "activities": [
         {
-          "id": "p195-76",
-          "label": "76",
-          "column": 0,
-          "rect": [
-            41.1868,
-            581.652,
-            257.8628,
-            724.3946
-          ],
-          "parts": [
-            [
-              41.1868,
-              581.652,
-              257.8628,
-              724.3946
-            ]
-          ],
-          "headline": "Aşağıdakilerden hangisi kapalı tohumlu bitki- lerin üreme ile ilgili özelliklerinden değildir?"
-        },
-        {
           "id": "p195-80",
           "label": "80",
           "column": 1,
           "rect": [
-            273.1932,
-            598.9688,
-            490.5709,
-            724.3407
+            273.8949,
+            599.4004,
+            490.8408,
+            724.9341
           ],
           "parts": [
             [
-              273.1932,
-              598.9688,
-              490.5709,
-              724.3407
+              273.8949,
+              599.4004,
+              490.8408,
+              724.9341
             ]
           ],
           "headline": "Tek evcikli bitkilerle ilgili I."
+        },
+        {
+          "id": "p195-76",
+          "label": "76",
+          "column": 0,
+          "rect": [
+            41.0788,
+            581.0586,
+            257.8628,
+            723.963
+          ],
+          "parts": [
+            [
+              41.0788,
+              581.0586,
+              257.8628,
+              723.963
+            ]
+          ],
+          "headline": "Aşağıdakilerden hangisi kapalı tohumlu bitki- lerin üreme ile ilgili özelliklerinden değildir?"
         },
         {
           "id": "p195-81",
           "label": "81",
           "column": 1,
           "rect": [
-            274.1108,
-            441.0133,
-            490.8948,
-            553.8695
+            273.733,
+            441.0672,
+            490.8408,
+            554.5168
           ],
           "parts": [
             [
-              274.1108,
-              441.0133,
-              490.8948,
-              553.8695
+              273.733,
+              441.0672,
+              490.8408,
+              554.5168
             ]
           ],
           "headline": "Bir bitkinin bulunduğu ortamda gerçekleşen I."
@@ -5965,16 +5655,16 @@
           "column": 0,
           "rect": [
             41.4027,
-            432.2739,
-            260.2379,
-            537.5776
+            432.7594,
+            259.968,
+            537.8474
           ],
           "parts": [
             [
               41.4027,
-              432.2739,
-              260.2379,
-              537.5776
+              432.7594,
+              259.968,
+              537.8474
             ]
           ],
           "headline": "Çiçekli bitkilerde aşağıdaki yapılardan hangisi mayoz geçirerek karşısındaki yapıyı oluşturur?"
@@ -5984,17 +5674,17 @@
           "label": "82",
           "column": 1,
           "rect": [
-            273.9489,
-            242.5977,
-            497.9122,
-            393.7561
+            273.625,
+            242.1662,
+            496.9406,
+            394.6192
           ],
           "parts": [
             [
-              273.9489,
-              242.5977,
-              497.9122,
-              393.7561
+              273.625,
+              242.1662,
+              496.9406,
+              394.6192
             ]
           ],
           "headline": "Temel dokuya ait sklerenkima hücreleri ile ilgili I."
@@ -6004,17 +5694,17 @@
           "label": "78",
           "column": 0,
           "rect": [
-            41.2408,
-            243.7846,
-            256.3514,
-            386.6351
+            41.6726,
+            244.4859,
+            256.8912,
+            385.6641
           ],
           "parts": [
             [
-              41.2408,
-              243.7846,
-              256.3514,
-              386.6351
+              41.6726,
+              244.4859,
+              256.8912,
+              385.6641
             ]
           ],
           "headline": "Bitkilerde I."
@@ -6024,17 +5714,17 @@
           "label": "83",
           "column": 1,
           "rect": [
-            273.7869,
-            60.1504,
-            490.6249,
-            200.4655
+            274.0029,
+            61.6609,
+            491.1647,
+            200.3036
           ],
           "parts": [
             [
-              273.7869,
-              60.1504,
-              490.6249,
-              200.4655
+              274.0029,
+              61.6609,
+              491.1647,
+              200.3036
             ]
           ],
           "headline": "Bitkilerdeki su ve mineral taşınımı ile ilgili I."
@@ -6044,20 +5734,51 @@
           "label": "79",
           "column": 0,
           "rect": [
-            41.3487,
-            61.3373,
-            254.0842,
-            187.3025
+            41.2408,
+            61.4991,
+            254.624,
+            186.7091
           ],
           "parts": [
             [
-              41.3487,
-              61.3373,
-              254.0842,
-              187.3025
+              41.2408,
+              61.4991,
+              254.624,
+              186.7091
             ]
           ],
           "headline": "Bölünme yeteneğinde olan I."
+        }
+      ]
+    },
+    "198": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          50.6929,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p198-v1",
+          "label": null,
+          "column": 0,
+          "rect": [
+            56.3012,
+            56.9136,
+            512.1471,
+            325.9452
+          ],
+          "parts": [
+            [
+              56.3012,
+              56.9136,
+              512.1471,
+              325.9452
+            ]
+          ]
         }
       ]
     },
@@ -6076,17 +5797,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            61.9151,
-            291.6352,
-            501.4749,
-            346.391
+            62.185,
+            291.2576,
+            500.7192,
+            345.8515
           ],
           "parts": [
             [
-              61.9151,
-              291.6352,
-              501.4749,
-              346.391
+              62.185,
+              291.2576,
+              500.7192,
+              345.8515
             ]
           ],
           "headline": "Mercan yılanlarının olmadığı yerde (Kuzey Carolina’da) plastik kral yılanlara saldırı neden daha fazla olmuştur?"
@@ -6096,17 +5817,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            61.3214,
-            230.8374,
-            501.6368,
-            286.0787
+            60.9435,
+            230.7295,
+            501.097,
+            285.755
           ],
           "parts": [
             [
-              61.3214,
-              230.8374,
-              501.6368,
-              286.0787
+              60.9435,
+              230.7295,
+              501.097,
+              285.755
             ]
           ],
           "headline": "Mercan yılanlarının olduğu yerde (Güney Carolina’da) kahverengi yılanlara saldırı neden daha fazla olmuştur?"
@@ -6116,17 +5837,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            61.8612,
-            184.0657,
-            500.9891,
-            225.2809
+            59.2161,
+            184.8,
+            500.4493,
+            225.4967
           ],
           "parts": [
             [
-              61.8612,
-              184.0657,
-              500.9891,
-              225.2809
+              59.2161,
+              184.8,
+              500.4493,
+              225.4967
             ]
           ],
           "headline": "Güney Carolina’da yaşayan kral yılanlarının mercan yılanlarını taklit etmesinin nedeni nedir?"
@@ -6136,17 +5857,17 @@
           "label": "4",
           "column": 0,
           "rect": [
-            62.7248,
-            123.3758,
-            501.5829,
-            177.8619
+            61.5373,
+            124.2929,
+            500.7192,
+            177.9158
           ],
           "parts": [
             [
-              62.7248,
-              123.3758,
-              501.5829,
-              177.8619
+              61.5373,
+              124.2929,
+              500.7192,
+              177.9158
             ]
           ],
           "headline": "Doğal şartlarda Güney ve Kuzey Carolina’da yaşayan kral yılanlardan aynı tür olmasına rağmen Güney Carolina’da yaşayan kral yılanlarının renk değişimi nasıl ger"
@@ -6156,72 +5877,20 @@
           "label": "5",
           "column": 0,
           "rect": [
-            61.4293,
-            62.2543,
-            502.0147,
-            117.3338
+            61.2674,
+            62.578,
+            501.9607,
+            117.172
           ],
           "parts": [
             [
-              61.4293,
-              62.2543,
-              502.0147,
-              117.3338
+              61.2674,
+              62.578,
+              501.9607,
+              117.172
             ]
           ],
           "headline": "Doğal şartlarda Güney Carolina bölgesinde kahverengi kral yılanı popülasyonunun oluşma olasılığı var mıdır? Açıklayınız."
-        }
-      ]
-    },
-    "203": {
-      "pageWidth": 552.756,
-      "pageHeight": 779.528,
-      "columns": [
-        [
-          36.5094,
-          528.756
-        ]
-      ],
-      "activities": [
-        {
-          "id": "p203-1",
-          "label": "1",
-          "column": 0,
-          "rect": [
-            50.6333,
-            121.7035,
-            488.7356,
-            163.7279
-          ],
-          "parts": [
-            [
-              50.6333,
-              121.7035,
-              488.7356,
-              163.7279
-            ]
-          ],
-          "headline": "Bu bitkilerin seçilerek üretilmesinin avantaj ve dezavantajları neler olabilir?"
-        },
-        {
-          "id": "p203-2",
-          "label": "2",
-          "column": 0,
-          "rect": [
-            49.7696,
-            60.0965,
-            489.9772,
-            115.9851
-          ],
-          "parts": [
-            [
-              49.7696,
-              60.0965,
-              489.9772,
-              115.9851
-            ]
-          ],
-          "headline": "Hardal bitkisinin gövde, yaprak, tomurcuk gibi kısımlarında meydana gelen varyasyonların nedenleri neler olabilir?"
         }
       ]
     },
@@ -6240,17 +5909,17 @@
           "label": "a",
           "column": 0,
           "rect": [
-            71.1457,
-            418.6254,
-            500.9351,
-            459.8946
+            71.6855,
+            418.9491,
+            500.2873,
+            459.8406
           ],
           "parts": [
             [
-              71.1457,
-              418.6254,
-              500.9351,
-              459.8946
+              71.6855,
+              418.9491,
+              500.2873,
+              459.8406
             ]
           ],
           "headline": "Sanayi devrimi sonrasında açık renkli güve sayısında meydana gelen değişimin nedenleri nelerdir?"
@@ -6260,17 +5929,17 @@
           "label": "b",
           "column": 0,
           "rect": [
-            73.4129,
-            370.7209,
-            500.5572,
-            410.5334
+            72.4952,
+            370.2893,
+            499.3697,
+            410.4795
           ],
           "parts": [
             [
-              73.4129,
-              370.7209,
-              500.5572,
-              410.5334
+              72.4952,
+              370.2893,
+              499.3697,
+              410.4795
             ]
           ],
           "headline": "Yukarıda belirtilen olayda hangi seçilim türü gerçekleşmiştir?"
@@ -6280,17 +5949,17 @@
           "label": "2",
           "column": 0,
           "rect": [
-            62.5629,
-            309.9231,
-            502.5545,
-            362.6828
+            60.7816,
+            309.5454,
+            502.4466,
+            362.1434
           ],
           "parts": [
             [
-              62.5629,
-              309.9231,
-              502.5545,
-              362.6828
+              60.7816,
+              309.5454,
+              502.4466,
+              362.1434
             ]
           ],
           "headline": "Meksika’nın Aztekler ve Maya kabileleri, yabani mısırı belli bir süre sonra bugünkü mısıra dönüştürmüş- lerdir. Bu kabileler hangi tip seçilimi kullanmıştır?"
@@ -6300,17 +5969,17 @@
           "label": "3",
           "column": 0,
           "rect": [
-            61.6452,
-            259.6988,
-            501.9067,
-            302.1548
+            60.0258,
+            260.7238,
+            502.4466,
+            302.2087
           ],
           "parts": [
             [
-              61.6452,
-              259.6988,
-              501.9067,
-              302.1548
+              60.0258,
+              260.7238,
+              502.4466,
+              302.2087
             ]
           ],
           "headline": "Organizmaların doğada hayatta kalabilme şanslarını belirleyen etmenler nelerdir?"
@@ -6332,17 +6001,17 @@
           "label": "1",
           "column": 0,
           "rect": [
-            52.8465,
-            585.0506,
-            445.8215,
-            596.0018
+            53.3323,
+            585.2664,
+            445.1197,
+            596.811
           ],
           "parts": [
             [
-              52.8465,
-              585.0506,
-              445.8215,
-              596.0018
+              53.3323,
+              585.2664,
+              445.1197,
+              596.811
             ]
           ],
           "headline": "Tür içindeki varyasyonlara mayoz, döllenme ve"
@@ -6352,56 +6021,96 @@
           "label": "2",
           "column": 0,
           "rect": [
-            53.4403,
-            546.263,
+            52.5226,
+            546.8564,
             490.8528,
-            575.9336
+            574.3692
           ],
           "parts": [
             [
-              53.4403,
-              546.263,
+              52.5226,
+              546.8564,
               490.8528,
-              575.9336
+              574.3692
             ]
           ],
           "headline": "Tarım arazilerinde istenmeyen bitki, mantar, böcek ve mikroorganizmaların çoğalmasını engelleyerek zararlarını azaltmak için kullanılan zirai ilaçlara"
+        },
+        {
+          "id": "p205-3",
+          "label": "3",
+          "column": 0,
+          "rect": [
+            51.2811,
+            510.2807,
+            487.4401,
+            537.4697
+          ],
+          "parts": [
+            [
+              51.2811,
+              510.2807,
+              487.4401,
+              537.4697
+            ]
+          ],
+          "headline": "İnsanların bilinçli ve amaçlı olarak bir organizmanın belli özelliklerini seçmesi ve o organizmayı kont- rollü olarak yetiştirmesi sürecine"
+        },
+        {
+          "id": "p205-4",
+          "label": "4",
+          "column": 0,
+          "rect": [
+            52.7385,
+            471.2233,
+            495.1737,
+            500.2466
+          ],
+          "parts": [
+            [
+              52.7385,
+              471.2233,
+              495.1737,
+              500.2466
+            ]
+          ],
+          "headline": "Bir canlının belli bir çevrede hayatta kalma ve üreyebilme şansını artıran kalıtsal özelliklere ......................."
         },
         {
           "id": "p205-5",
           "label": "5",
           "column": 0,
           "rect": [
-            52.3607,
-            436.4278,
-            449.708,
-            462.8616
+            53.3863,
+            436.8054,
+            466.3879,
+            461.4051
           ],
           "parts": [
             [
-              52.3607,
-              436.4278,
-              449.708,
-              462.8616
+              53.3863,
+              436.8054,
+              466.3879,
+              461.4051
             ]
           ],
           "headline": "Hem genetik hem çevre etkisi ile gerçekleşen aynı türün bireyleri arasındaki farklılıklara"
         },
         {
-          "id": "p205-v4",
+          "id": "p205-v6",
           "label": null,
           "column": 0,
           "rect": [
-            53.8181,
-            411.2887,
-            478.8366,
+            53.3323,
+            412.0439,
+            478.4794,
             431.0
           ],
           "parts": [
             [
-              53.8181,
-              411.2887,
-              478.8366,
+              53.3323,
+              412.0439,
+              478.4794,
               431.0
             ]
           ]
@@ -6411,20 +6120,78 @@
           "label": "7",
           "column": 0,
           "rect": [
-            41.0249,
-            54.8097,
-            498.452,
-            380.9707
+            39.1895,
+            54.486,
+            498.2901,
+            386.3654
           ],
           "parts": [
             [
-              41.0249,
-              54.8097,
-              498.452,
-              380.9707
+              39.1895,
+              54.486,
+              498.2901,
+              386.3654
             ]
           ],
           "headline": "(...) Çevre koşullarının etkisiyle canlının DNA’ sında meydana gelen değişiklikler"
+        }
+      ]
+    },
+    "206": {
+      "pageWidth": 552.756,
+      "pageHeight": 779.528,
+      "columns": [
+        [
+          50.6929,
+          223.8893
+        ],
+        [
+          227.8893,
+          373.1985
+        ],
+        [
+          377.1985,
+          528.756
+        ]
+      ],
+      "activities": [
+        {
+          "id": "p206-v1",
+          "label": null,
+          "column": 1,
+          "rect": [
+            72.7651,
+            120.7864,
+            511.5152,
+            165.0765
+          ],
+          "parts": [
+            [
+              72.7651,
+              120.7864,
+              511.5152,
+              165.0765
+            ]
+          ]
+        },
+        {
+          "id": "p206-v2",
+          "label": null,
+          "column": 1,
+          "rect": [
+            72.9811,
+            69.2674,
+            511.8931,
+            112.8023
+          ],
+          "parts": [
+            [
+              72.9811,
+              69.2674,
+              511.8931,
+              112.8023
+            ]
+          ]
         }
       ]
     },
@@ -6447,17 +6214,17 @@
           "label": "21",
           "column": 0,
           "rect": [
-            42.1045,
-            567.7877,
-            496.2928,
-            724.5025
+            40.9169,
+            568.489,
+            496.4008,
+            723.6933
           ],
           "parts": [
             [
-              42.1045,
-              567.7877,
-              496.2928,
-              724.5025
+              40.9169,
+              568.489,
+              496.4008,
+              723.6933
             ]
           ],
           "headline": "Yerleşik yaşama geçiş, bazı hayvanların yapay seçilimle üretilmesine zemin hazırlamıştır. Yaklaşık 25 000 yıl kadar önce uysal olan ve insanların yaşam alanları",
@@ -6470,7 +6237,7 @@
               "rect": [
                 55.5332,
                 599.2,
-                496.2928,
+                496.4008,
                 632.1847
               ],
               "text": "a) Yapay seçilim tür çeşitliliğini artırır mı? Gerekçesiyle açıklayınız."
@@ -6482,8 +6249,8 @@
               "partIndex": 0,
               "rect": [
                 55.5276,
-                567.7877,
-                496.2928,
+                568.489,
+                496.4008,
                 600.516
               ],
               "text": "b) Yapay seçilimin türün devamlılığına yönelik olumlu ve olumsuz etkileri nelerdir? Açıklayınız."
@@ -6491,61 +6258,21 @@
           ]
         },
         {
-          "id": "p207-22",
-          "label": "22",
-          "column": 0,
-          "rect": [
-            46.6928,
-            384.2075,
-            259.5902,
-            523.5515
-          ],
-          "parts": [
-            [
-              46.6928,
-              384.2075,
-              259.5902,
-              523.5515
-            ]
-          ],
-          "headline": "I. Sperm hücresi II."
-        },
-        {
-          "id": "p207-25",
-          "label": "25",
-          "column": 1,
-          "rect": [
-            273.7869,
-            319.9571,
-            493.7558,
-            522.4726
-          ],
-          "parts": [
-            [
-              273.7869,
-              319.9571,
-              493.7558,
-              522.4726
-            ]
-          ],
-          "headline": "I. Bir canlının belirli bir çevrede hayatta kalma, üreyebilme şansını artıran kalıtsal özellikler- dir."
-        },
-        {
           "id": "p207-23",
           "label": "23",
           "column": 0,
           "rect": [
-            47.7184,
-            193.0208,
-            267.4173,
-            361.5499
+            47.2326,
+            191.5643,
+            267.6332,
+            361.1184
           ],
           "parts": [
             [
-              47.7184,
-              193.0208,
-              267.4173,
-              361.5499
+              47.2326,
+              191.5643,
+              267.6332,
+              361.1184
             ]
           ],
           "headline": "Aşağıdaki yapılardan hangileri adaptasyona örnektir?"
@@ -6555,37 +6282,37 @@
           "label": "26",
           "column": 1,
           "rect": [
-            275.8922,
-            87.3935,
-            485.9826,
-            288.5602
+            275.4381,
+            86.2606,
+            485.4428,
+            287.5352
           ],
           "parts": [
             [
-              275.8922,
-              87.3935,
-              485.9826,
-              288.5602
+              275.4381,
+              86.2606,
+              485.4428,
+              287.5352
             ]
           ],
           "headline": "I. Uğur böceklerinin renklerinin farklı olması II."
         },
         {
-          "id": "p207-v6",
+          "id": "p207-v4",
           "label": null,
           "column": 0,
           "rect": [
-            47.6104,
-            61.3912,
+            47.7724,
+            60.7978,
             261.5554,
-            187.0328
+            186.1696
           ],
           "parts": [
             [
-              47.6104,
-              61.3912,
+              47.7724,
+              60.7978,
               261.5554,
-              187.0328
+              186.1696
             ]
           ]
         }
@@ -6593,7 +6320,7 @@
     }
   },
   "engine": "vision",
-  "checkpoint": "eff266a9c0d1bdd5aa147105c10f86309615df68d4899c22d655e692c5670bf9",
+  "checkpoint": "46fcffa0b605e5b3ee7e46f877e50cca8f853620005585e9065ed5d81e5799c8",
   "conf": 0.7,
   "icons": "bind"
 }

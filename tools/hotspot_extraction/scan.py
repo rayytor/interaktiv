@@ -38,7 +38,7 @@ import pymupdf
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 # The student whose boxes are baked by default, and the confidence a box needs to stand on its own.
 # Both change together when a new student ships (vision/runs/phase8-HANDOFF.md).
-VISION_PRED = os.path.join(PROJECT_ROOT, "data", "vision", "pred-s7-low")
+VISION_PRED = os.path.join(PROJECT_ROOT, "data", "vision", "pred-s8-low")
 VISION_CONF = 0.7
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))

@@ -245,3 +245,8 @@ copy `data/vision/bake-6/activities/books/` over `activities/books/`, set `VISIO
 Still open: old step 2 at scale (the limit on unseen books is not yet "more of the same eight"; the ELT and
 Fen Lisesi losses say which layouts to add), and a rules re-bake with the corrected ruler if the rules
 numbers are wanted again.
+
+**Installed, 2026-10-03.** The user copied `bake-6` into `activities/books/` (35 books, the eight new ones
+now on the vision engine). `VISION_PRED` names `pred-s8-low`; `scan.py --all` finds all 35 current; the
+GTK tests and the 159 detector tests pass; the reader was restarted. `git checkout HEAD~1 -- activities/books`
+on this commit brings `bake-5` back for the 27 books.
